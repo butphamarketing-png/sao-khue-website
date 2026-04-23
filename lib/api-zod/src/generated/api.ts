@@ -110,6 +110,9 @@ export const ListPostsResponseItem = zod.object({
   excerpt: zod.string(),
   content: zod.string(),
   imageUrl: zod.string(),
+  metaTitle: zod.string(),
+  metaDescription: zod.string(),
+  metaKeywords: zod.string(),
   createdAt: zod.coerce.date(),
   updatedAt: zod.coerce.date(),
 });
@@ -126,6 +129,9 @@ export const CreatePostBody = zod.object({
   excerpt: zod.string(),
   content: zod.string(),
   imageUrl: zod.string(),
+  metaTitle: zod.string().optional(),
+  metaDescription: zod.string().optional(),
+  metaKeywords: zod.string().optional(),
 });
 
 /**
@@ -143,6 +149,9 @@ export const GetPostBySlugResponse = zod.object({
   excerpt: zod.string(),
   content: zod.string(),
   imageUrl: zod.string(),
+  metaTitle: zod.string(),
+  metaDescription: zod.string(),
+  metaKeywords: zod.string(),
   createdAt: zod.coerce.date(),
   updatedAt: zod.coerce.date(),
 });
@@ -161,6 +170,9 @@ export const UpdatePostBody = zod.object({
   excerpt: zod.string(),
   content: zod.string(),
   imageUrl: zod.string(),
+  metaTitle: zod.string().optional(),
+  metaDescription: zod.string().optional(),
+  metaKeywords: zod.string().optional(),
 });
 
 export const UpdatePostResponse = zod.object({
@@ -171,6 +183,9 @@ export const UpdatePostResponse = zod.object({
   excerpt: zod.string(),
   content: zod.string(),
   imageUrl: zod.string(),
+  metaTitle: zod.string(),
+  metaDescription: zod.string(),
+  metaKeywords: zod.string(),
   createdAt: zod.coerce.date(),
   updatedAt: zod.coerce.date(),
 });

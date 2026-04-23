@@ -8,6 +8,9 @@ export const postsTable = pgTable("posts", {
   excerpt: text("excerpt").notNull().default(""),
   content: text("content").notNull().default(""),
   imageUrl: text("image_url").notNull().default(""),
+  metaTitle: text("meta_title").notNull().default(""),
+  metaDescription: text("meta_description").notNull().default(""),
+  metaKeywords: text("meta_keywords").notNull().default(""),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });

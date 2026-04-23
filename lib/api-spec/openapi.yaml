@@ -347,7 +347,7 @@ components:
         error: { type: string }
     Post:
       type: object
-      required: [id, slug, title, category, excerpt, content, imageUrl, createdAt, updatedAt]
+      required: [id, slug, title, category, excerpt, content, imageUrl, metaTitle, metaDescription, metaKeywords, createdAt, updatedAt]
       properties:
         id: { type: integer }
         slug: { type: string }
@@ -356,6 +356,9 @@ components:
         excerpt: { type: string }
         content: { type: string }
         imageUrl: { type: string }
+        metaTitle: { type: string }
+        metaDescription: { type: string }
+        metaKeywords: { type: string }
         createdAt: { type: string, format: date-time }
         updatedAt: { type: string, format: date-time }
     PostInput:
@@ -368,3 +371,6 @@ components:
         excerpt: { type: string }
         content: { type: string }
         imageUrl: { type: string }
+        metaTitle: { type: string }
+        metaDescription: { type: string }
+        metaKeywords: { type: string }

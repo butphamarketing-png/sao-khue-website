@@ -16,6 +16,27 @@ export default function PostPage() {
     window.scrollTo(0, 0);
   }, [slug]);
 
+  useEffect(() => {
+    if (!post) return;
+    const title = post.metaTitle?.trim() || `${post.title} | Kiến Trúc Sao Khuê`;
+    document.title = title;
+    const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
+      if (!content) return;
+      let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${name}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", content);
+    };
+    setMeta("description", post.metaDescription?.trim() || post.excerpt || "");
+    setMeta("keywords", post.metaKeywords?.trim() || "");
+    setMeta("og:title", title, "property");
+    setMeta("og:description", post.metaDescription?.trim() || post.excerpt || "", "property");
+    if (post.imageUrl) setMeta("og:image", post.imageUrl, "property");
+  }, [post]);
+
   return (
     <div className="min-h-screen bg-slate-50">
       <TopBar />

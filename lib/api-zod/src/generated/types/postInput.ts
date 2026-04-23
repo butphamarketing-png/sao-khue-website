@@ -16,4 +16,7 @@ export interface PostInput {
   excerpt: string;
   content: string;
   imageUrl: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
 }

@@ -11,6 +11,9 @@ const PostInput = z.object({
   excerpt: z.string().default(""),
   content: z.string().default(""),
   imageUrl: z.string().default(""),
+  metaTitle: z.string().default(""),
+  metaDescription: z.string().default(""),
+  metaKeywords: z.string().default(""),
 });
 
 const router: IRouter = Router();

@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { QuoteSection } from "@/components/QuoteSection";
 import { CommitmentsSection } from "@/components/CommitmentsSection";
+import { CostCalculator } from "@/components/CostCalculator";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ProcessSection } from "@/components/ProcessSection";
@@ -26,7 +27,7 @@ export default function Home() {
         <ServicesSection />
         <ProjectsSection />
         <ProcessSection />
-        <CommitmentsSection />
+        <CostCalculator />
         <NewsSection />
         <ContactCTASection />
       </main>

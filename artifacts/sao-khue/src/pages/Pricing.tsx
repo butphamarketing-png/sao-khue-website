@@ -2,6 +2,7 @@ import { TopBar } from "@/components/TopBar";
 import { Header } from "@/components/Header";
 import { QuoteSection } from "@/components/QuoteSection";
 import { PricingTableSection } from "@/components/PricingTableSection";
+import { CostCalculator } from "@/components/CostCalculator";
 import { ContactCTASection } from "@/components/ContactCTASection";
 import { Footer } from "@/components/Footer";
 import { FloatingButtons } from "@/components/FloatingButtons";
@@ -20,6 +21,7 @@ export default function Pricing() {
         
         <QuoteSection />
         <PricingTableSection />
+        <CostCalculator />
         <ContactCTASection />
       </main>
 

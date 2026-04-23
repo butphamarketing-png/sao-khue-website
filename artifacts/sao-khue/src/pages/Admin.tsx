@@ -28,6 +28,9 @@ type FormState = {
   excerpt: string;
   content: string;
   imageUrl: string;
+  metaTitle: string;
+  metaDescription: string;
+  metaKeywords: string;
 };
 
 const empty: FormState = {
@@ -37,6 +40,9 @@ const empty: FormState = {
   excerpt: "",
   content: "",
   imageUrl: "",
+  metaTitle: "",
+  metaDescription: "",
+  metaKeywords: "",
 };
 
 export default function Admin() {
@@ -60,6 +66,9 @@ export default function Admin() {
         excerpt: editing.excerpt,
         content: editing.content,
         imageUrl: editing.imageUrl,
+        metaTitle: editing.metaTitle ?? "",
+        metaDescription: editing.metaDescription ?? "",
+        metaKeywords: editing.metaKeywords ?? "",
       });
       setShowForm(true);
     }
@@ -170,6 +179,25 @@ export default function Admin() {
               <label className="text-sm font-medium block mb-1">Nội dung (HTML hoặc văn bản)</label>
               <Textarea rows={12} value={form.content} onChange={(e) => setForm({ ...form, content: e.target.value })} />
             </div>
+
+            <div className="border-t pt-4 mt-2">
+              <h3 className="text-base font-bold text-primary mb-3 uppercase">SEO</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="md:col-span-2">
+                  <label className="text-sm font-medium block mb-1">Meta Title (tiêu đề SEO)</label>
+                  <Input value={form.metaTitle} onChange={(e) => setForm({ ...form, metaTitle: e.target.value })} placeholder="Để trống sẽ dùng tiêu đề bài viết" />
+                </div>
+                <div className="md:col-span-2">
+                  <label className="text-sm font-medium block mb-1">Meta Description (mô tả SEO)</label>
+                  <Textarea rows={2} value={form.metaDescription} onChange={(e) => setForm({ ...form, metaDescription: e.target.value })} placeholder="Mô tả ngắn cho công cụ tìm kiếm (~160 ký tự)" />
+                </div>
+                <div className="md:col-span-2">
+                  <label className="text-sm font-medium block mb-1">Từ khoá (Meta Keywords)</label>
+                  <Input value={form.metaKeywords} onChange={(e) => setForm({ ...form, metaKeywords: e.target.value })} placeholder="từ khoá 1, từ khoá 2, ..." />
+                </div>
+              </div>
+            </div>
+
             <div className="flex gap-2 justify-end">
               <Button type="button" variant="outline" onClick={reset}>Huỷ</Button>
               <Button type="submit" className="bg-primary text-white" disabled={create.isPending || update.isPending}>

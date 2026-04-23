@@ -14,6 +14,9 @@ export interface Post {
   excerpt: string;
   content: string;
   imageUrl: string;
+  metaTitle: string;
+  metaDescription: string;
+  metaKeywords: string;
   createdAt: Date;
   updatedAt: Date;
 }
