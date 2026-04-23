@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { Calculator } from "lucide-react";
 
 type LoaiNha = "nha-pho" | "biet-thu" | "cap-bon";
@@ -43,12 +43,24 @@ export function CostCalculator() {
   const [ham, setHam] = useState<Ham>("khong");
   const [mai, setMai] = useState<Mai>("ton");
   const [dtSanVuon, setDtSanVuon] = useState<string>("");
+  const [result, setResult] = useState<null | {
+    tongDienTich: number;
+    donGia: number;
+    tongChiPhi: number;
+    chiTiet: { label: string; dt: number }[];
+  }>(null);
+  const [error, setError] = useState<string>("");
 
-  const result = useMemo(() => {
+  const calculate = () => {
     const r = parseFloat(chieuRong);
     const d = parseFloat(chieuDai);
     const tang = parseInt(soTang);
-    if (!r || !d || !tang || tang <= 0) return null;
+    if (!r || !d || !tang || tang <= 0) {
+      setResult(null);
+      setError("Bạn vui lòng nhập chiều rộng, chiều dài và số tầng!");
+      return;
+    }
+    setError("");
 
     const dtTret = r * d;
     const lung = parseFloat(dtLung) || 0;
@@ -72,8 +84,7 @@ export function CostCalculator() {
     const donGia = DON_GIA[dichVu][mucDauTu];
     const tongChiPhi = tongDienTich * donGia;
 
-    return {
-      dtTret,
+    setResult({
       tongDienTich: Math.round(tongDienTich * 100) / 100,
       donGia,
       tongChiPhi: Math.round(tongChiPhi),
@@ -88,8 +99,11 @@ export function CostCalculator() {
         ...(dtBanCong > 0 ? [{ label: "Ban công", dt: Math.round(dtBanCong * 100) / 100 }] : []),
         ...(dtSanVuonTinh > 0 ? [{ label: "Sân vườn", dt: Math.round(dtSanVuonTinh * 100) / 100 }] : []),
       ],
-    };
-  }, [loaiNha, dichVu, mucDauTu, matTien, chieuRong, chieuDai, soTang, hem, dtLung, dtTangThuong, sanThuong, banCong, mong, ham, mai, dtSanVuon]);
+    });
+    setTimeout(() => {
+      document.getElementById("ket-qua-tinh-chi-phi")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 50);
+  };
 
   const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
     <div>
@@ -214,18 +228,21 @@ export function CostCalculator() {
           </div>
 
           <div className="mt-10 flex justify-center">
-            <div className="inline-flex items-center gap-3 bg-accent text-white font-bold uppercase px-8 py-4 rounded-full shadow-lg">
+            <button
+              type="button"
+              onClick={calculate}
+              className="inline-flex items-center gap-3 bg-accent hover:bg-accent/90 text-white font-bold uppercase px-8 py-4 rounded-full shadow-lg transition-colors cursor-pointer"
+            >
               <Calculator size={22} />
               Tính toán kết quả
-            </div>
+            </button>
           </div>
 
-          <div className="mt-8">
-            {!result ? (
-              <p className="text-center text-red-600 font-semibold">
-                Bạn vui lòng nhập số tầng, diện tích xây dựng!
-              </p>
-            ) : (
+          <div id="ket-qua-tinh-chi-phi" className="mt-8 scroll-mt-24">
+            {error && (
+              <p className="text-center text-red-600 font-semibold mb-4">{error}</p>
+            )}
+            {result && (
               <div className="bg-white border border-primary/20 rounded-xl p-6 md:p-8 shadow-md">
                 <h3 className="text-xl md:text-2xl font-bold text-primary uppercase text-center mb-4">
                   Kết quả tính chi phí
