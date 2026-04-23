@@ -20,6 +20,8 @@ const SettingsInput = z.object({
   zaloPhone: z.string().default(""),
   messengerUrl: z.string().default(""),
   footerDescription: z.string().default(""),
+  gaTrackingId: z.string().default(""),
+  gscVerification: z.string().default(""),
 });
 
 const router: IRouter = Router();

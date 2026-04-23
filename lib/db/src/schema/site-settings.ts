@@ -17,6 +17,8 @@ export const siteSettingsTable = pgTable("site_settings", {
   zaloPhone: text("zalo_phone").notNull().default("0936045268"),
   messengerUrl: text("messenger_url").notNull().default(""),
   footerDescription: text("footer_description").notNull().default("Uy tín – Chất lượng – Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp."),
+  gaTrackingId: text("ga_tracking_id").notNull().default(""),
+  gscVerification: text("gsc_verification").notNull().default(""),
 });
 
 export type SiteSettings = typeof siteSettingsTable.$inferSelect;

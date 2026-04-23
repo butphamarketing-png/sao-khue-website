@@ -23,4 +23,6 @@ export interface SiteSettings {
   zaloPhone: string;
   messengerUrl: string;
   footerDescription: string;
+  gaTrackingId: string;
+  gscVerification: string;
 }

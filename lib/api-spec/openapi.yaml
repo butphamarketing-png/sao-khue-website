@@ -413,7 +413,7 @@ components:
         metaKeywords: { type: string }
     SiteSettings:
       type: object
-      required: [id, companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription]
+      required: [id, companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription, gaTrackingId, gscVerification]
       properties:
         id: { type: integer }
         companyName: { type: string }
@@ -431,9 +431,11 @@ components:
         zaloPhone: { type: string }
         messengerUrl: { type: string }
         footerDescription: { type: string }
+        gaTrackingId: { type: string }
+        gscVerification: { type: string }
     SiteSettingsInput:
       type: object
-      required: [companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription]
+      required: [companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription, gaTrackingId, gscVerification]
       properties:
         companyName: { type: string }
         taxCode: { type: string }
@@ -450,3 +452,5 @@ components:
         zaloPhone: { type: string }
         messengerUrl: { type: string }
         footerDescription: { type: string }
+        gaTrackingId: { type: string }
+        gscVerification: { type: string }

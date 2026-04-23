@@ -17,6 +17,8 @@ export const defaultSiteSettings: SiteSettings = {
   zaloPhone: "0936045268",
   messengerUrl: "",
   footerDescription: "Uy tín – Chất lượng – Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp.",
+  gaTrackingId: "",
+  gscVerification: "",
 };
 
 export function useSiteSettings(): SiteSettings {

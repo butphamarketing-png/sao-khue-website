@@ -217,6 +217,8 @@ export const GetSiteSettingsResponse = zod.object({
   zaloPhone: zod.string(),
   messengerUrl: zod.string(),
   footerDescription: zod.string(),
+  gaTrackingId: zod.string(),
+  gscVerification: zod.string(),
 });
 
 /**
@@ -238,6 +240,8 @@ export const UpdateSiteSettingsBody = zod.object({
   zaloPhone: zod.string(),
   messengerUrl: zod.string(),
   footerDescription: zod.string(),
+  gaTrackingId: zod.string(),
+  gscVerification: zod.string(),
 });
 
 export const UpdateSiteSettingsResponse = zod.object({
@@ -257,4 +261,6 @@ export const UpdateSiteSettingsResponse = zod.object({
   zaloPhone: zod.string(),
   messengerUrl: zod.string(),
   footerDescription: zod.string(),
+  gaTrackingId: zod.string(),
+  gscVerification: zod.string(),
 });

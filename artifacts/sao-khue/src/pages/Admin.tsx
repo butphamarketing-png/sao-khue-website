@@ -310,6 +310,8 @@ function SettingsPanel() {
     { key: "zaloPhone", label: "Số Zalo (chỉ số)", placeholder: "0936045268" },
     { key: "messengerUrl", label: "Messenger URL", placeholder: "https://m.me/..." },
     { key: "footerDescription", label: "Mô tả ở footer", full: true, long: true },
+    { key: "gaTrackingId", label: "Google Analytics ID (G-XXXX hoặc UA-XXXX)" },
+    { key: "gscVerification", label: "Google Search Console verification (mã trong meta tag)" },
   ];
 
   return (

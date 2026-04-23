@@ -99,6 +99,8 @@ export interface SiteSettings {
   zaloPhone: string;
   messengerUrl: string;
   footerDescription: string;
+  gaTrackingId: string;
+  gscVerification: string;
 }
 
 export interface SiteSettingsInput {
@@ -117,6 +119,8 @@ export interface SiteSettingsInput {
   zaloPhone: string;
   messengerUrl: string;
   footerDescription: string;
+  gaTrackingId: string;
+  gscVerification: string;
 }
 
 /**
