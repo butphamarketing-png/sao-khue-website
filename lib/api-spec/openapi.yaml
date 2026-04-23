@@ -14,6 +14,8 @@ tags:
     description: Browser and mobile authentication endpoints.
   - name: posts
     description: Article / blog post operations
+  - name: site-settings
+    description: Global website settings (contact info, branding)
 paths:
   /healthz:
     get:
@@ -270,6 +272,41 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorEnvelope'
+  /site-settings:
+    get:
+      tags: [site-settings]
+      operationId: getSiteSettings
+      summary: Get global site settings
+      responses:
+        '200':
+          description: Site settings
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SiteSettings'
+    put:
+      tags: [site-settings]
+      operationId: updateSiteSettings
+      summary: Update global site settings (admin only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SiteSettingsInput'
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SiteSettings'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
 components:
   parameters:
     AuthorizationSessionHeader:
@@ -374,3 +411,42 @@ components:
         metaTitle: { type: string }
         metaDescription: { type: string }
         metaKeywords: { type: string }
+    SiteSettings:
+      type: object
+      required: [id, companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription]
+      properties:
+        id: { type: integer }
+        companyName: { type: string }
+        taxCode: { type: string }
+        hotline1: { type: string }
+        hotline2: { type: string }
+        email: { type: string }
+        address1: { type: string }
+        address2: { type: string }
+        workingHours: { type: string }
+        logoUrl: { type: string }
+        facebookUrl: { type: string }
+        youtubeUrl: { type: string }
+        instagramUrl: { type: string }
+        zaloPhone: { type: string }
+        messengerUrl: { type: string }
+        footerDescription: { type: string }
+    SiteSettingsInput:
+      type: object
+      required: [companyName, taxCode, hotline1, hotline2, email, address1, address2, workingHours, logoUrl, facebookUrl, youtubeUrl, instagramUrl, zaloPhone, messengerUrl, footerDescription]
+      properties:
+        companyName: { type: string }
+        taxCode: { type: string }
+        hotline1: { type: string }
+        hotline2: { type: string }
+        email: { type: string }
+        address1: { type: string }
+        address2: { type: string }
+        workingHours: { type: string }
+        logoUrl: { type: string }
+        facebookUrl: { type: string }
+        youtubeUrl: { type: string }
+        instagramUrl: { type: string }
+        zaloPhone: { type: string }
+        messengerUrl: { type: string }
+        footerDescription: { type: string }

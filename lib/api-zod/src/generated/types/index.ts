@@ -19,3 +19,5 @@ export * from "./mobileTokenExchangeRequest";
 export * from "./mobileTokenExchangeSuccess";
 export * from "./post";
 export * from "./postInput";
+export * from "./siteSettings";
+export * from "./siteSettingsInput";

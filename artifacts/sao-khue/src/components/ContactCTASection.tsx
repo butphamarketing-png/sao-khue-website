@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useSiteSettings } from "@/lib/site-settings";
 
 export function ContactCTASection() {
+  const s = useSiteSettings();
   return (
     <section id="lien-he" className="relative py-20 bg-primary">
       <div className="absolute inset-0 opacity-10">
@@ -32,17 +34,17 @@ export function ContactCTASection() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-400">Hotline Tư Vấn 24/7</div>
-                  <div className="text-2xl font-bold text-accent">0936 045 268</div>
+                  <div className="text-2xl font-bold text-accent">{s.hotline1}</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4">
                   <span className="text-accent text-xl">🏢</span>
                 </div>
                 <div>
                   <div className="text-sm text-gray-400">Trụ sở chính</div>
-                  <div className="text-lg font-semibold">245/8 Bình Lợi, P. 13, Bình Thạnh</div>
+                  <div className="text-lg font-semibold">{s.address1}</div>
                 </div>
               </div>
             </div>

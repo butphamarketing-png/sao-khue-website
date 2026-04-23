@@ -196,3 +196,65 @@ export const UpdatePostResponse = zod.object({
 export const DeletePostParams = zod.object({
   slug: zod.coerce.string(),
 });
+
+/**
+ * @summary Get global site settings
+ */
+export const GetSiteSettingsResponse = zod.object({
+  id: zod.number(),
+  companyName: zod.string(),
+  taxCode: zod.string(),
+  hotline1: zod.string(),
+  hotline2: zod.string(),
+  email: zod.string(),
+  address1: zod.string(),
+  address2: zod.string(),
+  workingHours: zod.string(),
+  logoUrl: zod.string(),
+  facebookUrl: zod.string(),
+  youtubeUrl: zod.string(),
+  instagramUrl: zod.string(),
+  zaloPhone: zod.string(),
+  messengerUrl: zod.string(),
+  footerDescription: zod.string(),
+});
+
+/**
+ * @summary Update global site settings (admin only)
+ */
+export const UpdateSiteSettingsBody = zod.object({
+  companyName: zod.string(),
+  taxCode: zod.string(),
+  hotline1: zod.string(),
+  hotline2: zod.string(),
+  email: zod.string(),
+  address1: zod.string(),
+  address2: zod.string(),
+  workingHours: zod.string(),
+  logoUrl: zod.string(),
+  facebookUrl: zod.string(),
+  youtubeUrl: zod.string(),
+  instagramUrl: zod.string(),
+  zaloPhone: zod.string(),
+  messengerUrl: zod.string(),
+  footerDescription: zod.string(),
+});
+
+export const UpdateSiteSettingsResponse = zod.object({
+  id: zod.number(),
+  companyName: zod.string(),
+  taxCode: zod.string(),
+  hotline1: zod.string(),
+  hotline2: zod.string(),
+  email: zod.string(),
+  address1: zod.string(),
+  address2: zod.string(),
+  workingHours: zod.string(),
+  logoUrl: zod.string(),
+  facebookUrl: zod.string(),
+  youtubeUrl: zod.string(),
+  instagramUrl: zod.string(),
+  zaloPhone: zod.string(),
+  messengerUrl: zod.string(),
+  footerDescription: zod.string(),
+});

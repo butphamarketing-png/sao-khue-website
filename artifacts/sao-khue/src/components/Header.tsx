@@ -3,8 +3,10 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, PhoneCall, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { navMenu } from "@/lib/menu";
+import { useSiteSettings, telHref } from "@/lib/site-settings";
 
 export function Header() {
+  const s = useSiteSettings();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileSub, setOpenMobileSub] = useState<string | null>(null);
@@ -26,8 +28,8 @@ export function Header() {
         <div className="flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center shrink-0">
             <img
-              src="https://kientrucsaokhue.com/wp-content/uploads/2023/03/z4174323393119_4de9a59b7bd4ac243e066b2c5a15a62b-2.jpg"
-              alt="Kiến Trúc Sao Khuê"
+              src={s.logoUrl}
+              alt={s.companyName}
               className={`transition-all duration-300 object-contain ${isScrolled ? "h-12" : "h-16"}`}
             />
           </Link>
@@ -68,9 +70,9 @@ export function Header() {
 
           <div className="hidden lg:flex items-center shrink-0">
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-white rounded-full px-5 flex items-center gap-2 group">
-              <a href="tel:0936045268">
+              <a href={telHref(s.hotline1)}>
                 <PhoneCall size={16} className="group-hover:animate-bounce" />
-                <span className="font-bold text-sm">0936 045 268</span>
+                <span className="font-bold text-sm">{s.hotline1}</span>
               </a>
             </Button>
           </div>
@@ -123,7 +125,7 @@ export function Header() {
           ))}
           <div className="p-4">
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-white w-full flex items-center gap-2 justify-center">
-              <a href="tel:0936045268">
+              <a href={telHref(s.hotline1)}>
                 <PhoneCall size={18} />
                 <span>GỌI TƯ VẤN NGAY</span>
               </a>

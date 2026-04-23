@@ -82,6 +82,43 @@ export interface PostInput {
   metaKeywords?: string;
 }
 
+export interface SiteSettings {
+  id: number;
+  companyName: string;
+  taxCode: string;
+  hotline1: string;
+  hotline2: string;
+  email: string;
+  address1: string;
+  address2: string;
+  workingHours: string;
+  logoUrl: string;
+  facebookUrl: string;
+  youtubeUrl: string;
+  instagramUrl: string;
+  zaloPhone: string;
+  messengerUrl: string;
+  footerDescription: string;
+}
+
+export interface SiteSettingsInput {
+  companyName: string;
+  taxCode: string;
+  hotline1: string;
+  hotline2: string;
+  email: string;
+  address1: string;
+  address2: string;
+  workingHours: string;
+  logoUrl: string;
+  facebookUrl: string;
+  youtubeUrl: string;
+  instagramUrl: string;
+  zaloPhone: string;
+  messengerUrl: string;
+  footerDescription: string;
+}
+
 /**
  * Opaque session token — `Bearer <sid>`.
  */
