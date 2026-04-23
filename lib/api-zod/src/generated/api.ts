@@ -14,3 +14,170 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * @summary Get the currently authenticated user
+ */
+export const GetCurrentAuthUserHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+export const GetCurrentAuthUserResponse = zod.object({
+  user: zod.union([
+    zod.object({
+      id: zod.string(),
+      email: zod.string().email().nullable(),
+      firstName: zod.string().nullable(),
+      lastName: zod.string().nullable(),
+      profileImageUrl: zod.string().nullable(),
+    }),
+    zod.null(),
+  ]),
+  isAdmin: zod.boolean().optional(),
+});
+
+/**
+ * @summary Start the browser OIDC login flow
+ */
+export const BeginBrowserLoginQueryParams = zod.object({
+  returnTo: zod.coerce.string().optional(),
+});
+
+/**
+ * @summary Complete the browser OIDC login flow
+ */
+export const HandleBrowserLoginCallbackQueryParams = zod.object({
+  code: zod.coerce.string().optional(),
+  state: zod.coerce.string().optional(),
+  iss: zod.coerce.string().url().optional(),
+});
+
+/**
+ * @summary Clear the session and begin OIDC logout
+ */
+export const LogoutBrowserSessionHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+/**
+ * @summary Exchange a mobile OIDC code for a session token
+ */
+
+export const ExchangeMobileAuthorizationCodeBody = zod.object({
+  code: zod.string().min(1),
+  code_verifier: zod.string().min(1),
+  redirect_uri: zod.string().url().min(1),
+  state: zod.string().min(1),
+  nonce: zod.string().min(1).optional(),
+});
+
+export const ExchangeMobileAuthorizationCodeResponse = zod.object({
+  token: zod.string(),
+});
+
+export const LogoutMobileSessionHeader = zod.object({
+  Authorization: zod
+    .string()
+    .optional()
+    .describe("Opaque session token — `Bearer <sid>`."),
+});
+
+export const LogoutMobileSessionResponse = zod.object({
+  success: zod.boolean(),
+});
+
+/**
+ * @summary List posts, optionally filtered by category
+ */
+export const listPostsQueryLimitMax = 100;
+
+export const ListPostsQueryParams = zod.object({
+  category: zod.coerce.string().optional(),
+  limit: zod.coerce.number().min(1).max(listPostsQueryLimitMax).optional(),
+});
+
+export const ListPostsResponseItem = zod.object({
+  id: zod.number(),
+  slug: zod.string(),
+  title: zod.string(),
+  category: zod.string(),
+  excerpt: zod.string(),
+  content: zod.string(),
+  imageUrl: zod.string(),
+  createdAt: zod.coerce.date(),
+  updatedAt: zod.coerce.date(),
+});
+export const ListPostsResponse = zod.array(ListPostsResponseItem);
+
+/**
+ * @summary Create a new post (admin only)
+ */
+
+export const CreatePostBody = zod.object({
+  slug: zod.string().min(1),
+  title: zod.string().min(1),
+  category: zod.string().min(1),
+  excerpt: zod.string(),
+  content: zod.string(),
+  imageUrl: zod.string(),
+});
+
+/**
+ * @summary Get post by slug
+ */
+export const GetPostBySlugParams = zod.object({
+  slug: zod.coerce.string(),
+});
+
+export const GetPostBySlugResponse = zod.object({
+  id: zod.number(),
+  slug: zod.string(),
+  title: zod.string(),
+  category: zod.string(),
+  excerpt: zod.string(),
+  content: zod.string(),
+  imageUrl: zod.string(),
+  createdAt: zod.coerce.date(),
+  updatedAt: zod.coerce.date(),
+});
+
+/**
+ * @summary Update a post (admin only)
+ */
+export const UpdatePostParams = zod.object({
+  slug: zod.coerce.string(),
+});
+
+export const UpdatePostBody = zod.object({
+  slug: zod.string().min(1),
+  title: zod.string().min(1),
+  category: zod.string().min(1),
+  excerpt: zod.string(),
+  content: zod.string(),
+  imageUrl: zod.string(),
+});
+
+export const UpdatePostResponse = zod.object({
+  id: zod.number(),
+  slug: zod.string(),
+  title: zod.string(),
+  category: zod.string(),
+  excerpt: zod.string(),
+  content: zod.string(),
+  imageUrl: zod.string(),
+  createdAt: zod.coerce.date(),
+  updatedAt: zod.coerce.date(),
+});
+
+/**
+ * @summary Delete a post (admin only)
+ */
+export const DeletePostParams = zod.object({
+  slug: zod.coerce.string(),
+});

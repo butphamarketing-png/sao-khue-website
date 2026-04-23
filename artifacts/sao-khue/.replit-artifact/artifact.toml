@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Kiến Trúc Sao Khuê"
+version = "1.0.0"
+id = "artifacts/sao-khue"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21322
+
+[services.development]
+run = "pnpm --filter @workspace/sao-khue run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sao-khue", "run", "build" ]
+publicDir = "artifacts/sao-khue/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21322"
+BASE_PATH = "/"

@@ -1,0 +1,127 @@
+uploads = []
+
+[[generated]]
+id = "xNqNqPz2jYfYS7jKS6lle"
+uri = "file://artifacts/sao-khue/public/images/hero-1.png"
+type = "image"
+title = "Hero slide modern townhouse"
+
+[[generated]]
+id = "urOXCuZaXZb6o38KkP12g"
+uri = "file://artifacts/sao-khue/public/images/hero-2.png"
+type = "image"
+title = "Hero slide modern villa"
+
+[[generated]]
+id = "v9AI99S88dSYtpOeKrot4"
+uri = "file://artifacts/sao-khue/public/images/hero-3.png"
+type = "image"
+title = "Hero slide construction site"
+
+[[generated]]
+id = "nvQ7c7ZNrWBZSX_nOlZ8U"
+uri = "file://artifacts/sao-khue/public/images/service-1.png"
+type = "image"
+title = "Service turnkey building"
+
+[[generated]]
+id = "LSYVWA7Z_HHzCSFLPLFx5"
+uri = "file://artifacts/sao-khue/public/images/service-2.png"
+type = "image"
+title = "Service home renovation"
+
+[[generated]]
+id = "H2-wIJiT01Ju2iGwzZ4Cx"
+uri = "file://artifacts/sao-khue/public/images/service-3.png"
+type = "image"
+title = "Service rough construction"
+
+[[generated]]
+id = "VRxXekITKNjKchXXWZQuw"
+uri = "file://artifacts/sao-khue/public/images/service-4.png"
+type = "image"
+title = "Service architecture design"
+
+[[generated]]
+id = "YDqzJ8Fuq8p8AWTndw37b"
+uri = "file://artifacts/sao-khue/public/images/about.png"
+type = "image"
+title = "About section architects"
+
+[[generated]]
+id = "CyYVTaw3trfgGbrtjT_Hi"
+uri = "file://artifacts/sao-khue/public/images/project-1.png"
+type = "image"
+title = "Project modern townhouse 1"
+
+[[generated]]
+id = "HaAZP7-VtyRr09dy-LKkg"
+uri = "file://artifacts/sao-khue/public/images/project-2.png"
+type = "image"
+title = "Project luxury villa 2"
+
+[[outputs]]
+id = "oyPejzPXQb-kV9MrnQyYj"
+uri = "file://artifacts/sao-khue/public/images/project_1.jpg"
+type = "image"
+title = "modern vietnamese house exterior architecture"
+
+[[outputs]]
+id = "ZohjF7LRaxWoItjljq94l"
+uri = "file://artifacts/sao-khue/public/images/project_2.jpg"
+type = "image"
+title = "modern vietnamese house exterior architecture"
+
+[[outputs]]
+id = "_-FN7OyweFMUt1IA3EHhZ"
+uri = "file://artifacts/sao-khue/public/images/project_3.jpg"
+type = "image"
+title = "modern vietnamese house exterior architecture"
+
+[[outputs]]
+id = "ge-XgUaVsbsaJEhbTsV7h"
+uri = "file://artifacts/sao-khue/public/images/project_4.jpg"
+type = "image"
+title = "modern vietnamese house exterior architecture"
+
+[[outputs]]
+id = "QHo7r1oIpjQKbTDIk2-sx"
+uri = "file://artifacts/sao-khue/public/images/interior_1.jpg"
+type = "image"
+title = "modern house interior living room"
+
+[[outputs]]
+id = "vaNg1loY1dJPX4X-C3cCP"
+uri = "file://artifacts/sao-khue/public/images/interior_2.jpg"
+type = "image"
+title = "modern house interior living room"
+
+[[outputs]]
+id = "5Oa0nD3Baoqt9x7gQ9Hr6"
+uri = "file://artifacts/sao-khue/public/images/interior_3.jpg"
+type = "image"
+title = "modern house interior living room"
+
+[[outputs]]
+id = "1BnUiDBs5hV-kg1Kvmllk"
+uri = "file://artifacts/sao-khue/public/images/interior_4.jpg"
+type = "image"
+title = "modern house interior living room"
+
+[[outputs]]
+id = "nZ5Qm5R5QJEwQ8EL6sPIm"
+uri = "file://artifacts/sao-khue/public/images/news_1.jpg"
+type = "image"
+title = "construction site blueprint architect"
+
+[[outputs]]
+id = "voXpqkJe8oRI881pA_SeB"
+uri = "file://artifacts/sao-khue/public/images/news_2.jpg"
+type = "image"
+title = "construction site blueprint architect"
+
+[[outputs]]
+id = "cbN0VYqCbQSvdwewpxQ8u"
+uri = "file://artifacts/sao-khue/public/images/news_3.jpg"
+type = "image"
+title = "construction site blueprint architect"
