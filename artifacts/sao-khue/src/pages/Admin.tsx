@@ -259,7 +259,16 @@ function buildSettingsFromApi(
 }
 
 export default function Admin() {
-  const { user, isAuthenticated, isLoading, login, logout } = useAuth();
+  const {
+    user,
+    isAuthenticated,
+    isLoading,
+    authMode,
+    loginError,
+    login,
+    loginWithPassword,
+    logout,
+  } = useAuth();
   const qc = useQueryClient();
   const { data: posts, refetch: refetchPosts } = useListPosts();
   const { data: siteData, refetch: refetchSettings } = useGetSiteSettings();
@@ -285,6 +294,9 @@ export default function Admin() {
   const [postSubCategoryFilter, setPostSubCategoryFilter] = useState<string>("all");
   const [postSubCategory, setPostSubCategory] = useState<string>("");
   const [postSavedAt, setPostSavedAt] = useState<number | null>(null);
+  const [adminEmail, setAdminEmail] = useState("butphamarketing@gmail.com");
+  const [adminPassword, setAdminPassword] = useState("");
+  const [adminSubmitting, setAdminSubmitting] = useState(false);
 
   const [settingsForm, setSettingsForm] =
     useState<ExtendedSiteSettingsInput>(defaultExtendedSettings);
@@ -428,12 +440,60 @@ export default function Admin() {
             Khu vuc nay dung de quan ly bai viet, hero, cam ket, bang bao gia va
             thong tin hien thi ngoai trang chu.
           </p>
-          <Button
-            onClick={login}
-            className="mt-8 h-12 w-full rounded-xl bg-[#17579d] text-base font-semibold text-white hover:bg-[#124884]"
-          >
-            Dang nhap de tiep tuc
-          </Button>
+          {authMode === "password" ? (
+            <form
+              className="mt-8 space-y-4"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                setAdminSubmitting(true);
+                const ok = await loginWithPassword(adminEmail, adminPassword);
+                setAdminSubmitting(false);
+                if (ok) setAdminPassword("");
+              }}
+            >
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-slate-700">Email admin</label>
+                <Input
+                  value={adminEmail}
+                  onChange={(e) => setAdminEmail(e.target.value)}
+                  type="email"
+                  autoComplete="username"
+                  className="h-11 rounded-xl"
+                  placeholder="admin@example.com"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-slate-700">Mat khau admin</label>
+                <Input
+                  value={adminPassword}
+                  onChange={(e) => setAdminPassword(e.target.value)}
+                  type="password"
+                  autoComplete="current-password"
+                  className="h-11 rounded-xl"
+                  placeholder="Nhap mat khau admin"
+                />
+              </div>
+              {loginError ? (
+                <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600">
+                  {loginError}
+                </div>
+              ) : null}
+              <Button
+                type="submit"
+                disabled={adminSubmitting}
+                className="h-12 w-full rounded-xl bg-[#17579d] text-base font-semibold text-white hover:bg-[#124884]"
+              >
+                {adminSubmitting ? "Dang dang nhap..." : "Dang nhap de tiep tuc"}
+              </Button>
+            </form>
+          ) : (
+            <Button
+              onClick={login}
+              className="mt-8 h-12 w-full rounded-xl bg-[#17579d] text-base font-semibold text-white hover:bg-[#124884]"
+            >
+              Dang nhap de tiep tuc
+            </Button>
+          )}
         </div>
       </div>
     );

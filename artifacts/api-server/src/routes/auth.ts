@@ -1,5 +1,6 @@
 import * as oidc from "openid-client";
 import { Router, type IRouter, type Request, type Response } from "express";
+import { z } from "zod";
 import {
   GetCurrentAuthUserResponse,
   ExchangeMobileAuthorizationCodeBody,
@@ -20,8 +21,20 @@ import {
 } from "../lib/auth";
 
 const OIDC_COOKIE_TTL = 10 * 60 * 1000;
+const SimpleLoginBody = z.object({
+  email: z.string().trim().email().optional().default(""),
+  password: z.string().min(1),
+});
 
 const router: IRouter = Router();
+
+function isSimplePasswordAuthEnabled(): boolean {
+  return Boolean(process.env.ADMIN_PASSWORD);
+}
+
+function getSimpleAdminEmail(): string {
+  return process.env.ADMIN_EMAIL?.trim() || "admin@example.com";
+}
 
 function getOrigin(req: Request): string {
   const proto = req.headers["x-forwarded-proto"] || "https";
@@ -90,7 +103,60 @@ router.get("/auth/user", (req: Request, res: Response) => {
   );
 });
 
+router.get("/auth/mode", (_req: Request, res: Response) => {
+  res.json({
+    mode: isSimplePasswordAuthEnabled() || !process.env.REPL_ID ? "password" : "replit",
+    email: getSimpleAdminEmail(),
+  });
+});
+
+router.post("/auth/simple-login", async (req: Request, res: Response) => {
+  if (!isSimplePasswordAuthEnabled()) {
+    res.status(503).json({ error: "Admin password is not configured on the server" });
+    return;
+  }
+
+  const parsed = SimpleLoginBody.safeParse(req.body);
+  if (!parsed.success) {
+    res.status(400).json({ error: "Missing or invalid credentials" });
+    return;
+  }
+
+  const expectedPassword = process.env.ADMIN_PASSWORD!;
+  const expectedEmail = getSimpleAdminEmail();
+
+  if (parsed.data.password !== expectedPassword) {
+    res.status(401).json({ error: "Invalid credentials" });
+    return;
+  }
+
+  if (process.env.ADMIN_EMAIL && parsed.data.email !== expectedEmail) {
+    res.status(401).json({ error: "Invalid credentials" });
+    return;
+  }
+
+  const sessionData: SessionData = {
+    user: {
+      id: "render-admin",
+      email: expectedEmail,
+      firstName: "Render",
+      lastName: "Admin",
+      profileImageUrl: null,
+    },
+    access_token: "simple-admin-session",
+  };
+
+  const sid = await createSession(sessionData);
+  setSessionCookie(res, sid);
+  res.json({ ok: true, user: sessionData.user });
+});
+
 router.get("/login", async (req: Request, res: Response) => {
+  if (isSimplePasswordAuthEnabled() || !process.env.REPL_ID) {
+    res.redirect("/admin");
+    return;
+  }
+
   const config = await getOidcConfig();
   const callbackUrl = `${getOrigin(req)}/api/callback`;
 
@@ -188,11 +254,17 @@ router.get("/callback", async (req: Request, res: Response) => {
 });
 
 router.get("/logout", async (req: Request, res: Response) => {
-  const config = await getOidcConfig();
   const origin = getOrigin(req);
 
   const sid = getSessionId(req);
   await clearSession(res, sid);
+
+  if (isSimplePasswordAuthEnabled() || !process.env.REPL_ID) {
+    res.redirect(origin);
+    return;
+  }
+
+  const config = await getOidcConfig();
 
   const endSessionUrl = oidc.buildEndSessionUrl(config, {
     client_id: process.env.REPL_ID!,

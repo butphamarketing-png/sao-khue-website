@@ -40,30 +40,42 @@ interface AuthState {
   user: AuthUser | null;
   isLoading: boolean;
   isAuthenticated: boolean;
+  authMode: "replit" | "password";
+  loginError: string | null;
   login: () => void;
+  loginWithPassword: (email: string, password: string) => Promise<boolean>;
   logout: () => void;
 }
 
 export function useAuth(): AuthState {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [authMode, setAuthMode] = useState<"replit" | "password">("replit");
+  const [loginError, setLoginError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
 
-    fetch("/api/auth/user", { credentials: "include" })
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json() as Promise<{ user: AuthUser | null }>;
-      })
-      .then((data) => {
+    Promise.all([
+      fetch("/api/auth/mode", { credentials: "include" })
+        .then((res) => (res.ok ? (res.json() as Promise<{ mode?: "replit" | "password" }>) : null))
+        .catch(() => null),
+      fetch("/api/auth/user", { credentials: "include" })
+        .then((res) => {
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          return res.json() as Promise<{ user: AuthUser | null }>;
+        }),
+    ])
+      .then(([modeData, data]) => {
         if (!cancelled) {
+          setAuthMode(modeData?.mode === "password" ? "password" : "replit");
           setUser(data.user ?? null);
           setIsLoading(false);
         }
       })
       .catch(() => {
         if (!cancelled) {
+          setAuthMode("password");
           setUser(readLocalDevUser());
           setIsLoading(false);
         }
@@ -75,6 +87,8 @@ export function useAuth(): AuthState {
   }, []);
 
   const login = useCallback(() => {
+    setLoginError(null);
+
     if (isLocalDevHost()) {
       const localUser: AuthUser = {
         id: "local-dev-admin",
@@ -93,6 +107,41 @@ export function useAuth(): AuthState {
     window.location.href = `/api/login?returnTo=${encodeURIComponent(base)}`;
   }, []);
 
+  const loginWithPassword = useCallback(
+    async (email: string, password: string) => {
+      setLoginError(null);
+
+      if (isLocalDevHost()) {
+        login();
+        return true;
+      }
+
+      try {
+        const res = await fetch("/api/auth/simple-login", {
+          method: "POST",
+          credentials: "include",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ email, password }),
+        });
+
+        if (!res.ok) {
+          const data = (await res.json().catch(() => null)) as { error?: string } | null;
+          setLoginError(data?.error ?? "Dang nhap that bai");
+          return false;
+        }
+
+        const data = (await res.json()) as { user?: AuthUser | null };
+        setUser(data.user ?? null);
+        setIsLoading(false);
+        return true;
+      } catch {
+        setLoginError("Khong ket noi duoc den may chu dang nhap");
+        return false;
+      }
+    },
+    [login],
+  );
+
   const logout = useCallback(() => {
     if (isLocalDevHost()) {
       writeLocalDevUser(null);
@@ -108,7 +157,10 @@ export function useAuth(): AuthState {
     user,
     isLoading,
     isAuthenticated: !!user,
+    authMode,
+    loginError,
     login,
+    loginWithPassword,
     logout,
   };
 }
