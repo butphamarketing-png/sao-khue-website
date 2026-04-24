@@ -14,6 +14,7 @@ import CategoryPage from "@/pages/CategoryPage";
 import PostPage from "@/pages/PostPage";
 import Admin from "@/pages/Admin";
 import { SiteHead } from "@/components/SiteHead";
+import { SiteLoader } from "@/components/SiteLoader";
 
 const queryClient = new QueryClient();
 
@@ -54,6 +55,7 @@ function App() {
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <SiteHead />
+          <SiteLoader />
           <Router />
         </WouterRouter>
         <Toaster />

@@ -8,6 +8,8 @@ import { FloatingButtons } from "@/components/FloatingButtons";
 import { useListPosts } from "@workspace/api-client-react";
 import { findMenuByPath, navMenu } from "@/lib/menu";
 import { useLocation } from "wouter";
+import { normalizePosts } from "@/lib/posts";
+import { postMatchesSubSlug } from "@/lib/menu-posts";
 
 const categoryLabels: Record<string, string> = {
   "gioi-thieu": "Giới thiệu",
@@ -24,6 +26,7 @@ interface Props {
 export default function CategoryPage({ category, subSlug }: Props) {
   const [location] = useLocation();
   const { data: posts, isLoading } = useListPosts({ category });
+  const items = normalizePosts(posts);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,8 +37,8 @@ export default function CategoryPage({ category, subSlug }: Props) {
 
   // If a sub-slug is provided, filter posts whose slug starts with it
   const filteredPosts = subSlug
-    ? (posts ?? []).filter((p) => p.slug.startsWith(subSlug))
-    : posts ?? [];
+    ? items.filter((p) => postMatchesSubSlug(p, subSlug))
+    : items;
 
   const topItem = navMenu.find((m) => m.category === category);
 

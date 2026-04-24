@@ -1,75 +1,75 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { useAboutContent } from "@/lib/site-settings";
 
 export function AboutSection() {
-  const points = [
-    "Khách hàng là trên hết - Luôn lắng nghe và thấu hiểu",
-    "Sáng tạo không ngừng - Mang đến thiết kế độc bản",
-    "Đội ngũ giàu kinh nghiệm, tận tâm với từng dự án",
-    "Cam kết hành động, thi công đúng tiến độ và chất lượng"
-  ];
+  const content = useAboutContent();
 
   return (
-    <section id="gioi-thieu" className="py-20 bg-white">
+    <section id="gioi-thieu" className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="absolute -inset-4 bg-primary/5 transform -skew-y-3 z-0 rounded-3xl" />
-            <img 
-              src="/images/about.png" 
-              alt="Đội ngũ Kiến Trúc Sao Khuê" 
-              className="relative z-10 w-full h-auto rounded-lg shadow-xl object-cover aspect-[4/3]"
+            <div className="absolute -inset-4 z-0 -skew-y-3 rounded-3xl bg-primary/5" />
+            <img
+              src={content.imageUrl}
+              alt={content.title}
+              className="relative z-10 aspect-[4/3] h-auto w-full rounded-lg object-cover shadow-xl"
             />
-            <div className="absolute -bottom-6 -right-6 z-20 bg-primary text-white p-6 rounded-lg shadow-2xl hidden md:block">
-              <div className="text-4xl font-bold mb-1">10+</div>
-              <div className="text-sm font-medium opacity-90">Năm Kinh Nghiệm<br/>Xây Dựng</div>
+            <div className="absolute -bottom-6 -right-6 z-20 hidden rounded-lg bg-primary p-6 text-white shadow-2xl md:block">
+              <div className="mb-1 text-4xl font-bold">{content.experienceYears}</div>
+              <div className="text-sm font-medium opacity-90 whitespace-pre-line">
+                {content.experienceLabel}
+              </div>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="lg:pl-8"
           >
-            <div className="flex items-center gap-2 mb-4">
-              <div className="h-1 w-10 bg-accent rounded"></div>
-              <h3 className="text-accent font-bold uppercase tracking-wider text-sm">Về Chúng Tôi</h3>
+            <div className="mb-4 flex items-center gap-2">
+              <div className="h-1 w-10 rounded bg-accent"></div>
+              <h3 className="text-sm font-bold uppercase tracking-wider text-accent">
+                {content.eyebrow}
+              </h3>
             </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
-              CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ
+
+            <h2 className="mb-6 text-3xl font-bold leading-tight text-primary md:text-4xl">
+              {content.title}
             </h2>
-            
-            <p className="text-slate-600 mb-6 leading-relaxed text-lg text-justify">
-              Chuyên thiết kế, thi công xây dựng, sửa chữa và cải tạo nhà trọn gói tại Tp.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận. Sứ mệnh của chúng tôi là mang lại không gian sống và làm việc lý tưởng cho mỗi khách hàng.
+
+            <p className="mb-6 text-lg leading-relaxed text-slate-600 text-justify">
+              {content.intro}
             </p>
 
-            <p className="text-slate-600 mb-8 leading-relaxed text-justify">
-              Với tầm nhìn trở thành công ty hàng đầu trong ngành kiến trúc và xây dựng, KIẾN TRÚC SAO KHUÊ tự hào sở hữu đội ngũ kiến trúc sư, kỹ sư giỏi chuyên môn, giàu nhiệt huyết, luôn đặt chất lượng công trình và sự hài lòng của khách hàng lên hàng đầu.
+            <p className="mb-8 leading-relaxed text-slate-600 text-justify">
+              {content.body}
             </p>
 
-            <ul className="space-y-4 mb-10">
-              {points.map((point, index) => (
+            <ul className="mb-10 space-y-4">
+              {content.points.map((point, index) => (
                 <li key={index} className="flex items-start">
-                  <CheckCircle2 className="w-6 h-6 text-accent shrink-0 mr-3 mt-0.5" />
-                  <span className="text-slate-700 font-medium">{point}</span>
+                  <CheckCircle2 className="mr-3 mt-0.5 h-6 w-6 shrink-0 text-accent" />
+                  <span className="font-medium text-slate-700">{point}</span>
                 </li>
               ))}
             </ul>
 
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-sm px-8">
+            <Button asChild size="lg" className="rounded-sm bg-primary px-8 text-white hover:bg-primary/90">
               <Link href="/gioi-thieu">
-                XEM CHI TIẾT <ArrowRight className="ml-2 w-4 h-4" />
+                XEM CHI TIET <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </motion.div>

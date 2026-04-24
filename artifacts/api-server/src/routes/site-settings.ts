@@ -14,12 +14,27 @@ const SettingsInput = z.object({
   address2: z.string().default(""),
   workingHours: z.string().default(""),
   logoUrl: z.string().default(""),
+  loadingLogoUrl: z.string().default(""),
   facebookUrl: z.string().default(""),
   youtubeUrl: z.string().default(""),
   instagramUrl: z.string().default(""),
   zaloPhone: z.string().default(""),
   messengerUrl: z.string().default(""),
   footerDescription: z.string().default(""),
+  heroSlidesJson: z.string().default("[]"),
+  homeCommitmentsJson: z.string().default("[]"),
+  homePricingJson: z.string().default("[]"),
+  homeVideoUrl: z.string().default(""),
+  homeVideoLabel: z.string().default("Xem video"),
+  homeAboutEyebrow: z.string().default(""),
+  homeAboutTitle: z.string().default(""),
+  homeAboutIntro: z.string().default(""),
+  homeAboutBody: z.string().default(""),
+  homeAboutPointsJson: z.string().default("[]"),
+  homeAboutImageUrl: z.string().default(""),
+  homeAboutExperienceLabel: z.string().default(""),
+  homeAboutExperienceYears: z.string().default(""),
+  homeCalculatorConfigJson: z.string().default("{}"),
   gaTrackingId: z.string().default(""),
   gscVerification: z.string().default(""),
 });
@@ -27,7 +42,11 @@ const SettingsInput = z.object({
 const router: IRouter = Router();
 
 async function getOrCreate() {
-  const [row] = await db.select().from(siteSettingsTable).where(eq(siteSettingsTable.id, 1)).limit(1);
+  const [row] = await db
+    .select()
+    .from(siteSettingsTable)
+    .where(eq(siteSettingsTable.id, 1))
+    .limit(1);
   if (row) return row;
   const [created] = await db.insert(siteSettingsTable).values({ id: 1 }).returning();
   return created;
