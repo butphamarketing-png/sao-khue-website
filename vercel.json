@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm install --ignore-scripts",
   "buildCommand": "pnpm --filter @workspace/api-server run vercel-build",
-  "outputDirectory": "artifacts/api-server/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
   "framework": null
 }
