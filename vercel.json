@@ -1,8 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "pnpm install --ignore-scripts",
-  "buildCommand": "pnpm --filter @workspace/api-server run vercel-build",
+  "buildCommand": "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/sao-khue run build && cp -r artifacts/sao-khue/dist/public/. artifacts/api-server/public/ && pnpm --filter @workspace/api-server run vercel-build",
   "outputDirectory": "artifacts/api-server/public",
-  "rewrites": [{ "source": "/api/:path*", "destination": "/api" }],
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api" },
+    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
+  ],
   "framework": null
 }
