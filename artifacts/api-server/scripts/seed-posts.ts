@@ -1,7 +1,7 @@
 import { db, postsTable } from "@workspace/db";
 import { sql } from "drizzle-orm";
 
-type Seed = {
+export type SeedPost = {
   slug: string;
   title: string;
   category: string;
@@ -31,9 +31,10 @@ const lorem = (title: string) => `
 <p>Quý khách hàng có nhu cầu xin vui lòng liên hệ Hotline <strong>0936 045 268 - 0909 075 668</strong> để được tư vấn miễn phí 24/7.</p>
 `;
 
-const posts: Seed[] = [
-  // dich-vu
-  { slug: "xay-nha-tron-goi-tphcm", title: "Dịch vụ xây nhà trọn gói tại TP.HCM uy tín giá tốt 2026", category: "dich-vu", excerpt: "Sao Khuê nhận xây nhà trọn gói trọn gói chìa khoá trao tay tại TP.HCM với báo giá minh bạch, vật liệu chính hãng, bảo hành dài hạn.", content: lorem("Xây nhà trọn gói TP.HCM"), imageUrl: BUILD },
+/** 18 bài — khớp 17 mục menu con + 1 bài công trình thiết kế bổ sung */
+export const seedPosts: SeedPost[] = [
+  // dich-vu (7)
+  { slug: "xay-nha-tron-goi-tphcm", title: "Dịch vụ xây nhà trọn gói tại TP.HCM uy tín giá tốt 2026", category: "dich-vu", excerpt: "Sao Khuê nhận xây nhà trọn gói chìa khoá trao tay tại TP.HCM với báo giá minh bạch, vật liệu chính hãng, bảo hành dài hạn.", content: lorem("Xây nhà trọn gói TP.HCM"), imageUrl: BUILD },
   { slug: "sua-chua-nha-tphcm", title: "Sửa chữa nhà phố, cải tạo nâng cấp toàn diện", category: "dich-vu", excerpt: "Đơn vị sửa chữa nhà uy tín, nhận cải tạo nội ngoại thất, sơn sửa, chống thấm, lát nền cho nhà phố và biệt thự.", content: lorem("Sửa chữa nhà"), imageUrl: REPAIR },
   { slug: "xay-dung-phan-tho", title: "Xây dựng phần thô nhà phố giá cạnh tranh", category: "dich-vu", excerpt: "Nhận thi công phần thô nhà phố, biệt thự với đội ngũ thợ lành nghề và quản lý công trình chuyên nghiệp.", content: lorem("Xây dựng phần thô"), imageUrl: BUILD },
   { slug: "thiet-ke-nha", title: "Thiết kế nhà ở, nhà phố, biệt thự hiện đại", category: "dich-vu", excerpt: "Đội ngũ kiến trúc sư trẻ, sáng tạo mang đến những phương án thiết kế tối ưu công năng và thẩm mỹ.", content: lorem("Thiết kế nhà"), imageUrl: DESIGN },
@@ -41,18 +42,19 @@ const posts: Seed[] = [
   { slug: "hoan-thien-nha", title: "Hoàn thiện nhà / căn hộ đã xây thô trọn gói", category: "dich-vu", excerpt: "Sơn nước, ốp lát, điện nước, nội thất – chúng tôi nhận hoàn thiện trọn gói cho căn hộ và nhà phố.", content: lorem("Hoàn thiện nhà"), imageUrl: REPAIR },
   { slug: "khuyen-mai-xay-dung", title: "Khuyến mại xây dựng tháng này: Tặng thiết kế khi xây trọn gói", category: "dich-vu", excerpt: "Ưu đãi đặc biệt: miễn phí thiết kế kiến trúc khi ký hợp đồng xây nhà trọn gói trong tháng này.", content: lorem("Khuyến mại"), imageUrl: HERO },
 
-  // gioi-thieu
+  // gioi-thieu (4)
   { slug: "so-do-to-chuc", title: "Sơ đồ tổ chức Công ty TNHH Kiến Trúc Sao Khuê", category: "gioi-thieu", excerpt: "Cơ cấu tổ chức gọn nhẹ, linh hoạt với 5 phòng ban chính: Thiết kế – Thi công – Vật tư – Kế toán – Chăm sóc khách hàng.", content: lorem("Sơ đồ tổ chức"), imageUrl: TEAM },
   { slug: "ve-chung-toi", title: "Về Công ty Kiến Trúc Sao Khuê", category: "gioi-thieu", excerpt: "Hơn 10 năm kinh nghiệm trong ngành xây dựng dân dụng, hơn 500 công trình bàn giao thành công khắp TP.HCM.", content: lorem("Về chúng tôi"), imageUrl: TEAM },
   { slug: "hoat-dong-sao-khue", title: "Hoạt động Sao Khuê – Đồng hành cùng cộng đồng", category: "gioi-thieu", excerpt: "Các hoạt động xã hội, từ thiện, đào tạo nghề và hỗ trợ cộng đồng do Sao Khuê tổ chức trong những năm qua.", content: lorem("Hoạt động Sao Khuê"), imageUrl: TEAM },
   { slug: "tuyen-dung", title: "Tuyển dụng kỹ sư, kiến trúc sư, giám sát công trình 2026", category: "gioi-thieu", excerpt: "Sao Khuê đang tìm kiếm các ứng viên tài năng cho các vị trí kỹ sư xây dựng, kiến trúc sư và giám sát công trình.", content: lorem("Tuyển dụng"), imageUrl: TEAM },
 
-  // cong-trinh
+  // cong-trinh (4) — slug prefix khớp menu con
   { slug: "xay-nha-pho-binh-thanh", title: "Công trình xây nhà phố tại Bình Thạnh", category: "cong-trinh", excerpt: "Bàn giao thành công công trình nhà phố 4 tầng tại quận Bình Thạnh, diện tích 5x18m, phong cách hiện đại.", content: lorem("Công trình xây nhà"), imageUrl: BUILD },
   { slug: "sua-nha-quan-3", title: "Cải tạo nhà phố cũ tại Quận 3", category: "cong-trinh", excerpt: "Hồi sinh ngôi nhà 30 năm tuổi tại Q.3 thành không gian sống hiện đại, tiện nghi cho gia đình 6 người.", content: lorem("Cải tạo nhà"), imageUrl: REPAIR },
-  { slug: "thiet-ke-biet-thu-thu-duc", title: "Thiết kế biệt thự sân vườn tại Thủ Đức", category: "cong-trinh", excerpt: "Phương án thiết kế biệt thự sân vườn 200m2 tại TP. Thủ Đức, phong cách Á Đông kết hợp hiện đại.", content: lorem("Thiết kế biệt thự"), imageUrl: DESIGN },
+  { slug: "thiet-ke-nha-biet-thu-thu-duc", title: "Thiết kế biệt thự sân vườn tại Thủ Đức", category: "cong-trinh", excerpt: "Phương án thiết kế biệt thự sân vườn 200m² tại TP. Thủ Đức, phong cách Á Đông kết hợp hiện đại.", content: lorem("Thiết kế biệt thự"), imageUrl: DESIGN },
+  { slug: "thiet-ke-nha-phong-cach-hien-dai", title: "Thiết kế nhà phố phong cách hiện đại tại TP.HCM", category: "cong-trinh", excerpt: "Mẫu thiết kế nhà phố 3–4 tầng tối ưu ánh sáng, thông gió và công năng cho gia đình trẻ.", content: lorem("Thiết kế nhà phố"), imageUrl: DESIGN },
 
-  // kinh-nghiem
+  // kinh-nghiem (3)
   { slug: "cam-nang-xay-nha-2026", title: "Cẩm nang xây nhà từ A đến Z cho người mới", category: "kinh-nghiem", excerpt: "Tất cả những gì bạn cần biết khi xây nhà lần đầu: chuẩn bị tài chính, chọn nhà thầu, xin phép, giám sát công trình.", content: lorem("Cẩm nang xây nhà"), imageUrl: HERO },
   { slug: "luat-xay-dung-moi-nhat", title: "Tóm tắt Luật Xây Dựng và những điểm cần lưu ý 2026", category: "kinh-nghiem", excerpt: "Phổ biến những quy định mới nhất của Luật Xây dựng, giúp chủ nhà tránh được các rủi ro pháp lý khi thi công.", content: lorem("Luật Xây Dựng"), imageUrl: HERO },
   { slug: "phong-thuy-nha-o", title: "Phong thuỷ nhà ở: Hướng nhà, bố trí phòng hợp tuổi", category: "kinh-nghiem", excerpt: "Hướng dẫn cơ bản về phong thuỷ trong xây nhà, từ chọn hướng, bố trí cửa chính, phòng ngủ, bếp đến phòng thờ.", content: lorem("Phong thuỷ"), imageUrl: HERO },
@@ -60,21 +62,31 @@ const posts: Seed[] = [
 
 async function main() {
   console.log("Seeding posts...");
-  for (const p of posts) {
+  for (const p of seedPosts) {
     await db
       .insert(postsTable)
       .values(p)
       .onConflictDoUpdate({
         target: postsTable.slug,
-        set: { title: p.title, category: p.category, excerpt: p.excerpt, content: p.content, imageUrl: p.imageUrl, updatedAt: sql`now()` },
+        set: {
+          title: p.title,
+          category: p.category,
+          excerpt: p.excerpt,
+          content: p.content,
+          imageUrl: p.imageUrl,
+          updatedAt: sql`now()`,
+        },
       });
     console.log(" -", p.slug);
   }
-  console.log("Done. Total:", posts.length);
+  console.log("Done. Total:", seedPosts.length);
   process.exit(0);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+const isDirectRun = process.argv[1]?.replace(/\\/g, "/").includes("seed-posts");
+if (isDirectRun) {
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
+}

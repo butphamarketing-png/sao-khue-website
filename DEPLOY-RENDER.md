@@ -100,7 +100,7 @@ Test cac URL:
 - `/gioi-thieu`
 - `/dich-vu`
 - `/cong-trinh`
-- `/kinh-nghiem-xay-dung`
+- `/kinh-nghiem` (hoac `/kinh-nghiem-xay-dung` — se tu chuyen huong)
 - `/lien-he`
 - `/admin`
 - `/api/healthz`

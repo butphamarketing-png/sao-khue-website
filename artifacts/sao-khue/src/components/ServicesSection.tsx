@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { normalizePosts } from "@/lib/posts";
+import { useSectionMeta } from "@/lib/site-settings";
 
 const fallback = [
   { id: "sn", title: "SỬA NHÀ TRỌN GÓI", imageUrl: "/images/service-2.png", slug: "" },
@@ -14,6 +16,7 @@ const fallback = [
 ];
 
 export function ServicesSection() {
+  const meta = useSectionMeta();
   const { data, isLoading } = useListPosts({ category: "dich-vu", limit: 4 });
   const posts = normalizePosts(data);
   const services =
@@ -27,14 +30,12 @@ export function ServicesSection() {
       : fallback;
 
   return (
-    <section id="dich-vu" className="bg-white py-24">
+    <section id="dich-vu" className="bg-white py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase text-primary md:text-4xl">
-            Dịch vụ của chúng tôi
-          </h2>
-          <div className="mx-auto h-1 w-24 rounded bg-accent"></div>
-        </div>
+        <SectionHeader
+          title={meta.services.title}
+          subtitle={meta.services.subtitle}
+        />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {isLoading

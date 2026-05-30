@@ -1,4 +1,25 @@
 import { useGetSiteSettings, type SiteSettings } from "@workspace/api-client-react";
+import {
+  type CategoryPagesMap,
+  type ContactSectionContent,
+  type CtaBannerContent,
+  type FaqItem,
+  type HomeSectionMeta,
+  type ProcessStep,
+  type QuoteServiceItem,
+  type StatItem,
+  type TestimonialItem,
+  defaultCategoryPages,
+  defaultContactSection,
+  defaultCtaBanner,
+  defaultFaqs,
+  defaultProcessSteps,
+  defaultQuoteServices,
+  defaultSectionMeta,
+  defaultStats,
+  defaultTestimonials,
+} from "@/lib/home-content";
+import { BUNDLED_LOGO_URL, resolveLogoUrl } from "@/lib/brand-assets";
 
 export type HeroSlide = {
   image: string;
@@ -119,6 +140,10 @@ export const defaultAboutPoints = [
   "Cam kết hành động, thi công đúng tiến độ và chất lượng",
 ];
 
+export const LOCAL_LOGO = BUNDLED_LOGO_URL;
+
+export { resolveLogoUrl };
+
 export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   id: 0,
   companyName: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
@@ -129,9 +154,8 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   address1: "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM",
   address2: "146 duong 16, khu do thi Van Phuc",
   workingHours: "8:00 - 17:30",
-  logoUrl:
-    "https://kientrucsaokhue.com/wp-content/uploads/2023/03/z4174323393119_4de9a59b7bd4ac243e066b2c5a15a62b-2.jpg",
-  loadingLogoUrl: "",
+  logoUrl: LOCAL_LOGO,
+  loadingLogoUrl: LOCAL_LOGO,
   facebookUrl: "https://facebook.com/kientrucsaokhue",
   youtubeUrl: "",
   instagramUrl: "",
@@ -159,6 +183,16 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
     tronGoiRates: { "trung-binh": 4850000, "tb-kha": 5500000, "kha": 6700000 },
     note: "Công thức tham khảo theo đơn giá xây dựng nhà phố/biệt thự phổ biến trên thị trường.",
   } satisfies CostCalculatorConfig),
+  homeStatsJson: JSON.stringify(defaultStats),
+  homeTestimonialsJson: JSON.stringify(defaultTestimonials),
+  homeFaqJson: JSON.stringify(defaultFaqs),
+  homeProcessJson: JSON.stringify(defaultProcessSteps),
+  categoryPagesJson: JSON.stringify(defaultCategoryPages),
+  homeSectionMetaJson: JSON.stringify(defaultSectionMeta),
+  homeCtaJson: JSON.stringify(defaultCtaBanner),
+  homeQuoteServicesJson: JSON.stringify(defaultQuoteServices),
+  homeContactJson: JSON.stringify(defaultContactSection),
+  topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
   gscVerification: "",
 };
@@ -267,6 +301,8 @@ export function useSiteSettings(): SiteSettings & Record<string, string> {
   const merged = { ...defaultSiteSettings, ...(data as Record<string, string> | undefined) };
   return {
     ...merged,
+    logoUrl: resolveLogoUrl(merged.logoUrl),
+    loadingLogoUrl: resolveLogoUrl(merged.loadingLogoUrl || merged.logoUrl),
     companyName: restoreKnownVietnameseText(merged.companyName),
     footerDescription: restoreKnownVietnameseText(merged.footerDescription),
     homeAboutEyebrow: restoreKnownVietnameseText(merged.homeAboutEyebrow),
@@ -328,6 +364,60 @@ export function useAboutContent() {
       restoreKnownVietnameseText(point),
     ),
   };
+}
+
+export function useHomeStats(): StatItem[] {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeStatsJson, defaultStats);
+}
+
+export function useTestimonials(): TestimonialItem[] {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeTestimonialsJson, defaultTestimonials);
+}
+
+export function useFaqs(): FaqItem[] {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeFaqJson, defaultFaqs);
+}
+
+export function useProcessSteps(): ProcessStep[] {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeProcessJson, defaultProcessSteps);
+}
+
+export function useCategoryPages(): CategoryPagesMap {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.categoryPagesJson, defaultCategoryPages);
+}
+
+export function useSectionMeta(): HomeSectionMeta {
+  const settings = useSiteSettings();
+  const parsed = parseJsonValue<Partial<HomeSectionMeta>>(settings.homeSectionMetaJson, {});
+  return { ...defaultSectionMeta, ...parsed };
+}
+
+export function useCtaBanner(): CtaBannerContent {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeCtaJson, defaultCtaBanner);
+}
+
+export function useQuoteServices(): QuoteServiceItem[] {
+  const settings = useSiteSettings();
+  return parseJsonValue(settings.homeQuoteServicesJson, defaultQuoteServices);
+}
+
+export function useContactSection(): ContactSectionContent {
+  const settings = useSiteSettings();
+  return {
+    ...defaultContactSection,
+    ...parseJsonValue<Partial<ContactSectionContent>>(settings.homeContactJson, {}),
+  };
+}
+
+export function useTopBarSlogan(): string {
+  const settings = useSiteSettings();
+  return settings.topBarSlogan || defaultSiteSettings.topBarSlogan;
 }
 
 export function telHref(phone?: string | null): string {

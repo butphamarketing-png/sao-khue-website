@@ -1,95 +1,174 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Building2, MapPin, PhoneCall, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useSiteSettings } from "@/lib/site-settings";
+import { useContactSection, useSiteSettings, telHref } from "@/lib/site-settings";
+import { toast } from "@/hooks/use-toast";
 
 export function ContactCTASection() {
   const s = useSiteSettings();
+  const contact = useContactSection();
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const body = [
+      `Họ tên: ${form.name}`,
+      `Điện thoại: ${form.phone}`,
+      form.email && `Email: ${form.email}`,
+      form.service && `Dịch vụ: ${form.service}`,
+      form.message && `Nội dung: ${form.message}`,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    if (s.email) {
+      window.location.href = `mailto:${s.email}?subject=${encodeURIComponent(
+        `[Sao Khuê] Yêu cầu báo giá — ${form.name}`
+      )}&body=${encodeURIComponent(body)}`;
+    }
+
+    toast({
+      title: "Đã ghi nhận yêu cầu",
+      description: `Cảm ơn ${form.name}! Chúng tôi sẽ liên hệ qua ${form.phone} trong thời gian sớm nhất.`,
+    });
+    setForm({ name: "", phone: "", email: "", service: "", message: "" });
+  };
+
   return (
-    <section id="lien-he" className="relative py-20 bg-primary">
-      <div className="absolute inset-0 opacity-10">
-        <img 
-          src="/images/hero-3.png" 
-          alt="Background" 
-          className="w-full h-full object-cover"
-        />
+    <section id="lien-he" className="relative overflow-hidden py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img src={contact.backgroundImageUrl || "/images/hero-3.png"} alt="" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-[#0a3d6b]/90 to-slate-900/95" />
       </div>
-      <div className="absolute inset-0 bg-primary/90"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="w-full lg:w-1/2 text-white">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight uppercase">
-              LIÊN HỆ TƯ VẤN <br/><span className="text-accent">MIỄN PHÍ</span>
-            </h2>
-            <p className="text-lg mb-8 text-gray-300 max-w-lg">
-              Để lại thông tin, đội ngũ kiến trúc sư và kỹ sư của Sao Khuê sẽ liên hệ tư vấn và khảo sát tận nơi hoàn toàn miễn phí cho bạn.
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start">
+          <div className="w-full text-white lg:w-[45%]">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-accent">
+              {contact.eyebrow}
             </p>
-            
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-accent text-xl">📞</span>
-                </div>
-                <div>
-                  <div className="text-sm text-gray-400">Hotline Tư Vấn 24/7</div>
-                  <div className="text-2xl font-bold text-accent">{s.hotline1}</div>
-                </div>
-              </div>
+            <h2 className="mb-5 text-3xl font-bold uppercase leading-tight md:text-4xl lg:text-5xl">
+              {contact.titleLine1}
+              <span className="mt-2 block text-accent">{contact.titleAccent}</span>
+            </h2>
+            <p className="mb-10 max-w-lg text-base leading-relaxed text-blue-100/90 md:text-lg">
+              {contact.description}
+            </p>
 
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-accent text-xl">🏢</span>
+            <div className="space-y-5">
+              <a
+                href={telHref(s.hotline1)}
+                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur transition hover:bg-white/15"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-white">
+                  <PhoneCall size={22} />
                 </div>
                 <div>
-                  <div className="text-sm text-gray-400">Trụ sở chính</div>
-                  <div className="text-lg font-semibold">{s.address1}</div>
+                  <div className="text-sm text-blue-200">{contact.hotlineLabel}</div>
+                  <div className="text-xl font-bold">{s.hotline1}</div>
+                </div>
+              </a>
+
+              <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
+                  <MapPin size={22} />
+                </div>
+                <div>
+                  <div className="text-sm text-blue-200">{contact.addressLabel}</div>
+                  <div className="text-base font-semibold leading-relaxed">{s.address1}</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
-            <motion.div 
+          <div className="w-full lg:w-[55%]">
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-white rounded-xl shadow-2xl p-8"
+              transition={{ duration: 0.5 }}
+              className="rounded-3xl border border-white/20 bg-white/95 p-6 shadow-2xl backdrop-blur-md md:p-8"
             >
-              <h3 className="text-2xl font-bold text-primary mb-6 text-center">NHẬN BÁO GIÁ NGAY</h3>
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
+                  <Building2 size={20} />
+                </div>
+                <h3 className="text-xl font-bold text-primary md:text-2xl">{contact.formTitle}</h3>
+              </div>
+
+              <form className="space-y-4" onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-700">Họ và tên *</label>
-                    <Input placeholder="Nhập họ tên của bạn" className="bg-slate-50 border-slate-200" required />
+                    <Input
+                      placeholder="Nhập họ tên"
+                      className="rounded-xl border-slate-200 bg-slate-50"
+                      required
+                      value={form.name}
+                      onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
+                    />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-700">Số điện thoại *</label>
-                    <Input placeholder="Nhập số điện thoại" type="tel" className="bg-slate-50 border-slate-200" required />
+                    <Input
+                      placeholder="Nhập số điện thoại"
+                      type="tel"
+                      className="rounded-xl border-slate-200 bg-slate-50"
+                      required
+                      value={form.phone}
+                      onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
+                    />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700">Email</label>
-                  <Input placeholder="Nhập địa chỉ email" type="email" className="bg-slate-50 border-slate-200" />
+                  <Input
+                    placeholder="Nhập email"
+                    type="email"
+                    className="rounded-xl border-slate-200 bg-slate-50"
+                    value={form.email}
+                    onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                  />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700">Dịch vụ quan tâm</label>
-                  <select className="flex h-10 w-full items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                  <select
+                    className="flex h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary"
+                    value={form.service}
+                    onChange={(e) => setForm((f) => ({ ...f, service: e.target.value }))}
+                  >
                     <option value="">Chọn dịch vụ</option>
-                    <option value="Xây nhà trọn gói">Xây nhà trọn gói</option>
-                    <option value="Sửa chữa nhà">Sửa chữa nhà</option>
-                    <option value="Xây dựng phần thô">Xây dựng phần thô</option>
-                    <option value="Thiết kế nội thất/kiến trúc">Thiết kế nội thất/kiến trúc</option>
+                    {contact.serviceOptions.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
                   </select>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-slate-700">Nội dung yêu cầu</label>
-                  <Textarea placeholder="Vui lòng mô tả sơ bộ về nhu cầu của bạn (diện tích, quy mô, ý tưởng...)" className="bg-slate-50 border-slate-200 min-h-[100px]" />
+                  <Textarea
+                    placeholder="Mô tả sơ bộ nhu cầu (diện tích, quy mô, ý tưởng...)"
+                    className="min-h-[110px] rounded-xl border-slate-200 bg-slate-50"
+                    value={form.message}
+                    onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
+                  />
                 </div>
-                <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-white font-bold py-6 text-lg rounded uppercase tracking-wider">
-                  GỬI YÊU CẦU
+                <Button
+                  type="submit"
+                  className="h-auto w-full rounded-full bg-accent py-6 text-base font-bold uppercase tracking-wide hover:bg-accent/90"
+                >
+                  <Send className="mr-2 h-5 w-5" />
+                  {contact.submitLabel}
                 </Button>
               </form>
             </motion.div>

@@ -34,7 +34,7 @@ export function FloatingButtons() {
           {s.hotline1 && (
             <MobileAction href={telHref(s.hotline1)} className="bg-accent text-white">
               <PhoneCall size={18} />
-              Goi ngay
+              Gọi ngay
             </MobileAction>
           )}
           {s.zaloPhone && (
@@ -54,7 +54,7 @@ export function FloatingButtons() {
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#17579d] px-4 py-3 text-sm font-semibold text-white shadow-sm"
             >
               <MessageCircleMore size={18} />
-              Lien he
+              Liên hệ
             </a>
           )}
         </div>

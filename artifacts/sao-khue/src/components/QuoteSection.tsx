@@ -1,54 +1,44 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-
-const services = [
-  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/bao-gia" },
-  { id: "02", title: "SỬA CHỮA\nNHÀ", link: "/bao-gia" },
-  { id: "03", title: "XÂY DỰNG\nPHẦN THÔ", link: "/bao-gia" },
-  { id: "04", title: "THIẾT KẾ\nNHÀ", link: "/dich-vu" },
-];
+import { SectionHeader } from "@/components/SectionHeader";
+import { useQuoteServices, useSectionMeta } from "@/lib/site-settings";
 
 export function QuoteSection() {
-  return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 uppercase tracking-wide">
-            BẢNG BÁO GIÁ
-          </h2>
-          <div className="w-24 h-1 bg-accent mx-auto rounded"></div>
-        </div>
+  const services = useQuoteServices();
+  const meta = useSectionMeta();
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+  if (services.length === 0) return null;
+
+  return (
+    <section className="bg-white py-20 md:py-28">
+      <div className="container mx-auto px-4">
+        <SectionHeader title={meta.quote.title} subtitle={meta.quote.subtitle} />
+
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
               className="flex justify-center"
             >
               <Link href={service.link} className="group block">
-                <div className="relative w-64 h-64">
-                  {/* Dashed outer ring */}
-                  <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/40 group-hover:border-primary transition-colors duration-500 group-hover:rotate-180 transform transition-transform"
-                       style={{ transitionDuration: '1.5s' }} />
-
-                  {/* Inner solid blue circle */}
-                  <div className="absolute inset-3 rounded-full bg-primary flex flex-col items-center justify-center text-white shadow-2xl group-hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-xl font-bold uppercase text-center leading-tight whitespace-pre-line px-4">
+                <div className="relative h-64 w-64">
+                  <div
+                    className="absolute inset-0 rounded-full border-2 border-dashed border-primary/30 transition-all duration-700 group-hover:rotate-180 group-hover:border-primary"
+                    style={{ transitionDuration: "1.2s" }}
+                  />
+                  <div className="absolute inset-3 flex flex-col items-center justify-center rounded-full bg-gradient-to-br from-primary to-[#0c4a8a] text-white shadow-xl transition-transform duration-300 group-hover:scale-105">
+                    <h3 className="whitespace-pre-line px-4 text-center text-lg font-bold uppercase leading-tight">
                       {service.title}
                     </h3>
-
-                    {/* Red XEM CHI TIẾT pill at bottom */}
-                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-bold uppercase px-5 py-2 rounded-full shadow-lg group-hover:bg-accent/90 whitespace-nowrap tracking-wider">
-                      Xem chi tiết
+                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-5 py-2 text-xs font-bold uppercase tracking-wider text-white shadow-lg transition group-hover:bg-accent/90">
+                      {service.buttonLabel || "Xem chi tiết"}
                     </div>
                   </div>
-
-                  {/* Red number badge top-left */}
-                  <div className="absolute -top-1 -left-1 w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center font-bold text-lg shadow-xl border-4 border-white z-10">
+                  <div className="absolute -left-1 -top-1 z-10 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-accent text-lg font-bold text-white shadow-xl">
                     {service.id}
                   </div>
                 </div>

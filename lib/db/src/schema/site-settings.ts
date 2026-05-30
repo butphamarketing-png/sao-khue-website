@@ -16,12 +16,8 @@ export const siteSettingsTable = pgTable("site_settings", {
     .notNull()
     .default("146 duong 16, khu do thi Van Phuc"),
   workingHours: text("working_hours").notNull().default("8:00 - 17:30"),
-  logoUrl: text("logo_url")
-    .notNull()
-    .default(
-      "https://kientrucsaokhue.com/wp-content/uploads/2023/03/z4174323393119_4de9a59b7bd4ac243e066b2c5a15a62b-2.jpg",
-    ),
-  loadingLogoUrl: text("loading_logo_url").notNull().default(""),
+  logoUrl: text("logo_url").notNull().default("/images/logo.png"),
+  loadingLogoUrl: text("loading_logo_url").notNull().default("/images/logo.png"),
   facebookUrl: text("facebook_url")
     .notNull()
     .default("https://facebook.com/kientrucsaokhue"),
@@ -66,6 +62,18 @@ export const siteSettingsTable = pgTable("site_settings", {
     .notNull()
     .default("10+"),
   homeCalculatorConfigJson: text("home_calculator_config_json").notNull().default("{}"),
+  homeStatsJson: text("home_stats_json").notNull().default("[]"),
+  homeTestimonialsJson: text("home_testimonials_json").notNull().default("[]"),
+  homeFaqJson: text("home_faq_json").notNull().default("[]"),
+  homeProcessJson: text("home_process_json").notNull().default("[]"),
+  categoryPagesJson: text("category_pages_json").notNull().default("{}"),
+  homeSectionMetaJson: text("home_section_meta_json").notNull().default("{}"),
+  homeCtaJson: text("home_cta_json").notNull().default("{}"),
+  homeQuoteServicesJson: text("home_quote_services_json").notNull().default("[]"),
+  homeContactJson: text("home_contact_json").notNull().default("{}"),
+  topBarSlogan: text("top_bar_slogan")
+    .notNull()
+    .default("Tận tâm — Uy tín — Chất lượng"),
   gaTrackingId: text("ga_tracking_id").notNull().default(""),
   gscVerification: text("gsc_verification").notNull().default(""),
 });

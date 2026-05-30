@@ -21,17 +21,86 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { AdminSiteMap } from "@/components/admin/AdminSiteMap";
+import type { AdminView } from "@/components/admin/AdminShell";
+import {
+  CategoryPagesPreviewCard,
+  CtaBannerPreviewCard,
+  ContactPreviewCard,
+  FaqPreviewCard,
+  ProcessPreviewCard,
+  QuoteServicesPreviewCard,
+  StatsPreviewCard,
+  TestimonialsPreviewCard,
+  VideoPreviewCard,
+} from "@/components/admin/AdminSectionPreviews";
+import {
+  CalculatorRatesEditor,
+  type CalculatorConfig,
+  CategoryPagesEditor,
+  ContactSectionEditor,
+  FaqEditor,
+  ProcessEditor,
+  QuoteServicesEditor,
+  SectionsMetaEditor,
+  StatsEditor,
+  TestimonialsEditor,
+} from "@/components/admin/HomeSectionEditors";
+import {
+  defaultCategoryPages,
+  defaultContactSection,
+  defaultCtaBanner,
+  defaultFaqs,
+  defaultProcessSteps,
+  defaultQuoteServices,
+  defaultSectionMeta,
+  defaultStats,
+  defaultTestimonials,
+  type CategoryPagesMap,
+  type ContactSectionContent,
+  type CtaBannerContent,
+  type FaqItem,
+  type HomeSectionMeta,
+  type ProcessStep,
+  type QuoteServiceItem,
+  type StatItem,
+  type TestimonialItem,
+} from "@/lib/home-content";
+import { ImageUploadField } from "@/components/ImageUploadField";
+import { AdminLogin } from "@/components/admin/AdminLogin";
+import { AdminLivePreview } from "@/components/admin/AdminLivePreview";
+import { IconPickerField } from "@/components/admin/IconPickerField";
+import { AdminShell } from "@/components/admin/AdminShell";
+import {
+  AddRowButton,
+  ChecklistCard,
+  DashboardLinkCard,
+  EditorStatCard,
+  Field,
+  FieldHint,
+  FormSection,
+  HintActionButton,
+  Panel,
+  PreviewShell,
+  RepeatCard,
+  SectionTitle,
+  SettingsScreen,
+  StickyToolbar,
+  ToolbarButton,
+} from "@/components/admin/admin-ui";
 import { navMenu } from "@/lib/menu";
 import {
   type CommitmentItem,
   type HeroSlide,
   type PricingItem,
+  defaultSiteSettings,
   defaultAboutPoints,
   defaultCommitments,
   defaultHeroSlides,
   defaultPricingItems,
 } from "@/lib/site-settings";
 import { normalizePosts } from "@/lib/posts";
+import { BUNDLED_LOGO_URL, resolveLogoUrl } from "@/lib/brand-assets";
 import {
   ensureSlugMatchesSubSlug,
   getMenuChildLabel,
@@ -42,39 +111,30 @@ import {
   parseSubCategoryKey,
 } from "@/lib/menu-posts";
 import {
+  BarChart3,
   BookOpen,
   Building2,
   Calculator,
-  ChevronDown,
-  ChevronRight,
   Eye,
   FileText,
   Globe,
   ImagePlus,
-  LayoutDashboard,
   Layers3,
-  LogOut,
   Newspaper,
   PackagePlus,
   Pencil,
-  PhoneCall,
   PlayCircle,
   Plus,
   Save,
   Settings2,
   ShieldCheck,
   Trash2,
+  MessageSquareQuote,
+  HelpCircle,
+  ListOrdered,
+  LayoutGrid,
+  Type,
 } from "lucide-react";
-
-type AdminView =
-  | "dashboard"
-  | "posts"
-  | "settings-general"
-  | "settings-hero"
-  | "settings-about"
-  | "settings-commitments"
-  | "settings-pricing"
-  | "settings-calculator";
 
 type ExtendedSiteSettingsInput = SiteSettingsInput & {
   loadingLogoUrl: string;
@@ -92,6 +152,16 @@ type ExtendedSiteSettingsInput = SiteSettingsInput & {
   homeAboutExperienceLabel: string;
   homeAboutExperienceYears: string;
   homeCalculatorConfigJson: string;
+  homeStatsJson: string;
+  homeTestimonialsJson: string;
+  homeFaqJson: string;
+  homeProcessJson: string;
+  categoryPagesJson: string;
+  homeSectionMetaJson: string;
+  homeCtaJson: string;
+  homeQuoteServicesJson: string;
+  homeContactJson: string;
+  topBarSlogan: string;
 };
 
 type FormState = {
@@ -127,6 +197,12 @@ const emptyPostForm: FormState = {
   metaKeywords: "",
 };
 
+const defaultCalculatorConfig: CalculatorConfig = {
+  phanThoRates: { "trung-binh": 3550000, "tb-kha": 3700000, kha: 3800000 },
+  tronGoiRates: { "trung-binh": 4850000, "tb-kha": 5500000, kha: 6700000 },
+  note: "Công thức tham khảo theo đơn giá xây dựng nhà phố/biệt thự phổ biến trên thị trường.",
+};
+
 const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   companyName: "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE",
   taxCode: "",
@@ -136,9 +212,8 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   address1: "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM",
   address2: "146 duong 16, khu do thi Van Phuc",
   workingHours: "8:00 - 17:30",
-  logoUrl:
-    "https://kientrucsaokhue.com/wp-content/uploads/2023/03/z4174323393119_4de9a59b7bd4ac243e066b2c5a15a62b-2.jpg",
-  loadingLogoUrl: "",
+  logoUrl: BUNDLED_LOGO_URL,
+  loadingLogoUrl: BUNDLED_LOGO_URL,
   facebookUrl: "https://facebook.com/kientrucsaokhue",
   youtubeUrl: "",
   instagramUrl: "",
@@ -159,11 +234,17 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   homeAboutImageUrl: "/images/about.png",
   homeAboutExperienceLabel: "Nam Kinh Nghiem\nXay Dung",
   homeAboutExperienceYears: "10+",
-  homeCalculatorConfigJson: JSON.stringify({
-    phanThoRates: { "trung-binh": 3550000, "tb-kha": 3700000, "kha": 3800000 },
-    tronGoiRates: { "trung-binh": 4850000, "tb-kha": 5500000, "kha": 6700000 },
-    note: "Cong thuc tham khao theo don gia xay dung pho bien.",
-  }),
+  homeCalculatorConfigJson: JSON.stringify(defaultCalculatorConfig),
+  homeStatsJson: JSON.stringify(defaultStats),
+  homeTestimonialsJson: JSON.stringify(defaultTestimonials),
+  homeFaqJson: JSON.stringify(defaultFaqs),
+  homeProcessJson: JSON.stringify(defaultProcessSteps),
+  categoryPagesJson: JSON.stringify(defaultCategoryPages),
+  homeSectionMetaJson: JSON.stringify(defaultSectionMeta),
+  homeCtaJson: JSON.stringify(defaultCtaBanner),
+  homeQuoteServicesJson: JSON.stringify(defaultQuoteServices),
+  homeContactJson: JSON.stringify(defaultContactSection),
+  topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
   gscVerification: "",
 };
@@ -255,6 +336,23 @@ function buildSettingsFromApi(
     homeCalculatorConfigJson:
       (rest.homeCalculatorConfigJson as string) ??
       defaultExtendedSettings.homeCalculatorConfigJson,
+    homeStatsJson:
+      (rest.homeStatsJson as string) ?? stringifyCompact(defaultStats),
+    homeTestimonialsJson:
+      (rest.homeTestimonialsJson as string) ?? stringifyCompact(defaultTestimonials),
+    homeFaqJson: (rest.homeFaqJson as string) ?? stringifyCompact(defaultFaqs),
+    homeProcessJson:
+      (rest.homeProcessJson as string) ?? stringifyCompact(defaultProcessSteps),
+    categoryPagesJson:
+      (rest.categoryPagesJson as string) ?? stringifyCompact(defaultCategoryPages),
+    homeSectionMetaJson:
+      (rest.homeSectionMetaJson as string) ?? stringifyCompact(defaultSectionMeta),
+    homeCtaJson: (rest.homeCtaJson as string) ?? stringifyCompact(defaultCtaBanner),
+    homeQuoteServicesJson:
+      (rest.homeQuoteServicesJson as string) ?? stringifyCompact(defaultQuoteServices),
+    homeContactJson:
+      (rest.homeContactJson as string) ?? stringifyCompact(defaultContactSection),
+    topBarSlogan: (rest.topBarSlogan as string) ?? defaultExtendedSettings.topBarSlogan,
   };
 }
 
@@ -306,6 +404,18 @@ export default function Admin() {
   const [pricingItems, setPricingItems] =
     useState<PricingItem[]>(defaultPricingItems);
   const [aboutPoints, setAboutPoints] = useState<string[]>(defaultAboutPoints);
+  const [stats, setStats] = useState<StatItem[]>(defaultStats);
+  const [testimonials, setTestimonials] = useState<TestimonialItem[]>(defaultTestimonials);
+  const [faqs, setFaqs] = useState<FaqItem[]>(defaultFaqs);
+  const [processSteps, setProcessSteps] = useState<ProcessStep[]>(defaultProcessSteps);
+  const [categoryPages, setCategoryPages] = useState<CategoryPagesMap>(defaultCategoryPages);
+  const [sectionMeta, setSectionMeta] = useState<HomeSectionMeta>(defaultSectionMeta);
+  const [ctaBanner, setCtaBanner] = useState<CtaBannerContent>(defaultCtaBanner);
+  const [quoteServices, setQuoteServices] = useState<QuoteServiceItem[]>(defaultQuoteServices);
+  const [contactSection, setContactSection] =
+    useState<ContactSectionContent>(defaultContactSection);
+  const [calculatorConfig, setCalculatorConfig] =
+    useState<CalculatorConfig>(defaultCalculatorConfig);
   const [settingsSavedAt, setSettingsSavedAt] = useState<number | null>(null);
 
   useEffect(() => {
@@ -340,6 +450,32 @@ export default function Admin() {
     );
     setAboutPoints(
       parseArrayValue<string>(built.homeAboutPointsJson, defaultAboutPoints),
+    );
+    setStats(parseArrayValue<StatItem>(built.homeStatsJson, defaultStats));
+    setTestimonials(
+      parseArrayValue<TestimonialItem>(built.homeTestimonialsJson, defaultTestimonials),
+    );
+    setFaqs(parseArrayValue<FaqItem>(built.homeFaqJson, defaultFaqs));
+    setProcessSteps(parseArrayValue<ProcessStep>(built.homeProcessJson, defaultProcessSteps));
+    setCategoryPages(
+      parseJsonObject<CategoryPagesMap>(built.categoryPagesJson, defaultCategoryPages),
+    );
+    setSectionMeta({
+      ...defaultSectionMeta,
+      ...parseJsonObject<Partial<HomeSectionMeta>>(built.homeSectionMetaJson, {}),
+    });
+    setCtaBanner(parseJsonObject<CtaBannerContent>(built.homeCtaJson, defaultCtaBanner));
+    setQuoteServices(
+      parseArrayValue<QuoteServiceItem>(built.homeQuoteServicesJson, defaultQuoteServices),
+    );
+    setContactSection(
+      parseJsonObject<ContactSectionContent>(built.homeContactJson, defaultContactSection),
+    );
+    setCalculatorConfig(
+      parseJsonObject<CalculatorConfig>(
+        built.homeCalculatorConfigJson,
+        defaultCalculatorConfig,
+      ),
     );
   }, [siteData]);
 
@@ -391,25 +527,25 @@ export default function Admin() {
   const dashboardStats = useMemo(
     () => [
       {
-        label: "Tong bai viet",
+        label: "Tổng bài viết",
         value: items.length,
         icon: Newspaper,
         color: "bg-sky-500",
       },
       {
-        label: "Dich vu",
+        label: "Dịch vụ",
         value: items.filter((post) => post.category === "dich-vu").length,
         icon: Building2,
         color: "bg-emerald-500",
       },
       {
-        label: "Cong trinh",
+        label: "Công trình",
         value: items.filter((post) => post.category === "cong-trinh").length,
         icon: Layers3,
         color: "bg-amber-500",
       },
       {
-        label: "Kinh nghiem",
+        label: "Kinh nghiệm",
         value: items.filter((post) => post.category === "kinh-nghiem").length,
         icon: BookOpen,
         color: "bg-rose-500",
@@ -420,9 +556,10 @@ export default function Admin() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#eef1f5]">
-        <div className="rounded-2xl bg-white px-8 py-6 text-sm font-medium text-slate-600 shadow">
-          Dang tai khu vuc admin...
+      <div className="flex min-h-screen items-center justify-center bg-slate-100">
+        <div className="flex items-center gap-3 rounded-2xl bg-white px-8 py-6 shadow-lg">
+          <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
+          <span className="text-sm font-medium text-slate-600">Đang tải khu vực admin...</span>
         </div>
       </div>
     );
@@ -430,72 +567,18 @@ export default function Admin() {
 
   if (!isAuthenticated) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#eef1f5] p-6">
-        <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-xl">
-          <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#17579d] text-white shadow">
-            <ShieldCheck size={26} />
-          </div>
-          <h1 className="text-3xl font-bold text-slate-900">Dang nhap admin</h1>
-          <p className="mt-3 text-sm leading-6 text-slate-500">
-            Khu vuc nay dung de quan ly bai viet, hero, cam ket, bang bao gia va
-            thong tin hien thi ngoai trang chu.
-          </p>
-          {authMode === "password" ? (
-            <form
-              className="mt-8 space-y-4"
-              onSubmit={async (e) => {
-                e.preventDefault();
-                setAdminSubmitting(true);
-                const ok = await loginWithPassword(adminEmail, adminPassword);
-                setAdminSubmitting(false);
-                if (ok) setAdminPassword("");
-              }}
-            >
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">Email admin</label>
-                <Input
-                  value={adminEmail}
-                  onChange={(e) => setAdminEmail(e.target.value)}
-                  type="email"
-                  autoComplete="username"
-                  className="h-11 rounded-xl"
-                  placeholder="admin@example.com"
-                />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">Mat khau admin</label>
-                <Input
-                  value={adminPassword}
-                  onChange={(e) => setAdminPassword(e.target.value)}
-                  type="password"
-                  autoComplete="current-password"
-                  className="h-11 rounded-xl"
-                  placeholder="Nhap mat khau admin"
-                />
-              </div>
-              {loginError ? (
-                <div className="rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-600">
-                  {loginError}
-                </div>
-              ) : null}
-              <Button
-                type="submit"
-                disabled={adminSubmitting}
-                className="h-12 w-full rounded-xl bg-[#17579d] text-base font-semibold text-white hover:bg-[#124884]"
-              >
-                {adminSubmitting ? "Dang dang nhap..." : "Dang nhap de tiep tuc"}
-              </Button>
-            </form>
-          ) : (
-            <Button
-              onClick={login}
-              className="mt-8 h-12 w-full rounded-xl bg-[#17579d] text-base font-semibold text-white hover:bg-[#124884]"
-            >
-              Dang nhap de tiep tuc
-            </Button>
-          )}
-        </div>
-      </div>
+      <AdminLogin
+        authMode={authMode}
+        loginError={loginError}
+        adminEmail={adminEmail}
+        setAdminEmail={setAdminEmail}
+        adminPassword={adminPassword}
+        setAdminPassword={setAdminPassword}
+        adminSubmitting={adminSubmitting}
+        setAdminSubmitting={setAdminSubmitting}
+        loginWithPassword={loginWithPassword}
+        login={login}
+      />
     );
   }
 
@@ -553,6 +636,19 @@ export default function Admin() {
       homeCommitmentsJson: stringifyCompact(commitments),
       homePricingJson: stringifyCompact(pricingItems),
       homeAboutPointsJson: stringifyCompact(aboutPoints.filter(Boolean)),
+      homeStatsJson: stringifyCompact(stats),
+      homeTestimonialsJson: stringifyCompact(testimonials),
+      homeFaqJson: stringifyCompact(faqs),
+      homeProcessJson: stringifyCompact(processSteps),
+      categoryPagesJson: stringifyCompact(categoryPages),
+      homeSectionMetaJson: stringifyCompact(sectionMeta),
+      homeCtaJson: stringifyCompact(ctaBanner),
+      homeQuoteServicesJson: stringifyCompact(quoteServices),
+      homeContactJson: stringifyCompact({
+        ...contactSection,
+        serviceOptions: contactSection.serviceOptions.filter(Boolean),
+      }),
+      homeCalculatorConfigJson: stringifyCompact(calculatorConfig),
     };
 
     try {
@@ -566,14 +662,105 @@ export default function Admin() {
     }
   }
 
+  function restoreHeroDefaults() {
+    if (!confirm("Khôi phục slideshow hero về mặc định?")) return;
+    setHeroSlides([...defaultHeroSlides]);
+  }
+
+  function restoreAboutDefaults() {
+    if (!confirm("Khôi phục phần giới thiệu về mặc định?")) return;
+    setAboutPoints([...defaultAboutPoints]);
+    updateSettingField("homeAboutEyebrow", defaultSiteSettings.homeAboutEyebrow);
+    updateSettingField("homeAboutTitle", defaultSiteSettings.homeAboutTitle);
+    updateSettingField("homeAboutIntro", defaultSiteSettings.homeAboutIntro);
+    updateSettingField("homeAboutBody", defaultSiteSettings.homeAboutBody);
+    updateSettingField("homeAboutImageUrl", defaultSiteSettings.homeAboutImageUrl);
+    updateSettingField(
+      "homeAboutExperienceLabel",
+      defaultSiteSettings.homeAboutExperienceLabel,
+    );
+    updateSettingField(
+      "homeAboutExperienceYears",
+      defaultSiteSettings.homeAboutExperienceYears,
+    );
+  }
+
+  function restoreCommitmentsDefaults() {
+    if (!confirm("Khôi phục 9 cam kết về mặc định?")) return;
+    setCommitments([...defaultCommitments]);
+  }
+
+  function restorePricingDefaults() {
+    if (!confirm("Khôi phục bảng báo giá về mặc định?")) return;
+    setPricingItems([...defaultPricingItems]);
+  }
+
+  function restoreStatsDefaults() {
+    if (!confirm("Khôi phục số liệu về mặc định?")) return;
+    setStats([...defaultStats]);
+  }
+
+  function restoreTestimonialsDefaults() {
+    if (!confirm("Khôi phục đánh giá về mặc định?")) return;
+    setTestimonials([...defaultTestimonials]);
+  }
+
+  function restoreFaqsDefaults() {
+    if (!confirm("Khôi phục FAQ về mặc định?")) return;
+    setFaqs([...defaultFaqs]);
+  }
+
+  function restoreProcessDefaults() {
+    if (!confirm("Khôi phục quy trình về mặc định?")) return;
+    setProcessSteps([...defaultProcessSteps]);
+  }
+
+  function restoreCategoryPagesDefaults() {
+    if (!confirm("Khôi phục trang danh mục về mặc định?")) return;
+    setCategoryPages({ ...defaultCategoryPages });
+  }
+
+  function restoreSectionsDefaults() {
+    if (!confirm("Khôi phục tiêu đề sections & CTA về mặc định?")) return;
+    setSectionMeta({ ...defaultSectionMeta });
+    setCtaBanner({ ...defaultCtaBanner });
+  }
+
+  function restoreQuoteDefaults() {
+    if (!confirm("Khôi phục gói báo giá về mặc định?")) return;
+    setQuoteServices([...defaultQuoteServices]);
+  }
+
+  function restoreContactDefaults() {
+    if (!confirm("Khôi phục form liên hệ về mặc định?")) return;
+    setContactSection({ ...defaultContactSection });
+  }
+
+  function restoreCalculatorDefaults() {
+    if (!confirm("Khôi phục bảng tính giá về mặc định?")) return;
+    setCalculatorConfig({ ...defaultCalculatorConfig });
+  }
+
+  function restoreVideoDefaults() {
+    if (!confirm("Khôi phục video về mặc định?")) return;
+    updateSettingField("homeVideoUrl", defaultSiteSettings.homeVideoUrl);
+    updateSettingField("homeVideoLabel", defaultSiteSettings.homeVideoLabel);
+  }
+
+  function restoreGeneralDefaults() {
+    if (!confirm("Khôi phục thông tin website về mặc định?")) return;
+    const { id: _id, ...defaults } = defaultExtendedSettings;
+    setSettingsForm(defaults);
+  }
+
   function renderContent() {
     switch (view) {
       case "dashboard":
         return (
           <div className="space-y-6">
             <SectionTitle
-              title="Bang dieu khien"
-              desc="Tong quan nhanh ve noi dung website va cac khu vuc can cap nhat."
+              title="Bảng điều khiển"
+              desc="Tổng quan nhanh về nội dung website và các khu vực cần cập nhật."
             />
 
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
@@ -602,46 +789,64 @@ export default function Admin() {
               })}
             </div>
 
+            <AdminSiteMap postCount={items.length} onNavigate={setView} />
+
+            <AdminLivePreview />
+
             <div className="grid grid-cols-1 gap-6 xl:grid-cols-[1.1fr_0.9fr]">
               <Panel>
                 <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4">
-                  <h3 className="text-2xl font-bold text-slate-900">Cau truc quan ly</h3>
+                  <h3 className="text-2xl font-bold text-slate-900">Cấu trúc quản lý</h3>
                 </div>
                 <div className="grid grid-cols-1 gap-4 p-6 md:grid-cols-2">
                   <DashboardLinkCard
                     color="bg-[#1f7ae0]"
                     icon={Newspaper}
-                    title="Quan ly bai viet"
-                    desc="Loc theo danh muc va muc con, sua bai viet, SEO va slug."
+                    title="Quản lý bài viết"
+                    desc="Lọc theo danh mục và mục con, sửa bài viết, SEO và slug."
                     onClick={() => setView("posts")}
                   />
                   <DashboardLinkCard
                     color="bg-[#16a34a]"
                     icon={ImagePlus}
                     title="Hero homepage"
-                    desc="Cap nhat slide, tieu de, mo ta va hinh anh ngoai trang chu."
+                    desc="Cập nhật slide, tiêu đề, mô tả và hình ảnh ngoài trang chủ."
                     onClick={() => setView("settings-hero")}
                   />
                   <DashboardLinkCard
                     color="bg-[#ca8a04]"
                     icon={ShieldCheck}
-                    title="Cam ket homepage"
-                    desc="Chinh sua 9 cam ket vang theo tung dong, khong can sua JSON."
+                    title="Cam kết homepage"
+                    desc="Chỉnh sửa 9 cam kết vàng theo từng dòng, không cần sửa JSON."
                     onClick={() => setView("settings-commitments")}
                   />
                   <DashboardLinkCard
                     color="bg-[#0f766e]"
                     icon={Settings2}
-                    title="Thiet lap website"
-                    desc="Logo, favicon, hotline, footer va thong tin cong ty."
+                    title="Thiết lập website"
+                    desc="Logo, hotline, footer, mạng xã hội và slogan top bar."
                     onClick={() => setView("settings-general")}
+                  />
+                  <DashboardLinkCard
+                    color="bg-violet-600"
+                    icon={BarChart3}
+                    title="Số liệu & FAQ"
+                    desc="Thanh số liệu, đánh giá, FAQ, quy trình và tiêu đề section."
+                    onClick={() => setView("settings-stats")}
+                  />
+                  <DashboardLinkCard
+                    color="bg-rose-600"
+                    icon={LayoutGrid}
+                    title="Trang danh mục"
+                    desc="Intro và điểm nổi bật cho Giới thiệu, Dịch vụ, Công trình."
+                    onClick={() => setView("settings-categories")}
                   />
                 </div>
               </Panel>
 
               <Panel>
                 <div className="border-b border-slate-200 px-6 py-4">
-                  <h3 className="text-2xl font-bold text-slate-900">Nhom menu website</h3>
+                  <h3 className="text-2xl font-bold text-slate-900">Nhóm menu website</h3>
                 </div>
                 <div className="space-y-3 p-6">
                   {contentSections.map((section) => (
@@ -653,8 +858,8 @@ export default function Admin() {
                         {section.title}
                       </div>
                       <div className="mt-2 text-sm text-slate-500">
-                        {items.filter((post) => post.category === section.category).length} bai viet
-                        dang thuoc nhom nay
+                        {items.filter((post) => post.category === section.category).length} bài viết
+                        đang thuộc nhóm này
                       </div>
                       {section.children && section.children.length > 0 && (
                         <div className="mt-3 flex flex-wrap gap-2">
@@ -682,10 +887,10 @@ export default function Admin() {
             <StickyToolbar>
               <div>
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#17579d]">
-                  Quan ly bai viet
+                  Quản lý bài viết
                 </div>
                 <h2 className="mt-1 text-2xl font-bold text-slate-900">
-                  Giao dien nhap lieu de thao tac nhanh
+                  Giao diện nhập liệu để thao tác nhanh
                 </h2>
               </div>
               <div className="flex flex-wrap gap-3">
@@ -697,7 +902,7 @@ export default function Admin() {
                     setShowEditor(true);
                   }}
                 >
-                  Tao bai moi
+                  Tạo bài mới
                 </ToolbarButton>
                 {showEditor && (
                   <ToolbarButton
@@ -710,7 +915,7 @@ export default function Admin() {
                       );
                     }}
                   >
-                    Luu bai viet
+                    Lưu bài viết
                   </ToolbarButton>
                 )}
               </div>
@@ -719,9 +924,9 @@ export default function Admin() {
             <div className="grid grid-cols-1 gap-6 xl:grid-cols-[420px_minmax(0,1fr)]">
               <Panel>
                 <div className="border-b border-slate-200 px-6 py-4">
-                  <h3 className="text-xl font-bold text-slate-900">Danh sach bai viet</h3>
+                  <h3 className="text-xl font-bold text-slate-900">Danh sách bài viết</h3>
                   <p className="mt-1 text-sm text-slate-500">
-                    Loc theo danh muc va muc con, giu nguyen logic lien ket ra trang chu.
+                    Lọc theo danh mục và mục con, giữ nguyên logic liên kết ra trang chủ.
                   </p>
                 </div>
 
@@ -729,7 +934,7 @@ export default function Admin() {
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-2 block text-sm font-semibold text-slate-700">
-                        Danh muc
+                        Danh mục
                       </label>
                       <select
                         className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-[#17579d]"
@@ -739,7 +944,7 @@ export default function Admin() {
                           setPostSubCategoryFilter("all");
                         }}
                       >
-                        <option value="all">Tat ca danh muc</option>
+                        <option value="all">Tất cả danh mục</option>
                         {categoryOptions.map((option) => (
                           <option key={option.value} value={option.value}>
                             {option.label}
@@ -749,7 +954,7 @@ export default function Admin() {
                     </div>
                     <div>
                       <label className="mb-2 block text-sm font-semibold text-slate-700">
-                        Muc con menu
+                        Mục con menu
                       </label>
                       <select
                         className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-[#17579d]"
@@ -956,21 +1161,15 @@ export default function Admin() {
                             </Field>
 
                             <div className="xl:col-span-2">
-                              <Field label="URL hinh dai dien">
-                                <Input
-                                  value={postForm.imageUrl}
-                                  onChange={(e) =>
-                                    setPostForm((prev) => ({
-                                      ...prev,
-                                      imageUrl: e.target.value,
-                                    }))
-                                  }
-                                  placeholder="https://... hoac /images/..."
-                                />
-                                <FieldHint>
-                                  Nen dung anh ngang ro net de card bai viet va preview SEO dep hon.
-                                </FieldHint>
-                              </Field>
+                              <ImageUploadField
+                                label="Hình đại diện bài viết"
+                                value={postForm.imageUrl}
+                                onChange={(url) =>
+                                  setPostForm((prev) => ({ ...prev, imageUrl: url }))
+                                }
+                                folder="posts"
+                                hint="Nên dùng ảnh ngang rõ nét. Upload lên Supabase — mọi thiết bị đều thấy."
+                              />
                             </div>
 
                             {selectedSection && (
@@ -1190,11 +1389,12 @@ export default function Admin() {
       case "settings-general":
         return (
           <SettingsScreen
-            title="Thong tin website"
-            desc="Cac thong tin thuong dung cho logo, favicon, hotline, footer va kenh lien he."
+            title="Thông tin website"
+            desc="Logo, hotline, footer, mạng xã hội và slogan top bar."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
+            onRestoreDefaults={restoreGeneralDefaults}
           >
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
               <FormSection title="Nhan dien thuong hieu">
@@ -1205,21 +1405,19 @@ export default function Admin() {
                       onChange={(e) => updateSettingField("companyName", e.target.value)}
                     />
                   </Field>
-                  <Field label="URL logo / favicon">
-                    <Input
-                      value={settingsForm.logoUrl}
-                      onChange={(e) => updateSettingField("logoUrl", e.target.value)}
-                    />
-                  </Field>
-                  <Field label="URL logo loading">
-                    <Input
-                      value={settingsForm.loadingLogoUrl}
-                      onChange={(e) =>
-                        updateSettingField("loadingLogoUrl", e.target.value)
-                      }
-                      placeholder="Neu bo trong se dung logo chinh"
-                    />
-                  </Field>
+                  <ImageUploadField
+                    label="Logo / favicon"
+                    value={settingsForm.logoUrl}
+                    onChange={(url) => updateSettingField("logoUrl", url)}
+                    folder="brand"
+                  />
+                  <ImageUploadField
+                    label="Logo loading"
+                    value={settingsForm.loadingLogoUrl}
+                    onChange={(url) => updateSettingField("loadingLogoUrl", url)}
+                    folder="brand"
+                    hint="Nếu bỏ trống sẽ dùng logo chính"
+                  />
                   <Field label="Ma so thue">
                     <Input
                       value={settingsForm.taxCode}
@@ -1249,7 +1447,7 @@ export default function Admin() {
                       onChange={(e) => updateSettingField("email", e.target.value)}
                     />
                   </Field>
-                  <Field label="Gio lam viec">
+                  <Field label="Giờ làm việc">
                     <Input
                       value={settingsForm.workingHours}
                       onChange={(e) =>
@@ -1257,21 +1455,11 @@ export default function Admin() {
                       }
                     />
                   </Field>
-                  <Field label="Link video homepage">
+                  <Field label="Slogan thanh top bar">
                     <Input
-                      value={settingsForm.homeVideoUrl}
-                      onChange={(e) =>
-                        updateSettingField("homeVideoUrl", e.target.value)
-                      }
-                      placeholder="YouTube, Vimeo hoac embed URL"
-                    />
-                  </Field>
-                  <Field label="Label nut video">
-                    <Input
-                      value={settingsForm.homeVideoLabel}
-                      onChange={(e) =>
-                        updateSettingField("homeVideoLabel", e.target.value)
-                      }
+                      value={settingsForm.topBarSlogan}
+                      onChange={(e) => updateSettingField("topBarSlogan", e.target.value)}
+                      placeholder="Tận tâm — Uy tín — Chất lượng"
                     />
                   </Field>
                 </div>
@@ -1374,11 +1562,12 @@ export default function Admin() {
         return (
           <SettingsScreen
             title="Hero homepage"
-            desc="Nhap slide theo tung item, khong can sua JSON thu cong."
+            desc="Nhập slide theo từng item, không cần sửa JSON thủ công."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
-            primaryLabel="Luu hero"
+            onRestoreDefaults={restoreHeroDefaults}
+            primaryLabel="Lưu hero"
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="space-y-4">
@@ -1397,17 +1586,17 @@ export default function Admin() {
                   >
                     <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
                       <Field label="Hinh anh">
-                        <Input
+                        <ImageUploadField
+                          label=""
                           value={slide.image}
-                          onChange={(e) =>
+                          onChange={(url) =>
                             setHeroSlides((prev) =>
                               prev.map((item, itemIndex) =>
-                                itemIndex === index
-                                  ? { ...item, image: e.target.value }
-                                  : item,
+                                itemIndex === index ? { ...item, image: url } : item,
                               ),
                             )
                           }
+                          folder="hero"
                         />
                       </Field>
                       <Field label="Sub title">
@@ -1490,12 +1679,13 @@ export default function Admin() {
       case "settings-about":
         return (
           <SettingsScreen
-            title="Thong tin cong ty o homepage"
-            desc="Sua noi dung block gioi thieu o trang chu theo tung o nhap lieu."
+            title="Thông tin công ty trên homepage"
+            desc="Sửa nội dung block giới thiệu ở trang chủ theo từng ô nhập liệu."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
-            primaryLabel="Luu thong tin cong ty"
+            onRestoreDefaults={restoreAboutDefaults}
+            primaryLabel="Lưu thông tin công ty"
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
@@ -1540,14 +1730,12 @@ export default function Admin() {
 
                 <FormSection title="Hinh anh va badge">
                   <div className="grid grid-cols-1 gap-4">
-                    <Field label="URL hinh">
-                      <Input
-                        value={settingsForm.homeAboutImageUrl}
-                        onChange={(e) =>
-                          updateSettingField("homeAboutImageUrl", e.target.value)
-                        }
-                      />
-                    </Field>
+                    <ImageUploadField
+                      label="Hình ảnh giới thiệu"
+                      value={settingsForm.homeAboutImageUrl}
+                      onChange={(url) => updateSettingField("homeAboutImageUrl", url)}
+                      folder="home"
+                    />
                     <Field label="So nam kinh nghiem">
                       <Input
                         value={settingsForm.homeAboutExperienceYears}
@@ -1621,12 +1809,13 @@ export default function Admin() {
       case "settings-commitments":
         return (
           <SettingsScreen
-            title="Cam ket homepage"
-            desc="Quan ly tung cam ket theo the rieng, thay vi nhap mot khoi JSON lon."
+            title="Cam kết homepage"
+            desc="Quản lý từng cam kết theo thẻ riêng, thay vì nhập một khối JSON lớn."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
-            primaryLabel="Luu cam ket"
+            onRestoreDefaults={restoreCommitmentsDefaults}
+            primaryLabel="Lưu cam kết"
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="space-y-4">
@@ -1658,22 +1847,19 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Icon">
-                        <Input
-                          value={item.icon}
-                          onChange={(e) =>
-                            setCommitments((prev) =>
-                              prev.map((row, rowIndex) =>
-                                rowIndex === index
-                                  ? { ...row, icon: e.target.value }
-                                  : row,
-                              ),
-                            )
-                          }
-                          placeholder="shield, users, award..."
-                        />
-                      </Field>
-                      <Field label="Tieu de">
+                      <IconPickerField
+                        label="Icon"
+                        listId={`commitment-icons-${index}`}
+                        value={item.icon}
+                        onChange={(icon) =>
+                          setCommitments((prev) =>
+                            prev.map((row, rowIndex) =>
+                              rowIndex === index ? { ...row, icon } : row,
+                            ),
+                          )
+                        }
+                      />
+                      <Field label="Tiêu đề">
                         <Input
                           value={item.title}
                           onChange={(e) =>
@@ -1738,7 +1924,8 @@ export default function Admin() {
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
-            primaryLabel="Luu bang bao gia"
+            onRestoreDefaults={restorePricingDefaults}
+            primaryLabel="Lưu bảng báo giá"
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="space-y-4">
@@ -1944,35 +2131,203 @@ export default function Admin() {
           </SettingsScreen>
         );
 
-      case "settings-calculator":
+      case "settings-stats":
         return (
           <SettingsScreen
-            title="Bang tinh gia homepage"
-            desc="Day la sidebar cau hinh cho bo tinh chi phi. Hien tai admin cho sua cong thuc gia dang JSON de toan bo trang chu cap nhat theo."
+            title="Số liệu nổi bật"
+            desc="Thanh số liệu ngay dưới hero trên trang chủ."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
-            primaryLabel="Luu bang tinh gia"
+            onRestoreDefaults={restoreStatsDefaults}
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
-              <FormSection
-                title="Cong thuc va don gia"
-                desc="Goi y: giu 2 nhom don gia phan tho / tron goi, bo sung ghi chu de giai thich nguoi dung. Sau nay co the tach tiep thanh UI chi tiet hon."
-              >
-                <Field label="Calculator config JSON">
-                  <Textarea
-                    rows={14}
-                    value={settingsForm.homeCalculatorConfigJson}
-                    onChange={(e) =>
-                      updateSettingField("homeCalculatorConfigJson", e.target.value)
-                    }
-                  />
-                </Field>
-              </FormSection>
+              <StatsEditor items={stats} setItems={setStats} />
+              <StatsPreviewCard items={stats} />
+            </div>
+          </SettingsScreen>
+        );
 
-              <FormSection title="Preview bo tinh gia">
-                <CalculatorPreviewCard configJson={settingsForm.homeCalculatorConfigJson} />
+      case "settings-testimonials":
+        return (
+          <SettingsScreen
+            title="Đánh giá khách hàng"
+            desc="Hiển thị trên trang chủ — section đánh giá."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreTestimonialsDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <TestimonialsEditor items={testimonials} setItems={setTestimonials} />
+              <TestimonialsPreviewCard items={testimonials} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-faq":
+        return (
+          <SettingsScreen
+            title="Câu hỏi thường gặp"
+            desc="FAQ trên trang chủ, trang liên hệ và báo giá."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreFaqsDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <FaqEditor items={faqs} setItems={setFaqs} />
+              <FaqPreviewCard items={faqs} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-process":
+        return (
+          <SettingsScreen
+            title="Quy trình làm việc"
+            desc="Các bước quy trình trên trang chủ."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreProcessDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <ProcessEditor items={processSteps} setItems={setProcessSteps} />
+              <ProcessPreviewCard items={processSteps} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-video":
+        return (
+          <SettingsScreen
+            title="Video trang chủ"
+            desc="YouTube, Vimeo hoặc embed URL — hiển thị tại section video."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreVideoDefaults}
+            primaryLabel="Lưu video"
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <FormSection title="Cấu hình video">
+                <div className="grid grid-cols-1 gap-4">
+                  <Field label="Link video (YouTube / Vimeo / embed)">
+                    <Input
+                      value={settingsForm.homeVideoUrl}
+                      onChange={(e) => updateSettingField("homeVideoUrl", e.target.value)}
+                      placeholder="https://www.youtube.com/watch?v=..."
+                    />
+                  </Field>
+                  <Field label="Nhãn nút phát">
+                    <Input
+                      value={settingsForm.homeVideoLabel}
+                      onChange={(e) => updateSettingField("homeVideoLabel", e.target.value)}
+                    />
+                  </Field>
+                </div>
               </FormSection>
+              <VideoPreviewCard
+                url={settingsForm.homeVideoUrl}
+                label={settingsForm.homeVideoLabel}
+                sectionTitle={sectionMeta.video.title}
+              />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-categories":
+        return (
+          <SettingsScreen
+            title="Trang danh mục"
+            desc="Nội dung intro khi vào /gioi-thieu, /dich-vu, /cong-trinh, /kinh-nghiem."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreCategoryPagesDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <CategoryPagesEditor pages={categoryPages} setPages={setCategoryPages} />
+              <CategoryPagesPreviewCard pages={categoryPages} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-sections":
+        return (
+          <SettingsScreen
+            title="Tiêu đề sections & CTA"
+            desc="Tiêu đề/mô tả các block trang chủ và banner CTA giữa trang."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreSectionsDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <SectionsMetaEditor
+                meta={sectionMeta}
+                setMeta={setSectionMeta}
+                cta={ctaBanner}
+                setCta={setCtaBanner}
+              />
+              <CtaBannerPreviewCard cta={ctaBanner} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-quote":
+        return (
+          <SettingsScreen
+            title="Gói dịch vụ báo giá"
+            desc="4 vòng tròn dịch vụ trên trang chủ và trang báo giá."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreQuoteDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <QuoteServicesEditor items={quoteServices} setItems={setQuoteServices} />
+              <QuoteServicesPreviewCard items={quoteServices} />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-contact":
+        return (
+          <SettingsScreen
+            title="Form liên hệ & CTA"
+            desc="Nội dung section liên hệ cuối trang và các tùy chọn trong form."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreContactDefaults}
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <ContactSectionEditor content={contactSection} setContent={setContactSection} />
+              <ContactPreviewCard
+                content={contactSection}
+                hotline={settingsForm.hotline1}
+                address={settingsForm.address1}
+              />
+            </div>
+          </SettingsScreen>
+        );
+
+      case "settings-calculator":
+        return (
+          <SettingsScreen
+            title="Bảng tính giá homepage"
+            desc="Cấu hình đơn giá phần thô và trọn gói cho bộ tính chi phí."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreCalculatorDefaults}
+            primaryLabel="Lưu bảng tính giá"
+          >
+            <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
+              <CalculatorRatesEditor config={calculatorConfig} onChange={setCalculatorConfig} />
+              <CalculatorPreviewCard configJson={stringifyCompact(calculatorConfig)} />
             </div>
           </SettingsScreen>
         );
@@ -1983,475 +2338,19 @@ export default function Admin() {
   }
 
   return (
-    <div className="min-h-screen bg-[#eef1f5] text-slate-900">
-      <div className="flex min-h-screen">
-        <aside className="hidden w-[290px] shrink-0 border-r border-slate-800/40 bg-[#94621d] text-white xl:flex xl:flex-col">
-          <div className="border-b border-white/10 px-6 py-7">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-              <div className="text-xs font-semibold uppercase tracking-[0.3em] text-white/70">
-                Sao Khue CMS
-              </div>
-              <div className="mt-3 text-2xl font-bold leading-tight">
-                Quan tri website
-              </div>
-              <div className="mt-2 text-sm leading-6 text-white/70">
-                Giao dien moi, giu nguyen ket noi du lieu voi trang chu hien tai.
-              </div>
-            </div>
-          </div>
-
-          <div className="flex-1 space-y-2 overflow-y-auto px-3 py-5">
-            <SidebarGroupBlock
-              title="Bang dieu khien"
-              icon={LayoutDashboard}
-              open={expandedGroup.dashboard}
-              onToggle={() => toggleGroup("dashboard")}
-            >
-              <SidebarButton
-                active={view === "dashboard"}
-                onClick={() => setView("dashboard")}
-                icon={LayoutDashboard}
-                label="Tong quan"
-              />
-            </SidebarGroupBlock>
-
-            <SidebarGroupBlock
-              title="Quan ly bai viet"
-              icon={Newspaper}
-              open={expandedGroup.posts}
-              onToggle={() => toggleGroup("posts")}
-            >
-              <SidebarButton
-                active={view === "posts"}
-                onClick={() => setView("posts")}
-                icon={FileText}
-                label="Tat ca bai viet"
-              />
-            </SidebarGroupBlock>
-
-            <SidebarGroupBlock
-              title="Homepage"
-              icon={ImagePlus}
-              open={expandedGroup.homepage}
-              onToggle={() => toggleGroup("homepage")}
-            >
-              <SidebarButton
-                active={view === "settings-hero"}
-                onClick={() => setView("settings-hero")}
-                icon={ImagePlus}
-                label="Slideshow / Hero"
-              />
-              <SidebarButton
-                active={view === "settings-about"}
-                onClick={() => setView("settings-about")}
-                icon={Building2}
-                label="Thong tin cong ty"
-              />
-              <SidebarButton
-                active={view === "settings-commitments"}
-                onClick={() => setView("settings-commitments")}
-                icon={ShieldCheck}
-                label="Cam ket"
-              />
-              <SidebarButton
-                active={view === "settings-pricing"}
-                onClick={() => setView("settings-pricing")}
-                icon={Layers3}
-                label="Bang bao gia"
-              />
-            </SidebarGroupBlock>
-
-            <SidebarGroupBlock
-              title="Cong cu tinh toan"
-              icon={Calculator}
-              open={expandedGroup.tools}
-              onToggle={() => toggleGroup("tools")}
-            >
-              <SidebarButton
-                active={view === "settings-calculator"}
-                onClick={() => setView("settings-calculator")}
-                icon={Calculator}
-                label="Bang tinh gia"
-              />
-            </SidebarGroupBlock>
-
-            <SidebarGroupBlock
-              title="Thiet lap thong tin"
-              icon={Settings2}
-              open={expandedGroup.settings}
-              onToggle={() => toggleGroup("settings")}
-            >
-              <SidebarButton
-                active={view === "settings-general"}
-                onClick={() => setView("settings-general")}
-                icon={Globe}
-                label="Thong tin website"
-              />
-            </SidebarGroupBlock>
-          </div>
-
-          <div className="border-t border-white/10 p-4">
-            <a
-              href="/"
-              className="flex items-center gap-3 rounded-2xl bg-white/10 px-4 py-3 text-sm font-semibold transition hover:bg-white/15"
-            >
-              <PhoneCall size={16} />
-              Ve trang chu
-            </a>
-          </div>
-        </aside>
-
-        <main className="min-w-0 flex-1">
-          <div className="border-b border-slate-200 bg-white px-6 py-5 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <div className="text-sm text-slate-500">Xin chao, {user?.firstName || user?.email || "Admin"}!</div>
-                <div className="mt-1 text-3xl font-bold text-slate-900">
-                  Administrator
-                </div>
-              </div>
-              <div className="flex flex-wrap items-center gap-3">
-                <a
-                  href="/"
-                  className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-[#17579d] hover:text-[#17579d]"
-                >
-                  <Globe size={16} />
-                  Xem website
-                </a>
-                <button
-                  onClick={logout}
-                  className="inline-flex items-center gap-2 rounded-xl bg-[#ef4444] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#dc2626]"
-                >
-                  <LogOut size={16} />
-                  Dang xuat
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 xl:p-8">{renderContent()}</div>
-        </main>
-      </div>
-    </div>
-  );
-}
-
-function SectionTitle({ title, desc }: { title: string; desc: string }) {
-  return (
-    <div>
-      <h1 className="text-4xl font-bold text-slate-900">{title}</h1>
-      <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-500">{desc}</p>
-    </div>
-  );
-}
-
-function StickyToolbar({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  return (
-    <div className="sticky top-4 z-20 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-sm">
-      {children}
-    </div>
-  );
-}
-
-function ToolbarButton({
-  icon: Icon,
-  color,
-  children,
-  onClick,
-}: {
-  icon: ComponentType<{ size?: number; className?: string }>;
-  color: string;
-  children: ReactNode;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`inline-flex items-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold text-white transition ${color}`}
+    <AdminShell
+      userLabel={user?.firstName || user?.email || "Admin"}
+      view={view}
+      setView={setView}
+      expandedGroup={expandedGroup}
+      toggleGroup={toggleGroup}
+      logout={logout}
     >
-      <Icon size={16} />
-      {children}
-    </button>
+      {renderContent()}
+    </AdminShell>
   );
 }
 
-function Panel({ children }: { children: ReactNode }) {
-  return <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">{children}</div>;
-}
-
-function FormSection({
-  title,
-  desc,
-  children,
-}: {
-  title: string;
-  desc?: string;
-  children: ReactNode;
-}) {
-  return (
-    <section className="rounded-3xl border border-slate-200 bg-white shadow-sm">
-      <div className="border-b border-slate-200 px-6 py-4">
-        <h4 className="text-xl font-bold text-slate-900">{title}</h4>
-        {desc && <p className="mt-1 text-sm leading-6 text-slate-500">{desc}</p>}
-      </div>
-      <div className="p-6">{children}</div>
-    </section>
-  );
-}
-
-function Field({
-  label,
-  children,
-}: {
-  label: string;
-  children: ReactNode;
-}) {
-  return (
-    <label className="block">
-      <div className="mb-2 text-sm font-semibold text-slate-700">{label}</div>
-      {children}
-    </label>
-  );
-}
-
-function DashboardLinkCard({
-  color,
-  icon: Icon,
-  title,
-  desc,
-  onClick,
-}: {
-  color: string;
-  icon: ComponentType<{ size?: number; className?: string }>;
-  title: string;
-  desc: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 text-left transition hover:border-[#17579d] hover:shadow-sm"
-    >
-      <div className={`flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl text-white ${color}`}>
-        <Icon size={32} />
-      </div>
-      <div>
-        <div className="text-xl font-bold text-slate-900">{title}</div>
-        <div className="mt-2 text-sm leading-6 text-slate-500">{desc}</div>
-      </div>
-    </button>
-  );
-}
-
-function SidebarGroupBlock({
-  title,
-  icon: Icon,
-  open,
-  onToggle,
-  children,
-}: {
-  title: string;
-  icon: ComponentType<{ size?: number; className?: string }>;
-  open: boolean;
-  onToggle: () => void;
-  children: ReactNode;
-}) {
-  return (
-    <div className="rounded-2xl bg-black/5">
-      <button
-        type="button"
-        onClick={onToggle}
-        className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-base font-semibold transition hover:bg-white/5"
-      >
-        <span className="flex items-center gap-3">
-          <Icon size={18} />
-          {title}
-        </span>
-        {open ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
-      </button>
-      {open && <div className="space-y-1 px-3 pb-3">{children}</div>}
-    </div>
-  );
-}
-
-function SidebarButton({
-  active,
-  onClick,
-  icon: Icon,
-  label,
-}: {
-  active: boolean;
-  onClick: () => void;
-  icon: ComponentType<{ size?: number; className?: string }>;
-  label: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-medium transition ${
-        active
-          ? "bg-[#1f7ae0] text-white shadow"
-          : "text-white/85 hover:bg-white/10 hover:text-white"
-      }`}
-    >
-      <Icon size={16} />
-      {label}
-    </button>
-  );
-}
-
-function SettingsScreen({
-  title,
-  desc,
-  children,
-  onSave,
-  isSaving,
-  savedAt,
-  primaryLabel = "Luu thay doi",
-}: {
-  title: string;
-  desc: string;
-  children: ReactNode;
-  onSave: () => void;
-  isSaving: boolean;
-  savedAt: number | null;
-  primaryLabel?: string;
-}) {
-  return (
-    <div className="space-y-6">
-      <StickyToolbar>
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#17579d]">
-            Thiet lap giao dien
-          </div>
-          <h2 className="mt-1 text-2xl font-bold text-slate-900">{title}</h2>
-          <p className="mt-1 text-sm text-slate-500">{desc}</p>
-        </div>
-        <div className="flex items-center gap-3">
-          {savedAt && (
-            <span className="rounded-full bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-700">
-              Da luu luc {new Date(savedAt).toLocaleTimeString("vi-VN")}
-            </span>
-          )}
-          <Button
-            type="button"
-            onClick={onSave}
-            className="rounded-xl bg-[#16a34a] text-white hover:bg-[#15803d]"
-            disabled={isSaving}
-          >
-            <Save size={16} className="mr-2" />
-            {isSaving ? "Dang luu..." : primaryLabel}
-          </Button>
-        </div>
-      </StickyToolbar>
-      {children}
-    </div>
-  );
-}
-
-function RepeatCard({
-  title,
-  children,
-  onRemove,
-}: {
-  title: string;
-  children: ReactNode;
-  onRemove?: () => void;
-}) {
-  return (
-    <div className="rounded-3xl border border-slate-200 bg-white shadow-sm">
-      <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4">
-        <h4 className="text-lg font-bold text-slate-900">{title}</h4>
-        {onRemove && (
-          <button
-            type="button"
-            onClick={onRemove}
-            className="rounded-xl border border-red-200 px-3 py-2 text-sm font-semibold text-red-700 transition hover:bg-red-50"
-          >
-            Xoa
-          </button>
-        )}
-      </div>
-      <div className="p-6">{children}</div>
-    </div>
-  );
-}
-
-function AddRowButton({
-  label,
-  onClick,
-}: {
-  label: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="inline-flex items-center gap-2 rounded-xl border border-dashed border-[#17579d]/50 bg-[#eef6ff] px-4 py-3 text-sm font-semibold text-[#17579d] transition hover:bg-[#dcecff]"
-    >
-      <Plus size={16} />
-      {label}
-    </button>
-  );
-}
-
-function PreviewShell({
-  label,
-  title,
-  children,
-}: {
-  label: string;
-  title: string;
-  children: ReactNode;
-}) {
-  return (
-    <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
-      <div className="border-b border-slate-200 bg-slate-50 px-5 py-4">
-        <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#17579d]">
-          <Eye size={14} />
-          {label}
-        </div>
-        <div className="mt-2 text-lg font-bold text-slate-900">{title}</div>
-      </div>
-      <div className="p-5">{children}</div>
-    </div>
-  );
-}
-
-function EditorStatCard({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: string;
-  tone: "blue" | "emerald" | "amber" | "violet" | "rose";
-}) {
-  const toneClasses = {
-    blue: "bg-[#eef6ff] text-[#17579d] border-[#bfdbfe]",
-    emerald: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    amber: "bg-amber-50 text-amber-700 border-amber-200",
-    violet: "bg-violet-50 text-violet-700 border-violet-200",
-    rose: "bg-rose-50 text-rose-700 border-rose-200",
-  };
-
-  return (
-    <div className={`rounded-2xl border p-4 ${toneClasses[tone]}`}>
-      <div className="text-[11px] font-semibold uppercase tracking-[0.24em] opacity-80">
-        {label}
-      </div>
-      <div className="mt-2 text-lg font-bold">{value}</div>
-    </div>
-  );
-}
 
 function PostPreviewCard({
   title,
@@ -2577,84 +2476,14 @@ function SeoPreviewCard({
   );
 }
 
-function HintActionButton({
-  label,
-  onClick,
-}: {
-  label: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-[#17579d] hover:bg-[#eef6ff] hover:text-[#17579d]"
-    >
-      {label}
-    </button>
-  );
-}
-
-function FieldHint({
-  children,
-}: {
-  children: ReactNode;
-}) {
-  return <div className="mt-2 text-xs leading-5 text-slate-500">{children}</div>;
-}
-
-function ChecklistCard({
-  items,
-}: {
-  items: Array<{ label: string; done: boolean }>;
-}) {
-  const completed = items.filter((item) => item.done).length;
-
-  return (
-    <div className="space-y-4">
-      <div className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-sm">
-        <div className="flex items-center justify-between gap-3">
-          <div>
-            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#17579d]">
-              Trang thai bai viet
-            </div>
-            <div className="mt-2 text-lg font-bold text-slate-900">
-              {completed}/{items.length} muc da san sang
-            </div>
-          </div>
-          <div className="rounded-full bg-[#eef6ff] px-3 py-2 text-sm font-semibold text-[#17579d]">
-            {Math.round((completed / items.length) * 100)}%
-          </div>
-        </div>
-        <div className="mt-4 space-y-2">
-          {items.map((item, index) => (
-            <div
-              key={`checklist-${index}`}
-              className={`flex items-center justify-between rounded-2xl px-4 py-3 text-sm ${
-                item.done
-                  ? "bg-emerald-50 text-emerald-700"
-                  : "bg-slate-50 text-slate-600"
-              }`}
-            >
-              <span className="font-medium">{item.label}</span>
-              <span className="text-xs font-semibold uppercase tracking-[0.2em]">
-                {item.done ? "On" : "Thieu"}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
 function GeneralPreviewCard({
   settings,
 }: {
   settings: ExtendedSiteSettingsInput;
 }) {
-  const mainLogo = settings.logoUrl || "/favicon.svg";
-  const loadingLogo = settings.loadingLogoUrl || mainLogo;
+  const mainLogo = resolveLogoUrl(settings.logoUrl);
+  const loadingLogo = resolveLogoUrl(settings.loadingLogoUrl || settings.logoUrl);
 
   return (
     <div className="space-y-5">
@@ -2822,24 +2651,29 @@ function CommitmentsPreviewCard({
   items: CommitmentItem[];
 }) {
   return (
-    <PreviewShell label="Homepage" title="Cam ket noi bat">
+    <PreviewShell label="Trang chủ" title="Cam kết nổi bật">
       <div className="grid gap-4">
-        {items.slice(0, 4).map((item, index) => (
+        {items.slice(0, 4).map((item, index) => {
+          const Icon = resolveLucideIcon(item.icon);
+          return (
           <div
             key={`commitment-preview-${index}`}
-            className="rounded-[24px] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-5 shadow-sm"
+            className="flex gap-4 rounded-[24px] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-5 shadow-sm"
           >
-            <div className="mb-3 inline-flex rounded-full bg-[#17579d]/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#17579d]">
-              {item.icon || "shield"}
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <Icon size={22} />
             </div>
+            <div>
             <div className="text-lg font-bold text-slate-900">
-              {item.title || `Cam ket ${index + 1}`}
+              {item.title || `Cam kết ${index + 1}`}
             </div>
             <p className="mt-2 text-sm leading-7 text-slate-600">
-              {item.desc || "Mo ta cam ket se hien thi o day."}
+              {item.desc || "Mô tả cam kết sẽ hiển thị ở đây."}
             </p>
+            </div>
           </div>
-        ))}
+          );
+        })}
       </div>
     </PreviewShell>
   );

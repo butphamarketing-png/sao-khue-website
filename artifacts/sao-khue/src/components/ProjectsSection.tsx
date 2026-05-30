@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowUpRight } from "lucide-react";
+import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { normalizePosts } from "@/lib/posts";
+import { useSectionMeta } from "@/lib/site-settings";
 
 const fallback = [
   { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },
@@ -17,6 +19,7 @@ const fallback = [
 ];
 
 export function ProjectsSection() {
+  const meta = useSectionMeta();
   const { data, isLoading } = useListPosts({ category: "cong-trinh", limit: 8 });
   const posts = normalizePosts(data);
   const projects =
@@ -30,18 +33,12 @@ export function ProjectsSection() {
       : fallback;
 
   return (
-    <section id="du-an" className="bg-slate-50 py-24">
+    <section id="cong-trinh" className="bg-slate-50 py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase text-primary md:text-4xl">
-            Dự án tiêu biểu
-          </h2>
-          <div className="mx-auto h-1 w-24 rounded bg-accent"></div>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-600">
-            Hàng trăm công trình đã được Sao Khuê thiết kế và thi công, mang lại
-            sự hài lòng cho khách hàng.
-          </p>
-        </div>
+        <SectionHeader
+          title={meta.projects.title}
+          subtitle={meta.projects.subtitle}
+        />
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {isLoading
@@ -104,7 +101,7 @@ export function ProjectsSection() {
             href="/cong-trinh"
             className="inline-flex items-center justify-center rounded-full border-2 border-primary px-8 py-3 font-bold uppercase tracking-wide text-primary transition hover:bg-primary hover:text-white"
           >
-            Xem thêm dự án
+            Xem thêm công trình
           </Link>
         </div>
       </div>

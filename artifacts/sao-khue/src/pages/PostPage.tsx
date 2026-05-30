@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { Link, useParams } from "wouter";
-import { Calendar, Clock3 } from "lucide-react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { TopBar } from "@/components/TopBar";
-import { FloatingButtons } from "@/components/FloatingButtons";
+import { Calendar, Clock3, ArrowLeft } from "lucide-react";
+import { PageShell } from "@/components/PageShell";
+import { CTABanner } from "@/components/CTABanner";
+import { PageBanner } from "@/components/PageBanner";
+import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
 import { normalizePosts } from "@/lib/posts";
+import { useSiteSettings } from "@/lib/site-settings";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -16,11 +17,13 @@ function estimateReadingMinutes(content: string) {
 export default function PostPage() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug;
+  const site = useSiteSettings();
+  const brandName = site.companyName || "Kiến Trúc Sao Khuê";
   const { data: post, isLoading, error } = useGetPostBySlug(slug);
   const { data: posts } = useListPosts({ limit: 12 });
-  const relatedPosts = normalizePosts(posts).filter(
-    (item) => item.slug !== slug && (!post || item.category === post.category),
-  ).slice(0, 3);
+  const relatedPosts = normalizePosts(posts)
+    .filter((item) => item.slug !== slug && (!post || item.category === post.category))
+    .slice(0, 3);
   const readingMinutes = post ? estimateReadingMinutes(post.content ?? "") : null;
 
   useEffect(() => {
@@ -29,7 +32,7 @@ export default function PostPage() {
 
   useEffect(() => {
     if (!post) return;
-    const title = post.metaTitle?.trim() || `${post.title} | Kiến Trúc Sao Khuê`;
+    const title = post.metaTitle?.trim() || `${post.title} | ${brandName}`;
     document.title = title;
     const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
       if (!content) return;
@@ -69,79 +72,115 @@ export default function PostPage() {
       image: post.imageUrl ? [post.imageUrl] : undefined,
       datePublished: post.createdAt,
       dateModified: post.updatedAt,
-      author: {
-        "@type": "Organization",
-        name: "Kien Truc Sao Khue",
-      },
+      author: { "@type": "Organization", name: brandName },
       mainEntityOfPage: window.location.href,
     });
-  }, [post]);
+  }, [post, brandName]);
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      <TopBar />
-      <Header />
-
-      <div className="bg-gradient-to-r from-primary to-blue-900 text-white py-10">
-        <div className="container mx-auto px-4">
-          <div className="text-sm text-blue-100 mb-2">
-            <Link href="/" className="hover:text-white">Trang chủ</Link>
-            <span className="mx-2">›</span>
-            <span>Bài viết</span>
-          </div>
-          <h1 className="text-2xl md:text-4xl font-bold">{post?.title ?? (isLoading ? "Đang tải..." : "Bài viết")}</h1>
+    <PageShell className="bg-slate-50">
+      <PageBanner title={post?.title ?? (isLoading ? "Đang tải..." : "Bài viết")}>
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-blue-100">
+          <Link href="/" className="transition hover:text-white">
+            Trang chủ
+          </Link>
+          <span aria-hidden>›</span>
+          <span>Bài viết</span>
         </div>
-      </div>
+      </PageBanner>
 
-      <article className="container mx-auto px-4 py-10 max-w-4xl">
-        {isLoading && <p className="text-slate-500">Đang tải...</p>}
-        {error && <p className="text-red-600">Không tìm thấy bài viết.</p>}
+      <article className="container mx-auto max-w-4xl px-4 py-10">
+        <Button asChild variant="ghost" className="mb-6 -ml-2 text-primary hover:text-primary">
+          <Link href="/">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Quay lại
+          </Link>
+        </Button>
+
+        {isLoading && (
+          <div className="animate-pulse space-y-4 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+            <div className="h-4 w-1/3 rounded bg-slate-200" />
+            <div className="h-64 rounded-xl bg-slate-200" />
+            <div className="h-4 w-full rounded bg-slate-200" />
+            <div className="h-4 w-5/6 rounded bg-slate-200" />
+          </div>
+        )}
+
+        {error && (
+          <div className="rounded-2xl border border-red-200 bg-red-50 p-8 text-center text-red-700">
+            Không tìm thấy bài viết.
+          </div>
+        )}
+
         {post && (
-          <div className="bg-white rounded-lg shadow-sm border p-6 md:p-10">
-            <div className="flex items-center text-sm text-slate-500 gap-4 mb-6">
-              <span className="flex items-center gap-1"><Calendar size={14} />{new Date(post.createdAt).toLocaleDateString("vi-VN")}</span>
+          <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+            <div className="flex flex-wrap items-center gap-3 border-b border-slate-100 px-6 py-4 text-sm text-slate-500 md:px-10">
+              <span className="flex items-center gap-1">
+                <Calendar size={14} />
+                {new Date(post.createdAt).toLocaleDateString("vi-VN")}
+              </span>
               {readingMinutes && (
-                <span className="flex items-center gap-1"><Clock3 size={14} />{readingMinutes} phut doc</span>
+                <span className="flex items-center gap-1">
+                  <Clock3 size={14} />
+                  {readingMinutes} phút đọc
+                </span>
               )}
-              <span className="bg-slate-100 px-2 py-1 rounded text-xs uppercase">{post.category}</span>
+              <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase text-primary">
+                {post.category}
+              </span>
             </div>
-            {post.imageUrl && (
-              <img
-                src={post.imageUrl}
-                alt={post.title}
-                className="w-full max-h-[420px] object-cover rounded mb-6"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
+
+            <div className="p-6 md:p-10">
+              {post.imageUrl && (
+                <img
+                  src={post.imageUrl}
+                  alt={post.title}
+                  className="mb-8 max-h-[460px] w-full rounded-xl object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = "none";
+                  }}
+                />
+              )}
+              {post.excerpt && (
+                <p className="mb-8 border-l-4 border-accent bg-slate-50 py-3 pl-5 text-lg italic leading-relaxed text-slate-700">
+                  {post.excerpt}
+                </p>
+              )}
+              <div
+                className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-primary prose-img:rounded-xl"
+                dangerouslySetInnerHTML={{
+                  __html: (post.content ?? "").replace(/\n/g, "<br/>"),
                 }}
               />
-            )}
-            {post.excerpt && (
-              <p className="text-lg text-slate-700 italic border-l-4 border-primary pl-4 mb-6">
-                {post.excerpt}
-              </p>
-            )}
-            <div
-              className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-primary"
-              dangerouslySetInnerHTML={{ __html: (post.content ?? "").replace(/\n/g, "<br/>") }}
-            />
+            </div>
           </div>
         )}
 
         {post && relatedPosts.length > 0 && (
-          <section className="mt-8 rounded-lg border bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-bold text-primary">Bai viet lien quan</h2>
+          <section className="mt-10 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 md:p-8">
+            <h2 className="text-xl font-bold text-primary">Bài viết liên quan</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               {relatedPosts.map((item) => (
                 <Link
                   key={item.id}
                   href={`/bai-viet/${item.slug}`}
-                  className="rounded-lg border border-slate-200 bg-slate-50 p-4 transition hover:border-primary hover:bg-white"
+                  className="group overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-primary hover:bg-white hover:shadow-md"
                 >
-                  <div className="text-xs font-semibold uppercase text-primary">{item.category}</div>
-                  <div className="mt-2 line-clamp-2 text-base font-bold text-slate-900">{item.title}</div>
-                  {item.excerpt && (
-                    <p className="mt-2 line-clamp-3 text-sm text-slate-600">{item.excerpt}</p>
+                  {item.imageUrl && (
+                    <img
+                      src={item.imageUrl}
+                      alt=""
+                      className="h-32 w-full object-cover transition group-hover:scale-105"
+                    />
                   )}
+                  <div className="p-4">
+                    <div className="text-xs font-semibold uppercase text-primary">
+                      {item.category}
+                    </div>
+                    <div className="mt-2 line-clamp-2 font-bold text-slate-900 group-hover:text-primary">
+                      {item.title}
+                    </div>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -149,8 +188,7 @@ export default function PostPage() {
         )}
       </article>
 
-      <Footer />
-      <FloatingButtons />
-    </div>
+      <CTABanner />
+    </PageShell>
   );
 }

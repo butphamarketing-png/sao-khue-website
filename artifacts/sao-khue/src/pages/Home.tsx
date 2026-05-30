@@ -1,41 +1,40 @@
-import { TopBar } from "@/components/TopBar";
-import { Header } from "@/components/Header";
+import { PageShell } from "@/components/PageShell";
 import { HeroSection } from "@/components/HeroSection";
+import { StatsSection } from "@/components/StatsSection";
 import { AboutSection } from "@/components/AboutSection";
-import { CommitmentsSection } from "@/components/CommitmentsSection";
-import { QuoteSection } from "@/components/QuoteSection";
-import { CostCalculator } from "@/components/CostCalculator";
-import { PricingTableSection } from "@/components/PricingTableSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { CommitmentsSection } from "@/components/CommitmentsSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ProcessSection } from "@/components/ProcessSection";
+import { CTABanner } from "@/components/CTABanner";
+import { PricingTableSection } from "@/components/PricingTableSection";
+import { QuoteSection } from "@/components/QuoteSection";
+import { CostCalculator } from "@/components/CostCalculator";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { NewsSection } from "@/components/NewsSection";
+import { FAQSection } from "@/components/FAQSection";
 import { ContactCTASection } from "@/components/ContactCTASection";
-import { Footer } from "@/components/Footer";
-import { FloatingButtons } from "@/components/FloatingButtons";
+import { VideoSection } from "@/components/VideoSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans">
-      <TopBar />
-      <Header />
-      
-      <main className="flex-1">
-        <HeroSection />
-        <AboutSection />
-        <CommitmentsSection />
-        <PricingTableSection />
-        <QuoteSection />
-        <CostCalculator />
-        <ServicesSection />
-        <ProjectsSection />
-        <ProcessSection />
-        <NewsSection />
-        <ContactCTASection />
-      </main>
-
-      <Footer />
-      <FloatingButtons />
-    </div>
+    <PageShell>
+      <HeroSection />
+      <StatsSection />
+      <AboutSection />
+      <ServicesSection />
+      <CommitmentsSection />
+      <ProjectsSection />
+      <ProcessSection />
+      <VideoSection />
+      <CTABanner />
+      <PricingTableSection />
+      <QuoteSection />
+      <CostCalculator />
+      <TestimonialsSection />
+      <NewsSection />
+      <FAQSection />
+      <ContactCTASection />
+    </PageShell>
   );
 }

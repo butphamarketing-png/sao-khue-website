@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { useSiteSettings } from "@/lib/site-settings";
+import { useSiteSettings, resolveLogoUrl } from "@/lib/site-settings";
+import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
 
 declare global {
   interface Window {
@@ -108,19 +109,19 @@ export function SiteHead() {
     setPropertyMeta("og:description", pageDescription);
     setPropertyMeta("og:site_name", s.companyName || "Kien Truc Sao Khue");
     setPropertyMeta("og:url", currentUrl);
-    setPropertyMeta("og:image", s.logoUrl || "/opengraph.jpg");
+    setPropertyMeta("og:image", resolveLogoUrl(s.logoUrl) || BUNDLED_OPENGRAPH_URL);
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", pageTitle);
     setMeta("twitter:description", pageDescription);
-    setMeta("twitter:image", s.logoUrl || "/opengraph.jpg");
+    setMeta("twitter:image", BUNDLED_OPENGRAPH_URL);
     setCanonical(currentUrl);
-    setLink("icon", s.logoUrl || "/favicon.svg");
-    setLink("apple-touch-icon", s.logoUrl || "/favicon.svg");
+    setLink("icon", "/favicon.svg", "image/svg+xml");
+    setLink("apple-touch-icon", resolveLogoUrl(s.logoUrl));
     setStructuredData("organization", {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: s.companyName,
-      image: s.logoUrl || "/opengraph.jpg",
+      image: resolveLogoUrl(s.logoUrl),
       url: window.location.origin,
       telephone: s.hotline1,
       email: s.email,

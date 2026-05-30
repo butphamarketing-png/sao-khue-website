@@ -1,21 +1,67 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle } from "lucide-react";
+import { Link } from "wouter";
+import { AlertCircle, ArrowRight, Home, PhoneCall } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { PageShell } from "@/components/PageShell";
+import { PageBanner } from "@/components/PageBanner";
+import { navMenu } from "@/lib/menu";
+import { useSiteSettings, telHref } from "@/lib/site-settings";
 
 export default function NotFound() {
+  const s = useSiteSettings();
+  const quickLinks = navMenu.filter((item) => item.href !== "/").slice(0, 6);
+
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-md mx-4">
-        <CardContent className="pt-6">
-          <div className="flex mb-4 gap-2">
-            <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-gray-900">404 Page Not Found</h1>
+    <PageShell>
+      <PageBanner title="404 — Không tìm thấy trang" subtitle="Đường dẫn không tồn tại hoặc đã được đổi tên." />
+
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="mx-auto max-w-2xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl md:p-10">
+          <div className="mb-6 flex items-start gap-4">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-red-50 text-red-500">
+              <AlertCircle className="h-8 w-8" />
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-slate-900 md:text-2xl">Trang bạn tìm không có ở đây</h2>
+              <p className="mt-2 leading-relaxed text-slate-600">
+                Vui lòng quay về trang chủ, gọi hotline tư vấn hoặc chọn một mục bên dưới.
+              </p>
+            </div>
           </div>
 
-          <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
-          </p>
-        </CardContent>
-      </Card>
-    </div>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Button asChild className="flex-1 rounded-full">
+              <Link href="/">
+                <Home className="mr-2 h-4 w-4" />
+                Về trang chủ
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="flex-1 rounded-full border-primary text-primary">
+              <a href={telHref(s.hotline1)}>
+                <PhoneCall className="mr-2 h-4 w-4" />
+                Gọi {s.hotline1}
+              </a>
+            </Button>
+          </div>
+
+          <div className="mt-8 border-t border-slate-100 pt-6">
+            <p className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
+              Liên kết nhanh
+            </p>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {quickLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="flex items-center justify-between rounded-xl border border-slate-100 px-4 py-3 text-sm font-medium text-slate-700 transition hover:border-primary/30 hover:bg-primary/5 hover:text-primary"
+                >
+                  {item.title}
+                  <ArrowRight size={14} />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </PageShell>
   );
 }

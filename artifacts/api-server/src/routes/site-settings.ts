@@ -35,6 +35,16 @@ const SettingsInput = z.object({
   homeAboutExperienceLabel: z.string().default(""),
   homeAboutExperienceYears: z.string().default(""),
   homeCalculatorConfigJson: z.string().default("{}"),
+  homeStatsJson: z.string().default("[]"),
+  homeTestimonialsJson: z.string().default("[]"),
+  homeFaqJson: z.string().default("[]"),
+  homeProcessJson: z.string().default("[]"),
+  categoryPagesJson: z.string().default("{}"),
+  homeSectionMetaJson: z.string().default("{}"),
+  homeCtaJson: z.string().default("{}"),
+  homeQuoteServicesJson: z.string().default("[]"),
+  homeContactJson: z.string().default("{}"),
+  topBarSlogan: z.string().default("Tận tâm — Uy tín — Chất lượng"),
   gaTrackingId: z.string().default(""),
   gscVerification: z.string().default(""),
 });
@@ -53,8 +63,13 @@ async function getOrCreate() {
 }
 
 router.get("/site-settings", async (_req, res) => {
-  const row = await getOrCreate();
-  res.json(row);
+  try {
+    const row = await getOrCreate();
+    res.json(row);
+  } catch (err) {
+    console.error("[site-settings] get failed", err);
+    res.status(503).json({ error: "Database unavailable. Check DATABASE_URL / Supabase connection." });
+  }
 });
 
 router.put("/site-settings", async (req: Request, res: Response) => {

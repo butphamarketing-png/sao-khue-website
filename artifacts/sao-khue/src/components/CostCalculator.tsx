@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { Calculator } from "lucide-react";
-import { useCalculatorConfig } from "@/lib/site-settings";
+import { SectionHeader } from "@/components/SectionHeader";
+import { useCalculatorConfig, useSectionMeta } from "@/lib/site-settings";
 
 type LoaiNha = "nha-pho" | "biet-thu" | "cap-bon";
 type DichVu = "phan-tho" | "tron-goi";
@@ -38,6 +39,7 @@ const fmt = (n: number) => `${n.toLocaleString("vi-VN")} đ`;
 
 export function CostCalculator() {
   const calculatorConfig = useCalculatorConfig();
+  const meta = useSectionMeta();
   const [loaiNha, setLoaiNha] = useState<LoaiNha>("nha-pho");
   const [dichVu, setDichVu] = useState<DichVu>("phan-tho");
   const [mucDauTu, setMucDauTu] = useState<MucDauTu>("trung-binh");
@@ -151,18 +153,9 @@ export function CostCalculator() {
     "w-full rounded-2xl border border-slate-200 bg-white px-3 py-3 text-slate-700 outline-none transition focus:border-primary";
 
   return (
-    <section id="tinh-chi-phi" className="bg-white py-20">
+    <section id="tinh-chi-phi" className="bg-white py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-10 text-center">
-          <h2 className="mb-4 text-3xl font-bold uppercase text-primary md:text-4xl">
-            Tính chi phí xây dựng
-          </h2>
-          <div className="mx-auto mb-6 h-1 w-24 rounded bg-accent"></div>
-          <p className="mx-auto max-w-3xl text-slate-600">
-            Khách hàng nhập thông tin cơ bản để nhận dự toán tham khảo. Phần này đã
-            được tách thành công thức để có thể chỉnh đơn giá ngay trong admin.
-          </p>
-        </div>
+        <SectionHeader title={meta.calculator.title} subtitle={meta.calculator.subtitle} />
 
         <div className="mx-auto max-w-6xl rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-10">
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">

@@ -1,119 +1,418 @@
-import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clock } from "lucide-react";
+
 import { Link } from "wouter";
-import { useSiteSettings } from "@/lib/site-settings";
+
+import { useSiteSettings, telHref } from "@/lib/site-settings";
+
+import { BrandLogo } from "@/components/BrandLogo";
+
+import { navMenu } from "@/lib/menu";
+
+
 
 export function Footer() {
+
   const s = useSiteSettings();
+
   const phones = [s.hotline1, s.hotline2].filter(Boolean).join(" / ");
+
+  const serviceMenu = navMenu.find((m) => m.category === "dich-vu");
+
+  const experienceMenu = navMenu.find((m) => m.category === "kinh-nghiem");
+
+
+
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-16 pb-8 border-t-4 border-accent">
+
+    <footer className="relative border-t-4 border-accent bg-gradient-to-b from-slate-900 to-slate-950 pb-24 pt-16 text-slate-300 md:pb-8">
+
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
-          {/* Col 1 */}
+        <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+
           <div>
-            <img src={s.logoUrl} alt={s.companyName} className="h-16 mb-6 bg-white p-2 rounded" />
-            <h3 className="text-white font-bold text-lg mb-4">{s.companyName}</h3>
+
+            <BrandLogo
+
+              src={s.logoUrl}
+
+              alt={s.companyName}
+
+              className="mb-6 h-14 max-w-[200px] rounded bg-white p-2 object-contain"
+
+            />
+
+            <h3 className="mb-2 text-lg font-bold text-white">{s.companyName}</h3>
+
+            <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-accent">
+
+              Tận tâm — Uy tín — Chất lượng
+
+            </p>
+
             <p className="mb-4 text-sm leading-relaxed">{s.footerDescription}</p>
+
             <div className="space-y-3 text-sm">
+
               {s.address1 && (
+
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Trụ sở:</strong> {s.address1}</span>
+
+                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+
+                  <span>
+
+                    <strong className="text-white">Trụ sở:</strong> {s.address1}
+
+                  </span>
+
                 </div>
+
               )}
+
               {s.address2 && (
+
                 <div className="flex items-start gap-3">
-                  <Map className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span><strong className="text-white">VP:</strong> {s.address2}</span>
+
+                  <Map className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+
+                  <span>
+
+                    <strong className="text-white">VP:</strong> {s.address2}
+
+                  </span>
+
                 </div>
+
               )}
+
               {phones && (
+
                 <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Hotline:</strong> {phones}</span>
+
+                  <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+
+                  <span>
+
+                    <strong className="text-white">Hotline:</strong>{" "}
+
+                    <a href={telHref(s.hotline1)} className="hover:text-accent">
+
+                      {phones}
+
+                    </a>
+
+                  </span>
+
                 </div>
+
               )}
+
               {s.email && (
+
                 <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span><strong className="text-white">Email:</strong> {s.email}</span>
+
+                  <Mail className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+
+                  <span>
+
+                    <strong className="text-white">Email:</strong>{" "}
+
+                    <a href={`mailto:${s.email}`} className="hover:text-accent">
+
+                      {s.email}
+
+                    </a>
+
+                  </span>
+
                 </div>
+
               )}
-            </div>
-          </div>
 
-          {/* Col 2 */}
-          <div>
-            <h3 className="text-white font-bold text-xl mb-6 relative inline-block">
-              LIÊN KẾT NHANH
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-accent rounded"></span>
-            </h3>
-            <ul className="space-y-3 mt-4">
-              <li><Link href="/" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Trang chủ</Link></li>
-              <li><Link href="/gioi-thieu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Giới thiệu</Link></li>
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Dịch vụ</Link></li>
-              <li><Link href="/bao-gia" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Bảng báo giá</Link></li>
-              <li><Link href="/du-an" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Dự án tiêu biểu</Link></li>
-              <li><Link href="/lien-he" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Liên hệ</Link></li>
-            </ul>
-          </div>
+              <div className="flex items-start gap-3">
 
-          {/* Col 3 */}
-          <div>
-            <h3 className="text-white font-bold text-xl mb-6 relative inline-block">
-              DỊCH VỤ CỦA CHÚNG TÔI
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-accent rounded"></span>
-            </h3>
-            <ul className="space-y-3 mt-4">
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Xây nhà trọn gói</Link></li>
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Sửa chữa nhà trọn gói</Link></li>
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Xây dựng phần thô</Link></li>
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Thiết kế kiến trúc</Link></li>
-              <li><Link href="/dich-vu" className="hover:text-accent transition-colors flex items-center"><ArrowRight className="w-4 h-4 mr-2" /> Thiết kế nội thất</Link></li>
-            </ul>
-          </div>
+                <Clock className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
 
-          {/* Col 4 */}
-          <div>
-            <h3 className="text-white font-bold text-xl mb-6 relative inline-block">
-              BẢN ĐỒ
-              <span className="absolute -bottom-2 left-0 w-12 h-1 bg-accent rounded"></span>
-            </h3>
-            <div className="w-full h-48 bg-slate-800 rounded-lg border border-slate-700 flex items-center justify-center relative overflow-hidden mt-4 group">
-              <div className="absolute inset-0 bg-slate-800/80 group-hover:bg-slate-800/60 transition-colors flex flex-col items-center justify-center p-4 text-center">
-                <MapPin className="w-8 h-8 text-accent mb-2" />
-                <span className="text-white font-semibold block mb-1">{s.companyName}</span>
-                <span className="text-xs text-slate-300">{s.address1}</span>
+                <span>
+
+                  <strong className="text-white">Giờ làm việc:</strong> T2–T7, 8:00–17:30
+
+                </span>
+
               </div>
+
             </div>
+
+          </div>
+
+
+
+          <div>
+
+            <h3 className="relative mb-6 inline-block text-xl font-bold text-white">
+
+              LIÊN KẾT NHANH
+
+              <span className="absolute -bottom-2 left-0 h-1 w-12 rounded bg-accent" />
+
+            </h3>
+
+            <ul className="mt-4 space-y-3">
+
+              {navMenu
+
+                .filter((m) => !m.children || m.href === "/bao-gia" || m.href === "/lien-he")
+
+                .map((m) => (
+
+                  <li key={m.href}>
+
+                    <Link
+
+                      href={m.href}
+
+                      className="flex items-center transition-colors hover:text-accent"
+
+                    >
+
+                      <ArrowRight className="mr-2 h-4 w-4" /> {m.title}
+
+                    </Link>
+
+                  </li>
+
+                ))}
+
+              <li>
+
+                <Link href="/gioi-thieu" className="flex items-center transition-colors hover:text-accent">
+
+                  <ArrowRight className="mr-2 h-4 w-4" /> GIỚI THIỆU
+
+                </Link>
+
+              </li>
+
+              <li>
+
+                <Link href="/cong-trinh" className="flex items-center transition-colors hover:text-accent">
+
+                  <ArrowRight className="mr-2 h-4 w-4" /> CÔNG TRÌNH
+
+                </Link>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+
+
+          <div>
+
+            <h3 className="relative mb-6 inline-block text-xl font-bold text-white">
+
+              DỊCH VỤ
+
+              <span className="absolute -bottom-2 left-0 h-1 w-12 rounded bg-accent" />
+
+            </h3>
+
+            <ul className="mt-4 space-y-3">
+
+              {serviceMenu?.children?.map((c) => (
+
+                <li key={c.href}>
+
+                  <Link href={c.href} className="flex items-center transition-colors hover:text-accent">
+
+                    <ArrowRight className="mr-2 h-4 w-4" /> {c.title}
+
+                  </Link>
+
+                </li>
+
+              ))}
+
+            </ul>
+
+            {experienceMenu?.children && (
+
+              <>
+
+                <h3 className="relative mb-4 mt-8 inline-block text-lg font-bold text-white">
+
+                  KINH NGHIỆM
+
+                </h3>
+
+                <ul className="space-y-2">
+
+                  {experienceMenu.children.map((c) => (
+
+                    <li key={c.href}>
+
+                      <Link href={c.href} className="flex items-center text-sm transition-colors hover:text-accent">
+
+                        <ArrowRight className="mr-2 h-3 w-3" /> {c.title}
+
+                      </Link>
+
+                    </li>
+
+                  ))}
+
+                </ul>
+
+              </>
+
+            )}
+
+          </div>
+
+
+
+          <div>
+
+            <h3 className="relative mb-6 inline-block text-xl font-bold text-white">
+
+              BẢN ĐỒ
+
+              <span className="absolute -bottom-2 left-0 h-1 w-12 rounded bg-accent" />
+
+            </h3>
+
+            <a
+
+              href={`https://maps.google.com/?q=${encodeURIComponent(s.address1)}`}
+
+              target="_blank"
+
+              rel="noreferrer"
+
+              className="group relative mt-4 block h-48 overflow-hidden rounded-lg border border-slate-700 bg-slate-800"
+
+            >
+
+              <iframe
+
+                title="Bản đồ"
+
+                className="pointer-events-none h-full w-full border-0 opacity-80 transition group-hover:opacity-100"
+
+                loading="lazy"
+
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(s.address1)}&z=15&output=embed`}
+
+              />
+
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 p-4 text-center opacity-0 transition group-hover:opacity-100">
+
+                <MapPin className="mb-2 h-8 w-8 text-accent" />
+
+                <span className="text-sm font-semibold text-white">Xem trên Google Maps</span>
+
+              </div>
+
+            </a>
+
+
 
             <div className="mt-6 flex gap-4">
+
               {s.facebookUrl && (
-                <a href={s.facebookUrl} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+
+                <a
+
+                  href={s.facebookUrl}
+
+                  target="_blank"
+
+                  rel="noreferrer"
+
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 transition-colors hover:bg-accent hover:text-white"
+
+                >
+
                   <Facebook size={20} />
+
                 </a>
+
               )}
+
               {s.youtubeUrl && (
-                <a href={s.youtubeUrl} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+
+                <a
+
+                  href={s.youtubeUrl}
+
+                  target="_blank"
+
+                  rel="noreferrer"
+
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 transition-colors hover:bg-accent hover:text-white"
+
+                >
+
                   <Youtube size={20} />
+
                 </a>
+
               )}
+
               {s.instagramUrl && (
-                <a href={s.instagramUrl} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent hover:text-white transition-colors">
+
+                <a
+
+                  href={s.instagramUrl}
+
+                  target="_blank"
+
+                  rel="noreferrer"
+
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 transition-colors hover:bg-accent hover:text-white"
+
+                >
+
                   <Instagram size={20} />
+
                 </a>
+
               )}
+
             </div>
+
           </div>
 
         </div>
 
-        <div className="pt-8 border-t border-slate-800 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} {s.companyName}. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">{s.taxCode ? `MST: ${s.taxCode} | ` : ""}Website by Replit</p>
+
+
+        <div className="flex flex-col items-center justify-between border-t border-slate-800 pt-8 text-center text-sm text-slate-500 md:flex-row">
+
+          <p>
+
+            &copy; {new Date().getFullYear()} {s.companyName}. All rights reserved.
+
+          </p>
+
+          <p className="mt-2 md:mt-0">
+
+            {s.taxCode ? `MST: ${s.taxCode} | ` : ""}
+
+            Thiết kế & thi công xây dựng trọn gói TP.HCM
+
+          </p>
+
         </div>
+
       </div>
+
     </footer>
+
   );
+
 }
+

@@ -7,7 +7,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
 import router from "./routes";
+import sitemapRouter from "./routes/sitemap";
 import { logger } from "./lib/logger";
+import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
 
 const app: Express = express();
@@ -28,19 +30,36 @@ app.use(
     },
   }),
 );
-app.use(cors({ credentials: true, origin: true }));
+app.use(cors(getCorsOptions()));
 app.use(cookieParser());
 app.use(express.json({ limit: "2mb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(authMiddleware);
 
 app.use("/api", router);
+app.use(sitemapRouter);
 
 if (existsSync(frontendIndexPath)) {
+  const imagesDir = path.join(frontendDistDir, "images");
+  if (!existsSync(path.join(imagesDir, "logo.png"))) {
+    logger.warn(
+      { imagesDir },
+      "public/images/logo.png missing from build; site uses bundled logo in /assets/",
+    );
+  }
+
   app.use(express.static(frontendDistDir));
 
-  app.get(/^(?!\/api(?:\/|$)).*/, (_req, res) => {
-    res.sendFile(frontendIndexPath);
+  app.get(/^(?!\/api(?:\/|$)|sitemap\.xml$).*/, (req, res, next) => {
+    const pathOnly = req.path.split("?")[0] ?? req.path;
+    if (/\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|map|txt|xml)$/i.test(pathOnly)) {
+      res.status(404).end();
+      return;
+    }
+
+    res.sendFile(frontendIndexPath, (err) => {
+      if (err) next(err);
+    });
   });
 } else {
   logger.warn(

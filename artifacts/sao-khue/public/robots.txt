@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api/
 
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://kientrucsaokhue.com/sitemap.xml

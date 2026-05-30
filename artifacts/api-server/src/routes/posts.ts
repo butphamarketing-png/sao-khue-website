@@ -35,15 +35,20 @@ function serialize(p: typeof postsTable.$inferSelect) {
 }
 
 router.get("/posts", async (req, res) => {
-  const category = typeof req.query.category === "string" ? req.query.category : undefined;
-  const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
-  const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
+  try {
+    const category = typeof req.query.category === "string" ? req.query.category : undefined;
+    const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
+    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
 
-  const q = db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
-  if (category) q.where(eq(postsTable.category, category));
-  if (limit) q.limit(limit);
-  const rows = await q;
-  res.json(rows.map(serialize));
+    const q = db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
+    if (category) q.where(eq(postsTable.category, category));
+    if (limit) q.limit(limit);
+    const rows = await q;
+    res.json(rows.map(serialize));
+  } catch (err) {
+    console.error("[posts] list failed", err);
+    res.status(503).json({ error: "Database unavailable. Check DATABASE_URL / Supabase connection." });
+  }
 });
 
 router.get("/posts/:slug", async (req, res) => {

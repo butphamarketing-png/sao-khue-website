@@ -5,7 +5,8 @@
   "outputDirectory": "artifacts/api-server/public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api" },
-    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
+    { "source": "/sitemap.xml", "destination": "/api/sitemap.xml" },
+    { "source": "/((?!api/|assets/|sitemap\\.xml).*)", "destination": "/index.html" }
   ],
   "framework": null
 }

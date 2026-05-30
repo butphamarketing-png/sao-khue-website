@@ -1,8 +1,10 @@
 import { Calendar, Clock3 } from "lucide-react";
 import { Link } from "wouter";
+import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { normalizePosts } from "@/lib/posts";
+import { useSectionMeta } from "@/lib/site-settings";
 
 function readingMinutes(content: string | null | undefined) {
   const words = (content ?? "").replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -10,26 +12,26 @@ function readingMinutes(content: string | null | undefined) {
 }
 
 export function NewsSection() {
+  const meta = useSectionMeta();
   const { data: posts, isLoading } = useListPosts({ limit: 6 });
   const items = normalizePosts(posts);
 
   return (
-    <section id="kinh-nghiem" className="bg-white py-24">
+    <section id="kinh-nghiem" className="bg-white py-20 md:py-28">
       <div className="container mx-auto px-4">
-        <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
-          <div>
-            <h2 className="mb-4 text-3xl font-bold uppercase text-primary md:text-4xl">
-              Bài viết mới nhất
-            </h2>
-            <div className="h-1 w-24 rounded bg-accent"></div>
-          </div>
-          <Link
-            href="/kinh-nghiem"
-            className="inline-flex rounded-full border border-primary/15 bg-primary/5 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-primary transition hover:border-primary hover:bg-primary hover:text-white"
-          >
-            Xem tất cả bài viết
-          </Link>
-        </div>
+        <SectionHeader
+          align="left"
+          title={meta.news.title}
+          subtitle={meta.news.subtitle}
+          action={
+            <Link
+              href="/kinh-nghiem"
+              className="inline-flex rounded-full border border-primary/15 bg-primary/5 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-primary transition hover:border-primary hover:bg-primary hover:text-white"
+            >
+              Xem tất cả bài viết
+            </Link>
+          }
+        />
 
         {isLoading ? (
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">

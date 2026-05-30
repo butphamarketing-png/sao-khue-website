@@ -87,7 +87,13 @@ export function getSessionId(req: Request): string | undefined {
 
 export function isAdmin(user: AuthUser | undefined): boolean {
   if (!user) return false;
-  const allowList = (process.env.ADMIN_USER_IDS ?? "").split(",").map((s) => s.trim()).filter(Boolean);
-  if (allowList.length === 0) return true;
-  return allowList.includes(user.id);
+  const allowList = (process.env.ADMIN_USER_IDS ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (allowList.length > 0) return allowList.includes(user.id);
+  if (process.env.NODE_ENV === "production") {
+    return user.id === "render-admin";
+  }
+  return true;
 }
