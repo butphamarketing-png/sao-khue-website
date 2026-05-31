@@ -12,7 +12,10 @@ const siteMapGroups: { title: string; items: SiteMapItem[] }[] = [
     title: "Nội dung",
     items: [
       { label: "Bài viết", view: "posts", desc: "Tất cả bài viết & SEO" },
+      { label: "Hộp thư liên hệ", view: "contact-inbox", desc: "Form báo giá từ website" },
       { label: "Trang danh mục", view: "settings-categories", desc: "Intro /dich-vu, /cong-trinh..." },
+      { label: "Menu website", view: "settings-menu", desc: "Header, footer, menu con" },
+      { label: "Banner trang", view: "settings-banners", desc: "/bao-gia, /lien-he, 404" },
     ],
   },
   {
@@ -41,6 +44,7 @@ const siteMapGroups: { title: string; items: SiteMapItem[] }[] = [
       { label: "Đánh giá", view: "settings-testimonials", desc: "Review khách hàng" },
       { label: "FAQ", view: "settings-faq", desc: "Câu hỏi thường gặp" },
       { label: "Tiêu đề sections", view: "settings-sections", desc: "Tiêu đề + banner CTA" },
+      { label: "Bài nổi bật", view: "settings-featured", desc: "Dịch vụ, công trình, tin tức trang chủ" },
     ],
   },
   {

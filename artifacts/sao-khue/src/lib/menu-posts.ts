@@ -1,5 +1,5 @@
 import type { Post } from "@workspace/api-client-react";
-import { navMenu, type MenuItem } from "@/lib/menu";
+import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 
 export type MenuChild = MenuItem & { category: string };
 export type MenuChildOption = MenuChild & {
@@ -8,13 +8,18 @@ export type MenuChildOption = MenuChild & {
   parentTitle: string;
 };
 
+function resolveMenu(menu?: MenuItem[]) {
+  return menu?.length ? menu : defaultNavMenu;
+}
+
 export function getMenuLeafSlug(href: string): string {
   const parts = href.split("/").filter(Boolean);
   return parts[parts.length - 1] ?? "";
 }
 
-export function getMenuChildren(category: string): MenuChild[] {
-  const section = navMenu.find((item) => item.category === category);
+export function getMenuChildren(category: string, menu?: MenuItem[]): MenuChild[] {
+  const resolved = resolveMenu(menu);
+  const section = resolved.find((item) => item.category === category);
   return (section?.children ?? []).filter(
     (child): child is MenuChild => Boolean(child.category),
   );
@@ -32,13 +37,17 @@ export function parseSubCategoryKey(
   return { category, leaf };
 }
 
-export function getMenuChildOptions(category?: string | null): MenuChildOption[] {
+export function getMenuChildOptions(
+  category?: string | null,
+  menu?: MenuItem[],
+): MenuChildOption[] {
+  const resolved = resolveMenu(menu);
   const sections = category
-    ? navMenu.filter((item) => item.category === category)
-    : navMenu.filter((item) => item.category);
+    ? resolved.filter((item) => item.category === category)
+    : resolved.filter((item) => item.category);
 
   return sections.flatMap((section) =>
-    getMenuChildren(section.category!).map((child) => {
+    getMenuChildren(section.category!, resolved).map((child) => {
       const leaf = getMenuLeafSlug(child.href);
       return {
         ...child,
@@ -50,13 +59,20 @@ export function getMenuChildOptions(category?: string | null): MenuChildOption[]
   );
 }
 
-export function getMenuChildLabel(category: string, leaf: string): string | null {
-  const match = getMenuChildOptions(category).find((child) => child.leaf === leaf);
+export function getMenuChildLabel(
+  category: string,
+  leaf: string,
+  menu?: MenuItem[],
+): string | null {
+  const match = getMenuChildOptions(category, menu).find((child) => child.leaf === leaf);
   return match?.title ?? null;
 }
 
-export function inferSubSlugFromPost(post: Pick<Post, "slug" | "category">): string | null {
-  const children = getMenuChildren(post.category);
+export function inferSubSlugFromPost(
+  post: Pick<Post, "slug" | "category">,
+  menu?: MenuItem[],
+): string | null {
+  const children = getMenuChildren(post.category, menu);
 
   for (const child of children) {
     const leaf = getMenuLeafSlug(child.href);
@@ -77,8 +93,9 @@ export function inferSubSlugFromPost(post: Pick<Post, "slug" | "category">): str
 export function postMatchesSubSlug(
   post: Pick<Post, "slug" | "category">,
   subSlug: string,
+  menu?: MenuItem[],
 ): boolean {
-  return inferSubSlugFromPost(post) === subSlug;
+  return inferSubSlugFromPost(post, menu) === subSlug;
 }
 
 export function ensureSlugMatchesSubSlug(rawSlug: string, subSlug?: string | null): string {
@@ -89,4 +106,16 @@ export function ensureSlugMatchesSubSlug(rawSlug: string, subSlug?: string | nul
     return slug;
   }
   return `${subSlug}-${slug}`;
+}
+
+export function findMenuByPath(path: string, menu?: MenuItem[]): MenuItem | undefined {
+  const resolved = resolveMenu(menu);
+  for (const top of resolved) {
+    if (top.href === path) return top;
+    if (top.children) {
+      const child = top.children.find((c) => c.href === path);
+      if (child) return child;
+    }
+  }
+  return undefined;
 }

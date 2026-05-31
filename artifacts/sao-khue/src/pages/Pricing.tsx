@@ -6,14 +6,15 @@ import { ContactCTASection } from "@/components/ContactCTASection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
+import { usePageBanner } from "@/lib/site-settings";
 
 export default function Pricing() {
+  const banner = usePageBanner("pricing");
+
   return (
     <PageShell>
-      <PageBanner title="Báo giá xây dựng">
-        <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">
-          Tham khảo đơn giá xây thô, trọn gói và công cụ tính chi phí nhanh — minh bạch, không phát sinh.
-        </p>
+      <PageBanner title={banner.title}>
+        <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>
 
       <QuoteSection />

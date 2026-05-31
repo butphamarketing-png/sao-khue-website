@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSiteSettings, resolveLogoUrl } from "@/lib/site-settings";
+import { useSiteSettings, resolveLogoUrl, useOpenGraphImage } from "@/lib/site-settings";
 import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
 
 declare global {
@@ -90,6 +90,7 @@ function injectGA(id: string) {
 
 export function SiteHead() {
   const s = useSiteSettings();
+  const ogImage = useOpenGraphImage();
   useEffect(() => {
     const currentUrl = window.location.href;
     const pageTitle =
@@ -109,11 +110,11 @@ export function SiteHead() {
     setPropertyMeta("og:description", pageDescription);
     setPropertyMeta("og:site_name", s.companyName || "Kien Truc Sao Khue");
     setPropertyMeta("og:url", currentUrl);
-    setPropertyMeta("og:image", resolveLogoUrl(s.logoUrl) || BUNDLED_OPENGRAPH_URL);
+    setPropertyMeta("og:image", ogImage || BUNDLED_OPENGRAPH_URL);
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", pageTitle);
     setMeta("twitter:description", pageDescription);
-    setMeta("twitter:image", BUNDLED_OPENGRAPH_URL);
+    setMeta("twitter:image", ogImage || BUNDLED_OPENGRAPH_URL);
     setCanonical(currentUrl);
     setLink("icon", "/favicon.svg", "image/svg+xml");
     setLink("apple-touch-icon", resolveLogoUrl(s.logoUrl));
@@ -153,6 +154,7 @@ export function SiteHead() {
     s.instagramUrl,
     s.logoUrl,
     s.youtubeUrl,
+    ogImage,
   ]);
   return null;
 }

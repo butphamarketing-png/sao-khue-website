@@ -5,7 +5,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
-import { useSectionMeta } from "@/lib/site-settings";
+import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
+import { pickFeaturedByCategory } from "@/lib/featured-posts";
 
 const fallback = [
   { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },
@@ -20,11 +21,13 @@ const fallback = [
 
 export function ProjectsSection() {
   const meta = useSectionMeta();
-  const { data, isLoading } = useListPosts({ category: "cong-trinh", limit: 8 });
-  const posts = resolvePosts(data, { category: "cong-trinh", limit: 8 });
+  const featuredConfig = useFeaturedPostsConfig();
+  const { data, isLoading } = useListPosts({ category: "cong-trinh", limit: 100 });
+  const posts = resolvePosts(data, { category: "cong-trinh", limit: 100 });
+  const picked = pickFeaturedByCategory(posts, featuredConfig, "projects", "cong-trinh", 8);
   const projects =
-    posts.length > 0
-      ? posts.slice(0, 8).map((p) => ({
+    picked.length > 0
+      ? picked.slice(0, 8).map((p) => ({
           id: p.id,
           title: p.title,
           imageUrl: p.imageUrl || "/images/project_1.jpg",

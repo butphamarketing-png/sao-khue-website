@@ -2,12 +2,12 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, PhoneCall, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/BrandLogo";
-import { navMenu } from "@/lib/menu";
-import { useSiteSettings, telHref } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu } from "@/lib/site-settings";
 import { useEffect, useState } from "react";
 
 export function Header() {
   const s = useSiteSettings();
+  const menu = useNavMenu();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileSub, setOpenMobileSub] = useState<string | null>(null);
@@ -45,7 +45,7 @@ export function Header() {
           </Link>
 
           <nav className="hidden flex-1 items-center justify-center lg:flex">
-            {navMenu.map((item) => {
+            {menu.map((item) => {
               const active =
                 location === item.href ||
                 (item.category && location.startsWith(item.href + "/"));
@@ -117,7 +117,7 @@ export function Header() {
 
       {isMobileMenuOpen && (
         <div className="absolute left-0 top-full max-h-[80vh] w-full overflow-y-auto border-t border-slate-100 bg-white shadow-2xl lg:hidden">
-          {navMenu.map((item) => (
+          {menu.map((item) => (
             <div key={item.title} className="border-b border-slate-50">
               <div className="flex items-center justify-between">
                 <Link

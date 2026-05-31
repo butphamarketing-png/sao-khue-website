@@ -22,6 +22,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { AdminSiteMap } from "@/components/admin/AdminSiteMap";
+import {
+  ContactInboxPanel,
+  FeaturedPostsEditor,
+  NavMenuEditor,
+  PageBannersEditor,
+} from "@/components/admin/AdminExtendedEditors";
 import type { AdminView } from "@/components/admin/AdminShell";
 import {
   CategoryPagesPreviewCard,
@@ -51,6 +57,8 @@ import {
   defaultContactSection,
   defaultCtaBanner,
   defaultFaqs,
+  defaultFeaturedPosts,
+  defaultPageBanners,
   defaultProcessSteps,
   defaultQuoteServices,
   defaultSectionMeta,
@@ -60,7 +68,9 @@ import {
   type ContactSectionContent,
   type CtaBannerContent,
   type FaqItem,
+  type FeaturedPostsConfig,
   type HomeSectionMeta,
+  type PageBannersMap,
   type ProcessStep,
   type QuoteServiceItem,
   type StatItem,
@@ -88,7 +98,7 @@ import {
   StickyToolbar,
   ToolbarButton,
 } from "@/components/admin/admin-ui";
-import { navMenu } from "@/lib/menu";
+import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 import {
   type CommitmentItem,
   type HeroSlide,
@@ -162,6 +172,10 @@ type ExtendedSiteSettingsInput = SiteSettingsInput & {
   homeQuoteServicesJson: string;
   homeContactJson: string;
   topBarSlogan: string;
+  navMenuJson: string;
+  pageBannersJson: string;
+  homeFeaturedPostsJson: string;
+  opengraphImageUrl: string;
 };
 
 type FormState = {
@@ -177,13 +191,6 @@ type FormState = {
 };
 
 type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
-
-const contentSections = navMenu.filter((item) => item.category);
-
-const categoryOptions = contentSections.map((item) => ({
-  value: item.category!,
-  label: item.title,
-}));
 
 const emptyPostForm: FormState = {
   slug: "",
@@ -247,6 +254,10 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
   gscVerification: "",
+  navMenuJson: JSON.stringify(defaultNavMenu),
+  pageBannersJson: JSON.stringify(defaultPageBanners),
+  homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
+  opengraphImageUrl: "",
 };
 
 function parseArrayValue<T>(value: string | undefined, fallback: T[]): T[] {
@@ -289,16 +300,16 @@ function parseJsonObject<T extends object>(value: string | undefined, fallback: 
   }
 }
 
-function getSubCategoryOptions(categoryFilter: string) {
+function getSubCategoryOptions(categoryFilter: string, menu: MenuItem[]) {
   return categoryFilter === "all"
-    ? getMenuChildOptions()
-    : getMenuChildOptions(categoryFilter);
+    ? getMenuChildOptions(undefined, menu)
+    : getMenuChildOptions(categoryFilter, menu);
 }
 
-function getSubCategoryDisplay(post: Pick<Post, "slug" | "category">) {
-  const leaf = inferSubSlugFromPost(post);
+function getSubCategoryDisplay(post: Pick<Post, "slug" | "category">, menu: MenuItem[]) {
+  const leaf = inferSubSlugFromPost(post, menu);
   if (!leaf) return null;
-  return getMenuChildLabel(post.category, leaf) ?? leaf;
+  return getMenuChildLabel(post.category, leaf, menu) ?? leaf;
 }
 
 function buildSettingsFromApi(
@@ -353,6 +364,14 @@ function buildSettingsFromApi(
     homeContactJson:
       (rest.homeContactJson as string) ?? stringifyCompact(defaultContactSection),
     topBarSlogan: (rest.topBarSlogan as string) ?? defaultExtendedSettings.topBarSlogan,
+    navMenuJson:
+      (rest.navMenuJson as string) ?? stringifyCompact(defaultNavMenu),
+    pageBannersJson:
+      (rest.pageBannersJson as string) ?? stringifyCompact(defaultPageBanners),
+    homeFeaturedPostsJson:
+      (rest.homeFeaturedPostsJson as string) ?? stringifyCompact(defaultFeaturedPosts),
+    opengraphImageUrl:
+      (rest.opengraphImageUrl as string) ?? defaultExtendedSettings.opengraphImageUrl,
   };
 }
 
@@ -416,6 +435,10 @@ export default function Admin() {
     useState<ContactSectionContent>(defaultContactSection);
   const [calculatorConfig, setCalculatorConfig] =
     useState<CalculatorConfig>(defaultCalculatorConfig);
+  const [navMenuItems, setNavMenuItems] = useState<MenuItem[]>(defaultNavMenu);
+  const [pageBanners, setPageBanners] = useState<PageBannersMap>(defaultPageBanners);
+  const [featuredPosts, setFeaturedPosts] =
+    useState<FeaturedPostsConfig>(defaultFeaturedPosts);
   const [settingsSavedAt, setSettingsSavedAt] = useState<number | null>(null);
 
   useEffect(() => {
@@ -432,10 +455,10 @@ export default function Admin() {
       metaDescription: editing.metaDescription ?? "",
       metaKeywords: editing.metaKeywords ?? "",
     });
-    setPostSubCategory(inferSubSlugFromPost(editing) ?? "");
+    setPostSubCategory(inferSubSlugFromPost(editing, navMenuItems) ?? "");
     setShowEditor(true);
     setView("posts");
-  }, [editing]);
+  }, [editing, navMenuItems]);
 
   useEffect(() => {
     if (!siteData) return;
@@ -477,12 +500,34 @@ export default function Admin() {
         defaultCalculatorConfig,
       ),
     );
+    setNavMenuItems(parseArrayValue<MenuItem>(built.navMenuJson, defaultNavMenu));
+    setPageBanners({
+      ...defaultPageBanners,
+      ...parseJsonObject<Partial<PageBannersMap>>(built.pageBannersJson, {}),
+    });
+    setFeaturedPosts({
+      ...defaultFeaturedPosts,
+      ...parseJsonObject<Partial<FeaturedPostsConfig>>(built.homeFeaturedPostsJson, {}),
+    });
   }, [siteData]);
+
+  const contentSections = useMemo(
+    () => navMenuItems.filter((item) => item.category),
+    [navMenuItems],
+  );
+  const categoryOptions = useMemo(
+    () =>
+      contentSections.map((item) => ({
+        value: item.category!,
+        label: item.title,
+      })),
+    [contentSections],
+  );
 
   const selectedSection =
     contentSections.find((section) => section.category === postForm.category) ?? null;
   const selectedChildren = selectedSection?.category
-    ? getMenuChildren(selectedSection.category)
+    ? getMenuChildren(selectedSection.category, navMenuItems)
     : [];
   const previewSlug = ensureSlugMatchesSubSlug(postForm.slug || "duong-dan-bai-viet", postSubCategory || null);
   const contentText = postForm.content.replace(/<[^>]+>/g, " ").trim();
@@ -520,7 +565,7 @@ export default function Admin() {
           if (!parsed) return true;
           return (
             post.category === parsed.category &&
-            inferSubSlugFromPost(post) === parsed.leaf
+            inferSubSlugFromPost(post, navMenuItems) === parsed.leaf
           );
         });
 
@@ -649,6 +694,9 @@ export default function Admin() {
         serviceOptions: contactSection.serviceOptions.filter(Boolean),
       }),
       homeCalculatorConfigJson: stringifyCompact(calculatorConfig),
+      navMenuJson: stringifyCompact(navMenuItems),
+      pageBannersJson: stringifyCompact(pageBanners),
+      homeFeaturedPostsJson: stringifyCompact(featuredPosts),
     };
 
     try {
@@ -745,6 +793,21 @@ export default function Admin() {
     if (!confirm("Khôi phục video về mặc định?")) return;
     updateSettingField("homeVideoUrl", defaultSiteSettings.homeVideoUrl);
     updateSettingField("homeVideoLabel", defaultSiteSettings.homeVideoLabel);
+  }
+
+  function restoreMenuDefaults() {
+    if (!confirm("Khôi phục menu website về mặc định?")) return;
+    setNavMenuItems([...defaultNavMenu]);
+  }
+
+  function restorePageBannersDefaults() {
+    if (!confirm("Khôi phục banner trang về mặc định?")) return;
+    setPageBanners({ ...defaultPageBanners });
+  }
+
+  function restoreFeaturedPostsDefaults() {
+    if (!confirm("Khôi phục bài nổi bật trang chủ về mặc định?")) return;
+    setFeaturedPosts({ ...defaultFeaturedPosts });
   }
 
   function restoreGeneralDefaults() {
@@ -962,7 +1025,7 @@ export default function Admin() {
                         onChange={(e) => setPostSubCategoryFilter(e.target.value)}
                       >
                         <option value="all">Tat ca muc con</option>
-                        {getSubCategoryOptions(postCategoryFilter).map((child) => (
+                        {getSubCategoryOptions(postCategoryFilter, navMenuItems).map((child) => (
                           <option key={child.key} value={getSubCategoryKey(child.category, child.leaf)}>
                             {postCategoryFilter === "all"
                               ? `${child.parentTitle} / ${child.title}`
@@ -998,9 +1061,9 @@ export default function Admin() {
                             {post.category}
                           </span>
                         </div>
-                        {getSubCategoryDisplay(post) && (
+                        {getSubCategoryDisplay(post, navMenuItems) && (
                           <div className="mt-3 inline-flex rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-semibold text-blue-700">
-                            {getSubCategoryDisplay(post)}
+                            {getSubCategoryDisplay(post, navMenuItems)}
                           </div>
                         )}
                         <div className="mt-3 text-xs text-slate-500">
@@ -1339,7 +1402,7 @@ export default function Admin() {
                             category={selectedSection?.title ?? postForm.category}
                             subCategory={
                               postSubCategory
-                                ? getMenuChildLabel(postForm.category, postSubCategory) ?? postSubCategory
+                                ? getMenuChildLabel(postForm.category, postSubCategory, navMenuItems) ?? postSubCategory
                                 : ""
                             }
                             slug={previewSlug}
@@ -1529,6 +1592,13 @@ export default function Admin() {
                       }
                     />
                   </Field>
+                  <ImageUploadField
+                    label="Ảnh Open Graph (Facebook/Zalo share)"
+                    value={settingsForm.opengraphImageUrl}
+                    onChange={(url) => updateSettingField("opengraphImageUrl", url)}
+                    folder="brand"
+                    hint="Để trống sẽ dùng ảnh mặc định của website"
+                  />
                   <Field label="Google Analytics ID">
                     <Input
                       value={settingsForm.gaTrackingId}
@@ -2329,6 +2399,69 @@ export default function Admin() {
               <CalculatorRatesEditor config={calculatorConfig} onChange={setCalculatorConfig} />
               <CalculatorPreviewCard configJson={stringifyCompact(calculatorConfig)} />
             </div>
+          </SettingsScreen>
+        );
+
+      case "settings-menu":
+        return (
+          <SettingsScreen
+            title="Menu website"
+            desc="Chỉnh nhãn và đường dẫn menu chính, menu con trên header/footer."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreMenuDefaults}
+            primaryLabel="Lưu menu"
+          >
+            <NavMenuEditor menu={navMenuItems} setMenu={setNavMenuItems} />
+          </SettingsScreen>
+        );
+
+      case "settings-banners":
+        return (
+          <SettingsScreen
+            title="Banner trang"
+            desc="Tiêu đề và mô tả cho /bao-gia, /lien-he và trang 404."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restorePageBannersDefaults}
+            primaryLabel="Lưu banner"
+          >
+            <PageBannersEditor banners={pageBanners} setBanners={setPageBanners} />
+          </SettingsScreen>
+        );
+
+      case "settings-featured":
+        return (
+          <SettingsScreen
+            title="Bài nổi bật trang chủ"
+            desc="Chọn bài hiển thị ở Dịch vụ, Công trình và Tin tức trên trang chủ."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreFeaturedPostsDefaults}
+            primaryLabel="Lưu bài nổi bật"
+          >
+            <FeaturedPostsEditor
+              config={featuredPosts}
+              setConfig={setFeaturedPosts}
+              posts={items}
+            />
+          </SettingsScreen>
+        );
+
+      case "contact-inbox":
+        return (
+          <SettingsScreen
+            title="Hộp thư liên hệ"
+            desc="Yêu cầu báo giá gửi từ form trên website."
+            savedAt={null}
+            isSaving={false}
+            onSave={() => undefined}
+            hideSave
+          >
+            <ContactInboxPanel />
           </SettingsScreen>
         );
 

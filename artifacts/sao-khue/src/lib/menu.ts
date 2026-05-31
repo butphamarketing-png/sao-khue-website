@@ -5,7 +5,7 @@ export type MenuItem = {
   children?: MenuItem[];
 };
 
-export const navMenu: MenuItem[] = [
+export const defaultNavMenu: MenuItem[] = [
   { title: "TRANG CHỦ", href: "/" },
   {
     title: "GIỚI THIỆU",
@@ -56,15 +56,9 @@ export const navMenu: MenuItem[] = [
   { title: "LIÊN HỆ", href: "/lien-he" },
 ];
 
+/** @deprecated use defaultNavMenu or useNavMenu() */
+export const navMenu = defaultNavMenu;
+
 export const allCategorySlugs = ["gioi-thieu", "dich-vu", "cong-trinh", "kinh-nghiem"];
 
-export function findMenuByPath(path: string): MenuItem | undefined {
-  for (const top of navMenu) {
-    if (top.href === path) return top;
-    if (top.children) {
-      const child = top.children.find((c) => c.href === path);
-      if (child) return child;
-    }
-  }
-  return undefined;
-}
+export { findMenuByPath } from "@/lib/menu-posts";

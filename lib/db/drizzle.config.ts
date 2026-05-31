@@ -1,14 +1,18 @@
 import { defineConfig } from "drizzle-kit";
-import path from "path";
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL, ensure the database is provisioned");
+const migrationUrl =
+  process.env.DIRECT_URL ?? process.env.DATABASE_URL ?? process.env.SUPABASE_DATABASE_URL;
+
+if (!migrationUrl) {
+  throw new Error(
+    "Set DIRECT_URL (session pooler 5432) or DATABASE_URL before running db push",
+  );
 }
 
 export default defineConfig({
-  schema: path.join(__dirname, "./src/schema/index.ts"),
+  schema: "./src/schema/*.ts",
   dialect: "postgresql",
   dbCredentials: {
-    url: process.env.DATABASE_URL,
+    url: migrationUrl,
   },
 });

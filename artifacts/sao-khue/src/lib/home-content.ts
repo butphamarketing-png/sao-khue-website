@@ -279,3 +279,47 @@ export const defaultCategoryPages: CategoryPagesMap = {
 };
 
 export const CATEGORY_PAGE_KEYS = ["gioi-thieu", "dich-vu", "cong-trinh", "kinh-nghiem"] as const;
+
+export type PageBannerContent = {
+  title: string;
+  subtitle: string;
+  bodyTitle?: string;
+  bodyText?: string;
+};
+
+export type PageBannersMap = {
+  pricing: PageBannerContent;
+  contact: PageBannerContent;
+  notFound: PageBannerContent;
+};
+
+export type FeaturedPostsConfig = {
+  services: string[];
+  projects: string[];
+  news: string[];
+};
+
+export const defaultPageBanners: PageBannersMap = {
+  pricing: {
+    title: "Báo giá xây dựng",
+    subtitle:
+      "Tham khảo đơn giá xây thô, trọn gói và công cụ tính chi phí nhanh — minh bạch, không phát sinh.",
+  },
+  contact: {
+    title: "Liên hệ",
+    subtitle: "Hotline 24/7 — khảo sát miễn phí — báo giá trong 24–48 giờ.",
+  },
+  notFound: {
+    title: "404 — Không tìm thấy trang",
+    subtitle: "Đường dẫn không tồn tại hoặc đã được đổi tên.",
+    bodyTitle: "Trang bạn tìm không có ở đây",
+    bodyText:
+      "Vui lòng quay về trang chủ, gọi hotline tư vấn hoặc chọn một mục bên dưới.",
+  },
+};
+
+export const defaultFeaturedPosts: FeaturedPostsConfig = {
+  services: [],
+  projects: [],
+  news: [],
+};

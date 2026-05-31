@@ -3,18 +3,17 @@ import { ContactCTASection } from "@/components/ContactCTASection";
 import { FAQSection } from "@/components/FAQSection";
 import { PageBanner } from "@/components/PageBanner";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
-import { useSiteSettings, telHref } from "@/lib/site-settings";
+import { useSiteSettings, telHref, usePageBanner } from "@/lib/site-settings";
 
 export default function Contact() {
   const s = useSiteSettings();
+  const banner = usePageBanner("contact");
   const phones = [s.hotline1, s.hotline2].filter(Boolean);
 
   return (
     <PageShell>
-      <PageBanner title="Liên hệ">
-        <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">
-          Hotline 24/7 — khảo sát miễn phí — báo giá trong 24–48 giờ.
-        </p>
+      <PageBanner title={banner.title}>
+        <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>
 
       <section className="container mx-auto px-4 py-12 md:py-16">
@@ -56,7 +55,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="text-xs font-bold uppercase tracking-wide text-slate-500">Giờ làm việc</div>
-              <div className="text-sm font-semibold text-slate-800">Thứ 2 – Thứ 7: 8:00 – 17:30</div>
+              <div className="text-sm font-semibold text-slate-800">{s.workingHours || "8:00 – 17:30"}</div>
               <div className="text-xs text-slate-500">Hotline hỗ trợ 24/7</div>
             </div>
           </div>

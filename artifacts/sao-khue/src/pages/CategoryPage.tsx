@@ -6,11 +6,11 @@ import { PageBanner } from "@/components/PageBanner";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CTABanner } from "@/components/CTABanner";
 import { useListPosts } from "@workspace/api-client-react";
-import { findMenuByPath, navMenu } from "@/lib/menu";
+import { findMenuByPath } from "@/lib/menu";
 import { useLocation } from "wouter";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
-import { useSiteSettings, telHref } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu } from "@/lib/site-settings";
 
 const categoryLabels: Record<string, string> = {
   "gioi-thieu": "Giới thiệu",
@@ -27,6 +27,7 @@ interface Props {
 export default function CategoryPage({ category, subSlug }: Props) {
   const [location] = useLocation();
   const s = useSiteSettings();
+  const menu = useNavMenu();
   const { data: posts, isLoading } = useListPosts({ category });
   const items = resolvePosts(posts, { category });
 
@@ -34,14 +35,14 @@ export default function CategoryPage({ category, subSlug }: Props) {
     window.scrollTo(0, 0);
   }, [location]);
 
-  const currentItem = findMenuByPath(location);
+  const currentItem = findMenuByPath(location, menu);
   const pageTitle = currentItem?.title || categoryLabels[category] || "Bài viết";
 
   const filteredPosts = subSlug
-    ? items.filter((p) => postMatchesSubSlug(p, subSlug))
+    ? items.filter((p) => postMatchesSubSlug(p, subSlug, menu))
     : items;
 
-  const topItem = navMenu.find((m) => m.category === category);
+  const topItem = menu.find((m) => m.category === category);
 
   return (
     <PageShell className="bg-slate-50">

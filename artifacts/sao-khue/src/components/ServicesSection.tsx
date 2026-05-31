@@ -6,7 +6,8 @@ import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
-import { useSectionMeta } from "@/lib/site-settings";
+import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
+import { pickFeaturedByCategory } from "@/lib/featured-posts";
 
 const fallback = [
   { id: "sn", title: "SỬA NHÀ TRỌN GÓI", imageUrl: "/images/service-2.png", slug: "" },
@@ -17,11 +18,13 @@ const fallback = [
 
 export function ServicesSection() {
   const meta = useSectionMeta();
-  const { data, isLoading } = useListPosts({ category: "dich-vu", limit: 4 });
-  const posts = resolvePosts(data, { category: "dich-vu", limit: 4 });
+  const featuredConfig = useFeaturedPostsConfig();
+  const { data, isLoading } = useListPosts({ category: "dich-vu", limit: 100 });
+  const posts = resolvePosts(data, { category: "dich-vu", limit: 100 });
+  const picked = pickFeaturedByCategory(posts, featuredConfig, "services", "dich-vu", 4);
   const services =
-    posts.length > 0
-      ? posts.slice(0, 4).map((p) => ({
+    picked.length > 0
+      ? picked.slice(0, 4).map((p) => ({
           id: String(p.id),
           title: p.title.toUpperCase(),
           imageUrl: p.imageUrl || "/images/service-1.png",

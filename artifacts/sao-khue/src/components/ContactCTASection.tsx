@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useContactSection, useSiteSettings, telHref } from "@/lib/site-settings";
+import { submitContactLead } from "@/lib/contact-leads-api";
 import { toast } from "@/hooks/use-toast";
 
 export function ContactCTASection() {
   const s = useSiteSettings();
   const contact = useContactSection();
+  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -18,29 +20,48 @@ export function ContactCTASection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const body = [
-      `Họ tên: ${form.name}`,
-      `Điện thoại: ${form.phone}`,
-      form.email && `Email: ${form.email}`,
-      form.service && `Dịch vụ: ${form.service}`,
-      form.message && `Nội dung: ${form.message}`,
-    ]
-      .filter(Boolean)
-      .join("\n");
+    setSubmitting(true);
+    try {
+      await submitContactLead({
+        name: form.name,
+        phone: form.phone,
+        email: form.email || undefined,
+        service: form.service || undefined,
+        message: form.message || undefined,
+      });
 
-    if (s.email) {
-      window.location.href = `mailto:${s.email}?subject=${encodeURIComponent(
-        `[Sao Khuê] Yêu cầu báo giá — ${form.name}`
-      )}&body=${encodeURIComponent(body)}`;
+      const body = [
+        `Họ tên: ${form.name}`,
+        `Điện thoại: ${form.phone}`,
+        form.email && `Email: ${form.email}`,
+        form.service && `Dịch vụ: ${form.service}`,
+        form.message && `Nội dung: ${form.message}`,
+      ]
+        .filter(Boolean)
+        .join("\n");
+
+      if (s.email) {
+        window.location.href = `mailto:${s.email}?subject=${encodeURIComponent(
+          `[Sao Khuê] Yêu cầu báo giá — ${form.name}`,
+        )}&body=${encodeURIComponent(body)}`;
+      }
+
+      toast({
+        title: "Đã ghi nhận yêu cầu",
+        description: `Cảm ơn ${form.name}! Chúng tôi sẽ liên hệ qua ${form.phone} trong thời gian sớm nhất.`,
+      });
+      setForm({ name: "", phone: "", email: "", service: "", message: "" });
+    } catch (err) {
+      toast({
+        title: "Không gửi được yêu cầu",
+        description: err instanceof Error ? err.message : "Vui lòng thử lại hoặc gọi hotline.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
     }
-
-    toast({
-      title: "Đã ghi nhận yêu cầu",
-      description: `Cảm ơn ${form.name}! Chúng tôi sẽ liên hệ qua ${form.phone} trong thời gian sớm nhất.`,
-    });
-    setForm({ name: "", phone: "", email: "", service: "", message: "" });
   };
 
   return (
@@ -165,6 +186,7 @@ export function ContactCTASection() {
                 </div>
                 <Button
                   type="submit"
+                  disabled={submitting}
                   className="h-auto w-full rounded-full bg-accent py-6 text-base font-bold uppercase tracking-wide hover:bg-accent/90"
                 >
                   <Send className="mr-2 h-5 w-5" />

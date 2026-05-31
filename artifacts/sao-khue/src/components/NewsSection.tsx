@@ -4,7 +4,8 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
-import { useSectionMeta } from "@/lib/site-settings";
+import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
+import { pickFeaturedPosts } from "@/lib/featured-posts";
 
 function readingMinutes(content: string | null | undefined) {
   const words = (content ?? "").replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -13,8 +14,10 @@ function readingMinutes(content: string | null | undefined) {
 
 export function NewsSection() {
   const meta = useSectionMeta();
-  const { data: posts, isLoading } = useListPosts({ limit: 6 });
-  const items = resolvePosts(posts, { limit: 6 });
+  const featuredConfig = useFeaturedPostsConfig();
+  const { data: posts, isLoading } = useListPosts({ limit: 100 });
+  const allItems = resolvePosts(posts, { limit: 100 });
+  const items = pickFeaturedPosts(allItems, featuredConfig.news, 6);
 
   return (
     <section id="kinh-nghiem" className="bg-white py-20 md:py-28">

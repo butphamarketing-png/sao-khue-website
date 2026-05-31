@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { navMenu } from "@/lib/menu";
-import { useCategoryPages } from "@/lib/site-settings";
+import { useCategoryPages, useNavMenu } from "@/lib/site-settings";
 
 type Props = {
   category: string;
@@ -9,7 +8,8 @@ type Props = {
 
 export function CategoryShowcase({ category }: Props) {
   const pages = useCategoryPages();
-  const section = navMenu.find((m) => m.category === category);
+  const menu = useNavMenu();
+  const section = menu.find((m) => m.category === category);
   const content = pages[category];
   const children = section?.children ?? [];
 

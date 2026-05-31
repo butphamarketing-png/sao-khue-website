@@ -4,7 +4,10 @@ import {
   type ContactSectionContent,
   type CtaBannerContent,
   type FaqItem,
+  type FeaturedPostsConfig,
   type HomeSectionMeta,
+  type PageBannerContent,
+  type PageBannersMap,
   type ProcessStep,
   type QuoteServiceItem,
   type StatItem,
@@ -13,13 +16,16 @@ import {
   defaultContactSection,
   defaultCtaBanner,
   defaultFaqs,
+  defaultFeaturedPosts,
+  defaultPageBanners,
   defaultProcessSteps,
   defaultQuoteServices,
   defaultSectionMeta,
   defaultStats,
   defaultTestimonials,
 } from "@/lib/home-content";
-import { BUNDLED_LOGO_URL, resolveLogoUrl } from "@/lib/brand-assets";
+import { BUNDLED_LOGO_URL, BUNDLED_OPENGRAPH_URL, resolveLogoUrl } from "@/lib/brand-assets";
+import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 
 export type HeroSlide = {
   image: string;
@@ -195,6 +201,10 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
   gscVerification: "",
+  navMenuJson: JSON.stringify(defaultNavMenu),
+  pageBannersJson: JSON.stringify(defaultPageBanners),
+  homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
+  opengraphImageUrl: "",
 };
 
 function parseJsonValue<T>(value: unknown, fallback: T): T {
@@ -418,6 +428,39 @@ export function useContactSection(): ContactSectionContent {
 export function useTopBarSlogan(): string {
   const settings = useSiteSettings();
   return settings.topBarSlogan || defaultSiteSettings.topBarSlogan;
+}
+
+export function useNavMenu(): MenuItem[] {
+  const settings = useSiteSettings();
+  const parsed = parseJsonValue<MenuItem[]>(settings.navMenuJson, defaultNavMenu);
+  return parsed.length > 0 ? parsed : defaultNavMenu;
+}
+
+export function usePageBanners(): PageBannersMap {
+  const settings = useSiteSettings();
+  return {
+    ...defaultPageBanners,
+    ...parseJsonValue<Partial<PageBannersMap>>(settings.pageBannersJson, {}),
+  };
+}
+
+export function usePageBanner(key: keyof PageBannersMap): PageBannerContent {
+  return usePageBanners()[key];
+}
+
+export function useFeaturedPostsConfig(): FeaturedPostsConfig {
+  const settings = useSiteSettings();
+  return {
+    ...defaultFeaturedPosts,
+    ...parseJsonValue<Partial<FeaturedPostsConfig>>(settings.homeFeaturedPostsJson, {}),
+  };
+}
+
+export function useOpenGraphImage(): string {
+  const settings = useSiteSettings();
+  const custom = settings.opengraphImageUrl?.trim();
+  if (custom) return resolveLogoUrl(custom);
+  return BUNDLED_OPENGRAPH_URL;
 }
 
 export function telHref(phone?: string | null): string {

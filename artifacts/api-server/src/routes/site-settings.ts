@@ -47,6 +47,10 @@ const SettingsInput = z.object({
   topBarSlogan: z.string().default("Tận tâm — Uy tín — Chất lượng"),
   gaTrackingId: z.string().default(""),
   gscVerification: z.string().default(""),
+  navMenuJson: z.string().default("[]"),
+  pageBannersJson: z.string().default("{}"),
+  homeFeaturedPostsJson: z.string().default("{}"),
+  opengraphImageUrl: z.string().default(""),
 });
 
 const router: IRouter = Router();

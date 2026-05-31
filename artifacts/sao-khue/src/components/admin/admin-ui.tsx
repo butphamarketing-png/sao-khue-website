@@ -179,6 +179,7 @@ export function SettingsScreen({
   isSaving,
   savedAt,
   primaryLabel = "Lưu thay đổi",
+  hideSave = false,
 }: {
   title: string;
   desc: string;
@@ -188,6 +189,7 @@ export function SettingsScreen({
   isSaving: boolean;
   savedAt: number | null;
   primaryLabel?: string;
+  hideSave?: boolean;
 }) {
   return (
     <div className="space-y-6">
@@ -215,6 +217,7 @@ export function SettingsScreen({
               Khôi phục mặc định
             </Button>
           )}
+          {!hideSave && (
           <Button
             type="button"
             onClick={onSave}
@@ -224,6 +227,7 @@ export function SettingsScreen({
             <Save size={16} className="mr-2" />
             {isSaving ? "Đang lưu..." : primaryLabel}
           </Button>
+          )}
         </div>
       </StickyToolbar>
       {children}

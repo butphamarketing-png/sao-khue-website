@@ -23,6 +23,10 @@ import {
   Type,
   PlayCircle,
   X,
+  Navigation,
+  PanelTop,
+  Star,
+  Inbox,
 } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { SidebarButton, SidebarGroupBlock } from "./admin-ui";
@@ -44,7 +48,11 @@ export type AdminView =
   | "settings-categories"
   | "settings-sections"
   | "settings-quote"
-  | "settings-contact";
+  | "settings-contact"
+  | "settings-menu"
+  | "settings-banners"
+  | "settings-featured"
+  | "contact-inbox";
 
 type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
 
@@ -97,6 +105,12 @@ export function AdminShell({
           icon={FileText}
           label="Tất cả bài viết"
         />
+        <SidebarButton
+          active={view === "contact-inbox"}
+          onClick={() => { setView("contact-inbox"); setMobileOpen(false); }}
+          icon={Inbox}
+          label="Hộp thư liên hệ"
+        />
       </SidebarGroupBlock>
 
       <SidebarGroupBlock
@@ -116,6 +130,7 @@ export function AdminShell({
         <NavItem view={view} target="settings-process" setView={setView} setMobileOpen={setMobileOpen} icon={ListOrdered} label="Quy trình" />
         <NavItem view={view} target="settings-video" setView={setView} setMobileOpen={setMobileOpen} icon={PlayCircle} label="Video" />
         <NavItem view={view} target="settings-sections" setView={setView} setMobileOpen={setMobileOpen} icon={Type} label="Tiêu đề sections" />
+        <NavItem view={view} target="settings-featured" setView={setView} setMobileOpen={setMobileOpen} icon={Star} label="Bài nổi bật" />
         <NavItem view={view} target="settings-contact" setView={setView} setMobileOpen={setMobileOpen} icon={Mail} label="Form liên hệ" />
       </SidebarGroupBlock>
 
@@ -126,6 +141,8 @@ export function AdminShell({
         onToggle={() => toggleGroup("settings")}
       >
         <NavItem view={view} target="settings-categories" setView={setView} setMobileOpen={setMobileOpen} icon={LayoutGrid} label="Trang danh mục" />
+        <NavItem view={view} target="settings-menu" setView={setView} setMobileOpen={setMobileOpen} icon={Navigation} label="Menu website" />
+        <NavItem view={view} target="settings-banners" setView={setView} setMobileOpen={setMobileOpen} icon={PanelTop} label="Banner trang" />
         <NavItem view={view} target="settings-general" setView={setView} setMobileOpen={setMobileOpen} icon={Globe} label="Thông tin website" />
       </SidebarGroupBlock>
 

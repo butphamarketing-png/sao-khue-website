@@ -2,23 +2,21 @@ import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clo
 
 import { Link } from "wouter";
 
-import { useSiteSettings, telHref } from "@/lib/site-settings";
-
-import { BrandLogo } from "@/components/BrandLogo";
-
-import { navMenu } from "@/lib/menu";
+import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan } from "@/lib/site-settings";
 
 
 
 export function Footer() {
 
   const s = useSiteSettings();
+  const menu = useNavMenu();
+  const slogan = useTopBarSlogan();
 
   const phones = [s.hotline1, s.hotline2].filter(Boolean).join(" / ");
 
-  const serviceMenu = navMenu.find((m) => m.category === "dich-vu");
+  const serviceMenu = menu.find((m) => m.category === "dich-vu");
 
-  const experienceMenu = navMenu.find((m) => m.category === "kinh-nghiem");
+  const experienceMenu = menu.find((m) => m.category === "kinh-nghiem");
 
 
 
@@ -46,7 +44,7 @@ export function Footer() {
 
             <p className="mb-1 text-xs font-bold uppercase tracking-[0.2em] text-accent">
 
-              Tận tâm — Uy tín — Chất lượng
+              {slogan}
 
             </p>
 
@@ -160,7 +158,7 @@ export function Footer() {
 
             <ul className="mt-4 space-y-3">
 
-              {navMenu
+              {menu
 
                 .filter((m) => !m.children || m.href === "/bao-gia" || m.href === "/lien-he")
 

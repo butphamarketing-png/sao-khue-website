@@ -3,16 +3,17 @@ import { AlertCircle, ArrowRight, Home, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageShell } from "@/components/PageShell";
 import { PageBanner } from "@/components/PageBanner";
-import { navMenu } from "@/lib/menu";
-import { useSiteSettings, telHref } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu, usePageBanner } from "@/lib/site-settings";
 
 export default function NotFound() {
   const s = useSiteSettings();
-  const quickLinks = navMenu.filter((item) => item.href !== "/").slice(0, 6);
+  const menu = useNavMenu();
+  const banner = usePageBanner("notFound");
+  const quickLinks = menu.filter((item) => item.href !== "/").slice(0, 6);
 
   return (
     <PageShell>
-      <PageBanner title="404 — Không tìm thấy trang" subtitle="Đường dẫn không tồn tại hoặc đã được đổi tên." />
+      <PageBanner title={banner.title} subtitle={banner.subtitle} />
 
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="mx-auto max-w-2xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl md:p-10">
@@ -21,10 +22,8 @@ export default function NotFound() {
               <AlertCircle className="h-8 w-8" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900 md:text-2xl">Trang bạn tìm không có ở đây</h2>
-              <p className="mt-2 leading-relaxed text-slate-600">
-                Vui lòng quay về trang chủ, gọi hotline tư vấn hoặc chọn một mục bên dưới.
-              </p>
+              <h2 className="text-xl font-bold text-slate-900 md:text-2xl">{banner.bodyTitle}</h2>
+              <p className="mt-2 leading-relaxed text-slate-600">{banner.bodyText}</p>
             </div>
           </div>
 
