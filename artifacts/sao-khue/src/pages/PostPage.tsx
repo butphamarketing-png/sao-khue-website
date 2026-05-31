@@ -79,7 +79,7 @@ export default function PostPage() {
   }, [post, brandName]);
 
   return (
-    <PageShell className="bg-slate-50">
+    <PageShell>
       <PageBanner title={post?.title ?? (isLoading ? "Đang tải..." : "Bài viết")}>
         <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-blue-100">
           <Link href="/" className="transition hover:text-white">
@@ -90,7 +90,7 @@ export default function PostPage() {
         </div>
       </PageBanner>
 
-      <article className="container mx-auto max-w-4xl px-4 py-10">
+      <article className="site-container max-w-4xl pb-8 pt-4 md:pb-12 md:pt-6">
         <Button asChild variant="ghost" className="mb-6 -ml-2 text-primary hover:text-primary">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -99,7 +99,7 @@ export default function PostPage() {
         </Button>
 
         {isLoading && (
-          <div className="animate-pulse space-y-4 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+          <div className="content-card animate-pulse space-y-4 p-8">
             <div className="h-4 w-1/3 rounded bg-slate-200" />
             <div className="h-64 rounded-xl bg-slate-200" />
             <div className="h-4 w-full rounded bg-slate-200" />
@@ -114,7 +114,7 @@ export default function PostPage() {
         )}
 
         {post && (
-          <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+          <div className="content-card">
             <div className="flex flex-wrap items-center gap-3 border-b border-slate-100 px-6 py-4 text-sm text-slate-500 md:px-10">
               <span className="flex items-center gap-1">
                 <Calendar size={14} />
@@ -148,7 +148,7 @@ export default function PostPage() {
                 </p>
               )}
               <div
-                className="prose prose-slate max-w-none prose-headings:text-primary prose-a:text-primary prose-img:rounded-xl"
+                className="prose-article"
                 dangerouslySetInnerHTML={{
                   __html: (post.content ?? "").replace(/\n/g, "<br/>"),
                 }}
@@ -158,7 +158,7 @@ export default function PostPage() {
         )}
 
         {post && relatedPosts.length > 0 && (
-          <section className="mt-10 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 md:p-8">
+          <section className="content-card mt-10 p-6 md:p-8">
             <h2 className="text-xl font-bold text-primary">Bài viết liên quan</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-3">
               {relatedPosts.map((item) => (

@@ -50,7 +50,7 @@ export const defaultNavMenu: MenuItem[] = [
     children: [
       { title: "Cẩm nang xây nhà", href: "/kinh-nghiem/cam-nang", category: "kinh-nghiem" },
       { title: "Luật xây dựng", href: "/kinh-nghiem/luat-xay-dung", category: "kinh-nghiem" },
-      { title: "Phong thuỷ", href: "/kinh-nghiem/phong-thuy", category: "kinh-nghiem" },
+      { title: "Phong thủy", href: "/kinh-nghiem/phong-thuy", category: "kinh-nghiem" },
     ],
   },
   { title: "LIÊN HỆ", href: "/lien-he" },

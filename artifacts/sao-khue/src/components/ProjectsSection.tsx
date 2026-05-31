@@ -36,7 +36,7 @@ export function ProjectsSection() {
       : fallback;
 
   return (
-    <section id="cong-trinh" className="bg-slate-50 section-pad">
+    <section id="cong-trinh" className="section-alt">
       <div className="site-container">
         <SectionHeader
           title={meta.projects.title}

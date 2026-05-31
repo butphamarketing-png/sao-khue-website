@@ -16,13 +16,13 @@ export default function Contact() {
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>
 
-      <section className="container mx-auto px-4 py-12 md:py-16">
+      <section className="site-container py-10 md:py-14">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {phone && (
             <a
               key={phone}
               href={telHref(phone)}
-              className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-primary/30 hover:shadow-md"
+              className="card-premium flex items-start gap-4 p-5 hover:border-primary/30"
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <Phone size={20} />
@@ -37,7 +37,7 @@ export default function Contact() {
           {s.email && (
             <a
               href={`mailto:${s.email}`}
-              className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-primary/30 hover:shadow-md"
+              className="card-premium flex items-start gap-4 p-5 hover:border-primary/30"
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <Mail size={20} />
@@ -49,7 +49,7 @@ export default function Contact() {
             </a>
           )}
 
-          <div className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="card-premium flex items-start gap-4 p-5">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
               <Clock size={20} />
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
           </div>
 
           {s.address1 && (
-            <div className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:col-span-2 lg:col-span-1">
+            <div className="card-premium flex items-start gap-4 p-5 sm:col-span-2 lg:col-span-1">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <MapPin size={20} />
               </div>
@@ -76,8 +76,8 @@ export default function Contact() {
 
       <ContactCTASection />
 
-      <div className="container mx-auto px-4 pb-16 md:pb-20">
-        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg">
+      <div className="site-container pb-16 md:pb-20">
+        <div className="content-card overflow-hidden">
           <div className="border-b border-slate-100 bg-slate-50 px-6 py-4">
             <h2 className="flex items-center gap-2 text-lg font-bold text-primary">
               <MapPin size={20} />

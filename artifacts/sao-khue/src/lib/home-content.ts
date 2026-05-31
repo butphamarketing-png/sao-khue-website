@@ -206,7 +206,8 @@ export const defaultSectionMeta: HomeSectionMeta = {
   },
   calculator: {
     title: "Tính chi phí xây dựng",
-    subtitle: "Nhập thông tin cơ bản để nhận dự toán tham khảo. Đơn giá có thể chỉnh trong admin.",
+    subtitle:
+      "Quý khách vui lòng nhập đầy đủ thông tin bên dưới. Lưu ý nhập diện tích xây dựng (không phải diện tích đất) để có kết quả tham khảo chính xác nhất.",
   },
   contact: {
     title: "Liên hệ tư vấn",
@@ -274,7 +275,7 @@ export const defaultCategoryPages: CategoryPagesMap = {
     title: "Kinh nghiệm xây dựng",
     description:
       "Cẩm nang, kinh nghiệm thực tế và kiến thức pháp lý giúp chủ nhà chủ động hơn khi xây nhà, chọn nhà thầu và giám sát công trình.",
-    highlights: ["Cẩm nang xây nhà A–Z", "Luật xây dựng cập nhật", "Phong thuỷ nhà ở"],
+    highlights: ["Cẩm nang xây nhà A–Z", "Luật xây dựng cập nhật", "Phong thủy nhà ở"],
   },
 };
 

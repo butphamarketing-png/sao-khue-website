@@ -11,7 +11,7 @@ export const siteSettingsTable = pgTable("site_settings", {
   email: text("email").notNull().default("kientrucsaokhue@gmail.com"),
   address1: text("address1")
     .notNull()
-    .default("245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM"),
+    .default("245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM"),
   address2: text("address2")
     .notNull()
     .default("146 duong 16, khu do thi Van Phuc"),

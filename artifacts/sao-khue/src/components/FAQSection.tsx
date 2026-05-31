@@ -27,13 +27,13 @@ export function FAQSection({ title, subtitle, items, className = "" }: Props) {
   if (resolvedItems.length === 0) return null;
 
   return (
-    <section className={`py-20 md:py-28 ${className}`}>
-      <div className="container mx-auto max-w-3xl px-4">
+    <section className={`section-white ${className}`}>
+      <div className="site-container mx-auto max-w-3xl">
         <SectionHeader title={resolvedTitle} subtitle={resolvedSubtitle} />
         <Accordion
           type="single"
           collapsible
-          className="rounded-2xl border border-slate-200 bg-white px-6 shadow-sm"
+          className="content-card divide-y divide-slate-100 px-2 md:px-4"
         >
           {resolvedItems.map((item, i) => (
             <AccordionItem key={i} value={`faq-${i}`}>

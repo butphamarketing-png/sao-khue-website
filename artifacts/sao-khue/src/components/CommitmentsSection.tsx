@@ -9,7 +9,7 @@ export function CommitmentsSection() {
   const meta = useSectionMeta();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-[#0a3d6b] to-slate-900 py-20 text-white md:py-28">
+    <section className="section-dark section-pad relative overflow-hidden text-white">
       <div
         className="absolute inset-0 opacity-[0.06]"
         style={{
@@ -19,7 +19,7 @@ export function CommitmentsSection() {
         }}
       />
 
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="site-container relative z-10">
         <SectionHeader light title={meta.commitments.title} subtitle={meta.commitments.subtitle} />
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">

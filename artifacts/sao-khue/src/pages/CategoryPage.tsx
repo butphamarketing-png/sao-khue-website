@@ -46,7 +46,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
   const topItem = menu.find((m) => m.category === category);
 
   return (
-    <PageShell className="bg-slate-50">
+    <PageShell>
       <PageBanner title={pageTitle}>
         <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-blue-100">
           <Link href="/" className="transition hover:text-white">
@@ -67,7 +67,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
 
       {!subSlug && <CategoryShowcase category={category} />}
 
-      <div className="container mx-auto grid grid-cols-1 gap-8 px-4 py-8 lg:grid-cols-4 lg:py-12">
+      <div className="site-container grid grid-cols-1 gap-8 pb-12 pt-4 lg:grid-cols-4 lg:pb-16 lg:pt-6">
         <main className="lg:col-span-3">
           {subSlug && (
             <p className="mb-6 text-slate-600">
@@ -82,12 +82,12 @@ export default function CategoryPage({ category, subSlug }: Props) {
               {[1, 2, 3, 4].map((i) => (
                 <div
                   key={i}
-                  className="h-72 animate-pulse rounded-2xl bg-white shadow-sm ring-1 ring-slate-200"
+                  className="content-card h-72 animate-pulse"
                 />
               ))}
             </div>
           ) : filteredPosts.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center">
+            <div className="content-card border-dashed p-12 text-center">
               <p className="mb-2 text-lg font-semibold text-slate-700">Chưa có bài viết</p>
               <p className="mb-6 text-slate-500">
                 Nội dung đang được cập nhật. Liên hệ hotline để được tư vấn trực tiếp.
@@ -104,7 +104,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
               {filteredPosts.map((post) => (
                 <article
                   key={post.id}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+                  className="card-premium group flex flex-col overflow-hidden"
                 >
                   <Link
                     href={`/bai-viet/${post.slug}`}
@@ -151,7 +151,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
 
         <aside className="space-y-6 lg:col-span-1">
           {topItem?.children && (
-            <div className="sticky top-24 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+            <div className="content-card sticky top-24 p-5">
               <h3 className="mb-3 flex items-center gap-2 font-bold uppercase text-primary">
                 <Folder size={16} />
                 Danh mục

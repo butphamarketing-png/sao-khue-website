@@ -216,7 +216,7 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   hotline1: "0909 085 668",
   hotline2: "",
   email: "kientrucsaokhue@gmail.com",
-  address1: "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM",
+  address1: "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
   address2: "146 đường 16, khu đô thị Vạn Phúc",
   workingHours: "T2–T7, 8:00–17:30",
   logoUrl: BUNDLED_LOGO_URL,

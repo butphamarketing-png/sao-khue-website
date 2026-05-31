@@ -10,8 +10,8 @@ export function TestimonialsSection() {
   if (reviews.length === 0) return null;
 
   return (
-    <section className="section-muted py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section className="section-alt">
+      <div className="site-container">
         <SectionHeader
           title={meta.testimonials.title}
           subtitle={meta.testimonials.subtitle}
@@ -25,7 +25,7 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.1 }}
-              className="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="card-premium relative flex flex-col p-6"
             >
               <Quote className="absolute right-5 top-5 h-8 w-8 text-primary/10" />
               <div className="mb-4 flex gap-0.5 text-amber-400">

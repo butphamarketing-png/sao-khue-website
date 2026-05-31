@@ -20,8 +20,8 @@ export function NewsSection() {
   const items = pickFeaturedPosts(allItems, featuredConfig.news, 6);
 
   return (
-    <section id="kinh-nghiem" className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section id="kinh-nghiem" className="section-alt">
+      <div className="site-container">
         <SectionHeader
           align="left"
           title={meta.news.title}
@@ -59,7 +59,7 @@ export function NewsSection() {
             {items.slice(0, 6).map((item) => (
               <article
                 key={item.id}
-                className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(23,87,157,0.16)]"
+                className="card-premium group overflow-hidden"
               >
                 <Link
                   href={`/bai-viet/${item.slug}`}

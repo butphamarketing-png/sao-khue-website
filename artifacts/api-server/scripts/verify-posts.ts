@@ -21,7 +21,7 @@ const menuChildren: { href: string; category: string; title: string }[] = [
   { href: "/cong-trinh/thiet-ke-nha", category: "cong-trinh", title: "Thiết kế nhà" },
   { href: "/kinh-nghiem/cam-nang", category: "kinh-nghiem", title: "Cẩm nang xây nhà" },
   { href: "/kinh-nghiem/luat-xay-dung", category: "kinh-nghiem", title: "Luật xây dựng" },
-  { href: "/kinh-nghiem/phong-thuy", category: "kinh-nghiem", title: "Phong thuỷ" },
+  { href: "/kinh-nghiem/phong-thuy", category: "kinh-nghiem", title: "Phong thủy" },
 ];
 
 function leafFromHref(href: string): string {

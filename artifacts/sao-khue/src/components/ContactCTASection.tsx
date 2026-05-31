@@ -66,13 +66,13 @@ export function ContactCTASection() {
   };
 
   return (
-    <section id="lien-he" className="relative overflow-hidden py-20 md:py-28">
+    <section id="lien-he" className="section-pad relative overflow-hidden">
       <div className="absolute inset-0">
         <img src={contact.backgroundImageUrl || "/images/hero-3.png"} alt="" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-[#0a3d6b]/90 to-slate-900/95" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="site-container relative z-10">
         <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start">
           <div className="w-full text-white lg:w-[45%]">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-accent">

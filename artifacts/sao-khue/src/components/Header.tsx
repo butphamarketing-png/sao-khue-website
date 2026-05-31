@@ -27,10 +27,10 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-500 ${
+      className={`sticky top-0 z-50 w-full border-b transition-all duration-500 ${
         isScrolled
-          ? "border-b border-slate-200/70 bg-white/90 py-0 shadow-[0_4px_24px_rgba(15,23,42,0.06)] backdrop-blur-xl"
-          : "border-b border-slate-100/80 bg-white/95 py-0"
+          ? "border-slate-200/70 bg-white/92 py-0 shadow-[0_8px_32px_rgba(15,23,42,0.08)] backdrop-blur-xl"
+          : "border-slate-100/90 bg-white/98 py-0 shadow-[0_2px_16px_rgba(15,23,42,0.04)] backdrop-blur-sm"
       }`}
     >
       <div className="site-container">

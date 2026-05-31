@@ -10,7 +10,7 @@ export function ProcessSection() {
   if (steps.length === 0) return null;
 
   return (
-    <section className="section-pad bg-white">
+    <section className="section-white">
       <div className="site-container">
         <SectionHeader title={meta.process.title} subtitle={meta.process.subtitle} />
 

@@ -14,7 +14,7 @@ export function PageShell({ children, className = "" }: Props) {
     <div className={`flex min-h-screen flex-col font-sans ${className}`}>
       <TopBar />
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="relative flex-1">{children}</main>
       <Footer />
       <FloatingButtons />
     </div>

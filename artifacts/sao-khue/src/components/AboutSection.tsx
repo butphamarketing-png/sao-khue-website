@@ -8,11 +8,11 @@ export function AboutSection() {
   const content = useAboutContent();
 
   return (
-    <section id="gioi-thieu" className="relative overflow-hidden bg-white py-20 md:py-28">
-      <div className="absolute -left-32 top-20 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
-      <div className="absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-accent/5 blur-3xl" />
+    <section id="gioi-thieu" className="section-alt relative overflow-hidden">
+      <div className="pointer-events-none absolute -left-32 top-20 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-accent/5 blur-3xl" />
 
-      <div className="container relative mx-auto px-4">
+      <div className="site-container relative">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -40 }}

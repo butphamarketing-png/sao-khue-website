@@ -160,7 +160,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   hotline1: PRIMARY_PHONE,
   hotline2: "",
   email: "kientrucsaokhue@gmail.com",
-  address1: "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM",
+  address1: "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
   address2: "146 đường 16, khu đô thị Vạn Phúc",
   workingHours: "T2–T7, 8:00–17:30",
   logoUrl: LOCAL_LOGO,
@@ -245,7 +245,10 @@ function restoreKnownVietnameseText(value: string) {
     "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE": "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
     "Ve chung toi": "Về chúng tôi",
     "Nam Kinh Nghiem\nXay Dung": "Năm Kinh Nghiệm\nXây Dựng",
-    "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM": "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM",
+    "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM":
+      "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
+    "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM":
+      "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
     "146 duong 16, khu do thi Van Phuc": "146 đường 16, khu đô thị Vạn Phúc",
     "Uy tin - Chat luong - Tan tam. Chung toi chuyen thiet ke va thi cong xay dung nha pho, biet thu chuyen nghiep.": "Uy tín - Chất lượng - Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp.",
     "Chuyen thiet ke, thi cong xay dung, sua chua va cai tao nha tron goi tai TP.HCM, Binh Duong, Dong Nai va cac tinh lan can.": "Chuyên thiết kế, thi công xây dựng, sửa chữa và cải tạo nhà trọn gói tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận.",
@@ -300,7 +303,8 @@ function restoreKnownVietnameseText(value: string) {
     "Xem video": "Xem video",
   };
 
-  return replacements[value] ?? value;
+  const mapped = replacements[value] ?? value;
+  return mapped.replace(/, Quan Bình Thạnh,/g, ", Quận Bình Thạnh,");
 }
 
 function restoreHeroSlides(slides: HeroSlide[]) {

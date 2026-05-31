@@ -15,8 +15,8 @@ export default function NotFound() {
     <PageShell>
       <PageBanner title={banner.title} subtitle={banner.subtitle} />
 
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="mx-auto max-w-2xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl md:p-10">
+      <div className="site-container py-12 md:py-20">
+        <div className="content-card mx-auto max-w-2xl p-8 md:p-10">
           <div className="mb-6 flex items-start gap-4">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-red-50 text-red-500">
               <AlertCircle className="h-8 w-8" />

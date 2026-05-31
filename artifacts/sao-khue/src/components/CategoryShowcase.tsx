@@ -16,8 +16,8 @@ export function CategoryShowcase({ category }: Props) {
   if (!content) return null;
 
   return (
-    <div className="container mx-auto px-4 pb-8">
-      <div className="mb-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+    <div className="site-container pb-8 pt-2">
+      <div className="content-card mb-10 p-6 md:p-8">
         <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-accent">
           {content.title}
         </p>
@@ -40,7 +40,7 @@ export function CategoryShowcase({ category }: Props) {
             <Link
               key={child.href}
               href={child.href}
-              className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+              className="card-premium group flex items-center justify-between p-5 hover:border-primary/30"
             >
               <span className="font-semibold text-slate-800 group-hover:text-primary">
                 {child.title}

@@ -95,10 +95,11 @@ export function SiteHead() {
   useEffect(() => {
     const currentUrl = window.location.href;
     const pageTitle =
-      s.companyName || "Kien Truc Sao Khue - Thiet Ke va Xay Dung Nha Tron Goi TP.HCM";
+      s.companyName ||
+      "Kiến Trúc Sao Khuê - Thiết kế và xây dựng nhà trọn gói TP.HCM";
     const pageDescription =
       s.footerDescription ||
-      "Thiet ke va thi cong xay dung nha tron goi uy tin, minh bach va toi uu chi phi.";
+      "Thiết kế và thi công xây dựng nhà trọn gói uy tín, minh bạch và tối ưu chi phí.";
 
     document.title =
       pageTitle;
@@ -109,7 +110,7 @@ export function SiteHead() {
     setPropertyMeta("og:type", "website");
     setPropertyMeta("og:title", pageTitle);
     setPropertyMeta("og:description", pageDescription);
-    setPropertyMeta("og:site_name", s.companyName || "Kien Truc Sao Khue");
+    setPropertyMeta("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
     setPropertyMeta("og:url", currentUrl);
     setPropertyMeta("og:image", ogImage || BUNDLED_OPENGRAPH_URL);
     setMeta("twitter:card", "summary_large_image");

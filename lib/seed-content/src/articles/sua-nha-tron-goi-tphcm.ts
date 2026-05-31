@@ -61,7 +61,7 @@ export const suaNhaTronGoiTphcm = {
   <li><strong>Báo giá minh bạch:</strong> Không phát sinh bất hợp lý khi đã thống nhất hợp đồng.</li>
   <li><strong>Vật liệu chính hãng:</strong> Nguồn gốc rõ ràng, có hóa đơn, phù hợp ngân sách từng gia đình.</li>
   <li><strong>Đội ngũ chuyên môn:</strong> Kiến trúc sư, kỹ sư giám sát và thợ thi công được phân công theo từng hạng mục.</li>
-  <li><strong>Bảo hành uy tín:</strong> Tối thiểu 2 năm phần hoàn thiện, 5 năm phần kết cấu (theo hạng mục).</li>
+  <li><strong>Bảo hành uy tín:</strong> Hoàn thiện 12–36 tháng, kết cấu 10 năm (theo hạng mục trong hợp đồng).</li>
   <li><strong>Hỗ trợ pháp lý:</strong> Tư vấn thủ tục xin giấy phép sửa chữa, cải tạo khi cần.</li>
 </ul>
 
