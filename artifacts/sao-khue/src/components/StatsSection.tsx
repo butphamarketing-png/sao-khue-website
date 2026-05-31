@@ -8,9 +8,9 @@ export function StatsSection() {
   if (stats.length === 0) return null;
 
   return (
-    <section className="relative z-20 -mt-8 pb-4 md:-mt-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 gap-4 rounded-2xl border border-slate-200/80 bg-white p-4 shadow-xl shadow-slate-900/10 md:grid-cols-4 md:gap-6 md:p-6 lg:rounded-3xl">
+    <section className="relative z-20 -mt-10 pb-2 md:-mt-14">
+      <div className="site-container">
+        <div className="grid grid-cols-2 gap-3 rounded-3xl border border-white/60 bg-white/90 p-4 shadow-[0_20px_60px_rgba(23,87,157,0.12)] backdrop-blur-md md:grid-cols-4 md:gap-5 md:p-6">
           {stats.map((item, index) => {
             const Icon = resolveLucideIcon(item.icon);
             return (
@@ -20,14 +20,16 @@ export function StatsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="flex flex-col items-center text-center md:flex-row md:gap-4 md:text-left"
+                className="group flex flex-col items-center rounded-2xl border border-slate-100/80 bg-gradient-to-b from-white to-slate-50/80 p-4 text-center transition hover:border-primary/20 hover:shadow-md md:flex-row md:gap-4 md:p-5 md:text-left"
               >
-                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary md:mb-0">
-                  <Icon size={24} />
+                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary transition group-hover:from-primary group-hover:to-[#0c4a8a] group-hover:text-white md:mb-0">
+                  <Icon size={22} />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-primary md:text-3xl">{item.value}</div>
-                  <div className="text-xs font-medium text-slate-600 md:text-sm">{item.label}</div>
+                  <div className="text-2xl font-extrabold text-primary md:text-3xl">{item.value}</div>
+                  <div className="mt-0.5 text-xs font-medium leading-snug text-slate-600 md:text-sm">
+                    {item.label}
+                  </div>
                 </div>
               </motion.div>
             );

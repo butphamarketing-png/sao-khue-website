@@ -8,33 +8,33 @@ export function PricingTableSection() {
   const meta = useSectionMeta();
 
   return (
-    <section id="bao-gia" className="bg-slate-50 py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section id="bao-gia" className="section-muted section-pad">
+      <div className="site-container">
         <SectionHeader title={meta.pricing.title} subtitle={meta.pricing.subtitle} />
 
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
           {items.map((item) => (
             <div
               key={item.id}
-              className={`relative overflow-hidden rounded-2xl border bg-white shadow-lg transition hover:shadow-xl ${
-                item.highlighted
-                  ? "border-accent/30 ring-2 ring-accent/20 lg:-translate-y-2"
-                  : "border-slate-200"
+              className={`card-premium relative overflow-hidden ${
+                item.highlighted ? "ring-2 ring-accent/30 lg:-translate-y-1" : ""
               }`}
             >
               {item.highlighted && (
-                <div className="absolute right-4 top-4 rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase text-white shadow">
+                <div className="absolute right-0 top-0 rounded-bl-2xl bg-gradient-to-r from-accent to-[#ff4757] px-4 py-1.5 text-xs font-bold uppercase text-white shadow">
                   Phổ biến
                 </div>
               )}
 
-              <div className="border-b border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 text-center">
-                <h3 className="mb-2 text-2xl font-bold text-primary">{item.name}</h3>
-                <div className="my-4 text-3xl font-bold text-accent">
+              <div className="border-b border-slate-100 bg-gradient-to-br from-slate-50 via-white to-primary/[0.03] p-8 text-center">
+                <h3 className="mb-2 text-xl font-bold uppercase tracking-wide text-primary md:text-2xl">
+                  {item.name}
+                </h3>
+                <div className="my-4 text-3xl font-extrabold text-accent md:text-4xl">
                   {item.priceFrom}
                   <span className="mx-1 text-lg font-normal text-slate-400">–</span>
                   {item.priceTo}
-                  <span className="text-lg font-normal text-slate-500">{item.unit}</span>
+                  <span className="text-base font-semibold text-slate-500">{item.unit}</span>
                 </div>
                 <p className="text-sm text-slate-500">{item.note}</p>
               </div>
@@ -44,15 +44,15 @@ export function PricingTableSection() {
                   {item.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3 text-slate-700">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" />
-                      {feature}
+                      <span className="text-sm leading-relaxed md:text-base">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Link
                   href={item.ctaHref}
-                  className={`block w-full rounded-full px-4 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition ${
+                  className={`block w-full rounded-full px-4 py-3.5 text-center text-sm font-bold uppercase tracking-wide text-white transition hover:scale-[1.02] ${
                     item.highlighted
-                      ? "bg-accent shadow-lg shadow-accent/25 hover:bg-accent/90"
+                      ? "btn-gradient-accent shadow-lg shadow-accent/20"
                       : "bg-primary shadow-lg shadow-primary/20 hover:bg-primary/90"
                   }`}
                 >

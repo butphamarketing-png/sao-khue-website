@@ -33,8 +33,8 @@ export function ServicesSection() {
       : fallback;
 
   return (
-    <section id="dich-vu" className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section id="dich-vu" className="section-muted section-pad">
+      <div className="site-container">
         <SectionHeader
           title={meta.services.title}
           subtitle={meta.services.subtitle}
@@ -98,7 +98,7 @@ export function ServicesSection() {
         <div className="mt-12 text-center">
           <Link
             href="/dich-vu"
-            className="inline-flex items-center rounded-full border-2 border-primary px-7 py-3 font-bold uppercase tracking-wide text-primary transition hover:bg-primary hover:text-white"
+            className="inline-flex items-center rounded-full border-2 border-primary px-7 py-3 font-bold uppercase tracking-wide text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/20"
           >
             Xem tất cả dịch vụ
           </Link>

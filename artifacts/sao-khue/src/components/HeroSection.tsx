@@ -96,7 +96,7 @@ export function HeroSection() {
                         <Button
                           asChild
                           size="lg"
-                          className="h-auto rounded-full border-none bg-accent px-8 py-6 text-base font-bold shadow-lg shadow-accent/30 hover:bg-accent/90"
+                          className="btn-gradient-accent h-auto rounded-full px-8 py-6 text-base font-bold shadow-xl"
                         >
                           <Link href="/bao-gia">
                             NHẬN BÁO GIÁ NGAY

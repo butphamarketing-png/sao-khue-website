@@ -10,8 +10,8 @@ export function ProcessSection() {
   if (steps.length === 0) return null;
 
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section className="section-pad bg-white">
+      <div className="site-container">
         <SectionHeader title={meta.process.title} subtitle={meta.process.subtitle} />
 
         <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -26,7 +26,7 @@ export function ProcessSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="group relative rounded-2xl border border-slate-100 bg-slate-50/50 p-6 text-center transition hover:border-primary/20 hover:bg-white hover:shadow-lg"
+                className="group relative card-premium p-6 text-center"
               >
                 <div className="relative mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-2xl bg-white text-primary shadow-md ring-1 ring-slate-100 transition group-hover:bg-primary group-hover:text-white">
                   <Icon size={32} />

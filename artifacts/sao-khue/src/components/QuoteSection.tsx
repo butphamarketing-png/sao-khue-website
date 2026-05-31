@@ -10,8 +10,8 @@ export function QuoteSection() {
   if (services.length === 0) return null;
 
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section className="section-muted section-pad">
+      <div className="site-container">
         <SectionHeader title={meta.quote.title} subtitle={meta.quote.subtitle} />
 
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -30,7 +30,7 @@ export function QuoteSection() {
                     className="absolute inset-0 rounded-full border-2 border-dashed border-primary/30 transition-all duration-700 group-hover:rotate-180 group-hover:border-primary"
                     style={{ transitionDuration: "1.2s" }}
                   />
-                  <div className="absolute inset-3 flex flex-col items-center justify-center rounded-full bg-gradient-to-br from-primary to-[#0c4a8a] text-white shadow-xl transition-transform duration-300 group-hover:scale-105">
+                  <div className="absolute inset-3 flex flex-col items-center justify-center rounded-full bg-gradient-to-br from-primary via-[#1565a8] to-[#0c4a8a] text-white shadow-[0_12px_40px_rgba(23,87,157,0.35)] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-[0_16px_50px_rgba(23,87,157,0.45)]">
                     <h3 className="whitespace-pre-line px-4 text-center text-lg font-bold uppercase leading-tight">
                       {service.title}
                     </h3>

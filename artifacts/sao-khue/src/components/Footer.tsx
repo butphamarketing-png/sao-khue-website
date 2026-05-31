@@ -17,20 +17,21 @@ export function Footer() {
 
   return (
 
-    <footer className="relative border-t-4 border-accent bg-gradient-to-b from-slate-900 to-slate-950 pb-24 pt-16 text-slate-300 md:pb-8">
-
-      <div className="container mx-auto px-4">
+    <footer className="relative border-t-4 border-accent bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 pb-24 pt-16 text-slate-300 md:pb-8">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
+      <div className="site-container">
 
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
 
           <div>
 
-            <BrandLogo
-              src={s.logoUrl}
-              alt={s.companyName}
-              variant="on-dark"
-              className="mb-6 h-24 w-auto origin-left scale-[1.5] object-contain object-left md:h-28 md:scale-[1.55]"
-            />
+            <div className="logo-footer-wrap">
+              <BrandLogo
+                src={s.logoUrl}
+                alt={s.companyName}
+                className="logo-footer-img"
+              />
+            </div>
 
             <h3 className="mb-2 text-lg font-bold text-white">{s.companyName}</h3>
 

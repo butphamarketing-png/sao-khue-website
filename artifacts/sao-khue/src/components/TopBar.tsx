@@ -7,8 +7,8 @@ export function TopBar() {
   const phone = usePrimaryPhone();
 
   return (
-    <div className="hidden border-b border-white/10 bg-gradient-to-r from-slate-900 via-primary to-[#0c4a8a] py-2.5 text-sm text-white md:block">
-      <div className="container mx-auto flex items-center justify-between gap-4 px-4">
+    <div className="hidden border-b border-white/10 bg-gradient-to-r from-slate-950 via-primary to-[#0c4a8a] py-2 text-sm text-white md:block">
+      <div className="site-container flex items-center justify-between gap-4">
         <div className="flex min-w-0 flex-1 items-center gap-5 overflow-hidden">
           {slogan && (
             <span className="hidden shrink-0 rounded-full bg-accent/20 px-3 py-0.5 text-[11px] font-bold uppercase tracking-wider text-accent lg:inline">

@@ -33,7 +33,7 @@ export function CommitmentsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="group flex gap-4 rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-sm transition hover:border-white/25 hover:bg-white/15"
+                className="group flex gap-4 rounded-2xl border border-white/10 bg-white/[0.07] p-6 backdrop-blur-sm transition duration-300 hover:border-white/25 hover:bg-white/12 hover:shadow-lg hover:shadow-black/10"
               >
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-white text-primary shadow-lg transition group-hover:scale-105">
                   <Icon size={28} />

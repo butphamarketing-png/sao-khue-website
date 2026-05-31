@@ -36,8 +36,8 @@ export function ProjectsSection() {
       : fallback;
 
   return (
-    <section id="cong-trinh" className="bg-slate-50 py-20 md:py-28">
-      <div className="container mx-auto px-4">
+    <section id="cong-trinh" className="bg-slate-50 section-pad">
+      <div className="site-container">
         <SectionHeader
           title={meta.projects.title}
           subtitle={meta.projects.subtitle}
