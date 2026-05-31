@@ -1,9 +1,10 @@
 import { PhoneCall, MessageCircleMore } from "lucide-react";
 import { SiMessenger, SiZalo } from "react-icons/si";
-import { useSiteSettings, telHref } from "@/lib/site-settings";
+import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 
 export function FloatingButtons() {
   const s = useSiteSettings();
+  const phone = usePrimaryPhone();
   const zaloHref = s.zaloPhone ? `https://zalo.me/${s.zaloPhone.replace(/\s+/g, "")}` : "#";
 
   return (
@@ -21,8 +22,8 @@ export function FloatingButtons() {
           </QuickFab>
         )}
 
-        {s.hotline1 && (
-          <QuickFab href={telHref(s.hotline1)} label={s.hotline1} className="bg-accent shadow-[0_0_15px_rgba(230,57,70,0.5)]">
+        {phone && (
+          <QuickFab href={telHref(phone)} label={phone} className="bg-accent shadow-[0_0_15px_rgba(230,57,70,0.5)]">
             <div className="absolute inset-0 rounded-full bg-accent opacity-20 animate-ping" />
             <PhoneCall size={28} className="relative" />
           </QuickFab>
@@ -31,8 +32,8 @@ export function FloatingButtons() {
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
         <div className="grid grid-cols-3 gap-3">
-          {s.hotline1 && (
-            <MobileAction href={telHref(s.hotline1)} className="bg-accent text-white">
+          {phone && (
+            <MobileAction href={telHref(phone)} className="bg-accent text-white">
               <PhoneCall size={18} />
               Gọi ngay
             </MobileAction>

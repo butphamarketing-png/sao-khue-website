@@ -1,10 +1,10 @@
 import { Clock, Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
-import { useSiteSettings, telHref, useTopBarSlogan } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan, usePrimaryPhone } from "@/lib/site-settings";
 
 export function TopBar() {
   const s = useSiteSettings();
   const slogan = useTopBarSlogan();
-  const phones = [s.hotline1, s.hotline2].filter(Boolean);
+  const phone = usePrimaryPhone();
 
   return (
     <div className="hidden border-b border-white/10 bg-gradient-to-r from-slate-900 via-primary to-[#0c4a8a] py-2.5 text-sm text-white md:block">
@@ -15,16 +15,15 @@ export function TopBar() {
               {slogan}
             </span>
           )}
-          {phones.map((phone) => (
+          {phone && (
             <a
-              key={phone}
               href={telHref(phone)}
               className="flex shrink-0 items-center gap-2 transition hover:text-accent"
             >
               <Phone size={14} className="text-accent" />
               <span className="font-semibold">{phone}</span>
             </a>
-          ))}
+          )}
           {s.email && (
             <a
               href={`mailto:${s.email}`}

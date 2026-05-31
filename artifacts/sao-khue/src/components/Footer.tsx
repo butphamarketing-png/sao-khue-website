@@ -1,18 +1,13 @@
 import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clock } from "lucide-react";
-
 import { Link } from "wouter";
-
-import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan } from "@/lib/site-settings";
-
-
+import { BrandLogo } from "@/components/BrandLogo";
+import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan, usePrimaryPhone } from "@/lib/site-settings";
 
 export function Footer() {
-
   const s = useSiteSettings();
   const menu = useNavMenu();
   const slogan = useTopBarSlogan();
-
-  const phones = [s.hotline1, s.hotline2].filter(Boolean).join(" / ");
+  const phone = usePrimaryPhone();
 
   const serviceMenu = menu.find((m) => m.category === "dich-vu");
 
@@ -31,13 +26,10 @@ export function Footer() {
           <div>
 
             <BrandLogo
-
               src={s.logoUrl}
-
               alt={s.companyName}
-
-              className="mb-6 h-14 max-w-[200px] rounded bg-white p-2 object-contain"
-
+              variant="on-dark"
+              className="mb-6 h-20 max-w-[280px] object-contain md:h-24"
             />
 
             <h3 className="mb-2 text-lg font-bold text-white">{s.companyName}</h3>
@@ -84,26 +76,16 @@ export function Footer() {
 
               )}
 
-              {phones && (
-
+              {phone && (
                 <div className="flex items-start gap-3">
-
                   <Phone className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-
                   <span>
-
                     <strong className="text-white">Hotline:</strong>{" "}
-
-                    <a href={telHref(s.hotline1)} className="hover:text-accent">
-
-                      {phones}
-
+                    <a href={telHref(phone)} className="hover:text-accent">
+                      {phone}
                     </a>
-
                   </span>
-
                 </div>
-
               )}
 
               {s.email && (
@@ -134,7 +116,7 @@ export function Footer() {
 
                 <span>
 
-                  <strong className="text-white">Giờ làm việc:</strong> T2–T7, 8:00–17:30
+                  <strong className="text-white">Giờ làm việc:</strong> {s.workingHours || "T2–T7, 8:00–17:30"}
 
                 </span>
 

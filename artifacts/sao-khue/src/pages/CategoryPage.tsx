@@ -10,7 +10,7 @@ import { findMenuByPath } from "@/lib/menu";
 import { useLocation } from "wouter";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
-import { useSiteSettings, telHref, useNavMenu } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
 
 const categoryLabels: Record<string, string> = {
   "gioi-thieu": "Giới thiệu",
@@ -28,6 +28,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
   const [location] = useLocation();
   const s = useSiteSettings();
   const menu = useNavMenu();
+  const phone = usePrimaryPhone();
   const { data: posts, isLoading } = useListPosts({ category });
   const items = resolvePosts(posts, { category });
 
@@ -92,10 +93,10 @@ export default function CategoryPage({ category, subSlug }: Props) {
                 Nội dung đang được cập nhật. Liên hệ hotline để được tư vấn trực tiếp.
               </p>
               <a
-                href={telHref(s.hotline1)}
+                href={telHref(phone)}
                 className="inline-flex rounded-full bg-accent px-6 py-3 font-bold text-white transition hover:opacity-90"
               >
-                Gọi {s.hotline1}
+                Gọi {phone}
               </a>
             </div>
           ) : (
@@ -183,7 +184,7 @@ export default function CategoryPage({ category, subSlug }: Props) {
               href={telHref(s.hotline1)}
               className="block rounded-full bg-accent py-3 text-center font-bold transition hover:opacity-90"
             >
-              {s.hotline1}
+              {phone}
             </a>
           </div>
         </aside>

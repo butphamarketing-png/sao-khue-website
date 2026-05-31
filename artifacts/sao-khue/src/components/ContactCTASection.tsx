@@ -4,13 +4,14 @@ import { Building2, MapPin, PhoneCall, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useContactSection, useSiteSettings, telHref } from "@/lib/site-settings";
+import { useContactSection, useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 import { submitContactLead } from "@/lib/contact-leads-api";
 import { toast } from "@/hooks/use-toast";
 
 export function ContactCTASection() {
   const s = useSiteSettings();
   const contact = useContactSection();
+  const phone = usePrimaryPhone();
   const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -87,7 +88,7 @@ export function ContactCTASection() {
 
             <div className="space-y-5">
               <a
-                href={telHref(s.hotline1)}
+                href={telHref(phone)}
                 className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 backdrop-blur transition hover:bg-white/15"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-white">
@@ -95,7 +96,7 @@ export function ContactCTASection() {
                 </div>
                 <div>
                   <div className="text-sm text-blue-200">{contact.hotlineLabel}</div>
-                  <div className="text-xl font-bold">{s.hotline1}</div>
+                  <div className="text-xl font-bold">{phone}</div>
                 </div>
               </a>
 

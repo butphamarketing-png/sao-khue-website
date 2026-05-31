@@ -114,7 +114,7 @@ export const defaultFaqs: FaqItem[] = [
   },
   {
     q: "Có được tư vấn và khảo sát miễn phí không?",
-    a: "Có. Hotline 0936 045 268 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
+    a: "Có. Hotline 0909 085 668 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
   },
   {
     q: "Bảo hành công trình bao lâu?",

@@ -150,22 +150,25 @@ export const LOCAL_LOGO = BUNDLED_LOGO_URL;
 
 export { resolveLogoUrl };
 
+export const PRIMARY_PHONE = "0909 085 668";
+export const PRIMARY_PHONE_RAW = "0909085668";
+
 export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   id: 0,
   companyName: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
   taxCode: "",
-  hotline1: "0936 045 268",
-  hotline2: "0909 075 668",
+  hotline1: PRIMARY_PHONE,
+  hotline2: "",
   email: "kientrucsaokhue@gmail.com",
-  address1: "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM",
-  address2: "146 duong 16, khu do thi Van Phuc",
-  workingHours: "8:00 - 17:30",
+  address1: "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM",
+  address2: "146 đường 16, khu đô thị Vạn Phúc",
+  workingHours: "T2–T7, 8:00–17:30",
   logoUrl: LOCAL_LOGO,
   loadingLogoUrl: LOCAL_LOGO,
   facebookUrl: "https://facebook.com/kientrucsaokhue",
   youtubeUrl: "",
   instagramUrl: "",
-  zaloPhone: "0936045268",
+  zaloPhone: PRIMARY_PHONE_RAW,
   messengerUrl: "",
   footerDescription:
     "Uy tín - Chất lượng - Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp.",
@@ -222,6 +225,8 @@ function restoreKnownVietnameseText(value: string) {
     "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE": "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
     "Ve chung toi": "Về chúng tôi",
     "Nam Kinh Nghiem\nXay Dung": "Năm Kinh Nghiệm\nXây Dựng",
+    "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM": "245/8 Bình Lợi, Phường 13, Quan Bình Thạnh, TP.HCM",
+    "146 duong 16, khu do thi Van Phuc": "146 đường 16, khu đô thị Vạn Phúc",
     "Uy tin - Chat luong - Tan tam. Chung toi chuyen thiet ke va thi cong xay dung nha pho, biet thu chuyen nghiep.": "Uy tín - Chất lượng - Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp.",
     "Chuyen thiet ke, thi cong xay dung, sua chua va cai tao nha tron goi tai TP.HCM, Binh Duong, Dong Nai va cac tinh lan can.": "Chuyên thiết kế, thi công xây dựng, sửa chữa và cải tạo nhà trọn gói tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận.",
     "Voi tam nhin tro thanh cong ty hang dau trong nganh kien truc va xay dung, Sao Khue tu hao so huu doi ngu kien truc su, ky su gioi chuyen mon va giau nhiet huyet.": "Với tầm nhìn trở thành công ty hàng đầu trong ngành kiến trúc và xây dựng, Sao Khuê tự hào sở hữu đội ngũ kiến trúc sư, kỹ sư giỏi chuyên môn và giàu nhiệt huyết.",
@@ -315,6 +320,10 @@ export function useSiteSettings(): SiteSettings & Record<string, string> {
     loadingLogoUrl: resolveLogoUrl(merged.loadingLogoUrl || merged.logoUrl),
     companyName: restoreKnownVietnameseText(merged.companyName),
     footerDescription: restoreKnownVietnameseText(merged.footerDescription),
+    address1: restoreKnownVietnameseText(merged.address1),
+    address2: restoreKnownVietnameseText(merged.address2),
+    hotline1: merged.hotline1?.trim() || merged.hotline2?.trim() || PRIMARY_PHONE,
+    hotline2: "",
     homeAboutEyebrow: restoreKnownVietnameseText(merged.homeAboutEyebrow),
     homeAboutTitle: restoreKnownVietnameseText(merged.homeAboutTitle),
     homeAboutIntro: restoreKnownVietnameseText(merged.homeAboutIntro),
@@ -461,6 +470,11 @@ export function useOpenGraphImage(): string {
   const custom = settings.opengraphImageUrl?.trim();
   if (custom) return resolveLogoUrl(custom);
   return BUNDLED_OPENGRAPH_URL;
+}
+
+export function usePrimaryPhone(): string {
+  const s = useSiteSettings();
+  return s.hotline1?.trim() || PRIMARY_PHONE;
 }
 
 export function telHref(phone?: string | null): string {

@@ -3,12 +3,12 @@ import { AlertCircle, ArrowRight, Home, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageShell } from "@/components/PageShell";
 import { PageBanner } from "@/components/PageBanner";
-import { useSiteSettings, telHref, useNavMenu, usePageBanner } from "@/lib/site-settings";
+import { telHref, useNavMenu, usePageBanner, usePrimaryPhone } from "@/lib/site-settings";
 
 export default function NotFound() {
-  const s = useSiteSettings();
   const menu = useNavMenu();
   const banner = usePageBanner("notFound");
+  const phone = usePrimaryPhone();
   const quickLinks = menu.filter((item) => item.href !== "/").slice(0, 6);
 
   return (
@@ -35,9 +35,9 @@ export default function NotFound() {
               </Link>
             </Button>
             <Button asChild variant="outline" className="flex-1 rounded-full border-primary text-primary">
-              <a href={telHref(s.hotline1)}>
+              <a href={telHref(phone)}>
                 <PhoneCall className="mr-2 h-4 w-4" />
-                Gọi {s.hotline1}
+                Gọi {phone}
               </a>
             </Button>
           </div>

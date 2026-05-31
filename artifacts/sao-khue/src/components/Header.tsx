@@ -2,12 +2,13 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, PhoneCall, ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/BrandLogo";
-import { useSiteSettings, telHref, useNavMenu } from "@/lib/site-settings";
+import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
 import { useEffect, useState } from "react";
 
 export function Header() {
   const s = useSiteSettings();
   const menu = useNavMenu();
+  const phone = usePrimaryPhone();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileSub, setOpenMobileSub] = useState<string | null>(null);
@@ -39,7 +40,7 @@ export function Header() {
               src={s.logoUrl}
               alt={s.companyName}
               className={`object-contain transition-all duration-300 group-hover:scale-[1.02] ${
-                isScrolled ? "h-10 md:h-11 max-w-[180px]" : "h-12 md:h-14 max-w-[220px]"
+                isScrolled ? "h-12 md:h-14 max-w-[220px]" : "h-14 md:h-16 max-w-[260px]"
               }`}
             />
           </Link>
@@ -97,9 +98,9 @@ export function Header() {
               asChild
               className="group rounded-full bg-accent px-5 shadow-md shadow-accent/25 hover:bg-accent/90"
             >
-              <a href={telHref(s.hotline1)}>
+              <a href={telHref(phone)}>
                 <PhoneCall size={16} className="group-hover:animate-pulse" />
-                <span className="ml-2 text-sm font-bold">{s.hotline1}</span>
+                <span className="ml-2 text-sm font-bold">{phone}</span>
               </a>
             </Button>
           </div>
@@ -162,7 +163,7 @@ export function Header() {
           ))}
           <div className="p-4">
             <Button asChild className="w-full rounded-full bg-accent hover:bg-accent/90">
-              <a href={telHref(s.hotline1)}>
+              <a href={telHref(phone)}>
                 <PhoneCall size={18} />
                 <span className="ml-2 font-bold">GỌI TƯ VẤN NGAY</span>
               </a>

@@ -1,10 +1,10 @@
 import { Link } from "wouter";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useCtaBanner, useSiteSettings, telHref } from "@/lib/site-settings";
+import { useCtaBanner, usePrimaryPhone, telHref } from "@/lib/site-settings";
 
 export function CTABanner() {
-  const s = useSiteSettings();
+  const phone = usePrimaryPhone();
   const cta = useCtaBanner();
 
   return (
@@ -33,9 +33,9 @@ export function CTABanner() {
                 size="lg"
                 className="rounded-full bg-accent shadow-lg hover:bg-accent/90"
               >
-                <a href={telHref(s.hotline1)}>
+                <a href={telHref(phone)}>
                   <PhoneCall className="mr-2 h-5 w-5" />
-                  {s.hotline1}
+                  {phone}
                 </a>
               </Button>
               <Button

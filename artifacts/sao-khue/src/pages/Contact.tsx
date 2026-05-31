@@ -3,12 +3,12 @@ import { ContactCTASection } from "@/components/ContactCTASection";
 import { FAQSection } from "@/components/FAQSection";
 import { PageBanner } from "@/components/PageBanner";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
-import { useSiteSettings, telHref, usePageBanner } from "@/lib/site-settings";
+import { useSiteSettings, telHref, usePageBanner, usePrimaryPhone } from "@/lib/site-settings";
 
 export default function Contact() {
   const s = useSiteSettings();
   const banner = usePageBanner("contact");
-  const phones = [s.hotline1, s.hotline2].filter(Boolean);
+  const phone = usePrimaryPhone();
 
   return (
     <PageShell>
@@ -18,7 +18,7 @@ export default function Contact() {
 
       <section className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {phones.map((phone) => (
+          {phone && (
             <a
               key={phone}
               href={telHref(phone)}
@@ -32,7 +32,7 @@ export default function Contact() {
                 <div className="font-bold text-primary">{phone}</div>
               </div>
             </a>
-          ))}
+          )}
 
           {s.email && (
             <a

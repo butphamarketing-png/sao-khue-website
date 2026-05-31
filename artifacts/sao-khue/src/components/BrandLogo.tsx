@@ -7,9 +7,11 @@ type BrandLogoProps = {
   src?: string | null;
   alt: string;
   className?: string;
+  /** Removes white logo box on dark backgrounds (footer, admin sidebar). */
+  variant?: "default" | "on-dark";
 };
 
-export function BrandLogo({ src, alt, className }: BrandLogoProps) {
+export function BrandLogo({ src, alt, className, variant = "default" }: BrandLogoProps) {
   const resolved = resolveLogoUrl(src);
   const [currentSrc, setCurrentSrc] = useState(resolved);
   const [fallbackIndex, setFallbackIndex] = useState(0);
@@ -23,7 +25,7 @@ export function BrandLogo({ src, alt, className }: BrandLogoProps) {
     <img
       src={currentSrc}
       alt={alt}
-      className={className}
+      className={`${className ?? ""}${variant === "on-dark" ? " mix-blend-screen" : ""}`}
       decoding="async"
       onError={() => {
         const nextIndex = fallbackIndex + 1;

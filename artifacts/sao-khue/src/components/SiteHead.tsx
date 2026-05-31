@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSiteSettings, resolveLogoUrl, useOpenGraphImage } from "@/lib/site-settings";
+import { useSiteSettings, resolveLogoUrl, useOpenGraphImage, usePrimaryPhone } from "@/lib/site-settings";
 import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
 
 declare global {
@@ -91,6 +91,7 @@ function injectGA(id: string) {
 export function SiteHead() {
   const s = useSiteSettings();
   const ogImage = useOpenGraphImage();
+  const phone = usePrimaryPhone();
   useEffect(() => {
     const currentUrl = window.location.href;
     const pageTitle =
@@ -124,7 +125,7 @@ export function SiteHead() {
       name: s.companyName,
       image: resolveLogoUrl(s.logoUrl),
       url: window.location.origin,
-      telephone: s.hotline1,
+      telephone: phone,
       email: s.email,
       address: {
         "@type": "PostalAddress",
@@ -151,6 +152,7 @@ export function SiteHead() {
     s.gaTrackingId,
     s.gscVerification,
     s.hotline1,
+    phone,
     s.instagramUrl,
     s.logoUrl,
     s.youtubeUrl,

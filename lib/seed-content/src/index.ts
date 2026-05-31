@@ -41,7 +41,7 @@ const lorem = (title: string) => `
   <li>Bảo hành công trình tối thiểu 5 năm phần kết cấu.</li>
   <li>Hỗ trợ tư vấn pháp lý, xin giấy phép xây dựng.</li>
 </ul>
-<p>Quý khách hàng có nhu cầu xin vui lòng liên hệ Hotline <strong>0936 045 268 - 0909 075 668</strong> để được tư vấn miễn phí 24/7.</p>
+<p>Quý khách hàng có nhu cầu xin vui lòng liên hệ Hotline <strong>0909 085 668</strong> để được tư vấn miễn phí 24/7.</p>
 `;
 
 /** 18 bài — khớp menu con + bài công trình bổ sung */
