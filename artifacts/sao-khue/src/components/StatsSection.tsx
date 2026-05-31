@@ -5,6 +5,8 @@ import { useHomeStats } from "@/lib/site-settings";
 export function StatsSection() {
   const stats = useHomeStats();
 
+  if (stats.length === 0) return null;
+
   return (
     <section className="relative z-20 -mt-8 pb-4 md:-mt-12">
       <div className="container mx-auto px-4">

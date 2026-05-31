@@ -35,12 +35,14 @@ export function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="group flex shrink-0 items-center gap-3">
+          <Link href="/" className="group flex shrink-0 items-center overflow-visible py-1">
             <BrandLogo
               src={s.logoUrl}
               alt={s.companyName}
-              className={`object-contain transition-all duration-300 group-hover:scale-[1.02] ${
-                isScrolled ? "h-12 md:h-14 max-w-[220px]" : "h-14 md:h-16 max-w-[260px]"
+              className={`origin-left object-contain object-left transition-transform duration-300 group-hover:scale-[1.03] ${
+                isScrolled
+                  ? "h-[52px] w-auto scale-[1.45] md:h-[60px] md:scale-[1.5]"
+                  : "h-[60px] w-auto scale-[1.55] md:h-[72px] md:scale-[1.6]"
               }`}
             />
           </Link>

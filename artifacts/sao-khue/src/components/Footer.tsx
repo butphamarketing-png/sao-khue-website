@@ -29,7 +29,7 @@ export function Footer() {
               src={s.logoUrl}
               alt={s.companyName}
               variant="on-dark"
-              className="mb-6 h-20 max-w-[280px] object-contain md:h-24"
+              className="mb-6 h-24 w-auto origin-left scale-[1.5] object-contain object-left md:h-28 md:scale-[1.55]"
             />
 
             <h3 className="mb-2 text-lg font-bold text-white">{s.companyName}</h3>

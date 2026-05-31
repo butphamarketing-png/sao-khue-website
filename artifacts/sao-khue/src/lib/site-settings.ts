@@ -220,6 +220,26 @@ function parseJsonValue<T>(value: unknown, fallback: T): T {
   }
 }
 
+/** Use defaults when DB stores `[]` or invalid arrays. */
+function parseJsonArray<T>(value: unknown, fallback: T[]): T[] {
+  const parsed = parseJsonValue<unknown>(value, fallback);
+  return Array.isArray(parsed) && parsed.length > 0 ? (parsed as T[]) : fallback;
+}
+
+/** Merge partial CMS objects onto defaults (handles `{}` from empty DB rows). */
+function parseJsonObject<T extends object>(value: unknown, fallback: T): T {
+  const parsed = parseJsonValue<unknown>(value, fallback);
+  if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return fallback;
+  const merged = { ...fallback, ...(parsed as Partial<T>) };
+  for (const key of Object.keys(fallback) as (keyof T)[]) {
+    const v = merged[key];
+    if (typeof v === "string" && v.trim() === "") {
+      merged[key] = fallback[key];
+    }
+  }
+  return merged;
+}
+
 function restoreKnownVietnameseText(value: string) {
   const replacements: Record<string, string> = {
     "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE": "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
@@ -334,17 +354,17 @@ export function useSiteSettings(): SiteSettings & Record<string, string> {
 
 export function useHeroSlides(): HeroSlide[] {
   const settings = useSiteSettings();
-  return restoreHeroSlides(parseJsonValue(settings.heroSlidesJson, defaultHeroSlides));
+  return restoreHeroSlides(parseJsonArray(settings.heroSlidesJson, defaultHeroSlides));
 }
 
 export function useCommitments(): CommitmentItem[] {
   const settings = useSiteSettings();
-  return restoreCommitments(parseJsonValue(settings.homeCommitmentsJson, defaultCommitments));
+  return restoreCommitments(parseJsonArray(settings.homeCommitmentsJson, defaultCommitments));
 }
 
 export function usePricingItems(): PricingItem[] {
   const settings = useSiteSettings();
-  return restorePricing(parseJsonValue(settings.homePricingJson, defaultPricingItems));
+  return restorePricing(parseJsonArray(settings.homePricingJson, defaultPricingItems));
 }
 
 export function useHomeVideo(): HomeVideoSettings {
@@ -357,10 +377,10 @@ export function useHomeVideo(): HomeVideoSettings {
 
 export function useCalculatorConfig(): CostCalculatorConfig {
   const settings = useSiteSettings();
-  return parseJsonValue<CostCalculatorConfig>(settings.homeCalculatorConfigJson, {
+  return parseJsonObject(settings.homeCalculatorConfigJson, {
     phanThoRates: { "trung-binh": 3550000, "tb-kha": 3700000, "kha": 3800000 },
     tronGoiRates: { "trung-binh": 4850000, "tb-kha": 5500000, "kha": 6700000 },
-    note: "Cong thuc tham khao theo don gia xay dung nha pho/biet thu pho bien tren thi truong.",
+    note: "Công thức tham khảo theo đơn giá xây dựng nhà phố/biệt thự phổ biến trên thị trường.",
   });
 }
 
@@ -379,7 +399,7 @@ export function useAboutContent() {
       ),
     experienceYears:
       settings.homeAboutExperienceYears || defaultSiteSettings.homeAboutExperienceYears,
-    points: parseJsonValue(settings.homeAboutPointsJson, defaultAboutPoints).map((point) =>
+    points: parseJsonArray(settings.homeAboutPointsJson, defaultAboutPoints).map((point) =>
       restoreKnownVietnameseText(point),
     ),
   };
@@ -387,51 +407,48 @@ export function useAboutContent() {
 
 export function useHomeStats(): StatItem[] {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeStatsJson, defaultStats);
+  return parseJsonArray(settings.homeStatsJson, defaultStats);
 }
 
 export function useTestimonials(): TestimonialItem[] {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeTestimonialsJson, defaultTestimonials);
+  return parseJsonArray(settings.homeTestimonialsJson, defaultTestimonials);
 }
 
 export function useFaqs(): FaqItem[] {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeFaqJson, defaultFaqs);
+  return parseJsonArray(settings.homeFaqJson, defaultFaqs);
 }
 
 export function useProcessSteps(): ProcessStep[] {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeProcessJson, defaultProcessSteps);
+  return parseJsonArray(settings.homeProcessJson, defaultProcessSteps);
 }
 
 export function useCategoryPages(): CategoryPagesMap {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.categoryPagesJson, defaultCategoryPages);
+  const parsed = parseJsonObject<CategoryPagesMap>(settings.categoryPagesJson, defaultCategoryPages);
+  return Object.keys(parsed).length > 0 ? parsed : defaultCategoryPages;
 }
 
 export function useSectionMeta(): HomeSectionMeta {
   const settings = useSiteSettings();
-  const parsed = parseJsonValue<Partial<HomeSectionMeta>>(settings.homeSectionMetaJson, {});
-  return { ...defaultSectionMeta, ...parsed };
+  return parseJsonObject(settings.homeSectionMetaJson, defaultSectionMeta);
 }
 
 export function useCtaBanner(): CtaBannerContent {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeCtaJson, defaultCtaBanner);
+  return parseJsonObject(settings.homeCtaJson, defaultCtaBanner);
 }
 
 export function useQuoteServices(): QuoteServiceItem[] {
   const settings = useSiteSettings();
-  return parseJsonValue(settings.homeQuoteServicesJson, defaultQuoteServices);
+  return parseJsonArray(settings.homeQuoteServicesJson, defaultQuoteServices);
 }
 
 export function useContactSection(): ContactSectionContent {
   const settings = useSiteSettings();
-  return {
-    ...defaultContactSection,
-    ...parseJsonValue<Partial<ContactSectionContent>>(settings.homeContactJson, {}),
-  };
+  return parseJsonObject(settings.homeContactJson, defaultContactSection);
 }
 
 export function useTopBarSlogan(): string {
@@ -441,16 +458,12 @@ export function useTopBarSlogan(): string {
 
 export function useNavMenu(): MenuItem[] {
   const settings = useSiteSettings();
-  const parsed = parseJsonValue<MenuItem[]>(settings.navMenuJson, defaultNavMenu);
-  return parsed.length > 0 ? parsed : defaultNavMenu;
+  return parseJsonArray(settings.navMenuJson, defaultNavMenu);
 }
 
 export function usePageBanners(): PageBannersMap {
   const settings = useSiteSettings();
-  return {
-    ...defaultPageBanners,
-    ...parseJsonValue<Partial<PageBannersMap>>(settings.pageBannersJson, {}),
-  };
+  return parseJsonObject(settings.pageBannersJson, defaultPageBanners);
 }
 
 export function usePageBanner(key: keyof PageBannersMap): PageBannerContent {
@@ -459,10 +472,7 @@ export function usePageBanner(key: keyof PageBannersMap): PageBannerContent {
 
 export function useFeaturedPostsConfig(): FeaturedPostsConfig {
   const settings = useSiteSettings();
-  return {
-    ...defaultFeaturedPosts,
-    ...parseJsonValue<Partial<FeaturedPostsConfig>>(settings.homeFeaturedPostsJson, {}),
-  };
+  return parseJsonObject(settings.homeFeaturedPostsJson, defaultFeaturedPosts);
 }
 
 export function useOpenGraphImage(): string {

@@ -10,6 +10,7 @@
     "start": "node --enable-source-maps ./dist/index.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "seed-posts": "tsx scripts/seed-posts.ts",
+    "seed-site-settings": "tsx scripts/seed-site-settings.ts",
     "verify-posts": "tsx scripts/verify-posts.ts"
   },
   "dependencies": {
