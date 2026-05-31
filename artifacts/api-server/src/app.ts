@@ -39,6 +39,17 @@ app.use(authMiddleware);
 app.use("/api", router);
 app.use(sitemapRouter);
 
+/** WordPress-style trailing slashes — /sua-nha-tron-goi-tphcm/ → /sua-nha-tron-goi-tphcm */
+app.use((req, res, next) => {
+  const pathOnly = req.path;
+  if (pathOnly.length > 1 && pathOnly.endsWith("/")) {
+    const query = req.url?.slice(pathOnly.length) ?? "";
+    res.redirect(301, pathOnly.slice(0, -1) + query);
+    return;
+  }
+  next();
+});
+
 if (existsSync(frontendIndexPath)) {
   const imagesDir = path.join(frontendDistDir, "images");
   if (!existsSync(path.join(imagesDir, "logo.png"))) {
