@@ -6,7 +6,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
-import { normalizePosts } from "@/lib/posts";
+import { resolvePost, resolvePosts } from "@/lib/posts-with-fallback";
 import { useSiteSettings } from "@/lib/site-settings";
 
 function estimateReadingMinutes(content: string) {
@@ -19,9 +19,10 @@ export default function PostPage() {
   const slug = params.slug;
   const site = useSiteSettings();
   const brandName = site.companyName || "Kiến Trúc Sao Khuê";
-  const { data: post, isLoading, error } = useGetPostBySlug(slug);
+  const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug);
+  const post = resolvePost(slug, postFromApi);
   const { data: posts } = useListPosts({ limit: 12 });
-  const relatedPosts = normalizePosts(posts)
+  const relatedPosts = resolvePosts(posts)
     .filter((item) => item.slug !== slug && (!post || item.category === post.category))
     .slice(0, 3);
   const readingMinutes = post ? estimateReadingMinutes(post.content ?? "") : null;
@@ -106,7 +107,7 @@ export default function PostPage() {
           </div>
         )}
 
-        {error && (
+        {error && !post && (
           <div className="rounded-2xl border border-red-200 bg-red-50 p-8 text-center text-red-700">
             Không tìm thấy bài viết.
           </div>

@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
-import { normalizePosts } from "@/lib/posts";
+import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useSectionMeta } from "@/lib/site-settings";
 
 const fallback = [
@@ -21,7 +21,7 @@ const fallback = [
 export function ProjectsSection() {
   const meta = useSectionMeta();
   const { data, isLoading } = useListPosts({ category: "cong-trinh", limit: 8 });
-  const posts = normalizePosts(data);
+  const posts = resolvePosts(data, { category: "cong-trinh", limit: 8 });
   const projects =
     posts.length > 0
       ? posts.slice(0, 8).map((p) => ({

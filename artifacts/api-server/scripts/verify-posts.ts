@@ -2,7 +2,7 @@
  * Verifies every menu sub-category has at least one matching post slug.
  * Run: pnpm --filter @workspace/api-server run verify-posts
  */
-import { seedPosts } from "./seed-posts.ts";
+import { seedPosts } from "@workspace/seed-content";
 
 const menuChildren: { href: string; category: string; title: string }[] = [
   { href: "/gioi-thieu/so-do-to-chuc", category: "gioi-thieu", title: "Sơ đồ tổ chức" },

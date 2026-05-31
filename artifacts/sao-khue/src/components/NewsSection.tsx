@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
-import { normalizePosts } from "@/lib/posts";
+import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useSectionMeta } from "@/lib/site-settings";
 
 function readingMinutes(content: string | null | undefined) {
@@ -14,7 +14,7 @@ function readingMinutes(content: string | null | undefined) {
 export function NewsSection() {
   const meta = useSectionMeta();
   const { data: posts, isLoading } = useListPosts({ limit: 6 });
-  const items = normalizePosts(posts);
+  const items = resolvePosts(posts, { limit: 6 });
 
   return (
     <section id="kinh-nghiem" className="bg-white py-20 md:py-28">

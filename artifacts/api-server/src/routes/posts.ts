@@ -2,6 +2,7 @@ import { Router, type IRouter, type Request, type Response } from "express";
 import { db, postsTable } from "@workspace/db";
 import { eq, desc } from "drizzle-orm";
 import { z } from "zod";
+import { getFallbackPost, listFallbackPosts } from "@workspace/seed-content";
 import { isAdmin } from "../lib/auth";
 
 const PostInput = z.object({
@@ -26,11 +27,15 @@ function requireAdmin(req: Request, res: Response): boolean {
   return true;
 }
 
-function serialize(p: typeof postsTable.$inferSelect) {
+function serialize(p: {
+  createdAt: Date | string;
+  updatedAt: Date | string;
+  [key: string]: unknown;
+}) {
   return {
     ...p,
-    createdAt: p.createdAt.toISOString(),
-    updatedAt: p.updatedAt.toISOString(),
+    createdAt: p.createdAt instanceof Date ? p.createdAt.toISOString() : p.createdAt,
+    updatedAt: p.updatedAt instanceof Date ? p.updatedAt.toISOString() : p.updatedAt,
   };
 }
 
@@ -46,18 +51,36 @@ router.get("/posts", async (req, res) => {
     const rows = await q;
     res.json(rows.map(serialize));
   } catch (err) {
-    console.error("[posts] list failed", err);
-    res.status(503).json({ error: "Database unavailable. Check DATABASE_URL / Supabase connection." });
+    console.error("[posts] list failed, using fallback", err);
+    const category = typeof req.query.category === "string" ? req.query.category : undefined;
+    const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
+    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
+    res.json(listFallbackPosts({ category, limit }));
   }
 });
 
 router.get("/posts/:slug", async (req, res) => {
-  const [row] = await db.select().from(postsTable).where(eq(postsTable.slug, req.params.slug)).limit(1);
-  if (!row) {
-    res.status(404).json({ error: "Not found" });
+  try {
+    const [row] = await db
+      .select()
+      .from(postsTable)
+      .where(eq(postsTable.slug, req.params.slug))
+      .limit(1);
+    if (row) {
+      res.json(serialize(row));
+      return;
+    }
+  } catch (err) {
+    console.error("[posts] get failed, using fallback", err);
+  }
+
+  const fallback = getFallbackPost(req.params.slug);
+  if (fallback) {
+    res.json(fallback);
     return;
   }
-  res.json(serialize(row));
+
+  res.status(404).json({ error: "Not found" });
 });
 
 router.post("/posts", async (req, res) => {
