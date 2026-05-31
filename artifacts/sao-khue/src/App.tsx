@@ -14,6 +14,7 @@ import PostPage from "@/pages/PostPage";
 import Admin from "@/pages/Admin";
 import { SiteHead } from "@/components/SiteHead";
 import { SiteLoader } from "@/components/SiteLoader";
+import { LegacySlugRedirect } from "@/components/LegacySlugRedirect";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,9 @@ function Router() {
       {/* Legacy alias routes still available */}
       <Route path="/about-legacy" component={About} />
       <Route path="/services-legacy" component={Services} />
+
+      {/* Old WordPress post URLs at root, e.g. /sua-nha-tron-goi-tphcm from Google */}
+      <Route path="/:slug" component={LegacySlugRedirect} />
 
       <Route component={NotFound} />
     </Switch>

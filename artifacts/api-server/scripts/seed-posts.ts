@@ -35,6 +35,7 @@ const lorem = (title: string) => `
 export const seedPosts: SeedPost[] = [
   // dich-vu (7)
   { slug: "xay-nha-tron-goi-tphcm", title: "Dịch vụ xây nhà trọn gói tại TP.HCM uy tín giá tốt 2026", category: "dich-vu", excerpt: "Sao Khuê nhận xây nhà trọn gói chìa khoá trao tay tại TP.HCM với báo giá minh bạch, vật liệu chính hãng, bảo hành dài hạn.", content: lorem("Xây nhà trọn gói TP.HCM"), imageUrl: BUILD },
+  { slug: "sua-nha-tron-goi-tphcm", title: "Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm", category: "dich-vu", excerpt: "Dịch vụ sửa chữa nhà trọn gói giá rẻ tại TPHCM. Hơn 10 năm kinh nghiệm — Kiến trúc Sao Khuê mang đến sự an tâm cho mọi công trình.", content: lorem("Sửa nhà trọn gói TPHCM"), imageUrl: REPAIR },
   { slug: "sua-chua-nha-tphcm", title: "Sửa chữa nhà phố, cải tạo nâng cấp toàn diện", category: "dich-vu", excerpt: "Đơn vị sửa chữa nhà uy tín, nhận cải tạo nội ngoại thất, sơn sửa, chống thấm, lát nền cho nhà phố và biệt thự.", content: lorem("Sửa chữa nhà"), imageUrl: REPAIR },
   { slug: "xay-dung-phan-tho", title: "Xây dựng phần thô nhà phố giá cạnh tranh", category: "dich-vu", excerpt: "Nhận thi công phần thô nhà phố, biệt thự với đội ngũ thợ lành nghề và quản lý công trình chuyên nghiệp.", content: lorem("Xây dựng phần thô"), imageUrl: BUILD },
   { slug: "thiet-ke-nha", title: "Thiết kế nhà ở, nhà phố, biệt thự hiện đại", category: "dich-vu", excerpt: "Đội ngũ kiến trúc sư trẻ, sáng tạo mang đến những phương án thiết kế tối ưu công năng và thẩm mỹ.", content: lorem("Thiết kế nhà"), imageUrl: DESIGN },
