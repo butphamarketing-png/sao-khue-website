@@ -34,7 +34,7 @@ export function Header() {
       }`}
     >
       <div className="site-container">
-        <div className="flex h-[68px] items-center justify-between gap-3 md:h-[76px]">
+        <div className="flex h-[72px] items-center justify-between gap-3 md:h-[88px]">
           <Link href="/" className="group flex shrink-0 items-center">
             <div className="logo-header-wrap">
               <BrandLogo
