@@ -215,15 +215,15 @@
   }
 
   .section-white {
-    @apply bg-white section-pad;
+    @apply bg-white py-16 md:py-24 lg:py-28;
   }
 
   .section-alt {
-    @apply section-muted section-pad;
+    @apply bg-gradient-to-b from-slate-50/90 via-slate-50/50 to-white py-16 md:py-24 lg:py-28;
   }
 
   .page-content {
-    @apply site-container section-pad;
+    @apply container mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28;
   }
 
   .content-card {

@@ -203,7 +203,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   homeContactJson: JSON.stringify(defaultContactSection),
   topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
-  gscVerification: "",
+  gscVerification: "YwY_bBLvygZlyntSLWYe9bShrCJQJKbq_A5IMOJtUIo",
   navMenuJson: JSON.stringify(defaultNavMenu),
   pageBannersJson: JSON.stringify(defaultPageBanners),
   homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
