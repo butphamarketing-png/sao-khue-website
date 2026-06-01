@@ -19,8 +19,23 @@ export function resolvePosts(input: PostCollection, options?: { category?: strin
   return listFallbackPosts(options) as Post[];
 }
 
+/** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
 export function resolvePost(slug: string | undefined, apiPost: Post | undefined | null): Post | undefined {
-  if (apiPost) return apiPost;
-  if (!slug) return undefined;
-  return getFallbackPost(slug) as Post | undefined;
+  const fallback = slug ? (getFallbackPost(slug) as Post | undefined) : undefined;
+  if (!apiPost) return fallback;
+  if (!fallback) return apiPost;
+
+  const content = (apiPost.content ?? "").trim();
+  const fallbackContent = (fallback.content ?? "").trim();
+  if (content.length >= 80 || !fallbackContent) return apiPost;
+
+  return {
+    ...apiPost,
+    content: fallback.content,
+    excerpt: (apiPost.excerpt ?? "").trim() || fallback.excerpt,
+    metaTitle: (apiPost.metaTitle ?? "").trim() || fallback.metaTitle,
+    metaDescription: (apiPost.metaDescription ?? "").trim() || fallback.metaDescription,
+    metaKeywords: (apiPost.metaKeywords ?? "").trim() || fallback.metaKeywords,
+    imageUrl: (apiPost.imageUrl ?? "").trim() || fallback.imageUrl,
+  };
 }

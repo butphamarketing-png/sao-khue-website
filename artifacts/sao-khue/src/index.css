@@ -242,20 +242,25 @@
     @apply bg-gradient-to-r from-primary to-[#0c4a8a] bg-clip-text text-transparent;
   }
 
+  /* Logo PNG có viền trong suốt rộng — scale để phần chữ + sao lấp đầy ô hiển thị */
   .logo-header-wrap {
-    @apply relative flex h-11 w-[min(46vw,200px)] shrink-0 items-center sm:h-12 sm:w-[210px] lg:h-[52px] lg:w-[230px] xl:w-[250px];
+    @apply relative flex h-14 w-[min(54vw,248px)] shrink-0 items-center overflow-hidden sm:h-[60px] sm:w-[268px] lg:h-[68px] lg:w-[300px] xl:w-[320px];
   }
 
   .logo-header-img {
-    @apply h-full w-full max-w-full object-contain object-left;
+    @apply h-full w-auto max-w-none object-contain object-left origin-left scale-[2.35] sm:scale-[2.45] lg:scale-[2.55];
   }
 
   .logo-footer-wrap {
-    @apply relative mb-6 inline-flex rounded-xl bg-white/95 p-3 shadow-lg shadow-black/20 ring-1 ring-white/10;
+    @apply relative mb-6 inline-flex max-w-full overflow-hidden rounded-xl bg-white/95 p-3 shadow-lg shadow-black/20 ring-1 ring-white/10;
   }
 
   .logo-footer-img {
-    @apply h-14 w-auto max-w-[240px] object-contain md:h-16 md:max-w-[280px];
+    @apply h-16 w-auto max-w-none object-contain object-left origin-left scale-[1.85] md:h-[4.5rem] md:scale-[1.95];
+  }
+
+  .logo-loader-img {
+    @apply relative h-20 w-auto max-w-[min(360px,92vw)] object-contain object-left origin-left scale-[2.2] drop-shadow-md md:h-24 md:scale-[2.35];
   }
 }
 

@@ -26,6 +26,8 @@ export const defaultNavMenu: MenuItem[] = [
     category: "dich-vu",
     children: [
       { title: "Xây nhà trọn gói", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
+      { title: "Báo giá xây nhà", href: "/dich-vu/bao-gia-xay-nha", category: "dich-vu" },
+      { title: "Xây dựng nhà phố", href: "/dich-vu/cong-ty-xay-dung-nha-pho", category: "dich-vu" },
       { title: "Sửa chữa nhà", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
       { title: "Xây dựng phần thô", href: "/dich-vu/xay-dung-phan-tho", category: "dich-vu" },
       { title: "Thiết kế nhà", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },

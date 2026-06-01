@@ -67,7 +67,24 @@ router.get("/posts/:slug", async (req, res) => {
       .where(eq(postsTable.slug, req.params.slug))
       .limit(1);
     if (row) {
-      res.json(serialize(row));
+      const serialized = serialize(row);
+      const fallback = getFallbackPost(req.params.slug);
+      const content = String(serialized.content ?? "").trim();
+      const fallbackContent = String(fallback?.content ?? "").trim();
+      if (fallback && content.length < 80 && fallbackContent) {
+        res.json({
+          ...serialized,
+          content: fallback.content,
+          excerpt: String(serialized.excerpt ?? "").trim() || fallback.excerpt,
+          metaTitle: String(serialized.metaTitle ?? "").trim() || fallback.metaTitle,
+          metaDescription:
+            String(serialized.metaDescription ?? "").trim() || fallback.metaDescription,
+          metaKeywords: String(serialized.metaKeywords ?? "").trim() || fallback.metaKeywords,
+          imageUrl: String(serialized.imageUrl ?? "").trim() || fallback.imageUrl,
+        });
+        return;
+      }
+      res.json(serialized);
       return;
     }
   } catch (err) {

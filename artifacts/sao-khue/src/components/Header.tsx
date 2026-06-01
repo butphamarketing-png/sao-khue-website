@@ -34,7 +34,7 @@ export function Header() {
       }`}
     >
       <div className="site-container max-w-[1440px]">
-        <div className="grid h-[68px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 lg:h-[76px] xl:gap-3">
+        <div className="grid h-[72px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 lg:h-[88px] xl:gap-3">
           <Link href="/" className="group flex items-center self-center">
             <div className="logo-header-wrap">
               <BrandLogo

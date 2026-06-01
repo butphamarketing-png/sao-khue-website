@@ -17,6 +17,8 @@ export { thietKeNhaPhongCachHienDai } from "./thiet-ke-nha-phong-cach-hien-dai";
 export { camNangXayNha2026 } from "./cam-nang-xay-nha-2026";
 export { luatXayDungMoiNhat } from "./luat-xay-dung-moi-nhat";
 export { phongThuyNhaO } from "./phong-thuy-nha-o";
+export { congTyXayDungNhaPhoUyTinTphcm } from "./cong-ty-xay-dung-nha-pho-uy-tin-tphcm";
+export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
 
 export type SeoArticle = {
   title: string;

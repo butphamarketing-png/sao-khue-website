@@ -18,6 +18,8 @@ import {
   camNangXayNha2026,
   luatXayDungMoiNhat,
   phongThuyNhaO,
+  congTyXayDungNhaPhoUyTinTphcm,
+  baoGiaXayNhaTronGoiMoiNhatTphcm,
   type SeoArticle,
 } from "./articles";
 
@@ -69,8 +71,20 @@ const TEAM = "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=
 
 const FALLBACK_TIMESTAMP = "2026-01-15T00:00:00.000Z";
 
-/** 18 bài — khớp menu con + bài công trình bổ sung */
+/** 20 bài — khớp menu con + bài công trình bổ sung */
 export const seedPosts: SeedPost[] = [
+  seoPost(
+    "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+    "dich-vu",
+    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+    baoGiaXayNhaTronGoiMoiNhatTphcm,
+  ),
+  seoPost(
+    "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+    "dich-vu",
+    "https://images.unsplash.com/photo-1486406146926-c627a92fd1ab?auto=format&fit=crop&q=80&w=1200",
+    congTyXayDungNhaPhoUyTinTphcm,
+  ),
   seoPost("xay-nha-tron-goi-tphcm", "dich-vu", BUILD, xayNhaTronGoiTphcm),
   seoPost("sua-nha-tron-goi-tphcm", "dich-vu", REPAIR, suaNhaTronGoiTphcm),
   seoPost("sua-chua-nha-tphcm", "dich-vu", REPAIR, suaChuaNhaTphcm),

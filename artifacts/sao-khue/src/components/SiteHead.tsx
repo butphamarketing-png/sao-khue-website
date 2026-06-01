@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { BUNDLED_LOGO_URL } from "@/lib/brand-assets";
 import {
   useSiteSettings,
   resolveLogoUrl,
@@ -64,8 +65,11 @@ export function SiteHead() {
     setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
     setMetaProperty("og:locale", "vi_VN");
 
-    setLink("icon", "/favicon.svg", "image/svg+xml");
-    setLink("apple-touch-icon", resolveLogoUrl(s.logoUrl));
+    const faviconHref = resolveLogoUrl(s.logoUrl) || BUNDLED_LOGO_URL || "/favicon.png";
+    const faviconType = faviconHref.endsWith(".svg") ? "image/svg+xml" : "image/png";
+    setLink("icon", faviconHref, faviconType);
+    setLink("shortcut icon", faviconHref, faviconType);
+    setLink("apple-touch-icon", faviconHref);
     setLink("sitemap", `${origin}/sitemap.xml`, "application/xml");
     setLink("alternate", `${origin}/feed.xml`, "application/rss+xml");
 

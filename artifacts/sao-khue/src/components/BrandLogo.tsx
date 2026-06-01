@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BUNDLED_LOGO_URL, resolveLogoUrl } from "@/lib/brand-assets";
 
-const LOGO_FALLBACKS = [BUNDLED_LOGO_URL, "/favicon.svg"];
+const LOGO_FALLBACKS = [BUNDLED_LOGO_URL, "/favicon.png"];
 
 type BrandLogoProps = {
   src?: string | null;
