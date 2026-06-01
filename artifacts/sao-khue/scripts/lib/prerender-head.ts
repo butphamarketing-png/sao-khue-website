@@ -1,5 +1,7 @@
 /** Pure HTML head builders for static prerender (no DOM). */
 
+export const GSC_VERIFICATION_TOKEN = "YwY_bBLvygZlyntSLWYe9bShrCJQJKbq_A5IMOJtUIo";
+
 export type PrerenderMeta = {
   title: string;
   description: string;
@@ -32,6 +34,7 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
     ? "noindex,nofollow"
     : "index,follow,max-image-preview:large";
   const lines: string[] = [
+    `<meta name="google-site-verification" content="${escapeHtml(GSC_VERIFICATION_TOKEN)}" />`,
     `<title>${escapeHtml(meta.title)}</title>`,
     `<meta name="description" content="${escapeHtml(meta.description)}" />`,
     `<meta name="robots" content="${robots}" />`,

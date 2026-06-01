@@ -1,4 +1,5 @@
 import { useGetSiteSettings, type SiteSettings } from "@workspace/api-client-react";
+import { GSC_VERIFICATION_TOKEN } from "@/lib/gsc-verification";
 import {
   type CategoryPagesMap,
   type ContactSectionContent,
@@ -203,7 +204,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   homeContactJson: JSON.stringify(defaultContactSection),
   topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
-  gscVerification: "YwY_bBLvygZlyntSLWYe9bShrCJQJKbq_A5IMOJtUIo",
+  gscVerification: GSC_VERIFICATION_TOKEN,
   navMenuJson: JSON.stringify(defaultNavMenu),
   pageBannersJson: JSON.stringify(defaultPageBanners),
   homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
@@ -340,6 +341,7 @@ export function useSiteSettings(): SiteSettings & Record<string, string> {
   const merged = { ...defaultSiteSettings, ...(data as Record<string, string> | undefined) };
   return {
     ...merged,
+    gscVerification: merged.gscVerification?.trim() || GSC_VERIFICATION_TOKEN,
     logoUrl: resolveLogoUrl(merged.logoUrl),
     loadingLogoUrl: resolveLogoUrl(merged.loadingLogoUrl || merged.logoUrl),
     companyName: restoreKnownVietnameseText(merged.companyName),

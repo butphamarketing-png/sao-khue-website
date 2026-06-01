@@ -5,7 +5,7 @@
   "outputDirectory": "public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api" },
-    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/|sitemap\\.xml|robots\\.txt|feed\\.xml|google[0-9a-zA-Z._-]+\\.html).*)", "destination": "/index.html" }
   ],
   "framework": null
 }
