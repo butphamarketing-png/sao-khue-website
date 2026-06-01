@@ -15,7 +15,7 @@ import {
   getMenuLeafSlug,
   postMatchesSubSlug,
 } from "../src/lib/menu-posts.ts";
-import { enhanceArticleHtml } from "../src/lib/seo.ts";
+import { enhanceArticleHtml } from "./lib/prerender-utils.ts";
 import {
   buildHeadTags,
   buildJsonLdScript,
@@ -318,6 +318,11 @@ function writePage(template: string, page: PrerenderPage, outRoot: string) {
 type PrerenderPost = SeedPost & { createdAt?: string; updatedAt?: string };
 
 async function loadPostsForPrerender(): Promise<PrerenderPost[]> {
+  // Vercel build: tránh kết nối DB (pg/ssl) — dùng seed. Bật PRERENDER_USE_DB=1 nếu cần.
+  if (process.env.VERCEL && process.env.PRERENDER_USE_DB !== "1") {
+    return seedPosts;
+  }
+
   const conn =
     process.env.DATABASE_URL ?? process.env.SUPABASE_DATABASE_URL ?? "";
   if (!conn) return seedPosts;

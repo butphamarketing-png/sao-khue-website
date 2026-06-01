@@ -61,4 +61,4 @@ export const navMenu = defaultNavMenu;
 
 export const allCategorySlugs = ["gioi-thieu", "dich-vu", "cong-trinh", "kinh-nghiem"];
 
-export { findMenuByPath } from "@/lib/menu-posts";
+export { findMenuByPath } from "./menu-posts";

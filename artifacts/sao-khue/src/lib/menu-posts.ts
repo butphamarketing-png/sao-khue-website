@@ -1,5 +1,5 @@
 import type { Post } from "@workspace/api-client-react";
-import { defaultNavMenu, type MenuItem } from "@/lib/menu";
+import { defaultNavMenu, type MenuItem } from "./menu";
 
 export type MenuChild = MenuItem & { category: string };
 export type MenuChildOption = MenuChild & {

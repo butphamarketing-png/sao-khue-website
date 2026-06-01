@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "scripts/**/*",
+    "src/lib/home-content.ts",
+    "src/lib/menu.ts",
+    "src/lib/menu-posts.ts"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
