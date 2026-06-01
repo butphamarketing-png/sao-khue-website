@@ -58,6 +58,8 @@ export function SiteHead() {
 
   useEffect(() => {
     setMetaName("theme-color", "#17579d");
+    setMetaName("geo.region", "VN-SG");
+    setMetaName("geo.placename", "Thành phố Hồ Chí Minh");
     setMetaName("google-site-verification", s.gscVerification);
     setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
     setMetaProperty("og:locale", "vi_VN");

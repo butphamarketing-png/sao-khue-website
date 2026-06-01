@@ -12,6 +12,7 @@ const siteMapGroups: { title: string; items: SiteMapItem[] }[] = [
     title: "Nội dung",
     items: [
       { label: "Bài viết", view: "posts", desc: "Tất cả bài viết & SEO" },
+      { label: "SEO tổng quan", view: "settings-seo", desc: "Kiểm tra meta, ảnh, độ dài bài" },
       { label: "Hộp thư liên hệ", view: "contact-inbox", desc: "Form báo giá từ website" },
       { label: "Trang danh mục", view: "settings-categories", desc: "Intro /dich-vu, /cong-trinh..." },
       { label: "Menu website", view: "settings-menu", desc: "Header, footer, menu con" },
@@ -50,7 +51,8 @@ const siteMapGroups: { title: string; items: SiteMapItem[] }[] = [
   {
     title: "Hệ thống",
     items: [
-      { label: "Thông tin website", view: "settings-general", desc: "Logo, hotline, SEO, slogan" },
+      { label: "Google & Maps", view: "settings-google", desc: "Analytics, Search Console, bản đồ" },
+      { label: "Thông tin website", view: "settings-general", desc: "Logo, hotline, slogan" },
     ],
   },
 ];

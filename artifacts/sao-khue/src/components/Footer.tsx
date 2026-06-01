@@ -1,10 +1,19 @@
 import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { BrandLogo } from "@/components/BrandLogo";
-import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan, usePrimaryPhone } from "@/lib/site-settings";
+import { MapEmbed } from "@/components/MapEmbed";
+import {
+  useGoogleMapEmbed,
+  useSiteSettings,
+  telHref,
+  useNavMenu,
+  useTopBarSlogan,
+  usePrimaryPhone,
+} from "@/lib/site-settings";
 
 export function Footer() {
   const s = useSiteSettings();
+  const mapEmbed = useGoogleMapEmbed();
   const menu = useNavMenu();
   const slogan = useTopBarSlogan();
   const phone = usePrimaryPhone();
@@ -277,16 +286,11 @@ export function Footer() {
 
             >
 
-              <iframe
-
+              <MapEmbed
+                embedHtml={mapEmbed}
+                address={s.address1}
                 title="Bản đồ"
-
                 className="pointer-events-none h-full w-full border-0 opacity-80 transition group-hover:opacity-100"
-
-                loading="lazy"
-
-                src={`https://maps.google.com/maps?q=${encodeURIComponent(s.address1)}&z=15&output=embed`}
-
               />
 
               <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-900/40 p-4 text-center opacity-0 transition group-hover:opacity-100">

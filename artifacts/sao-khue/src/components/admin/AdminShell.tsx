@@ -27,6 +27,7 @@ import {
   PanelTop,
   Star,
   Inbox,
+  SearchCheck,
 } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { SidebarButton, SidebarGroupBlock } from "./admin-ui";
@@ -35,6 +36,7 @@ export type AdminView =
   | "dashboard"
   | "posts"
   | "settings-general"
+  | "settings-google"
   | "settings-hero"
   | "settings-about"
   | "settings-commitments"
@@ -52,6 +54,7 @@ export type AdminView =
   | "settings-menu"
   | "settings-banners"
   | "settings-featured"
+  | "settings-seo"
   | "contact-inbox";
 
 type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
@@ -63,6 +66,7 @@ type Props = {
   expandedGroup: Record<SidebarGroup, boolean>;
   toggleGroup: (group: SidebarGroup) => void;
   logout: () => void;
+  inboxUnreadCount?: number;
   children: ReactNode;
 };
 
@@ -73,6 +77,7 @@ export function AdminShell({
   expandedGroup,
   toggleGroup,
   logout,
+  inboxUnreadCount = 0,
   children,
 }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -110,6 +115,7 @@ export function AdminShell({
           onClick={() => { setView("contact-inbox"); setMobileOpen(false); }}
           icon={Inbox}
           label="Hộp thư liên hệ"
+          badge={inboxUnreadCount}
         />
       </SidebarGroupBlock>
 
@@ -143,6 +149,8 @@ export function AdminShell({
         <NavItem view={view} target="settings-categories" setView={setView} setMobileOpen={setMobileOpen} icon={LayoutGrid} label="Trang danh mục" />
         <NavItem view={view} target="settings-menu" setView={setView} setMobileOpen={setMobileOpen} icon={Navigation} label="Menu website" />
         <NavItem view={view} target="settings-banners" setView={setView} setMobileOpen={setMobileOpen} icon={PanelTop} label="Banner trang" />
+        <NavItem view={view} target="settings-seo" setView={setView} setMobileOpen={setMobileOpen} icon={SearchCheck} label="SEO tổng quan" />
+        <NavItem view={view} target="settings-google" setView={setView} setMobileOpen={setMobileOpen} icon={Globe} label="Google & Maps" />
         <NavItem view={view} target="settings-general" setView={setView} setMobileOpen={setMobileOpen} icon={Globe} label="Thông tin website" />
       </SidebarGroupBlock>
 

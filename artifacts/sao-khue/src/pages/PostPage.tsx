@@ -7,23 +7,18 @@ import { PageBanner } from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
 import { resolvePost, resolvePosts } from "@/lib/posts-with-fallback";
-import { resolveLogoUrl, useSiteSettings } from "@/lib/site-settings";
+import { resolveLogoUrl, useNavMenu, useSiteSettings } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import {
   absoluteUrl,
   buildArticleSchema,
   buildBreadcrumbSchema,
+  buildPostBreadcrumbItems,
   enhanceArticleHtml,
-  type BreadcrumbItem,
+  findMenuSectionPathForPost,
 } from "@/lib/seo";
-
-const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = {
-  "dich-vu": { label: "Dịch vụ", path: "/dich-vu" },
-  "gioi-thieu": { label: "Giới thiệu", path: "/gioi-thieu" },
-  "cong-trinh": { label: "Công trình", path: "/cong-trinh" },
-  "kinh-nghiem": { label: "Kinh nghiệm", path: "/kinh-nghiem" },
-};
+import { inferSubSlugFromPost, postMatchesSubSlug } from "@/lib/menu-posts";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -34,12 +29,20 @@ export default function PostPage() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug;
   const site = useSiteSettings();
+  const menu = useNavMenu();
   const brandName = site.companyName || "Kiến Trúc Sao Khuê";
   const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug);
   const post = resolvePost(slug, postFromApi);
-  const { data: posts } = useListPosts({ limit: 12 });
+  const { data: posts } = useListPosts({ limit: 24 });
+  const postSubSlug = post ? inferSubSlugFromPost(post, menu) : null;
+  const sectionPath = post ? findMenuSectionPathForPost(post, menu) : null;
   const relatedPosts = resolvePosts(posts)
-    .filter((item) => item.slug !== slug && (!post || item.category === post.category))
+    .filter((item) => {
+      if (item.slug === slug) return false;
+      if (!post) return false;
+      if (postSubSlug) return postMatchesSubSlug(item, postSubSlug, menu);
+      return item.category === post.category;
+    })
     .slice(0, 3);
   const readingMinutes = post ? estimateReadingMinutes(post.content ?? "") : null;
 
@@ -57,15 +60,7 @@ export default function PostPage() {
     ? post.metaDescription?.trim() || post.excerpt || ""
     : "";
 
-  const breadcrumbItems: BreadcrumbItem[] = post
-    ? (() => {
-        const cat = CATEGORY_CRUMBS[post.category];
-        const items: BreadcrumbItem[] = [{ name: "Trang chủ", path: "/" }];
-        if (cat) items.push({ name: cat.label, path: cat.path });
-        items.push({ name: post.title, path: postPath! });
-        return items;
-      })()
-    : [];
+  const breadcrumbItems = post ? buildPostBreadcrumbItems(post, menu) : [];
 
   usePageSeo(
     post && postPath
@@ -84,6 +79,7 @@ export default function PostPage() {
               headline: post.title,
               description: postDescription,
               image: post.imageUrl,
+              articleBody: post.content ?? "",
               datePublished: post.createdAt,
               dateModified: post.updatedAt,
               authorName: brandName,
@@ -93,7 +89,14 @@ export default function PostPage() {
             buildBreadcrumbSchema(breadcrumbItems),
           ],
         }
-      : null,
+      : !isLoading && slug
+        ? {
+            title: `Không tìm thấy bài viết | ${brandName}`,
+            description: "Bài viết không tồn tại hoặc đã được di chuyển.",
+            path: postPath ?? `/bai-viet/${slug}`,
+            noindex: true,
+          }
+        : null,
   );
 
   return (
@@ -173,11 +176,22 @@ export default function PostPage() {
                 className="prose-article"
                 itemProp="articleBody"
                 dangerouslySetInnerHTML={{
-                  __html: enhanceArticleHtml(post.content ?? ""),
+                  __html: enhanceArticleHtml(post.content ?? "", post.title),
                 }}
               />
             </div>
           </div>
+        )}
+
+        {post && sectionPath && (
+          <p className="mt-8 text-center text-sm text-slate-600">
+            <Link
+              href={sectionPath}
+              className="font-semibold text-primary hover:text-accent"
+            >
+              ← Xem tất cả bài trong mục này
+            </Link>
+          </p>
         )}
 
         {post && relatedPosts.length > 0 && (

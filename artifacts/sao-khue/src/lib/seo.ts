@@ -1,6 +1,45 @@
 /** SEO helpers — meta tags, canonical, JSON-LD (tương đương Rank Math cơ bản). */
 
+import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
+import {
+  getMenuChildren,
+  getMenuLeafSlug,
+  inferSubSlugFromPost,
+} from "@/lib/menu-posts";
+import { defaultNavMenu, type MenuItem } from "@/lib/menu";
+
 const DEFAULT_SITE_URL = "https://kientrucsaokhue.com";
+
+export const SEO_TITLE_MAX = 60;
+export const SEO_DESC_MAX = 160;
+
+export const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = {
+  "dich-vu": { label: "Dịch vụ", path: "/dich-vu" },
+  "gioi-thieu": { label: "Giới thiệu", path: "/gioi-thieu" },
+  "cong-trinh": { label: "Công trình", path: "/cong-trinh" },
+  "kinh-nghiem": { label: "Kinh nghiệm", path: "/kinh-nghiem" },
+};
+
+/** Cắt title/description để snippet Google không bị cắt xấu. */
+export function truncateMeta(text: string, maxLen: number): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLen) return normalized;
+  const slice = normalized.slice(0, maxLen - 1);
+  const lastSpace = slice.lastIndexOf(" ");
+  const cut = lastSpace > maxLen * 0.55 ? slice.slice(0, lastSpace) : slice;
+  return `${cut.trimEnd()}…`;
+}
+
+export function countWordsFromHtml(html: string): number {
+  return stripHtmlForSchema(html).split(/\s+/).filter(Boolean).length;
+}
+
+export function resolveOgImage(url?: string | null, fallback = BUNDLED_OPENGRAPH_URL): string {
+  const trimmed = (url ?? "").trim();
+  if (!trimmed) return fallback;
+  if (/^https?:\/\//i.test(trimmed)) return trimmed;
+  return absoluteUrl(trimmed.startsWith("/") ? trimmed : `/${trimmed}`);
+}
 
 export function getSiteOrigin(): string {
   if (typeof window !== "undefined") {
@@ -104,18 +143,20 @@ export function stripHtmlForSchema(html: string): string {
 export function applyPageSeo(input: PageSeoInput) {
   const canonical = absoluteUrl(input.path ?? window.location.pathname);
   const robots = input.noindex ? "noindex,nofollow" : "index,follow,max-image-preview:large";
-  const ogImage = input.ogImage ?? "";
+  const title = truncateMeta(input.title, SEO_TITLE_MAX);
+  const description = truncateMeta(input.description, SEO_DESC_MAX);
+  const ogImage = resolveOgImage(input.ogImage);
   const isArticle = input.ogType === "article";
 
-  document.title = input.title;
-  setMetaName("description", input.description);
+  document.title = title;
+  setMetaName("description", description);
   setMetaName("robots", robots);
   if (input.keywords) setMetaName("keywords", input.keywords);
   else setMetaName("keywords", "");
 
   setMetaProperty("og:type", input.ogType ?? "website");
-  setMetaProperty("og:title", input.title);
-  setMetaProperty("og:description", input.description);
+  setMetaProperty("og:title", title);
+  setMetaProperty("og:description", description);
   setMetaProperty("og:url", canonical);
   setMetaProperty("og:locale", "vi_VN");
   if (ogImage) {
@@ -132,9 +173,9 @@ export function applyPageSeo(input: PageSeoInput) {
   }
 
   setMetaName("twitter:card", "summary_large_image");
-  setMetaName("twitter:title", input.title);
-  setMetaName("twitter:description", input.description);
-  if (ogImage) setMetaName("twitter:image", ogImage);
+  setMetaName("twitter:title", title);
+  setMetaName("twitter:description", description);
+  setMetaName("twitter:image", ogImage);
 
   setCanonical(canonical);
 
@@ -228,16 +269,23 @@ export type ArticleSchemaInput = {
   publisherLogoUrl?: string;
 };
 
-export function buildArticleSchema(input: ArticleSchemaInput) {
+export function buildArticleSchema(
+  input: ArticleSchemaInput & { wordCount?: number; articleBody?: string },
+) {
+  const wordCount =
+    input.wordCount ??
+    (input.articleBody ? countWordsFromHtml(input.articleBody) : undefined);
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: input.headline,
     description: input.description,
-    image: input.image ? [input.image] : undefined,
+    image: input.image ? [resolveOgImage(input.image)] : undefined,
     datePublished: input.datePublished,
     dateModified: input.dateModified,
     inLanguage: "vi-VN",
+    wordCount: wordCount && wordCount > 0 ? wordCount : undefined,
     author: { "@type": "Organization", name: input.authorName },
     publisher: {
       "@type": "Organization",
@@ -250,12 +298,17 @@ export function buildArticleSchema(input: ArticleSchemaInput) {
   };
 }
 
-/** Chuẩn hóa HTML bài viết: lazy-load ảnh, external link an toàn */
-export function enhanceArticleHtml(html: string): string {
+/** Chuẩn hóa HTML bài viết: lazy-load ảnh, alt, external link an toàn */
+export function enhanceArticleHtml(html: string, defaultImageAlt?: string): string {
   let out = html.replace(/\n/g, "<br/>");
   out = out.replace(/<img\b([^>]*)>/gi, (_match, attrs: string) => {
-    if (/loading\s*=/i.test(attrs)) return `<img${attrs}>`;
-    return `<img${attrs} loading="lazy" decoding="async">`;
+    let next = attrs;
+    if (defaultImageAlt && !/\balt\s*=/i.test(next)) {
+      next = `${next} alt="${defaultImageAlt.replace(/"/g, "&quot;")}"`;
+    }
+    if (!/loading\s*=/i.test(next)) next = `${next} loading="lazy"`;
+    if (!/decoding\s*=/i.test(next)) next = `${next} decoding="async"`;
+    return `<img${next}>`;
   });
   out = out.replace(/<a\b([^>]*href=["']https?:\/\/[^"']+["'][^>]*)>/gi, (match, attrs: string) => {
     if (/rel\s*=/i.test(attrs)) return match;
@@ -314,4 +367,77 @@ export function buildFAQSchema(items: { q: string; a: string }[]) {
       acceptedAnswer: { "@type": "Answer", text: item.a },
     })),
   };
+}
+
+export function buildItemListSchema(
+  items: { name: string; url: string }[],
+  listName?: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName,
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
+
+export function buildCollectionPageSchema(
+  name: string,
+  description: string,
+  url: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description: truncateMeta(description, SEO_DESC_MAX),
+    url,
+    inLanguage: "vi-VN",
+    isPartOf: { "@type": "WebSite", url: getSiteOrigin() },
+  };
+}
+
+type PostBreadcrumbInput = {
+  slug: string;
+  title: string;
+  category: string;
+};
+
+/** Breadcrumb đầy đủ: Trang chủ → Danh mục → Mục menu con → Bài viết */
+export function buildPostBreadcrumbItems(
+  post: PostBreadcrumbInput,
+  menu: MenuItem[] = defaultNavMenu,
+): BreadcrumbItem[] {
+  const items: BreadcrumbItem[] = [{ name: "Trang chủ", path: "/" }];
+  const cat = CATEGORY_CRUMBS[post.category];
+  if (cat) items.push({ name: cat.label, path: cat.path });
+
+  const leaf = inferSubSlugFromPost(post, menu);
+  if (leaf) {
+    const child = getMenuChildren(post.category, menu).find(
+      (c) => getMenuLeafSlug(c.href) === leaf,
+    );
+    if (child) items.push({ name: child.title, path: child.href });
+  }
+
+  items.push({ name: post.title, path: `/bai-viet/${post.slug}` });
+  return items;
+}
+
+export function findMenuSectionPathForPost(
+  post: PostBreadcrumbInput,
+  menu: MenuItem[] = defaultNavMenu,
+): string | null {
+  const leaf = inferSubSlugFromPost(post, menu);
+  if (!leaf) return CATEGORY_CRUMBS[post.category]?.path ?? null;
+  const child = getMenuChildren(post.category, menu).find(
+    (c) => getMenuLeafSlug(c.href) === leaf,
+  );
+  return child?.href ?? CATEGORY_CRUMBS[post.category]?.path ?? null;
 }

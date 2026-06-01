@@ -28,32 +28,42 @@ export function absoluteUrl(siteUrl: string, path: string): string {
   return `${base}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
+function truncateMeta(text: string, maxLen: number): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLen) return normalized;
+  const slice = normalized.slice(0, maxLen - 1);
+  const lastSpace = slice.lastIndexOf(" ");
+  const cut = lastSpace > maxLen * 0.55 ? slice.slice(0, lastSpace) : slice;
+  return `${cut.trimEnd()}…`;
+}
+
 export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
   const canonical = absoluteUrl(siteUrl, meta.path);
   const robots = meta.noindex
     ? "noindex,nofollow"
     : "index,follow,max-image-preview:large";
+  const title = truncateMeta(meta.title, 60);
+  const description = truncateMeta(meta.description, 160);
+  const ogImage = meta.ogImage?.trim() || `${siteUrl.replace(/\/$/, "")}/images/hero-1.png`;
   const lines: string[] = [
     `<meta name="google-site-verification" content="${escapeHtml(GSC_VERIFICATION_TOKEN)}" />`,
-    `<title>${escapeHtml(meta.title)}</title>`,
-    `<meta name="description" content="${escapeHtml(meta.description)}" />`,
+    `<title>${escapeHtml(title)}</title>`,
+    `<meta name="description" content="${escapeHtml(description)}" />`,
     `<meta name="robots" content="${robots}" />`,
     `<link rel="canonical" href="${escapeHtml(canonical)}" />`,
     `<meta property="og:type" content="${escapeHtml(meta.ogType ?? "website")}" />`,
-    `<meta property="og:title" content="${escapeHtml(meta.title)}" />`,
-    `<meta property="og:description" content="${escapeHtml(meta.description)}" />`,
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
     `<meta property="og:url" content="${escapeHtml(canonical)}" />`,
     `<meta property="og:locale" content="vi_VN" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${escapeHtml(meta.title)}" />`,
-    `<meta name="twitter:description" content="${escapeHtml(meta.description)}" />`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+    `<meta property="og:image" content="${escapeHtml(ogImage)}" />`,
+    `<meta name="twitter:image" content="${escapeHtml(ogImage)}" />`,
   ];
   if (meta.keywords) {
     lines.push(`<meta name="keywords" content="${escapeHtml(meta.keywords)}" />`);
-  }
-  if (meta.ogImage) {
-    lines.push(`<meta property="og:image" content="${escapeHtml(meta.ogImage)}" />`);
-    lines.push(`<meta name="twitter:image" content="${escapeHtml(meta.ogImage)}" />`);
   }
   if (meta.ogType === "article" && meta.publishedTime) {
     lines.push(

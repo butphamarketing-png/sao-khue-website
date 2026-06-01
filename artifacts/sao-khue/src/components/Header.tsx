@@ -33,9 +33,9 @@ export function Header() {
           : "border-slate-100/90 bg-white/98 py-0 shadow-[0_2px_16px_rgba(15,23,42,0.04)] backdrop-blur-sm"
       }`}
     >
-      <div className="site-container">
-        <div className="flex h-[72px] items-center justify-between gap-3 md:h-[88px]">
-          <Link href="/" className="group flex shrink-0 items-center">
+      <div className="site-container max-w-[1440px]">
+        <div className="grid h-[68px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 lg:h-[76px] xl:gap-3">
+          <Link href="/" className="group flex items-center self-center">
             <div className="logo-header-wrap">
               <BrandLogo
                 src={s.logoUrl}
@@ -45,22 +45,24 @@ export function Header() {
             </div>
           </Link>
 
-          <nav className="hidden flex-1 items-center justify-center gap-0.5 lg:flex xl:gap-1">
+          <nav className="hidden min-w-0 flex-nowrap items-center justify-center gap-0 lg:flex">
             {menu.map((item) => {
               const active =
                 location === item.href ||
                 (item.category && location.startsWith(item.href + "/"));
+              const label = item.shortTitle ?? item.title;
               return (
-                <div key={item.title} className="group relative">
+                <div key={item.title} className="group relative shrink-0">
                   <Link
                     href={item.href}
-                    className={`relative flex items-center gap-1 rounded-xl px-3 py-2.5 text-[13px] font-semibold tracking-wide transition-colors xl:px-3.5 xl:text-sm ${
+                    title={item.title}
+                    className={`relative flex items-center gap-0.5 whitespace-nowrap rounded-lg px-2 py-2 text-[11px] font-semibold leading-none tracking-wide transition-colors lg:px-2.5 xl:px-3 xl:text-xs 2xl:text-[13px] ${
                       active
                         ? "text-primary"
                         : "text-slate-700 hover:bg-slate-50 hover:text-primary"
                     }`}
                   >
-                    {item.title}
+                    {label}
                     {item.children && (
                       <ChevronDown
                         size={14}
@@ -95,21 +97,23 @@ export function Header() {
             })}
           </nav>
 
-          <div className="hidden shrink-0 items-center lg:flex">
+          <div className="hidden shrink-0 items-center justify-end lg:flex">
             <Button
               asChild
-              className="btn-gradient-accent group h-11 rounded-full px-5 transition-transform hover:scale-[1.02]"
+              className="btn-gradient-accent group h-10 rounded-full px-3 transition-transform hover:scale-[1.02] xl:h-11 xl:px-5"
             >
-              <a href={telHref(phone)}>
-                <PhoneCall size={16} className="group-hover:animate-pulse" />
-                <span className="ml-2 text-sm font-bold">{phone}</span>
+              <a href={telHref(phone)} aria-label={`Gọi ${phone}`}>
+                <PhoneCall size={16} className="shrink-0 group-hover:animate-pulse" />
+                <span className="ml-1.5 hidden text-xs font-bold xl:ml-2 xl:inline xl:text-sm">
+                  {phone}
+                </span>
               </a>
             </Button>
           </div>
 
           <button
             type="button"
-            className="rounded-xl border border-slate-200 p-2.5 text-slate-800 transition hover:bg-slate-50 lg:hidden"
+            className="col-start-3 justify-self-end rounded-xl border border-slate-200 p-2.5 text-slate-800 transition hover:bg-slate-50 lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Menu"
           >

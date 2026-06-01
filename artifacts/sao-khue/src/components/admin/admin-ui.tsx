@@ -148,11 +148,13 @@ export function SidebarButton({
   onClick,
   icon: Icon,
   label,
+  badge,
 }: {
   active: boolean;
   onClick: () => void;
   icon: ComponentType<{ size?: number; className?: string }>;
   label: string;
+  badge?: number;
 }) {
   return (
     <button
@@ -165,7 +167,12 @@ export function SidebarButton({
       }`}
     >
       <Icon size={15} />
-      {label}
+      <span className="min-w-0 flex-1 truncate">{label}</span>
+      {badge != null && badge > 0 ? (
+        <span className="shrink-0 rounded-full bg-rose-500 px-2 py-0.5 text-[10px] font-bold text-white">
+          {badge > 99 ? "99+" : badge}
+        </span>
+      ) : null}
     </button>
   );
 }

@@ -101,6 +101,7 @@ export interface SiteSettings {
   footerDescription: string;
   gaTrackingId: string;
   gscVerification: string;
+  googleMapEmbed?: string;
 }
 
 export interface SiteSettingsInput {
@@ -121,6 +122,7 @@ export interface SiteSettingsInput {
   footerDescription: string;
   gaTrackingId: string;
   gscVerification: string;
+  googleMapEmbed?: string;
 }
 
 /**

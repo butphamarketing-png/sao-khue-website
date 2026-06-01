@@ -76,6 +76,7 @@ export const siteSettingsTable = pgTable("site_settings", {
     .default("Tận tâm — Uy tín — Chất lượng"),
   gaTrackingId: text("ga_tracking_id").notNull().default(""),
   gscVerification: text("gsc_verification").notNull().default(""),
+  googleMapEmbed: text("google_map_embed").notNull().default(""),
   navMenuJson: text("nav_menu_json").notNull().default("[]"),
   pageBannersJson: text("page_banners_json").notNull().default("{}"),
   homeFeaturedPostsJson: text("home_featured_posts_json").notNull().default("{}"),

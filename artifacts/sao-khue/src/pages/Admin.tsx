@@ -1,6 +1,7 @@
 import {
   useEffect,
   useMemo,
+  useRef,
   useState,
   type ComponentType,
   type FormEvent,
@@ -78,6 +79,24 @@ import {
   type TestimonialItem,
 } from "@/lib/home-content";
 import { ImageUploadField } from "@/components/ImageUploadField";
+import { AdminDashboardExtras } from "@/components/admin/AdminDashboardExtras";
+import { AdminSeoPanel } from "@/components/admin/AdminSeoPanel";
+import { FeaturedImagePanel } from "@/components/admin/FeaturedImagePanel";
+import { PostRichTextEditor } from "@/components/admin/PostRichTextEditor";
+import {
+  buildAutoExcerpt,
+  buildAutoMetaDescription,
+  buildAutoMetaKeywords,
+  buildAutoMetaTitle,
+  plainTextFromHtml,
+} from "@/lib/admin-post-seo";
+import { GSC_VERIFICATION_TOKEN } from "@/lib/gsc-verification";
+import { SEO_DESC_MAX, SEO_TITLE_MAX } from "@/lib/seo";
+import {
+  parseGaMeasurementId,
+  parseGscVerificationToken,
+  sanitizeGoogleMapEmbed,
+} from "@/lib/google-integrations";
 import { AdminLogin } from "@/components/admin/AdminLogin";
 import { AdminLivePreview } from "@/components/admin/AdminLivePreview";
 import { IconPickerField } from "@/components/admin/IconPickerField";
@@ -110,7 +129,37 @@ import {
   defaultHeroSlides,
   defaultPricingItems,
 } from "@/lib/site-settings";
+import {
+  restoreAboutPoints,
+  restoreAdminSettingsFields,
+  restoreCalculatorConfig,
+  restoreCategoryPages,
+  restoreCommitments,
+  restoreContactSection,
+  restoreCtaBanner,
+  restoreFaqs,
+  restoreHeroSlides,
+  restoreNavMenu,
+  restorePageBanners,
+  restorePricing,
+  restoreProcessSteps,
+  restoreQuoteServices,
+  restoreSectionMeta,
+  restoreStats,
+  restoreTestimonials,
+} from "@/lib/admin-cms-restore";
 import { normalizePosts } from "@/lib/posts";
+import {
+  clearPostDraft,
+  duplicatePostSlug,
+  filterPostsBySearch,
+  loadPostDraft,
+  savePostDraft,
+} from "@/lib/admin-post-draft";
+import { auditPostSeo, summarizeSeoAudits } from "@/lib/admin-seo-audit";
+import { exportPostsToCsv } from "@/lib/admin-post-export";
+import { countUnreadLeads, markLeadsSeen } from "@/lib/admin-inbox-read";
+import { fetchContactLeads, type ContactLead } from "@/lib/contact-leads-api";
 import { BUNDLED_LOGO_URL, resolveLogoUrl } from "@/lib/brand-assets";
 import {
   ensureSlugMatchesSubSlug,
@@ -136,6 +185,10 @@ import {
   Pencil,
   PlayCircle,
   Plus,
+  Copy,
+  Download,
+  ExternalLink,
+  Search,
   Save,
   Settings2,
   ShieldCheck,
@@ -177,6 +230,7 @@ type ExtendedSiteSettingsInput = SiteSettingsInput & {
   pageBannersJson: string;
   homeFeaturedPostsJson: string;
   opengraphImageUrl: string;
+  googleMapEmbed: string;
 };
 
 type FormState = {
@@ -212,53 +266,53 @@ const defaultCalculatorConfig: CalculatorConfig = {
 };
 
 const defaultExtendedSettings: ExtendedSiteSettingsInput = {
-  companyName: "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE",
-  taxCode: "",
-  hotline1: "0909 085 668",
-  hotline2: "",
-  email: "kientrucsaokhue@gmail.com",
-  address1: "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
-  address2: "146 đường 16, khu đô thị Vạn Phúc",
-  workingHours: "T2–T7, 8:00–17:30",
-  logoUrl: BUNDLED_LOGO_URL,
-  loadingLogoUrl: BUNDLED_LOGO_URL,
-  facebookUrl: "https://facebook.com/kientrucsaokhue",
-  youtubeUrl: "",
-  instagramUrl: "",
-  zaloPhone: "0909085668",
-  messengerUrl: "",
-  footerDescription:
-    "Uy tin - Chat luong - Tan tam. Chung toi chuyen thiet ke va thi cong xay dung nha pho, biet thu chuyen nghiep.",
-  heroSlidesJson: JSON.stringify(defaultHeroSlides),
-  homeCommitmentsJson: JSON.stringify(defaultCommitments),
-  homePricingJson: JSON.stringify(defaultPricingItems),
-  homeVideoUrl: "",
-  homeVideoLabel: "Xem video",
-  homeAboutEyebrow: "Ve chung toi",
-  homeAboutTitle: "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE",
-  homeAboutIntro: "",
-  homeAboutBody: "",
-  homeAboutPointsJson: JSON.stringify(defaultAboutPoints),
-  homeAboutImageUrl: "/images/about.png",
-  homeAboutExperienceLabel: "Nam Kinh Nghiem\nXay Dung",
-  homeAboutExperienceYears: "10+",
-  homeCalculatorConfigJson: JSON.stringify(defaultCalculatorConfig),
-  homeStatsJson: JSON.stringify(defaultStats),
-  homeTestimonialsJson: JSON.stringify(defaultTestimonials),
-  homeFaqJson: JSON.stringify(defaultFaqs),
-  homeProcessJson: JSON.stringify(defaultProcessSteps),
-  categoryPagesJson: JSON.stringify(defaultCategoryPages),
-  homeSectionMetaJson: JSON.stringify(defaultSectionMeta),
-  homeCtaJson: JSON.stringify(defaultCtaBanner),
-  homeQuoteServicesJson: JSON.stringify(defaultQuoteServices),
-  homeContactJson: JSON.stringify(defaultContactSection),
-  topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
-  gaTrackingId: "",
-  gscVerification: "",
-  navMenuJson: JSON.stringify(defaultNavMenu),
-  pageBannersJson: JSON.stringify(defaultPageBanners),
-  homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
-  opengraphImageUrl: "",
+  companyName: defaultSiteSettings.companyName,
+  taxCode: defaultSiteSettings.taxCode,
+  hotline1: defaultSiteSettings.hotline1,
+  hotline2: defaultSiteSettings.hotline2,
+  email: defaultSiteSettings.email,
+  address1: defaultSiteSettings.address1,
+  address2: defaultSiteSettings.address2,
+  workingHours: defaultSiteSettings.workingHours,
+  logoUrl: defaultSiteSettings.logoUrl || BUNDLED_LOGO_URL,
+  loadingLogoUrl: defaultSiteSettings.loadingLogoUrl || BUNDLED_LOGO_URL,
+  facebookUrl: defaultSiteSettings.facebookUrl,
+  youtubeUrl: defaultSiteSettings.youtubeUrl,
+  instagramUrl: defaultSiteSettings.instagramUrl,
+  zaloPhone: defaultSiteSettings.zaloPhone,
+  messengerUrl: defaultSiteSettings.messengerUrl,
+  footerDescription: defaultSiteSettings.footerDescription,
+  heroSlidesJson: defaultSiteSettings.heroSlidesJson,
+  homeCommitmentsJson: defaultSiteSettings.homeCommitmentsJson,
+  homePricingJson: defaultSiteSettings.homePricingJson,
+  homeVideoUrl: defaultSiteSettings.homeVideoUrl,
+  homeVideoLabel: defaultSiteSettings.homeVideoLabel,
+  homeAboutEyebrow: defaultSiteSettings.homeAboutEyebrow,
+  homeAboutTitle: defaultSiteSettings.homeAboutTitle,
+  homeAboutIntro: defaultSiteSettings.homeAboutIntro,
+  homeAboutBody: defaultSiteSettings.homeAboutBody,
+  homeAboutPointsJson: defaultSiteSettings.homeAboutPointsJson,
+  homeAboutImageUrl: defaultSiteSettings.homeAboutImageUrl,
+  homeAboutExperienceLabel: defaultSiteSettings.homeAboutExperienceLabel,
+  homeAboutExperienceYears: defaultSiteSettings.homeAboutExperienceYears,
+  homeCalculatorConfigJson: defaultSiteSettings.homeCalculatorConfigJson,
+  homeStatsJson: defaultSiteSettings.homeStatsJson,
+  homeTestimonialsJson: defaultSiteSettings.homeTestimonialsJson,
+  homeFaqJson: defaultSiteSettings.homeFaqJson,
+  homeProcessJson: defaultSiteSettings.homeProcessJson,
+  categoryPagesJson: defaultSiteSettings.categoryPagesJson,
+  homeSectionMetaJson: defaultSiteSettings.homeSectionMetaJson,
+  homeCtaJson: defaultSiteSettings.homeCtaJson,
+  homeQuoteServicesJson: defaultSiteSettings.homeQuoteServicesJson,
+  homeContactJson: defaultSiteSettings.homeContactJson,
+  topBarSlogan: defaultSiteSettings.topBarSlogan,
+  gaTrackingId: defaultSiteSettings.gaTrackingId,
+  gscVerification: defaultSiteSettings.gscVerification,
+  navMenuJson: defaultSiteSettings.navMenuJson,
+  pageBannersJson: defaultSiteSettings.pageBannersJson,
+  homeFeaturedPostsJson: defaultSiteSettings.homeFeaturedPostsJson,
+  opengraphImageUrl: defaultSiteSettings.opengraphImageUrl,
+  googleMapEmbed: defaultSiteSettings.googleMapEmbed,
 };
 
 function parseArrayValue<T>(value: string | undefined, fallback: T[]): T[] {
@@ -419,6 +473,10 @@ export default function Admin() {
   const [postSubCategoryFilter, setPostSubCategoryFilter] = useState<string>("all");
   const [postSubCategory, setPostSubCategory] = useState<string>("");
   const [postSavedAt, setPostSavedAt] = useState<number | null>(null);
+  const [postSearchQuery, setPostSearchQuery] = useState("");
+  const [draftNotice, setDraftNotice] = useState<ReturnType<typeof loadPostDraft>>(null);
+  const [contactLeads, setContactLeads] = useState<ContactLead[]>([]);
+  const [inboxSeenTick, setInboxSeenTick] = useState(0);
   const [adminEmail, setAdminEmail] = useState("butphamarketing@gmail.com");
   const [adminPassword, setAdminPassword] = useState("");
   const [adminSubmitting, setAdminSubmitting] = useState(false);
@@ -448,6 +506,7 @@ export default function Admin() {
   const [featuredPosts, setFeaturedPosts] =
     useState<FeaturedPostsConfig>(defaultFeaturedPosts);
   const [settingsSavedAt, setSettingsSavedAt] = useState<number | null>(null);
+  const postSaveMode = useRef<"leave" | "stay">("leave");
 
   useEffect(() => {
     if (!editing) return;
@@ -470,49 +529,71 @@ export default function Admin() {
 
   useEffect(() => {
     if (!siteData) return;
-    const built = buildSettingsFromApi(siteData as Record<string, string | number>);
+    const built = restoreAdminSettingsFields(
+      buildSettingsFromApi(siteData as Record<string, string | number>),
+    );
     setSettingsForm(built);
-    setHeroSlides(parseArrayValue<HeroSlide>(built.heroSlidesJson, defaultHeroSlides));
+    setHeroSlides(
+      restoreHeroSlides(parseArrayValue<HeroSlide>(built.heroSlidesJson, defaultHeroSlides)),
+    );
     setCommitments(
-      parseArrayValue<CommitmentItem>(built.homeCommitmentsJson, defaultCommitments),
-    );
-    setPricingItems(
-      parseArrayValue<PricingItem>(built.homePricingJson, defaultPricingItems),
-    );
-    setAboutPoints(
-      parseArrayValue<string>(built.homeAboutPointsJson, defaultAboutPoints),
-    );
-    setStats(parseArrayValue<StatItem>(built.homeStatsJson, defaultStats));
-    setTestimonials(
-      parseArrayValue<TestimonialItem>(built.homeTestimonialsJson, defaultTestimonials),
-    );
-    setFaqs(parseArrayValue<FaqItem>(built.homeFaqJson, defaultFaqs));
-    setProcessSteps(parseArrayValue<ProcessStep>(built.homeProcessJson, defaultProcessSteps));
-    setCategoryPages(
-      parseJsonObject<CategoryPagesMap>(built.categoryPagesJson, defaultCategoryPages),
-    );
-    setSectionMeta({
-      ...defaultSectionMeta,
-      ...parseJsonObject<Partial<HomeSectionMeta>>(built.homeSectionMetaJson, {}),
-    });
-    setCtaBanner(parseJsonObject<CtaBannerContent>(built.homeCtaJson, defaultCtaBanner));
-    setQuoteServices(
-      parseArrayValue<QuoteServiceItem>(built.homeQuoteServicesJson, defaultQuoteServices),
-    );
-    setContactSection(
-      parseJsonObject<ContactSectionContent>(built.homeContactJson, defaultContactSection),
-    );
-    setCalculatorConfig(
-      parseJsonObject<CalculatorConfig>(
-        built.homeCalculatorConfigJson,
-        defaultCalculatorConfig,
+      restoreCommitments(
+        parseArrayValue<CommitmentItem>(built.homeCommitmentsJson, defaultCommitments),
       ),
     );
-    setNavMenuItems(parseArrayValue<MenuItem>(built.navMenuJson, defaultNavMenu));
-    setPageBanners({
-      ...defaultPageBanners,
-      ...parseJsonObject<Partial<PageBannersMap>>(built.pageBannersJson, {}),
-    });
+    setPricingItems(
+      restorePricing(parseArrayValue<PricingItem>(built.homePricingJson, defaultPricingItems)),
+    );
+    setAboutPoints(
+      restoreAboutPoints(parseArrayValue<string>(built.homeAboutPointsJson, defaultAboutPoints)),
+    );
+    setStats(restoreStats(parseArrayValue<StatItem>(built.homeStatsJson, defaultStats)));
+    setTestimonials(
+      restoreTestimonials(
+        parseArrayValue<TestimonialItem>(built.homeTestimonialsJson, defaultTestimonials),
+      ),
+    );
+    setFaqs(restoreFaqs(parseArrayValue<FaqItem>(built.homeFaqJson, defaultFaqs)));
+    setProcessSteps(
+      restoreProcessSteps(parseArrayValue<ProcessStep>(built.homeProcessJson, defaultProcessSteps)),
+    );
+    setCategoryPages(
+      restoreCategoryPages(
+        parseJsonObject<CategoryPagesMap>(built.categoryPagesJson, defaultCategoryPages),
+      ),
+    );
+    setSectionMeta(
+      restoreSectionMeta({
+        ...defaultSectionMeta,
+        ...parseJsonObject<Partial<HomeSectionMeta>>(built.homeSectionMetaJson, {}),
+      }),
+    );
+    setCtaBanner(restoreCtaBanner(parseJsonObject<CtaBannerContent>(built.homeCtaJson, defaultCtaBanner)));
+    setQuoteServices(
+      restoreQuoteServices(
+        parseArrayValue<QuoteServiceItem>(built.homeQuoteServicesJson, defaultQuoteServices),
+      ),
+    );
+    setContactSection(
+      restoreContactSection(
+        parseJsonObject<ContactSectionContent>(built.homeContactJson, defaultContactSection),
+      ),
+    );
+    setCalculatorConfig(
+      restoreCalculatorConfig(
+        parseJsonObject<CalculatorConfig>(
+          built.homeCalculatorConfigJson,
+          defaultCalculatorConfig,
+        ),
+      ),
+    );
+    setNavMenuItems(restoreNavMenu(parseArrayValue<MenuItem>(built.navMenuJson, defaultNavMenu)));
+    setPageBanners(
+      restorePageBanners({
+        ...defaultPageBanners,
+        ...parseJsonObject<Partial<PageBannersMap>>(built.pageBannersJson, {}),
+      }),
+    );
     setFeaturedPosts({
       ...defaultFeaturedPosts,
       ...parseJsonObject<Partial<FeaturedPostsConfig>>(built.homeFeaturedPostsJson, {}),
@@ -538,7 +619,7 @@ export default function Admin() {
     ? getMenuChildren(selectedSection.category, navMenuItems)
     : [];
   const previewSlug = ensureSlugMatchesSubSlug(postForm.slug || "duong-dan-bai-viet", postSubCategory || null);
-  const contentText = postForm.content.replace(/<[^>]+>/g, " ").trim();
+  const contentText = plainTextFromHtml(postForm.content);
   const excerptText = postForm.excerpt.trim();
   const estimatedReadingMinutes = Math.max(
     1,
@@ -547,17 +628,21 @@ export default function Admin() {
   const metaTitleLength = (postForm.metaTitle || postForm.title).trim().length;
   const metaDescriptionLength = (postForm.metaDescription || postForm.excerpt).trim().length;
   const articleChecklist = [
-    { label: "Da nhap tieu de", done: postForm.title.trim().length > 0 },
-    { label: "Da co slug", done: postForm.slug.trim().length > 0 },
-    { label: "Da chon danh muc", done: postForm.category.trim().length > 0 },
-    { label: "Da co hinh dai dien", done: postForm.imageUrl.trim().length > 0 },
-    { label: "Da co tom tat", done: excerptText.length > 0 },
-    { label: "Noi dung du toi thieu", done: contentText.length > 160 },
-    { label: "Meta title on", done: metaTitleLength > 20 && metaTitleLength <= 70 },
+    { label: "Đã nhập tiêu đề", done: postForm.title.trim().length > 0 },
+    { label: "Đã có slug", done: postForm.slug.trim().length > 0 },
+    { label: "Đã chọn danh mục", done: postForm.category.trim().length > 0 },
+    { label: "Đã có hình đại diện", done: postForm.imageUrl.trim().length > 0 },
+    { label: "Đã có tóm tắt", done: excerptText.length > 0 },
+    { label: "Nội dung đủ tối thiểu", done: contentText.length > 160 },
     {
-      label: "Meta description on",
-      done: metaDescriptionLength > 80 && metaDescriptionLength <= 160,
+      label: "Meta title chuẩn",
+      done: metaTitleLength > 20 && metaTitleLength <= SEO_TITLE_MAX,
     },
+    {
+      label: "Meta description chuẩn",
+      done: metaDescriptionLength > 80 && metaDescriptionLength <= SEO_DESC_MAX,
+    },
+    { label: "Đã có từ khóa SEO", done: postForm.metaKeywords.trim().length > 0 },
   ];
 
   const filteredItems =
@@ -565,17 +650,71 @@ export default function Admin() {
       ? items
       : items.filter((post) => post.category === postCategoryFilter);
 
-  const subFilteredItems =
-    postSubCategoryFilter === "all"
-      ? filteredItems
-      : filteredItems.filter((post) => {
-          const parsed = parseSubCategoryKey(postSubCategoryFilter);
-          if (!parsed) return true;
-          return (
-            post.category === parsed.category &&
-            inferSubSlugFromPost(post, navMenuItems) === parsed.leaf
-          );
-        });
+  const seoSummary = useMemo(
+    () => summarizeSeoAudits(items.map(auditPostSeo)),
+    [items],
+  );
+  const inboxUnread = useMemo(
+    () => countUnreadLeads(contactLeads),
+    [contactLeads, inboxSeenTick],
+  );
+
+  const subFilteredItems = useMemo(() => {
+    const bySub =
+      postSubCategoryFilter === "all"
+        ? filteredItems
+        : filteredItems.filter((post) => {
+            const parsed = parseSubCategoryKey(postSubCategoryFilter);
+            if (!parsed) return true;
+            return (
+              post.category === parsed.category &&
+              inferSubSlugFromPost(post, navMenuItems) === parsed.leaf
+            );
+          });
+    return filterPostsBySearch(bySub, postSearchQuery);
+  }, [filteredItems, postSubCategoryFilter, postSearchQuery, navMenuItems]);
+
+  useEffect(() => {
+    if (!showEditor || editing) return;
+    const timer = window.setTimeout(() => {
+      savePostDraft({
+        form: postForm,
+        subCategory: postSubCategory,
+        savedAt: Date.now(),
+      });
+    }, 2000);
+    return () => window.clearTimeout(timer);
+  }, [postForm, postSubCategory, showEditor, editing]);
+
+  useEffect(() => {
+    const draft = loadPostDraft();
+    if (draft && !editing && !showEditor) setDraftNotice(draft);
+  }, []);
+
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    fetchContactLeads(100)
+      .then(setContactLeads)
+      .catch(() => setContactLeads([]));
+  }, [isAuthenticated]);
+
+  useEffect(() => {
+    if (view === "contact-inbox" && contactLeads.length > 0) {
+      markLeadsSeen(contactLeads.map((l) => l.id));
+      setInboxSeenTick((t) => t + 1);
+    }
+  }, [view, contactLeads]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "s" && showEditor) {
+        e.preventDefault();
+        document.getElementById("post-editor-form")?.requestSubmit();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showEditor]);
 
   const dashboardStats = useMemo(
     () => [
@@ -639,37 +778,143 @@ export default function Admin() {
     setExpandedGroup((prev) => ({ ...prev, [group]: !prev[group] }));
   }
 
+  function resolvePresetFromFilters(): { category: string; leaf: string } {
+    const category =
+      postCategoryFilter !== "all" ? postCategoryFilter : emptyPostForm.category;
+    let leaf = "";
+    if (postSubCategoryFilter !== "all") {
+      const parsed = parseSubCategoryKey(postSubCategoryFilter);
+      if (parsed && (postCategoryFilter === "all" || parsed.category === category)) {
+        leaf = parsed.leaf;
+      }
+    }
+    return { category, leaf };
+  }
+
+  function openNewPostEditor(preset?: { category?: string; leaf?: string }) {
+    setEditing(null);
+    const fromFilters = resolvePresetFromFilters();
+    const category = preset?.category ?? fromFilters.category;
+    const leaf = preset?.leaf ?? fromFilters.leaf;
+    setPostForm({ ...emptyPostForm, category });
+    setPostSubCategory(leaf);
+    setShowEditor(true);
+    setDraftNotice(null);
+  }
+
+  function restoreDraftToEditor() {
+    if (!draftNotice) return;
+    setEditing(null);
+    setPostForm(draftNotice.form);
+    setPostSubCategory(draftNotice.subCategory);
+    setShowEditor(true);
+    setDraftNotice(null);
+  }
+
+  function duplicateFromPost(post: Post) {
+    const slugs = items.map((p) => p.slug);
+    const newSlug = duplicatePostSlug(post.slug, slugs);
+    setEditing(null);
+    setPostForm({
+      slug: newSlug,
+      title: `${post.title} (bản sao)`,
+      category: post.category,
+      excerpt: post.excerpt,
+      content: post.content,
+      imageUrl: post.imageUrl,
+      metaTitle: post.metaTitle ?? "",
+      metaDescription: post.metaDescription ?? "",
+      metaKeywords: post.metaKeywords ?? "",
+    });
+    setPostSubCategory(inferSubSlugFromPost(post, navMenuItems) ?? "");
+    setShowEditor(true);
+    setView("posts");
+  }
+
+  function openPostOnSite(slug: string) {
+    window.open(`/bai-viet/${slug}`, "_blank", "noopener,noreferrer");
+  }
+
   function resetPostEditor() {
     setEditing(null);
     setShowEditor(false);
-    setPostForm(emptyPostForm);
-    setPostSubCategory("");
+    const { category, leaf } = resolvePresetFromFilters();
+    setPostForm({ ...emptyPostForm, category });
+    setPostSubCategory(leaf);
+  }
+
+  function applySubCategoryToSlug(leaf: string, prev: FormState): string {
+    const base = prev.slug.trim() || (prev.title.trim() ? slugifyVietnamese(prev.title) : "");
+    return ensureSlugMatchesSubSlug(base, leaf || null);
+  }
+
+  function fillPostSeoAuto() {
+    const brand = settingsForm.companyName?.trim() || "Kiến Trúc Sao Khuê";
+    const subLabel = postSubCategory
+      ? getMenuChildLabel(postForm.category, postSubCategory, navMenuItems) ?? undefined
+      : undefined;
+    setPostForm((prev) => ({
+      ...prev,
+      excerpt: prev.excerpt.trim() || buildAutoExcerpt(prev.content),
+      metaTitle: buildAutoMetaTitle(prev.title, brand),
+      metaDescription: buildAutoMetaDescription(prev.excerpt, prev.content),
+      metaKeywords: buildAutoMetaKeywords(prev.title, prev.category, subLabel),
+    }));
   }
 
   async function onSubmitPost(e: FormEvent) {
     e.preventDefault();
+    const stayOnPage = postSaveMode.current === "stay";
+    postSaveMode.current = "leave";
+    const slug = ensureSlugMatchesSubSlug(
+      slugifyVietnamese(postForm.slug || postForm.title),
+      postSubCategory || null,
+    );
+    if (!slug) {
+      alert("Vui lòng nhập tiêu đề hoặc slug hợp lệ.");
+      return;
+    }
+    if (!postForm.category.trim()) {
+      alert("Vui lòng chọn danh mục.");
+      return;
+    }
+
     const payload = {
       ...postForm,
-      slug: ensureSlugMatchesSubSlug(postForm.slug, postSubCategory || null),
+      slug,
+      title: postForm.title.trim(),
+      excerpt: postForm.excerpt.trim(),
+      content: postForm.content.trim(),
     };
 
     try {
       if (editing) {
-        await update.mutateAsync({ slug: editing.slug, data: payload });
+        const updated = await update.mutateAsync({ slug: editing.slug, data: payload });
+        if (stayOnPage && updated) {
+          setEditing(updated);
+        }
       } else {
-        await create.mutateAsync({ data: payload });
+        const created = await create.mutateAsync({ data: payload });
+        if (stayOnPage && created) {
+          setEditing(created);
+          setShowEditor(true);
+        }
       }
       await qc.invalidateQueries();
       await refetchPosts();
       setPostSavedAt(Date.now());
-      resetPostEditor();
+      clearPostDraft();
+      setDraftNotice(null);
+      if (!stayOnPage) {
+        resetPostEditor();
+      }
     } catch (err: unknown) {
-      alert("Loi luu bai viet: " + (err instanceof Error ? err.message : String(err)));
+      alert("Lỗi lưu bài viết: " + (err instanceof Error ? err.message : String(err)));
     }
   }
 
   async function onDeletePost(slug: string) {
-    if (!confirm("Xoa bai viet nay?")) return;
+    if (!confirm("Xóa bài viết này?")) return;
     await remove.mutateAsync({ slug });
     await qc.invalidateQueries();
     await refetchPosts();
@@ -705,6 +950,9 @@ export default function Admin() {
       navMenuJson: stringifyCompact(navMenuItems),
       pageBannersJson: stringifyCompact(pageBanners),
       homeFeaturedPostsJson: stringifyCompact(featuredPosts),
+      gaTrackingId: parseGaMeasurementId(settingsForm.gaTrackingId),
+      gscVerification: parseGscVerificationToken(settingsForm.gscVerification),
+      googleMapEmbed: sanitizeGoogleMapEmbed(settingsForm.googleMapEmbed),
     };
 
     try {
@@ -860,6 +1108,14 @@ export default function Admin() {
               })}
             </div>
 
+            <AdminDashboardExtras
+              postCount={items.length}
+              gaTrackingRaw={settingsForm.gaTrackingId}
+              seoNeedsWork={seoSummary.needsWork}
+              inboxUnread={inboxUnread}
+              onNavigate={setView}
+            />
+
             <AdminSiteMap postCount={items.length} onNavigate={setView} />
 
             <AdminLivePreview />
@@ -934,14 +1190,29 @@ export default function Admin() {
                       </div>
                       {section.children && section.children.length > 0 && (
                         <div className="mt-3 flex flex-wrap gap-2">
-                          {section.children.map((child) => (
-                            <span
-                              key={child.href}
-                              className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600"
-                            >
-                              {child.title}
-                            </span>
-                          ))}
+                          {section.children.map((child) => {
+                            const leaf = child.href.split("/").filter(Boolean).pop() ?? "";
+                            return (
+                              <button
+                                key={child.href}
+                                type="button"
+                                onClick={() => {
+                                  setView("posts");
+                                  setPostCategoryFilter(section.category!);
+                                  setPostSubCategoryFilter(
+                                    getSubCategoryKey(section.category!, leaf),
+                                  );
+                                  openNewPostEditor({
+                                    category: section.category!,
+                                    leaf,
+                                  });
+                                }}
+                                className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition hover:border-[#17579d] hover:text-[#17579d]"
+                              >
+                                + {child.title}
+                              </button>
+                            );
+                          })}
                         </div>
                       )}
                     </div>
@@ -955,6 +1226,37 @@ export default function Admin() {
       case "posts":
         return (
           <div className="space-y-6">
+            {draftNotice && !showEditor && (
+              <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4">
+                <p className="text-sm text-amber-900">
+                  Có bản nháp chưa lưu (
+                  {new Date(draftNotice.savedAt).toLocaleString("vi-VN")}) —{" "}
+                  <strong>{draftNotice.form.title || "Chưa có tiêu đề"}</strong>
+                </p>
+                <div className="flex gap-2">
+                  <Button
+                    type="button"
+                    size="sm"
+                    className="rounded-lg bg-amber-600 hover:bg-amber-700"
+                    onClick={restoreDraftToEditor}
+                  >
+                    Khôi phục nháp
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      clearPostDraft();
+                      setDraftNotice(null);
+                    }}
+                  >
+                    Bỏ nháp
+                  </Button>
+                </div>
+              </div>
+            )}
+
             <StickyToolbar>
               <div>
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#17579d]">
@@ -968,25 +1270,47 @@ export default function Admin() {
                 <ToolbarButton
                   icon={Plus}
                   color="bg-[#1f7ae0] hover:bg-[#1867c0]"
-                  onClick={() => {
-                    resetPostEditor();
-                    setShowEditor(true);
-                  }}
+                  onClick={() => openNewPostEditor()}
                 >
                   Tạo bài mới
+                  {postCategoryFilter !== "all" ? ` (${postCategoryFilter})` : ""}
                 </ToolbarButton>
+                {!showEditor && subFilteredItems.length > 0 && (
+                  <ToolbarButton
+                    icon={Download}
+                    color="bg-slate-600 hover:bg-slate-700"
+                    onClick={() => exportPostsToCsv(subFilteredItems)}
+                  >
+                    Xuất CSV ({subFilteredItems.length})
+                  </ToolbarButton>
+                )}
+                {showEditor && previewSlug && (
+                  <ToolbarButton
+                    icon={ExternalLink}
+                    color="bg-slate-600 hover:bg-slate-700"
+                    onClick={() => openPostOnSite(previewSlug)}
+                  >
+                    Xem trên web
+                  </ToolbarButton>
+                )}
+                {showEditor && editing && (
+                  <ToolbarButton
+                    icon={Copy}
+                    color="bg-violet-600 hover:bg-violet-700"
+                    onClick={() => duplicateFromPost(editing)}
+                  >
+                    Nhân bản
+                  </ToolbarButton>
+                )}
                 {showEditor && (
                   <ToolbarButton
                     icon={Save}
                     color="bg-[#16a34a] hover:bg-[#15803d]"
                     onClick={() => {
-                      const form = document.getElementById("post-editor-form");
-                      form?.dispatchEvent(
-                        new Event("submit", { cancelable: true, bubbles: true }),
-                      );
+                      document.getElementById("post-editor-form")?.requestSubmit();
                     }}
                   >
-                    Lưu bài viết
+                    Lưu (Ctrl+S)
                   </ToolbarButton>
                 )}
               </div>
@@ -1002,6 +1326,18 @@ export default function Admin() {
                 </div>
 
                 <div className="space-y-4 p-6">
+                  <div className="relative">
+                    <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                    <Input
+                      className="h-11 pl-10"
+                      placeholder="Tìm tiêu đề, slug, tóm tắt…"
+                      value={postSearchQuery}
+                      onChange={(e) => setPostSearchQuery(e.target.value)}
+                    />
+                  </div>
+                  <p className="text-xs text-slate-500">
+                    {subFilteredItems.length} / {filteredItems.length} bài
+                  </p>
                   <div className="grid grid-cols-1 gap-3">
                     <div>
                       <label className="mb-2 block text-sm font-semibold text-slate-700">
@@ -1032,7 +1368,7 @@ export default function Admin() {
                         value={postSubCategoryFilter}
                         onChange={(e) => setPostSubCategoryFilter(e.target.value)}
                       >
-                        <option value="all">Tat ca muc con</option>
+                        <option value="all">Tất cả mục con</option>
                         {getSubCategoryOptions(postCategoryFilter, navMenuItems).map((child) => (
                           <option key={child.key} value={getSubCategoryKey(child.category, child.leaf)}>
                             {postCategoryFilter === "all"
@@ -1074,15 +1410,41 @@ export default function Admin() {
                             {getSubCategoryDisplay(post, navMenuItems)}
                           </div>
                         )}
-                        <div className="mt-3 text-xs text-slate-500">
-                          {new Date(post.createdAt).toLocaleDateString("vi-VN")}
+                        <div className="mt-3 flex items-center justify-between gap-2">
+                          <span className="text-xs text-slate-500">
+                            {new Date(post.createdAt).toLocaleDateString("vi-VN")}
+                          </span>
+                          <span className="flex gap-1">
+                            <button
+                              type="button"
+                              title="Nhân bản"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                duplicateFromPost(post);
+                              }}
+                              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-violet-600"
+                            >
+                              <Copy size={14} />
+                            </button>
+                            <button
+                              type="button"
+                              title="Xem trên website"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                window.open(`/bai-viet/${post.slug}`, "_blank");
+                              }}
+                              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-100 hover:text-[#17579d]"
+                            >
+                              <ExternalLink size={14} />
+                            </button>
+                          </span>
                         </div>
                       </button>
                     ))}
 
                     {subFilteredItems.length === 0 && (
                       <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center text-sm text-slate-500">
-                        Chua co bai viet nao khop voi bo loc hien tai.
+                        Chưa có bài viết nào khớp với bộ lọc hiện tại.
                       </div>
                     )}
                   </div>
@@ -1090,20 +1452,25 @@ export default function Admin() {
               </Panel>
 
               <Panel>
-                <form id="post-editor-form" onSubmit={onSubmitPost}>
+                <form
+                  id="post-editor-form"
+                  onSubmit={(e) => {
+                    void onSubmitPost(e);
+                  }}
+                >
                   <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 px-6 py-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900">
-                        {editing ? "Chinh sua bai viet" : "Form nhap bai viet"}
+                        {editing ? "Chỉnh sửa bài viết" : "Form nhập bài viết"}
                       </h3>
                       <p className="mt-1 text-sm text-slate-500">
-                        Chia theo tung nhom thong tin de thao tac nhanh giong admin truyen thong.
+                        Chia theo từng nhóm thông tin — thao tác nhanh như WordPress.
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-2">
                       {postSavedAt && (
                         <span className="rounded-full bg-emerald-50 px-3 py-2 text-xs font-semibold text-emerald-700">
-                          Da luu luc {new Date(postSavedAt).toLocaleTimeString("vi-VN")}
+                          Đã lưu lúc {new Date(postSavedAt).toLocaleTimeString("vi-VN")}
                         </span>
                       )}
                       <Button
@@ -1112,300 +1479,309 @@ export default function Admin() {
                         className="rounded-xl"
                         onClick={resetPostEditor}
                       >
-                        Lam lai
+                        Làm lại
                       </Button>
                       <Button
                         type="submit"
                         className="rounded-xl bg-[#1f7ae0] text-white hover:bg-[#1867c0]"
                         disabled={create.isPending || update.isPending}
                       >
-                        {editing ? "Cap nhat bai viet" : "Luu bai viet"}
+                        {editing ? "Cập nhật bài viết" : "Lưu bài viết"}
                       </Button>
                     </div>
                   </div>
 
                   {showEditor ? (
-                    <div className="grid grid-cols-1 gap-6 p-6 2xl:grid-cols-[minmax(0,1.45fr)_390px]">
-                      <div className="space-y-6">
-                        <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
-                          <EditorStatCard
-                            label="Slug preview"
-                            value={`/${previewSlug}`}
-                            tone="blue"
-                          />
-                          <EditorStatCard
-                            label="Phut doc"
-                            value={`${estimatedReadingMinutes} phut`}
-                            tone="emerald"
-                          />
-                          <EditorStatCard
-                            label="Meta title"
-                            value={`${metaTitleLength}/70`}
-                            tone={metaTitleLength > 70 ? "rose" : "amber"}
-                          />
-                          <EditorStatCard
-                            label="Meta description"
-                            value={`${metaDescriptionLength}/160`}
-                            tone={metaDescriptionLength > 160 ? "rose" : "violet"}
-                          />
-                        </div>
-
-                        <FormSection
-                          title="Thong tin co ban"
-                          desc="Chon dung danh muc va muc con de bai viet ra dung vi tri tren menu."
+                    <>
+                      <div className="flex flex-wrap items-center gap-2 border-b border-slate-200 bg-slate-50/90 px-6 py-3">
+                        <Button
+                          type="submit"
+                          className="rounded-md bg-[#1f7ae0] px-5 text-white hover:bg-[#1867c0]"
+                          disabled={create.isPending || update.isPending}
                         >
-                          <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-                            <Field label="Tieu de *">
-                              <Input
-                                value={postForm.title}
-                                onChange={(e) =>
-                                  setPostForm((prev) => ({ ...prev, title: e.target.value }))
-                                }
-                                required
-                              />
-                              <FieldHint>
-                                Tieu de ro rang, co khu vuc hoac nhu cau chinh se giup SEO va preview dep hon.
-                              </FieldHint>
-                            </Field>
-
-                            <Field label="Duong dan slug *">
-                              <Input
-                                value={postForm.slug}
-                                onChange={(e) =>
-                                  setPostForm((prev) => ({ ...prev, slug: e.target.value }))
-                                }
-                                required
-                                disabled={!!editing}
-                              />
-                              <div className="mt-2 flex flex-wrap gap-2">
-                                {!editing && (
-                                  <HintActionButton
-                                    label="Tu tao tu tieu de"
-                                    onClick={() =>
-                                      setPostForm((prev) => ({
-                                        ...prev,
-                                        slug: slugifyVietnamese(prev.title),
-                                      }))
-                                    }
-                                  />
-                                )}
-                              </div>
-                              <FieldHint>
-                                Slug hien se ra: <span className="font-semibold text-slate-700">/{previewSlug}</span>
-                              </FieldHint>
-                            </Field>
-
-                            <Field label="Danh muc *">
-                              <select
-                                className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-[#17579d]"
-                                value={postForm.category}
-                                onChange={(e) => {
-                                  setPostForm((prev) => ({ ...prev, category: e.target.value }));
-                                  setPostSubCategory("");
-                                }}
-                              >
-                                {categoryOptions.map((option) => (
-                                  <option key={option.value} value={option.value}>
-                                    {option.label}
-                                  </option>
-                                ))}
-                              </select>
-                            </Field>
-
-                            <Field label="Muc con menu">
-                              <select
-                                className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-[#17579d]"
-                                value={postSubCategory}
-                                onChange={(e) => setPostSubCategory(e.target.value)}
-                              >
-                                <option value="">Khong gan muc con</option>
-                                {selectedChildren.map((child) => {
-                                  const leaf =
-                                    child.href.split("/").filter(Boolean).pop() ?? "";
-                                  return (
-                                    <option key={child.href} value={leaf}>
-                                      {child.title}
-                                    </option>
-                                  );
-                                })}
-                              </select>
-                            </Field>
-
-                            <div className="xl:col-span-2">
-                              <ImageUploadField
-                                label="Hình đại diện bài viết"
-                                value={postForm.imageUrl}
-                                onChange={(url) =>
-                                  setPostForm((prev) => ({ ...prev, imageUrl: url }))
-                                }
-                                folder="posts"
-                                hint="Nên dùng ảnh ngang rõ nét. Upload lên Supabase — mọi thiết bị đều thấy."
-                              />
-                            </div>
-
-                            {selectedSection && (
-                              <div className="xl:col-span-2 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#17579d]">
-                                  Nhom menu dang chon
-                                </div>
-                                <div className="mt-2 text-sm font-semibold text-slate-900">
-                                  {selectedSection.title}
-                                </div>
-                                {selectedChildren.length > 0 && (
-                                  <div className="mt-3 flex flex-wrap gap-2">
-                                    {selectedChildren.map((child) => (
-                                      <span
-                                        key={child.href}
-                                        className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600"
-                                      >
-                                        {child.title}
-                                      </span>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                        </FormSection>
-
-                        <FormSection
-                          title="Tom tat va noi dung"
-                          desc="Bo tri giong admin dang bai: tom tat rieng, noi dung rieng de de thao tac."
+                          Lưu
+                        </Button>
+                        <Button
+                          type="button"
+                          className="rounded-md bg-emerald-600 px-5 text-white hover:bg-emerald-700"
+                          disabled={create.isPending || update.isPending}
+                          onClick={() => {
+                            postSaveMode.current = "stay";
+                            document.getElementById("post-editor-form")?.requestSubmit();
+                          }}
                         >
-                          <div className="space-y-4">
-                          <Field label="Tom tat">
+                          Lưu tại trang
+                        </Button>
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="rounded-md"
+                          onClick={() => {
+                            const { category, leaf } = resolvePresetFromFilters();
+                            setPostForm({ ...emptyPostForm, category });
+                            setPostSubCategory(leaf);
+                            if (editing) {
+                              setPostForm({
+                                slug: editing.slug,
+                                title: editing.title,
+                                category: editing.category,
+                                excerpt: editing.excerpt,
+                                content: editing.content,
+                                imageUrl: editing.imageUrl,
+                                metaTitle: editing.metaTitle ?? "",
+                                metaDescription: editing.metaDescription ?? "",
+                                metaKeywords: editing.metaKeywords ?? "",
+                              });
+                              setPostSubCategory(inferSubSlugFromPost(editing, navMenuItems) ?? "");
+                            }
+                          }}
+                        >
+                          Làm lại
+                        </Button>
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="rounded-md border-red-200 text-red-700 hover:bg-red-50"
+                          onClick={resetPostEditor}
+                        >
+                          Thoát
+                        </Button>
+                        {postSavedAt && (
+                          <span className="ml-auto text-xs font-semibold text-emerald-700">
+                            Đã lưu lúc {new Date(postSavedAt).toLocaleTimeString("vi-VN")}
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="grid grid-cols-1 gap-6 p-6 lg:grid-cols-[minmax(0,1fr)_300px]">
+                        <div className="space-y-5">
+                          <Field label="Tiêu đề *">
+                            <Input
+                              className="text-base"
+                              value={postForm.title}
+                              onChange={(e) => {
+                                const title = e.target.value;
+                                setPostForm((prev) => {
+                                  const next = { ...prev, title };
+                                  if (!editing && !prev.slug.trim() && title.trim()) {
+                                    next.slug = ensureSlugMatchesSubSlug(
+                                      slugifyVietnamese(title),
+                                      postSubCategory || null,
+                                    );
+                                  }
+                                  return next;
+                                });
+                              }}
+                              required
+                            />
+                          </Field>
+
+                          <Field label="Mô tả">
                             <Textarea
-                              rows={3}
+                              rows={4}
                               value={postForm.excerpt}
-                                onChange={(e) =>
+                              onChange={(e) =>
                                 setPostForm((prev) => ({ ...prev, excerpt: e.target.value }))
                               }
                             />
                             <div className="mt-2 flex flex-wrap gap-2">
                               <HintActionButton
-                                label="Lay tu noi dung dau bai"
+                                label="Lấy từ nội dung"
                                 onClick={() =>
                                   setPostForm((prev) => ({
                                     ...prev,
-                                    excerpt:
-                                      contentText.slice(0, 180).trim() || prev.excerpt,
+                                    excerpt: buildAutoExcerpt(prev.content) || prev.excerpt,
                                   }))
                                 }
                               />
                             </div>
-                            <FieldHint>
-                              Tom tat nen gon, de doc nhanh va dung duoc cho meta description neu can.
-                            </FieldHint>
                           </Field>
-                          <Field label="Noi dung bai viet">
-                            <Textarea
-                              rows={16}
-                                value={postForm.content}
-                                onChange={(e) =>
-                                setPostForm((prev) => ({ ...prev, content: e.target.value }))
-                              }
-                            />
-                            <FieldHint>
-                              Hien dang doc uoc tinh {estimatedReadingMinutes} phut. Khi nao xong minh se doi sang editor manh hon.
-                            </FieldHint>
-                          </Field>
-                        </div>
-                      </FormSection>
 
-                        <FormSection
-                          title="SEO"
-                          desc="Van giu logic SEO hien tai, chi doi bo cuc nhap lieu de de nhin hon."
-                        >
-                          <div className="grid grid-cols-1 gap-4">
-                            <Field label="Meta title">
-                            <Input
-                              value={postForm.metaTitle}
-                              onChange={(e) =>
-                                setPostForm((prev) => ({ ...prev, metaTitle: e.target.value }))
+                          <Field label="Nội dung *">
+                            <PostRichTextEditor
+                              value={postForm.content}
+                              onChange={(html) =>
+                                setPostForm((prev) => ({ ...prev, content: html }))
                               }
-                            />
-                            <div className="mt-2 flex flex-wrap gap-2">
-                              <HintActionButton
-                                label="Lay tu tieu de bai"
-                                onClick={() =>
-                                  setPostForm((prev) => ({
-                                    ...prev,
-                                    metaTitle: prev.title,
-                                  }))
-                                }
-                              />
-                            </div>
-                            <FieldHint>
-                              Muc tieu tot: 35-70 ky tu. Hien tai: {metaTitleLength} ky tu.
-                            </FieldHint>
-                          </Field>
-                          <Field label="Meta keywords">
-                            <Input
-                                value={postForm.metaKeywords}
-                                onChange={(e) =>
-                                  setPostForm((prev) => ({
-                                    ...prev,
-                                  metaKeywords: e.target.value,
-                                }))
-                              }
+                              minHeight="420px"
+                              imageFolder="posts"
                             />
                             <FieldHint>
-                              Co the nhap cach nhau bang dau phay: xay nha, thiet ke nha pho, bao gia xay dung...
+                              ~{estimatedReadingMinutes} phút đọc · URL: /bai-viet/{previewSlug}
                             </FieldHint>
                           </Field>
-                          <Field label="Meta description">
-                            <Textarea
-                              rows={4}
-                                value={postForm.metaDescription}
-                                onChange={(e) =>
-                                  setPostForm((prev) => ({
-                                    ...prev,
-                                  metaDescription: e.target.value,
-                                }))
-                              }
-                            />
-                            <div className="mt-2 flex flex-wrap gap-2">
-                              <HintActionButton
-                                label="Lay tu tom tat"
-                                onClick={() =>
-                                  setPostForm((prev) => ({
-                                    ...prev,
-                                    metaDescription: prev.excerpt || contentText.slice(0, 155),
-                                  }))
-                                }
-                              />
-                            </div>
-                            <FieldHint>
-                              Muc tieu tot: 90-160 ky tu. Hien tai: {metaDescriptionLength} ky tu.
-                            </FieldHint>
-                          </Field>
-                        </div>
-                      </FormSection>
 
-                        {editing && (
-                          <div className="flex justify-end">
-                            <button
-                              type="button"
-                              onClick={() => onDeletePost(editing.slug)}
-                              className="inline-flex items-center gap-2 rounded-xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700 transition hover:bg-red-100"
-                            >
-                              <Trash2 size={16} />
-                              Xoa bai viet
-                            </button>
+                          <details className="rounded-xl border border-slate-200 bg-white">
+                            <summary className="cursor-pointer px-4 py-3 text-sm font-bold text-slate-800">
+                              Phân loại &amp; đường dẫn (slug)
+                            </summary>
+                            <div className="space-y-4 border-t border-slate-100 p-4">
+                              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                                <Field label="Danh mục *">
+                                  <select
+                                    className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none focus:border-[#17579d]"
+                                    value={postForm.category}
+                                    onChange={(e) => {
+                                      const category = e.target.value;
+                                      setPostForm((prev) => ({ ...prev, category }));
+                                      setPostSubCategory("");
+                                    }}
+                                  >
+                                    {categoryOptions.map((option) => (
+                                      <option key={option.value} value={option.value}>
+                                        {option.label}
+                                      </option>
+                                    ))}
+                                  </select>
+                                </Field>
+                                <Field label="Mục con menu">
+                                  <select
+                                    className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none focus:border-[#17579d]"
+                                    value={postSubCategory}
+                                    onChange={(e) => {
+                                      const leaf = e.target.value;
+                                      setPostSubCategory(leaf);
+                                      setPostForm((prev) => ({
+                                        ...prev,
+                                        slug: applySubCategoryToSlug(leaf, prev),
+                                      }));
+                                    }}
+                                  >
+                                    <option value="">Không gắn mục con</option>
+                                    {selectedChildren.map((child) => {
+                                      const leaf =
+                                        child.href.split("/").filter(Boolean).pop() ?? "";
+                                      return (
+                                        <option key={child.href} value={leaf}>
+                                          {child.title}
+                                        </option>
+                                      );
+                                    })}
+                                  </select>
+                                </Field>
+                              </div>
+                              <Field label="Slug *">
+                                <Input
+                                  value={postForm.slug}
+                                  onChange={(e) =>
+                                    setPostForm((prev) => ({ ...prev, slug: e.target.value }))
+                                  }
+                                  required
+                                  disabled={!!editing}
+                                />
+                                {!editing && (
+                                  <div className="mt-2">
+                                    <HintActionButton
+                                      label="Tự tạo từ tiêu đề"
+                                      onClick={() =>
+                                        setPostForm((prev) => ({
+                                          ...prev,
+                                          slug: slugifyVietnamese(prev.title),
+                                        }))
+                                      }
+                                    />
+                                  </div>
+                                )}
+                              </Field>
+                            </div>
+                          </details>
+
+                          <details className="rounded-xl border border-slate-200 bg-white">
+                            <summary className="cursor-pointer px-4 py-3 text-sm font-bold text-slate-800">
+                              SEO (Google)
+                            </summary>
+                            <div className="space-y-4 border-t border-slate-100 p-4">
+                              <HintActionButton
+                                label="Điền SEO tự động"
+                                onClick={fillPostSeoAuto}
+                              />
+                              <Field label="Meta title">
+                                <Input
+                                  value={postForm.metaTitle}
+                                  onChange={(e) =>
+                                    setPostForm((prev) => ({
+                                      ...prev,
+                                      metaTitle: e.target.value,
+                                    }))
+                                  }
+                                />
+                                <FieldHint>
+                                  {metaTitleLength}/{SEO_TITLE_MAX} ký tự
+                                </FieldHint>
+                              </Field>
+                              <Field label="Meta description">
+                                <Textarea
+                                  rows={3}
+                                  value={postForm.metaDescription}
+                                  onChange={(e) =>
+                                    setPostForm((prev) => ({
+                                      ...prev,
+                                      metaDescription: e.target.value,
+                                    }))
+                                  }
+                                />
+                                <FieldHint>
+                                  {metaDescriptionLength}/{SEO_DESC_MAX} ký tự
+                                </FieldHint>
+                              </Field>
+                              <Field label="Meta keywords">
+                                <Input
+                                  value={postForm.metaKeywords}
+                                  onChange={(e) =>
+                                    setPostForm((prev) => ({
+                                      ...prev,
+                                      metaKeywords: e.target.value,
+                                    }))
+                                  }
+                                />
+                              </Field>
+                            </div>
+                          </details>
+
+                          {editing && (
+                            <div className="flex justify-end">
+                              <button
+                                type="button"
+                                onClick={() => onDeletePost(editing.slug)}
+                                className="inline-flex items-center gap-2 rounded-xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700 hover:bg-red-100"
+                              >
+                                <Trash2 size={16} />
+                                Xóa bài viết
+                              </button>
+                            </div>
+                          )}
+                        </div>
+
+                        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+                          <FeaturedImagePanel
+                            value={postForm.imageUrl}
+                            onChange={(url) =>
+                              setPostForm((prev) => ({ ...prev, imageUrl: url }))
+                            }
+                            folder="posts"
+                          />
+                          <div className="rounded-2xl border border-slate-200 bg-white p-4 text-xs text-slate-600">
+                            <div className="font-bold text-slate-800">Tóm tắt nhanh</div>
+                            <ul className="mt-2 space-y-1">
+                              <li>Phút đọc: {estimatedReadingMinutes}</li>
+                              <li>
+                                Meta title: {metaTitleLength}/{SEO_TITLE_MAX}
+                              </li>
+                              <li>
+                                Mô tả: {metaDescriptionLength}/{SEO_DESC_MAX}
+                              </li>
+                            </ul>
                           </div>
-                        )}
+                          <ChecklistCard items={articleChecklist} />
+                        </aside>
                       </div>
 
-                      <div className="space-y-6">
-                        <FormSection title="Checklist hoan thien">
-                          <ChecklistCard items={articleChecklist} />
-                        </FormSection>
-
-                        <FormSection title="Preview bai viet">
+                      <div className="grid grid-cols-1 gap-6 border-t border-slate-200 px-6 pb-6 pt-6 2xl:grid-cols-2">
+                        <FormSection title="Preview bài viết">
                           <PostPreviewCard
                             title={postForm.title}
                             excerpt={excerptText}
-                            content={contentText}
+                            contentHtml={postForm.content}
                             imageUrl={postForm.imageUrl}
                             category={selectedSection?.title ?? postForm.category}
                             subCategory={
@@ -1429,24 +1805,24 @@ export default function Admin() {
                           />
                         </FormSection>
                       </div>
-                    </div>
+                    </>
                   ) : (
                     <div className="p-10">
                       <div className="rounded-3xl border border-dashed border-slate-300 bg-slate-50 p-10 text-center">
                         <PackagePlus className="mx-auto h-12 w-12 text-slate-400" />
                         <h3 className="mt-4 text-xl font-bold text-slate-900">
-                          Chon mot bai viet hoac tao bai moi
+                          Chọn một bài viết hoặc tạo bài mới
                         </h3>
                         <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-500">
-                          Bo cuc moi giu nguyen logic luu du lieu hien tai, nhung tach rieng
-                          tung phan de ban thao tac nhanh hon giong admin dang bai truyen thong.
+                          Chọn danh mục và mục con menu bên trái trước khi tạo — bài sẽ hiện đúng
+                          trang như trên website (ví dụ /dich-vu/xay-nha-tron-goi).
                         </p>
                         <Button
                           type="button"
                           className="mt-6 rounded-xl bg-[#1f7ae0] text-white hover:bg-[#1867c0]"
-                          onClick={() => setShowEditor(true)}
+                          onClick={() => openNewPostEditor()}
                         >
-                          Tao bai viet moi
+                          Tạo bài viết mới
                         </Button>
                       </div>
                     </div>
@@ -1455,6 +1831,99 @@ export default function Admin() {
               </Panel>
             </div>
           </div>
+        );
+
+      case "settings-google":
+        return (
+          <SettingsScreen
+            title="Google & Maps"
+            desc="Dán mã Google Maps, Analytics và Search Console — giống trang cài đặt admin truyền thống."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={() => {
+              updateSettingField("googleMapEmbed", "");
+              updateSettingField("gaTrackingId", "");
+              updateSettingField("gscVerification", GSC_VERIFICATION_TOKEN);
+            }}
+            primaryLabel="Lưu"
+          >
+            <div className="space-y-6">
+              <div className="flex flex-wrap gap-2">
+                <Button
+                  type="button"
+                  className="rounded-md bg-[#1f7ae0] text-white hover:bg-[#1867c0]"
+                  disabled={updateSiteSettings.isPending}
+                  onClick={() => void saveSettings()}
+                >
+                  Lưu
+                </Button>
+                <Button
+                  type="button"
+                  variant="outline"
+                  className="rounded-md"
+                  onClick={() => {
+                    if (!siteData) return;
+                    const built = restoreAdminSettingsFields(
+                      buildSettingsFromApi(siteData as Record<string, string | number>),
+                    );
+                    setSettingsForm((prev) => ({
+                      ...prev,
+                      googleMapEmbed: built.googleMapEmbed ?? "",
+                      gaTrackingId: built.gaTrackingId ?? "",
+                      gscVerification: built.gscVerification ?? "",
+                    }));
+                  }}
+                >
+                  Làm lại
+                </Button>
+              </div>
+
+              <Field label="Tọa độ Google Map (iframe)">
+                <Textarea
+                  rows={8}
+                  className="font-mono text-xs"
+                  value={settingsForm.googleMapEmbed}
+                  onChange={(e) => updateSettingField("googleMapEmbed", e.target.value)}
+                  placeholder='<iframe src="https://www.google.com/maps/embed?pb=..." ...></iframe>'
+                />
+                <FieldHint>
+                  Lấy mã nhúng từ Google Maps → Chia sẻ → Nhúng bản đồ. Để trống sẽ dùng địa chỉ trong
+                  「Thông tin website」.
+                </FieldHint>
+              </Field>
+
+              <Field label="Google Analytics">
+                <Textarea
+                  rows={8}
+                  className="font-mono text-xs"
+                  value={settingsForm.gaTrackingId}
+                  onChange={(e) => updateSettingField("gaTrackingId", e.target.value)}
+                  placeholder={'Dán ID (G-XXXXXXXX) hoặc cả đoạn script gtag.js...'}
+                />
+                <FieldHint>
+                  Khi lưu, hệ thống tự lấy mã đo G-… hoặc UA-…. Hiện tại:{" "}
+                  <span className="font-semibold text-slate-700">
+                    {parseGaMeasurementId(settingsForm.gaTrackingId) || "chưa có"}
+                  </span>
+                </FieldHint>
+              </Field>
+
+              <Field label="Google Search Console (Webmaster)">
+                <Textarea
+                  rows={4}
+                  className="font-mono text-xs"
+                  value={settingsForm.gscVerification}
+                  onChange={(e) => updateSettingField("gscVerification", e.target.value)}
+                  placeholder='Dán mã xác minh hoặc thẻ meta name="google-site-verification" content="..."'
+                />
+                <FieldHint>
+                  Chỉ cần phần content trong thẻ meta. Mặc định site đã có mã GSC trong mã nguồn — ô
+                  này ghi đè khi bạn nhập mã mới.
+                </FieldHint>
+              </Field>
+            </div>
+          </SettingsScreen>
         );
 
       case "settings-general":
@@ -1468,9 +1937,9 @@ export default function Admin() {
             onRestoreDefaults={restoreGeneralDefaults}
           >
             <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
-              <FormSection title="Nhan dien thuong hieu">
+              <FormSection title="Nhận diện thương hiệu">
                 <div className="grid grid-cols-1 gap-4">
-                  <Field label="Ten cong ty">
+                  <Field label="Tên công ty">
                     <Input
                       value={settingsForm.companyName}
                       onChange={(e) => updateSettingField("companyName", e.target.value)}
@@ -1489,7 +1958,7 @@ export default function Admin() {
                     folder="brand"
                     hint="Nếu bỏ trống sẽ dùng logo chính"
                   />
-                  <Field label="Ma so thue">
+                  <Field label="Mã số thuế">
                     <Input
                       value={settingsForm.taxCode}
                       onChange={(e) => updateSettingField("taxCode", e.target.value)}
@@ -1498,7 +1967,7 @@ export default function Admin() {
                 </div>
               </FormSection>
 
-              <FormSection title="Lien he nhanh">
+              <FormSection title="Liên hệ nhanh">
                 <div className="grid grid-cols-1 gap-4">
                   <Field label="Hotline chinh">
                     <Input
@@ -1536,15 +2005,15 @@ export default function Admin() {
                 </div>
               </FormSection>
 
-              <FormSection title="Dia chi va mang xa hoi">
+              <FormSection title="Địa chỉ và mạng xã hội">
                 <div className="grid grid-cols-1 gap-4">
-                  <Field label="Dia chi tru so">
+                  <Field label="Địa chỉ trụ sở">
                     <Input
                       value={settingsForm.address1}
                       onChange={(e) => updateSettingField("address1", e.target.value)}
                     />
                   </Field>
-                  <Field label="Dia chi van phong">
+                  <Field label="Địa chỉ văn phòng">
                     <Input
                       value={settingsForm.address2}
                       onChange={(e) => updateSettingField("address2", e.target.value)}
@@ -1591,7 +2060,7 @@ export default function Admin() {
 
               <FormSection title="Footer va tracking">
                 <div className="grid grid-cols-1 gap-4">
-                  <Field label="Mo ta footer">
+                  <Field label="Mô tả footer">
                     <Textarea
                       rows={4}
                       value={settingsForm.footerDescription}
@@ -1607,22 +2076,17 @@ export default function Admin() {
                     folder="brand"
                     hint="Để trống sẽ dùng ảnh mặc định của website"
                   />
-                  <Field label="Google Analytics ID">
-                    <Input
-                      value={settingsForm.gaTrackingId}
-                      onChange={(e) =>
-                        updateSettingField("gaTrackingId", e.target.value)
-                      }
-                    />
-                  </Field>
-                  <Field label="Google Search Console verification">
-                    <Input
-                      value={settingsForm.gscVerification}
-                      onChange={(e) =>
-                        updateSettingField("gscVerification", e.target.value)
-                      }
-                    />
-                  </Field>
+                  <p className="text-sm text-slate-600">
+                    Cấu hình Google Maps, Analytics và Search Console tại menu{" "}
+                    <button
+                      type="button"
+                      className="font-semibold text-[#17579d] underline"
+                      onClick={() => setView("settings-google")}
+                    >
+                      Google &amp; Maps
+                    </button>
+                    .
+                  </p>
                 </div>
               </FormSection>
 
@@ -1767,7 +2231,7 @@ export default function Admin() {
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
-                <FormSection title="Noi dung chinh">
+                <FormSection title="Nội dung chính">
                   <div className="grid grid-cols-1 gap-4">
                     <Field label="Eyebrow">
                       <Input
@@ -1777,7 +2241,7 @@ export default function Admin() {
                         }
                       />
                     </Field>
-                    <Field label="Tieu de">
+                    <Field label="Tiêu đề">
                       <Input
                         value={settingsForm.homeAboutTitle}
                         onChange={(e) =>
@@ -1806,7 +2270,7 @@ export default function Admin() {
                   </div>
                 </FormSection>
 
-                <FormSection title="Hinh anh va badge">
+                <FormSection title="Hình ảnh và badge">
                   <div className="grid grid-cols-1 gap-4">
                     <ImageUploadField
                       label="Hình ảnh giới thiệu"
@@ -1841,7 +2305,7 @@ export default function Admin() {
                 </FormSection>
 
                 <div className="xl:col-span-2">
-                  <FormSection title="Bullet noi dung">
+                  <FormSection title="Bullet nội dung">
                     <div className="space-y-3">
                       {aboutPoints.map((point, index) => (
                         <div key={`about-point-${index}`} className="flex gap-3">
@@ -1877,7 +2341,7 @@ export default function Admin() {
                 </div>
               </div>
 
-              <FormSection title="Preview block gioi thieu">
+              <FormSection title="Preview block giới thiệu">
                 <AboutPreviewCard settings={settingsForm} aboutPoints={aboutPoints} />
               </FormSection>
             </div>
@@ -1900,7 +2364,7 @@ export default function Admin() {
                 {commitments.map((item, index) => (
                   <RepeatCard
                     key={`commitment-${index}`}
-                    title={`Cam ket ${index + 1}`}
+                    title={`Cam kết ${index + 1}`}
                     onRemove={
                       commitments.length > 1
                         ? () =>
@@ -1952,7 +2416,7 @@ export default function Admin() {
                         />
                       </Field>
                       <div className="xl:col-span-3">
-                        <Field label="Mo ta">
+                        <Field label="Mô tả">
                           <Textarea
                             rows={4}
                             value={item.desc}
@@ -1987,7 +2451,7 @@ export default function Admin() {
                 />
               </div>
 
-              <FormSection title="Preview cam ket">
+              <FormSection title="Preview cam kết">
                 <CommitmentsPreviewCard items={commitments} />
               </FormSection>
             </div>
@@ -1997,7 +2461,7 @@ export default function Admin() {
       case "settings-pricing":
         return (
           <SettingsScreen
-            title="Bang bao gia homepage"
+            title="Bảng báo giá homepage"
             desc="Sua tung goi bao gia theo form, moi tinh nang mot dong de de nhap lieu."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
@@ -2035,7 +2499,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Ten goi">
+                      <Field label="Tên gói">
                         <Input
                           value={item.name}
                           onChange={(e) =>
@@ -2049,7 +2513,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Gia tu">
+                      <Field label="Giá từ">
                         <Input
                           value={item.priceFrom}
                           onChange={(e) =>
@@ -2063,7 +2527,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Gia den">
+                      <Field label="Giá đến">
                         <Input
                           value={item.priceTo}
                           onChange={(e) =>
@@ -2077,7 +2541,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Don vi">
+                      <Field label="Đơn vị">
                         <Input
                           value={item.unit}
                           onChange={(e) =>
@@ -2091,7 +2555,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Nut CTA">
+                      <Field label="Nút CTA">
                         <Input
                           value={item.ctaLabel}
                           onChange={(e) =>
@@ -2119,7 +2583,7 @@ export default function Admin() {
                           }
                         />
                       </Field>
-                      <Field label="Noi bat">
+                      <Field label="Nổi bật">
                         <select
                           className="h-11 w-full rounded-xl border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-[#17579d]"
                           value={item.highlighted ? "yes" : "no"}
@@ -2133,12 +2597,12 @@ export default function Admin() {
                             )
                           }
                         >
-                          <option value="no">Khong</option>
-                          <option value="yes">Co</option>
+                          <option value="no">Không</option>
+                          <option value="yes">Có</option>
                         </select>
                       </Field>
                       <div className="xl:col-span-2">
-                        <Field label="Mo ta ngan">
+                        <Field label="Mô tả ngắn">
                           <Textarea
                             rows={3}
                             value={item.note}
@@ -2459,6 +2923,22 @@ export default function Admin() {
           </SettingsScreen>
         );
 
+      case "settings-seo":
+        return (
+          <div className="space-y-6">
+            <SectionTitle
+              title="SEO tổng quan"
+              desc="Kiểm tra meta, ảnh đại diện và độ dài nội dung từng bài — tối ưu trước khi lên Google."
+            />
+            <AdminSeoPanel
+              posts={items}
+              gscConfigured={Boolean(parseGscVerificationToken(settingsForm.gscVerification))}
+              gaConfigured={Boolean(parseGaMeasurementId(settingsForm.gaTrackingId))}
+              onEditPost={(post) => setEditing(post)}
+            />
+          </div>
+        );
+
       case "contact-inbox":
         return (
           <SettingsScreen
@@ -2469,7 +2949,13 @@ export default function Admin() {
             onSave={() => undefined}
             hideSave
           >
-            <ContactInboxPanel />
+            <ContactInboxPanel
+              onLeadsLoaded={(leads) => {
+                setContactLeads(leads);
+                markLeadsSeen(leads.map((l) => l.id));
+                setInboxSeenTick((t) => t + 1);
+              }}
+            />
           </SettingsScreen>
         );
 
@@ -2486,6 +2972,7 @@ export default function Admin() {
       expandedGroup={expandedGroup}
       toggleGroup={toggleGroup}
       logout={logout}
+      inboxUnreadCount={inboxUnread}
     >
       {renderContent()}
     </AdminShell>
@@ -2496,7 +2983,7 @@ export default function Admin() {
 function PostPreviewCard({
   title,
   excerpt,
-  content,
+  contentHtml,
   imageUrl,
   category,
   subCategory,
@@ -2505,30 +2992,36 @@ function PostPreviewCard({
 }: {
   title: string;
   excerpt: string;
-  content: string;
+  contentHtml: string;
   imageUrl: string;
   category: string;
   subCategory: string;
   slug: string;
   readingMinutes: number;
 }) {
-  const bodyPreview = content.slice(0, 420).trim();
+  const bodyPlain = plainTextFromHtml(contentHtml);
+  const bodyPreview = bodyPlain.slice(0, 420).trim();
+  const hasRichHtml = /<[a-z][\s\S]*>/i.test(contentHtml.trim());
 
   return (
     <div className="space-y-4">
       <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm">
         <div className="relative h-52 overflow-hidden bg-slate-100">
           {imageUrl ? (
-            <img src={imageUrl} alt={title || "Preview bai viet"} className="h-full w-full object-cover" />
+            <img
+              src={imageUrl}
+              alt={title || "Xem trước bài viết"}
+              className="h-full w-full object-cover"
+            />
           ) : (
             <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 text-sm font-medium text-slate-500">
-              Chua co hinh dai dien
+              Chưa có hình đại diện
             </div>
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent" />
           <div className="absolute left-4 top-4 flex flex-wrap gap-2">
             <span className="rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-700">
-              {category || "Danh muc"}
+              {category || "Danh mục"}
             </span>
             {subCategory ? (
               <span className="rounded-full bg-[#17579d]/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white">
@@ -2538,25 +3031,32 @@ function PostPreviewCard({
           </div>
           <div className="absolute bottom-4 left-4 right-4 text-white">
             <div className="text-xs font-semibold uppercase tracking-[0.24em] text-white/75">
-              /{slug}
+              /bai-viet/{slug}
             </div>
             <h3 className="mt-2 line-clamp-2 text-2xl font-bold leading-tight">
-              {title || "Tieu de bai viet"}
+              {title || "Tiêu đề bài viết"}
             </h3>
           </div>
         </div>
         <div className="space-y-4 p-5">
           <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
-            <span>{readingMinutes} phut doc</span>
+            <span>{readingMinutes} phút đọc</span>
             <span>{new Date().toLocaleDateString("vi-VN")}</span>
           </div>
           <p className="text-sm leading-7 text-slate-600">
-            {excerpt || "Tom tat bai viet se hien thi o day de ban theo doi nhanh giao dien ngoai trang."}
+            {excerpt || "Tóm tắt bài viết sẽ hiển thị ở đây."}
           </p>
-          <div className="rounded-[24px] border border-slate-200 bg-slate-50 p-4 text-sm leading-7 text-slate-700">
-            {bodyPreview || "Noi dung preview se hien thi tai day khi ban bat dau nhap bai viet."}
-            {bodyPreview ? "..." : ""}
-          </div>
+          {hasRichHtml ? (
+            <div
+              className="prose-article max-h-48 overflow-hidden rounded-[24px] border border-slate-200 bg-slate-50 p-4 text-sm leading-7 text-slate-700"
+              dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
+          ) : (
+            <div className="rounded-[24px] border border-slate-200 bg-slate-50 p-4 text-sm leading-7 text-slate-700">
+              {bodyPreview || "Nội dung sẽ hiển thị khi bạn bắt đầu nhập bài."}
+              {bodyPreview ? "…" : ""}
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -2586,32 +3086,32 @@ function SeoPreviewCard({
           Google preview
         </div>
         <div className="mt-4 text-2xl font-medium leading-tight text-[#1a0dab]">
-          {title || "SEO title se hien thi tai day"}
+          {title || "Tiêu đề SEO sẽ hiển thị tại đây"}
         </div>
         <div className="mt-2 text-sm text-emerald-700">
-          https://your-domain.com/bai-viet/{slug}
+          https://kientrucsaokhue.com/bai-viet/{slug}
         </div>
         <p className="mt-3 text-sm leading-7 text-slate-600">
-          {description || "Meta description se hien thi tai day de ban canh chinh do dai va thong diep."}
+          {description || "Mô tả meta sẽ hiển thị tại đây — chỉnh độ dài và thông điệp cho phù hợp."}
         </p>
       </div>
 
       <div className="grid grid-cols-1 gap-3">
         <EditorStatCard
-          label="Do dai title"
-          value={`${titleLength}/70`}
-          tone={titleLength > 70 ? "rose" : "amber"}
+          label="Độ dài title"
+          value={`${titleLength}/${SEO_TITLE_MAX}`}
+          tone={titleLength > SEO_TITLE_MAX ? "rose" : "amber"}
         />
         <EditorStatCard
-          label="Do dai description"
-          value={`${descriptionLength}/160`}
-          tone={descriptionLength > 160 ? "rose" : "emerald"}
+          label="Độ dài mô tả"
+          value={`${descriptionLength}/${SEO_DESC_MAX}`}
+          tone={descriptionLength > SEO_DESC_MAX ? "rose" : "emerald"}
         />
       </div>
 
       <div className="rounded-[24px] border border-dashed border-slate-300 bg-slate-50 px-4 py-4 text-sm leading-7 text-slate-600">
         <span className="font-semibold text-slate-900">Keywords:</span>{" "}
-        {keywords || "Chua nhap keywords"}
+        {keywords || "Chưa nhập từ khóa"}
       </div>
     </div>
   );

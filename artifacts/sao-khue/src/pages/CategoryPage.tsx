@@ -20,7 +20,12 @@ import {
 } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { buildBreadcrumbSchema } from "@/lib/seo";
+import {
+  absoluteUrl,
+  buildBreadcrumbSchema,
+  buildCollectionPageSchema,
+  buildItemListSchema,
+} from "@/lib/seo";
 
 const categoryLabels: Record<string, string> = {
   "gioi-thieu": "Giới thiệu",
@@ -76,13 +81,30 @@ export default function CategoryPage({ category, subSlug }: Props) {
     }
   }
 
+  const jsonLd: Record<string, unknown>[] = [];
+  if (breadcrumbs.length > 1) jsonLd.push(buildBreadcrumbSchema(breadcrumbs));
+  jsonLd.push(
+    buildCollectionPageSchema(pageTitle, seoDescription, absoluteUrl(path)),
+  );
+  if (filteredPosts.length > 0) {
+    jsonLd.push(
+      buildItemListSchema(
+        filteredPosts.slice(0, 12).map((p) => ({
+          name: p.title,
+          url: absoluteUrl(`/bai-viet/${p.slug}`),
+        })),
+        pageTitle,
+      ),
+    );
+  }
+
   usePageSeo({
     title: `${pageTitle} | ${brand}`,
     description: seoDescription,
-    path: location.split("?")[0],
+    path,
     keywords: `${pageTitle}, xây dựng tphcm, ${brand}`,
     ogImage,
-    jsonLd: breadcrumbs.length > 1 ? buildBreadcrumbSchema(breadcrumbs) : undefined,
+    jsonLd: jsonLd.length > 0 ? jsonLd : undefined,
   });
 
   return (

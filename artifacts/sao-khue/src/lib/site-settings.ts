@@ -205,6 +205,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   topBarSlogan: "Tận tâm — Uy tín — Chất lượng",
   gaTrackingId: "",
   gscVerification: GSC_VERIFICATION_TOKEN,
+  googleMapEmbed: "",
   navMenuJson: JSON.stringify(defaultNavMenu),
   pageBannersJson: JSON.stringify(defaultPageBanners),
   homeFeaturedPostsJson: JSON.stringify(defaultFeaturedPosts),
@@ -241,7 +242,7 @@ function parseJsonObject<T extends object>(value: unknown, fallback: T): T {
   return merged;
 }
 
-function restoreKnownVietnameseText(value: string) {
+export function restoreKnownVietnameseText(value: string) {
   const replacements: Record<string, string> = {
     "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE": "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
     "Ve chung toi": "Về chúng tôi",
@@ -308,7 +309,7 @@ function restoreKnownVietnameseText(value: string) {
   return mapped.replace(/, Quan Bình Thạnh,/g, ", Quận Bình Thạnh,");
 }
 
-function restoreHeroSlides(slides: HeroSlide[]) {
+export function restoreHeroSlides(slides: HeroSlide[]) {
   return slides.map((slide) => ({
     ...slide,
     title: restoreKnownVietnameseText(slide.title),
@@ -317,7 +318,7 @@ function restoreHeroSlides(slides: HeroSlide[]) {
   }));
 }
 
-function restoreCommitments(items: CommitmentItem[]) {
+export function restoreCommitments(items: CommitmentItem[]) {
   return items.map((item) => ({
     ...item,
     title: restoreKnownVietnameseText(item.title),
@@ -325,7 +326,7 @@ function restoreCommitments(items: CommitmentItem[]) {
   }));
 }
 
-function restorePricing(items: PricingItem[]) {
+export function restorePricing(items: PricingItem[]) {
   return items.map((item) => ({
     ...item,
     name: restoreKnownVietnameseText(item.name),
@@ -479,6 +480,11 @@ export function usePageBanner(key: keyof PageBannersMap): PageBannerContent {
 export function useFeaturedPostsConfig(): FeaturedPostsConfig {
   const settings = useSiteSettings();
   return parseJsonObject(settings.homeFeaturedPostsJson, defaultFeaturedPosts);
+}
+
+export function useGoogleMapEmbed(): string {
+  const settings = useSiteSettings();
+  return String((settings as SiteSettings & { googleMapEmbed?: string }).googleMapEmbed ?? "");
 }
 
 export function useOpenGraphImage(): string {

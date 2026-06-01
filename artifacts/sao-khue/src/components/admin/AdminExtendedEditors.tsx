@@ -16,6 +16,7 @@ import {
   fetchContactLeads,
   type ContactLead,
 } from "@/lib/contact-leads-api";
+import { exportLeadsToCsv } from "@/lib/admin-leads-export";
 import { Field, FormSection, RepeatCard } from "./admin-ui";
 
 export function NavMenuEditor({
@@ -290,7 +291,11 @@ export function FeaturedPostsEditor({
   );
 }
 
-export function ContactInboxPanel() {
+type InboxPanelProps = {
+  onLeadsLoaded?: (leads: ContactLead[]) => void;
+};
+
+export function ContactInboxPanel({ onLeadsLoaded }: InboxPanelProps) {
   const [leads, setLeads] = useState<ContactLead[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -299,7 +304,9 @@ export function ContactInboxPanel() {
     setLoading(true);
     setError(null);
     try {
-      setLeads(await fetchContactLeads());
+      const data = await fetchContactLeads();
+      setLeads(data);
+      onLeadsLoaded?.(data);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Lỗi tải dữ liệu");
     } finally {
@@ -309,6 +316,7 @@ export function ContactInboxPanel() {
 
   useEffect(() => {
     void load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- load once on mount
   }, []);
 
   async function onDelete(id: number) {
@@ -322,11 +330,22 @@ export function ContactInboxPanel() {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <p className="text-sm text-slate-600">{leads.length} yêu cầu liên hệ</p>
-        <Button type="button" variant="outline" size="sm" onClick={() => void load()}>
-          Làm mới
-        </Button>
+        <div className="flex gap-2">
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            disabled={!leads.length}
+            onClick={() => exportLeadsToCsv(leads)}
+          >
+            Xuất CSV
+          </Button>
+          <Button type="button" variant="outline" size="sm" onClick={() => void load()}>
+            Làm mới
+          </Button>
+        </div>
       </div>
       {leads.length === 0 ? (
         <p className="rounded-xl border border-dashed border-slate-200 p-8 text-center text-sm text-slate-500">

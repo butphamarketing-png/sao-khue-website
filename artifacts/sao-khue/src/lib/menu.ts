@@ -1,5 +1,7 @@
 export type MenuItem = {
   title: string;
+  /** Nhãn ngắn trên header desktop — tránh xuống dòng */
+  shortTitle?: string;
   href: string;
   category?: string;
   children?: MenuItem[];
@@ -42,9 +44,10 @@ export const defaultNavMenu: MenuItem[] = [
       { title: "Thiết kế nhà", href: "/cong-trinh/thiet-ke-nha", category: "cong-trinh" },
     ],
   },
-  { title: "BẢNG BÁO GIÁ", href: "/bao-gia" },
+  { title: "BẢNG BÁO GIÁ", shortTitle: "BÁO GIÁ", href: "/bao-gia" },
   {
     title: "KINH NGHIỆM XÂY DỰNG",
+    shortTitle: "KINH NGHIỆM",
     href: "/kinh-nghiem",
     category: "kinh-nghiem",
     children: [

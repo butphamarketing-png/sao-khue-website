@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { seedPosts } from "../../../lib/seed-content/src/index.ts";
 import {
   defaultCategoryPages,
+  defaultFaqs,
   defaultPageBanners,
 } from "../src/lib/home-content.ts";
 import { defaultNavMenu } from "../src/lib/menu.ts";
@@ -16,6 +17,13 @@ import {
   postMatchesSubSlug,
 } from "../src/lib/menu-posts.ts";
 import { enhanceArticleHtml } from "./lib/prerender-utils.ts";
+import {
+  breadcrumbListJsonLd,
+  buildFAQSchema,
+  buildPostBreadcrumbItems,
+  itemListJsonLd,
+  stripPlainText,
+} from "./lib/seo-prerender.ts";
 import {
   buildHeadTags,
   buildJsonLdScript,
@@ -98,7 +106,19 @@ function buildStaticPages(): PrerenderPage[] {
         <h2>Dịch vụ chính</h2>
         <p><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a>, <a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a>, <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a>, <a href="/dich-vu/sua-chua-nha">Sửa chữa nhà</a>.</p>
         <p><a href="/bao-gia">Xem bảng báo giá &amp; tính chi phí xây dựng</a> · <a href="/lien-he">Liên hệ tư vấn miễn phí</a></p>
+        <h2>Câu hỏi thường gặp</h2>
+        ${defaultFaqs
+          .map(
+            (f) =>
+              `<h3>${escapeHtml(f.q)}</h3><p>${escapeHtml(stripPlainText(f.a))}</p>`,
+          )
+          .join("\n        ")}
       `),
+      jsonLd: [
+        buildFAQSchema(
+          defaultFaqs.map((f) => ({ q: f.q, a: stripPlainText(f.a) })),
+        ),
+      ],
     },
     {
       path: "/bao-gia",
@@ -175,6 +195,20 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
         primary?.excerpt ||
         `${child.title} — ${BRAND_SHORT}`;
 
+      const jsonLd: Record<string, unknown>[] = [];
+      if (matched.length > 0) {
+        jsonLd.push(
+          itemListJsonLd(
+            matched.map((p) => ({
+              name: p.title,
+              path: `/bai-viet/${p.slug}`,
+            })),
+            SITE_URL,
+            child.title,
+          ),
+        );
+      }
+
       pages.push({
         path,
         meta: {
@@ -184,6 +218,7 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
           keywords: primary?.metaKeywords?.trim(),
           ogImage: primary?.imageUrl ?? DEFAULT_OG,
         },
+        jsonLd: jsonLd.length > 0 ? jsonLd : undefined,
         bodyHtml: shell(`
           ${navHome()}
           <h1>${escapeHtml(child.title)}</h1>
@@ -213,18 +248,25 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
 }
 
 function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
-  const categoryLabel: Record<string, string> = {
-    "dich-vu": "Dịch vụ",
-    "gioi-thieu": "Giới thiệu",
-    "cong-trinh": "Công trình",
-    "kinh-nghiem": "Kinh nghiệm",
-  };
-
   return posts.map((post) => {
     const path = `/bai-viet/${post.slug}`;
     const title = post.metaTitle?.trim() || `${post.title} | ${BRAND_SHORT}`;
     const description = post.metaDescription?.trim() || post.excerpt || "";
-    const contentHtml = enhanceArticleHtml(post.content ?? "");
+    const contentHtml = enhanceArticleHtml(post.content ?? "", post.title);
+    const crumbs = buildPostBreadcrumbItems(post);
+    const crumbNav = crumbs
+      .map(
+        (c, i) =>
+          i === crumbs.length - 1
+            ? escapeHtml(c.name)
+            : `<a href="${escapeHtml(c.path)}">${escapeHtml(c.name)}</a>`,
+      )
+      .join(" › ");
+    const wordCount = stripPlainText(post.content ?? "")
+      .split(/\s+/)
+      .filter(Boolean).length;
+    const sectionPath =
+      crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
     const jsonLd = [
       {
@@ -236,23 +278,11 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         datePublished: (post.createdAt ?? "2026-01-15").slice(0, 10),
         dateModified: (post.updatedAt ?? post.createdAt ?? "2026-01-15").slice(0, 10),
         inLanguage: "vi-VN",
+        wordCount: wordCount > 0 ? wordCount : undefined,
         author: { "@type": "Organization", name: BRAND },
         mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(SITE_URL, path) },
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Trang chủ", item: absoluteUrl(SITE_URL, "/") },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: categoryLabel[post.category] ?? "Bài viết",
-            item: absoluteUrl(SITE_URL, `/${post.category}`),
-          },
-          { "@type": "ListItem", position: 3, name: post.title, item: absoluteUrl(SITE_URL, path) },
-        ],
-      },
+      breadcrumbListJsonLd(crumbs, SITE_URL),
     ];
 
     return {
@@ -269,10 +299,11 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <p><a href="/${post.category}">${escapeHtml(categoryLabel[post.category] ?? post.category)}</a></p>
+        <nav aria-label="Breadcrumb">${crumbNav}</nav>
         <h1>${escapeHtml(post.title)}</h1>
         ${post.excerpt ? `<p class="excerpt">${escapeHtml(post.excerpt)}</p>` : ""}
         <div class="prose-article">${contentHtml}</div>
+        <p><a href="${escapeHtml(sectionPath)}">← Xem tất cả bài trong mục này</a></p>
         <p><strong><a href="/lien-he">Liên hệ ${escapeHtml(BRAND_SHORT)}</a></strong> — khảo sát &amp; báo giá miễn phí.</p>
       `),
       jsonLd,

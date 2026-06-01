@@ -5,15 +5,18 @@ import { PageBanner } from "@/components/PageBanner";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import {
   useOpenGraphImage,
+  useGoogleMapEmbed,
   useSiteSettings,
   telHref,
   usePageBanner,
   usePrimaryPhone,
 } from "@/lib/site-settings";
+import { MapEmbed } from "@/components/MapEmbed";
 import { usePageSeo } from "@/hooks/use-page-seo";
 
 export default function Contact() {
   const s = useSiteSettings();
+  const mapEmbed = useGoogleMapEmbed();
   const banner = usePageBanner("contact");
   const phone = usePrimaryPhone();
   const ogImage = useOpenGraphImage();
@@ -105,12 +108,10 @@ export default function Contact() {
             </h2>
           </div>
           <div className="relative flex h-[420px] items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 md:h-[480px]">
-            <iframe
+            <MapEmbed
+              embedHtml={mapEmbed}
+              address={s.address1}
               title="Bản đồ Sao Khuê"
-              className="absolute inset-0 h-full w-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src={`https://maps.google.com/maps?q=${encodeURIComponent(s.address1)}&output=embed`}
             />
           </div>
           <div className="px-6 py-4 text-sm text-slate-600">{s.address1}</div>
