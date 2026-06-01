@@ -10,7 +10,17 @@ import { findMenuByPath } from "@/lib/menu";
 import { useLocation } from "wouter";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
-import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
+import {
+  useCategoryPages,
+  useOpenGraphImage,
+  useSiteSettings,
+  telHref,
+  useNavMenu,
+  usePrimaryPhone,
+} from "@/lib/site-settings";
+import { usePageSeo } from "@/hooks/use-page-seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { buildBreadcrumbSchema } from "@/lib/seo";
 
 const categoryLabels: Record<string, string> = {
   "gioi-thieu": "Giới thiệu",
@@ -44,25 +54,41 @@ export default function CategoryPage({ category, subSlug }: Props) {
     : items;
 
   const topItem = menu.find((m) => m.category === category);
+  const categoryPages = useCategoryPages();
+  const ogImage = useOpenGraphImage();
+  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const categoryContent = categoryPages[category];
+  const seoDescription =
+    categoryContent?.description ??
+    `Tổng hợp bài viết ${pageTitle} — ${brand}. Tư vấn xây dựng, báo giá minh bạch.`;
+
+  const path = location.split("?")[0];
+  const breadcrumbs: { name: string; path: string }[] = [{ name: "Trang chủ", path: "/" }];
+  if (topItem) {
+    if (subSlug) {
+      breadcrumbs.push({
+        name: categoryLabels[category] ?? category,
+        path: topItem.href,
+      });
+      breadcrumbs.push({ name: pageTitle, path });
+    } else {
+      breadcrumbs.push({ name: pageTitle, path: topItem.href });
+    }
+  }
+
+  usePageSeo({
+    title: `${pageTitle} | ${brand}`,
+    description: seoDescription,
+    path: location.split("?")[0],
+    keywords: `${pageTitle}, xây dựng tphcm, ${brand}`,
+    ogImage,
+    jsonLd: breadcrumbs.length > 1 ? buildBreadcrumbSchema(breadcrumbs) : undefined,
+  });
 
   return (
     <PageShell>
       <PageBanner title={pageTitle}>
-        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-blue-100">
-          <Link href="/" className="transition hover:text-white">
-            Trang chủ
-          </Link>
-          <span aria-hidden>›</span>
-          {topItem && location !== topItem.href && (
-            <>
-              <Link href={topItem.href} className="transition hover:text-white">
-                {categoryLabels[category]}
-              </Link>
-              <span aria-hidden>›</span>
-            </>
-          )}
-          <span>{pageTitle}</span>
-        </div>
+        <Breadcrumbs items={breadcrumbs} light className="mt-4" />
       </PageBanner>
 
       {!subSlug && <CategoryShowcase category={category} />}

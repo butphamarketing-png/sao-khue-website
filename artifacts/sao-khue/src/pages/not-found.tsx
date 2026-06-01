@@ -4,12 +4,20 @@ import { Button } from "@/components/ui/button";
 import { PageShell } from "@/components/PageShell";
 import { PageBanner } from "@/components/PageBanner";
 import { telHref, useNavMenu, usePageBanner, usePrimaryPhone } from "@/lib/site-settings";
+import { usePageSeo } from "@/hooks/use-page-seo";
 
 export default function NotFound() {
   const menu = useNavMenu();
   const banner = usePageBanner("notFound");
   const phone = usePrimaryPhone();
   const quickLinks = menu.filter((item) => item.href !== "/").slice(0, 6);
+
+  usePageSeo({
+    title: banner.title,
+    description: banner.subtitle,
+    path: "/404",
+    noindex: true,
+  });
 
   return (
     <PageShell>

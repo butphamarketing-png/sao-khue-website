@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { AdminSiteMap } from "@/components/admin/AdminSiteMap";
+import { usePageSeo } from "@/hooks/use-page-seo";
 import {
   ContactInboxPanel,
   FeaturedPostsEditor,
@@ -376,6 +377,13 @@ function buildSettingsFromApi(
 }
 
 export default function Admin() {
+  usePageSeo({
+    title: "Quản trị website",
+    description: "Khu vực quản trị nội bộ.",
+    path: "/admin",
+    noindex: true,
+  });
+
   const {
     user,
     isAuthenticated,

@@ -6,31 +6,38 @@ import { seedPosts } from "@workspace/seed-content";
 const SITE_URL =
   (process.env.SITE_URL ?? "https://kientrucsaokhue.com").replace(/\/$/, "");
 
-const STATIC_PATHS = [
-  "/",
-  "/gioi-thieu",
-  "/gioi-thieu/so-do-to-chuc",
-  "/gioi-thieu/ve-chung-toi",
-  "/gioi-thieu/hoat-dong",
-  "/gioi-thieu/tuyen-dung",
-  "/dich-vu",
-  "/dich-vu/xay-nha-tron-goi",
-  "/dich-vu/sua-chua-nha",
-  "/dich-vu/xay-dung-phan-tho",
-  "/dich-vu/thiet-ke-nha",
-  "/dich-vu/nang-tang-nha-pho",
-  "/dich-vu/hoan-thien-nha",
-  "/dich-vu/khuyen-mai",
-  "/cong-trinh",
-  "/cong-trinh/xay-nha",
-  "/cong-trinh/sua-nha",
-  "/cong-trinh/thiet-ke-nha",
-  "/bao-gia",
-  "/kinh-nghiem",
-  "/kinh-nghiem/cam-nang",
-  "/kinh-nghiem/luat-xay-dung",
-  "/kinh-nghiem/phong-thuy",
-  "/lien-he",
+type SitemapEntry = {
+  loc: string;
+  lastmod: string | null;
+  changefreq?: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+  priority?: number;
+};
+
+const STATIC_PAGES: SitemapEntry[] = [
+  { loc: "/", changefreq: "weekly", priority: 1.0, lastmod: null },
+  { loc: "/bao-gia", changefreq: "weekly", priority: 0.95, lastmod: null },
+  { loc: "/lien-he", changefreq: "monthly", priority: 0.9, lastmod: null },
+  { loc: "/gioi-thieu", changefreq: "monthly", priority: 0.85, lastmod: null },
+  { loc: "/gioi-thieu/so-do-to-chuc", changefreq: "monthly", priority: 0.7, lastmod: null },
+  { loc: "/gioi-thieu/ve-chung-toi", changefreq: "monthly", priority: 0.75, lastmod: null },
+  { loc: "/gioi-thieu/hoat-dong", changefreq: "monthly", priority: 0.7, lastmod: null },
+  { loc: "/gioi-thieu/tuyen-dung", changefreq: "weekly", priority: 0.7, lastmod: null },
+  { loc: "/dich-vu", changefreq: "weekly", priority: 0.9, lastmod: null },
+  { loc: "/dich-vu/xay-nha-tron-goi", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/dich-vu/sua-chua-nha", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/dich-vu/xay-dung-phan-tho", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/dich-vu/thiet-ke-nha", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/dich-vu/nang-tang-nha-pho", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/dich-vu/hoan-thien-nha", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/dich-vu/khuyen-mai", changefreq: "weekly", priority: 0.75, lastmod: null },
+  { loc: "/cong-trinh", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/cong-trinh/xay-nha", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/cong-trinh/sua-nha", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/cong-trinh/thiet-ke-nha", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/kinh-nghiem", changefreq: "weekly", priority: 0.85, lastmod: null },
+  { loc: "/kinh-nghiem/cam-nang", changefreq: "weekly", priority: 0.8, lastmod: null },
+  { loc: "/kinh-nghiem/luat-xay-dung", changefreq: "monthly", priority: 0.75, lastmod: null },
+  { loc: "/kinh-nghiem/phong-thuy", changefreq: "monthly", priority: 0.75, lastmod: null },
 ];
 
 function escapeXml(value: string): string {
@@ -42,52 +49,78 @@ function escapeXml(value: string): string {
     .replace(/'/g, "&apos;");
 }
 
-const router: IRouter = Router();
+function buildSitemapXml(urls: SitemapEntry[]): string {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map((u) => {
+    const parts = [
+      `  <url>`,
+      `    <loc>${escapeXml(u.loc)}</loc>`,
+      u.lastmod ? `    <lastmod>${u.lastmod}</lastmod>` : "",
+      u.changefreq ? `    <changefreq>${u.changefreq}</changefreq>` : "",
+      u.priority != null ? `    <priority>${u.priority.toFixed(2)}</priority>` : "",
+      `  </url>`,
+    ];
+    return parts.filter(Boolean).join("\n");
+  })
+  .join("\n")}
+</urlset>`;
+}
 
-router.get("/sitemap.xml", async (_req, res) => {
+function staticUrls(): SitemapEntry[] {
+  return STATIC_PAGES.map((p) => ({
+    ...p,
+    loc: p.loc === "/" ? `${SITE_URL}/` : `${SITE_URL}${p.loc}`,
+  }));
+}
+
+async function collectPostUrls(): Promise<SitemapEntry[]> {
   try {
     const posts = await db
       .select({ slug: postsTable.slug, updatedAt: postsTable.updatedAt })
       .from(postsTable)
       .orderBy(desc(postsTable.updatedAt));
 
-    const urls = [
-      ...STATIC_PATHS.map((p) => ({ loc: `${SITE_URL}${p}`, lastmod: null as string | null })),
-      ...posts.map((p) => ({
-        loc: `${SITE_URL}/bai-viet/${p.slug}`,
-        lastmod: p.updatedAt.toISOString().split("T")[0],
-      })),
-    ];
-
-    const body = buildSitemapXml(urls);
-    res.set("Content-Type", "application/xml; charset=utf-8");
-    res.send(body);
+    return posts.map((p) => ({
+      loc: `${SITE_URL}/bai-viet/${p.slug}`,
+      lastmod: p.updatedAt.toISOString().split("T")[0],
+      changefreq: "monthly" as const,
+      priority: 0.8,
+    }));
   } catch {
-    const urls = [
-      ...STATIC_PATHS.map((p) => ({ loc: `${SITE_URL}${p}`, lastmod: null as string | null })),
-      ...seedPosts.map((p) => ({
-        loc: `${SITE_URL}/bai-viet/${p.slug}`,
-        lastmod: "2026-01-15",
-      })),
-    ];
-    res.set("Content-Type", "application/xml; charset=utf-8");
-    res.send(buildSitemapXml(urls));
+    return seedPosts.map((p) => ({
+      loc: `${SITE_URL}/bai-viet/${p.slug}`,
+      lastmod: "2026-01-15",
+      changefreq: "monthly" as const,
+      priority: 0.8,
+    }));
   }
+}
+
+const router: IRouter = Router();
+
+router.get("/robots.txt", (_req, res) => {
+  const body = `User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: ${SITE_URL}/sitemap.xml
+
+# RSS (Google Discover / đọc tin)
+# ${SITE_URL}/feed.xml
+`;
+  res.set("Content-Type", "text/plain; charset=utf-8");
+  res.send(body);
 });
 
-function buildSitemapXml(
-  urls: { loc: string; lastmod: string | null }[],
-): string {
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls
-  .map(
-    (u) => `  <url>
-    <loc>${escapeXml(u.loc)}</loc>${u.lastmod ? `\n    <lastmod>${u.lastmod}</lastmod>` : ""}
-  </url>`,
-  )
-  .join("\n")}
-</urlset>`;
-}
+router.get("/sitemap.xml", async (_req, res) => {
+  const postUrls = await collectPostUrls();
+  const urls = [...staticUrls(), ...postUrls];
+  res.set("Content-Type", "application/xml; charset=utf-8");
+  res.send(buildSitemapXml(urls));
+});
 
 export default router;

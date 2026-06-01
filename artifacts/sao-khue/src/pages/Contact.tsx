@@ -3,12 +3,32 @@ import { ContactCTASection } from "@/components/ContactCTASection";
 import { FAQSection } from "@/components/FAQSection";
 import { PageBanner } from "@/components/PageBanner";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
-import { useSiteSettings, telHref, usePageBanner, usePrimaryPhone } from "@/lib/site-settings";
+import {
+  useOpenGraphImage,
+  useSiteSettings,
+  telHref,
+  usePageBanner,
+  usePrimaryPhone,
+} from "@/lib/site-settings";
+import { usePageSeo } from "@/hooks/use-page-seo";
 
 export default function Contact() {
   const s = useSiteSettings();
   const banner = usePageBanner("contact");
   const phone = usePrimaryPhone();
+  const ogImage = useOpenGraphImage();
+  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+
+  usePageSeo({
+    title: `Liên hệ ${brand} | Hotline ${phone}`,
+    description:
+      banner.subtitle +
+      (s.address1 ? ` Địa chỉ: ${s.address1}.` : "") +
+      " Gửi yêu cầu báo giá trực tuyến.",
+    path: "/lien-he",
+    keywords: "liên hệ xây dựng, báo giá xây nhà, khảo sát miễn phí tphcm",
+    ogImage,
+  });
 
   return (
     <PageShell>

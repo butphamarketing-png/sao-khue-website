@@ -7,7 +7,23 @@ import { PageBanner } from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
 import { resolvePost, resolvePosts } from "@/lib/posts-with-fallback";
-import { useSiteSettings } from "@/lib/site-settings";
+import { resolveLogoUrl, useSiteSettings } from "@/lib/site-settings";
+import { usePageSeo } from "@/hooks/use-page-seo";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import {
+  absoluteUrl,
+  buildArticleSchema,
+  buildBreadcrumbSchema,
+  enhanceArticleHtml,
+  type BreadcrumbItem,
+} from "@/lib/seo";
+
+const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = {
+  "dich-vu": { label: "Dịch vụ", path: "/dich-vu" },
+  "gioi-thieu": { label: "Giới thiệu", path: "/gioi-thieu" },
+  "cong-trinh": { label: "Công trình", path: "/cong-trinh" },
+  "kinh-nghiem": { label: "Kinh nghiệm", path: "/kinh-nghiem" },
+};
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -31,66 +47,68 @@ export default function PostPage() {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  useEffect(() => {
-    if (!post) return;
-    const title = post.metaTitle?.trim() || `${post.title} | ${brandName}`;
-    document.title = title;
-    const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
-      if (!content) return;
-      let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${name}"]`);
-      if (!el) {
-        el = document.createElement("meta");
-        el.setAttribute(attr, name);
-        document.head.appendChild(el);
-      }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", post.metaDescription?.trim() || post.excerpt || "");
-    setMeta("keywords", post.metaKeywords?.trim() || "");
-    setMeta("og:title", title, "property");
-    setMeta("og:description", post.metaDescription?.trim() || post.excerpt || "", "property");
-    if (post.imageUrl) setMeta("og:image", post.imageUrl, "property");
-    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", window.location.href);
+  const postPath = slug ? `/bai-viet/${slug}` : undefined;
+  const postTitle = post
+    ? post.metaTitle?.trim() || `${post.title} | ${brandName}`
+    : isLoading
+      ? `Đang tải... | ${brandName}`
+      : brandName;
+  const postDescription = post
+    ? post.metaDescription?.trim() || post.excerpt || ""
+    : "";
 
-    let schema = document.head.querySelector<HTMLScriptElement>('script[data-structured="article"]');
-    if (!schema) {
-      schema = document.createElement("script");
-      schema.type = "application/ld+json";
-      schema.dataset.structured = "article";
-      document.head.appendChild(schema);
-    }
-    schema.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: post.title,
-      description: post.metaDescription?.trim() || post.excerpt || "",
-      image: post.imageUrl ? [post.imageUrl] : undefined,
-      datePublished: post.createdAt,
-      dateModified: post.updatedAt,
-      author: { "@type": "Organization", name: brandName },
-      mainEntityOfPage: window.location.href,
-    });
-  }, [post, brandName]);
+  const breadcrumbItems: BreadcrumbItem[] = post
+    ? (() => {
+        const cat = CATEGORY_CRUMBS[post.category];
+        const items: BreadcrumbItem[] = [{ name: "Trang chủ", path: "/" }];
+        if (cat) items.push({ name: cat.label, path: cat.path });
+        items.push({ name: post.title, path: postPath! });
+        return items;
+      })()
+    : [];
+
+  usePageSeo(
+    post && postPath
+      ? {
+          title: postTitle,
+          description: postDescription,
+          path: postPath,
+          keywords: post.metaKeywords?.trim(),
+          ogImage: post.imageUrl,
+          ogImageAlt: post.title,
+          ogType: "article",
+          publishedTime: post.createdAt,
+          modifiedTime: post.updatedAt,
+          jsonLd: [
+            buildArticleSchema({
+              headline: post.title,
+              description: postDescription,
+              image: post.imageUrl,
+              datePublished: post.createdAt,
+              dateModified: post.updatedAt,
+              authorName: brandName,
+              url: absoluteUrl(postPath),
+              publisherLogoUrl: absoluteUrl(resolveLogoUrl(site.logoUrl)),
+            }),
+            buildBreadcrumbSchema(breadcrumbItems),
+          ],
+        }
+      : null,
+  );
 
   return (
     <PageShell>
       <PageBanner title={post?.title ?? (isLoading ? "Đang tải..." : "Bài viết")}>
-        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-blue-100">
-          <Link href="/" className="transition hover:text-white">
-            Trang chủ
-          </Link>
-          <span aria-hidden>›</span>
-          <span>Bài viết</span>
-        </div>
+        {breadcrumbItems.length > 0 && (
+          <Breadcrumbs items={breadcrumbItems} light className="mt-4" />
+        )}
       </PageBanner>
 
-      <article className="site-container max-w-4xl pb-8 pt-4 md:pb-12 md:pt-6">
+      <article
+        className="site-container max-w-4xl pb-8 pt-4 md:pb-12 md:pt-6"
+        itemScope
+        itemType="https://schema.org/BlogPosting"
+      >
         <Button asChild variant="ghost" className="mb-6 -ml-2 text-primary hover:text-primary">
           <Link href="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -136,7 +154,11 @@ export default function PostPage() {
                 <img
                   src={post.imageUrl}
                   alt={post.title}
+                  width={1200}
+                  height={630}
                   className="mb-8 max-h-[460px] w-full rounded-xl object-cover"
+                  loading="eager"
+                  fetchPriority="high"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
@@ -149,8 +171,9 @@ export default function PostPage() {
               )}
               <div
                 className="prose-article"
+                itemProp="articleBody"
                 dangerouslySetInnerHTML={{
-                  __html: (post.content ?? "").replace(/\n/g, "<br/>"),
+                  __html: enhanceArticleHtml(post.content ?? ""),
                 }}
               />
             </div>
@@ -170,7 +193,7 @@ export default function PostPage() {
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
-                      alt=""
+                      alt={item.title}
                       className="h-32 w-full object-cover transition group-hover:scale-105"
                     />
                   )}

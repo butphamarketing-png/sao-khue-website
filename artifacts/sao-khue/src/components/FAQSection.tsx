@@ -5,8 +5,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useEffect } from "react";
 import { defaultFaqs } from "@/lib/home-content";
 import { useFaqs, useSectionMeta } from "@/lib/site-settings";
+import { buildFAQSchema, setStructuredData, stripHtmlForSchema } from "@/lib/seo";
 
 export { defaultFaqs };
 
@@ -15,14 +17,39 @@ type Props = {
   subtitle?: string;
   items?: { q: string; a: string }[];
   className?: string;
+  /** JSON-LD FAQPage cho Google rich results */
+  enableSchema?: boolean;
 };
 
-export function FAQSection({ title, subtitle, items, className = "" }: Props) {
+export function FAQSection({
+  title,
+  subtitle,
+  items,
+  className = "",
+  enableSchema = true,
+}: Props) {
   const meta = useSectionMeta();
   const faqs = useFaqs();
   const resolvedItems = items ?? faqs;
   const resolvedTitle = title ?? meta.faq.title;
   const resolvedSubtitle = subtitle ?? meta.faq.subtitle;
+
+  useEffect(() => {
+    if (!enableSchema || resolvedItems.length === 0) {
+      setStructuredData("faq", null);
+      return;
+    }
+    setStructuredData(
+      "faq",
+      buildFAQSchema(
+        resolvedItems.map((item) => ({
+          q: item.q,
+          a: stripHtmlForSchema(item.a),
+        })),
+      ),
+    );
+    return () => setStructuredData("faq", null);
+  }, [enableSchema, resolvedItems]);
 
   if (resolvedItems.length === 0) return null;
 

@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import { existsSync } from "node:fs";
 import router from "./routes";
 import sitemapRouter from "./routes/sitemap";
+import rssRouter from "./routes/rss";
 import { logger } from "./lib/logger";
 import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
@@ -38,6 +39,7 @@ app.use(authMiddleware);
 
 app.use("/api", router);
 app.use(sitemapRouter);
+app.use(rssRouter);
 
 /** WordPress-style trailing slashes — /sua-nha-tron-goi-tphcm/ → /sua-nha-tron-goi-tphcm */
 app.use((req, res, next) => {
@@ -61,9 +63,9 @@ if (existsSync(frontendIndexPath)) {
 
   app.use(express.static(frontendDistDir));
 
-  app.get(/^(?!\/api(?:\/|$)|sitemap\.xml$).*/, (req, res, next) => {
+  app.get(/^(?!\/api(?:\/|$)|sitemap\.xml$|robots\.txt$|feed\.xml$).*/, (req, res, next) => {
     const pathOnly = req.path.split("?")[0] ?? req.path;
-    if (/\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|map|txt|xml)$/i.test(pathOnly)) {
+    if (/\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|map)$/i.test(pathOnly)) {
       res.status(404).end();
       return;
     }

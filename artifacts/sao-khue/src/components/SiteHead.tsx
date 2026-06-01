@@ -1,40 +1,25 @@
 import { useEffect } from "react";
-import { useSiteSettings, resolveLogoUrl, useOpenGraphImage, usePrimaryPhone } from "@/lib/site-settings";
+import {
+  useSiteSettings,
+  resolveLogoUrl,
+  useOpenGraphImage,
+  useTestimonials,
+} from "@/lib/site-settings";
 import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
+import {
+  absoluteUrl,
+  buildLocalBusinessSchema,
+  buildWebSiteSchema,
+  setMetaName,
+  setMetaProperty,
+  setStructuredData,
+} from "@/lib/seo";
 
 declare global {
   interface Window {
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   }
-}
-
-function setMeta(name: string, content: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
-  if (!content) {
-    if (el) el.remove();
-    return;
-  }
-  if (!el) {
-    el = document.createElement("meta");
-    el.setAttribute("name", name);
-    document.head.appendChild(el);
-  }
-  el.setAttribute("content", content);
-}
-
-function setPropertyMeta(property: string, content: string) {
-  let el = document.head.querySelector<HTMLMetaElement>(`meta[property="${property}"]`);
-  if (!content) {
-    if (el) el.remove();
-    return;
-  }
-  if (!el) {
-    el = document.createElement("meta");
-    el.setAttribute("property", property);
-    document.head.appendChild(el);
-  }
-  el.setAttribute("content", content);
 }
 
 function setLink(rel: string, href: string, type?: string) {
@@ -45,32 +30,8 @@ function setLink(rel: string, href: string, type?: string) {
     document.head.appendChild(el);
   }
   el.setAttribute("href", href);
-  if (type) {
-    el.setAttribute("type", type);
-  } else {
-    el.removeAttribute("type");
-  }
-}
-
-function setCanonical(url: string) {
-  let el = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-  if (!el) {
-    el = document.createElement("link");
-    el.setAttribute("rel", "canonical");
-    document.head.appendChild(el);
-  }
-  el.setAttribute("href", url);
-}
-
-function setStructuredData(id: string, data: Record<string, unknown>) {
-  let el = document.head.querySelector<HTMLScriptElement>(`script[data-structured="${id}"]`);
-  if (!el) {
-    el = document.createElement("script");
-    el.type = "application/ld+json";
-    el.dataset.structured = id;
-    document.head.appendChild(el);
-  }
-  el.text = JSON.stringify(data);
+  if (type) el.setAttribute("type", type);
+  else el.removeAttribute("type");
 }
 
 function injectGA(id: string) {
@@ -88,61 +49,46 @@ function injectGA(id: string) {
   document.head.appendChild(s2);
 }
 
+/** Global head: schema doanh nghiệp, GA, GSC, favicon — meta từng trang dùng usePageSeo. */
 export function SiteHead() {
   const s = useSiteSettings();
   const ogImage = useOpenGraphImage();
-  const phone = usePrimaryPhone();
-  useEffect(() => {
-    const currentUrl = window.location.href;
-    const pageTitle =
-      s.companyName ||
-      "Kiến Trúc Sao Khuê - Thiết kế và xây dựng nhà trọn gói TP.HCM";
-    const pageDescription =
-      s.footerDescription ||
-      "Thiết kế và thi công xây dựng nhà trọn gói uy tín, minh bạch và tối ưu chi phí.";
+  const testimonials = useTestimonials();
+  const origin = typeof window !== "undefined" ? window.location.origin : absoluteUrl("/");
 
-    document.title =
-      pageTitle;
-    setMeta("description", pageDescription);
-    setMeta("robots", "index,follow,max-image-preview:large");
-    setMeta("theme-color", "#17579d");
-    setMeta("google-site-verification", s.gscVerification);
-    setPropertyMeta("og:type", "website");
-    setPropertyMeta("og:title", pageTitle);
-    setPropertyMeta("og:description", pageDescription);
-    setPropertyMeta("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
-    setPropertyMeta("og:url", currentUrl);
-    setPropertyMeta("og:image", ogImage || BUNDLED_OPENGRAPH_URL);
-    setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", pageTitle);
-    setMeta("twitter:description", pageDescription);
-    setMeta("twitter:image", ogImage || BUNDLED_OPENGRAPH_URL);
-    setCanonical(currentUrl);
+  useEffect(() => {
+    setMetaName("theme-color", "#17579d");
+    setMetaName("google-site-verification", s.gscVerification);
+    setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
+    setMetaProperty("og:locale", "vi_VN");
+
     setLink("icon", "/favicon.svg", "image/svg+xml");
     setLink("apple-touch-icon", resolveLogoUrl(s.logoUrl));
-    setStructuredData("organization", {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: s.companyName,
-      image: resolveLogoUrl(s.logoUrl),
-      url: window.location.origin,
-      telephone: phone,
-      email: s.email,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: s.address1,
-        addressLocality: "TP.HCM",
-        addressCountry: "VN",
-      },
-      sameAs: [s.facebookUrl, s.youtubeUrl, s.instagramUrl].filter(Boolean),
-    });
-    setStructuredData("website", {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: s.companyName,
-      url: window.location.origin,
-      inLanguage: "vi-VN",
-    });
+    setLink("sitemap", `${origin}/sitemap.xml`, "application/xml");
+    setLink("alternate", `${origin}/feed.xml`, "application/rss+xml");
+
+    const brand = s.companyName || "Kiến Trúc Sao Khuê";
+    const reviewCount = testimonials.length;
+    setStructuredData(
+      "organization",
+      buildLocalBusinessSchema({
+        name: brand,
+        url: origin,
+        telephone: s.hotline1 || "",
+        email: s.email,
+        image: ogImage || resolveLogoUrl(s.logoUrl) || BUNDLED_OPENGRAPH_URL,
+        address: s.address1,
+        sameAs: [s.facebookUrl, s.youtubeUrl, s.instagramUrl].filter(Boolean),
+        description: s.footerDescription,
+        openingHours: s.workingHours,
+        aggregateRating:
+          reviewCount >= 3
+            ? { ratingValue: 4.9, reviewCount }
+            : undefined,
+      }),
+    );
+    setStructuredData("website", buildWebSiteSchema(brand, origin));
+
     injectGA(s.gaTrackingId);
   }, [
     s.address1,
@@ -153,11 +99,14 @@ export function SiteHead() {
     s.gaTrackingId,
     s.gscVerification,
     s.hotline1,
-    phone,
     s.instagramUrl,
     s.logoUrl,
     s.youtubeUrl,
     ogImage,
+    origin,
+    testimonials.length,
+    s.workingHours,
   ]);
+
   return null;
 }
