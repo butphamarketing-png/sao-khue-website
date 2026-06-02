@@ -1,4 +1,6 @@
 import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clock } from "lucide-react";
+import { SiMessenger } from "react-icons/si";
+import { facebookUrlsFromSettings, messengerUrlsFromSettings } from "@/lib/social-links";
 import { Link } from "wouter";
 import { BrandLogo } from "@/components/BrandLogo";
 import { MapEmbed } from "@/components/MapEmbed";
@@ -13,6 +15,8 @@ import {
 
 export function Footer() {
   const s = useSiteSettings();
+  const facebookUrls = facebookUrlsFromSettings(s);
+  const messengerUrls = messengerUrlsFromSettings(s);
   const mapEmbed = useGoogleMapEmbed();
   const menu = useNavMenu();
   const slogan = useTopBarSlogan();
@@ -305,17 +309,21 @@ export function Footer() {
 
 
 
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex flex-wrap gap-3">
 
-              {s.facebookUrl && (
+              {facebookUrls.map((url, index) => (
 
                 <a
 
-                  href={s.facebookUrl}
+                  key={`fb-${index}-${url}`}
+
+                  href={url}
 
                   target="_blank"
 
                   rel="noreferrer"
+
+                  aria-label={facebookUrls.length > 1 ? `Facebook ${index + 1}` : "Facebook"}
 
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 transition-colors hover:bg-accent hover:text-white"
 
@@ -325,7 +333,31 @@ export function Footer() {
 
                 </a>
 
-              )}
+              ))}
+
+              {messengerUrls.map((url, index) => (
+
+                <a
+
+                  key={`messenger-${index}-${url}`}
+
+                  href={url}
+
+                  target="_blank"
+
+                  rel="noreferrer"
+
+                  aria-label={messengerUrls.length > 1 ? `Messenger ${index + 1}` : "Messenger"}
+
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0084ff] transition-colors hover:bg-[#006fd6]"
+
+                >
+
+                  <SiMessenger size={20} />
+
+                </a>
+
+              ))}
 
               {s.youtubeUrl && (
 

@@ -21,10 +21,16 @@ export const siteSettingsTable = pgTable("site_settings", {
   facebookUrl: text("facebook_url")
     .notNull()
     .default("https://facebook.com/kientrucsaokhue"),
+  facebookUrl2: text("facebook_url2").notNull().default(""),
+  facebookLabel1: text("facebook_label1").notNull().default(""),
+  facebookLabel2: text("facebook_label2").notNull().default(""),
   youtubeUrl: text("youtube_url").notNull().default(""),
   instagramUrl: text("instagram_url").notNull().default(""),
   zaloPhone: text("zalo_phone").notNull().default("0909075668"),
   messengerUrl: text("messenger_url").notNull().default(""),
+  messengerUrl2: text("messenger_url2").notNull().default(""),
+  messengerLabel1: text("messenger_label1").notNull().default(""),
+  messengerLabel2: text("messenger_label2").notNull().default(""),
   footerDescription: text("footer_description")
     .notNull()
     .default(

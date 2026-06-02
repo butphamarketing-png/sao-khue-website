@@ -18,12 +18,24 @@ export function parseGscVerificationToken(raw: string): string {
   return trimmed.replace(/\s+/g, "");
 }
 
-/** Chỉ giữ iframe Google Maps (bỏ script). */
+function isGoogleMapsEmbedSource(value: string): boolean {
+  return /google\.com\/maps|maps\.google\.com/i.test(value);
+}
+
+/** Chỉ giữ iframe Google Maps (bỏ script). Chấp nhận dán cả đoạn iframe hoặc chỉ URL embed. */
 export function sanitizeGoogleMapEmbed(raw: string): string {
   const trimmed = raw.trim();
   if (!trimmed) return "";
-  if (!/<iframe/i.test(trimmed)) return "";
-  if (!/google\.com\/maps/i.test(trimmed)) return "";
+
+  if (!/<iframe/i.test(trimmed)) {
+    const src = trimmed.replace(/^["']|["']$/g, "");
+    if (isGoogleMapsEmbedSource(src) && /^https?:\/\//i.test(src)) {
+      return `<iframe src="${src}" width="600" height="450" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+    }
+    return "";
+  }
+
+  if (!isGoogleMapsEmbedSource(trimmed)) return "";
   return trimmed.replace(/<script\b[^<]*<\/script>/gi, "");
 }
 

@@ -426,10 +426,12 @@ components:
         workingHours: { type: string }
         logoUrl: { type: string }
         facebookUrl: { type: string }
+        facebookUrl2: { type: string }
         youtubeUrl: { type: string }
         instagramUrl: { type: string }
         zaloPhone: { type: string }
         messengerUrl: { type: string }
+        messengerUrl2: { type: string }
         footerDescription: { type: string }
         gaTrackingId: { type: string }
         gscVerification: { type: string }
@@ -447,10 +449,12 @@ components:
         workingHours: { type: string }
         logoUrl: { type: string }
         facebookUrl: { type: string }
+        facebookUrl2: { type: string }
         youtubeUrl: { type: string }
         instagramUrl: { type: string }
         zaloPhone: { type: string }
         messengerUrl: { type: string }
+        messengerUrl2: { type: string }
         footerDescription: { type: string }
         gaTrackingId: { type: string }
         gscVerification: { type: string }

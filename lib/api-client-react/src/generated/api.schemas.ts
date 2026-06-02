@@ -94,10 +94,12 @@ export interface SiteSettings {
   workingHours: string;
   logoUrl: string;
   facebookUrl: string;
+  facebookUrl2?: string;
   youtubeUrl: string;
   instagramUrl: string;
   zaloPhone: string;
   messengerUrl: string;
+  messengerUrl2?: string;
   footerDescription: string;
   gaTrackingId: string;
   gscVerification: string;
@@ -115,10 +117,12 @@ export interface SiteSettingsInput {
   workingHours: string;
   logoUrl: string;
   facebookUrl: string;
+  facebookUrl2?: string;
   youtubeUrl: string;
   instagramUrl: string;
   zaloPhone: string;
   messengerUrl: string;
+  messengerUrl2?: string;
   footerDescription: string;
   gaTrackingId: string;
   gscVerification: string;

@@ -52,6 +52,7 @@ const siteMapGroups: { title: string; items: SiteMapItem[] }[] = [
     title: "Hệ thống",
     items: [
       { label: "Google & Maps", view: "settings-google", desc: "Analytics, Search Console, bản đồ" },
+      { label: "Thanh liên hệ mobile", view: "settings-mobile-bar", desc: "Maps, Facebook, Messenger, Zalo" },
       { label: "Thông tin website", view: "settings-general", desc: "Logo, hotline, slogan" },
     ],
   },

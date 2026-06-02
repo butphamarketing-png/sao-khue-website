@@ -1,24 +1,91 @@
-import { PhoneCall, MessageCircleMore } from "lucide-react";
+import { useState, type MouseEvent, type ReactNode } from "react";
+import { Facebook, MapPin, PhoneCall } from "lucide-react";
 import { SiMessenger, SiZalo } from "react-icons/si";
+import { SocialLinkPickerSheet } from "@/components/SocialLinkPickerSheet";
+import {
+  facebookOptionsFromSettings,
+  facebookUrlsFromSettings,
+  googleMapsUrlFromAddress,
+  messengerOptionsFromSettings,
+  messengerUrlsFromSettings,
+  openExternalUrl,
+  type SocialLinkOption,
+} from "@/lib/social-links";
 import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
+
+type PickerState = {
+  title: string;
+  description: string;
+  options: SocialLinkOption[];
+};
 
 export function FloatingButtons() {
   const s = useSiteSettings();
   const phone = usePrimaryPhone();
-  const zaloHref = s.zaloPhone ? `https://zalo.me/${s.zaloPhone.replace(/\s+/g, "")}` : "#";
+  const zaloHref = s.zaloPhone ? `https://zalo.me/${s.zaloPhone.replace(/\s+/g, "")}` : null;
+  const mapsHref = googleMapsUrlFromAddress(s.address1);
+  const facebookOptions = facebookOptionsFromSettings(s);
+  const messengerOptions = messengerOptionsFromSettings(s);
+  const facebookUrls = facebookUrlsFromSettings(s);
+  const messengerUrls = messengerUrlsFromSettings(s);
+
+  const [picker, setPicker] = useState<PickerState | null>(null);
+
+  function openSocialChoice(
+    title: string,
+    description: string,
+    options: SocialLinkOption[],
+  ) {
+    if (options.length === 0) return;
+    if (options.length === 1) {
+      openExternalUrl(options[0].url);
+      return;
+    }
+    setPicker({ title, description, options });
+  }
 
   return (
     <>
       <div className="fixed bottom-24 right-4 z-50 hidden flex-col gap-4 md:flex">
-        {s.zaloPhone && (
+        {s.zaloPhone && zaloHref && (
           <QuickFab href={zaloHref} label="Chat Zalo" className="bg-blue-500">
             <SiZalo size={24} />
           </QuickFab>
         )}
 
-        {s.messengerUrl && (
-          <QuickFab href={s.messengerUrl} label="Chat Messenger" className="bg-blue-600">
+        {messengerUrls.length > 0 && (
+          <QuickFab
+            href="#"
+            label="Messenger"
+            className="bg-[#0084ff]"
+            onClick={(e) => {
+              e.preventDefault();
+              openSocialChoice(
+                "Chọn Messenger",
+                "Bạn muốn nhắn tin qua tài khoản nào?",
+                messengerOptions,
+              );
+            }}
+          >
             <SiMessenger size={24} />
+          </QuickFab>
+        )}
+
+        {facebookUrls.length > 0 && (
+          <QuickFab
+            href="#"
+            label="Facebook"
+            className="bg-[#1877f2]"
+            onClick={(e) => {
+              e.preventDefault();
+              openSocialChoice(
+                "Chọn Facebook",
+                "Bạn muốn xem fanpage nào?",
+                facebookOptions,
+              );
+            }}
+          >
+            <Facebook size={24} />
           </QuickFab>
         )}
 
@@ -31,35 +98,80 @@ export function FloatingButtons() {
       </div>
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
-        <div className="grid grid-cols-3 gap-3">
-          {phone && (
-            <MobileAction href={telHref(phone)} className="bg-accent text-white">
-              <PhoneCall size={18} />
-              Gọi ngay
-            </MobileAction>
-          )}
-          {s.zaloPhone && (
-            <MobileAction href={zaloHref} className="bg-blue-500 text-white">
-              <SiZalo size={18} />
-              Zalo
-            </MobileAction>
-          )}
-          {s.messengerUrl ? (
-            <MobileAction href={s.messengerUrl} className="bg-[#17579d] text-white">
-              <SiMessenger size={18} />
-              Messenger
-            </MobileAction>
-          ) : (
-            <a
-              href="/lien-he"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#17579d] px-4 py-3 text-sm font-semibold text-white shadow-sm"
+        <div className="grid grid-cols-4 gap-2">
+          {mapsHref ? (
+            <MobileBarButton
+              label="Maps"
+              className="bg-emerald-600 text-white"
+              onClick={() => openExternalUrl(mapsHref)}
             >
-              <MessageCircleMore size={18} />
-              Liên hệ
-            </a>
+              <MapPin size={18} />
+            </MobileBarButton>
+          ) : (
+            <MobileBarButton
+              label="Maps"
+              className="bg-slate-300 text-white"
+              disabled
+            >
+              <MapPin size={18} />
+            </MobileBarButton>
+          )}
+
+          <MobileBarButton
+            label="Facebook"
+            className="bg-[#1877f2] text-white"
+            disabled={facebookOptions.length === 0}
+            onClick={() =>
+              openSocialChoice(
+                "Chọn Facebook",
+                "Bạn muốn xem fanpage nào?",
+                facebookOptions,
+              )
+            }
+          >
+            <Facebook size={18} />
+          </MobileBarButton>
+
+          <MobileBarButton
+            label="Messenger"
+            className="bg-[#0084ff] text-white"
+            disabled={messengerOptions.length === 0}
+            onClick={() =>
+              openSocialChoice(
+                "Chọn Messenger",
+                "Bạn muốn nhắn tin qua tài khoản nào?",
+                messengerOptions,
+              )
+            }
+          >
+            <SiMessenger size={18} />
+          </MobileBarButton>
+
+          {zaloHref ? (
+            <MobileBarButton
+              label="Zalo"
+              className="bg-blue-500 text-white"
+              onClick={() => openExternalUrl(zaloHref)}
+            >
+              <SiZalo size={18} />
+            </MobileBarButton>
+          ) : (
+            <MobileBarButton label="Zalo" className="bg-slate-300 text-white" disabled>
+              <SiZalo size={18} />
+            </MobileBarButton>
           )}
         </div>
       </div>
+
+      <SocialLinkPickerSheet
+        open={picker !== null}
+        onOpenChange={(open) => {
+          if (!open) setPicker(null);
+        }}
+        title={picker?.title ?? ""}
+        description={picker?.description}
+        options={picker?.options ?? []}
+      />
     </>
   );
 }
@@ -69,15 +181,18 @@ function QuickFab({
   label,
   className,
   children,
+  onClick,
 }: {
   href: string;
   label: string;
   className: string;
-  children: React.ReactNode;
+  children: ReactNode;
+  onClick?: (e: MouseEvent<HTMLAnchorElement>) => void;
 }) {
   return (
     <a
       href={href}
+      onClick={onClick}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noreferrer" : undefined}
       className={`group relative flex h-14 w-14 items-center justify-center rounded-full text-white shadow-xl transition-all duration-300 hover:scale-110 ${className}`}
@@ -91,23 +206,28 @@ function QuickFab({
   );
 }
 
-function MobileAction({
-  href,
+function MobileBarButton({
+  label,
   className,
   children,
+  disabled,
+  onClick,
 }: {
-  href: string;
+  label: string;
   className: string;
-  children: React.ReactNode;
+  children: ReactNode;
+  disabled?: boolean;
+  onClick?: () => void;
 }) {
   return (
-    <a
-      href={href}
-      target={href.startsWith("http") ? "_blank" : undefined}
-      rel={href.startsWith("http") ? "noreferrer" : undefined}
-      className={`inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-semibold shadow-sm ${className}`}
+    <button
+      type="button"
+      disabled={disabled}
+      onClick={onClick}
+      className={`inline-flex flex-col items-center justify-center gap-1 rounded-2xl px-1 py-3 text-[11px] font-semibold shadow-sm disabled:opacity-45 sm:text-xs ${className}`}
     >
       {children}
-    </a>
+      <span>{label}</span>
+    </button>
   );
 }

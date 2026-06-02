@@ -12,6 +12,7 @@ import { useAuth } from "@workspace/replit-auth-web";
 import {
   type Post,
   type SiteSettingsInput,
+  getGetSiteSettingsQueryKey,
   useCreatePost,
   useDeletePost,
   useGetSiteSettings,
@@ -80,6 +81,7 @@ import {
 } from "@/lib/home-content";
 import { ImageUploadField } from "@/components/ImageUploadField";
 import { AdminDashboardExtras } from "@/components/admin/AdminDashboardExtras";
+import { MobileContactBarEditor } from "@/components/admin/MobileContactBarEditor";
 import { AdminSeoPanel } from "@/components/admin/AdminSeoPanel";
 import { FeaturedImagePanel } from "@/components/admin/FeaturedImagePanel";
 import { PostRichTextEditor } from "@/components/admin/PostRichTextEditor";
@@ -91,6 +93,11 @@ import {
   plainTextFromHtml,
 } from "@/lib/admin-post-seo";
 import { GSC_VERIFICATION_TOKEN } from "@/lib/gsc-verification";
+import {
+  mergeGoogleFieldsWithDraft,
+  readGoogleFieldsFromApi,
+  saveGoogleSettingsDraft,
+} from "@/lib/admin-google-settings";
 import { SEO_DESC_MAX, SEO_TITLE_MAX } from "@/lib/seo";
 import {
   parseGaMeasurementId,
@@ -193,6 +200,7 @@ import {
   Search,
   Save,
   Settings2,
+  Smartphone,
   ShieldCheck,
   Trash2,
   MessageSquareQuote,
@@ -233,6 +241,12 @@ type ExtendedSiteSettingsInput = SiteSettingsInput & {
   homeFeaturedPostsJson: string;
   opengraphImageUrl: string;
   googleMapEmbed: string;
+  facebookUrl2: string;
+  facebookLabel1: string;
+  facebookLabel2: string;
+  messengerUrl2: string;
+  messengerLabel1: string;
+  messengerLabel2: string;
 };
 
 type FormState = {
@@ -279,10 +293,16 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   logoUrl: defaultSiteSettings.logoUrl || BUNDLED_LOGO_URL,
   loadingLogoUrl: defaultSiteSettings.loadingLogoUrl || BUNDLED_LOGO_URL,
   facebookUrl: defaultSiteSettings.facebookUrl,
+  facebookUrl2: defaultSiteSettings.facebookUrl2,
+  facebookLabel1: defaultSiteSettings.facebookLabel1,
+  facebookLabel2: defaultSiteSettings.facebookLabel2,
   youtubeUrl: defaultSiteSettings.youtubeUrl,
   instagramUrl: defaultSiteSettings.instagramUrl,
   zaloPhone: defaultSiteSettings.zaloPhone,
   messengerUrl: defaultSiteSettings.messengerUrl,
+  messengerUrl2: defaultSiteSettings.messengerUrl2,
+  messengerLabel1: defaultSiteSettings.messengerLabel1,
+  messengerLabel2: defaultSiteSettings.messengerLabel2,
   footerDescription: defaultSiteSettings.footerDescription,
   heroSlidesJson: defaultSiteSettings.heroSlidesJson,
   homeCommitmentsJson: defaultSiteSettings.homeCommitmentsJson,
@@ -439,6 +459,24 @@ function buildSettingsFromApi(
       (rest.homeFeaturedPostsJson as string) ?? stringifyCompact(defaultFeaturedPosts),
     opengraphImageUrl:
       (rest.opengraphImageUrl as string) ?? defaultExtendedSettings.opengraphImageUrl,
+    facebookUrl2: (rest.facebookUrl2 as string) ?? (rest.facebook_url2 as string) ?? defaultExtendedSettings.facebookUrl2,
+    facebookLabel1:
+      (rest.facebookLabel1 as string) ?? (rest.facebook_label1 as string) ?? defaultExtendedSettings.facebookLabel1,
+    facebookLabel2:
+      (rest.facebookLabel2 as string) ?? (rest.facebook_label2 as string) ?? defaultExtendedSettings.facebookLabel2,
+    messengerUrl2:
+      (rest.messengerUrl2 as string) ?? (rest.messenger_url2 as string) ?? defaultExtendedSettings.messengerUrl2,
+    messengerLabel1:
+      (rest.messengerLabel1 as string) ?? (rest.messenger_label1 as string) ?? defaultExtendedSettings.messengerLabel1,
+    messengerLabel2:
+      (rest.messengerLabel2 as string) ?? (rest.messenger_label2 as string) ?? defaultExtendedSettings.messengerLabel2,
+    ...mergeGoogleFieldsWithDraft(
+      readGoogleFieldsFromApi(rest as Record<string, unknown>, {
+        googleMapEmbed: defaultExtendedSettings.googleMapEmbed,
+        gaTrackingId: defaultExtendedSettings.gaTrackingId,
+        gscVerification: defaultExtendedSettings.gscVerification,
+      }),
+    ),
   };
 }
 
@@ -944,6 +982,21 @@ export default function Admin() {
   }
 
   async function saveSettings() {
+    const rawMapEmbed = settingsForm.googleMapEmbed;
+    const googleMapEmbed = sanitizeGoogleMapEmbed(rawMapEmbed);
+    if (rawMapEmbed.trim() && !googleMapEmbed) {
+      alert(
+        "Mã Google Maps không hợp lệ. Hãy dán iframe từ Google Maps (Chia sẻ → Nhúng bản đồ) hoặc dán link embed dạng https://www.google.com/maps/embed?...",
+      );
+      return;
+    }
+
+    const googleFields = {
+      googleMapEmbed,
+      gaTrackingId: parseGaMeasurementId(settingsForm.gaTrackingId),
+      gscVerification: parseGscVerificationToken(settingsForm.gscVerification),
+    };
+
     const payload: ExtendedSiteSettingsInput = {
       ...settingsForm,
       heroSlidesJson: stringifyCompact(heroSlides),
@@ -966,19 +1019,33 @@ export default function Admin() {
       navMenuJson: stringifyCompact(navMenuItems),
       pageBannersJson: stringifyCompact(pageBanners),
       homeFeaturedPostsJson: stringifyCompact(featuredPosts),
-      gaTrackingId: parseGaMeasurementId(settingsForm.gaTrackingId),
-      gscVerification: parseGscVerificationToken(settingsForm.gscVerification),
-      googleMapEmbed: sanitizeGoogleMapEmbed(settingsForm.googleMapEmbed),
+      ...googleFields,
     };
 
     try {
-      await updateSiteSettings.mutateAsync({
+      const updated = await updateSiteSettings.mutateAsync({
         data: payload as unknown as SiteSettingsInput,
       });
+      const googleFromServer = readGoogleFieldsFromApi(
+        updated as unknown as Record<string, unknown>,
+        googleFields,
+      );
+      saveGoogleSettingsDraft(googleFromServer);
+      qc.setQueryData(getGetSiteSettingsQueryKey(), updated);
+      setSettingsForm((prev) => ({ ...prev, ...googleFromServer }));
       await refetchSettings();
       setSettingsSavedAt(Date.now());
     } catch (err: unknown) {
-      alert("Loi luu cai dat: " + (err instanceof Error ? err.message : String(err)));
+      const message = err instanceof Error ? err.message : String(err);
+      if (/google_map_embed|column/i.test(message)) {
+        saveGoogleSettingsDraft(googleFields);
+        setSettingsForm((prev) => ({ ...prev, ...googleFields }));
+        alert(
+          "Chưa lưu được lên database (thiếu cột google_map_embed). Đã giữ bản nháp trên trình duyệt — chạy file supabase/add-google-map-embed.sql trên Supabase rồi bấm Lưu lại.",
+        );
+        return;
+      }
+      alert("Lỗi lưu cài đặt: " + message);
     }
   }
 
@@ -1088,6 +1155,23 @@ export default function Admin() {
     setSettingsForm(defaults);
   }
 
+  function restoreMobileBarDefaults() {
+    if (!confirm("Khôi phục thanh liên hệ mobile về mặc định?")) return;
+    setSettingsForm((prev) => ({
+      ...prev,
+      address1: defaultExtendedSettings.address1,
+      zaloPhone: defaultExtendedSettings.zaloPhone,
+      facebookUrl: defaultExtendedSettings.facebookUrl,
+      facebookUrl2: defaultExtendedSettings.facebookUrl2,
+      facebookLabel1: defaultExtendedSettings.facebookLabel1,
+      facebookLabel2: defaultExtendedSettings.facebookLabel2,
+      messengerUrl: defaultExtendedSettings.messengerUrl,
+      messengerUrl2: defaultExtendedSettings.messengerUrl2,
+      messengerLabel1: defaultExtendedSettings.messengerLabel1,
+      messengerLabel2: defaultExtendedSettings.messengerLabel2,
+    }));
+  }
+
   function renderContent() {
     switch (view) {
       case "dashboard":
@@ -1167,8 +1251,15 @@ export default function Admin() {
                     color="bg-[#0f766e]"
                     icon={Settings2}
                     title="Thiết lập website"
-                    desc="Logo, hotline, footer, mạng xã hội và slogan top bar."
+                    desc="Logo, hotline, footer và slogan top bar."
                     onClick={() => setView("settings-general")}
+                  />
+                  <DashboardLinkCard
+                    color="bg-[#0084ff]"
+                    icon={Smartphone}
+                    title="Thanh liên hệ mobile"
+                    desc="Maps, Facebook, Messenger, Zalo — menu chọn 2 fanpage / 2 Messenger."
+                    onClick={() => setView("settings-mobile-bar")}
                   />
                   <DashboardLinkCard
                     color="bg-violet-600"
@@ -1865,35 +1956,11 @@ export default function Admin() {
             primaryLabel="Lưu"
           >
             <div className="space-y-6">
-              <div className="flex flex-wrap gap-2">
-                <Button
-                  type="button"
-                  className="rounded-md bg-[#1f7ae0] text-white hover:bg-[#1867c0]"
-                  disabled={updateSiteSettings.isPending}
-                  onClick={() => void saveSettings()}
-                >
-                  Lưu
-                </Button>
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="rounded-md"
-                  onClick={() => {
-                    if (!siteData) return;
-                    const built = restoreAdminSettingsFields(
-                      buildSettingsFromApi(siteData as Record<string, string | number>),
-                    );
-                    setSettingsForm((prev) => ({
-                      ...prev,
-                      googleMapEmbed: built.googleMapEmbed ?? "",
-                      gaTrackingId: built.gaTrackingId ?? "",
-                      gscVerification: built.gscVerification ?? "",
-                    }));
-                  }}
-                >
-                  Làm lại
-                </Button>
-              </div>
+              <p className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">
+                Sau khi bấm <strong>Lưu</strong> ở thanh trên, đợi dòng &quot;Đã lưu lúc…&quot;. Nếu thoát ra vào lại mà
+                mất nội dung, chạy SQL{" "}
+                <code className="rounded bg-white px-1">supabase/add-google-map-embed.sql</code> trên Supabase.
+              </p>
 
               <Field label="Tọa độ Google Map (iframe)">
                 <Textarea
@@ -1942,11 +2009,29 @@ export default function Admin() {
           </SettingsScreen>
         );
 
+      case "settings-mobile-bar":
+        return (
+          <SettingsScreen
+            title="Thanh liên hệ mobile"
+            desc="4 nút cố định: Maps, Facebook, Messenger, Zalo. Facebook và Messenger có menu chọn khi có 2 link."
+            savedAt={settingsSavedAt}
+            isSaving={updateSiteSettings.isPending}
+            onSave={saveSettings}
+            onRestoreDefaults={restoreMobileBarDefaults}
+          >
+            <MobileContactBarEditor
+              settings={settingsForm}
+              onChange={updateSettingField}
+              onOpenGoogleMaps={() => setView("settings-google")}
+            />
+          </SettingsScreen>
+        );
+
       case "settings-general":
         return (
           <SettingsScreen
             title="Thông tin website"
-            desc="Logo, hotline, footer, mạng xã hội và slogan top bar."
+            desc="Logo, hotline, footer và slogan top bar."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
@@ -2021,7 +2106,7 @@ export default function Admin() {
                 </div>
               </FormSection>
 
-              <FormSection title="Địa chỉ và mạng xã hội">
+              <FormSection title="Địa chỉ">
                 <div className="grid grid-cols-1 gap-4">
                   <Field label="Địa chỉ trụ sở">
                     <Input
@@ -2035,12 +2120,29 @@ export default function Admin() {
                       onChange={(e) => updateSettingField("address2", e.target.value)}
                     />
                   </Field>
-                  <Field label="Facebook URL">
+                  <p className="text-sm text-slate-600">
+                    Cấu hình nút Maps, Facebook, Messenger, Zalo trên điện thoại tại menu{" "}
+                    <button
+                      type="button"
+                      className="font-semibold text-[#17579d] underline"
+                      onClick={() => setView("settings-mobile-bar")}
+                    >
+                      Thanh liên hệ mobile
+                    </button>
+                    .
+                  </p>
+                </div>
+              </FormSection>
+
+              <FormSection title="Mạng xã hội (header / footer)">
+                <div className="grid grid-cols-1 gap-4">
+                  <Field label="Facebook URL chính">
                     <Input
                       value={settingsForm.facebookUrl}
                       onChange={(e) =>
                         updateSettingField("facebookUrl", e.target.value)
                       }
+                      placeholder="https://facebook.com/..."
                     />
                   </Field>
                   <Field label="Youtube URL">
@@ -2054,20 +2156,6 @@ export default function Admin() {
                       value={settingsForm.instagramUrl}
                       onChange={(e) =>
                         updateSettingField("instagramUrl", e.target.value)
-                      }
-                    />
-                  </Field>
-                  <Field label="So Zalo">
-                    <Input
-                      value={settingsForm.zaloPhone}
-                      onChange={(e) => updateSettingField("zaloPhone", e.target.value)}
-                    />
-                  </Field>
-                  <Field label="Messenger URL">
-                    <Input
-                      value={settingsForm.messengerUrl}
-                      onChange={(e) =>
-                        updateSettingField("messengerUrl", e.target.value)
                       }
                     />
                   </Field>

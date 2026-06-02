@@ -28,6 +28,7 @@ import {
   Star,
   Inbox,
   SearchCheck,
+  Smartphone,
 } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
 import { SidebarButton, SidebarGroupBlock } from "./admin-ui";
@@ -36,6 +37,7 @@ export type AdminView =
   | "dashboard"
   | "posts"
   | "settings-general"
+  | "settings-mobile-bar"
   | "settings-google"
   | "settings-hero"
   | "settings-about"
@@ -151,6 +153,7 @@ export function AdminShell({
         <NavItem view={view} target="settings-banners" setView={setView} setMobileOpen={setMobileOpen} icon={PanelTop} label="Banner trang" />
         <NavItem view={view} target="settings-seo" setView={setView} setMobileOpen={setMobileOpen} icon={SearchCheck} label="SEO tổng quan" />
         <NavItem view={view} target="settings-google" setView={setView} setMobileOpen={setMobileOpen} icon={Globe} label="Google & Maps" />
+        <NavItem view={view} target="settings-mobile-bar" setView={setView} setMobileOpen={setMobileOpen} icon={Smartphone} label="Thanh liên hệ mobile" />
         <NavItem view={view} target="settings-general" setView={setView} setMobileOpen={setMobileOpen} icon={Globe} label="Thông tin website" />
       </SidebarGroupBlock>
 

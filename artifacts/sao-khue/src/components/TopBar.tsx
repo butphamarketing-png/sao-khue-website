@@ -1,10 +1,14 @@
 import { Clock, Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
-import { useSiteSettings, telHref, useNavMenu, useTopBarSlogan, usePrimaryPhone } from "@/lib/site-settings";
+import { SiMessenger } from "react-icons/si";
+import { facebookUrlsFromSettings, messengerUrlsFromSettings } from "@/lib/social-links";
+import { useSiteSettings, telHref, useTopBarSlogan, usePrimaryPhone } from "@/lib/site-settings";
 
 export function TopBar() {
   const s = useSiteSettings();
   const slogan = useTopBarSlogan();
   const phone = usePrimaryPhone();
+  const facebookUrls = facebookUrlsFromSettings(s);
+  const messengerUrls = messengerUrlsFromSettings(s);
 
   return (
     <div className="hidden border-b border-white/10 bg-gradient-to-r from-slate-950 via-primary to-[#0c4a8a] py-2 text-sm text-white md:block">
@@ -49,16 +53,30 @@ export function TopBar() {
             </div>
           )}
           <div className="flex items-center gap-1 border-l border-white/15 pl-4">
-            {s.facebookUrl && (
+            {facebookUrls.map((url, index) => (
               <a
-                href={s.facebookUrl}
+                key={`fb-${index}-${url}`}
+                href={url}
                 target="_blank"
                 rel="noreferrer"
+                aria-label={facebookUrls.length > 1 ? `Facebook ${index + 1}` : "Facebook"}
                 className="rounded-full p-1.5 transition hover:bg-white/10 hover:text-accent"
               >
                 <Facebook size={15} />
               </a>
-            )}
+            ))}
+            {messengerUrls.map((url, index) => (
+              <a
+                key={`messenger-${index}-${url}`}
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={messengerUrls.length > 1 ? `Messenger ${index + 1}` : "Messenger"}
+                className="rounded-full p-1.5 transition hover:bg-white/10 hover:text-[#7ec8ff]"
+              >
+                <SiMessenger size={15} />
+              </a>
+            ))}
             {s.youtubeUrl && (
               <a
                 href={s.youtubeUrl}
