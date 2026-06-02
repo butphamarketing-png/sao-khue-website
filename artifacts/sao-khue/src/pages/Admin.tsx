@@ -119,6 +119,8 @@ import {
   ToolbarButton,
 } from "@/components/admin/admin-ui";
 import { defaultNavMenu, type MenuItem } from "@/lib/menu";
+import { HERO_SLIDE_SPEC, HERO_SLIDE_UPLOAD_HINT } from "@/lib/hero-media";
+import { resolveLucideIcon } from "@/lib/lucide-icons";
 import {
   type CommitmentItem,
   type HeroSlide,
@@ -324,6 +326,16 @@ function parseArrayValue<T>(value: string | undefined, fallback: T[]): T[] {
   } catch {
     return fallback;
   }
+}
+
+function normalizeCommitmentItems(items: CommitmentItem[]): CommitmentItem[] {
+  if (!items.length) return defaultCommitments;
+  return items.map((item, index) => ({
+    id: Number(item?.id) || index + 1,
+    icon: typeof item?.icon === "string" && item.icon.trim() ? item.icon : "shield",
+    title: item?.title ?? "",
+    desc: item?.desc ?? "",
+  }));
 }
 
 function stringifyCompact(value: unknown) {
@@ -537,8 +549,10 @@ export default function Admin() {
       restoreHeroSlides(parseArrayValue<HeroSlide>(built.heroSlidesJson, defaultHeroSlides)),
     );
     setCommitments(
-      restoreCommitments(
-        parseArrayValue<CommitmentItem>(built.homeCommitmentsJson, defaultCommitments),
+      normalizeCommitmentItems(
+        restoreCommitments(
+          parseArrayValue<CommitmentItem>(built.homeCommitmentsJson, defaultCommitments),
+        ),
       ),
     );
     setPricingItems(
@@ -2105,16 +2119,26 @@ export default function Admin() {
       case "settings-hero":
         return (
           <SettingsScreen
-            title="Hero homepage"
-            desc="Nhập slide theo từng item, không cần sửa JSON thủ công."
+            title="Slideshow / Hero"
+            desc={`Ảnh slide chuẩn ${HERO_SLIDE_SPEC.label} (tỷ lệ ${HERO_SLIDE_SPEC.ratioLabel}). Khung hiển thị cố định trên mọi thiết bị.`}
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
             onRestoreDefaults={restoreHeroDefaults}
-            primaryLabel="Lưu hero"
+            primaryLabel="Lưu slideshow"
           >
             <div className="grid grid-cols-1 gap-6 2xl:grid-cols-[minmax(0,1.55fr)_420px]">
               <div className="space-y-4">
+                <div className="rounded-xl border border-[#17579d]/20 bg-[#17579d]/5 px-4 py-3 text-sm text-slate-700">
+                  <p className="font-semibold text-[#17579d]">Kích thước slideshow trang chủ</p>
+                  <ul className="mt-2 list-inside list-disc space-y-1 text-xs leading-relaxed text-slate-600">
+                    <li>
+                      Upload: <strong>{HERO_SLIDE_SPEC.label}</strong> ({HERO_SLIDE_SPEC.ratioLabel})
+                    </li>
+                    <li>Chiều cao tối đa trên desktop: {HERO_SLIDE_SPEC.maxHeightPx}px</li>
+                    <li>Mobile/tablet: tự co giãn theo chiều ngang, không méo ảnh</li>
+                  </ul>
+                </div>
                 {heroSlides.map((slide, index) => (
                   <RepeatCard
                     key={`hero-${index}`}
@@ -2129,7 +2153,7 @@ export default function Admin() {
                     }
                   >
                     <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-                      <Field label="Hinh anh">
+                      <Field label="Hình ảnh">
                         <ImageUploadField
                           label=""
                           value={slide.image}
@@ -2141,6 +2165,13 @@ export default function Admin() {
                             )
                           }
                           folder="hero"
+                          previewAspectClass={HERO_SLIDE_SPEC.aspectClass}
+                          recommendedSize={{
+                            width: HERO_SLIDE_SPEC.width,
+                            height: HERO_SLIDE_SPEC.height,
+                            label: HERO_SLIDE_SPEC.label,
+                          }}
+                          hint={HERO_SLIDE_UPLOAD_HINT}
                         />
                       </Field>
                       <Field label="Sub title">
@@ -3200,16 +3231,19 @@ function HeroPreviewCard({
   const slide = slides[0] ?? defaultHeroSlides[0];
 
   return (
-    <PreviewShell label="Homepage" title="Hero section">
+    <PreviewShell label="Trang chủ" title="Slideshow / Hero">
+      <p className="mb-3 text-xs text-slate-500">
+        Khung preview: {HERO_SLIDE_SPEC.label} ({HERO_SLIDE_SPEC.ratioLabel}) — giống website
+      </p>
       <div className="overflow-hidden rounded-[28px] bg-slate-950">
-        <div className="relative min-h-[420px] overflow-hidden">
+        <div className="hero-home relative max-h-[420px]">
           <img
             src={slide.image || "/images/hero-bg.jpg"}
             alt={slide.title || "Hero"}
-            className="absolute inset-0 h-full w-full object-cover opacity-60"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/30" />
-          <div className="relative z-10 flex min-h-[420px] flex-col justify-end p-6 text-white">
+          <div className="relative z-10 flex h-full min-h-[200px] flex-col justify-end p-6 text-white">
             <div className="mb-3 inline-flex w-fit rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-white/80 backdrop-blur">
               {slide.subtitle || "Uy tin - chat luong - tan tam"}
             </div>
@@ -3293,28 +3327,30 @@ function CommitmentsPreviewCard({
 }: {
   items: CommitmentItem[];
 }) {
+  const previewItems = normalizeCommitmentItems(items).slice(0, 4);
+
   return (
     <PreviewShell label="Trang chủ" title="Cam kết nổi bật">
       <div className="grid gap-4">
-        {items.slice(0, 4).map((item, index) => {
+        {previewItems.map((item, index) => {
           const Icon = resolveLucideIcon(item.icon);
           return (
-          <div
-            key={`commitment-preview-${index}`}
-            className="flex gap-4 rounded-[24px] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-5 shadow-sm"
-          >
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-              <Icon size={22} />
+            <div
+              key={`commitment-preview-${item.id}-${index}`}
+              className="flex gap-4 rounded-[24px] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-5 shadow-sm"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <Icon size={22} />
+              </div>
+              <div>
+                <div className="text-lg font-bold text-slate-900">
+                  {item.title || `Cam kết ${index + 1}`}
+                </div>
+                <p className="mt-2 text-sm leading-7 text-slate-600">
+                  {item.desc || "Mô tả cam kết sẽ hiển thị ở đây."}
+                </p>
+              </div>
             </div>
-            <div>
-            <div className="text-lg font-bold text-slate-900">
-              {item.title || `Cam kết ${index + 1}`}
-            </div>
-            <p className="mt-2 text-sm leading-7 text-slate-600">
-              {item.desc || "Mô tả cam kết sẽ hiển thị ở đây."}
-            </p>
-            </div>
-          </div>
           );
         })}
       </div>

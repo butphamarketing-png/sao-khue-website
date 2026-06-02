@@ -14,7 +14,7 @@ export function HeroSection() {
   }, [slides.length]);
 
   return (
-    <section className="relative h-[min(88vh,820px)] min-h-[520px] w-full overflow-hidden bg-slate-900">
+    <section className="hero-home">
       <AnimatePresence mode="wait">
         {slides.map((slide, index) =>
           index === currentSlide ? (
@@ -29,14 +29,18 @@ export function HeroSection() {
               <img
                 src={slide.image}
                 alt={slide.title || `Slide ${index + 1}`}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-center"
+                width={1920}
+                height={820}
+                decoding="async"
+                fetchPriority={index === 0 ? "high" : "auto"}
               />
             </motion.div>
           ) : null,
         )}
       </AnimatePresence>
 
-      <div className="absolute bottom-10 left-0 right-0 z-10 flex justify-center gap-2">
+      <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center gap-2 sm:bottom-10">
         {slides.map((_, index) => (
           <button
             key={index}

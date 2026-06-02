@@ -358,3 +358,26 @@ html {
     inset: -1px;
   }
 }
+
+/* Hero slideshow — tỷ lệ cố định 1920×820, responsive mọi màn hình */
+.hero-home {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0f172a;
+  aspect-ratio: 1920 / 820;
+  max-height: 820px;
+  min-height: 280px;
+}
+
+@media (min-width: 768px) {
+  .hero-home {
+    min-height: 420px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-home {
+    min-height: 520px;
+  }
+}
