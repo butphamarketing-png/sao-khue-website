@@ -108,7 +108,7 @@ export function messengerOptionsFromSettings(s: {
   );
 }
 
-export const DEFAULT_GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/RFwHGqVyQTiAz4zy9";
+export const DEFAULT_GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/XcU4ACAs2tM159TGA";
 
 export function googleMapsUrlFromAddress(address?: string): string | null {
   const trimmed = address?.trim();

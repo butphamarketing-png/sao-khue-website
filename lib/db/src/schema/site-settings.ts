@@ -88,7 +88,7 @@ export const siteSettingsTable = pgTable("site_settings", {
   gscVerification: text("gsc_verification").notNull().default(""),
   googleMapsUrl: text("google_maps_url")
     .notNull()
-    .default("https://maps.app.goo.gl/RFwHGqVyQTiAz4zy9"),
+    .default("https://maps.app.goo.gl/XcU4ACAs2tM159TGA"),
   googleMapEmbed: text("google_map_embed").notNull().default(""),
   navMenuJson: text("nav_menu_json").notNull().default("[]"),
   pageBannersJson: text("page_banners_json").notNull().default("{}"),
