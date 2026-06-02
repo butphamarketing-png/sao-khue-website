@@ -1,15 +1,17 @@
+import { getPostPublicPathFromSlug } from "./post-url";
+
 /**
  * Old WordPress URLs indexed by Google (root-level slugs, no /bai-viet/ prefix).
  * Maps legacy slug → new canonical path.
  */
 export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   // Google / bookmarks — sửa nhà trọn gói
-  "sua-nha-tron-goi-tphcm": "/bai-viet/sua-nha-tron-goi-tphcm",
+  "sua-nha-tron-goi-tphcm": "/dich-vu/sua-chua-nha",
   "sua-nha-tron-goi": "/dich-vu/sua-chua-nha",
   "sua-chua-nha-tron-goi": "/dich-vu/sua-chua-nha",
 
   // Xây nhà trọn gói
-  "xay-nha-tron-goi-tphcm": "/bai-viet/xay-nha-tron-goi-tphcm",
+  "xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
   "xay-nha-tron-goi": "/dich-vu/xay-nha-tron-goi",
 
   // Top-level service shortcuts
@@ -21,18 +23,20 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "khuyen-mai-xay-dung": "/dich-vu/khuyen-mai",
 
   // Giới thiệu
-  "ve-chung-toi": "/gioi-thieu/ve-chung-toi",
-  "so-do-to-chuc": "/gioi-thieu/so-do-to-chuc",
-  "hoat-dong-sao-khue": "/gioi-thieu/hoat-dong",
-  "tuyen-dung": "/gioi-thieu/tuyen-dung",
+  "ve-chung-toi": "/bai-viet/ve-chung-toi",
+  "so-do-to-chuc": "/bai-viet/so-do-to-chuc",
+  "hoat-dong-sao-khue": "/bai-viet/hoat-dong-sao-khue",
+  "tuyen-dung": "/bai-viet/tuyen-dung",
 
   // WordPress taxonomy
   "category": "/dich-vu",
-  "tag": "/kinh-nghiem",
-  "author": "/gioi-thieu/ve-chung-toi",
+  "tag": "/tin-tuc",
+  "author": "/bai-viet/ve-chung-toi",
 
   // Common typos / old paths
-  "gioi-thieu-ve-chung-toi": "/gioi-thieu/ve-chung-toi",
+  "gioi-thieu-ve-chung-toi": "/bai-viet/ve-chung-toi",
+  "cong-ty-xay-dung-nha-pho-uy-tin-tphcm": "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+  "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm": "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
   "lien-he-ngay": "/lien-he",
   "bang-bao-gia": "/bao-gia",
   "kinh-nghiem-xay-dung": "/kinh-nghiem",
@@ -72,12 +76,12 @@ export function resolveLegacyPath(slug: string): string | null {
   }
 
   if (KNOWN_POST_SLUGS.has(normalized)) {
-    return `/bai-viet/${normalized}`;
+    return getPostPublicPathFromSlug(normalized);
   }
 
-  // Heuristic: long hyphenated slugs were usually WP posts
+  // Heuristic: long hyphenated slugs were usually WP posts / tin tức
   if (normalized.split("-").length >= 3) {
-    return `/bai-viet/${normalized}`;
+    return getPostPublicPathFromSlug(normalized);
   }
 
   return null;

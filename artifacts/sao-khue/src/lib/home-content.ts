@@ -114,7 +114,7 @@ export const defaultFaqs: FaqItem[] = [
   },
   {
     q: "Có được tư vấn và khảo sát miễn phí không?",
-    a: "Có. Hotline 0909 085 668 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
+    a: "Có. Hotline 0909 075 668 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
   },
   {
     q: "Bảo hành công trình bao lâu?",
@@ -235,8 +235,8 @@ export const defaultSectionMeta: HomeSectionMeta = {
     subtitle: "Những dự án nhà phố, biệt thự và cải tạo mà Sao Khuê đã thi công.",
   },
   news: {
-    title: "Tin tức & kinh nghiệm",
-    subtitle: "Cập nhật bài viết, kinh nghiệm xây dựng và xu hướng kiến trúc.",
+    title: "Tin tức",
+    subtitle: "Cập nhật bài viết, kinh nghiệm xây dựng và xu hướng kiến trúc tại TP.HCM.",
   },
   video: {
     title: "Video giới thiệu",
@@ -271,15 +271,15 @@ export const defaultCategoryPages: CategoryPagesMap = {
       "Khám phá các dự án nhà phố, biệt thự và cải tạo mà Sao Khuê đã thiết kế, thi công và bàn giao cho khách hàng tại TP.HCM và các tỉnh lân cận.",
     highlights: ["Nhà phố hiện đại", "Biệt thự sân vườn", "Cải tạo, nâng tầng"],
   },
-  "kinh-nghiem": {
-    title: "Kinh nghiệm xây dựng",
+  "tin-tuc": {
+    title: "Tin tức xây dựng",
     description:
-      "Cẩm nang, kinh nghiệm thực tế và kiến thức pháp lý giúp chủ nhà chủ động hơn khi xây nhà, chọn nhà thầu và giám sát công trình.",
-    highlights: ["Cẩm nang xây nhà A–Z", "Luật xây dựng cập nhật", "Phong thủy nhà ở"],
+      "Bài viết, cẩm nang, kinh nghiệm thực tế và kiến thức pháp lý giúp chủ nhà chủ động hơn khi xây nhà, chọn nhà thầu và giám sát công trình.",
+    highlights: ["Cẩm nang xây nhà A–Z", "Luật xây dựng cập nhật", "Báo giá & xu hướng"],
   },
 };
 
-export const CATEGORY_PAGE_KEYS = ["gioi-thieu", "dich-vu", "cong-trinh", "kinh-nghiem"] as const;
+export const CATEGORY_PAGE_KEYS = ["dich-vu", "cong-trinh", "tin-tuc"] as const;
 
 export type PageBannerContent = {
   title: string;

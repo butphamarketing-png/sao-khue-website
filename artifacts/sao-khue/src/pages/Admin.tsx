@@ -738,7 +738,9 @@ export default function Admin() {
       },
       {
         label: "Kinh nghiệm",
-        value: items.filter((post) => post.category === "kinh-nghiem").length,
+        value: items.filter(
+          (post) => post.category === "tin-tuc" || post.category === "kinh-nghiem",
+        ).length,
         icon: BookOpen,
         color: "bg-rose-500",
       },
@@ -2783,7 +2785,7 @@ export default function Admin() {
         return (
           <SettingsScreen
             title="Trang danh mục"
-            desc="Nội dung intro khi vào /gioi-thieu, /dich-vu, /cong-trinh, /kinh-nghiem."
+            desc="Nội dung intro khi vào /dich-vu, /cong-trinh, /tin-tuc."
             savedAt={settingsSavedAt}
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}

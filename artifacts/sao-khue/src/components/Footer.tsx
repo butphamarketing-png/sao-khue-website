@@ -152,7 +152,7 @@ export function Footer() {
 
               {menu
 
-                .filter((m) => !m.children || m.href === "/bao-gia" || m.href === "/lien-he")
+                .filter((m) => m.href !== "/")
 
                 .map((m) => (
 

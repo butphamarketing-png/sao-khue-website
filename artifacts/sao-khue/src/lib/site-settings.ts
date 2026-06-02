@@ -151,8 +151,8 @@ export const LOCAL_LOGO = BUNDLED_LOGO_URL;
 
 export { resolveLogoUrl };
 
-export const PRIMARY_PHONE = "0909 085 668";
-export const PRIMARY_PHONE_RAW = "0909085668";
+export const PRIMARY_PHONE = "0909 075 668";
+export const PRIMARY_PHONE_RAW = "0909075668";
 
 export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   id: 0,

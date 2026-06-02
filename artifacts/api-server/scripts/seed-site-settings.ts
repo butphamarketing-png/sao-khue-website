@@ -30,107 +30,107 @@ const defaults: Record<string, string> = {
   heroSlidesJson: JSON.stringify([
     {
       image: "/images/hero-1.png",
-      title: "KIẾN TẠO KHÔNG GIAN SỐNG ĐẲNG CẤP",
-      subtitle: "Thiết kế và thi công nhà phố, biệt thự trọn gói",
+      title: "KI?N T?O KH�NG GIAN S?NG �?NG C?P",
+      subtitle: "Thi?t k? v� thi c�ng nh� ph?, bi?t th? tr?n g�i",
       description:
-        "Công ty TNHH Kiến Trúc Sao Khuê cam kết mang đến những giải pháp không gian hoàn hảo, tối ưu chi phí và chất lượng vượt trội.",
+        "C�ng ty TNHH Ki?n Tr�c Sao Khu� cam k?t mang d?n nh?ng gi?i ph�p kh�ng gian ho�n h?o, t?i uu chi ph� v� ch?t lu?ng vu?t tr?i.",
     },
     {
       image: "/images/hero-2.png",
-      title: "UY TÍN - CHẤT LƯỢNG - TẬN TÂM",
-      subtitle: "Xây dựng biệt thự hiện đại",
+      title: "UY T�N - CH?T LU?NG - T?N T�M",
+      subtitle: "X�y d?ng bi?t th? hi?n d?i",
       description:
-        "Với đội ngũ kỹ sư, kiến trúc sư giàu kinh nghiệm, chúng tôi tự hào đồng hành cùng hàng trăm gia đình kiến tạo tổ ấm mơ ước.",
+        "V?i d?i ngu k? su, ki?n tr�c su gi�u kinh nghi?m, ch�ng t�i t? h�o d?ng h�nh c�ng h�ng tram gia d�nh ki?n t?o t? ?m mo u?c.",
     },
     {
       image: "/images/hero-3.png",
-      title: "THI CÔNG ĐÚNG TIẾN ĐỘ VÀ BẢO HÀNH DÀI HẠN",
-      subtitle: "Quản lý dự án chuyên nghiệp",
+      title: "THI C�NG ��NG TI?N �? V� B?O H�NH D�I H?N",
+      subtitle: "Qu?n l� d? �n chuy�n nghi?p",
       description:
-        "Minh bạch trong báo giá, sử dụng vật tư chính hãng, không phát sinh chi phí. Bảo hành kết cấu lên đến 10 năm.",
+        "Minh b?ch trong b�o gi�, s? d?ng v?t tu ch�nh h�ng, kh�ng ph�t sinh chi ph�. B?o h�nh k?t c?u l�n d?n 10 nam.",
     },
   ]),
   homePricingJson: JSON.stringify([
     {
       id: "phan-tho",
-      name: "XÂY DỰNG PHẦN THÔ",
+      name: "X�Y D?NG PH?N TH�",
       priceFrom: "3.550.000",
       priceTo: "3.800.000",
-      unit: "đ/m²",
-      note: "Bao gồm nhân công và vật tư thô",
+      unit: "d/m�",
+      note: "Bao g?m nh�n c�ng v� v?t tu th�",
       features: [
-        "Cung cấp vật tư thô",
-        "Nhân công xây thô toàn bộ công trình",
-        "Nhân công hoàn thiện cơ bản",
-        "Lắp đặt hệ thống điện nước âm tường",
-        "Bảo hành kết cấu 10 năm",
+        "Cung c?p v?t tu th�",
+        "Nh�n c�ng x�y th� to�n b? c�ng tr�nh",
+        "Nh�n c�ng ho�n thi?n co b?n",
+        "L?p d?t h? th?ng di?n nu?c �m tu?ng",
+        "B?o h�nh k?t c?u 10 nam",
       ],
       ctaHref: "/lien-he",
-      ctaLabel: "Nhận báo giá chi tiết",
+      ctaLabel: "Nh?n b�o gi� chi ti?t",
     },
     {
       id: "tron-goi",
-      name: "XÂY NHÀ TRỌN GÓI",
+      name: "X�Y NH� TR?N G�I",
       priceFrom: "4.850.000",
       priceTo: "6.700.000",
-      unit: "đ/m²",
-      note: "Chìa khóa trao tay - vào ở ngay",
+      unit: "d/m�",
+      note: "Ch�a kh�a trao tay - v�o ? ngay",
       features: [
-        "Bao gồm toàn bộ dịch vụ xây thô",
-        "Cung cấp vật tư hoàn thiện",
-        "Lắp đặt cửa, lan can, cầu thang, thiết bị vệ sinh",
-        "Miễn phí thiết kế kiến trúc 2D/3D",
-        "Bảo hành hoàn thiện 12-36 tháng",
+        "Bao g?m to�n b? d?ch v? x�y th�",
+        "Cung c?p v?t tu ho�n thi?n",
+        "L?p d?t c?a, lan can, c?u thang, thi?t b? v? sinh",
+        "Mi?n ph� thi?t k? ki?n tr�c 2D/3D",
+        "B?o h�nh ho�n thi?n 12-36 th�ng",
       ],
       ctaHref: "/lien-he",
-      ctaLabel: "Nhận báo giá chi tiết",
+      ctaLabel: "Nh?n b�o gi� chi ti?t",
       highlighted: true,
     },
   ]),
   homeStatsJson: JSON.stringify([
-    { icon: "building-2", value: "500+", label: "Công trình bàn giao" },
-    { icon: "hard-hat", value: "10+", label: "Năm kinh nghiệm" },
-    { icon: "users", value: "50+", label: "Kỹ sư & kiến trúc sư" },
-    { icon: "shield-check", value: "10 năm", label: "Bảo hành kết cấu" },
+    { icon: "building-2", value: "500+", label: "C�ng tr�nh b�n giao" },
+    { icon: "hard-hat", value: "10+", label: "Nam kinh nghi?m" },
+    { icon: "users", value: "50+", label: "K? su & ki?n tr�c su" },
+    { icon: "shield-check", value: "10 nam", label: "B?o h�nh k?t c?u" },
   ]),
   homeQuoteServicesJson: JSON.stringify([
-    { id: "1", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi tiết" },
-    { id: "2", title: "SỬA CHỮA\nNHÀ CŨ", link: "/dich-vu/sua-chua-nha", buttonLabel: "Xem chi tiết" },
-    { id: "3", title: "THIẾT KẾ\nKIẾN TRÚC", link: "/dich-vu/thiet-ke-kien-truc", buttonLabel: "Xem chi tiết" },
-    { id: "4", title: "THI CÔNG\nPHẦN THÔ", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi tiết" },
+    { id: "1", title: "X�Y NH�\nTR?N G�I", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi ti?t" },
+    { id: "2", title: "S?A CH?A\nNH� CU", link: "/dich-vu/sua-chua-nha", buttonLabel: "Xem chi ti?t" },
+    { id: "3", title: "THI?T K?\nKI?N TR�C", link: "/dich-vu/thiet-ke-kien-truc", buttonLabel: "Xem chi ti?t" },
+    { id: "4", title: "THI C�NG\nPH?N TH�", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi ti?t" },
   ]),
   homeCtaJson: JSON.stringify({
-    eyebrow: "Tận tâm — Uy tín — Chất lượng",
-    title: "Sẵn sàng bắt đầu công trình của bạn?",
-    subtitle: "Liên hệ ngay để được khảo sát miễn phí và nhận báo giá chi tiết trong 24–48h.",
-    secondaryLabel: "Nhận báo giá",
+    eyebrow: "T?n t�m � Uy t�n � Ch?t lu?ng",
+    title: "S?n s�ng b?t d?u c�ng tr�nh c?a b?n?",
+    subtitle: "Li�n h? ngay d? du?c kh?o s�t mi?n ph� v� nh?n b�o gi� chi ti?t trong 24�48h.",
+    secondaryLabel: "Nh?n b�o gi�",
     secondaryHref: "/lien-he",
   }),
   homeTestimonialsJson: JSON.stringify([
     {
-      name: "Anh Tuấn — Quận 7",
-      project: "Xây nhà phố 4 tầng",
-      text: "Sao Khuê thi công đúng tiến độ, báo giá minh bạch không phát sinh. Đội giám sát nhiệt tình, bàn giao nhà đẹp hơn mong đợi.",
+      name: "Anh Tu?n � Qu?n 7",
+      project: "X�y nh� ph? 4 t?ng",
+      text: "Sao Khu� thi c�ng d�ng ti?n d?, b�o gi� minh b?ch kh�ng ph�t sinh. �?i gi�m s�t nhi?t t�nh, b�n giao nh� d?p hon mong d?i.",
     },
     {
-      name: "Chị Lan — Bình Thạnh",
-      project: "Cải tạo nhà cũ",
-      text: "Tư vấn rất kỹ từ khâu thiết kế đến vật tư. Công trình gọn gàng, sạch sẽ sau mỗi ngày thi công. Gia đình rất hài lòng.",
+      name: "Ch? Lan � B�nh Th?nh",
+      project: "C?i t?o nh� cu",
+      text: "Tu v?n r?t k? t? kh�u thi?t k? d?n v?t tu. C�ng tr�nh g?n g�ng, s?ch s? sau m?i ng�y thi c�ng. Gia d�nh r?t h�i l�ng.",
     },
     {
-      name: "Chú Ba — Đồng Nai",
-      project: "Biệt thự sân vườn",
-      text: "Làm việc chuyên nghiệp, hợp đồng rõ ràng. Hotline hỗ trợ nhanh khi cần điều chỉnh trong quá trình xây dựng.",
+      name: "Ch� Ba � �?ng Nai",
+      project: "Bi?t th? s�n vu?n",
+      text: "L�m vi?c chuy�n nghi?p, h?p d?ng r� r�ng. Hotline h? tr? nhanh khi c?n di?u ch?nh trong qu� tr�nh x�y d?ng.",
     },
   ]),
   homeFaqJson: JSON.stringify([
     {
-      q: "Sao Khuê báo giá xây nhà trọn gói như thế nào?",
-      a: "Chúng tôi khảo sát mặt bằng, lập dự toán chi tiết theo hạng mục và vật tư. Báo giá minh bạch, cam kết không phát sinh khi không có yêu cầu thay đổi từ khách hàng.",
+      q: "Sao Khu� b�o gi� x�y nh� tr?n g�i nhu th? n�o?",
+      a: "Ch�ng t�i kh?o s�t m?t b?ng, l?p d? to�n chi ti?t theo h?ng m?c v� v?t tu. B�o gi� minh b?ch, cam k?t kh�ng ph�t sinh khi kh�ng c� y�u c?u thay d?i t? kh�ch h�ng.",
     },
     {
-      q: "Có được tư vấn và khảo sát miễn phí không?",
-      a: "Có. Hotline 0909 085 668 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
+      q: "C� du?c tu v?n v� kh?o s�t mi?n ph� kh�ng?",
+      a: "C�. Hotline 0909 075 668 h? tr? 24/7. K? su s? kh?o s�t hi?n tr?ng v� tu v?n so b? mi?n ph� t?i c�ng tr�nh.",
     },
   ]),
 };
@@ -162,7 +162,7 @@ async function main() {
   }
 
   if (Object.keys(patch).length === 0) {
-    console.log("Site settings already populated — nothing to seed.");
+    console.log("Site settings already populated � nothing to seed.");
     return;
   }
 

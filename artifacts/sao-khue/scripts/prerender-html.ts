@@ -24,6 +24,7 @@ import {
   itemListJsonLd,
   stripPlainText,
 } from "./lib/seo-prerender.ts";
+import { getPostPublicPath } from "../src/lib/post-url.ts";
 import {
   buildHeadTags,
   buildJsonLdScript,
@@ -69,7 +70,7 @@ const CATEGORY_PATHS: Record<string, keyof typeof defaultCategoryPages> = {
   "/gioi-thieu": "gioi-thieu",
   "/dich-vu": "dich-vu",
   "/cong-trinh": "cong-trinh",
-  "/kinh-nghiem": "kinh-nghiem",
+  "/tin-tuc": "tin-tuc",
 };
 
 function shell(inner: string): string {
@@ -82,7 +83,7 @@ function navHome(): string {
     <a href="/dich-vu">Dịch vụ</a> ·
     <a href="/bao-gia">Báo giá</a> ·
     <a href="/cong-trinh">Công trình</a> ·
-    <a href="/kinh-nghiem">Kinh nghiệm</a> ·
+    <a href="/tin-tuc">Tin tức</a> ·
     <a href="/lien-he">Liên hệ</a>
   </nav>`;
 }
@@ -139,7 +140,7 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/lien-he",
       meta: {
-        title: `Liên hệ ${BRAND_SHORT} | Hotline 0909 085 668`,
+        title: `Liên hệ ${BRAND_SHORT} | Hotline 0909 075 668`,
         description: defaultPageBanners.contact.subtitle,
         path: "/lien-he",
         keywords: "liên hệ xây dựng, báo giá xây nhà tphcm",
@@ -149,7 +150,7 @@ function buildStaticPages(): PrerenderPage[] {
         ${navHome()}
         <h1>${escapeHtml(defaultPageBanners.contact.title)}</h1>
         <p>${escapeHtml(defaultPageBanners.contact.subtitle)}</p>
-        <p>Hotline: <a href="tel:0909085668">0909 085 668</a> · Email: kientrucsaokhue@gmail.com</p>
+        <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · Email: kientrucsaokhue@gmail.com</p>
       `),
     },
   ];
@@ -201,7 +202,7 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
           itemListJsonLd(
             matched.map((p) => ({
               name: p.title,
-              path: `/bai-viet/${p.slug}`,
+              path: getPostPublicPath(p),
             })),
             SITE_URL,
             child.title,
@@ -234,7 +235,7 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
                   .slice(1)
                   .map(
                     (p) =>
-                      `<li><a href="/bai-viet/${p.slug}">${escapeHtml(p.title)}</a></li>`,
+                      `<li><a href="${escapeHtml(getPostPublicPath(p))}">${escapeHtml(p.title)}</a></li>`,
                   )
                   .join("")}</ul>`
               : ""
@@ -249,7 +250,7 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
 
 function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
   return posts.map((post) => {
-    const path = `/bai-viet/${post.slug}`;
+    const path = getPostPublicPath(post);
     const title = post.metaTitle?.trim() || `${post.title} | ${BRAND_SHORT}`;
     const description = post.metaDescription?.trim() || post.excerpt || "";
     const contentHtml = enhanceArticleHtml(post.content ?? "", post.title);

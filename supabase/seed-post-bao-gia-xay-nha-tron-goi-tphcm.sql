@@ -10,8 +10,8 @@ INSERT INTO posts (
 ) VALUES (
   $slug$bao-gia-xay-nha-tron-goi-moi-nhat-tphcm$slug$,
   $title$Báo Giá Xây Nhà Trọn Gói Mới Nhất Tại TP.HCM$title$,
-  $cat$dich-vu$cat$,
-  $excerpt$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Bảng giá minh bạch, khảo sát miễn phí — Hotline 0909 085 668.$excerpt$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Bảng giá minh bạch, khảo sát miễn phí — Hotline 0909 075 668.$excerpt$,
   $content$<h2>Báo giá xây nhà TP.HCM 2026 — Cập nhật đơn giá xây nhà trọn gói mới nhất</h2>
 <p><strong>Báo giá xây nhà TP.HCM</strong> là thông tin được hàng nghìn chủ đất tìm kiếm trước khi quyết định đầu tư. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> công bố <strong>báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> (cập nhật 2026) theo hướng <strong>minh bạch từng hạng mục</strong> — giúp bạn ước lượng ngân sách, so sánh gói tiêu chuẩn / khá / cao cấp và tránh báo giá “trần trời” không có cơ sở kỹ thuật.</p>
 <p>Bài viết tổng hợp <strong>đơn giá tham khảo</strong>, cách tính diện tích quy đổi, các khoản chi thường gặp ngoài đơn giá/m², quy trình nhận báo giá chính thức tại Sao Khuê và câu hỏi thường gặp — phù hợp chủ nhà xây <strong>nhà phố</strong>, <strong>biệt thự</strong> hoặc <strong>cải tạo trọn gói</strong> tại TP.HCM, Bình Dương, Đồng Nai.</p>
@@ -99,7 +99,7 @@ INSERT INTO posts (
 </ul>
 
 <h2>Các khoản chi ngoài đơn giá/m² — Cần dự trù</h2>
-<p>Ngoài <strong>báo giá xây nhà trọn gói</strong>, chủ nhà nên dự phòng (tham khảo <a href="/kinh-nghiem/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a>):</p>
+<p>Ngoài <strong>báo giá xây nhà trọn gói</strong>, chủ nhà nên dự phòng (tham khảo <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a>):</p>
 <ul>
   <li><strong>Điện nước tạm thời</strong> trong thi công.</li>
   <li><strong>Vận chuyển vật liệu</strong> vào hẻm hẹp (nếu xe lớn không vào được).</li>
@@ -110,7 +110,7 @@ INSERT INTO posts (
 
 <h2>Quy trình nhận báo giá xây nhà chính thức tại Sao Khuê</h2>
 <ol>
-  <li><strong>Liên hệ:</strong> Hotline <strong>0909 085 668</strong>, Zalo hoặc <a href="/lien-he">form liên hệ</a>.</li>
+  <li><strong>Liên hệ:</strong> Hotline <strong>0909 075 668</strong>, Zalo hoặc <a href="/lien-he">form liên hệ</a>.</li>
   <li><strong>Khảo sát miễn phí:</strong> Kỹ sư đến công trình đo đạc, tư vấn sơ bộ.</li>
   <li><strong>Chốt thiết kế / phương án:</strong> Mặt bằng, số tầng, mức hoàn thiện.</li>
   <li><strong>Nhận dự toán chi tiết:</strong> Bảng hạng mục, vật tư, đơn giá, tiến độ thanh toán.</li>
@@ -206,7 +206,7 @@ INSERT INTO posts (
 
 <h2>Kết luận: Nắm báo giá xây nhà TP.HCM trước khi ký hợp đồng</h2>
 <p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> năm 2026 dao động khoảng <strong>4,85 – 6,7 triệu/m²</strong> (trọn gói) và <strong>3,55 – 3,8 triệu/m²</strong> (phần thô) — tùy vật liệu và quy mô. Con số quan trọng nhất với bạn là <strong>báo giá sau khảo sát</strong>, có dự toán chi tiết và hợp đồng rõ ràng. Đừng chỉ dựa vào quảng cáo “giá rẻ nhất thị trường” mà thiếu phạm vi công việc.</p>
-<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 085 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
+<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 075 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
 
 <h2>Liên kết dịch vụ &amp; công cụ báo giá</h2>
 <p>Sau khi nắm <strong>báo giá xây nhà TP.HCM</strong> tham khảo, bạn có thể đi sâu từng hạng mục:</p>
@@ -214,7 +214,7 @@ INSERT INTO posts (
   <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a> — quy trình và cam kết.</li>
   <li><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> — tối ưu chi phí từ bản vẽ.</li>
   <li><a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Xây dựng nhà phố</a> — đặc thù nhà phố.</li>
-  <li><a href="/kinh-nghiem/luat-xay-dung-moi-nhat">Luật xây dựng</a> — tránh phạt khi xây.</li>
+  <li><a href="/bai-viet/luat-xay-dung-moi-nhat">Luật xây dựng</a> — tránh phạt khi xây.</li>
   <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
 </ul>
 
@@ -237,7 +237,7 @@ INSERT INTO posts (
 <h2>Liên hệ nhận báo giá xây nhà trọn gói mới nhất</h2>
 <p>Bạn cần <strong>báo giá xây nhà TP.HCM</strong> chính xác, minh bạch cho dự án sắp tới?</p>
 <ul>
-  <li><strong>Hotline / Zalo:</strong> 0909 085 668</li>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
   <li><strong>Tính chi phí online:</strong> <a href="/bao-gia">/bao-gia</a></li>
@@ -246,7 +246,7 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong> — Báo giá rõ ràng, thi công uy tín, xây tổ ấm bền vững cho gia đình bạn.</p>$content$,
   $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
   $mt$Báo Giá Xây Nhà Trọn Gói TP.HCM 2026 | Sao Khuê$mt$,
-  $md$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Khảo sát miễn phí, dự toán minh bạch — 0909 085 668.$md$,
+  $md$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Khảo sát miễn phí, dự toán minh bạch — 0909 075 668.$md$,
   $mk$báo giá xây nhà tphcm, báo giá xây nhà trọn gói, đơn giá xây nhà 2026, xây nhà trọn gói giá bao nhiêu, chi phí xây nhà tphcm, sao khuê$mk$,
   now(),
   now()

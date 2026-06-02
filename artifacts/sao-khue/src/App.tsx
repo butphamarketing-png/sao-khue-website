@@ -15,6 +15,7 @@ import Admin from "@/pages/Admin";
 import { SiteHead } from "@/components/SiteHead";
 import { SiteLoader } from "@/components/SiteLoader";
 import { LegacySlugRedirect } from "@/components/LegacySlugRedirect";
+import { BaiVietCanonicalRedirect } from "@/components/BaiVietCanonicalRedirect";
 
 const queryClient = new QueryClient();
 
@@ -26,32 +27,44 @@ function Router() {
       <Route path="/bao-gia" component={Pricing} />
       <Route path="/admin" component={Admin} />
       <Route path="/bai-viet/thiet-ke-biet-thu-thu-duc">
-        <Redirect to="/bai-viet/thiet-ke-nha-biet-thu-thu-duc" />
+        <Redirect to="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc" />
       </Route>
-      <Route path="/bai-viet/:slug" component={PostPage} />
-
-      <Route path="/gioi-thieu" component={() => <CategoryPage category="gioi-thieu" />} />
-      <Route path="/gioi-thieu/:sub" component={(p) => <CategoryPage category="gioi-thieu" subSlug={p.params.sub} />} />
+      <Route path="/bai-viet/:slug" component={BaiVietCanonicalRedirect} />
 
       <Route path="/dich-vu" component={() => <CategoryPage category="dich-vu" />} />
-      <Route path="/dich-vu/:sub" component={(p) => <CategoryPage category="dich-vu" subSlug={p.params.sub} />} />
+      <Route path="/dich-vu/:slug" component={PostPage} />
 
       <Route path="/cong-trinh" component={() => <CategoryPage category="cong-trinh" />} />
-      <Route path="/cong-trinh/:sub" component={(p) => <CategoryPage category="cong-trinh" subSlug={p.params.sub} />} />
+      <Route path="/cong-trinh/:slug" component={PostPage} />
 
-      <Route path="/kinh-nghiem" component={() => <CategoryPage category="kinh-nghiem" />} />
-      <Route path="/kinh-nghiem/:sub" component={(p) => <CategoryPage category="kinh-nghiem" subSlug={p.params.sub} />} />
+      <Route path="/tin-tuc" component={() => <CategoryPage category="tin-tuc" />} />
+      <Route path="/tin-tuc/:slug" component={PostPage} />
+
+      <Route path="/gioi-thieu">
+        <Redirect to="/bai-viet/ve-chung-toi" />
+      </Route>
+      <Route path="/gioi-thieu/:sub">
+        <Redirect to="/bai-viet/ve-chung-toi" />
+      </Route>
 
       {/* Legacy URLs (bookmarks, Google, old WordPress) */}
-      <Route path="/kinh-nghiem-xay-dung">
-        <Redirect to="/kinh-nghiem" />
+      <Route path="/kinh-nghiem">
+        <Redirect to="/tin-tuc" />
       </Route>
-      <Route path="/kinh-nghiem-xay-dung/:sub" component={(p) => <Redirect to={`/kinh-nghiem/${p.params.sub}`} />} />
+      <Route path="/kinh-nghiem/:sub">
+        <Redirect to="/tin-tuc" />
+      </Route>
+      <Route path="/kinh-nghiem-xay-dung">
+        <Redirect to="/tin-tuc" />
+      </Route>
+      <Route path="/kinh-nghiem-xay-dung/:sub">
+        <Redirect to="/tin-tuc" />
+      </Route>
       <Route path="/contact">
         <Redirect to="/lien-he" />
       </Route>
       <Route path="/about">
-        <Redirect to="/gioi-thieu/ve-chung-toi" />
+        <Redirect to="/bai-viet/ve-chung-toi" />
       </Route>
       <Route path="/services">
         <Redirect to="/dich-vu" />

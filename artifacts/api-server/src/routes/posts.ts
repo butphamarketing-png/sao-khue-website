@@ -1,8 +1,12 @@
 import { Router, type IRouter, type Request, type Response } from "express";
 import { db, postsTable } from "@workspace/db";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, inArray } from "drizzle-orm";
 import { z } from "zod";
-import { getFallbackPost, listFallbackPosts } from "@workspace/seed-content";
+import {
+  categoriesForFilter,
+  getFallbackPost,
+  listFallbackPosts,
+} from "@workspace/seed-content";
 import { isAdmin } from "../lib/auth";
 
 const PostInput = z.object({
@@ -46,7 +50,7 @@ router.get("/posts", async (req, res) => {
     const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
 
     const q = db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
-    if (category) q.where(eq(postsTable.category, category));
+    if (category) q.where(inArray(postsTable.category, categoriesForFilter(category)));
     if (limit) q.limit(limit);
     const rows = await q;
     res.json(rows.map(serialize));

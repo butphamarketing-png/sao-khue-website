@@ -12,8 +12,8 @@ INSERT INTO posts (
 ) VALUES (
   $slug$cong-ty-xay-dung-nha-pho-uy-tin-tphcm$slug$,
   $title$Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM$title$,
-  $cat$dich-vu$cat$,
-  $excerpt$Công ty xây dựng nhà phố TP.HCM uy tín: thiết kế, thi công trọn gói, báo giá minh bạch, bảo hành kết cấu 10 năm. Tư vấn khảo sát miễn phí — Hotline 0909 085 668.$excerpt$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Công ty xây dựng nhà phố TP.HCM uy tín: thiết kế, thi công trọn gói, báo giá minh bạch, bảo hành kết cấu 10 năm. Tư vấn khảo sát miễn phí — Hotline 0909 075 668.$excerpt$,
   $content$<h2>Công ty xây dựng nhà phố uy tín tại TP.HCM — Sao Khuê đồng hành từ ý tưởng đến bàn giao</h2>
 <p><strong>Xây dựng nhà phố TP.HCM</strong> là nhu cầu phổ biến của hàng nghìn gia đình mỗi năm: lô đất hẹp, quy hoạch chặt, chi phí vật liệu biến động và áp lực thời gian khiến việc chọn <strong>công ty xây dựng nhà phố uy tín</strong> trở thành quyết định then chốt. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> chuyên <strong>thiết kế và thi công nhà phố</strong> 3–5 tầng, nhà phố kinh doanh tầng trệt, nhà ống hiện đại tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Bình Dương, Đồng Nai… với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> bàn giao và cam kết <strong>báo giá minh bạch — bảo hành kết cấu 10 năm</strong>.</p>
 <p>Bài viết này tổng hợp đầy đủ thông tin bạn cần khi tìm <strong>nhà thầu xây nhà phố TP.HCM</strong>: đặc thù công trình, gói dịch vụ, đơn giá tham khảo, quy trình thi công, tiêu chí chọn đơn vị uy tín, lưu ý pháp lý và câu hỏi thường gặp — theo hướng tối ưu nội dung chuẩn SEO (tương tự cấu trúc bài viết WordPress chuyên nghiệp: heading rõ ràng, từ khóa tự nhiên, liên kết nội bộ, FAQ).</p>
@@ -69,7 +69,7 @@ INSERT INTO posts (
 <h2>Quy trình xây dựng nhà phố chuẩn — 7 bước tại Sao Khuê</h2>
 <p>Quy trình được chuẩn hóa giúp chủ nhà theo dõi tiến độ và kiểm soát chi phí — tương tự quy trình quản lý dự án mà nhiều công ty xây dựng uy tín áp dụng:</p>
 <ol>
-  <li><strong>Tiếp nhận &amp; tư vấn sơ bộ:</strong> Gọi hotline <strong>0909 085 668</strong>, Zalo hoặc gửi <a href="/lien-he">form liên hệ</a> — trao đổi nhu cầu, quy mô, ngân sách dự kiến.</li>
+  <li><strong>Tiếp nhận &amp; tư vấn sơ bộ:</strong> Gọi hotline <strong>0909 075 668</strong>, Zalo hoặc gửi <a href="/lien-he">form liên hệ</a> — trao đổi nhu cầu, quy mô, ngân sách dự kiến.</li>
   <li><strong>Khảo sát mặt bằng:</strong> Đo đạc, kiểm tra địa chất, hàng xóm, hướng nhà, lộ giới (nếu có bản đồ).</li>
   <li><strong>Thiết kế &amp; chốt phương án:</strong> Mặt bằng, phối cảnh 3D, bố trí phòng, giếng trời — chỉnh sửa đến khi khách hài lòng.</li>
   <li><strong>Dự toán &amp; ký hợp đồng:</strong> Bảng báo giá chi tiết hạng mục, vật tư, tiến độ thanh toán, bảo hành.</li>
@@ -94,7 +94,7 @@ INSERT INTO posts (
   </tbody>
 </table>
 <p><strong>Ví dụ ước tính nhanh:</strong> Nhà phố 4 tầng, tổng diện tích sàn khoảng <strong>320 m²</strong>, gói trọn gói tiêu chuẩn ~5 triệu/m² → chi phí tham khảo khoảng <strong>1,6 tỷ</strong> (chưa gồm nội thất cao cấp, thiết kế riêng nếu không nằm trong gói). Dùng <a href="/bao-gia">công cụ tính chi phí</a> trên website hoặc nhờ kỹ sư dự toán chi tiết.</p>
-<p>Tham khảo thêm <a href="/kinh-nghiem/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> để hiểu các khoản chi ngoài đơn giá/m² (lăn dây, đền bù hàng xóm, nội thất…).</p>
+<p>Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> để hiểu các khoản chi ngoài đơn giá/m² (lăn dây, đền bù hàng xóm, nội thất…).</p>
 
 <h2>Các yếu tố ảnh hưởng chi phí xây nhà phố</h2>
 <p>Hiểu rõ các yếu tố giúp bạn tránh so sánh báo giá “chỉ một con số” giữa các công ty:</p>
@@ -117,7 +117,7 @@ INSERT INTO posts (
 <h3>Điện — nước</h3>
 <p>Ống cấp thoát nước, dây điện âm tường đúng tiết diện, có sơ đồ khi bàn giao để sửa chữa sau này.</p>
 <h3>Thông gió — chống nóng</h3>
-<p>TP.HCM nóng quanh năm: giếng trời, cách nhiệm mái, kính hộp kính hoặc lam gỗ/nhôm giúp giảm điện lạnh. Kết hợp <a href="/kinh-nghiem/phong-thuy-nha-o">phong thủy nhà ở</a> với giải pháp kỹ thuật hợp lý.</p>
+<p>TP.HCM nóng quanh năm: giếng trời, cách nhiệm mái, kính hộp kính hoặc lam gỗ/nhôm giúp giảm điện lạnh. Kết hợp <a href="/bai-viet/phong-thuy-nha-o">phong thủy nhà ở</a> với giải pháp kỹ thuật hợp lý.</p>
 
 <h2>Thiết kế nhà phố hiện đại — Tối ưu trên lô đất hẹp</h2>
 <p>Xu hướng <strong>nhà phố hiện đại TP.HCM</strong> giai đoạn 2024–2026: tối giản, gam màu trung tính, lan can kính, phòng master khép kín, bếp mở liên thông phòng khách (nếu thông tầng), tầng trệt kinh doanh có cửa cuốn riêng. Sao Khuê triển khai nhiều mẫu <strong>3–4 tầng</strong> — xem <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phố hiện đại</a>.</p>
@@ -148,7 +148,7 @@ INSERT INTO posts (
 
 <h2>Giấy phép xây dựng nhà phố tại TP.HCM — Lưu ý nhanh</h2>
 <p>Tùy quận, loại công trình và thời điểm, nhà phố xây mới hoặc cải tạo lớn có thể cần <strong>giấy phép xây dựng</strong>. Sao Khuê hỗ trợ khách hàng chuẩn bị hồ sơ thiết kế phục vụ thủ tục; thời gian cấp phép do cơ quan nhà nước quyết định.</p>
-<p>Không nên xây vượt số tầng, lấn hàng xóm hoặc vi phạm lộ giới — rủi ro đình chỉ thi công và tranh chấp sau này rất cao. Tham khảo thêm <a href="/kinh-nghiem/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> mục pháp lý.</p>
+<p>Không nên xây vượt số tầng, lấn hàng xóm hoặc vi phạm lộ giới — rủi ro đình chỉ thi công và tranh chấp sau này rất cao. Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> mục pháp lý.</p>
 
 <h2>Chương trình ưu đãi — Khách xây nhà phố mới</h2>
 <p>Sao Khuê thường xuyên có <a href="/dich-vu/khuyen-mai-xay-dung">khuyến mại xây dựng</a>: miễn phí thiết kế 2D/3D khi ký trọn gói, ưu đãi khảo sát, quà tặng thiết bị vệ sinh cơ bản (theo từng đợt — liên hệ để biết chương trình hiện hành).</p>
@@ -189,7 +189,7 @@ INSERT INTO posts (
 <h2>Liên hệ công ty xây dựng nhà phố Sao Khuê — Khảo sát miễn phí</h2>
 <p>Bạn đang tìm <strong>công ty xây dựng nhà phố uy tín tại TP.HCM</strong> cho dự án xây mới, cải tạo hoặc nâng tầng? Hãy liên hệ Sao Khuê để được tư vấn, khảo sát mặt bằng và nhận <strong>báo giá minh bạch</strong>:</p>
 <ul>
-  <li><strong>Hotline / Zalo:</strong> 0909 085 668</li>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
   <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a></li>
@@ -199,7 +199,7 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong> — Uy tín từ thiết kế đến thi công, <strong>xây dựng nhà phố TP.HCM</strong> đúng tiến độ, đúng cam kết, xây dựng tổ ấm bền vững cho gia đình bạn.</p>$content$,
   $img$https://images.unsplash.com/photo-1486406146926-c627a92fd1ab?auto=format&fit=crop&q=80&w=1200$img$,
   $mt$Công Ty Xây Dựng Nhà Phố Uy Tín TP.HCM | Sao Khuê$mt$,
-  $md$Công ty xây dựng nhà phố TP.HCM uy tín: thi công trọn gói, báo giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 085 668.$md$,
+  $md$Công ty xây dựng nhà phố TP.HCM uy tín: thi công trọn gói, báo giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$xây dựng nhà phố tphcm, công ty xây dựng nhà phố, xây nhà phố uy tín, nhà thầu xây nhà phố, xây nhà trọn gói tphcm, kiến trúc sao khuê$mk$,
   now(),
   now()

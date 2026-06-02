@@ -5,7 +5,7 @@ export const thietKeNhaBietThuThuDuc = {
     "Mẫu thiết kế biệt thự sân vườn TP. Thủ Đức: mái Thái, sân trong, phòng sinh hoạt mở. Sao Khuê thiết kế & thi công.",
   metaTitle: "Thiết Kế Biệt Thự Thủ Đức | Sân Vườn 200m² | Sao Khuê",
   metaDescription:
-    "Thiết kế biệt thự sân vườn Thủ Đức: phong cách Á Đông hiện đại, tối ưu gió sáng. Sao Khuê — hotline 0909 085 668.",
+    "Thiết kế biệt thự sân vườn Thủ Đức: phong cách Á Đông hiện đại, tối ưu gió sáng. Sao Khuê — hotline 0909 075 668.",
   metaKeywords:
     "thiết kế biệt thự thủ đức, biệt thự sân vườn, thiết kế nhà vườn tphcm, sao khuê",
   content: `
@@ -37,6 +37,6 @@ export const thietKeNhaBietThuThuDuc = {
 <p>Tùy vật liệu; tham khảo <a href="/bao-gia">bảng giá</a> hoặc gọi khảo sát.</p>
 
 <h2>Liên hệ</h2>
-<p><strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a> · <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố hiện đại</a></p>
+<p><strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố hiện đại</a></p>
 `.trim(),
 };

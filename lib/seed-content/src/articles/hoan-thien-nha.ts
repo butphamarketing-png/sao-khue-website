@@ -5,7 +5,7 @@ export const hoanThienNha = {
     "Hoàn thiện nhà phố, căn hộ thô: ốp lát, sơn, trần, điện nước, cửa. Báo giá minh bạch, bảo hành 12–36 tháng.",
   metaTitle: "Hoàn Thiện Nhà Trọn Gói TP.HCM | Sao Khuê",
   metaDescription:
-    "Dịch vụ hoàn thiện nhà, căn hộ thô tại TP.HCM. Sơn, gạch, thiết bị vệ sinh, tủ bếp. Hotline 0909 085 668 — khảo sát miễn phí.",
+    "Dịch vụ hoàn thiện nhà, căn hộ thô tại TP.HCM. Sơn, gạch, thiết bị vệ sinh, tủ bếp. Hotline 0909 075 668 — khảo sát miễn phí.",
   metaKeywords:
     "hoàn thiện nhà, hoàn thiện nhà thô, hoàn thiện căn hộ, sửa chữa hoàn thiện, sao khuê",
   content: `
@@ -39,6 +39,6 @@ export const hoanThienNha = {
 <p>Hoàn thiện thường <strong>12–36 tháng</strong> theo hạng mục trong hợp đồng.</p>
 
 <h2>Liên hệ</h2>
-<p><strong>0909 085 668</strong> · <a href="/bao-gia">Báo giá</a> · <a href="/lien-he">Liên hệ</a></p>
+<p><strong>0909 075 668</strong> · <a href="/bao-gia">Báo giá</a> · <a href="/lien-he">Liên hệ</a></p>
 `.trim(),
 };

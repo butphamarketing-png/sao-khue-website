@@ -5,7 +5,7 @@ export const luatXayDungMoiNhat = {
     "Tóm tắt quy định Luật Xây dựng: giấy phép, quy hoạch, nghiệm thu. Tránh rủi ro pháp lý khi xây nhà, cải tạo.",
   metaTitle: "Luật Xây Dựng 2026 — Giấy Phép & Quy Hoạch | Sao Khuê",
   metaDescription:
-    "Luật xây dựng cần biết 2026: khi nào cần giấy phép, quy hoạch, trách nhiệm chủ đầu tư. Sao Khuê tư vấn hồ sơ — 0909 085 668.",
+    "Luật xây dựng cần biết 2026: khi nào cần giấy phép, quy hoạch, trách nhiệm chủ đầu tư. Sao Khuê tư vấn hồ sơ — 0909 075 668.",
   metaKeywords:
     "luật xây dựng, giấy phép xây dựng, quy hoạch xây dựng, xin phép xây nhà, sao khuê",
   content: `
@@ -38,6 +38,6 @@ export const luatXayDungMoiNhat = {
 <p>Sao Khuê hỗ trợ <strong>tư vấn hồ sơ sơ bộ</strong> và phối hợp bản vẽ phục vụ xin phép khi ký hợp đồng thi công.</p>
 
 <h2>Liên hệ thi công đúng quy định</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/kinh-nghiem/cam-nang-xay-nha-2026">Cẩm nang xây nhà</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/kinh-nghiem/cam-nang-xay-nha-2026">Cẩm nang xây nhà</a></p>
 `.trim(),
 };

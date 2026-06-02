@@ -2,10 +2,10 @@
 export const khuyenMaiXayDung = {
   title: "Khuyến Mại Xây Dựng 2026 — Tặng Thiết Kế Khi Xây Trọn Gói",
   excerpt:
-    "Ưu đãi xây nhà trọn gói: miễn phí thiết kế kiến trúc 2D/3D, báo giá minh bạch, bảo hành kết cấu 10 năm. Liên hệ 0909 085 668.",
+    "Ưu đãi xây nhà trọn gói: miễn phí thiết kế kiến trúc 2D/3D, báo giá minh bạch, bảo hành kết cấu 10 năm. Liên hệ 0909 075 668.",
   metaTitle: "Khuyến Mại Xây Dựng 2026 — Tặng Thiết Kế | Sao Khuê",
   metaDescription:
-    "Chương trình khuyến mại xây nhà trọn gói TP.HCM: tặng thiết kế, đơn giá ưu đãi. Sao Khuê — hotline 0909 085 668, khảo sát miễn phí.",
+    "Chương trình khuyến mại xây nhà trọn gói TP.HCM: tặng thiết kế, đơn giá ưu đãi. Sao Khuê — hotline 0909 075 668, khảo sát miễn phí.",
   metaKeywords:
     "khuyến mại xây dựng, ưu đãi xây nhà, tặng thiết kế xây nhà, xây nhà trọn gói giá rẻ, sao khuê",
   content: `
@@ -34,7 +34,7 @@ export const khuyenMaiXayDung = {
 
 <h2>Cách đăng ký nhận ưu đãi</h2>
 <ol>
-  <li>Gọi <strong>0909 085 668</strong> hoặc điền <a href="/lien-he">form liên hệ</a>.</li>
+  <li>Gọi <strong>0909 075 668</strong> hoặc điền <a href="/lien-he">form liên hệ</a>.</li>
   <li>Cung cấp địa chỉ công trình, diện tích dự kiến, số tầng.</li>
   <li>Nhận báo giá và xác nhận ưu đãi còn hiệu lực.</li>
   <li>Ký hợp đồng và triển khai theo quy trình 6 bước chuẩn.</li>
@@ -47,6 +47,6 @@ export const khuyenMaiXayDung = {
 <p>Thường gồm mặt bằng, phối cảnh 3D cơ bản phục vụ thi công; hồ sơ xin phép phức tạp có thể báo giá riêng.</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 085 668</strong> · Email kientrucsaokhue@gmail.com · 245/8 Bình Lợi, Quận Bình Thạnh, TP.HCM</p>
+<p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · 245/8 Bình Lợi, Quận Bình Thạnh, TP.HCM</p>
 `.trim(),
 };

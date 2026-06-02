@@ -18,7 +18,7 @@ export const STATIC_SEO_PAGES = [
   { path: "/gioi-thieu", label: "Giới thiệu" },
   { path: "/dich-vu", label: "Dịch vụ" },
   { path: "/cong-trinh", label: "Công trình" },
-  { path: "/kinh-nghiem", label: "Kinh nghiệm" },
+  { path: "/tin-tuc", label: "Tin tức" },
   { path: "/bao-gia", label: "Báo giá" },
   { path: "/lien-he", label: "Liên hệ" },
 ] as const;

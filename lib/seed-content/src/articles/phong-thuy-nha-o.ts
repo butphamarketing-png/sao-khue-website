@@ -5,7 +5,7 @@ export const phongThuyNhaO = {
     "Kiến thức phong thủy nhà ở cơ bản: chọn hướng, cửa chính, phòng ngủ, bếp. Kết hợp kỹ thuật xây dựng an toàn cùng Sao Khuê.",
   metaTitle: "Phong Thủy Nhà Ở — Hướng Dẫn Cơ Bản Khi Xây Nhà | Sao Khuê",
   metaDescription:
-    "Phong thủy nhà ở: hướng nhà, bố trí phòng, giếng trời, ánh sáng. Sao Khuê tư vấn thiết kế cân bằng phong thủy và kỹ thuật — 0909 085 668.",
+    "Phong thủy nhà ở: hướng nhà, bố trí phòng, giếng trời, ánh sáng. Sao Khuê tư vấn thiết kế cân bằng phong thủy và kỹ thuật — 0909 075 668.",
   metaKeywords:
     "phong thủy nhà ở, hướng nhà hợp tuổi, phong thủy xây nhà, bố trí phòng ngủ, sao khuê",
   content: `
@@ -47,6 +47,6 @@ export const phongThuyNhaO = {
 <p>Hướng Tây có thể nóng chiều; giải pháp: cách nhiệt, giếng trời, rèm — không nên kết luận duy nhất “xấu”.</p>
 
 <h2>Liên hệ tư vấn thiết kế</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
 `.trim(),
 };

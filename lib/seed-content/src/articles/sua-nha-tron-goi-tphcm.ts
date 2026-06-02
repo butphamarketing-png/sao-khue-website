@@ -5,7 +5,7 @@ export const suaNhaTronGoiTphcm = {
     "Dịch vụ sửa chữa nhà trọn gói giá rẻ tại TPHCM. Hơn 10 năm kinh nghiệm — Kiến trúc Sao Khuê mang đến sự an tâm cho mọi công trình.",
   metaTitle: "Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm | Kiến Trúc Sao Khuê",
   metaDescription:
-    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành dài hạn. Hotline 0909 085 668 — Sao Khuê.",
+    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành dài hạn. Hotline 0909 075 668 — Sao Khuê.",
   metaKeywords:
     "sửa nhà trọn gói tphcm, sửa chữa nhà tp hcm, cải tạo nhà phố, sửa nhà giá rẻ, kiến trúc sao khuê",
   content: `
@@ -68,7 +68,7 @@ export const suaNhaTronGoiTphcm = {
 <h2>Khu vực phục vụ sửa nhà trọn gói</h2>
 <p>Sao Khuê nhận sửa chữa nhà trọn gói trên toàn TP.HCM và vùng lân cận, đặc biệt các quận:</p>
 <p><strong>Quận 1, 3, 4, 5, 6, 7, 8, 10, 11, 12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Phú Nhuận, Bình Tân, Thủ Đức, Nhà Bè, Hóc Môn, Củ Chi…</strong></p>
-<p>Hotline hỗ trợ khảo sát nhanh trong ngày tại nội thành: <strong>0909 085 668</strong>.</p>
+<p>Hotline hỗ trợ khảo sát nhanh trong ngày tại nội thành: <strong>0909 075 668</strong>.</p>
 
 <h2>Câu hỏi thường gặp (FAQ)</h2>
 <h3>Sửa nhà trọn gói mất bao lâu?</h3>
@@ -83,7 +83,7 @@ export const suaNhaTronGoiTphcm = {
 <h2>Liên hệ tư vấn &amp; báo giá miễn phí</h2>
 <p>Bạn đang cần <strong>sửa nhà trọn gói tại TP.HCM</strong> với chi phí hợp lý và chất lượng đảm bảo? Hãy liên hệ Sao Khuê ngay hôm nay:</p>
 <ul>
-  <li><strong>Hotline:</strong> 0909 085 668</li>
+  <li><strong>Hotline:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
   <li><strong>Form báo giá:</strong> <a href="/bao-gia">Bảng báo giá &amp; yêu cầu tư vấn</a></li>

@@ -2,10 +2,10 @@
 export const xayDungPhanTho = {
   title: "Xây Dựng Phần Thô Nhà Phố TP.HCM — Giá Tốt 2026",
   excerpt:
-    "Thi công phần thô nhà phố, biệt thự: móng, khung BTCT, điện nước âm tường. Bảo hành kết cấu 10 năm. Báo giá 0909 085 668.",
+    "Thi công phần thô nhà phố, biệt thự: móng, khung BTCT, điện nước âm tường. Bảo hành kết cấu 10 năm. Báo giá 0909 075 668.",
   metaTitle: "Xây Dựng Phần Thô Nhà Phố TP.HCM | Đơn Giá 3,55–3,8 Triệu/m² | Sao Khuê",
   metaDescription:
-    "Xây phần thô TP.HCM uy tín: nhân công + vật tư thô, giám sát kỹ thuật, bảo hành kết cấu 10 năm. Khảo sát miễn phí — Sao Khuê 0909 085 668.",
+    "Xây phần thô TP.HCM uy tín: nhân công + vật tư thô, giám sát kỹ thuật, bảo hành kết cấu 10 năm. Khảo sát miễn phí — Sao Khuê 0909 075 668.",
   metaKeywords:
     "xây dựng phần thô, xây thô nhà phố tphcm, đơn giá xây thô 2026, thi công phần thô, sao khuê",
   content: `
@@ -60,6 +60,6 @@ export const xayDungPhanTho = {
 <p>Nhà phố 3–4 tầng thường <strong>2–4 tháng</strong> tùy quy mô và thời tiết.</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">Liên hệ tư vấn</a> · Địa chỉ: Quận Bình Thạnh, TP.HCM.</p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Liên hệ tư vấn</a> · Địa chỉ: Quận Bình Thạnh, TP.HCM.</p>
 `.trim(),
 };

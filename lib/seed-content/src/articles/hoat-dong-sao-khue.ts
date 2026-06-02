@@ -37,6 +37,6 @@ export const hoatDongSaoKhue = {
 </ul>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a></p>
 `.trim(),
 };

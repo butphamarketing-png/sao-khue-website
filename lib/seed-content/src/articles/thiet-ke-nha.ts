@@ -5,7 +5,7 @@ export const thietKeNha = {
     "Dịch vụ thiết kế nhà phố, biệt thự tại TP.HCM: tối ưu công năng, phối cảnh 3D, hồ sơ xin phép. Miễn phí khi ký xây trọn gói.",
   metaTitle: "Thiết Kế Nhà Ở TP.HCM — Kiến Trúc 2D/3D | Sao Khuê",
   metaDescription:
-    "Thiết kế nhà phố, biệt thự TP.HCM: mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật. Kiến trúc sư Sao Khuê — tư vấn 0909 085 668.",
+    "Thiết kế nhà phố, biệt thự TP.HCM: mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật. Kiến trúc sư Sao Khuê — tư vấn 0909 075 668.",
   metaKeywords:
     "thiết kế nhà tphcm, thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc, sao khuê",
   content: `
@@ -45,11 +45,11 @@ export const thietKeNha = {
 <h3>Thiết kế nhà mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>2–4 tuần</strong> sau khi chốt yêu cầu và có số đo đất đầy đủ.</p>
 <h3>Chi phí thiết kế riêng?</h3>
-<p>Báo giá theo diện tích sàn và độ phức tạp. Liên hệ <strong>0909 085 668</strong> để nhận báo giá.</p>
+<p>Báo giá theo diện tích sàn và độ phức tạp. Liên hệ <strong>0909 075 668</strong> để nhận báo giá.</p>
 <h3>Có kết hợp phong thủy không?</h3>
 <p>Có thể tư vấn bố trí theo yêu cầu — xem thêm <a href="/kinh-nghiem/phong-thuy-nha-o">phong thủy nhà ở</a>.</p>
 
 <h2>Liên hệ thiết kế</h2>
-<p>Hotline <strong>0909 085 668</strong> · Email kientrucsaokhue@gmail.com · <a href="/lien-he">Đặt lịch tư vấn</a></p>
+<p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · <a href="/lien-he">Đặt lịch tư vấn</a></p>
 `.trim(),
 };

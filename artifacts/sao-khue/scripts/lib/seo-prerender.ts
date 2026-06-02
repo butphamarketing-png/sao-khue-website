@@ -1,17 +1,15 @@
 /** SEO helpers for prerender scripts (no Vite asset imports). */
 
-import {
-  getMenuChildren,
-  getMenuLeafSlug,
-  inferSubSlugFromPost,
-} from "../../src/lib/menu-posts.ts";
+import { getMenuChildren, getMenuLeafSlug } from "../../src/lib/menu-posts.ts";
 import { defaultNavMenu, type MenuItem } from "../../src/lib/menu.ts";
+import { getPostPublicPath, getPostUrlLeaf } from "../../src/lib/post-url.ts";
 
 export const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = {
   "dich-vu": { label: "Dịch vụ", path: "/dich-vu" },
-  "gioi-thieu": { label: "Giới thiệu", path: "/gioi-thieu" },
+  "gioi-thieu": { label: "Giới thiệu", path: "/bai-viet/ve-chung-toi" },
   "cong-trinh": { label: "Công trình", path: "/cong-trinh" },
-  "kinh-nghiem": { label: "Kinh nghiệm", path: "/kinh-nghiem" },
+  "tin-tuc": { label: "Tin tức", path: "/tin-tuc" },
+  "kinh-nghiem": { label: "Tin tức", path: "/tin-tuc" },
 };
 
 export function truncateMeta(text: string, maxLen: number): string {
@@ -52,7 +50,7 @@ export function buildPostBreadcrumbItems(
   const cat = CATEGORY_CRUMBS[post.category];
   if (cat) items.push({ name: cat.label, path: cat.path });
 
-  const leaf = inferSubSlugFromPost(post, menu);
+  const leaf = getPostUrlLeaf(post, menu);
   if (leaf) {
     const child = getMenuChildren(post.category, menu).find(
       (c) => getMenuLeafSlug(c.href) === leaf,
@@ -60,7 +58,7 @@ export function buildPostBreadcrumbItems(
     if (child) items.push({ name: child.title, path: child.href });
   }
 
-  items.push({ name: post.title, path: `/bai-viet/${post.slug}` });
+  items.push({ name: post.title, path: getPostPublicPath(post, menu) });
   return items;
 }
 

@@ -5,7 +5,7 @@ export const soDoToChuc = {
     "Cơ cấu tổ chức Sao Khuê: Ban giám đốc, phòng Thiết kế, Thi công, Vật tư, Kế toán, Chăm sóc khách hàng — vận hành gọn, phản hồi nhanh.",
   metaTitle: "Sơ Đồ Tổ Chức — Sao Khuê | Cơ Cấu Công Ty",
   metaDescription:
-    "Tìm hiểu sơ đồ tổ chức Kiến Trúc Sao Khuê: các phòng ban phụ trách thiết kế, thi công và chăm sóc khách hàng. Hotline 0909 085 668.",
+    "Tìm hiểu sơ đồ tổ chức Kiến Trúc Sao Khuê: các phòng ban phụ trách thiết kế, thi công và chăm sóc khách hàng. Hotline 0909 075 668.",
   metaKeywords:
     "sơ đồ tổ chức sao khuê, cơ cấu công ty xây dựng, kiến trúc sao khuê",
   content: `
@@ -35,6 +35,6 @@ export const soDoToChuc = {
 </ul>
 
 <h2>Liên hệ</h2>
-<p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về chúng tôi</a> · Hotline <strong>0909 085 668</strong></p>
+<p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về chúng tôi</a> · Hotline <strong>0909 075 668</strong></p>
 `.trim(),
 };

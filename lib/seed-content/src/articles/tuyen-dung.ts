@@ -5,7 +5,7 @@ export const tuyenDung = {
     "Tuyển dụng tại Sao Khuê: kỹ sư xây dựng, kiến trúc sư, giám sát công trình, kinh doanh. Môi trường dự án thực tế, TP.HCM.",
   metaTitle: "Tuyển Dụng 2026 — Kiến Trúc Sao Khuê | Kỹ Sư, KTS",
   metaDescription:
-    "Tuyển dụng Sao Khuê 2026: kỹ sư, kiến trúc sư, giám sát thi công nhà phố. Gửi CV qua email hoặc hotline 0909 085 668.",
+    "Tuyển dụng Sao Khuê 2026: kỹ sư, kiến trúc sư, giám sát thi công nhà phố. Gửi CV qua email hoặc hotline 0909 075 668.",
   metaKeywords:
     "tuyển dụng sao khuê, tuyển kỹ sư xây dựng tphcm, tuyển kiến trúc sư, việc làm xây dựng",
   content: `
@@ -40,7 +40,7 @@ export const tuyenDung = {
 <ol>
   <li>Gửi CV + portfolio (nếu có) qua email: <strong>kientrucsaokhue@gmail.com</strong></li>
   <li>Tiêu đề: [Ứng tuyển] Họ tên — Vị trí</li>
-  <li>Hoặc gọi <strong>0909 085 668</strong> để được hướng dẫn.</li>
+  <li>Hoặc gọi <strong>0909 075 668</strong> để được hướng dẫn.</li>
 </ol>
 <p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về công ty</a> và <a href="/gioi-thieu/so-do-to-chuc">sơ đồ tổ chức</a>.</p>
 `.trim(),

@@ -22,6 +22,7 @@ import {
   baoGiaXayNhaTronGoiMoiNhatTphcm,
   type SeoArticle,
 } from "./articles";
+import { matchesCategory } from "./categories";
 
 export type SeedPost = {
   slug: string;
@@ -75,13 +76,13 @@ const FALLBACK_TIMESTAMP = "2026-01-15T00:00:00.000Z";
 export const seedPosts: SeedPost[] = [
   seoPost(
     "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
-    "dich-vu",
+    "tin-tuc",
     "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
     baoGiaXayNhaTronGoiMoiNhatTphcm,
   ),
   seoPost(
     "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
-    "dich-vu",
+    "tin-tuc",
     "https://images.unsplash.com/photo-1486406146926-c627a92fd1ab?auto=format&fit=crop&q=80&w=1200",
     congTyXayDungNhaPhoUyTinTphcm,
   ),
@@ -101,10 +102,16 @@ export const seedPosts: SeedPost[] = [
   seoPost("sua-nha-quan-3", "cong-trinh", REPAIR, suaNhaQuan3),
   seoPost("thiet-ke-nha-biet-thu-thu-duc", "cong-trinh", DESIGN, thietKeNhaBietThuThuDuc),
   seoPost("thiet-ke-nha-phong-cach-hien-dai", "cong-trinh", DESIGN, thietKeNhaPhongCachHienDai),
-  seoPost("cam-nang-xay-nha-2026", "kinh-nghiem", HERO, camNangXayNha2026),
-  seoPost("luat-xay-dung-moi-nhat", "kinh-nghiem", HERO, luatXayDungMoiNhat),
-  seoPost("phong-thuy-nha-o", "kinh-nghiem", HERO, phongThuyNhaO),
+  seoPost("cam-nang-xay-nha-2026", "tin-tuc", HERO, camNangXayNha2026),
+  seoPost("luat-xay-dung-moi-nhat", "tin-tuc", HERO, luatXayDungMoiNhat),
+  seoPost("phong-thuy-nha-o", "tin-tuc", HERO, phongThuyNhaO),
 ];
+
+export {
+  normalizeCategory,
+  categoriesForFilter,
+  matchesCategory,
+} from "./categories";
 
 export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
   return {
@@ -129,7 +136,7 @@ export function getFallbackPost(slug: string): FallbackPost | undefined {
 export function listFallbackPosts(options?: { category?: string; limit?: number }): FallbackPost[] {
   let rows = fallbackPosts;
   if (options?.category) {
-    rows = rows.filter((p) => p.category === options.category);
+    rows = rows.filter((p) => matchesCategory(p.category, options.category!));
   }
   if (options?.limit) {
     rows = rows.slice(0, options.limit);

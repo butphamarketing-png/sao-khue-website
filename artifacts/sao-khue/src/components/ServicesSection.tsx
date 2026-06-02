@@ -8,6 +8,7 @@ import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedByCategory } from "@/lib/featured-posts";
+import { getPostPublicPath } from "@/lib/post-url";
 
 const fallback = [
   { id: "sn", title: "SỬA NHÀ TRỌN GÓI", imageUrl: "/images/service-2.png", slug: "" },
@@ -28,7 +29,7 @@ export function ServicesSection() {
           id: String(p.id),
           title: p.title.toUpperCase(),
           imageUrl: p.imageUrl || "/images/service-1.png",
-          slug: p.slug,
+          href: getPostPublicPath(p),
         }))
       : fallback;
 
@@ -53,7 +54,7 @@ export function ServicesSection() {
                 </div>
               ))
             : services.map((service, index) => {
-                const link = service.slug ? `/bai-viet/${service.slug}` : "/dich-vu";
+                const link = "href" in service && service.href ? service.href : "/dich-vu";
                 return (
                   <motion.div
                     key={service.id}

@@ -5,7 +5,7 @@ export const suaNhaQuan3 = {
     "Cải tạo nhà phố 30 năm tuổi tại Q.3: mở rộng phòng, chống thấm, điện nước mới. Hoàn thành 3,5 tháng.",
   metaTitle: "Sửa Nhà Quận 3 — Cải Tạo Nhà Phố Cũ | Sao Khuê",
   metaDescription:
-    "Công trình cải tạo nhà phố Quận 3: gia đình 6 người, không gian hiện đại. Sao Khuê sửa nhà trọn gói — 0909 085 668.",
+    "Công trình cải tạo nhà phố Quận 3: gia đình 6 người, không gian hiện đại. Sao Khuê sửa nhà trọn gói — 0909 075 668.",
   metaKeywords:
     "sửa nhà quận 3, cải tạo nhà phố cũ, sửa chữa nhà tphcm, công trình sao khuê",
   content: `
@@ -38,6 +38,6 @@ export const suaNhaQuan3 = {
 </ul>
 
 <h2>Đặt lịch khảo sát nhà cũ</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">xây mới Bình Thạnh</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">xây mới Bình Thạnh</a></p>
 `.trim(),
 };

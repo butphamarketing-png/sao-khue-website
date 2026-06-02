@@ -5,7 +5,7 @@ export const veChungToi = {
     "Giới thiệu Công ty TNHH Kiến Trúc Sao Khuê: 500+ công trình, đội ngũ chuyên môn, quy trình minh bạch, bảo hành 10 năm kết cấu.",
   metaTitle: "Về Chúng Tôi — Kiến Trúc Sao Khuê | 10+ Năm Kinh Nghiệm",
   metaDescription:
-    "Sao Khuê — thiết kế và thi công nhà phố, biệt thự TP.HCM từ 2014. Uy tín, chất lượng, tận tâm. Hotline 0909 085 668.",
+    "Sao Khuê — thiết kế và thi công nhà phố, biệt thự TP.HCM từ 2014. Uy tín, chất lượng, tận tâm. Hotline 0909 075 668.",
   metaKeywords:
     "về sao khuê, công ty xây dựng tphcm, kiến trúc sao khuê, nhà thầu uy tín, xây dựng nhà phố",
   content: `
@@ -39,6 +39,6 @@ export const veChungToi = {
 <p>Trụ sở: <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong>. Nhận thi công toàn TP.HCM và tỉnh lân cận: Bình Dương, Đồng Nai, Long An…</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình tiêu biểu</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình tiêu biểu</a></p>
 `.trim(),
 };

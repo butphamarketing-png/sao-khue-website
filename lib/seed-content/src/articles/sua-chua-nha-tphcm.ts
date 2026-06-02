@@ -5,7 +5,7 @@ export const suaChuaNhaTphcm = {
     "Sửa chữa nhà phố TP.HCM: chống thấm, sơn sửa, thay điện nước, lát gạch. Báo giá rõ ràng, thi công gọn.",
   metaTitle: "Sửa Chữa Nhà TP.HCM — Chống Thấm, Sơn Sửa | Sao Khuê",
   metaDescription:
-    "Sửa chữa nhà TP.HCM uy tín: chống thấm mái, sân thượng, sơn nước, điện nước. Khảo sát miễn phí 0909 085 668.",
+    "Sửa chữa nhà TP.HCM uy tín: chống thấm mái, sân thượng, sơn nước, điện nước. Khảo sát miễn phí 0909 075 668.",
   metaKeywords:
     "sửa chữa nhà tphcm, sửa nhà giá rẻ, chống thấm nhà, sơn sửa nhà phố, sao khuê",
   content: `
@@ -32,7 +32,7 @@ export const suaChuaNhaTphcm = {
     <tr><td>Sửa chữa tổng thể nhẹ</td><td>2,5 – 4 triệu đ/m²</td></tr>
   </tbody>
 </table>
-<p>Báo giá chính thức sau khảo sát. Hotline <strong>0909 085 668</strong>.</p>
+<p>Báo giá chính thức sau khảo sát. Hotline <strong>0909 075 668</strong>.</p>
 
 <h2>Vì sao chọn Sao Khuê?</h2>
 <ul>

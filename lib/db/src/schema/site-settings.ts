@@ -6,7 +6,7 @@ export const siteSettingsTable = pgTable("site_settings", {
     .notNull()
     .default("CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE"),
   taxCode: text("tax_code").notNull().default(""),
-  hotline1: text("hotline1").notNull().default("0909 085 668"),
+  hotline1: text("hotline1").notNull().default("0909 075 668"),
   hotline2: text("hotline2").notNull().default(""),
   email: text("email").notNull().default("kientrucsaokhue@gmail.com"),
   address1: text("address1")
@@ -23,7 +23,7 @@ export const siteSettingsTable = pgTable("site_settings", {
     .default("https://facebook.com/kientrucsaokhue"),
   youtubeUrl: text("youtube_url").notNull().default(""),
   instagramUrl: text("instagram_url").notNull().default(""),
-  zaloPhone: text("zalo_phone").notNull().default("0909085668"),
+  zaloPhone: text("zalo_phone").notNull().default("0909075668"),
   messengerUrl: text("messenger_url").notNull().default(""),
   footerDescription: text("footer_description")
     .notNull()

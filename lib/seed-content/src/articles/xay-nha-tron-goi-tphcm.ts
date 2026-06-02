@@ -2,10 +2,10 @@
 export const xayNhaTronGoiTphcm = {
   title: "Xây Nhà Trọn Gói TP.HCM 2026 — Chìa Khóa Trao Tay | Sao Khuê",
   excerpt:
-    "Xây nhà trọn gói tại TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành kết cấu 10 năm. Hotline 0909 085 668.",
+    "Xây nhà trọn gói tại TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
   metaTitle: "Xây Nhà Trọn Gói TP.HCM 2026 — Giá Tốt, Bảo Hành 10 Năm | Sao Khuê",
   metaDescription:
-    "Dịch vụ xây nhà trọn gói TP.HCM chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 085 668.",
+    "Dịch vụ xây nhà trọn gói TP.HCM chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.",
   metaKeywords:
     "xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ, xây nhà chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê",
   content: `
@@ -64,7 +64,7 @@ export const xayNhaTronGoiTphcm = {
 <h3>Xây nhà trọn gói mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô, mùa mưa và mức hoàn thiện. Tiến độ cam kết trong hợp đồng.</p>
 <h3>Có được tư vấn miễn phí không?</h3>
-<p>Có. Hotline <strong>0909 085 668</strong> — kỹ sư khảo sát và tư vấn sơ bộ tại công trình.</p>
+<p>Có. Hotline <strong>0909 075 668</strong> — kỹ sư khảo sát và tư vấn sơ bộ tại công trình.</p>
 <h3>Xây trọn gói có bao gồm nội thất không?</h3>
 <p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Nội thất cao cấp, tủ bếp đặc biệt có thể báo giá thêm hoặc xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <h3>Sao Khuê có nhận xây ở Bình Dương, Đồng Nai không?</h3>
@@ -72,7 +72,7 @@ export const xayNhaTronGoiTphcm = {
 
 <h2>Liên hệ báo giá xây nhà trọn gói</h2>
 <ul>
-  <li><strong>Hotline:</strong> 0909 085 668</li>
+  <li><strong>Hotline:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
   <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>

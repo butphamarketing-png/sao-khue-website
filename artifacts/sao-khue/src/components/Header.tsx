@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X, PhoneCall, ChevronDown, ArrowRight } from "lucide-react";
+import { Menu, X, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/BrandLogo";
 import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
@@ -11,7 +11,6 @@ export function Header() {
   const phone = usePrimaryPhone();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [openMobileSub, setOpenMobileSub] = useState<string | null>(null);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -22,8 +21,15 @@ export function Header() {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
-    setOpenMobileSub(null);
   }, [location]);
+
+  function isNavActive(item: { href: string; category?: string }) {
+    if (location === item.href) return true;
+    if (item.category && location.startsWith(`${item.href}/`)) return true;
+    if (item.category === "tin-tuc" && location.startsWith("/kinh-nghiem")) return true;
+    if (item.href.startsWith("/bai-viet/") && location === item.href) return true;
+    return false;
+  }
 
   return (
     <header
@@ -47,52 +53,24 @@ export function Header() {
 
           <nav className="hidden min-w-0 flex-nowrap items-center justify-center gap-0 lg:flex">
             {menu.map((item) => {
-              const active =
-                location === item.href ||
-                (item.category && location.startsWith(item.href + "/"));
+              const active = isNavActive(item);
               const label = item.shortTitle ?? item.title;
               return (
-                <div key={item.title} className="group relative shrink-0">
-                  <Link
-                    href={item.href}
-                    title={item.title}
-                    className={`relative flex items-center gap-0.5 whitespace-nowrap rounded-lg px-2 py-2 text-[11px] font-semibold leading-none tracking-wide transition-colors lg:px-2.5 xl:px-3 xl:text-xs 2xl:text-[13px] ${
-                      active
-                        ? "text-primary"
-                        : "text-slate-700 hover:bg-slate-50 hover:text-primary"
-                    }`}
-                  >
-                    {label}
-                    {item.children && (
-                      <ChevronDown
-                        size={14}
-                        className="opacity-60 transition-transform group-hover:rotate-180"
-                      />
-                    )}
-                    {active && (
-                      <span className="absolute inset-x-3 -bottom-1 h-0.5 rounded-full bg-accent" />
-                    )}
-                  </Link>
-                  {item.children && (
-                    <div className="invisible absolute left-0 top-full z-50 w-72 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100">
-                      <div className="overflow-hidden rounded-2xl border border-slate-100/80 bg-white/95 py-2 shadow-xl shadow-slate-900/10 backdrop-blur-xl">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="group/link flex items-center justify-between px-4 py-2.5 text-sm text-slate-700 transition hover:bg-primary/5 hover:text-primary"
-                          >
-                            {child.title}
-                            <ArrowRight
-                              size={14}
-                              className="opacity-0 transition group-hover/link:translate-x-0.5 group-hover/link:opacity-100"
-                            />
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  title={item.title}
+                  className={`relative shrink-0 whitespace-nowrap rounded-lg px-2 py-2 text-[11px] font-semibold leading-none tracking-wide transition-colors lg:px-2.5 xl:px-3 xl:text-xs 2xl:text-[13px] ${
+                    active
+                      ? "text-primary"
+                      : "text-slate-700 hover:bg-slate-50 hover:text-primary"
+                  }`}
+                >
+                  {label}
+                  {active && (
+                    <span className="absolute inset-x-3 -bottom-1 h-0.5 rounded-full bg-accent" />
                   )}
-                </div>
+                </Link>
               );
             })}
           </nav>
@@ -125,47 +103,16 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="absolute left-0 top-full max-h-[80vh] w-full overflow-y-auto border-t border-slate-100 bg-white shadow-2xl lg:hidden">
           {menu.map((item) => (
-            <div key={item.title} className="border-b border-slate-50">
-              <div className="flex items-center justify-between">
-                <Link
-                  href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="flex-1 px-4 py-3.5 text-sm font-bold text-slate-800"
-                >
-                  {item.title}
-                </Link>
-                {item.children && (
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setOpenMobileSub(openMobileSub === item.title ? null : item.title)
-                    }
-                    className="px-4 py-3.5 text-slate-500"
-                  >
-                    <ChevronDown
-                      size={18}
-                      className={
-                        openMobileSub === item.title ? "rotate-180 transition-transform" : "transition-transform"
-                      }
-                    />
-                  </button>
-                )}
-              </div>
-              {item.children && openMobileSub === item.title && (
-                <div className="bg-slate-50/80 pb-2">
-                  {item.children.map((c) => (
-                    <Link
-                      key={c.href}
-                      href={c.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block px-8 py-2.5 text-sm text-slate-700 hover:text-primary"
-                    >
-                      {c.title}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link
+              key={item.title}
+              href={item.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block border-b border-slate-50 px-4 py-3.5 text-sm font-bold ${
+                isNavActive(item) ? "bg-primary/5 text-primary" : "text-slate-800"
+              }`}
+            >
+              {item.title}
+            </Link>
           ))}
           <div className="p-4">
             <Button asChild className="w-full rounded-full bg-accent hover:bg-accent/90">

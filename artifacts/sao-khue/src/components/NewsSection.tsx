@@ -6,6 +6,7 @@ import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedPosts } from "@/lib/featured-posts";
+import { getPostPublicPath } from "@/lib/post-url";
 
 function readingMinutes(content: string | null | undefined) {
   const words = (content ?? "").replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -20,7 +21,7 @@ export function NewsSection() {
   const items = pickFeaturedPosts(allItems, featuredConfig.news, 6);
 
   return (
-    <section id="kinh-nghiem" className="section-alt">
+    <section id="tin-tuc" className="section-alt">
       <div className="site-container">
         <SectionHeader
           align="left"
@@ -28,7 +29,7 @@ export function NewsSection() {
           subtitle={meta.news.subtitle}
           action={
             <Link
-              href="/kinh-nghiem"
+              href="/tin-tuc"
               className="inline-flex rounded-full border border-primary/15 bg-primary/5 px-5 py-2.5 text-sm font-semibold uppercase tracking-wide text-primary transition hover:border-primary hover:bg-primary hover:text-white"
             >
               Xem tất cả bài viết
@@ -62,7 +63,7 @@ export function NewsSection() {
                 className="card-premium group overflow-hidden"
               >
                 <Link
-                  href={`/bai-viet/${item.slug}`}
+                  href={getPostPublicPath(item)}
                   className="relative block h-60 overflow-hidden bg-slate-100"
                 >
                   {item.imageUrl ? (
@@ -95,13 +96,13 @@ export function NewsSection() {
                     </span>
                   </div>
                   <h3 className="mb-3 line-clamp-2 text-xl font-bold text-slate-800 transition-colors group-hover:text-primary">
-                    <Link href={`/bai-viet/${item.slug}`}>{item.title}</Link>
+                    <Link href={getPostPublicPath(item)}>{item.title}</Link>
                   </h3>
                   <p className="mb-5 line-clamp-3 text-sm leading-7 text-slate-600">
                     {item.excerpt}
                   </p>
                   <Link
-                    href={`/bai-viet/${item.slug}`}
+                    href={getPostPublicPath(item)}
                     className="inline-flex items-center rounded-full border border-primary/20 px-4 py-2 text-sm font-bold uppercase tracking-wide text-primary transition hover:border-primary hover:bg-primary hover:text-white"
                   >
                     Đọc tiếp

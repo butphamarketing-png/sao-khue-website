@@ -1,5 +1,5 @@
 import type { Post } from "@workspace/api-client-react";
-import { getFallbackPost, listFallbackPosts } from "@workspace/seed-content";
+import { getFallbackPost, listFallbackPosts, matchesCategory } from "@workspace/seed-content";
 import { normalizePosts } from "./posts";
 
 type PostCollection =
@@ -15,8 +15,12 @@ type PostCollection =
 /** Prefer API data; fall back to bundled seed content when DB is offline. */
 export function resolvePosts(input: PostCollection, options?: { category?: string; limit?: number }): Post[] {
   const fromApi = normalizePosts(input);
-  if (fromApi.length > 0) return fromApi;
-  return listFallbackPosts(options) as Post[];
+  let rows = fromApi.length > 0 ? fromApi : (listFallbackPosts(options) as Post[]);
+  if (options?.category && fromApi.length > 0) {
+    rows = rows.filter((p) => matchesCategory(p.category, options.category!));
+  }
+  if (options?.limit) rows = rows.slice(0, options.limit);
+  return rows;
 }
 
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */

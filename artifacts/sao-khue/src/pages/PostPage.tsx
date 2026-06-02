@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useParams } from "wouter";
+import { Link, useLocation, useParams } from "wouter";
 import { Calendar, Clock3, ArrowLeft } from "lucide-react";
 import { PageShell } from "@/components/PageShell";
 import { CTABanner } from "@/components/CTABanner";
@@ -18,7 +18,14 @@ import {
   enhanceArticleHtml,
   findMenuSectionPathForPost,
 } from "@/lib/seo";
-import { inferSubSlugFromPost, postMatchesSubSlug } from "@/lib/menu-posts";
+import { postMatchesSubSlug } from "@/lib/menu-posts";
+import { normalizeCategory } from "@/lib/categories";
+import {
+  getPostPublicPath,
+  getPostUrlLeaf,
+  parsePostPathFromLocation,
+  resolvePostSlugFromCategorySegment,
+} from "@/lib/post-url";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -26,22 +33,36 @@ function estimateReadingMinutes(content: string) {
 }
 
 export default function PostPage() {
+  const [location] = useLocation();
   const params = useParams<{ slug: string }>();
-  const slug = params.slug;
+  const pathInfo = parsePostPathFromLocation(location);
+  const segment = params.slug ?? pathInfo.segment ?? "";
   const site = useSiteSettings();
   const menu = useNavMenu();
   const brandName = site.companyName || "Kiến Trúc Sao Khuê";
+  const { data: posts } = useListPosts({ limit: 48 });
+  const allPosts = resolvePosts(posts);
+
+  const slug = (() => {
+    if (pathInfo.mode === "category" && pathInfo.category && segment) {
+      return (
+        resolvePostSlugFromCategorySegment(pathInfo.category, segment, allPosts, menu) ??
+        segment
+      );
+    }
+    return segment;
+  })();
+
   const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug);
   const post = resolvePost(slug, postFromApi);
-  const { data: posts } = useListPosts({ limit: 24 });
-  const postSubSlug = post ? inferSubSlugFromPost(post, menu) : null;
+  const postSubSlug = post ? getPostUrlLeaf(post, menu) : null;
   const sectionPath = post ? findMenuSectionPathForPost(post, menu) : null;
   const relatedPosts = resolvePosts(posts)
     .filter((item) => {
       if (item.slug === slug) return false;
       if (!post) return false;
       if (postSubSlug) return postMatchesSubSlug(item, postSubSlug, menu);
-      return item.category === post.category;
+      return normalizeCategory(item.category) === normalizeCategory(post.category);
     })
     .slice(0, 3);
   const readingMinutes = post ? estimateReadingMinutes(post.content ?? "") : null;
@@ -50,7 +71,7 @@ export default function PostPage() {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  const postPath = slug ? `/bai-viet/${slug}` : undefined;
+  const postPath = post ? getPostPublicPath(post, menu) : undefined;
   const postTitle = post
     ? post.metaTitle?.trim() || `${post.title} | ${brandName}`
     : isLoading
@@ -93,7 +114,7 @@ export default function PostPage() {
         ? {
             title: `Không tìm thấy bài viết | ${brandName}`,
             description: "Bài viết không tồn tại hoặc đã được di chuyển.",
-            path: postPath ?? `/bai-viet/${slug}`,
+            path: postPath ?? location.split("?")[0],
             noindex: true,
           }
         : null,
@@ -201,7 +222,7 @@ export default function PostPage() {
               {relatedPosts.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/bai-viet/${item.slug}`}
+                  href={getPostPublicPath(item, menu)}
                   className="group overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-primary hover:bg-white hover:shadow-md"
                 >
                   {item.imageUrl && (

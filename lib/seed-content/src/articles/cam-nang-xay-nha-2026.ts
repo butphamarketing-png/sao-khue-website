@@ -5,7 +5,7 @@ export const camNangXayNha2026 = {
     "Hướng dẫn xây nhà lần đầu: chuẩn bị tài chính, chọn nhà thầu, xin phép, giám sát thi công và nghiệm thu. Cập nhật 2026.",
   metaTitle: "Cẩm Nang Xây Nhà 2026 — Hướng Dẫn Chi Tiết | Sao Khuê",
   metaDescription:
-    "Cẩm nang xây nhà A–Z 2026: dự trù chi phí, chọn nhà thầu uy tín, quy trình xin phép, tránh phát sinh. Tư vấn miễn phí 0909 085 668.",
+    "Cẩm nang xây nhà A–Z 2026: dự trù chi phí, chọn nhà thầu uy tín, quy trình xin phép, tránh phát sinh. Tư vấn miễn phí 0909 075 668.",
   metaKeywords:
     "cẩm nang xây nhà, kinh nghiệm xây nhà, xây nhà lần đầu, quy trình xây nhà, sao khuê",
   content: `
@@ -60,6 +60,6 @@ export const camNangXayNha2026 = {
 <p>Nhà phố 3–4 tầng thường 4–7 tháng tùy quy mô và thời tiết.</p>
 
 <h2>Cần tư vấn thêm?</h2>
-<p>Sao Khuê hỗ trợ khảo sát miễn phí: <strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a></p>
+<p>Sao Khuê hỗ trợ khảo sát miễn phí: <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a></p>
 `.trim(),
 };

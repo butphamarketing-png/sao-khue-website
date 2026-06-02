@@ -4,7 +4,8 @@ const CATEGORY_KEYWORD: Record<string, string[]> = {
   "dich-vu": ["xây dựng", "thi công", "báo giá xây nhà", "tphcm"],
   "gioi-thieu": ["kiến trúc sao khuê", "công ty xây dựng"],
   "cong-trinh": ["công trình", "nhà phố", "biệt thự", "tphcm"],
-  "kinh-nghiem": ["kinh nghiệm xây dựng", "cẩm nang xây nhà"],
+  "tin-tuc": ["tin tức xây dựng", "cẩm nang xây nhà", "báo giá xây nhà"],
+  "kinh-nghiem": ["tin tức xây dựng", "cẩm nang xây nhà"],
 };
 
 export function plainTextFromHtml(html: string): string {

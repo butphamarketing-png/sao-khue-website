@@ -5,7 +5,7 @@ export const xayNhaPhoBinhThanh = {
     "Case study xây nhà phố 5x18m, 4 tầng tại Bình Thạnh: hiện đại, giếng trời, bàn giao đúng tiến độ. Tham khảo mẫu Sao Khuê.",
   metaTitle: "Xây Nhà Phố Bình Thạnh 4 Tầng | Công Trình Sao Khuê",
   metaDescription:
-    "Công trình xây nhà phố Quận Bình Thạnh: 5x18m, 4 tầng, phong cách hiện đại. Sao Khuê thi công trọn gói — tư vấn 0909 085 668.",
+    "Công trình xây nhà phố Quận Bình Thạnh: 5x18m, 4 tầng, phong cách hiện đại. Sao Khuê thi công trọn gói — tư vấn 0909 075 668.",
   metaKeywords:
     "xây nhà phố bình thạnh, công trình nhà phố, xây nhà 4 tầng tphcm, sao khuê",
   content: `
@@ -39,7 +39,7 @@ export const xayNhaPhoBinhThanh = {
 <h2>Bạn có dự án tương tự?</h2>
 <p>Sao Khuê nhận <strong>xây nhà phố</strong> toàn TP.HCM. Liên hệ khảo sát miễn phí:</p>
 <ul>
-  <li>Hotline <strong>0909 085 668</strong></li>
+  <li>Hotline <strong>0909 075 668</strong></li>
   <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Liên hệ</a></li>
   <li>Xem thêm <a href="/cong-trinh/sua-nha-quan-3">cải tạo Quận 3</a></li>
 </ul>

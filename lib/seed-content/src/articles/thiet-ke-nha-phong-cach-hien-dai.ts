@@ -5,7 +5,7 @@ export const thietKeNhaPhongCachHienDai = {
     "Mẫu nhà phố hiện đại 3–4 tầng: lan can kính, giếng trời, phòng master khép kín. Thiết kế & thi công Sao Khuê.",
   metaTitle: "Thiết Kế Nhà Phố Hiện Đại TP.HCM | Sao Khuê",
   metaDescription:
-    "Thiết kế nhà phố hiện đại 3–4 tầng tại TP.HCM: thông gió, ánh sáng, công năng gia đình trẻ. Tư vấn 0909 085 668.",
+    "Thiết kế nhà phố hiện đại 3–4 tầng tại TP.HCM: thông gió, ánh sáng, công năng gia đình trẻ. Tư vấn 0909 075 668.",
   metaKeywords:
     "thiết kế nhà phố hiện đại, mẫu nhà phố 4 tầng, thiết kế nhà tphcm, sao khuê",
   content: `
@@ -36,6 +36,6 @@ export const thietKeNhaPhongCachHienDai = {
 <p>Chiều cao, lộ giới, cửa sổ hướng ra đường cần tuân thủ quy định địa phương. Sao Khuê tư vấn sơ bộ trước khi chốt bản vẽ — xem <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng</a>.</p>
 
 <h2>Liên hệ thiết kế</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></p>
 `.trim(),
 };

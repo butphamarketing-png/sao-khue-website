@@ -2,10 +2,10 @@
 export const nangTangNhaPho = {
   title: "Nâng Tầng Nhà Phố TP.HCM — An Toàn, Tiết Kiệm Chi Phí",
   excerpt:
-    "Dịch vụ nâng tầng nhà phố: khảo sát kết cấu, gia cố, thiết kế, xin phép và thi công. Sao Khuê — Hotline 0909 085 668.",
+    "Dịch vụ nâng tầng nhà phố: khảo sát kết cấu, gia cố, thiết kế, xin phép và thi công. Sao Khuê — Hotline 0909 075 668.",
   metaTitle: "Nâng Tầng Nhà Phố TP.HCM — Khảo Sát Kết Cấu | Sao Khuê",
   metaDescription:
-    "Nâng tầng nhà phố an toàn tại TP.HCM: khảo sát móng, gia cố, thi công trọn gói. Bảo hành kết cấu 10 năm. Tư vấn 0909 085 668.",
+    "Nâng tầng nhà phố an toàn tại TP.HCM: khảo sát móng, gia cố, thi công trọn gói. Bảo hành kết cấu 10 năm. Tư vấn 0909 075 668.",
   metaKeywords:
     "nâng tầng nhà phố, nâng tầng nhà cũ tphcm, gia cố nâng tầng, xin phép nâng tầng, sao khuê",
   content: `
@@ -45,6 +45,6 @@ export const nangTangNhaPho = {
 <p>Tùy phương án; nhiều công trình vẫn ở tầng dưới với biện pháp an toàn che chắn.</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 085 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình</a> tham khảo.</p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình</a> tham khảo.</p>
 `.trim(),
 };

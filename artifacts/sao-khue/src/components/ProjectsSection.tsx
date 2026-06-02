@@ -7,6 +7,8 @@ import { useListPosts } from "@workspace/api-client-react";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedByCategory } from "@/lib/featured-posts";
+import { getPostPublicPath } from "@/lib/post-url";
+import { getPostPublicPath } from "@/lib/post-url";
 
 const fallback = [
   { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },
@@ -31,7 +33,7 @@ export function ProjectsSection() {
           id: p.id,
           title: p.title,
           imageUrl: p.imageUrl || "/images/project_1.jpg",
-          slug: p.slug,
+          href: getPostPublicPath(p),
         }))
       : fallback;
 
@@ -56,7 +58,8 @@ export function ProjectsSection() {
                 </div>
               ))
             : projects.map((project, index) => {
-                const link = project.slug ? `/bai-viet/${project.slug}` : "/cong-trinh";
+                const link =
+                  "href" in project && project.href ? project.href : "/cong-trinh";
                 return (
                   <motion.div
                     key={project.id}
