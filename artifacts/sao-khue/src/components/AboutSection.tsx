@@ -27,12 +27,7 @@ export function AboutSection() {
               alt={content.title}
               className="relative z-10 aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl ring-1 ring-slate-200"
             />
-            <div className="absolute -bottom-5 -right-2 z-20 rounded-2xl bg-gradient-to-br from-primary to-[#0c4a8a] p-5 text-white shadow-xl md:-right-6 md:p-6">
-              <div className="text-3xl font-bold md:text-4xl">{content.experienceYears}</div>
-              <div className="mt-1 max-w-[140px] whitespace-pre-line text-xs font-semibold uppercase tracking-wide text-blue-100 md:text-sm">
-                {content.experienceLabel}
-              </div>
-            </div>
+            {/* intentionally hidden: experience badge overlays the image on mobile */}
           </motion.div>
 
           <motion.div
