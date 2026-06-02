@@ -13,6 +13,10 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   // Xây nhà trọn gói
   "xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
   "xay-nha-tron-goi": "/dich-vu/xay-nha-tron-goi",
+  "xay-dung-nha-dep": "/dich-vu/xay-nha-tron-goi",
+  "xay-dung-nha-dep-tphcm": "/dich-vu/xay-nha-tron-goi",
+  "xay-dung-nha-tron-goi": "/dich-vu/xay-nha-tron-goi",
+  "xay-dung-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
 
   // Top-level service shortcuts
   "thiet-ke-nha": "/dich-vu/thiet-ke-nha",
@@ -66,6 +70,41 @@ export const KNOWN_POST_SLUGS = new Set([
   "thiet-ke-biet-thu-thu-duc",
   "thiet-ke-nha-biet-thu-thu-duc",
 ]);
+
+/** Slug bài cũ (WordPress) → slug bài hiện tại trong DB/seed */
+export const POST_SLUG_ALIASES: Record<string, string> = {
+  "xay-dung-nha-dep": "xay-nha-tron-goi-tphcm",
+  "xay-dung-nha-dep-tphcm": "xay-nha-tron-goi-tphcm",
+  "xay-dung-nha-tron-goi": "xay-nha-tron-goi-tphcm",
+  "xay-dung-nha-tron-goi-tphcm": "xay-nha-tron-goi-tphcm",
+  "thiet-ke-biet-thu-thu-duc": "thiet-ke-nha-biet-thu-thu-duc",
+};
+
+export function resolvePostSlugAlias(slug: string): string {
+  const normalized = slug.replace(/^\/+|\/+$/g, "").toLowerCase();
+  return POST_SLUG_ALIASES[normalized] ?? slug;
+}
+
+/** Redirect cho /bai-viet/{slug-cũ} (Google, bookmark) */
+export function resolveBaiVietLegacyRedirect(slug: string): string | null {
+  const normalized = slug.replace(/^\/+|\/+$/g, "").toLowerCase();
+  if (!normalized) return null;
+
+  if (LEGACY_SLUG_REDIRECTS[normalized]) {
+    return LEGACY_SLUG_REDIRECTS[normalized];
+  }
+
+  const alias = POST_SLUG_ALIASES[normalized];
+  if (alias) {
+    return getPostPublicPathFromSlug(alias);
+  }
+
+  if (KNOWN_POST_SLUGS.has(normalized)) {
+    return getPostPublicPathFromSlug(normalized);
+  }
+
+  return null;
+}
 
 export function resolveLegacyPath(slug: string): string | null {
   const normalized = slug.replace(/^\/+|\/+$/g, "").toLowerCase();

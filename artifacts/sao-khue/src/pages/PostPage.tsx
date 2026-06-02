@@ -20,6 +20,7 @@ import {
 } from "@/lib/seo";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
 import { normalizeCategory } from "@/lib/categories";
+import { resolvePostSlugAlias } from "@/lib/legacy-redirects";
 import {
   getPostPublicPath,
   getPostUrlLeaf,
@@ -45,15 +46,17 @@ export default function PostPage() {
 
   const slug = (() => {
     if (pathInfo.mode === "category" && pathInfo.category && segment) {
-      return (
+      const resolved =
         resolvePostSlugFromCategorySegment(pathInfo.category, segment, allPosts, menu) ??
-        segment
-      );
+        segment;
+      return resolvePostSlugAlias(resolved);
     }
-    return segment;
+    return resolvePostSlugAlias(segment);
   })();
 
-  const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug);
+  const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug, {
+    query: { retry: false },
+  });
   const post = resolvePost(slug, postFromApi);
   const postSubSlug = post ? getPostUrlLeaf(post, menu) : null;
   const sectionPath = post ? findMenuSectionPathForPost(post, menu) : null;
@@ -149,9 +152,24 @@ export default function PostPage() {
           </div>
         )}
 
-        {error && !post && (
-          <div className="rounded-2xl border border-red-200 bg-red-50 p-8 text-center text-red-700">
-            Không tìm thấy bài viết.
+        {!isLoading && !post && (
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-8 text-center text-amber-950">
+            <p className="text-lg font-semibold">Không tìm thấy bài viết</p>
+            <p className="mt-2 text-sm text-amber-900/80">
+              Đường dẫn có thể đã đổi. Vui lòng xem{" "}
+              <Link href="/dich-vu" className="font-semibold text-primary underline">
+                dịch vụ
+              </Link>
+              ,{" "}
+              <Link href="/tin-tuc" className="font-semibold text-primary underline">
+                tin tức
+              </Link>{" "}
+              hoặc{" "}
+              <Link href="/lien-he" className="font-semibold text-primary underline">
+                liên hệ tư vấn
+              </Link>
+              .
+            </p>
           </div>
         )}
 
