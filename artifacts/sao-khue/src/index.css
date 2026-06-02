@@ -444,8 +444,8 @@
   transform-origin: center center;
 }
 
-.mobile-call-banner:active {
-  transform: scale(0.98);
+.mobile-call-shake:active {
+  transform: scale(0.97);
 }
 
 @media (prefers-reduced-motion: reduce) {

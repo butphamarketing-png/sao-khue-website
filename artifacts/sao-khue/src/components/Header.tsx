@@ -89,14 +89,30 @@ export function Header() {
             </Button>
           </div>
 
-          <button
-            type="button"
-            className="col-start-3 justify-self-end rounded-xl border border-slate-200 p-2.5 text-slate-800 transition hover:bg-slate-50 lg:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="col-start-3 flex items-center justify-end gap-2 lg:hidden">
+            {phone && (
+              <a
+                href={telHref(phone)}
+                className="mobile-call-shake inline-flex max-w-[min(52vw,200px)] items-center gap-1.5 rounded-full bg-gradient-to-r from-accent to-[#ff4757] px-2.5 py-2 text-white shadow-md ring-2 ring-accent/20"
+                aria-label={`Gọi ngay ${phone}`}
+              >
+                <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20">
+                  <PhoneCall size={16} strokeWidth={2.5} />
+                </span>
+                <span className="truncate text-xs font-extrabold leading-none tracking-wide">
+                  {phone}
+                </span>
+              </a>
+            )}
+            <button
+              type="button"
+              className="shrink-0 rounded-xl border border-slate-200 p-2.5 text-slate-800 transition hover:bg-slate-50"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Menu"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
