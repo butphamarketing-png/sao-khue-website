@@ -14,7 +14,7 @@ export const siteSettingsTable = pgTable("site_settings", {
     .default("245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM"),
   address2: text("address2")
     .notNull()
-    .default("146 duong 16, khu do thi Van Phuc"),
+    .default("36 đường 27, KĐT Vạn Phúc, phường Hiệp Bình, TP.HCM"),
   workingHours: text("working_hours").notNull().default("8:00 - 17:30"),
   logoUrl: text("logo_url").notNull().default("/images/logo.png"),
   loadingLogoUrl: text("loading_logo_url").notNull().default("/images/logo.png"),

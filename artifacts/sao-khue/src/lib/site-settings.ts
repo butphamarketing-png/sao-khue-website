@@ -166,7 +166,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, string> = {
   hotline2: "",
   email: "kientrucsaokhue@gmail.com",
   address1: "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
-  address2: "146 đường 16, khu đô thị Vạn Phúc",
+  address2: "36 đường 27, KĐT Vạn Phúc, phường Hiệp Bình, TP.HCM",
   workingHours: "T2–T7, 8:00–17:30",
   logoUrl: LOCAL_LOGO,
   loadingLogoUrl: LOCAL_LOGO,

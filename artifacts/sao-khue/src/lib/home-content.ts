@@ -80,7 +80,6 @@ export type CategoryPagesMap = Record<string, CategoryPageContent>;
 
 export const defaultStats: StatItem[] = [
   { icon: "building-2", value: "500+", label: "Công trình bàn giao" },
-  { icon: "hard-hat", value: "10+", label: "Năm kinh nghiệm" },
   { icon: "users", value: "50+", label: "Kỹ sư & kiến trúc sư" },
   { icon: "shield-check", value: "10 năm", label: "Bảo hành kết cấu" },
 ];
