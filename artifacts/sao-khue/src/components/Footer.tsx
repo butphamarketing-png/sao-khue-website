@@ -416,7 +416,15 @@ export function Footer() {
 
           <p>
 
-            &copy; {new Date().getFullYear()} {s.companyName}. All rights reserved.
+            &copy; {new Date().getFullYear()} {s.companyName}. All rights reserved. Website Design By{" "}
+            <a
+              href="https://butphamarketing.com"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-white/90 underline decoration-white/30 underline-offset-4 transition hover:text-white"
+            >
+              Butphamarketing.com
+            </a>
 
           </p>
 
