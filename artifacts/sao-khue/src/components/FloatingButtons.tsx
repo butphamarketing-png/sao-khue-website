@@ -97,6 +97,28 @@ export function FloatingButtons() {
         )}
       </div>
 
+      {phone && (
+        <a
+          href={telHref(phone)}
+          className="mobile-call-banner mobile-call-shake fixed inset-x-3 bottom-[5.25rem] z-50 flex items-center justify-center gap-2.5 rounded-2xl bg-gradient-to-r from-accent to-[#ff4757] px-4 py-3.5 text-white shadow-[0_8px_28px_rgba(230,57,70,0.45)] ring-2 ring-white/90 md:hidden"
+          aria-label={`Gọi ngay ${phone}`}
+        >
+          <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/20">
+            <span className="absolute inset-0 rounded-full bg-white/30 animate-ping" />
+            <PhoneCall size={22} className="relative" strokeWidth={2.5} />
+          </span>
+          <span className="flex min-w-0 flex-col items-start leading-tight">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/90">
+              Hotline tư vấn
+            </span>
+            <span className="text-lg font-extrabold tracking-wide sm:text-xl">{phone}</span>
+          </span>
+          <span className="ml-auto shrink-0 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-accent">
+            Gọi ngay
+          </span>
+        </a>
+      )}
+
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
         <div className="grid grid-cols-4 gap-2">
           {mapsHref ? (

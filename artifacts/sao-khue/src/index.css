@@ -415,6 +415,45 @@
   @apply mt-3 text-xs font-medium text-slate-400;
 }
 
+/* Mobile hotline banner — rung nhẹ thu hút, bấm gọi trực tiếp */
+@keyframes mobile-call-shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  8% {
+    transform: translate3d(-2px, 0, 0) rotate(-0.6deg) scale(1.01);
+  }
+  16% {
+    transform: translate3d(2px, 0, 0) rotate(0.6deg) scale(1.01);
+  }
+  24% {
+    transform: translate3d(-2px, 0, 0) rotate(-0.4deg);
+  }
+  32% {
+    transform: translate3d(2px, 0, 0) rotate(0.4deg);
+  }
+  40%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.mobile-call-shake {
+  animation: mobile-call-shake 2.8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.mobile-call-banner:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-call-shake {
+    animation: none;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
