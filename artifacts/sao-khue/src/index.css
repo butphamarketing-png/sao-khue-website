@@ -244,11 +244,11 @@
 
   /* Logo PNG có viền trong suốt rộng — scale để phần chữ + sao lấp đầy ô hiển thị */
   .logo-header-wrap {
-    @apply relative flex h-14 w-[min(54vw,248px)] shrink-0 items-center overflow-hidden sm:h-[60px] sm:w-[268px] lg:h-[68px] lg:w-[300px] xl:w-[320px];
+    @apply relative flex h-12 w-[min(40vw,156px)] max-w-[46%] shrink items-center overflow-hidden sm:h-14 sm:w-[min(44vw,200px)] sm:max-w-none lg:h-[68px] lg:w-[300px] xl:w-[320px];
   }
 
   .logo-header-img {
-    @apply h-full w-auto max-w-none object-contain object-left origin-left scale-[2.35] sm:scale-[2.45] lg:scale-[2.55];
+    @apply h-full w-auto max-w-none object-contain object-left origin-left scale-[2.05] sm:scale-[2.25] lg:scale-[2.55];
   }
 
   .logo-footer-wrap {

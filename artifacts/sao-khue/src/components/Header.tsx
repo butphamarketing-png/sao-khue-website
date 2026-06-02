@@ -40,8 +40,8 @@ export function Header() {
       }`}
     >
       <div className="site-container max-w-[1440px]">
-        <div className="grid h-[72px] grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2 lg:h-[88px] xl:gap-3">
-          <Link href="/" className="group flex items-center self-center">
+        <div className="grid h-[72px] grid-cols-[minmax(0,1fr)_auto] items-center gap-1 sm:gap-2 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:h-[88px] lg:gap-3">
+          <Link href="/" className="group flex min-w-0 items-center self-center">
             <div className="logo-header-wrap">
               <BrandLogo
                 src={s.logoUrl}
@@ -89,28 +89,30 @@ export function Header() {
             </Button>
           </div>
 
-          <div className="col-start-3 flex items-center justify-end gap-2 lg:hidden">
+          <div className="flex shrink-0 items-center justify-end gap-1.5 sm:gap-2 lg:hidden">
             {phone && (
               <a
                 href={telHref(phone)}
-                className="mobile-call-shake inline-flex max-w-[min(52vw,200px)] items-center gap-1.5 rounded-full bg-gradient-to-r from-accent to-[#ff4757] px-2.5 py-2 text-white shadow-md ring-2 ring-accent/20"
+                className="mobile-call-shake inline-flex shrink-0 items-center rounded-full bg-gradient-to-r from-accent to-[#ff4757] text-white shadow-md ring-2 ring-accent/15"
                 aria-label={`Gọi ngay ${phone}`}
               >
-                <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/20">
-                  <PhoneCall size={16} strokeWidth={2.5} />
+                <span className="flex h-9 w-9 items-center justify-center sm:h-10 sm:w-10">
+                  <PhoneCall size={18} strokeWidth={2.5} className="sm:hidden" />
+                  <PhoneCall size={20} strokeWidth={2.5} className="hidden sm:block" />
                 </span>
-                <span className="truncate text-xs font-extrabold leading-none tracking-wide">
+                <span className="hidden max-w-[7.5rem] truncate pr-2.5 text-[11px] font-extrabold leading-none tracking-wide min-[400px]:inline sm:max-w-[9rem] sm:text-xs">
                   {phone}
                 </span>
               </a>
             )}
             <button
               type="button"
-              className="shrink-0 rounded-xl border border-slate-200 p-2.5 text-slate-800 transition hover:bg-slate-50"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-slate-200 text-slate-800 transition hover:bg-slate-50 sm:h-10 sm:w-10 sm:p-2.5"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Menu"
             >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              {isMobileMenuOpen ? <X size={22} className="sm:hidden" /> : <Menu size={22} className="sm:hidden" />}
+              {isMobileMenuOpen ? <X size={24} className="hidden sm:block" /> : <Menu size={24} className="hidden sm:block" />}
             </button>
           </div>
         </div>
