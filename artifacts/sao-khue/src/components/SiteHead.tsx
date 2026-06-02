@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BUNDLED_LOGO_URL } from "@/lib/brand-assets";
+import { parseGaMeasurementId } from "@/lib/google-integrations";
 import {
   useSiteSettings,
   resolveLogoUrl,
@@ -102,7 +103,7 @@ export function SiteHead() {
     );
     setStructuredData("website", buildWebSiteSchema(brand, origin));
 
-    injectGA(s.gaTrackingId);
+    injectGA(parseGaMeasurementId(s.gaTrackingId));
   }, [
     s.address1,
     s.companyName,

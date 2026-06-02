@@ -20,17 +20,21 @@ export const siteSettingsTable = pgTable("site_settings", {
   loadingLogoUrl: text("loading_logo_url").notNull().default("/images/logo.png"),
   facebookUrl: text("facebook_url")
     .notNull()
-    .default("https://facebook.com/kientrucsaokhue"),
-  facebookUrl2: text("facebook_url2").notNull().default(""),
-  facebookLabel1: text("facebook_label1").notNull().default(""),
-  facebookLabel2: text("facebook_label2").notNull().default(""),
+    .default("https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi"),
+  facebookUrl2: text("facebook_url2")
+    .notNull()
+    .default("https://www.facebook.com/kientrucsaokhue"),
+  facebookLabel1: text("facebook_label1").notNull().default("Cải tạo nhà trọn gói"),
+  facebookLabel2: text("facebook_label2").notNull().default("Kiến Trúc Sao Khuê"),
   youtubeUrl: text("youtube_url").notNull().default(""),
   instagramUrl: text("instagram_url").notNull().default(""),
   zaloPhone: text("zalo_phone").notNull().default("0909075668"),
-  messengerUrl: text("messenger_url").notNull().default(""),
-  messengerUrl2: text("messenger_url2").notNull().default(""),
-  messengerLabel1: text("messenger_label1").notNull().default(""),
-  messengerLabel2: text("messenger_label2").notNull().default(""),
+  messengerUrl: text("messenger_url")
+    .notNull()
+    .default("https://m.me/dichvusuachuanha.caitaonhatrongoi"),
+  messengerUrl2: text("messenger_url2").notNull().default("https://m.me/kientrucsaokhue"),
+  messengerLabel1: text("messenger_label1").notNull().default("Cải tạo nhà trọn gói"),
+  messengerLabel2: text("messenger_label2").notNull().default("Kiến Trúc Sao Khuê"),
   footerDescription: text("footer_description")
     .notNull()
     .default(
@@ -80,8 +84,11 @@ export const siteSettingsTable = pgTable("site_settings", {
   topBarSlogan: text("top_bar_slogan")
     .notNull()
     .default("Tận tâm — Uy tín — Chất lượng"),
-  gaTrackingId: text("ga_tracking_id").notNull().default(""),
+  gaTrackingId: text("ga_tracking_id").notNull().default("G-WGDHV88C2B"),
   gscVerification: text("gsc_verification").notNull().default(""),
+  googleMapsUrl: text("google_maps_url")
+    .notNull()
+    .default("https://maps.app.goo.gl/RFwHGqVyQTiAz4zy9"),
   googleMapEmbed: text("google_map_embed").notNull().default(""),
   navMenuJson: text("nav_menu_json").notNull().default("[]"),
   pageBannersJson: text("page_banners_json").notNull().default("{}"),

@@ -5,11 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Field } from "@/components/admin/admin-ui";
 import {
   facebookOptionsFromSettings,
-  googleMapsUrlFromAddress,
+  resolveGoogleMapsOpenUrl,
   messengerOptionsFromSettings,
 } from "@/lib/social-links";
 
 export type MobileContactBarSettings = {
+  googleMapsUrl?: string;
   address1: string;
   zaloPhone: string;
   facebookUrl: string;
@@ -58,7 +59,7 @@ function ChannelCard({
 }
 
 export function MobileContactBarPreview({ settings }: { settings: MobileContactBarSettings }) {
-  const mapsOk = Boolean(googleMapsUrlFromAddress(settings.address1));
+  const mapsOk = Boolean(resolveGoogleMapsOpenUrl(settings));
   const fbCount = facebookOptionsFromSettings(settings).length;
   const messCount = messengerOptionsFromSettings(settings).length;
   const zaloOk = Boolean(settings.zaloPhone?.trim());
@@ -104,7 +105,14 @@ export function MobileContactBarEditor({ settings, onChange, onOpenGoogleMaps }:
       <MobileContactBarPreview settings={settings} />
 
       <ChannelCard title="Maps" badgeClass="bg-emerald-600" icon={<MapPin size={20} />}>
-        <Field label="Địa chỉ mở Google Maps (nút Maps)">
+        <Field label="Link Google Maps (nút Maps)">
+          <Input
+            value={settings.googleMapsUrl ?? ""}
+            onChange={(e) => onChange("googleMapsUrl", e.target.value)}
+            placeholder="https://maps.app.goo.gl/..."
+          />
+        </Field>
+        <Field label="Địa chỉ dự phòng (nếu chưa có link Maps)">
           <Input
             value={settings.address1}
             onChange={(e) => onChange("address1", e.target.value)}

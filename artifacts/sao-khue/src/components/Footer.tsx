@@ -1,6 +1,10 @@
 import { MapPin, Phone, Mail, Facebook, Youtube, Instagram, ArrowRight, Map, Clock } from "lucide-react";
 import { SiMessenger } from "react-icons/si";
-import { facebookUrlsFromSettings, messengerUrlsFromSettings } from "@/lib/social-links";
+import {
+  facebookUrlsFromSettings,
+  messengerUrlsFromSettings,
+  resolveGoogleMapsOpenUrl,
+} from "@/lib/social-links";
 import { Link } from "wouter";
 import { BrandLogo } from "@/components/BrandLogo";
 import { MapEmbed } from "@/components/MapEmbed";
@@ -17,6 +21,7 @@ export function Footer() {
   const s = useSiteSettings();
   const facebookUrls = facebookUrlsFromSettings(s);
   const messengerUrls = messengerUrlsFromSettings(s);
+  const mapsOpenUrl = resolveGoogleMapsOpenUrl(s);
   const mapEmbed = useGoogleMapEmbed();
   const menu = useNavMenu();
   const slogan = useTopBarSlogan();
@@ -280,7 +285,7 @@ export function Footer() {
 
             <a
 
-              href={`https://maps.google.com/?q=${encodeURIComponent(s.address1)}`}
+              href={mapsOpenUrl ?? `https://maps.google.com/?q=${encodeURIComponent(s.address1)}`}
 
               target="_blank"
 

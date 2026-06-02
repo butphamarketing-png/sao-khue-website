@@ -5,7 +5,7 @@ import { SocialLinkPickerSheet } from "@/components/SocialLinkPickerSheet";
 import {
   facebookOptionsFromSettings,
   facebookUrlsFromSettings,
-  googleMapsUrlFromAddress,
+  resolveGoogleMapsOpenUrl,
   messengerOptionsFromSettings,
   messengerUrlsFromSettings,
   openExternalUrl,
@@ -23,7 +23,7 @@ export function FloatingButtons() {
   const s = useSiteSettings();
   const phone = usePrimaryPhone();
   const zaloHref = s.zaloPhone ? `https://zalo.me/${s.zaloPhone.replace(/\s+/g, "")}` : null;
-  const mapsHref = googleMapsUrlFromAddress(s.address1);
+  const mapsHref = resolveGoogleMapsOpenUrl(s);
   const facebookOptions = facebookOptionsFromSettings(s);
   const messengerOptions = messengerOptionsFromSettings(s);
   const facebookUrls = facebookUrlsFromSettings(s);

@@ -108,10 +108,22 @@ export function messengerOptionsFromSettings(s: {
   );
 }
 
+export const DEFAULT_GOOGLE_MAPS_LINK = "https://maps.app.goo.gl/RFwHGqVyQTiAz4zy9";
+
 export function googleMapsUrlFromAddress(address?: string): string | null {
   const trimmed = address?.trim();
   if (!trimmed) return null;
   return `https://maps.google.com/?q=${encodeURIComponent(trimmed)}`;
+}
+
+/** Link mở Google Maps (ưu tiên link rút gọn từ admin, không thì theo địa chỉ). */
+export function resolveGoogleMapsOpenUrl(settings: {
+  googleMapsUrl?: string;
+  address1?: string;
+}): string | null {
+  const custom = settings.googleMapsUrl?.trim();
+  if (custom) return custom;
+  return googleMapsUrlFromAddress(settings.address1);
 }
 
 export function openExternalUrl(url: string) {

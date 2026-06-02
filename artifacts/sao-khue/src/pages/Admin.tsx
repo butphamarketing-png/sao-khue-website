@@ -240,6 +240,7 @@ type ExtendedSiteSettingsInput = SiteSettingsInput & {
   pageBannersJson: string;
   homeFeaturedPostsJson: string;
   opengraphImageUrl: string;
+  googleMapsUrl: string;
   googleMapEmbed: string;
   facebookUrl2: string;
   facebookLabel1: string;
@@ -334,6 +335,7 @@ const defaultExtendedSettings: ExtendedSiteSettingsInput = {
   pageBannersJson: defaultSiteSettings.pageBannersJson,
   homeFeaturedPostsJson: defaultSiteSettings.homeFeaturedPostsJson,
   opengraphImageUrl: defaultSiteSettings.opengraphImageUrl,
+  googleMapsUrl: defaultSiteSettings.googleMapsUrl,
   googleMapEmbed: defaultSiteSettings.googleMapEmbed,
 };
 
@@ -472,6 +474,7 @@ function buildSettingsFromApi(
       (rest.messengerLabel2 as string) ?? (rest.messenger_label2 as string) ?? defaultExtendedSettings.messengerLabel2,
     ...mergeGoogleFieldsWithDraft(
       readGoogleFieldsFromApi(rest as Record<string, unknown>, {
+        googleMapsUrl: defaultExtendedSettings.googleMapsUrl,
         googleMapEmbed: defaultExtendedSettings.googleMapEmbed,
         gaTrackingId: defaultExtendedSettings.gaTrackingId,
         gscVerification: defaultExtendedSettings.gscVerification,
@@ -992,6 +995,7 @@ export default function Admin() {
     }
 
     const googleFields = {
+      googleMapsUrl: settingsForm.googleMapsUrl?.trim() ?? "",
       googleMapEmbed,
       gaTrackingId: parseGaMeasurementId(settingsForm.gaTrackingId),
       gscVerification: parseGscVerificationToken(settingsForm.gscVerification),
@@ -1159,6 +1163,7 @@ export default function Admin() {
     if (!confirm("Khôi phục thanh liên hệ mobile về mặc định?")) return;
     setSettingsForm((prev) => ({
       ...prev,
+      googleMapsUrl: defaultExtendedSettings.googleMapsUrl,
       address1: defaultExtendedSettings.address1,
       zaloPhone: defaultExtendedSettings.zaloPhone,
       facebookUrl: defaultExtendedSettings.facebookUrl,
@@ -1949,7 +1954,8 @@ export default function Admin() {
             isSaving={updateSiteSettings.isPending}
             onSave={saveSettings}
             onRestoreDefaults={() => {
-              updateSettingField("googleMapEmbed", "");
+              updateSettingField("googleMapsUrl", defaultSiteSettings.googleMapsUrl);
+              updateSettingField("googleMapEmbed", defaultSiteSettings.googleMapEmbed);
               updateSettingField("gaTrackingId", "");
               updateSettingField("gscVerification", GSC_VERIFICATION_TOKEN);
             }}
@@ -1962,7 +1968,19 @@ export default function Admin() {
                 <code className="rounded bg-white px-1">supabase/add-google-map-embed.sql</code> trên Supabase.
               </p>
 
-              <Field label="Tọa độ Google Map (iframe)">
+              <Field label="Link mở Google Maps (nút Maps mobile)">
+                <Input
+                  value={settingsForm.googleMapsUrl ?? ""}
+                  onChange={(e) => updateSettingField("googleMapsUrl", e.target.value)}
+                  placeholder="https://maps.app.goo.gl/..."
+                />
+                <FieldHint>
+                  Link rút gọn từ Google Maps → Chia sẻ. Dùng cho nút <strong>Maps</strong> trên điện thoại và
+                  khi bấm bản đồ ở footer.
+                </FieldHint>
+              </Field>
+
+              <Field label="Mã nhúng Google Map (iframe footer)">
                 <Textarea
                   rows={8}
                   className="font-mono text-xs"
@@ -1971,8 +1989,7 @@ export default function Admin() {
                   placeholder='<iframe src="https://www.google.com/maps/embed?pb=..." ...></iframe>'
                 />
                 <FieldHint>
-                  Lấy mã nhúng từ Google Maps → Chia sẻ → Nhúng bản đồ. Để trống sẽ dùng địa chỉ trong
-                  「Thông tin website」.
+                  Google Maps → Chia sẻ → Nhúng bản đồ. Để trống sẽ tự tạo bản đồ từ địa chỉ trụ sở.
                 </FieldHint>
               </Field>
 

@@ -1,6 +1,7 @@
 const STORAGE_KEY = "sao-khue-admin-google-settings-v1";
 
 export type GoogleAdminFields = {
+  googleMapsUrl: string;
   googleMapEmbed: string;
   gaTrackingId: string;
   gscVerification: string;
@@ -22,6 +23,7 @@ export function readGoogleFieldsFromApi(
 ): GoogleAdminFields {
   const rest = data ?? {};
   return {
+    googleMapsUrl: pickApiString(rest, "googleMapsUrl", "google_maps_url", defaults.googleMapsUrl),
     googleMapEmbed: pickApiString(rest, "googleMapEmbed", "google_map_embed", defaults.googleMapEmbed),
     gaTrackingId: pickApiString(rest, "gaTrackingId", "ga_tracking_id", defaults.gaTrackingId),
     gscVerification: pickApiString(rest, "gscVerification", "gsc_verification", defaults.gscVerification),
@@ -36,6 +38,7 @@ export function loadGoogleSettingsDraft(): GoogleAdminFields | null {
     const parsed = JSON.parse(raw) as Partial<GoogleAdminFields>;
     if (!parsed || typeof parsed !== "object") return null;
     return {
+      googleMapsUrl: typeof parsed.googleMapsUrl === "string" ? parsed.googleMapsUrl : "",
       googleMapEmbed: typeof parsed.googleMapEmbed === "string" ? parsed.googleMapEmbed : "",
       gaTrackingId: typeof parsed.gaTrackingId === "string" ? parsed.gaTrackingId : "",
       gscVerification: typeof parsed.gscVerification === "string" ? parsed.gscVerification : "",
@@ -61,6 +64,7 @@ export function mergeGoogleFieldsWithDraft(
   if (!draft) return fromApi;
 
   return {
+    googleMapsUrl: fromApi.googleMapsUrl.trim() ? fromApi.googleMapsUrl : draft.googleMapsUrl,
     googleMapEmbed: fromApi.googleMapEmbed.trim() ? fromApi.googleMapEmbed : draft.googleMapEmbed,
     gaTrackingId: fromApi.gaTrackingId.trim() ? fromApi.gaTrackingId : draft.gaTrackingId,
     gscVerification: fromApi.gscVerification.trim() ? fromApi.gscVerification : draft.gscVerification,
