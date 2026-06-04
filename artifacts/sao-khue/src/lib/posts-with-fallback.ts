@@ -1,5 +1,6 @@
 import type { Post } from "@workspace/api-client-react";
 import { getFallbackPost, listFallbackPosts, matchesCategory } from "@workspace/seed-content";
+import { repairPostText } from "./post-encoding";
 import { normalizePosts } from "./posts";
 
 type PostCollection =
@@ -20,26 +21,27 @@ export function resolvePosts(input: PostCollection, options?: { category?: strin
     rows = rows.filter((p) => matchesCategory(p.category, options.category!));
   }
   if (options?.limit) rows = rows.slice(0, options.limit);
-  return rows;
+  return rows.map((p) => repairPostText(p));
 }
 
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
 export function resolvePost(slug: string | undefined, apiPost: Post | undefined | null): Post | undefined {
   const fallback = slug ? (getFallbackPost(slug) as Post | undefined) : undefined;
   if (!apiPost) return fallback;
-  if (!fallback) return apiPost;
+  const repaired = repairPostText(apiPost);
+  if (!fallback) return repaired;
 
-  const content = (apiPost.content ?? "").trim();
+  const content = (repaired.content ?? "").trim();
   const fallbackContent = (fallback.content ?? "").trim();
-  if (content.length >= 80 || !fallbackContent) return apiPost;
+  if (content.length >= 80 || !fallbackContent) return repaired;
 
   return {
-    ...apiPost,
+    ...repaired,
     content: fallback.content,
-    excerpt: (apiPost.excerpt ?? "").trim() || fallback.excerpt,
-    metaTitle: (apiPost.metaTitle ?? "").trim() || fallback.metaTitle,
-    metaDescription: (apiPost.metaDescription ?? "").trim() || fallback.metaDescription,
-    metaKeywords: (apiPost.metaKeywords ?? "").trim() || fallback.metaKeywords,
-    imageUrl: (apiPost.imageUrl ?? "").trim() || fallback.imageUrl,
+    excerpt: (repaired.excerpt ?? "").trim() || fallback.excerpt,
+    metaTitle: (repaired.metaTitle ?? "").trim() || fallback.metaTitle,
+    metaDescription: (repaired.metaDescription ?? "").trim() || fallback.metaDescription,
+    metaKeywords: (repaired.metaKeywords ?? "").trim() || fallback.metaKeywords,
+    imageUrl: (repaired.imageUrl ?? "").trim() || fallback.imageUrl,
   };
 }

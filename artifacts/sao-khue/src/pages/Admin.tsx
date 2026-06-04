@@ -267,7 +267,7 @@ type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
 const emptyPostForm: FormState = {
   slug: "",
   title: "",
-  category: "dich-vu",
+  category: "tin-tuc",
   excerpt: "",
   content: "",
   imageUrl: "",
@@ -1927,7 +1927,7 @@ export default function Admin() {
                         </h3>
                         <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-500">
                           Chọn danh mục và mục con menu bên trái trước khi tạo — bài sẽ hiện đúng
-                          trang như trên website (ví dụ /dich-vu/xay-nha-tron-goi).
+                          trang như trên website (ví dụ /tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm).
                         </p>
                         <Button
                           type="button"

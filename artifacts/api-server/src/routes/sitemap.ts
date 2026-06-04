@@ -1,7 +1,7 @@
 import { Router, type IRouter } from "express";
 import { db, postsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
-import { seedPosts } from "@workspace/seed-content";
+import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
 
 const SITE_URL =
   (process.env.SITE_URL ?? "https://kientrucsaokhue.com").replace(/\/$/, "");
@@ -59,25 +59,31 @@ function staticUrls(): SitemapEntry[] {
 }
 
 async function collectPostUrls(): Promise<SitemapEntry[]> {
+  const toEntry = (p: { slug: string; category: string; updatedAt?: Date | string }) => ({
+    loc: `${SITE_URL}${getPostPublicPath(p)}`,
+    lastmod:
+      p.updatedAt instanceof Date
+        ? p.updatedAt.toISOString().split("T")[0]
+        : typeof p.updatedAt === "string"
+          ? p.updatedAt.slice(0, 10)
+          : "2026-01-15",
+    changefreq: "monthly" as const,
+    priority: 0.8,
+  });
+
   try {
     const posts = await db
-      .select({ slug: postsTable.slug, updatedAt: postsTable.updatedAt })
+      .select({
+        slug: postsTable.slug,
+        category: postsTable.category,
+        updatedAt: postsTable.updatedAt,
+      })
       .from(postsTable)
       .orderBy(desc(postsTable.updatedAt));
 
-    return posts.map((p) => ({
-      loc: `${SITE_URL}/bai-viet/${p.slug}`,
-      lastmod: p.updatedAt.toISOString().split("T")[0],
-      changefreq: "monthly" as const,
-      priority: 0.8,
-    }));
+    return posts.map(toEntry);
   } catch {
-    return seedPosts.map((p) => ({
-      loc: `${SITE_URL}/bai-viet/${p.slug}`,
-      lastmod: "2026-01-15",
-      changefreq: "monthly" as const,
-      priority: 0.8,
-    }));
+    return seedPosts.map((p) => toEntry({ ...p, updatedAt: "2026-01-15" }));
   }
 }
 

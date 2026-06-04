@@ -68,7 +68,7 @@ export const xayNhaTronGoiTphcm = {
 <h3>Xây trọn gói có bao gồm nội thất không?</h3>
 <p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Nội thất cao cấp, tủ bếp đặc biệt có thể báo giá thêm hoặc xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <h3>Sao Khuê có nhận xây ở Bình Dương, Đồng Nai không?</h3>
-<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận.</p>
+<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem chi tiết <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>
 
 <h2>Liên hệ báo giá xây nhà trọn gói</h2>
 <ul>

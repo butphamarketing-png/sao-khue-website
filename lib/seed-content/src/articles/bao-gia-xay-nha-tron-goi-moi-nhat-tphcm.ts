@@ -7,7 +7,7 @@ export const baoGiaXayNhaTronGoiMoiNhatTphcm = {
   metaKeywords: "báo giá xây nhà tphcm, báo giá xây nhà trọn gói, đơn giá xây nhà 2026, xây nhà trọn gói giá bao nhiêu, chi phí xây nhà tphcm, sao khuê",
   content: `<h2>Báo giá xây nhà TP.HCM 2026 — Cập nhật đơn giá xây nhà trọn gói mới nhất</h2>
 <p><strong>Báo giá xây nhà TP.HCM</strong> là thông tin được hàng nghìn chủ đất tìm kiếm trước khi quyết định đầu tư. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> công bố <strong>báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> (cập nhật 2026) theo hướng <strong>minh bạch từng hạng mục</strong> — giúp bạn ước lượng ngân sách, so sánh gói tiêu chuẩn / khá / cao cấp và tránh báo giá “trần trời” không có cơ sở kỹ thuật.</p>
-<p>Bài viết tổng hợp <strong>đơn giá tham khảo</strong>, cách tính diện tích quy đổi, các khoản chi thường gặp ngoài đơn giá/m², quy trình nhận báo giá chính thức tại Sao Khuê và câu hỏi thường gặp — phù hợp chủ nhà xây <strong>nhà phố</strong>, <strong>biệt thự</strong> hoặc <strong>cải tạo trọn gói</strong> tại TP.HCM, Bình Dương, Đồng Nai.</p>
+<p>Bài viết tổng hợp <strong>đơn giá tham khảo</strong>, cách tính diện tích quy đổi, các khoản chi thường gặp ngoài đơn giá/m², quy trình nhận báo giá chính thức tại Sao Khuê và câu hỏi thường gặp — phù hợp chủ nhà xây <strong>nhà phố</strong>, <strong>biệt thự</strong> hoặc <strong>cải tạo trọn gói</strong> tại TP.HCM, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a>, Đồng Nai.</p>
 
 <h2>Báo giá xây nhà trọn gói TP.HCM là gì?</h2>
 <p><strong>Xây nhà trọn gói</strong> (chìa khóa trao tay) là mô hình nhà thầu báo <strong>một đơn giá tổng thể</strong> (thường tính theo m² sàn xây dựng) bao gồm: thiết kế (nếu trong gói), thi công móng–kết cấu–mái, hoàn thiện cơ bản, điện nước, cửa, thiết bị vệ sinh cơ bản và bàn giao. <strong>Báo giá xây nhà TP.HCM</strong> trọn gói khác với báo giá chỉ <strong>phần thô</strong> hoặc chỉ <strong>hoàn thiện</strong> — bạn cần xác định rõ phạm vi trước khi so sánh giữa các công ty.</p>
@@ -171,7 +171,7 @@ export const baoGiaXayNhaTronGoiMoiNhatTphcm = {
 <ul>
   <li><strong>Hẻm sâu, xe không vào được:</strong> nhân công bốc vật liệu, thời gian kéo dài.</li>
   <li><strong>Khu ven đô thị mới (Thủ Đức, Nhà Bè…):</strong> có thể cần trạm điện nước tạm xa hơn.</li>
-  <li><strong>Bình Dương, Đồng Nai:</strong> Sao Khuê vẫn nhận báo giá — cộng thêm chi phí di chuyển đội khảo sát/thi công nếu xa (thông báo trước khi ký).</li>
+  <li><strong>Bình Dương, Đồng Nai:</strong> Sao Khuê vẫn nhận báo giá — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>; cộng thêm chi phí di chuyển đội khảo sát/thi công nếu xa (thông báo trước khi ký).</li>
 </ul>
 <p>Dù ở quận nào, nguyên tắc vẫn là <strong>khảo sát trước — báo giá sau</strong>, không báo “giá chung cho cả thành phố” khi chưa xem đất.</p>
 

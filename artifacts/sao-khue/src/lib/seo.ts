@@ -355,6 +355,24 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
+/** Trích FAQ từ HTML bài viết (h2 FAQ → các cặp h3 + p). */
+export function extractFaqFromArticleHtml(html: string): { q: string; a: string }[] {
+  const faqBlock = html.match(
+    /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi thường gặp)[^<]*<\/h2>([\s\S]*?)(?=<h2\b|$)/i,
+  );
+  if (!faqBlock) return [];
+
+  const items: { q: string; a: string }[] = [];
+  const re = /<h3[^>]*>([\s\S]*?)<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/gi;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(faqBlock[1])) !== null) {
+    const q = stripHtmlForSchema(match[1]);
+    const a = stripHtmlForSchema(match[2]);
+    if (q && a) items.push({ q, a });
+  }
+  return items;
+}
+
 export function buildFAQSchema(items: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

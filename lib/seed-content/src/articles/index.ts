@@ -1,5 +1,6 @@
 export { suaNhaTronGoiTphcm } from "./sua-nha-tron-goi-tphcm";
 export { xayNhaTronGoiTphcm } from "./xay-nha-tron-goi-tphcm";
+export { xayNhaTronGoiBinhDuong } from "./xay-nha-tron-goi-binh-duong";
 export { xayDungPhanTho } from "./xay-dung-phan-tho";
 export { thietKeNha } from "./thiet-ke-nha";
 export { suaChuaNhaTphcm } from "./sua-chua-nha-tphcm";
@@ -11,6 +12,7 @@ export { veChungToi } from "./ve-chung-toi";
 export { hoatDongSaoKhue } from "./hoat-dong-sao-khue";
 export { tuyenDung } from "./tuyen-dung";
 export { xayNhaPhoBinhThanh } from "./xay-nha-pho-binh-thanh";
+export { xayNhaPhoThuanAn } from "./xay-nha-pho-thuan-an";
 export { suaNhaQuan3 } from "./sua-nha-quan-3";
 export { thietKeNhaBietThuThuDuc } from "./thiet-ke-nha-biet-thu-thu-duc";
 export { thietKeNhaPhongCachHienDai } from "./thiet-ke-nha-phong-cach-hien-dai";
@@ -19,6 +21,9 @@ export { luatXayDungMoiNhat } from "./luat-xay-dung-moi-nhat";
 export { phongThuyNhaO } from "./phong-thuy-nha-o";
 export { congTyXayDungNhaPhoUyTinTphcm } from "./cong-ty-xay-dung-nha-pho-uy-tin-tphcm";
 export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
+export { mauNhaPho2TangBinhDuong } from "./mau-nha-pho-2-tang-binh-duong";
+export { xayNhaTronGoiDongNai } from "./xay-nha-tron-goi-dong-nai";
+export { thietKeThiCongNhaPhoDongNai } from "./thiet-ke-thi-cong-nha-pho-dong-nai";
 
 export type SeoArticle = {
   title: string;

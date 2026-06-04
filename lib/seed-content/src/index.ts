@@ -1,6 +1,7 @@
 import {
   suaNhaTronGoiTphcm,
   xayNhaTronGoiTphcm,
+  xayNhaTronGoiBinhDuong,
   xayDungPhanTho,
   thietKeNha,
   suaChuaNhaTphcm,
@@ -12,6 +13,7 @@ import {
   hoatDongSaoKhue,
   tuyenDung,
   xayNhaPhoBinhThanh,
+  xayNhaPhoThuanAn,
   suaNhaQuan3,
   thietKeNhaBietThuThuDuc,
   thietKeNhaPhongCachHienDai,
@@ -20,6 +22,9 @@ import {
   phongThuyNhaO,
   congTyXayDungNhaPhoUyTinTphcm,
   baoGiaXayNhaTronGoiMoiNhatTphcm,
+  mauNhaPho2TangBinhDuong,
+  xayNhaTronGoiDongNai,
+  thietKeThiCongNhaPhoDongNai,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory } from "./categories";
@@ -72,7 +77,7 @@ const TEAM = "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=
 
 const FALLBACK_TIMESTAMP = "2026-01-15T00:00:00.000Z";
 
-/** 20 bài — khớp menu con + bài công trình bổ sung */
+/** 23 bài — khớp menu con + bài công trình bổ sung */
 export const seedPosts: SeedPost[] = [
   seoPost(
     "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
@@ -83,10 +88,24 @@ export const seedPosts: SeedPost[] = [
   seoPost(
     "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
     "tin-tuc",
-    "https://images.unsplash.com/photo-1486406146926-c627a92fd1ab?auto=format&fit=crop&q=80&w=1200",
+    "/images/project_3.jpg",
     congTyXayDungNhaPhoUyTinTphcm,
   ),
+  seoPost(
+    "mau-nha-pho-2-tang-binh-duong",
+    "tin-tuc",
+    "/images/project_2.jpg",
+    mauNhaPho2TangBinhDuong,
+  ),
+  seoPost(
+    "thiet-ke-thi-cong-nha-pho-dong-nai",
+    "tin-tuc",
+    DESIGN,
+    thietKeThiCongNhaPhoDongNai,
+  ),
   seoPost("xay-nha-tron-goi-tphcm", "dich-vu", BUILD, xayNhaTronGoiTphcm),
+  seoPost("xay-nha-tron-goi-binh-duong", "dich-vu", BUILD, xayNhaTronGoiBinhDuong),
+  seoPost("xay-nha-tron-goi-dong-nai", "dich-vu", BUILD, xayNhaTronGoiDongNai),
   seoPost("sua-nha-tron-goi-tphcm", "dich-vu", REPAIR, suaNhaTronGoiTphcm),
   seoPost("sua-chua-nha-tphcm", "dich-vu", REPAIR, suaChuaNhaTphcm),
   seoPost("xay-dung-phan-tho", "dich-vu", BUILD, xayDungPhanTho),
@@ -99,6 +118,7 @@ export const seedPosts: SeedPost[] = [
   seoPost("hoat-dong-sao-khue", "gioi-thieu", TEAM, hoatDongSaoKhue),
   seoPost("tuyen-dung", "gioi-thieu", TEAM, tuyenDung),
   seoPost("xay-nha-pho-binh-thanh", "cong-trinh", BUILD, xayNhaPhoBinhThanh),
+  seoPost("xay-nha-pho-thuan-an", "cong-trinh", "/images/project_2.jpg", xayNhaPhoThuanAn),
   seoPost("sua-nha-quan-3", "cong-trinh", REPAIR, suaNhaQuan3),
   seoPost("thiet-ke-nha-biet-thu-thu-duc", "cong-trinh", DESIGN, thietKeNhaBietThuThuDuc),
   seoPost("thiet-ke-nha-phong-cach-hien-dai", "cong-trinh", DESIGN, thietKeNhaPhongCachHienDai),
@@ -108,10 +128,13 @@ export const seedPosts: SeedPost[] = [
 ];
 
 export {
+  DEFAULT_POST_CATEGORY,
   normalizeCategory,
   categoriesForFilter,
   matchesCategory,
 } from "./categories";
+
+export { getPostPublicPath } from "./public-path";
 
 export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
   return {

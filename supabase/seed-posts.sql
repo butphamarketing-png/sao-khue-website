@@ -1,9 +1,474 @@
--- Sao Khuê — seed bài viết (19 posts)
+-- Sao Khuê — seed bài viết (18 posts)
 -- Chạy trong Supabase: SQL Editor → New query → Paste → Run
 -- Cập nhật theo slug nếu bài đã tồn tại (ON CONFLICT).
 
 BEGIN;
 
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-tron-goi-moi-nhat-tphcm$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Mới Nhất Tại TP.HCM$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Bảng giá minh bạch, khảo sát miễn phí — Hotline 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà TP.HCM 2026 — Cập nhật đơn giá xây nhà trọn gói mới nhất</h2>
+<p><strong>Báo giá xây nhà TP.HCM</strong> là thông tin được hàng nghìn chủ đất tìm kiếm trước khi quyết định đầu tư. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> công bố <strong>báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> (cập nhật 2026) theo hướng <strong>minh bạch từng hạng mục</strong> — giúp bạn ước lượng ngân sách, so sánh gói tiêu chuẩn / khá / cao cấp và tránh báo giá “trần trời” không có cơ sở kỹ thuật.</p>
+<p>Bài viết tổng hợp <strong>đơn giá tham khảo</strong>, cách tính diện tích quy đổi, các khoản chi thường gặp ngoài đơn giá/m², quy trình nhận báo giá chính thức tại Sao Khuê và câu hỏi thường gặp — phù hợp chủ nhà xây <strong>nhà phố</strong>, <strong>biệt thự</strong> hoặc <strong>cải tạo trọn gói</strong> tại TP.HCM, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a>, Đồng Nai.</p>
+
+<h2>Báo giá xây nhà trọn gói TP.HCM là gì?</h2>
+<p><strong>Xây nhà trọn gói</strong> (chìa khóa trao tay) là mô hình nhà thầu báo <strong>một đơn giá tổng thể</strong> (thường tính theo m² sàn xây dựng) bao gồm: thiết kế (nếu trong gói), thi công móng–kết cấu–mái, hoàn thiện cơ bản, điện nước, cửa, thiết bị vệ sinh cơ bản và bàn giao. <strong>Báo giá xây nhà TP.HCM</strong> trọn gói khác với báo giá chỉ <strong>phần thô</strong> hoặc chỉ <strong>hoàn thiện</strong> — bạn cần xác định rõ phạm vi trước khi so sánh giữa các công ty.</p>
+<p>Tại Sao Khuê, báo giá trọn gói được lập sau <strong>khảo sát mặt bằng</strong> và thống nhất phương án thiết kế sơ bộ. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và <a href="/bao-gia">công cụ tính chi phí online</a>.</p>
+
+<h2>Bảng báo giá xây nhà trọn gói mới nhất 2026 (tham khảo)</h2>
+<p>Đơn giá dưới đây áp dụng cho công trình nhà ở riêng lẻ tại TP.HCM, <strong>mang tính tham khảo</strong>. Báo giá chính thức phụ thuộc quy mô, vật liệu, mặt bằng và thời điểm ký hợp đồng:</p>
+<table>
+  <thead>
+    <tr><th>Gói dịch vụ</th><th>Đơn giá (đ/m² sàn)</th><th>Phạm vi công việc</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Xây nhà trọn gói tiêu chuẩn</td><td><strong>4,85 – 5,5 triệu</strong></td><td>Thô + hoàn thiện cơ bản, thiết bị vệ sinh phổ thông</td></tr>
+    <tr><td>Trọn gói khá</td><td><strong>5,5 – 6,0 triệu</strong></td><td>Vật tư tầm trung–khá, hoàn thiện đẹp hơn</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td><strong>6,0 – 6,7 triệu+</strong></td><td>Thiết bị tốt, chi tiết kiến trúc cao cấp</td></tr>
+    <tr><td>Chỉ xây phần thô</td><td><strong>3,55 – 3,8 triệu</strong></td><td>Móng, khung BTCT, tường, mái, điện nước âm</td></tr>
+    <tr><td>Hoàn thiện sau thô</td><td>Liên hệ</td><td>Trát, sơn, ốp lát, trần, cửa — theo bản vẽ</td></tr>
+  </tbody>
+</table>
+<p><strong>Lưu ý:</strong> Đơn giá/m² là <strong>diện tích sàn xây dựng quy đổi</strong> (gồm móng, các tầng, mái, ban công có mái che theo quy ước hợp đồng) — không phải chỉ diện tích lô đất.</p>
+
+<h2>Ví dụ tính nhanh báo giá xây nhà TP.HCM</h2>
+<p><strong>Ví dụ 1 — Nhà phố 4 tầng:</strong> Tổng diện tích sàn quy đổi ~320 m², gói trọn gói tiêu chuẩn ~5 triệu/m² → chi phí tham khảo khoảng <strong>1,6 tỷ</strong> (chưa gồm nội thất cao cấp, phí ngoài hợp đồng).</p>
+<p><strong>Ví dụ 2 — Nhà 3 tầng mặt tiền 5m:</strong> Sàn ~240 m², gói khá ~5,7 triệu/m² → khoảng <strong>1,37 tỷ</strong>.</p>
+<p><strong>Ví dụ 3 — Chỉ phần thô:</strong> 280 m² × 3,7 triệu/m² → khoảng <strong>1,04 tỷ</strong>, sau đó ký riêng <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<p>Dùng <a href="/bao-gia">máy tính báo giá xây nhà</a> trên website Sao Khuê để nhập diện tích và gói — nhận ước lượng trong vài phút, sau đó kỹ sư khảo sát sẽ chốt số liệu chính thức.</p>
+
+<h2>Các yếu tố làm báo giá xây nhà TP.HCM tăng hoặc giảm</h2>
+<p>Hai công trình cùng diện tích có thể chênh <strong>hàng trăm triệu</strong> vì các yếu tố sau:</p>
+<ul>
+  <li><strong>Địa chất &amp; móng:</strong> Đất yếu, cọc khoan, móng bè — tăng chi phí móng đáng kể.</li>
+  <li><strong>Số tầng &amp; nhịp kết cấu:</strong> Nhịp lớn, tầng cao cần hệ khung và thép nhiều hơn.</li>
+  <li><strong>Loại mái:</strong> Mái bằng BTCT, mái Thái, mái lợp — khác nhau về kết cấu và hoàn thiện.</li>
+  <li><strong>Thiết kế phức tạp:</strong> Giếng trời, cầu thang uốn, ban công lớn — tăng nhân công và vật tư.</li>
+  <li><strong>Chủng loại vật tư:</strong> Gạch, sơn, thiết bị vệ sinh, cửa nhôm kính — chênh lệch rõ giữa các hạng.</li>
+  <li><strong>Vị trí công trình:</strong> Hẻm hẹp, vận chuyển khó, thời gian thi công bị giới hạn giờ ban ngày.</li>
+  <li><strong>Thời điểm thi công:</strong> Mùa mưa có thể ảnh hưởng tiến độ và chi phí tạm thời.</li>
+</ul>
+<p>Sao Khuê cam kết <strong>không phát sinh</strong> khi không thay đổi thiết kế và hạng mục đã ký — mọi phát sinh (nếu có) phải thống nhất bằng phụ lục hợp đồng.</p>
+
+<h2>So sánh báo giá: Trọn gói vs phần thô vs hoàn thiện</h2>
+<table>
+  <thead>
+    <tr><th>Hình thức</th><th>Ưu điểm</th><th>Nhược điểm</th><th>Phù hợp</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Trọn gói</strong></td><td>Một báo giá, một bảo hành, tiết kiệm thời gian chủ nhà</td><td>Giá tổng cao hơn từng giai đoạn riêng lẻ</td><td>Gia đình bận, cần đầu mối duy nhất</td></tr>
+    <tr><td><strong>Phần thô</strong></td><td>Kiểm soát chi phí khung nhà, linh hoạt hoàn thiện sau</td><td>Phải tự giám sát hoặc thuê thêm hoàn thiện</td><td>Đã có thiết kế, có kinh nghiệm xây</td></tr>
+    <tr><td><strong>Hoàn thiện</strong></td><td>Tùy chọn vật liệu đẹp khi đã có nhà thô vững</td><td>Phụ thuộc chất lượng phần thô trước đó</td><td>Nhà xây thô sẵn, cần nâng cấp</td></tr>
+  </tbody>
+</table>
+<p>Chi tiết: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> · <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> · <a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">xây dựng nhà phố</a>.</p>
+
+<h2>Báo giá xây nhà trọn gói gồm những hạng mục nào?</h2>
+<p>Để đọc <strong>báo giá xây nhà TP.HCM</strong> đúng cách, bạn nên kiểm tra báo giá có liệt kê đủ các nhóm sau (Sao Khuê luôn đính kèm dự toán chi tiết):</p>
+<h3>Nhóm thiết kế &amp; thủ tục</h3>
+<ul>
+  <li>Khảo sát mặt bằng, đo đạc.</li>
+  <li>Thiết kế kiến trúc 2D/3D (miễn phí khi ký xây trọn gói — theo chương trình).</li>
+  <li>Hỗ trợ hồ sơ xin phép (nếu trong hợp đồng).</li>
+</ul>
+<h3>Nhóm thi công phần thô</h3>
+<ul>
+  <li>Móng, cột, dầm, sàn, tường bao che, mái.</li>
+  <li>Điện, nước âm tường; thoát nước mưa, vệ sinh.</li>
+  <li>Giàn giáo, an toàn lao động cơ bản.</li>
+</ul>
+<h3>Nhóm hoàn thiện</h3>
+<ul>
+  <li>Trát, tô, sơn nước trong–ngoài.</li>
+  <li>Ốp lát sàn, ốp tường khu vực ướt (theo gói).</li>
+  <li>Trần thạch cao hoặc trần khác theo thiết kế.</li>
+  <li>Cửa đi, cửa sổ, lan can, cầu thang (theo chủng loại đã ký).</li>
+  <li>Thiết bị vệ sinh cơ bản (bồn cầu, lavabo, vòi sen…).</li>
+</ul>
+<h3>Thường không gồm trong báo giá trọn gói cơ bản</h3>
+<ul>
+  <li>Nội thất cao cấp: tủ bếp âm, tủ quần áo đặc biệt, sofa.</li>
+  <li>Hàng rào, sân vườn lớn, hồ bơi (báo giá riêng).</li>
+  <li>Phí xin phép, lệ phí nhà nước (nếu không ghi trong hợp đồng).</li>
+  <li>Đền bù, lăn dây hàng xóm, chi phí sinh hoạt tạm trong thi công.</li>
+</ul>
+
+<h2>Các khoản chi ngoài đơn giá/m² — Cần dự trù</h2>
+<p>Ngoài <strong>báo giá xây nhà trọn gói</strong>, chủ nhà nên dự phòng (tham khảo <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a>):</p>
+<ul>
+  <li><strong>Điện nước tạm thời</strong> trong thi công.</li>
+  <li><strong>Vận chuyển vật liệu</strong> vào hẻm hẹp (nếu xe lớn không vào được).</li>
+  <li><strong>Đất đắp, san nền</strong> khi mặt bằng chưa chuẩn.</li>
+  <li><strong>Nội thất &amp; thiết bị điện gia dụng</strong> sau bàn giao.</li>
+  <li><strong>Dự phòng phát sinh thiết kế</strong> (~5–10% ngân sách) khi chủ nhà đổi ý giữa chừng.</li>
+</ul>
+
+<h2>Quy trình nhận báo giá xây nhà chính thức tại Sao Khuê</h2>
+<ol>
+  <li><strong>Liên hệ:</strong> Hotline <strong>0909 075 668</strong>, Zalo hoặc <a href="/lien-he">form liên hệ</a>.</li>
+  <li><strong>Khảo sát miễn phí:</strong> Kỹ sư đến công trình đo đạc, tư vấn sơ bộ.</li>
+  <li><strong>Chốt thiết kế / phương án:</strong> Mặt bằng, số tầng, mức hoàn thiện.</li>
+  <li><strong>Nhận dự toán chi tiết:</strong> Bảng hạng mục, vật tư, đơn giá, tiến độ thanh toán.</li>
+  <li><strong>Ký hợp đồng:</strong> Cam kết không phát sinh khi không đổi thiết kế.</li>
+</ol>
+<p>Thời gian báo giá sơ bộ qua điện thoại: <strong>trong ngày</strong>. Báo giá chi tiết sau khảo sát: thường <strong>3–7 ngày</strong> tùy quy mô.</p>
+
+<h2>Vì sao chọn báo giá xây nhà tại Sao Khuê?</h2>
+<ul>
+  <li><strong>Minh bạch:</strong> Dự toán từng hạng mục, không “bóc tách” mơ hồ.</li>
+  <li><strong>Trực tiếp thi công:</strong> Không chào giá rẻ rồi bán thầu phụ.</li>
+  <li><strong>Vật tư đúng hợp đồng:</strong> Xi măng, thép, sơn, thiết bị đúng chủng loại đã ký.</li>
+  <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong>.</li>
+  <li><strong>Kinh nghiệm:</strong> Hơn <strong>500 công trình</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
+  <li><strong>Ưu đãi:</strong> <a href="/dich-vu/khuyen-mai-xay-dung">Khuyến mại xây dựng</a> — miễn phí thiết kế khi ký trọn gói (theo đợt).</li>
+</ul>
+
+<h2>Cách nhận biết báo giá xây nhà TP.HCM “bẫy” giá rẻ</h2>
+<p>Cảnh giác khi báo giá thấp hơn thị trường <strong>15–20%</strong> mà không giải thích rõ:</p>
+<ul>
+  <li>Không nêu chủng loại vật tư (xi măng, thép, gạch, sơn…).</li>
+  <li>Không có hạng mục móng, chống thấm, điện nước riêng.</li>
+  <li>Yêu cầu ứng tiền quá cao ngay khi ký (<strong>&gt;50%</strong> chưa thi công).</li>
+  <li>Không có hợp đồng pháp nhân, không bảo hành bằng văn bản.</li>
+  <li>“Báo giá m²” nhưng không giải thích cách tính diện tích quy đổi.</li>
+</ul>
+<p>Nên so sánh ít nhất <strong>2–3 nhà thầu</strong> cùng phạm vi công việc — không chỉ so một con số.</p>
+
+<h2>Báo giá xây nhà theo từng loại công trình</h2>
+<h3>Nhà phố 3–5 tầng</h3>
+<p>Phổ biến tại Bình Thạnh, Thủ Đức, Quận 7… Đơn giá trọn gói thường nằm trong bảng <strong>4,85 – 6,7 triệu/m²</strong>. Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>.</p>
+<h3>Biệt thự / nhà vườn</h3>
+<p>Chi phí/m² có thể cao hơn do mái, sân, hoàn thiện đẹp. Cần khảo sát riêng.</p>
+<h3>Sửa chữa, cải tạo</h3>
+<p>Báo giá theo hạng mục (chống thấm, gia cố, thay điện nước…) — xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>.</p>
+<h3>Nâng tầng</h3>
+<p>Phụ thuộc khảo sát kết cấu — không có đơn giá cố định/m². Xem <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a>.</p>
+
+<h2>Thanh toán theo tiến độ — Gợi ý an toàn cho chủ nhà</h2>
+<p>Báo giá xây nhà TP.HCM thường đi kèm lịch thanh toán chia đợt:</p>
+<ul>
+  <li>Ký hợp đồng: <strong>15–25%</strong></li>
+  <li>Hoàn thành móng: <strong>20–25%</strong></li>
+  <li>Hoàn thành thân nhà (khung + mái): <strong>25–30%</strong></li>
+  <li>Hoàn thiện &amp; nghiệm thu: <strong>20–30%</strong></li>
+  <li>Giữ lại <strong>5–10%</strong> sau bàn giao (nếu hợp đồng quy định)</li>
+</ul>
+<p>Tránh trả quá <strong>70%</strong> tổng giá trị khi mới xong phần thô nếu hợp đồng không bảo vệ quyền lợi chủ nhà.</p>
+
+<h2>Chi tiết đơn giá các hạng mục trong báo giá trọn gói (tham khảo)</h2>
+<p>Để hiểu sâu hơn <strong>báo giá xây nhà TP.HCM</strong>, dưới đây là tỷ trọng chi phí điển hình trong gói trọn gói (có thể thay đổi theo thiết kế):</p>
+<ul>
+  <li><strong>Móng &amp; kết cấu thô:</strong> khoảng 35–42% tổng giá trị — quyết định an toàn công trình.</li>
+  <li><strong>Xây tường, mái:</strong> khoảng 12–18%.</li>
+  <li><strong>Điện, nước, thoát nước:</strong> khoảng 8–12%.</li>
+  <li><strong>Hoàn thiện (trát, sơn, ốp lát):</strong> khoảng 22–28%.</li>
+  <li><strong>Cửa, lan can, cầu thang:</strong> khoảng 8–12%.</li>
+  <li><strong>Thiết bị vệ sinh, phụ kiện:</strong> khoảng 3–6%.</li>
+  <li><strong>Quản lý, giám sát, chi phí chung:</strong> phần còn lại.</li>
+</ul>
+<p>Khi nhận báo giá từ Sao Khuê, bạn sẽ thấy tách bạch từng nhóm — không gộp chung “gói thầu” khó kiểm tra.</p>
+
+<h2>Báo giá xây nhà theo khu vực TP.HCM</h2>
+<p>Đơn giá/m² <strong>không chênh lệch lớn</strong> giữa các quận nội thành nếu cùng điều kiện mặt bằng và vật tư. Tuy nhiên chi phí logistics có thể tăng nhẹ ở:</p>
+<ul>
+  <li><strong>Hẻm sâu, xe không vào được:</strong> nhân công bốc vật liệu, thời gian kéo dài.</li>
+  <li><strong>Khu ven đô thị mới (Thủ Đức, Nhà Bè…):</strong> có thể cần trạm điện nước tạm xa hơn.</li>
+  <li><strong>Bình Dương, Đồng Nai:</strong> Sao Khuê vẫn nhận báo giá — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>; cộng thêm chi phí di chuyển đội khảo sát/thi công nếu xa (thông báo trước khi ký).</li>
+</ul>
+<p>Dù ở quận nào, nguyên tắc vẫn là <strong>khảo sát trước — báo giá sau</strong>, không báo “giá chung cho cả thành phố” khi chưa xem đất.</p>
+
+<h2>Cập nhật báo giá xây nhà khi nào?</h2>
+<p>Thị trường vật liệu (thép, xi măng, cát…) biến động theo quý. Sao Khuê cập nhật <strong>bảng báo giá xây nhà trọn gói mới nhất</strong> trên website và tư vấn trực tiếp — nhưng <strong>giá cam kết</strong> cho khách đã ký hợp đồng theo điều khoản hợp đồng, không thay đổi một chiều khi đã chốt vật tư.</p>
+<p>Nếu bạn nhận báo giá từ nhiều nguồn cách nhau vài tháng, hãy yêu cầu cùng một mốc thời gian và cùng phạm vi hạng mục khi so sánh.</p>
+
+<h2>Checklist 10 điểm khi đọc báo giá xây nhà TP.HCM</h2>
+<ol>
+  <li>Có ghi rõ <strong>diện tích quy đổi</strong> (m²) và cách tính?</li>
+  <li>Liệt kê <strong>chủng loại vật tư</strong> (thương hiệu, quy cách)?</li>
+  <li>Tách <strong>móng, thô, hoàn thiện</strong> hay gộp trọn gói?</li>
+  <li>Có <strong>tiến độ thi công</strong> và lịch thanh toán?</li>
+  <li><strong>Bảo hành</strong> từng hạng mục bao lâu?</li>
+  <li>Điều khoản <strong>phát sinh</strong> khi đổi thiết kế?</li>
+  <li>Ai là <strong>đầu mối</strong> và đơn vị <strong>trực tiếp thi công</strong>?</li>
+  <li>Có cho xem <strong>công trình tương tự</strong> đã bàn giao?</li>
+  <li>Phí <strong>không bao gồm</strong> được liệt kê rõ?</li>
+  <li>Hợp đồng có <strong>pháp nhân công ty</strong> và con dấu?</li>
+</ol>
+
+<h2>Báo giá xây nhà trọn gói và thuế, hóa đơn</h2>
+<p>Khi ký hợp đồng với <strong>công ty xây dựng có pháp nhân</strong> như Sao Khuê, bạn có thể nhận <strong>hóa đơn VAT</strong> theo quy định (tùy gói và điều khoản hợp đồng). Báo giá xây nhà TP.HCM trong bài viết này là <strong>giá tham khảo công trình</strong> — chưa bao gồm VAT trừ khi ghi rõ “đã gồm VAT” trong báo giá chính thức. Chủ nhà nên hỏi rõ kế toán trước khi thanh toán để hạch toán đúng chi phí xây dựng nhà ở.</p>
+<p>Hóa đơn minh bạch cũng là một tiêu chí <strong>uy tín nhà thầu</strong>, song song với bảo hành và tiến độ thi công.</p>
+
+<h2>Kết luận: Nắm báo giá xây nhà TP.HCM trước khi ký hợp đồng</h2>
+<p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> năm 2026 dao động khoảng <strong>4,85 – 6,7 triệu/m²</strong> (trọn gói) và <strong>3,55 – 3,8 triệu/m²</strong> (phần thô) — tùy vật liệu và quy mô. Con số quan trọng nhất với bạn là <strong>báo giá sau khảo sát</strong>, có dự toán chi tiết và hợp đồng rõ ràng. Đừng chỉ dựa vào quảng cáo “giá rẻ nhất thị trường” mà thiếu phạm vi công việc.</p>
+<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 075 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
+
+<h2>Liên kết dịch vụ &amp; công cụ báo giá</h2>
+<p>Sau khi nắm <strong>báo giá xây nhà TP.HCM</strong> tham khảo, bạn có thể đi sâu từng hạng mục:</p>
+<ul>
+  <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a> — quy trình và cam kết.</li>
+  <li><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> — tối ưu chi phí từ bản vẽ.</li>
+  <li><a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Xây dựng nhà phố</a> — đặc thù nhà phố.</li>
+  <li><a href="/bai-viet/luat-xay-dung-moi-nhat">Luật xây dựng</a> — tránh phạt khi xây.</li>
+  <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
+</ul>
+
+<h2>FAQ — Báo giá xây nhà trọn gói TP.HCM</h2>
+<h3>Báo giá xây nhà TP.HCM 2026 bao nhiêu một mét vuông?</h3>
+<p>Trọn gói tiêu chuẩn thường <strong>4,85 – 5,5 triệu/m²</strong> sàn; gói khá–cao cấp <strong>5,5 – 6,7 triệu+</strong>. Phần thô <strong>3,55 – 3,8 triệu/m²</strong>. Báo giá chính xác sau khảo sát.</p>
+<h3>Báo giá trên website có phải giá chính thức không?</h3>
+<p>Là <strong>tham khảo</strong>. Giá chính thức nằm trong dự toán sau khảo sát và hợp đồng ký kết.</p>
+<h3>Có miễn phí khảo sát và báo giá không?</h3>
+<p>Có. Sao Khuê khảo sát và tư vấn sơ bộ miễn phí tại TP.HCM và vùng lân cận (theo lịch hẹn).</p>
+<h3>Báo giá có bao gồm thiết kế không?</h3>
+<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>, thường được <strong>miễn phí thiết kế 2D/3D</strong> (theo quy mô áp dụng). Thiết kế riêng: xem <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>.</p>
+<h3>Giá có tăng khi vật liệu leo thang không?</h3>
+<p>Hợp đồng Sao Khuê chốt vật tư và đơn giá tại thời điểm ký — không tăng tùy tiện khi không đổi phạm vi. Điều khoản cụ thể ghi trong hợp đồng.</p>
+<h3>Làm sao tính nhanh trước khi gặp kỹ sư?</h3>
+<p>Vào <a href="/bao-gia">/bao-gia</a> — nhập diện tích, số tầng, gói dịch vụ để ước lượng.</p>
+<h3>Báo giá xây nhà trọn gói có bảo hành không?</h3>
+<p>Có. Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hạng mục trong hợp đồng.</p>
+
+<h2>Liên hệ nhận báo giá xây nhà trọn gói mới nhất</h2>
+<p>Bạn cần <strong>báo giá xây nhà TP.HCM</strong> chính xác, minh bạch cho dự án sắp tới?</p>
+<ul>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Tính chi phí online:</strong> <a href="/bao-gia">/bao-gia</a></li>
+  <li><strong>Đặt lịch khảo sát:</strong> <a href="/lien-he">/lien-he</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Báo giá rõ ràng, thi công uy tín, xây tổ ấm bền vững cho gia đình bạn.</p>$content$,
+  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
+  $mt$Báo Giá Xây Nhà Trọn Gói TP.HCM 2026 | Sao Khuê$mt$,
+  $md$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Khảo sát miễn phí, dự toán minh bạch — 0909 075 668.$md$,
+  $mk$báo giá xây nhà tphcm, báo giá xây nhà trọn gói, đơn giá xây nhà 2026, xây nhà trọn gói giá bao nhiêu, chi phí xây nhà tphcm, sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-nha-pho-uy-tin-tphcm$slug$,
+  $title$Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Công ty xây dựng nhà phố TP.HCM uy tín: thiết kế, thi công trọn gói, báo giá minh bạch, bảo hành kết cấu 10 năm. Tư vấn khảo sát miễn phí — Hotline 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng nhà phố uy tín tại TP.HCM — Sao Khuê đồng hành từ ý tưởng đến bàn giao</h2>
+<p><strong>Xây dựng nhà phố TP.HCM</strong> là nhu cầu phổ biến của hàng nghìn gia đình mỗi năm: lô đất hẹp, quy hoạch chặt, chi phí vật liệu biến động và áp lực thời gian khiến việc chọn <strong>công ty xây dựng nhà phố uy tín</strong> trở thành quyết định then chốt. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> chuyên <strong>thiết kế và thi công nhà phố</strong> 3–5 tầng, nhà phố kinh doanh tầng trệt, nhà ống hiện đại tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Bình Dương, Đồng Nai… với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> bàn giao và cam kết <strong>báo giá minh bạch — bảo hành kết cấu 10 năm</strong>.</p>
+<p>Bài viết này tổng hợp đầy đủ thông tin bạn cần khi tìm <strong>nhà thầu xây nhà phố TP.HCM</strong>: đặc thù công trình, gói dịch vụ, đơn giá tham khảo, quy trình thi công, tiêu chí chọn đơn vị uy tín, lưu ý pháp lý và câu hỏi thường gặp — theo hướng tối ưu nội dung chuẩn SEO (tương tự cấu trúc bài viết WordPress chuyên nghiệp: heading rõ ràng, từ khóa tự nhiên, liên kết nội bộ, FAQ).</p>
+
+<h2>Xây dựng nhà phố TP.HCM — Đặc thù không giống biệt thự hay căn hộ</h2>
+<p><strong>Nhà phố</strong> (townhouse) thường xây trên lô đất <strong>4–6 m mặt tiền</strong>, chiều sâu <strong>15–20 m</strong> hoặc hơn, xếp chồng <strong>3–5 tầng</strong> để tối đa diện tích sử dụng. Khác với biệt thự có sân rộng, nhà phố nội thành TP.HCM phải giải quyết bài toán:</p>
+<ul>
+  <li><strong>Ánh sáng và thông gió:</strong> Giếng trời, giếng gió, cửa sổ bên hông, lan can kính hoặc lam chắn nắng.</li>
+  <li><strong>Kết cấu chịu lực:</strong> Khung bê tông cốt thép, móng phù hợp địa chất, không đục phá cột–dầm tùy tiện.</li>
+  <li><strong>Quy hoạch &amp; pháp lý:</strong> Lộ giới, chỉ giới xây dựng, giấy phép (nếu cần), hàng xóm.</li>
+  <li><strong>Logistics thi công:</strong> Đường hẻm hẹp, vận chuyển vật tư, an toàn lao động, giảm ảnh hưởng khu dân cư.</li>
+  <li><strong>Chi phí theo m²:</strong> Chi phí cố định (cầu trục, giàn giáo, điện nước tạm) chia trên diện tích nhỏ nên đơn giá/m² thường cao hơn công trình quy mô lớn.</li>
+</ul>
+<p>Do đó, <strong>xây dựng nhà phố TP.HCM</strong> cần đội ngũ quen mặt bằng hẹp, có kinh nghiệm <a href="/dich-vu/thiet-ke-nha">thiết kế nhà phố</a> và thi công trọn gói — không chỉ “có thợ là xây được”.</p>
+
+<h2>Công ty xây dựng nhà phố uy tín cần đáp ứng những gì?</h2>
+<p>Khi tìm kiếm trên Google với từ khóa <em>công ty xây dựng nhà phố uy tín tại TP.HCM</em>, bạn nên đối chiếu nhà thầu theo các tiêu chí sau (đây cũng là cam kết vận hành của Sao Khuê):</p>
+<ol>
+  <li><strong>Pháp nhân rõ ràng:</strong> Công ty TNHH, mã số thuế, hợp đồng đầy đủ, địa chỉ văn phòng cố định.</li>
+  <li><strong>Kinh nghiệm nhà phố thực tế:</strong> Portfolio công trình cùng loại, cho xem công trình đang thi công.</li>
+  <li><strong>Thiết kế trước — thi công sau:</strong> Có kiến trúc sư, hồ sơ kỹ thuật, tránh xây “cảm tính”.</li>
+  <li><strong>Báo giá chi tiết:</strong> Dự toán từng hạng mục, vật tư chủng loại, không phát sinh khi không đổi thiết kế.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Kỹ sư nghiệm thu móng, cốt thép, chống thấm, điện nước.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu dài hạn, hoàn thiện theo hạng mục.</li>
+  <li><strong>An toàn &amp; tiến độ:</strong> Cam kết thời gian trong hợp đồng, bảo hiểm công trình khi áp dụng.</li>
+</ol>
+<p>Tránh các dấu hiệu rủi ro: báo giá quá thấp so với thị trường, không cho xem hợp đồng mẫu, nhận tiền ứng quá cao không gắn tiến độ, thường xuyên đổi thợ hoặc “bán thầu phụ” không thông báo.</p>
+
+<h2>Vì sao nên chọn Sao Khuê làm đối tác xây dựng nhà phố?</h2>
+<p><strong>Kiến Trúc Sao Khuê</strong> định vị là đơn vị <strong>thiết kế – thi công nhà ở dân dụng</strong> tại TP.HCM, chuyên sâu <strong>nhà phố và biệt thự</strong>. Điểm khác biệt mà khách hàng thường phản hồi sau khi bàn giao:</p>
+<ul>
+  <li><strong>Trực tiếp thi công:</strong> Không chào giá rồi chuyển cho thầu phụ khác hãng — đội thợ và giám sát thuộc hệ thống quản lý dự án.</li>
+  <li><strong>Một đầu mối:</strong> Từ khảo sát, thiết kế 2D/3D, dự toán, thi công đến nghiệm thu — giảm xung đột giữa “bên vẽ” và “bên xây”.</li>
+  <li><strong>Vật tư chính hãng:</strong> Xi măng, thép, gạch, sơn, thiết bị vệ sinh đúng chủng loại đã ký trong hợp đồng.</li>
+  <li><strong>Minh bạch tiến độ:</strong> Cập nhật hình ảnh công trình, nghiệm thu từng giai đoạn trước khi thanh toán đợt tiếp theo.</li>
+  <li><strong>Bảo hành dài hạn:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> tùy hạng mục.</li>
+</ul>
+<p>Bạn có thể tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình xây nhà phố Bình Thạnh</a>, <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">mẫu nhà phố hiện đại</a> hoặc liên hệ xem công trình đang thi công gần khu vực của mình.</p>
+
+<h2>Dịch vụ xây dựng nhà phố trọn gói tại Sao Khuê</h2>
+<p>Chúng tôi cung cấp chuỗi dịch vụ xuyên suốt, phù hợp khách hàng muốn <strong>xây nhà phố trọn gói</strong> hoặc tách từng giai đoạn:</p>
+<h3>Thiết kế kiến trúc nhà phố 2D/3D</h3>
+<p>Phác thảo công năng, mặt bằng từng tầng, phối cảnh 3D, hồ sơ kỹ thuật thi công, hỗ trợ hồ sơ xin phép khi cần. Chi tiết tại <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>. Khách ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> thường được <strong>miễn phí thiết kế</strong> (theo quy mô áp dụng).</p>
+<h3>Thi công phần thô nhà phố</h3>
+<p>Móng, cột, dầm, sàn, tường bao che, mái, điện nước âm tường — nền tảng an toàn cho giai đoạn sau. Xem <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+<h3>Xây nhà phố trọn gói (chìa khóa trao tay)</h3>
+<p>Đảm nhận toàn bộ từ thiết kế đến hoàn thiện cơ bản, bàn giao đưa vào ở hoặc hoàn thiện nội thất nhẹ. Phù hợp chủ nhà bận rộn, cần một nhà thầu chịu trách nhiệm cuối cùng. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
+<h3>Hoàn thiện nhà phố sau thô</h3>
+<p>Trát, sơn, ốp lát, trần, cửa, lan can, thiết bị vệ sinh — khi bạn đã có khung nhà vững. Xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<h3>Cải tạo, sửa chữa, nâng tầng nhà phố cũ</h3>
+<p>Nhà đã xây 20–40 năm cần gia cố, chống thấm, mở rộng phòng hoặc <strong>nâng thêm tầng</strong>. Xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>, <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a>, <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a>.</p>
+
+<h2>Quy trình xây dựng nhà phố chuẩn — 7 bước tại Sao Khuê</h2>
+<p>Quy trình được chuẩn hóa giúp chủ nhà theo dõi tiến độ và kiểm soát chi phí — tương tự quy trình quản lý dự án mà nhiều công ty xây dựng uy tín áp dụng:</p>
+<ol>
+  <li><strong>Tiếp nhận &amp; tư vấn sơ bộ:</strong> Gọi hotline <strong>0909 075 668</strong>, Zalo hoặc gửi <a href="/lien-he">form liên hệ</a> — trao đổi nhu cầu, quy mô, ngân sách dự kiến.</li>
+  <li><strong>Khảo sát mặt bằng:</strong> Đo đạc, kiểm tra địa chất, hàng xóm, hướng nhà, lộ giới (nếu có bản đồ).</li>
+  <li><strong>Thiết kế &amp; chốt phương án:</strong> Mặt bằng, phối cảnh 3D, bố trí phòng, giếng trời — chỉnh sửa đến khi khách hài lòng.</li>
+  <li><strong>Dự toán &amp; ký hợp đồng:</strong> Bảng báo giá chi tiết hạng mục, vật tư, tiến độ thanh toán, bảo hành.</li>
+  <li><strong>Thi công móng – kết cấu:</strong> Nghiệm thu cốt thép, bê tông trước khi đổ tiếp tầng.</li>
+  <li><strong>Thi công hoàn thiện &amp; lắp đặt:</strong> Điện nước, cửa, ốp lát, sơn, nội thất cơ bản theo hợp đồng.</li>
+  <li><strong>Nghiệm thu &amp; bàn giao:</strong> Biên bản bàn giao, hồ sơ bảo hành, vệ sinh công trình.</li>
+</ol>
+<p>Thời gian thi công <strong>nhà phố 3–4 tầng</strong> thường <strong>4–7 tháng</strong> (xây mới trọn gói), tùy diện tích, mùa mưa và mức hoàn thiện. Tiến độ cụ thể ghi trong hợp đồng.</p>
+
+<h2>Báo giá xây dựng nhà phố TP.HCM tham khảo 2026</h2>
+<p>Đơn giá <strong>xây dựng nhà phố TP.HCM</strong> phụ thuộc: diện tích sàn, số tầng, mặt bằng đất, loại mái, vật liệu (tiêu chuẩn / khá / cao cấp), yêu cầu thiết kế và vị trí công trình. Bảng dưới mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí:</p>
+<table>
+  <thead>
+    <tr><th>Hình thức</th><th>Đơn giá (đ/m² sàn)</th><th>Ghi chú</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Xây nhà phố trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Thô + hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu</td><td>Vật tư tầm trung–khá</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+</td><td>Thiết bị, hoàn thiện đẹp</td></tr>
+    <tr><td>Chỉ phần thô nhà phố</td><td>3,55 – 3,8 triệu</td><td>Đã có thiết kế</td></tr>
+    <tr><td>Hoàn thiện sau thô</td><td>Liên hệ</td><td>Theo bản vẽ &amp; vật liệu</td></tr>
+  </tbody>
+</table>
+<p><strong>Ví dụ ước tính nhanh:</strong> Nhà phố 4 tầng, tổng diện tích sàn khoảng <strong>320 m²</strong>, gói trọn gói tiêu chuẩn ~5 triệu/m² → chi phí tham khảo khoảng <strong>1,6 tỷ</strong> (chưa gồm nội thất cao cấp, thiết kế riêng nếu không nằm trong gói). Dùng <a href="/bao-gia">công cụ tính chi phí</a> trên website hoặc nhờ kỹ sư dự toán chi tiết.</p>
+<p>Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> để hiểu các khoản chi ngoài đơn giá/m² (lăn dây, đền bù hàng xóm, nội thất…).</p>
+
+<h2>Các yếu tố ảnh hưởng chi phí xây nhà phố</h2>
+<p>Hiểu rõ các yếu tố giúp bạn tránh so sánh báo giá “chỉ một con số” giữa các công ty:</p>
+<ul>
+  <li><strong>Địa chất &amp; móng:</strong> Đất yếu cần cọc, móng bè — chi phí tăng.</li>
+  <li><strong>Số tầng &amp; nhịp cột:</strong> Tầng cao, nhịp lớn cần thép, bê tông lớn hơn.</li>
+  <li><strong>Mái:</strong> Mái bằng, mái Thái, mái lợp — khác nhau về kết cấu và hoàn thiện.</li>
+  <li><strong>Giếng trời, cầu thang:</strong> Thiết kế phức tạp tăng thời gian thợ và vật tư.</li>
+  <li><strong>Thiết bị vệ sinh, cửa:</strong> Hàng nhập khẩu hay nội địa chênh lệch rõ.</li>
+  <li><strong>Thời điểm thi công:</strong> Mùa mưa có thể kéo dài tiến độ, ảnh hưởng chi phí nhân công tạm thời.</li>
+</ul>
+<p>Sao Khuê cam kết <strong>không phát sinh</strong> khi không thay đổi thiết kế và hạng mục đã ký — mọi phát sinh (nếu có) phải được thống nhất bằng văn bản phụ lục.</p>
+
+<h2>Tiêu chuẩn kỹ thuật khi xây nhà phố — Điều chủ nhà nên quan tâm</h2>
+<p>Dù không trực tiếp thi công, bạn vẫn nên nắm các điểm kỹ thuật cơ bản để trao đổi với nhà thầu:</p>
+<h3>Móng và kết cấu</h3>
+<p>Móng đơn, móng băng hoặc cọc khoan tùy khảo sát địa chất. Cốt thép đúng bản vẽ, nghiệm thu trước khi đổ bê tông. Không tự ý khoan cắt dầm, cột sau khi bàn giao.</p>
+<h3>Chống thấm</h3>
+<p>Sân thượng, toilet, ban công, tiếp giáp hàng xóm là vị trí dễ thấm. Yêu cầu lớp chống thấm đúng quy trình, nghiệm thu ngâm nước khi cần.</p>
+<h3>Điện — nước</h3>
+<p>Ống cấp thoát nước, dây điện âm tường đúng tiết diện, có sơ đồ khi bàn giao để sửa chữa sau này.</p>
+<h3>Thông gió — chống nóng</h3>
+<p>TP.HCM nóng quanh năm: giếng trời, cách nhiệm mái, kính hộp kính hoặc lam gỗ/nhôm giúp giảm điện lạnh. Kết hợp <a href="/bai-viet/phong-thuy-nha-o">phong thủy nhà ở</a> với giải pháp kỹ thuật hợp lý.</p>
+
+<h2>Thiết kế nhà phố hiện đại — Tối ưu trên lô đất hẹp</h2>
+<p>Xu hướng <strong>nhà phố hiện đại TP.HCM</strong> giai đoạn 2024–2026: tối giản, gam màu trung tính, lan can kính, phòng master khép kín, bếp mở liên thông phòng khách (nếu thông tầng), tầng trệt kinh doanh có cửa cuốn riêng. Sao Khuê triển khai nhiều mẫu <strong>3–4 tầng</strong> — xem <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phố hiện đại</a>.</p>
+<p>Thiết kế tốt giúp giảm chi phí vận hành lâu dài (điện, sửa chữa) và tăng giá trị khi chuyển nhượng. Đừng tiết kiệm sai chỗ ở giai đoạn <a href="/dich-vu/thiet-ke-nha">thiết kế</a>.</p>
+
+<h2>Khu vực Sao Khuê nhận xây dựng nhà phố</h2>
+<p>Chúng tôi triển khai <strong>xây dựng nhà phố</strong> tại:</p>
+<ul>
+  <li><strong>TP.HCM:</strong> Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Quận 3, Phú Nhuận, Bình Tân…</li>
+  <li><strong>Vùng lân cận:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a> (Thuận An, Dĩ An…), Đồng Nai — xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</li>
+</ul>
+<p>Đội khảo sát đến tận công trình miễn phí trong nội thành và vùng ven (theo lịch hẹn). Văn phòng: <strong>245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</strong>.</p>
+
+<h2>So sánh: Tự xây từng phần vs thuê công ty xây dựng nhà phố trọn gói</h2>
+<table>
+  <thead>
+    <tr><th>Tiêu chí</th><th>Tự thuê thợ từng hạng mục</th><th>Công ty trọn gói (Sao Khuê)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Thời gian chủ nhà</td><td>Rất nhiều — điều phối thợ</td><td>Giảm — một đầu mối</td></tr>
+    <tr><td>Báo giá</td><td>Khó tổng hợp, dễ phát sinh</td><td>Dự toán tổng, hợp đồng rõ</td></tr>
+    <tr><td>Chất lượng đồng bộ</td><td>Thường không đồng nhất</td><td>Quy trình nghiệm thu</td></tr>
+    <tr><td>Bảo hành</td><td>Khó truy trách</td><td>Bằng văn bản theo hạng mục</td></tr>
+    <tr><td>Pháp lý / thiết kế</td><td>Chủ nhà tự lo</td><td>Hỗ trợ hồ sơ khi ký gói</td></tr>
+  </tbody>
+</table>
+<p>Nếu bạn có kinh nghiệm xây dựng và thời gian giám sát hàng ngày, có thể chọn <a href="/dich-vu/xay-dung-phan-tho">phần thô</a> rồi tự hoàn thiện. Phần lớn gia đình làm việc bận rộn chọn <strong>xây trọn gói</strong> để an tâm hơn.</p>
+
+<h2>Giấy phép xây dựng nhà phố tại TP.HCM — Lưu ý nhanh</h2>
+<p>Tùy quận, loại công trình và thời điểm, nhà phố xây mới hoặc cải tạo lớn có thể cần <strong>giấy phép xây dựng</strong>. Sao Khuê hỗ trợ khách hàng chuẩn bị hồ sơ thiết kế phục vụ thủ tục; thời gian cấp phép do cơ quan nhà nước quyết định.</p>
+<p>Không nên xây vượt số tầng, lấn hàng xóm hoặc vi phạm lộ giới — rủi ro đình chỉ thi công và tranh chấp sau này rất cao. Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> mục pháp lý.</p>
+
+<h2>Chương trình ưu đãi — Khách xây nhà phố mới</h2>
+<p>Sao Khuê thường xuyên có <a href="/dich-vu/khuyen-mai-xay-dung">khuyến mại xây dựng</a>: miễn phí thiết kế 2D/3D khi ký trọn gói, ưu đãi khảo sát, quà tặng thiết bị vệ sinh cơ bản (theo từng đợt — liên hệ để biết chương trình hiện hành).</p>
+
+<h2>Checklist trước khi ký hợp đồng xây dựng nhà phố</h2>
+<p>Trước khi ký với bất kỳ <strong>công ty xây dựng nhà phố</strong> nào tại TP.HCM, bạn nên tự kiểm tra danh sách sau — đây là thói quen tốt mà nhiều chuyên gia SEO và tư vấn xây dựng khuyến nghị khi đọc bài hướng dẫn dài (pillar content):</p>
+<ul>
+  <li>Đã có <strong>sổ đỏ / giấy tờ đất</strong> và hiểu ranh giới lô đất.</li>
+  <li>Đã thống nhất <strong>số tầng, công năng từng phòng</strong> với gia đình (ngủ, làm việc, kinh doanh, để xe).</li>
+  <li>Đã xem <strong>bản vẽ 3D</strong> và danh mục vật tư dự kiến trong báo giá.</li>
+  <li>Đã đọc kỹ <strong>điều khoản thanh toán, phạt chậm tiến độ, bảo hành</strong>.</li>
+  <li>Đã hỏi rõ <strong>ai giám sát</strong> và kênh liên hệ khi phát sinh sự cố.</li>
+  <li>Đã tham khảo ít nhất <strong>01 công trình đã bàn giao</strong> của nhà thầu.</li>
+</ul>
+<p>Sao Khuê sẵn sàng cung cấp mẫu hợp đồng, giải thích từng hạng mục và đồng hành từ bước <a href="/dich-vu/thiet-ke-nha">thiết kế</a> — tránh tình trạng ký thi công khi bản vẽ còn sơ sài.</p>
+
+<h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
+<p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
+
+<h2>Câu hỏi thường gặp (FAQ) — Xây dựng nhà phố TP.HCM</h2>
+<h3>Công ty xây dựng nhà phố uy tín tại TP.HCM chọn như thế nào?</h3>
+<p>Ưu tiên đơn vị có pháp nhân rõ, portfolio nhà phố thực tế, hợp đồng và bảo hành bằng văn bản, cho khảo sát và xem công trình đang thi công. So sánh ít nhất 2–3 báo giá nhưng không chọn riêng giá rẻ nhất nếu thiếu hạng mục chi tiết.</p>
+<h3>Chi phí xây nhà phố 4 tầng 5x18m khoảng bao nhiêu?</h3>
+<p>Với tổng sàn khoảng 280–360 m², gói trọn gói tiêu chuẩn thường từ <strong>~1,4–2 tỷ+</strong> tùy vật liệu và thiết kế. Báo giá chính xác sau khảo sát.</p>
+<h3>Xây nhà phố mất bao lâu?</h3>
+<p>Thường <strong>4–7 tháng</strong> (xây mới trọn gói 3–4 tầng). Cải tạo hoặc chỉ phần thô có thể ngắn hơn hoặc dài hơn tùy hạng mục.</p>
+<h3>Có cần thiết kế trước khi xây không?</h3>
+<p>Rất nên. Thiết kế giúp tối ưu công năng, tránh đục phá kết cấu và là căn cứ báo giá. Sao Khuê <a href="/dich-vu/thiet-ke-nha">thiết kế nhà phố</a> và có thể miễn phí khi ký thi công trọn gói.</p>
+<h3>Sao Khuê có nhận xây nhà phố ở Bình Dương, Đồng Nai không?</h3>
+<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> hoặc gọi hotline để sắp lịch khảo sát.</p>
+<h3>Hợp đồng xây nhà phố thanh toán thế nào?</h3>
+<p>Thông thường chia đợt theo tiến độ: ký hợp đồng, móng, thân nhà, hoàn thiện, nghiệm thu. Không nên thanh toán quá 70% tổng giá trị khi công trình mới xong phần thô nếu hợp đồng không bảo vệ chủ nhà.</p>
+<h3>Bảo hành xây nhà phố bao lâu?</h3>
+<p>Tại Sao Khuê: bảo hành <strong>kết cấu 10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo từng hạng mục trong hợp đồng.</p>
+<h3>Xây nhà phố có bao gồm nội thất không?</h3>
+<p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Tủ bếp, nội thất cao cấp báo giá riêng hoặc tham khảo <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+
+<h2>Liên hệ công ty xây dựng nhà phố Sao Khuê — Khảo sát miễn phí</h2>
+<p>Bạn đang tìm <strong>công ty xây dựng nhà phố uy tín tại TP.HCM</strong> cho dự án xây mới, cải tạo hoặc nâng tầng? Hãy liên hệ Sao Khuê để được tư vấn, khảo sát mặt bằng và nhận <strong>báo giá minh bạch</strong>:</p>
+<ul>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
+  <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a></li>
+  <li><strong>Đặt lịch tư vấn:</strong> <a href="/lien-he">/lien-he</a></li>
+  <li><strong>Xem công trình:</strong> <a href="/cong-trinh">/cong-trinh</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Uy tín từ thiết kế đến thi công, <strong>xây dựng nhà phố TP.HCM</strong> đúng tiến độ, đúng cam kết, xây dựng tổ ấm bền vững cho gia đình bạn.</p>$content$,
+  $img$/images/project_3.jpg$img$,
+  $mt$Công Ty Xây Dựng Nhà Phố Uy Tín TP.HCM | Sao Khuê$mt$,
+  $md$Công ty xây dựng nhà phố TP.HCM uy tín: thi công trọn gói, báo giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.$md$,
+  $mk$xây dựng nhà phố tphcm, công ty xây dựng nhà phố, xây nhà phố uy tín, nhà thầu xây nhà phố, xây nhà trọn gói tphcm, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
 INSERT INTO posts (
   slug, title, category, excerpt, content, image_url,
   meta_title, meta_description, meta_keywords, created_at, updated_at
@@ -71,7 +536,7 @@ INSERT INTO posts (
 <h3>Xây trọn gói có bao gồm nội thất không?</h3>
 <p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Nội thất cao cấp, tủ bếp đặc biệt có thể báo giá thêm hoặc xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <h3>Sao Khuê có nhận xây ở Bình Dương, Đồng Nai không?</h3>
-<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận.</p>
+<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem chi tiết <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>
 
 <h2>Liên hệ báo giá xây nhà trọn gói</h2>
 <ul>
@@ -85,6 +550,122 @@ INSERT INTO posts (
   $mt$Xây Nhà Trọn Gói TP.HCM 2026 — Giá Tốt, Bảo Hành 10 Năm | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói TP.HCM chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.$md$,
   $mk$xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ, xây nhà chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-binh-duong$slug$,
+  $title$Xây Nhà Trọn Gói Chuyên Nghiệp Tại Bình Dương$title$,
+  $cat$dich-vu$cat$,
+  $excerpt$Xây nhà trọn gói Bình Dương: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp tại Thủ Dầu Một, Thuận An, Dĩ An. Bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Bình Dương — Giải pháp chìa khóa trao tay</h2>
+<p><strong>Xây nhà trọn gói Bình Dương</strong> là lựa chọn phổ biến của chủ đất tại Thủ Dầu Một, Thuận An, Dĩ An, Tân Uyên, Bến Cát và các khu đô thị mới ven TP.HCM — khi cần <strong>một nhà thầu chuyên nghiệp</strong> đảm nhận trọn quy trình từ thiết kế, thi công đến bàn giao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> nhận <strong>thi công xây nhà trọn gói tại Bình Dương</strong> và vùng lân cận, với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> bàn giao và đội ngũ kiến trúc sư, kỹ sư giám sát tại hiện trường.</p>
+<p>Chúng tôi hiểu đặc thù thị trường Bình Dương: lô đất khu dân cư mới, nhà phố liền kề, biệt thự khu đô thị, quy định xây dựng từng huyện — và cam kết <strong>báo giá minh bạch</strong>, <strong>đúng tiến độ</strong>, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<h2>Xây nhà trọn gói tại Bình Dương là gì?</h2>
+<p><strong>Xây nhà trọn gói</strong> (hay <em>chìa khóa trao tay</em>) là mô hình nhà thầu đảm nhận toàn bộ: khảo sát đất, thiết kế kiến trúc, dự toán, cung cấp vật tư, thi công móng–thân–mái, hoàn thiện nội ngoại thất, lắp đặt điện nước, cửa, thiết bị vệ sinh cơ bản và nghiệm thu bàn giao.</p>
+<p>Khác với thuê riêng từng đội thợ, trọn gói giúp <strong>đồng bộ chất lượng</strong>, <strong>bảo hành rõ ràng</strong> và giảm rủi ro phát sinh chi phí ngoài dự kiến — đặc biệt quan trọng khi chủ nhà ở TP.HCM nhưng xây tại Bình Dương và cần đơn vị có kinh nghiệm vận hành công trình xa trụ sở.</p>
+
+<h2>Khu vực nhận thi công xây nhà trọn gói Bình Dương</h2>
+<p>Sao Khuê triển khai <strong>xây nhà trọn gói Bình Dương</strong> tại các địa bàn sau (và mở rộng theo khảo sát):</p>
+<ul>
+  <li><strong>TP. Thủ Dầu Một:</strong> Khu trung tâm, nhà phố, biệt thự nội ô.</li>
+  <li><strong>Thành phố Thuận An, Dĩ An:</strong> Khu dân cư ven TP.HCM, nhà phố 3–5 tầng, nhà ống.</li>
+  <li><strong>Thành phố Tân Uyên, Thủ Dầu Một mở rộng:</strong> Khu đô thị, nhà vườn, biệt thự.</li>
+  <li><strong>Huyện Bến Cát, Bàu Bàng, Phú Giáo…:</strong> Nhà ở riêng lẻ, cải tạo nâng tầng (theo khảo sát).</li>
+  <li><strong>Vùng lân cận:</strong> Đồng Nai, Long An — liên hệ hotline để xác nhận lịch khảo sát.</li>
+</ul>
+<p>Trụ sở Sao Khuê tại <strong>TP.HCM (Bình Thạnh)</strong> — đội khảo sát và thi công di chuyển Bình Dương thường xuyên; chi phí di chuyển (nếu có) được thông báo rõ trước khi ký hợp đồng.</p>
+
+<h2>Gói dịch vụ xây nhà trọn gói tại Sao Khuê</h2>
+<ul>
+  <li><strong>Thiết kế kiến trúc 2D/3D:</strong> Miễn phí khi ký hợp đồng xây trọn gói (theo quy mô áp dụng).</li>
+  <li><strong>Thi công phần thô:</strong> Móng, khung bê tông, xây tường, mái, điện nước âm tường.</li>
+  <li><strong>Hoàn thiện:</strong> Trát, sơn, ốp lát, trần, cửa, lan can, cầu thang.</li>
+  <li><strong>Giám sát &amp; quản lý dự án:</strong> Cập nhật tiến độ, nghiệm thu từng hạng mục.</li>
+  <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hợp đồng.</li>
+</ul>
+<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế; hoặc <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> khi công trình nằm nội thành.</p>
+
+<h2>Báo giá xây nhà trọn gói Bình Dương tham khảo 2026</h2>
+<p>Đơn giá phụ thuộc quy mô, vật liệu, mặt bằng và yêu cầu thiết kế. Bảng dưới đây mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí tại Bình Dương:</p>
+<table>
+  <thead>
+    <tr><th>Gói</th><th>Đơn giá (đ/m²)</th><th>Phạm vi</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Thô + hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu</td><td>Vật tư tầm trung–khá</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+</td><td>Hoàn thiện đẹp, thiết bị tốt</td></tr>
+    <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu</td><td>Xem <a href="/bao-gia">bảng báo giá</a></td></tr>
+  </tbody>
+</table>
+<p>Chi tiết đơn giá và cách tính: <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>. Dùng <a href="/bao-gia">công cụ tính chi phí</a> để ước lượng nhanh trước khi gặp kỹ sư.</p>
+
+<h2>Quy trình xây nhà trọn gói Bình Dương — 6 bước</h2>
+<ol>
+  <li><strong>Tiếp nhận &amp; tư vấn:</strong> Hotline, Zalo hoặc <a href="/lien-he">form liên hệ</a> — mô tả lô đất, quy mô dự kiến.</li>
+  <li><strong>Khảo sát mặt bằng tại Bình Dương:</strong> Đo đạc, kiểm tra địa chất, tư vấn quy hoạch sơ bộ theo địa phương.</li>
+  <li><strong>Thiết kế &amp; chốt phương án:</strong> Mặt bằng, phối cảnh 3D, danh mục vật tư.</li>
+  <li><strong>Báo giá &amp; ký hợp đồng:</strong> Minh bạch hạng mục, cam kết không phát sinh khi không đổi thiết kế.</li>
+  <li><strong>Thi công &amp; giám sát:</strong> An toàn lao động, đúng tiến độ hợp đồng.</li>
+  <li><strong>Nghiệm thu &amp; bàn giao:</strong> Hồ sơ bảo hành, vệ sinh công trình.</li>
+</ol>
+
+<h2>Vì sao chọn Sao Khuê cho xây nhà trọn gói Bình Dương?</h2>
+<ul>
+  <li><strong>Kinh nghiệm vùng lân cận TP.HCM:</strong> Nhiều công trình tại Bình Dương, Đồng Nai — hiểu logistics và quy trình địa phương.</li>
+  <li><strong>Trực tiếp thi công</strong> — không bán thầu phụ trá hình.</li>
+  <li><strong>Vật tư chính hãng</strong> — đúng chủng loại đã ký trong hợp đồng.</li>
+  <li><strong>Báo giá minh bạch</strong> — dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Nhà phố, biệt thự, nhà ống</strong> — xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a> và <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
+</ul>
+
+<h2>Lưu ý khi xây nhà tại Bình Dương</h2>
+<ul>
+  <li><strong>Giấy phép xây dựng:</strong> Thủ tục theo UBND huyện/thành phố — Sao Khuê hỗ trợ hồ sơ khi trong phạm vi hợp đồng.</li>
+  <li><strong>Địa chất:</strong> Một số khu vực đất yếu cần móng cọc hoặc móng bè — ảnh hưởng chi phí móng.</li>
+  <li><strong>Kết nối hạ tầng:</strong> Khu đô thị mới thường có quy chuẩn mặt tiền, tầng cao — cần thống nhất sớm với thiết kế.</li>
+  <li><strong>Thời gian thi công:</strong> Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô và mùa mưa.</li>
+</ul>
+
+<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h3>Sao Khuê có nhận xây nhà trọn gói tại Bình Dương không?</h3>
+<p>Có. Đây là một trong các tỉnh trọng điểm Sao Khuê nhận <strong>xây nhà trọn gói Bình Dương</strong> thường xuyên, cùng TP.HCM và Đồng Nai.</p>
+<h3>Báo giá Bình Dương có khác TP.HCM không?</h3>
+<p>Đơn giá/m² tham khảo tương đương; có thể cộng chi phí khảo sát/di chuyển đội nếu công trình xa hoặc điều kiện vận chuyển đặc biệt — luôn thông báo trước khi ký.</p>
+<h3>Có được tư vấn miễn phí tại công trình Bình Dương không?</h3>
+<p>Có. Hotline <strong>0909 075 668</strong> — đặt lịch kỹ sư khảo sát và tư vấn sơ bộ tại hiện trường.</p>
+<h3>Xây trọn gói có bao gồm nội thất không?</h3>
+<p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Nội thất cao cấp có thể báo giá thêm hoặc xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<h3>Chủ nhà ở TP.HCM, đất ở Bình Dương — có giám sát được không?</h3>
+<p>Sao Khuê cập nhật tiến độ qua hình ảnh hiện trường, nghiệm thu từng hạng mục; chủ nhà có thể đến công trình theo lịch hẹn.</p>
+
+<h2>Liên hệ báo giá xây nhà trọn gói Bình Dương</h2>
+<ul>
+  <li><strong>Hotline:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Trụ sở:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
+  <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
+</ul>
+<p><strong>Sao Khuê</strong> — Đồng hành xây dựng tổ ấm tại Bình Dương: đúng tiến độ, đúng cam kết, chuyên nghiệp từ khảo sát đến bàn giao.</p>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $mt$Xây Nhà Trọn Gói Bình Dương | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Bình Dương chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Bình Dương, xây nhà trọn gói giá rẻ Bình Dương, nhà thầu xây dựng Bình Dương, xây nhà chìa khóa trao tay, kiến trúc sao khuê$mk$,
   now(),
   now()
 )
@@ -879,6 +1460,65 @@ INSERT INTO posts (
   slug, title, category, excerpt, content, image_url,
   meta_title, meta_description, meta_keywords, created_at, updated_at
 ) VALUES (
+  $slug$xay-nha-pho-thuan-an$slug$,
+  $title$Công Trình Xây Nhà Phố 4 Tầng Tại Thuận An, Bình Dương$title$,
+  $cat$cong-trinh$cat$,
+  $excerpt$Case study nhà phố Thuận An: lô 5x16m, 4 tầng hiện đại, thi công trọn gói Sao Khuê — bàn giao đúng tiến độ, bảo hành kết cấu 10 năm.$excerpt$,
+  $content$<h2>Công trình xây nhà phố tại Thuận An, Bình Dương</h2>
+<p>Dự án <strong>nhà phố 4 tầng</strong> tại <strong>TP. Thuận An, Bình Dương</strong> do <strong>Sao Khuê</strong> thi công <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> — minh họa khả năng triển khai trên lô đất phổ biến <strong>5m x 16m</strong> tại khu dân cư ven TP.HCM.</p>
+
+<h2>Thông số công trình</h2>
+<ul>
+  <li><strong>Vị trí:</strong> Thuận An, Bình Dương</li>
+  <li><strong>Quy mô:</strong> 4 tầng</li>
+  <li><strong>Diện tích khu đất:</strong> ~5m x 16m</li>
+  <li><strong>Phong cách:</strong> Hiện đại, mặt tiền gọn, lan can kính tầng trên</li>
+  <li><strong>Hình thức:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Xây nhà trọn gói Bình Dương</a></li>
+</ul>
+
+<h2>Giải pháp thiết kế — thi công</h2>
+<ul>
+  <li><strong>Tối ưu công năng từng tầng:</strong> Phòng khách, bếp, phòng ngủ, sân phơi hợp lý trên diện tích hẹp.</li>
+  <li><strong>Thông gió — chiếu sáng:</strong> Giếng trời nhỏ và cửa sổ hai mặt hạn chế bí bách.</li>
+  <li><strong>Kết cấu vững:</strong> Móng, khung BTCT theo hồ sơ thiết kế, nghiệm thu từng hạng mục.</li>
+  <li><strong>Hoàn thiện đồng bộ:</strong> Trát, sơn, ốp lát, điện nước âm tường trong một gói trọn gói.</li>
+</ul>
+
+<h2>Kết quả bàn giao</h2>
+<ul>
+  <li>Bàn giao đúng tiến độ cam kết hợp đồng.</li>
+  <li>Báo giá minh bạch, không phát sinh ngoài hạng mục đã thống nhất.</li>
+  <li>Bảo hành kết cấu <strong>10 năm</strong>, hoàn thiện theo hợp đồng.</li>
+</ul>
+
+<h2>Bạn có dự án nhà phố tại Bình Dương?</h2>
+<p>Sao Khuê nhận <strong>xây nhà phố</strong> tại Thuận An, Dĩ An, Thủ Dầu Một và các khu vực lân cận. Xem thêm <a href="/dich-vu/xay-nha-tron-goi-binh-duong">dịch vụ xây nhà trọn gói Bình Dương</a> hoặc <a href="/bao-gia">bảng báo giá</a>.</p>
+<ul>
+  <li>Hotline <strong>0909 075 668</strong></li>
+  <li><a href="/lien-he">Liên hệ khảo sát miễn phí</a></li>
+  <li>Xem thêm <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> (TP.HCM)</li>
+</ul>$content$,
+  $img$/images/project_2.jpg$img$,
+  $mt$Xây Nhà Phố Thuận An Bình Dương | Sao Khuê$mt$,
+  $md$Công trình xây nhà phố Thuận An, Bình Dương: 4 tầng, thi công trọn gói, báo giá minh bạch. Tham khảo mẫu Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà phố thuận an, xây nhà bình dương, công trình nhà phố, xây nhà trọn gói bình dương, sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
   $slug$sua-nha-quan-3$slug$,
   $title$Cải Tạo Nhà Phố Cũ Quận 3 — Công Trình Sao Khuê$title$,
   $cat$cong-trinh$cat$,
@@ -1043,7 +1683,7 @@ INSERT INTO posts (
 ) VALUES (
   $slug$cam-nang-xay-nha-2026$slug$,
   $title$Cẩm Nang Xây Nhà 2026 — Từ A Đến Z Cho Người Mới$title$,
-  $cat$kinh-nghiem$cat$,
+  $cat$tin-tuc$cat$,
   $excerpt$Hướng dẫn xây nhà lần đầu: chuẩn bị tài chính, chọn nhà thầu, xin phép, giám sát thi công và nghiệm thu. Cập nhật 2026.$excerpt$,
   $content$<h2>Cẩm nang xây nhà 2026 — Chủ nhà cần chuẩn bị gì?</h2>
 <p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
@@ -1120,7 +1760,7 @@ INSERT INTO posts (
 ) VALUES (
   $slug$luat-xay-dung-moi-nhat$slug$,
   $title$Luật Xây Dựng 2026 — Điểm Chủ Nhà Cần Lưu Ý$title$,
-  $cat$kinh-nghiem$cat$,
+  $cat$tin-tuc$cat$,
   $excerpt$Tóm tắt quy định Luật Xây dựng: giấy phép, quy hoạch, nghiệm thu. Tránh rủi ro pháp lý khi xây nhà, cải tạo.$excerpt$,
   $content$<h2>Luật Xây dựng — Chủ nhà cần nắm trước khi khởi công</h2>
 <p>Vi phạm quy hoạch hoặc thi công không phép có thể dẫn đến <strong>đình chỉ</strong>, <strong>phạt hành chính</strong> hoặc buộc tháo dỡ. Bài viết tóm tắt các điểm thường gặp khi <strong>xây nhà, cải tạo, nâng tầng</strong> tại TP.HCM — mang tính <em>tham khảo</em>, không thay tư vấn pháp lý chính thức từ cơ quan nhà nước.</p>
@@ -1175,7 +1815,7 @@ INSERT INTO posts (
 ) VALUES (
   $slug$phong-thuy-nha-o$slug$,
   $title$Phong Thủy Nhà Ở — Hướng Nhà, Bố Trí Phòng Hợp Tuổi$title$,
-  $cat$kinh-nghiem$cat$,
+  $cat$tin-tuc$cat$,
   $excerpt$Kiến thức phong thủy nhà ở cơ bản: chọn hướng, cửa chính, phòng ngủ, bếp. Kết hợp kỹ thuật xây dựng an toàn cùng Sao Khuê.$excerpt$,
   $content$<h2>Phong thủy nhà ở — Cân bằng tâm linh và kỹ thuật</h2>
 <p>Phong thủy trong xây nhà thường quan tâm <strong>hướng nhà</strong>, <strong>cửa chính</strong>, <strong>phòng ngủ</strong>, <strong>bếp</strong> và <strong>không gian thông thoáng</strong>. <strong>Sao Khuê</strong> tôn trọng yêu cầu phong thủy của gia chủ khi <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>, đồng thời ưu tiên <strong>an toàn kết cấu</strong>, thông gió, chống nóng và thoát nước — những yếu tố ảnh hưởng trực tiếp sức khỏe và tuổi thọ công trình.</p>

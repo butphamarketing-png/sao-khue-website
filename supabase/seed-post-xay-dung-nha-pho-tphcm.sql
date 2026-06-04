@@ -197,7 +197,7 @@ INSERT INTO posts (
   <li><strong>Xem công trình:</strong> <a href="/cong-trinh">/cong-trinh</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Uy tín từ thiết kế đến thi công, <strong>xây dựng nhà phố TP.HCM</strong> đúng tiến độ, đúng cam kết, xây dựng tổ ấm bền vững cho gia đình bạn.</p>$content$,
-  $img$https://images.unsplash.com/photo-1486406146926-c627a92fd1ab?auto=format&fit=crop&q=80&w=1200$img$,
+  $img$/images/project_3.jpg$img$,
   $mt$Công Ty Xây Dựng Nhà Phố Uy Tín TP.HCM | Sao Khuê$mt$,
   $md$Công ty xây dựng nhà phố TP.HCM uy tín: thi công trọn gói, báo giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$xây dựng nhà phố tphcm, công ty xây dựng nhà phố, xây nhà phố uy tín, nhà thầu xây nhà phố, xây nhà trọn gói tphcm, kiến trúc sao khuê$mk$,

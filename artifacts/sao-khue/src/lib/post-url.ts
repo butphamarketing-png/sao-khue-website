@@ -83,24 +83,24 @@ export function resolvePostSlugFromCategorySegment(
   const exact = inCategory.find((p) => p.slug.toLowerCase() === seg);
   if (exact) return exact.slug;
 
+  // URL ngắn cố định (vd. /dich-vu/xay-nha-tron-goi → xay-nha-tron-goi-tphcm, không nhầm bài *-binh-duong)
+  for (const [postSlug, leaf] of Object.entries(POST_URL_LEAF_OVERRIDES)) {
+    if (leaf.toLowerCase() !== seg) continue;
+    const found = inCategory.find((p) => p.slug === postSlug);
+    if (found) return found.slug;
+  }
+
   for (const p of inCategory) {
     const leaf = getPostUrlLeaf(p, menu);
     if (leaf?.toLowerCase() === seg) return p.slug;
   }
 
-  for (const p of inCategory) {
-    if (p.slug.toLowerCase() === seg || p.slug.toLowerCase().startsWith(`${seg}-`)) {
-      return p.slug;
-    }
-  }
-
-  const seed = seedPosts.find(
-    (p) =>
-      normalizeCategory(p.category) === normCat &&
-      (p.slug.toLowerCase() === seg ||
-        getPostUrlLeaf(p, menu)?.toLowerCase() === seg ||
-        p.slug.toLowerCase().startsWith(`${seg}-`)),
-  );
+  const seed = seedPosts.find((p) => {
+    if (normalizeCategory(p.category) !== normCat) return false;
+    if (p.slug.toLowerCase() === seg) return true;
+    if (POST_URL_LEAF_OVERRIDES[p.slug]?.toLowerCase() === seg) return true;
+    return getPostUrlLeaf(p, menu)?.toLowerCase() === seg;
+  });
   return seed?.slug ?? null;
 }
 

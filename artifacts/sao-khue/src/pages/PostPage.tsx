@@ -6,6 +6,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
+import { getFallbackPost } from "@workspace/seed-content";
 import { resolvePost, resolvePosts } from "@/lib/posts-with-fallback";
 import { resolveLogoUrl, useNavMenu, useSiteSettings } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
@@ -14,9 +15,13 @@ import {
   absoluteUrl,
   buildArticleSchema,
   buildBreadcrumbSchema,
+  buildFAQSchema,
   buildPostBreadcrumbItems,
   enhanceArticleHtml,
+  extractFaqFromArticleHtml,
   findMenuSectionPathForPost,
+  truncateMeta,
+  SEO_TITLE_MAX,
 } from "@/lib/seo";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
 import { normalizeCategory } from "@/lib/categories";
@@ -54,10 +59,11 @@ export default function PostPage() {
     return resolvePostSlugAlias(segment);
   })();
 
-  const { data: postFromApi, isLoading, error } = useGetPostBySlug(slug, {
+  const { data: postFromApi, isLoading } = useGetPostBySlug(slug, {
     query: { retry: false },
   });
-  const post = resolvePost(slug, postFromApi);
+  const bundledPost = slug ? getFallbackPost(slug) : undefined;
+  const post = resolvePost(slug, postFromApi) ?? bundledPost;
   const postSubSlug = post ? getPostUrlLeaf(post, menu) : null;
   const sectionPath = post ? findMenuSectionPathForPost(post, menu) : null;
   const relatedPosts = resolvePosts(posts)
@@ -75,8 +81,15 @@ export default function PostPage() {
   }, [slug]);
 
   const postPath = post ? getPostPublicPath(post, menu) : undefined;
+  const postFaq =
+    post?.content && /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi)/i.test(post.content)
+      ? extractFaqFromArticleHtml(post.content)
+      : [];
   const postTitle = post
-    ? post.metaTitle?.trim() || `${post.title} | ${brandName}`
+    ? truncateMeta(
+        post.metaTitle?.trim() || `${post.title} | ${brandName}`,
+        SEO_TITLE_MAX,
+      )
     : isLoading
       ? `Đang tải... | ${brandName}`
       : brandName;
@@ -86,38 +99,42 @@ export default function PostPage() {
 
   const breadcrumbItems = post ? buildPostBreadcrumbItems(post, menu) : [];
 
+  const seoPost = post ?? bundledPost;
+  const seoPath = seoPost ? getPostPublicPath(seoPost, menu) : undefined;
+
   usePageSeo(
-    post && postPath
+    seoPost && seoPath
       ? {
           title: postTitle,
           description: postDescription,
-          path: postPath,
-          keywords: post.metaKeywords?.trim(),
-          ogImage: post.imageUrl,
-          ogImageAlt: post.title,
+          path: seoPath,
+          keywords: seoPost.metaKeywords?.trim(),
+          ogImage: seoPost.imageUrl,
+          ogImageAlt: seoPost.title,
           ogType: "article",
-          publishedTime: post.createdAt,
-          modifiedTime: post.updatedAt,
+          publishedTime: seoPost.createdAt,
+          modifiedTime: seoPost.updatedAt,
           jsonLd: [
             buildArticleSchema({
-              headline: post.title,
+              headline: seoPost.title,
               description: postDescription,
-              image: post.imageUrl,
-              articleBody: post.content ?? "",
-              datePublished: post.createdAt,
-              dateModified: post.updatedAt,
+              image: seoPost.imageUrl,
+              articleBody: seoPost.content ?? "",
+              datePublished: seoPost.createdAt,
+              dateModified: seoPost.updatedAt,
               authorName: brandName,
-              url: absoluteUrl(postPath),
+              url: absoluteUrl(seoPath),
               publisherLogoUrl: absoluteUrl(resolveLogoUrl(site.logoUrl)),
             }),
             buildBreadcrumbSchema(breadcrumbItems),
+            ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
           ],
         }
-      : !isLoading && slug
+      : !isLoading && slug && !bundledPost
         ? {
             title: `Không tìm thấy bài viết | ${brandName}`,
             description: "Bài viết không tồn tại hoặc đã được di chuyển.",
-            path: postPath ?? location.split("?")[0],
+            path: location.split("?")[0],
             noindex: true,
           }
         : null,

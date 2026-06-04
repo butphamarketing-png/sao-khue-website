@@ -10,6 +10,7 @@ const menuChildren: { href: string; category: string; title: string }[] = [
   { href: "/gioi-thieu/hoat-dong", category: "gioi-thieu", title: "Hoạt động Sao Khuê" },
   { href: "/gioi-thieu/tuyen-dung", category: "gioi-thieu", title: "Tuyển dụng" },
   { href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu", title: "Xây nhà trọn gói" },
+  { href: "/dich-vu/xay-nha-tron-goi-binh-duong", category: "dich-vu", title: "Xây nhà trọn gói Bình Dương" },
   { href: "/dich-vu/sua-chua-nha", category: "dich-vu", title: "Sửa chữa nhà" },
   { href: "/dich-vu/xay-dung-phan-tho", category: "dich-vu", title: "Xây dựng phần thô" },
   { href: "/dich-vu/thiet-ke-nha", category: "dich-vu", title: "Thiết kế nhà" },

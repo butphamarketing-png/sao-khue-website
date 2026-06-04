@@ -1,3 +1,6 @@
+/** Danh mục mặc định khi tạo bài viết SEO / CMS (Tin tức). */
+export const DEFAULT_POST_CATEGORY = "tin-tuc";
+
 export function normalizeCategory(category: string): string {
   if (category === "kinh-nghiem") return "tin-tuc";
   return category;

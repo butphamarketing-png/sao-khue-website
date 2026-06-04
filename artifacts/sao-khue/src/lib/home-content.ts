@@ -121,7 +121,7 @@ export const defaultFaqs: FaqItem[] = [
   },
   {
     q: "Sao Khuê có nhận xây ở Bình Dương, Đồng Nai không?",
-    a: "Có. Chúng tôi nhận thi công tại TP.HCM và các tỉnh lân cận như Bình Dương, Đồng Nai, Long An.",
+    a: 'Có. Chúng tôi nhận thi công tại TP.HCM và các tỉnh lân cận như Bình Dương, Đồng Nai, Long An. Xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>.',
   },
 ];
 

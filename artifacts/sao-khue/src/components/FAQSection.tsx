@@ -68,7 +68,14 @@ export function FAQSection({
                 {item.q}
               </AccordionTrigger>
               <AccordionContent className="leading-relaxed text-slate-600">
-                {item.a}
+                {item.a.includes("<a ") ? (
+                  <span
+                    className="[&_a]:font-semibold [&_a]:text-primary [&_a]:underline"
+                    dangerouslySetInnerHTML={{ __html: item.a }}
+                  />
+                ) : (
+                  item.a
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}

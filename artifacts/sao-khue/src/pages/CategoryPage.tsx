@@ -138,17 +138,15 @@ export default function CategoryPage({ category }: Props) {
                   href={getPostPublicPath(post, menu)}
                   className="relative block h-48 overflow-hidden bg-slate-100 sm:h-52"
                 >
-                  {post.imageUrl && (
-                    <img
-                      src={post.imageUrl}
-                      alt={post.title}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src =
-                          "https://images.unsplash.com/photo-1541889028647-5c256a124021?auto=format&fit=crop&q=80&w=800";
-                      }}
-                    />
-                  )}
+                  <img
+                    src={post.imageUrl?.trim() || "/images/project_3.jpg"}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src =
+                        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800";
+                    }}
+                  />
                   <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-950/50 to-transparent" />
                 </Link>
                 <div className="flex flex-1 flex-col p-5">

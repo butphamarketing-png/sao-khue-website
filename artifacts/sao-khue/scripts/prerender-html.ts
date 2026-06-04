@@ -21,6 +21,7 @@ import {
   breadcrumbListJsonLd,
   buildFAQSchema,
   buildPostBreadcrumbItems,
+  extractFaqFromArticleHtml,
   itemListJsonLd,
   stripPlainText,
 } from "./lib/seo-prerender.ts";
@@ -269,6 +270,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const sectionPath =
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
+    const postFaq = extractFaqFromArticleHtml(post.content ?? "");
     const jsonLd = [
       {
         "@context": "https://schema.org",
@@ -284,6 +286,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(SITE_URL, path) },
       },
       breadcrumbListJsonLd(crumbs, SITE_URL),
+      ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
     ];
 
     return {

@@ -1,0 +1,10 @@
+-- SEO ưu tiên — Supabase SQL Editor
+--
+-- Chạy theo thứ tự (hoặc chạy một lần file seed-posts.sql sau khi deploy code):
+--   1. update-post-image-cong-ty-xay-dung-nha-pho.sql
+--   2. seed-post-xay-nha-tron-goi-binh-duong.sql
+--   3. seed-post-xay-nha-pho-thuan-an.sql
+--
+-- Google Search Console → Kiểm tra URL → Yêu cầu lập chỉ mục:
+--   https://kientrucsaokhue.com/dich-vu/xay-nha-tron-goi-binh-duong
+--   https://kientrucsaokhue.com/cong-trinh/xay-nha-pho-thuan-an

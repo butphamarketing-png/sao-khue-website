@@ -118,7 +118,7 @@ export const congTyXayDungNhaPhoUyTinTphcm = {
 <p>Chúng tôi triển khai <strong>xây dựng nhà phố</strong> tại:</p>
 <ul>
   <li><strong>TP.HCM:</strong> Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Quận 3, Phú Nhuận, Bình Tân…</li>
-  <li><strong>Vùng lân cận:</strong> Bình Dương, Đồng Nai (Dĩ An, Thuận An, Biên Hòa…).</li>
+  <li><strong>Vùng lân cận:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a> (Thuận An, Dĩ An…), Đồng Nai — xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</li>
 </ul>
 <p>Đội khảo sát đến tận công trình miễn phí trong nội thành và vùng ven (theo lịch hẹn). Văn phòng: <strong>245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</strong>.</p>
 
@@ -169,7 +169,7 @@ export const congTyXayDungNhaPhoUyTinTphcm = {
 <h3>Có cần thiết kế trước khi xây không?</h3>
 <p>Rất nên. Thiết kế giúp tối ưu công năng, tránh đục phá kết cấu và là căn cứ báo giá. Sao Khuê <a href="/dich-vu/thiet-ke-nha">thiết kế nhà phố</a> và có thể miễn phí khi ký thi công trọn gói.</p>
 <h3>Sao Khuê có nhận xây nhà phố ở Bình Dương, Đồng Nai không?</h3>
-<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — vui lòng gọi hotline để sắp lịch khảo sát.</p>
+<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> hoặc gọi hotline để sắp lịch khảo sát.</p>
 <h3>Hợp đồng xây nhà phố thanh toán thế nào?</h3>
 <p>Thông thường chia đợt theo tiến độ: ký hợp đồng, móng, thân nhà, hoàn thiện, nghiệm thu. Không nên thanh toán quá 70% tổng giá trị khi công trình mới xong phần thô nếu hợp đồng không bảo vệ chủ nhà.</p>
 <h3>Bảo hành xây nhà phố bao lâu?</h3>

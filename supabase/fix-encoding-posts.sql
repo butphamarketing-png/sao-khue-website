@@ -1,0 +1,13 @@
+-- Sửa lỗi font tiếng Việt (mojibake) do file SQL export sai encoding
+-- Chạy file UTF-8 đúng (đã regenerate):
+--   seed-post-xay-nha-tron-goi-binh-duong.sql
+--   seed-post-xay-nha-pho-thuan-an.sql
+--
+-- Hoặc chạy lại ON CONFLICT từ seed-posts.sql (dòng bài tương ứng).
+--
+-- Kiểm tra sau khi chạy:
+-- SELECT slug, title FROM posts WHERE slug IN (
+--   'xay-nha-tron-goi-binh-duong',
+--   'xay-nha-pho-thuan-an'
+-- );
+-- Title phải hiện: "Xây Nhà Trọn Gói..." (không có XÃ¢y)
