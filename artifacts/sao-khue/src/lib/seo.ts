@@ -1,6 +1,5 @@
 /** SEO helpers — meta tags, canonical, JSON-LD (tương đương Rank Math cơ bản). */
 
-import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
 import { getMenuChildren, getMenuLeafSlug } from "@/lib/menu-posts";
 import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 import { getPostPublicPath, getPostUrlLeaf } from "@/lib/post-url";
@@ -32,7 +31,13 @@ export function countWordsFromHtml(html: string): number {
   return stripHtmlForSchema(html).split(/\s+/).filter(Boolean).length;
 }
 
-export function resolveOgImage(url?: string | null, fallback = BUNDLED_OPENGRAPH_URL): string {
+/** Fallback OG — path tĩnh (prerender Node không import được .jpg/.png qua Vite). */
+const DEFAULT_OG_FALLBACK_PATH = "/images/hero-1.png";
+
+export function resolveOgImage(
+  url?: string | null,
+  fallback = absoluteUrl(DEFAULT_OG_FALLBACK_PATH),
+): string {
   const trimmed = (url ?? "").trim();
   if (!trimmed) return fallback;
   if (/^https?:\/\//i.test(trimmed)) return trimmed;

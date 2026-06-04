@@ -8,7 +8,7 @@ import {
   useTestimonials,
 } from "@/lib/site-settings";
 import { BUNDLED_OPENGRAPH_URL } from "@/lib/brand-assets";
-import { resolveGoogleMapsUrl } from "@/lib/social-links";
+import { resolveGoogleMapsOpenUrl } from "@/lib/social-links";
 import {
   absoluteUrl,
   buildLocalBusinessSchema,
@@ -100,7 +100,7 @@ export function SiteHead() {
           reviewCount >= 3
             ? { ratingValue: 4.9, reviewCount }
             : undefined,
-        mapsUrl: resolveGoogleMapsUrl(s) ?? undefined,
+        mapsUrl: resolveGoogleMapsOpenUrl(s) ?? undefined,
       }),
     );
     setStructuredData("website", buildWebSiteSchema(brand, origin));
