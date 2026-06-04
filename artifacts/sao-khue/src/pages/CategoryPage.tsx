@@ -26,6 +26,7 @@ import {
   buildItemListSchema,
 } from "@/lib/seo";
 import { getPostPublicPath } from "@/lib/post-url";
+import { resolvePostImageAlt } from "@/lib/post-body";
 
 interface Props {
   category: string;
@@ -140,7 +141,7 @@ export default function CategoryPage({ category }: Props) {
                 >
                   <img
                     src={post.imageUrl?.trim() || "/images/project_3.jpg"}
-                    alt={post.title}
+                    alt={resolvePostImageAlt(post)}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src =

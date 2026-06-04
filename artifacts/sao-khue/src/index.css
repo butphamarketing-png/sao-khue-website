@@ -479,6 +479,38 @@ html {
   @apply prose prose-slate max-w-none prose-headings:tracking-tight prose-headings:text-primary prose-h2:mt-10 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-3 prose-a:text-primary prose-a:no-underline hover:prose-a:text-accent prose-img:rounded-xl prose-strong:text-slate-900;
 }
 
+.prose-article .article-figure {
+  @apply my-8 overflow-hidden rounded-xl border border-slate-200 bg-slate-50;
+}
+
+.prose-article .article-figure img {
+  @apply mb-0 w-full rounded-none;
+}
+
+.prose-article .article-figure figcaption {
+  @apply border-t border-slate-200 px-4 py-2 text-center text-sm text-slate-600;
+}
+
+.prose-article .article-toc {
+  @apply my-8 rounded-xl border border-slate-200 bg-slate-50/90 px-5 py-4;
+}
+
+.prose-article .article-toc__title {
+  @apply mb-3 text-sm font-bold uppercase tracking-wide text-primary;
+}
+
+.prose-article .article-toc__list {
+  @apply m-0 list-decimal space-y-1.5 pl-5 text-sm text-slate-700;
+}
+
+.prose-article .article-toc__item--sub {
+  @apply ml-3 list-none;
+}
+
+.prose-article .article-toc a {
+  @apply font-medium text-primary no-underline hover:text-accent hover:underline;
+}
+
 .section-dark {
   @apply bg-gradient-to-br from-primary via-[#0a3d6b] to-slate-900 text-white;
 }

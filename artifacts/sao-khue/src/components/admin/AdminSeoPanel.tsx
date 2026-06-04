@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { AlertTriangle, CheckCircle2, ExternalLink, Pencil, Search, XCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle2, ChevronDown, ChevronUp, ExternalLink, Pencil, Search, XCircle } from "lucide-react";
 import type { Post } from "@workspace/api-client-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,7 @@ import {
   type PostSeoAudit,
   type SeoLevel,
 } from "@/lib/admin-seo-audit";
+import { getSeoSectionLabel, groupChecksBySection } from "@/lib/rank-math-audit";
 import { getSiteOrigin } from "@/lib/seo";
 
 type Filter = "all" | SeoLevel;
@@ -50,8 +51,9 @@ function LevelBadge({ level }: { level: SeoLevel }) {
 export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
-  const audits = useMemo(() => posts.map(auditPostSeo), [posts]);
+  const audits = useMemo(() => posts.map((p) => auditPostSeo(p, posts)), [posts]);
   const summary = useMemo(() => summarizeSeoAudits(audits), [audits]);
   const origin = getSiteOrigin();
 
@@ -66,7 +68,8 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+        <StatCard label="Điểm TB" value={summary.avgScore} suffix="/100" tone="slate" />
         <StatCard label="Bài đạt chuẩn" value={summary.ok} tone="emerald" />
         <StatCard label="Cần chỉnh nhẹ" value={summary.warn} tone="amber" />
         <StatCard label="SEO yếu" value={summary.error} tone="red" />
@@ -124,16 +127,25 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
 
         <Panel>
           <div className="border-b border-slate-200 px-6 py-4">
-            <h3 className="text-lg font-bold text-slate-900">Gợi ý nhanh</h3>
+            <h3 className="text-lg font-bold text-slate-900">Tiêu chí Rank Math</h3>
           </div>
           <ul className="list-disc space-y-2 px-6 py-5 text-sm leading-relaxed text-slate-600">
-            <li>Ảnh đại diện <strong>1200×630</strong>, meta title ≤ 60 ký tự, description 80–160.</li>
-            <li>Mỗi bài nên ≥ 300 từ, có H2/H3, alt ảnh trong nội dung.</li>
-            <li>Slug khớp mục menu con (dịch vụ / công trình) để URL chuẩn SEO.</li>
+            <li>
+              <strong>SEO cơ bản:</strong> từ khóa chính trong title, mô tả, slug, 10% đầu bài, thân bài, ≥600 từ.
+            </li>
+            <li>
+              <strong>Bổ sung:</strong> H2/H3, mật độ 0,5–2,5%, alt = từ khóa, link nội/ngoài, URL ngắn.
+            </li>
+            <li>
+              <strong>Tiêu đề:</strong> từ khóa đầu title, có số (2026), meta 60/160 ký tự.
+            </li>
+            <li>
+              <strong>Nội dung:</strong> 1500–2500 từ, ≥2–3 ảnh (alt = từ khóa), TOC tự chèn, đoạn ngắn.
+            </li>
             <li>
               {summary.needsWork > 0
-                ? `Còn ${summary.needsWork} bài cần tối ưu — bấm Sửa trong bảng bên dưới.`
-                : "Tất cả bài đã đạt checklist cơ bản."}
+                ? `Còn ${summary.needsWork} bài cần tối ưu — mở chi tiết từng bài bên dưới.`
+                : "Tất cả bài đạt ngưỡng Rank Math cơ bản."}
             </li>
           </ul>
         </Panel>
@@ -143,7 +155,9 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
         <div className="flex flex-wrap items-end justify-between gap-4 border-b border-slate-200 px-6 py-4">
           <div>
             <h3 className="text-lg font-bold text-slate-900">Kiểm tra SEO từng bài</h3>
-            <p className="mt-1 text-sm text-slate-500">Điểm tự động theo meta, ảnh và độ dài nội dung.</p>
+            <p className="mt-1 text-sm text-slate-500">
+              Điểm Rank Math (0–100) — bấm Chi tiết để xem từng tiêu chí xanh/vàng/đỏ.
+            </p>
           </div>
           <div className="flex flex-wrap gap-2">
             {(["all", "error", "warn", "ok"] as const).map((f) => (
@@ -181,6 +195,7 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
               <tr>
                 <th className="px-6 py-3">Bài viết</th>
                 <th className="px-4 py-3">Điểm</th>
+                <th className="px-4 py-3">Từ khóa</th>
                 <th className="px-4 py-3">Trạng thái</th>
                 <th className="px-4 py-3">Vấn đề</th>
                 <th className="px-6 py-3 text-right">Thao tác</th>
@@ -188,7 +203,16 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
             </thead>
             <tbody className="divide-y divide-slate-100">
               {filtered.map((row) => (
-                <AuditRow key={row.postId} audit={row} posts={posts} onEditPost={onEditPost} />
+                <AuditRow
+                  key={row.postId}
+                  audit={row}
+                  posts={posts}
+                  expanded={expandedId === row.postId}
+                  onToggle={() =>
+                    setExpandedId((id) => (id === row.postId ? null : row.postId))
+                  }
+                  onEditPost={onEditPost}
+                />
               ))}
             </tbody>
           </table>
@@ -204,10 +228,12 @@ export function AdminSeoPanel({ posts, gscConfigured, gaConfigured, onEditPost }
 function StatCard({
   label,
   value,
+  suffix,
   tone,
 }: {
   label: string;
   value: number;
+  suffix?: string;
   tone: "emerald" | "amber" | "red" | "slate";
 }) {
   const colors = {
@@ -218,7 +244,10 @@ function StatCard({
   };
   return (
     <div className={`rounded-2xl border border-slate-200 p-4 ${colors[tone]}`}>
-      <div className="text-2xl font-bold">{value}</div>
+      <div className="text-2xl font-bold">
+        {value}
+        {suffix ? <span className="text-base font-semibold opacity-70">{suffix}</span> : null}
+      </div>
       <div className="mt-1 text-xs font-semibold uppercase tracking-wide opacity-80">{label}</div>
     </div>
   );
@@ -227,47 +256,117 @@ function StatCard({
 function AuditRow({
   audit,
   posts,
+  expanded,
+  onToggle,
   onEditPost,
 }: {
   audit: PostSeoAudit;
   posts: Post[];
+  expanded: boolean;
+  onToggle: () => void;
   onEditPost: (post: Post) => void;
 }) {
   const post = posts.find((p) => p.id === audit.postId);
+  const grouped = groupChecksBySection(audit.checks);
+
   return (
-    <tr className="hover:bg-slate-50/80">
-      <td className="px-6 py-4">
-        <div className="font-semibold text-slate-900">{audit.title}</div>
-        <div className="text-xs text-slate-500">/{audit.slug}</div>
-      </td>
-      <td className="px-4 py-4 font-bold text-slate-800">{audit.score}</td>
-      <td className="px-4 py-4">
-        <LevelBadge level={audit.level} />
-      </td>
-      <td className="max-w-xs px-4 py-4 text-xs text-slate-600">
-        {audit.issues.length ? audit.issues.join(" · ") : "—"}
-      </td>
-      <td className="px-6 py-4 text-right">
-        <div className="flex justify-end gap-2">
-          <Button type="button" variant="outline" size="sm" className="rounded-lg" asChild>
-            <a href={`/bai-viet/${audit.slug}`} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-1 h-3.5 w-3.5" />
-              Xem
-            </a>
-          </Button>
-          {post && (
+    <>
+      <tr className="hover:bg-slate-50/80">
+        <td className="px-6 py-4">
+          <div className="font-semibold text-slate-900">{audit.title}</div>
+          <div className="text-xs text-slate-500">/{audit.slug}</div>
+        </td>
+        <td className="px-4 py-4">
+          <span
+            className={`text-lg font-bold ${
+              audit.score >= 82
+                ? "text-emerald-700"
+                : audit.score >= 55
+                  ? "text-amber-700"
+                  : "text-red-700"
+            }`}
+          >
+            {audit.score}
+          </span>
+        </td>
+        <td className="max-w-[140px] px-4 py-4 text-xs text-slate-600">
+          {audit.primaryKeyword || "—"}
+        </td>
+        <td className="px-4 py-4">
+          <LevelBadge level={audit.level} />
+        </td>
+        <td className="max-w-xs px-4 py-4 text-xs text-slate-600">
+          {audit.issues.length ? audit.issues.slice(0, 2).join(" · ") : "—"}
+        </td>
+        <td className="px-6 py-4 text-right">
+          <div className="flex flex-wrap justify-end gap-2">
             <Button
               type="button"
+              variant="ghost"
               size="sm"
-              className="rounded-lg bg-[#17579d] hover:bg-[#134a85]"
-              onClick={() => onEditPost(post)}
+              className="rounded-lg"
+              onClick={onToggle}
             >
-              <Pencil className="mr-1 h-3.5 w-3.5" />
-              Sửa
+              {expanded ? (
+                <ChevronUp className="h-4 w-4" />
+              ) : (
+                <ChevronDown className="h-4 w-4" />
+              )}
             </Button>
-          )}
-        </div>
-      </td>
-    </tr>
+            <Button type="button" variant="outline" size="sm" className="rounded-lg" asChild>
+              <a href={`/bai-viet/${audit.slug}`} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-1 h-3.5 w-3.5" />
+                Xem
+              </a>
+            </Button>
+            {post && (
+              <Button
+                type="button"
+                size="sm"
+                className="rounded-lg bg-[#17579d] hover:bg-[#134a85]"
+                onClick={() => onEditPost(post)}
+              >
+                <Pencil className="mr-1 h-3.5 w-3.5" />
+                Sửa
+              </Button>
+            )}
+          </div>
+        </td>
+      </tr>
+      {expanded && (
+        <tr className="bg-slate-50/50">
+          <td colSpan={6} className="px-6 py-4">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {(["basic", "additional", "title", "content"] as const).map((section) => (
+                <div key={section} className="rounded-xl border border-slate-200 bg-white p-3">
+                  <div className="mb-2 text-xs font-bold uppercase text-slate-600">
+                    {getSeoSectionLabel(section)}
+                  </div>
+                  <ul className="space-y-1 text-xs text-slate-700">
+                    {grouped[section].map((c) => (
+                      <li key={c.id} className="flex gap-1.5">
+                        <span>
+                          {c.status === "pass" ? "✓" : c.status === "warn" ? "◐" : "✗"}
+                        </span>
+                        <span>
+                          {c.label}
+                          {c.detail ? (
+                            <span className="block text-[10px] text-slate-500">{c.detail}</span>
+                          ) : null}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-xs text-slate-500">
+              {audit.stats.wordCount} từ · Mật độ {audit.stats.keywordDensityPct}% · Slug{" "}
+              {audit.stats.slugLength} ký tự
+            </p>
+          </td>
+        </tr>
+      )}
+    </>
   );
 }

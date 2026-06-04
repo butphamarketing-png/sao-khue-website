@@ -5,7 +5,12 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { seedPosts } from "../../../lib/seed-content/src/index.ts";
+import {
+  buildImageAlt,
+  injectArticleToc,
+  prepareArticleHtml,
+  seedPosts,
+} from "../../../lib/seed-content/src/index.ts";
 import {
   defaultCategoryPages,
   defaultFaqs,
@@ -26,6 +31,8 @@ import {
   stripPlainText,
 } from "./lib/seo-prerender.ts";
 import { getPostPublicPath } from "../src/lib/post-url.ts";
+import { buildLocalBusinessSchema, buildWebSiteSchema } from "../src/lib/seo.ts";
+import { DEFAULT_GOOGLE_MAPS_LINK } from "../src/lib/social-links.ts";
 import {
   buildHeadTags,
   buildJsonLdScript,
@@ -46,6 +53,33 @@ const BRAND_SHORT = "Kiến Trúc Sao Khuê";
 const DEFAULT_OG = `${SITE_URL}/images/hero-1.png`;
 const FOOTER_DESC =
   "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói uy tín tại TP.HCM. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
+const SITE_ADDRESS = "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM";
+const SITE_PHONE = "+84909075668";
+const SITE_EMAIL = "kientrucsaokhue@gmail.com";
+
+function globalBusinessJsonLd(): Record<string, unknown>[] {
+  return [
+    buildLocalBusinessSchema({
+      name: BRAND_SHORT,
+      url: SITE_URL,
+      telephone: SITE_PHONE,
+      email: SITE_EMAIL,
+      image: DEFAULT_OG,
+      address: SITE_ADDRESS,
+      sameAs: [],
+      description: FOOTER_DESC,
+      openingHours: "Mo-Fr 08:00-17:30",
+      mapsUrl: DEFAULT_GOOGLE_MAPS_LINK,
+    }) as Record<string, unknown>,
+    buildWebSiteSchema(BRAND_SHORT, SITE_URL) as Record<string, unknown>,
+  ];
+}
+
+function withGlobalJsonLd(page: PrerenderPage): PrerenderPage {
+  const base = globalBusinessJsonLd();
+  const extra = page.jsonLd ?? [];
+  return { ...page, jsonLd: [...base, ...extra] };
+}
 
 const SHELL_STYLE = `
   <style id="prerender-shell-style">
@@ -254,7 +288,16 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const path = getPostPublicPath(post);
     const title = post.metaTitle?.trim() || `${post.title} | ${BRAND_SHORT}`;
     const description = post.metaDescription?.trim() || post.excerpt || "";
-    const contentHtml = enhanceArticleHtml(post.content ?? "", post.title);
+    const imageAlt =
+      post.imageAlt?.trim() ||
+      buildImageAlt({ slug: post.slug, metaKeywords: post.metaKeywords });
+    const imageCaption = post.imageCaption?.trim() || imageAlt;
+    const { html: prepared } = prepareArticleHtml(post.content ?? "", {
+      imageUrl: post.imageUrl,
+      imageAlt,
+      imageCaption,
+    });
+    const contentHtml = enhanceArticleHtml(injectArticleToc(prepared), imageAlt);
     const crumbs = buildPostBreadcrumbItems(post);
     const crumbNav = crumbs
       .map(
@@ -373,6 +416,8 @@ async function loadPostsForPrerender(): Promise<PrerenderPost[]> {
       excerpt: r.excerpt,
       content: r.content,
       imageUrl: r.imageUrl,
+      imageAlt: r.imageAlt,
+      imageCaption: r.imageCaption,
       metaTitle: r.metaTitle || undefined,
       metaDescription: r.metaDescription || undefined,
       metaKeywords: r.metaKeywords || undefined,
@@ -396,7 +441,7 @@ async function main() {
   ];
 
   for (const page of pages) {
-    writePage(template, page, distDir);
+    writePage(template, withGlobalJsonLd(page), distDir);
   }
 
   console.log(`[prerender] Wrote ${pages.length} HTML pages → ${distDir}`);

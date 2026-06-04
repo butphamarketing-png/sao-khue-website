@@ -8,6 +8,8 @@ export const postsTable = pgTable("posts", {
   excerpt: text("excerpt").notNull().default(""),
   content: text("content").notNull().default(""),
   imageUrl: text("image_url").notNull().default(""),
+  imageAlt: text("image_alt").notNull().default(""),
+  imageCaption: text("image_caption").notNull().default(""),
   metaTitle: text("meta_title").notNull().default(""),
   metaDescription: text("meta_description").notNull().default(""),
   metaKeywords: text("meta_keywords").notNull().default(""),

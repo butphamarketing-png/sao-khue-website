@@ -347,8 +347,13 @@ export function FieldHint({ children }: { children: ReactNode }) {
   return <div className="mt-2 text-xs leading-relaxed text-slate-500">{children}</div>;
 }
 
-export function ChecklistCard({ items }: { items: Array<{ label: string; done: boolean }> }) {
+export function ChecklistCard({
+  items,
+}: {
+  items: Array<{ label: string; done: boolean; warn?: boolean }>;
+}) {
   const completed = items.filter((item) => item.done).length;
+  const warned = items.filter((item) => item.warn && !item.done).length;
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -358,11 +363,14 @@ export function ChecklistCard({ items }: { items: Array<{ label: string; done: b
             Trạng thái bài viết
           </div>
           <div className="mt-1.5 text-lg font-bold text-slate-900">
-            {completed}/{items.length} mục đã sẵn sàng
+            {completed}/{items.length} tiêu chí đạt
+            {warned > 0 ? (
+              <span className="ml-1 text-sm font-semibold text-amber-600">· {warned} cảnh báo</span>
+            ) : null}
           </div>
         </div>
         <div className="rounded-full bg-primary/10 px-3 py-2 text-sm font-bold text-primary">
-          {Math.round((completed / items.length) * 100)}%
+          {items.length ? Math.round((completed / items.length) * 100) : 0}%
         </div>
       </div>
       <div className="mt-4 space-y-2">
@@ -370,12 +378,16 @@ export function ChecklistCard({ items }: { items: Array<{ label: string; done: b
           <div
             key={`checklist-${index}`}
             className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-sm ${
-              item.done ? "bg-emerald-50 text-emerald-700" : "bg-slate-50 text-slate-600"
+              item.done
+                ? "bg-emerald-50 text-emerald-700"
+                : item.warn
+                  ? "bg-amber-50 text-amber-800"
+                  : "bg-slate-50 text-slate-600"
             }`}
           >
             <span className="font-medium">{item.label}</span>
             <span className="text-[10px] font-bold uppercase tracking-wider">
-              {item.done ? "OK" : "Thiếu"}
+              {item.done ? "OK" : item.warn ? "Cảnh báo" : "Chưa đạt"}
             </span>
           </div>
         ))}

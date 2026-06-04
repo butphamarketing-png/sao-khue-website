@@ -43,5 +43,10 @@ export function resolvePost(slug: string | undefined, apiPost: Post | undefined 
     metaDescription: (repaired.metaDescription ?? "").trim() || fallback.metaDescription,
     metaKeywords: (repaired.metaKeywords ?? "").trim() || fallback.metaKeywords,
     imageUrl: (repaired.imageUrl ?? "").trim() || fallback.imageUrl,
+    imageAlt: String(repaired.imageAlt ?? "").trim() || fallback.imageAlt,
+    imageCaption:
+      String(repaired.imageCaption ?? "").trim() ||
+      fallback.imageCaption ||
+      fallback.imageAlt,
   };
 }

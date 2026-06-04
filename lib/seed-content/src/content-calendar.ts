@@ -1,6 +1,8 @@
 /**
  * Lịch nội dung SEO — 30 bài (1 dòng = 1 bài).
  * Cập nhật `status` khi đã có slug trong seedPosts.
+ *
+ * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
 export type ContentCalendarItem = {
   no: number;
@@ -13,7 +15,7 @@ export type ContentCalendarItem = {
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },
   { no: 2, title: "Báo Giá Xây Nhà Trọn Gói Mới Nhất Tại TP.HCM", keyword: "báo giá xây nhà TP.HCM", slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", status: "done" },
-  { no: 3, title: "Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM", keyword: "thiết kế nhà phố TP.HCM", status: "planned" },
+  { no: 3, title: "Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM", keyword: "thiết kế nhà phố TP.HCM", slug: "thiet-ke-nha-pho-hien-dai-tphcm", status: "done" },
   { no: 4, title: "Đơn Vị Xây Nhà Trọn Gói Chuyên Nghiệp Tại Bình Dương", keyword: "xây nhà trọn gói Bình Dương", slug: "xay-nha-tron-goi-binh-duong", status: "done" },
   { no: 5, title: "Mẫu Nhà Phố 2 Tầng Đẹp Được Ưa Chuộng Tại Bình Dương", keyword: "nhà phố 2 tầng Bình Dương", slug: "mau-nha-pho-2-tang-binh-duong", status: "done" },
   { no: 6, title: "Xây Nhà Trọn Gói Giá Tốt Tại Đồng Nai", keyword: "xây nhà trọn gói Đồng Nai", slug: "xay-nha-tron-goi-dong-nai", status: "done" },

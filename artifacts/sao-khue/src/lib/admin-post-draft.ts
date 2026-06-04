@@ -8,6 +8,8 @@ export type PostDraftPayload = {
     excerpt: string;
     content: string;
     imageUrl: string;
+    imageAlt: string;
+    imageCaption: string;
     metaTitle: string;
     metaDescription: string;
     metaKeywords: string;

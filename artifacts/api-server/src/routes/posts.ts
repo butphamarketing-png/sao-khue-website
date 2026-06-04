@@ -16,6 +16,8 @@ const PostInput = z.object({
   excerpt: z.string().default(""),
   content: z.string().default(""),
   imageUrl: z.string().default(""),
+  imageAlt: z.string().default(""),
+  imageCaption: z.string().default(""),
   metaTitle: z.string().default(""),
   metaDescription: z.string().default(""),
   metaKeywords: z.string().default(""),
@@ -85,6 +87,11 @@ router.get("/posts/:slug", async (req, res) => {
             String(serialized.metaDescription ?? "").trim() || fallback.metaDescription,
           metaKeywords: String(serialized.metaKeywords ?? "").trim() || fallback.metaKeywords,
           imageUrl: String(serialized.imageUrl ?? "").trim() || fallback.imageUrl,
+          imageAlt: String(serialized.imageAlt ?? "").trim() || fallback.imageAlt,
+          imageCaption:
+            String(serialized.imageCaption ?? "").trim() ||
+            fallback.imageCaption ||
+            fallback.imageAlt,
         });
         return;
       }

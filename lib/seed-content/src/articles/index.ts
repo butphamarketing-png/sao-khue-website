@@ -24,6 +24,7 @@ export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-
 export { mauNhaPho2TangBinhDuong } from "./mau-nha-pho-2-tang-binh-duong";
 export { xayNhaTronGoiDongNai } from "./xay-nha-tron-goi-dong-nai";
 export { thietKeThiCongNhaPhoDongNai } from "./thiet-ke-thi-cong-nha-pho-dong-nai";
+export { thietKeNhaPhoHienDaiTphcm } from "./thiet-ke-nha-pho-hien-dai-tphcm";
 
 export type SeoArticle = {
   title: string;
@@ -32,4 +33,8 @@ export type SeoArticle = {
   metaDescription: string;
   metaKeywords: string;
   content: string;
+  /** Alt ảnh = cụm từ khóa focus */
+  imageAlt?: string;
+  /** Chú thích ảnh đại diện (WP) — mặc định = alt */
+  imageCaption?: string;
 };

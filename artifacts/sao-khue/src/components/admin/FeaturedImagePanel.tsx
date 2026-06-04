@@ -8,9 +8,16 @@ type Props = {
   value: string;
   onChange: (url: string) => void;
   folder?: string;
+  /** Gợi ý đặt tên file khi upload (SEO) */
+  suggestedFilename?: string;
 };
 
-export function FeaturedImagePanel({ value, onChange, folder = "posts" }: Props) {
+export function FeaturedImagePanel({
+  value,
+  onChange,
+  folder = "posts",
+  suggestedFilename,
+}: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [uploading, setUploading] = useState(false);
   const [dragOver, setDragOver] = useState(false);
@@ -39,6 +46,12 @@ export function FeaturedImagePanel({ value, onChange, folder = "posts" }: Props)
       <p className="mt-1 text-xs leading-relaxed text-slate-500">
         Kéo thả hoặc chọn ảnh. Khuyến nghị <strong>1200×630 px</strong> (ngang) — đẹp trên
         Facebook/Zalo và Google.
+        {suggestedFilename ? (
+          <>
+            {" "}
+            Đặt tên file gợi ý: <strong>{suggestedFilename}</strong>
+          </>
+        ) : null}
       </p>
 
       {value ? (

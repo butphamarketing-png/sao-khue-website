@@ -36,24 +36,29 @@ export function buildAutoExcerpt(contentHtml: string, maxLen = 180): string {
   return truncateMeta(plain, maxLen).replace(/…$/, "");
 }
 
+/**
+ * Từ khóa SEO — cụm đầu = focus keyword (Rank Math).
+ * Lấy từ slug / menu con, không nhét nguyên tiêu đề bài vào từ khóa chính.
+ */
 export function buildAutoMetaKeywords(
-  title: string,
+  slug: string,
   category: string,
   subCategoryLabel?: string,
 ): string {
-  const tokens = new Set<string>();
-  const add = (s: string) => {
-    s.split(/[,;|]/g)
-      .map((x) => x.trim().toLowerCase())
-      .filter((x) => x.length > 1)
-      .forEach((x) => tokens.add(x));
+  const ordered: string[] = [];
+  const seen = new Set<string>();
+  const push = (s: string) => {
+    const k = s.trim().toLowerCase().replace(/\s+/g, " ");
+    if (k.length < 2 || seen.has(k)) return;
+    seen.add(k);
+    ordered.push(k);
   };
 
-  add(title);
-  if (subCategoryLabel) add(subCategoryLabel);
-  (CATEGORY_KEYWORD[category] ?? []).forEach((k) => tokens.add(k));
-  tokens.add("tp.hcm");
-  tokens.add("sao khuê");
+  const fromSlug = slug.replace(/-/g, " ").trim();
+  if (fromSlug) push(fromSlug);
+  if (subCategoryLabel) push(subCategoryLabel);
+  for (const k of CATEGORY_KEYWORD[category] ?? []) push(k);
+  push("tp.hcm");
 
-  return [...tokens].slice(0, 8).join(", ");
+  return ordered.slice(0, 8).join(", ");
 }

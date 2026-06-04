@@ -166,6 +166,10 @@ import {
   savePostDraft,
 } from "@/lib/admin-post-draft";
 import { auditPostSeo, summarizeSeoAudits } from "@/lib/admin-seo-audit";
+import { auditRankMath, checksToChecklistItems } from "@/lib/rank-math-audit";
+import { RankMathSeoPanel } from "@/components/admin/RankMathSeoPanel";
+import { buildImageAlt, suggestImageFilename } from "@workspace/seed-content";
+import { getSiteOrigin } from "@/lib/seo";
 import { exportPostsToCsv } from "@/lib/admin-post-export";
 import { countUnreadLeads, markLeadsSeen } from "@/lib/admin-inbox-read";
 import { fetchContactLeads, type ContactLead } from "@/lib/contact-leads-api";
@@ -257,6 +261,8 @@ type FormState = {
   excerpt: string;
   content: string;
   imageUrl: string;
+  imageAlt: string;
+  imageCaption: string;
   metaTitle: string;
   metaDescription: string;
   metaKeywords: string;
@@ -271,6 +277,8 @@ const emptyPostForm: FormState = {
   excerpt: "",
   content: "",
   imageUrl: "",
+  imageAlt: "",
+  imageCaption: "",
   metaTitle: "",
   metaDescription: "",
   metaKeywords: "",
@@ -571,6 +579,8 @@ export default function Admin() {
       excerpt: editing.excerpt,
       content: editing.content,
       imageUrl: editing.imageUrl,
+      imageAlt: editing.imageAlt ?? "",
+      imageCaption: editing.imageCaption ?? editing.imageAlt ?? "",
       metaTitle: editing.metaTitle ?? "",
       metaDescription: editing.metaDescription ?? "",
       metaKeywords: editing.metaKeywords ?? "",
@@ -682,23 +692,37 @@ export default function Admin() {
   );
   const metaTitleLength = (postForm.metaTitle || postForm.title).trim().length;
   const metaDescriptionLength = (postForm.metaDescription || postForm.excerpt).trim().length;
-  const articleChecklist = [
-    { label: "Đã nhập tiêu đề", done: postForm.title.trim().length > 0 },
-    { label: "Đã có slug", done: postForm.slug.trim().length > 0 },
-    { label: "Đã chọn danh mục", done: postForm.category.trim().length > 0 },
-    { label: "Đã có hình đại diện", done: postForm.imageUrl.trim().length > 0 },
-    { label: "Đã có tóm tắt", done: excerptText.length > 0 },
-    { label: "Nội dung đủ tối thiểu", done: contentText.length > 160 },
-    {
-      label: "Meta title chuẩn",
-      done: metaTitleLength > 20 && metaTitleLength <= SEO_TITLE_MAX,
-    },
-    {
-      label: "Meta description chuẩn",
-      done: metaDescriptionLength > 80 && metaDescriptionLength <= SEO_DESC_MAX,
-    },
-    { label: "Đã có từ khóa SEO", done: postForm.metaKeywords.trim().length > 0 },
-  ];
+  const rankMathDraft = useMemo(() => {
+    let siteHost = "kientrucsaokhue.com";
+    try {
+      siteHost = new URL(getSiteOrigin()).hostname;
+    } catch {
+      /* keep default */
+    }
+    return auditRankMath(
+      {
+        id: editing?.id,
+        slug: previewSlug,
+        title: postForm.title,
+        excerpt: postForm.excerpt,
+        content: postForm.content,
+        imageUrl: postForm.imageUrl,
+        imageAlt: postForm.imageAlt,
+        imageCaption: postForm.imageCaption,
+        metaTitle: postForm.metaTitle,
+        metaDescription: postForm.metaDescription,
+        metaKeywords: postForm.metaKeywords,
+      },
+      {
+        otherPosts: items
+          .filter((p) => p.id !== editing?.id)
+          .map((p) => ({ id: p.id, slug: p.slug, metaKeywords: p.metaKeywords })),
+        siteHost,
+      },
+    );
+  }, [postForm, previewSlug, editing?.id, items]);
+
+  const articleChecklist = checksToChecklistItems(rankMathDraft.checks);
 
   const filteredItems =
     postCategoryFilter === "all"
@@ -706,7 +730,7 @@ export default function Admin() {
       : items.filter((post) => post.category === postCategoryFilter);
 
   const seoSummary = useMemo(
-    () => summarizeSeoAudits(items.map(auditPostSeo)),
+    () => summarizeSeoAudits(items.map((p) => auditPostSeo(p, items))),
     [items],
   );
   const inboxUnread = useMemo(
@@ -879,6 +903,8 @@ export default function Admin() {
       excerpt: post.excerpt,
       content: post.content,
       imageUrl: post.imageUrl,
+      imageAlt: post.imageAlt ?? "",
+      imageCaption: post.imageCaption ?? post.imageAlt ?? "",
       metaTitle: post.metaTitle ?? "",
       metaDescription: post.metaDescription ?? "",
       metaKeywords: post.metaKeywords ?? "",
@@ -910,13 +936,37 @@ export default function Admin() {
     const subLabel = postSubCategory
       ? getMenuChildLabel(postForm.category, postSubCategory, navMenuItems) ?? undefined
       : undefined;
-    setPostForm((prev) => ({
-      ...prev,
-      excerpt: prev.excerpt.trim() || buildAutoExcerpt(prev.content),
-      metaTitle: buildAutoMetaTitle(prev.title, brand),
-      metaDescription: buildAutoMetaDescription(prev.excerpt, prev.content),
-      metaKeywords: buildAutoMetaKeywords(prev.title, prev.category, subLabel),
-    }));
+    setPostForm((prev) => {
+      const slug =
+        prev.slug.trim() || (prev.title.trim() ? slugifyVietnamese(prev.title) : "");
+      const metaKeywords = buildAutoMetaKeywords(slug, prev.category, subLabel);
+      return {
+        ...prev,
+        excerpt: prev.excerpt.trim() || buildAutoExcerpt(prev.content),
+        metaTitle: buildAutoMetaTitle(prev.title, brand),
+        metaDescription: buildAutoMetaDescription(prev.excerpt, prev.content),
+        metaKeywords,
+        imageAlt: prev.imageAlt.trim() || buildImageAlt({ slug, metaKeywords }),
+        imageCaption:
+          prev.imageCaption.trim() ||
+          prev.imageAlt.trim() ||
+          buildImageAlt({ slug, metaKeywords }),
+      };
+    });
+  }
+
+  function fillImageAltAuto() {
+    setPostForm((prev) => {
+      const alt = buildImageAlt({
+        slug: prev.slug,
+        metaKeywords: prev.metaKeywords,
+      });
+      return {
+        ...prev,
+        imageAlt: alt,
+        imageCaption: prev.imageCaption.trim() || alt,
+      };
+    });
   }
 
   async function onSubmitPost(e: FormEvent) {
@@ -1640,6 +1690,8 @@ export default function Admin() {
                                 excerpt: editing.excerpt,
                                 content: editing.content,
                                 imageUrl: editing.imageUrl,
+                                imageAlt: editing.imageAlt ?? "",
+                                imageCaption: editing.imageCaption ?? editing.imageAlt ?? "",
                                 metaTitle: editing.metaTitle ?? "",
                                 metaDescription: editing.metaDescription ?? "",
                                 metaKeywords: editing.metaKeywords ?? "",
@@ -1836,16 +1888,29 @@ export default function Admin() {
                                   {metaDescriptionLength}/{SEO_DESC_MAX} ký tự
                                 </FieldHint>
                               </Field>
-                              <Field label="Meta keywords">
+                              <Field label="Từ khóa SEO (focus keyword)">
                                 <Input
                                   value={postForm.metaKeywords}
-                                  onChange={(e) =>
+                                  placeholder="thi công nhà phố đồng nai, thiết kế nhà phố, xây nhà đồng nai"
+                                  onChange={(e) => {
+                                    const metaKeywords = e.target.value;
                                     setPostForm((prev) => ({
                                       ...prev,
-                                      metaKeywords: e.target.value,
-                                    }))
-                                  }
+                                      metaKeywords,
+                                      imageAlt:
+                                        prev.imageAlt.trim() ||
+                                        buildImageAlt({ slug: prev.slug, metaKeywords }),
+                                      imageCaption:
+                                        prev.imageCaption.trim() ||
+                                        prev.imageAlt.trim() ||
+                                        buildImageAlt({ slug: prev.slug, metaKeywords }),
+                                    }));
+                                  }}
                                 />
+                                <FieldHint>
+                                  Cụm <strong>đầu tiên</strong> = từ khóa chính (Rank Math). Alt ảnh = một
+                                  cụm trong danh sách — không dùng tiêu đề bài.
+                                </FieldHint>
                               </Field>
                             </div>
                           </details>
@@ -1868,10 +1933,70 @@ export default function Admin() {
                           <FeaturedImagePanel
                             value={postForm.imageUrl}
                             onChange={(url) =>
-                              setPostForm((prev) => ({ ...prev, imageUrl: url }))
+                              setPostForm((prev) => ({
+                                ...prev,
+                                imageUrl: url,
+                                imageAlt:
+                                  prev.imageAlt.trim() ||
+                                  buildImageAlt({
+                                    slug: prev.slug,
+                                    metaKeywords: prev.metaKeywords,
+                                  }),
+                                imageCaption:
+                                  prev.imageCaption.trim() ||
+                                  prev.imageAlt.trim() ||
+                                  buildImageAlt({
+                                    slug: prev.slug,
+                                    metaKeywords: prev.metaKeywords,
+                                  }),
+                              }))
                             }
                             folder="posts"
+                            suggestedFilename={suggestImageFilename(
+                              postForm.slug || slugifyVietnamese(postForm.title) || "bai-viet",
+                            )}
                           />
+                          <Field label="Văn bản thay thế (alt) — SEO & Google Hình ảnh">
+                            <textarea
+                              className="min-h-[72px] w-full rounded-xl border border-slate-200 px-3 py-2 text-sm"
+                              value={postForm.imageAlt}
+                              onChange={(e) =>
+                                setPostForm((prev) => ({ ...prev, imageAlt: e.target.value }))
+                              }
+                              placeholder="Ví dụ: thi công đường giao thông"
+                            />
+                            <button
+                              type="button"
+                              className="mt-2 text-xs font-semibold text-[#17579d] hover:underline"
+                              onClick={fillImageAltAuto}
+                            >
+                              Tạo alt từ từ khóa (không lấy tiêu đề)
+                            </button>
+                          <Field label="Chú thích ảnh (Caption) — WordPress">
+                            <Input
+                              value={postForm.imageCaption}
+                              onChange={(e) =>
+                                setPostForm((prev) => ({
+                                  ...prev,
+                                  imageCaption: e.target.value,
+                                }))
+                              }
+                              placeholder="Thường giống alt / cụm từ khóa"
+                            />
+                            <FieldHint>
+                              Hiển thị dưới ảnh đại diện. Để trống = dùng alt.
+                            </FieldHint>
+                          </Field>
+                            <p className="mt-1 text-[11px] text-slate-500">
+                              Chuẩn bài: <strong>1500–2500 từ</strong>, <strong>≥2–3 ảnh</strong> (alt =
+                              từ khóa). TOC tự chèn khi ≥3 H2. Tên file{" "}
+                              <code className="rounded bg-slate-100 px-1">
+                                {suggestImageFilename(
+                                  postForm.slug || "slug-bai-viet",
+                                )}
+                              </code>
+                            </p>
+                          </Field>
                           <div className="rounded-2xl border border-slate-200 bg-white p-4 text-xs text-slate-600">
                             <div className="font-bold text-slate-800">Tóm tắt nhanh</div>
                             <ul className="mt-2 space-y-1">
@@ -1884,6 +2009,31 @@ export default function Admin() {
                               </li>
                             </ul>
                           </div>
+                          <RankMathSeoPanel
+                            compact
+                            post={{
+                              id: editing?.id,
+                              slug: previewSlug,
+                              title: postForm.title,
+                              excerpt: postForm.excerpt,
+                              content: postForm.content,
+                              imageUrl: postForm.imageUrl,
+                              imageAlt: postForm.imageAlt,
+                              imageCaption: postForm.imageCaption,
+                              metaTitle: postForm.metaTitle,
+                              metaDescription: postForm.metaDescription,
+                              metaKeywords: postForm.metaKeywords,
+                            }}
+                            context={{
+                              otherPosts: items
+                                .filter((p) => p.id !== editing?.id)
+                                .map((p) => ({
+                                  id: p.id,
+                                  slug: p.slug,
+                                  metaKeywords: p.metaKeywords,
+                                })),
+                            }}
+                          />
                           <ChecklistCard items={articleChecklist} />
                         </aside>
                       </div>
@@ -1895,6 +2045,7 @@ export default function Admin() {
                             excerpt={excerptText}
                             contentHtml={postForm.content}
                             imageUrl={postForm.imageUrl}
+                            imageAlt={postForm.imageAlt}
                             category={selectedSection?.title ?? postForm.category}
                             subCategory={
                               postSubCategory
@@ -1914,6 +2065,35 @@ export default function Admin() {
                             keywords={postForm.metaKeywords}
                             titleLength={metaTitleLength}
                             descriptionLength={metaDescriptionLength}
+                          />
+                        </FormSection>
+                      </div>
+
+                      <div className="border-t border-slate-200 px-6 pb-6">
+                        <FormSection title="Phân tích SEO (Rank Math)">
+                          <RankMathSeoPanel
+                            post={{
+                              id: editing?.id,
+                              slug: previewSlug,
+                              title: postForm.title,
+                              excerpt: postForm.excerpt,
+                              content: postForm.content,
+                              imageUrl: postForm.imageUrl,
+                              imageAlt: postForm.imageAlt,
+                              imageCaption: postForm.imageCaption,
+                              metaTitle: postForm.metaTitle,
+                              metaDescription: postForm.metaDescription,
+                              metaKeywords: postForm.metaKeywords,
+                            }}
+                            context={{
+                              otherPosts: items
+                                .filter((p) => p.id !== editing?.id)
+                                .map((p) => ({
+                                  id: p.id,
+                                  slug: p.slug,
+                                  metaKeywords: p.metaKeywords,
+                                })),
+                            }}
                           />
                         </FormSection>
                       </div>
@@ -3123,6 +3303,7 @@ function PostPreviewCard({
   excerpt,
   contentHtml,
   imageUrl,
+  imageAlt,
   category,
   subCategory,
   slug,
@@ -3132,6 +3313,7 @@ function PostPreviewCard({
   excerpt: string;
   contentHtml: string;
   imageUrl: string;
+  imageAlt: string;
   category: string;
   subCategory: string;
   slug: string;
@@ -3148,7 +3330,7 @@ function PostPreviewCard({
           {imageUrl ? (
             <img
               src={imageUrl}
-              alt={title || "Xem trước bài viết"}
+              alt={imageAlt || title || "Xem trước bài viết"}
               className="h-full w-full object-cover"
             />
           ) : (

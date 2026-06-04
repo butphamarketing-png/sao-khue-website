@@ -60,6 +60,8 @@ export interface Post {
   excerpt: string;
   content: string;
   imageUrl: string;
+  imageAlt: string;
+  imageCaption: string;
   metaTitle: string;
   metaDescription: string;
   metaKeywords: string;
@@ -77,6 +79,8 @@ export interface PostInput {
   excerpt: string;
   content: string;
   imageUrl: string;
+  imageAlt?: string;
+  imageCaption?: string;
   metaTitle?: string;
   metaDescription?: string;
   metaKeywords?: string;

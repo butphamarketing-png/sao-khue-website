@@ -19,7 +19,7 @@ function dollarQuote(text: string, tag = "body"): string {
 function buildUpsert(p: SeedPost): string {
   return [
     `INSERT INTO posts (`,
-    `  slug, title, category, excerpt, content, image_url,`,
+    `  slug, title, category, excerpt, content, image_url, image_alt, image_caption,`,
     `  meta_title, meta_description, meta_keywords, created_at, updated_at`,
     `) VALUES (`,
     `  ${dollarQuote(p.slug, "slug")},`,
@@ -28,6 +28,8 @@ function buildUpsert(p: SeedPost): string {
     `  ${dollarQuote(p.excerpt, "excerpt")},`,
     `  ${dollarQuote(p.content, "content")},`,
     `  ${dollarQuote(p.imageUrl, "img")},`,
+    `  ${dollarQuote(p.imageAlt ?? "", "alt")},`,
+    `  ${dollarQuote(p.imageCaption ?? p.imageAlt ?? "", "cap")},`,
     `  ${dollarQuote(p.metaTitle ?? "", "mt")},`,
     `  ${dollarQuote(p.metaDescription ?? "", "md")},`,
     `  ${dollarQuote(p.metaKeywords ?? "", "mk")},`,
@@ -40,6 +42,8 @@ function buildUpsert(p: SeedPost): string {
     `  excerpt = EXCLUDED.excerpt,`,
     `  content = EXCLUDED.content,`,
     `  image_url = EXCLUDED.image_url,`,
+    `  image_alt = EXCLUDED.image_alt,`,
+    `  image_caption = EXCLUDED.image_caption,`,
     `  meta_title = EXCLUDED.meta_title,`,
     `  meta_description = EXCLUDED.meta_description,`,
     `  meta_keywords = EXCLUDED.meta_keywords,`,

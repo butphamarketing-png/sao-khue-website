@@ -17,7 +17,6 @@ import {
   buildBreadcrumbSchema,
   buildFAQSchema,
   buildPostBreadcrumbItems,
-  enhanceArticleHtml,
   extractFaqFromArticleHtml,
   findMenuSectionPathForPost,
   truncateMeta,
@@ -32,6 +31,7 @@ import {
   parsePostPathFromLocation,
   resolvePostSlugFromCategorySegment,
 } from "@/lib/post-url";
+import { renderArticleBody, resolvePostImageAlt } from "@/lib/post-body";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -74,7 +74,13 @@ export default function PostPage() {
       return normalizeCategory(item.category) === normalizeCategory(post.category);
     })
     .slice(0, 3);
-  const readingMinutes = post ? estimateReadingMinutes(post.content ?? "") : null;
+  const articleBody = post ? renderArticleBody(post) : null;
+  const readingMinutes = articleBody
+    ? estimateReadingMinutes(articleBody.html)
+    : null;
+  const showHeroImage = Boolean(
+    post?.imageUrl?.trim() && articleBody && !articleBody.featuredInjected,
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -110,7 +116,7 @@ export default function PostPage() {
           path: seoPath,
           keywords: seoPost.metaKeywords?.trim(),
           ogImage: seoPost.imageUrl,
-          ogImageAlt: seoPost.title,
+          ogImageAlt: resolvePostImageAlt(seoPost),
           ogType: "article",
           publishedTime: seoPost.createdAt,
           modifiedTime: seoPost.updatedAt,
@@ -209,10 +215,10 @@ export default function PostPage() {
             </div>
 
             <div className="p-6 md:p-10">
-              {post.imageUrl && (
+              {showHeroImage && (
                 <img
                   src={post.imageUrl}
-                  alt={post.title}
+                  alt={articleBody?.imageAlt ?? resolvePostImageAlt(post)}
                   width={1200}
                   height={630}
                   className="mb-8 max-h-[460px] w-full rounded-xl object-cover"
@@ -232,7 +238,7 @@ export default function PostPage() {
                 className="prose-article"
                 itemProp="articleBody"
                 dangerouslySetInnerHTML={{
-                  __html: enhanceArticleHtml(post.content ?? "", post.title),
+                  __html: articleBody?.html ?? "",
                 }}
               />
             </div>
@@ -263,7 +269,7 @@ export default function PostPage() {
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
-                      alt={item.title}
+                      alt={resolvePostImageAlt(item)}
                       className="h-32 w-full object-cover transition group-hover:scale-105"
                     />
                   )}

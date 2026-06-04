@@ -194,6 +194,8 @@ export type LocalBusinessInput = {
   address: string;
   sameAs: string[];
   description?: string;
+  /** Link Google Maps (hasMap) — khớp NAP & embed trên /lien-he */
+  mapsUrl?: string;
 };
 
 export type AggregateRatingInput = {
@@ -242,6 +244,7 @@ export function buildLocalBusinessSchema(
       addressCountry: "VN",
     },
     sameAs: input.sameAs.length > 0 ? input.sameAs : undefined,
+    hasMap: input.mapsUrl?.trim() || undefined,
   };
 }
 
@@ -301,8 +304,13 @@ export function enhanceArticleHtml(html: string, defaultImageAlt?: string): stri
   let out = html.replace(/\n/g, "<br/>");
   out = out.replace(/<img\b([^>]*)>/gi, (_match, attrs: string) => {
     let next = attrs;
-    if (defaultImageAlt && !/\balt\s*=/i.test(next)) {
-      next = `${next} alt="${defaultImageAlt.replace(/"/g, "&quot;")}"`;
+    const safeAlt = defaultImageAlt?.replace(/"/g, "&quot;") ?? "";
+    if (safeAlt) {
+      if (!/\balt\s*=/i.test(next)) {
+        next = `${next} alt="${safeAlt}"`;
+      } else if (/\balt\s*=\s*["']\s*["']/i.test(next)) {
+        next = next.replace(/\balt\s*=\s*["']\s*["']/i, `alt="${safeAlt}"`);
+      }
     }
     if (!/loading\s*=/i.test(next)) next = `${next} loading="lazy"`;
     if (!/decoding\s*=/i.test(next)) next = `${next} decoding="async"`;

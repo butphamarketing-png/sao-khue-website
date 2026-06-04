@@ -25,9 +25,11 @@ import {
   mauNhaPho2TangBinhDuong,
   xayNhaTronGoiDongNai,
   thietKeThiCongNhaPhoDongNai,
+  thietKeNhaPhoHienDaiTphcm,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory } from "./categories";
+import { buildImageAlt } from "./image-seo";
 
 export type SeedPost = {
   slug: string;
@@ -36,6 +38,8 @@ export type SeedPost = {
   excerpt: string;
   content: string;
   imageUrl: string;
+  imageAlt: string;
+  imageCaption?: string;
   metaTitle?: string;
   metaDescription?: string;
   metaKeywords?: string;
@@ -47,16 +51,22 @@ function seoPost(
   imageUrl: string,
   article: SeoArticle,
 ): SeedPost {
+  const metaKeywords = article.metaKeywords;
+  const imageAlt =
+    article.imageAlt?.trim() || buildImageAlt({ slug, metaKeywords });
+  const imageCaption = article.imageCaption?.trim() || imageAlt;
   return {
     slug,
     category,
     imageUrl,
+    imageAlt,
+    imageCaption,
     title: article.title,
     excerpt: article.excerpt,
     content: article.content,
     metaTitle: article.metaTitle,
     metaDescription: article.metaDescription,
-    metaKeywords: article.metaKeywords,
+    metaKeywords,
   };
 }
 
@@ -103,6 +113,12 @@ export const seedPosts: SeedPost[] = [
     DESIGN,
     thietKeThiCongNhaPhoDongNai,
   ),
+  seoPost(
+    "thiet-ke-nha-pho-hien-dai-tphcm",
+    "tin-tuc",
+    "/images/project_2.jpg",
+    thietKeNhaPhoHienDaiTphcm,
+  ),
   seoPost("xay-nha-tron-goi-tphcm", "dich-vu", BUILD, xayNhaTronGoiTphcm),
   seoPost("xay-nha-tron-goi-binh-duong", "dich-vu", BUILD, xayNhaTronGoiBinhDuong),
   seoPost("xay-nha-tron-goi-dong-nai", "dich-vu", BUILD, xayNhaTronGoiDongNai),
@@ -135,6 +151,35 @@ export {
 } from "./categories";
 
 export { getPostPublicPath } from "./public-path";
+export {
+  buildImageAlt,
+  pickImageAltKeyword,
+  parseFocusKeywords,
+  getPrimaryFocusKeyword,
+  altMatchesFocusKeywordPhrase,
+  imageAltContainsFocusKeyword,
+  normalizeSeoText,
+  buildFeaturedImageFigure,
+  buildInlineImageFigure,
+  prepareArticleHtml,
+  suggestImageFilename,
+  contentHasImage,
+  auditContentImages,
+  countArticleImages,
+} from "./image-seo";
+
+export {
+  injectArticleToc,
+  shouldInjectArticleToc,
+  hasArticleToc,
+  TOC_MIN_WORDS,
+  TOC_MIN_H2,
+} from "./article-toc";
+
+/** Chuẩn bài SEO dài (Rank Math / WP). */
+export const ARTICLE_WORDS_TARGET_MIN = 1500;
+export const ARTICLE_WORDS_TARGET_MAX = 2500;
+export const ARTICLE_IMAGES_TARGET_MIN = 2;
 
 export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
   return {
