@@ -118,6 +118,14 @@ router.post("/posts", async (req, res) => {
     res.status(400).json({ error: parsed.error.message });
     return;
   }
+
+  // Check if slug already exists
+  const existing = await db.select().from(postsTable).where(eq(postsTable.slug, parsed.data.slug));
+  if (existing.length > 0) {
+    res.status(400).json({ error: "Slug đã tồn tại. Vui lòng chọn slug khác." });
+    return;
+  }
+
   const [row] = await db.insert(postsTable).values(parsed.data).returning();
   res.status(201).json(serialize(row));
 });
@@ -129,6 +137,16 @@ router.put("/posts/:slug", async (req, res) => {
     res.status(400).json({ error: parsed.error.message });
     return;
   }
+
+  // Check if new slug already exists (and it's not the current post)
+  if (parsed.data.slug !== req.params.slug) {
+    const existing = await db.select().from(postsTable).where(eq(postsTable.slug, parsed.data.slug));
+    if (existing.length > 0) {
+      res.status(400).json({ error: "Slug đã tồn tại. Vui lòng chọn slug khác." });
+      return;
+    }
+  }
+
   const [row] = await db
     .update(postsTable)
     .set({ ...parsed.data, updatedAt: new Date() })

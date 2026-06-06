@@ -7,7 +7,6 @@ import { getMenuLeafSlug, inferSubSlugFromPost } from "./menu-posts";
 /** Slug bài → segment URL ngắn (menu cũ / SEO). */
 const POST_URL_LEAF_OVERRIDES: Record<string, string> = {
   "xay-nha-tron-goi-tphcm": "xay-nha-tron-goi",
-  "sua-nha-tron-goi-tphcm": "sua-chua-nha",
   "sua-chua-nha-tphcm": "sua-chua-nha",
   "khuyen-mai-xay-dung": "khuyen-mai",
 };

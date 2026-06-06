@@ -8,7 +8,6 @@ import { resolvePosts } from "@/lib/posts-with-fallback";
 import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedByCategory } from "@/lib/featured-posts";
 import { getPostPublicPath } from "@/lib/post-url";
-import { getPostPublicPath } from "@/lib/post-url";
 
 const fallback = [
   { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },

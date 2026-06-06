@@ -986,6 +986,13 @@ export default function Admin() {
       return;
     }
 
+    // Frontend check for duplicate slug
+    const slugExists = items.some(p => p.slug === slug && p.id !== editing?.id);
+    if (slugExists) {
+      alert("Slug đã tồn tại. Vui lòng chọn slug khác.");
+      return;
+    }
+
     const payload = {
       ...postForm,
       slug,

@@ -43,11 +43,11 @@ export function clearPostDraft() {
 }
 
 export function duplicatePostSlug(baseSlug: string, existingSlugs: string[]): string {
-  const root = baseSlug.replace(/-copy(-\d+)?$/, "");
-  let candidate = `${root}-copy`;
+  const root = baseSlug.replace(/-\d+$/, "");
+  let candidate = baseSlug;
   let n = 2;
   while (existingSlugs.includes(candidate)) {
-    candidate = `${root}-copy-${n}`;
+    candidate = `${root}-${n}`;
     n += 1;
   }
   return candidate;
