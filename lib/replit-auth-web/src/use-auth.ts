@@ -103,7 +103,8 @@ export function useAuth(): AuthState {
       return;
     }
 
-    const base = (import.meta as any).env?.BASE_URL?.replace(/\/+$/, "") || "/";
+    const baseUrl = (import.meta as any).env?.BASE_URL;
+    const base = baseUrl ? baseUrl.replace(/\/+$/, "") : "/";
     window.location.href = `/api/login?returnTo=${encodeURIComponent(base)}`;
   }, []);
 
