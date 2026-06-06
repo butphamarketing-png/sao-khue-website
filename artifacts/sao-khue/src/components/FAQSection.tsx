@@ -17,7 +17,7 @@ type Props = {
   subtitle?: string;
   items?: { q: string; a: string }[];
   className?: string;
-  /** JSON-LD FAQPage cho Google rich results */
+  /** JSON-LD FAQPage cho Google rich results (mặc định false để tránh trùng lặp) */
   enableSchema?: boolean;
 };
 
@@ -26,7 +26,7 @@ export function FAQSection({
   subtitle,
   items,
   className = "",
-  enableSchema = true,
+  enableSchema = false,
 }: Props) {
   const meta = useSectionMeta();
   const faqs = useFaqs();
