@@ -33,10 +33,9 @@ function requireAdmin(req: Request, res: Response): boolean {
   return true;
 }
 
-function serialize(p: {
+function serialize(p: Record<string, unknown> & {
   createdAt: Date | string;
   updatedAt: Date | string;
-  [key: string]: unknown;
 }) {
   return {
     ...p,
@@ -73,7 +72,7 @@ router.get("/posts/:slug", async (req, res) => {
       .where(eq(postsTable.slug, req.params.slug))
       .limit(1);
     if (row) {
-      const serialized = serialize(row);
+      const serialized = serialize(row) as any;
       const fallback = getFallbackPost(req.params.slug);
       const content = String(serialized.content ?? "").trim();
       const fallbackContent = String(fallback?.content ?? "").trim();
