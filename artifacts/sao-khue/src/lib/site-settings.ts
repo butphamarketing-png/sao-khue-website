@@ -158,7 +158,7 @@ export { resolveLogoUrl };
 export const PRIMARY_PHONE = "0909 075 668";
 export const PRIMARY_PHONE_RAW = "0909075668";
 
-export const defaultSiteSettings: SiteSettings & Record<string, string> = {
+export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   id: 0,
   companyName: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
   taxCode: "",
@@ -348,25 +348,72 @@ export function restorePricing(items: PricingItem[]) {
   }));
 }
 
-export function useSiteSettings(): SiteSettings & Record<string, string> {
-  const { data } = useGetSiteSettings({ query: { staleTime: 60_000 } });
-  const merged = { ...defaultSiteSettings, ...(data as Record<string, string> | undefined) };
+export interface SiteSettingsFull extends SiteSettings {
+  loadingLogoUrl?: string;
+  homeVideoUrl?: string;
+  homeVideoLabel?: string;
+  homeAboutEyebrow?: string;
+  homeAboutTitle?: string;
+  homeAboutIntro?: string;
+  homeAboutBody?: string;
+  homeAboutPointsJson?: string;
+  homeAboutImageUrl?: string;
+  homeAboutExperienceLabel?: string;
+  homeAboutExperienceYears?: string;
+  homeCalculatorConfigJson?: string;
+  homeStatsJson?: string;
+  homeTestimonialsJson?: string;
+  homeFaqJson?: string;
+  homeProcessJson?: string;
+  categoryPagesJson?: string;
+  homeSectionMetaJson?: string;
+  homeCtaJson?: string;
+  homeQuoteServicesJson?: string;
+  homeContactJson?: string;
+  topBarSlogan?: string;
+  gaTrackingId?: string;
+  gscVerification?: string;
+  googleMapsUrl?: string;
+  googleMapEmbed?: string;
+  facebookUrl2?: string;
+  facebookLabel1?: string;
+  facebookLabel2?: string;
+  messengerUrl2?: string;
+  messengerLabel1?: string;
+  messengerLabel2?: string;
+  navMenuJson?: string;
+  pageBannersJson?: string;
+  homeFeaturedPostsJson?: string;
+  opengraphImageUrl?: string;
+}
+
+export function useSiteSettings(): SiteSettingsFull {
+  const { data, error } = useGetSiteSettings({
+    // Removed the invalid 'query' wrapper!
+    ...({ staleTime: 60000, retry: 1 } as any),
+  });
+  
+  if (error) {
+    console.warn("[useSiteSettings] Using defaults due to error:", error);
+  }
+  
+  const merged = { ...defaultSiteSettings, ...(data as Record<string, unknown> | undefined) } as SiteSettingsFull;
   return {
     ...merged,
-    gscVerification: merged.gscVerification?.trim() || GSC_VERIFICATION_TOKEN,
-    logoUrl: resolveLogoUrl(merged.logoUrl),
-    loadingLogoUrl: resolveLogoUrl(merged.loadingLogoUrl || merged.logoUrl),
-    companyName: restoreKnownVietnameseText(merged.companyName),
-    footerDescription: restoreKnownVietnameseText(merged.footerDescription),
-    address1: restoreKnownVietnameseText(merged.address1),
-    address2: restoreKnownVietnameseText(merged.address2),
-    hotline1: merged.hotline1?.trim() || merged.hotline2?.trim() || PRIMARY_PHONE,
+    gscVerification: (merged.gscVerification as string)?.trim() || GSC_VERIFICATION_TOKEN,
+    logoUrl: resolveLogoUrl(merged.logoUrl as string),
+    loadingLogoUrl: resolveLogoUrl((merged.loadingLogoUrl as string) || (merged.logoUrl as string)),
+    companyName: restoreKnownVietnameseText(merged.companyName as string),
+    footerDescription: restoreKnownVietnameseText(merged.footerDescription as string),
+    address1: restoreKnownVietnameseText(merged.address1 as string),
+    address2: restoreKnownVietnameseText(merged.address2 as string),
+    hotline1: (merged.hotline1 as string)?.trim() || (merged.hotline2 as string)?.trim() || PRIMARY_PHONE,
     hotline2: "",
-    homeAboutEyebrow: restoreKnownVietnameseText(merged.homeAboutEyebrow),
-    homeAboutTitle: restoreKnownVietnameseText(merged.homeAboutTitle),
-    homeAboutIntro: restoreKnownVietnameseText(merged.homeAboutIntro),
-    homeAboutBody: restoreKnownVietnameseText(merged.homeAboutBody),
-    homeAboutExperienceLabel: restoreKnownVietnameseText(merged.homeAboutExperienceLabel),
+    homeAboutEyebrow: restoreKnownVietnameseText(merged.homeAboutEyebrow as string),
+    homeAboutTitle: restoreKnownVietnameseText(merged.homeAboutTitle as string),
+    homeAboutIntro: restoreKnownVietnameseText(merged.homeAboutIntro as string),
+    homeAboutBody: restoreKnownVietnameseText(merged.homeAboutBody as string),
+    homeAboutExperienceLabel: restoreKnownVietnameseText(merged.homeAboutExperienceLabel as string),
   };
 }
 

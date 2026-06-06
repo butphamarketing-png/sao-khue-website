@@ -18,7 +18,7 @@ export function BaiVietCanonicalRedirect() {
 
   const slug = rawSlug ? resolvePostSlugAlias(rawSlug) : "";
   const { data, isLoading } = useGetPostBySlug(slug, {
-    query: { retry: false },
+    ...({ retry: false } as any),
   });
   const post = resolvePost(slug, data);
 

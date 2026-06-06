@@ -93,7 +93,7 @@ export function SiteHead() {
           s.messengerUrl2,
           s.youtubeUrl,
           s.instagramUrl,
-        ].filter((url) => typeof url === "string" && url.trim()),
+        ].filter((url) => typeof url === "string" && url.trim()) as string[],
         description: s.footerDescription,
         openingHours: s.workingHours,
         aggregateRating:

@@ -16,7 +16,12 @@ function readingMinutes(content: string | null | undefined) {
 export function NewsSection() {
   const meta = useSectionMeta();
   const featuredConfig = useFeaturedPostsConfig();
-  const { data: posts, isLoading } = useListPosts({ limit: 100 });
+  const { data: posts, isLoading, error } = useListPosts({ limit: 100 });
+  
+  if (error) {
+    console.warn("[NewsSection] Using fallback posts due to error:", error);
+  }
+  
   const allItems = resolvePosts(posts, { limit: 100 });
   const items = pickFeaturedPosts(allItems, featuredConfig.news, 6);
 

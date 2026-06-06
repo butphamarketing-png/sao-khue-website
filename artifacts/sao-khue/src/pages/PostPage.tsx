@@ -60,7 +60,7 @@ export default function PostPage() {
   })();
 
   const { data: postFromApi, isLoading } = useGetPostBySlug(slug, {
-    query: { retry: false },
+    ...({ retry: false } as any),
   });
   const bundledPost = slug ? getFallbackPost(slug) : undefined;
   const post = resolvePost(slug, postFromApi) ?? bundledPost;

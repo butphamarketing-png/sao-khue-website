@@ -69,14 +69,41 @@ export function useAuth(): AuthState {
       .then(([modeData, data]) => {
         if (!cancelled) {
           setAuthMode(modeData?.mode === "password" ? "password" : "replit");
-          setUser(data.user ?? null);
+          if (data.user) {
+            setUser(data.user);
+          } else if (isLocalDevHost()) {
+            // Auto-login in local dev
+            const localUser: AuthUser = {
+              id: "local-dev-admin",
+              email: "admin@localhost",
+              firstName: "Local",
+              lastName: "Admin",
+              profileImageUrl: null,
+            };
+            writeLocalDevUser(localUser);
+            setUser(localUser);
+          } else {
+            setUser(null);
+          }
           setIsLoading(false);
         }
       })
       .catch(() => {
         if (!cancelled) {
           setAuthMode("password");
-          setUser(readLocalDevUser());
+          if (isLocalDevHost()) {
+            const localUser: AuthUser = {
+              id: "local-dev-admin",
+              email: "admin@localhost",
+              firstName: "Local",
+              lastName: "Admin",
+              profileImageUrl: null,
+            };
+            writeLocalDevUser(localUser);
+            setUser(localUser);
+          } else {
+            setUser(readLocalDevUser());
+          }
           setIsLoading(false);
         }
       });

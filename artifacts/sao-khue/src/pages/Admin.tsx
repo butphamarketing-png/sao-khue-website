@@ -788,7 +788,7 @@ export default function Admin() {
     const onKey = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "s" && showEditor) {
         e.preventDefault();
-        document.getElementById("post-editor-form")?.requestSubmit();
+        (document.getElementById("post-editor-form") as any)?.requestSubmit();
       }
     };
     window.addEventListener("keydown", onKey);
@@ -1476,7 +1476,7 @@ export default function Admin() {
                     icon={Save}
                     color="bg-[#16a34a] hover:bg-[#15803d]"
                     onClick={() => {
-                      document.getElementById("post-editor-form")?.requestSubmit();
+                      (document.getElementById("post-editor-form") as any)?.requestSubmit();
                     }}
                   >
                     Lưu (Ctrl+S)
@@ -1676,7 +1676,7 @@ export default function Admin() {
                           disabled={create.isPending || update.isPending}
                           onClick={() => {
                             postSaveMode.current = "stay";
-                            document.getElementById("post-editor-form")?.requestSubmit();
+                            (document.getElementById("post-editor-form") as any)?.requestSubmit();
                           }}
                         >
                           Lưu tại trang
