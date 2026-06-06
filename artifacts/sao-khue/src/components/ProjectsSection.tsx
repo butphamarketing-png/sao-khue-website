@@ -9,6 +9,8 @@ import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedByCategory } from "@/lib/featured-posts";
 import { getPostPublicPath } from "@/lib/post-url";
 
+// Fix blank admin page
+
 const fallback = [
   { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },
   { id: 2, title: "Nhà phố tân cổ điển anh Tuấn - Q.7", imageUrl: "/images/project_2.jpg", slug: "" },
