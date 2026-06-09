@@ -72,17 +72,16 @@ export function inferSubSlugFromPost(
   post: Pick<Post, "slug" | "category">,
   menu?: MenuItem[],
 ): string | null {
-  const children = getMenuChildren(post.category, menu);
+  const leaves = getMenuChildren(post.category, menu)
+    .map((child) => getMenuLeafSlug(child.href))
+    .filter((leaf): leaf is string => Boolean(leaf));
 
-  for (const child of children) {
-    const leaf = getMenuLeafSlug(child.href);
-    if (!leaf) continue;
+  const exact = leaves.find((leaf) => post.slug === leaf);
+  if (exact) return exact;
 
-    if (
-      post.slug === leaf ||
-      post.slug.startsWith(`${leaf}-`) ||
-      post.slug.startsWith(`${leaf}--`)
-    ) {
+  const sorted = [...leaves].sort((a, b) => b.length - a.length);
+  for (const leaf of sorted) {
+    if (post.slug.startsWith(`${leaf}-`) || post.slug.startsWith(`${leaf}--`)) {
       return leaf;
     }
   }

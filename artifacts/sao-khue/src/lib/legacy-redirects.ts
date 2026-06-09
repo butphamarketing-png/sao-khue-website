@@ -1,6 +1,5 @@
-import { getPostPublicPath, getPostPublicPathFromSlug } from "./post-url";
-import { seedPosts } from "@workspace/seed-content";
-import { normalizeCategory } from "./categories";
+import { getPostPublicPathFromSlug } from "./post-url";
+import { getPostPublicPath, normalizeCategory, seedPosts } from "@workspace/seed-content";
 
 /**
  * Old WordPress URLs indexed by Google (root-level slugs, no /bai-viet/ prefix).
@@ -168,9 +167,10 @@ export function collectServerRedirects(): Map<string, string> {
   };
 
   for (const [src, dst] of STATIC_PATH_REDIRECTS) add(src, dst);
-  add("/gioi-thieu/:path*", "/bai-viet/ve-chung-toi");
-  add("/kinh-nghiem/:path*", "/tin-tuc");
-  add("/kinh-nghiem-xay-dung/:path*", "/tin-tuc");
+  /** WP /kinh-nghiem/{slug} → đúng bài /tin-tuc/{slug}, không gộp về hub */
+  add("/gioi-thieu/:path*", "/bai-viet/:path*");
+  add("/kinh-nghiem/:path*", "/tin-tuc/:path*");
+  add("/kinh-nghiem-xay-dung/:path*", "/tin-tuc/:path*");
 
   for (const [slug, target] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
     add(`/${slug}`, target);

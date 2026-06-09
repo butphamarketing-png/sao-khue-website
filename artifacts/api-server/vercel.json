@@ -164,12 +164,12 @@
     },
     {
       "source": "/bai-viet/xay-nha-tron-goi-binh-duong",
-      "destination": "/dich-vu/xay-nha-tron-goi",
+      "destination": "/dich-vu/xay-nha-tron-goi-binh-duong",
       "permanent": true
     },
     {
       "source": "/bai-viet/xay-nha-tron-goi-dong-nai",
-      "destination": "/dich-vu/xay-nha-tron-goi",
+      "destination": "/dich-vu/xay-nha-tron-goi-dong-nai",
       "permanent": true
     },
     {
@@ -218,16 +218,6 @@
       "permanent": true
     },
     {
-      "source": "/dich-vu/xay-nha-tron-goi-binh-duong",
-      "destination": "/dich-vu/xay-nha-tron-goi",
-      "permanent": true
-    },
-    {
-      "source": "/dich-vu/xay-nha-tron-goi-dong-nai",
-      "destination": "/dich-vu/xay-nha-tron-goi",
-      "permanent": true
-    },
-    {
       "source": "/dich-vu/xay-nha-tron-goi-tphcm",
       "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
@@ -249,7 +239,7 @@
     },
     {
       "source": "/gioi-thieu/:path*",
-      "destination": "/bai-viet/ve-chung-toi",
+      "destination": "/bai-viet/:path*",
       "permanent": true
     },
     {
@@ -279,12 +269,12 @@
     },
     {
       "source": "/kinh-nghiem-xay-dung/:path*",
-      "destination": "/tin-tuc",
+      "destination": "/tin-tuc/:path*",
       "permanent": true
     },
     {
       "source": "/kinh-nghiem/:path*",
-      "destination": "/tin-tuc",
+      "destination": "/tin-tuc/:path*",
       "permanent": true
     },
     {
