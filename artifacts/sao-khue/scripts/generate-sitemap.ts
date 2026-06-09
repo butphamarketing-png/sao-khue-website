@@ -9,7 +9,7 @@ import { getPostPublicPath } from "../src/lib/post-url.ts";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const outDir = join(scriptDir, "..", "dist", "public");
-const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://kientrucsaokhue.com").replace(
+const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://www.kientrucsaokhue.com").replace(
   /\/$/,
   "",
 );

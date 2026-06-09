@@ -44,10 +44,18 @@ import type { SeedPost } from "../../../lib/seed-content/src/index.ts";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const distDir = join(scriptDir, "..", "dist", "public");
-const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://kientrucsaokhue.com").replace(
+const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://www.kientrucsaokhue.com").replace(
   /\/$/,
   "",
 );
+
+function resolveAbsoluteImage(url?: string | null): string | undefined {
+  const trimmed = (url ?? "").trim();
+  if (!trimmed) return undefined;
+  if (/^https?:\/\//i.test(trimmed)) return trimmed;
+  return absoluteUrl(SITE_URL, trimmed);
+}
+
 const BRAND = "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ";
 const BRAND_SHORT = "Kiến Trúc Sao Khuê";
 const DEFAULT_OG = `${SITE_URL}/images/hero-1.png`;
@@ -320,7 +328,9 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         "@type": "BlogPosting",
         headline: post.title,
         description,
-        image: post.imageUrl ? [post.imageUrl] : undefined,
+        image: resolveAbsoluteImage(post.imageUrl)
+          ? [resolveAbsoluteImage(post.imageUrl)!]
+          : undefined,
         datePublished: (post.createdAt ?? "2026-01-15").slice(0, 10),
         dateModified: (post.updatedAt ?? post.createdAt ?? "2026-01-15").slice(0, 10),
         inLanguage: "vi-VN",
@@ -339,7 +349,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         description,
         path,
         keywords: post.metaKeywords?.trim(),
-        ogImage: post.imageUrl || DEFAULT_OG,
+        ogImage: resolveAbsoluteImage(post.imageUrl) || DEFAULT_OG,
         ogType: "article",
         publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
         modifiedTime: post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",

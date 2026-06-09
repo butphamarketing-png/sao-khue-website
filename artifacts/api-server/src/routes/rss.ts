@@ -1,10 +1,10 @@
 import { Router, type IRouter } from "express";
 import { db, postsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
-import { seedPosts } from "@workspace/seed-content";
+import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
 
 const SITE_URL =
-  (process.env.SITE_URL ?? "https://kientrucsaokhue.com").replace(/\/$/, "");
+  (process.env.SITE_URL ?? "https://www.kientrucsaokhue.com").replace(/\/$/, "");
 const SITE_NAME = "Kiến Trúc Sao Khuê";
 
 function escapeXml(value: string): string {
@@ -22,6 +22,7 @@ function stripHtml(html: string): string {
 
 type FeedPost = {
   slug: string;
+  category: string;
   title: string;
   excerpt: string;
   content: string;
@@ -36,6 +37,7 @@ router.get("/feed.xml", async (_req, res) => {
     posts = await db
       .select({
         slug: postsTable.slug,
+        category: postsTable.category,
         title: postsTable.title,
         excerpt: postsTable.excerpt,
         content: postsTable.content,
@@ -47,6 +49,7 @@ router.get("/feed.xml", async (_req, res) => {
   } catch {
     posts = seedPosts.slice(0, 30).map((p) => ({
       slug: p.slug,
+      category: p.category,
       title: p.title,
       excerpt: p.excerpt,
       content: p.content,
@@ -56,7 +59,7 @@ router.get("/feed.xml", async (_req, res) => {
 
   const items = posts
     .map((p) => {
-      const link = `${SITE_URL}/bai-viet/${p.slug}`;
+      const link = `${SITE_URL}${getPostPublicPath(p)}`;
       const pubDate =
         p.updatedAt instanceof Date
           ? p.updatedAt.toUTCString()

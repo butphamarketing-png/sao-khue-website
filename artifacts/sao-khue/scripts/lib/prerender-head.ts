@@ -44,7 +44,8 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
     : "index,follow,max-image-preview:large";
   const title = truncateMeta(meta.title, 60);
   const description = truncateMeta(meta.description, 160);
-  const ogImage = meta.ogImage?.trim() || `${siteUrl.replace(/\/$/, "")}/images/hero-1.png`;
+  const rawOg = meta.ogImage?.trim() || "/images/hero-1.png";
+  const ogImage = /^https?:\/\//i.test(rawOg) ? rawOg : absoluteUrl(siteUrl, rawOg);
   const lines: string[] = [
     `<meta name="google-site-verification" content="${escapeHtml(GSC_VERIFICATION_TOKEN)}" />`,
     `<title>${escapeHtml(title)}</title>`,

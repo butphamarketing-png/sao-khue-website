@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://kientrucsaokhue.com/sitemap.xml
+Sitemap: https://www.kientrucsaokhue.com/sitemap.xml

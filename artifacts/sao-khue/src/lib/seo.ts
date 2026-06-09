@@ -4,7 +4,7 @@ import { getMenuChildren, getMenuLeafSlug } from "@/lib/menu-posts";
 import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 import { getPostPublicPath, getPostUrlLeaf } from "@/lib/post-url";
 
-const DEFAULT_SITE_URL = "https://kientrucsaokhue.com";
+const DEFAULT_SITE_URL = "https://www.kientrucsaokhue.com";
 
 export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;

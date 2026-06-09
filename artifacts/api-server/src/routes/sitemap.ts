@@ -4,7 +4,7 @@ import { desc } from "drizzle-orm";
 import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
 
 const SITE_URL =
-  (process.env.SITE_URL ?? "https://kientrucsaokhue.com").replace(/\/$/, "");
+  (process.env.SITE_URL ?? "https://www.kientrucsaokhue.com").replace(/\/$/, "");
 
 type SitemapEntry = {
   loc: string;

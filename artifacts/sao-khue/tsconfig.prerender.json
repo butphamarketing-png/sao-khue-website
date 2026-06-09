@@ -4,7 +4,9 @@
     "scripts/**/*",
     "src/lib/home-content.ts",
     "src/lib/menu.ts",
-    "src/lib/menu-posts.ts"
+    "src/lib/menu-posts.ts",
+    "src/lib/legacy-redirects.ts",
+    "src/lib/post-url.ts"
   ],
   "compilerOptions": {
     "moduleResolution": "bundler",
