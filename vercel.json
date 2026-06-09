@@ -94,7 +94,7 @@
     },
     {
       "source": "/bai-viet/sua-nha-tron-goi-tphcm",
-      "destination": "/dich-vu/sua-chua-nha",
+      "destination": "/dich-vu/sua-nha-tron-goi-tphcm",
       "permanent": true
     },
     {
@@ -164,12 +164,12 @@
     },
     {
       "source": "/bai-viet/xay-nha-tron-goi-binh-duong",
-      "destination": "/dich-vu/xay-nha-tron-goi-binh-duong",
+      "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
     },
     {
       "source": "/bai-viet/xay-nha-tron-goi-dong-nai",
-      "destination": "/dich-vu/xay-nha-tron-goi-dong-nai",
+      "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
     },
     {
@@ -218,8 +218,13 @@
       "permanent": true
     },
     {
-      "source": "/dich-vu/sua-nha-tron-goi-tphcm",
-      "destination": "/dich-vu/sua-chua-nha",
+      "source": "/dich-vu/xay-nha-tron-goi-binh-duong",
+      "destination": "/dich-vu/xay-nha-tron-goi",
+      "permanent": true
+    },
+    {
+      "source": "/dich-vu/xay-nha-tron-goi-dong-nai",
+      "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
     },
     {
@@ -333,11 +338,6 @@
       "permanent": true
     },
     {
-      "source": "/sua-chua-nha-tphcm",
-      "destination": "/dich-vu/sua-chua-nha",
-      "permanent": true
-    },
-    {
       "source": "/sua-chua-nha-tron-goi",
       "destination": "/dich-vu/sua-chua-nha",
       "permanent": true
@@ -349,12 +349,12 @@
     },
     {
       "source": "/sua-nha-tron-goi",
-      "destination": "/dich-vu/sua-chua-nha",
+      "destination": "/dich-vu/sua-nha-tron-goi-tphcm",
       "permanent": true
     },
     {
       "source": "/sua-nha-tron-goi-tphcm",
-      "destination": "/dich-vu/sua-chua-nha",
+      "destination": "/dich-vu/sua-nha-tron-goi-tphcm",
       "permanent": true
     },
     {

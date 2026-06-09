@@ -5,12 +5,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeCategory, seedPosts, getPostPublicPath } from "../../../lib/seed-content/src/index.ts";
-import {
-  KNOWN_POST_SLUGS,
-  LEGACY_SLUG_REDIRECTS,
-  POST_SLUG_ALIASES,
-} from "../src/lib/legacy-redirects.ts";
+import { collectServerRedirects } from "../src/lib/legacy-redirects.ts";
 
 export type VercelRedirect = {
   source: string;
@@ -18,68 +13,8 @@ export type VercelRedirect = {
   permanent: boolean;
 };
 
-function addRedirect(map: Map<string, string>, source: string, destination: string) {
-  const src = source.startsWith("/") ? source : `/${source}`;
-  const dst = destination.startsWith("/") ? destination : `/${destination}`;
-  if (src === dst || src === `${dst}/`) return;
-  if (!map.has(src)) map.set(src, dst);
-}
-
 export function buildGscRedirects(): VercelRedirect[] {
-  const map = new Map<string, string>();
-
-  const staticRoutes: [string, string][] = [
-    ["/gioi-thieu", "/bai-viet/ve-chung-toi"],
-    ["/kinh-nghiem", "/tin-tuc"],
-    ["/kinh-nghiem-xay-dung", "/tin-tuc"],
-    ["/contact", "/lien-he"],
-    ["/about", "/bai-viet/ve-chung-toi"],
-    ["/services", "/dich-vu"],
-    ["/projects", "/cong-trinh"],
-    ["/pricing", "/bao-gia"],
-    ["/du-an", "/cong-trinh"],
-    ["/bai-viet/thiet-ke-biet-thu-thu-duc", "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc"],
-  ];
-  for (const [src, dst] of staticRoutes) addRedirect(map, src, dst);
-
-  addRedirect(map, "/gioi-thieu/:path*", "/bai-viet/ve-chung-toi");
-  addRedirect(map, "/kinh-nghiem/:path*", "/tin-tuc");
-  addRedirect(map, "/kinh-nghiem-xay-dung/:path*", "/tin-tuc");
-
-  for (const [slug, target] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
-    addRedirect(map, `/${slug}`, target);
-  }
-
-  for (const slug of KNOWN_POST_SLUGS) {
-    const post = seedPosts.find((p) => p.slug === slug);
-    if (post) addRedirect(map, `/${slug}`, getPostPublicPath(post));
-  }
-
-  for (const post of seedPosts) {
-    const canonical = getPostPublicPath(post);
-    const cat = normalizeCategory(post.category);
-
-    if (!canonical.startsWith("/bai-viet/")) {
-      addRedirect(map, `/bai-viet/${post.slug}`, canonical);
-    }
-
-    addRedirect(map, `/${post.slug}`, canonical);
-
-    if (cat === "dich-vu" || cat === "cong-trinh") {
-      const leaf = canonical.split("/").pop();
-      if (leaf && leaf !== post.slug) {
-        addRedirect(map, `/${cat}/${post.slug}`, canonical);
-      }
-    }
-  }
-
-  for (const [alias, realSlug] of Object.entries(POST_SLUG_ALIASES)) {
-    const post = seedPosts.find((p) => p.slug === realSlug);
-    if (!post) continue;
-    const canonical = getPostPublicPath(post);
-    addRedirect(map, `/${alias}`, canonical);
-    addRedirect(map, `/bai-viet/${alias}`, canonical);
-  }
+  const map = collectServerRedirects();
 
   const redirects: VercelRedirect[] = [...map.entries()].map(([source, destination]) => ({
     source,

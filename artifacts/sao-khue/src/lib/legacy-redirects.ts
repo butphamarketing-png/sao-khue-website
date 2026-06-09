@@ -1,13 +1,15 @@
-import { getPostPublicPathFromSlug } from "./post-url";
+import { getPostPublicPath, getPostPublicPathFromSlug } from "./post-url";
+import { seedPosts } from "@workspace/seed-content";
+import { normalizeCategory } from "./categories";
 
 /**
  * Old WordPress URLs indexed by Google (root-level slugs, no /bai-viet/ prefix).
  * Maps legacy slug → new canonical path.
  */
 export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
-  // Google / bookmarks — sửa nhà trọn gói
-  "sua-nha-tron-goi-tphcm": "/dich-vu/sua-chua-nha",
-  "sua-nha-tron-goi": "/dich-vu/sua-chua-nha",
+  // Google / bookmarks — sửa nhà trọn gói (bài riêng, không trùng /dich-vu/sua-chua-nha)
+  "sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
+  "sua-nha-tron-goi": "/dich-vu/sua-nha-tron-goi-tphcm",
   "sua-chua-nha-tron-goi": "/dich-vu/sua-chua-nha",
 
   // Xây nhà trọn gói
@@ -47,7 +49,7 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "thi-cong-nha-pho-dong-nai": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
   "lien-he-ngay": "/lien-he",
   "bang-bao-gia": "/bao-gia",
-  "kinh-nghiem-xay-dung": "/kinh-nghiem",
+  "kinh-nghiem-xay-dung": "/tin-tuc",
 };
 
 /** Seed post slugs — old WP often linked posts at /{slug} instead of /bai-viet/{slug}. */
@@ -135,4 +137,74 @@ export function resolveLegacyPath(slug: string): string | null {
   }
 
   return null;
+}
+
+const STATIC_PATH_REDIRECTS: [string, string][] = [
+  ["/gioi-thieu", "/bai-viet/ve-chung-toi"],
+  ["/kinh-nghiem", "/tin-tuc"],
+  ["/kinh-nghiem-xay-dung", "/tin-tuc"],
+  ["/contact", "/lien-he"],
+  ["/about", "/bai-viet/ve-chung-toi"],
+  ["/services", "/dich-vu"],
+  ["/projects", "/cong-trinh"],
+  ["/pricing", "/bao-gia"],
+  ["/du-an", "/cong-trinh"],
+  ["/bai-viet/thiet-ke-biet-thu-thu-duc", "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc"],
+];
+
+/** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
+export function collectServerRedirects(): Map<string, string> {
+  const map = new Map<string, string>();
+
+  const add = (source: string, destination: string) => {
+    const src = source.startsWith("/") ? source : `/${source}`;
+    const dst = destination.startsWith("/") ? destination : `/${destination}`;
+    if (src === dst) return;
+    if (map.has(src) && map.get(src) !== dst) {
+      console.warn(`[redirects] conflict: ${src} → ${map.get(src)} vs ${dst} (giữ bản đầu)`);
+      return;
+    }
+    map.set(src, dst);
+  };
+
+  for (const [src, dst] of STATIC_PATH_REDIRECTS) add(src, dst);
+  add("/gioi-thieu/:path*", "/bai-viet/ve-chung-toi");
+  add("/kinh-nghiem/:path*", "/tin-tuc");
+  add("/kinh-nghiem-xay-dung/:path*", "/tin-tuc");
+
+  for (const [slug, target] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
+    add(`/${slug}`, target);
+  }
+
+  for (const [alias, realSlug] of Object.entries(POST_SLUG_ALIASES)) {
+    const canonical = getPostPublicPathFromSlug(realSlug);
+    add(`/${alias}`, canonical);
+    add(`/bai-viet/${alias}`, canonical);
+  }
+
+  for (const post of seedPosts) {
+    const canonical = getPostPublicPath(post);
+    const cat = normalizeCategory(post.category);
+
+    if (!canonical.startsWith("/bai-viet/")) {
+      add(`/bai-viet/${post.slug}`, canonical);
+    }
+
+    if (cat === "dich-vu" || cat === "cong-trinh") {
+      const leaf = canonical.split("/").pop();
+      if (leaf && leaf !== post.slug) {
+        add(`/${cat}/${post.slug}`, canonical);
+      }
+      // WP root URL — chỉ tin tức / công trình; dịch vụ đã có trong LEGACY_SLUG_REDIRECTS
+      if (cat === "cong-trinh") {
+        add(`/${post.slug}`, canonical);
+      }
+    }
+
+    if (cat === "tin-tuc") {
+      add(`/${post.slug}`, canonical);
+    }
+  }
+
+  return map;
 }

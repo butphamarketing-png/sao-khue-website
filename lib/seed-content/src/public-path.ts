@@ -3,7 +3,7 @@ import { normalizeCategory } from "./categories";
 /** Slug bài → segment URL ngắn (khớp artifacts/sao-khue post-url). */
 const POST_URL_LEAF_OVERRIDES: Record<string, string> = {
   "xay-nha-tron-goi-tphcm": "xay-nha-tron-goi",
-  "sua-nha-tron-goi-tphcm": "sua-chua-nha",
+  /** Menu «Sửa chữa nhà» — slug riêng, không gộp với sua-nha-tron-goi-tphcm */
   "sua-chua-nha-tphcm": "sua-chua-nha",
   "khuyen-mai-xay-dung": "khuyen-mai",
 };
