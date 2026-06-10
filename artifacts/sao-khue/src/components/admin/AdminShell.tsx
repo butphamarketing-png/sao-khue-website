@@ -33,33 +33,9 @@ import {
 import { BrandLogo } from "@/components/BrandLogo";
 import { SidebarButton, SidebarGroupBlock } from "./admin-ui";
 
-export type AdminView =
-  | "dashboard"
-  | "posts"
-  | "settings-general"
-  | "settings-mobile-bar"
-  | "settings-google"
-  | "settings-hero"
-  | "settings-about"
-  | "settings-commitments"
-  | "settings-pricing"
-  | "settings-calculator"
-  | "settings-stats"
-  | "settings-testimonials"
-  | "settings-faq"
-  | "settings-process"
-  | "settings-video"
-  | "settings-categories"
-  | "settings-sections"
-  | "settings-quote"
-  | "settings-contact"
-  | "settings-menu"
-  | "settings-banners"
-  | "settings-featured"
-  | "settings-seo"
-  | "contact-inbox";
+import type { AdminView, SidebarGroup } from "./admin-views";
 
-type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
+export type { AdminView, SidebarGroup } from "./admin-views";
 
 type Props = {
   userLabel: string;

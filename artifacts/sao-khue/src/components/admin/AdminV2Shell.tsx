@@ -3,6 +3,7 @@ import {
   BarChart3,
   Bell,
   BookOpen,
+  Briefcase,
   Building2,
   Calculator,
   ChevronDown,
@@ -13,6 +14,7 @@ import {
   HelpCircle,
   ImagePlus,
   Inbox,
+  Layers3,
   LayoutDashboard,
   LayoutGrid,
   ListOrdered,
@@ -21,6 +23,7 @@ import {
   Menu,
   MessageSquareQuote,
   Navigation,
+  Newspaper,
   PanelTop,
   PlayCircle,
   SearchCheck,
@@ -29,12 +32,14 @@ import {
   Smartphone,
   Star,
   Type,
-  X,
 } from "lucide-react";
 import { BrandLogo } from "@/components/BrandLogo";
-import type { AdminView } from "./AdminShell";
-
-type SidebarGroup = "dashboard" | "posts" | "homepage" | "settings" | "tools";
+import {
+  POST_CATEGORY_NAV,
+  type AdminView,
+  type PostCategoryFilter,
+  type SidebarGroup,
+} from "./admin-views";
 
 type MenuItem = {
   view: AdminView;
@@ -77,6 +82,14 @@ const VIEW_LABELS: Record<AdminView, string> = {
   "contact-inbox": "Hộp thư liên hệ",
 };
 
+const POST_CATEGORY_ICONS: Record<PostCategoryFilter, ComponentType<{ style?: React.CSSProperties }>> = {
+  all: FileText,
+  "tin-tuc": Newspaper,
+  "dich-vu": Briefcase,
+  "cong-trinh": Layers3,
+  "gioi-thieu": Building2,
+};
+
 type Props = {
   userLabel: string;
   view: AdminView;
@@ -85,6 +98,10 @@ type Props = {
   toggleGroup: (group: SidebarGroup) => void;
   logout: () => void;
   inboxUnreadCount?: number;
+  /** Lọc bài viết theo danh mục — cùng dữ liệu Supabase admin cũ. */
+  postsCategoryFilter?: string;
+  postCounts?: Partial<Record<PostCategoryFilter, number>>;
+  onOpenPosts?: (category: PostCategoryFilter) => void;
   children: ReactNode;
 };
 
@@ -99,7 +116,6 @@ function buildMenuGroups(inboxUnreadCount: number): MenuGroup[] {
       key: "posts",
       label: "NỘI DUNG",
       items: [
-        { view: "posts", icon: FileText, label: "Quản lý bài viết" },
         {
           view: "contact-inbox",
           icon: Inbox,
@@ -156,11 +172,18 @@ export function AdminV2Shell({
   toggleGroup,
   logout,
   inboxUnreadCount = 0,
+  postsCategoryFilter = "all",
+  postCounts = {},
+  onOpenPosts,
   children,
 }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuGroups = useMemo(() => buildMenuGroups(inboxUnreadCount), [inboxUnreadCount]);
-  const pageTitle = VIEW_LABELS[view] ?? "Quản trị";
+  const pageTitle =
+    view === "posts" && postsCategoryFilter !== "all"
+      ? (POST_CATEGORY_NAV.find((c) => c.category === postsCategoryFilter)?.label ??
+        VIEW_LABELS.posts)
+      : (VIEW_LABELS[view] ?? "Quản trị");
   const userInitial = ((userLabel ?? "Admin").trim()[0] ?? "A").toUpperCase();
 
   const sidebar = (
@@ -174,6 +197,9 @@ export function AdminV2Shell({
       userLabel={userLabel}
       userInitial={userInitial}
       logout={logout}
+      postsCategoryFilter={postsCategoryFilter}
+      postCounts={postCounts}
+      onOpenPosts={onOpenPosts}
     />
   );
 
@@ -267,6 +293,9 @@ function SidebarNav({
   userLabel,
   userInitial,
   logout,
+  postsCategoryFilter,
+  postCounts,
+  onOpenPosts,
 }: {
   menuGroups: MenuGroup[];
   view: AdminView;
@@ -277,6 +306,9 @@ function SidebarNav({
   userLabel: string;
   userInitial: string;
   logout: () => void;
+  postsCategoryFilter: string;
+  postCounts: Partial<Record<PostCategoryFilter, number>>;
+  onOpenPosts?: (category: PostCategoryFilter) => void;
 }) {
   return (
     <div
@@ -309,7 +341,9 @@ function SidebarNav({
       <nav className="relative z-10 flex-1 space-y-3 px-2.5 py-4">
         {menuGroups.map((group) => {
           const isOpen = expandedGroup[group.key];
-          const hasActive = group.items.some((item) => item.view === view);
+          const hasActive =
+            group.items.some((item) => item.view === view) ||
+            (group.key === "posts" && view === "posts");
 
           return (
             <div key={group.key}>
@@ -337,6 +371,61 @@ function SidebarNav({
 
               {isOpen && (
                 <div className="space-y-0.5">
+                  {group.key === "posts" &&
+                    onOpenPosts &&
+                    POST_CATEGORY_NAV.map(({ category, label }) => {
+                      const Icon = POST_CATEGORY_ICONS[category];
+                      const isActive = view === "posts" && postsCategoryFilter === category;
+                      const count = postCounts[category];
+                      return (
+                        <button
+                          key={category}
+                          type="button"
+                          onClick={() => {
+                            onOpenPosts(category);
+                            onNavigate();
+                          }}
+                          className="flex w-full items-center gap-2.5 rounded-xl py-2.5 text-left transition-all"
+                          style={{
+                            paddingLeft: "10px",
+                            paddingRight: "8px",
+                            background: isActive ? "rgba(255,255,255,0.12)" : "transparent",
+                            color: isActive ? "white" : "rgba(255,255,255,0.55)",
+                            fontWeight: isActive ? 600 : 500,
+                            borderLeft: isActive ? "2px solid #a78bfa" : "2px solid transparent",
+                          }}
+                        >
+                          <Icon
+                            style={{
+                              width: "0.85rem",
+                              height: "0.85rem",
+                              flexShrink: 0,
+                              color: isActive ? "#c4b5fd" : "rgba(255,255,255,0.35)",
+                            }}
+                          />
+                          <span className="flex-1 text-[12px] leading-tight">{label}</span>
+                          {typeof count === "number" ? (
+                            <span
+                              className="rounded-full px-1.5 py-0.5 text-[10px] font-bold"
+                              style={{
+                                background: isActive ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.08)",
+                                color: isActive ? "white" : "rgba(255,255,255,0.45)",
+                              }}
+                            >
+                              {count}
+                            </span>
+                          ) : (
+                            <ChevronRight
+                              style={{
+                                width: "0.7rem",
+                                height: "0.7rem",
+                                opacity: isActive ? 0.5 : 0.15,
+                              }}
+                            />
+                          )}
+                        </button>
+                      );
+                    })}
                   {group.items.map((item) => {
                     const isActive = view === item.view;
                     return (

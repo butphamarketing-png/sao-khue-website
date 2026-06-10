@@ -31,7 +31,7 @@ import {
   NavMenuEditor,
   PageBannersEditor,
 } from "@/components/admin/AdminExtendedEditors";
-import type { AdminView } from "@/components/admin/AdminShell";
+import type { AdminView, PostCategoryFilter } from "@/components/admin/admin-views";
 import {
   CategoryPagesPreviewCard,
   CtaBannerPreviewCard,
@@ -795,6 +795,19 @@ export default function Admin() {
     return () => window.removeEventListener("keydown", onKey);
   }, [showEditor]);
 
+  const postCounts = useMemo(
+    (): Partial<Record<PostCategoryFilter, number>> => ({
+      all: items.length,
+      "tin-tuc": items.filter(
+        (post) => post.category === "tin-tuc" || post.category === "kinh-nghiem",
+      ).length,
+      "dich-vu": items.filter((post) => post.category === "dich-vu").length,
+      "cong-trinh": items.filter((post) => post.category === "cong-trinh").length,
+      "gioi-thieu": items.filter((post) => post.category === "gioi-thieu").length,
+    }),
+    [items],
+  );
+
   const dashboardStats = useMemo(
     () => [
       {
@@ -857,6 +870,14 @@ export default function Admin() {
 
   function toggleGroup(group: SidebarGroup) {
     setExpandedGroup((prev) => ({ ...prev, [group]: !prev[group] }));
+  }
+
+  function openPostsView(category: PostCategoryFilter = "all") {
+    setView("posts");
+    setPostCategoryFilter(category);
+    setPostSubCategoryFilter("all");
+    setShowEditor(false);
+    setEditing(null);
   }
 
   function resolvePresetFromFilters(): { category: string; leaf: string } {
@@ -1293,7 +1314,7 @@ export default function Admin() {
                     icon={Newspaper}
                     title="Quản lý bài viết"
                     desc="Lọc theo danh mục và mục con, sửa bài viết, SEO và slug."
-                    onClick={() => setView("posts")}
+                    onClick={() => openPostsView("all")}
                   />
                   <DashboardLinkCard
                     color="bg-[#16a34a]"
@@ -3298,6 +3319,9 @@ export default function Admin() {
       toggleGroup={toggleGroup}
       logout={logout}
       inboxUnreadCount={inboxUnread}
+      postsCategoryFilter={postCategoryFilter}
+      postCounts={postCounts}
+      onOpenPosts={openPostsView}
     >
       {renderContent()}
     </AdminV2Shell>
