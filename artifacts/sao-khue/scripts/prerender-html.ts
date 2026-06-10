@@ -196,6 +196,16 @@ function buildStaticPages(): PrerenderPage[] {
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · Email: kientrucsaokhue@gmail.com</p>
       `),
     },
+    {
+      path: "/admin",
+      meta: {
+        title: "Quản trị website",
+        description: "Khu vực quản trị nội bộ.",
+        path: "/admin",
+        noindex: true,
+      },
+      bodyHtml: shell(`<p>Khu vực quản trị nội bộ — đăng nhập để tiếp tục.</p>`),
+    },
   ];
 
   for (const [path, key] of Object.entries(CATEGORY_PATHS)) {

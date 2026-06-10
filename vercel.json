@@ -343,6 +343,11 @@
       "permanent": true
     },
     {
+      "source": "/dich-vu/thiet-ke-nha-pho-hien-dai-tphcm",
+      "destination": "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm",
+      "permanent": true
+    },
+    {
       "source": "/dich-vu/xay-nha-tron-goi-tphcm",
       "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true

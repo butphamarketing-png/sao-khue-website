@@ -149,6 +149,7 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/pricing", "/bao-gia"],
   ["/du-an", "/cong-trinh"],
   ["/bai-viet/thiet-ke-biet-thu-thu-duc", "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc"],
+  ["/dich-vu/thiet-ke-nha-pho-hien-dai-tphcm", "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
