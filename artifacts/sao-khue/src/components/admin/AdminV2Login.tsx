@@ -1,13 +1,21 @@
 import { useState, type FormEvent } from "react";
 import {
   ArrowRight,
+  BarChart3,
   CheckCircle,
   Eye,
   EyeOff,
+  FileText,
   Globe,
+  ImagePlus,
+  Inbox,
+  Layers3,
   Lock,
   Mail,
+  MessageCircle,
   Phone,
+  Search,
+  Settings2,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
@@ -33,6 +41,24 @@ const features = [
   "Quản lý bài viết & trang chủ",
   "Cập nhật SEO & hình ảnh",
   "Bảo mật dữ liệu tuyệt đối",
+];
+
+const contacts = [
+  { icon: Phone, label: "Hotline", value: "0909 075 668" },
+  { icon: Globe, label: "Website", value: "kientrucsaokhue.com" },
+  { icon: Mail, label: "Email", value: "kientrucsaokhue@gmail.com" },
+  { icon: MessageCircle, label: "Zalo", value: "0909 075 668" },
+];
+
+const cmsServices = [
+  { icon: FileText, title: "Quản lý bài viết", desc: "Tin tức, dịch vụ, công trình — SEO Rank Math." },
+  { icon: ImagePlus, title: "Trang chủ & Hero", desc: "Slideshow, cam kết, báo giá, FAQ." },
+  { icon: Layers3, title: "Công trình", desc: "Cập nhật hình ảnh và mô tả dự án." },
+  { icon: Search, title: "SEO tổng quan", desc: "Meta, từ khóa, sitemap, Google Search Console." },
+  { icon: BarChart3, title: "Bảng báo giá", desc: "Đơn giá phần thô, trọn gói, tính chi phí." },
+  { icon: Globe, title: "Google & Maps", desc: "Analytics, Search Console, bản đồ nhúng." },
+  { icon: Inbox, title: "Hộp thư liên hệ", desc: "Yêu cầu báo giá từ form website." },
+  { icon: Settings2, title: "Cài đặt hệ thống", desc: "Logo, hotline, menu, mạng xã hội." },
 ];
 
 export function AdminV2Login({
@@ -187,7 +213,7 @@ export function AdminV2Login({
       </div>
 
       <div
-        className="relative hidden flex-1 flex-col overflow-hidden text-white lg:flex"
+        className="relative hidden min-h-screen flex-1 flex-col overflow-hidden text-white lg:flex"
         style={{
           background:
             "linear-gradient(160deg, #0f0720 0%, #1a0a3d 20%, #2d0a6b 45%, #1e1b4b 75%, #0d1230 100%)",
@@ -197,12 +223,16 @@ export function AdminV2Login({
           className="pointer-events-none absolute -right-20 -top-20 h-[480px] w-[480px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(124,58,237,0.25) 0%, transparent 65%)" }}
         />
-        <div className="relative z-10 flex h-full flex-col justify-between px-12 py-10">
-          <div>
-            <div className="mb-6 space-y-1">
-              <div className="text-4xl font-black leading-tight tracking-tight">Quản Lý</div>
+        <div
+          className="pointer-events-none absolute -bottom-16 -left-10 h-[360px] w-[360px] rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(79,70,229,0.18) 0%, transparent 65%)" }}
+        />
+        <div className="relative z-10 flex h-full min-h-0 flex-col overflow-y-auto px-8 py-10 xl:px-12">
+          <div className="mb-8">
+            <div className="mb-4 space-y-1">
+              <div className="text-3xl font-black leading-tight tracking-tight xl:text-4xl">Quản Lý</div>
               <div
-                className="text-4xl font-black leading-tight tracking-tight"
+                className="text-3xl font-black leading-tight tracking-tight xl:text-4xl"
                 style={{
                   background: "linear-gradient(90deg, #c4b5fd 0%, #a78bfa 50%, #818cf8 100%)",
                   WebkitBackgroundClip: "text",
@@ -213,32 +243,88 @@ export function AdminV2Login({
                 Toàn Bộ Website
               </div>
             </div>
-            <p className="max-w-sm text-sm leading-relaxed text-white/50">
+            <p className="max-w-md text-sm leading-relaxed text-white/50">
               Thiết kế, xây dựng, tin tức, báo giá, SEO và cài đặt Google — tất cả trong một bảng điều khiển.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              { icon: Phone, label: "Hotline", value: "0909 075 668" },
-              { icon: Globe, label: "Website", value: "kientrucsaokhue.com" },
-              { icon: Mail, label: "Email", value: "kientrucsaokhue@gmail.com" },
-            ].map(({ icon: Icon, label, value }) => (
+          <div className="mb-6 grid grid-cols-2 gap-3 xl:grid-cols-4">
+            {contacts.map(({ icon: Icon, label, value }) => (
               <div
                 key={label}
                 className="flex items-center gap-2.5 rounded-xl px-3 py-2.5"
                 style={{
                   background: "rgba(255,255,255,0.05)",
                   border: "1px solid rgba(255,255,255,0.09)",
+                  backdropFilter: "blur(8px)",
                 }}
               >
-                <Icon className="h-4 w-4 shrink-0 text-violet-300" />
-                <div>
-                  <div className="text-[10px] text-white/40">{label}</div>
-                  <div className="text-xs font-semibold text-white/80">{value}</div>
+                <div
+                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
+                  style={{
+                    background: "rgba(124,58,237,0.35)",
+                    border: "1px solid rgba(167,139,250,0.25)",
+                  }}
+                >
+                  <Icon className="h-3.5 w-3.5 text-violet-300" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-[9px] font-medium uppercase tracking-wide text-white/40">{label}</div>
+                  <div className="truncate text-xs font-bold text-white">{value}</div>
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mb-4 flex items-center gap-3">
+            <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
+              Chức năng CMS
+            </div>
+            <div className="h-px flex-1 bg-white/10" />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-4">
+            {cmsServices.map(({ icon: Icon, title, desc }) => (
+              <div
+                key={title}
+                className="flex flex-col rounded-2xl p-4"
+                style={{
+                  background: "rgba(255,255,255,0.04)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  backdropFilter: "blur(10px)",
+                }}
+              >
+                <div
+                  className="mb-3 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(124,58,237,0.4), rgba(99,102,241,0.25))",
+                    border: "1px solid rgba(167,139,250,0.25)",
+                    boxShadow: "0 2px 8px rgba(124,58,237,0.2)",
+                  }}
+                >
+                  <Icon className="h-4 w-4 text-violet-300" />
+                </div>
+                <div className="mb-1 text-sm font-bold leading-snug text-white">{title}</div>
+                <div className="text-[11px] leading-relaxed text-white/40">{desc}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5">
+            <div className="flex items-center gap-2">
+              <ShieldCheck className="h-3.5 w-3.5 text-violet-400" />
+              <span className="text-[11px] font-medium text-white/35">Kiến Trúc Sao Khuê CMS</span>
+            </div>
+            <div
+              className="rounded-lg px-2.5 py-1 text-[10px] font-bold"
+              style={{
+                background: "rgba(124,58,237,0.3)",
+                color: "#c4b5fd",
+                border: "1px solid rgba(167,139,250,0.2)",
+              }}
+            >
+              Phiên bản v2
+            </div>
           </div>
         </div>
       </div>
