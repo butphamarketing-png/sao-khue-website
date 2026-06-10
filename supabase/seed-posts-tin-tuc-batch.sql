@@ -1,14 +1,19 @@
 -- Seed 21 bài tin tức (lịch #8–#30)
 -- Chạy sau add-posts-image-alt.sql và add-posts-image-caption.sql
+-- Schema posts KHÔNG có cột published
+
+BEGIN;
 
 -- Công Ty Xây Dựng Nhà Uy Tín Tại Long An
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'xay-dung-nha-long-an',
-  'Công Ty Xây Dựng Nhà Uy Tín Tại Long An',
-  'tin-tuc',
-  'Tìm công ty xây dựng nhà Long An chuyên nghiệp? Sao Khuê thi công nhà phố, nhà ống, nhà trọn gói — bảo hành 10 năm, báo giá minh bạch.',
-  '<h2>Xây dựng nhà Long An — Lựa chọn đơn vị uy tín từ đầu</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-dung-nha-long-an$slug$,
+  $title$Công Ty Xây Dựng Nhà Uy Tín Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Tìm công ty xây dựng nhà Long An chuyên nghiệp? Sao Khuê thi công nhà phố, nhà ống, nhà trọn gói — bảo hành 10 năm, báo giá minh bạch.$excerpt$,
+  $content$<h2>Xây dựng nhà Long An — Lựa chọn đơn vị uy tín từ đầu</h2>
 <p><strong>Xây dựng nhà Long An</strong> đang trở thành xu hướng mạnh khi nhiều gia đình chuyển về các huyện Bến Lức, Cần Đước, Đức Hòa, Tân An định cư sau giai đoạn tích lũy. Nhu cầu <strong>thi công nhà phố Long An</strong> tăng cao, kéo theo đó là hàng loạt nhà thầu thiếu kinh nghiệm, báo giá thấp nhưng thi công sơ sài, gây thiệt hại lớn cho chủ nhà.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM — đã triển khai nhiều công trình tại Long An và các tỉnh giáp ranh TP.HCM. Chúng tôi cung cấp dịch vụ <strong>xây nhà trọn gói Long An</strong> đầy đủ từ thiết kế, thi công đến bàn giao, với <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
@@ -103,23 +108,22 @@ VALUES (
 <h3>Thi công nhà phố Long An mất bao lâu?</h3>
 <p>Nhà phố 1 trệt 2 lầu thông thường mất 4–6 tháng (tính từ khởi công đến hoàn thiện). Thời gian có thể rút ngắn nếu thiết kế hoàn chỉnh trước khi khởi công và thời tiết thuận lợi.</p>
 <h3>Có thể chỉ thuê thi công phần thô không, phần hoàn thiện tự làm?</h3>
-<p>Được. Sao Khuê nhận thi công phần thô riêng theo yêu cầu. Xem chi tiết đơn giá tại trang <a href=''/bao-gia''>/bao-gia</a>. Chủ nhà hoàn toàn có thể tự lo phần hoàn thiện hoặc thuê đơn vị khác.</p>
+<p>Được. Sao Khuê nhận thi công phần thô riêng theo yêu cầu. Xem chi tiết đơn giá tại trang <a href='/bao-gia'>/bao-gia</a>. Chủ nhà hoàn toàn có thể tự lo phần hoàn thiện hoặc thuê đơn vị khác.</p>
 <h3>Bảo hành kết cấu 10 năm bao gồm những hạng mục nào?</h3>
 <p>Bảo hành kết cấu 10 năm bao gồm: nứt, lún, sụt kết cấu bê tông cốt thép do lỗi thi công của Sao Khuê. Không bao gồm hư hỏng do thiên tai, tác động bên ngoài hoặc cải tạo tự ý của chủ nhà.</p>
 <h3>Làm sao nhận báo giá xây nhà Long An nhanh nhất?</h3>
-<p>Gọi hotline <strong>0909 075 668</strong>, email kientrucsaokhue@gmail.com hoặc điền form tại <a href=''/lien-he''>/lien-he</a>. Sao Khuê phản hồi và đặt lịch khảo sát trong vòng 24 giờ làm việc.</p>
+<p>Gọi hotline <strong>0909 075 668</strong>, email kientrucsaokhue@gmail.com hoặc điền form tại <a href='/lien-he'>/lien-he</a>. Sao Khuê phản hồi và đặt lịch khảo sát trong vòng 24 giờ làm việc.</p>
 
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="xay-dung-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-long-an-3</figcaption>
-</figure>',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200',
-  'xây dựng nhà Long An',
-  'xây dựng nhà Long An',
-  'Xây Dựng Nhà Long An Uy Tín | Trọn Gói | Sao Khuê',
-  'Dịch vụ xây dựng nhà Long An: nhà phố, nhà ống, thi công trọn gói. Bảo hành 10 năm kết cấu, báo giá minh bạch. Gọi ngay 0909 075 668.',
-  'xây dựng nhà Long An, xây nhà trọn gói Long An, thi công nhà phố Long An, báo giá xây nhà Long An, công ty xây dựng Long An',
-  true,
+</figure>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$xây dựng nhà Long An$alt$,
+  $cap$xây dựng nhà Long An$cap$,
+  $mtitle$Xây Dựng Nhà Long An Uy Tín | Trọn Gói | Sao Khuê$mtitle$,
+  $mdesc$Dịch vụ xây dựng nhà Long An: nhà phố, nhà ống, thi công trọn gói. Bảo hành 10 năm kết cấu, báo giá minh bạch. Gọi ngay 0909 075 668.$mdesc$,
+  $mkey$xây dựng nhà Long An, xây nhà trọn gói Long An, thi công nhà phố Long An, báo giá xây nhà Long An, công ty xây dựng Long An$mkey$,
   NOW(),
   NOW()
 )
@@ -135,15 +139,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'bao-gia-xay-nha-phan-tho-long-an',
-  'Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất',
-  'tin-tuc',
-  'Báo giá xây nhà phần thô Long An chi tiết theo m² sàn: móng, khung cột, tường gạch, mái — minh bạch từng hạng mục. Tư vấn miễn phí 0909 075 668.',
-  '<h2>Báo giá xây nhà phần thô Long An — Hiểu đúng để không bị hớ</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-phan-tho-long-an$slug$,
+  $title$Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Báo giá xây nhà phần thô Long An chi tiết theo m² sàn: móng, khung cột, tường gạch, mái — minh bạch từng hạng mục. Tư vấn miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà phần thô Long An — Hiểu đúng để không bị hớ</h2>
 <p><strong>Báo giá xây nhà phần thô Long An</strong> là mối quan tâm hàng đầu của chủ nhà trước khi khởi công. Phần thô chiếm 55–65% tổng chi phí xây dựng, quyết định độ bền và an toàn của toàn bộ công trình. Vì vậy, chọn nhà thầu dựa trên đơn giá rẻ nhất mà không kiểm tra chất lượng vật liệu, năng lực thi công là sai lầm phổ biến nhất.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp <strong>báo giá xây nhà phần thô Long An</strong> minh bạch theo từng hạng mục, cam kết đúng đơn giá đã ký không phát sinh tùy tiện. Hotline tư vấn miễn phí: <strong>0909 075 668</strong>.</p>
 
@@ -314,14 +319,13 @@ VALUES (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phan-tho-long-an-3</figcaption>
-</figure>',
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200',
-  'báo giá xây nhà phần thô Long An',
-  'báo giá xây nhà phần thô Long An',
-  'Báo Giá Xây Nhà Phần Thô Long An 2026 | Chi Tiết | Sao Khuê',
-  'Đơn giá xây nhà phần thô Long An 2026: móng, khung bê tông, tường gạch, sàn. Bảng giá minh bạch theo m² sàn. Sao Khuê — 0909 075 668.',
-  'báo giá xây nhà phần thô Long An, xây phần thô Long An, đơn giá phần thô, chi phí phần thô nhà phố, nhà phố Long An giá rẻ',
-  true,
+</figure>$content$,
+  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$báo giá xây nhà phần thô Long An$alt$,
+  $cap$báo giá xây nhà phần thô Long An$cap$,
+  $mtitle$Báo Giá Xây Nhà Phần Thô Long An 2026 | Chi Tiết | Sao Khuê$mtitle$,
+  $mdesc$Đơn giá xây nhà phần thô Long An 2026: móng, khung bê tông, tường gạch, sàn. Bảng giá minh bạch theo m² sàn. Sao Khuê — 0909 075 668.$mdesc$,
+  $mkey$báo giá xây nhà phần thô Long An, xây phần thô Long An, đơn giá phần thô, chi phí phần thô nhà phố, nhà phố Long An giá rẻ$mkey$,
   NOW(),
   NOW()
 )
@@ -337,15 +341,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'mau-nha-ong-dep-long-an',
-  'Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An',
-  'tin-tuc',
-  'Khám phá các mẫu nhà ống đẹp Long An: tối ưu lô hẹp, thông thoáng, hiện đại. Sao Khuê thiết kế và thi công trọn gói — 0909 075 668.',
-  '<h2>Mẫu nhà ống đẹp Long An — Giải pháp cho lô đất hẹp</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$mau-nha-ong-dep-long-an$slug$,
+  $title$Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Khám phá các mẫu nhà ống đẹp Long An: tối ưu lô hẹp, thông thoáng, hiện đại. Sao Khuê thiết kế và thi công trọn gói — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà ống đẹp Long An — Giải pháp cho lô đất hẹp</h2>
 <p><strong>Mẫu nhà ống đẹp Long An</strong> đang được nhiều gia đình trẻ quan tâm khi sở hữu lô đất mặt tiền 4–5 m tại các khu dân cư Bến Lức, Đức Hòa, Cần Giuộc. Với quỹ đất ngày càng hạn hẹp tại các thị trấn, nhà ống — hay còn gọi là nhà phố dạng ống — trở thành lựa chọn tối ưu nhất về chi phí lẫn công năng.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> đã triển khai nhiều <strong>thiết kế nhà ống Long An</strong> từ 2 đến 4 tầng, đáp ứng đa dạng nhu cầu: ở riêng, kết hợp kinh doanh, hay đón thêm ông bà về ở cùng. Hotline tư vấn: <strong>0909 075 668</strong>.</p>
 
@@ -440,14 +445,13 @@ VALUES (
 <h3>Có mẫu nhà ống sẵn để tham khảo không?</h3>
 <p>Có. Sao Khuê có portfolio các công trình đã thi công, cả ảnh thực tế và ảnh phối cảnh 3D. Liên hệ <strong>0909 075 668</strong> hoặc email kientrucsaokhue@gmail.com để nhận bộ mẫu tham khảo phù hợp ngân sách.</p>
 <h3>Xây nhà ống trọn gói tại Long An có ưu đãi thiết kế không?</h3>
-<p>Khi ký hợp đồng thi công trọn gói với Sao Khuê, chi phí thiết kế thường được miễn giảm theo chính sách từng thời điểm. Gọi <strong>0909 075 668</strong> để được tư vấn và nhận báo giá tổng thể.</p>',
-  '/images/project_2.jpg',
-  'mẫu nhà ống đẹp Long An',
-  'mẫu nhà ống đẹp Long An',
-  'Mẫu Nhà Ống Đẹp Long An 2026 | Hiện Đại | Sao Khuê',
-  'Tổng hợp mẫu nhà ống đẹp Long An phù hợp gia đình trẻ: lô hẹp 4–5m, 2–3 tầng, công năng tối ưu. Thiết kế & thi công trọn gói — 0909 075 668.',
-  'mẫu nhà ống đẹp Long An, thiết kế nhà ống Long An, nhà phố hẹp Long An, công năng nhà ống, mẫu nhà ống 2 tầng Long An',
-  true,
+<p>Khi ký hợp đồng thi công trọn gói với Sao Khuê, chi phí thiết kế thường được miễn giảm theo chính sách từng thời điểm. Gọi <strong>0909 075 668</strong> để được tư vấn và nhận báo giá tổng thể.</p>$content$,
+  $img$/images/project_2.jpg$img$,
+  $alt$mẫu nhà ống đẹp Long An$alt$,
+  $cap$mẫu nhà ống đẹp Long An$cap$,
+  $mtitle$Mẫu Nhà Ống Đẹp Long An 2026 | Hiện Đại | Sao Khuê$mtitle$,
+  $mdesc$Tổng hợp mẫu nhà ống đẹp Long An phù hợp gia đình trẻ: lô hẹp 4–5m, 2–3 tầng, công năng tối ưu. Thiết kế & thi công trọn gói — 0909 075 668.$mdesc$,
+  $mkey$mẫu nhà ống đẹp Long An, thiết kế nhà ống Long An, nhà phố hẹp Long An, công năng nhà ống, mẫu nhà ống 2 tầng Long An$mkey$,
   NOW(),
   NOW()
 )
@@ -463,15 +467,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thiet-ke-nha-pho-dak-lak',
-  'Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk',
-  'tin-tuc',
-  'Thiết kế nhà phố Đắk Lắk chuyên nghiệp: phối cảnh 3D, bản vẽ kỹ thuật, tối ưu công năng cao nguyên. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Thiết kế nhà phố Đắk Lắk — Kiến trúc đúng đặc trưng cao nguyên</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-pho-dak-lak$slug$,
+  $title$Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Thiết kế nhà phố Đắk Lắk chuyên nghiệp: phối cảnh 3D, bản vẽ kỹ thuật, tối ưu công năng cao nguyên. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà phố Đắk Lắk — Kiến trúc đúng đặc trưng cao nguyên</h2>
 <p><strong>Thiết kế nhà phố Đắk Lắk</strong> đòi hỏi hiểu rõ đặc thù địa hình, khí hậu và lối sống người dân Tây Nguyên — điều mà bản vẽ mẫu chung hoặc chép lại từ TP.HCM không đáp ứng được. Đắk Lắk có khí hậu cao nguyên đặc trưng: mùa khô hanh, biên độ nhiệt ngày đêm cao, mùa mưa dài từ tháng 5 đến tháng 11 với lượng mưa lớn.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>thiết kế nhà phố Đắk Lắk</strong> từ xa với quy trình hoàn toàn trực tuyến — từ trao đổi nhu cầu, khảo sát online, đến bàn giao hồ sơ 2D/3D. Hotline tư vấn: <strong>0909 075 668</strong>. Địa chỉ công ty: 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM.</p>
 
@@ -599,14 +604,13 @@ VALUES (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="thiet-ke-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-ak-lak-3</figcaption>
-</figure>',
-  'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200',
-  'thiết kế nhà phố Đắk Lắk',
-  'thiết kế nhà phố Đắk Lắk',
-  'Thiết Kế Nhà Phố Đắk Lắk | Phối Cảnh 3D | Sao Khuê',
-  'Dịch vụ thiết kế nhà phố Đắk Lắk: kiến trúc hiện đại phù hợp khí hậu cao nguyên, hồ sơ 2D/3D đầy đủ. Tư vấn miễn phí — 0909 075 668.',
-  'thiết kế nhà phố Đắk Lắk, kiến trúc nhà phố Buôn Ma Thuột, bản vẽ nhà phố Đắk Lắk, thiết kế 3D Đắk Lắk, thi công nhà phố Đắk Lắk',
-  true,
+</figure>$content$,
+  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thiết kế nhà phố Đắk Lắk$alt$,
+  $cap$thiết kế nhà phố Đắk Lắk$cap$,
+  $mtitle$Thiết Kế Nhà Phố Đắk Lắk | Phối Cảnh 3D | Sao Khuê$mtitle$,
+  $mdesc$Dịch vụ thiết kế nhà phố Đắk Lắk: kiến trúc hiện đại phù hợp khí hậu cao nguyên, hồ sơ 2D/3D đầy đủ. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$thiết kế nhà phố Đắk Lắk, kiến trúc nhà phố Buôn Ma Thuột, bản vẽ nhà phố Đắk Lắk, thiết kế 3D Đắk Lắk, thi công nhà phố Đắk Lắk$mkey$,
   NOW(),
   NOW()
 )
@@ -622,15 +626,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'xay-nha-tron-goi-dak-lak',
-  'Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng',
-  'tin-tuc',
-  'Xây nhà trọn gói Đắk Lắk: thiết kế – thi công – bàn giao một đơn vị, bảo hành kết cấu 10 năm. Sao Khuê — tư vấn miễn phí 0909 075 668.',
-  '<h2>Xây nhà trọn gói Đắk Lắk — Giải pháp toàn diện, một đầu mối</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-dak-lak$slug$,
+  $title$Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Xây nhà trọn gói Đắk Lắk: thiết kế – thi công – bàn giao một đơn vị, bảo hành kết cấu 10 năm. Sao Khuê — tư vấn miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Đắk Lắk — Giải pháp toàn diện, một đầu mối</h2>
 <p><strong>Xây nhà trọn gói Đắk Lắk</strong> là hình thức chủ đầu tư giao toàn bộ dự án — từ thiết kế, cung cấp vật liệu, thi công đến bàn giao hoàn thiện — cho một đơn vị duy nhất. Đây là xu hướng được nhiều gia đình tại Buôn Ma Thuột, Buôn Hồ, Ea Kar và các huyện trong tỉnh Đắk Lắk lựa chọn trong những năm gần đây.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong>, địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM, là đơn vị chuyên nghiệp nhận <strong>thi công trọn gói</strong> tại Đắk Lắk và các tỉnh Tây Nguyên. Chúng tôi cam kết <strong>bảo hành kết cấu 10 năm</strong> và hoàn thiện đúng tiến độ đã thỏa thuận.</p>
 
@@ -758,19 +763,18 @@ VALUES (
 <h3>Chi phí thiết kế có tính vào gói trọn gói không?</h3>
 <p>Khi ký hợp đồng <strong>xây nhà trọn gói Đắk Lắk</strong>, chi phí thiết kế thường được miễn giảm theo chính sách Sao Khuê tại từng thời điểm. Gọi <strong>0909 075 668</strong> để biết ưu đãi hiện hành.</p>
 <h3>Sao Khuê có hỗ trợ xin giấy phép xây dựng tại Đắk Lắk không?</h3>
-<p>Có. Sao Khuê tư vấn và hỗ trợ chuẩn bị hồ sơ xin phép xây dựng theo quy định của tỉnh Đắk Lắk và từng huyện cụ thể. Liên hệ <a href=''/lien-he''>/lien-he</a> để được hướng dẫn chi tiết.</p>
+<p>Có. Sao Khuê tư vấn và hỗ trợ chuẩn bị hồ sơ xin phép xây dựng theo quy định của tỉnh Đắk Lắk và từng huyện cụ thể. Liên hệ <a href='/lien-he'>/lien-he</a> để được hướng dẫn chi tiết.</p>
 
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="xay-nha-tron-goi-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-ak-lak-3</figcaption>
-</figure>',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200',
-  'xây nhà trọn gói Đắk Lắk',
-  'xây nhà trọn gói Đắk Lắk',
-  'Xây Nhà Trọn Gói Đắk Lắk Uy Tín | Bảo Hành 10 Năm | Sao Khuê',
-  'Dịch vụ xây nhà trọn gói Đắk Lắk: thiết kế + thi công + bàn giao, bảo hành kết cấu 10 năm, báo giá minh bạch. Gọi 0909 075 668.',
-  'xây nhà trọn gói Đắk Lắk, nhà thầu Đắk Lắk, thi công trọn gói Đắk Lắk, bảo hành kết cấu, xây nhà Buôn Ma Thuột',
-  true,
+</figure>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$xây nhà trọn gói Đắk Lắk$alt$,
+  $cap$xây nhà trọn gói Đắk Lắk$cap$,
+  $mtitle$Xây Nhà Trọn Gói Đắk Lắk Uy Tín | Bảo Hành 10 Năm | Sao Khuê$mtitle$,
+  $mdesc$Dịch vụ xây nhà trọn gói Đắk Lắk: thiết kế + thi công + bàn giao, bảo hành kết cấu 10 năm, báo giá minh bạch. Gọi 0909 075 668.$mdesc$,
+  $mkey$xây nhà trọn gói Đắk Lắk, nhà thầu Đắk Lắk, thi công trọn gói Đắk Lắk, bảo hành kết cấu, xây nhà Buôn Ma Thuột$mkey$,
   NOW(),
   NOW()
 )
@@ -786,17 +790,18 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'chi-phi-xay-nha-2-tang-dak-lak',
-  'Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?',
-  'tin-tuc',
-  'Chi phí xây nhà 2 tầng Đắk Lắk 2026: bảng dự toán phần thô, hoàn thiện, nội thất. Sao Khuê báo giá minh bạch — khảo sát miễn phí 0909 075 668.',
-  '<h2>Chi phí xây nhà 2 tầng Đắk Lắk — Tổng quan 2026</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-2-tang-dak-lak$slug$,
+  $title$Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Chi phí xây nhà 2 tầng Đắk Lắk 2026: bảng dự toán phần thô, hoàn thiện, nội thất. Sao Khuê báo giá minh bạch — khảo sát miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà 2 tầng Đắk Lắk — Tổng quan 2026</h2>
 <p><strong>Chi phí xây nhà 2 tầng Đắk Lắk</strong> năm 2026 dao động đáng kể tuỳ diện tích đất, tiêu chuẩn hoàn thiện và nhà thầu thi công. Hiểu đúng cấu trúc chi phí giúp chủ nhà lên kế hoạch tài chính chắc chắn, tránh bị "vỡ ngân sách" giữa chừng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — đơn vị có kinh nghiệm thi công tại các tỉnh Tây Nguyên — tổng hợp bài viết này để giúp bạn hiểu rõ <strong>dự toán xây nhà</strong>, từ phần móng đến hoàn thiện nội thất.</p>
-<p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H''leo, Krông Buk, Cư M''gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
+<p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H'leo, Krông Buk, Cư M'gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
 
 <figure class="article-figure article-figure--inline">
 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
@@ -924,14 +929,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200',
-  'chi phí xây nhà 2 tầng Đắk Lắk',
-  'chi phí xây nhà 2 tầng Đắk Lắk',
-  'Chi Phí Xây Nhà 2 Tầng Đắk Lắk 2026 | Báo Giá Chi Tiết | Sao Khuê',
-  'Chi phí xây nhà 2 tầng tại Đắk Lắk: đơn giá phần thô, hoàn thiện, nội thất cơ bản. Dự toán minh bạch, tránh phát sinh. Tư vấn miễn phí 0909 075 668.',
-  'chi phí xây nhà 2 tầng Đắk Lắk, báo giá nhà 2 tầng Đắk Lắk, dự toán xây nhà Đắk Lắk, đơn giá vật liệu xây dựng, xây nhà trọn gói Đắk Lắk',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$chi phí xây nhà 2 tầng Đắk Lắk$alt$,
+  $cap$chi phí xây nhà 2 tầng Đắk Lắk$cap$,
+  $mtitle$Chi Phí Xây Nhà 2 Tầng Đắk Lắk 2026 | Báo Giá Chi Tiết | Sao Khuê$mtitle$,
+  $mdesc$Chi phí xây nhà 2 tầng tại Đắk Lắk: đơn giá phần thô, hoàn thiện, nội thất cơ bản. Dự toán minh bạch, tránh phát sinh. Tư vấn miễn phí 0909 075 668.$mdesc$,
+  $mkey$chi phí xây nhà 2 tầng Đắk Lắk, báo giá nhà 2 tầng Đắk Lắk, dự toán xây nhà Đắk Lắk, đơn giá vật liệu xây dựng, xây nhà trọn gói Đắk Lắk$mkey$,
   NOW(),
   NOW()
 )
@@ -947,15 +951,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Thi Công Nhà Phố Hiện Đại Tại Phú Yên
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thi-cong-nha-pho-phu-yen',
-  'Thi Công Nhà Phố Hiện Đại Tại Phú Yên',
-  'tin-tuc',
-  'Thi công nhà phố Phú Yên chuyên nghiệp: kết cấu bền vững, hoàn thiện đồng bộ, bảo hành 10 năm. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Thi công nhà phố Phú Yên — Tổng quan thị trường xây dựng 2026</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-pho-phu-yen$slug$,
+  $title$Thi Công Nhà Phố Hiện Đại Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Thi công nhà phố Phú Yên chuyên nghiệp: kết cấu bền vững, hoàn thiện đồng bộ, bảo hành 10 năm. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phố Phú Yên — Tổng quan thị trường xây dựng 2026</h2>
 <p><strong>Thi công nhà phố Phú Yên</strong> đang ngày càng được đầu tư bài bản hơn khi kinh tế du lịch và thương mại tại tỉnh phát triển mạnh. Các đô thị như TP. Tuy Hòa, thị xã Sông Cầu, Đông Hòa thu hút nhiều gia đình muốn xây dựng <strong>nhà phố hiện đại</strong> vừa để ở vừa kinh doanh. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> với kinh nghiệm triển khai công trình tại các tỉnh miền Nam Trung Bộ, sẵn sàng đồng hành cùng chủ đầu tư Phú Yên từ bản vẽ thiết kế đến bàn giao hoàn thiện.</p>
 <p>Bài viết này trình bày chi tiết <strong>quy trình thi công nhà phố</strong>, những yêu cầu kỹ thuật đặc thù cho vùng ven biển, bảng giá tham khảo và kinh nghiệm chọn nhà thầu uy tín tại Phú Yên.</p>
 
@@ -1060,14 +1065,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200',
-  'thi công nhà phố Phú Yên',
-  'thi công nhà phố Phú Yên',
-  'Thi Công Nhà Phố Phú Yên | Hiện Đại Uy Tín | Sao Khuê',
-  'Dịch vụ thi công nhà phố tại Phú Yên: phần thô, hoàn thiện, trọn gói. Báo giá minh bạch, bảo hành kết cấu. Tư vấn miễn phí 0909 075 668.',
-  'thi công nhà phố Phú Yên, xây nhà Phú Yên, nhà phố Tuy Hòa, thi công trọn gói Phú Yên, nhà thầu Phú Yên',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thi công nhà phố Phú Yên$alt$,
+  $cap$thi công nhà phố Phú Yên$cap$,
+  $mtitle$Thi Công Nhà Phố Phú Yên | Hiện Đại Uy Tín | Sao Khuê$mtitle$,
+  $mdesc$Dịch vụ thi công nhà phố tại Phú Yên: phần thô, hoàn thiện, trọn gói. Báo giá minh bạch, bảo hành kết cấu. Tư vấn miễn phí 0909 075 668.$mdesc$,
+  $mkey$thi công nhà phố Phú Yên, xây nhà Phú Yên, nhà phố Tuy Hòa, thi công trọn gói Phú Yên, nhà thầu Phú Yên$mkey$,
   NOW(),
   NOW()
 )
@@ -1083,15 +1087,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thiet-ke-nha-dep-phu-yen',
-  'Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên',
-  'tin-tuc',
-  'Thiết kế nhà đẹp Phú Yên: kiến trúc hiện đại, phối cảnh 3D chân thực, phù hợp khí hậu biển. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Thiết kế nhà đẹp Phú Yên — Cân bằng thẩm mỹ và khí hậu biển</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-dep-phu-yen$slug$,
+  $title$Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Thiết kế nhà đẹp Phú Yên: kiến trúc hiện đại, phối cảnh 3D chân thực, phù hợp khí hậu biển. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà đẹp Phú Yên — Cân bằng thẩm mỹ và khí hậu biển</h2>
 <p><strong>Thiết kế nhà đẹp Phú Yên</strong> đòi hỏi sự am hiểu cả về thị hiếu thẩm mỹ lẫn điều kiện khí hậu đặc thù của vùng duyên hải Nam Trung Bộ. Một bản vẽ đẹp trên giấy nhưng không tính đến nắng chiếu, gió biển hay lượng mưa lớn sẽ dẫn đến công trình nhanh xuống cấp, chi phí bảo trì cao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> thiết kế với triết lý "đẹp bền" — hình thức hiện đại gắn liền kỹ thuật chịu đựng thời tiết nhiệt đới ven biển.</p>
 <p>Bài viết này hướng đến chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa và các huyện thị Phú Yên đang tìm đơn vị <strong>thiết kế nhà</strong> uy tín, muốn có ngôi nhà vừa đẹp, vừa tiện nghi và phù hợp ngân sách.</p>
 
@@ -1204,14 +1209,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200',
-  'thiết kế nhà đẹp Phú Yên',
-  'thiết kế nhà đẹp Phú Yên',
-  'Thiết Kế Nhà Đẹp Phú Yên | Kiến Trúc Hiện Đại | Sao Khuê',
-  'Dịch vụ thiết kế nhà đẹp tại Phú Yên: mẫu nhà phố biển, phối cảnh 3D, hồ sơ kỹ thuật đầy đủ. Tư vấn miễn phí 0909 075 668.',
-  'thiết kế nhà đẹp Phú Yên, kiến trúc Phú Yên, mẫu nhà phố biển, phối cảnh 3D, thiết kế nhà Tuy Hòa',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thiết kế nhà đẹp Phú Yên$alt$,
+  $cap$thiết kế nhà đẹp Phú Yên$cap$,
+  $mtitle$Thiết Kế Nhà Đẹp Phú Yên | Kiến Trúc Hiện Đại | Sao Khuê$mtitle$,
+  $mdesc$Dịch vụ thiết kế nhà đẹp tại Phú Yên: mẫu nhà phố biển, phối cảnh 3D, hồ sơ kỹ thuật đầy đủ. Tư vấn miễn phí 0909 075 668.$mdesc$,
+  $mkey$thiết kế nhà đẹp Phú Yên, kiến trúc Phú Yên, mẫu nhà phố biển, phối cảnh 3D, thiết kế nhà Tuy Hòa$mkey$,
   NOW(),
   NOW()
 )
@@ -1227,15 +1231,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'bao-gia-xay-nha-tron-goi-phu-yen',
-  'Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết',
-  'tin-tuc',
-  'Báo giá xây nhà Phú Yên 2026: đơn giá phần thô, hoàn thiện, trọn gói theo m² sàn. Dự toán minh bạch, không phát sinh. Tư vấn miễn phí 0909 075 668.',
-  '<h2>Báo giá xây nhà Phú Yên 2026 — Tại sao cần dự toán rõ ràng?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-tron-goi-phu-yen$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Báo giá xây nhà Phú Yên 2026: đơn giá phần thô, hoàn thiện, trọn gói theo m² sàn. Dự toán minh bạch, không phát sinh. Tư vấn miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà Phú Yên 2026 — Tại sao cần dự toán rõ ràng?</h2>
 <p><strong>Báo giá xây nhà Phú Yên</strong> minh bạch là nền tảng để chủ nhà kiểm soát ngân sách, tránh tình trạng "ký hợp đồng thấp, thi công cao". Năm 2026, giá vật liệu xây dựng và nhân công tại Phú Yên có những biến động đáng kể do sự phát triển của hạ tầng du lịch và khu công nghiệp. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng <strong>báo giá xây nhà trọn gói</strong> chi tiết theo hạng mục — giúp chủ đầu tư nắm rõ từng đồng chi phí trước khi ký hợp đồng.</p>
 <p>Bài viết này dành cho chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa và các khu vực lân cận đang cần <strong>đơn giá thi công</strong> tham khảo để lên kế hoạch tài chính.</p>
 
@@ -1368,14 +1373,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200',
-  'báo giá xây nhà Phú Yên',
-  'báo giá xây nhà Phú Yên',
-  'Báo Giá Xây Nhà Trọn Gói Phú Yên 2026 | Chi Tiết | Sao Khuê',
-  'Báo giá xây nhà trọn gói tại Phú Yên: đơn giá thi công, dự toán chi tiết, cam kết minh bạch. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  'báo giá xây nhà Phú Yên, xây nhà trọn gói Phú Yên, đơn giá thi công Phú Yên, dự toán xây nhà Phú Yên, chi phí xây nhà Tuy Hòa',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$báo giá xây nhà Phú Yên$alt$,
+  $cap$báo giá xây nhà Phú Yên$cap$,
+  $mtitle$Báo Giá Xây Nhà Trọn Gói Phú Yên 2026 | Chi Tiết | Sao Khuê$mtitle$,
+  $mdesc$Báo giá xây nhà trọn gói tại Phú Yên: đơn giá thi công, dự toán chi tiết, cam kết minh bạch. Sao Khuê tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$báo giá xây nhà Phú Yên, xây nhà trọn gói Phú Yên, đơn giá thi công Phú Yên, dự toán xây nhà Phú Yên, chi phí xây nhà Tuy Hòa$mkey$,
   NOW(),
   NOW()
 )
@@ -1391,15 +1395,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Những Lưu Ý Quan Trọng Khi Xây Nhà Phố
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'luu-y-xay-nha-pho',
-  'Những Lưu Ý Quan Trọng Khi Xây Nhà Phố',
-  'tin-tuc',
-  'Lưu ý xây nhà phố từ A đến Z: pháp lý, chọn nhà thầu, chống thấm, tránh phát sinh. Kinh nghiệm thực tiễn từ Sao Khuê — tư vấn miễn phí 0909 075 668.',
-  '<h2>Lưu ý xây nhà phố — Tổng hợp kinh nghiệm thực tế 2026</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$luu-y-xay-nha-pho$slug$,
+  $title$Những Lưu Ý Quan Trọng Khi Xây Nhà Phố$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Lưu ý xây nhà phố từ A đến Z: pháp lý, chọn nhà thầu, chống thấm, tránh phát sinh. Kinh nghiệm thực tiễn từ Sao Khuê — tư vấn miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Lưu ý xây nhà phố — Tổng hợp kinh nghiệm thực tế 2026</h2>
 <p>Xây nhà phố là quyết định đầu tư lớn nhất của nhiều gia đình Việt Nam. Sai lầm trong quá trình này không chỉ tốn tiền mà còn gây phiền não kéo dài. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp những <strong>lưu ý xây nhà phố</strong> quan trọng nhất từ kinh nghiệm thực tiễn thi công hàng trăm công trình — giúp bạn chủ động từ giai đoạn chuẩn bị đến khi nhận bàn giao.</p>
 <p>Bài viết này đặc biệt hữu ích với chủ nhà lần đầu xây dựng, muốn hiểu rõ <strong>kinh nghiệm xây nhà phố</strong>, <strong>pháp lý xây dựng</strong> và các bẫy "phát sinh" thường gặp để tránh.</p>
 
@@ -1557,14 +1562,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200',
-  'lưu ý xây nhà phố',
-  'lưu ý xây nhà phố',
-  'Lưu Ý Xây Nhà Phố Quan Trọng | Kinh Nghiệm Thực Tế | Sao Khuê',
-  'Những lưu ý xây nhà phố không thể bỏ qua: pháp lý, kết cấu, chống thấm, hợp đồng nhà thầu, giám sát thi công. Cập nhật 2026.',
-  'lưu ý xây nhà phố, kinh nghiệm xây nhà phố, pháp lý xây dựng, chống thấm nhà phố, chọn nhà thầu xây dựng',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$lưu ý xây nhà phố$alt$,
+  $cap$lưu ý xây nhà phố$cap$,
+  $mtitle$Lưu Ý Xây Nhà Phố Quan Trọng | Kinh Nghiệm Thực Tế | Sao Khuê$mtitle$,
+  $mdesc$Những lưu ý xây nhà phố không thể bỏ qua: pháp lý, kết cấu, chống thấm, hợp đồng nhà thầu, giám sát thi công. Cập nhật 2026.$mdesc$,
+  $mkey$lưu ý xây nhà phố, kinh nghiệm xây nhà phố, pháp lý xây dựng, chống thấm nhà phố, chọn nhà thầu xây dựng$mkey$,
   NOW(),
   NOW()
 )
@@ -1580,15 +1584,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Cách Dự Toán Chi Phí Xây Nhà Chính Xác Nhất 2026
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'du-toan-chi-phi-xay-nha',
-  'Cách Dự Toán Chi Phí Xây Nhà Chính Xác Nhất 2026',
-  'tin-tuc',
-  'Hướng dẫn dự toán chi phí xây nhà đầy đủ: bóc tách hạng mục, bảng đơn giá tham khảo, chi phí ẩn cần dự phòng. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Dự toán chi phí xây nhà — Nền tảng để kiểm soát ngân sách</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$du-toan-chi-phi-xay-nha$slug$,
+  $title$Cách Dự Toán Chi Phí Xây Nhà Chính Xác Nhất 2026$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Hướng dẫn dự toán chi phí xây nhà đầy đủ: bóc tách hạng mục, bảng đơn giá tham khảo, chi phí ẩn cần dự phòng. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Dự toán chi phí xây nhà — Nền tảng để kiểm soát ngân sách</h2>
 <p><strong>Dự toán chi phí xây nhà</strong> là bước không thể bỏ qua trước khi khởi công bất kỳ công trình nào — từ nhà phố nhỏ đến biệt thự. Đây không chỉ là con số ước tính sơ bộ, mà là <strong>bảng phân tích chi tiết từng hạng mục</strong>: móng, kết cấu, hoàn thiện, điện nước, cửa — giúp chủ nhà nắm rõ ngân sách, tránh phát sinh và so sánh giữa các nhà thầu một cách công bằng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> hướng dẫn quy trình lập <strong>bảng dự toán</strong> chuẩn trong bài viết này.</p>
 <p>Bài viết dành cho chủ đất chuẩn bị xây nhà phố, nhà ở riêng lẻ hoặc nâng tầng tại TP.HCM, Bình Dương, Đồng Nai — muốn hiểu cách <strong>bóc tách khối lượng</strong>, xác định <strong>chi phí ẩn</strong>, và sử dụng dự toán như công cụ đàm phán với nhà thầu.</p>
 
@@ -1744,14 +1749,13 @@ VALUES (
 <h3>Bao lâu thì nhận được dự toán chi tiết?</h3>
 <p>Sau khi khảo sát mặt bằng và hoàn thiện bản vẽ thiết kế cơ bản, thông thường Sao Khuê bàn giao dự toán trong <strong>3–7 ngày làm việc</strong> tùy quy mô công trình.</p>
 <h3>Làm sao liên hệ để được lập dự toán miễn phí?</h3>
-<p>Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Đội kỹ thuật Sao Khuê sẽ tư vấn và lên lịch khảo sát.</p>',
-  'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200',
-  'du-toan-chi-phi-xay-nha',
-  'du-toan-chi-phi-xay-nha',
-  'Dự Toán Chi Phí Xây Nhà Chính Xác 2026 | Sao Khuê',
-  'Cách lập dự toán chi phí xây nhà: bóc tách khối lượng, bảng đơn giá tham khảo, các khoản ẩn cần dự phòng. Khảo sát miễn phí — 0909 075 668.',
-  'dự toán chi phí xây nhà, bảng dự toán xây nhà, chi phí ẩn xây nhà, bóc tách khối lượng, đơn giá xây nhà 2026, kiến trúc sao khuê',
-  true,
+<p>Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Đội kỹ thuật Sao Khuê sẽ tư vấn và lên lịch khảo sát.</p>$content$,
+  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$du-toan-chi-phi-xay-nha$alt$,
+  $cap$du-toan-chi-phi-xay-nha$cap$,
+  $mtitle$Dự Toán Chi Phí Xây Nhà Chính Xác 2026 | Sao Khuê$mtitle$,
+  $mdesc$Cách lập dự toán chi phí xây nhà: bóc tách khối lượng, bảng đơn giá tham khảo, các khoản ẩn cần dự phòng. Khảo sát miễn phí — 0909 075 668.$mdesc$,
+  $mkey$dự toán chi phí xây nhà, bảng dự toán xây nhà, chi phí ẩn xây nhà, bóc tách khối lượng, đơn giá xây nhà 2026, kiến trúc sao khuê$mkey$,
   NOW(),
   NOW()
 )
@@ -1767,15 +1771,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Xu Hướng Thiết Kế Nhà Phố Hiện Đại Được Ưa Chuộng Nhất 2026
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'xu-huong-thiet-ke-nha-pho-hien-dai',
-  'Xu Hướng Thiết Kế Nhà Phố Hiện Đại Được Ưa Chuộng Nhất 2026',
-  'tin-tuc',
-  'Tổng hợp xu hướng thiết kế nhà phố hiện đại 2026: tối giản, mặt tiền lam, giếng trời xanh, smart home. Sao Khuê tư vấn & thiết kế miễn phí — 0909 075 668.',
-  '<h2>Xu hướng thiết kế nhà phố hiện đại — Tổng quan 2026</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xu-huong-thiet-ke-nha-pho-hien-dai$slug$,
+  $title$Xu Hướng Thiết Kế Nhà Phố Hiện Đại Được Ưa Chuộng Nhất 2026$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Tổng hợp xu hướng thiết kế nhà phố hiện đại 2026: tối giản, mặt tiền lam, giếng trời xanh, smart home. Sao Khuê tư vấn & thiết kế miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Xu hướng thiết kế nhà phố hiện đại — Tổng quan 2026</h2>
 <p><strong>Xu hướng thiết kế nhà phố hiện đại</strong> tại TP.HCM và các đô thị lớn miền Nam đang chuyển dịch mạnh trong những năm gần đây. Áp lực từ lô đất hẹp, nhu cầu sống tiện nghi và ảnh hưởng của kiến trúc quốc tế đã tạo ra những phong cách nhà phố mới — không chỉ đẹp về hình thức, mà còn <strong>tối ưu công năng, tiết kiệm năng lượng và thích nghi khí hậu nhiệt đới</strong>. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp các xu hướng nổi bật nhất năm 2026 để chủ đất tham khảo trước khi chốt phương án thiết kế.</p>
 <p>Bài viết phân tích từng xu hướng theo: đặc điểm nhận dạng, ưu điểm, phù hợp với loại lô đất nào — giúp bạn chọn đúng phong cách <strong>nhà phố hiện đại</strong> thay vì "thấy đẹp trên mạng nhưng không hợp lô nhà mình".</p>
 
@@ -1902,14 +1907,13 @@ VALUES (
 <h3>Smart home có cần ngân sách lớn ngay từ đầu không?</h3>
 <p>Không. Chỉ cần <strong>đặt ống chờ và điểm nối đúng vị trí</strong> từ bước thi công điện — chi phí thêm không đáng kể. Thiết bị smart home lắp dần sau theo ngân sách.</p>
 <h3>Làm sao tư vấn phong cách phù hợp với lô đất của tôi?</h3>
-<p>Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất (hướng, kích thước, ngân sách) về <strong>kientrucsaokhue@gmail.com</strong> — đội thiết kế Sao Khuê phân tích và tư vấn sơ bộ miễn phí.</p>',
-  'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200',
-  'xu-huong-thiet-ke-nha-pho-hien-dai',
-  'xu-huong-thiet-ke-nha-pho-hien-dai',
-  'Xu Hướng Thiết Kế Nhà Phố Hiện Đại 2026 | Sao Khuê',
-  'Khám phá xu hướng thiết kế nhà phố hiện đại 2026: tối giản, lam che nắng, giếng trời, không gian xanh, smart home. Tư vấn miễn phí — 0909 075 668.',
-  'xu hướng thiết kế nhà phố, nhà phố hiện đại 2026, mặt tiền nhà phố, thiết kế nhà phố tối giản, công năng thông minh, kiến trúc sao khuê',
-  true,
+<p>Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất (hướng, kích thước, ngân sách) về <strong>kientrucsaokhue@gmail.com</strong> — đội thiết kế Sao Khuê phân tích và tư vấn sơ bộ miễn phí.</p>$content$,
+  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$xu-huong-thiet-ke-nha-pho-hien-dai$alt$,
+  $cap$xu-huong-thiet-ke-nha-pho-hien-dai$cap$,
+  $mtitle$Xu Hướng Thiết Kế Nhà Phố Hiện Đại 2026 | Sao Khuê$mtitle$,
+  $mdesc$Khám phá xu hướng thiết kế nhà phố hiện đại 2026: tối giản, lam che nắng, giếng trời, không gian xanh, smart home. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$xu hướng thiết kế nhà phố, nhà phố hiện đại 2026, mặt tiền nhà phố, thiết kế nhà phố tối giản, công năng thông minh, kiến trúc sao khuê$mkey$,
   NOW(),
   NOW()
 )
@@ -1925,15 +1929,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại Bao Nhiêu? (2026)
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'chi-phi-nha-pho-2-tang',
-  'Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại Bao Nhiêu? (2026)',
-  'tin-tuc',
-  'Chi phí nhà phố 2 tầng tại TP.HCM 2026: bảng đơn giá, ví dụ tính thực tế, cách tiết kiệm mà không giảm chất lượng. Tư vấn miễn phí — 0909 075 668.',
-  '<h2>Chi phí nhà phố 2 tầng — Tại sao đây là lựa chọn phổ biến?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-nha-pho-2-tang$slug$,
+  $title$Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại Bao Nhiêu? (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Chi phí nhà phố 2 tầng tại TP.HCM 2026: bảng đơn giá, ví dụ tính thực tế, cách tiết kiệm mà không giảm chất lượng. Tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí nhà phố 2 tầng — Tại sao đây là lựa chọn phổ biến?</h2>
 <p><strong>Nhà phố 2 tầng</strong> là mô hình ưu tiên của hàng nghìn gia đình tại TP.HCM, Bình Dương và Đồng Nai khi có lô đất từ 60–100m². So với nhà 3–4 tầng, <strong>chi phí nhà phố 2 tầng</strong> vừa sức hơn, thời gian thi công ngắn hơn và kết cấu đơn giản hơn — phù hợp ngân sách gia đình trẻ từ <strong>800 triệu đến 1,5 tỷ</strong> tuỳ quy mô và vật liệu. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng phân tích chi phí thực tế và hướng dẫn tối ưu ngân sách trong bài viết này.</p>
 <p>Nội dung bao gồm: các yếu tố tác động đến <strong>báo giá nhà 2 tầng</strong>, bảng đơn giá tham khảo, ví dụ tính chi phí theo diện tích cụ thể, cách tiết kiệm mà không giảm chất lượng — và câu hỏi thường gặp từ chủ đầu tư.</p>
 
@@ -2057,14 +2062,13 @@ Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~75
 <h3>Phần thô nhà 2 tầng rồi hoàn thiện sau có tiết kiệm không?</h3>
 <p>Về tổng chi phí không tiết kiệm nhiều, thậm chí đôi khi đắt hơn do thi công 2 đợt. Lợi ích là <strong>giãn dòng tiền</strong> — phù hợp khi chưa đủ ngân sách làm trọn gói một lần.</p>
 <h3>Làm sao nhận báo giá nhà phố 2 tầng?</h3>
-<p>Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Kỹ sư khảo sát miễn phí và gửi dự toán chi tiết trong 3–7 ngày làm việc.</p>',
-  '/images/project_2.jpg',
-  'chi-phi-nha-pho-2-tang',
-  'chi-phi-nha-pho-2-tang',
-  'Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại 2026 | Sao Khuê',
-  'Chi phí xây nhà phố 2 tầng 2026: trọn gói 800 triệu – 1,5 tỷ tuỳ diện tích và vật liệu. Bảng đơn giá, ví dụ tính thực tế, tư vấn miễn phí — 0909 075 668.',
-  'chi phí nhà phố 2 tầng, báo giá nhà 2 tầng, xây nhà phố 2 tầng bao nhiêu tiền, đơn giá nhà 2 tầng 2026, mẫu nhà 2 tầng tphcm, kiến trúc sao khuê',
-  true,
+<p>Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Kỹ sư khảo sát miễn phí và gửi dự toán chi tiết trong 3–7 ngày làm việc.</p>$content$,
+  $img$/images/project_2.jpg$img$,
+  $alt$chi-phi-nha-pho-2-tang$alt$,
+  $cap$chi-phi-nha-pho-2-tang$cap$,
+  $mtitle$Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại 2026 | Sao Khuê$mtitle$,
+  $mdesc$Chi phí xây nhà phố 2 tầng 2026: trọn gói 800 triệu – 1,5 tỷ tuỳ diện tích và vật liệu. Bảng đơn giá, ví dụ tính thực tế, tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$chi phí nhà phố 2 tầng, báo giá nhà 2 tầng, xây nhà phố 2 tầng bao nhiêu tiền, đơn giá nhà 2 tầng 2026, mẫu nhà 2 tầng tphcm, kiến trúc sao khuê$mkey$,
   NOW(),
   NOW()
 )
@@ -2080,15 +2084,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng Cho Gia Đình
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'mau-nha-pho-3-tang-dep',
-  'Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng Cho Gia Đình',
-  'tin-tuc',
-  'Tổng hợp mẫu nhà phố 3 tầng đẹp: phong cách hiện đại, Indochine, tropical. Hướng dẫn bố trí mặt bằng tối ưu, mặt tiền ấn tượng. Sao Khuê — 0909 075 668.',
-  '<h2>Mẫu nhà phố 3 tầng đẹp — Cân bằng hoàn hảo giữa diện tích và chi phí</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$mau-nha-pho-3-tang-dep$slug$,
+  $title$Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng Cho Gia Đình$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Tổng hợp mẫu nhà phố 3 tầng đẹp: phong cách hiện đại, Indochine, tropical. Hướng dẫn bố trí mặt bằng tối ưu, mặt tiền ấn tượng. Sao Khuê — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà phố 3 tầng đẹp — Cân bằng hoàn hảo giữa diện tích và chi phí</h2>
 <p><strong>Mẫu nhà phố 3 tầng</strong> đang là lựa chọn số một của nhiều gia đình TP.HCM trên lô đất từ 60–120m² — vừa đủ diện tích cho 3–4 thành viên, vừa không quá tốn kém về xây dựng và vận hành so với nhà 4–5 tầng. Tại <strong>Kiến Trúc Sao Khuê</strong>, hơn 40% các công trình nhà phố được thiết kế theo mô hình 3 tầng. Bài viết này tổng hợp các <strong>mẫu nhà phố 3 tầng đẹp</strong> phổ biến nhất, hướng dẫn bố trí mặt bằng tối ưu và những điểm cần lưu ý để có mặt tiền ấn tượng.</p>
 <p>Dù bạn đang ở Bình Thạnh, Thủ Đức, Quận 7 hay các tỉnh lân cận như Bình Dương, Đồng Nai — bài viết này sẽ giúp hình dung rõ phương án thiết kế trước khi gặp kiến trúc sư.</p>
 
@@ -2217,14 +2222,13 @@ VALUES (
 <h3>Thiết kế mẫu nhà phố 3 tầng có mất phí không?</h3>
 <p>Khi ký hợp đồng <strong>xây nhà trọn gói</strong> với Sao Khuê, thiết kế 2D/3D thường được miễn phí theo chương trình khuyến mãi. Gọi <strong>0909 075 668</strong> để biết chính sách hiện hành.</p>
 <h3>Sao Khuê có thiết kế và thi công nhà phố 3 tầng tại Bình Dương không?</h3>
-<p>Có. Sao Khuê nhận công trình tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận. Tham khảo <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>.</p>',
-  '/images/project_3.jpg',
-  'mau-nha-pho-3-tang-dep',
-  'mau-nha-pho-3-tang-dep',
-  'Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng 2026 | Sao Khuê',
-  'Mẫu nhà phố 3 tầng đẹp 2026: thiết kế hiện đại, Indochine, tropical-modern. Bố trí mặt bằng hợp lý, mặt tiền ấn tượng. Tư vấn miễn phí — 0909 075 668.',
-  'mẫu nhà phố 3 tầng đẹp, thiết kế nhà phố 3 tầng, mặt bằng nhà phố 3 tầng, nhà phố hiện đại 3 tầng, mặt tiền nhà phố, kiến trúc sao khuê',
-  true,
+<p>Có. Sao Khuê nhận công trình tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận. Tham khảo <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>.</p>$content$,
+  $img$/images/project_3.jpg$img$,
+  $alt$mau-nha-pho-3-tang-dep$alt$,
+  $cap$mau-nha-pho-3-tang-dep$cap$,
+  $mtitle$Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng 2026 | Sao Khuê$mtitle$,
+  $mdesc$Mẫu nhà phố 3 tầng đẹp 2026: thiết kế hiện đại, Indochine, tropical-modern. Bố trí mặt bằng hợp lý, mặt tiền ấn tượng. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$mẫu nhà phố 3 tầng đẹp, thiết kế nhà phố 3 tầng, mặt bằng nhà phố 3 tầng, nhà phố hiện đại 3 tầng, mặt tiền nhà phố, kiến trúc sao khuê$mkey$,
   NOW(),
   NOW()
 )
@@ -2240,15 +2244,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Thiết Kế Nhà Đẹp Giá Rẻ Theo Ngân Sách Gia Đình Trẻ
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thiet-ke-nha-dep-gia-re',
-  'Thiết Kế Nhà Đẹp Giá Rẻ Theo Ngân Sách Gia Đình Trẻ',
-  'tin-tuc',
-  'Bí quyết thiết kế nhà đẹp giá rẻ: tối ưu công năng, chọn vật liệu thông minh, tránh phát sinh. Sao Khuê tư vấn miễn phí ngân sách gia đình trẻ — 0909 075 668.',
-  '<h2>Thiết kế nhà đẹp giá rẻ — Có thực sự khả thi?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-dep-gia-re$slug$,
+  $title$Thiết Kế Nhà Đẹp Giá Rẻ Theo Ngân Sách Gia Đình Trẻ$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Bí quyết thiết kế nhà đẹp giá rẻ: tối ưu công năng, chọn vật liệu thông minh, tránh phát sinh. Sao Khuê tư vấn miễn phí ngân sách gia đình trẻ — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà đẹp giá rẻ — Có thực sự khả thi?</h2>
 <p>Khi ngân sách hạn chế, câu hỏi đầu tiên nhiều gia đình trẻ đặt ra là: <em>"Có thể có ngôi nhà đẹp mà không phải vay quá nhiều không?"</em>. Câu trả lời là <strong>có</strong> — nếu bạn biết cách <strong>tối ưu thiết kế ngay từ đầu</strong>, thay vì cắt giảm tuỳ tiện giữa chừng. <strong>Thiết kế nhà đẹp giá rẻ</strong> không có nghĩa là nhà xấu hoặc kém chất lượng — mà là nhà được thiết kế thông minh, tập trung ngân sách vào đúng chỗ và loại bỏ những khoản chi không thực sự cần thiết.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> đã thiết kế và thi công nhiều công trình <strong>nhà phố đẹp trong tầm ngân sách 700 triệu – 1,2 tỷ</strong> cho gia đình trẻ tại TP.HCM, Bình Dương và Đồng Nai. Bài viết này chia sẻ toàn bộ bí quyết thực chiến từ hàng trăm công trình thực tế.</p>
 
@@ -2373,14 +2378,13 @@ VALUES (
 <h3>Xây nhà giá rẻ có bảo hành không?</h3>
 <p>Phụ thuộc nhà thầu, không phải do giá. Sao Khuê bảo hành kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> — kể cả các gói tiêu chuẩn ngân sách thấp.</p>
 <h3>Liên hệ Sao Khuê để tư vấn thiết kế nhà trong tầm ngân sách như thế nào?</h3>
-<p>Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Cho Sao Khuê biết ngân sách, diện tích đất và số người ở — đội tư vấn sẽ phân tích và đề xuất phương án phù hợp nhất.</p>',
-  'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200',
-  'thiet-ke-nha-dep-gia-re',
-  'thiet-ke-nha-dep-gia-re',
-  'Thiết Kế Nhà Đẹp Giá Rẻ, Tối Ưu Ngân Sách 2026 | Sao Khuê',
-  'Thiết kế nhà đẹp giá rẻ không phải là không thể: tối ưu công năng, chọn vật liệu đúng chỗ, tránh chi phí dư thừa. Tư vấn miễn phí — 0909 075 668.',
-  'thiết kế nhà đẹp giá rẻ, nhà phố giá rẻ, tối ưu chi phí thiết kế, công năng cơ bản, xây nhà tiết kiệm, kiến trúc sao khuê',
-  true,
+<p>Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>. Cho Sao Khuê biết ngân sách, diện tích đất và số người ở — đội tư vấn sẽ phân tích và đề xuất phương án phù hợp nhất.</p>$content$,
+  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thiet-ke-nha-dep-gia-re$alt$,
+  $cap$thiet-ke-nha-dep-gia-re$cap$,
+  $mtitle$Thiết Kế Nhà Đẹp Giá Rẻ, Tối Ưu Ngân Sách 2026 | Sao Khuê$mtitle$,
+  $mdesc$Thiết kế nhà đẹp giá rẻ không phải là không thể: tối ưu công năng, chọn vật liệu đúng chỗ, tránh chi phí dư thừa. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$thiết kế nhà đẹp giá rẻ, nhà phố giá rẻ, tối ưu chi phí thiết kế, công năng cơ bản, xây nhà tiết kiệm, kiến trúc sao khuê$mkey$,
   NOW(),
   NOW()
 )
@@ -2396,15 +2400,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'xay-nha-ngan-sach-1-ty-2',
-  'Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2',
-  'tin-tuc',
-  'Xây nhà 1 tỷ 2 hoàn toàn khả thi nếu biết tối ưu mặt bằng, chọn vật liệu phù hợp và hợp tác với nhà thầu uy tín. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Xây nhà 1 tỷ 2 — Giấc mơ có thật hay ảo tưởng?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-ngan-sach-1-ty-2$slug$,
+  $title$Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Xây nhà 1 tỷ 2 hoàn toàn khả thi nếu biết tối ưu mặt bằng, chọn vật liệu phù hợp và hợp tác với nhà thầu uy tín. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 1 tỷ 2 — Giấc mơ có thật hay ảo tưởng?</h2>
 <p>Ngân sách <strong>1 tỷ 2</strong> (1,2 tỷ đồng) để xây nhà là câu hỏi nhiều gia đình trẻ đặt ra khi cầm sổ đất trong tay. Câu trả lời là: <strong>hoàn toàn khả thi</strong> — nếu bạn lên kế hoạch đúng, chọn phương án thiết kế hợp lý và hợp tác với nhà thầu <strong>minh bạch về báo giá</strong>. Ngược lại, nếu thiếu bản vẽ, thiếu dự toán chi tiết, ngân sách ấy có thể "bay hơi" trước khi nhà đến tầng 2.</p>
 <p>Bài viết này giúp bạn hiểu rõ: <strong>xây nhà 1 tỷ 2</strong> được nhà như thế nào, cần làm gì để kiểm soát chi phí hiệu quả và những bẫy phổ biến khiến ngân sách vượt trần. Đây là góc nhìn thực tiễn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị thiết kế và thi công nhà phố tại TP.HCM, Bình Dương, Đồng Nai với nhiều dự án ở phân khúc ngân sách hợp lý.</p>
 
@@ -2517,14 +2522,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200',
-  'xây nhà 1 tỷ 2',
-  'xây nhà 1 tỷ 2',
-  'Xây Nhà 1 Tỷ 2 | Giải Pháp Tiết Kiệm Hiệu Quả | Kiến Trúc Sao Khuê',
-  'Xây nhà 1 tỷ 2: lên phương án mặt bằng, chọn vật liệu hợp lý, tránh phát sinh chi phí. Tư vấn miễn phí từ Kiến Trúc Sao Khuê — 0909 075 668.',
-  'xây nhà 1 tỷ 2, xây nhà tiết kiệm, phương án mặt bằng, vật liệu hợp lý, xây nhà ngân sách thấp, dự toán xây nhà',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$xây nhà 1 tỷ 2$alt$,
+  $cap$xây nhà 1 tỷ 2$cap$,
+  $mtitle$Xây Nhà 1 Tỷ 2 | Giải Pháp Tiết Kiệm Hiệu Quả | Kiến Trúc Sao Khuê$mtitle$,
+  $mdesc$Xây nhà 1 tỷ 2: lên phương án mặt bằng, chọn vật liệu hợp lý, tránh phát sinh chi phí. Tư vấn miễn phí từ Kiến Trúc Sao Khuê — 0909 075 668.$mdesc$,
+  $mkey$xây nhà 1 tỷ 2, xây nhà tiết kiệm, phương án mặt bằng, vật liệu hợp lý, xây nhà ngân sách thấp, dự toán xây nhà$mkey$,
   NOW(),
   NOW()
 )
@@ -2540,15 +2544,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thue-thiet-ke-nha-truoc-khi-xay',
-  'Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?',
-  'tin-tuc',
-  'Thuê thiết kế nhà trước khi xây giúp kiểm soát chi phí, tránh phát sinh kết cấu và đảm bảo công năng tối ưu. Kiến Trúc Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  '<h2>Thiết kế nhà — Bước không thể bỏ qua trước khi xây</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thue-thiet-ke-nha-truoc-khi-xay$slug$,
+  $title$Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Thuê thiết kế nhà trước khi xây giúp kiểm soát chi phí, tránh phát sinh kết cấu và đảm bảo công năng tối ưu. Kiến Trúc Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà — Bước không thể bỏ qua trước khi xây</h2>
 <p>Rất nhiều gia đình ở TP.HCM và các tỉnh lân cận vẫn bước vào công trình với suy nghĩ: "Có thợ quen, cứ xây là được". Chỉ đến khi phòng ngủ tối, cầu thang chắn lối, ống nước đi sai hướng hoặc bị yêu cầu tháo dỡ vì sai chỉ giới — lúc đó mới hiểu giá trị của việc <strong>thuê thiết kế nhà</strong> từ đầu.</p>
 <p>Bài viết này phân tích cụ thể vì sao <strong>thuê đơn vị thiết kế trước khi xây</strong> không phải là chi phí thêm mà là khoản đầu tư giúp tiết kiệm gấp nhiều lần, tránh rủi ro pháp lý và tạo ra ngôi nhà đúng như kỳ vọng. Góc nhìn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị đã triển khai hàng trăm hồ sơ thiết kế – thi công nhà phố tại TP.HCM, Bình Dương và Đồng Nai.</p>
 
@@ -2657,14 +2662,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200',
-  'thuê thiết kế nhà',
-  'thuê thiết kế nhà',
-  'Vì Sao Nên Thuê Thiết Kế Nhà Trước Khi Xây? | Kiến Trúc Sao Khuê',
-  'Thuê thiết kế nhà trước khi xây: tránh phát sinh, kiểm soát ngân sách, đảm bảo pháp lý. Hồ sơ 2D/3D, hỗ trợ cấp phép. Tư vấn miễn phí — 0909 075 668.',
-  'thuê thiết kế nhà, hồ sơ thiết kế, tránh phát sinh xây dựng, thiết kế trước thi công, vì sao cần thiết kế nhà',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thuê thiết kế nhà$alt$,
+  $cap$thuê thiết kế nhà$cap$,
+  $mtitle$Vì Sao Nên Thuê Thiết Kế Nhà Trước Khi Xây? | Kiến Trúc Sao Khuê$mtitle$,
+  $mdesc$Thuê thiết kế nhà trước khi xây: tránh phát sinh, kiểm soát ngân sách, đảm bảo pháp lý. Hồ sơ 2D/3D, hỗ trợ cấp phép. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$thuê thiết kế nhà, hồ sơ thiết kế, tránh phát sinh xây dựng, thiết kế trước thi công, vì sao cần thiết kế nhà$mkey$,
   NOW(),
   NOW()
 )
@@ -2680,15 +2684,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Quy Trình Xây Nhà Trọn Gói Từ A Đến Z
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'quy-trinh-xay-nha-tron-goi-a-z',
-  'Quy Trình Xây Nhà Trọn Gói Từ A Đến Z',
-  'tin-tuc',
-  'Quy trình xây nhà trọn gói bài bản gồm 7 bước từ tư vấn đến bàn giao, đảm bảo tiến độ và minh bạch chi phí. Kiến Trúc Sao Khuê hướng dẫn chi tiết — 0909 075 668.',
-  '<h2>Xây nhà trọn gói là gì? Khác gì thi công từng phần?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$quy-trinh-xay-nha-tron-goi-a-z$slug$,
+  $title$Quy Trình Xây Nhà Trọn Gói Từ A Đến Z$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Quy trình xây nhà trọn gói bài bản gồm 7 bước từ tư vấn đến bàn giao, đảm bảo tiến độ và minh bạch chi phí. Kiến Trúc Sao Khuê hướng dẫn chi tiết — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói là gì? Khác gì thi công từng phần?</h2>
 <p><strong>Xây nhà trọn gói</strong> (hay còn gọi là xây nhà theo gói thầu trọn vẹn) là hình thức ký một hợp đồng duy nhất bao gồm toàn bộ hạng mục từ thiết kế, cung cấp vật tư, thi công đến hoàn thiện và bàn giao chìa khóa. Chủ nhà chỉ cần giám sát một đầu mối, không phải quản lý nhiều đội thợ riêng biệt.</p>
 <p>So với thi công từng phần (chủ nhà tự mua vật liệu, tự thuê thợ), <strong>xây nhà trọn gói</strong> có ưu điểm vượt trội về quản lý tiến độ, kiểm soát chi phí và bảo hành sau bàn giao. Đây là lý do mô hình này ngày càng được ưa chuộng tại TP.HCM, Bình Dương và Đồng Nai. Tham khảo thêm <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói Sao Khuê</a>.</p>
 
@@ -2792,14 +2797,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200',
-  'quy trình xây nhà trọn gói',
-  'quy trình xây nhà trọn gói',
-  'Quy Trình Xây Nhà Trọn Gói Từ A Đến Z | Kiến Trúc Sao Khuê',
-  'Quy trình xây nhà trọn gói 7 bước: tư vấn, thiết kế, cấp phép, thi công, nghiệm thu, bàn giao, bảo hành. Minh bạch — đúng tiến độ. Sao Khuê 0909 075 668.',
-  'quy trình xây nhà trọn gói, các bước xây nhà, nghiệm thu hạng mục, bàn giao công trình, xây nhà trọn gói TP.HCM',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$quy trình xây nhà trọn gói$alt$,
+  $cap$quy trình xây nhà trọn gói$cap$,
+  $mtitle$Quy Trình Xây Nhà Trọn Gói Từ A Đến Z | Kiến Trúc Sao Khuê$mtitle$,
+  $mdesc$Quy trình xây nhà trọn gói 7 bước: tư vấn, thiết kế, cấp phép, thi công, nghiệm thu, bàn giao, bảo hành. Minh bạch — đúng tiến độ. Sao Khuê 0909 075 668.$mdesc$,
+  $mkey$quy trình xây nhà trọn gói, các bước xây nhà, nghiệm thu hạng mục, bàn giao công trình, xây nhà trọn gói TP.HCM$mkey$,
   NOW(),
   NOW()
 )
@@ -2815,15 +2819,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'top-mau-nha-pho-dep-xu-huong',
-  'Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay',
-  'tin-tuc',
-  'Khám phá top mẫu nhà phố đẹp theo xu hướng 2026: tối giản hiện đại, tân cổ điển, Indochine. Phối cảnh 3D thực tế từ portfolio Kiến Trúc Sao Khuê — 0909 075 668.',
-  '<h2>Mẫu nhà phố đẹp — Tiêu chí nào định nghĩa "đẹp" trong kiến trúc?</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$top-mau-nha-pho-dep-xu-huong$slug$,
+  $title$Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Khám phá top mẫu nhà phố đẹp theo xu hướng 2026: tối giản hiện đại, tân cổ điển, Indochine. Phối cảnh 3D thực tế từ portfolio Kiến Trúc Sao Khuê — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà phố đẹp — Tiêu chí nào định nghĩa "đẹp" trong kiến trúc?</h2>
 <p>Khi nói đến <strong>mẫu nhà phố đẹp</strong>, mỗi người có một hình dung riêng. Nhưng nhìn từ góc độ kiến trúc chuyên nghiệp, một ngôi nhà phố được gọi là đẹp khi hội đủ ba yếu tố: <strong>thẩm mỹ đồng bộ</strong> (mặt tiền — nội thất — sân vườn hòa quyện), <strong>công năng tối ưu</strong> (mỗi không gian phục vụ đúng nhu cầu sống) và <strong>bền vững theo thời gian</strong> (vật liệu, màu sắc không "lỗi mốt" sau 5–10 năm).</p>
 <p>Bài viết này tổng hợp <strong>top các xu hướng mẫu nhà phố đẹp</strong> được lựa chọn nhiều nhất tại TP.HCM và vùng lân cận năm 2026, cùng phân tích điểm đặc trưng và lưu ý khi triển khai. Dựa trên thực tế portfolio công trình của <strong>Kiến Trúc Sao Khuê</strong> và xu hướng thị trường kiến trúc nhà ở miền Nam.</p>
 
@@ -2948,14 +2953,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  '/images/project_2.jpg',
-  'mẫu nhà phố đẹp',
-  'mẫu nhà phố đẹp',
-  'Top Mẫu Nhà Phố Đẹp Xu Hướng 2026 | Kiến Trúc Sao Khuê',
-  'Top mẫu nhà phố đẹp 2026: hiện đại tối giản, tân cổ điển, Indochine nhiệt đới. Phối cảnh 3D, mặt tiền ấn tượng. Sao Khuê tư vấn miễn phí — 0909 075 668.',
-  'mẫu nhà phố đẹp, nhà phố hiện đại, mặt tiền ấn tượng, thiết kế nhà phố 2026, xu hướng nhà phố',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/project_2.jpg$img$,
+  $alt$mẫu nhà phố đẹp$alt$,
+  $cap$mẫu nhà phố đẹp$cap$,
+  $mtitle$Top Mẫu Nhà Phố Đẹp Xu Hướng 2026 | Kiến Trúc Sao Khuê$mtitle$,
+  $mdesc$Top mẫu nhà phố đẹp 2026: hiện đại tối giản, tân cổ điển, Indochine nhiệt đới. Phối cảnh 3D, mặt tiền ấn tượng. Sao Khuê tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$mẫu nhà phố đẹp, nhà phố hiện đại, mặt tiền ấn tượng, thiết kế nhà phố 2026, xu hướng nhà phố$mkey$,
   NOW(),
   NOW()
 )
@@ -2971,15 +2975,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'thiet-ke-xay-dung-nha-pho-mien-nam',
-  'Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam',
-  'tin-tuc',
-  'Thiết kế xây dựng nhà phố miền Nam: TP.HCM, Bình Dương, Đồng Nai — Kiến Trúc Sao Khuê cung cấp dịch vụ trọn gói, bảo hành kết cấu, tư vấn miễn phí 0909 075 668.',
-  '<h2>Thiết kế xây dựng nhà phố miền Nam — Bức tranh thị trường 2026</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-xay-dung-nha-pho-mien-nam$slug$,
+  $title$Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Thiết kế xây dựng nhà phố miền Nam: TP.HCM, Bình Dương, Đồng Nai — Kiến Trúc Sao Khuê cung cấp dịch vụ trọn gói, bảo hành kết cấu, tư vấn miễn phí 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế xây dựng nhà phố miền Nam — Bức tranh thị trường 2026</h2>
 <p>Vùng kinh tế trọng điểm phía Nam, dẫn đầu bởi TP.HCM và ba tỉnh vệ tinh Bình Dương, Đồng Nai, Long An, đang chứng kiến tốc độ đô thị hóa nhanh nhất cả nước. Hàng chục khu đô thị mới, hàng trăm dự án hạ tầng kết nối tạo ra nhu cầu khổng lồ về <strong>thiết kế xây dựng nhà phố</strong> — từ nhà ở tự xây trong hẻm nội thành đến nhà phố thương mại dọc các trục đường lớn.</p>
 <p>Trong bối cảnh đó, việc chọn được một <strong>đơn vị thiết kế và xây dựng nhà phố uy tín</strong> có kinh nghiệm thực địa tại miền Nam là yếu tố then chốt để công trình đạt chất lượng, đúng tiến độ và đảm bảo pháp lý địa phương. Bài viết này phân tích đặc thù từng thị trường và lý do <strong>Kiến Trúc Sao Khuê</strong> là đơn vị phù hợp cho gia chủ khu vực miền Nam.</p>
 
@@ -3083,14 +3088,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200',
-  'thiết kế xây dựng nhà phố miền Nam',
-  'thiết kế xây dựng nhà phố miền Nam',
-  'Thiết Kế Xây Dựng Nhà Phố Miền Nam | TP.HCM, Bình Dương, Đồng Nai | Sao Khuê',
-  'Đơn vị thiết kế xây dựng nhà phố uy tín miền Nam: TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao. Sao Khuê — 0909 075 668.',
-  'thiết kế xây dựng nhà phố, nhà thầu miền Nam, xây nhà phố TP.HCM Bình Dương Đồng Nai, trọn gói uy tín, kiến trúc nhà phố miền Nam',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200$img$,
+  $alt$thiết kế xây dựng nhà phố miền Nam$alt$,
+  $cap$thiết kế xây dựng nhà phố miền Nam$cap$,
+  $mtitle$Thiết Kế Xây Dựng Nhà Phố Miền Nam | TP.HCM, Bình Dương, Đồng Nai | Sao Khuê$mtitle$,
+  $mdesc$Đơn vị thiết kế xây dựng nhà phố uy tín miền Nam: TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao. Sao Khuê — 0909 075 668.$mdesc$,
+  $mkey$thiết kế xây dựng nhà phố, nhà thầu miền Nam, xây nhà phố TP.HCM Bình Dương Đồng Nai, trọn gói uy tín, kiến trúc nhà phố miền Nam$mkey$,
   NOW(),
   NOW()
 )
@@ -3106,15 +3110,16 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
-
 -- Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  'kien-truc-sao-khue-don-vi-uy-tin',
-  'Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp',
-  'tin-tuc',
-  'Kiến Trúc Sao Khuê — đơn vị thiết kế và xây dựng nhà phố uy tín tại TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao, bảo hành 10 năm kết cấu.',
-  '<h2>Kiến Trúc Sao Khuê — Câu chuyện xây dựng uy tín từ thực tiễn</h2>
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$kien-truc-sao-khue-don-vi-uy-tin$slug$,
+  $title$Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Kiến Trúc Sao Khuê — đơn vị thiết kế và xây dựng nhà phố uy tín tại TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao, bảo hành 10 năm kết cấu.$excerpt$,
+  $content$<h2>Kiến Trúc Sao Khuê — Câu chuyện xây dựng uy tín từ thực tiễn</h2>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> được thành lập với sứ mệnh đơn giản nhưng không dễ: giúp mọi gia đình ở TP.HCM và các tỉnh lân cận có thể xây được ngôi nhà đúng như mơ ước — <strong>đúng chất lượng, đúng tiến độ, đúng ngân sách</strong>. Trong một thị trường xây dựng còn nhiều bất minh, chúng tôi chọn con đường minh bạch về báo giá, chịu trách nhiệm bảo hành và đặt chữ tín lên trên lợi nhuận ngắn hạn.</p>
 <p>Trụ sở tại <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong> — vị trí trung tâm giúp Sao Khuê tiếp cận nhanh các công trình tại TP.HCM và dễ dàng triển khai dự án tại Bình Dương, Đồng Nai, Long An. Đội ngũ kiến trúc sư, kỹ sư và thợ lành nghề của Sao Khuê đã thực hiện hàng trăm công trình — từ nhà phố nội thành đến biệt thự vùng ven, từ sửa chữa cải tạo nhỏ đến xây mới toàn diện.</p>
 
@@ -3229,14 +3234,13 @@ VALUES (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>',
-  '/images/project_3.jpg',
-  'Kiến Trúc Sao Khuê đơn vị uy tín',
-  'Kiến Trúc Sao Khuê đơn vị uy tín',
-  'Kiến Trúc Sao Khuê | Thiết Kế Xây Dựng Nhà Phố Uy Tín TP.HCM',
-  'Kiến Trúc Sao Khuê: thiết kế xây dựng nhà phố trọn gói tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu, hồ sơ 2D/3D. Tư vấn miễn phí — 0909 075 668.',
-  'Kiến Trúc Sao Khuê, thiết kế xây dựng Sao Khuê, xây nhà trọn gói TP.HCM, bảo hành 10 năm, công ty xây dựng uy tín',
-  true,
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/project_3.jpg$img$,
+  $alt$Kiến Trúc Sao Khuê đơn vị uy tín$alt$,
+  $cap$Kiến Trúc Sao Khuê đơn vị uy tín$cap$,
+  $mtitle$Kiến Trúc Sao Khuê | Thiết Kế Xây Dựng Nhà Phố Uy Tín TP.HCM$mtitle$,
+  $mdesc$Kiến Trúc Sao Khuê: thiết kế xây dựng nhà phố trọn gói tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu, hồ sơ 2D/3D. Tư vấn miễn phí — 0909 075 668.$mdesc$,
+  $mkey$Kiến Trúc Sao Khuê, thiết kế xây dựng Sao Khuê, xây nhà trọn gói TP.HCM, bảo hành 10 năm, công ty xây dựng uy tín$mkey$,
   NOW(),
   NOW()
 )
@@ -3252,3 +3256,5 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = NOW();
+
+COMMIT;

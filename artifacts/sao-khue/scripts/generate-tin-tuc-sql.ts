@@ -19,8 +19,14 @@ const EXISTING = new Set([
   "phong-thuy-nha-o",
 ]);
 
-function escSql(value: string): string {
-  return value.replace(/'/g, "''");
+/** Dollar-quote an toàn cho nội dung HTML dài. */
+function dollarTag(value: string, prefix: string): string {
+  let tag = prefix;
+  let n = 0;
+  while (value.includes(`$${tag}$`)) {
+    tag = `${prefix}${++n}`;
+  }
+  return `$${tag}$${value}$${tag}$`;
 }
 
 const rows = TIN_TUC_SEED_ENTRIES.filter((e) => !EXISTING.has(e.slug));
@@ -33,20 +39,21 @@ const statements = rows.map((e) => {
     imageCaption: a.imageCaption,
   });
   return `-- ${a.title}
-INSERT INTO posts (slug, title, category, excerpt, content, image_url, image_alt, image_caption, meta_title, meta_description, meta_keywords, published, created_at, updated_at)
-VALUES (
-  '${escSql(e.slug)}',
-  '${escSql(a.title)}',
-  'tin-tuc',
-  '${escSql(a.excerpt)}',
-  '${escSql(html)}',
-  '${escSql(e.image)}',
-  '${escSql(a.imageAlt ?? "")}',
-  '${escSql(a.imageCaption ?? a.imageAlt ?? "")}',
-  '${escSql(a.metaTitle)}',
-  '${escSql(a.metaDescription)}',
-  '${escSql(a.metaKeywords)}',
-  true,
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  ${dollarTag(e.slug, "slug")},
+  ${dollarTag(a.title, "title")},
+  ${dollarTag("tin-tuc", "cat")},
+  ${dollarTag(a.excerpt, "excerpt")},
+  ${dollarTag(html, "content")},
+  ${dollarTag(e.image, "img")},
+  ${dollarTag(a.imageAlt ?? "", "alt")},
+  ${dollarTag(a.imageCaption ?? a.imageAlt ?? "", "cap")},
+  ${dollarTag(a.metaTitle, "mtitle")},
+  ${dollarTag(a.metaDescription, "mdesc")},
+  ${dollarTag(a.metaKeywords, "mkey")},
   NOW(),
   NOW()
 )
@@ -66,9 +73,18 @@ ON CONFLICT (slug) DO UPDATE SET
 
 const outDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", "supabase");
 const outPath = join(outDir, "seed-posts-tin-tuc-batch.sql");
-writeFileSync(
-  outPath,
-  `-- Seed ${rows.length} bài tin tức (lịch #8–#30)\n-- Chạy sau add-posts-image-alt.sql và add-posts-image-caption.sql\n\n${statements.join("\n\n")}\n`,
-  "utf8",
-);
+const body = [
+  `-- Seed ${rows.length} bài tin tức (lịch #8–#30)`,
+  `-- Chạy sau add-posts-image-alt.sql và add-posts-image-caption.sql`,
+  `-- Schema posts KHÔNG có cột published`,
+  "",
+  "BEGIN;",
+  "",
+  ...statements,
+  "",
+  "COMMIT;",
+  "",
+].join("\n");
+
+writeFileSync(outPath, body, "utf8");
 console.log(`[sql] Wrote ${rows.length} posts → ${outPath}`);
