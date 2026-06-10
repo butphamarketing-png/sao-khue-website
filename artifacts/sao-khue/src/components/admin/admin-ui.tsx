@@ -1,20 +1,74 @@
 import type { ComponentType, ReactNode } from "react";
-import { ChevronDown, ChevronRight, Eye, Globe, Plus, RotateCcw, Save } from "lucide-react";
+import { ChevronDown, ChevronRight, Eye, Plus, RotateCcw, Save } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const BP_GRADIENT = "linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)";
 
 export function SectionTitle({ title, desc }: { title: string; desc: string }) {
   return (
-    <div>
-      <p className="text-xs font-bold uppercase tracking-[0.25em] text-primary">Sao Khuê CMS</p>
-      <h1 className="mt-2 text-3xl font-bold text-slate-900 md:text-4xl">{title}</h1>
-      <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-500">{desc}</p>
+    <div className="relative overflow-hidden rounded-2xl border border-violet-100/80 bg-white p-6 shadow-sm shadow-violet-500/5 md:p-8">
+      <div
+        className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full opacity-30"
+        style={{ background: "radial-gradient(circle, #c4b5fd, transparent 70%)" }}
+      />
+      <div className="relative">
+        <div className="flex items-center gap-2">
+          <span
+            className="inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-violet-700"
+            style={{ background: "#f5f3ff", border: "1px solid #ede9fe" }}
+          >
+            Bứt Phá · Sao Khuê CMS
+          </span>
+        </div>
+        <h1 className="mt-3 text-2xl font-black tracking-tight text-slate-900 md:text-3xl">{title}</h1>
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-500">{desc}</p>
+      </div>
+    </div>
+  );
+}
+
+export function AdminStatCard({
+  label,
+  value,
+  icon: Icon,
+  accent = "violet",
+}: {
+  label: string;
+  value: number | string;
+  icon: ComponentType<{ size?: number; className?: string }>;
+  accent?: "violet" | "indigo" | "fuchsia" | "purple";
+}) {
+  const gradients = {
+    violet: "from-violet-600 to-violet-700",
+    indigo: "from-indigo-600 to-violet-700",
+    fuchsia: "from-fuchsia-600 to-violet-700",
+    purple: "from-purple-600 to-indigo-700",
+  };
+
+  return (
+    <div className="group relative overflow-hidden rounded-2xl border border-violet-100/80 bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-violet-200 hover:shadow-lg hover:shadow-violet-500/10">
+      <div
+        className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full opacity-0 transition-opacity group-hover:opacity-100"
+        style={{ background: "radial-gradient(circle, rgba(124,58,237,0.12), transparent 70%)" }}
+      />
+      <div className="relative flex items-center gap-4">
+        <div
+          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br text-white shadow-lg shadow-violet-500/25 ${gradients[accent]}`}
+        >
+          <Icon size={26} />
+        </div>
+        <div>
+          <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">{label}</div>
+          <div className="mt-1 text-3xl font-black tabular-nums text-slate-900">{value}</div>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function StickyToolbar({ children }: { children: ReactNode }) {
   return (
-    <div className="sticky top-4 z-20 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-slate-200/80 bg-white/95 px-5 py-4 shadow-md shadow-slate-900/5 backdrop-blur-sm">
+    <div className="sticky top-4 z-20 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-violet-100/80 bg-white/95 px-5 py-4 shadow-md shadow-violet-500/5 backdrop-blur-sm">
       {children}
     </div>
   );
@@ -45,7 +99,7 @@ export function ToolbarButton({
 
 export function Panel({ children }: { children: ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm shadow-slate-900/5">
+    <div className="overflow-hidden rounded-2xl border border-violet-100/60 bg-white shadow-sm shadow-violet-500/5">
       {children}
     </div>
   );
@@ -61,8 +115,8 @@ export function FormSection({
   children: ReactNode;
 }) {
   return (
-    <section className="rounded-2xl border border-slate-200/80 bg-white shadow-sm">
-      <div className="border-b border-slate-100 bg-slate-50/80 px-6 py-4">
+    <section className="overflow-hidden rounded-2xl border border-violet-100/60 bg-white shadow-sm">
+      <div className="border-b border-violet-50 bg-gradient-to-r from-violet-50/50 to-white px-6 py-4">
         <h4 className="text-lg font-bold text-slate-900">{title}</h4>
         {desc && <p className="mt-1 text-sm leading-relaxed text-slate-500">{desc}</p>}
       </div>
@@ -97,17 +151,21 @@ export function DashboardLinkCard({
     <button
       type="button"
       onClick={onClick}
-      className="group flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 text-left transition hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md"
+      className="group flex items-center gap-4 rounded-2xl border border-violet-100/80 bg-white p-5 text-left transition duration-300 hover:-translate-y-0.5 hover:border-violet-300/50 hover:shadow-lg hover:shadow-violet-500/10"
     >
       <div
-        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl text-white shadow-lg ${color}`}
+        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-white shadow-lg shadow-violet-500/20 transition group-hover:scale-105 ${color}`}
       >
-        <Icon size={28} />
+        <Icon size={24} />
       </div>
       <div>
-        <div className="text-lg font-bold text-slate-900 group-hover:text-primary">{title}</div>
-        <div className="mt-1.5 text-sm leading-relaxed text-slate-500">{desc}</div>
+        <div className="text-base font-bold text-slate-900 group-hover:text-violet-700">{title}</div>
+        <div className="mt-1 text-sm leading-relaxed text-slate-500">{desc}</div>
       </div>
+      <ChevronRight
+        size={18}
+        className="ml-auto shrink-0 text-violet-300 opacity-0 transition group-hover:opacity-100"
+      />
     </button>
   );
 }
@@ -202,7 +260,7 @@ export function SettingsScreen({
     <div className="space-y-6">
       <StickyToolbar>
         <div>
-          <div className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Thiết lập giao diện</div>
+          <div className="text-xs font-bold uppercase tracking-[0.2em] text-violet-600">Thiết lập giao diện</div>
           <h2 className="mt-1 text-2xl font-bold text-slate-900">{title}</h2>
           <p className="mt-1 text-sm text-slate-500">{desc}</p>
         </div>
@@ -225,15 +283,16 @@ export function SettingsScreen({
             </Button>
           )}
           {!hideSave && (
-          <Button
-            type="button"
-            onClick={onSave}
-            className="rounded-xl bg-emerald-600 text-white hover:bg-emerald-700"
-            disabled={isSaving}
-          >
-            <Save size={16} className="mr-2" />
-            {isSaving ? "Đang lưu..." : primaryLabel}
-          </Button>
+            <Button
+              type="button"
+              onClick={onSave}
+              className="rounded-xl border-0 text-white hover:opacity-90"
+              style={{ background: BP_GRADIENT }}
+              disabled={isSaving}
+            >
+              <Save size={16} className="mr-2" />
+              {isSaving ? "Đang lưu..." : primaryLabel}
+            </Button>
           )}
         </div>
       </StickyToolbar>
@@ -252,8 +311,8 @@ export function RepeatCard({
   onRemove?: () => void;
 }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <div className="flex items-center justify-between border-b border-slate-100 px-6 py-4">
+    <div className="rounded-2xl border border-violet-100/60 bg-white shadow-sm">
+      <div className="flex items-center justify-between border-b border-violet-50 px-6 py-4">
         <h4 className="text-lg font-bold text-slate-900">{title}</h4>
         {onRemove && (
           <button
@@ -275,7 +334,7 @@ export function AddRowButton({ label, onClick }: { label: string; onClick: () =>
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center gap-2 rounded-xl border border-dashed border-primary/40 bg-primary/5 px-4 py-3 text-sm font-semibold text-primary transition hover:bg-primary/10"
+      className="inline-flex items-center gap-2 rounded-xl border border-dashed border-violet-300/50 bg-violet-50/50 px-4 py-3 text-sm font-semibold text-violet-700 transition hover:bg-violet-50"
     >
       <Plus size={16} />
       {label}
@@ -293,9 +352,9 @@ export function PreviewShell({
   children: ReactNode;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-900/5">
-      <div className="border-b border-slate-100 bg-gradient-to-r from-slate-50 to-white px-5 py-4">
-        <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.28em] text-primary">
+    <div className="overflow-hidden rounded-2xl border border-violet-100/60 bg-white shadow-lg shadow-violet-500/5">
+      <div className="border-b border-violet-50 bg-gradient-to-r from-violet-50/60 to-white px-5 py-4">
+        <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.28em] text-violet-600">
           <Eye size={14} />
           {label}
         </div>
@@ -316,7 +375,7 @@ export function EditorStatCard({
   tone: "blue" | "emerald" | "amber" | "violet" | "rose";
 }) {
   const toneClasses = {
-    blue: "bg-primary/5 text-primary border-primary/20",
+    blue: "bg-violet-50 text-violet-700 border-violet-200",
     emerald: "bg-emerald-50 text-emerald-700 border-emerald-200",
     amber: "bg-amber-50 text-amber-700 border-amber-200",
     violet: "bg-violet-50 text-violet-700 border-violet-200",
@@ -336,7 +395,7 @@ export function HintActionButton({ label, onClick }: { label: string; onClick: (
     <button
       type="button"
       onClick={onClick}
-      className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-primary hover:bg-primary/5 hover:text-primary"
+      className="rounded-full border border-violet-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-violet-400 hover:bg-violet-50 hover:text-violet-700"
     >
       {label}
     </button>
@@ -356,10 +415,10 @@ export function ChecklistCard({
   const warned = items.filter((item) => item.warn && !item.done).length;
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+    <div className="rounded-2xl border border-violet-100/60 bg-white p-5 shadow-sm">
       <div className="flex items-center justify-between gap-3">
         <div>
-          <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">
+          <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-violet-600">
             Trạng thái bài viết
           </div>
           <div className="mt-1.5 text-lg font-bold text-slate-900">
@@ -369,7 +428,7 @@ export function ChecklistCard({
             ) : null}
           </div>
         </div>
-        <div className="rounded-full bg-primary/10 px-3 py-2 text-sm font-bold text-primary">
+        <div className="rounded-full bg-violet-100 px-3 py-2 text-sm font-bold text-violet-700">
           {items.length ? Math.round((completed / items.length) * 100) : 0}%
         </div>
       </div>

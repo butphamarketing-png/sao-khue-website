@@ -83,6 +83,44 @@ export function AdminV2Login({
     if (card.modal) setActiveModal(card.modal);
   };
 
+  const serviceCardGrid = (
+    <div className="grid grid-cols-2 gap-3 xl:grid-cols-4">
+      {bpServiceCards.map((card) => {
+        const Icon = card.icon;
+        return (
+          <button
+            key={card.id}
+            type="button"
+            onClick={() => onServiceClick(card)}
+            className="group flex flex-col rounded-2xl p-4 text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-violet-500/20"
+            style={{
+              background: "rgba(255,255,255,0.04)",
+              border: "1px solid rgba(255,255,255,0.08)",
+              backdropFilter: "blur(10px)",
+            }}
+          >
+            <div
+              className="mb-3 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl transition group-hover:scale-110"
+              style={{
+                background: "linear-gradient(135deg, rgba(124,58,237,0.45), rgba(99,102,241,0.3))",
+                border: "1px solid rgba(167,139,250,0.3)",
+                boxShadow: "0 2px 12px rgba(124,58,237,0.25)",
+              }}
+            >
+              <Icon className="h-4 w-4 text-violet-200" />
+            </div>
+            <div className="mb-1 text-sm font-bold leading-snug text-white group-hover:text-violet-100">
+              {card.title}
+            </div>
+            <div className="text-[11px] leading-relaxed text-white/40 group-hover:text-white/55">
+              {card.desc}
+            </div>
+          </button>
+        );
+      })}
+    </div>
+  );
+
   return (
     <div
       className="flex min-h-screen w-full font-sans"
@@ -152,7 +190,7 @@ export function AdminV2Login({
                     value={adminEmail}
                     onChange={(e) => setAdminEmail(e.target.value)}
                     placeholder="butphamarketing@gmail.com"
-                    className="h-12 rounded-xl border-gray-200 pl-10"
+                    className="h-12 rounded-xl border-gray-200 pl-10 transition focus-visible:border-violet-400 focus-visible:ring-violet-400/20"
                     required
                   />
                 </div>
@@ -170,7 +208,7 @@ export function AdminV2Login({
                     value={adminPassword}
                     onChange={(e) => setAdminPassword(e.target.value)}
                     placeholder="••••••••"
-                    className="h-12 rounded-xl border-gray-200 pl-10 pr-10"
+                    className="h-12 rounded-xl border-gray-200 pl-10 pr-10 transition focus-visible:border-violet-400 focus-visible:ring-violet-400/20"
                     required
                   />
                   <button
@@ -227,6 +265,18 @@ export function AdminV2Login({
             </div>
           </div>
         </div>
+
+        <div
+          className="relative z-10 border-t border-violet-100 px-6 py-8 lg:hidden"
+          style={{
+            background: "linear-gradient(160deg, #1a0a3d 0%, #2d0a6b 50%, #1e1b4b 100%)",
+          }}
+        >
+          <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-violet-300/60">
+            Dịch vụ Bứt Phá Marketing
+          </p>
+          {serviceCardGrid}
+        </div>
       </div>
 
       <div
@@ -243,6 +293,14 @@ export function AdminV2Login({
         <div
           className="pointer-events-none absolute -bottom-16 -left-10 h-[360px] w-[360px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(79,70,229,0.18) 0%, transparent 65%)" }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
         />
 
         <div className="relative z-10 flex h-full min-h-0 flex-col overflow-y-auto px-8 py-10 xl:px-12">
@@ -324,38 +382,7 @@ export function AdminV2Login({
             <div className="h-px flex-1 bg-white/10" />
           </div>
 
-          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-4">
-            {bpServiceCards.map((card) => {
-              const Icon = card.icon;
-              return (
-                <button
-                  key={card.id}
-                  type="button"
-                  onClick={() => onServiceClick(card)}
-                  className="flex flex-col rounded-2xl p-4 text-left transition-all hover:-translate-y-0.5 hover:border-violet-400/30 hover:bg-white/[0.07]"
-                  style={{
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    backdropFilter: "blur(10px)",
-                  }}
-                >
-                  <div
-                    className="mb-3 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, rgba(124,58,237,0.4), rgba(99,102,241,0.25))",
-                      border: "1px solid rgba(167,139,250,0.25)",
-                      boxShadow: "0 2px 8px rgba(124,58,237,0.2)",
-                    }}
-                  >
-                    <Icon className="h-4 w-4 text-violet-300" />
-                  </div>
-                  <div className="mb-1 text-sm font-bold leading-snug text-white">{card.title}</div>
-                  <div className="text-[11px] leading-relaxed text-white/40">{card.desc}</div>
-                </button>
-              );
-            })}
-          </div>
+          <div className="pb-6">{serviceCardGrid}</div>
 
           <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5">
             <div className="flex items-center gap-2">

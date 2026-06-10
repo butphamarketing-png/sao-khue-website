@@ -110,6 +110,7 @@ import { IconPickerField } from "@/components/admin/IconPickerField";
 import { AdminV2Shell } from "@/components/admin/AdminV2Shell";
 import {
   AddRowButton,
+  AdminStatCard,
   ChecklistCard,
   DashboardLinkCard,
   EditorStatCard,
@@ -816,19 +817,19 @@ export default function Admin() {
         label: "Tổng bài viết",
         value: items.length,
         icon: Newspaper,
-        color: "bg-sky-500",
+        accent: "violet" as const,
       },
       {
         label: "Dịch vụ",
         value: items.filter((post) => post.category === "dich-vu").length,
         icon: Building2,
-        color: "bg-emerald-500",
+        accent: "indigo" as const,
       },
       {
         label: "Công trình",
         value: items.filter((post) => post.category === "cong-trinh").length,
         icon: Layers3,
-        color: "bg-amber-500",
+        accent: "fuchsia" as const,
       },
       {
         label: "Kinh nghiệm",
@@ -836,7 +837,7 @@ export default function Admin() {
           (post) => post.category === "tin-tuc" || post.category === "kinh-nghiem",
         ).length,
         icon: BookOpen,
-        color: "bg-rose-500",
+        accent: "purple" as const,
       },
     ],
     [items],
@@ -844,10 +845,21 @@ export default function Admin() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-100">
-        <div className="flex items-center gap-3 rounded-2xl bg-white px-8 py-6 shadow-lg">
-          <div className="h-5 w-5 animate-spin rounded-full border-2 border-primary border-t-transparent" />
-          <span className="text-sm font-medium text-slate-600">Đang tải khu vực admin...</span>
+      <div
+        className="flex min-h-screen items-center justify-center"
+        style={{ background: "linear-gradient(160deg, #f5f3ff 0%, #ede9fe 50%, #f8fafc 100%)" }}
+      >
+        <div className="flex flex-col items-center gap-4 rounded-2xl border border-violet-100 bg-white px-10 py-8 shadow-xl shadow-violet-500/10">
+          <div
+            className="flex h-12 w-12 items-center justify-center rounded-2xl"
+            style={{ background: "linear-gradient(135deg, #7c3aed, #6d28d9)" }}
+          >
+            <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent" />
+          </div>
+          <div className="text-center">
+            <div className="text-sm font-bold text-slate-900">Bứt Phá Marketing CMS</div>
+            <div className="mt-1 text-xs text-slate-500">Đang tải khu vực quản trị...</div>
+          </div>
         </div>
       </div>
     );
@@ -1268,30 +1280,16 @@ export default function Admin() {
               desc="Tổng quan nhanh về nội dung website và các khu vực cần cập nhật."
             />
 
-            <div className="grid grid-cols-1 gap-5 xl:grid-cols-4">
-              {dashboardStats.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-                  >
-                    <div className="flex items-center gap-4">
-                      <div
-                        className={`flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow ${item.color}`}
-                      >
-                        <Icon size={30} />
-                      </div>
-                      <div>
-                        <div className="text-sm font-medium text-slate-500">{item.label}</div>
-                        <div className="mt-1 text-3xl font-bold text-slate-900">
-                          {item.value}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              {dashboardStats.map((item) => (
+                <AdminStatCard
+                  key={item.label}
+                  label={item.label}
+                  value={item.value}
+                  icon={item.icon}
+                  accent={item.accent}
+                />
+              ))}
             </div>
 
             <AdminDashboardExtras
@@ -1313,49 +1311,49 @@ export default function Admin() {
                 </div>
                 <div className="grid grid-cols-1 gap-4 p-6 md:grid-cols-2">
                   <DashboardLinkCard
-                    color="bg-[#1f7ae0]"
+                    color="bg-gradient-to-br from-violet-600 to-indigo-600"
                     icon={Newspaper}
                     title="Quản lý bài viết"
                     desc="Lọc theo danh mục và mục con, sửa bài viết, SEO và slug."
                     onClick={() => openPostsView("all")}
                   />
                   <DashboardLinkCard
-                    color="bg-[#16a34a]"
+                    color="bg-gradient-to-br from-purple-600 to-violet-600"
                     icon={ImagePlus}
                     title="Hero homepage"
                     desc="Cập nhật slide, tiêu đề, mô tả và hình ảnh ngoài trang chủ."
                     onClick={() => setView("settings-hero")}
                   />
                   <DashboardLinkCard
-                    color="bg-[#ca8a04]"
+                    color="bg-gradient-to-br from-fuchsia-600 to-violet-600"
                     icon={ShieldCheck}
                     title="Cam kết homepage"
                     desc="Chỉnh sửa 9 cam kết vàng theo từng dòng, không cần sửa JSON."
                     onClick={() => setView("settings-commitments")}
                   />
                   <DashboardLinkCard
-                    color="bg-[#0f766e]"
+                    color="bg-gradient-to-br from-indigo-600 to-violet-700"
                     icon={Settings2}
                     title="Thiết lập website"
                     desc="Logo, hotline, footer và slogan top bar."
                     onClick={() => setView("settings-general")}
                   />
                   <DashboardLinkCard
-                    color="bg-[#0084ff]"
+                    color="bg-gradient-to-br from-violet-500 to-purple-700"
                     icon={Smartphone}
                     title="Thanh liên hệ mobile"
                     desc="Maps, Facebook, Messenger, Zalo — menu chọn 2 fanpage / 2 Messenger."
                     onClick={() => setView("settings-mobile-bar")}
                   />
                   <DashboardLinkCard
-                    color="bg-violet-600"
+                    color="bg-gradient-to-br from-violet-600 to-fuchsia-600"
                     icon={BarChart3}
                     title="Số liệu & FAQ"
                     desc="Thanh số liệu, đánh giá, FAQ, quy trình và tiêu đề section."
                     onClick={() => setView("settings-stats")}
                   />
                   <DashboardLinkCard
-                    color="bg-rose-600"
+                    color="bg-gradient-to-br from-indigo-500 to-violet-600"
                     icon={LayoutGrid}
                     title="Trang danh mục"
                     desc="Intro và điểm nổi bật cho Giới thiệu, Dịch vụ, Công trình."

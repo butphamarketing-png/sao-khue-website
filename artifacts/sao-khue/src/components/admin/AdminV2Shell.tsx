@@ -33,7 +33,7 @@ import {
   Star,
   Type,
 } from "lucide-react";
-import { BrandLogo } from "@/components/BrandLogo";
+import { BP_LOGO_URL } from "./bp-cms-login-data";
 import {
   POST_CATEGORY_NAV,
   type AdminView,
@@ -206,9 +206,12 @@ export function AdminV2Shell({
   return (
     <div
       className="flex h-screen w-full overflow-hidden font-sans"
-      style={{ fontFamily: "'Inter','Be Vietnam Pro',system-ui,sans-serif", background: "#f8fafc" }}
+      style={{
+        fontFamily: "'Inter','Be Vietnam Pro',system-ui,sans-serif",
+        background: "linear-gradient(180deg, #f5f3ff 0%, #f8fafc 40%, #f1f5f9 100%)",
+      }}
     >
-      <aside className="hidden w-[220px] shrink-0 xl:flex">{sidebar}</aside>
+      <aside className="hidden w-[248px] shrink-0 xl:flex">{sidebar}</aside>
 
       {mobileOpen && (
         <div className="fixed inset-0 z-50 xl:hidden">
@@ -216,28 +219,31 @@ export function AdminV2Shell({
             className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
           />
-          <aside className="absolute left-0 top-0 flex h-full w-[260px] shadow-2xl">{sidebar}</aside>
+          <aside className="absolute left-0 top-0 flex h-full w-[272px] shadow-2xl shadow-violet-900/30">{sidebar}</aside>
         </div>
       )}
 
       <div className="flex min-w-0 flex-1 flex-col overflow-hidden">
-        <header
-          className="flex h-14 shrink-0 items-center justify-between px-4 md:px-7"
-          style={{ background: "white", borderBottom: "1px solid #f1f5f9", boxShadow: "0 1px 3px rgba(0,0,0,0.04)" }}
-        >
+        <header className="relative flex h-[60px] shrink-0 items-center justify-between border-b border-violet-100/80 bg-white/90 px-4 shadow-sm shadow-violet-500/5 backdrop-blur-md md:px-7">
+          <div
+            className="pointer-events-none absolute inset-x-0 top-0 h-0.5"
+            style={{ background: "linear-gradient(90deg, #7c3aed, #6d28d9, #4f46e5)" }}
+          />
           <div className="flex items-center gap-3">
             <button
               type="button"
               onClick={() => setMobileOpen(true)}
-              className="rounded-lg border border-slate-200 p-2 text-slate-700 xl:hidden"
+              className="rounded-xl border border-violet-100 bg-violet-50/50 p-2.5 text-violet-700 transition hover:bg-violet-100 xl:hidden"
               aria-label="Mở menu"
             >
               <Menu style={{ width: "1rem", height: "1rem" }} />
             </button>
-            <div className="text-sm text-gray-400">
-              Trang chủ
-              <span className="mx-2 text-gray-200">/</span>
-              <span className="font-semibold text-gray-700">{pageTitle}</span>
+            <div className="flex items-center gap-2 text-sm">
+              <span className="hidden rounded-lg bg-violet-50 px-2 py-1 text-xs font-semibold text-violet-500 sm:inline">
+                CMS
+              </span>
+              <span className="text-slate-400">/</span>
+              <span className="font-bold text-slate-800">{pageTitle}</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -245,8 +251,12 @@ export function AdminV2Shell({
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold sm:inline-flex"
-              style={{ background: "#f5f3ff", color: "#7c3aed", border: "1px solid #ede9fe" }}
+              className="hidden items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-bold transition hover:opacity-90 sm:inline-flex"
+              style={{
+                background: "linear-gradient(135deg, #7c3aed, #6d28d9)",
+                color: "white",
+                boxShadow: "0 2px 12px rgba(124,58,237,0.3)",
+              }}
             >
               <Globe style={{ width: "0.85rem", height: "0.85rem" }} />
               Xem website
@@ -262,22 +272,26 @@ export function AdminV2Shell({
                 </span>
               </div>
             )}
-            <div className="flex items-center gap-2">
+            <div
+              className="flex items-center gap-2.5 rounded-xl border border-violet-100 bg-violet-50/30 py-1 pl-1 pr-3"
+            >
               <div
-                className="flex h-7 w-7 items-center justify-center rounded-full text-xs font-black text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-lg text-xs font-black text-white shadow-md shadow-violet-500/30"
                 style={{ background: "linear-gradient(135deg, #7c3aed, #6d28d9)" }}
               >
                 {userInitial}
               </div>
               <div className="hidden sm:block">
-                <div className="text-xs font-bold leading-none text-gray-900">{userLabel}</div>
-                <div className="mt-0.5 text-[10px] leading-none text-gray-400">Quản trị viên</div>
+                <div className="text-xs font-bold leading-none text-slate-900">{userLabel}</div>
+                <div className="mt-0.5 text-[10px] font-medium leading-none text-violet-500">
+                  Quản trị viên
+                </div>
               </div>
             </div>
           </div>
         </header>
 
-        <main className="flex-1 overflow-y-auto bg-gray-50 p-4 md:p-6 xl:p-8">{children}</main>
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 xl:p-8">{children}</main>
       </div>
     </div>
   );
@@ -312,28 +326,49 @@ function SidebarNav({
 }) {
   return (
     <div
-      className="flex h-full w-full flex-col overflow-y-auto relative"
+      className="relative flex h-full w-full flex-col overflow-y-auto"
       style={{ background: "linear-gradient(180deg, #1a0a3d 0%, #2d0a6b 40%, #1e1b4b 100%)" }}
     >
       <div
-        className="pointer-events-none absolute right-0 top-0 h-36 w-36 rounded-full opacity-20"
-        style={{ background: "radial-gradient(circle, #7c3aed, transparent)" }}
+        className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full opacity-25"
+        style={{ background: "radial-gradient(circle, #7c3aed, transparent 70%)" }}
+      />
+      <div
+        className="pointer-events-none absolute bottom-20 -left-8 h-32 w-32 rounded-full opacity-15"
+        style={{ background: "radial-gradient(circle, #818cf8, transparent 70%)" }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
       />
 
-      <div className="relative z-10 flex items-center gap-2.5 border-b border-white/10 px-4 py-5">
-        <div
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg"
-          style={{
-            background: "linear-gradient(135deg, rgba(124,58,237,.6), rgba(99,102,241,.4))",
-            border: "1px solid rgba(167,139,250,.3)",
-          }}
-        >
-          <BrandLogo alt="Sao Khuê" className="h-5 w-5 rounded bg-white/90 p-0.5 object-contain" />
-        </div>
-        <div>
-          <div className="text-xs font-black leading-none tracking-tight text-white">SAO KHUÊ</div>
-          <div className="mt-0.5 text-[7px] font-bold tracking-[.2em]" style={{ color: "#a78bfa" }}>
-            CMS
+      <div className="relative z-10 border-b border-white/10 px-4 py-5">
+        <div className="flex items-center gap-3">
+          <div
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-lg"
+            style={{
+              background: "linear-gradient(135deg, rgba(124,58,237,.7), rgba(99,102,241,.5))",
+              border: "1px solid rgba(167,139,250,.35)",
+            }}
+          >
+            <img
+              src={BP_LOGO_URL}
+              alt="Bứt Phá Marketing"
+              className="h-6 w-6 object-contain"
+              style={{ filter: "brightness(10)" }}
+            />
+          </div>
+          <div>
+            <div className="text-[11px] font-black leading-none tracking-tight text-white">
+              BỨT PHÁ MARKETING
+            </div>
+            <div className="mt-1 text-[8px] font-bold tracking-[0.22em]" style={{ color: "#c4b5fd" }}>
+              KIẾN TRÚC SAO KHUÊ
+            </div>
           </div>
         </div>
       </div>
@@ -386,14 +421,17 @@ function SidebarNav({
                             onOpenPosts(category);
                             onNavigate();
                           }}
-                          className="flex w-full items-center gap-2.5 rounded-xl py-2.5 text-left transition-all"
+                          className="flex w-full items-center gap-2.5 rounded-xl py-2.5 text-left transition-all duration-200"
                           style={{
                             paddingLeft: "10px",
                             paddingRight: "8px",
-                            background: isActive ? "rgba(255,255,255,0.12)" : "transparent",
+                            background: isActive
+                              ? "linear-gradient(90deg, rgba(124,58,237,0.35), rgba(255,255,255,0.08))"
+                              : "transparent",
                             color: isActive ? "white" : "rgba(255,255,255,0.55)",
                             fontWeight: isActive ? 600 : 500,
-                            borderLeft: isActive ? "2px solid #a78bfa" : "2px solid transparent",
+                            borderLeft: isActive ? "2px solid #c4b5fd" : "2px solid transparent",
+                            boxShadow: isActive ? "0 2px 12px rgba(124,58,237,0.15)" : "none",
                           }}
                         >
                           <Icon
@@ -437,14 +475,17 @@ function SidebarNav({
                           setView(item.view);
                           onNavigate();
                         }}
-                        className="flex w-full items-center gap-2.5 rounded-xl py-2.5 text-left transition-all"
+                        className="flex w-full items-center gap-2.5 rounded-xl py-2.5 text-left transition-all duration-200"
                         style={{
                           paddingLeft: "10px",
                           paddingRight: "8px",
-                          background: isActive ? "rgba(255,255,255,0.12)" : "transparent",
+                          background: isActive
+                            ? "linear-gradient(90deg, rgba(124,58,237,0.35), rgba(255,255,255,0.08))"
+                            : "transparent",
                           color: isActive ? "white" : "rgba(255,255,255,0.55)",
                           fontWeight: isActive ? 600 : 500,
-                          borderLeft: isActive ? "2px solid #a78bfa" : "2px solid transparent",
+                          borderLeft: isActive ? "2px solid #c4b5fd" : "2px solid transparent",
+                          boxShadow: isActive ? "0 2px 12px rgba(124,58,237,0.15)" : "none",
                         }}
                       >
                         <item.icon
