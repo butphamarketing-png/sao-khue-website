@@ -44,6 +44,7 @@ interface AuthState {
   loginError: string | null;
   login: () => void;
   loginWithPassword: (email: string, password: string) => Promise<boolean>;
+  verifyAdminPassword: (email: string, password: string) => Promise<boolean>;
   logout: () => void;
 }
 
@@ -170,6 +171,22 @@ export function useAuth(): AuthState {
     [login],
   );
 
+  const verifyAdminPassword = useCallback(async (email: string, password: string) => {
+    if (isLocalDevHost()) return true;
+
+    try {
+      const res = await fetch("/api/auth/verify-password", {
+        method: "POST",
+        credentials: "include",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      return res.ok;
+    } catch {
+      return false;
+    }
+  }, []);
+
   const logout = useCallback(() => {
     if (isLocalDevHost()) {
       writeLocalDevUser(null);
@@ -189,6 +206,7 @@ export function useAuth(): AuthState {
     loginError,
     login,
     loginWithPassword,
+    verifyAdminPassword,
     logout,
   };
 }

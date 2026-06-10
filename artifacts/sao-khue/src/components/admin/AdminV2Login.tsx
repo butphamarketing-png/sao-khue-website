@@ -1,28 +1,29 @@
 import { useState, type FormEvent } from "react";
 import {
   ArrowRight,
-  BarChart3,
+  CalendarClock,
   CheckCircle,
   Eye,
   EyeOff,
-  FileText,
   Globe,
-  ImagePlus,
-  Inbox,
-  Layers3,
   Lock,
   Mail,
   MessageCircle,
   Phone,
-  Search,
-  Settings2,
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { BrandLogo } from "@/components/BrandLogo";
+import { BpCmsRenewalModals, BpCmsServiceModals } from "./BpCmsLoginModals";
+import {
+  BP_LOGO_URL,
+  bpContacts,
+  bpLoginFeatures,
+  bpServiceCards,
+  type BpServiceModal,
+} from "./bp-cms-login-data";
 
 type Props = {
   authMode: string;
@@ -34,32 +35,16 @@ type Props = {
   adminSubmitting: boolean;
   setAdminSubmitting: (v: boolean) => void;
   loginWithPassword: (email: string, pass: string) => Promise<boolean>;
+  verifyAdminPassword: (email: string, pass: string) => Promise<boolean>;
   login: () => void;
 };
 
-const features = [
-  "Quản lý bài viết & trang chủ",
-  "Cập nhật SEO & hình ảnh",
-  "Bảo mật dữ liệu tuyệt đối",
-];
-
-const contacts = [
-  { icon: Phone, label: "Hotline", value: "0909 075 668" },
-  { icon: Globe, label: "Website", value: "kientrucsaokhue.com" },
-  { icon: Mail, label: "Email", value: "kientrucsaokhue@gmail.com" },
-  { icon: MessageCircle, label: "Zalo", value: "0909 075 668" },
-];
-
-const cmsServices = [
-  { icon: FileText, title: "Quản lý bài viết", desc: "Tin tức, dịch vụ, công trình — SEO Rank Math." },
-  { icon: ImagePlus, title: "Trang chủ & Hero", desc: "Slideshow, cam kết, báo giá, FAQ." },
-  { icon: Layers3, title: "Công trình", desc: "Cập nhật hình ảnh và mô tả dự án." },
-  { icon: Search, title: "SEO tổng quan", desc: "Meta, từ khóa, sitemap, Google Search Console." },
-  { icon: BarChart3, title: "Bảng báo giá", desc: "Đơn giá phần thô, trọn gói, tính chi phí." },
-  { icon: Globe, title: "Google & Maps", desc: "Analytics, Search Console, bản đồ nhúng." },
-  { icon: Inbox, title: "Hộp thư liên hệ", desc: "Yêu cầu báo giá từ form website." },
-  { icon: Settings2, title: "Cài đặt hệ thống", desc: "Logo, hotline, menu, mạng xã hội." },
-];
+const contactIcons = {
+  Hotline: Phone,
+  Website: Globe,
+  Email: Mail,
+  Zalo: MessageCircle,
+} as const;
 
 export function AdminV2Login({
   authMode,
@@ -71,9 +56,13 @@ export function AdminV2Login({
   adminSubmitting,
   setAdminSubmitting,
   loginWithPassword,
+  verifyAdminPassword,
   login,
 }: Props) {
   const [showPassword, setShowPassword] = useState(false);
+  const [activeModal, setActiveModal] = useState<BpServiceModal>(null);
+  const [renewalPasswordOpen, setRenewalPasswordOpen] = useState(false);
+  const [renewalInfoOpen, setRenewalInfoOpen] = useState(false);
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -81,6 +70,14 @@ export function AdminV2Login({
     const ok = await loginWithPassword(adminEmail, adminPassword);
     setAdminSubmitting(false);
     if (ok) setAdminPassword("");
+  };
+
+  const onServiceClick = (card: (typeof bpServiceCards)[number]) => {
+    if (card.href) {
+      window.open(card.href, "_blank", "noopener,noreferrer");
+      return;
+    }
+    if (card.modal) setActiveModal(card.modal);
   };
 
   return (
@@ -105,10 +102,24 @@ export function AdminV2Login({
         <div className="relative z-10 flex h-full flex-col justify-between px-8 py-10 md:px-10">
           <div>
             <div className="mb-10 flex items-center gap-3">
-              <BrandLogo alt="Kiến Trúc Sao Khuê" className="h-11 w-11 rounded-lg bg-white object-contain p-1 shadow-sm" />
+              <div
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl shadow-lg"
+                style={{ background: "linear-gradient(135deg, #7c3aed, #6d28d9)" }}
+              >
+                <img
+                  src={BP_LOGO_URL}
+                  alt="Bứt Phá Marketing"
+                  className="h-7 w-7 object-contain"
+                  style={{ filter: "brightness(10)" }}
+                />
+              </div>
               <div>
-                <div className="text-sm font-black tracking-tight text-gray-900">KIẾN TRÚC SAO KHUÊ</div>
-                <div className="text-[10px] font-bold tracking-[0.25em] text-violet-500">CMS ADMIN</div>
+                <div className="text-sm font-black tracking-tight text-gray-900">
+                  BỨT PHÁ MARKETING
+                </div>
+                <div className="text-[10px] font-bold tracking-[0.25em] text-violet-500">
+                  CMS KHÁCH HÀNG
+                </div>
               </div>
             </div>
 
@@ -116,12 +127,12 @@ export function AdminV2Login({
               <div className="mb-2 flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-violet-500" />
                 <span className="text-xs font-bold uppercase tracking-widest text-violet-500">
-                  Khu vực quản trị
+                  Khu vực quản trị hệ thống
                 </span>
               </div>
-              <h1 className="text-3xl font-black tracking-tight text-gray-900">Đăng nhập</h1>
+              <h1 className="text-3xl font-black tracking-tight text-gray-900">Đăng nhập CMS</h1>
               <p className="mt-2 text-sm leading-relaxed text-gray-500">
-                Quản lý toàn bộ website: bài viết, trang chủ, SEO, hình ảnh và cài đặt hệ thống.
+                Quản lý website Kiến Trúc Sao Khuê — nội dung, marketing và dịch vụ Bứt Phá.
               </p>
             </div>
 
@@ -137,7 +148,7 @@ export function AdminV2Login({
                     type="email"
                     value={adminEmail}
                     onChange={(e) => setAdminEmail(e.target.value)}
-                    placeholder="admin@example.com"
+                    placeholder="butphamarketing@gmail.com"
                     className="h-12 rounded-xl border-gray-200 pl-10"
                     required
                   />
@@ -179,8 +190,11 @@ export function AdminV2Login({
               <Button
                 type="submit"
                 disabled={adminSubmitting}
-                className="h-12 w-full rounded-xl text-sm font-bold text-white"
-                style={{ background: "linear-gradient(135deg, #7c3aed, #6d28d9)" }}
+                className="h-12 w-full rounded-xl text-sm font-bold text-white transition-all hover:opacity-90 hover:shadow-xl"
+                style={{
+                  background: "linear-gradient(135deg, #7c3aed, #6d28d9)",
+                  boxShadow: "0 4px 20px rgba(124,58,237,0.35)",
+                }}
               >
                 {adminSubmitting ? "Đang đăng nhập..." : "Đăng nhập CMS"}
                 {!adminSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
@@ -194,7 +208,7 @@ export function AdminV2Login({
             </form>
 
             <ul className="mt-8 space-y-2">
-              {features.map((f) => (
+              {bpLoginFeatures.map((f) => (
                 <li key={f} className="flex items-center gap-2 text-sm text-gray-600">
                   <CheckCircle className="h-4 w-4 shrink-0 text-violet-500" />
                   {f}
@@ -206,7 +220,7 @@ export function AdminV2Login({
           <div className="mt-8 border-t border-gray-100 pt-6">
             <div className="flex items-center gap-2 text-xs text-gray-400">
               <ShieldCheck className="h-3.5 w-3.5 text-violet-400" />
-              <span>© Kiến Trúc Sao Khuê · Khu vực nội bộ</span>
+              <span>© Bứt Phá Marketing · Kiến Trúc Sao Khuê</span>
             </div>
           </div>
         </div>
@@ -227,93 +241,138 @@ export function AdminV2Login({
           className="pointer-events-none absolute -bottom-16 -left-10 h-[360px] w-[360px] rounded-full"
           style={{ background: "radial-gradient(circle, rgba(79,70,229,0.18) 0%, transparent 65%)" }}
         />
+
         <div className="relative z-10 flex h-full min-h-0 flex-col overflow-y-auto px-8 py-10 xl:px-12">
-          <div className="mb-8">
-            <div className="mb-4 space-y-1">
-              <div className="text-3xl font-black leading-tight tracking-tight xl:text-4xl">Quản Lý</div>
-              <div
-                className="text-3xl font-black leading-tight tracking-tight xl:text-4xl"
-                style={{
-                  background: "linear-gradient(90deg, #c4b5fd 0%, #a78bfa 50%, #818cf8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                Toàn Bộ Website
+          <div className="mb-6 flex items-start justify-between gap-4">
+            <div className="min-w-0 flex-1">
+              <div className="mb-4 flex items-center gap-3">
+                <img
+                  src={BP_LOGO_URL}
+                  alt="Bứt Phá Marketing"
+                  className="h-10 w-10 object-contain"
+                  style={{ filter: "brightness(1.4) drop-shadow(0 0 10px rgba(167,139,250,0.7))" }}
+                />
+                <div>
+                  <div className="text-sm font-black tracking-tight">BỨT PHÁ MARKETING</div>
+                  <div className="text-[9px] font-bold tracking-[0.3em] text-violet-300">
+                    DÀNH CHO KHÁCH HÀNG
+                  </div>
+                </div>
               </div>
+              <div className="space-y-1">
+                <div className="text-2xl font-black leading-tight tracking-tight xl:text-3xl">
+                  QUẢN LÝ MARKETING
+                </div>
+                <div
+                  className="text-2xl font-black leading-tight tracking-tight xl:text-3xl"
+                  style={{
+                    background: "linear-gradient(90deg, #c4b5fd 0%, #a78bfa 50%, #818cf8 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  & WEBSITE
+                </div>
+              </div>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-white/50">
+                Dành riêng cho khách hàng Bứt Phá Marketing — Kiến Trúc Sao Khuê.
+              </p>
             </div>
-            <p className="max-w-md text-sm leading-relaxed text-white/50">
-              Thiết kế, xây dựng, tin tức, báo giá, SEO và cài đặt Google — tất cả trong một bảng điều khiển.
-            </p>
+
+            <button
+              type="button"
+              onClick={() => setRenewalPasswordOpen(true)}
+              className="flex shrink-0 items-center gap-2 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-wide transition-all hover:scale-[1.02]"
+              style={{
+                background: "rgba(124,58,237,0.35)",
+                border: "1px solid rgba(167,139,250,0.35)",
+                color: "#e9d5ff",
+                boxShadow: "0 4px 16px rgba(124,58,237,0.25)",
+              }}
+            >
+              <CalendarClock className="h-3.5 w-3.5" />
+              Thông tin gia hạn
+            </button>
           </div>
 
           <div className="mb-6 grid grid-cols-2 gap-3 xl:grid-cols-4">
-            {contacts.map(({ icon: Icon, label, value }) => (
-              <div
-                key={label}
-                className="flex items-center gap-2.5 rounded-xl px-3 py-2.5"
-                style={{
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.09)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
+            {bpContacts.map(({ label, value }) => {
+              const Icon = contactIcons[label as keyof typeof contactIcons];
+              return (
                 <div
-                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
+                  key={label}
+                  className="flex items-center gap-2.5 rounded-xl px-3 py-2.5"
                   style={{
-                    background: "rgba(124,58,237,0.35)",
-                    border: "1px solid rgba(167,139,250,0.25)",
+                    background: "rgba(255,255,255,0.05)",
+                    border: "1px solid rgba(255,255,255,0.09)",
+                    backdropFilter: "blur(8px)",
                   }}
                 >
-                  <Icon className="h-3.5 w-3.5 text-violet-300" />
+                  <div
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg"
+                    style={{
+                      background: "rgba(124,58,237,0.35)",
+                      border: "1px solid rgba(167,139,250,0.25)",
+                    }}
+                  >
+                    <Icon className="h-3.5 w-3.5 text-violet-300" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-[9px] font-medium uppercase tracking-wide text-white/40">
+                      {label}
+                    </div>
+                    <div className="truncate text-xs font-bold text-white">{value}</div>
+                  </div>
                 </div>
-                <div className="min-w-0">
-                  <div className="text-[9px] font-medium uppercase tracking-wide text-white/40">{label}</div>
-                  <div className="truncate text-xs font-bold text-white">{value}</div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mb-4 flex items-center gap-3">
             <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/30">
-              Chức năng CMS
+              Dịch vụ của chúng tôi
             </div>
             <div className="h-px flex-1 bg-white/10" />
           </div>
 
-          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-4">
-            {cmsServices.map(({ icon: Icon, title, desc }) => (
-              <div
-                key={title}
-                className="flex flex-col rounded-2xl p-4"
-                style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  backdropFilter: "blur(10px)",
-                }}
-              >
-                <div
-                  className="mb-3 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
+          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-3">
+            {bpServiceCards.map((card) => {
+              const Icon = card.icon;
+              return (
+                <button
+                  key={card.id}
+                  type="button"
+                  onClick={() => onServiceClick(card)}
+                  className="flex flex-col rounded-2xl p-4 text-left transition-all hover:-translate-y-0.5 hover:border-violet-400/30 hover:bg-white/[0.07]"
                   style={{
-                    background: "linear-gradient(135deg, rgba(124,58,237,0.4), rgba(99,102,241,0.25))",
-                    border: "1px solid rgba(167,139,250,0.25)",
-                    boxShadow: "0 2px 8px rgba(124,58,237,0.2)",
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(255,255,255,0.08)",
+                    backdropFilter: "blur(10px)",
                   }}
                 >
-                  <Icon className="h-4 w-4 text-violet-300" />
-                </div>
-                <div className="mb-1 text-sm font-bold leading-snug text-white">{title}</div>
-                <div className="text-[11px] leading-relaxed text-white/40">{desc}</div>
-              </div>
-            ))}
+                  <div
+                    className="mb-3 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, rgba(124,58,237,0.4), rgba(99,102,241,0.25))",
+                      border: "1px solid rgba(167,139,250,0.25)",
+                      boxShadow: "0 2px 8px rgba(124,58,237,0.2)",
+                    }}
+                  >
+                    <Icon className="h-4 w-4 text-violet-300" />
+                  </div>
+                  <div className="mb-1 text-sm font-bold leading-snug text-white">{card.title}</div>
+                  <div className="text-[11px] leading-relaxed text-white/40">{card.desc}</div>
+                </button>
+              );
+            })}
           </div>
 
           <div className="mt-auto flex items-center justify-between border-t border-white/10 pt-5">
             <div className="flex items-center gap-2">
               <ShieldCheck className="h-3.5 w-3.5 text-violet-400" />
-              <span className="text-[11px] font-medium text-white/35">Kiến Trúc Sao Khuê CMS</span>
+              <span className="text-[11px] font-medium text-white/35">Powered by Bứt Phá Marketing</span>
             </div>
             <div
               className="rounded-lg px-2.5 py-1 text-[10px] font-bold"
@@ -328,6 +387,16 @@ export function AdminV2Login({
           </div>
         </div>
       </div>
+
+      <BpCmsServiceModals activeModal={activeModal} onClose={() => setActiveModal(null)} />
+      <BpCmsRenewalModals
+        passwordOpen={renewalPasswordOpen}
+        renewalOpen={renewalInfoOpen}
+        onPasswordOpenChange={setRenewalPasswordOpen}
+        onRenewalOpenChange={setRenewalInfoOpen}
+        adminEmail={adminEmail}
+        verifyAdminPassword={verifyAdminPassword}
+      />
     </div>
   );
 }

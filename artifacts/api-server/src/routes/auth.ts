@@ -110,35 +110,52 @@ router.get("/auth/mode", (_req: Request, res: Response) => {
   });
 });
 
-router.post("/auth/simple-login", async (req: Request, res: Response) => {
+function validateSimpleLoginBody(body: unknown):
+  | { ok: true; email: string }
+  | { ok: false; status: number; error: string } {
   if (!isSimplePasswordAuthEnabled()) {
-    res.status(503).json({ error: "Admin password is not configured on the server" });
-    return;
+    return { ok: false, status: 503, error: "Admin password is not configured on the server" };
   }
 
-  const parsed = SimpleLoginBody.safeParse(req.body);
+  const parsed = SimpleLoginBody.safeParse(body);
   if (!parsed.success) {
-    res.status(400).json({ error: "Missing or invalid credentials" });
-    return;
+    return { ok: false, status: 400, error: "Missing or invalid credentials" };
   }
 
   const expectedPassword = process.env.ADMIN_PASSWORD!;
   const expectedEmail = getSimpleAdminEmail();
 
   if (parsed.data.password !== expectedPassword) {
-    res.status(401).json({ error: "Invalid credentials" });
-    return;
+    return { ok: false, status: 401, error: "Invalid credentials" };
   }
 
   if (process.env.ADMIN_EMAIL && parsed.data.email !== expectedEmail) {
-    res.status(401).json({ error: "Invalid credentials" });
+    return { ok: false, status: 401, error: "Invalid credentials" };
+  }
+
+  return { ok: true, email: expectedEmail };
+}
+
+router.post("/auth/verify-password", (req: Request, res: Response) => {
+  const result = validateSimpleLoginBody(req.body);
+  if (!result.ok) {
+    res.status(result.status).json({ error: result.error });
+    return;
+  }
+  res.json({ ok: true });
+});
+
+router.post("/auth/simple-login", async (req: Request, res: Response) => {
+  const result = validateSimpleLoginBody(req.body);
+  if (!result.ok) {
+    res.status(result.status).json({ error: result.error });
     return;
   }
 
   const sessionData: SessionData = {
     user: {
       id: "render-admin",
-      email: expectedEmail,
+      email: result.email,
       firstName: "Render",
       lastName: "Admin",
       profileImageUrl: null,

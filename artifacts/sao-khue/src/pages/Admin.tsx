@@ -508,6 +508,7 @@ export default function Admin() {
     loginError,
     login,
     loginWithPassword,
+    verifyAdminPassword,
     logout,
   } = useAuth();
   const qc = useQueryClient();
@@ -864,6 +865,7 @@ export default function Admin() {
         adminSubmitting={adminSubmitting}
         setAdminSubmitting={setAdminSubmitting}
         loginWithPassword={loginWithPassword}
+        verifyAdminPassword={verifyAdminPassword}
         login={login}
       />
     );
