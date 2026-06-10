@@ -640,9 +640,9 @@ export function auditRankMath(
 }
 
 export function checksToChecklistItems(
-  checks: SeoCheck[],
+  checks: SeoCheck[] | null | undefined,
 ): Array<{ label: string; done: boolean; warn?: boolean }> {
-  return checks
+  return (checks ?? [])
     .filter((c) => c.status !== "skip")
     .map((c) => ({
       label: c.detail ? `${c.label} — ${c.detail}` : c.label,

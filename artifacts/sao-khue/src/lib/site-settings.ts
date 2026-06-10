@@ -321,8 +321,8 @@ export function restoreKnownVietnameseText(value: string | null | undefined) {
   return mapped.replace(/, Quan Bình Thạnh,/g, ", Quận Bình Thạnh,");
 }
 
-export function restoreHeroSlides(slides: HeroSlide[]) {
-  return slides.map((slide) => ({
+export function restoreHeroSlides(slides: HeroSlide[] | null | undefined) {
+  return (slides ?? []).map((slide) => ({
     ...slide,
     title: restoreKnownVietnameseText(slide.title),
     subtitle: restoreKnownVietnameseText(slide.subtitle),
@@ -330,22 +330,22 @@ export function restoreHeroSlides(slides: HeroSlide[]) {
   }));
 }
 
-export function restoreCommitments(items: CommitmentItem[]) {
-  return items.map((item) => ({
+export function restoreCommitments(items: CommitmentItem[] | null | undefined) {
+  return (items ?? []).map((item) => ({
     ...item,
     title: restoreKnownVietnameseText(item.title),
     desc: restoreKnownVietnameseText(item.desc),
   }));
 }
 
-export function restorePricing(items: PricingItem[]) {
-  return items.map((item) => ({
+export function restorePricing(items: PricingItem[] | null | undefined) {
+  return (items ?? []).map((item) => ({
     ...item,
     name: restoreKnownVietnameseText(item.name),
     unit: item.unit === "d/m2" ? "đ/m²" : item.unit,
     note: restoreKnownVietnameseText(item.note),
     ctaLabel: restoreKnownVietnameseText(item.ctaLabel),
-    features: item.features.map((feature) => restoreKnownVietnameseText(feature)),
+    features: (item.features ?? []).map((feature) => restoreKnownVietnameseText(feature)),
   }));
 }
 

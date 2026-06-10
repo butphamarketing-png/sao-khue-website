@@ -341,8 +341,9 @@ function SidebarNav({
       <nav className="relative z-10 flex-1 space-y-3 px-2.5 py-4">
         {menuGroups.map((group) => {
           const isOpen = expandedGroup[group.key];
+          const groupItems = group.items ?? [];
           const hasActive =
-            group.items.some((item) => item.view === view) ||
+            groupItems.some((item) => item.view === view) ||
             (group.key === "posts" && view === "posts");
 
           return (
@@ -426,7 +427,7 @@ function SidebarNav({
                         </button>
                       );
                     })}
-                  {group.items.map((item) => {
+                  {groupItems.map((item) => {
                     const isActive = view === item.view;
                     return (
                       <button

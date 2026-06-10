@@ -358,9 +358,10 @@ function parseArrayValue<T>(value: string | undefined, fallback: T[]): T[] {
   }
 }
 
-function normalizeCommitmentItems(items: CommitmentItem[]): CommitmentItem[] {
-  if (!items.length) return defaultCommitments;
-  return items.map((item, index) => ({
+function normalizeCommitmentItems(items: CommitmentItem[] | null | undefined): CommitmentItem[] {
+  const list = items ?? [];
+  if (!list.length) return defaultCommitments;
+  return list.map((item, index) => ({
     id: Number(item?.id) || index + 1,
     icon: typeof item?.icon === "string" && item.icon.trim() ? item.icon : "shield",
     title: item?.title ?? "",

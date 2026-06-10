@@ -3,7 +3,7 @@
  * (DB cũ / nhập thiếu dấu — khớp bản sửa trên website).
  */
 import type { CategoryPagesMap, HomeSectionMeta, PageBannersMap } from "@/lib/home-content";
-import type { MenuItem } from "@/lib/menu";
+import { defaultNavMenu, type MenuItem } from "@/lib/menu";
 import type {
   CommitmentItem,
   CostCalculatorConfig,
@@ -52,15 +52,15 @@ export function restoreAdminSettingsFields<T extends AdminSettingsFields>(form: 
   };
 }
 
-export function restoreStats(items: StatItem[]): StatItem[] {
-  return items.map((item) => ({
+export function restoreStats(items: StatItem[] | null | undefined): StatItem[] {
+  return (items ?? []).map((item) => ({
     ...item,
     label: restoreKnownVietnameseText(item.label),
   }));
 }
 
-export function restoreFaqs(items: FaqItem[]): FaqItem[] {
-  return items.map((item) => ({
+export function restoreFaqs(items: FaqItem[] | null | undefined): FaqItem[] {
+  return (items ?? []).map((item) => ({
     ...item,
     q: restoreKnownVietnameseText(item.q),
     a: restoreKnownVietnameseText(item.a),
@@ -102,7 +102,7 @@ export function restoreCategoryPages(pages: CategoryPagesMap): CategoryPagesMap 
       ...page,
       title: restoreKnownVietnameseText(page.title),
       description: restoreKnownVietnameseText(page.description),
-      highlights: page.highlights.map((h) => restoreKnownVietnameseText(h)),
+      highlights: (page.highlights ?? []).map((h) => restoreKnownVietnameseText(h)),
     };
   }
   return out;
@@ -143,7 +143,7 @@ export function restoreContactSection(contact: ContactSectionContent): ContactSe
     addressLabel: restoreKnownVietnameseText(contact.addressLabel),
     formTitle: restoreKnownVietnameseText(contact.formTitle),
     submitLabel: restoreKnownVietnameseText(contact.submitLabel),
-    serviceOptions: contact.serviceOptions.map((o) => restoreKnownVietnameseText(o)),
+    serviceOptions: (contact.serviceOptions ?? []).map((o) => restoreKnownVietnameseText(o)),
   };
 }
 
@@ -170,12 +170,12 @@ export function restoreCalculatorConfig(config: CostCalculatorConfig): CostCalcu
   };
 }
 
-export function restoreAboutPoints(points: string[]): string[] {
-  return points.map((p) => restoreKnownVietnameseText(p));
+export function restoreAboutPoints(points: string[] | null | undefined): string[] {
+  return (points ?? []).map((p) => restoreKnownVietnameseText(p));
 }
 
-export function restoreNavMenu(menu: MenuItem[]): MenuItem[] {
-  return menu.map((item) => ({
+export function restoreNavMenu(menu: MenuItem[] | null | undefined): MenuItem[] {
+  return (menu ?? defaultNavMenu).map((item) => ({
     ...item,
     title: restoreKnownVietnameseText(item.title),
     children: item.children?.map((child) => ({
