@@ -1,5 +1,14 @@
 import type { LucideIcon } from "lucide-react";
-import { BarChart3, MapPinned, Megaphone, Monitor, Rocket, Server } from "lucide-react";
+import {
+  BarChart3,
+  CalendarClock,
+  Headphones,
+  MapPinned,
+  Megaphone,
+  Monitor,
+  Rocket,
+  Server,
+} from "lucide-react";
 
 export const ZALO_TECH_URL = "https://zalo.me/0937417982";
 export const BP_LOGO_URL = "/images/logo-butpha.png";
@@ -25,6 +34,8 @@ export type BpServiceModal =
   | "hosting"
   | null;
 
+export type BpServiceCardAction = "renewal";
+
 export type BpServiceCard = {
   id: string;
   icon: LucideIcon;
@@ -32,6 +43,7 @@ export type BpServiceCard = {
   desc: string;
   modal?: BpServiceModal;
   href?: string;
+  action?: BpServiceCardAction;
 };
 
 export const bpServiceCards: BpServiceCard[] = [
@@ -76,6 +88,20 @@ export const bpServiceCards: BpServiceCard[] = [
     title: "Marketing Maps",
     desc: "Google Business Profile, SEO Maps.",
     href: "https://www.butphamarketing.com/google-maps",
+  },
+  {
+    id: "tech-support",
+    icon: Headphones,
+    title: "Liên Hệ Kỹ Thuật",
+    desc: "Hỗ trợ kỹ thuật chuyên nghiệp, tận tâm.",
+    href: ZALO_TECH_URL,
+  },
+  {
+    id: "renewal",
+    icon: CalendarClock,
+    title: "Thông Tin Gia Hạn",
+    desc: "Ngày gia hạn, hosting và tên miền.",
+    action: "renewal",
   },
 ];
 

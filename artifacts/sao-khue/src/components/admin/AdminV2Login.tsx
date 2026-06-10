@@ -1,7 +1,6 @@
 import { useState, type FormEvent } from "react";
 import {
   ArrowRight,
-  CalendarClock,
   CheckCircle,
   Eye,
   EyeOff,
@@ -73,6 +72,10 @@ export function AdminV2Login({
   };
 
   const onServiceClick = (card: (typeof bpServiceCards)[number]) => {
+    if (card.action === "renewal") {
+      setRenewalPasswordOpen(true);
+      return;
+    }
     if (card.href) {
       window.open(card.href, "_blank", "noopener,noreferrer");
       return;
@@ -243,8 +246,8 @@ export function AdminV2Login({
         />
 
         <div className="relative z-10 flex h-full min-h-0 flex-col overflow-y-auto px-8 py-10 xl:px-12">
-          <div className="mb-6 flex items-start justify-between gap-4">
-            <div className="min-w-0 flex-1">
+          <div className="mb-6">
+            <div className="min-w-0">
               <div className="mb-4 flex items-center gap-3">
                 <img
                   src={BP_LOGO_URL}
@@ -279,21 +282,6 @@ export function AdminV2Login({
                 Dành riêng cho khách hàng Bứt Phá Marketing — Kiến Trúc Sao Khuê.
               </p>
             </div>
-
-            <button
-              type="button"
-              onClick={() => setRenewalPasswordOpen(true)}
-              className="flex shrink-0 items-center gap-2 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-wide transition-all hover:scale-[1.02]"
-              style={{
-                background: "rgba(124,58,237,0.35)",
-                border: "1px solid rgba(167,139,250,0.35)",
-                color: "#e9d5ff",
-                boxShadow: "0 4px 16px rgba(124,58,237,0.25)",
-              }}
-            >
-              <CalendarClock className="h-3.5 w-3.5" />
-              Thông tin gia hạn
-            </button>
           </div>
 
           <div className="mb-6 grid grid-cols-2 gap-3 xl:grid-cols-4">
@@ -336,7 +324,7 @@ export function AdminV2Login({
             <div className="h-px flex-1 bg-white/10" />
           </div>
 
-          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3 pb-6 xl:grid-cols-4">
             {bpServiceCards.map((card) => {
               const Icon = card.icon;
               return (
