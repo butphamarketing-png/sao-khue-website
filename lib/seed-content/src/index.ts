@@ -30,6 +30,7 @@ import {
 } from "./articles";
 import { matchesCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
+import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 
 export type SeedPost = {
   slug: string;
@@ -138,6 +139,19 @@ export const seedPosts: SeedPost[] = [
   seoPost("sua-nha-quan-3", "cong-trinh", REPAIR, suaNhaQuan3),
   seoPost("thiet-ke-nha-biet-thu-thu-duc", "cong-trinh", DESIGN, thietKeNhaBietThuThuDuc),
   seoPost("thiet-ke-nha-phong-cach-hien-dai", "cong-trinh", DESIGN, thietKeNhaPhongCachHienDai),
+  ...TIN_TUC_SEED_ENTRIES.filter(
+    (e) =>
+      ![
+        "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+        "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+        "thiet-ke-nha-pho-hien-dai-tphcm",
+        "mau-nha-pho-2-tang-binh-duong",
+        "thiet-ke-thi-cong-nha-pho-dong-nai",
+        "cam-nang-xay-nha-2026",
+        "luat-xay-dung-moi-nhat",
+        "phong-thuy-nha-o",
+      ].includes(e.slug),
+  ).map((e) => seoPost(e.slug, "tin-tuc", e.image, e.article)),
   seoPost("cam-nang-xay-nha-2026", "tin-tuc", HERO, camNangXayNha2026),
   seoPost("luat-xay-dung-moi-nhat", "tin-tuc", HERO, luatXayDungMoiNhat),
   seoPost("phong-thuy-nha-o", "tin-tuc", HERO, phongThuyNhaO),

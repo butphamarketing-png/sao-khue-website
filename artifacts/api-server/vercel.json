@@ -38,8 +38,18 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/bao-gia-xay-nha-phan-tho-long-an",
+      "destination": "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
       "destination": "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/bao-gia-xay-nha-tron-goi-phu-yen",
+      "destination": "/tin-tuc/bao-gia-xay-nha-tron-goi-phu-yen",
       "permanent": true
     },
     {
@@ -48,8 +58,23 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/chi-phi-nha-pho-2-tang",
+      "destination": "/tin-tuc/chi-phi-nha-pho-2-tang",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/chi-phi-xay-nha-2-tang-dak-lak",
+      "destination": "/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
       "destination": "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/du-toan-chi-phi-xay-nha",
+      "destination": "/tin-tuc/du-toan-chi-phi-xay-nha",
       "permanent": true
     },
     {
@@ -63,13 +88,33 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/kien-truc-sao-khue-don-vi-uy-tin",
+      "destination": "/tin-tuc/kien-truc-sao-khue-don-vi-uy-tin",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/luat-xay-dung-moi-nhat",
       "destination": "/tin-tuc/luat-xay-dung-moi-nhat",
       "permanent": true
     },
     {
+      "source": "/bai-viet/luu-y-xay-nha-pho",
+      "destination": "/tin-tuc/luu-y-xay-nha-pho",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/mau-nha-ong-dep-long-an",
+      "destination": "/tin-tuc/mau-nha-ong-dep-long-an",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/mau-nha-pho-2-tang-binh-duong",
       "destination": "/tin-tuc/mau-nha-pho-2-tang-binh-duong",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/mau-nha-pho-3-tang-dep",
+      "destination": "/tin-tuc/mau-nha-pho-3-tang-dep",
       "permanent": true
     },
     {
@@ -80,6 +125,11 @@
     {
       "source": "/bai-viet/phong-thuy-nha-o",
       "destination": "/tin-tuc/phong-thuy-nha-o",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/quy-trinh-xay-nha-tron-goi-a-z",
+      "destination": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
       "permanent": true
     },
     {
@@ -98,6 +148,11 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/thi-cong-nha-pho-phu-yen",
+      "destination": "/tin-tuc/thi-cong-nha-pho-phu-yen",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/thiet-ke-biet-thu-thu-duc",
       "destination": "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc",
       "permanent": true
@@ -110,6 +165,21 @@
     {
       "source": "/bai-viet/thiet-ke-nha-biet-thu-thu-duc",
       "destination": "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/thiet-ke-nha-dep-gia-re",
+      "destination": "/tin-tuc/thiet-ke-nha-dep-gia-re",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/thiet-ke-nha-dep-phu-yen",
+      "destination": "/tin-tuc/thiet-ke-nha-dep-phu-yen",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/thiet-ke-nha-pho-dak-lak",
+      "destination": "/tin-tuc/thiet-ke-nha-pho-dak-lak",
       "permanent": true
     },
     {
@@ -128,6 +198,21 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/thiet-ke-xay-dung-nha-pho-mien-nam",
+      "destination": "/tin-tuc/thiet-ke-xay-dung-nha-pho-mien-nam",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/thue-thiet-ke-nha-truoc-khi-xay",
+      "destination": "/tin-tuc/thue-thiet-ke-nha-truoc-khi-xay",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/top-mau-nha-pho-dep-xu-huong",
+      "destination": "/tin-tuc/top-mau-nha-pho-dep-xu-huong",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/xay-dung-nha-dep",
       "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
@@ -135,6 +220,11 @@
     {
       "source": "/bai-viet/xay-dung-nha-dep-tphcm",
       "destination": "/dich-vu/xay-nha-tron-goi",
+      "permanent": true
+    },
+    {
+      "source": "/bai-viet/xay-dung-nha-long-an",
+      "destination": "/tin-tuc/xay-dung-nha-long-an",
       "permanent": true
     },
     {
@@ -153,6 +243,11 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/xay-nha-ngan-sach-1-ty-2",
+      "destination": "/tin-tuc/xay-nha-ngan-sach-1-ty-2",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/xay-nha-pho-binh-thanh",
       "destination": "/cong-trinh/xay-nha-pho-binh-thanh",
       "permanent": true
@@ -168,6 +263,11 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/xay-nha-tron-goi-dak-lak",
+      "destination": "/tin-tuc/xay-nha-tron-goi-dak-lak",
+      "permanent": true
+    },
+    {
       "source": "/bai-viet/xay-nha-tron-goi-dong-nai",
       "destination": "/dich-vu/xay-nha-tron-goi-dong-nai",
       "permanent": true
@@ -178,13 +278,28 @@
       "permanent": true
     },
     {
+      "source": "/bai-viet/xu-huong-thiet-ke-nha-pho-hien-dai",
+      "destination": "/tin-tuc/xu-huong-thiet-ke-nha-pho-hien-dai",
+      "permanent": true
+    },
+    {
       "source": "/bang-bao-gia",
       "destination": "/bao-gia",
       "permanent": true
     },
     {
+      "source": "/bao-gia-xay-nha-phan-tho-long-an",
+      "destination": "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an",
+      "permanent": true
+    },
+    {
       "source": "/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
       "destination": "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+      "permanent": true
+    },
+    {
+      "source": "/bao-gia-xay-nha-tron-goi-phu-yen",
+      "destination": "/tin-tuc/bao-gia-xay-nha-tron-goi-phu-yen",
       "permanent": true
     },
     {
@@ -195,6 +310,16 @@
     {
       "source": "/category",
       "destination": "/dich-vu",
+      "permanent": true
+    },
+    {
+      "source": "/chi-phi-nha-pho-2-tang",
+      "destination": "/tin-tuc/chi-phi-nha-pho-2-tang",
+      "permanent": true
+    },
+    {
+      "source": "/chi-phi-xay-nha-2-tang-dak-lak",
+      "destination": "/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak",
       "permanent": true
     },
     {
@@ -228,6 +353,11 @@
       "permanent": true
     },
     {
+      "source": "/du-toan-chi-phi-xay-nha",
+      "destination": "/tin-tuc/du-toan-chi-phi-xay-nha",
+      "permanent": true
+    },
+    {
       "source": "/gioi-thieu",
       "destination": "/bai-viet/ve-chung-toi",
       "permanent": true
@@ -255,6 +385,11 @@
     {
       "source": "/khuyen-mai-xay-dung",
       "destination": "/dich-vu/khuyen-mai",
+      "permanent": true
+    },
+    {
+      "source": "/kien-truc-sao-khue-don-vi-uy-tin",
+      "destination": "/tin-tuc/kien-truc-sao-khue-don-vi-uy-tin",
       "permanent": true
     },
     {
@@ -288,8 +423,23 @@
       "permanent": true
     },
     {
+      "source": "/luu-y-xay-nha-pho",
+      "destination": "/tin-tuc/luu-y-xay-nha-pho",
+      "permanent": true
+    },
+    {
+      "source": "/mau-nha-ong-dep-long-an",
+      "destination": "/tin-tuc/mau-nha-ong-dep-long-an",
+      "permanent": true
+    },
+    {
       "source": "/mau-nha-pho-2-tang-binh-duong",
       "destination": "/tin-tuc/mau-nha-pho-2-tang-binh-duong",
+      "permanent": true
+    },
+    {
+      "source": "/mau-nha-pho-3-tang-dep",
+      "destination": "/tin-tuc/mau-nha-pho-3-tang-dep",
       "permanent": true
     },
     {
@@ -310,6 +460,11 @@
     {
       "source": "/projects",
       "destination": "/cong-trinh",
+      "permanent": true
+    },
+    {
+      "source": "/quy-trinh-xay-nha-tron-goi-a-z",
+      "destination": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
       "permanent": true
     },
     {
@@ -358,6 +513,11 @@
       "permanent": true
     },
     {
+      "source": "/thi-cong-nha-pho-phu-yen",
+      "destination": "/tin-tuc/thi-cong-nha-pho-phu-yen",
+      "permanent": true
+    },
+    {
       "source": "/thiet-ke-biet-thu-thu-duc",
       "destination": "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc",
       "permanent": true
@@ -373,6 +533,21 @@
       "permanent": true
     },
     {
+      "source": "/thiet-ke-nha-dep-gia-re",
+      "destination": "/tin-tuc/thiet-ke-nha-dep-gia-re",
+      "permanent": true
+    },
+    {
+      "source": "/thiet-ke-nha-dep-phu-yen",
+      "destination": "/tin-tuc/thiet-ke-nha-dep-phu-yen",
+      "permanent": true
+    },
+    {
+      "source": "/thiet-ke-nha-pho-dak-lak",
+      "destination": "/tin-tuc/thiet-ke-nha-pho-dak-lak",
+      "permanent": true
+    },
+    {
       "source": "/thiet-ke-nha-pho-hien-dai-tphcm",
       "destination": "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm",
       "permanent": true
@@ -385,6 +560,21 @@
     {
       "source": "/thiet-ke-thi-cong-nha-pho-dong-nai",
       "destination": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
+      "permanent": true
+    },
+    {
+      "source": "/thiet-ke-xay-dung-nha-pho-mien-nam",
+      "destination": "/tin-tuc/thiet-ke-xay-dung-nha-pho-mien-nam",
+      "permanent": true
+    },
+    {
+      "source": "/thue-thiet-ke-nha-truoc-khi-xay",
+      "destination": "/tin-tuc/thue-thiet-ke-nha-truoc-khi-xay",
+      "permanent": true
+    },
+    {
+      "source": "/top-mau-nha-pho-dep-xu-huong",
+      "destination": "/tin-tuc/top-mau-nha-pho-dep-xu-huong",
       "permanent": true
     },
     {
@@ -408,6 +598,11 @@
       "permanent": true
     },
     {
+      "source": "/xay-dung-nha-long-an",
+      "destination": "/tin-tuc/xay-dung-nha-long-an",
+      "permanent": true
+    },
+    {
       "source": "/xay-dung-nha-tron-goi",
       "destination": "/dich-vu/xay-nha-tron-goi",
       "permanent": true
@@ -420,6 +615,11 @@
     {
       "source": "/xay-dung-phan-tho",
       "destination": "/dich-vu/xay-dung-phan-tho",
+      "permanent": true
+    },
+    {
+      "source": "/xay-nha-ngan-sach-1-ty-2",
+      "destination": "/tin-tuc/xay-nha-ngan-sach-1-ty-2",
       "permanent": true
     },
     {
@@ -443,6 +643,11 @@
       "permanent": true
     },
     {
+      "source": "/xay-nha-tron-goi-dak-lak",
+      "destination": "/tin-tuc/xay-nha-tron-goi-dak-lak",
+      "permanent": true
+    },
+    {
       "source": "/xay-nha-tron-goi-dong-nai",
       "destination": "/dich-vu/xay-nha-tron-goi-dong-nai",
       "permanent": true
@@ -450,6 +655,11 @@
     {
       "source": "/xay-nha-tron-goi-tphcm",
       "destination": "/dich-vu/xay-nha-tron-goi",
+      "permanent": true
+    },
+    {
+      "source": "/xu-huong-thiet-ke-nha-pho-hien-dai",
+      "destination": "/tin-tuc/xu-huong-thiet-ke-nha-pho-hien-dai",
       "permanent": true
     },
     {

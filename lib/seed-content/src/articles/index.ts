@@ -25,6 +25,27 @@ export { mauNhaPho2TangBinhDuong } from "./mau-nha-pho-2-tang-binh-duong";
 export { xayNhaTronGoiDongNai } from "./xay-nha-tron-goi-dong-nai";
 export { thietKeThiCongNhaPhoDongNai } from "./thiet-ke-thi-cong-nha-pho-dong-nai";
 export { thietKeNhaPhoHienDaiTphcm } from "./thiet-ke-nha-pho-hien-dai-tphcm";
+export { duToanChiPhiXayNha } from "./du-toan-chi-phi-xay-nha";
+export { xuHuongThietKeNhaPhoHienDai } from "./xu-huong-thiet-ke-nha-pho-hien-dai";
+export { chiPhiNhaPho2Tang } from "./chi-phi-nha-pho-2-tang";
+export { mauNhaPho3TangDep } from "./mau-nha-pho-3-tang-dep";
+export { thietKeNhaDepGiaRe } from "./thiet-ke-nha-dep-gia-re";
+export { chiPhiXayNha2TangDakLak } from "./chi-phi-xay-nha-2-tang-dak-lak";
+export { thiCongNhaPhoPhuYen } from "./thi-cong-nha-pho-phu-yen";
+export { thietKeNhaDepPhuYen } from "./thiet-ke-nha-dep-phu-yen";
+export { baoGiaXayNhaTronGoiPhuYen } from "./bao-gia-xay-nha-tron-goi-phu-yen";
+export { luuYXayNhaPho } from "./luu-y-xay-nha-pho";
+export { xayDungNhaLongAn } from "./xay-dung-nha-long-an";
+export { baoGiaXayNhaPhanThoLongAn } from "./bao-gia-xay-nha-phan-tho-long-an";
+export { mauNhaOngDepLongAn } from "./mau-nha-ong-dep-long-an";
+export { thietKeNhaPhoDakLak } from "./thiet-ke-nha-pho-dak-lak";
+export { xayNhaTronGoiDakLak } from "./xay-nha-tron-goi-dak-lak";
+export { xayNhaNganSach1Ty2 } from "./xay-nha-ngan-sach-1-ty-2";
+export { thueThietKeNhaTruocKhiXay } from "./thue-thiet-ke-nha-truoc-khi-xay";
+export { quyTrinhXayNhaTronGoiAZ } from "./quy-trinh-xay-nha-tron-goi-a-z";
+export { topMauNhaPhoDepXuHuong } from "./top-mau-nha-pho-dep-xu-huong";
+export { thietKeXayDungNhaPhoMienNam } from "./thiet-ke-xay-dung-nha-pho-mien-nam";
+export { kienTrucSaoKhueDonViUyTin } from "./kien-truc-sao-khue-don-vi-uy-tin";
 
 export type SeoArticle = {
   title: string;
