@@ -33,6 +33,11 @@
       "permanent": true
     },
     {
+      "source": "/adminbp",
+      "destination": "/admin",
+      "permanent": true
+    },
+    {
       "source": "/author",
       "destination": "/bai-viet/ve-chung-toi",
       "permanent": true

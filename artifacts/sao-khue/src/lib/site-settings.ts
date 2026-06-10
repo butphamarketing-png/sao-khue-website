@@ -253,7 +253,8 @@ function parseJsonObject<T extends object>(value: unknown, fallback: T): T {
   return merged;
 }
 
-export function restoreKnownVietnameseText(value: string) {
+export function restoreKnownVietnameseText(value: string | null | undefined) {
+  if (value == null || typeof value !== "string") return "";
   const replacements: Record<string, string> = {
     "CONG TY TNHH THIET KE VA XAY DUNG SAO KHUE": "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
     "Ve chung toi": "Về chúng tôi",

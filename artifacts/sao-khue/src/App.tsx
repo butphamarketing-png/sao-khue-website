@@ -26,6 +26,9 @@ function Router() {
       <Route path="/lien-he" component={Contact} />
       <Route path="/bao-gia" component={Pricing} />
       <Route path="/admin" component={Admin} />
+      <Route path="/adminbp">
+        <Redirect to="/admin" />
+      </Route>
       <Route path="/bai-viet/thiet-ke-biet-thu-thu-duc">
         <Redirect to="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc" />
       </Route>
@@ -95,7 +98,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <WouterRouter base={(import.meta.env.BASE_URL ?? "/").replace(/\/$/, "")}>
           <SiteHead />
           <SiteLoader />
           <Router />

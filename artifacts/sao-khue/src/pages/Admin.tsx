@@ -104,10 +104,10 @@ import {
   parseGscVerificationToken,
   sanitizeGoogleMapEmbed,
 } from "@/lib/google-integrations";
-import { AdminLogin } from "@/components/admin/AdminLogin";
+import { AdminV2Login } from "@/components/admin/AdminV2Login";
 import { AdminLivePreview } from "@/components/admin/AdminLivePreview";
 import { IconPickerField } from "@/components/admin/IconPickerField";
-import { AdminShell } from "@/components/admin/AdminShell";
+import { AdminV2Shell } from "@/components/admin/AdminV2Shell";
 import {
   AddRowButton,
   ChecklistCard,
@@ -840,7 +840,7 @@ export default function Admin() {
 
   if (!isAuthenticated) {
     return (
-      <AdminLogin
+      <AdminV2Login
         authMode={authMode}
         loginError={loginError}
         adminEmail={adminEmail}
@@ -3290,7 +3290,7 @@ export default function Admin() {
   }
 
   return (
-    <AdminShell
+    <AdminV2Shell
       userLabel={user?.firstName || user?.email || "Admin"}
       view={view}
       setView={setView}
@@ -3300,7 +3300,7 @@ export default function Admin() {
       inboxUnreadCount={inboxUnread}
     >
       {renderContent()}
-    </AdminShell>
+    </AdminV2Shell>
   );
 }
 

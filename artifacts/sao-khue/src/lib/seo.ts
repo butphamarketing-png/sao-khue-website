@@ -18,8 +18,8 @@ export const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = 
 };
 
 /** Cắt title/description để snippet Google không bị cắt xấu. */
-export function truncateMeta(text: string, maxLen: number): string {
-  const normalized = text.replace(/\s+/g, " ").trim();
+export function truncateMeta(text: string | null | undefined, maxLen: number): string {
+  const normalized = (text ?? "").replace(/\s+/g, " ").trim();
   if (normalized.length <= maxLen) return normalized;
   const slice = normalized.slice(0, maxLen - 1);
   const lastSpace = slice.lastIndexOf(" ");
