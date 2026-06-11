@@ -104,7 +104,7 @@ export const thietKeNhaDepPhuYen = {
 <figcaption>thiet-ke-nha-dep-phu-yen-3</figcaption>
 </figure>
 
-<h2>Giải đáp thắc mắc — Thiết kế nhà đẹp Phú Yên</h2>
+<h2>FAQ — Thiết kế nhà đẹp Phú Yên</h2>
 <h3>Thiết kế nhà đẹp Phú Yên mất bao lâu?</h3>
 <p>Thông thường <strong>2–4 tuần</strong> cho hồ sơ 2D hoàn chỉnh, thêm <strong>1–2 tuần</strong> nếu có phối cảnh 3D chi tiết và chỉnh sửa nhiều đợt.</p>
 <h3>Sao Khuê có nhận thiết kế từ xa cho khách hàng Phú Yên không?</h3>

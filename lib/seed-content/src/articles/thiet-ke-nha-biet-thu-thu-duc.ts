@@ -30,7 +30,7 @@ export const thietKeNhaBietThuThuDuc = {
 <h2>Thi công sau thiết kế</h2>
 <p>Thiết kế và thi công cùng Sao Khuê giúp giảm sai sót kỹ thuật, bảo hành kết cấu <strong>10 năm</strong>. Hỗ trợ xin giấy phép xây dựng theo quy hoạch Thủ Đức.</p>
 
-<h2>Giải đáp thắc mắc</h2>
+<h2>FAQ</h2>
 <h3>Thiết kế biệt thự mất bao lâu?</h3>
 <p>Thường <strong>3–5 tuần</strong> sau khi chốt brief và có số đo đất đầy đủ.</p>
 <h3>Chi phí thi công biệt thự?</h3>

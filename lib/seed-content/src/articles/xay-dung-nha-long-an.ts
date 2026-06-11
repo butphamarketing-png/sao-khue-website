@@ -118,7 +118,7 @@ ${faqSection(
       a: "Gọi hotline <strong>0909 075 668</strong>, email kientrucsaokhue@gmail.com hoặc điền form tại <a href='/lien-he'>/lien-he</a>. Sao Khuê phản hồi và đặt lịch khảo sát trong vòng 24 giờ làm việc.",
     },
   ],
-  "Giải đáp thắc mắc — Xây Dựng Nhà Long An",
+  "FAQ — Xây Dựng Nhà Long An",
 )}
 
 ${imageFigure("/images/project_3.jpg", "xây dựng nhà Long An", 3)}

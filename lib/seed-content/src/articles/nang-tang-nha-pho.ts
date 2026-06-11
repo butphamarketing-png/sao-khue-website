@@ -38,7 +38,7 @@ export const nangTangNhaPho = {
   <li>Chi phí sửa chữa cao hơn nếu phải đập làm lại.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — nâng tầng</h2>
+<h2>FAQ nâng tầng</h2>
 <h3>Nâng 1 tầng mất bao lâu?</h3>
 <p>Thường <strong>2–4 tháng</strong> tùy gia cố và hoàn thiện.</p>
 <h3>Có phải di dời khi thi công?</h3>

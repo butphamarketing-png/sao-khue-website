@@ -101,7 +101,7 @@ INSERT INTO posts (
   <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — Thi công nhà phố Đồng Nai</h2>
+<h2>FAQ — Thi công nhà phố Đồng Nai</h2>
 <h3>Sao Khuê có nhận thi công nhà phố tại Đồng Nai không?</h3>
 <p>Có. Đây là khu vực Sao Khuê nhận <strong>thiết kế và thi công nhà phố</strong> thường xuyên, cùng Bình Dương và TP.HCM.</p>
 <h3>Thi công nhà phố Đồng Nai mất bao lâu?</h3>

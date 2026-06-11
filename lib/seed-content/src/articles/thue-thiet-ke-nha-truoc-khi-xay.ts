@@ -123,7 +123,7 @@ ${faqSection(
       a: "Có. Khảo sát hiện trạng lô đất miễn phí trong nội thành TP.HCM theo lịch hẹn. Khu vực tỉnh lân cận sẽ có phí đi lại hoặc bố trí theo lịch thuận tiện nhất.",
     },
   ],
-  "Giải đáp thắc mắc — Thuê thiết kế nhà trước khi xây",
+  "FAQ — Thuê thiết kế nhà trước khi xây",
 )}
 
 ${seoCtaBlock(focusKeyword)}

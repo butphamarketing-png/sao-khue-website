@@ -40,7 +40,7 @@ export const phongThuyNhaO = {
   <li>Thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — phong thủy nhà ở</h2>
+<h2>FAQ phong thủy nhà ở</h2>
 <h3>Có bắt buộc xem tuổi không?</h3>
 <p>Tùy niềm tin gia đình. Sao Khuê linh hoạt: có thể tham khảo tuổi, vẫn đảm bảo tiêu chuẩn kỹ thuật.</p>
 <h3>Nhà hướng Tây có xấu không?</h3>

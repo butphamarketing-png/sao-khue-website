@@ -142,7 +142,7 @@ ${faqSection(
       a: "Có. Sao Khuê tư vấn hướng nhà, vị trí cửa chính, bếp và phòng ngủ theo phong thủy cơ bản dựa trên tuổi gia chủ — kết hợp hài hòa với yêu cầu công năng và thẩm mỹ kiến trúc.",
     },
   ],
-  "Giải đáp thắc mắc — Thiết Kế Nhà Phố Đắk Lắk",
+  "FAQ — Thiết Kế Nhà Phố Đắk Lắk",
 )}
 
 ${imageFigure("/images/project_3.jpg", "thiết kế nhà phố Đắk Lắk", 3)}

@@ -120,7 +120,7 @@ ${faqSection(
       a: "Có. Sao Khuê hỗ trợ hồ sơ xin giấy phép xây dựng theo quy định từng địa phương. Quy trình và thời gian xử lý có thể khác nhau giữa các quận/huyện — tư vấn cụ thể khi biết địa chỉ công trình.",
     },
   ],
-  "Giải đáp thắc mắc — Thiết kế xây dựng nhà phố miền Nam",
+  "FAQ — Thiết kế xây dựng nhà phố miền Nam",
 )}
 
 ${seoCtaBlock(focusKeyword)}

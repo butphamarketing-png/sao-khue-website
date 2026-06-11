@@ -147,7 +147,7 @@ ${faqSection(
       a: "Có. Sao Khuê tư vấn và hỗ trợ chuẩn bị hồ sơ xin phép xây dựng theo quy định của tỉnh Đắk Lắk và từng huyện cụ thể. Liên hệ <a href='/lien-he'>/lien-he</a> để được hướng dẫn chi tiết.",
     },
   ],
-  "Giải đáp thắc mắc — Xây Nhà Trọn Gói Đắk Lắk",
+  "FAQ — Xây Nhà Trọn Gói Đắk Lắk",
 )}
 
 ${imageFigure("/images/project_3.jpg", "xây nhà trọn gói Đắk Lắk", 3)}

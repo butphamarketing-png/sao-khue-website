@@ -130,7 +130,7 @@ ${faqSection(
       a: "Có. Sao Khuê nhận mọi quy mô từ sửa chữa nhỏ, chống thấm cục bộ đến cải tạo toàn diện. Đội ngũ khảo sát hiện trạng kỹ trước khi báo giá — tránh sót hạng mục.",
     },
   ],
-  "Giải đáp thắc mắc — Kiến Trúc Sao Khuê",
+  "FAQ — Kiến Trúc Sao Khuê",
 )}
 
 ${seoCtaBlock(focusKeyword)}

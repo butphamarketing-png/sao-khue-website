@@ -148,6 +148,6 @@ ${faqSection([
     q: "Làm sao tư vấn phong cách phù hợp với lô đất của tôi?",
     a: "Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất (hướng, kích thước, ngân sách) về <strong>kientrucsaokhue@gmail.com</strong> — đội thiết kế Sao Khuê phân tích và tư vấn sơ bộ miễn phí.",
   },
-], "Giải đáp thắc mắc — Xu hướng thiết kế nhà phố hiện đại")}
+], "FAQ — Xu hướng thiết kế nhà phố hiện đại")}
 `.trim(),
 };

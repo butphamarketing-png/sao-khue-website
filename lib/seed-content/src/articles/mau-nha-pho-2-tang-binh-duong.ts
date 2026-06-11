@@ -93,7 +93,7 @@ export const mauNhaPho2TangBinhDuong = {
   <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — Mẫu nhà phố 2 tầng Bình Dương</h2>
+<h2>FAQ — Mẫu nhà phố 2 tầng Bình Dương</h2>
 <h3>Nhà phố 2 tầng Bình Dương nên rộng bao nhiêu?</h3>
 <p>Phổ biến nhất <strong>5×16 m</strong> hoặc <strong>5×18 m</strong>. Lô rộng hơn (6–8 m mặt tiền) dễ bố trí phòng ngủ rộng và giếng trời thoáng hơn.</p>
 <h3>Xây 2 tầng có rẻ hơn 4 tầng không?</h3>

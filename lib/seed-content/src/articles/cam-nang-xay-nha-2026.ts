@@ -53,7 +53,7 @@ export const camNangXayNha2026 = {
   <li>☐ Thời hạn bảo hành kết cấu và hoàn thiện</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — cẩm nang xây nhà</h2>
+<h2>FAQ cẩm nang xây nhà</h2>
 <h3>Nên xây phần thô hay trọn gói?</h3>
 <p>Trọn gói phù hợp muốn giao một đầu mối; phần thô phù hợp đã có thợ hoàn thiện quen — xem <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>
 <h3>Xây nhà mất bao lâu?</h3>

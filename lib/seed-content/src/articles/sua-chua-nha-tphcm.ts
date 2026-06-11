@@ -41,7 +41,7 @@ export const suaChuaNhaTphcm = {
   <li>Bảo hành theo hạng mục — kết cấu lên đến 10 năm nếu có gia cố.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc</h2>
+<h2>FAQ</h2>
 <h3>Sửa một phần có nhận không?</h3>
 <p>Có, tùy quy mô tối thiểu và lịch thi công.</p>
 <h3>Có cần xin phép không?</h3>

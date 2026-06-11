@@ -138,7 +138,7 @@ ${faqSection(
       a: "Liên hệ hotline 0909 075 668 hoặc truy cập website kientrucsaokhue.com để xem bộ sưu tập công trình thực tế. Sao Khuê cũng có thể sắp xếp tham quan công trình hoàn thành nếu chủ nhà đồng ý.",
     },
   ],
-  "Giải đáp thắc mắc — Mẫu nhà phố đẹp",
+  "FAQ — Mẫu nhà phố đẹp",
 )}
 
 ${seoCtaBlock(focusKeyword)}

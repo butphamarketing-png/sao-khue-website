@@ -127,7 +127,7 @@ ${faqSection(
       a: "Chuẩn bị sổ đất hoặc bản đồ lô, ảnh chụp hiện trạng, số tầng và phòng mong muốn, ngân sách tối đa và thời gian dự kiến khởi công. Càng cụ thể, báo giá nhận được càng sát thực tế.",
     },
   ],
-  "Giải đáp thắc mắc — Xây nhà ngân sách 1 tỷ 2",
+  "FAQ — Xây nhà ngân sách 1 tỷ 2",
 )}
 
 ${seoCtaBlock(focusKeyword)}

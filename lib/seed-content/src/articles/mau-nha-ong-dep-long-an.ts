@@ -114,7 +114,7 @@ ${faqSection(
       a: "Khi ký hợp đồng thi công trọn gói với Sao Khuê, chi phí thiết kế thường được miễn giảm theo chính sách từng thời điểm. Gọi <strong>0909 075 668</strong> để được tư vấn và nhận báo giá tổng thể.",
     },
   ],
-  "Giải đáp thắc mắc — Mẫu Nhà Ống Đẹp Long An",
+  "FAQ — Mẫu Nhà Ống Đẹp Long An",
 )}
 `.trim(),
 };

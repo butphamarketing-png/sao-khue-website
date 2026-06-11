@@ -118,7 +118,7 @@ ${faqSection(
       a: "Kết cấu bê tông cốt thép được bảo hành tối thiểu 5 năm, chống thấm 2–3 năm, hệ thống điện-nước 1–2 năm theo điều khoản hợp đồng Sao Khuê. Liên hệ để biết chi tiết từng gói thi công.",
     },
   ],
-  "Giải đáp thắc mắc — Quy trình xây nhà trọn gói",
+  "FAQ — Quy trình xây nhà trọn gói",
 )}
 
 ${seoCtaBlock(focusKeyword)}

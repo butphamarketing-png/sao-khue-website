@@ -218,7 +218,7 @@ INSERT INTO posts (
   <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — Báo giá xây nhà trọn gói TP.HCM</h2>
+<h2>FAQ — Báo giá xây nhà trọn gói TP.HCM</h2>
 <h3>Báo giá xây nhà TP.HCM 2026 bao nhiêu một mét vuông?</h3>
 <p>Trọn gói tiêu chuẩn thường <strong>4,85 – 5,5 triệu/m²</strong> sàn; gói khá–cao cấp <strong>5,5 – 6,7 triệu+</strong>. Phần thô <strong>3,55 – 3,8 triệu/m²</strong>. Báo giá chính xác sau khảo sát.</p>
 <h3>Báo giá trên website có phải giá chính thức không?</h3>

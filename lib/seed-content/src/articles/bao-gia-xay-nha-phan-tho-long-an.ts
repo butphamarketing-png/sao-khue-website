@@ -185,7 +185,7 @@ ${faqSection(
       a: "Cung cấp: diện tích lô đất, số tầng dự kiến, bản vẽ thiết kế (nếu có) hoặc nhu cầu cơ bản. Chưa có bản vẽ vẫn được — Sao Khuê hỗ trợ thiết kế và báo giá song song. Gọi <strong>0909 075 668</strong>.",
     },
   ],
-  "Giải đáp thắc mắc — Báo Giá Xây Nhà Phần Thô Long An",
+  "FAQ — Báo Giá Xây Nhà Phần Thô Long An",
 )}
 
 ${imageFigure("/images/project_3.jpg", "báo giá xây nhà phần thô Long An", 3)}

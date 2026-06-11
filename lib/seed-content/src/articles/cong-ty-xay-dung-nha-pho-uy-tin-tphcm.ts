@@ -159,7 +159,7 @@ export const congTyXayDungNhaPhoUyTinTphcm = {
 <h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
 <p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
 
-<h2>Giải đáp thắc mắc — Xây dựng nhà phố TP.HCM</h2>
+<h2>Câu hỏi thường gặp (FAQ) — Xây dựng nhà phố TP.HCM</h2>
 <h3>Công ty xây dựng nhà phố uy tín tại TP.HCM chọn như thế nào?</h3>
 <p>Ưu tiên đơn vị có pháp nhân rõ, portfolio nhà phố thực tế, hợp đồng và bảo hành bằng văn bản, cho khảo sát và xem công trình đang thi công. So sánh ít nhất 2–3 báo giá nhưng không chọn riêng giá rẻ nhất nếu thiếu hạng mục chi tiết.</p>
 <h3>Chi phí xây nhà phố 4 tầng 5x18m khoảng bao nhiêu?</h3>

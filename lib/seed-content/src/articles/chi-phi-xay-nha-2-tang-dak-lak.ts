@@ -119,7 +119,7 @@ export const chiPhiXayNha2TangDakLak = {
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
 
-<h2>Giải đáp thắc mắc — Chi phí xây nhà 2 tầng Đắk Lắk</h2>
+<h2>FAQ — Chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <h3>Xây nhà 2 tầng Đắk Lắk tốn khoảng bao nhiêu tiền?</h3>
 <p>Với nhà phố 2 tầng 5×18 m tiêu chuẩn trung bình tại Buôn Ma Thuột, tổng chi phí (phần thô + hoàn thiện, chưa nội thất rời) thường rơi vào khoảng <strong>1,4 – 1,9 tỷ đồng</strong> năm 2026.</p>
 <h3>Đơn giá phần thô nhà 2 tầng Đắk Lắk là bao nhiêu?</h3>

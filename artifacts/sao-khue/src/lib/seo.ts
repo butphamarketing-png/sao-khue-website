@@ -121,6 +121,44 @@ export function setStructuredDataList(id: string, items: Record<string, unknown>
   setStructuredData(id, { "@context": "https://schema.org", "@graph": items });
 }
 
+/** Schema trang do prerender chèn — gỡ trước khi React ghi @graph để tránh trùng FAQPage/BlogPosting. */
+const PRERENDER_PAGE_SCHEMA_TYPES = new Set([
+  "FAQPage",
+  "BlogPosting",
+  "BreadcrumbList",
+  "ItemList",
+  "CollectionPage",
+]);
+
+function schemaNodeTypes(node: Record<string, unknown>): string[] {
+  const raw = node["@type"];
+  if (Array.isArray(raw)) return raw.map(String);
+  return raw ? [String(raw)] : [];
+}
+
+export function removePrerenderPageJsonLd(): void {
+  document.head
+    .querySelectorAll<HTMLScriptElement>(
+      'script[type="application/ld+json"]:not([data-structured])',
+    )
+    .forEach((el) => {
+      const text = el.textContent?.trim();
+      if (!text) return;
+      try {
+        const data = JSON.parse(text) as Record<string, unknown>;
+        const nodes = Array.isArray(data["@graph"])
+          ? (data["@graph"] as Record<string, unknown>[])
+          : [data];
+        const isPageSchema = nodes.some((node) =>
+          schemaNodeTypes(node).some((t) => PRERENDER_PAGE_SCHEMA_TYPES.has(t)),
+        );
+        if (isPageSchema) el.remove();
+      } catch {
+        /* giữ script lỗi parse */
+      }
+    });
+}
+
 export type PageSeoInput = {
   title: string;
   description: string;
@@ -183,9 +221,11 @@ export function applyPageSeo(input: PageSeoInput) {
   setCanonical(canonical);
 
   if (input.jsonLd) {
+    removePrerenderPageJsonLd();
     const list = Array.isArray(input.jsonLd) ? input.jsonLd : [input.jsonLd];
     setStructuredDataList("page", list);
   } else {
+    removePrerenderPageJsonLd();
     setStructuredData("page", null);
   }
 }
