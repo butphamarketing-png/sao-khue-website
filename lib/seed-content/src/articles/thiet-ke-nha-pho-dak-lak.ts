@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #11 — slug: thiet-ke-nha-pho-dak-lak */
+﻿/** Nội dung bài viết SEO #11 — slug: thiet-ke-nha-pho-dak-lak */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -142,7 +142,7 @@ ${faqSection(
       a: "Có. Sao Khuê tư vấn hướng nhà, vị trí cửa chính, bếp và phòng ngủ theo phong thủy cơ bản dựa trên tuổi gia chủ — kết hợp hài hòa với yêu cầu công năng và thẩm mỹ kiến trúc.",
     },
   ],
-  "FAQ — Thiết Kế Nhà Phố Đắk Lắk",
+  "Giải đáp thắc mắc — Thiết Kế Nhà Phố Đắk Lắk",
 )}
 
 ${imageFigure("/images/project_3.jpg", "thiết kế nhà phố Đắk Lắk", 3)}

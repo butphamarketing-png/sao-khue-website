@@ -1,4 +1,4 @@
--- Sao Khuê — Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM
+﻿-- Sao Khuê — Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM
 -- UTF-8 — Supabase SQL Editor → paste TOÀN BỘ file → Run
 -- Kiểm tra: SELECT slug, title FROM posts WHERE slug = 'thiet-ke-nha-pho-hien-dai-tphcm';
 
@@ -116,7 +116,7 @@ INSERT INTO posts (
 <figcaption>mẫu nhà phố tphcm</figcaption>
 </figure>
 
-<h2>FAQ — Thiết kế nhà phố TP.HCM</h2>
+<h2>Giải đáp thắc mắc — Thiết kế nhà phố TP.HCM</h2>
 <h3>Thiết kế nhà phố TP.HCM mất bao lâu?</h3>
 <p>Thông thường <strong>2–4 tuần</strong> cho hồ sơ 2D hoàn chỉnh (nhà 3–4 tầng), <strong>thêm 1–2 tuần</strong> nếu có phối cảnh 3D và chỉnh sửa nhiều đợt.</p>
 <h3>Chi phí thiết kế có được trừ khi xây trọn gói không?</h3>

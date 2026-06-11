@@ -1,4 +1,4 @@
--- Sao Khuê — seed bài viết (18 posts)
+﻿-- Sao Khuê — seed bài viết (18 posts)
 -- Chạy trong Supabase: SQL Editor → New query → Paste → Run
 -- Cập nhật theo slug nếu bài đã tồn tại (ON CONFLICT).
 
@@ -218,7 +218,7 @@ INSERT INTO posts (
   <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
 </ul>
 
-<h2>FAQ — Báo giá xây nhà trọn gói TP.HCM</h2>
+<h2>Giải đáp thắc mắc — Báo giá xây nhà trọn gói TP.HCM</h2>
 <h3>Báo giá xây nhà TP.HCM 2026 bao nhiêu một mét vuông?</h3>
 <p>Trọn gói tiêu chuẩn thường <strong>4,85 – 5,5 triệu/m²</strong> sàn; gói khá–cao cấp <strong>5,5 – 6,7 triệu+</strong>. Phần thô <strong>3,55 – 3,8 triệu/m²</strong>. Báo giá chính xác sau khảo sát.</p>
 <h3>Báo giá trên website có phải giá chính thức không?</h3>
@@ -423,7 +423,7 @@ INSERT INTO posts (
 <h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
 <p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
 
-<h2>Câu hỏi thường gặp (FAQ) — Xây dựng nhà phố TP.HCM</h2>
+<h2>Giải đáp thắc mắc — Xây dựng nhà phố TP.HCM</h2>
 <h3>Công ty xây dựng nhà phố uy tín tại TP.HCM chọn như thế nào?</h3>
 <p>Ưu tiên đơn vị có pháp nhân rõ, portfolio nhà phố thực tế, hợp đồng và bảo hành bằng văn bản, cho khảo sát và xem công trình đang thi công. So sánh ít nhất 2–3 báo giá nhưng không chọn riêng giá rẻ nhất nếu thiếu hạng mục chi tiết.</p>
 <h3>Chi phí xây nhà phố 4 tầng 5x18m khoảng bao nhiêu?</h3>
@@ -528,7 +528,7 @@ INSERT INTO posts (
   <li><strong>Kinh nghiệm nhà phố, biệt thự</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
 </ul>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Xây nhà trọn gói mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô, mùa mưa và mức hoàn thiện. Tiến độ cam kết trong hợp đồng.</p>
 <h3>Có được tư vấn miễn phí không?</h3>
@@ -642,7 +642,7 @@ INSERT INTO posts (
   <li><strong>Thời gian thi công:</strong> Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô và mùa mưa.</li>
 </ul>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Sao Khuê có nhận xây nhà trọn gói tại Bình Dương không?</h3>
 <p>Có. Đây là một trong các tỉnh trọng điểm Sao Khuê nhận <strong>xây nhà trọn gói Bình Dương</strong> thường xuyên, cùng TP.HCM và Đồng Nai.</p>
 <h3>Báo giá Bình Dương có khác TP.HCM không?</h3>
@@ -748,7 +748,7 @@ INSERT INTO posts (
 <p><strong>Quận 1, 3, 4, 5, 6, 7, 8, 10, 11, 12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Phú Nhuận, Bình Tân, Thủ Đức, Nhà Bè, Hóc Môn, Củ Chi…</strong></p>
 <p>Hotline hỗ trợ khảo sát nhanh trong ngày tại nội thành: <strong>0909 075 668</strong>.</p>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Sửa nhà trọn gói mất bao lâu?</h3>
 <p>Tùy quy mô: cải tạo nhẹ 2–4 tuần; sửa chữa toàn diện 1–3 tháng; cải tạo lớn có nâng tầng có thể 3–6 tháng. Sao Khuê cam kết tiến độ trong hợp đồng.</p>
 <h3>Có cần xin giấy phép khi sửa nhà không?</h3>
@@ -825,7 +825,7 @@ INSERT INTO posts (
   <li>Bảo hành theo hạng mục — kết cấu lên đến 10 năm nếu có gia cố.</li>
 </ul>
 
-<h2>FAQ</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Sửa một phần có nhận không?</h3>
 <p>Có, tùy quy mô tối thiểu và lịch thi công.</p>
 <h3>Có cần xin phép không?</h3>
@@ -900,7 +900,7 @@ INSERT INTO posts (
   <li>Nghiệm thu, bàn giao hồ sơ as-built và kích hoạt bảo hành.</li>
 </ol>
 
-<h2>FAQ — Xây phần thô</h2>
+<h2>Giải đáp thắc mắc — Xây phần thô</h2>
 <h3>Phần thô khác trọn gói thế nào?</h3>
 <p>Phần thô chỉ gồm kết cấu và hệ thống âm tường; trọn gói thêm hoàn thiện, cửa, thiết bị để vào ở.</p>
 <h3>Tôi chưa có bản vẽ có xây được không?</h3>
@@ -967,7 +967,7 @@ INSERT INTO posts (
   <li>Bàn giao file, hỗ trợ giải trình với nhà thầu hoặc Sao Khuê thi công.</li>
 </ol>
 
-<h2>FAQ thiết kế nhà</h2>
+<h2>Giải đáp thắc mắc — thiết kế nhà</h2>
 <h3>Thiết kế nhà mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>2–4 tuần</strong> sau khi chốt yêu cầu và có số đo đất đầy đủ.</p>
 <h3>Chi phí thiết kế riêng?</h3>
@@ -1031,7 +1031,7 @@ INSERT INTO posts (
   <li>Chi phí sửa chữa cao hơn nếu phải đập làm lại.</li>
 </ul>
 
-<h2>FAQ nâng tầng</h2>
+<h2>Giải đáp thắc mắc — nâng tầng</h2>
 <h3>Nâng 1 tầng mất bao lâu?</h3>
 <p>Thường <strong>2–4 tháng</strong> tùy gia cố và hoàn thiện.</p>
 <h3>Có phải di dời khi thi công?</h3>
@@ -1087,7 +1087,7 @@ INSERT INTO posts (
 <h2>Kết hợp với xây trọn gói</h2>
 <p>Khách mới xây nên cân nhắc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> để đồng bộ thiết kế – thi công – bảo hành. Chỉ hoàn thiện riêng phù hợp khi đã có khung nhà vững.</p>
 
-<h2>FAQ</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Hoàn thiện mất bao lâu?</h3>
 <p>Căn hộ 80–100 m² khoảng <strong>1,5–2,5 tháng</strong>; nhà phố 3–4 tầng có thể 2–4 tháng.</p>
 <h3>Bảo hành bao lâu?</h3>
@@ -1151,7 +1151,7 @@ INSERT INTO posts (
   <li>Ký hợp đồng và triển khai theo quy trình 6 bước chuẩn.</li>
 </ol>
 
-<h2>FAQ khuyến mại</h2>
+<h2>Giải đáp thắc mắc — khuyến mại</h2>
 <h3>Khuyến mại có áp dụng cho sửa nhà không?</h3>
 <p>Một số đợt có ưu đãi <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> — cần xác nhận khi tư vấn.</p>
 <h3>Miễn phí thiết kế gồm những gì?</h3>
@@ -1599,7 +1599,7 @@ INSERT INTO posts (
 <h2>Thi công sau thiết kế</h2>
 <p>Thiết kế và thi công cùng Sao Khuê giúp giảm sai sót kỹ thuật, bảo hành kết cấu <strong>10 năm</strong>. Hỗ trợ xin giấy phép xây dựng theo quy hoạch Thủ Đức.</p>
 
-<h2>FAQ</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Thiết kế biệt thự mất bao lâu?</h3>
 <p>Thường <strong>3–5 tuần</strong> sau khi chốt brief và có số đo đất đầy đủ.</p>
 <h3>Chi phí thi công biệt thự?</h3>
@@ -1729,7 +1729,7 @@ INSERT INTO posts (
   <li>☐ Thời hạn bảo hành kết cấu và hoàn thiện</li>
 </ul>
 
-<h2>FAQ cẩm nang xây nhà</h2>
+<h2>Giải đáp thắc mắc — cẩm nang xây nhà</h2>
 <h3>Nên xây phần thô hay trọn gói?</h3>
 <p>Trọn gói phù hợp muốn giao một đầu mối; phần thô phù hợp đã có thợ hoàn thiện quen — xem <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>
 <h3>Xây nhà mất bao lâu?</h3>
@@ -1848,7 +1848,7 @@ INSERT INTO posts (
   <li>Thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
 </ul>
 
-<h2>FAQ phong thủy nhà ở</h2>
+<h2>Giải đáp thắc mắc — phong thủy nhà ở</h2>
 <h3>Có bắt buộc xem tuổi không?</h3>
 <p>Tùy niềm tin gia đình. Sao Khuê linh hoạt: có thể tham khảo tuổi, vẫn đảm bảo tiêu chuẩn kỹ thuật.</p>
 <h3>Nhà hướng Tây có xấu không?</h3>

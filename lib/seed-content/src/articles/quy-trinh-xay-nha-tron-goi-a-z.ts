@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #27 — slug: quy-trinh-xay-nha-tron-goi-a-z */
+﻿/** Nội dung bài viết SEO #27 — slug: quy-trinh-xay-nha-tron-goi-a-z */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "quy trình xây nhà trọn gói";
@@ -118,7 +118,7 @@ ${faqSection(
       a: "Kết cấu bê tông cốt thép được bảo hành tối thiểu 5 năm, chống thấm 2–3 năm, hệ thống điện-nước 1–2 năm theo điều khoản hợp đồng Sao Khuê. Liên hệ để biết chi tiết từng gói thi công.",
     },
   ],
-  "FAQ — Quy trình xây nhà trọn gói",
+  "Giải đáp thắc mắc — Quy trình xây nhà trọn gói",
 )}
 
 ${seoCtaBlock(focusKeyword)}

@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #22 — slug: mau-nha-pho-3-tang-dep */
+﻿/** Nội dung bài viết SEO #22 — slug: mau-nha-pho-3-tang-dep */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -149,6 +149,6 @@ ${faqSection([
     q: "Sao Khuê có thiết kế và thi công nhà phố 3 tầng tại Bình Dương không?",
     a: "Có. Sao Khuê nhận công trình tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận. Tham khảo <a href=\"/tin-tuc/mau-nha-pho-2-tang-binh-duong\">nhà phố Bình Dương</a> và <a href=\"/dich-vu/xay-nha-tron-goi-binh-duong\">xây nhà trọn gói Bình Dương</a>.",
   },
-], "FAQ — Mẫu nhà phố 3 tầng đẹp")}
+], "Giải đáp thắc mắc — Mẫu nhà phố 3 tầng đẹp")}
 `.trim(),
 };

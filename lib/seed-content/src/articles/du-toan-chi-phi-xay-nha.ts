@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #19 — slug: du-toan-chi-phi-xay-nha */
+﻿/** Nội dung bài viết SEO #19 — slug: du-toan-chi-phi-xay-nha */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -177,6 +177,6 @@ ${faqSection([
     q: "Làm sao liên hệ để được lập dự toán miễn phí?",
     a: "Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Đội kỹ thuật Sao Khuê sẽ tư vấn và lên lịch khảo sát.",
   },
-], "FAQ — Dự toán chi phí xây nhà")}
+], "Giải đáp thắc mắc — Dự toán chi phí xây nhà")}
 `.trim(),
 };

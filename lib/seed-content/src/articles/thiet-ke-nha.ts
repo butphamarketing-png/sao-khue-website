@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: thiet-ke-nha */
+﻿/** Nội dung bài viết SEO — slug: thiet-ke-nha */
 export const thietKeNha = {
   title: "Thiết Kế Nhà Ở TP.HCM — Nhà Phố, Biệt Thự 2D/3D",
   excerpt:
@@ -41,7 +41,7 @@ export const thietKeNha = {
   <li>Bàn giao file, hỗ trợ giải trình với nhà thầu hoặc Sao Khuê thi công.</li>
 </ol>
 
-<h2>FAQ thiết kế nhà</h2>
+<h2>Giải đáp thắc mắc — thiết kế nhà</h2>
 <h3>Thiết kế nhà mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>2–4 tuần</strong> sau khi chốt yêu cầu và có số đo đất đầy đủ.</p>
 <h3>Chi phí thiết kế riêng?</h3>

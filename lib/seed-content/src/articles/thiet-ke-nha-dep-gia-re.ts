@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #23 — slug: thiet-ke-nha-dep-gia-re */
+﻿/** Nội dung bài viết SEO #23 — slug: thiet-ke-nha-dep-gia-re */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -146,6 +146,6 @@ ${faqSection([
     q: "Liên hệ Sao Khuê để tư vấn thiết kế nhà trong tầm ngân sách như thế nào?",
     a: "Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Cho Sao Khuê biết ngân sách, diện tích đất và số người ở — đội tư vấn sẽ phân tích và đề xuất phương án phù hợp nhất.",
   },
-], "FAQ — Thiết kế nhà đẹp giá rẻ")}
+], "Giải đáp thắc mắc — Thiết kế nhà đẹp giá rẻ")}
 `.trim(),
 };

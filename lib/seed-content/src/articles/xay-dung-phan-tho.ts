@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: xay-dung-phan-tho */
+﻿/** Nội dung bài viết SEO — slug: xay-dung-phan-tho */
 export const xayDungPhanTho = {
   title: "Xây Dựng Phần Thô Nhà Phố TP.HCM — Giá Tốt 2026",
   excerpt:
@@ -51,7 +51,7 @@ export const xayDungPhanTho = {
   <li>Nghiệm thu, bàn giao hồ sơ as-built và kích hoạt bảo hành.</li>
 </ol>
 
-<h2>FAQ — Xây phần thô</h2>
+<h2>Giải đáp thắc mắc — Xây phần thô</h2>
 <h3>Phần thô khác trọn gói thế nào?</h3>
 <p>Phần thô chỉ gồm kết cấu và hệ thống âm tường; trọn gói thêm hoàn thiện, cửa, thiết bị để vào ở.</p>
 <h3>Tôi chưa có bản vẽ có xây được không?</h3>

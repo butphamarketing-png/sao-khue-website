@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #28 — slug: top-mau-nha-pho-dep-xu-huong */
+﻿/** Nội dung bài viết SEO #28 — slug: top-mau-nha-pho-dep-xu-huong */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "mẫu nhà phố đẹp";
@@ -138,7 +138,7 @@ ${faqSection(
       a: "Liên hệ hotline 0909 075 668 hoặc truy cập website kientrucsaokhue.com để xem bộ sưu tập công trình thực tế. Sao Khuê cũng có thể sắp xếp tham quan công trình hoàn thành nếu chủ nhà đồng ý.",
     },
   ],
-  "FAQ — Mẫu nhà phố đẹp",
+  "Giải đáp thắc mắc — Mẫu nhà phố đẹp",
 )}
 
 ${seoCtaBlock(focusKeyword)}

@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #18 — slug: luu-y-xay-nha-pho */
+﻿/** Nội dung bài viết SEO #18 — slug: luu-y-xay-nha-pho */
 export const luuYXayNhaPho = {
   title: "Những Lưu Ý Quan Trọng Khi Xây Nhà Phố",
   excerpt:
@@ -147,7 +147,7 @@ export const luuYXayNhaPho = {
   <li>☐ Phương án xử lý chống thấm đã thống nhất</li>
 </ul>
 
-<h2>FAQ — Lưu ý xây nhà phố</h2>
+<h2>Giải đáp thắc mắc — Lưu ý xây nhà phố</h2>
 <h3>Những lỗi phổ biến nhất khi xây nhà phố là gì?</h3>
 <p>Ba lỗi thường gặp nhất: (1) không kiểm tra quy hoạch trước khi xây, (2) ký hợp đồng thiếu thông tin kỹ thuật, (3) không xử lý chống thấm đúng quy trình dẫn đến thấm mái sau mùa mưa đầu tiên.</p>
 <h3>Có cần thuê kỹ sư giám sát độc lập không?</h3>

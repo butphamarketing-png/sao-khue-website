@@ -1,4 +1,4 @@
--- Seed 21 bài tin tức (lịch #8–#30)
+﻿-- Seed 21 bài tin tức (lịch #8–#30)
 -- Chạy sau add-posts-image-alt.sql và add-posts-image-caption.sql
 -- Schema posts KHÔNG có cột published
 
@@ -100,7 +100,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Xây Dựng Nhà Long An</h2>
+<h2>Giải đáp thắc mắc — Xây Dựng Nhà Long An</h2>
 <h3>Sao Khuê có nhận thi công tại các huyện vùng sâu Long An không?</h3>
 <p>Có. Sao Khuê nhận thi công tại Bến Lức, Đức Hòa, Cần Giuộc, Cần Đước, Tân Trụ và nhiều huyện khác của Long An. Phụ phí vận chuyển được tính cụ thể trong hợp đồng trước khi ký kết.</p>
 <h3>Xây nhà phố tại Long An có cần giấy phép xây dựng không?</h3>
@@ -302,7 +302,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Báo Giá Xây Nhà Phần Thô Long An</h2>
+<h2>Giải đáp thắc mắc — Báo Giá Xây Nhà Phần Thô Long An</h2>
 <h3>Phần thô có bao gồm trát tường và lát nền không?</h3>
 <p>Không. Phần thô chỉ bao gồm kết cấu chịu lực: móng, cột, dầm, sàn, tường xây và mái thô. Trát tường, lát nền, sơn, cửa thuộc phần hoàn thiện — tính đơn giá riêng.</p>
 <h3>Đơn giá phần thô Long An có thấp hơn TP.HCM không?</h3>
@@ -433,7 +433,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Mẫu Nhà Ống Đẹp Long An</h2>
+<h2>Giải đáp thắc mắc — Mẫu Nhà Ống Đẹp Long An</h2>
 <h3>Nhà ống Long An mặt tiền 4m có thiết kế đẹp được không?</h3>
 <p>Hoàn toàn được. Mặt tiền 4 m là tiêu chuẩn phổ biến. Giải pháp: bố cục đứng rõ ràng, cửa kính lớn, lam dọc che nắng, cây xanh ban công — tạo điểm nhấn mà không cần diện tích rộng.</p>
 <h3>Giếng trời có bắt buộc không với nhà ống Long An?</h3>
@@ -587,7 +587,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Thiết Kế Nhà Phố Đắk Lắk</h2>
+<h2>Giải đáp thắc mắc — Thiết Kế Nhà Phố Đắk Lắk</h2>
 <h3>Sao Khuê thiết kế nhà phố Đắk Lắk có cần đến trực tiếp không?</h3>
 <p>Không cần thiết. Toàn bộ quy trình thiết kế có thể thực hiện 100% online qua Zalo, email và video call. Chủ nhà chỉ cần cung cấp ảnh lô đất, kích thước và yêu cầu cơ bản.</p>
 <h3>Thiết kế nhà phố Đắk Lắk có tính đến khí hậu cao nguyên không?</h3>
@@ -751,7 +751,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Xây Nhà Trọn Gói Đắk Lắk</h2>
+<h2>Giải đáp thắc mắc — Xây Nhà Trọn Gói Đắk Lắk</h2>
 <h3>Sao Khuê có trực tiếp giám sát thi công tại Đắk Lắk không?</h3>
 <p>Có. Sao Khuê cử cán bộ kỹ thuật giám sát định kỳ tại công trình Đắk Lắk, kết hợp đội thợ địa phương. Chủ nhà được nhận báo cáo tiến độ ảnh/video hàng tuần qua Zalo.</p>
 <h3>Xây nhà trọn gói Đắk Lắk có cần thiết kế riêng không hay dùng mẫu có sẵn?</h3>
@@ -907,7 +907,7 @@ INSERT INTO posts (
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
 
-<h2>FAQ — Chi phí xây nhà 2 tầng Đắk Lắk</h2>
+<h2>Giải đáp thắc mắc — Chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <h3>Xây nhà 2 tầng Đắk Lắk tốn khoảng bao nhiêu tiền?</h3>
 <p>Với nhà phố 2 tầng 5×18 m tiêu chuẩn trung bình tại Buôn Ma Thuột, tổng chi phí (phần thô + hoàn thiện, chưa nội thất rời) thường rơi vào khoảng <strong>1,4 – 1,9 tỷ đồng</strong> năm 2026.</p>
 <h3>Đơn giá phần thô nhà 2 tầng Đắk Lắk là bao nhiêu?</h3>
@@ -1045,7 +1045,7 @@ INSERT INTO posts (
 <figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
 </figure>
 
-<h2>FAQ — Thi công nhà phố Phú Yên</h2>
+<h2>Giải đáp thắc mắc — Thi công nhà phố Phú Yên</h2>
 <h3>Thi công nhà phố tại Tuy Hòa mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thông thường thi công <strong>5–7 tháng</strong> từ khởi công đến bàn giao hoàn thiện — tùy quy mô và thời tiết.</p>
 <h3>Sao Khuê có nhận thi công trực tiếp tại Phú Yên không?</h3>
@@ -1189,7 +1189,7 @@ INSERT INTO posts (
 <figcaption>thiet-ke-nha-dep-phu-yen-3</figcaption>
 </figure>
 
-<h2>FAQ — Thiết kế nhà đẹp Phú Yên</h2>
+<h2>Giải đáp thắc mắc — Thiết kế nhà đẹp Phú Yên</h2>
 <h3>Thiết kế nhà đẹp Phú Yên mất bao lâu?</h3>
 <p>Thông thường <strong>2–4 tuần</strong> cho hồ sơ 2D hoàn chỉnh, thêm <strong>1–2 tuần</strong> nếu có phối cảnh 3D chi tiết và chỉnh sửa nhiều đợt.</p>
 <h3>Sao Khuê có nhận thiết kế từ xa cho khách hàng Phú Yên không?</h3>
@@ -1353,7 +1353,7 @@ INSERT INTO posts (
 </ul>
 <p>Sao Khuê cam kết gửi <strong>dự toán chi tiết theo hạng mục</strong> trong vòng 3–5 ngày làm việc sau khi khảo sát thực tế.</p>
 
-<h2>FAQ — Báo giá xây nhà Phú Yên</h2>
+<h2>Giải đáp thắc mắc — Báo giá xây nhà Phú Yên</h2>
 <h3>Đơn giá xây nhà trọn gói tại Phú Yên hiện nay là bao nhiêu?</h3>
 <p>Năm 2026, đơn giá trọn gói trung cấp (không nội thất) dao động <strong>5,5 – 8 triệu đồng/m² sàn</strong> tuỳ số tầng và khu vực thi công trong tỉnh.</p>
 <h3>Xây nhà phố 3 tầng tại Tuy Hòa tốn bao nhiêu?</h3>
@@ -1540,7 +1540,7 @@ INSERT INTO posts (
   <li>☐ Phương án xử lý chống thấm đã thống nhất</li>
 </ul>
 
-<h2>FAQ — Lưu ý xây nhà phố</h2>
+<h2>Giải đáp thắc mắc — Lưu ý xây nhà phố</h2>
 <h3>Những lỗi phổ biến nhất khi xây nhà phố là gì?</h3>
 <p>Ba lỗi thường gặp nhất: (1) không kiểm tra quy hoạch trước khi xây, (2) ký hợp đồng thiếu thông tin kỹ thuật, (3) không xử lý chống thấm đúng quy trình dẫn đến thấm mái sau mùa mưa đầu tiên.</p>
 <h3>Có cần thuê kỹ sư giám sát độc lập không?</h3>
@@ -1737,7 +1737,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Dự toán chi phí xây nhà</h2>
+<h2>Giải đáp thắc mắc — Dự toán chi phí xây nhà</h2>
 <h3>Dự toán chi phí xây nhà có giống báo giá của nhà thầu không?</h3>
 <p>Không hoàn toàn giống. <strong>Dự toán</strong> là bảng tính khối lượng nhân đơn giá từng hạng mục. <strong>Báo giá</strong> của nhà thầu là giá họ cam kết thực hiện — thường đã bao gồm biên lợi nhuận. Dự toán là cơ sở để kiểm tra và đàm phán báo giá.</p>
 <h3>Không có bản vẽ có lập được dự toán không?</h3>
@@ -1895,7 +1895,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Xu hướng thiết kế nhà phố hiện đại</h2>
+<h2>Giải đáp thắc mắc — Xu hướng thiết kế nhà phố hiện đại</h2>
 <h3>Nhà phố hiện đại 2026 khác gì so với 5 năm trước?</h3>
 <p>Xu hướng 2026 tích hợp nhiều hơn: <strong>lam che nắng thay phào chỉ</strong>, <strong>giếng trời và cây xanh</strong> trong nhà, <strong>hạ tầng smart home âm tường</strong> từ giai đoạn thiết kế — thay vì chỉ quan tâm hình thức mặt tiền.</p>
 <h3>Lô đất 4m mặt tiền có làm được nhà phố hiện đại không?</h3>
@@ -2050,7 +2050,7 @@ Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~75
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Chi phí nhà phố 2 tầng</h2>
+<h2>Giải đáp thắc mắc — Chi phí nhà phố 2 tầng</h2>
 <h3>Xây nhà phố 2 tầng hết bao nhiêu tiền tại TP.HCM?</h3>
 <p>Tùy diện tích và gói vật liệu. Thông thường nhà phố 2 tầng trọn gói tiêu chuẩn tại TP.HCM dao động từ <strong>750 triệu đến 1,3 tỷ</strong> cho lô 5x15m đến 5x20m. Cần khảo sát thực tế để có báo giá chính xác.</p>
 <h3>Nhà phố 2 tầng xây mất bao lâu?</h3>
@@ -2210,7 +2210,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Mẫu nhà phố 3 tầng đẹp</h2>
+<h2>Giải đáp thắc mắc — Mẫu nhà phố 3 tầng đẹp</h2>
 <h3>Nhà phố 3 tầng cần lô đất tối thiểu bao nhiêu m²?</h3>
 <p>Tối thiểu <strong>lô 4x12m (~48m²)</strong> là đủ xây nhà phố 3 tầng. Tuy nhiên, lô 5x15m trở lên mới thoải mái bố trí đủ phòng cho gia đình 4–5 người.</p>
 <h3>Nhà phố 3 tầng cần giếng trời không?</h3>
@@ -2366,7 +2366,7 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
-<h2>FAQ — Thiết kế nhà đẹp giá rẻ</h2>
+<h2>Giải đáp thắc mắc — Thiết kế nhà đẹp giá rẻ</h2>
 <h3>Thiết kế nhà đẹp giá rẻ là bao nhiêu tiền?</h3>
 <p>Không có mức giá cố định — phụ thuộc diện tích và gói vật liệu. Nhà phố 2 tầng đẹp, tiêu chuẩn tại TP.HCM có thể hoàn thành từ <strong>750 triệu – 1 tỷ</strong> nếu thiết kế đúng cách và tối ưu từng hạng mục.</p>
 <h3>Có cần thuê kiến trúc sư riêng khi xây nhà giá rẻ không?</h3>
@@ -2502,7 +2502,7 @@ INSERT INTO posts (
 
 <p>Tham khảo thêm dự án thực tế và bảng giá tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Xây nhà ngân sách 1 tỷ 2</h2>
+<h2>Giải đáp thắc mắc — Xây nhà ngân sách 1 tỷ 2</h2>
 <h3>Xây nhà 1 tỷ 2 có làm được nhà phố 3 tầng không?</h3>
 <p>Có thể, tùy diện tích lô và mức hoàn thiện. Nhà phố 3 tầng trên lô 4×15 m, hoàn thiện tiêu chuẩn tại TP.HCM năm 2026 dao động 1,0–1,35 tỷ. Liên hệ Sao Khuê để nhận báo giá sát thực tế lô đất của bạn.</p>
 <h3>Nên chọn xây trọn gói hay tự mua vật liệu?</h3>
@@ -2642,7 +2642,7 @@ INSERT INTO posts (
 
 <p>Xem thêm dự án thực tế và portfolio thiết kế tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Thuê thiết kế nhà trước khi xây</h2>
+<h2>Giải đáp thắc mắc — Thuê thiết kế nhà trước khi xây</h2>
 <h3>Có bắt buộc phải thuê thiết kế nhà không?</h3>
 <p>Về mặt pháp lý, nhà ở riêng lẻ dưới một số quy mô có thể không bắt buộc nộp hồ sơ thiết kế khi xin phép. Nhưng về thực tiễn, xây nhà không có bản vẽ kỹ thuật là rủi ro rất lớn về kết cấu, chi phí và tranh chấp về sau.</p>
 <h3>Có thể dùng bản vẽ mẫu trên mạng để thi công không?</h3>
@@ -2777,7 +2777,7 @@ INSERT INTO posts (
 
 <p>Tìm hiểu thêm về dịch vụ và tiêu chuẩn thi công tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Quy trình xây nhà trọn gói</h2>
+<h2>Giải đáp thắc mắc — Quy trình xây nhà trọn gói</h2>
 <h3>Xây nhà trọn gói có đắt hơn tự thuê thợ không?</h3>
 <p>Chi phí trọn gói thường tương đương hoặc nhỉnh hơn 3–8% so với tự mua vật liệu, nhưng bù lại bạn được bảo hành, quản lý tiến độ và không tốn thời gian trực tiếp công trình. Nhiều chủ nhà tiết kiệm được nhiều hơn nhờ tránh phát sinh và đục phá do thay đổi thiết kế giữa chừng.</p>
 <h3>Thanh toán theo tiến độ như thế nào?</h3>
@@ -2933,7 +2933,7 @@ INSERT INTO posts (
 
 <p>Xem toàn bộ portfolio và mẫu thiết kế tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Mẫu nhà phố đẹp</h2>
+<h2>Giải đáp thắc mắc — Mẫu nhà phố đẹp</h2>
 <h3>Phong cách nhà phố nào đang được ưa chuộng nhất năm 2026?</h3>
 <p>Hiện đại tối giản (Modern Minimalist) vẫn dẫn đầu vì tính linh hoạt và khả năng kiểm soát chi phí. Biophilic Design đang tăng trưởng mạnh sau đại dịch. Tân cổ điển vẫn được ưa chuộng ở phân khúc trung-cao.</p>
 <h3>Phối cảnh 3D có giúp hình dung rõ ngôi nhà tương lai không?</h3>
@@ -3068,7 +3068,7 @@ INSERT INTO posts (
 
 <p>Tìm hiểu đầy đủ dịch vụ và vùng thi công của Sao Khuê tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Thiết kế xây dựng nhà phố miền Nam</h2>
+<h2>Giải đáp thắc mắc — Thiết kế xây dựng nhà phố miền Nam</h2>
 <h3>Sao Khuê thi công ở những tỉnh thành nào tại miền Nam?</h3>
 <p>Sao Khuê thi công chủ yếu tại TP.HCM, Bình Dương, Đồng Nai, Long An và các tỉnh lân cận. Liên hệ 0909 075 668 để xác nhận khu vực cụ thể của bạn.</p>
 <h3>Chi phí thiết kế có khác nhau giữa các tỉnh không?</h3>
@@ -3212,7 +3212,7 @@ INSERT INTO posts (
 
 <p>Tìm hiểu toàn bộ dịch vụ và dự án của Sao Khuê tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
-<h2>FAQ — Kiến Trúc Sao Khuê</h2>
+<h2>Giải đáp thắc mắc — Kiến Trúc Sao Khuê</h2>
 <h3>Kiến Trúc Sao Khuê có bao nhiêu năm kinh nghiệm?</h3>
 <p>Sao Khuê đã hoạt động trong lĩnh vực thiết kế và xây dựng nhà phố nhiều năm, tích lũy kinh nghiệm từ hàng trăm công trình tại TP.HCM và các tỉnh lân cận. Liên hệ trực tiếp để nghe thêm về hành trình phát triển.</p>
 <h3>Có thể xem công trình thực tế của Sao Khuê đã hoàn thành không?</h3>

@@ -1,4 +1,4 @@
--- Sao Khuê — Thiết Kế Và Thi Công Nhà Phố Hiện Đại Tại Đồng Nai
+﻿-- Sao Khuê — Thiết Kế Và Thi Công Nhà Phố Hiện Đại Tại Đồng Nai
 -- UTF-8 — Supabase SQL Editor → paste TOÀN BỘ file → Run
 -- Kiểm tra: SELECT slug, title FROM posts WHERE slug = 'thiet-ke-thi-cong-nha-pho-dong-nai';
 
@@ -101,7 +101,7 @@ INSERT INTO posts (
   <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
 </ul>
 
-<h2>FAQ — Thi công nhà phố Đồng Nai</h2>
+<h2>Giải đáp thắc mắc — Thi công nhà phố Đồng Nai</h2>
 <h3>Sao Khuê có nhận thi công nhà phố tại Đồng Nai không?</h3>
 <p>Có. Đây là khu vực Sao Khuê nhận <strong>thiết kế và thi công nhà phố</strong> thường xuyên, cùng Bình Dương và TP.HCM.</p>
 <h3>Thi công nhà phố Đồng Nai mất bao lâu?</h3>

@@ -1,4 +1,4 @@
--- Sao Khuê — Xây Nhà Trọn Gói Chuyên Nghiệp Tại Bình Dương
+﻿-- Sao Khuê — Xây Nhà Trọn Gói Chuyên Nghiệp Tại Bình Dương
 -- UTF-8 — Supabase SQL Editor → paste TOÀN BỘ file → Run
 -- Kiểm tra: SELECT slug, title FROM posts WHERE slug = 'xay-nha-tron-goi-binh-duong';
 
@@ -83,7 +83,7 @@ INSERT INTO posts (
   <li><strong>Thời gian thi công:</strong> Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô và mùa mưa.</li>
 </ul>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Sao Khuê có nhận xây nhà trọn gói tại Bình Dương không?</h3>
 <p>Có. Đây là một trong các tỉnh trọng điểm Sao Khuê nhận <strong>xây nhà trọn gói Bình Dương</strong> thường xuyên, cùng TP.HCM và Đồng Nai.</p>
 <h3>Báo giá Bình Dương có khác TP.HCM không?</h3>

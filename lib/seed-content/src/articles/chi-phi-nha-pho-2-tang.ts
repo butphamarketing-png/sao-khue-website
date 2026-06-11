@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #21 — slug: chi-phi-nha-pho-2-tang */
+﻿/** Nội dung bài viết SEO #21 — slug: chi-phi-nha-pho-2-tang */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -144,6 +144,6 @@ ${faqSection([
     q: "Làm sao nhận báo giá nhà phố 2 tầng?",
     a: "Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Kỹ sư khảo sát miễn phí và gửi dự toán chi tiết trong 3–7 ngày làm việc.",
   },
-], "FAQ — Chi phí nhà phố 2 tầng")}
+], "Giải đáp thắc mắc — Chi phí nhà phố 2 tầng")}
 `.trim(),
 };

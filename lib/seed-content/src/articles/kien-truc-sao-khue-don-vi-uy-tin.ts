@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #30 — slug: kien-truc-sao-khue-don-vi-uy-tin */
+﻿/** Nội dung bài viết SEO #30 — slug: kien-truc-sao-khue-don-vi-uy-tin */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "Kiến Trúc Sao Khuê";
@@ -130,7 +130,7 @@ ${faqSection(
       a: "Có. Sao Khuê nhận mọi quy mô từ sửa chữa nhỏ, chống thấm cục bộ đến cải tạo toàn diện. Đội ngũ khảo sát hiện trạng kỹ trước khi báo giá — tránh sót hạng mục.",
     },
   ],
-  "FAQ — Kiến Trúc Sao Khuê",
+  "Giải đáp thắc mắc — Kiến Trúc Sao Khuê",
 )}
 
 ${seoCtaBlock(focusKeyword)}

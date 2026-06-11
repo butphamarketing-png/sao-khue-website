@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #26 — slug: thue-thiet-ke-nha-truoc-khi-xay */
+﻿/** Nội dung bài viết SEO #26 — slug: thue-thiet-ke-nha-truoc-khi-xay */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "thuê thiết kế nhà";
@@ -123,7 +123,7 @@ ${faqSection(
       a: "Có. Khảo sát hiện trạng lô đất miễn phí trong nội thành TP.HCM theo lịch hẹn. Khu vực tỉnh lân cận sẽ có phí đi lại hoặc bố trí theo lịch thuận tiện nhất.",
     },
   ],
-  "FAQ — Thuê thiết kế nhà trước khi xây",
+  "Giải đáp thắc mắc — Thuê thiết kế nhà trước khi xây",
 )}
 
 ${seoCtaBlock(focusKeyword)}

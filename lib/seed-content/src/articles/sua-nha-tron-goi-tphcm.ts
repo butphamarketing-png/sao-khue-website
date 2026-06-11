@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm */
+﻿/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm */
 export const suaNhaTronGoiTphcm = {
   title: "Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm",
   excerpt:
@@ -70,7 +70,7 @@ export const suaNhaTronGoiTphcm = {
 <p><strong>Quận 1, 3, 4, 5, 6, 7, 8, 10, 11, 12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Phú Nhuận, Bình Tân, Thủ Đức, Nhà Bè, Hóc Môn, Củ Chi…</strong></p>
 <p>Hotline hỗ trợ khảo sát nhanh trong ngày tại nội thành: <strong>0909 075 668</strong>.</p>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Sửa nhà trọn gói mất bao lâu?</h3>
 <p>Tùy quy mô: cải tạo nhẹ 2–4 tuần; sửa chữa toàn diện 1–3 tháng; cải tạo lớn có nâng tầng có thể 3–6 tháng. Sao Khuê cam kết tiến độ trong hợp đồng.</p>
 <h3>Có cần xin giấy phép khi sửa nhà không?</h3>

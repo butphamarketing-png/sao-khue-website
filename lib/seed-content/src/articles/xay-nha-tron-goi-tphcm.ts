@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: xay-nha-tron-goi-tphcm */
+﻿/** Nội dung bài viết SEO — slug: xay-nha-tron-goi-tphcm */
 export const xayNhaTronGoiTphcm = {
   title: "Xây Nhà Trọn Gói TP.HCM 2026 — Chìa Khóa Trao Tay | Sao Khuê",
   excerpt:
@@ -60,7 +60,7 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Kinh nghiệm nhà phố, biệt thự</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
 </ul>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Xây nhà trọn gói mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô, mùa mưa và mức hoàn thiện. Tiến độ cam kết trong hợp đồng.</p>
 <h3>Có được tư vấn miễn phí không?</h3>

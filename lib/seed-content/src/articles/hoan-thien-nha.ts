@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: hoan-thien-nha */
+﻿/** Nội dung bài viết SEO — slug: hoan-thien-nha */
 export const hoanThienNha = {
   title: "Hoàn Thiện Nhà Trọn Gói TP.HCM — Nhà Xây Thô, Căn Hộ",
   excerpt:
@@ -32,7 +32,7 @@ export const hoanThienNha = {
 <h2>Kết hợp với xây trọn gói</h2>
 <p>Khách mới xây nên cân nhắc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> để đồng bộ thiết kế – thi công – bảo hành. Chỉ hoàn thiện riêng phù hợp khi đã có khung nhà vững.</p>
 
-<h2>FAQ</h2>
+<h2>Giải đáp thắc mắc</h2>
 <h3>Hoàn thiện mất bao lâu?</h3>
 <p>Căn hộ 80–100 m² khoảng <strong>1,5–2,5 tháng</strong>; nhà phố 3–4 tầng có thể 2–4 tháng.</p>
 <h3>Bảo hành bao lâu?</h3>

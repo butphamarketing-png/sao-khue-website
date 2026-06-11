@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: khuyen-mai-xay-dung */
+﻿/** Nội dung bài viết SEO — slug: khuyen-mai-xay-dung */
 export const khuyenMaiXayDung = {
   title: "Khuyến Mại Xây Dựng 2026 — Tặng Thiết Kế Khi Xây Trọn Gói",
   excerpt:
@@ -40,7 +40,7 @@ export const khuyenMaiXayDung = {
   <li>Ký hợp đồng và triển khai theo quy trình 6 bước chuẩn.</li>
 </ol>
 
-<h2>FAQ khuyến mại</h2>
+<h2>Giải đáp thắc mắc — khuyến mại</h2>
 <h3>Khuyến mại có áp dụng cho sửa nhà không?</h3>
 <p>Một số đợt có ưu đãi <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> — cần xác nhận khi tư vấn.</p>
 <h3>Miễn phí thiết kế gồm những gì?</h3>

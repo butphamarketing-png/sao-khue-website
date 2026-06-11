@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #14 — slug: thi-cong-nha-pho-phu-yen */
+﻿/** Nội dung bài viết SEO #14 — slug: thi-cong-nha-pho-phu-yen */
 export const thiCongNhaPhoPhuYen = {
   title: "Thi Công Nhà Phố Hiện Đại Tại Phú Yên",
   excerpt:
@@ -96,7 +96,7 @@ export const thiCongNhaPhoPhuYen = {
 <figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
 </figure>
 
-<h2>FAQ — Thi công nhà phố Phú Yên</h2>
+<h2>Giải đáp thắc mắc — Thi công nhà phố Phú Yên</h2>
 <h3>Thi công nhà phố tại Tuy Hòa mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thông thường thi công <strong>5–7 tháng</strong> từ khởi công đến bàn giao hoàn thiện — tùy quy mô và thời tiết.</p>
 <h3>Sao Khuê có nhận thi công trực tiếp tại Phú Yên không?</h3>

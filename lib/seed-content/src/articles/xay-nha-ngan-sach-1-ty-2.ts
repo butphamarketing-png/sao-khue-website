@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #24 — slug: xay-nha-ngan-sach-1-ty-2 */
+﻿/** Nội dung bài viết SEO #24 — slug: xay-nha-ngan-sach-1-ty-2 */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "xây nhà 1 tỷ 2";
@@ -127,7 +127,7 @@ ${faqSection(
       a: "Chuẩn bị sổ đất hoặc bản đồ lô, ảnh chụp hiện trạng, số tầng và phòng mong muốn, ngân sách tối đa và thời gian dự kiến khởi công. Càng cụ thể, báo giá nhận được càng sát thực tế.",
     },
   ],
-  "FAQ — Xây nhà ngân sách 1 tỷ 2",
+  "Giải đáp thắc mắc — Xây nhà ngân sách 1 tỷ 2",
 )}
 
 ${seoCtaBlock(focusKeyword)}

@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO — slug: cam-nang-xay-nha-2026 */
+﻿/** Nội dung bài viết SEO — slug: cam-nang-xay-nha-2026 */
 export const camNangXayNha2026 = {
   title: "Cẩm Nang Xây Nhà 2026 — Từ A Đến Z Cho Người Mới",
   excerpt:
@@ -53,7 +53,7 @@ export const camNangXayNha2026 = {
   <li>☐ Thời hạn bảo hành kết cấu và hoàn thiện</li>
 </ul>
 
-<h2>FAQ cẩm nang xây nhà</h2>
+<h2>Giải đáp thắc mắc — cẩm nang xây nhà</h2>
 <h3>Nên xây phần thô hay trọn gói?</h3>
 <p>Trọn gói phù hợp muốn giao một đầu mối; phần thô phù hợp đã có thợ hoàn thiện quen — xem <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>
 <h3>Xây nhà mất bao lâu?</h3>

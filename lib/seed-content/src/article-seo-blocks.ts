@@ -46,7 +46,7 @@ export function seoCtaBlock(focusKeyword: string): string {
 
 export function faqSection(
   items: { q: string; a: string }[],
-  heading = "FAQ — Câu hỏi thường gặp",
+  heading = "Giải đáp thắc mắc",
 ): string {
   const body = items
     .map((item) => `<h3>${item.q}</h3>\n<p>${item.a}</p>`)

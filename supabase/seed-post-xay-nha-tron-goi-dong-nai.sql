@@ -1,4 +1,4 @@
--- Sao Khuê — Xây Nhà Trọn Gói Giá Tốt Tại Đồng Nai
+﻿-- Sao Khuê — Xây Nhà Trọn Gói Giá Tốt Tại Đồng Nai
 -- UTF-8 — Supabase SQL Editor → paste TOÀN BỘ file → Run
 -- Kiểm tra: SELECT slug, title FROM posts WHERE slug = 'xay-nha-tron-goi-dong-nai';
 
@@ -99,7 +99,7 @@ INSERT INTO posts (
   <li><strong>Thời gian thi công:</strong> Nhà phố 2–3 tầng thường <strong>3–6 tháng</strong> trọn gói.</li>
 </ul>
 
-<h2>FAQ — Xây nhà trọn gói Đồng Nai giá tốt</h2>
+<h2>Giải đáp thắc mắc — Xây nhà trọn gói Đồng Nai giá tốt</h2>
 <h3>Sao Khuê có nhận xây nhà trọn gói tại Đồng Nai không?</h3>
 <p>Có. Đồng Nai là một trong các tỉnh Sao Khuê nhận <strong>xây nhà trọn gói</strong> thường xuyên, cùng Bình Dương và TP.HCM.</p>
 <h3>Giá xây nhà trọn gói Đồng Nai có rẻ hơn TP.HCM không?</h3>

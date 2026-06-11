@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #29 — slug: thiet-ke-xay-dung-nha-pho-mien-nam */
+﻿/** Nội dung bài viết SEO #29 — slug: thiet-ke-xay-dung-nha-pho-mien-nam */
 import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "thiết kế xây dựng nhà phố";
@@ -120,7 +120,7 @@ ${faqSection(
       a: "Có. Sao Khuê hỗ trợ hồ sơ xin giấy phép xây dựng theo quy định từng địa phương. Quy trình và thời gian xử lý có thể khác nhau giữa các quận/huyện — tư vấn cụ thể khi biết địa chỉ công trình.",
     },
   ],
-  "FAQ — Thiết kế xây dựng nhà phố miền Nam",
+  "Giải đáp thắc mắc — Thiết kế xây dựng nhà phố miền Nam",
 )}
 
 ${seoCtaBlock(focusKeyword)}

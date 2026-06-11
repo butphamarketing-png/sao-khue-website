@@ -1,4 +1,4 @@
-/** Nội dung bài viết SEO #20 — slug: xu-huong-thiet-ke-nha-pho-hien-dai */
+﻿/** Nội dung bài viết SEO #20 — slug: xu-huong-thiet-ke-nha-pho-hien-dai */
 import {
   imageFigure,
   homeLinkParagraph,
@@ -148,6 +148,6 @@ ${faqSection([
     q: "Làm sao tư vấn phong cách phù hợp với lô đất của tôi?",
     a: "Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất (hướng, kích thước, ngân sách) về <strong>kientrucsaokhue@gmail.com</strong> — đội thiết kế Sao Khuê phân tích và tư vấn sơ bộ miễn phí.",
   },
-], "FAQ — Xu hướng thiết kế nhà phố hiện đại")}
+], "Giải đáp thắc mắc — Xu hướng thiết kế nhà phố hiện đại")}
 `.trim(),
 };
