@@ -6,7 +6,8 @@
     "src/lib/menu.ts",
     "src/lib/menu-posts.ts",
     "src/lib/legacy-redirects.ts",
-    "src/lib/post-url.ts"
+    "src/lib/post-url.ts",
+    "src/lib/known-paths.ts"
   ],
   "compilerOptions": {
     "moduleResolution": "bundler",

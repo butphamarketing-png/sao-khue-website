@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from "http";
-import express, { type Express } from "express";
+import express, { type Express, type Response } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { pinoHttp } from "pino-http";
@@ -63,6 +63,24 @@ if (existsSync(frontendIndexPath)) {
 
   app.use(express.static(frontendDistDir));
 
+  const notFoundHtmlPath = path.join(frontendDistDir, "404.html");
+
+  function resolvePrerenderedHtml(pathOnly: string): string | null {
+    if (pathOnly === "/") {
+      return existsSync(frontendIndexPath) ? frontendIndexPath : null;
+    }
+    const nested = path.join(frontendDistDir, pathOnly.slice(1), "index.html");
+    return existsSync(nested) ? nested : null;
+  }
+
+  function sendNotFound(res: Response) {
+    if (existsSync(notFoundHtmlPath)) {
+      res.status(404).sendFile(notFoundHtmlPath);
+      return;
+    }
+    res.status(404).end("Not found");
+  }
+
   app.get(/^(?!\/api(?:\/|$)|sitemap\.xml$|robots\.txt$|feed\.xml$).*/, (req, res, next) => {
     const pathOnly = req.path.split("?")[0] ?? req.path;
     if (/\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|map)$/i.test(pathOnly)) {
@@ -70,7 +88,13 @@ if (existsSync(frontendIndexPath)) {
       return;
     }
 
-    res.sendFile(frontendIndexPath, (err) => {
+    const htmlPath = resolvePrerenderedHtml(pathOnly);
+    if (!htmlPath) {
+      sendNotFound(res);
+      return;
+    }
+
+    res.sendFile(htmlPath, (err) => {
       if (err) next(err);
     });
   });

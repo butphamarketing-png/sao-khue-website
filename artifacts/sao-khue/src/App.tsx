@@ -1,4 +1,4 @@
-import { Switch, Route, Router as WouterRouter, Redirect } from "wouter";
+import { Switch, Route, Router as WouterRouter, Redirect, useParams } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +18,16 @@ import { LegacySlugRedirect } from "@/components/LegacySlugRedirect";
 import { BaiVietCanonicalRedirect } from "@/components/BaiVietCanonicalRedirect";
 
 const queryClient = new QueryClient();
+
+function KinhNghiemSubRedirect() {
+  const { sub } = useParams<{ sub: string }>();
+  return <Redirect to={sub ? `/tin-tuc/${sub}` : "/tin-tuc"} replace />;
+}
+
+function KinhNghiemXayDungSubRedirect() {
+  const { sub } = useParams<{ sub: string }>();
+  return <Redirect to={sub ? `/tin-tuc/${sub}` : "/tin-tuc"} replace />;
+}
 
 function Router() {
   return (
@@ -54,15 +64,11 @@ function Router() {
       <Route path="/kinh-nghiem">
         <Redirect to="/tin-tuc" />
       </Route>
-      <Route path="/kinh-nghiem/:sub">
-        <Redirect to="/tin-tuc" />
-      </Route>
+      <Route path="/kinh-nghiem/:sub" component={KinhNghiemSubRedirect} />
       <Route path="/kinh-nghiem-xay-dung">
         <Redirect to="/tin-tuc" />
       </Route>
-      <Route path="/kinh-nghiem-xay-dung/:sub">
-        <Redirect to="/tin-tuc" />
-      </Route>
+      <Route path="/kinh-nghiem-xay-dung/:sub" component={KinhNghiemXayDungSubRedirect} />
       <Route path="/contact">
         <Redirect to="/lien-he" />
       </Route>

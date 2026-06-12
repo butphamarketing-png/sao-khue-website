@@ -19,14 +19,21 @@
     {
       "source": "/feed.xml",
       "destination": "/api/feed.xml"
-    },
-    {
-      "source": "/((?!api/|assets/|sitemap\\.xml|robots\\.txt|feed\\.xml|google[0-9a-zA-Z._-]+\\.html).*)",
-      "destination": "/index.html"
     }
   ],
   "framework": null,
   "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "kientrucsaokhue.com"
+        }
+      ],
+      "destination": "https://www.kientrucsaokhue.com/:path*",
+      "permanent": true
+    },
     {
       "source": "/about",
       "destination": "/bai-viet/ve-chung-toi",

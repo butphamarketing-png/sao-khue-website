@@ -11,7 +11,17 @@ export type VercelRedirect = {
   source: string;
   destination: string;
   permanent: boolean;
+  has?: Array<{ type: string; value: string }>;
 };
+
+const HOST_REDIRECTS: VercelRedirect[] = [
+  {
+    source: "/:path*",
+    has: [{ type: "host", value: "kientrucsaokhue.com" }],
+    destination: "https://www.kientrucsaokhue.com/:path*",
+    permanent: true,
+  },
+];
 
 export function buildGscRedirects(): VercelRedirect[] {
   const map = collectServerRedirects();
@@ -30,7 +40,7 @@ export function buildGscRedirects(): VercelRedirect[] {
     permanent: true,
   });
 
-  return redirects;
+  return [...HOST_REDIRECTS, ...redirects];
 }
 
 function patchVercelJson(vercelPath: string, redirects: VercelRedirect[]) {

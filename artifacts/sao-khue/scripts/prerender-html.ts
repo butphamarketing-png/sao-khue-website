@@ -206,6 +206,21 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`<p>Khu vực quản trị nội bộ — đăng nhập để tiếp tục.</p>`),
     },
+    {
+      path: "/404",
+      meta: {
+        title: defaultPageBanners.notFound.title,
+        description: defaultPageBanners.notFound.subtitle,
+        path: "/404",
+        noindex: true,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>${escapeHtml(defaultPageBanners.notFound.title)}</h1>
+        <p>${escapeHtml(defaultPageBanners.notFound.bodyText)}</p>
+        <p><a href="/">Về trang chủ</a> · <a href="/lien-he">Liên hệ tư vấn</a></p>
+      `),
+    },
   ];
 
   for (const [path, key] of Object.entries(CATEGORY_PATHS)) {
@@ -464,7 +479,16 @@ async function main() {
     writePage(template, withGlobalJsonLd(page), distDir);
   }
 
-  console.log(`[prerender] Wrote ${pages.length} HTML pages → ${distDir}`);
+  const notFoundPage = pages.find((p) => p.path === "/404");
+  if (notFoundPage) {
+    writeFileSync(
+      join(distDir, "404.html"),
+      injectPage(template, withGlobalJsonLd(notFoundPage)),
+      "utf8",
+    );
+  }
+
+  console.log(`[prerender] Wrote ${pages.length} HTML pages + 404.html → ${distDir}`);
   console.log(`[prerender] Site URL: ${SITE_URL}`);
 }
 
