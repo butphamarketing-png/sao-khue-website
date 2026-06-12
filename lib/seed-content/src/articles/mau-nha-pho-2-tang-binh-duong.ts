@@ -93,19 +93,6 @@ export const mauNhaPho2TangBinhDuong = {
   <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
 </ul>
 
-<h2>FAQ — Mẫu nhà phố 2 tầng Bình Dương</h2>
-<h3>Nhà phố 2 tầng Bình Dương nên rộng bao nhiêu?</h3>
-<p>Phổ biến nhất <strong>5×16 m</strong> hoặc <strong>5×18 m</strong>. Lô rộng hơn (6–8 m mặt tiền) dễ bố trí phòng ngủ rộng và giếng trời thoáng hơn.</p>
-<h3>Xây 2 tầng có rẻ hơn 4 tầng không?</h3>
-<p>Thường <strong>có</strong> — tổng diện tích sàn và thời gian thi công ít hơn; đơn giá/m² có thể cao hơn chút do chi phí cố định chia trên ít m² hơn, nhưng <strong>tổng vốn</strong> vẫn thấp hơn rõ rệt.</p>
-<h3>Có xin phép xây 2 tầng dễ hơn không?</h3>
-<p>Tùy khu vực và quy hoạch; nhà thấp tầng đôi khi thủ tục đơn giản hơn so với nhà cao tầng — cần khảo sát địa chỉ cụ thể.</p>
-<h3>Sao Khuê có thiết kế riêng mẫu 2 tầng không?</h3>
-<p>Có. Kiến trúc sư Sao Khuê tư vấn <strong>mẫu nhà phố 2 tầng</strong> theo lô đất, ngân sách và nhu cầu gia đình — xem <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>.</p>
-<h3>Chi phí 1 tỷ có xây được nhà phố 2 tầng không?</h3>
-<p>Với <strong>~160–180 m²</strong> sàn, gói tiêu chuẩn, tổng trọn gói thường <strong>trên 800 triệu</strong> (2026). Ngân sách 1 tỷ có thể đạt nếu tối ưu vật liệu và công năng — cần báo giá sau khảo sát.</p>
-<h3>Sau này có nâng lên 3–4 tầng được không?</h3>
-<p>Được nếu thiết kế ban đầu <strong>dự trù kết cấu</strong> và quy hoạch cho phép. Xem <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a>.</p>
 
 <h2>Liên hệ tư vấn mẫu nhà phố 2 tầng Bình Dương</h2>
 <p>Bạn đã có lô đất và muốn chốt <strong>mẫu nhà phố 2 tầng đẹp</strong> phù hợp Bình Dương?</p>

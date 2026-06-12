@@ -104,17 +104,6 @@ export const thietKeNhaDepPhuYen = {
 <figcaption>thiet-ke-nha-dep-phu-yen-3</figcaption>
 </figure>
 
-<h2>FAQ — Thiết kế nhà đẹp Phú Yên</h2>
-<h3>Thiết kế nhà đẹp Phú Yên mất bao lâu?</h3>
-<p>Thông thường <strong>2–4 tuần</strong> cho hồ sơ 2D hoàn chỉnh, thêm <strong>1–2 tuần</strong> nếu có phối cảnh 3D chi tiết và chỉnh sửa nhiều đợt.</p>
-<h3>Sao Khuê có nhận thiết kế từ xa cho khách hàng Phú Yên không?</h3>
-<p>Có. Khách hàng cung cấp bản đồ lô đất và thông tin quy hoạch — Sao Khuê thiết kế online và phối cảnh 3D gửi qua email/Zalo.</p>
-<h3>Nhà ở Phú Yên có phải xin giấy phép xây dựng không?</h3>
-<p>Hầu hết nhà ở đô thị và khu dân cư đều phải xin phép. Sao Khuê hỗ trợ chuẩn bị hồ sơ theo đúng quy định tỉnh Phú Yên.</p>
-<h3>Có thể thiết kế nhà phố biển kết hợp homestay không?</h3>
-<p>Được. Sao Khuê có kinh nghiệm thiết kế nhà ở kết hợp lưu trú ngắn ngày — tối ưu phòng ốc, tiện ích và phong cách phù hợp du khách.</p>
-<h3>Liên hệ thế nào để nhận tư vấn thiết kế?</h3>
-<p>Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a> — tư vấn miễn phí trong giờ hành chính.</p>
 
 <h2>Liên hệ tư vấn thiết kế nhà đẹp Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà đẹp Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

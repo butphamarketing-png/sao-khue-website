@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #28 — slug: top-mau-nha-pho-dep-xu-huong */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "mẫu nhà phố đẹp";
 const IMG_P2 = "/images/project_2.jpg";
@@ -114,32 +114,7 @@ ${imageFigure(IMG_P3, focusKeyword, 3)}
 </ul>
 
 ${homeLinkParagraph("Xem toàn bộ portfolio và mẫu thiết kế tại")}
-
-${faqSection(
-  [
-    {
-      q: "Phong cách nhà phố nào đang được ưa chuộng nhất năm 2026?",
-      a: "Hiện đại tối giản (Modern Minimalist) vẫn dẫn đầu vì tính linh hoạt và khả năng kiểm soát chi phí. Biophilic Design đang tăng trưởng mạnh sau đại dịch. Tân cổ điển vẫn được ưa chuộng ở phân khúc trung-cao.",
-    },
-    {
-      q: "Phối cảnh 3D có giúp hình dung rõ ngôi nhà tương lai không?",
-      a: "Có, phối cảnh 3D ngoại thất cho thấy rõ hình dáng mặt tiền, màu sắc, vật liệu và bố cục tổng thể trước khi khởi công. Sao Khuê cung cấp 3D ngoại thất kèm trong gói thiết kế.",
-    },
-    {
-      q: "Có thể kết hợp nhiều phong cách không?",
-      a: "Có, nhưng cần kiến trúc sư giỏi để tích hợp hài hòa. Kết hợp 2 phong cách tốt hơn là pha trộn 3–4 phong cách cùng lúc — sẽ trông lộn xộn và mất điểm nhấn.",
-    },
-    {
-      q: "Mẫu nhà phố đẹp có cần lô đất rộng không?",
-      a: "Không nhất thiết. Nhiều mẫu nhà phố đẹp nhất TP.HCM nằm trên lô 3,5–4 m mặt tiền. Thiết kế thông minh và lựa chọn phong cách phù hợp lô hẹp (như Minimal) sẽ tạo ra công trình ấn tượng dù diện tích nhỏ.",
-    },
-    {
-      q: "Làm thế nào để xem mẫu nhà Sao Khuê đã thi công?",
-      a: "Liên hệ hotline 0909 075 668 hoặc truy cập website kientrucsaokhue.com để xem bộ sưu tập công trình thực tế. Sao Khuê cũng có thể sắp xếp tham quan công trình hoàn thành nếu chủ nhà đồng ý.",
-    },
-  ],
-  "FAQ — Mẫu nhà phố đẹp",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

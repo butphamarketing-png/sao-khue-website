@@ -28,8 +28,9 @@ import {
   thietKeNhaPhoHienDaiTphcm,
   type SeoArticle,
 } from "./articles";
-import { matchesCategory } from "./categories";
+import { matchesCategory, normalizeCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
+import { stripFaqSectionFromHtml } from "./article-seo-blocks";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 
 export type SeedPost = {
@@ -56,6 +57,11 @@ function seoPost(
   const imageAlt =
     article.imageAlt?.trim() || buildImageAlt({ slug, metaKeywords });
   const imageCaption = article.imageCaption?.trim() || imageAlt;
+  const content =
+    normalizeCategory(category) === "tin-tuc"
+      ? stripFaqSectionFromHtml(article.content)
+      : article.content;
+
   return {
     slug,
     category,
@@ -64,7 +70,7 @@ function seoPost(
     imageCaption,
     title: article.title,
     excerpt: article.excerpt,
-    content: article.content,
+    content,
     metaTitle: article.metaTitle,
     metaDescription: article.metaDescription,
     metaKeywords,

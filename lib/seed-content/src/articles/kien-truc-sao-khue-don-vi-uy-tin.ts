@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #30 — slug: kien-truc-sao-khue-don-vi-uy-tin */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "Kiến Trúc Sao Khuê";
 const IMG_P3 = "/images/project_3.jpg";
@@ -102,36 +102,7 @@ ${imageFigure(IMG_HERO, focusKeyword, 3)}
 </ol>
 
 ${homeLinkParagraph("Tìm hiểu toàn bộ dịch vụ và dự án của Sao Khuê tại")}
-
-${faqSection(
-  [
-    {
-      q: "Kiến Trúc Sao Khuê có bao nhiêu năm kinh nghiệm?",
-      a: "Sao Khuê đã hoạt động trong lĩnh vực thiết kế và xây dựng nhà phố nhiều năm, tích lũy kinh nghiệm từ hàng trăm công trình tại TP.HCM và các tỉnh lân cận. Liên hệ trực tiếp để nghe thêm về hành trình phát triển.",
-    },
-    {
-      q: "Có thể xem công trình thực tế của Sao Khuê đã hoàn thành không?",
-      a: "Có thể, với sự đồng ý của chủ nhà. Liên hệ 0909 075 668 để được sắp xếp tham quan công trình phù hợp với phong cách bạn quan tâm.",
-    },
-    {
-      q: "Bảo hành kết cấu của Sao Khuê là bao lâu?",
-      a: "Thời gian bảo hành ghi rõ trong hợp đồng thi công — kết cấu bê tông cốt thép tối thiểu 5 năm, chống thấm 2–3 năm, điện-nước 1–2 năm. Liên hệ để biết chi tiết theo từng gói dịch vụ.",
-    },
-    {
-      q: "Sao Khuê có cung cấp dịch vụ chỉ thiết kế mà không thi công không?",
-      a: "Có. Sao Khuê nhận hợp đồng chỉ thiết kế nếu chủ nhà đã có nhà thầu thi công riêng. Tuy nhiên, chúng tôi khuyến nghị thiết kế – thi công cùng một đơn vị để tránh sai lệch và tranh chấp sau này.",
-    },
-    {
-      q: "Liên hệ Sao Khuê như thế nào để được tư vấn nhanh nhất?",
-      a: "Gọi trực tiếp hotline 0909 075 668 trong giờ hành chính (7h30–17h30, thứ Hai đến thứ Bảy) để được kết nối ngay với tư vấn viên. Ngoài giờ có thể nhắn tin Zalo cùng số hoặc điền form tại kientrucsaokhue.com.",
-    },
-    {
-      q: "Sao Khuê có nhận công trình nhỏ như sửa nhà, chống thấm không?",
-      a: "Có. Sao Khuê nhận mọi quy mô từ sửa chữa nhỏ, chống thấm cục bộ đến cải tạo toàn diện. Đội ngũ khảo sát hiện trạng kỹ trước khi báo giá — tránh sót hạng mục.",
-    },
-  ],
-  "FAQ — Kiến Trúc Sao Khuê",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

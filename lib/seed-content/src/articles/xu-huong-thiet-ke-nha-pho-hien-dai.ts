@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #20 — slug: xu-huong-thiet-ke-nha-pho-hien-dai */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 const IMG_DESIGN =
   "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
@@ -122,32 +117,5 @@ ${imageFigure(IMG_DESIGN, KEYWORD, 2)}
 ${homeLinkParagraph()}
 
 ${seoCtaBlock(KEYWORD)}
-
-${faqSection([
-  {
-    q: "Nhà phố hiện đại 2026 khác gì so với 5 năm trước?",
-    a: "Xu hướng 2026 tích hợp nhiều hơn: <strong>lam che nắng thay phào chỉ</strong>, <strong>giếng trời và cây xanh</strong> trong nhà, <strong>hạ tầng smart home âm tường</strong> từ giai đoạn thiết kế — thay vì chỉ quan tâm hình thức mặt tiền.",
-  },
-  {
-    q: "Lô đất 4m mặt tiền có làm được nhà phố hiện đại không?",
-    a: "Hoàn toàn có thể. Thiết kế tối giản với <strong>giếng trời bên trong</strong>, cầu thang nhỏ gọn và không gian mở tầng trệt là giải pháp phổ biến cho lô hẹp. Sao Khuê có nhiều kinh nghiệm nhà phố lô 3,5–4m tại Bình Thạnh, Gò Vấp.",
-  },
-  {
-    q: "Phong cách tối giản có bền đẹp theo thời gian không?",
-    a: "Có. Đây chính là ưu điểm lớn nhất: <strong>không lỗi mốt</strong>, ít chi tiết dễ hỏng, màu trung tính dễ sơn lại sau 5–10 năm mà không cần thay đổi kết cấu.",
-  },
-  {
-    q: "Mặt tiền lam có tốn thêm chi phí không?",
-    a: "Hệ lam nhôm phổ thông thêm khoảng <strong>3–8 triệu/m mặt tiền</strong> tùy độ dày, mật độ lam. Khoản đầu tư này thu hồi dưới dạng giảm điện năng điều hòa và tăng giá trị thẩm mỹ.",
-  },
-  {
-    q: "Smart home có cần ngân sách lớn ngay từ đầu không?",
-    a: "Không. Chỉ cần <strong>đặt ống chờ và điểm nối đúng vị trí</strong> từ bước thi công điện — chi phí thêm không đáng kể. Thiết bị smart home lắp dần sau theo ngân sách.",
-  },
-  {
-    q: "Làm sao tư vấn phong cách phù hợp với lô đất của tôi?",
-    a: "Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất (hướng, kích thước, ngân sách) về <strong>kientrucsaokhue@gmail.com</strong> — đội thiết kế Sao Khuê phân tích và tư vấn sơ bộ miễn phí.",
-  },
-], "FAQ — Xu hướng thiết kế nhà phố hiện đại")}
 `.trim(),
 };

@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #9 — slug: bao-gia-xay-nha-phan-tho-long-an */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 export const baoGiaXayNhaPhanThoLongAn = {
   title: "Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất",
@@ -157,36 +152,7 @@ ${homeLinkParagraph()}
 </ul>
 
 ${seoCtaBlock("báo giá xây nhà phần thô Long An")}
-
-${faqSection(
-  [
-    {
-      q: "Phần thô có bao gồm trát tường và lát nền không?",
-      a: "Không. Phần thô chỉ bao gồm kết cấu chịu lực: móng, cột, dầm, sàn, tường xây và mái thô. Trát tường, lát nền, sơn, cửa thuộc phần hoàn thiện — tính đơn giá riêng.",
-    },
-    {
-      q: "Đơn giá phần thô Long An có thấp hơn TP.HCM không?",
-      a: "Thường thấp hơn 8–15% do nhân công và chi phí mặt bằng thấp hơn. Tuy nhiên, vật liệu (thép, xi măng, gạch) có giá gần tương đương vì nhập về từ cùng nguồn.",
-    },
-    {
-      q: "Có nên tách riêng hợp đồng phần thô và hoàn thiện không?",
-      a: "Được, nhiều chủ nhà làm vậy để kiểm soát từng giai đoạn. Tuy nhiên, gộp một hợp đồng trọn gói giúp nhà thầu chịu trách nhiệm xuyên suốt và thường có đơn giá tổng thể cạnh tranh hơn.",
-    },
-    {
-      q: "Bê tông mác bao nhiêu là đủ cho nhà phố 3 tầng?",
-      a: "Tối thiểu M200 cho sàn, dầm; M250 cho cột chịu lực và móng. Một số công trình dùng M300 cho tầng hầm hoặc cột tầng cao. Kỹ sư kết cấu sẽ chỉ định chính xác trong hồ sơ thiết kế.",
-    },
-    {
-      q: "Sao Khuê có nghiệm thu từng giai đoạn không?",
-      a: "Có. Sao Khuê nghiệm thu kỹ thuật tại các mốc: sau đào móng, sau ép cọc/đổ đài, sau đổ mỗi tầng sàn. Chủ nhà được mời tham gia và ký xác nhận trước khi tiến hành bước tiếp theo.",
-    },
-    {
-      q: "Cần chuẩn bị gì trước khi yêu cầu báo giá phần thô?",
-      a: "Cung cấp: diện tích lô đất, số tầng dự kiến, bản vẽ thiết kế (nếu có) hoặc nhu cầu cơ bản. Chưa có bản vẽ vẫn được — Sao Khuê hỗ trợ thiết kế và báo giá song song. Gọi <strong>0909 075 668</strong>.",
-    },
-  ],
-  "FAQ — Báo Giá Xây Nhà Phần Thô Long An",
-)}
+
 
 ${imageFigure("/images/project_3.jpg", "báo giá xây nhà phần thô Long An", 3)}
 `.trim(),

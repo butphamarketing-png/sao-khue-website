@@ -211,21 +211,6 @@ export const baoGiaXayNhaTronGoiMoiNhatTphcm = {
   <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
 </ul>
 
-<h2>FAQ — Báo giá xây nhà trọn gói TP.HCM</h2>
-<h3>Báo giá xây nhà TP.HCM 2026 bao nhiêu một mét vuông?</h3>
-<p>Trọn gói tiêu chuẩn thường <strong>4,85 – 5,5 triệu/m²</strong> sàn; gói khá–cao cấp <strong>5,5 – 6,7 triệu+</strong>. Phần thô <strong>3,55 – 3,8 triệu/m²</strong>. Báo giá chính xác sau khảo sát.</p>
-<h3>Báo giá trên website có phải giá chính thức không?</h3>
-<p>Là <strong>tham khảo</strong>. Giá chính thức nằm trong dự toán sau khảo sát và hợp đồng ký kết.</p>
-<h3>Có miễn phí khảo sát và báo giá không?</h3>
-<p>Có. Sao Khuê khảo sát và tư vấn sơ bộ miễn phí tại TP.HCM và vùng lân cận (theo lịch hẹn).</p>
-<h3>Báo giá có bao gồm thiết kế không?</h3>
-<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>, thường được <strong>miễn phí thiết kế 2D/3D</strong> (theo quy mô áp dụng). Thiết kế riêng: xem <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>.</p>
-<h3>Giá có tăng khi vật liệu leo thang không?</h3>
-<p>Hợp đồng Sao Khuê chốt vật tư và đơn giá tại thời điểm ký — không tăng tùy tiện khi không đổi phạm vi. Điều khoản cụ thể ghi trong hợp đồng.</p>
-<h3>Làm sao tính nhanh trước khi gặp kỹ sư?</h3>
-<p>Vào <a href="/bao-gia">/bao-gia</a> — nhập diện tích, số tầng, gói dịch vụ để ước lượng.</p>
-<h3>Báo giá xây nhà trọn gói có bảo hành không?</h3>
-<p>Có. Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hạng mục trong hợp đồng.</p>
 
 <h2>Liên hệ nhận báo giá xây nhà trọn gói mới nhất</h2>
 <p>Bạn cần <strong>báo giá xây nhà TP.HCM</strong> chính xác, minh bạch cho dự án sắp tới?</p>

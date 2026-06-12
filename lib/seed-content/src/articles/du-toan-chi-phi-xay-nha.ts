@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #19 — slug: du-toan-chi-phi-xay-nha */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 const IMG_PLAN =
   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200";
@@ -151,32 +146,5 @@ ${imageFigure(IMG_PLAN, KEYWORD, 2)}
 ${homeLinkParagraph()}
 
 ${seoCtaBlock(KEYWORD)}
-
-${faqSection([
-  {
-    q: "Dự toán chi phí xây nhà có giống báo giá của nhà thầu không?",
-    a: "Không hoàn toàn giống. <strong>Dự toán</strong> là bảng tính khối lượng nhân đơn giá từng hạng mục. <strong>Báo giá</strong> của nhà thầu là giá họ cam kết thực hiện — thường đã bao gồm biên lợi nhuận. Dự toán là cơ sở để kiểm tra và đàm phán báo giá.",
-  },
-  {
-    q: "Không có bản vẽ có lập được dự toán không?",
-    a: "Chỉ có thể lập <strong>dự toán sơ bộ</strong> (ước lượng theo m² sàn và gói vật liệu). Dự toán chính xác bắt buộc cần bản vẽ thiết kế hoàn chỉnh để bóc tách khối lượng thực tế.",
-  },
-  {
-    q: "Chi phí dự phòng nên để bao nhiêu phần trăm?",
-    a: "Thông thường <strong>5–10%</strong> tổng dự toán cho công trình có bản vẽ đầy đủ. Nếu công trình phức tạp hoặc chưa khảo sát địa chất, nên để <strong>10–15%</strong>.",
-  },
-  {
-    q: "Dự toán của Sao Khuê có bao gồm phí thiết kế không?",
-    a: "Khi ký hợp đồng <strong>xây nhà trọn gói</strong>, Sao Khuê thường miễn phí hoặc chiết khấu phí thiết kế 2D/3D (theo chương trình từng thời điểm). Liên hệ <strong>0909 075 668</strong> để biết chính sách hiện hành.",
-  },
-  {
-    q: "Bao lâu thì nhận được dự toán chi tiết?",
-    a: "Sau khi khảo sát mặt bằng và hoàn thiện bản vẽ thiết kế cơ bản, thông thường Sao Khuê bàn giao dự toán trong <strong>3–7 ngày làm việc</strong> tùy quy mô công trình.",
-  },
-  {
-    q: "Làm sao liên hệ để được lập dự toán miễn phí?",
-    a: "Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Đội kỹ thuật Sao Khuê sẽ tư vấn và lên lịch khảo sát.",
-  },
-], "FAQ — Dự toán chi phí xây nhà")}
 `.trim(),
 };

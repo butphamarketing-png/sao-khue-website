@@ -159,23 +159,6 @@ export const congTyXayDungNhaPhoUyTinTphcm = {
 <h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
 <p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
 
-<h2>Câu hỏi thường gặp (FAQ) — Xây dựng nhà phố TP.HCM</h2>
-<h3>Công ty xây dựng nhà phố uy tín tại TP.HCM chọn như thế nào?</h3>
-<p>Ưu tiên đơn vị có pháp nhân rõ, portfolio nhà phố thực tế, hợp đồng và bảo hành bằng văn bản, cho khảo sát và xem công trình đang thi công. So sánh ít nhất 2–3 báo giá nhưng không chọn riêng giá rẻ nhất nếu thiếu hạng mục chi tiết.</p>
-<h3>Chi phí xây nhà phố 4 tầng 5x18m khoảng bao nhiêu?</h3>
-<p>Với tổng sàn khoảng 280–360 m², gói trọn gói tiêu chuẩn thường từ <strong>~1,4–2 tỷ+</strong> tùy vật liệu và thiết kế. Báo giá chính xác sau khảo sát.</p>
-<h3>Xây nhà phố mất bao lâu?</h3>
-<p>Thường <strong>4–7 tháng</strong> (xây mới trọn gói 3–4 tầng). Cải tạo hoặc chỉ phần thô có thể ngắn hơn hoặc dài hơn tùy hạng mục.</p>
-<h3>Có cần thiết kế trước khi xây không?</h3>
-<p>Rất nên. Thiết kế giúp tối ưu công năng, tránh đục phá kết cấu và là căn cứ báo giá. Sao Khuê <a href="/dich-vu/thiet-ke-nha">thiết kế nhà phố</a> và có thể miễn phí khi ký thi công trọn gói.</p>
-<h3>Sao Khuê có nhận xây nhà phố ở Bình Dương, Đồng Nai không?</h3>
-<p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> hoặc gọi hotline để sắp lịch khảo sát.</p>
-<h3>Hợp đồng xây nhà phố thanh toán thế nào?</h3>
-<p>Thông thường chia đợt theo tiến độ: ký hợp đồng, móng, thân nhà, hoàn thiện, nghiệm thu. Không nên thanh toán quá 70% tổng giá trị khi công trình mới xong phần thô nếu hợp đồng không bảo vệ chủ nhà.</p>
-<h3>Bảo hành xây nhà phố bao lâu?</h3>
-<p>Tại Sao Khuê: bảo hành <strong>kết cấu 10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo từng hạng mục trong hợp đồng.</p>
-<h3>Xây nhà phố có bao gồm nội thất không?</h3>
-<p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Tủ bếp, nội thất cao cấp báo giá riêng hoặc tham khảo <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 
 <h2>Liên hệ công ty xây dựng nhà phố Sao Khuê — Khảo sát miễn phí</h2>
 <p>Bạn đang tìm <strong>công ty xây dựng nhà phố uy tín tại TP.HCM</strong> cho dự án xây mới, cải tạo hoặc nâng tầng? Hãy liên hệ Sao Khuê để được tư vấn, khảo sát mặt bằng và nhận <strong>báo giá minh bạch</strong>:</p>

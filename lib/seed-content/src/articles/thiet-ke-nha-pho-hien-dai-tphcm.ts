@@ -115,19 +115,6 @@ export const thietKeNhaPhoHienDaiTphcm = {
 <figcaption>mẫu nhà phố tphcm</figcaption>
 </figure>
 
-<h2>FAQ — Thiết kế nhà phố TP.HCM</h2>
-<h3>Thiết kế nhà phố TP.HCM mất bao lâu?</h3>
-<p>Thông thường <strong>2–4 tuần</strong> cho hồ sơ 2D hoàn chỉnh (nhà 3–4 tầng), <strong>thêm 1–2 tuần</strong> nếu có phối cảnh 3D và chỉnh sửa nhiều đợt.</p>
-<h3>Chi phí thiết kế có được trừ khi xây trọn gói không?</h3>
-<p>Sao Khuê thường có chính sách <strong>miễn giảm phí thiết kế</strong> khi ký hợp đồng thi công — liên hệ <strong>0909 075 668</strong> để biết điều kiện hiện hành.</p>
-<h3>Thiết kế nhà phố hiện đại có hợp lô 4m không?</h3>
-<p>Có. Cần giải pháp giếng trời, cầu thang gọn, cửa sổ bên hông — đúng thế mạnh <strong>thiết kế nhà phố hiện đại</strong> trên lô hẹp.</p>
-<h3>Có hỗ trợ xin giấy phép xây dựng không?</h3>
-<p>Có, theo gói hợp đồng. Hồ sơ bám quy định địa phương từng quận/huyện.</p>
-<h3>Khác gì với bản vẽ có sẵn trên mạng?</h3>
-<p>Bản vẽ chuẩn phải khớp <strong>kích thước lô đất, hướng, quy hoạch</strong> của bạn — bản “mẫu chung” thường không thi công được an toàn.</p>
-<h3>Làm sao nhận tư vấn thiết kế?</h3>
-<p>Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc form <a href="/lien-he">/lien-he</a> — khảo sát và tư vấn sơ bộ miễn phí.</p>
 
 <h2>Liên hệ thiết kế nhà phố TP.HCM</h2>
 <ul>

@@ -147,19 +147,6 @@ export const luuYXayNhaPho = {
   <li>☐ Phương án xử lý chống thấm đã thống nhất</li>
 </ul>
 
-<h2>FAQ — Lưu ý xây nhà phố</h2>
-<h3>Những lỗi phổ biến nhất khi xây nhà phố là gì?</h3>
-<p>Ba lỗi thường gặp nhất: (1) không kiểm tra quy hoạch trước khi xây, (2) ký hợp đồng thiếu thông tin kỹ thuật, (3) không xử lý chống thấm đúng quy trình dẫn đến thấm mái sau mùa mưa đầu tiên.</p>
-<h3>Có cần thuê kỹ sư giám sát độc lập không?</h3>
-<p>Nên thuê nếu nhà thầu không có dịch vụ giám sát độc lập. Chi phí kỹ sư giám sát thường 2–4 triệu/tháng — xứng đáng để bảo vệ công trình vài tỷ đồng.</p>
-<h3>Dự phòng bao nhiêu % là đủ?</h3>
-<p>Thông thường <strong>8–12%</strong> tổng giá trị hợp đồng. Với lô đất chưa từng xây, địa chất chưa rõ hoặc thiết kế phức tạp — nên để 15%.</p>
-<h3>Nhà phố TP.HCM có cần xin giấy phép không?</h3>
-<p>Có — hầu hết nhà mới, nâng tầng, sửa chữa thay đổi kết cấu tại TP.HCM đều cần giấy phép xây dựng theo Luật Xây dựng hiện hành.</p>
-<h3>Sao Khuê hỗ trợ gì từ đầu đến cuối?</h3>
-<p>Sao Khuê đồng hành từ <strong>thiết kế → xin phép → thi công → nghiệm thu → bảo hành</strong> — một đầu mối, giảm rủi ro tối đa.</p>
-<h3>Liên hệ tư vấn ở đâu?</h3>
-<p>Gọi <strong>0909 075 668</strong>, email <strong>kientrucsaokhue@gmail.com</strong> hoặc điền form tại <a href="/lien-he">/lien-he</a>.</p>
 
 <h2>Liên hệ tư vấn lưu ý xây nhà phố</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>lưu ý xây nhà phố</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

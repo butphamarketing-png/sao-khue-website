@@ -53,3 +53,14 @@ export function faqSection(
     .join("\n");
   return `<h2>${heading}</h2>\n${body}`;
 }
+
+/** Gỡ khối FAQ khỏi HTML bài viết (h2 FAQ / Câu hỏi thường gặp → các cặp h3 + p). */
+export function stripFaqSectionFromHtml(html: string): string {
+  return html
+    .replace(
+      /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi thường gặp)[^<]*<\/h2>[\s\S]*?(?=<h2\b|$)/gi,
+      "",
+    )
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}

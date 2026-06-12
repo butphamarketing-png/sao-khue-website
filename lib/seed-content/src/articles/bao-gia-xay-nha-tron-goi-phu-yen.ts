@@ -124,17 +124,6 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </ul>
 <p>Sao Khuê cam kết gửi <strong>dự toán chi tiết theo hạng mục</strong> trong vòng 3–5 ngày làm việc sau khi khảo sát thực tế.</p>
 
-<h2>FAQ — Báo giá xây nhà Phú Yên</h2>
-<h3>Đơn giá xây nhà trọn gói tại Phú Yên hiện nay là bao nhiêu?</h3>
-<p>Năm 2026, đơn giá trọn gói trung cấp (không nội thất) dao động <strong>5,5 – 8 triệu đồng/m² sàn</strong> tuỳ số tầng và khu vực thi công trong tỉnh.</p>
-<h3>Xây nhà phố 3 tầng tại Tuy Hòa tốn bao nhiêu?</h3>
-<p>Với diện tích đất 5×18 m (~243 m² sàn), tiêu chuẩn trung cấp, chi phí ước tính <strong>2,0 – 2,3 tỷ đồng</strong> năm 2026.</p>
-<h3>Có bị phát sinh chi phí ngoài hợp đồng không?</h3>
-<p>Với Sao Khuê: nếu không thay đổi thiết kế và vật liệu đã ký, cam kết <strong>không phát sinh</strong>. Thay đổi thiết kế giữa chừng sẽ có phụ lục điều chỉnh trước khi thực hiện.</p>
-<h3>Thanh toán theo tiến độ như thế nào?</h3>
-<p>Thông thường chia theo <strong>4–6 đợt</strong> gắn với hạng mục hoàn thành: xong móng, xong thô từng tầng, xong hoàn thiện, bàn giao — không thanh toán trước 100%.</p>
-<h3>Làm sao nhận báo giá nhanh?</h3>
-<p>Gọi <strong>0909 075 668</strong> hoặc gửi thông tin lô đất qua <a href="/lien-he">form liên hệ</a> — Sao Khuê phản hồi trong giờ hành chính.</p>
 
 <h2>Liên hệ báo giá xây nhà Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

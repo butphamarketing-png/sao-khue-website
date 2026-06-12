@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #27 — slug: quy-trinh-xay-nha-tron-goi-a-z */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "quy trình xây nhà trọn gói";
 const IMG_BUILD =
@@ -94,32 +94,7 @@ ${imageFigure(IMG_BUILD, focusKeyword, 2)}
 </ul>
 
 ${homeLinkParagraph("Tìm hiểu thêm về dịch vụ và tiêu chuẩn thi công tại")}
-
-${faqSection(
-  [
-    {
-      q: "Xây nhà trọn gói có đắt hơn tự thuê thợ không?",
-      a: "Chi phí trọn gói thường tương đương hoặc nhỉnh hơn 3–8% so với tự mua vật liệu, nhưng bù lại bạn được bảo hành, quản lý tiến độ và không tốn thời gian trực tiếp công trình. Nhiều chủ nhà tiết kiệm được nhiều hơn nhờ tránh phát sinh và đục phá do thay đổi thiết kế giữa chừng.",
-    },
-    {
-      q: "Thanh toán theo tiến độ như thế nào?",
-      a: "Thông thường chia 4–5 đợt: (1) ký hợp đồng/khởi công ~20%, (2) xong phần thô tầng 1 ~20%, (3) xong kết cấu toàn bộ ~25%, (4) xong hoàn thiện ~25%, (5) bàn giao ~10%. Tỷ lệ cụ thể theo từng hợp đồng.",
-    },
-    {
-      q: "Có thể thay đổi thiết kế sau khi ký hợp đồng không?",
-      a: "Có, nhưng thay đổi cần lập phụ lục hợp đồng ghi rõ chi phí điều chỉnh. Thay đổi kết cấu sau khi đã thi công sẽ tốn chi phí đục phá và làm lại — tốt nhất là quyết định dứt khoát trước khi khởi công.",
-    },
-    {
-      q: "Thời gian thi công nhà 3 tầng là bao lâu?",
-      a: "Nhà phố 3 tầng diện tích 150–180 m² thường mất 16–22 tuần (4–6 tháng) tùy điều kiện mặt bằng và thời tiết. Sao Khuê cam kết tiến độ cụ thể trong hợp đồng và có điều khoản phạt nếu trễ hạn.",
-    },
-    {
-      q: "Bảo hành công trình bao lâu?",
-      a: "Kết cấu bê tông cốt thép được bảo hành tối thiểu 5 năm, chống thấm 2–3 năm, hệ thống điện-nước 1–2 năm theo điều khoản hợp đồng Sao Khuê. Liên hệ để biết chi tiết từng gói thi công.",
-    },
-  ],
-  "FAQ — Quy trình xây nhà trọn gói",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #21 — slug: chi-phi-nha-pho-2-tang */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 const IMG_P2 = "/images/project_2.jpg";
 const KEYWORD = "chi phí nhà phố 2 tầng";
@@ -118,32 +113,5 @@ ${imageFigure(IMG_P2, KEYWORD, 2)}
 ${homeLinkParagraph()}
 
 ${seoCtaBlock(KEYWORD)}
-
-${faqSection([
-  {
-    q: "Xây nhà phố 2 tầng hết bao nhiêu tiền tại TP.HCM?",
-    a: "Tùy diện tích và gói vật liệu. Thông thường nhà phố 2 tầng trọn gói tiêu chuẩn tại TP.HCM dao động từ <strong>750 triệu đến 1,3 tỷ</strong> cho lô 5x15m đến 5x20m. Cần khảo sát thực tế để có báo giá chính xác.",
-  },
-  {
-    q: "Nhà phố 2 tầng xây mất bao lâu?",
-    a: "Thông thường <strong>5–7 tháng</strong> cho nhà phố 2 tầng tiêu chuẩn (kể cả hoàn thiện). Thời gian phụ thuộc mặt bằng, thời tiết và độ phức tạp thiết kế.",
-  },
-  {
-    q: "Chi phí nhà phố 2 tầng có bao gồm thiết kế và phép xây không?",
-    a: "Báo giá thi công thường <strong>chưa bao gồm</strong> phí thiết kế và xin phép. Tuy nhiên khi ký trọn gói tại Sao Khuê, thiết kế 2D/3D thường được miễn phí hoặc chiết khấu theo chương trình.",
-  },
-  {
-    q: "Có thể xây nhà 2 tầng với ngân sách 700 triệu không?",
-    a: "Có thể — nếu lô đất nhỏ (4x12m – 4x15m), chọn gói hoàn thiện tiêu chuẩn và thiết kế đơn giản. Sao Khuê sẽ tư vấn phương án tối ưu nhất trong ngân sách của bạn.",
-  },
-  {
-    q: "Phần thô nhà 2 tầng rồi hoàn thiện sau có tiết kiệm không?",
-    a: "Về tổng chi phí không tiết kiệm nhiều, thậm chí đôi khi đắt hơn do thi công 2 đợt. Lợi ích là <strong>giãn dòng tiền</strong> — phù hợp khi chưa đủ ngân sách làm trọn gói một lần.",
-  },
-  {
-    q: "Làm sao nhận báo giá nhà phố 2 tầng?",
-    a: "Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Kỹ sư khảo sát miễn phí và gửi dự toán chi tiết trong 3–7 ngày làm việc.",
-  },
-], "FAQ — Chi phí nhà phố 2 tầng")}
 `.trim(),
 };

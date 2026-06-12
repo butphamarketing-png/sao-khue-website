@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #11 — slug: thiet-ke-nha-pho-dak-lak */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 export const thietKeNhaPhoDakLak = {
   title: "Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk",
@@ -114,36 +109,7 @@ ${homeLinkParagraph()}
 <p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công vào một đơn vị.</p>
 
 ${seoCtaBlock("thiết kế nhà phố Đắk Lắk")}
-
-${faqSection(
-  [
-    {
-      q: "Sao Khuê thiết kế nhà phố Đắk Lắk có cần đến trực tiếp không?",
-      a: "Không cần thiết. Toàn bộ quy trình thiết kế có thể thực hiện 100% online qua Zalo, email và video call. Chủ nhà chỉ cần cung cấp ảnh lô đất, kích thước và yêu cầu cơ bản.",
-    },
-    {
-      q: "Thiết kế nhà phố Đắk Lắk có tính đến khí hậu cao nguyên không?",
-      a: "Có. Sao Khuê điều chỉnh hướng nhà, độ dốc mái, chiều dày tường, hệ lam che nắng và giải pháp thông gió phù hợp với biên độ nhiệt và mùa mưa đặc trưng của Đắk Lắk.",
-    },
-    {
-      q: "Hồ sơ thiết kế 2D có đủ để xin phép xây dựng tại Đắk Lắk không?",
-      a: "Có. Hồ sơ 2D của Sao Khuê đủ thành phần theo quy định xin phép xây dựng. Tuy nhiên, mỗi huyện có thể có yêu cầu riêng — Sao Khuê tư vấn bổ sung nếu cần.",
-    },
-    {
-      q: "Thiết kế nhà phố Buôn Ma Thuột có khác với TP.HCM không?",
-      a: "Có sự khác biệt về hướng lấy sáng, cách xử lý mái, vật liệu ốp và mức độ mở của không gian. Kiến trúc sư Sao Khuê sẽ tư vấn phương án phù hợp nhất với vị trí và khí hậu địa phương.",
-    },
-    {
-      q: "Phối cảnh 3D có quan trọng không khi thiết kế nhà phố?",
-      a: "Rất quan trọng. Phối cảnh 3D giúp chủ nhà hình dung chính xác ngôi nhà trước khi xây — điều chỉnh màu sắc, vật liệu, cổng, hàng rào khi còn trên giấy thay vì đập đi làm lại khi đã thi công.",
-    },
-    {
-      q: "Có hỗ trợ tư vấn phong thủy khi thiết kế nhà phố Đắk Lắk không?",
-      a: "Có. Sao Khuê tư vấn hướng nhà, vị trí cửa chính, bếp và phòng ngủ theo phong thủy cơ bản dựa trên tuổi gia chủ — kết hợp hài hòa với yêu cầu công năng và thẩm mỹ kiến trúc.",
-    },
-  ],
-  "FAQ — Thiết Kế Nhà Phố Đắk Lắk",
-)}
+
 
 ${imageFigure("/images/project_3.jpg", "thiết kế nhà phố Đắk Lắk", 3)}
 `.trim(),

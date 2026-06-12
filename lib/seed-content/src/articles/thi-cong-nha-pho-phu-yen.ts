@@ -96,17 +96,6 @@ export const thiCongNhaPhoPhuYen = {
 <figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
 </figure>
 
-<h2>FAQ — Thi công nhà phố Phú Yên</h2>
-<h3>Thi công nhà phố tại Tuy Hòa mất bao lâu?</h3>
-<p>Nhà phố 3–4 tầng thông thường thi công <strong>5–7 tháng</strong> từ khởi công đến bàn giao hoàn thiện — tùy quy mô và thời tiết.</p>
-<h3>Sao Khuê có nhận thi công trực tiếp tại Phú Yên không?</h3>
-<p>Có. Sao Khuê triển khai đội thi công tại Phú Yên — liên hệ <strong>0909 075 668</strong> để sắp xếp khảo sát.</p>
-<h3>Có cần thiết kế riêng cho vùng ven biển Phú Yên không?</h3>
-<p>Có. Bản vẽ cần tính toán tải gió bão, vật liệu chống muối và chống thấm phù hợp với đặc điểm khí hậu duyên hải.</p>
-<h3>Thi công phần thô trước rồi hoàn thiện sau có được không?</h3>
-<p>Được. Sao Khuê nhận theo cả hai phương án — phần thô riêng hoặc <strong>thi công trọn gói</strong> từ đầu đến cuối.</p>
-<h3>Làm sao nhận báo giá thi công nhà phố Phú Yên?</h3>
-<p>Gọi <strong>0909 075 668</strong>, cung cấp diện tích đất và số tầng — Sao Khuê gửi báo giá sơ bộ trong 24 giờ làm việc.</p>
 
 <h2>Liên hệ tư vấn thi công nhà phố Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

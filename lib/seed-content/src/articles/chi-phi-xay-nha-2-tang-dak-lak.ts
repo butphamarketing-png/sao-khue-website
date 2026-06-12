@@ -119,19 +119,6 @@ export const chiPhiXayNha2TangDakLak = {
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
 
-<h2>FAQ — Chi phí xây nhà 2 tầng Đắk Lắk</h2>
-<h3>Xây nhà 2 tầng Đắk Lắk tốn khoảng bao nhiêu tiền?</h3>
-<p>Với nhà phố 2 tầng 5×18 m tiêu chuẩn trung bình tại Buôn Ma Thuột, tổng chi phí (phần thô + hoàn thiện, chưa nội thất rời) thường rơi vào khoảng <strong>1,4 – 1,9 tỷ đồng</strong> năm 2026.</p>
-<h3>Đơn giá phần thô nhà 2 tầng Đắk Lắk là bao nhiêu?</h3>
-<p>Phần thô tại Đắk Lắk dao động <strong>3,5 – 5,5 triệu đồng/m² sàn</strong> tuỳ tiêu chuẩn kết cấu và khu vực thi công.</p>
-<h3>Có thể xây nhà 2 tầng với ngân sách 1 tỷ không?</h3>
-<p>Có thể — nếu diện tích sàn dưới 120 m², chọn tiêu chuẩn cơ bản và thi công tại huyện có nhân công rẻ hơn. Cần <strong>dự toán xây nhà</strong> chi tiết để kiểm soát ngân sách.</p>
-<h3>Sao Khuê có nhận thi công tại Đắk Lắk không?</h3>
-<p>Có. Sao Khuê nhận <strong>xây nhà trọn gói</strong> tại Đắk Lắk và các tỉnh Tây Nguyên — liên hệ <strong>0909 075 668</strong> để được tư vấn và báo giá.</p>
-<h3>Thời gian xây nhà 2 tầng mất bao lâu?</h3>
-<p>Nhà 2 tầng thông thường thi công <strong>4 – 6 tháng</strong> tuỳ quy mô. Tránh mùa mưa tại Đắk Lắk (tháng 5–10) để đảm bảo tiến độ.</p>
-<h3>Có cần giấy phép xây dựng không?</h3>
-<p>Hầu hết nhà ở 2 tầng tại đô thị và các huyện lớn đều cần <strong>giấy phép xây dựng</strong>. Sao Khuê hỗ trợ hồ sơ xin phép theo gói hợp đồng.</p>
 
 <h2>Liên hệ tư vấn chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà 2 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

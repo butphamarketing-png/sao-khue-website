@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #29 — slug: thiet-ke-xay-dung-nha-pho-mien-nam */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "thiết kế xây dựng nhà phố";
 const IMG_HERO =
@@ -96,32 +96,7 @@ ${imageFigure(IMG_BUILD, focusKeyword, 2)}
 </ol>
 
 ${homeLinkParagraph("Tìm hiểu đầy đủ dịch vụ và vùng thi công của Sao Khuê tại")}
-
-${faqSection(
-  [
-    {
-      q: "Sao Khuê thi công ở những tỉnh thành nào tại miền Nam?",
-      a: "Sao Khuê thi công chủ yếu tại TP.HCM, Bình Dương, Đồng Nai, Long An và các tỉnh lân cận. Liên hệ 0909 075 668 để xác nhận khu vực cụ thể của bạn.",
-    },
-    {
-      q: "Chi phí thiết kế có khác nhau giữa các tỉnh không?",
-      a: "Phí thiết kế thường tính theo diện tích sàn và độ phức tạp công trình, không phụ thuộc vị trí địa lý nhiều. Tuy nhiên, phí khảo sát hiện trường có thể khác nhau tùy khoảng cách từ văn phòng Sao Khuê.",
-    },
-    {
-      q: "Xây nhà ở tỉnh mà không ở tại địa phương thì quản lý tiến độ thế nào?",
-      a: "Sao Khuê cung cấp báo cáo tiến độ thi công hàng tuần kèm ảnh chụp thực tế. Chủ nhà có thể theo dõi từ xa và chỉ cần về tham gia các buổi nghiệm thu quan trọng theo lịch hẹn trước.",
-    },
-    {
-      q: "Nhà phố ở Bình Dương và Đồng Nai có rẻ hơn TP.HCM không?",
-      a: "Có. Chi phí nhân công và vật liệu tại Bình Dương thường thấp hơn TP.HCM khoảng 8–15%, tại Đồng Nai có thể thấp hơn 15–25%. Tuy nhiên, chất lượng và tiêu chuẩn thi công của Sao Khuê được áp dụng đồng đều trên tất cả công trình.",
-    },
-    {
-      q: "Có hỗ trợ xin phép xây dựng ở tỉnh lẻ không?",
-      a: "Có. Sao Khuê hỗ trợ hồ sơ xin giấy phép xây dựng theo quy định từng địa phương. Quy trình và thời gian xử lý có thể khác nhau giữa các quận/huyện — tư vấn cụ thể khi biết địa chỉ công trình.",
-    },
-  ],
-  "FAQ — Thiết kế xây dựng nhà phố miền Nam",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

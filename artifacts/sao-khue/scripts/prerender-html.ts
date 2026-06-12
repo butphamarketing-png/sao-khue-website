@@ -8,6 +8,7 @@ import { fileURLToPath } from "node:url";
 import {
   buildImageAlt,
   injectArticleToc,
+  normalizeCategory,
   prepareArticleHtml,
   seedPosts,
 } from "../../../lib/seed-content/src/index.ts";
@@ -346,7 +347,10 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const sectionPath =
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
-    const postFaq = extractFaqFromArticleHtml(post.content ?? "");
+    const postFaq =
+      normalizeCategory(post.category) === "tin-tuc"
+        ? []
+        : extractFaqFromArticleHtml(post.content ?? "");
     const jsonLd = [
       {
         "@context": "https://schema.org",

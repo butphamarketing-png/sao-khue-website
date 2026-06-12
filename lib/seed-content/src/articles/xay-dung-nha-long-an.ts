@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #8 — slug: xay-dung-nha-long-an */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 export const xayDungNhaLongAn = {
   title: "Công Ty Xây Dựng Nhà Uy Tín Tại Long An",
@@ -90,36 +85,7 @@ ${homeLinkParagraph()}
 <p>Mỗi huyện tại Long An có quy định riêng về chiều cao, mật độ xây dựng, lộ giới và khoảng lùi. Sao Khuê hỗ trợ tra cứu quy hoạch và hoàn thiện hồ sơ xin phép xây dựng đúng quy định địa phương. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
 
 ${seoCtaBlock("xây dựng nhà Long An")}
-
-${faqSection(
-  [
-    {
-      q: "Sao Khuê có nhận thi công tại các huyện vùng sâu Long An không?",
-      a: "Có. Sao Khuê nhận thi công tại Bến Lức, Đức Hòa, Cần Giuộc, Cần Đước, Tân Trụ và nhiều huyện khác của Long An. Phụ phí vận chuyển được tính cụ thể trong hợp đồng trước khi ký kết.",
-    },
-    {
-      q: "Xây nhà phố tại Long An có cần giấy phép xây dựng không?",
-      a: "Hầu hết công trình nhà ở tại Long An đều cần giấy phép xây dựng theo quy định hiện hành. Sao Khuê hỗ trợ tư vấn và làm hồ sơ xin phép theo từng huyện — liên hệ <strong>0909 075 668</strong> để được hướng dẫn cụ thể.",
-    },
-    {
-      q: "Thi công nhà phố Long An mất bao lâu?",
-      a: "Nhà phố 1 trệt 2 lầu thông thường mất 4–6 tháng (tính từ khởi công đến hoàn thiện). Thời gian có thể rút ngắn nếu thiết kế hoàn chỉnh trước khi khởi công và thời tiết thuận lợi.",
-    },
-    {
-      q: "Có thể chỉ thuê thi công phần thô không, phần hoàn thiện tự làm?",
-      a: "Được. Sao Khuê nhận thi công phần thô riêng theo yêu cầu. Xem chi tiết đơn giá tại trang <a href='/bao-gia'>/bao-gia</a>. Chủ nhà hoàn toàn có thể tự lo phần hoàn thiện hoặc thuê đơn vị khác.",
-    },
-    {
-      q: "Bảo hành kết cấu 10 năm bao gồm những hạng mục nào?",
-      a: "Bảo hành kết cấu 10 năm bao gồm: nứt, lún, sụt kết cấu bê tông cốt thép do lỗi thi công của Sao Khuê. Không bao gồm hư hỏng do thiên tai, tác động bên ngoài hoặc cải tạo tự ý của chủ nhà.",
-    },
-    {
-      q: "Làm sao nhận báo giá xây nhà Long An nhanh nhất?",
-      a: "Gọi hotline <strong>0909 075 668</strong>, email kientrucsaokhue@gmail.com hoặc điền form tại <a href='/lien-he'>/lien-he</a>. Sao Khuê phản hồi và đặt lịch khảo sát trong vòng 24 giờ làm việc.",
-    },
-  ],
-  "FAQ — Xây Dựng Nhà Long An",
-)}
+
 
 ${imageFigure("/images/project_3.jpg", "xây dựng nhà Long An", 3)}
 `.trim(),

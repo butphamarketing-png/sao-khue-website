@@ -53,11 +53,6 @@ export const camNangXayNha2026 = {
   <li>☐ Thời hạn bảo hành kết cấu và hoàn thiện</li>
 </ul>
 
-<h2>FAQ cẩm nang xây nhà</h2>
-<h3>Nên xây phần thô hay trọn gói?</h3>
-<p>Trọn gói phù hợp muốn giao một đầu mối; phần thô phù hợp đã có thợ hoàn thiện quen — xem <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>
-<h3>Xây nhà mất bao lâu?</h3>
-<p>Nhà phố 3–4 tầng thường 4–7 tháng tùy quy mô và thời tiết.</p>
 
 <h2>Cần tư vấn thêm?</h2>
 <p>Sao Khuê hỗ trợ khảo sát miễn phí: <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a></p>

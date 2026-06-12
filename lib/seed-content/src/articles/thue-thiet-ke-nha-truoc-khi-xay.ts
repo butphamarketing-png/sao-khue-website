@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #26 — slug: thue-thiet-ke-nha-truoc-khi-xay */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "thuê thiết kế nhà";
 const IMG_DESIGN =
@@ -99,32 +99,7 @@ ${imageFigure(IMG_DESIGN, focusKeyword, 2)}
 <p>Với nhà phố 3 tầng diện tích ~150 m² sàn, tổng phí thiết kế đầy đủ thường từ <strong>27–42 triệu</strong> — chiếm khoảng 2–3% tổng chi phí xây dựng. Đây là khoản bảo hiểm rẻ nhất cho công trình của bạn.</p>
 
 ${homeLinkParagraph("Xem thêm dự án thực tế và portfolio thiết kế tại")}
-
-${faqSection(
-  [
-    {
-      q: "Có bắt buộc phải thuê thiết kế nhà không?",
-      a: "Về mặt pháp lý, nhà ở riêng lẻ dưới một số quy mô có thể không bắt buộc nộp hồ sơ thiết kế khi xin phép. Nhưng về thực tiễn, xây nhà không có bản vẽ kỹ thuật là rủi ro rất lớn về kết cấu, chi phí và tranh chấp về sau.",
-    },
-    {
-      q: "Có thể dùng bản vẽ mẫu trên mạng để thi công không?",
-      a: "Không nên. Bản vẽ mẫu không khớp kích thước lô đất, hướng nhà, địa chất nền và quy hoạch cụ thể của bạn. Thi công theo bản vẽ không phù hợp có thể dẫn đến sai lệch nghiêm trọng không sửa được.",
-    },
-    {
-      q: "Thuê thiết kế mất bao lâu?",
-      a: "Thông thường 2–4 tuần cho hồ sơ 2D hoàn chỉnh, thêm 1–2 tuần nếu có phối cảnh 3D và nhiều đợt chỉnh sửa. Sao Khuê cam kết tiến độ ghi rõ trong hợp đồng.",
-    },
-    {
-      q: "Phí thiết kế có được khấu trừ khi xây trọn gói không?",
-      a: "Có. Sao Khuê thường áp dụng chính sách ưu đãi hoặc miễn phí thiết kế khi khách hàng ký hợp đồng thi công trọn gói — liên hệ 0909 075 668 để biết điều kiện hiện hành.",
-    },
-    {
-      q: "Kiến trúc sư có đến khảo sát tận nơi không?",
-      a: "Có. Khảo sát hiện trạng lô đất miễn phí trong nội thành TP.HCM theo lịch hẹn. Khu vực tỉnh lân cận sẽ có phí đi lại hoặc bố trí theo lịch thuận tiện nhất.",
-    },
-  ],
-  "FAQ — Thuê thiết kế nhà trước khi xây",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

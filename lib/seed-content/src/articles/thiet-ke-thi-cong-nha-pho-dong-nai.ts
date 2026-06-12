@@ -98,19 +98,6 @@ export const thietKeThiCongNhaPhoDongNai = {
   <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
 </ul>
 
-<h2>FAQ — Thi công nhà phố Đồng Nai</h2>
-<h3>Sao Khuê có nhận thi công nhà phố tại Đồng Nai không?</h3>
-<p>Có. Đây là khu vực Sao Khuê nhận <strong>thiết kế và thi công nhà phố</strong> thường xuyên, cùng Bình Dương và TP.HCM.</p>
-<h3>Thi công nhà phố Đồng Nai mất bao lâu?</h3>
-<p>Nhà phố <strong>2–3 tầng</strong> trọn gói thường <strong>3–6 tháng</strong> (chưa tính xin phép), tùy quy mô và mùa mưa.</p>
-<h3>Có bắt buộc thiết kế trước khi thi công không?</h3>
-<p>Rất nên. Thiết kế là căn cứ báo giá và tránh đục phá kết cấu. Có thể dùng bản vẽ sẵn nếu đã chuẩn kỹ thuật.</p>
-<h3>Thi công riêng hay trọn gói tiết kiệm hơn?</h3>
-<p><strong>Trọn gói một đơn vị</strong> thường kiểm soát chi phí và bảo hành tốt hơn thuê rời thiết kế + nhiều đội thợ.</p>
-<h3>Báo giá thi công nhà phố ở đâu?</h3>
-<p>Gọi <strong>0909 075 668</strong> khảo sát miễn phí, hoặc <a href="/bao-gia">ước lượng online</a> trước khi gặp kỹ sư.</p>
-<h3>Nhà phố Đồng Nai có khác TP.HCM khi thi công không?</h3>
-<p>Đơn giá/m² tương đương; khác ở quy mô lô, logistics và quy hoạch từng khu — cần khảo sát địa chỉ cụ thể.</p>
 
 <h2>Liên hệ thiết kế &amp; thi công nhà phố Đồng Nai</h2>
 <ul>

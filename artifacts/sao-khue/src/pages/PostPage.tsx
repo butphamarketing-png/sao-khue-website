@@ -88,7 +88,9 @@ export default function PostPage() {
 
   const postPath = post ? getPostPublicPath(post, menu) : undefined;
   const postFaq =
-    post?.content && /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi)/i.test(post.content)
+    post?.content &&
+    normalizeCategory(post.category) !== "tin-tuc" &&
+    /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi)/i.test(post.content)
       ? extractFaqFromArticleHtml(post.content)
       : [];
   const postTitle = post

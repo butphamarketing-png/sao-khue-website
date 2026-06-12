@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #10 — slug: mau-nha-ong-dep-long-an */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 export const mauNhaOngDepLongAn = {
   title: "Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An",
@@ -86,35 +81,6 @@ ${homeLinkParagraph()}
 </ul>
 
 ${seoCtaBlock("mẫu nhà ống đẹp Long An")}
-
-${faqSection(
-  [
-    {
-      q: "Nhà ống Long An mặt tiền 4m có thiết kế đẹp được không?",
-      a: "Hoàn toàn được. Mặt tiền 4 m là tiêu chuẩn phổ biến. Giải pháp: bố cục đứng rõ ràng, cửa kính lớn, lam dọc che nắng, cây xanh ban công — tạo điểm nhấn mà không cần diện tích rộng.",
-    },
-    {
-      q: "Giếng trời có bắt buộc không với nhà ống Long An?",
-      a: "Không bắt buộc pháp lý, nhưng cực kỳ nên có. Nhà ống chiều sâu trên 12 m mà không có giếng trời thì khu vực giữa sẽ thiếu sáng và kém thông gió — ảnh hưởng lớn đến chất lượng sinh hoạt hàng ngày.",
-    },
-    {
-      q: "Thiết kế nhà ống Long An mất bao lâu?",
-      a: "Sao Khuê hoàn thiện hồ sơ 2D + phối cảnh 3D trong <strong>2–3 tuần</strong> kể từ ngày chốt phương án. Thời gian có thể ngắn hơn nếu yêu cầu rõ ràng ngay từ đầu.",
-    },
-    {
-      q: "Nhà ống 2 tầng Long An có cần xin phép xây dựng không?",
-      a: "Có. Nhà ở từ 2 tầng cần giấy phép xây dựng theo quy định của tỉnh Long An. Sao Khuê hỗ trợ tư vấn và chuẩn bị hồ sơ xin phép theo từng huyện cụ thể.",
-    },
-    {
-      q: "Có mẫu nhà ống sẵn để tham khảo không?",
-      a: "Có. Sao Khuê có portfolio các công trình đã thi công, cả ảnh thực tế và ảnh phối cảnh 3D. Liên hệ <strong>0909 075 668</strong> hoặc email kientrucsaokhue@gmail.com để nhận bộ mẫu tham khảo phù hợp ngân sách.",
-    },
-    {
-      q: "Xây nhà ống trọn gói tại Long An có ưu đãi thiết kế không?",
-      a: "Khi ký hợp đồng thi công trọn gói với Sao Khuê, chi phí thiết kế thường được miễn giảm theo chính sách từng thời điểm. Gọi <strong>0909 075 668</strong> để được tư vấn và nhận báo giá tổng thể.",
-    },
-  ],
-  "FAQ — Mẫu Nhà Ống Đẹp Long An",
-)}
+
 `.trim(),
 };

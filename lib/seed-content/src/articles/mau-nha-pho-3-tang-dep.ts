@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #22 — slug: mau-nha-pho-3-tang-dep */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 const IMG_P3 = "/images/project_3.jpg";
 const KEYWORD = "mẫu nhà phố 3 tầng đẹp";
@@ -123,32 +118,5 @@ ${imageFigure(IMG_P3, KEYWORD, 2)}
 ${homeLinkParagraph()}
 
 ${seoCtaBlock(KEYWORD)}
-
-${faqSection([
-  {
-    q: "Nhà phố 3 tầng cần lô đất tối thiểu bao nhiêu m²?",
-    a: "Tối thiểu <strong>lô 4x12m (~48m²)</strong> là đủ xây nhà phố 3 tầng. Tuy nhiên, lô 5x15m trở lên mới thoải mái bố trí đủ phòng cho gia đình 4–5 người.",
-  },
-  {
-    q: "Nhà phố 3 tầng cần giếng trời không?",
-    a: "Phụ thuộc chiều sâu lô đất. Lô sâu từ <strong>12m trở lên</strong> nên có giếng trời để đảm bảo ánh sáng và thông gió tự nhiên cho các phòng giữa nhà.",
-  },
-  {
-    q: "Mẫu nhà phố 3 tầng nào phù hợp gia đình 2 thế hệ?",
-    a: "Nên tách biệt khu vực ở mỗi thế hệ theo tầng: tầng trệt và lầu 1 cho cha mẹ (tránh leo cầu thang nhiều); lầu 2 cho con cái. Thiết kế 2 phòng tắm riêng và không gian sinh hoạt chung tầng trệt.",
-  },
-  {
-    q: "Có thể xây nhà phố 3 tầng mà không cần thang máy không?",
-    a: "Hoàn toàn được — nhà 3 tầng thường chưa cần thang máy nếu gia đình không có người cao tuổi hay khuyết tật. Nếu muốn, có thể <strong>chừa lỗ thang máy</strong> từ đầu để lắp sau với chi phí thấp hơn.",
-  },
-  {
-    q: "Thiết kế mẫu nhà phố 3 tầng có mất phí không?",
-    a: "Khi ký hợp đồng <strong>xây nhà trọn gói</strong> với Sao Khuê, thiết kế 2D/3D thường được miễn phí theo chương trình khuyến mãi. Gọi <strong>0909 075 668</strong> để biết chính sách hiện hành.",
-  },
-  {
-    q: "Sao Khuê có thiết kế và thi công nhà phố 3 tầng tại Bình Dương không?",
-    a: "Có. Sao Khuê nhận công trình tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận. Tham khảo <a href=\"/tin-tuc/mau-nha-pho-2-tang-binh-duong\">nhà phố Bình Dương</a> và <a href=\"/dich-vu/xay-nha-tron-goi-binh-duong\">xây nhà trọn gói Bình Dương</a>.",
-  },
-], "FAQ — Mẫu nhà phố 3 tầng đẹp")}
 `.trim(),
 };

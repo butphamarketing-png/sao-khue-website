@@ -6,6 +6,7 @@ import { writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { TIN_TUC_SEED_ENTRIES } from "../../../lib/seed-content/src/tin-tuc-seed.ts";
+import { stripFaqSectionFromHtml } from "../../../lib/seed-content/src/article-seo-blocks.ts";
 import { prepareArticleHtml } from "../../../lib/seed-content/src/image-seo.ts";
 
 const EXISTING = new Set([
@@ -33,7 +34,7 @@ const rows = TIN_TUC_SEED_ENTRIES.filter((e) => !EXISTING.has(e.slug));
 
 const statements = rows.map((e) => {
   const a = e.article;
-  const { html } = prepareArticleHtml(a.content, {
+  const { html } = prepareArticleHtml(stripFaqSectionFromHtml(a.content), {
     imageUrl: e.image,
     imageAlt: a.imageAlt,
     imageCaption: a.imageCaption,

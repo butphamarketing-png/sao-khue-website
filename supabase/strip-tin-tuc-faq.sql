@@ -1,19 +1,696 @@
--- Seed 21 bài tin tức (lịch #8–#30)
--- Chạy sau add-posts-image-alt.sql và add-posts-image-caption.sql
--- Schema posts KHÔNG có cột published
+-- Gỡ khối FAQ khỏi bài tin tức (chạy trên Supabase sau deploy)
 
 BEGIN;
 
--- Công Ty Xây Dựng Nhà Uy Tín Tại Long An
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$xay-dung-nha-long-an$slug$,
-  $title$Công Ty Xây Dựng Nhà Uy Tín Tại Long An$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Tìm công ty xây dựng nhà Long An chuyên nghiệp? Sao Khuê thi công nhà phố, nhà ống, nhà trọn gói — bảo hành 10 năm, báo giá minh bạch.$excerpt$,
-  $content$<h2>Xây dựng nhà Long An — Lựa chọn đơn vị uy tín từ đầu</h2>
+UPDATE posts SET content = $faq_cong_ty_xay_dung_nha_pho_uy_tin_tphcm$<h2>Công ty xây dựng nhà phố uy tín tại TP.HCM — Sao Khuê đồng hành từ ý tưởng đến bàn giao</h2>
+<p><strong>Xây dựng nhà phố TP.HCM</strong> là nhu cầu phổ biến của hàng nghìn gia đình mỗi năm: lô đất hẹp, quy hoạch chặt, chi phí vật liệu biến động và áp lực thời gian khiến việc chọn <strong>công ty xây dựng nhà phố uy tín</strong> trở thành quyết định then chốt. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> chuyên <strong>thiết kế và thi công nhà phố</strong> 3–5 tầng, nhà phố kinh doanh tầng trệt, nhà ống hiện đại tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Bình Dương, Đồng Nai… với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> bàn giao và cam kết <strong>báo giá minh bạch — bảo hành kết cấu 10 năm</strong>.</p>
+<p>Bài viết này tổng hợp đầy đủ thông tin bạn cần khi tìm <strong>nhà thầu xây nhà phố TP.HCM</strong>: đặc thù công trình, gói dịch vụ, đơn giá tham khảo, quy trình thi công, tiêu chí chọn đơn vị uy tín, lưu ý pháp lý và câu hỏi thường gặp — theo hướng tối ưu nội dung chuẩn SEO (tương tự cấu trúc bài viết WordPress chuyên nghiệp: heading rõ ràng, từ khóa tự nhiên, liên kết nội bộ, FAQ).</p>
+
+<h2>Xây dựng nhà phố TP.HCM — Đặc thù không giống biệt thự hay căn hộ</h2>
+<p><strong>Nhà phố</strong> (townhouse) thường xây trên lô đất <strong>4–6 m mặt tiền</strong>, chiều sâu <strong>15–20 m</strong> hoặc hơn, xếp chồng <strong>3–5 tầng</strong> để tối đa diện tích sử dụng. Khác với biệt thự có sân rộng, nhà phố nội thành TP.HCM phải giải quyết bài toán:</p>
+<ul>
+  <li><strong>Ánh sáng và thông gió:</strong> Giếng trời, giếng gió, cửa sổ bên hông, lan can kính hoặc lam chắn nắng.</li>
+  <li><strong>Kết cấu chịu lực:</strong> Khung bê tông cốt thép, móng phù hợp địa chất, không đục phá cột–dầm tùy tiện.</li>
+  <li><strong>Quy hoạch &amp; pháp lý:</strong> Lộ giới, chỉ giới xây dựng, giấy phép (nếu cần), hàng xóm.</li>
+  <li><strong>Logistics thi công:</strong> Đường hẻm hẹp, vận chuyển vật tư, an toàn lao động, giảm ảnh hưởng khu dân cư.</li>
+  <li><strong>Chi phí theo m²:</strong> Chi phí cố định (cầu trục, giàn giáo, điện nước tạm) chia trên diện tích nhỏ nên đơn giá/m² thường cao hơn công trình quy mô lớn.</li>
+</ul>
+<p>Do đó, <strong>xây dựng nhà phố TP.HCM</strong> cần đội ngũ quen mặt bằng hẹp, có kinh nghiệm <a href="/dich-vu/thiet-ke-nha">thiết kế nhà phố</a> và thi công trọn gói — không chỉ “có thợ là xây được”.</p>
+
+<h2>Công ty xây dựng nhà phố uy tín cần đáp ứng những gì?</h2>
+<p>Khi tìm kiếm trên Google với từ khóa <em>công ty xây dựng nhà phố uy tín tại TP.HCM</em>, bạn nên đối chiếu nhà thầu theo các tiêu chí sau (đây cũng là cam kết vận hành của Sao Khuê):</p>
+<ol>
+  <li><strong>Pháp nhân rõ ràng:</strong> Công ty TNHH, mã số thuế, hợp đồng đầy đủ, địa chỉ văn phòng cố định.</li>
+  <li><strong>Kinh nghiệm nhà phố thực tế:</strong> Portfolio công trình cùng loại, cho xem công trình đang thi công.</li>
+  <li><strong>Thiết kế trước — thi công sau:</strong> Có kiến trúc sư, hồ sơ kỹ thuật, tránh xây “cảm tính”.</li>
+  <li><strong>Báo giá chi tiết:</strong> Dự toán từng hạng mục, vật tư chủng loại, không phát sinh khi không đổi thiết kế.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Kỹ sư nghiệm thu móng, cốt thép, chống thấm, điện nước.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu dài hạn, hoàn thiện theo hạng mục.</li>
+  <li><strong>An toàn &amp; tiến độ:</strong> Cam kết thời gian trong hợp đồng, bảo hiểm công trình khi áp dụng.</li>
+</ol>
+<p>Tránh các dấu hiệu rủi ro: báo giá quá thấp so với thị trường, không cho xem hợp đồng mẫu, nhận tiền ứng quá cao không gắn tiến độ, thường xuyên đổi thợ hoặc “bán thầu phụ” không thông báo.</p>
+
+<h2>Vì sao nên chọn Sao Khuê làm đối tác xây dựng nhà phố?</h2>
+<p><strong>Kiến Trúc Sao Khuê</strong> định vị là đơn vị <strong>thiết kế – thi công nhà ở dân dụng</strong> tại TP.HCM, chuyên sâu <strong>nhà phố và biệt thự</strong>. Điểm khác biệt mà khách hàng thường phản hồi sau khi bàn giao:</p>
+<ul>
+  <li><strong>Trực tiếp thi công:</strong> Không chào giá rồi chuyển cho thầu phụ khác hãng — đội thợ và giám sát thuộc hệ thống quản lý dự án.</li>
+  <li><strong>Một đầu mối:</strong> Từ khảo sát, thiết kế 2D/3D, dự toán, thi công đến nghiệm thu — giảm xung đột giữa “bên vẽ” và “bên xây”.</li>
+  <li><strong>Vật tư chính hãng:</strong> Xi măng, thép, gạch, sơn, thiết bị vệ sinh đúng chủng loại đã ký trong hợp đồng.</li>
+  <li><strong>Minh bạch tiến độ:</strong> Cập nhật hình ảnh công trình, nghiệm thu từng giai đoạn trước khi thanh toán đợt tiếp theo.</li>
+  <li><strong>Bảo hành dài hạn:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> tùy hạng mục.</li>
+</ul>
+<p>Bạn có thể tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình xây nhà phố Bình Thạnh</a>, <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">mẫu nhà phố hiện đại</a> hoặc liên hệ xem công trình đang thi công gần khu vực của mình.</p>
+
+<h2>Dịch vụ xây dựng nhà phố trọn gói tại Sao Khuê</h2>
+<p>Chúng tôi cung cấp chuỗi dịch vụ xuyên suốt, phù hợp khách hàng muốn <strong>xây nhà phố trọn gói</strong> hoặc tách từng giai đoạn:</p>
+<h3>Thiết kế kiến trúc nhà phố 2D/3D</h3>
+<p>Phác thảo công năng, mặt bằng từng tầng, phối cảnh 3D, hồ sơ kỹ thuật thi công, hỗ trợ hồ sơ xin phép khi cần. Chi tiết tại <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>. Khách ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> thường được <strong>miễn phí thiết kế</strong> (theo quy mô áp dụng).</p>
+<h3>Thi công phần thô nhà phố</h3>
+<p>Móng, cột, dầm, sàn, tường bao che, mái, điện nước âm tường — nền tảng an toàn cho giai đoạn sau. Xem <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+<h3>Xây nhà phố trọn gói (chìa khóa trao tay)</h3>
+<p>Đảm nhận toàn bộ từ thiết kế đến hoàn thiện cơ bản, bàn giao đưa vào ở hoặc hoàn thiện nội thất nhẹ. Phù hợp chủ nhà bận rộn, cần một nhà thầu chịu trách nhiệm cuối cùng. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
+<h3>Hoàn thiện nhà phố sau thô</h3>
+<p>Trát, sơn, ốp lát, trần, cửa, lan can, thiết bị vệ sinh — khi bạn đã có khung nhà vững. Xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<h3>Cải tạo, sửa chữa, nâng tầng nhà phố cũ</h3>
+<p>Nhà đã xây 20–40 năm cần gia cố, chống thấm, mở rộng phòng hoặc <strong>nâng thêm tầng</strong>. Xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>, <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a>, <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a>.</p>
+
+<h2>Quy trình xây dựng nhà phố chuẩn — 7 bước tại Sao Khuê</h2>
+<p>Quy trình được chuẩn hóa giúp chủ nhà theo dõi tiến độ và kiểm soát chi phí — tương tự quy trình quản lý dự án mà nhiều công ty xây dựng uy tín áp dụng:</p>
+<ol>
+  <li><strong>Tiếp nhận &amp; tư vấn sơ bộ:</strong> Gọi hotline <strong>0909 075 668</strong>, Zalo hoặc gửi <a href="/lien-he">form liên hệ</a> — trao đổi nhu cầu, quy mô, ngân sách dự kiến.</li>
+  <li><strong>Khảo sát mặt bằng:</strong> Đo đạc, kiểm tra địa chất, hàng xóm, hướng nhà, lộ giới (nếu có bản đồ).</li>
+  <li><strong>Thiết kế &amp; chốt phương án:</strong> Mặt bằng, phối cảnh 3D, bố trí phòng, giếng trời — chỉnh sửa đến khi khách hài lòng.</li>
+  <li><strong>Dự toán &amp; ký hợp đồng:</strong> Bảng báo giá chi tiết hạng mục, vật tư, tiến độ thanh toán, bảo hành.</li>
+  <li><strong>Thi công móng – kết cấu:</strong> Nghiệm thu cốt thép, bê tông trước khi đổ tiếp tầng.</li>
+  <li><strong>Thi công hoàn thiện &amp; lắp đặt:</strong> Điện nước, cửa, ốp lát, sơn, nội thất cơ bản theo hợp đồng.</li>
+  <li><strong>Nghiệm thu &amp; bàn giao:</strong> Biên bản bàn giao, hồ sơ bảo hành, vệ sinh công trình.</li>
+</ol>
+<p>Thời gian thi công <strong>nhà phố 3–4 tầng</strong> thường <strong>4–7 tháng</strong> (xây mới trọn gói), tùy diện tích, mùa mưa và mức hoàn thiện. Tiến độ cụ thể ghi trong hợp đồng.</p>
+
+<h2>Báo giá xây dựng nhà phố TP.HCM tham khảo 2026</h2>
+<p>Đơn giá <strong>xây dựng nhà phố TP.HCM</strong> phụ thuộc: diện tích sàn, số tầng, mặt bằng đất, loại mái, vật liệu (tiêu chuẩn / khá / cao cấp), yêu cầu thiết kế và vị trí công trình. Bảng dưới mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí:</p>
+<table>
+  <thead>
+    <tr><th>Hình thức</th><th>Đơn giá (đ/m² sàn)</th><th>Ghi chú</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Xây nhà phố trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Thô + hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu</td><td>Vật tư tầm trung–khá</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+</td><td>Thiết bị, hoàn thiện đẹp</td></tr>
+    <tr><td>Chỉ phần thô nhà phố</td><td>3,55 – 3,8 triệu</td><td>Đã có thiết kế</td></tr>
+    <tr><td>Hoàn thiện sau thô</td><td>Liên hệ</td><td>Theo bản vẽ &amp; vật liệu</td></tr>
+  </tbody>
+</table>
+<p><strong>Ví dụ ước tính nhanh:</strong> Nhà phố 4 tầng, tổng diện tích sàn khoảng <strong>320 m²</strong>, gói trọn gói tiêu chuẩn ~5 triệu/m² → chi phí tham khảo khoảng <strong>1,6 tỷ</strong> (chưa gồm nội thất cao cấp, thiết kế riêng nếu không nằm trong gói). Dùng <a href="/bao-gia">công cụ tính chi phí</a> trên website hoặc nhờ kỹ sư dự toán chi tiết.</p>
+<p>Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> để hiểu các khoản chi ngoài đơn giá/m² (lăn dây, đền bù hàng xóm, nội thất…).</p>
+
+<h2>Các yếu tố ảnh hưởng chi phí xây nhà phố</h2>
+<p>Hiểu rõ các yếu tố giúp bạn tránh so sánh báo giá “chỉ một con số” giữa các công ty:</p>
+<ul>
+  <li><strong>Địa chất &amp; móng:</strong> Đất yếu cần cọc, móng bè — chi phí tăng.</li>
+  <li><strong>Số tầng &amp; nhịp cột:</strong> Tầng cao, nhịp lớn cần thép, bê tông lớn hơn.</li>
+  <li><strong>Mái:</strong> Mái bằng, mái Thái, mái lợp — khác nhau về kết cấu và hoàn thiện.</li>
+  <li><strong>Giếng trời, cầu thang:</strong> Thiết kế phức tạp tăng thời gian thợ và vật tư.</li>
+  <li><strong>Thiết bị vệ sinh, cửa:</strong> Hàng nhập khẩu hay nội địa chênh lệch rõ.</li>
+  <li><strong>Thời điểm thi công:</strong> Mùa mưa có thể kéo dài tiến độ, ảnh hưởng chi phí nhân công tạm thời.</li>
+</ul>
+<p>Sao Khuê cam kết <strong>không phát sinh</strong> khi không thay đổi thiết kế và hạng mục đã ký — mọi phát sinh (nếu có) phải được thống nhất bằng văn bản phụ lục.</p>
+
+<h2>Tiêu chuẩn kỹ thuật khi xây nhà phố — Điều chủ nhà nên quan tâm</h2>
+<p>Dù không trực tiếp thi công, bạn vẫn nên nắm các điểm kỹ thuật cơ bản để trao đổi với nhà thầu:</p>
+<h3>Móng và kết cấu</h3>
+<p>Móng đơn, móng băng hoặc cọc khoan tùy khảo sát địa chất. Cốt thép đúng bản vẽ, nghiệm thu trước khi đổ bê tông. Không tự ý khoan cắt dầm, cột sau khi bàn giao.</p>
+<h3>Chống thấm</h3>
+<p>Sân thượng, toilet, ban công, tiếp giáp hàng xóm là vị trí dễ thấm. Yêu cầu lớp chống thấm đúng quy trình, nghiệm thu ngâm nước khi cần.</p>
+<h3>Điện — nước</h3>
+<p>Ống cấp thoát nước, dây điện âm tường đúng tiết diện, có sơ đồ khi bàn giao để sửa chữa sau này.</p>
+<h3>Thông gió — chống nóng</h3>
+<p>TP.HCM nóng quanh năm: giếng trời, cách nhiệm mái, kính hộp kính hoặc lam gỗ/nhôm giúp giảm điện lạnh. Kết hợp <a href="/bai-viet/phong-thuy-nha-o">phong thủy nhà ở</a> với giải pháp kỹ thuật hợp lý.</p>
+
+<h2>Thiết kế nhà phố hiện đại — Tối ưu trên lô đất hẹp</h2>
+<p>Xu hướng <strong>nhà phố hiện đại TP.HCM</strong> giai đoạn 2024–2026: tối giản, gam màu trung tính, lan can kính, phòng master khép kín, bếp mở liên thông phòng khách (nếu thông tầng), tầng trệt kinh doanh có cửa cuốn riêng. Sao Khuê triển khai nhiều mẫu <strong>3–4 tầng</strong> — xem <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phố hiện đại</a>.</p>
+<p>Thiết kế tốt giúp giảm chi phí vận hành lâu dài (điện, sửa chữa) và tăng giá trị khi chuyển nhượng. Đừng tiết kiệm sai chỗ ở giai đoạn <a href="/dich-vu/thiet-ke-nha">thiết kế</a>.</p>
+
+<h2>Khu vực Sao Khuê nhận xây dựng nhà phố</h2>
+<p>Chúng tôi triển khai <strong>xây dựng nhà phố</strong> tại:</p>
+<ul>
+  <li><strong>TP.HCM:</strong> Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình, Quận 3, Phú Nhuận, Bình Tân…</li>
+  <li><strong>Vùng lân cận:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a> (Thuận An, Dĩ An…), Đồng Nai — xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</li>
+</ul>
+<p>Đội khảo sát đến tận công trình miễn phí trong nội thành và vùng ven (theo lịch hẹn). Văn phòng: <strong>245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</strong>.</p>
+
+<h2>So sánh: Tự xây từng phần vs thuê công ty xây dựng nhà phố trọn gói</h2>
+<table>
+  <thead>
+    <tr><th>Tiêu chí</th><th>Tự thuê thợ từng hạng mục</th><th>Công ty trọn gói (Sao Khuê)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Thời gian chủ nhà</td><td>Rất nhiều — điều phối thợ</td><td>Giảm — một đầu mối</td></tr>
+    <tr><td>Báo giá</td><td>Khó tổng hợp, dễ phát sinh</td><td>Dự toán tổng, hợp đồng rõ</td></tr>
+    <tr><td>Chất lượng đồng bộ</td><td>Thường không đồng nhất</td><td>Quy trình nghiệm thu</td></tr>
+    <tr><td>Bảo hành</td><td>Khó truy trách</td><td>Bằng văn bản theo hạng mục</td></tr>
+    <tr><td>Pháp lý / thiết kế</td><td>Chủ nhà tự lo</td><td>Hỗ trợ hồ sơ khi ký gói</td></tr>
+  </tbody>
+</table>
+<p>Nếu bạn có kinh nghiệm xây dựng và thời gian giám sát hàng ngày, có thể chọn <a href="/dich-vu/xay-dung-phan-tho">phần thô</a> rồi tự hoàn thiện. Phần lớn gia đình làm việc bận rộn chọn <strong>xây trọn gói</strong> để an tâm hơn.</p>
+
+<h2>Giấy phép xây dựng nhà phố tại TP.HCM — Lưu ý nhanh</h2>
+<p>Tùy quận, loại công trình và thời điểm, nhà phố xây mới hoặc cải tạo lớn có thể cần <strong>giấy phép xây dựng</strong>. Sao Khuê hỗ trợ khách hàng chuẩn bị hồ sơ thiết kế phục vụ thủ tục; thời gian cấp phép do cơ quan nhà nước quyết định.</p>
+<p>Không nên xây vượt số tầng, lấn hàng xóm hoặc vi phạm lộ giới — rủi ro đình chỉ thi công và tranh chấp sau này rất cao. Tham khảo thêm <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> mục pháp lý.</p>
+
+<h2>Chương trình ưu đãi — Khách xây nhà phố mới</h2>
+<p>Sao Khuê thường xuyên có <a href="/dich-vu/khuyen-mai-xay-dung">khuyến mại xây dựng</a>: miễn phí thiết kế 2D/3D khi ký trọn gói, ưu đãi khảo sát, quà tặng thiết bị vệ sinh cơ bản (theo từng đợt — liên hệ để biết chương trình hiện hành).</p>
+
+<h2>Checklist trước khi ký hợp đồng xây dựng nhà phố</h2>
+<p>Trước khi ký với bất kỳ <strong>công ty xây dựng nhà phố</strong> nào tại TP.HCM, bạn nên tự kiểm tra danh sách sau — đây là thói quen tốt mà nhiều chuyên gia SEO và tư vấn xây dựng khuyến nghị khi đọc bài hướng dẫn dài (pillar content):</p>
+<ul>
+  <li>Đã có <strong>sổ đỏ / giấy tờ đất</strong> và hiểu ranh giới lô đất.</li>
+  <li>Đã thống nhất <strong>số tầng, công năng từng phòng</strong> với gia đình (ngủ, làm việc, kinh doanh, để xe).</li>
+  <li>Đã xem <strong>bản vẽ 3D</strong> và danh mục vật tư dự kiến trong báo giá.</li>
+  <li>Đã đọc kỹ <strong>điều khoản thanh toán, phạt chậm tiến độ, bảo hành</strong>.</li>
+  <li>Đã hỏi rõ <strong>ai giám sát</strong> và kênh liên hệ khi phát sinh sự cố.</li>
+  <li>Đã tham khảo ít nhất <strong>01 công trình đã bàn giao</strong> của nhà thầu.</li>
+</ul>
+<p>Sao Khuê sẵn sàng cung cấp mẫu hợp đồng, giải thích từng hạng mục và đồng hành từ bước <a href="/dich-vu/thiet-ke-nha">thiết kế</a> — tránh tình trạng ký thi công khi bản vẽ còn sơ sài.</p>
+
+<h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
+<p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
+
+<h2>Liên hệ công ty xây dựng nhà phố Sao Khuê — Khảo sát miễn phí</h2>
+<p>Bạn đang tìm <strong>công ty xây dựng nhà phố uy tín tại TP.HCM</strong> cho dự án xây mới, cải tạo hoặc nâng tầng? Hãy liên hệ Sao Khuê để được tư vấn, khảo sát mặt bằng và nhận <strong>báo giá minh bạch</strong>:</p>
+<ul>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
+  <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a></li>
+  <li><strong>Đặt lịch tư vấn:</strong> <a href="/lien-he">/lien-he</a></li>
+  <li><strong>Xem công trình:</strong> <a href="/cong-trinh">/cong-trinh</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Uy tín từ thiết kế đến thi công, <strong>xây dựng nhà phố TP.HCM</strong> đúng tiến độ, đúng cam kết, xây dựng tổ ấm bền vững cho gia đình bạn.</p>$faq_cong_ty_xay_dung_nha_pho_uy_tin_tphcm$, updated_at = NOW() WHERE slug = 'cong-ty-xay-dung-nha-pho-uy-tin-tphcm';
+
+UPDATE posts SET content = $faq_bao_gia_xay_nha_tron_goi_moi_nhat_tphcm$<h2>Báo giá xây nhà TP.HCM 2026 — Cập nhật đơn giá xây nhà trọn gói mới nhất</h2>
+<p><strong>Báo giá xây nhà TP.HCM</strong> là thông tin được hàng nghìn chủ đất tìm kiếm trước khi quyết định đầu tư. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> công bố <strong>báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> (cập nhật 2026) theo hướng <strong>minh bạch từng hạng mục</strong> — giúp bạn ước lượng ngân sách, so sánh gói tiêu chuẩn / khá / cao cấp và tránh báo giá “trần trời” không có cơ sở kỹ thuật.</p>
+<p>Bài viết tổng hợp <strong>đơn giá tham khảo</strong>, cách tính diện tích quy đổi, các khoản chi thường gặp ngoài đơn giá/m², quy trình nhận báo giá chính thức tại Sao Khuê và câu hỏi thường gặp — phù hợp chủ nhà xây <strong>nhà phố</strong>, <strong>biệt thự</strong> hoặc <strong>cải tạo trọn gói</strong> tại TP.HCM, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a>, Đồng Nai.</p>
+
+<h2>Báo giá xây nhà trọn gói TP.HCM là gì?</h2>
+<p><strong>Xây nhà trọn gói</strong> (chìa khóa trao tay) là mô hình nhà thầu báo <strong>một đơn giá tổng thể</strong> (thường tính theo m² sàn xây dựng) bao gồm: thiết kế (nếu trong gói), thi công móng–kết cấu–mái, hoàn thiện cơ bản, điện nước, cửa, thiết bị vệ sinh cơ bản và bàn giao. <strong>Báo giá xây nhà TP.HCM</strong> trọn gói khác với báo giá chỉ <strong>phần thô</strong> hoặc chỉ <strong>hoàn thiện</strong> — bạn cần xác định rõ phạm vi trước khi so sánh giữa các công ty.</p>
+<p>Tại Sao Khuê, báo giá trọn gói được lập sau <strong>khảo sát mặt bằng</strong> và thống nhất phương án thiết kế sơ bộ. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và <a href="/bao-gia">công cụ tính chi phí online</a>.</p>
+
+<h2>Bảng báo giá xây nhà trọn gói mới nhất 2026 (tham khảo)</h2>
+<p>Đơn giá dưới đây áp dụng cho công trình nhà ở riêng lẻ tại TP.HCM, <strong>mang tính tham khảo</strong>. Báo giá chính thức phụ thuộc quy mô, vật liệu, mặt bằng và thời điểm ký hợp đồng:</p>
+<table>
+  <thead>
+    <tr><th>Gói dịch vụ</th><th>Đơn giá (đ/m² sàn)</th><th>Phạm vi công việc</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Xây nhà trọn gói tiêu chuẩn</td><td><strong>4,85 – 5,5 triệu</strong></td><td>Thô + hoàn thiện cơ bản, thiết bị vệ sinh phổ thông</td></tr>
+    <tr><td>Trọn gói khá</td><td><strong>5,5 – 6,0 triệu</strong></td><td>Vật tư tầm trung–khá, hoàn thiện đẹp hơn</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td><strong>6,0 – 6,7 triệu+</strong></td><td>Thiết bị tốt, chi tiết kiến trúc cao cấp</td></tr>
+    <tr><td>Chỉ xây phần thô</td><td><strong>3,55 – 3,8 triệu</strong></td><td>Móng, khung BTCT, tường, mái, điện nước âm</td></tr>
+    <tr><td>Hoàn thiện sau thô</td><td>Liên hệ</td><td>Trát, sơn, ốp lát, trần, cửa — theo bản vẽ</td></tr>
+  </tbody>
+</table>
+<p><strong>Lưu ý:</strong> Đơn giá/m² là <strong>diện tích sàn xây dựng quy đổi</strong> (gồm móng, các tầng, mái, ban công có mái che theo quy ước hợp đồng) — không phải chỉ diện tích lô đất.</p>
+
+<h2>Ví dụ tính nhanh báo giá xây nhà TP.HCM</h2>
+<p><strong>Ví dụ 1 — Nhà phố 4 tầng:</strong> Tổng diện tích sàn quy đổi ~320 m², gói trọn gói tiêu chuẩn ~5 triệu/m² → chi phí tham khảo khoảng <strong>1,6 tỷ</strong> (chưa gồm nội thất cao cấp, phí ngoài hợp đồng).</p>
+<p><strong>Ví dụ 2 — Nhà 3 tầng mặt tiền 5m:</strong> Sàn ~240 m², gói khá ~5,7 triệu/m² → khoảng <strong>1,37 tỷ</strong>.</p>
+<p><strong>Ví dụ 3 — Chỉ phần thô:</strong> 280 m² × 3,7 triệu/m² → khoảng <strong>1,04 tỷ</strong>, sau đó ký riêng <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<p>Dùng <a href="/bao-gia">máy tính báo giá xây nhà</a> trên website Sao Khuê để nhập diện tích và gói — nhận ước lượng trong vài phút, sau đó kỹ sư khảo sát sẽ chốt số liệu chính thức.</p>
+
+<h2>Các yếu tố làm báo giá xây nhà TP.HCM tăng hoặc giảm</h2>
+<p>Hai công trình cùng diện tích có thể chênh <strong>hàng trăm triệu</strong> vì các yếu tố sau:</p>
+<ul>
+  <li><strong>Địa chất &amp; móng:</strong> Đất yếu, cọc khoan, móng bè — tăng chi phí móng đáng kể.</li>
+  <li><strong>Số tầng &amp; nhịp kết cấu:</strong> Nhịp lớn, tầng cao cần hệ khung và thép nhiều hơn.</li>
+  <li><strong>Loại mái:</strong> Mái bằng BTCT, mái Thái, mái lợp — khác nhau về kết cấu và hoàn thiện.</li>
+  <li><strong>Thiết kế phức tạp:</strong> Giếng trời, cầu thang uốn, ban công lớn — tăng nhân công và vật tư.</li>
+  <li><strong>Chủng loại vật tư:</strong> Gạch, sơn, thiết bị vệ sinh, cửa nhôm kính — chênh lệch rõ giữa các hạng.</li>
+  <li><strong>Vị trí công trình:</strong> Hẻm hẹp, vận chuyển khó, thời gian thi công bị giới hạn giờ ban ngày.</li>
+  <li><strong>Thời điểm thi công:</strong> Mùa mưa có thể ảnh hưởng tiến độ và chi phí tạm thời.</li>
+</ul>
+<p>Sao Khuê cam kết <strong>không phát sinh</strong> khi không thay đổi thiết kế và hạng mục đã ký — mọi phát sinh (nếu có) phải thống nhất bằng phụ lục hợp đồng.</p>
+
+<h2>So sánh báo giá: Trọn gói vs phần thô vs hoàn thiện</h2>
+<table>
+  <thead>
+    <tr><th>Hình thức</th><th>Ưu điểm</th><th>Nhược điểm</th><th>Phù hợp</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Trọn gói</strong></td><td>Một báo giá, một bảo hành, tiết kiệm thời gian chủ nhà</td><td>Giá tổng cao hơn từng giai đoạn riêng lẻ</td><td>Gia đình bận, cần đầu mối duy nhất</td></tr>
+    <tr><td><strong>Phần thô</strong></td><td>Kiểm soát chi phí khung nhà, linh hoạt hoàn thiện sau</td><td>Phải tự giám sát hoặc thuê thêm hoàn thiện</td><td>Đã có thiết kế, có kinh nghiệm xây</td></tr>
+    <tr><td><strong>Hoàn thiện</strong></td><td>Tùy chọn vật liệu đẹp khi đã có nhà thô vững</td><td>Phụ thuộc chất lượng phần thô trước đó</td><td>Nhà xây thô sẵn, cần nâng cấp</td></tr>
+  </tbody>
+</table>
+<p>Chi tiết: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> · <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> · <a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">xây dựng nhà phố</a>.</p>
+
+<h2>Báo giá xây nhà trọn gói gồm những hạng mục nào?</h2>
+<p>Để đọc <strong>báo giá xây nhà TP.HCM</strong> đúng cách, bạn nên kiểm tra báo giá có liệt kê đủ các nhóm sau (Sao Khuê luôn đính kèm dự toán chi tiết):</p>
+<h3>Nhóm thiết kế &amp; thủ tục</h3>
+<ul>
+  <li>Khảo sát mặt bằng, đo đạc.</li>
+  <li>Thiết kế kiến trúc 2D/3D (miễn phí khi ký xây trọn gói — theo chương trình).</li>
+  <li>Hỗ trợ hồ sơ xin phép (nếu trong hợp đồng).</li>
+</ul>
+<h3>Nhóm thi công phần thô</h3>
+<ul>
+  <li>Móng, cột, dầm, sàn, tường bao che, mái.</li>
+  <li>Điện, nước âm tường; thoát nước mưa, vệ sinh.</li>
+  <li>Giàn giáo, an toàn lao động cơ bản.</li>
+</ul>
+<h3>Nhóm hoàn thiện</h3>
+<ul>
+  <li>Trát, tô, sơn nước trong–ngoài.</li>
+  <li>Ốp lát sàn, ốp tường khu vực ướt (theo gói).</li>
+  <li>Trần thạch cao hoặc trần khác theo thiết kế.</li>
+  <li>Cửa đi, cửa sổ, lan can, cầu thang (theo chủng loại đã ký).</li>
+  <li>Thiết bị vệ sinh cơ bản (bồn cầu, lavabo, vòi sen…).</li>
+</ul>
+<h3>Thường không gồm trong báo giá trọn gói cơ bản</h3>
+<ul>
+  <li>Nội thất cao cấp: tủ bếp âm, tủ quần áo đặc biệt, sofa.</li>
+  <li>Hàng rào, sân vườn lớn, hồ bơi (báo giá riêng).</li>
+  <li>Phí xin phép, lệ phí nhà nước (nếu không ghi trong hợp đồng).</li>
+  <li>Đền bù, lăn dây hàng xóm, chi phí sinh hoạt tạm trong thi công.</li>
+</ul>
+
+<h2>Các khoản chi ngoài đơn giá/m² — Cần dự trù</h2>
+<p>Ngoài <strong>báo giá xây nhà trọn gói</strong>, chủ nhà nên dự phòng (tham khảo <a href="/bai-viet/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a>):</p>
+<ul>
+  <li><strong>Điện nước tạm thời</strong> trong thi công.</li>
+  <li><strong>Vận chuyển vật liệu</strong> vào hẻm hẹp (nếu xe lớn không vào được).</li>
+  <li><strong>Đất đắp, san nền</strong> khi mặt bằng chưa chuẩn.</li>
+  <li><strong>Nội thất &amp; thiết bị điện gia dụng</strong> sau bàn giao.</li>
+  <li><strong>Dự phòng phát sinh thiết kế</strong> (~5–10% ngân sách) khi chủ nhà đổi ý giữa chừng.</li>
+</ul>
+
+<h2>Quy trình nhận báo giá xây nhà chính thức tại Sao Khuê</h2>
+<ol>
+  <li><strong>Liên hệ:</strong> Hotline <strong>0909 075 668</strong>, Zalo hoặc <a href="/lien-he">form liên hệ</a>.</li>
+  <li><strong>Khảo sát miễn phí:</strong> Kỹ sư đến công trình đo đạc, tư vấn sơ bộ.</li>
+  <li><strong>Chốt thiết kế / phương án:</strong> Mặt bằng, số tầng, mức hoàn thiện.</li>
+  <li><strong>Nhận dự toán chi tiết:</strong> Bảng hạng mục, vật tư, đơn giá, tiến độ thanh toán.</li>
+  <li><strong>Ký hợp đồng:</strong> Cam kết không phát sinh khi không đổi thiết kế.</li>
+</ol>
+<p>Thời gian báo giá sơ bộ qua điện thoại: <strong>trong ngày</strong>. Báo giá chi tiết sau khảo sát: thường <strong>3–7 ngày</strong> tùy quy mô.</p>
+
+<h2>Vì sao chọn báo giá xây nhà tại Sao Khuê?</h2>
+<ul>
+  <li><strong>Minh bạch:</strong> Dự toán từng hạng mục, không “bóc tách” mơ hồ.</li>
+  <li><strong>Trực tiếp thi công:</strong> Không chào giá rẻ rồi bán thầu phụ.</li>
+  <li><strong>Vật tư đúng hợp đồng:</strong> Xi măng, thép, sơn, thiết bị đúng chủng loại đã ký.</li>
+  <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong>.</li>
+  <li><strong>Kinh nghiệm:</strong> Hơn <strong>500 công trình</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
+  <li><strong>Ưu đãi:</strong> <a href="/dich-vu/khuyen-mai-xay-dung">Khuyến mại xây dựng</a> — miễn phí thiết kế khi ký trọn gói (theo đợt).</li>
+</ul>
+
+<h2>Cách nhận biết báo giá xây nhà TP.HCM “bẫy” giá rẻ</h2>
+<p>Cảnh giác khi báo giá thấp hơn thị trường <strong>15–20%</strong> mà không giải thích rõ:</p>
+<ul>
+  <li>Không nêu chủng loại vật tư (xi măng, thép, gạch, sơn…).</li>
+  <li>Không có hạng mục móng, chống thấm, điện nước riêng.</li>
+  <li>Yêu cầu ứng tiền quá cao ngay khi ký (<strong>&gt;50%</strong> chưa thi công).</li>
+  <li>Không có hợp đồng pháp nhân, không bảo hành bằng văn bản.</li>
+  <li>“Báo giá m²” nhưng không giải thích cách tính diện tích quy đổi.</li>
+</ul>
+<p>Nên so sánh ít nhất <strong>2–3 nhà thầu</strong> cùng phạm vi công việc — không chỉ so một con số.</p>
+
+<h2>Báo giá xây nhà theo từng loại công trình</h2>
+<h3>Nhà phố 3–5 tầng</h3>
+<p>Phổ biến tại Bình Thạnh, Thủ Đức, Quận 7… Đơn giá trọn gói thường nằm trong bảng <strong>4,85 – 6,7 triệu/m²</strong>. Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>.</p>
+<h3>Biệt thự / nhà vườn</h3>
+<p>Chi phí/m² có thể cao hơn do mái, sân, hoàn thiện đẹp. Cần khảo sát riêng.</p>
+<h3>Sửa chữa, cải tạo</h3>
+<p>Báo giá theo hạng mục (chống thấm, gia cố, thay điện nước…) — xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>.</p>
+<h3>Nâng tầng</h3>
+<p>Phụ thuộc khảo sát kết cấu — không có đơn giá cố định/m². Xem <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a>.</p>
+
+<h2>Thanh toán theo tiến độ — Gợi ý an toàn cho chủ nhà</h2>
+<p>Báo giá xây nhà TP.HCM thường đi kèm lịch thanh toán chia đợt:</p>
+<ul>
+  <li>Ký hợp đồng: <strong>15–25%</strong></li>
+  <li>Hoàn thành móng: <strong>20–25%</strong></li>
+  <li>Hoàn thành thân nhà (khung + mái): <strong>25–30%</strong></li>
+  <li>Hoàn thiện &amp; nghiệm thu: <strong>20–30%</strong></li>
+  <li>Giữ lại <strong>5–10%</strong> sau bàn giao (nếu hợp đồng quy định)</li>
+</ul>
+<p>Tránh trả quá <strong>70%</strong> tổng giá trị khi mới xong phần thô nếu hợp đồng không bảo vệ quyền lợi chủ nhà.</p>
+
+<h2>Chi tiết đơn giá các hạng mục trong báo giá trọn gói (tham khảo)</h2>
+<p>Để hiểu sâu hơn <strong>báo giá xây nhà TP.HCM</strong>, dưới đây là tỷ trọng chi phí điển hình trong gói trọn gói (có thể thay đổi theo thiết kế):</p>
+<ul>
+  <li><strong>Móng &amp; kết cấu thô:</strong> khoảng 35–42% tổng giá trị — quyết định an toàn công trình.</li>
+  <li><strong>Xây tường, mái:</strong> khoảng 12–18%.</li>
+  <li><strong>Điện, nước, thoát nước:</strong> khoảng 8–12%.</li>
+  <li><strong>Hoàn thiện (trát, sơn, ốp lát):</strong> khoảng 22–28%.</li>
+  <li><strong>Cửa, lan can, cầu thang:</strong> khoảng 8–12%.</li>
+  <li><strong>Thiết bị vệ sinh, phụ kiện:</strong> khoảng 3–6%.</li>
+  <li><strong>Quản lý, giám sát, chi phí chung:</strong> phần còn lại.</li>
+</ul>
+<p>Khi nhận báo giá từ Sao Khuê, bạn sẽ thấy tách bạch từng nhóm — không gộp chung “gói thầu” khó kiểm tra.</p>
+
+<h2>Báo giá xây nhà theo khu vực TP.HCM</h2>
+<p>Đơn giá/m² <strong>không chênh lệch lớn</strong> giữa các quận nội thành nếu cùng điều kiện mặt bằng và vật tư. Tuy nhiên chi phí logistics có thể tăng nhẹ ở:</p>
+<ul>
+  <li><strong>Hẻm sâu, xe không vào được:</strong> nhân công bốc vật liệu, thời gian kéo dài.</li>
+  <li><strong>Khu ven đô thị mới (Thủ Đức, Nhà Bè…):</strong> có thể cần trạm điện nước tạm xa hơn.</li>
+  <li><strong>Bình Dương, Đồng Nai:</strong> Sao Khuê vẫn nhận báo giá — xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>; cộng thêm chi phí di chuyển đội khảo sát/thi công nếu xa (thông báo trước khi ký).</li>
+</ul>
+<p>Dù ở quận nào, nguyên tắc vẫn là <strong>khảo sát trước — báo giá sau</strong>, không báo “giá chung cho cả thành phố” khi chưa xem đất.</p>
+
+<h2>Cập nhật báo giá xây nhà khi nào?</h2>
+<p>Thị trường vật liệu (thép, xi măng, cát…) biến động theo quý. Sao Khuê cập nhật <strong>bảng báo giá xây nhà trọn gói mới nhất</strong> trên website và tư vấn trực tiếp — nhưng <strong>giá cam kết</strong> cho khách đã ký hợp đồng theo điều khoản hợp đồng, không thay đổi một chiều khi đã chốt vật tư.</p>
+<p>Nếu bạn nhận báo giá từ nhiều nguồn cách nhau vài tháng, hãy yêu cầu cùng một mốc thời gian và cùng phạm vi hạng mục khi so sánh.</p>
+
+<h2>Checklist 10 điểm khi đọc báo giá xây nhà TP.HCM</h2>
+<ol>
+  <li>Có ghi rõ <strong>diện tích quy đổi</strong> (m²) và cách tính?</li>
+  <li>Liệt kê <strong>chủng loại vật tư</strong> (thương hiệu, quy cách)?</li>
+  <li>Tách <strong>móng, thô, hoàn thiện</strong> hay gộp trọn gói?</li>
+  <li>Có <strong>tiến độ thi công</strong> và lịch thanh toán?</li>
+  <li><strong>Bảo hành</strong> từng hạng mục bao lâu?</li>
+  <li>Điều khoản <strong>phát sinh</strong> khi đổi thiết kế?</li>
+  <li>Ai là <strong>đầu mối</strong> và đơn vị <strong>trực tiếp thi công</strong>?</li>
+  <li>Có cho xem <strong>công trình tương tự</strong> đã bàn giao?</li>
+  <li>Phí <strong>không bao gồm</strong> được liệt kê rõ?</li>
+  <li>Hợp đồng có <strong>pháp nhân công ty</strong> và con dấu?</li>
+</ol>
+
+<h2>Báo giá xây nhà trọn gói và thuế, hóa đơn</h2>
+<p>Khi ký hợp đồng với <strong>công ty xây dựng có pháp nhân</strong> như Sao Khuê, bạn có thể nhận <strong>hóa đơn VAT</strong> theo quy định (tùy gói và điều khoản hợp đồng). Báo giá xây nhà TP.HCM trong bài viết này là <strong>giá tham khảo công trình</strong> — chưa bao gồm VAT trừ khi ghi rõ “đã gồm VAT” trong báo giá chính thức. Chủ nhà nên hỏi rõ kế toán trước khi thanh toán để hạch toán đúng chi phí xây dựng nhà ở.</p>
+<p>Hóa đơn minh bạch cũng là một tiêu chí <strong>uy tín nhà thầu</strong>, song song với bảo hành và tiến độ thi công.</p>
+
+<h2>Kết luận: Nắm báo giá xây nhà TP.HCM trước khi ký hợp đồng</h2>
+<p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> năm 2026 dao động khoảng <strong>4,85 – 6,7 triệu/m²</strong> (trọn gói) và <strong>3,55 – 3,8 triệu/m²</strong> (phần thô) — tùy vật liệu và quy mô. Con số quan trọng nhất với bạn là <strong>báo giá sau khảo sát</strong>, có dự toán chi tiết và hợp đồng rõ ràng. Đừng chỉ dựa vào quảng cáo “giá rẻ nhất thị trường” mà thiếu phạm vi công việc.</p>
+<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 075 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
+
+<h2>Liên kết dịch vụ &amp; công cụ báo giá</h2>
+<p>Sau khi nắm <strong>báo giá xây nhà TP.HCM</strong> tham khảo, bạn có thể đi sâu từng hạng mục:</p>
+<ul>
+  <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a> — quy trình và cam kết.</li>
+  <li><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> — tối ưu chi phí từ bản vẽ.</li>
+  <li><a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Xây dựng nhà phố</a> — đặc thù nhà phố.</li>
+  <li><a href="/bai-viet/luat-xay-dung-moi-nhat">Luật xây dựng</a> — tránh phạt khi xây.</li>
+  <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
+</ul>
+
+<h2>Liên hệ nhận báo giá xây nhà trọn gói mới nhất</h2>
+<p>Bạn cần <strong>báo giá xây nhà TP.HCM</strong> chính xác, minh bạch cho dự án sắp tới?</p>
+<ul>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Tính chi phí online:</strong> <a href="/bao-gia">/bao-gia</a></li>
+  <li><strong>Đặt lịch khảo sát:</strong> <a href="/lien-he">/lien-he</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Báo giá rõ ràng, thi công uy tín, xây tổ ấm bền vững cho gia đình bạn.</p>$faq_bao_gia_xay_nha_tron_goi_moi_nhat_tphcm$, updated_at = NOW() WHERE slug = 'bao-gia-xay-nha-tron-goi-moi-nhat-tphcm';
+
+UPDATE posts SET content = $faq_thiet_ke_nha_pho_hien_dai_tphcm$<h2>Thiết kế nhà phố TP.HCM — Nền tảng cho công trình bền vững</h2>
+<p><strong>Thiết kế nhà phố TP.HCM</strong> không chỉ là vẽ mặt bằng đẹp: đó là bài toán tối ưu <strong>diện tích trên lô hẹp</strong>, đảm bảo <strong>ánh sáng – thông gió</strong>, tuân thủ <strong>quy hoạch</strong> và tạo nền cho <strong>báo giá thi công minh bạch</strong>. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>thiết kế nhà phố hiện đại</strong> tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và các quận lân cận — từ ý tưởng đến hồ sơ kỹ thuật, phối cảnh 3D và hỗ trợ thi công trọn gói.</p>
+<p>Bài viết dành cho chủ đất đang tìm <strong>đơn vị thiết kế nhà phố uy tín</strong>, muốn hiểu <strong>quy trình</strong>, <strong>chi phí tham khảo</strong>, <strong>phong cách hiện đại</strong> phù hợp TP.HCM và lợi ích khi gộp <strong>thiết kế + thi công</strong> một nhà thầu — theo chuẩn nội dung SEO (heading rõ, từ khóa tự nhiên, liên kết nội bộ, FAQ). Nội dung cập nhật theo thực tiễn thị trường xây dựng TP.HCM năm 2026.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/project_2.jpg" alt="thiết kế nhà phố tphcm" loading="lazy" decoding="async" />
+<figcaption>thiết kế nhà phố tphcm</figcaption>
+</figure>
+
+<h2>Vì sao phải thiết kế trước khi xây nhà phố?</h2>
+<p>Nhiều gia đình ở TP.HCM vẫn quen “có thợ là xây được”. Trên thực tế, <strong>thiết kế nhà phố</strong> giúp:</p>
+<ul>
+  <li><strong>Tránh đục phá kết cấu:</strong> Vị trí cầu thang, giếng trời, cốt thép đã tính từ đầu.</li>
+  <li><strong>Kiểm soát chi phí:</strong> Dự toán theo hạng mục — không phát sinh vô hạn khi đổi ý tưởng giữa chừng.</li>
+  <li><strong>Tối ưu công năng:</strong> Phòng ngủ đủ ánh sáng, bếp – WC hợp lý, tầng trệt kinh doanh (nếu cần).</li>
+  <li><strong>Thẩm mỹ đồng bộ:</strong> Mặt tiền, lan can, màu sắc nhất quán — đặc trưng <strong>nhà phố hiện đại</strong>.</li>
+  <li><strong>Thủ tục pháp lý:</strong> Hồ sơ xin phép xây dựng (khi áp dụng) bám đúng chỉ giới, tầng cao.</li>
+</ul>
+<p>Sao Khuê khuyến nghị: hoàn thiện <strong>bản vẽ thiết kế</strong> trước khi ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> — xem thêm <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
+
+<h2>Đặc thù thiết kế nhà phố tại TP.HCM</h2>
+<p>So với nhà vườn hoặc biệt thự ven đô, <strong>nhà phố nội thành</strong> có những đặc điểm ảnh hưởng trực tiếp bản vẽ:</p>
+<ul>
+  <li><strong>Lô đất hẹp:</strong> Mặt tiền 4–5 m, chiều sâu 15–20 m — cần giải pháp ánh sáng bên hông, giếng trời.</li>
+  <li><strong>Xếp tầng:</strong> 3–5 tầng phổ biến để tăng diện tích sử dụng trên cùng diện tích đất.</li>
+  <li><strong>Hàng xóm sát:</strong> Thi công ảnh hưởng lân cận — thiết kế cần tính logistics, chống thấm tường vách.</li>
+  <li><strong>Quy hoạch:</strong> Lộ giới, chỉ giới xây dựng, cốt nền — sai sót dễ phải chỉnh sửa tốn kém.</li>
+  <li><strong>Khí hậu nhiệt đới:</strong> Mưa nhiều, nắng gắt — mái, thoát nước, vật liệu chống nóng.</li>
+</ul>
+<p>Đội ngũ Sao Khuê có kinh nghiệm <strong>mẫu nhà phố tphcm</strong> trên nhiều quy mô — tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a> và <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây dựng nhà phố uy tín</a>.</p>
+
+<h2>Thiết kế nhà phố hiện đại — Xu hướng được chọn nhiều</h2>
+<p><strong>Thiết kế nhà phố hiện đại</strong> tại TP.HCM thường hướng đến:</p>
+<ul>
+  <li><strong>Tối giản:</strong> Khối hộp rõ ràng, ít phào chỉ, màu trung tính (trắng, xám, gỗ).</li>
+  <li><strong>Cửa kính lớn + lam:</strong> Lấy sáng mặt tiền nhưng hạn chế nắng chiếu trực tiếp.</li>
+  <li><strong>Giao thoa trong – ngoài:</strong> Giếng trời, ban công nhỏ, cây xanh leo tường.</li>
+  <li><strong>Công năng linh hoạt:</strong> Tầng trệt kinh doanh / để xe; tầng lửng làm phòng khách mở.</li>
+  <li><strong>Smart home (tuỳ chọn):</strong> Điện – nước âm tường, ống chờ từ giai đoạn thiết kế.</li>
+</ul>
+<p>Khách hàng có thể tham khảo <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phong cách hiện đại</a> trong portfolio Sao Khuê trước khi chốt phương án.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/project_3.jpg" alt="thiết kế nhà phố hiện đại" loading="lazy" decoding="async" />
+<figcaption>thiết kế nhà phố hiện đại</figcaption>
+</figure>
+
+<h2>Hồ sơ thiết kế bàn giao — Sao Khuê</h2>
+<p>Gói <strong>thiết kế nhà phố TP.HCM</strong> thường bao gồm:</p>
+<ol>
+  <li><strong>Khảo sát hiện trạng:</strong> Đo đạc, ảnh hiện trường, trao đổi nhu cầu (số phòng, phong thủy, ngân sách).</li>
+  <li><strong>Phương án sơ bộ:</strong> 1–2 phương án mặt bằng, thảo luận với chủ đầu tư.</li>
+  <li><strong>Thiết kế chi tiết:</strong> Mặt bằng từng tầng, mặt đứng, mặt cắt, kết cấu sơ bộ.</li>
+  <li><strong>Phối cảnh 3D:</strong> Ngoại thất, góc nhìn mặt tiền — hình dung trước khi xây.</li>
+  <li><strong>Thuyết minh kỹ thuật:</strong> Vật liệu, tiêu chuẩn thi công gợi ý.</li>
+  <li><strong>Hồ sơ xin phép (theo gói):</strong> Hỗ trợ thủ tục với cơ quan có thẩm quyền.</li>
+</ol>
+<p>Khi ký kèm <strong>thi công trọn gói</strong>, chi phí thiết kế có thể được <strong>ưu đãi hoặc miễn phí</strong> theo chính sách từng thời điểm — liên hệ hotline để biết chi tiết.</p>
+
+<h2>Chi phí thiết kế nhà phố TP.HCM (tham khảo)</h2>
+<p>Đơn giá <strong>thiết kế nhà phố</strong> trên thị trường TP.HCM thường tính theo diện tích sàn hoặc gói trọn. Tham khảo (có thể thay đổi theo quy mô và yêu cầu):</p>
+<table>
+<thead><tr><th>Hạng mục</th><th>Mức tham khảo</th><th>Ghi chú</th></tr></thead>
+<tbody>
+<tr><td>Thiết kế sơ bộ + mặt bằng</td><td>80.000 – 150.000 đ/m² sàn</td><td>Chưa 3D chi tiết</td></tr>
+<tr><td>Thiết kế hoàn chỉnh 2D</td><td>150.000 – 250.000 đ/m² sàn</td><td>Đủ hồ sơ thi công cơ bản</td></tr>
+<tr><td>Phối cảnh 3D ngoại thất</td><td>3 – 8 triệu / góc</td><td>Tuỳ độ phức tạp</td></tr>
+<tr><td>Hồ sơ xin phép</td><td>Thỏa thuận</td><td>Phụ thuộc quận, loại công trình</td></tr>
+</tbody>
+</table>
+<p>Sau thiết kế, chủ đầu tư có căn cứ so sánh <a href="/bao-gia">bảng báo giá xây dựng</a> và tránh chênh lệch khi thi công.</p>
+
+<h2>Quy trình thiết kế tại Kiến Trúc Sao Khuê</h2>
+<ol>
+  <li><strong>Tiếp nhận &amp; khảo sát:</strong> Gặp trực tiếp hoặc trao đổi online, khảo sát lô đất (miễn phí trong nội thành theo lịch).</li>
+  <li><strong>Chốt phương án:</strong> Chọn mặt bằng, phong cách <strong>thiết kế nhà phố hiện đại</strong> phù hợp.</li>
+  <li><strong>Triển khai hồ sơ:</strong> 2D/3D, chỉnh sửa theo góp ý (số lần chỉnh trong hợp đồng).</li>
+  <li><strong>Bàn giao &amp; dự toán:</strong> Kết hợp bộ phận dự toán nếu triển khai <strong>thi công</strong>.</li>
+  <li><strong>Giám sát thi công (tuỳ chọn):</strong> Đảm bảo thi công đúng bản vẽ — một đầu mối từ thiết kế đến bàn giao.</li>
+</ol>
+
+<h2>Lỗi thường gặp khi bỏ qua thiết kế nhà phố</h2>
+<ul>
+  <li>Xây “theo cảm tính” → tốn chi phí sửa lan can, cầu thang, ống nước.</li>
+  <li>Không tính giếng trời → phòng giữa thiếu sáng, ẩm mốc.</li>
+  <li>Chỉ chọn ảnh Pinterest không có bản vẽ kỹ thuật → thợ không thi được đúng.</li>
+  <li>Không kiểm tra quy hoạch → phải đập bớt tầng hoặc lùi chỉ giới.</li>
+  <li>Tách rời thiết kế và thi công → đổ lỗi lẫn nhau khi phát sinh.</li>
+</ul>
+
+<h2>Thiết kế + thi công — Lợi ích một đơn vị</h2>
+<p>Sao Khuê cung cấp trọn gói <strong>thiết kế và thi công nhà phố</strong>:</p>
+<ul>
+  <li>Một hợp đồng, một đầu mối — giảm rủi ro.</li>
+  <li>Báo giá xuyên suốt từ thiết kế sang thi công.</li>
+  <li>Bảo hành kết cấu khi thi công theo hồ sơ của công ty.</li>
+</ul>
+<p>Khu vực lân cận: <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">mẫu nhà phố 2 tầng Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&amp;fit=crop&amp;q=80&amp;w=1200" alt="mẫu nhà phố tphcm" loading="lazy" decoding="async" />
+<figcaption>mẫu nhà phố tphcm</figcaption>
+</figure>
+
+<h2>Liên hệ thiết kế nhà phố TP.HCM</h2>
+<ul>
+  <li><strong>Hotline:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Báo giá xây dựng:</strong> <a href="/bao-gia">/bao-gia</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — <strong>Thiết kế nhà phố TP.HCM</strong> chuẩn kỹ thuật, thẩm mỹ hiện đại, sẵn sàng đồng hành từ bản vẽ đến công trình hoàn thiện.</p>$faq_thiet_ke_nha_pho_hien_dai_tphcm$, updated_at = NOW() WHERE slug = 'thiet-ke-nha-pho-hien-dai-tphcm';
+
+UPDATE posts SET content = $faq_mau_nha_pho_2_tang_binh_duong$<h2>Nhà phố 2 tầng Bình Dương — Xu hướng được ưa chuộng</h2>
+<p><strong>Nhà phố 2 tầng Bình Dương</strong> đang là lựa chọn hàng đầu của gia đình trẻ, vợ chồng mới cưới và chủ đất tại <strong>Thuận An, Dĩ An, Thủ Dầu Một, Tân Uyên</strong> — khi cần <strong>diện tích ở đủ dùng</strong>, <strong>chi phí xây dựng hợp lý hơn nhà 3–4 tầng</strong> và thời gian thi công ngắn hơn. Khác với nhà phố nội ô TP.HCM thường xếp 4–5 tầng trên lô hẹp, nhiều khu dân cư và đô thị mới ven sông Sài Gòn tại Bình Dương cho phép <strong>mặt tiền 5 m, chiều sâu 16–20 m</strong>, xây <strong>2 tầng + mái</strong> vẫn đảm bảo công năng thoải mái.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> triển khai <strong>thiết kế và thi công nhà phố</strong> tại Bình Dương — từ mẫu <strong>2 tầng hiện đại</strong> đến nhà phố 3–4 tầng (xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>). Bài viết tổng hợp <strong>mẫu nhà phố 2 tầng đẹp</strong> được khách hàng quan tâm nhiều nhất, gợi ý bố trí công năng, phong cách và <strong>chi phí tham khảo</strong> khi xây tại Bình Dương năm 2026.</p>
+
+<h2>Vì sao nhà phố 2 tầng phổ biến tại Bình Dương?</h2>
+<ul>
+  <li><strong>Quy mô gia đình:</strong> 2–4 thành viên — tầng trệt sinh hoạt chung, tầng 2 phòng ngủ đủ dùng.</li>
+  <li><strong>Ngân sách:</strong> Tổng diện tích sàn khoảng <strong>160–220 m²</strong> (tùy lô), chi phí thấp hơn đáng kể so với nhà 4 tầng cùng mặt tiền.</li>
+  <li><strong>Thời gian thi công:</strong> Thường <strong>3–5 tháng</strong> trọn gói (không tính thời gian xin phép).</li>
+  <li><strong>Quy hoạch khu vực:</strong> Một số khu dân cư, khu đô thị mới giới hạn chiều cao hoặc khuyến khích nhà thấp tầng — 2 tầng dễ thống nhất với hàng xóm.</li>
+  <li><strong>Mở rộng sau:</strong> Có thể <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> khi gia đình đông thêm — nếu thiết kế từ đầu dự trù kết cấu.</li>
+</ul>
+
+<h2>Kích thước lô đất &amp; diện tích thường gặp</h2>
+<p>Các công trình <strong>nhà phố 2 tầng Bình Dương</strong> Sao Khuê thường khảo sát trên các quy mô sau:</p>
+<table>
+  <thead>
+    <tr><th>Loại lô</th><th>Kích thước</th><th>Diện tích sàn tham khảo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Nhà phố tiêu chuẩn</td><td>5 m × 16 m</td><td>~160 m² (2 tầng)</td></tr>
+    <tr><td>Nhà phố rộng hơn</td><td>5 m × 18–20 m</td><td>~180–200 m²</td></tr>
+    <tr><td>Lô góc / rộng mặt tiền</td><td>6–8 m × 16–20 m</td><td>~200–260 m²</td></tr>
+  </tbody>
+</table>
+<p>Diện tích quy đổi báo giá trọn gói thường tính theo <strong>sàn xây dựng</strong> (bao gồm ban công, mái che một phần theo hợp đồng). Chi tiết: <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói</a> và <a href="/bao-gia">công cụ tính chi phí</a>.</p>
+
+<h2>5 mẫu nhà phố 2 tầng đẹp được ưa chuộng</h2>
+
+<h3>1. Nhà phố 2 tầng hiện đại — Mặt tiền 5 m, giếng trời giữa</h3>
+<p>Phong cách <strong>tối giản</strong>: gam trắng–xám, cửa nhôm kính, lan can kính hoặc lam gỗ. <strong>Tầng trệt:</strong> phòng khách + bếp mở, WC khách, gara xe máy/ô tô nhỏ. <strong>Tầng 2:</strong> 2–3 phòng ngủ, WC master, ban công phía sau. <strong>Giếng trời</strong> (3–4 m²) giữa nhà giúp lấy sáng cho cầu thang và phòng giữa — rất phù hợp lô <strong>5×16 m</strong> tại Thuận An, Dĩ An.</p>
+
+<h3>2. Nhà phố 2 tầng mái Thái — Phù hợp khu dân cư truyền thống</h3>
+<p><strong>Mái Thái</strong> dốc vừa, thoát nước mưa tốt, tạo cảm giác ấm áp. Tầng trệt có thể dành <strong>phòng thờ</strong> hoặc phòng khách riêng; tầng 2 ba phòng ngủ cho gia đình 2 con. Màu sắc: trắng kem, gạch ốp tông đất, cửa gỗ công nghiệp cao cấp.</p>
+
+<h3>3. Nhà phố 2 tầng tầng trệt kinh doanh</h3>
+<p>Phổ biến ven <strong>QL13, đường DT743</strong> và khu dân cư mật độ cao: <strong>tầng trệt mở cửa kinh doanh</strong> (quán cà phê, văn phòng, shop thời trang), tầng 2 là khu ở riêng — cần thiết kế <strong>âm thanh, PCCC và lối thoát</strong> rõ ràng. Sao Khuê tư vấn tách luồng khách và sinh hoạt gia đình ngay từ bản vẽ.</p>
+
+<h3>4. Nhà phố 2 tầng phong cách Indochine / tropical</h3>
+<p>Gỗ lam, mái hiên, cây xanh sân nhỏ phía sau hoặc sân thượng. Phù hợp chủ nhà thích không gian thoáng, không quá “công nghiệp”. Kết hợp <strong>gạch terrazzo, đá tự nhiên</strong> tạo điểm nhấn.</p>
+
+<h3>5. Nhà phố 2 tầng tối ưu ngân sách gia đình trẻ</h3>
+<p>Ưu tiên <strong>công năng cốt lõi</strong>: 1 phòng khách, bếp, 2 phòng ngủ, 2 WC; hoàn thiện vật tư tầm trung tốt; dự trù <strong>nâng tầng</strong> sau 5–7 năm. Đây là nhóm khách hay tìm <strong>mẫu nhà phố 2 tầng Bình Dương</strong> với ngân sách <strong>1,2–1,8 tỷ</strong> trọn gói (tham khảo, tùy vật liệu).</p>
+
+<h2>Gợi ý bố trí công năng tầng trệt &amp; tầng 2</h2>
+<p>Trên lô <strong>5 m × 16 m</strong>, bố trí hợp lý thường như sau:</p>
+<ul>
+  <li><strong>Tầng trệt (~80 m²):</strong> Cửa chính → phòng khách (4–5 m chiều sâu) → bếp + ăn (liên thông hoặc vách kính) → WC dưới gầm cầu thang → gara/cửa phụ sau.</li>
+  <li><strong>Tầng 2 (~80 m²):</strong> Phòng master (có WC riêng nếu đủ diện tích) → 1–2 phòng ngủ con → WC chung → ban công phơi đồ phía sau.</li>
+  <li><strong>Mái:</strong> Mái bằng có sân phơi, hoặc mái Thái + gác lửng nhẹ (nếu quy hoạch cho phép).</li>
+</ul>
+<p>Thiết kế chuẩn giúp tránh lỗi thường gặp: WC dưới nằm giữa nhà không thoát mùi, phòng giữa thiếu sáng, cầu thang chiếm quá diện tích. Liên hệ <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a> — miễn phí khi ký <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>.</p>
+
+<h2>Chi phí xây nhà phố 2 tầng Bình Dương tham khảo 2026</h2>
+<p>Ước lượng với diện tích sàn <strong>~170 m²</strong>, gói trọn gói tiêu chuẩn–khá:</p>
+<table>
+  <thead>
+    <tr><th>Hạng mục</th><th>Tham khảo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Đơn giá trọn gói</td><td>4,85 – 6,0 triệu/m² sàn</td></tr>
+    <tr><td>Tổng thi công (170 m² × ~5,2 tr)</td><td>Khoảng <strong>880 triệu – 1,02 tỷ</strong></td></tr>
+    <tr><td>Thiết kế 2D/3D</td><td>Miễn phí khi ký xây trọn gói (theo quy mô)</td></tr>
+    <tr><td>Chi phí ngoài đơn giá</td><td>Xin phép, điện nước cấp thoát, nội thất cao cấp (nếu có)</td></tr>
+  </tbody>
+</table>
+<p>Số liệu mang tính <strong>tham khảo</strong> — báo giá chính thức sau <strong>khảo sát miễn phí</strong> tại Bình Dương. Xem thêm <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>.</p>
+
+<h2>Lưu ý khi chọn mẫu &amp; thi công tại Bình Dương</h2>
+<ul>
+  <li><strong>Giấy phép xây dựng:</strong> Theo quy định UBND từng phường/xã — hỗ trợ hồ sơ trong phạm vi hợp đồng.</li>
+  <li><strong>Chỉ giới &amp; lộ giới:</strong> Ảnh hưởng cửa sổ mặt tiền, độ nhô mái hiên.</li>
+  <li><strong>Địa chất:</strong> Một số khu đất yếu cần móng cọc — chi phí móng có thể cao hơn dự kiến ban đầu.</li>
+  <li><strong>Thi công một đơn vị:</strong> Thiết kế + thi công cùng Sao Khuê giảm sai lệch bản vẽ và hiện trường.</li>
+</ul>
+
+<h2>Tham khảo công trình &amp; dịch vụ liên quan</h2>
+<ul>
+  <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Công trình nhà phố Thuận An</a> — minh họa thi công tại Bình Dương.</li>
+  <li><a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Mẫu nhà phố hiện đại</a> — phong cách 3–4 tầng TP.HCM.</li>
+  <li><a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây dựng nhà phố uy tín</a> — tiêu chí chọn nhà thầu.</li>
+  <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
+</ul>
+
+<h2>Liên hệ tư vấn mẫu nhà phố 2 tầng Bình Dương</h2>
+<p>Bạn đã có lô đất và muốn chốt <strong>mẫu nhà phố 2 tầng đẹp</strong> phù hợp Bình Dương?</p>
+<ul>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Thiết kế mẫu chuẩn, thi công uy tín, đồng hành xây tổ ấm tại Bình Dương.</p>$faq_mau_nha_pho_2_tang_binh_duong$, updated_at = NOW() WHERE slug = 'mau-nha-pho-2-tang-binh-duong';
+
+UPDATE posts SET content = $faq_thiet_ke_thi_cong_nha_pho_dong_nai$<h2>Thi công nhà phố Đồng Nai — Thiết kế &amp; thi công một đơn vị</h2>
+<p><strong>Thi công nhà phố Đồng Nai</strong> đòi hỏi nhà thầu vừa am hiểu <strong>thiết kế nhà phố hiện đại</strong> (ánh sáng, thông gió, công năng trên lô hẹp), vừa có năng lực <strong>quản lý thi công</strong> và giám sát kỹ thuật tại hiện trường. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp trọn gói <strong>thiết kế và thi công nhà phố</strong> tại <strong>Biên Hòa, Long Thành, Nhơn Trạch, Trảng Bom</strong> và các huyện lân cận — với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> và cam kết <strong>báo giá minh bạch, bảo hành kết cấu 10 năm</strong>.</p>
+<p>Bài viết giải thích vì sao nên gộp <strong>thiết kế + thi công</strong>, đặc thù <strong>nhà phố hiện đại tại Đồng Nai</strong>, quy trình Sao Khuê, đơn giá tham khảo và câu hỏi thường gặp — phục vụ chủ đất đang tìm <strong>đơn vị thi công nhà phố uy tín</strong> tại tỉnh.</p>
+
+<h2>Đặc thù nhà phố tại Đồng Nai</h2>
+<p>Khác với nhà phố nội ô TP.HCM thường <strong>4–5 tầng</strong> trên lô <strong>4–5 m</strong> mặt tiền, nhiều khu tại Đồng Nai có:</p>
+<ul>
+  <li><strong>Lô đất rộng hơn:</strong> 5×16 m, 5×18–20 m, thậm chí 6–8 m mặt tiền — thuận lợi bố trí phòng ngủ, giếng trời.</li>
+  <li><strong>Quy hoạch đô thị mới:</strong> Khu dân cư, khu công nghiệp — quy chuẩn tầng cao, mặt tiền cần tuân thủ sớm.</li>
+  <li><strong>Nhu cầu 2–3 tầng:</strong> Gia đình trẻ, chi phí hợp lý, thời gian thi công <strong>3–6 tháng</strong> trọn gói.</li>
+  <li><strong>Kết nối TP.HCM:</strong> Chủ nhà làm việc nội thành, xây nhà Đồng Nai — cần đơn vị cập nhật tiến độ từ xa.</li>
+</ul>
+<p>Sao Khuê đã triển khai nhiều công trình vùng lân cận — tham khảo <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a> (Bình Dương).</p>
+
+<h2>Thiết kế nhà phố hiện đại — Nền tảng trước khi thi công</h2>
+<p><strong>Thiết kế nhà phố</strong> không chỉ là “vẽ đẹp” mà phải giải quyết:</p>
+<ul>
+  <li><strong>Công năng:</strong> Phòng khách, bếp, phòng ngủ, WC, gara — phù hợp thói quen gia đình.</li>
+  <li><strong>Ánh sáng &amp; thông gió:</strong> Giếng trời, cửa sổ bên hông, lan can thoáng — tránh phòng giữa tối.</li>
+  <li><strong>Kết cấu:</strong> Vị trí cột, dầm, không đục phá khi hoàn thiện.</li>
+  <li><strong>Pháp lý:</strong> Chỉ giới, lộ giới, số tầng theo quy hoạch địa phương.</li>
+  <li><strong>Dự toán:</strong> Căn cứ báo giá <strong>thi công nhà phố</strong> chính xác.</li>
+</ul>
+<p>Dịch vụ chi tiết: <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>. Khi ký <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây trọn gói Đồng Nai</a>, thường được <strong>miễn phí thiết kế 2D/3D</strong> (theo quy mô áp dụng).</p>
+
+<h2>Phong cách nhà phố hiện đại phổ biến tại Đồng Nai</h2>
+<ul>
+  <li><strong>Tối giản:</strong> Gam trắng–xám, cửa nhôm kính, mặt tiền gọn.</li>
+  <li><strong>Indochine / tropical:</strong> Mái hiên, lam gỗ, cây xanh sân sau.</li>
+  <li><strong>Mái Thái:</strong> Phù hợp khu dân cư truyền thống, thoát nước mưa tốt.</li>
+  <li><strong>Tầng trệt kinh doanh:</strong> Shop, văn phòng + tầng trên là khu ở — cần tách luồng rõ.</li>
+</ul>
+<p>Xem thêm <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">mẫu nhà phố hiện đại</a> và <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố 2 tầng</a> vùng lân cận.</p>
+
+<h2>Quy trình thiết kế &amp; thi công nhà phố tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tiếp nhận &amp; khảo sát Đồng Nai:</strong> Đo đạc, địa chất, tư vấn quy hoạch sơ bộ.</li>
+  <li><strong>Thiết kế sơ bộ → chốt 3D:</strong> Mặt bằng từng tầng, phối cảnh, danh mục vật tư.</li>
+  <li><strong>Báo giá &amp; hợp đồng:</strong> Dự toán từng hạng mục — minh bạch <strong>thi công nhà phố</strong>.</li>
+  <li><strong>Thi công móng &amp; phần thô:</strong> Nghiệm thu cốt thép, chống thấm.</li>
+  <li><strong>Hoàn thiện:</strong> Trát, ốp, sơn, cửa, điện nước hoàn thiện.</li>
+  <li><strong>Bàn giao &amp; bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện theo hợp đồng.</li>
+</ol>
+
+<h2>Gói thi công nhà phố Đồng Nai tại Sao Khuê</h2>
+<table>
+  <thead>
+    <tr><th>Gói</th><th>Nội dung</th><th>Phù hợp</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Thiết kế riêng</td><td>2D/3D, hồ sơ kỹ thuật</td><td>Đã có nhà thầu thi công</td></tr>
+    <tr><td>Phần thô</td><td>Móng, khung, tường, mái</td><td>Đã có bản vẽ chuẩn</td></tr>
+    <tr><td>Trọn gói</td><td>Thiết kế + thi công + hoàn thiện cơ bản</td><td>Chủ nhà cần một đơn vị</td></tr>
+  </tbody>
+</table>
+<p>Chi tiết trọn gói: <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai giá tốt</a>. Chỉ phần thô: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+
+<h2>Đơn giá thi công nhà phố Đồng Nai tham khảo 2026</h2>
+<p>Đơn giá theo <strong>m² sàn xây dựng</strong> (tham khảo, sau khảo sát mới chính thức):</p>
+<table>
+  <thead>
+    <tr><th>Hạng mục</th><th>Đơn giá (triệu/m²)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7+</td></tr>
+    <tr><td>Phần thô</td><td>3,55 – 3,8</td></tr>
+  </tbody>
+</table>
+<p>Nhà phố <strong>~200 m²</strong> sàn, 3 tầng, gói tiêu chuẩn → tổng tham khảo khoảng <strong>1 – 1,1 tỷ</strong>. Xem <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói</a> · <a href="/bao-gia">/bao-gia</a>.</p>
+
+<h2>Vì sao chọn Sao Khuê thi công nhà phố tại Đồng Nai?</h2>
+<ul>
+  <li><strong>Thiết kế &amp; thi công đồng bộ</strong> — giảm sai lệch bản vẽ và hiện trường.</li>
+  <li><strong>Trực tiếp thi công</strong> — không bán thầu phụ trá hình.</li>
+  <li><strong>Kinh nghiệm nhà phố</strong> — <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">xây dựng nhà phố TP.HCM</a> và vùng lân cận.</li>
+  <li><strong>Giám sát kỹ thuật</strong> — nghiệm thu móng, cốt thép, chống thấm.</li>
+  <li><strong>Cập nhật tiến độ</strong> — hình ảnh công trình cho chủ nhà ở xa.</li>
+</ul>
+
+<h2>Lưu ý khi thi công nhà phố tại Đồng Nai</h2>
+<ul>
+  <li><strong>Giấy phép xây dựng:</strong> Theo UBND — Sao Khuê hỗ trợ hồ sơ trong phạm vi hợp đồng.</li>
+  <li><strong>Thời tiết &amp; mùa mưa:</strong> Lên kế hoạch đổ bê tông, chống thấm mái và sân thượng.</li>
+  <li><strong>Vận chuyển vật tư:</strong> Đường đất nền mới — cần lịch giao hàng hợp lý.</li>
+  <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
+</ul>
+
+<h2>Liên hệ thiết kế &amp; thi công nhà phố Đồng Nai</h2>
+<ul>
+  <li><strong>Hotline:</strong> 0909 075 668</li>
+  <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Trụ sở:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Liên hệ:</strong> <a href="/lien-he">/lien-he</a> · <a href="/bao-gia">/bao-gia</a></li>
+</ul>
+<p><strong>Kiến Trúc Sao Khuê</strong> — Thiết kế chuẩn, thi công nhà phố Đồng Nai uy tín, bàn giao đúng cam kết.</p>$faq_thiet_ke_thi_cong_nha_pho_dong_nai$, updated_at = NOW() WHERE slug = 'thiet-ke-thi-cong-nha-pho-dong-nai';
+
+UPDATE posts SET content = $faq_xay_dung_nha_long_an$<h2>Xây dựng nhà Long An — Lựa chọn đơn vị uy tín từ đầu</h2>
 <p><strong>Xây dựng nhà Long An</strong> đang trở thành xu hướng mạnh khi nhiều gia đình chuyển về các huyện Bến Lức, Cần Đước, Đức Hòa, Tân An định cư sau giai đoạn tích lũy. Nhu cầu <strong>thi công nhà phố Long An</strong> tăng cao, kéo theo đó là hàng loạt nhà thầu thiếu kinh nghiệm, báo giá thấp nhưng thi công sơ sài, gây thiệt hại lớn cho chủ nhà.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM — đã triển khai nhiều công trình tại Long An và các tỉnh giáp ranh TP.HCM. Chúng tôi cung cấp dịch vụ <strong>xây nhà trọn gói Long An</strong> đầy đủ từ thiết kế, thi công đến bàn giao, với <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
@@ -103,38 +780,9 @@ INSERT INTO posts (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="xay-dung-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-long-an-3</figcaption>
-</figure>$content$,
-  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$xây dựng nhà Long An$alt$,
-  $cap$xây dựng nhà Long An$cap$,
-  $mtitle$Xây Dựng Nhà Long An Uy Tín | Trọn Gói | Sao Khuê$mtitle$,
-  $mdesc$Dịch vụ xây dựng nhà Long An: nhà phố, nhà ống, thi công trọn gói. Bảo hành 10 năm kết cấu, báo giá minh bạch. Gọi ngay 0909 075 668.$mdesc$,
-  $mkey$xây dựng nhà Long An, xây nhà trọn gói Long An, thi công nhà phố Long An, báo giá xây nhà Long An, công ty xây dựng Long An$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$bao-gia-xay-nha-phan-tho-long-an$slug$,
-  $title$Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Báo giá xây nhà phần thô Long An chi tiết theo m² sàn: móng, khung cột, tường gạch, mái — minh bạch từng hạng mục. Tư vấn miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Báo giá xây nhà phần thô Long An — Hiểu đúng để không bị hớ</h2>
+</figure>$faq_xay_dung_nha_long_an$, updated_at = NOW() WHERE slug = 'xay-dung-nha-long-an';
+
+UPDATE posts SET content = $faq_bao_gia_xay_nha_phan_tho_long_an$<h2>Báo giá xây nhà phần thô Long An — Hiểu đúng để không bị hớ</h2>
 <p><strong>Báo giá xây nhà phần thô Long An</strong> là mối quan tâm hàng đầu của chủ nhà trước khi khởi công. Phần thô chiếm 55–65% tổng chi phí xây dựng, quyết định độ bền và an toàn của toàn bộ công trình. Vì vậy, chọn nhà thầu dựa trên đơn giá rẻ nhất mà không kiểm tra chất lượng vật liệu, năng lực thi công là sai lầm phổ biến nhất.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp <strong>báo giá xây nhà phần thô Long An</strong> minh bạch theo từng hạng mục, cam kết đúng đơn giá đã ký không phát sinh tùy tiện. Hotline tư vấn miễn phí: <strong>0909 075 668</strong>.</p>
 
@@ -291,150 +939,9 @@ INSERT INTO posts (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phan-tho-long-an-3</figcaption>
-</figure>$content$,
-  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$báo giá xây nhà phần thô Long An$alt$,
-  $cap$báo giá xây nhà phần thô Long An$cap$,
-  $mtitle$Báo Giá Xây Nhà Phần Thô Long An 2026 | Chi Tiết | Sao Khuê$mtitle$,
-  $mdesc$Đơn giá xây nhà phần thô Long An 2026: móng, khung bê tông, tường gạch, sàn. Bảng giá minh bạch theo m² sàn. Sao Khuê — 0909 075 668.$mdesc$,
-  $mkey$báo giá xây nhà phần thô Long An, xây phần thô Long An, đơn giá phần thô, chi phí phần thô nhà phố, nhà phố Long An giá rẻ$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$mau-nha-ong-dep-long-an$slug$,
-  $title$Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Khám phá các mẫu nhà ống đẹp Long An: tối ưu lô hẹp, thông thoáng, hiện đại. Sao Khuê thiết kế và thi công trọn gói — 0909 075 668.$excerpt$,
-  $content$<h2>Mẫu nhà ống đẹp Long An — Giải pháp cho lô đất hẹp</h2>
-<p><strong>Mẫu nhà ống đẹp Long An</strong> đang được nhiều gia đình trẻ quan tâm khi sở hữu lô đất mặt tiền 4–5 m tại các khu dân cư Bến Lức, Đức Hòa, Cần Giuộc. Với quỹ đất ngày càng hạn hẹp tại các thị trấn, nhà ống — hay còn gọi là nhà phố dạng ống — trở thành lựa chọn tối ưu nhất về chi phí lẫn công năng.</p>
-<p><strong>Kiến Trúc Sao Khuê</strong> đã triển khai nhiều <strong>thiết kế nhà ống Long An</strong> từ 2 đến 4 tầng, đáp ứng đa dạng nhu cầu: ở riêng, kết hợp kinh doanh, hay đón thêm ông bà về ở cùng. Hotline tư vấn: <strong>0909 075 668</strong>.</p>
+</figure>$faq_bao_gia_xay_nha_phan_tho_long_an$, updated_at = NOW() WHERE slug = 'bao-gia-xay-nha-phan-tho-long-an';
 
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="mau-nha-ong-ep-long-an-1" loading="lazy" decoding="async" />
-<figcaption>mau-nha-ong-ep-long-an-1</figcaption>
-</figure>
-
-<h2>Đặc điểm của nhà ống tại Long An</h2>
-<p>Không giống TP.HCM nội thành, <strong>nhà ống Long An</strong> thường có ưu thế hơn về chiều rộng và chiều sâu lô đất. Đặc điểm phổ biến:</p>
-<ul>
-  <li><strong>Mặt tiền:</strong> 4–6 m (rộng hơn phố HCM, dễ bố cục cửa và mặt đứng đẹp hơn).</li>
-  <li><strong>Chiều sâu:</strong> 15–25 m — cho phép bố trí nhiều công năng theo chiều dọc.</li>
-  <li><strong>Số tầng:</strong> 2–3 tầng phổ biến; 4 tầng khi cần tối đa diện tích.</li>
-  <li><strong>Sân trước/sau:</strong> Thường có khoảng sân nhỏ để xe hoặc trồng cây, ít phổ biến ở nội thành.</li>
-</ul>
-<p>Khí hậu Long An nắng nhiều, mưa lớn vào mùa mưa — thiết kế <strong>nhà phố hẹp Long An</strong> cần chú trọng thông gió chéo, che chắn mưa hắt và hệ thống thoát nước sân hiệu quả.</p>
-
-<h2>Các phong cách thiết kế nhà ống đẹp phổ biến tại Long An</h2>
-<h3>Phong cách hiện đại tối giản</h3>
-<p>Mặt tiền sử dụng khối hộp rõ ràng, ít phào chỉ, màu sắc trung tính: trắng, xám xi măng, kết hợp gỗ ốp. Cửa kính lớn lấy sáng, lam che nắng ngang hoặc dọc giúp giảm nhiệt mà vẫn thẩm mỹ. Phù hợp gia đình trẻ thích phong cách sạch, dễ bảo trì.</p>
-
-<h3>Phong cách Đông Dương – Tropical</h3>
-<p>Kết hợp gỗ, đá tự nhiên, mái lá hoặc mái dốc nhẹ — gợi nhớ kiến trúc bản địa nhiệt đới. Phù hợp lô đất có chiều sâu lớn, có khoảng sân vườn. Đặc biệt được ưa chuộng tại các khu vực ven sông, xã ngoại thành Long An.</p>
-
-<h3>Phong cách cổ điển Pháp – Indochine</h3>
-<p>Phào chỉ mặt tiền tinh tế, cột tròn hoặc vuông, ban công sắt uốn. Nhà ống phong cách Pháp tạo điểm nhấn sang trọng giữa khu dân cư. Phù hợp gia đình trung niên, thích không khí hoài cổ và muốn công trình "có hồn" dài lâu.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="mau-nha-ong-ep-long-an-2" loading="lazy" decoding="async" />
-<figcaption>mau-nha-ong-ep-long-an-2</figcaption>
-</figure>
-
-<h2>Bố cục công năng mẫu nhà ống 2 tầng tại Long An</h2>
-<p>Một thiết kế nhà ống 2 tầng điển hình của Sao Khuê với diện tích đất 5 × 18 m:</p>
-<ul>
-  <li><strong>Tầng trệt:</strong> Cổng + sân để xe (4 m²), phòng khách (18 m²), bếp + bàn ăn (14 m²), WC 1 (3,5 m²).</li>
-  <li><strong>Tầng lầu 1:</strong> 2 phòng ngủ (12–14 m²/phòng), WC 2 (4 m²), ban công nhỏ.</li>
-  <li><strong>Sân thượng (nếu có):</strong> Phơi đồ, máy nước nóng năng lượng mặt trời, khu thư giãn ngoài trời.</li>
-</ul>
-<p>Với lô 5 × 18 m, tổng diện tích sàn khoảng 140–160 m² — đủ thoải mái cho gia đình 4–5 người sinh hoạt. Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-long-an">công ty xây dựng nhà Long An</a> để biết quy trình thi công.</p>
-
-<h2>Giải pháp thiết kế thông minh cho nhà ống hẹp</h2>
-<h3>Giếng trời và hộp kỹ thuật</h3>
-<p>Giếng trời đặt giữa nhà (sau phòng khách) là "linh hồn" của nhà ống — giải quyết triệt để vấn đề ánh sáng và thông gió cho phòng ở giữa. Kích thước tối thiểu 1,2 × 2 m là đủ hiệu quả. Kết hợp cây xanh treo tường giếng trời tạo không gian xanh mát ngay trong nhà.</p>
-
-<h3>Cầu thang tối ưu</h3>
-<p>Cầu thang thẳng hoặc chữ L bố trí sát tường tiết kiệm diện tích. Bậc cầu thang gỗ tự nhiên hoặc kính giúp không gian trung tâm thoáng hơn, không bị bóng tối. Sao Khuê thiết kế cầu thang tích hợp tủ âm tường hoặc kệ sách — tận dụng 100% diện tích dưới gầm.</p>
-
-<h3>Phòng đa năng và vách trượt</h3>
-<p>Phòng ngủ khách hoặc phòng làm việc dùng vách trượt kính mờ — ban ngày mở ra cho phòng khách thêm rộng, tối đóng lại thành phòng riêng. Giải pháp linh hoạt đặc biệt hiệu quả với nhà ống 4–5 m mặt tiền.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Chi phí xây mẫu nhà ống đẹp Long An (tham khảo)</h2>
-<p>Chi phí xây <strong>nhà ống Long An</strong> phụ thuộc số tầng, diện tích và mức độ hoàn thiện:</p>
-<ul>
-  <li><strong>Nhà ống 2 tầng, hoàn thiện cơ bản:</strong> 700 triệu – 1,1 tỷ đồng (lô 4 × 15 m).</li>
-  <li><strong>Nhà ống 3 tầng, hoàn thiện tiêu chuẩn:</strong> 1,2 – 1,8 tỷ đồng (lô 4 × 18 m).</li>
-  <li><strong>Nhà ống 3 tầng, hoàn thiện cao cấp:</strong> 1,8 – 2,5 tỷ đồng trở lên.</li>
-</ul>
-<p>Muốn kiểm soát chi phí tốt hơn, xem <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá xây nhà phần thô Long An</a> để tách rõ từng giai đoạn đầu tư. Xem thêm <a href="/bao-gia">bảng báo giá chi tiết</a> trên website.</p>
-
-<h2>Những lỗi thiết kế nhà ống thường gặp</h2>
-<ul>
-  <li><strong>Không có giếng trời:</strong> Phòng giữa thiếu sáng, ẩm mốc — ảnh hưởng sức khỏe và chi phí điện.</li>
-  <li><strong>Bếp sát phòng ngủ:</strong> Mùi thức ăn lan vào phòng ngủ — thiếu vách ngăn hoặc hướng gió không hợp lý.</li>
-  <li><strong>Cầu thang quá rộng:</strong> Lãng phí diện tích; cầu thang 1–1,1 m là đủ chuẩn cho nhà ở.</li>
-  <li><strong>Mặt tiền quá rườm rà:</strong> Nhiều phào chỉ, phù điêu → tốn chi phí, khó bảo trì, nhanh lỗi thời.</li>
-  <li><strong>Bỏ qua chống thấm sân thượng:</strong> Dột xuống tầng dưới sau 2–3 mùa mưa.</li>
-</ul>
-
-<h2>Liên hệ tư vấn mẫu nhà ống đẹp Long An</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>mẫu nhà ống đẹp Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/project_2.jpg$img$,
-  $alt$mẫu nhà ống đẹp Long An$alt$,
-  $cap$mẫu nhà ống đẹp Long An$cap$,
-  $mtitle$Mẫu Nhà Ống Đẹp Long An 2026 | Hiện Đại | Sao Khuê$mtitle$,
-  $mdesc$Tổng hợp mẫu nhà ống đẹp Long An phù hợp gia đình trẻ: lô hẹp 4–5m, 2–3 tầng, công năng tối ưu. Thiết kế & thi công trọn gói — 0909 075 668.$mdesc$,
-  $mkey$mẫu nhà ống đẹp Long An, thiết kế nhà ống Long An, nhà phố hẹp Long An, công năng nhà ống, mẫu nhà ống 2 tầng Long An$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thiet-ke-nha-pho-dak-lak$slug$,
-  $title$Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Thiết kế nhà phố Đắk Lắk chuyên nghiệp: phối cảnh 3D, bản vẽ kỹ thuật, tối ưu công năng cao nguyên. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Thiết kế nhà phố Đắk Lắk — Kiến trúc đúng đặc trưng cao nguyên</h2>
+UPDATE posts SET content = $faq_thiet_ke_nha_pho_dak_lak$<h2>Thiết kế nhà phố Đắk Lắk — Kiến trúc đúng đặc trưng cao nguyên</h2>
 <p><strong>Thiết kế nhà phố Đắk Lắk</strong> đòi hỏi hiểu rõ đặc thù địa hình, khí hậu và lối sống người dân Tây Nguyên — điều mà bản vẽ mẫu chung hoặc chép lại từ TP.HCM không đáp ứng được. Đắk Lắk có khí hậu cao nguyên đặc trưng: mùa khô hanh, biên độ nhiệt ngày đêm cao, mùa mưa dài từ tháng 5 đến tháng 11 với lượng mưa lớn.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>thiết kế nhà phố Đắk Lắk</strong> từ xa với quy trình hoàn toàn trực tuyến — từ trao đổi nhu cầu, khảo sát online, đến bàn giao hồ sơ 2D/3D. Hotline tư vấn: <strong>0909 075 668</strong>. Địa chỉ công ty: 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM.</p>
 
@@ -548,38 +1055,9 @@ INSERT INTO posts (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="thiet-ke-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-ak-lak-3</figcaption>
-</figure>$content$,
-  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thiết kế nhà phố Đắk Lắk$alt$,
-  $cap$thiết kế nhà phố Đắk Lắk$cap$,
-  $mtitle$Thiết Kế Nhà Phố Đắk Lắk | Phối Cảnh 3D | Sao Khuê$mtitle$,
-  $mdesc$Dịch vụ thiết kế nhà phố Đắk Lắk: kiến trúc hiện đại phù hợp khí hậu cao nguyên, hồ sơ 2D/3D đầy đủ. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$thiết kế nhà phố Đắk Lắk, kiến trúc nhà phố Buôn Ma Thuột, bản vẽ nhà phố Đắk Lắk, thiết kế 3D Đắk Lắk, thi công nhà phố Đắk Lắk$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$xay-nha-tron-goi-dak-lak$slug$,
-  $title$Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Xây nhà trọn gói Đắk Lắk: thiết kế – thi công – bàn giao một đơn vị, bảo hành kết cấu 10 năm. Sao Khuê — tư vấn miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Xây nhà trọn gói Đắk Lắk — Giải pháp toàn diện, một đầu mối</h2>
+</figure>$faq_thiet_ke_nha_pho_dak_lak$, updated_at = NOW() WHERE slug = 'thiet-ke-nha-pho-dak-lak';
+
+UPDATE posts SET content = $faq_xay_nha_tron_goi_dak_lak$<h2>Xây nhà trọn gói Đắk Lắk — Giải pháp toàn diện, một đầu mối</h2>
 <p><strong>Xây nhà trọn gói Đắk Lắk</strong> là hình thức chủ đầu tư giao toàn bộ dự án — từ thiết kế, cung cấp vật liệu, thi công đến bàn giao hoàn thiện — cho một đơn vị duy nhất. Đây là xu hướng được nhiều gia đình tại Buôn Ma Thuột, Buôn Hồ, Ea Kar và các huyện trong tỉnh Đắk Lắk lựa chọn trong những năm gần đây.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong>, địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM, là đơn vị chuyên nghiệp nhận <strong>thi công trọn gói</strong> tại Đắk Lắk và các tỉnh Tây Nguyên. Chúng tôi cam kết <strong>bảo hành kết cấu 10 năm</strong> và hoàn thiện đúng tiến độ đã thỏa thuận.</p>
 
@@ -698,38 +1176,9 @@ INSERT INTO posts (
 <figure class="article-figure article-figure--inline">
 <img src="/images/project_3.jpg" alt="xay-nha-tron-goi-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-ak-lak-3</figcaption>
-</figure>$content$,
-  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$xây nhà trọn gói Đắk Lắk$alt$,
-  $cap$xây nhà trọn gói Đắk Lắk$cap$,
-  $mtitle$Xây Nhà Trọn Gói Đắk Lắk Uy Tín | Bảo Hành 10 Năm | Sao Khuê$mtitle$,
-  $mdesc$Dịch vụ xây nhà trọn gói Đắk Lắk: thiết kế + thi công + bàn giao, bảo hành kết cấu 10 năm, báo giá minh bạch. Gọi 0909 075 668.$mdesc$,
-  $mkey$xây nhà trọn gói Đắk Lắk, nhà thầu Đắk Lắk, thi công trọn gói Đắk Lắk, bảo hành kết cấu, xây nhà Buôn Ma Thuột$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$chi-phi-xay-nha-2-tang-dak-lak$slug$,
-  $title$Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Chi phí xây nhà 2 tầng Đắk Lắk 2026: bảng dự toán phần thô, hoàn thiện, nội thất. Sao Khuê báo giá minh bạch — khảo sát miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Chi phí xây nhà 2 tầng Đắk Lắk — Tổng quan 2026</h2>
+</figure>$faq_xay_nha_tron_goi_dak_lak$, updated_at = NOW() WHERE slug = 'xay-nha-tron-goi-dak-lak';
+
+UPDATE posts SET content = $faq_chi_phi_xay_nha_2_tang_dak_lak$<h2>Chi phí xây nhà 2 tầng Đắk Lắk — Tổng quan 2026</h2>
 <p><strong>Chi phí xây nhà 2 tầng Đắk Lắk</strong> năm 2026 dao động đáng kể tuỳ diện tích đất, tiêu chuẩn hoàn thiện và nhà thầu thi công. Hiểu đúng cấu trúc chi phí giúp chủ nhà lên kế hoạch tài chính chắc chắn, tránh bị "vỡ ngân sách" giữa chừng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — đơn vị có kinh nghiệm thi công tại các tỉnh Tây Nguyên — tổng hợp bài viết này để giúp bạn hiểu rõ <strong>dự toán xây nhà</strong>, từ phần móng đến hoàn thiện nội thất.</p>
 <p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H'leo, Krông Buk, Cư M'gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
 
@@ -845,38 +1294,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$chi phí xây nhà 2 tầng Đắk Lắk$alt$,
-  $cap$chi phí xây nhà 2 tầng Đắk Lắk$cap$,
-  $mtitle$Chi Phí Xây Nhà 2 Tầng Đắk Lắk 2026 | Báo Giá Chi Tiết | Sao Khuê$mtitle$,
-  $mdesc$Chi phí xây nhà 2 tầng tại Đắk Lắk: đơn giá phần thô, hoàn thiện, nội thất cơ bản. Dự toán minh bạch, tránh phát sinh. Tư vấn miễn phí 0909 075 668.$mdesc$,
-  $mkey$chi phí xây nhà 2 tầng Đắk Lắk, báo giá nhà 2 tầng Đắk Lắk, dự toán xây nhà Đắk Lắk, đơn giá vật liệu xây dựng, xây nhà trọn gói Đắk Lắk$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Thi Công Nhà Phố Hiện Đại Tại Phú Yên
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thi-cong-nha-pho-phu-yen$slug$,
-  $title$Thi Công Nhà Phố Hiện Đại Tại Phú Yên$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Thi công nhà phố Phú Yên chuyên nghiệp: kết cấu bền vững, hoàn thiện đồng bộ, bảo hành 10 năm. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Thi công nhà phố Phú Yên — Tổng quan thị trường xây dựng 2026</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_chi_phi_xay_nha_2_tang_dak_lak$, updated_at = NOW() WHERE slug = 'chi-phi-xay-nha-2-tang-dak-lak';
+
+UPDATE posts SET content = $faq_thi_cong_nha_pho_phu_yen$<h2>Thi công nhà phố Phú Yên — Tổng quan thị trường xây dựng 2026</h2>
 <p><strong>Thi công nhà phố Phú Yên</strong> đang ngày càng được đầu tư bài bản hơn khi kinh tế du lịch và thương mại tại tỉnh phát triển mạnh. Các đô thị như TP. Tuy Hòa, thị xã Sông Cầu, Đông Hòa thu hút nhiều gia đình muốn xây dựng <strong>nhà phố hiện đại</strong> vừa để ở vừa kinh doanh. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> với kinh nghiệm triển khai công trình tại các tỉnh miền Nam Trung Bộ, sẵn sàng đồng hành cùng chủ đầu tư Phú Yên từ bản vẽ thiết kế đến bàn giao hoàn thiện.</p>
 <p>Bài viết này trình bày chi tiết <strong>quy trình thi công nhà phố</strong>, những yêu cầu kỹ thuật đặc thù cho vùng ven biển, bảng giá tham khảo và kinh nghiệm chọn nhà thầu uy tín tại Phú Yên.</p>
 
@@ -969,38 +1389,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thi công nhà phố Phú Yên$alt$,
-  $cap$thi công nhà phố Phú Yên$cap$,
-  $mtitle$Thi Công Nhà Phố Phú Yên | Hiện Đại Uy Tín | Sao Khuê$mtitle$,
-  $mdesc$Dịch vụ thi công nhà phố tại Phú Yên: phần thô, hoàn thiện, trọn gói. Báo giá minh bạch, bảo hành kết cấu. Tư vấn miễn phí 0909 075 668.$mdesc$,
-  $mkey$thi công nhà phố Phú Yên, xây nhà Phú Yên, nhà phố Tuy Hòa, thi công trọn gói Phú Yên, nhà thầu Phú Yên$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thiet-ke-nha-dep-phu-yen$slug$,
-  $title$Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Thiết kế nhà đẹp Phú Yên: kiến trúc hiện đại, phối cảnh 3D chân thực, phù hợp khí hậu biển. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Thiết kế nhà đẹp Phú Yên — Cân bằng thẩm mỹ và khí hậu biển</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_thi_cong_nha_pho_phu_yen$, updated_at = NOW() WHERE slug = 'thi-cong-nha-pho-phu-yen';
+
+UPDATE posts SET content = $faq_thiet_ke_nha_dep_phu_yen$<h2>Thiết kế nhà đẹp Phú Yên — Cân bằng thẩm mỹ và khí hậu biển</h2>
 <p><strong>Thiết kế nhà đẹp Phú Yên</strong> đòi hỏi sự am hiểu cả về thị hiếu thẩm mỹ lẫn điều kiện khí hậu đặc thù của vùng duyên hải Nam Trung Bộ. Một bản vẽ đẹp trên giấy nhưng không tính đến nắng chiếu, gió biển hay lượng mưa lớn sẽ dẫn đến công trình nhanh xuống cấp, chi phí bảo trì cao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> thiết kế với triết lý "đẹp bền" — hình thức hiện đại gắn liền kỹ thuật chịu đựng thời tiết nhiệt đới ven biển.</p>
 <p>Bài viết này hướng đến chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa và các huyện thị Phú Yên đang tìm đơn vị <strong>thiết kế nhà</strong> uy tín, muốn có ngôi nhà vừa đẹp, vừa tiện nghi và phù hợp ngân sách.</p>
 
@@ -1101,38 +1492,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thiết kế nhà đẹp Phú Yên$alt$,
-  $cap$thiết kế nhà đẹp Phú Yên$cap$,
-  $mtitle$Thiết Kế Nhà Đẹp Phú Yên | Kiến Trúc Hiện Đại | Sao Khuê$mtitle$,
-  $mdesc$Dịch vụ thiết kế nhà đẹp tại Phú Yên: mẫu nhà phố biển, phối cảnh 3D, hồ sơ kỹ thuật đầy đủ. Tư vấn miễn phí 0909 075 668.$mdesc$,
-  $mkey$thiết kế nhà đẹp Phú Yên, kiến trúc Phú Yên, mẫu nhà phố biển, phối cảnh 3D, thiết kế nhà Tuy Hòa$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$bao-gia-xay-nha-tron-goi-phu-yen$slug$,
-  $title$Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Báo giá xây nhà Phú Yên 2026: đơn giá phần thô, hoàn thiện, trọn gói theo m² sàn. Dự toán minh bạch, không phát sinh. Tư vấn miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Báo giá xây nhà Phú Yên 2026 — Tại sao cần dự toán rõ ràng?</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_thiet_ke_nha_dep_phu_yen$, updated_at = NOW() WHERE slug = 'thiet-ke-nha-dep-phu-yen';
+
+UPDATE posts SET content = $faq_bao_gia_xay_nha_tron_goi_phu_yen$<h2>Báo giá xây nhà Phú Yên 2026 — Tại sao cần dự toán rõ ràng?</h2>
 <p><strong>Báo giá xây nhà Phú Yên</strong> minh bạch là nền tảng để chủ nhà kiểm soát ngân sách, tránh tình trạng "ký hợp đồng thấp, thi công cao". Năm 2026, giá vật liệu xây dựng và nhân công tại Phú Yên có những biến động đáng kể do sự phát triển của hạ tầng du lịch và khu công nghiệp. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng <strong>báo giá xây nhà trọn gói</strong> chi tiết theo hạng mục — giúp chủ đầu tư nắm rõ từng đồng chi phí trước khi ký hợp đồng.</p>
 <p>Bài viết này dành cho chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa và các khu vực lân cận đang cần <strong>đơn giá thi công</strong> tham khảo để lên kế hoạch tài chính.</p>
 
@@ -1253,38 +1615,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$báo giá xây nhà Phú Yên$alt$,
-  $cap$báo giá xây nhà Phú Yên$cap$,
-  $mtitle$Báo Giá Xây Nhà Trọn Gói Phú Yên 2026 | Chi Tiết | Sao Khuê$mtitle$,
-  $mdesc$Báo giá xây nhà trọn gói tại Phú Yên: đơn giá thi công, dự toán chi tiết, cam kết minh bạch. Sao Khuê tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$báo giá xây nhà Phú Yên, xây nhà trọn gói Phú Yên, đơn giá thi công Phú Yên, dự toán xây nhà Phú Yên, chi phí xây nhà Tuy Hòa$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Những Lưu Ý Quan Trọng Khi Xây Nhà Phố
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$luu-y-xay-nha-pho$slug$,
-  $title$Những Lưu Ý Quan Trọng Khi Xây Nhà Phố$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Lưu ý xây nhà phố từ A đến Z: pháp lý, chọn nhà thầu, chống thấm, tránh phát sinh. Kinh nghiệm thực tiễn từ Sao Khuê — tư vấn miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Lưu ý xây nhà phố — Tổng hợp kinh nghiệm thực tế 2026</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_bao_gia_xay_nha_tron_goi_phu_yen$, updated_at = NOW() WHERE slug = 'bao-gia-xay-nha-tron-goi-phu-yen';
+
+UPDATE posts SET content = $faq_luu_y_xay_nha_pho$<h2>Lưu ý xây nhà phố — Tổng hợp kinh nghiệm thực tế 2026</h2>
 <p>Xây nhà phố là quyết định đầu tư lớn nhất của nhiều gia đình Việt Nam. Sai lầm trong quá trình này không chỉ tốn tiền mà còn gây phiền não kéo dài. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp những <strong>lưu ý xây nhà phố</strong> quan trọng nhất từ kinh nghiệm thực tiễn thi công hàng trăm công trình — giúp bạn chủ động từ giai đoạn chuẩn bị đến khi nhận bàn giao.</p>
 <p>Bài viết này đặc biệt hữu ích với chủ nhà lần đầu xây dựng, muốn hiểu rõ <strong>kinh nghiệm xây nhà phố</strong>, <strong>pháp lý xây dựng</strong> và các bẫy "phát sinh" thường gặp để tránh.</p>
 
@@ -1428,784 +1761,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$lưu ý xây nhà phố$alt$,
-  $cap$lưu ý xây nhà phố$cap$,
-  $mtitle$Lưu Ý Xây Nhà Phố Quan Trọng | Kinh Nghiệm Thực Tế | Sao Khuê$mtitle$,
-  $mdesc$Những lưu ý xây nhà phố không thể bỏ qua: pháp lý, kết cấu, chống thấm, hợp đồng nhà thầu, giám sát thi công. Cập nhật 2026.$mdesc$,
-  $mkey$lưu ý xây nhà phố, kinh nghiệm xây nhà phố, pháp lý xây dựng, chống thấm nhà phố, chọn nhà thầu xây dựng$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Cách Dự Toán Chi Phí Xây Nhà Chính Xác Nhất 2026
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$du-toan-chi-phi-xay-nha$slug$,
-  $title$Cách Dự Toán Chi Phí Xây Nhà Chính Xác Nhất 2026$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Hướng dẫn dự toán chi phí xây nhà đầy đủ: bóc tách hạng mục, bảng đơn giá tham khảo, chi phí ẩn cần dự phòng. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Dự toán chi phí xây nhà — Nền tảng để kiểm soát ngân sách</h2>
-<p><strong>Dự toán chi phí xây nhà</strong> là bước không thể bỏ qua trước khi khởi công bất kỳ công trình nào — từ nhà phố nhỏ đến biệt thự. Đây không chỉ là con số ước tính sơ bộ, mà là <strong>bảng phân tích chi tiết từng hạng mục</strong>: móng, kết cấu, hoàn thiện, điện nước, cửa — giúp chủ nhà nắm rõ ngân sách, tránh phát sinh và so sánh giữa các nhà thầu một cách công bằng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> hướng dẫn quy trình lập <strong>bảng dự toán</strong> chuẩn trong bài viết này.</p>
-<p>Bài viết dành cho chủ đất chuẩn bị xây nhà phố, nhà ở riêng lẻ hoặc nâng tầng tại TP.HCM, Bình Dương, Đồng Nai — muốn hiểu cách <strong>bóc tách khối lượng</strong>, xác định <strong>chi phí ẩn</strong>, và sử dụng dự toán như công cụ đàm phán với nhà thầu.</p>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_luu_y_xay_nha_pho$, updated_at = NOW() WHERE slug = 'luu-y-xay-nha-pho';
 
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="du-toan-chi-phi-xay-nha-1" loading="lazy" decoding="async" />
-<figcaption>du-toan-chi-phi-xay-nha-1</figcaption>
-</figure>
-
-<h2>Dự toán chi phí xây nhà gồm những phần nào?</h2>
-<p>Một <strong>bảng dự toán xây nhà</strong> đầy đủ thường chia thành các nhóm hạng mục sau:</p>
-<ul>
-  <li><strong>Phần móng và nền:</strong> Khảo sát địa chất, đóng cọc, đào đắp, ván khuôn móng, đổ bê tông, chống thấm móng.</li>
-  <li><strong>Kết cấu thô (khung nhà):</strong> Cột, dầm, sàn bê tông cốt thép theo từng tầng; tường bao, tường ngăn; kết cấu mái (mái bằng hoặc mái dốc).</li>
-  <li><strong>Hệ thống kỹ thuật âm:</strong> Điện âm tường, ống nước cấp–thoát âm sàn, thoát nước mưa, hệ thống gas (nếu có).</li>
-  <li><strong>Hoàn thiện:</strong> Trát tường, sơn trong–ngoài, ốp lát nền, ốp tường khu ướt, trần thạch cao, cầu thang.</li>
-  <li><strong>Cửa đi, cửa sổ và lan can:</strong> Nhôm kính, gỗ hoặc sắt — phân loại theo chủng loại.</li>
-  <li><strong>Thiết bị vệ sinh và điện nổi:</strong> Bồn cầu, lavabo, vòi sen, bình nóng lạnh, tủ điện, đèn cơ bản.</li>
-  <li><strong>Công tác khác:</strong> Dọn dẹp công trình, vận chuyển vật liệu, trang thiết bị an toàn lao động.</li>
-</ul>
-<p>Mỗi hạng mục đều cần xác định <strong>khối lượng</strong> (m², m³, kg…) và <strong>đơn giá</strong> tại thời điểm thi công. Đây chính là bước <strong>bóc tách khối lượng</strong> — công việc đòi hỏi bản vẽ thiết kế hoàn chỉnh trước khi thực hiện.</p>
-
-<h2>Vì sao cần dự toán trước khi xây?</h2>
-<p>Nhiều gia đình bỏ qua bước dự toán và chỉ hỏi "xây bao nhiêu tiền?" sau khi đã quyết định phong cách, số tầng. Hậu quả thường thấy:</p>
-<ul>
-  <li><strong>Ngân sách bị vỡ giữa chừng:</strong> Thiếu tiền giai đoạn hoàn thiện khiến công trình dở dang hàng năm.</li>
-  <li><strong>Không so sánh được nhà thầu:</strong> Báo giá của A là "trọn gói 5 triệu/m²" và B là "4,2 triệu/m²" — nếu không biết phạm vi, bạn không thể so sánh thực chất.</li>
-  <li><strong>Phát sinh không kiểm soát:</strong> Nhà thầu báo thêm từng đợt — chủ nhà không có cơ sở để kiểm tra.</li>
-  <li><strong>Vật liệu bị đổi âm thầm:</strong> Thiếu dự toán chi tiết, bạn không phát hiện khi nhà thầu dùng vật liệu kém hơn hợp đồng.</li>
-</ul>
-<p><strong>Kết luận:</strong> Dự toán không chỉ là biết "tổng tiền" — mà là công cụ <strong>kiểm soát chất lượng và minh bạch chi phí</strong>. Tham khảo <a href="/bao-gia">công cụ tính chi phí trực tuyến</a> của Sao Khuê hoặc <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> để có bản vẽ làm cơ sở dự toán.</p>
-
-<h2>Bảng đơn giá tham khảo khi dự toán chi phí xây nhà (2026)</h2>
-<p>Các mức đơn giá dưới đây mang tính <strong>tham khảo tại TP.HCM và vùng lân cận</strong>. Giá thực tế phụ thuộc chủng loại vật tư, quy mô công trình và thời điểm ký hợp đồng:</p>
-<table>
-  <thead>
-    <tr><th>Hạng mục</th><th>Đơn vị</th><th>Đơn giá tham khảo</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Móng cọc ép, đài móng BTCT</td><td>m² đất xây</td><td>1.500.000 – 2.200.000 đ</td></tr>
-    <tr><td>Kết cấu thô (toàn bộ khung)</td><td>m² sàn</td><td>2.100.000 – 2.600.000 đ</td></tr>
-    <tr><td>Tường xây + trát</td><td>m²</td><td>350.000 – 500.000 đ</td></tr>
-    <tr><td>Sơn nước trong + ngoài</td><td>m²</td><td>80.000 – 140.000 đ</td></tr>
-    <tr><td>Ốp lát gạch nền (phổ thông)</td><td>m²</td><td>250.000 – 380.000 đ</td></tr>
-    <tr><td>Hệ thống điện âm + nổi</td><td>m² sàn</td><td>180.000 – 280.000 đ</td></tr>
-    <tr><td>Hệ thống cấp thoát nước</td><td>m² sàn</td><td>100.000 – 160.000 đ</td></tr>
-    <tr><td>Cửa nhôm kính (phổ thông)</td><td>m²</td><td>950.000 – 1.400.000 đ</td></tr>
-    <tr><td>Trần thạch cao phẳng</td><td>m²</td><td>150.000 – 250.000 đ</td></tr>
-  </tbody>
-</table>
-<p><em>Đơn giá tổng hợp trọn gói: tiêu chuẩn 4,85–5,5 triệu/m² sàn; khá 5,5–6,0 triệu/m²; cao cấp 6,0–6,7 triệu/m² trở lên. Xem chi tiết tại <a href="/bao-gia">bảng báo giá</a>.</em></p>
-
-<h2>Quy trình lập dự toán chi phí xây nhà 5 bước</h2>
-<ol>
-  <li><strong>Thu thập hồ sơ thiết kế:</strong> Dự toán chính xác đòi hỏi bản vẽ mặt bằng từng tầng, mặt cắt, mặt đứng và thuyết minh vật liệu. Không có bản vẽ → không bóc tách được khối lượng thực.</li>
-  <li><strong>Bóc tách khối lượng từng hạng mục:</strong> Tính diện tích từng lớp kết cấu, thể tích bê tông, trọng lượng thép, mét dài cửa… — theo bản vẽ và tiêu chuẩn xây dựng.</li>
-  <li><strong>Xác định đơn giá vật tư + nhân công:</strong> Tra cứu giá thị trường tại thời điểm dự toán; phân biệt giá vật tư (chưa VAT) và giá nhân công lắp đặt.</li>
-  <li><strong>Tổng hợp và phân bổ chi phí gián tiếp:</strong> Chi phí quản lý công trường, giám sát, an toàn lao động, điện nước thi công — thường chiếm 5–8% tổng trực tiếp.</li>
-  <li><strong>Dự phòng phát sinh:</strong> Cộng thêm <strong>5–10%</strong> tổng dự toán làm quỹ dự phòng (địa chất bất ngờ, thay đổi nhỏ thiết kế, trượt giá vật liệu).</li>
-</ol>
-
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="du-toan-chi-phi-xay-nha-2" loading="lazy" decoding="async" />
-<figcaption>du-toan-chi-phi-xay-nha-2</figcaption>
-</figure>
-
-<h2>Chi phí ẩn thường bị bỏ sót trong dự toán</h2>
-<p>Ngay cả khi bạn đã có bảng dự toán chi tiết, một số khoản thường bị quên và gây "sốc" chi phí cuối dự án:</p>
-<ul>
-  <li><strong>Phí xin giấy phép xây dựng:</strong> Từ 5–20 triệu tùy loại công trình và quận.</li>
-  <li><strong>Chi phí san lấp, đổ đất nền:</strong> Lô đất thấp cần san nền — có thể tốn 30–80 triệu cho lô 5x20m.</li>
-  <li><strong>Ống chờ điện nước thêm:</strong> Thiết kế thay đổi muộn thêm phòng → phải đục hạ âm thêm.</li>
-  <li><strong>Điện, nước tạm thi công:</strong> 5–15 triệu tùy thời gian thi công.</li>
-  <li><strong>Vận chuyển hẻm hẹp:</strong> Xe tải lớn không vào được → bốc bằng tay, chi phí tăng.</li>
-  <li><strong>Xử lý cọc địa chất bất thường:</strong> Đất yếu, gặp mạch nước ngầm — có thể phát sinh hàng chục triệu.</li>
-  <li><strong>Nội thất cơ bản sau bàn giao:</strong> Nhiều chủ nhà quên dự trù tủ bếp, rèm, đèn chiếu sáng bổ sung.</li>
-  <li><strong>Chi phí thuê nhà tạm trong thời gian thi công:</strong> 6–12 tháng thuê nhà ở trọ — khoản chi không nhỏ.</li>
-</ul>
-<p>Kinh nghiệm thực tế: dự toán ban đầu chỉ chiếm khoảng <strong>80–85%</strong> tổng chi tiêu thực tế khi chủ nhà lần đầu xây. Hãy giữ lại quỹ dự phòng <strong>ít nhất 15%</strong> tổng ngân sách.</p>
-
-<h2>Cách đọc và so sánh dự toán từ nhiều nhà thầu</h2>
-<p>Khi nhận dự toán từ nhiều đơn vị, hãy so sánh theo <strong>cùng phạm vi</strong>:</p>
-<ul>
-  <li><strong>Phạm vi hạng mục:</strong> Nhà thầu A bao gồm hoàn thiện, nhà thầu B chỉ tính phần thô — tổng tiền không thể so trực tiếp.</li>
-  <li><strong>Chủng loại vật tư:</strong> Xi măng PC40 hay PCB40? Thép CB400 hay CB300? Sơn Dulux hay sơn nội địa? — chênh lệch đơn giá đáng kể.</li>
-  <li><strong>Tiêu chuẩn thi công:</strong> Bê tông đổ tại chỗ hay bê tông thương phẩm? Lớp chống thấm có bao gồm không?</li>
-  <li><strong>Điều khoản bảo hành:</strong> Kết cấu bao nhiêu năm? Hoàn thiện bao nhiêu tháng?</li>
-</ul>
-<p>Nếu một báo giá thấp hơn thị trường từ <strong>15% trở lên</strong> mà không giải thích rõ, hãy yêu cầu liệt kê từng hạng mục trước khi quyết định. Đọc thêm tại <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> để hiểu mức thị trường.</p>
-
-<h2>Mẫu phân tích tỷ trọng chi phí nhà phố 3 tầng (tham khảo)</h2>
-<p>Giả sử nhà phố 3 tầng, mặt tiền 5m, tổng sàn 180m², gói hoàn thiện tiêu chuẩn:</p>
-<table>
-  <thead>
-    <tr><th>Nhóm hạng mục</th><th>Tỷ lệ (%) tổng chi phí</th><th>Ước tính (gói 5 tr/m²)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Móng và kết cấu thô</td><td>38 – 42%</td><td>342 – 378 triệu</td></tr>
-    <tr><td>Hoàn thiện (trát, sơn, ốp lát)</td><td>22 – 26%</td><td>198 – 234 triệu</td></tr>
-    <tr><td>Điện, nước, cơ điện</td><td>10 – 13%</td><td>90 – 117 triệu</td></tr>
-    <tr><td>Cửa, lan can, cầu thang</td><td>9 – 12%</td><td>81 – 108 triệu</td></tr>
-    <tr><td>Thiết bị vệ sinh, phụ kiện</td><td>4 – 6%</td><td>36 – 54 triệu</td></tr>
-    <tr><td>Chi phí quản lý, giám sát</td><td>4 – 6%</td><td>36 – 54 triệu</td></tr>
-    <tr><td><strong>Tổng tham khảo</strong></td><td><strong>100%</strong></td><td><strong>~900 triệu</strong></td></tr>
-  </tbody>
-</table>
-<p><em>Thực tế có thể khác biệt theo phong cách thiết kế và vật liệu chọn. Dùng <a href="/bao-gia">công cụ tính chi phí</a> để ước lượng cụ thể hơn.</em></p>
-
-<h2>Dự toán khi xây nhà trọn gói vs tự mua vật tư</h2>
-<p>Hai phương án phổ biến:</p>
-<h3>Nhà thầu trọn gói</h3>
-<ul>
-  <li>Nhà thầu cung cấp cả vật tư lẫn nhân công — một đơn giá tổng.</li>
-  <li>Ưu điểm: đơn giản, có bảo hành toàn phần, trách nhiệm rõ ràng.</li>
-  <li>Nhược điểm: khó kiểm soát chất lượng vật tư từng loại nếu không có giám sát.</li>
-</ul>
-<h3>Chủ nhà tự mua vật tư, nhà thầu tính nhân công</h3>
-<ul>
-  <li>Có thể tiết kiệm nếu mua đúng giá — nhưng đòi hỏi thời gian, kinh nghiệm thị trường.</li>
-  <li>Rủi ro: mua sai chủng loại, dư thừa hoặc thiếu vật tư, trách nhiệm bảo hành bị phân tán.</li>
-</ul>
-<p>Sao Khuê khuyến nghị: với chủ nhà lần đầu xây, chọn <strong>trọn gói có dự toán chi tiết</strong> — an toàn hơn và dễ kiểm soát hơn phương án tách rời. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
-
-<h2>Thời điểm lập dự toán trong tiến trình xây nhà</h2>
-<ul>
-  <li><strong>Dự toán sơ bộ:</strong> Trước khi thiết kế, dựa trên diện tích, số tầng và gói vật liệu dự kiến → giúp xác định ngân sách khả thi.</li>
-  <li><strong>Dự toán thiết kế:</strong> Sau khi có bản vẽ sơ bộ → phân tích phương án A/B về chi phí.</li>
-  <li><strong>Dự toán thi công:</strong> Sau bản vẽ kỹ thuật hoàn chỉnh → bóc tách chính xác, lập hợp đồng.</li>
-  <li><strong>Dự toán bổ sung:</strong> Khi phát sinh thay đổi thiết kế trong thi công → phụ lục hợp đồng.</li>
-</ul>
-<p>Kiến Trúc Sao Khuê cung cấp <strong>dự toán thi công chi tiết</strong> kèm theo hồ sơ thiết kế — không gộp "gói lump sum" mơ hồ. Tham khảo thêm <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a> và <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">xây dựng nhà phố uy tín</a>.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn dự toán chi phí xây nhà</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>dự toán chi phí xây nhà</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$du-toan-chi-phi-xay-nha$alt$,
-  $cap$du-toan-chi-phi-xay-nha$cap$,
-  $mtitle$Dự Toán Chi Phí Xây Nhà Chính Xác 2026 | Sao Khuê$mtitle$,
-  $mdesc$Cách lập dự toán chi phí xây nhà: bóc tách khối lượng, bảng đơn giá tham khảo, các khoản ẩn cần dự phòng. Khảo sát miễn phí — 0909 075 668.$mdesc$,
-  $mkey$dự toán chi phí xây nhà, bảng dự toán xây nhà, chi phí ẩn xây nhà, bóc tách khối lượng, đơn giá xây nhà 2026, kiến trúc sao khuê$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Xu Hướng Thiết Kế Nhà Phố Hiện Đại Được Ưa Chuộng Nhất 2026
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$xu-huong-thiet-ke-nha-pho-hien-dai$slug$,
-  $title$Xu Hướng Thiết Kế Nhà Phố Hiện Đại Được Ưa Chuộng Nhất 2026$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Tổng hợp xu hướng thiết kế nhà phố hiện đại 2026: tối giản, mặt tiền lam, giếng trời xanh, smart home. Sao Khuê tư vấn & thiết kế miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Xu hướng thiết kế nhà phố hiện đại — Tổng quan 2026</h2>
-<p><strong>Xu hướng thiết kế nhà phố hiện đại</strong> tại TP.HCM và các đô thị lớn miền Nam đang chuyển dịch mạnh trong những năm gần đây. Áp lực từ lô đất hẹp, nhu cầu sống tiện nghi và ảnh hưởng của kiến trúc quốc tế đã tạo ra những phong cách nhà phố mới — không chỉ đẹp về hình thức, mà còn <strong>tối ưu công năng, tiết kiệm năng lượng và thích nghi khí hậu nhiệt đới</strong>. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp các xu hướng nổi bật nhất năm 2026 để chủ đất tham khảo trước khi chốt phương án thiết kế.</p>
-<p>Bài viết phân tích từng xu hướng theo: đặc điểm nhận dạng, ưu điểm, phù hợp với loại lô đất nào — giúp bạn chọn đúng phong cách <strong>nhà phố hiện đại</strong> thay vì "thấy đẹp trên mạng nhưng không hợp lô nhà mình".</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="xu-huong-thiet-ke-nha-pho-1" loading="lazy" decoding="async" />
-<figcaption>xu-huong-thiet-ke-nha-pho-1</figcaption>
-</figure>
-
-<h2>1. Phong cách tối giản (Minimalist) — Xu hướng dẫn đầu</h2>
-<p><strong>Thiết kế nhà phố tối giản</strong> tiếp tục giữ vị trí số một trong sở thích của chủ đầu tư tại TP.HCM. Đặc trưng dễ nhận:</p>
-<ul>
-  <li>Khối hộp chữ nhật rõ ràng, ít phào chỉ trang trí.</li>
-  <li>Màu trung tính: trắng, xám, be, kết hợp tone gỗ tự nhiên.</li>
-  <li>Cửa kính lớn, lan can kính hoặc inox gọn nhẹ.</li>
-  <li>Mái bằng bê tông, không mái dốc hay cầu kỳ.</li>
-  <li>Chi tiết âm nước, đèn LED âm tường — sạch sẽ về hình thức.</li>
-</ul>
-<p><strong>Ưu điểm:</strong> Dễ thi công, dễ bảo trì, lâu xuống cấp về thẩm mỹ, chi phí thường thấp hơn phong cách cầu kỳ cùng diện tích.</p>
-<p><strong>Phù hợp:</strong> Lô có mặt tiền 4–6m, hướng Tây (dùng lam che nắng thay phào chỉ phức tạp), khu đô thị mới Thủ Đức, Bình Dương.</p>
-
-<h2>2. Mặt tiền lam — Giải pháp vừa thẩm mỹ vừa tiết kiệm năng lượng</h2>
-<p>Hệ <strong>lam che nắng</strong> (lam nhôm, lam bê tông, lam gỗ ngoại thất) đang trở thành ngôn ngữ thiết kế đặc trưng của <strong>nhà phố hiện đại TP.HCM</strong>:</p>
-<ul>
-  <li><strong>Lam nhôm định hình:</strong> Phổ biến nhất — nhiều màu sắc, bền trong thời tiết nhiệt đới, giá hợp lý.</li>
-  <li><strong>Lam bê tông đúc sẵn:</strong> Tạo khối kiến trúc ấn tượng, thường thấy ở công trình cao cấp.</li>
-  <li><strong>Lam gỗ ngoại thất:</strong> Ấm áp, phù hợp phong cách tropical-modern, cần bảo trì định kỳ.</li>
-</ul>
-<p>Lam không chỉ là trang trí: chúng giảm nhiệt mặt đứng hướng Tây–Tây Nam đến <strong>15–25%</strong>, giảm tiêu thụ điều hòa đáng kể. Tham khảo <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phong cách hiện đại</a> trong portfolio Sao Khuê.</p>
-
-<h2>3. Giếng trời và không gian xanh nội thất</h2>
-<p>Trên lô đất hẹp, <strong>giếng trời</strong> là giải pháp kiến trúc không thể thiếu trong <strong>xu hướng thiết kế nhà phố hiện đại</strong>:</p>
-<ul>
-  <li><strong>Giếng trời đứng:</strong> Khoảng trống xuyên suốt các tầng — tăng ánh sáng tự nhiên, thông gió dọc.</li>
-  <li><strong>Mảng xanh gắn tường:</strong> Bức tường cây vertical garden tại sảnh hoặc cầu thang — kiểm soát nhiệt, cải thiện không khí.</li>
-  <li><strong>Khoảng trống thở giữa nhà:</strong> Thay vì xây kín toàn bộ chiều sâu lô đất, dành một khoảng nhỏ trồng cây, lấy sáng mặt sân sau.</li>
-</ul>
-<p>Năm 2026, xu hướng này phát triển thêm với <strong>sân thượng xanh</strong> (green rooftop) — không gian thư giãn kết hợp vườn rau, giảm nhiệt mái đồng thời tạo điểm nhấn độc đáo cho công trình.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="xu-huong-thiet-ke-nha-pho-2" loading="lazy" decoding="async" />
-<figcaption>xu-huong-thiet-ke-nha-pho-2</figcaption>
-</figure>
-
-<h2>4. Không gian mở — Xóa ranh giới phòng khách, bếp, ăn</h2>
-<p>Xu hướng <strong>open plan</strong> (không gian mở) ngày càng phổ biến ở nhà phố TP.HCM:</p>
-<ul>
-  <li>Tầng trệt hoặc tầng lửng: phòng khách–bếp–ăn liền thông, không tường ngăn cứng.</li>
-  <li>Cảm giác rộng hơn thực tế, phù hợp lô chỉ 4–4,5m mặt tiền.</li>
-  <li>Dễ giám sát trẻ nhỏ, thuận tiện sinh hoạt gia đình trẻ.</li>
-  <li>Linh hoạt: bố trí bàn đảo bếp, ghế bar thay bàn ăn truyền thống.</li>
-</ul>
-<p>Lưu ý: <strong>open plan</strong> cần hệ thống hút mùi bếp mạnh hơn và bố trí âm thanh hợp lý để tránh tiếng ồn lan toàn tầng.</p>
-
-<h2>5. Phong cách Tropical-Modern — Nhiệt đới hiện đại</h2>
-<p><strong>Tropical-Modern</strong> là xu hướng kết hợp ngôn ngữ kiến trúc hiện đại với vật liệu và chi tiết gắn liền với khí hậu nhiệt đới:</p>
-<ul>
-  <li>Gỗ tự nhiên hoặc gỗ nhân tạo ngoại thất (WPC) cho ban công, lam, sàn hiên.</li>
-  <li>Mái hiên hoặc pergola phủ cây leo — che nắng tự nhiên.</li>
-  <li>Gạch thô nung hoặc đá tự nhiên kết hợp bê tông trắng mặt tiền.</li>
-  <li>Màu sắc ấm: xanh lá, nâu đất, trắng ngà.</li>
-</ul>
-<p>Phong cách này rất phù hợp các tỉnh ven biển như Phú Yên, Đồng Nai và khu ven đô Bình Dương — nơi có diện tích đất rộng hơn nội thành TP.HCM.</p>
-
-<h2>6. Công năng thông minh và ống chờ smart home</h2>
-<p>Năm 2026, tích hợp <strong>smart home cơ bản</strong> từ giai đoạn thiết kế là xu hướng chủ đạo:</p>
-<ul>
-  <li><strong>Ống chờ điện nhà thông minh:</strong> Ống luồn cáp điện âm tường đi đúng hướng ngay từ đầu — tiết kiệm chi phí đi lại sau.</li>
-  <li><strong>Công tắc thông minh:</strong> Hệ thống điều khiển ánh sáng qua app — lắp đặt sau nhưng cần ống chờ từ thiết kế.</li>
-  <li><strong>Camera an ninh âm tường:</strong> Vị trí lắp đặt tích hợp trong hồ sơ điện nước từ đầu.</li>
-  <li><strong>Điều hòa giấu trần:</strong> Ống dẫn freon, đường nước ngưng — cần thiết kế kết cấu trần phù hợp.</li>
-</ul>
-<p>Lập kế hoạch smart home từ bản vẽ giúp <strong>tiết kiệm 20–40%</strong> chi phí so với bổ sung sau khi đã hoàn thiện. Xem thêm <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> tích hợp hạ tầng thông minh.</p>
-
-<h2>7. Mặt tiền biến thể (adaptive facade) — Tối ưu theo hướng nhà</h2>
-<p>Kiến trúc sư ngày nay thiết kế <strong>mặt tiền thích nghi theo hướng công trình</strong>:</p>
-<ul>
-  <li><strong>Nhà hướng Nam:</strong> Cửa kính lớn, ít che chắn — tận dụng ánh sáng dịu.</li>
-  <li><strong>Nhà hướng Tây:</strong> Lam dày, mảng đặc nhiều hơn — chắn nắng chiều.</li>
-  <li><strong>Nhà hướng Đông:</strong> Kết hợp mái đón gió, cửa thông hơi cao.</li>
-  <li><strong>Nhà hẻm hướng lộn xộn:</strong> Giếng trời nội thất + đèn LED âm — bù sáng tự nhiên thiếu hụt.</li>
-</ul>
-<p>Một thiết kế "đẹp trên ảnh" nhưng không tính đến hướng nắng sẽ biến thành "lò nướng" hoặc "tối tăm" khi ở thực. Đây là lý do Sao Khuê luôn phân tích hướng lô đất trước khi đưa ra phương án mặt tiền.</p>
-
-<h2>8. Xu hướng vật liệu 2026</h2>
-<p>Ngoài phong cách kiến trúc, <strong>vật liệu hoàn thiện</strong> cũng có xu hướng rõ ràng:</p>
-<ul>
-  <li><strong>Gạch ốp texture mờ (matt):</strong> Thay thế gạch bóng truyền thống — ít vân tay, cảm giác cao cấp hơn.</li>
-  <li><strong>Sơn hiệu ứng bê tông (concrete look):</strong> Tiết kiệm hơn ốp đá, tạo cảm giác công nghiệp hiện đại.</li>
-  <li><strong>Nhôm màu anodized:</strong> Cửa, lam, lan can — bền màu hơn sơn thông thường.</li>
-  <li><strong>Kính low-e (kính tiết kiệm năng lượng):</strong> Giảm nhiệt bức xạ qua cửa kính lớn — ngày càng phổ biến ở nhà phố hướng Tây.</li>
-</ul>
-
-<h2>Làm sao chọn đúng xu hướng cho lô nhà của bạn?</h2>
-<p>Không phải xu hướng nào cũng phù hợp mọi lô đất. Kiến Trúc Sao Khuê khuyến nghị:</p>
-<ol>
-  <li><strong>Phân tích lô đất trước:</strong> Hướng, mặt tiền, chiều sâu, lân cận, quy hoạch.</li>
-  <li><strong>Xác định ngân sách thực:</strong> Phong cách Tropical-Modern thường đắt hơn tối giản thuần túy cùng diện tích.</li>
-  <li><strong>Liệt kê nhu cầu sử dụng:</strong> Số phòng ngủ, có kinh doanh tầng trệt không, cần bao nhiêu chỗ giữ xe.</li>
-  <li><strong>Tham khảo công trình thực tế:</strong> Đến thăm công trình đã bàn giao, không chỉ xem ảnh render.</li>
-</ol>
-<p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố TP.HCM</a>, <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">phong cách hiện đại</a> và <a href="/tin-tuc/luu-y-xay-nha-pho">lưu ý xây nhà phố</a>.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn xu hướng thiết kế nhà phố</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>xu hướng thiết kế nhà phố</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$xu-huong-thiet-ke-nha-pho-hien-dai$alt$,
-  $cap$xu-huong-thiet-ke-nha-pho-hien-dai$cap$,
-  $mtitle$Xu Hướng Thiết Kế Nhà Phố Hiện Đại 2026 | Sao Khuê$mtitle$,
-  $mdesc$Khám phá xu hướng thiết kế nhà phố hiện đại 2026: tối giản, lam che nắng, giếng trời, không gian xanh, smart home. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$xu hướng thiết kế nhà phố, nhà phố hiện đại 2026, mặt tiền nhà phố, thiết kế nhà phố tối giản, công năng thông minh, kiến trúc sao khuê$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại Bao Nhiêu? (2026)
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$chi-phi-nha-pho-2-tang$slug$,
-  $title$Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại Bao Nhiêu? (2026)$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Chi phí nhà phố 2 tầng tại TP.HCM 2026: bảng đơn giá, ví dụ tính thực tế, cách tiết kiệm mà không giảm chất lượng. Tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Chi phí nhà phố 2 tầng — Tại sao đây là lựa chọn phổ biến?</h2>
-<p><strong>Nhà phố 2 tầng</strong> là mô hình ưu tiên của hàng nghìn gia đình tại TP.HCM, Bình Dương và Đồng Nai khi có lô đất từ 60–100m². So với nhà 3–4 tầng, <strong>chi phí nhà phố 2 tầng</strong> vừa sức hơn, thời gian thi công ngắn hơn và kết cấu đơn giản hơn — phù hợp ngân sách gia đình trẻ từ <strong>800 triệu đến 1,5 tỷ</strong> tuỳ quy mô và vật liệu. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng phân tích chi phí thực tế và hướng dẫn tối ưu ngân sách trong bài viết này.</p>
-<p>Nội dung bao gồm: các yếu tố tác động đến <strong>báo giá nhà 2 tầng</strong>, bảng đơn giá tham khảo, ví dụ tính chi phí theo diện tích cụ thể, cách tiết kiệm mà không giảm chất lượng — và câu hỏi thường gặp từ chủ đầu tư.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="chi-phi-nha-pho-2-tang-1" loading="lazy" decoding="async" />
-<figcaption>chi-phi-nha-pho-2-tang-1</figcaption>
-</figure>
-
-<h2>Các yếu tố quyết định chi phí nhà phố 2 tầng</h2>
-<p>Không có một con số "giá xây nhà 2 tầng cố định" vì mỗi công trình có đặc thù riêng. Những yếu tố tác động chính:</p>
-<ul>
-  <li><strong>Diện tích lô đất và tổng diện tích sàn:</strong> Lô 5x15m (75m² đất) với 2 tầng ≈ 130–140m² sàn (tính cả tầng trệt và tầng 1). Chi phí tổng tăng theo diện tích sàn.</li>
-  <li><strong>Thiết kế kiến trúc:</strong> Mặt tiền đơn giản, ít chi tiết → rẻ hơn thiết kế nhiều phào chỉ, lam phức tạp.</li>
-  <li><strong>Địa chất nền móng:</strong> Đất tốt → móng đơn, cọc ngắn. Đất yếu → cọc khoan nhồi hoặc cọc ép, tăng chi phí móng đáng kể.</li>
-  <li><strong>Chủng loại vật liệu:</strong> Gói tiêu chuẩn (xi măng, gạch, sơn phổ thông) vs. gói khá (gạch nhập khẩu, sơn cao cấp, thiết bị vệ sinh tốt hơn).</li>
-  <li><strong>Gói dịch vụ:</strong> Chỉ thi công phần thô → hoàn thiện riêng → hay trọn gói từ thiết kế đến bàn giao.</li>
-  <li><strong>Vị trí công trình:</strong> Hẻm hẹp, tầng trệt thấp so với mặt đường — tăng chi phí san nền, vận chuyển.</li>
-</ul>
-
-<h2>Bảng đơn giá tham khảo — Chi phí nhà phố 2 tầng 2026</h2>
-<p>Đơn giá áp dụng cho công trình nhà ở riêng lẻ tại TP.HCM và vùng lân cận, <strong>tham khảo theo gói dịch vụ</strong>:</p>
-<table>
-  <thead>
-    <tr><th>Gói thi công</th><th>Đơn giá (đ/m² sàn)</th><th>Phạm vi</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Chỉ xây phần thô</td><td><strong>3.550.000 – 3.800.000</strong></td><td>Móng, khung BTCT, tường, mái, điện nước âm</td></tr>
-    <tr><td>Trọn gói tiêu chuẩn</td><td><strong>4.850.000 – 5.500.000</strong></td><td>Thô + hoàn thiện cơ bản, thiết bị vệ sinh phổ thông</td></tr>
-    <tr><td>Trọn gói khá</td><td><strong>5.500.000 – 6.000.000</strong></td><td>Vật tư tầm trung-khá, sơn ngoại, thiết bị tốt hơn</td></tr>
-    <tr><td>Trọn gói cao cấp</td><td><strong>6.000.000 – 6.700.000+</strong></td><td>Gạch nhập khẩu, kính low-e, thiết bị cao cấp</td></tr>
-  </tbody>
-</table>
-<p><strong>Lưu ý quan trọng:</strong> m² sàn ở đây là <strong>diện tích sàn xây dựng quy đổi</strong> (bao gồm móng, các tầng, mái, ban công có mái che theo quy ước hợp đồng) — không phải diện tích lô đất.</p>
-
-<h2>Ví dụ tính chi phí nhà phố 2 tầng theo diện tích</h2>
-<h3>Ví dụ 1 — Lô đất 5x15m, nhà phố 2 tầng tiêu chuẩn</h3>
-<p>Diện tích sàn ước tính (2 tầng + móng quy đổi): ~145m²<br />
-Gói trọn gói tiêu chuẩn × 5.000.000 đ/m²: <strong>≈ 725 triệu đồng</strong><br />
-Cộng thiết kế 2D/3D (~25 triệu) + xin phép xây dựng (~10 triệu): <strong>tổng ~760 triệu</strong>.</p>
-
-<h3>Ví dụ 2 — Lô đất 5x20m, nhà phố 2 tầng gói khá</h3>
-<p>Diện tích sàn ước tính: ~190m²<br />
-Gói khá × 5.700.000 đ/m²: <strong>≈ 1,08 tỷ đồng</strong><br />
-Cộng chi phí ngoài hợp đồng (điện nước tạm, dự phòng 8%): <strong>tổng ~1,2 tỷ</strong>.</p>
-
-<h3>Ví dụ 3 — Lô đất 4x18m, chỉ xây phần thô</h3>
-<p>Diện tích sàn ước tính: ~135m²<br />
-Phần thô × 3.700.000 đ/m²: <strong>≈ 500 triệu đồng</strong><br />
-Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~750–850 triệu</strong>.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="chi-phi-nha-pho-2-tang-2" loading="lazy" decoding="async" />
-<figcaption>chi-phi-nha-pho-2-tang-2</figcaption>
-</figure>
-
-<h2>Phân tích tỷ trọng chi phí nhà phố 2 tầng</h2>
-<p>Hiểu tỷ lệ từng nhóm giúp bạn kiểm soát dự toán và biết nên tiết kiệm ở đâu:</p>
-<table>
-  <thead>
-    <tr><th>Nhóm hạng mục</th><th>Tỷ lệ</th><th>Ghi chú</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Móng + kết cấu thô (BTCT)</td><td>38 – 43%</td><td>Không nên cắt giảm — ảnh hưởng an toàn kết cấu</td></tr>
-    <tr><td>Hoàn thiện (trát, sơn, ốp lát)</td><td>22 – 27%</td><td>Có thể điều chỉnh theo chủng loại vật liệu</td></tr>
-    <tr><td>Điện, nước, cơ điện</td><td>9 – 13%</td><td>Nên đầu tư đúng tiêu chuẩn từ đầu</td></tr>
-    <tr><td>Cửa, lan can, cầu thang</td><td>9 – 12%</td><td>Ảnh hưởng thẩm mỹ và an toàn</td></tr>
-    <tr><td>Thiết bị vệ sinh + phụ kiện</td><td>4 – 6%</td><td>Có thể nâng cấp dần sau bàn giao</td></tr>
-    <tr><td>Chi phí quản lý, giám sát</td><td>4 – 6%</td><td>Chi phí gián tiếp hợp lý</td></tr>
-  </tbody>
-</table>
-
-<h2>Cách tiết kiệm chi phí nhà phố 2 tầng mà không giảm chất lượng</h2>
-<ul>
-  <li><strong>Thiết kế đơn giản, công năng tối ưu:</strong> Mặt tiền ít phào chỉ, nội thất gọn — tiết kiệm hơn 15–20% so với thiết kế phức tạp cùng quy mô.</li>
-  <li><strong>Chọn gói trọn gói thay vì chia nhỏ:</strong> Một nhà thầu chịu trách nhiệm từ đầu đến cuối — tránh phát sinh giữa các bên.</li>
-  <li><strong>Không thay đổi thiết kế sau khi đã khởi công:</strong> Mỗi lần đổi ý giữa chừng có thể phát sinh 20–50 triệu (đục phá, vật tư dư, nhân công dừng chờ).</li>
-  <li><strong>Chọn vật liệu hợp lý theo từng khu vực:</strong> Không nhất thiết toàn bộ phải cao cấp — tập trung vào phòng khách, phòng ngủ chính; phòng phụ dùng vật liệu tiêu chuẩn.</li>
-  <li><strong>Tận dụng chương trình khuyến mãi thiết kế:</strong> Sao Khuê thường miễn phí thiết kế khi ký xây trọn gói — xem <a href="/dich-vu/khuyen-mai-xay-dung">khuyến mãi hiện hành</a>.</li>
-</ul>
-
-<h2>Chi phí nhà phố 2 tầng vs. Mua nhà sẵn cùng ngân sách</h2>
-<p>Câu hỏi nhiều gia đình đặt ra: <strong>Xây mới hay mua nhà cũ cùng tầm giá?</strong></p>
-<ul>
-  <li><strong>Xây mới:</strong> Tùy ý thiết kế theo nhu cầu, vật liệu mới hoàn toàn, không rủi ro kết cấu cũ. Tuy nhiên cần có đất sẵn và chịu đựng 6–8 tháng thi công.</li>
-  <li><strong>Mua nhà cũ:</strong> Vào ở ngay, nhưng tiềm ẩn chi phí sửa chữa (điện nước cũ, thấm dột, kết cấu xuống cấp) thường 100–200 triệu sau khi mua.</li>
-  <li><strong>Kết luận:</strong> Nếu có lô đất hoặc sẵn sàng mua đất riêng, <strong>xây mới</strong> thường cho giá trị sử dụng tốt hơn trong dài hạn.</li>
-</ul>
-
-<h2>Quy trình thi công nhà phố 2 tầng tại Sao Khuê</h2>
-<ol>
-  <li><strong>Tư vấn & khảo sát miễn phí:</strong> Đến lô đất, đo đạc, tư vấn sơ bộ về ngân sách và phong cách.</li>
-  <li><strong>Thiết kế 2D/3D:</strong> Mặt bằng từng tầng, phối cảnh 3D mặt tiền — chỉnh sửa đến khi hài lòng.</li>
-  <li><strong>Dự toán chi tiết:</strong> Bảng hạng mục từng nhóm, chủng loại vật tư, tiến độ thanh toán rõ ràng.</li>
-  <li><strong>Ký hợp đồng & khởi công:</strong> Hợp đồng pháp nhân, không phát sinh khi không đổi thiết kế.</li>
-  <li><strong>Thi công và nghiệm thu:</strong> Giám sát theo hạng mục, chụp ảnh tiến độ cập nhật thường xuyên.</li>
-  <li><strong>Bàn giao & bảo hành:</strong> Kết cấu 10 năm, hoàn thiện 12–36 tháng tùy hạng mục.</li>
-</ol>
-<p>Tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>, <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố 2 tầng Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> để hiểu thêm quy trình làm việc.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn chi phí nhà phố 2 tầng</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí nhà phố 2 tầng</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/project_2.jpg$img$,
-  $alt$chi-phi-nha-pho-2-tang$alt$,
-  $cap$chi-phi-nha-pho-2-tang$cap$,
-  $mtitle$Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại 2026 | Sao Khuê$mtitle$,
-  $mdesc$Chi phí xây nhà phố 2 tầng 2026: trọn gói 800 triệu – 1,5 tỷ tuỳ diện tích và vật liệu. Bảng đơn giá, ví dụ tính thực tế, tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$chi phí nhà phố 2 tầng, báo giá nhà 2 tầng, xây nhà phố 2 tầng bao nhiêu tiền, đơn giá nhà 2 tầng 2026, mẫu nhà 2 tầng tphcm, kiến trúc sao khuê$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng Cho Gia Đình
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$mau-nha-pho-3-tang-dep$slug$,
-  $title$Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng Cho Gia Đình$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Tổng hợp mẫu nhà phố 3 tầng đẹp: phong cách hiện đại, Indochine, tropical. Hướng dẫn bố trí mặt bằng tối ưu, mặt tiền ấn tượng. Sao Khuê — 0909 075 668.$excerpt$,
-  $content$<h2>Mẫu nhà phố 3 tầng đẹp — Cân bằng hoàn hảo giữa diện tích và chi phí</h2>
-<p><strong>Mẫu nhà phố 3 tầng</strong> đang là lựa chọn số một của nhiều gia đình TP.HCM trên lô đất từ 60–120m² — vừa đủ diện tích cho 3–4 thành viên, vừa không quá tốn kém về xây dựng và vận hành so với nhà 4–5 tầng. Tại <strong>Kiến Trúc Sao Khuê</strong>, hơn 40% các công trình nhà phố được thiết kế theo mô hình 3 tầng. Bài viết này tổng hợp các <strong>mẫu nhà phố 3 tầng đẹp</strong> phổ biến nhất, hướng dẫn bố trí mặt bằng tối ưu và những điểm cần lưu ý để có mặt tiền ấn tượng.</p>
-<p>Dù bạn đang ở Bình Thạnh, Thủ Đức, Quận 7 hay các tỉnh lân cận như Bình Dương, Đồng Nai — bài viết này sẽ giúp hình dung rõ phương án thiết kế trước khi gặp kiến trúc sư.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="mau-nha-pho-3-tang-ep-1" loading="lazy" decoding="async" />
-<figcaption>mau-nha-pho-3-tang-ep-1</figcaption>
-</figure>
-
-<h2>Vì sao nhà phố 3 tầng được ưa chuộng nhất?</h2>
-<p>So sánh với các phương án khác:</p>
-<ul>
-  <li><strong>Nhà 2 tầng:</strong> Ít phòng hơn, phù hợp gia đình 2–3 người hoặc ngân sách dưới 900 triệu.</li>
-  <li><strong>Nhà 3 tầng:</strong> Tổng sàn 180–250m² trên lô 5x15–5x20m — <strong>đủ phòng cho gia đình 4–5 người</strong>, có tầng dịch vụ hoặc kinh doanh tầng trệt.</li>
-  <li><strong>Nhà 4–5 tầng:</strong> Thêm diện tích nhưng chi phí tăng đáng kể, thang máy cần thiết hơn, thủ tục xin phép phức tạp hơn tại một số quận.</li>
-</ul>
-<p><strong>Nhà phố 3 tầng</strong> cũng là điểm "ngọt" về kết cấu: chi phí/m² sàn không chênh quá nhiều so với 2 tầng, nhưng tổng diện tích sử dụng tăng 50% so với nhà 2 tầng cùng lô đất.</p>
-
-<h2>Bố trí mặt bằng nhà phố 3 tầng hợp lý</h2>
-<p>Phân công công năng từng tầng là bước thiết yếu trong thiết kế <strong>nhà phố 3 tầng đẹp</strong>:</p>
-<h3>Tầng trệt</h3>
-<ul>
-  <li>Nhà không kinh doanh: phòng khách + bếp/ăn mở (open plan), WC khách, khu để xe, cầu thang.</li>
-  <li>Nhà có kinh doanh: mặt bằng kinh doanh hoặc cho thuê nguyên tầng; cầu thang riêng biệt lên tầng ở.</li>
-  <li>Lưu ý: tầng trệt cần cốt nền cao hơn mặt đường ít nhất 10–15cm để tránh ngập mưa.</li>
-</ul>
-<h3>Tầng 1 (lầu 1)</h3>
-<ul>
-  <li>Thường bố trí 2 phòng ngủ, 1–2 WC, ban công nhỏ phía trước hoặc hành lang.</li>
-  <li>Phòng ngủ master có WC riêng — tăng tiện nghi gia đình.</li>
-  <li>Khu phơi đồ/giặt ủi nên đặt ở tầng này, tiện sử dụng hàng ngày.</li>
-</ul>
-<h3>Tầng 2 (lầu 2)</h3>
-<ul>
-  <li>1–2 phòng ngủ, WC, khu thờ phụng hoặc phòng đọc sách.</li>
-  <li>Một số mẫu đặt phòng ngủ ông bà hoặc phòng làm việc ở tầng này.</li>
-  <li>Nếu lô rộng, có thể mở sân thượng nhỏ (5–10m²) để trồng cây, phơi đồ.</li>
-</ul>
-<h3>Sân thượng (tùy chọn)</h3>
-<ul>
-  <li>Giặt phơi + kho nhỏ, hoặc không gian thư giãn ngoài trời (xu hướng green rooftop).</li>
-  <li>Bể nước ngầm hoặc bồn nước mái đặt ở đây.</li>
-</ul>
-
-<h2>Mẫu nhà phố 3 tầng theo phong cách kiến trúc</h2>
-<h3>1. Phong cách hiện đại tối giản</h3>
-<p>Được ưa chuộng nhất. Đặc điểm: khối hộp sạch, cửa kính lớn, mảng lam nhôm hoặc bê tông, màu trắng–xám–gỗ. Phù hợp hầu hết lô đất, dễ duy tu bảo trì, không lỗi mốt theo thời gian. Chi phí xây dựng hợp lý nhất trong các phong cách.</p>
-
-<h3>2. Phong cách Indochine (Đông Dương)</h3>
-<p>Kết hợp kiến trúc Pháp cổ điển với chi tiết nhiệt đới: ô cửa vòm, lam chớp gỗ, màu vàng–be–xanh dương phai. Phù hợp gia đình yêu vẻ đẹp cổ điển nhưng sống tại đô thị hiện đại. Chi phí thường cao hơn 10–20% so với phong cách tối giản do chi tiết trang trí phức tạp hơn.</p>
-
-<h3>3. Phong cách Tropical-Modern</h3>
-<p>Gỗ tự nhiên + cây xanh + bê tông + kính — phong cách giao thoa giữa thiên nhiên và kiến trúc hiện đại. Phổ biến ở khu ven đô, có sân hoặc diện tích đất rộng hơn. Cần đầu tư chăm sóc cây xanh và bảo trì vật liệu gỗ định kỳ.</p>
-
-<h3>4. Phong cách công nghiệp (Industrial)</h3>
-<p>Bê tông lộ thiên, sắt thép thô, gạch nung mộc, đèn Edison. Phù hợp chủ nhà cá tính, thường kết hợp với không gian làm việc sáng tạo tầng trệt. Ít phổ biến hơn nhưng tạo dấu ấn riêng mạnh.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="mau-nha-pho-3-tang-ep-2" loading="lazy" decoding="async" />
-<figcaption>mau-nha-pho-3-tang-ep-2</figcaption>
-</figure>
-
-<h2>Mặt tiền nhà phố 3 tầng — Ngôn ngữ kiến trúc quan trọng nhất</h2>
-<p>Mặt tiền là yếu tố quyết định cảm nhận đầu tiên và cũng ảnh hưởng đến giá trị bất động sản. Các nguyên tắc thiết kế mặt tiền <strong>nhà phố 3 tầng đẹp</strong>:</p>
-<ul>
-  <li><strong>Tỷ lệ đặc–rỗng hài hòa:</strong> Mặt tiền không nên kín toàn bộ (ngột ngạt) cũng không quá nhiều cửa kính (chói nắng hướng Tây). Tỷ lệ cửa kính chiếm 30–50% mặt tiền là cân bằng tốt.</li>
-  <li><strong>Nhịp điệu chiều đứng:</strong> Lan can, lam, ô cửa tạo nhịp điệu theo chiều cao — giúp nhà trông thanh thoát hơn.</li>
-  <li><strong>Điểm nhấn ở tầng trệt:</strong> Cổng xe, cửa chính, biển hiệu (nếu kinh doanh) — cần thiết kế đồng bộ với tổng thể.</li>
-  <li><strong>Vật liệu mặt tiền bền theo thời gian:</strong> Tránh vật liệu ẩu khi mới đẹp nhưng nhanh xuống cấp (gạch giả cổ rẻ, sơn giả đá kém chất lượng).</li>
-  <li><strong>Ánh sáng ngoại thất:</strong> Đèn LED âm tường, chiếu sáng cảnh quan — tăng vẻ đẹp ban đêm và an ninh.</li>
-</ul>
-
-<h2>Giếng trời trong nhà phố 3 tầng — Không thể thiếu</h2>
-<p>Trên lô sâu (chiều sâu trên 15m), <strong>giếng trời</strong> là giải pháp kiến trúc bắt buộc để đảm bảo ánh sáng và thông gió tự nhiên cho các phòng giữa nhà:</p>
-<ul>
-  <li><strong>Vị trí giếng trời:</strong> Thường đặt ở vị trí 1/3 chiều sâu lô đất tính từ mặt tiền, hoặc giữa nhà — ngay cạnh cầu thang để tận dụng chiều cao.</li>
-  <li><strong>Kích thước tối thiểu:</strong> 1,5x1,5m để có ánh sáng thực sự đủ dùng. Nhỏ hơn chỉ mang tính trang trí.</li>
-  <li><strong>Tích hợp cây xanh:</strong> Giếng trời + bức tường cây leo tạo điểm nhấn kiến trúc và cải thiện vi khí hậu bên trong nhà.</li>
-  <li><strong>Lưu ý cách âm và thoát nước:</strong> Thiết kế máng thoát nước quanh giếng trời, tránh tiếng mưa vọng vào nhà quá lớn.</li>
-</ul>
-
-<h2>Những lỗi thường gặp khi thiết kế nhà phố 3 tầng</h2>
-<ul>
-  <li><strong>Cầu thang quá tốn diện tích:</strong> Cầu thang rộng 1,5m nhưng góc quay 90° chiếm gần 6m² sàn/tầng. Giải pháp: cầu thang chạy dọc chiều sâu nhà (chữ I) tiết kiệm diện tích hơn.</li>
-  <li><strong>WC thiếu sáng, kém thông gió:</strong> WC không có cửa sổ ra ngoài hoặc ra giếng trời → ẩm mốc, mùi khó chịu về lâu dài.</li>
-  <li><strong>Phòng ngủ thiếu cửa sổ:</strong> Bố trí phòng ngủ giữa nhà không có cửa ra ngoài hoặc giếng trời → phải bật đèn và điều hòa 24/7.</li>
-  <li><strong>Không thiết kế kho, ngăn chứa:</strong> Nhà 3 tầng 4–5 người cần kho lớn tối thiểu 4–6m² — thường bị bỏ quên trong thiết kế.</li>
-  <li><strong>Mặt tiền đẹp nhưng không tính hướng nắng:</strong> Cửa kính lớn hướng Tây không có lam che → nhà nóng không tắt điều hòa được.</li>
-</ul>
-<p>Tham khảo thêm <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố hiện đại TP.HCM</a>, <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> và <a href="/tin-tuc/luu-y-xay-nha-pho">lưu ý quan trọng khi xây nhà phố</a>.</p>
-
-<h2>Chi phí tham khảo cho mẫu nhà phố 3 tầng</h2>
-<p>Tùy gói vật liệu và phong cách kiến trúc:</p>
-<table>
-  <thead>
-    <tr><th>Quy mô lô đất</th><th>Tổng sàn ước tính</th><th>Gói tiêu chuẩn</th><th>Gói khá</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>4x15m (60m² đất)</td><td>~165 m²</td><td>~800–880 triệu</td><td>~950 triệu – 1,1 tỷ</td></tr>
-    <tr><td>5x15m (75m² đất)</td><td>~205 m²</td><td>~1,0–1,1 tỷ</td><td>~1,2–1,3 tỷ</td></tr>
-    <tr><td>5x20m (100m² đất)</td><td>~265 m²</td><td>~1,3–1,5 tỷ</td><td>~1,6–1,7 tỷ</td></tr>
-  </tbody>
-</table>
-<p><em>Ghi chú: Giá tham khảo chưa gồm nội thất, thiết kế riêng và xin phép xây dựng. Liên hệ Sao Khuê để có báo giá chính xác sau khảo sát.</em></p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn mẫu nhà phố 3 tầng đẹp</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>mẫu nhà phố 3 tầng đẹp</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/project_3.jpg$img$,
-  $alt$mau-nha-pho-3-tang-dep$alt$,
-  $cap$mau-nha-pho-3-tang-dep$cap$,
-  $mtitle$Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng 2026 | Sao Khuê$mtitle$,
-  $mdesc$Mẫu nhà phố 3 tầng đẹp 2026: thiết kế hiện đại, Indochine, tropical-modern. Bố trí mặt bằng hợp lý, mặt tiền ấn tượng. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$mẫu nhà phố 3 tầng đẹp, thiết kế nhà phố 3 tầng, mặt bằng nhà phố 3 tầng, nhà phố hiện đại 3 tầng, mặt tiền nhà phố, kiến trúc sao khuê$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Thiết Kế Nhà Đẹp Giá Rẻ Theo Ngân Sách Gia Đình Trẻ
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thiet-ke-nha-dep-gia-re$slug$,
-  $title$Thiết Kế Nhà Đẹp Giá Rẻ Theo Ngân Sách Gia Đình Trẻ$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Bí quyết thiết kế nhà đẹp giá rẻ: tối ưu công năng, chọn vật liệu thông minh, tránh phát sinh. Sao Khuê tư vấn miễn phí ngân sách gia đình trẻ — 0909 075 668.$excerpt$,
-  $content$<h2>Thiết kế nhà đẹp giá rẻ — Có thực sự khả thi?</h2>
-<p>Khi ngân sách hạn chế, câu hỏi đầu tiên nhiều gia đình trẻ đặt ra là: <em>"Có thể có ngôi nhà đẹp mà không phải vay quá nhiều không?"</em>. Câu trả lời là <strong>có</strong> — nếu bạn biết cách <strong>tối ưu thiết kế ngay từ đầu</strong>, thay vì cắt giảm tuỳ tiện giữa chừng. <strong>Thiết kế nhà đẹp giá rẻ</strong> không có nghĩa là nhà xấu hoặc kém chất lượng — mà là nhà được thiết kế thông minh, tập trung ngân sách vào đúng chỗ và loại bỏ những khoản chi không thực sự cần thiết.</p>
-<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> đã thiết kế và thi công nhiều công trình <strong>nhà phố đẹp trong tầm ngân sách 700 triệu – 1,2 tỷ</strong> cho gia đình trẻ tại TP.HCM, Bình Dương và Đồng Nai. Bài viết này chia sẻ toàn bộ bí quyết thực chiến từ hàng trăm công trình thực tế.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="thiet-ke-nha-ep-gia-re-1" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-ep-gia-re-1</figcaption>
-</figure>
-
-<h2>Sự khác biệt giữa "nhà rẻ" và "nhà đẹp giá rẻ"</h2>
-<p>Nhiều người nhầm lẫn giữa hai khái niệm:</p>
-<ul>
-  <li><strong>Nhà rẻ (tiết kiệm sai chỗ):</strong> Cắt giảm móng, dùng thép kém tiêu chuẩn, sơn rẻ → rẻ lúc đầu nhưng 3–5 năm phải sửa chống thấm, trát lại tường, đục kết cấu. Chi phí tổng vòng đời cao hơn nhiều.</li>
-  <li><strong>Nhà đẹp giá rẻ (tối ưu đúng chỗ):</strong> Thiết kế đơn giản nhưng tỷ lệ đẹp, vật liệu tiêu chuẩn tốt phần kết cấu, linh hoạt ở hoàn thiện — tổng chi phí thấp nhưng chất lượng đảm bảo.</li>
-</ul>
-<p><strong>Nguyên tắc vàng:</strong> Không bao giờ cắt giảm ở móng, kết cấu chịu lực, chống thấm và hệ thống điện nước âm. Đây là những hạng mục "vô hình" nhưng quyết định tuổi thọ công trình.</p>
-
-<h2>10 chiến lược thiết kế nhà đẹp tiết kiệm chi phí</h2>
-<h3>1. Mặt bằng đơn giản, công năng rõ ràng</h3>
-<p>Mặt bằng hình chữ nhật thuần túy (không lồi lõm, không góc xiên) luôn tốn ít chi phí xây dựng hơn. Mỗi "mảng lồi" hay góc không vuông làm tăng chi phí ván khuôn, thợ và vật tư. Giữ mặt bằng vuông vắn, tối giản — đẹp và rẻ hơn.</p>
-
-<h3>2. Chiều cao tầng chuẩn, không "kéo cao" không cần thiết</h3>
-<p>Chiều cao tầng tiêu chuẩn 3,0–3,3m (tính từ sàn đến trần). Nếu kéo lên 3,6m hay 3,8m mà không có lý do kiến trúc rõ ràng, chi phí tường, cột, thang sẽ tăng theo mà không tăng giá trị sử dụng tương xứng.</p>
-
-<h3>3. Không có tầng lửng không cần thiết</h3>
-<p>Tầng lửng tăng thêm chi phí sàn, cầu thang phụ, xin phép xây dựng (tùy quy định). Nếu không thực sự cần, bỏ tầng lửng giúp tiết kiệm 80–150 triệu cho nhà phố mặt tiền 5m.</p>
-
-<h3>4. Phong cách tối giản — Đẹp, rẻ, bền</h3>
-<p>Phong cách tối giản với mặt tiền ít phào chỉ, ít chi tiết trang trí là lựa chọn <strong>tiết kiệm nhất mà vẫn đẹp</strong> — chi phí xây dựng thấp hơn 15–25% so với phong cách tân cổ điển cùng quy mô, bảo trì đơn giản hơn và không bao giờ "lỗi mốt".</p>
-
-<h3>5. Chọn vật liệu đúng chỗ (value engineering)</h3>
-<p>Không phải tất cả đều cần vật liệu cao cấp. Phân tầng ưu tiên:</p>
-<ul>
-  <li><strong>Không thể tiết kiệm:</strong> Thép CB400, xi măng PC40, chống thấm móng, BTCT kết cấu.</li>
-  <li><strong>Nên đầu tư tốt:</strong> Cửa sổ, cửa đi phòng ngủ chính, điện âm tường, WC phòng master.</li>
-  <li><strong>Có thể tiết kiệm ban đầu, nâng cấp sau:</strong> Gạch nền phòng con, sơn nội thất, đèn chiếu sáng, thiết bị vệ sinh phòng phụ.</li>
-</ul>
-
-<h3>6. Không thay đổi thiết kế sau khi ký hợp đồng</h3>
-<p>Mỗi lần chủ nhà đổi ý giữa chừng tốn trung bình <strong>20–60 triệu</strong> (đục phá + vật tư dư + nhân công chờ + điều chỉnh). Dành thời gian suy nghĩ kỹ trước khi ký — tiết kiệm hơn nhiều so với sửa khi đã thi công.</p>
-
-<h3>7. Không xây thêm diện tích không dùng đến</h3>
-<p>Phòng khách quá rộng, hành lang rộng 2m — những diện tích này không mang lại giá trị sử dụng tương xứng. Tập trung thiết kế vừa đủ cho số người thực tế. Mỗi m² sàn tiết kiệm được = 4,5–6 triệu trong túi bạn.</p>
-
-<h3>8. Thiết kế trước rồi mới xây — Không bao giờ làm ngược lại</h3>
-<p>Nhiều gia đình nghĩ "bỏ tiền thiết kế là lãng phí". Thực tế ngược lại: thiết kế kỹ từ đầu giúp <strong>tiết kiệm 10–20% tổng chi phí thi công</strong> do không phát sinh, không đục phá, không làm thêm. Bỏ 20–30 triệu thiết kế đúng để tiết kiệm 100–200 triệu khi xây.</p>
-
-<h3>9. Chọn nhà thầu trọn gói uy tín, không chọn theo giá thấp nhất</h3>
-<p>Nhà thầu báo giá thấp hơn 20% thị trường thường dùng vật liệu kém tiêu chuẩn hoặc thiếu hạng mục trong báo giá. Phí tổn sửa chữa sau 2–3 năm thường vượt khoản "tiết kiệm" ban đầu. Chọn đơn vị <strong>minh bạch dự toán từng hạng mục, có bảo hành rõ ràng</strong>.</p>
-
-<h3>10. Chia giai đoạn hợp lý nếu ngân sách hạn chế</h3>
-<p>Nếu tổng ngân sách chưa đủ để xây hoàn thiện 100% ngay, có thể chia:</p>
-<ul>
-  <li><strong>Giai đoạn 1:</strong> Thi công phần thô toàn bộ + hoàn thiện cơ bản (sơn, gạch, điện nước).</li>
-  <li><strong>Giai đoạn 2:</strong> Nâng cấp nội thất, thêm điều hòa, trang trí theo ngân sách.</li>
-</ul>
-<p>Quan trọng: kết cấu và hạ tầng kỹ thuật phải làm đúng và đủ ngay từ giai đoạn 1 — không để "làm thêm sau" với kết cấu chịu lực hay ống điện nước.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="thiet-ke-nha-ep-gia-re-2" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-ep-gia-re-2</figcaption>
-</figure>
-
-<h2>Những khoản hay bị "thổi phồng" làm tăng chi phí</h2>
-<p>Khi thiết kế nhà trong tầm ngân sách, hãy cẩn thận với các hạng mục dễ bị đẩy chi phí:</p>
-<ul>
-  <li><strong>Trần thạch cao hoa văn phức tạp:</strong> Tốn nhân công và vật tư gấp đôi so với trần phẳng; sau 5 năm dễ bong bề mặt ở khí hậu ẩm. Trần phẳng đơn giản thường là lựa chọn tốt hơn.</li>
-  <li><strong>Cầu thang ốp đá nguyên khối:</strong> Đẹp nhưng giá cao. Cầu thang ốp gạch chống trơn cao cấp + tay vịn inox vừa an toàn vừa tiết kiệm hơn nhiều.</li>
-  <li><strong>Tường ốp gạch bóng toàn bộ:</strong> Chỉ cần ốp tường ướt (bếp, WC). Tường khô sơn nước là đủ và rẻ hơn đến 40%.</li>
-  <li><strong>Cửa nhôm kính hệ xịn toàn bộ:</strong> Chỉ cần cửa chính, cửa phòng ngủ chính dùng kính cường lực tốt. Cửa phụ dùng nhôm tiêu chuẩn là hợp lý.</li>
-  <li><strong>Đèn chiếu sáng thiết kế đắt tiền:</strong> Đèn LED cơ bản + bố trí đúng điểm sáng đã đủ tiện nghi; đèn trang trí có thể thêm sau khi có ngân sách.</li>
-</ul>
-
-<h2>Mẫu ngân sách tham khảo cho nhà đẹp giá rẻ</h2>
-<p>Ví dụ nhà phố 2 tầng, lô 4x15m, thiết kế tối giản, vật liệu tiêu chuẩn:</p>
-<table>
-  <thead>
-    <tr><th>Hạng mục</th><th>Ước tính (triệu đồng)</th><th>Ghi chú</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Thiết kế 2D/3D</td><td>20 – 30</td><td>Miễn phí khi ký trọn gói Sao Khuê</td></tr>
-    <tr><td>Xin phép xây dựng</td><td>8 – 15</td><td>Tuỳ quận/huyện</td></tr>
-    <tr><td>Thi công phần thô</td><td>430 – 500</td><td>Móng, khung, tường, điện nước âm</td></tr>
-    <tr><td>Hoàn thiện tiêu chuẩn</td><td>230 – 280</td><td>Sơn, gạch, trần, cửa phổ thông</td></tr>
-    <tr><td>Thiết bị vệ sinh cơ bản</td><td>30 – 50</td><td>Inax, American Standard phổ thông</td></tr>
-    <tr><td>Dự phòng (8%)</td><td>60 – 75</td><td>Không bao giờ bỏ qua khoản này</td></tr>
-    <tr><td><strong>Tổng ước tính</strong></td><td><strong>~750 – 950 triệu</strong></td><td>Chưa bao gồm nội thất</td></tr>
-  </tbody>
-</table>
-
-<h2>Lộ trình tối ưu cho gia đình trẻ có ngân sách dưới 1 tỷ</h2>
-<ol>
-  <li><strong>Xác định nhu cầu thực tế:</strong> Bao nhiêu người ở? Có kinh doanh tầng trệt không? Cần bao nhiêu phòng ngủ?</li>
-  <li><strong>Chọn mô hình phù hợp:</strong> Ngân sách 700–800 triệu → nhà 2 tầng lô nhỏ. 800 triệu – 1 tỷ → nhà 2 tầng lô trung bình hoặc nhà 3 tầng lô nhỏ.</li>
-  <li><strong>Ưu tiên thiết kế đơn giản, đẹp theo tỷ lệ:</strong> Đẹp không phải do nhiều chi tiết mà do tỷ lệ, màu sắc và sự nhất quán.</li>
-  <li><strong>Tìm đơn vị thiết kế – thi công trọn gói:</strong> Một đầu mối, không phát sinh tranh cãi giữa thiết kế và thi công. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</li>
-  <li><strong>Dự toán trước khi ký:</strong> Yêu cầu bảng hạng mục chi tiết, không chấp nhận "báo giá gộp" không minh bạch. Đọc thêm <a href="/tin-tuc/du-toan-chi-phi-xay-nha">cách dự toán chi phí xây nhà</a>.</li>
-  <li><strong>Để lại dự phòng ít nhất 10%:</strong> Không dùng hết ngân sách vào thi công — luôn giữ lại phần dự phòng.</li>
-</ol>
-<p>Xem thêm <a href="/tin-tuc/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà mới nhất</a> để có cái nhìn toàn diện hơn.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn thiết kế nhà đẹp giá rẻ</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà đẹp giá rẻ</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thiet-ke-nha-dep-gia-re$alt$,
-  $cap$thiet-ke-nha-dep-gia-re$cap$,
-  $mtitle$Thiết Kế Nhà Đẹp Giá Rẻ, Tối Ưu Ngân Sách 2026 | Sao Khuê$mtitle$,
-  $mdesc$Thiết kế nhà đẹp giá rẻ không phải là không thể: tối ưu công năng, chọn vật liệu đúng chỗ, tránh chi phí dư thừa. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$thiết kế nhà đẹp giá rẻ, nhà phố giá rẻ, tối ưu chi phí thiết kế, công năng cơ bản, xây nhà tiết kiệm, kiến trúc sao khuê$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$xay-nha-ngan-sach-1-ty-2$slug$,
-  $title$Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Xây nhà 1 tỷ 2 hoàn toàn khả thi nếu biết tối ưu mặt bằng, chọn vật liệu phù hợp và hợp tác với nhà thầu uy tín. Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Xây nhà 1 tỷ 2 — Giấc mơ có thật hay ảo tưởng?</h2>
+UPDATE posts SET content = $faq_xay_nha_ngan_sach_1_ty_2$<h2>Xây nhà 1 tỷ 2 — Giấc mơ có thật hay ảo tưởng?</h2>
 <p>Ngân sách <strong>1 tỷ 2</strong> (1,2 tỷ đồng) để xây nhà là câu hỏi nhiều gia đình trẻ đặt ra khi cầm sổ đất trong tay. Câu trả lời là: <strong>hoàn toàn khả thi</strong> — nếu bạn lên kế hoạch đúng, chọn phương án thiết kế hợp lý và hợp tác với nhà thầu <strong>minh bạch về báo giá</strong>. Ngược lại, nếu thiếu bản vẽ, thiếu dự toán chi tiết, ngân sách ấy có thể "bay hơi" trước khi nhà đến tầng 2.</p>
 <p>Bài viết này giúp bạn hiểu rõ: <strong>xây nhà 1 tỷ 2</strong> được nhà như thế nào, cần làm gì để kiểm soát chi phí hiệu quả và những bẫy phổ biến khiến ngân sách vượt trần. Đây là góc nhìn thực tiễn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị thiết kế và thi công nhà phố tại TP.HCM, Bình Dương, Đồng Nai với nhiều dự án ở phân khúc ngân sách hợp lý.</p>
 
@@ -2306,38 +1864,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$xây nhà 1 tỷ 2$alt$,
-  $cap$xây nhà 1 tỷ 2$cap$,
-  $mtitle$Xây Nhà 1 Tỷ 2 | Giải Pháp Tiết Kiệm Hiệu Quả | Kiến Trúc Sao Khuê$mtitle$,
-  $mdesc$Xây nhà 1 tỷ 2: lên phương án mặt bằng, chọn vật liệu hợp lý, tránh phát sinh chi phí. Tư vấn miễn phí từ Kiến Trúc Sao Khuê — 0909 075 668.$mdesc$,
-  $mkey$xây nhà 1 tỷ 2, xây nhà tiết kiệm, phương án mặt bằng, vật liệu hợp lý, xây nhà ngân sách thấp, dự toán xây nhà$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thue-thiet-ke-nha-truoc-khi-xay$slug$,
-  $title$Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Thuê thiết kế nhà trước khi xây giúp kiểm soát chi phí, tránh phát sinh kết cấu và đảm bảo công năng tối ưu. Kiến Trúc Sao Khuê tư vấn miễn phí — 0909 075 668.$excerpt$,
-  $content$<h2>Thiết kế nhà — Bước không thể bỏ qua trước khi xây</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_xay_nha_ngan_sach_1_ty_2$, updated_at = NOW() WHERE slug = 'xay-nha-ngan-sach-1-ty-2';
+
+UPDATE posts SET content = $faq_thue_thiet_ke_nha_truoc_khi_xay$<h2>Thiết kế nhà — Bước không thể bỏ qua trước khi xây</h2>
 <p>Rất nhiều gia đình ở TP.HCM và các tỉnh lân cận vẫn bước vào công trình với suy nghĩ: "Có thợ quen, cứ xây là được". Chỉ đến khi phòng ngủ tối, cầu thang chắn lối, ống nước đi sai hướng hoặc bị yêu cầu tháo dỡ vì sai chỉ giới — lúc đó mới hiểu giá trị của việc <strong>thuê thiết kế nhà</strong> từ đầu.</p>
 <p>Bài viết này phân tích cụ thể vì sao <strong>thuê đơn vị thiết kế trước khi xây</strong> không phải là chi phí thêm mà là khoản đầu tư giúp tiết kiệm gấp nhiều lần, tránh rủi ro pháp lý và tạo ra ngôi nhà đúng như kỳ vọng. Góc nhìn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị đã triển khai hàng trăm hồ sơ thiết kế – thi công nhà phố tại TP.HCM, Bình Dương và Đồng Nai.</p>
 
@@ -2434,38 +1963,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thuê thiết kế nhà$alt$,
-  $cap$thuê thiết kế nhà$cap$,
-  $mtitle$Vì Sao Nên Thuê Thiết Kế Nhà Trước Khi Xây? | Kiến Trúc Sao Khuê$mtitle$,
-  $mdesc$Thuê thiết kế nhà trước khi xây: tránh phát sinh, kiểm soát ngân sách, đảm bảo pháp lý. Hồ sơ 2D/3D, hỗ trợ cấp phép. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$thuê thiết kế nhà, hồ sơ thiết kế, tránh phát sinh xây dựng, thiết kế trước thi công, vì sao cần thiết kế nhà$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Quy Trình Xây Nhà Trọn Gói Từ A Đến Z
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$quy-trinh-xay-nha-tron-goi-a-z$slug$,
-  $title$Quy Trình Xây Nhà Trọn Gói Từ A Đến Z$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Quy trình xây nhà trọn gói bài bản gồm 7 bước từ tư vấn đến bàn giao, đảm bảo tiến độ và minh bạch chi phí. Kiến Trúc Sao Khuê hướng dẫn chi tiết — 0909 075 668.$excerpt$,
-  $content$<h2>Xây nhà trọn gói là gì? Khác gì thi công từng phần?</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_thue_thiet_ke_nha_truoc_khi_xay$, updated_at = NOW() WHERE slug = 'thue-thiet-ke-nha-truoc-khi-xay';
+
+UPDATE posts SET content = $faq_quy_trinh_xay_nha_tron_goi_a_z$<h2>Xây nhà trọn gói là gì? Khác gì thi công từng phần?</h2>
 <p><strong>Xây nhà trọn gói</strong> (hay còn gọi là xây nhà theo gói thầu trọn vẹn) là hình thức ký một hợp đồng duy nhất bao gồm toàn bộ hạng mục từ thiết kế, cung cấp vật tư, thi công đến hoàn thiện và bàn giao chìa khóa. Chủ nhà chỉ cần giám sát một đầu mối, không phải quản lý nhiều đội thợ riêng biệt.</p>
 <p>So với thi công từng phần (chủ nhà tự mua vật liệu, tự thuê thợ), <strong>xây nhà trọn gói</strong> có ưu điểm vượt trội về quản lý tiến độ, kiểm soát chi phí và bảo hành sau bàn giao. Đây là lý do mô hình này ngày càng được ưa chuộng tại TP.HCM, Bình Dương và Đồng Nai. Tham khảo thêm <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói Sao Khuê</a>.</p>
 
@@ -2557,38 +2057,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$quy trình xây nhà trọn gói$alt$,
-  $cap$quy trình xây nhà trọn gói$cap$,
-  $mtitle$Quy Trình Xây Nhà Trọn Gói Từ A Đến Z | Kiến Trúc Sao Khuê$mtitle$,
-  $mdesc$Quy trình xây nhà trọn gói 7 bước: tư vấn, thiết kế, cấp phép, thi công, nghiệm thu, bàn giao, bảo hành. Minh bạch — đúng tiến độ. Sao Khuê 0909 075 668.$mdesc$,
-  $mkey$quy trình xây nhà trọn gói, các bước xây nhà, nghiệm thu hạng mục, bàn giao công trình, xây nhà trọn gói TP.HCM$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$top-mau-nha-pho-dep-xu-huong$slug$,
-  $title$Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Khám phá top mẫu nhà phố đẹp theo xu hướng 2026: tối giản hiện đại, tân cổ điển, Indochine. Phối cảnh 3D thực tế từ portfolio Kiến Trúc Sao Khuê — 0909 075 668.$excerpt$,
-  $content$<h2>Mẫu nhà phố đẹp — Tiêu chí nào định nghĩa "đẹp" trong kiến trúc?</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_quy_trinh_xay_nha_tron_goi_a_z$, updated_at = NOW() WHERE slug = 'quy-trinh-xay-nha-tron-goi-a-z';
+
+UPDATE posts SET content = $faq_top_mau_nha_pho_dep_xu_huong$<h2>Mẫu nhà phố đẹp — Tiêu chí nào định nghĩa "đẹp" trong kiến trúc?</h2>
 <p>Khi nói đến <strong>mẫu nhà phố đẹp</strong>, mỗi người có một hình dung riêng. Nhưng nhìn từ góc độ kiến trúc chuyên nghiệp, một ngôi nhà phố được gọi là đẹp khi hội đủ ba yếu tố: <strong>thẩm mỹ đồng bộ</strong> (mặt tiền — nội thất — sân vườn hòa quyện), <strong>công năng tối ưu</strong> (mỗi không gian phục vụ đúng nhu cầu sống) và <strong>bền vững theo thời gian</strong> (vật liệu, màu sắc không "lỗi mốt" sau 5–10 năm).</p>
 <p>Bài viết này tổng hợp <strong>top các xu hướng mẫu nhà phố đẹp</strong> được lựa chọn nhiều nhất tại TP.HCM và vùng lân cận năm 2026, cùng phân tích điểm đặc trưng và lưu ý khi triển khai. Dựa trên thực tế portfolio công trình của <strong>Kiến Trúc Sao Khuê</strong> và xu hướng thị trường kiến trúc nhà ở miền Nam.</p>
 
@@ -2701,38 +2172,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/project_2.jpg$img$,
-  $alt$mẫu nhà phố đẹp$alt$,
-  $cap$mẫu nhà phố đẹp$cap$,
-  $mtitle$Top Mẫu Nhà Phố Đẹp Xu Hướng 2026 | Kiến Trúc Sao Khuê$mtitle$,
-  $mdesc$Top mẫu nhà phố đẹp 2026: hiện đại tối giản, tân cổ điển, Indochine nhiệt đới. Phối cảnh 3D, mặt tiền ấn tượng. Sao Khuê tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$mẫu nhà phố đẹp, nhà phố hiện đại, mặt tiền ấn tượng, thiết kế nhà phố 2026, xu hướng nhà phố$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$thiet-ke-xay-dung-nha-pho-mien-nam$slug$,
-  $title$Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Thiết kế xây dựng nhà phố miền Nam: TP.HCM, Bình Dương, Đồng Nai — Kiến Trúc Sao Khuê cung cấp dịch vụ trọn gói, bảo hành kết cấu, tư vấn miễn phí 0909 075 668.$excerpt$,
-  $content$<h2>Thiết kế xây dựng nhà phố miền Nam — Bức tranh thị trường 2026</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_top_mau_nha_pho_dep_xu_huong$, updated_at = NOW() WHERE slug = 'top-mau-nha-pho-dep-xu-huong';
+
+UPDATE posts SET content = $faq_thiet_ke_xay_dung_nha_pho_mien_nam$<h2>Thiết kế xây dựng nhà phố miền Nam — Bức tranh thị trường 2026</h2>
 <p>Vùng kinh tế trọng điểm phía Nam, dẫn đầu bởi TP.HCM và ba tỉnh vệ tinh Bình Dương, Đồng Nai, Long An, đang chứng kiến tốc độ đô thị hóa nhanh nhất cả nước. Hàng chục khu đô thị mới, hàng trăm dự án hạ tầng kết nối tạo ra nhu cầu khổng lồ về <strong>thiết kế xây dựng nhà phố</strong> — từ nhà ở tự xây trong hẻm nội thành đến nhà phố thương mại dọc các trục đường lớn.</p>
 <p>Trong bối cảnh đó, việc chọn được một <strong>đơn vị thiết kế và xây dựng nhà phố uy tín</strong> có kinh nghiệm thực địa tại miền Nam là yếu tố then chốt để công trình đạt chất lượng, đúng tiến độ và đảm bảo pháp lý địa phương. Bài viết này phân tích đặc thù từng thị trường và lý do <strong>Kiến Trúc Sao Khuê</strong> là đơn vị phù hợp cho gia chủ khu vực miền Nam.</p>
 
@@ -2824,38 +2266,9 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200$img$,
-  $alt$thiết kế xây dựng nhà phố miền Nam$alt$,
-  $cap$thiết kế xây dựng nhà phố miền Nam$cap$,
-  $mtitle$Thiết Kế Xây Dựng Nhà Phố Miền Nam | TP.HCM, Bình Dương, Đồng Nai | Sao Khuê$mtitle$,
-  $mdesc$Đơn vị thiết kế xây dựng nhà phố uy tín miền Nam: TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao. Sao Khuê — 0909 075 668.$mdesc$,
-  $mkey$thiết kế xây dựng nhà phố, nhà thầu miền Nam, xây nhà phố TP.HCM Bình Dương Đồng Nai, trọn gói uy tín, kiến trúc nhà phố miền Nam$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
--- Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url, image_alt, image_caption,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$kien-truc-sao-khue-don-vi-uy-tin$slug$,
-  $title$Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$Kiến Trúc Sao Khuê — đơn vị thiết kế và xây dựng nhà phố uy tín tại TP.HCM, Bình Dương, Đồng Nai. Trọn gói từ bản vẽ đến bàn giao, bảo hành 10 năm kết cấu.$excerpt$,
-  $content$<h2>Kiến Trúc Sao Khuê — Câu chuyện xây dựng uy tín từ thực tiễn</h2>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_thiet_ke_xay_dung_nha_pho_mien_nam$, updated_at = NOW() WHERE slug = 'thiet-ke-xay-dung-nha-pho-mien-nam';
+
+UPDATE posts SET content = $faq_kien_truc_sao_khue_don_vi_uy_tin$<h2>Kiến Trúc Sao Khuê — Câu chuyện xây dựng uy tín từ thực tiễn</h2>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> được thành lập với sứ mệnh đơn giản nhưng không dễ: giúp mọi gia đình ở TP.HCM và các tỉnh lân cận có thể xây được ngôi nhà đúng như mơ ước — <strong>đúng chất lượng, đúng tiến độ, đúng ngân sách</strong>. Trong một thị trường xây dựng còn nhiều bất minh, chúng tôi chọn con đường minh bạch về báo giá, chịu trách nhiệm bảo hành và đặt chữ tín lên trên lợi nhuận ngắn hạn.</p>
 <p>Trụ sở tại <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong> — vị trí trung tâm giúp Sao Khuê tiếp cận nhanh các công trình tại TP.HCM và dễ dàng triển khai dự án tại Bình Dương, Đồng Nai, Long An. Đội ngũ kiến trúc sư, kỹ sư và thợ lành nghề của Sao Khuê đã thực hiện hàng trăm công trình — từ nhà phố nội thành đến biệt thự vùng ven, từ sửa chữa cải tạo nhỏ đến xây mới toàn diện.</p>
 
@@ -2956,27 +2369,87 @@ INSERT INTO posts (
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/project_3.jpg$img$,
-  $alt$Kiến Trúc Sao Khuê đơn vị uy tín$alt$,
-  $cap$Kiến Trúc Sao Khuê đơn vị uy tín$cap$,
-  $mtitle$Kiến Trúc Sao Khuê | Thiết Kế Xây Dựng Nhà Phố Uy Tín TP.HCM$mtitle$,
-  $mdesc$Kiến Trúc Sao Khuê: thiết kế xây dựng nhà phố trọn gói tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu, hồ sơ 2D/3D. Tư vấn miễn phí — 0909 075 668.$mdesc$,
-  $mkey$Kiến Trúc Sao Khuê, thiết kế xây dựng Sao Khuê, xây nhà trọn gói TP.HCM, bảo hành 10 năm, công ty xây dựng uy tín$mkey$,
-  NOW(),
-  NOW()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  image_alt = EXCLUDED.image_alt,
-  image_caption = EXCLUDED.image_caption,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = NOW();
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$faq_kien_truc_sao_khue_don_vi_uy_tin$, updated_at = NOW() WHERE slug = 'kien-truc-sao-khue-don-vi-uy-tin';
+
+UPDATE posts SET content = $faq_cam_nang_xay_nha_2026$<h2>Cẩm nang xây nhà 2026 — Chủ nhà cần chuẩn bị gì?</h2>
+<p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
+
+<h2>Bước 1: Xác định nhu cầu và ngân sách</h2>
+<ul>
+  <li>Số tầng, số phòng ngủ, nhu cầu kinh doanh tầng trệt (nếu có).</li>
+  <li>Dự trù tổng mức đầu tư: đất + xây dựng + nội thất + dự phòng <strong>8–12%</strong> phát sinh có kiểm soát.</li>
+  <li>Tham khảo <a href="/bao-gia">bảng giá xây dựng</a> và máy tính chi phí trên website.</li>
+</ul>
+
+<h2>Bước 2: Kiểm tra pháp lý đất đai</h2>
+<p>Đảm bảo sổ đỏ/hợp đồng, quy hoạch xây dựng, lộ giới, hướng nhà. Các hạng mục thay đổi kết cấu, nâng tầng cần <strong>giấy phép xây dựng</strong> — xem thêm <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng cần lưu ý</a>.</p>
+
+<h2>Bước 3: Chọn nhà thầu uy tín</h2>
+<p>Tiêu chí nên có:</p>
+<ul>
+  <li>Hợp đồng rõ hạng mục, vật tư, tiến độ thanh toán.</li>
+  <li>Công trình đã thi công có thể tham quan.</li>
+  <li>Bảo hành kết cấu tối thiểu <strong>10 năm</strong> (tiêu chuẩn Sao Khuê).</li>
+  <li>Không yêu cầu thanh toán 100% trước khi khởi công.</li>
+</ul>
+
+<h2>Bước 4: Thiết kế trước khi thi công</h2>
+<p>Đừng “đào đất rồi tính”. Bản vẽ <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a> giúp dự toán chính xác, giảm sửa chữa tốn kém giữa chừng.</p>
+
+<h2>Bước 5: Giám sát thi công</h2>
+<ul>
+  <li>Nghiệm thu cốt thép trước khi đổ bê tông.</li>
+  <li>Kiểm tra vật tư đúng chủng loại hợp đồng.</li>
+  <li>Chụp hình tiến độ, yêu cầu báo cáo định kỳ từ nhà thầu.</li>
+</ul>
+
+<h2>Bước 6: Nghiệm thu và bàn giao</h2>
+<p>Kiểm tra chống thấm, điện nước, cửa sổ, sàn nền. Nhận <strong>biên bản bảo hành</strong> từng hạng mục trước khi thanh toán đợt cuối.</p>
+
+<h2>Checklist nhanh trước khi ký hợp đồng</h2>
+<ul>
+  <li>☐ Dự toán chi tiết từng hạng mục</li>
+  <li>☐ Danh mục vật tư (thương hiệu, quy cách)</li>
+  <li>☐ Tiến độ và điều khoản phạt chậm (nếu có)</li>
+  <li>☐ Cam kết không phát sinh khi không đổi thiết kế</li>
+  <li>☐ Thời hạn bảo hành kết cấu và hoàn thiện</li>
+</ul>
+
+<h2>Cần tư vấn thêm?</h2>
+<p>Sao Khuê hỗ trợ khảo sát miễn phí: <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a></p>$faq_cam_nang_xay_nha_2026$, updated_at = NOW() WHERE slug = 'cam-nang-xay-nha-2026';
+
+UPDATE posts SET content = $faq_phong_thuy_nha_o$<h2>Phong thủy nhà ở — Cân bằng tâm linh và kỹ thuật</h2>
+<p>Phong thủy trong xây nhà thường quan tâm <strong>hướng nhà</strong>, <strong>cửa chính</strong>, <strong>phòng ngủ</strong>, <strong>bếp</strong> và <strong>không gian thông thoáng</strong>. <strong>Sao Khuê</strong> tôn trọng yêu cầu phong thủy của gia chủ khi <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>, đồng thời ưu tiên <strong>an toàn kết cấu</strong>, thông gió, chống nóng và thoát nước — những yếu tố ảnh hưởng trực tiếp sức khỏe và tuổi thọ công trình.</p>
+
+<h2>Các yếu tố phong thủy thường được hỏi</h2>
+<h3>Hướng nhà và cửa chính</h3>
+<p>Nhiều gia đình chọn hướng theo tuổi chủ nhà hoặc hướng đẹp theo quan sát đất. Kiến trúc sư sẽ cân nhắc quy hoạch, lộ giới và ánh sáng tự nhiên — không nên ép hướng trái quy hoạch.</p>
+<h3>Phòng ngủ, bếp, phòng thờ</h3>
+<ul>
+  <li>Phòng ngủ nên yên tĩ, tránh ồn đường nếu có thể.</li>
+  <li>Bếp cần thông thoáng, thoát mùi, an toàn gas/điện.</li>
+  <li>Phòng thờ đặt trang nghiêm, tránh áp lực nước/ống chờ phía trên (kỹ thuật).</li>
+</ul>
+<h3>Giếng trời và ánh sáng</h3>
+<p>Giếng trời giúp lấy sáng, gió — vừa hợp phong thủy “thông khí”, vừa giảm điện chiếu sáng ban ngày. Đây là giải pháp phổ biến trong <strong>nhà phố TP.HCM</strong> ống hẹp.</p>
+
+<h2>Phong thủy và thi công thực tế</h2>
+<p>Một số điều nên tránh khi chỉ nghe kinh nghiệm truyền miệng:</p>
+<ul>
+  <li>Đục phá kết cấu chịu lực để “đổi hướng”.</li>
+  <li>Lấn chiếm lộ giới để mở rộng mặt tiền.</li>
+  <li>Bỏ qua chống thấm, thoát nước mái và sân thượng.</li>
+</ul>
+<p>Kết hợp tư vấn phong thủy với <a href="/kinh-nghiem/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> và nhà thầu có giám sát kỹ thuật.</p>
+
+<h2>Sao Khuê hỗ trợ thế nào?</h2>
+<ul>
+  <li>Lắng nghe yêu cầu hướng, bố trí phòng theo gu gia đình.</li>
+  <li>Đề xuất phương án đẹp, khả thi về kết cấu và pháp lý.</li>
+  <li>Thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
+</ul>
+
+<h2>Liên hệ tư vấn thiết kế</h2>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a></p>$faq_phong_thuy_nha_o$, updated_at = NOW() WHERE slug = 'phong-thuy-nha-o';
 
 COMMIT;

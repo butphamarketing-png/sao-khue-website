@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #23 — slug: thiet-ke-nha-dep-gia-re */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 const IMG_DESIGN =
   "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
@@ -120,32 +115,5 @@ ${imageFigure(IMG_DESIGN, KEYWORD, 2)}
 ${homeLinkParagraph()}
 
 ${seoCtaBlock(KEYWORD)}
-
-${faqSection([
-  {
-    q: "Thiết kế nhà đẹp giá rẻ là bao nhiêu tiền?",
-    a: "Không có mức giá cố định — phụ thuộc diện tích và gói vật liệu. Nhà phố 2 tầng đẹp, tiêu chuẩn tại TP.HCM có thể hoàn thành từ <strong>750 triệu – 1 tỷ</strong> nếu thiết kế đúng cách và tối ưu từng hạng mục.",
-  },
-  {
-    q: "Có cần thuê kiến trúc sư riêng khi xây nhà giá rẻ không?",
-    a: "Nên. Phí thiết kế thường 1–3% tổng công trình nhưng giúp tiết kiệm 10–20% chi phí xây dựng do tránh phát sinh. Khi ký trọn gói với Sao Khuê, thiết kế thường được <strong>miễn phí</strong>.",
-  },
-  {
-    q: "Phong cách tối giản có thực sự rẻ hơn phong cách khác không?",
-    a: "Đúng. Thiết kế tối giản ít phào chỉ, ít chi tiết trang trí → ít nhân công và vật liệu hoàn thiện hơn. Tiết kiệm được <strong>15–25% chi phí hoàn thiện</strong> so với tân cổ điển hay Indochine cùng diện tích.",
-  },
-  {
-    q: "Tôi có thể tự mua vật liệu để tiết kiệm hơn không?",
-    a: "Lý thuyết là có, nhưng thực tế rất rủi ro nếu thiếu kinh nghiệm: dễ mua sai chủng loại, không đủ số lượng, khó bảo hành khi phát sinh. Với ngân sách gia đình trẻ, <strong>trọn gói có dự toán chi tiết</strong> thường là lựa chọn an toàn và hiệu quả hơn.",
-  },
-  {
-    q: "Xây nhà giá rẻ có bảo hành không?",
-    a: "Phụ thuộc nhà thầu, không phải do giá. Sao Khuê bảo hành kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> — kể cả các gói tiêu chuẩn ngân sách thấp.",
-  },
-  {
-    q: "Liên hệ Sao Khuê để tư vấn thiết kế nhà trong tầm ngân sách như thế nào?",
-    a: "Gọi <strong>0909 075 668</strong> hoặc điền form tại <a href=\"/lien-he\">/lien-he</a>. Cho Sao Khuê biết ngân sách, diện tích đất và số người ở — đội tư vấn sẽ phân tích và đề xuất phương án phù hợp nhất.",
-  },
-], "FAQ — Thiết kế nhà đẹp giá rẻ")}
 `.trim(),
 };

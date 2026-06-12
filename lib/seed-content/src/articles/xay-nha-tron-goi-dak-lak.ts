@@ -1,10 +1,5 @@
 ﻿/** Nội dung bài viết SEO #12 — slug: xay-nha-tron-goi-dak-lak */
-import {
-  imageFigure,
-  homeLinkParagraph,
-  seoCtaBlock,
-  faqSection,
-} from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
 
 export const xayNhaTronGoiDakLak = {
   title: "Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng",
@@ -119,36 +114,7 @@ ${homeLinkParagraph()}
 </ul>
 
 ${seoCtaBlock("xây nhà trọn gói Đắk Lắk")}
-
-${faqSection(
-  [
-    {
-      q: "Sao Khuê có trực tiếp giám sát thi công tại Đắk Lắk không?",
-      a: "Có. Sao Khuê cử cán bộ kỹ thuật giám sát định kỳ tại công trình Đắk Lắk, kết hợp đội thợ địa phương. Chủ nhà được nhận báo cáo tiến độ ảnh/video hàng tuần qua Zalo.",
-    },
-    {
-      q: "Xây nhà trọn gói Đắk Lắk có cần thiết kế riêng không hay dùng mẫu có sẵn?",
-      a: "Sao Khuê khuyến nghị thiết kế theo lô đất thực tế — vì mỗi lô đất có hướng, kích thước và địa hình khác nhau. Tuy nhiên, bạn có thể tham khảo mẫu thiết kế sẵn và điều chỉnh cho phù hợp, giúp tiết kiệm thời gian thiết kế.",
-    },
-    {
-      q: "Thời gian thi công nhà trọn gói 3 tầng tại Đắk Lắk mất bao lâu?",
-      a: "Nhà phố 3 tầng hoàn thiện cơ bản thường mất <strong>5–7 tháng</strong> kể từ ngày khởi công. Thời gian có thể rút ngắn nếu thiết kế hoàn chỉnh trước và thi công vào mùa khô (tháng 12 – tháng 4).",
-    },
-    {
-      q: "Thanh toán gói trọn như thế nào, có an toàn không?",
-      a: "Hợp đồng chia nhiều đợt thanh toán theo tiến độ thi công thực tế: đợt 1 khi ký hợp đồng, đợt 2 sau khi hoàn thành móng, đợt 3 sau mỗi tầng, đợt cuối khi bàn giao. Chủ nhà luôn kiểm soát dòng tiền.",
-    },
-    {
-      q: "Chi phí thiết kế có tính vào gói trọn gói không?",
-      a: "Khi ký hợp đồng <strong>xây nhà trọn gói Đắk Lắk</strong>, chi phí thiết kế thường được miễn giảm theo chính sách Sao Khuê tại từng thời điểm. Gọi <strong>0909 075 668</strong> để biết ưu đãi hiện hành.",
-    },
-    {
-      q: "Sao Khuê có hỗ trợ xin giấy phép xây dựng tại Đắk Lắk không?",
-      a: "Có. Sao Khuê tư vấn và hỗ trợ chuẩn bị hồ sơ xin phép xây dựng theo quy định của tỉnh Đắk Lắk và từng huyện cụ thể. Liên hệ <a href='/lien-he'>/lien-he</a> để được hướng dẫn chi tiết.",
-    },
-  ],
-  "FAQ — Xây Nhà Trọn Gói Đắk Lắk",
-)}
+
 
 ${imageFigure("/images/project_3.jpg", "xây nhà trọn gói Đắk Lắk", 3)}
 `.trim(),

@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #24 — slug: xay-nha-ngan-sach-1-ty-2 */
-import { imageFigure, seoCtaBlock, faqSection, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
 
 const focusKeyword = "xây nhà 1 tỷ 2";
 const IMG_BUILD =
@@ -103,32 +103,7 @@ ${imageFigure(IMG_BUILD, focusKeyword, 2)}
 </ul>
 
 ${homeLinkParagraph("Tham khảo thêm dự án thực tế và bảng giá tại")}
-
-${faqSection(
-  [
-    {
-      q: "Xây nhà 1 tỷ 2 có làm được nhà phố 3 tầng không?",
-      a: "Có thể, tùy diện tích lô và mức hoàn thiện. Nhà phố 3 tầng trên lô 4×15 m, hoàn thiện tiêu chuẩn tại TP.HCM năm 2026 dao động 1,0–1,35 tỷ. Liên hệ Sao Khuê để nhận báo giá sát thực tế lô đất của bạn.",
-    },
-    {
-      q: "Nên chọn xây trọn gói hay tự mua vật liệu?",
-      a: "Xây trọn gói giúp cố định giá, quản lý tiến độ tốt hơn và có bảo hành kết cấu từ nhà thầu. Tự mua vật liệu đôi khi tiết kiệm 5–10% nhưng rủi ro vật liệu kém chất lượng và không có đầu mối chịu trách nhiệm khi xảy ra sự cố.",
-    },
-    {
-      q: "Chi phí thiết kế có tính vào ngân sách 1 tỷ 2 không?",
-      a: "Có. Phí thiết kế 2D/3D thường từ 15–30 triệu tùy quy mô. Sao Khuê có chính sách ưu đãi hoặc miễn phí thiết kế khi ký hợp đồng thi công — liên hệ 0909 075 668 để biết điều kiện hiện hành.",
-    },
-    {
-      q: "Làm thế nào để kiểm soát phát sinh chi phí?",
-      a: "Ba bước quan trọng: (1) có bản vẽ thiết kế đầy đủ trước khi khởi công, (2) ký hợp đồng ghi rõ hạng mục và đơn giá, (3) để quỹ dự phòng 10–15% ngân sách. Không thay đổi thiết kế sau khi đã đổ bê tông kết cấu.",
-    },
-    {
-      q: "Cần chuẩn bị gì trước khi gặp tư vấn nhà thầu?",
-      a: "Chuẩn bị sổ đất hoặc bản đồ lô, ảnh chụp hiện trạng, số tầng và phòng mong muốn, ngân sách tối đa và thời gian dự kiến khởi công. Càng cụ thể, báo giá nhận được càng sát thực tế.",
-    },
-  ],
-  "FAQ — Xây nhà ngân sách 1 tỷ 2",
-)}
+
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),
