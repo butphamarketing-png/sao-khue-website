@@ -196,6 +196,8 @@ export {
   TOC_MIN_H2,
 } from "./article-toc";
 
+export { stripFaqSectionFromHtml } from "./article-seo-blocks";
+
 /** Chuẩn bài SEO dài (Rank Math / WP). */
 export const ARTICLE_WORDS_TARGET_MIN = 1500;
 export const ARTICLE_WORDS_TARGET_MAX = 2500;

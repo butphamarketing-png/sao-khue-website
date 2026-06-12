@@ -11,6 +11,7 @@ import {
   normalizeCategory,
   prepareArticleHtml,
   seedPosts,
+  stripFaqSectionFromHtml,
 } from "../../../lib/seed-content/src/index.ts";
 import {
   defaultCategoryPages,
@@ -326,7 +327,11 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       post.imageAlt?.trim() ||
       buildImageAlt({ slug: post.slug, metaKeywords: post.metaKeywords });
     const imageCaption = post.imageCaption?.trim() || imageAlt;
-    const { html: prepared } = prepareArticleHtml(post.content ?? "", {
+    const articleContent =
+      normalizeCategory(post.category) === "tin-tuc"
+        ? stripFaqSectionFromHtml(post.content ?? "")
+        : (post.content ?? "");
+    const { html: prepared } = prepareArticleHtml(articleContent, {
       imageUrl: post.imageUrl,
       imageAlt,
       imageCaption,
@@ -341,7 +346,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
             : `<a href="${escapeHtml(c.path)}">${escapeHtml(c.name)}</a>`,
       )
       .join(" › ");
-    const wordCount = stripPlainText(post.content ?? "")
+    const wordCount = stripPlainText(articleContent)
       .split(/\s+/)
       .filter(Boolean).length;
     const sectionPath =
