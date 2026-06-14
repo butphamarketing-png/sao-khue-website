@@ -353,7 +353,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
     const postFaq =
-      normalizeCategory(post.category) === "tin-tuc"
+      normalizeCategory(post.category) === "tin-tuc" || path.startsWith("/tin-tuc/")
         ? []
         : extractFaqFromArticleHtml(post.content ?? "");
     const jsonLd = [

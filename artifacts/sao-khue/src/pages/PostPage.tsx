@@ -87,9 +87,12 @@ export default function PostPage() {
   }, [slug]);
 
   const postPath = post ? getPostPublicPath(post, menu) : undefined;
+  const isTinTucPost =
+    (post && normalizeCategory(post.category) === "tin-tuc") ||
+    (postPath?.startsWith("/tin-tuc/") ?? false);
   const postFaq =
     post?.content &&
-    normalizeCategory(post.category) !== "tin-tuc" &&
+    !isTinTucPost &&
     /<h2[^>]*>[^<]*(?:FAQ|Câu hỏi)/i.test(post.content)
       ? extractFaqFromArticleHtml(post.content)
       : [];
