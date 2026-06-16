@@ -26,6 +26,17 @@ import {
   xayNhaTronGoiDongNai,
   thietKeThiCongNhaPhoDongNai,
   thietKeNhaPhoHienDaiTphcm,
+  xayDungNhaPhuYen,
+  xayDungNhaDakLak,
+  suaChuaCaiTaoNhaTphcm,
+  suaChuaCaiTaoNhaBinhThanh,
+  suaChuaCaiTaoNhaThuDuc,
+  suaChuaCaiTaoNhaQuan7,
+  suaChuaCaiTaoNhaGoVap,
+  suaChuaCaiTaoNhaBinhChanh,
+  suaChuaCaiTaoNhaTanPhu,
+  suaChuaCaiTaoNhaQuan1,
+  suaChuaCaiTaoNhaHocMon,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -156,6 +167,17 @@ export const seedPosts: SeedPost[] = [
   seoPost("cam-nang-xay-nha-2026", "tin-tuc", featuredImageForSlug("cam-nang-xay-nha-2026"), camNangXayNha2026),
   seoPost("luat-xay-dung-moi-nhat", "tin-tuc", featuredImageForSlug("luat-xay-dung-moi-nhat"), luatXayDungMoiNhat),
   seoPost("phong-thuy-nha-o", "tin-tuc", featuredImageForSlug("phong-thuy-nha-o"), phongThuyNhaO),
+  seoPost("xay-dung-nha-phu-yen", "tin-tuc", featuredImageForSlug("xay-dung-nha-phu-yen"), xayDungNhaPhuYen),
+  seoPost("xay-dung-nha-dak-lak", "tin-tuc", featuredImageForSlug("xay-dung-nha-dak-lak"), xayDungNhaDakLak),
+  seoPost("sua-chua-cai-tao-nha-tphcm", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-tphcm"), suaChuaCaiTaoNhaTphcm),
+  seoPost("sua-chua-cai-tao-nha-binh-thanh", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-binh-thanh"), suaChuaCaiTaoNhaBinhThanh),
+  seoPost("sua-chua-cai-tao-nha-thu-duc", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-thu-duc"), suaChuaCaiTaoNhaThuDuc),
+  seoPost("sua-chua-cai-tao-nha-quan-7", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-quan-7"), suaChuaCaiTaoNhaQuan7),
+  seoPost("sua-chua-cai-tao-nha-go-vap", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-go-vap"), suaChuaCaiTaoNhaGoVap),
+  seoPost("sua-chua-cai-tao-nha-binh-chanh", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-binh-chanh"), suaChuaCaiTaoNhaBinhChanh),
+  seoPost("sua-chua-cai-tao-nha-tan-phu", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-tan-phu"), suaChuaCaiTaoNhaTanPhu),
+  seoPost("sua-chua-cai-tao-nha-quan-1", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-quan-1"), suaChuaCaiTaoNhaQuan1),
+  seoPost("sua-chua-cai-tao-nha-hoc-mon", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-hoc-mon"), suaChuaCaiTaoNhaHocMon),
 ];
 
 export {

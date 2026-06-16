@@ -46,6 +46,19 @@ export { quyTrinhXayNhaTronGoiAZ } from "./quy-trinh-xay-nha-tron-goi-a-z";
 export { topMauNhaPhoDepXuHuong } from "./top-mau-nha-pho-dep-xu-huong";
 export { thietKeXayDungNhaPhoMienNam } from "./thiet-ke-xay-dung-nha-pho-mien-nam";
 export { kienTrucSaoKhueDonViUyTin } from "./kien-truc-sao-khue-don-vi-uy-tin";
+export { xayDungNhaPhuYen } from "./xay-dung-nha-phu-yen";
+export { xayDungNhaDakLak } from "./xay-dung-nha-dak-lak";
+export { suaChuaCaiTaoNhaTphcm } from "./sua-chua-cai-tao-nha-tphcm";
+export {
+  suaChuaCaiTaoNhaBinhThanh,
+  suaChuaCaiTaoNhaThuDuc,
+  suaChuaCaiTaoNhaQuan7,
+  suaChuaCaiTaoNhaGoVap,
+  suaChuaCaiTaoNhaBinhChanh,
+  suaChuaCaiTaoNhaTanPhu,
+  suaChuaCaiTaoNhaQuan1,
+  suaChuaCaiTaoNhaHocMon,
+} from "./sua-chua-cai-tao-nha-quan-huyen";
 
 export type SeoArticle = {
   title: string;

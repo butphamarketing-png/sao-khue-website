@@ -5207,6 +5207,871 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-dung-nha-phu-yen$slug$,
+  $title$Xây Dựng Nhà Uy Tín Tại Phú Yên — Trọn Gói Từ A Đến Z$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Dịch vụ xây dựng nhà Phú Yên chuyên nghiệp: nhà phố, biệt thự ven biển, thi công trọn gói. Sao Khuê khảo sát miễn phí, bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây dựng nhà Phú Yên — Giải pháp trọn gói cho gia đình và đầu tư ven biển</h2>
+<p><strong>Xây dựng nhà Phú Yên</strong> ngày càng sôi động khi hạ tầng giao thông kết nối Tuy Hòa — Sông Cầu — Quy Nhơn hoàn thiện, nhiều gia đình chọn định cư hoặc xây nhà nghỉ dưỡng ven biển. Tuy nhiên, khí hậu nắng gió, muối biển và địa hình đồi núi đòi hỏi <strong>công ty xây dựng Phú Yên</strong> có kinh nghiệm thực địa — không chỉ báo giá rẻ.</p>
+<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Phú Yên</strong> từ khảo sát, thiết kế, thi công đến bàn giao. Chúng tôi phối hợp đội ngũ kỹ sư giám sát từ xa và thợ địa phương có tay nghề, cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="xay-dung-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>Vì sao nên chọn Sao Khuê khi xây nhà tại Phú Yên?</h2>
+<ul>
+  <li><strong>Kinh nghiệm công trình vùng ven biển:</strong> Xử lý chống thấm, chống muối, mái chịu gió bão.</li>
+  <li><strong>Thiết kế + thi công một đơn vị:</strong> Tránh lệch bản vẽ và phát sinh chi phí giữa chừng.</li>
+  <li><strong>Báo giá chi tiết:</strong> Dự toán từng hạng mục — móng, khung, mái, hoàn thiện, điện nước.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm trước khi đổ bê tông tiếp theo.</li>
+  <li><strong>Hỗ trợ pháp lý:</strong> Tư vấn giấy phép xây dựng theo quy định địa phương Phú Yên.</li>
+</ul>
+<p>Tham khảo thêm <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-phu-yen">báo giá xây nhà trọn gói Phú Yên</a>.</p>
+
+<h2>Các loại hình xây dựng phổ biến tại Phú Yên</h2>
+<h3>Nhà phố, nhà ống tại Tuy Hòa và thị xã</h3>
+<p>Phù hợp lô đất 4–5 m mặt tiền, 2–4 tầng. Sao Khuê tối ưu giếng trời, thông gió tự nhiên — giảm phụ thuộc điều hòa trong khí hậu nóng.</p>
+<h3>Biệt thự, nhà vườn ven biển</h3>
+<p>Khu vực Sông Cầu, Tuy An, Đông Hòa — thiết kế hướng biển, sân vườn, hồ bơi. Kết cấu và vật liệu chọn lọc chịu hơi muối.</p>
+<h3>Nhà cấp 4, nhà 1 trệt vùng nông thôn</h3>
+<p>Chi phí hợp lý, móng phù hợp đất đồi. Phù hợp gia đình muốn <strong>xây dựng nhà Phú Yên</strong> với ngân sách vừa phải.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-dung-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây dựng nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn miễn phí:</strong> Đo đạc lô đất, trao đổi nhu cầu, ngân sách.</li>
+  <li><strong>Thiết kế kiến trúc:</strong> Mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật thi công.</li>
+  <li><strong>Báo giá &amp; hợp đồng:</strong> Tiến độ thanh toán theo giai đoạn rõ ràng.</li>
+  <li><strong>Thi công:</strong> Móng → khung → mái → hoàn thiện → điện nước.</li>
+  <li><strong>Nghiệm thu &amp; bàn giao:</strong> Biên bản bảo hành kết cấu 10 năm.</li>
+</ol>
+
+<h2>Chi phí xây dựng nhà Phú Yên (tham khảo 2026)</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá tham khảo</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,2 – 4,5 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>6,5 – 9 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>10 – 14 triệu đ/m² sàn</td><td>Vật liệu nhập khẩu, nội thất</td></tr>
+  </tbody>
+</table>
+<p>Giá thực tế phụ thuộc vị trí, vật liệu và độ phức tạp móng. Dùng <a href="/bao-gia">công cụ báo giá online</a> hoặc gọi hotline để nhận dự toán chính xác.</p>
+
+<h2>Lưu ý khi xây nhà tại Phú Yên</h2>
+<ul>
+  <li><strong>Chống thấm &amp; chống muối:</strong> Bắt buộc với công trình gần biển.</li>
+  <li><strong>Móng trên đất đồi:</strong> Cần khảo sát địa chất, tránh trượt lớp đất yếu.</li>
+  <li><strong>Mái chịu gió:</strong> Kết cấu mái và neo chắc theo tiêu chuẩn vùng bão.</li>
+  <li><strong>Thời tiết thi công:</strong> Lên kế hoạch tránh mùa mưa bão kéo dài.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây dựng nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây dựng nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="xay-dung-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
+  $mt$Xây Dựng Nhà Phú Yên Uy Tín | Trọn Gói | Sao Khuê$mt$,
+  $md$Xây dựng nhà Phú Yên: thiết kế, thi công nhà phố, biệt thự Tuy Hòa, Sông Cầu. Báo giá minh bạch, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây dựng nhà Phú Yên, xây nhà trọn gói Phú Yên, thi công nhà phố Phú Yên, công ty xây dựng Phú Yên, xây nhà Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-dung-nha-dak-lak$slug$,
+  $title$Xây Dựng Nhà Uy Tín Tại Đắk Lắk — Thi Công Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Xây dựng nhà Đắk Lắk: nhà phố Buôn Ma Thuột, biệt thự vùng cao. Sao Khuê thiết kế + thi công trọn gói, bảo hành 10 năm kết cấu.$excerpt$,
+  $content$<h2>Xây dựng nhà Đắk Lắk — Đơn vị thi công am hiểu khí hậu Tây Nguyên</h2>
+<p><strong>Xây dựng nhà Đắk Lắk</strong> có đặc thù khác vùng đồng bằng: khí hậu mát mẻ quanh năm nhưng mưa lớn theo mùa, địa hình đồi đất bazan, và nhu cầu nhà phố tại <strong>Buôn Ma Thuột</strong> tăng mạnh. Chọn sai nhà thầu dễ gặp thấm mái, nứt tường do nền không ổn định hoặc thiết kế không phù hợp thông gió.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>xây nhà trọn gói Đắk Lắk</strong> — một đầu mối từ thiết kế đến bàn giao. Chúng tôi đã triển khai nhiều công trình tại Tây Nguyên và miền Nam, áp dụng quy trình giám sát chuẩn, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="xay-dung-nha-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ak-lak-1</figcaption>
+</figure>
+
+<h2>Dịch vụ xây dựng nhà Đắk Lắk của Sao Khuê</h2>
+<ul>
+  <li><strong>Thiết kế kiến trúc:</strong> Nhà phố, nhà ống, biệt thự — tối ưu ánh sáng tự nhiên.</li>
+  <li><strong>Thi công phần thô &amp; trọn gói:</strong> Móng, khung BTCT, mái, hoàn thiện.</li>
+  <li><strong>Cải tạo, nâng tầng:</strong> Gia cố kết cấu nhà cũ tại Buôn Ma Thuột.</li>
+  <li><strong>Tư vấn pháp lý:</strong> Hồ sơ xin phép xây dựng theo quy định tỉnh.</li>
+</ul>
+<p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> và <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí xây nhà 2 tầng Đắk Lắk</a>.</p>
+
+<h2>Loại công trình thường gặp tại Đắk Lắk</h2>
+<h3>Nhà phố, nhà ống Buôn Ma Thuột</h3>
+<p>Mặt tiền 4–6 m, 2–4 tầng, kết hợp kinh doanh tầng trệt. Thiết kế giếng trời, cầu thang thoáng.</p>
+<h3>Biệt thự, nhà vườn vùng ven</h3>
+<p>Lô đất rộng, sân vườn cây cảnh — phong cách hiện đại hoặc Indochine phù hợp không khí Tây Nguyên.</p>
+<h3>Nhà cấp 4, nhà 1 trệt</h3>
+<p>Chi phí tối ưu cho gia đình trẻ, móng đơn hoặc băng tùy địa chất bazan.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="xay-dung-nha-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công chuẩn</h2>
+<ol>
+  <li>Khảo sát địa chất và đo đạc lô đất.</li>
+  <li>Thiết kế 2D/3D, chỉnh sửa đến khi chủ nhà duyệt.</li>
+  <li>Lập dự toán chi tiết, ký hợp đồng.</li>
+  <li>Thi công có nhật ký và hình ảnh tiến độ gửi chủ đầu tư.</li>
+  <li>Nghiệm thu từng hạng mục, bàn giao và bảo hành.</li>
+</ol>
+
+<h2>Đơn giá xây dựng nhà Đắk Lắk (2026)</h2>
+<ul>
+  <li><strong>Phần thô:</strong> 3,0 – 4,2 triệu đ/m² sàn.</li>
+  <li><strong>Trọn gói tiêu chuẩn:</strong> 6 – 8,5 triệu đ/m² sàn.</li>
+  <li><strong>Trọn gói khá–cao cấp:</strong> 9 – 13 triệu đ/m² sàn.</li>
+</ul>
+<p>Chi phí vận chuyển vật tư và nhân công tại Đắk Lắk có thể khác TP.HCM 5–10%. Liên hệ để nhận báo giá theo diện tích thực tế.</p>
+
+<h2>Kinh nghiệm xây nhà tại Tây Nguyên</h2>
+<ul>
+  <li>Chọn vật liệu cách nhiệt tốt — tiết kiệm điện sưởi/điều hòa.</li>
+  <li>Mái dốc, thoát nước mưa nhanh — tránh thấm trần mùa mưa.</li>
+  <li>Móng trên đất bazan: khảo sát kỹ, tránh đào quá sâu vùng đá.</li>
+  <li>Lên tiến độ tránh mùa mưa kéo dài (tháng 9–12).</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây dựng nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây dựng nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-dung-nha-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
+  $mt$Xây Dựng Nhà Đắk Lắk Uy Tín | Trọn Gói | Sao Khuê$mt$,
+  $md$Dịch vụ xây dựng nhà Đắk Lắk: nhà phố, nhà ống, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật. Hotline 0909 075 668.$md$,
+  $mk$xây dựng nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, thi công nhà phố Đắk Lắk, công ty xây dựng Buôn Ma Thuột, xây nhà Đắk Lắk giá rẻ, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-tphcm$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà TP.HCM — Trọn Gói Theo Quận Huyện$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Dịch vụ sửa chữa cải tạo nhà TP.HCM tại 22 quận và 5 huyện: chống thấm, gia cố, nâng tầng, sửa nhà cũ. Sao Khuê khảo sát miễn phí — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa cải tạo nhà TP.HCM — Dịch vụ trọn gói theo từng quận, huyện</h2>
+<p><strong>Sửa chữa cải tạo nhà TP.HCM</strong> là nhu cầu lớn khi kho tàng nhà ở cũ 20–40 năm tuổi chiếm phần lớn diện tích đô thị. Chủ nhà cần <strong>gia cố kết cấu</strong>, <strong>chống thấm</strong>, mở rộng phòng, thay điện nước hoặc <strong>nâng tầng</strong> — nhưng mỗi quận có đặc thù khác nhau về mật độ xây dựng, quy hoạch và loại nhà (nhà phố, biệt thự, chung cư thấp tầng).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Q. Bình Thạnh) triển khai <strong>sửa nhà trọn gói TP.HCM</strong> trên toàn 22 quận và 5 huyện. Chúng tôi khảo sát hiện trạng miễn phí, báo giá theo hạng mục rõ ràng và cam kết bảo hành thi công.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="sua-chua-cai-tao-nha-tphcm-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-tphcm-1</figcaption>
+</figure>
+
+<h2>Dịch vụ sửa chữa — cải tạo nhà tại TP.HCM</h2>
+<ul>
+  <li><strong>Sửa chữa nhà cũ:</strong> Chống thấm, trát lại tường, sơn, thay mái, lợp ngói.</li>
+  <li><strong>Cải tạo nội thất:</strong> Tái bố trí phòng, mở rộng bếp, WC, phòng ngủ.</li>
+  <li><strong>Gia cố kết cấu:</strong> Cột, dầm, sàn — đặc biệt nhà trước năm 2000.</li>
+  <li><strong>Nâng tầng, mở rộng:</strong> Thêm tầng hoặc nhà phía sau theo giấy phép.</li>
+  <li><strong>Thay hệ thống MEP:</strong> Điện, nước, thoát nước đạt chuẩn an toàn.</li>
+</ul>
+<p>Xem thêm <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a>, <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/cong-trinh/sua-nha-quan-3">công trình cải tạo Quận 3</a>.</p>
+
+<h2>Sửa chữa cải tạo nhà theo quận nội thành (Quận 1 – 12)</h2>
+<h3>Quận 1, Quận 3, Quận 4, Quận 5, Quận 6</h3>
+<p>Khu trung tâm — nhà phố hẹp, nhiều nhà cũ Pháp, diện tích sử dụng khan hiếm. Sao Khuê tối ưu giếng trời, thông tầng và gia cố khi mở rộng. Chi tiết: <a href="/tin-tuc/sua-chua-cai-tao-nha-quan-1">sửa chữa cải tạo nhà Quận 1</a>.</p>
+<h3>Quận 7, Quận 8, Quận 10, Quận 11</h3>
+<p>Nhiều khu dân cư và biệt thự — cải tạo nội thất, hồ bơi, sân vườn. <a href="/tin-tuc/sua-chua-cai-tao-nha-quan-7">Sửa chữa cải tạo nhà Quận 7</a> là một trong các khu triển khai thường xuyên.</p>
+<h3>Quận 2 (cũ), Quận 9 (cũ), Quận Thủ Đức</h3>
+<p>Thành phố Thủ Đức — nhà phố mới xen nhà cũ, nhu cầu nâng tầng và hoàn thiện cao. Xem <a href="/tin-tuc/sua-chua-cai-tao-nha-thu-duc">sửa chữa cải tạo nhà Thủ Đức</a>.</p>
+<h3>Quận Bình Thạnh, Phú Nhuận, Tân Bình, Tân Phú, Gò Vấp</h3>
+<p>Mật độ dân cư cao, nhà ống 3–4 tầng. Chống thấm sân thượng và cải tạo WC là hạng mục phổ biến. <a href="/tin-tuc/sua-chua-cai-tao-nha-binh-thanh">Bình Thạnh</a> · <a href="/tin-tuc/sua-chua-cai-tao-nha-go-vap">Gò Vấp</a> · <a href="/tin-tuc/sua-chua-cai-tao-nha-tan-phu">Tân Phú</a>.</p>
+<h3>Quận Bình Tân</h3>
+<p>Khu công nhân và nhà trọ chuyển đổi công năng — cải tạo nhanh, ngân sách linh hoạt.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="sua-chua-cai-tao-nha-tphcm-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-tphcm-2</figcaption>
+</figure>
+
+<h2>Sửa chữa cải tạo nhà tại 5 huyện TP.HCM</h2>
+<h3>Huyện Bình Chánh, Hóc Môn, Củ Chi, Nhà Bè, Cần Giờ</h3>
+<p>Nhà cấp 4, nhà vườn, biệt thự ven sông — thường cần gia cố móng, chống thấm tường ngoài và mở rộng diện tích sinh hoạt. Sao Khuê có kinh nghiệm tại <a href="/tin-tuc/sua-chua-cai-tao-nha-binh-chanh">Bình Chánh</a> và <a href="/tin-tuc/sua-chua-cai-tao-nha-hoc-mon">Hóc Môn</a>.</p>
+<p>Các <strong>xã, phường</strong> trong từng huyện đều được tiếp nhận: khảo sát tận nơi, không giới hạn phạm vi nếu thuộc TP.HCM.</p>
+
+<h2>Quy trình sửa chữa cải tạo nhà tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát hiện trạng:</strong> Thấm, nứt, kết cấu, điện nước — miễn phí nội thành.</li>
+  <li><strong>Đề xuất phương án &amp; báo giá:</strong> Theo hạng mục, tránh phát sinh bất ngờ.</li>
+  <li><strong>Ký hợp đồng &amp; tiến độ:</strong> Che chắn công trình, vệ sinh hàng ngày.</li>
+  <li><strong>Thi công &amp; nghiệm thu:</strong> Từng giai đoạn — chống thấm, phá dỡ, hoàn thiện.</li>
+  <li><strong>Bàn giao &amp; bảo hành:</strong> Biên bản rõ ràng theo hạng mục.</li>
+</ol>
+
+<h2>Chi phí sửa chữa cải tạo nhà TP.HCM (tham khảo)</h2>
+<ul>
+  <li><strong>Sửa nhẹ (sơn, lát gạch):</strong> 1,5 – 3 triệu đ/m².</li>
+  <li><strong>Cải tạo trung bình (WC, bếp, điện nước):</strong> 4 – 7 triệu đ/m².</li>
+  <li><strong>Cải tạo toàn diện + gia cố:</strong> 8 – 15 triệu đ/m² tùy hiện trạng.</li>
+</ul>
+<p>Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline để nhận dự toán theo diện tích thực tế.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà TP.HCM</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà TP.HCM</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="sua-chua-cai-tao-nha-tphcm-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-tphcm-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà TP.HCM | Trọn Gói | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà TP.HCM uy tín: Quận 1–12, Thủ Đức, Bình Thạnh, Gò Vấp, Bình Chánh… Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm, sửa chữa nhà theo quận, công ty sửa nhà tphcm, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-binh-thanh$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Bình Thạnh — Trọn Gói Uy Tín$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Bình Thạnh: nhà phố, chung cư thấp tầng. Chống thấm sân thượng, gia cố, cải tạo nội thất. Sao Khuê — 0909 075 668.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Bình Thạnh — Dịch vụ trọn gói tại Quận Bình Thạnh</h2>
+<p><strong>sửa chữa cải tạo nhà Bình Thạnh</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Quận Bình Thạnh</strong> đã xuống cấp sau nhiều năm sử dụng. Khu vực Bình Lợi, Phạm Văn Đồng, Xô Viết Nghệ Tĩnh có nhiều nhà phố 3–4 tầng cần chống thấm mái và cải tạo WC.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Quận Bình Thạnh và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="sua-chua-cai-tao-nha-binh-thanh-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-binh-thanh-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Quận Bình Thạnh</h2>
+<ul>
+  <li><strong>Chống thấm sân thượng, mái</strong> — mùa mưa TP.HCM.</li>
+  <li><strong>Gia cố cầu thang, lan can</strong> nhà ống hẹp.</li>
+  <li><strong>Mở rộng phòng ngủ</strong> cho gia đình đông người.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Quận Bình Thạnh</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-29.jpg" alt="sua-chua-cai-tao-nha-binh-thanh-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-binh-thanh-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Bình Thạnh (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Quận Bình Thạnh.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Bình Thạnh</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Bình Thạnh</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Bình Thạnh | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa cải tạo nhà Bình Thạnh uy tín: chống thấm, sửa nhà cũ, cải tạo trọn gói. Khảo sát miễn phí. Hotline 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Bình Thạnh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Bình Thạnh, cải tạo nhà cũ Quận Bình Thạnh, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-thu-duc$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Thủ Đức — Thi Công Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Thủ Đức: Hiệp Phú, Linh Trung, Long Bình… Nâng tầng, hoàn thiện, sửa nhà cũ. Sao Khuê khảo sát miễn phí.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Thủ Đức — Dịch vụ trọn gói tại TP. Thủ Đức</h2>
+<p><strong>sửa chữa cải tạo nhà Thủ Đức</strong> là nhu cầu thiết thực khi nhà ở tại <strong>TP. Thủ Đức</strong> đã xuống cấp sau nhiều năm sử dụng. Thủ Đức có nhiều khu đô thị mới xen kẽ nhà cũ — chủ nhà thường cần hoàn thiện nội thất hoặc nâng thêm tầng.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại TP. Thủ Đức và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="sua-chua-cai-tao-nha-thu-uc-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-thu-uc-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại TP. Thủ Đức</h2>
+<ul>
+  <li><strong>Hoàn thiện nhà phố</strong> mới xây phần thô.</li>
+  <li><strong>Nâng tầng, mở rộng</strong> theo quy hoạch.</li>
+  <li><strong>Cải tạo biệt thự</strong> — sân vườn, hồ bơi.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại TP. Thủ Đức</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="sua-chua-cai-tao-nha-thu-uc-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-thu-uc-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Thủ Đức (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại TP. Thủ Đức.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Thủ Đức</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Thủ Đức</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Thủ Đức | Trọn Gói | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà Thủ Đức: nhà phố, biệt thự khu đô thị. Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Thủ Đức, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói TP. Thủ Đức, cải tạo nhà cũ TP. Thủ Đức, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-quan-7$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Quận 7 — Chuyên Nghiệp$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Quận 7: Phú Mỹ Hưng, Tân Hưng, Bình Thuận. Cải tạo biệt thự, chống thấm, nội thất cao cấp.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Quận 7 — Dịch vụ trọn gói tại Quận 7</h2>
+<p><strong>sửa chữa cải tạo nhà Quận 7</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Quận 7</strong> đã xuống cấp sau nhiều năm sử dụng. Quận 7 có nhiều biệt thự và nhà phố khu Nam — yêu cầu thẩm mỹ và vật liệu hoàn thiện cao hơn trung bình.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Quận 7 và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="sua-chua-cai-tao-nha-quan-7-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-quan-7-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Quận 7</h2>
+<ul>
+  <li><strong>Cải tạo nội thất cao cấp</strong> — phòng khách, bếp mở.</li>
+  <li><strong>Chống thấm hồ bơi, sân thượng</strong>.</li>
+  <li><strong>Nâng cấp hệ thống điện</strong> cho thiết bị smart home.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Quận 7</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="sua-chua-cai-tao-nha-quan-7-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-quan-7-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Quận 7 (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Quận 7.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Quận 7</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Quận 7</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Quận 7 | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa cải tạo nhà Quận 7: biệt thự, nhà phố khu Nam. Khảo sát miễn phí, thi công trọn gói. 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Quận 7, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 7, cải tạo nhà cũ Quận 7, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-go-vap$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Gò Vấp — Báo Giá Minh Bạch$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Gò Vấp: nhà ống, nhà cũ 20–30 năm. Chống thấm, gia cố, sửa WC. Sao Khuê — 0909 075 668.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Gò Vấp — Dịch vụ trọn gói tại Quận Gò Vấp</h2>
+<p><strong>sửa chữa cải tạo nhà Gò Vấp</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Quận Gò Vấp</strong> đã xuống cấp sau nhiều năm sử dụng. Gò Vấp mật độ dân cư cao — nhà ống 4×15 m cần tối ưu ánh sáng và thông gió khi cải tạo.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Quận Gò Vấp và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="sua-chua-cai-tao-nha-go-vap-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-go-vap-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Quận Gò Vấp</h2>
+<ul>
+  <li><strong>Sửa nhà cũ 20–30 năm</strong> — thấm tường, sơn bong.</li>
+  <li><strong>Cải tạo WC, bếp</strong> chật hẹp.</li>
+  <li><strong>Gia cố sàn, cầu thang</strong> khi thêm phòng.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Quận Gò Vấp</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="sua-chua-cai-tao-nha-go-vap-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-go-vap-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Gò Vấp (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Quận Gò Vấp.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Gò Vấp</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Gò Vấp</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Gò Vấp | Trọn Gói | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà Gò Vấp uy tín: sửa nhà cũ, chống thấm, cải tạo trọn gói. Khảo sát tận nơi. Hotline 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Gò Vấp, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Gò Vấp, cải tạo nhà cũ Quận Gò Vấp, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-binh-chanh$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Bình Chánh — Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Bình Chánh: nhà cấp 4, nhà vườn, mở rộng diện tích. Gia cố móng, chống thấm. Sao Khuê.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Bình Chánh — Dịch vụ trọn gói tại Huyện Bình Chánh</h2>
+<p><strong>sửa chữa cải tạo nhà Bình Chánh</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Huyện Bình Chánh</strong> đã xuống cấp sau nhiều năm sử dụng. Bình Chánh có nhiều nhà vườn, nhà cấp 4 — thường cần gia cố móng và mở rộng phía sau.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Huyện Bình Chánh và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="sua-chua-cai-tao-nha-binh-chanh-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-binh-chanh-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Huyện Bình Chánh</h2>
+<ul>
+  <li><strong>Gia cố móng, nền</strong> trên đất yếu.</li>
+  <li><strong>Mở rộng nhà phía sau</strong> — thêm phòng ngủ.</li>
+  <li><strong>Chống thấm tường ngoài</strong> — mùa mưa.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Huyện Bình Chánh</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="sua-chua-cai-tao-nha-binh-chanh-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-binh-chanh-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Bình Chánh (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Huyện Bình Chánh.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Bình Chánh</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Bình Chánh</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Bình Chánh | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà Bình Chánh: Vĩnh Lộc, Tân Nhựt, Bình Hưng… Báo giá rõ ràng, thi công uy tín. 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Bình Chánh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Bình Chánh, cải tạo nhà cũ Huyện Bình Chánh, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-tan-phu$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Tân Phú — Uy Tín TP.HCM$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Tân Phú: Tân Sơn Nhì, Phú Thọ Hòa… Sửa nhà cũ, chống thấm, cải tạo nội thất trọn gói.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Tân Phú — Dịch vụ trọn gói tại Quận Tân Phú</h2>
+<p><strong>sửa chữa cải tạo nhà Tân Phú</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Quận Tân Phú</strong> đã xuống cấp sau nhiều năm sử dụng. Tân Phú có mix nhà phố và chung cư thấp tầng — hạng mục sửa từng phần hoặc trọn gói đều phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Quận Tân Phú và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="sua-chua-cai-tao-nha-tan-phu-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-tan-phu-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Quận Tân Phú</h2>
+<ul>
+  <li><strong>Sửa chữa nhà phố</strong> — trát, sơn, lát gạch.</li>
+  <li><strong>Chống thấm WC, ban công</strong>.</li>
+  <li><strong>Tái bố trí phòng</strong> cho gia đình trẻ.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Quận Tân Phú</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="sua-chua-cai-tao-nha-tan-phu-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-tan-phu-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Tân Phú (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Quận Tân Phú.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Tân Phú</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Tân Phú</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Tân Phú | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa cải tạo nhà Tân Phú: khảo sát miễn phí, báo giá hạng mục. Sao Khuê — 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Tân Phú, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Tân Phú, cải tạo nhà cũ Quận Tân Phú, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-quan-1$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Quận 1 — Chuyên Nghiệp$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Quận 1: nhà phố trung tâm, shophouse. Gia cố, chống thấm, cải tạo nội thất cao cấp.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Quận 1 — Dịch vụ trọn gói tại Quận 1</h2>
+<p><strong>sửa chữa cải tạo nhà Quận 1</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Quận 1</strong> đã xuống cấp sau nhiều năm sử dụng. Quận 1 — diện tích nhỏ, yêu cầu thi công gọn, ít ảnh hưởng hàng xóm và tuân thủ giờ thi công.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Quận 1 và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="sua-chua-cai-tao-nha-quan-1-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-quan-1-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Quận 1</h2>
+<ul>
+  <li><strong>Cải tạo shophouse</strong> — mặt tiền kinh doanh.</li>
+  <li><strong>Gia cố nhà cũ</strong> trước khi mở rộng.</li>
+  <li><strong>Nội thất cao cấp</strong> — tối ưu không gian hẹp.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Quận 1</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="sua-chua-cai-tao-nha-quan-1-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-quan-1-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Quận 1 (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Quận 1.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Quận 1</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Quận 1</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Quận 1 | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà Quận 1: kinh nghiệm nhà phố hẹp, shophouse. Báo giá minh bạch. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Quận 1, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 1, cải tạo nhà cũ Quận 1, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-cai-tao-nha-hoc-mon$slug$,
+  $title$Sửa Chữa Cải Tạo Nhà Hóc Môn — Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa cải tạo nhà Hóc Môn: nhà cấp 4, nhà vườn các xã Đông Thạnh, Trung Chánh… Gia cố, mở rộng, chống thấm.$excerpt$,
+  $content$<h2>sửa chữa cải tạo nhà Hóc Môn — Dịch vụ trọn gói tại Huyện Hóc Môn</h2>
+<p><strong>sửa chữa cải tạo nhà Hóc Môn</strong> là nhu cầu thiết thực khi nhà ở tại <strong>Huyện Hóc Môn</strong> đã xuống cấp sau nhiều năm sử dụng. Hóc Môn — nhà vườn rộng, nhiều công trình cần mở rộng diện tích sinh hoạt hoặc nâng cấp nhà cấp 4.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát, báo giá và thi công <strong>sửa chữa cải tạo nhà TP.HCM</strong> tại Huyện Hóc Môn và các phường, xã trực thuộc — một đầu mối từ phương án đến bàn giao.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="sua-chua-cai-tao-nha-hoc-mon-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-hoc-mon-1</figcaption>
+</figure>
+
+<h2>Hạng mục sửa chữa phổ biến tại Huyện Hóc Môn</h2>
+<ul>
+  <li><strong>Nâng cấp nhà cấp 4</strong> lên nhà phố 2 tầng.</li>
+  <li><strong>Chống thấm mái tôn, mái ngói</strong>.</li>
+  <li><strong>Mở rộng bếp, phòng ngủ</strong> phía sau.</li>
+  <li><strong>Thay điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Cải tạo nội thất:</strong> Bếp, WC, phòng ngủ theo nhu cầu mới.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/sua-chua-cai-tao-nha-tphcm">sửa chữa cải tạo nhà TP.HCM</a> (bản đồ quận huyện), <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> nếu cần mở rộng diện tích.</p>
+
+<h2>Quy trình thi công tại Huyện Hóc Môn</h2>
+<ol>
+  <li>Khảo sát tận nhà — đo đạc, chụp hiện trạng, ghi nhận thấm/nứt.</li>
+  <li>Báo giá chi tiết theo hạng mục — không ép ký gói thừa.</li>
+  <li>Thi công có giám sát, che chắn bụi, vệ sinh mỗi ngày.</li>
+  <li>Nghiệm thu từng giai đoạn — bàn giao và bảo hành.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="sua-chua-cai-tao-nha-hoc-mon-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-cai-tao-nha-hoc-mon-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa cải tạo nhà Hóc Môn (ước tính)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại Huyện Hóc Môn.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa cải tạo nhà Hóc Môn</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa cải tạo nhà Hóc Môn</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
+  $mt$Sửa Chữa Cải Tạo Nhà Hóc Môn | Sao Khuê$mt$,
+  $md$Sửa chữa cải tạo nhà Hóc Môn uy tín: sửa nhà cũ, cải tạo trọn gói theo xã. Khảo sát miễn phí — 0909 075 668.$md$,
+  $mk$sửa chữa cải tạo nhà Hóc Môn, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Hóc Môn, cải tạo nhà cũ Huyện Hóc Môn, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
 COMMIT;
 
 -- Kiểm tra:
