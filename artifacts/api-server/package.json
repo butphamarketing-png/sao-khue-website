@@ -11,6 +11,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "seed-posts": "tsx scripts/seed-posts.ts",
     "export-seed-sql": "tsx scripts/export-seed-sql.ts",
+    "export-seed-sql-batches": "tsx scripts/export-seed-sql-batches.ts",
     "seed-site-settings": "tsx scripts/seed-site-settings.ts",
     "verify-posts": "tsx scripts/verify-posts.ts"
   },

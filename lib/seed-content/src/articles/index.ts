@@ -50,6 +50,16 @@ export { xayDungNhaPhuYen } from "./xay-dung-nha-phu-yen";
 export { xayDungNhaDakLak } from "./xay-dung-nha-dak-lak";
 export { suaChuaCaiTaoNhaTphcm } from "./sua-chua-cai-tao-nha-tphcm";
 export {
+  mienTrungSuaNhaArticlesBySlug,
+  mienTrungSuaNhaSlugs,
+  getMienTrungSuaNhaArticle,
+} from "./mien-trung-sua-nha-tin-tuc-articles";
+export {
+  binhDuongTphcmTinTucArticlesBySlug,
+  binhDuongTphcmTinTucSlugs,
+  getBinhDuongTphcmArticle,
+} from "./binh-duong-tphcm-tin-tuc-articles";
+export {
   longAnDongNaiTinTucArticlesBySlug,
   longAnDongNaiTinTucSlugs,
   getLongAnDongNaiArticle,

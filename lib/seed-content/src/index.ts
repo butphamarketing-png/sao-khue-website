@@ -41,6 +41,10 @@ import {
   phuYenDakLakTinTucSlugs,
   longAnDongNaiTinTucArticlesBySlug,
   longAnDongNaiTinTucSlugs,
+  binhDuongTphcmTinTucArticlesBySlug,
+  binhDuongTphcmTinTucSlugs,
+  mienTrungSuaNhaArticlesBySlug,
+  mienTrungSuaNhaSlugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -187,6 +191,12 @@ export const seedPosts: SeedPost[] = [
   ),
   ...longAnDongNaiTinTucSlugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), longAnDongNaiTinTucArticlesBySlug[slug]!),
+  ),
+  ...binhDuongTphcmTinTucSlugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), binhDuongTphcmTinTucArticlesBySlug[slug]!),
+  ),
+  ...mienTrungSuaNhaSlugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), mienTrungSuaNhaArticlesBySlug[slug]!),
   ),
 ];
 

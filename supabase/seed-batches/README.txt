@@ -1,0 +1,18 @@
+-- Sao Khuê — seed bài viết (chia 15 batch × tối đa 10 bài)
+-- Chạy lần lượt trong Supabase SQL Editor: seed-batches/seed-posts-01.sql … seed-posts-15.sql
+
+-- 01. seed-posts-01.sql — 1–10 (98 KB)
+-- 02. seed-posts-02.sql — 11–20 (31 KB)
+-- 03. seed-posts-03.sql — 21–30 (66 KB)
+-- 04. seed-posts-04.sql — 31–40 (106 KB)
+-- 05. seed-posts-05.sql — 41–50 (73 KB)
+-- 06. seed-posts-06.sql — 51–60 (49 KB)
+-- 07. seed-posts-07.sql — 61–70 (50 KB)
+-- 08. seed-posts-08.sql — 71–80 (50 KB)
+-- 09. seed-posts-09.sql — 81–90 (50 KB)
+-- 10. seed-posts-10.sql — 91–100 (49 KB)
+-- 11. seed-posts-11.sql — 101–110 (49 KB)
+-- 12. seed-posts-12.sql — 111–120 (50 KB)
+-- 13. seed-posts-13.sql — 121–130 (46 KB)
+-- 14. seed-posts-14.sql — 131–140 (47 KB)
+-- 15. seed-posts-15.sql — 141–149 (42 KB)
