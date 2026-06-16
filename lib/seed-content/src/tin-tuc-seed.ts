@@ -32,7 +32,7 @@ import {
   xuHuongThietKeNhaPhoHienDai,
 } from "./articles";
 import { TIN_TUC_BATCH } from "./tin-tuc-calendar-data";
-import { slugImage } from "./site-images";
+import { featuredImageForSlug } from "./site-images";
 
 export type TinTucSeedEntry = { slug: string; image: string; article: SeoArticle };
 
@@ -62,17 +62,17 @@ const ARTICLE_BY_SLUG: Record<string, SeoArticle> = {
 
 /** 30 bài tin tức theo lịch nội dung (calendar #1–#30, bài #30 = tin tức thương hiệu). */
 export const TIN_TUC_SEED_ENTRIES: TinTucSeedEntry[] = [
-  { slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", image: slugImage("cong-ty-xay-dung-nha-pho-uy-tin-tphcm"), article: congTyXayDungNhaPhoUyTinTphcm },
-  { slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", image: slugImage("bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"), article: baoGiaXayNhaTronGoiMoiNhatTphcm },
-  { slug: "thiet-ke-nha-pho-hien-dai-tphcm", image: slugImage("thiet-ke-nha-pho-hien-dai-tphcm"), article: thietKeNhaPhoHienDaiTphcm },
-  { slug: "mau-nha-pho-2-tang-binh-duong", image: slugImage("mau-nha-pho-2-tang-binh-duong"), article: mauNhaPho2TangBinhDuong },
-  { slug: "thiet-ke-thi-cong-nha-pho-dong-nai", image: slugImage("thiet-ke-thi-cong-nha-pho-dong-nai"), article: thietKeThiCongNhaPhoDongNai },
+  { slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", image: featuredImageForSlug("cong-ty-xay-dung-nha-pho-uy-tin-tphcm"), article: congTyXayDungNhaPhoUyTinTphcm },
+  { slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", image: featuredImageForSlug("bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"), article: baoGiaXayNhaTronGoiMoiNhatTphcm },
+  { slug: "thiet-ke-nha-pho-hien-dai-tphcm", image: featuredImageForSlug("thiet-ke-nha-pho-hien-dai-tphcm"), article: thietKeNhaPhoHienDaiTphcm },
+  { slug: "mau-nha-pho-2-tang-binh-duong", image: featuredImageForSlug("mau-nha-pho-2-tang-binh-duong"), article: mauNhaPho2TangBinhDuong },
+  { slug: "thiet-ke-thi-cong-nha-pho-dong-nai", image: featuredImageForSlug("thiet-ke-thi-cong-nha-pho-dong-nai"), article: thietKeThiCongNhaPhoDongNai },
   ...TIN_TUC_BATCH.map((b) => ({
     slug: b.slug,
     image: b.image,
     article: ARTICLE_BY_SLUG[b.slug]!,
   })),
-  { slug: "cam-nang-xay-nha-2026", image: slugImage("cam-nang-xay-nha-2026"), article: camNangXayNha2026 },
-  { slug: "luat-xay-dung-moi-nhat", image: slugImage("luat-xay-dung-moi-nhat"), article: luatXayDungMoiNhat },
-  { slug: "phong-thuy-nha-o", image: slugImage("phong-thuy-nha-o"), article: phongThuyNhaO },
+  { slug: "cam-nang-xay-nha-2026", image: featuredImageForSlug("cam-nang-xay-nha-2026"), article: camNangXayNha2026 },
+  { slug: "luat-xay-dung-moi-nhat", image: featuredImageForSlug("luat-xay-dung-moi-nhat"), article: luatXayDungMoiNhat },
+  { slug: "phong-thuy-nha-o", image: featuredImageForSlug("phong-thuy-nha-o"), article: phongThuyNhaO },
 ];

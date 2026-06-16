@@ -6,6 +6,7 @@ import {
   categoriesForFilter,
   getFallbackPost,
   listFallbackPosts,
+  mergePostMedia,
 } from "@workspace/seed-content";
 import { isAdmin } from "../lib/auth";
 
@@ -54,7 +55,7 @@ router.get("/posts", async (req, res) => {
     if (category) q.where(inArray(postsTable.category, categoriesForFilter(category)));
     if (limit) q.limit(limit);
     const rows = await q;
-    res.json(rows.map(serialize));
+    res.json(rows.map((row) => mergePostMedia(serialize(row) as any, getFallbackPost(row.slug))));
   } catch (err) {
     console.error("[posts] list failed, using fallback", err);
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
@@ -74,27 +75,7 @@ router.get("/posts/:slug", async (req, res) => {
     if (row) {
       const serialized = serialize(row) as any;
       const fallback = getFallbackPost(req.params.slug);
-      const content = String(serialized.content ?? "").trim();
-      const fallbackContent = String(fallback?.content ?? "").trim();
-      if (fallback && content.length < 80 && fallbackContent) {
-        res.json({
-          ...serialized,
-          content: fallback.content,
-          excerpt: String(serialized.excerpt ?? "").trim() || fallback.excerpt,
-          metaTitle: String(serialized.metaTitle ?? "").trim() || fallback.metaTitle,
-          metaDescription:
-            String(serialized.metaDescription ?? "").trim() || fallback.metaDescription,
-          metaKeywords: String(serialized.metaKeywords ?? "").trim() || fallback.metaKeywords,
-          imageUrl: String(serialized.imageUrl ?? "").trim() || fallback.imageUrl,
-          imageAlt: String(serialized.imageAlt ?? "").trim() || fallback.imageAlt,
-          imageCaption:
-            String(serialized.imageCaption ?? "").trim() ||
-            fallback.imageCaption ||
-            fallback.imageAlt,
-        });
-        return;
-      }
-      res.json(serialized);
+      res.json(mergePostMedia(serialized, fallback));
       return;
     }
   } catch (err) {

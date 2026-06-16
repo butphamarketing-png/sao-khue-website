@@ -1,5 +1,5 @@
 import type { Post } from "@workspace/api-client-react";
-import { getFallbackPost, listFallbackPosts, matchesCategory } from "@workspace/seed-content";
+import { getFallbackPost, listFallbackPosts, matchesCategory, mergePostMedia } from "@workspace/seed-content";
 import { repairPostText } from "./post-encoding";
 import { normalizePosts } from "./posts";
 
@@ -21,7 +21,7 @@ export function resolvePosts(input: PostCollection, options?: { category?: strin
     rows = rows.filter((p) => matchesCategory(p.category, options.category!));
   }
   if (options?.limit) rows = rows.slice(0, options.limit);
-  return rows.map((p) => repairPostText(p));
+  return rows.map((p) => repairPostText(mergePostMedia(p, getFallbackPost(p.slug))));
 }
 
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
@@ -30,23 +30,5 @@ export function resolvePost(slug: string | undefined, apiPost: Post | undefined 
   if (!apiPost) return fallback;
   const repaired = repairPostText(apiPost);
   if (!fallback) return repaired;
-
-  const content = (repaired.content ?? "").trim();
-  const fallbackContent = (fallback.content ?? "").trim();
-  if (content.length >= 80 || !fallbackContent) return repaired;
-
-  return {
-    ...repaired,
-    content: fallback.content,
-    excerpt: (repaired.excerpt ?? "").trim() || fallback.excerpt,
-    metaTitle: (repaired.metaTitle ?? "").trim() || fallback.metaTitle,
-    metaDescription: (repaired.metaDescription ?? "").trim() || fallback.metaDescription,
-    metaKeywords: (repaired.metaKeywords ?? "").trim() || fallback.metaKeywords,
-    imageUrl: (repaired.imageUrl ?? "").trim() || fallback.imageUrl,
-    imageAlt: String(repaired.imageAlt ?? "").trim() || fallback.imageAlt,
-    imageCaption:
-      String(repaired.imageCaption ?? "").trim() ||
-      fallback.imageCaption ||
-      fallback.imageAlt,
-  };
+  return repairPostText(mergePostMedia(repaired, fallback));
 }
