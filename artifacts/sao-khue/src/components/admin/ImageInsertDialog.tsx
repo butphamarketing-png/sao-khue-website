@@ -127,7 +127,7 @@ export function ImageInsertDialog({
           <DialogTitle>Thuộc tính ảnh</DialogTitle>
           {imageFolder === "posts" ? (
             <p className="text-xs text-muted-foreground">
-              Ảnh tải lên sẽ tự động có logo Sao Khuê ở góc dưới-phải.
+              Ảnh tải lên sẽ tự động có logo Sao Khuê ở trên cùng, giữa ảnh.
             </p>
           ) : null}
         </DialogHeader>

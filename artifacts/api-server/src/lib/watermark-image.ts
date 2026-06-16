@@ -22,7 +22,7 @@ export type WatermarkResult = {
   contentType: string;
 };
 
-/** Gắn logo Sao Khuê góc dưới-phải. Bỏ qua SVG/GIF hoặc ảnh quá nhỏ. */
+/** Gắn logo Sao Khuê giữa phía trên. Bỏ qua SVG/GIF hoặc ảnh quá nhỏ. */
 export async function applyLogoWatermark(
   input: Buffer,
   mimetype: string,
@@ -35,8 +35,8 @@ export async function applyLogoWatermark(
   const height = meta.height ?? 0;
   if (width < 80 || height < 80) return null;
 
-  const logoTargetWidth = Math.round(Math.min(width * 0.18, 280));
-  const padding = Math.round(Math.max(width * 0.02, 12));
+  const logoTargetWidth = Math.round(Math.min(width * 0.24, 360));
+  const paddingTop = Math.round(Math.max(height * 0.02, 14));
 
   const logoBuf = await sharp(resolveLogoPath())
     .resize({ width: logoTargetWidth, withoutEnlargement: true })
@@ -47,8 +47,8 @@ export async function applyLogoWatermark(
   const logoWidth = logoMeta.width ?? logoTargetWidth;
   const logoHeight = logoMeta.height ?? 0;
 
-  const left = Math.max(0, width - logoWidth - padding);
-  const top = Math.max(0, height - logoHeight - padding);
+  const left = Math.max(0, Math.round((width - logoWidth) / 2));
+  const top = paddingTop;
 
   const composited = await base
     .composite([{ input: logoBuf, left, top, blend: "over" }])
