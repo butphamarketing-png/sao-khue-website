@@ -1,11 +1,14 @@
 ﻿/** Nội dung bài viết SEO #30 — slug: kien-truc-sao-khue-don-vi-uy-tin */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("kien-truc-sao-khue-don-vi-uy-tin", 0);
+const SK_IMG_2 = slugImage("kien-truc-sao-khue-don-vi-uy-tin", 1);
+const SK_IMG_3 = slugImage("kien-truc-sao-khue-don-vi-uy-tin", 2);
 
 const focusKeyword = "Kiến Trúc Sao Khuê";
-const IMG_P3 = "/images/project_3.jpg";
-const IMG_P2 = "/images/project_2.jpg";
-const IMG_HERO =
-  "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200";
+
+
+
 
 export const kienTrucSaoKhueDonViUyTin = {
   title: "Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp",
@@ -23,7 +26,7 @@ export const kienTrucSaoKhueDonViUyTin = {
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> được thành lập với sứ mệnh đơn giản nhưng không dễ: giúp mọi gia đình ở TP.HCM và các tỉnh lân cận có thể xây được ngôi nhà đúng như mơ ước — <strong>đúng chất lượng, đúng tiến độ, đúng ngân sách</strong>. Trong một thị trường xây dựng còn nhiều bất minh, chúng tôi chọn con đường minh bạch về báo giá, chịu trách nhiệm bảo hành và đặt chữ tín lên trên lợi nhuận ngắn hạn.</p>
 <p>Trụ sở tại <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong> — vị trí trung tâm giúp Sao Khuê tiếp cận nhanh các công trình tại TP.HCM và dễ dàng triển khai dự án tại Bình Dương, Đồng Nai, Long An. Đội ngũ kiến trúc sư, kỹ sư và thợ lành nghề của Sao Khuê đã thực hiện hàng trăm công trình — từ nhà phố nội thành đến biệt thự vùng ven, từ sửa chữa cải tạo nhỏ đến xây mới toàn diện.</p>
 
-${imageFigure(IMG_P3, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>Các dịch vụ cốt lõi của Kiến Trúc Sao Khuê</h2>
 <p>Sao Khuê không làm mọi thứ — chúng tôi tập trung làm tốt nhất những gì mình giỏi nhất trong lĩnh vực nhà ở dân dụng:</p>
@@ -40,7 +43,7 @@ ${imageFigure(IMG_P3, focusKeyword, 1)}
 <h3>4. Thiết kế và thi công khu vực tỉnh lân cận</h3>
 <p>Với đội ngũ có kinh nghiệm thi công đa địa bàn, Sao Khuê triển khai dự án tại Bình Dương, Đồng Nai và Long An với tiêu chuẩn chất lượng đồng đều như tại TP.HCM. Tham khảo: <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
 
-${imageFigure(IMG_P2, focusKeyword, 2)}
+${imageFigure(SK_IMG_2, focusKeyword, 2)}
 
 <h2>Tại sao chọn Kiến Trúc Sao Khuê?</h2>
 <p>Thị trường xây dựng TP.HCM có hàng nghìn đơn vị từ cá nhân đến công ty. Vậy điều gì khiến khách hàng chọn và quay lại với <strong>Kiến Trúc Sao Khuê</strong>?</p>
@@ -69,7 +72,7 @@ ${imageFigure(IMG_P2, focusKeyword, 2)}
   <li><strong>Đổi mới liên tục:</strong> Cập nhật công nghệ thi công mới, vật liệu mới và xu hướng thiết kế — mang đến giải pháp tốt nhất cho từng giai đoạn.</li>
 </ul>
 
-${imageFigure(IMG_HERO, focusKeyword, 3)}
+${imageFigure(SK_IMG_3, focusKeyword, 3)}
 
 <h2>Khu vực hoạt động của Kiến Trúc Sao Khuê</h2>
 <p>Sao Khuê thi công trên toàn TP.HCM và các tỉnh lân cận:</p>

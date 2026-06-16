@@ -1,3 +1,6 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("chi-phi-xay-nha-2-tang-dak-lak", 0);
+const SK_IMG_2 = slugImage("chi-phi-xay-nha-2-tang-dak-lak", 1);
 ﻿/** Nội dung bài viết SEO #13 — slug: chi-phi-xay-nha-2-tang-dak-lak */
 export const chiPhiXayNha2TangDakLak = {
   title: "Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?",
@@ -16,7 +19,7 @@ export const chiPhiXayNha2TangDakLak = {
 <p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H'leo, Krông Buk, Cư M'gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-1</figcaption>
 </figure>
 
@@ -45,7 +48,7 @@ export const chiPhiXayNha2TangDakLak = {
 <p><em>Ví dụ: Nhà 2 tầng 5×18 m (~162 m² sàn), tiêu chuẩn trung bình tại Đắk Lắk: tổng khoảng <strong>1,4 – 1,9 tỷ đồng</strong> (bao gồm phần thô + hoàn thiện, chưa nội thất rời).</em></p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-2</figcaption>
 </figure>
 
@@ -95,7 +98,7 @@ export const chiPhiXayNha2TangDakLak = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-3</figcaption>
 </figure>
 

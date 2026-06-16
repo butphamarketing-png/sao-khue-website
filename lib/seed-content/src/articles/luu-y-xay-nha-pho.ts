@@ -1,3 +1,6 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("luu-y-xay-nha-pho", 0);
+const SK_IMG_2 = slugImage("luu-y-xay-nha-pho", 1);
 ﻿/** Nội dung bài viết SEO #18 — slug: luu-y-xay-nha-pho */
 export const luuYXayNhaPho = {
   title: "Những Lưu Ý Quan Trọng Khi Xây Nhà Phố",
@@ -16,7 +19,7 @@ export const luuYXayNhaPho = {
 <p>Bài viết này đặc biệt hữu ích với chủ nhà lần đầu xây dựng, muốn hiểu rõ <strong>kinh nghiệm xây nhà phố</strong>, <strong>pháp lý xây dựng</strong> và các bẫy "phát sinh" thường gặp để tránh.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200" alt="luu-y-xay-nha-pho-1" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="luu-y-xay-nha-pho-1" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-1</figcaption>
 </figure>
 
@@ -53,7 +56,7 @@ export const luuYXayNhaPho = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200" alt="luu-y-xay-nha-pho-2" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="luu-y-xay-nha-pho-2" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-2</figcaption>
 </figure>
 
@@ -100,7 +103,7 @@ export const luuYXayNhaPho = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="luu-y-xay-nha-pho-3" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="luu-y-xay-nha-pho-3" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-3</figcaption>
 </figure>
 

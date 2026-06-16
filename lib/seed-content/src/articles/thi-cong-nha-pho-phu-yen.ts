@@ -1,3 +1,6 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thi-cong-nha-pho-phu-yen", 0);
+const SK_IMG_2 = slugImage("thi-cong-nha-pho-phu-yen", 1);
 ﻿/** Nội dung bài viết SEO #14 — slug: thi-cong-nha-pho-phu-yen */
 export const thiCongNhaPhoPhuYen = {
   title: "Thi Công Nhà Phố Hiện Đại Tại Phú Yên",
@@ -16,7 +19,7 @@ export const thiCongNhaPhoPhuYen = {
 <p>Bài viết này trình bày chi tiết <strong>quy trình thi công nhà phố</strong>, những yêu cầu kỹ thuật đặc thù cho vùng ven biển, bảng giá tham khảo và kinh nghiệm chọn nhà thầu uy tín tại Phú Yên.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200" alt="thi-cong-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="thi-cong-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-1</figcaption>
 </figure>
 
@@ -53,7 +56,7 @@ export const thiCongNhaPhoPhuYen = {
 <p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a> và <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> tại Sao Khuê.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200" alt="thi-cong-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="thi-cong-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-2</figcaption>
 </figure>
 
@@ -92,7 +95,7 @@ export const thiCongNhaPhoPhuYen = {
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="thi-cong-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="thi-cong-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
 </figure>
 

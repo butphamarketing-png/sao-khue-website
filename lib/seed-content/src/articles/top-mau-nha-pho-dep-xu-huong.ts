@@ -1,11 +1,14 @@
 ﻿/** Nội dung bài viết SEO #28 — slug: top-mau-nha-pho-dep-xu-huong */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("top-mau-nha-pho-dep-xu-huong", 0);
+const SK_IMG_2 = slugImage("top-mau-nha-pho-dep-xu-huong", 1);
+const SK_IMG_3 = slugImage("top-mau-nha-pho-dep-xu-huong", 2);
 
 const focusKeyword = "mẫu nhà phố đẹp";
-const IMG_P2 = "/images/project_2.jpg";
-const IMG_P3 = "/images/project_3.jpg";
-const IMG_DESIGN =
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
+
+
+
 
 export const topMauNhaPhoDepXuHuong = {
   title: "Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay",
@@ -23,7 +26,7 @@ export const topMauNhaPhoDepXuHuong = {
 <p>Khi nói đến <strong>mẫu nhà phố đẹp</strong>, mỗi người có một hình dung riêng. Nhưng nhìn từ góc độ kiến trúc chuyên nghiệp, một ngôi nhà phố được gọi là đẹp khi hội đủ ba yếu tố: <strong>thẩm mỹ đồng bộ</strong> (mặt tiền — nội thất — sân vườn hòa quyện), <strong>công năng tối ưu</strong> (mỗi không gian phục vụ đúng nhu cầu sống) và <strong>bền vững theo thời gian</strong> (vật liệu, màu sắc không "lỗi mốt" sau 5–10 năm).</p>
 <p>Bài viết này tổng hợp <strong>top các xu hướng mẫu nhà phố đẹp</strong> được lựa chọn nhiều nhất tại TP.HCM và vùng lân cận năm 2026, cùng phân tích điểm đặc trưng và lưu ý khi triển khai. Dựa trên thực tế portfolio công trình của <strong>Kiến Trúc Sao Khuê</strong> và xu hướng thị trường kiến trúc nhà ở miền Nam.</p>
 
-${imageFigure(IMG_P2, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>Xu hướng 1: Nhà phố hiện đại tối giản (Modern Minimalist)</h2>
 <p>Đây là phong cách dẫn đầu trong hơn 5 năm qua và tiếp tục giữ vị trí số 1 tại TP.HCM. Đặc trưng của <strong>nhà phố hiện đại tối giản</strong>:</p>
@@ -47,7 +50,7 @@ ${imageFigure(IMG_P2, focusKeyword, 1)}
 </ul>
 <p><strong>Phù hợp với:</strong> Lô đất 5 m mặt tiền trở lên, từ 3–4 tầng. Chi phí cao hơn hiện đại tối giản 20–35% do nhiều chi tiết trang trí phức tạp.</p>
 
-${imageFigure(IMG_DESIGN, focusKeyword, 2)}
+${imageFigure(SK_IMG_3, focusKeyword, 2)}
 
 <h2>Xu hướng 3: Nhà phố Indochine nhiệt đới</h2>
 <p>Phong cách <strong>Indochine</strong> (hay Đông Dương) đang hồi sinh mạnh mẽ tại TP.HCM và miền Nam. Đây là sự kết hợp tinh tế giữa kiến trúc Pháp thuộc địa và yếu tố nhiệt đới Á Đông:</p>
@@ -82,7 +85,7 @@ ${imageFigure(IMG_DESIGN, focusKeyword, 2)}
 </ul>
 <p><strong>Phù hợp với:</strong> Mọi phong cách kiến trúc khi tích hợp từng phần — không cần áp dụng toàn bộ để hưởng lợi.</p>
 
-${imageFigure(IMG_P3, focusKeyword, 3)}
+${imageFigure(SK_IMG_2, focusKeyword, 3)}
 
 <h2>Những yếu tố tạo nên mặt tiền nhà phố ấn tượng</h2>
 <p>Dù chọn phong cách nào, một <strong>mặt tiền nhà phố đẹp</strong> cần đảm bảo:</p>

@@ -1,3 +1,6 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("bao-gia-xay-nha-tron-goi-phu-yen", 0);
+const SK_IMG_2 = slugImage("bao-gia-xay-nha-tron-goi-phu-yen", 1);
 ﻿/** Nội dung bài viết SEO #16 — slug: bao-gia-xay-nha-tron-goi-phu-yen */
 export const baoGiaXayNhaTronGoiPhuYen = {
   title: "Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết",
@@ -16,7 +19,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 <p>Bài viết này dành cho chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa và các khu vực lân cận đang cần <strong>đơn giá thi công</strong> tham khảo để lên kế hoạch tài chính.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-1</figcaption>
 </figure>
 
@@ -69,7 +72,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200" alt="bao-gia-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="bao-gia-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-2</figcaption>
 </figure>
 
@@ -109,7 +112,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="bao-gia-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="bao-gia-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-3</figcaption>
 </figure>
 

@@ -1,9 +1,10 @@
 ﻿/** Nội dung bài viết SEO #27 — slug: quy-trinh-xay-nha-tron-goi-a-z */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("quy-trinh-xay-nha-tron-goi-a-z", 0);
 
 const focusKeyword = "quy trình xây nhà trọn gói";
-const IMG_BUILD =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200";
+
 
 export const quyTrinhXayNhaTronGoiAZ = {
   title: "Quy Trình Xây Nhà Trọn Gói Từ A Đến Z",
@@ -21,7 +22,7 @@ export const quyTrinhXayNhaTronGoiAZ = {
 <p><strong>Xây nhà trọn gói</strong> (hay còn gọi là xây nhà theo gói thầu trọn vẹn) là hình thức ký một hợp đồng duy nhất bao gồm toàn bộ hạng mục từ thiết kế, cung cấp vật tư, thi công đến hoàn thiện và bàn giao chìa khóa. Chủ nhà chỉ cần giám sát một đầu mối, không phải quản lý nhiều đội thợ riêng biệt.</p>
 <p>So với thi công từng phần (chủ nhà tự mua vật liệu, tự thuê thợ), <strong>xây nhà trọn gói</strong> có ưu điểm vượt trội về quản lý tiến độ, kiểm soát chi phí và bảo hành sau bàn giao. Đây là lý do mô hình này ngày càng được ưa chuộng tại TP.HCM, Bình Dương và Đồng Nai. Tham khảo thêm <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói Sao Khuê</a>.</p>
 
-${imageFigure(IMG_BUILD, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>Quy trình xây nhà trọn gói tại Kiến Trúc Sao Khuê — 7 bước chuẩn</h2>
 <p>Dưới đây là <strong>quy trình xây nhà trọn gói từ A đến Z</strong> mà Sao Khuê áp dụng cho mọi dự án nhà phố, từ nhà 2 tầng đơn giản đến nhà phố 5 tầng phức tạp:</p>
@@ -45,7 +46,7 @@ ${imageFigure(IMG_BUILD, focusKeyword, 1)}
 </ul>
 <p>Mỗi hạng mục kết cấu có biên bản <strong>nghiệm thu nội bộ</strong> trước khi tiến sang giai đoạn tiếp theo — đảm bảo không bỏ sót lỗi kỹ thuật.</p>
 
-${imageFigure(IMG_BUILD, focusKeyword, 2)}
+${imageFigure(SK_IMG_1, focusKeyword, 2)}
 
 <h3>Bước 5: Thi công hoàn thiện</h3>
 <p>Sau khi kết cấu phần thô được nghiệm thu, đội thi công hoàn thiện tiến hành:</p>

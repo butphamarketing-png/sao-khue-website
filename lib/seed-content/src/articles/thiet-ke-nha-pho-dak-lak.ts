@@ -1,5 +1,9 @@
 ﻿/** Nội dung bài viết SEO #11 — slug: thiet-ke-nha-pho-dak-lak */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thiet-ke-nha-pho-dak-lak", 0);
+const SK_IMG_2 = slugImage("thiet-ke-nha-pho-dak-lak", 1);
+const SK_IMG_3 = slugImage("thiet-ke-nha-pho-dak-lak", 2);
 
 export const thietKeNhaPhoDakLak = {
   title: "Dịch Vụ Thiết Kế Nhà Phố Đẹp Tại Đắk Lắk",
@@ -17,7 +21,7 @@ export const thietKeNhaPhoDakLak = {
 <p><strong>Thiết kế nhà phố Đắk Lắk</strong> đòi hỏi hiểu rõ đặc thù địa hình, khí hậu và lối sống người dân Tây Nguyên — điều mà bản vẽ mẫu chung hoặc chép lại từ TP.HCM không đáp ứng được. Đắk Lắk có khí hậu cao nguyên đặc trưng: mùa khô hanh, biên độ nhiệt ngày đêm cao, mùa mưa dài từ tháng 5 đến tháng 11 với lượng mưa lớn.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>thiết kế nhà phố Đắk Lắk</strong> từ xa với quy trình hoàn toàn trực tuyến — từ trao đổi nhu cầu, khảo sát online, đến bàn giao hồ sơ 2D/3D. Hotline tư vấn: <strong>0909 075 668</strong>. Địa chỉ công ty: 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM.</p>
 
-${imageFigure("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200", "thiết kế nhà phố Đắk Lắk", 1)}
+${imageFigure(SK_IMG_1, "thiết kế nhà phố Đắk Lắk", 1)}
 
 <h2>Đặc thù thiết kế nhà phố tại Đắk Lắk và Buôn Ma Thuột</h2>
 <p>Thiết kế tại Đắk Lắk có những yếu tố riêng biệt mà kiến trúc sư phải tính đến ngay từ giai đoạn phác thảo:</p>
@@ -39,7 +43,7 @@ ${imageFigure("https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto
 <h3>Nhà phố hiện đại tối giản</h3>
 <p>Mặt tiền khối hộp gọn, cửa kính lớn hướng Đông – Bắc đón sáng buổi sáng mát. Lam che nắng dọc hướng Tây. Phù hợp gia đình trẻ thích không gian sạch, dễ bảo trì tại Buôn Ma Thuột.</p>
 
-${imageFigure("/images/project_2.jpg", "thiết kế nhà phố Đắk Lắk", 2)}
+${imageFigure(SK_IMG_2, "thiết kế nhà phố Đắk Lắk", 2)}
 
 <h2>Hồ sơ thiết kế nhà phố Đắk Lắk — Sao Khuê bàn giao</h2>
 <p>Gói <strong>thiết kế nhà phố Đắk Lắk</strong> tại Sao Khuê bao gồm đầy đủ:</p>
@@ -111,6 +115,6 @@ ${homeLinkParagraph()}
 ${seoCtaBlock("thiết kế nhà phố Đắk Lắk")}
 
 
-${imageFigure("/images/project_3.jpg", "thiết kế nhà phố Đắk Lắk", 3)}
+${imageFigure(SK_IMG_3, "thiết kế nhà phố Đắk Lắk", 3)}
 `.trim(),
 };

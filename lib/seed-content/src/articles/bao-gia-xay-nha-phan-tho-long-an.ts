@@ -1,5 +1,9 @@
 ﻿/** Nội dung bài viết SEO #9 — slug: bao-gia-xay-nha-phan-tho-long-an */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("bao-gia-xay-nha-phan-tho-long-an", 0);
+const SK_IMG_2 = slugImage("bao-gia-xay-nha-phan-tho-long-an", 1);
+const SK_IMG_3 = slugImage("bao-gia-xay-nha-phan-tho-long-an", 2);
 
 export const baoGiaXayNhaPhanThoLongAn = {
   title: "Báo Giá Xây Nhà Phần Thô Tại Long An Mới Nhất",
@@ -17,7 +21,7 @@ export const baoGiaXayNhaPhanThoLongAn = {
 <p><strong>Báo giá xây nhà phần thô Long An</strong> là mối quan tâm hàng đầu của chủ nhà trước khi khởi công. Phần thô chiếm 55–65% tổng chi phí xây dựng, quyết định độ bền và an toàn của toàn bộ công trình. Vì vậy, chọn nhà thầu dựa trên đơn giá rẻ nhất mà không kiểm tra chất lượng vật liệu, năng lực thi công là sai lầm phổ biến nhất.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp <strong>báo giá xây nhà phần thô Long An</strong> minh bạch theo từng hạng mục, cam kết đúng đơn giá đã ký không phát sinh tùy tiện. Hotline tư vấn miễn phí: <strong>0909 075 668</strong>.</p>
 
-${imageFigure("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200", "báo giá xây nhà phần thô Long An", 1)}
+${imageFigure(SK_IMG_1, "báo giá xây nhà phần thô Long An", 1)}
 
 <h2>Phần thô bao gồm những hạng mục nào?</h2>
 <p>Trước khi xem bảng giá, chủ nhà cần hiểu chính xác <strong>phần thô</strong> gồm gì để tránh nhầm lẫn khi so sánh báo giá giữa các nhà thầu:</p>
@@ -81,7 +85,7 @@ ${imageFigure("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto
 <h3>Thay đổi thiết kế giữa chừng</h3>
 <p>Thay đổi vị trí cột, dầm hoặc sàn sau khi đã đổ bê tông là phát sinh tốn kém nhất. Sao Khuê khuyến nghị chốt bản vẽ kỹ thuật hoàn chỉnh <strong>trước khi khởi công</strong> — xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
 
-${imageFigure("/images/project_2.jpg", "báo giá xây nhà phần thô Long An", 2)}
+${imageFigure(SK_IMG_2, "báo giá xây nhà phần thô Long An", 2)}
 
 <h2>So sánh phần thô nhà thầu giá rẻ vs nhà thầu uy tín</h2>
 <table>
@@ -154,6 +158,6 @@ ${homeLinkParagraph()}
 ${seoCtaBlock("báo giá xây nhà phần thô Long An")}
 
 
-${imageFigure("/images/project_3.jpg", "báo giá xây nhà phần thô Long An", 3)}
+${imageFigure(SK_IMG_3, "báo giá xây nhà phần thô Long An", 3)}
 `.trim(),
 };

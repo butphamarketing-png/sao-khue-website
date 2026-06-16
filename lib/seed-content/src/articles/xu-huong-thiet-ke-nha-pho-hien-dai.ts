@@ -1,8 +1,9 @@
 ﻿/** Nội dung bài viết SEO #20 — slug: xu-huong-thiet-ke-nha-pho-hien-dai */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("xu-huong-thiet-ke-nha-pho-hien-dai", 0);
 
-const IMG_DESIGN =
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
+
 const KEYWORD = "xu hướng thiết kế nhà phố";
 
 export const xuHuongThietKeNhaPhoHienDai = {
@@ -21,7 +22,7 @@ export const xuHuongThietKeNhaPhoHienDai = {
 <p><strong>Xu hướng thiết kế nhà phố hiện đại</strong> tại TP.HCM và các đô thị lớn miền Nam đang chuyển dịch mạnh trong những năm gần đây. Áp lực từ lô đất hẹp, nhu cầu sống tiện nghi và ảnh hưởng của kiến trúc quốc tế đã tạo ra những phong cách nhà phố mới — không chỉ đẹp về hình thức, mà còn <strong>tối ưu công năng, tiết kiệm năng lượng và thích nghi khí hậu nhiệt đới</strong>. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp các xu hướng nổi bật nhất năm 2026 để chủ đất tham khảo trước khi chốt phương án thiết kế.</p>
 <p>Bài viết phân tích từng xu hướng theo: đặc điểm nhận dạng, ưu điểm, phù hợp với loại lô đất nào — giúp bạn chọn đúng phong cách <strong>nhà phố hiện đại</strong> thay vì "thấy đẹp trên mạng nhưng không hợp lô nhà mình".</p>
 
-${imageFigure(IMG_DESIGN, KEYWORD, 1)}
+${imageFigure(SK_IMG_1, KEYWORD, 1)}
 
 <h2>1. Phong cách tối giản (Minimalist) — Xu hướng dẫn đầu</h2>
 <p><strong>Thiết kế nhà phố tối giản</strong> tiếp tục giữ vị trí số một trong sở thích của chủ đầu tư tại TP.HCM. Đặc trưng dễ nhận:</p>
@@ -53,7 +54,7 @@ ${imageFigure(IMG_DESIGN, KEYWORD, 1)}
 </ul>
 <p>Năm 2026, xu hướng này phát triển thêm với <strong>sân thượng xanh</strong> (green rooftop) — không gian thư giãn kết hợp vườn rau, giảm nhiệt mái đồng thời tạo điểm nhấn độc đáo cho công trình.</p>
 
-${imageFigure(IMG_DESIGN, KEYWORD, 2)}
+${imageFigure(SK_IMG_1, KEYWORD, 2)}
 
 <h2>4. Không gian mở — Xóa ranh giới phòng khách, bếp, ăn</h2>
 <p>Xu hướng <strong>open plan</strong> (không gian mở) ngày càng phổ biến ở nhà phố TP.HCM:</p>

@@ -1,11 +1,12 @@
 ﻿/** Nội dung bài viết SEO #29 — slug: thiet-ke-xay-dung-nha-pho-mien-nam */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thiet-ke-xay-dung-nha-pho-mien-nam", 0);
+const SK_IMG_2 = slugImage("thiet-ke-xay-dung-nha-pho-mien-nam", 1);
 
 const focusKeyword = "thiết kế xây dựng nhà phố";
-const IMG_HERO =
-  "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200";
-const IMG_BUILD =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200";
+
+
 
 export const thietKeXayDungNhaPhoMienNam = {
   title: "Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam",
@@ -23,7 +24,7 @@ export const thietKeXayDungNhaPhoMienNam = {
 <p>Vùng kinh tế trọng điểm phía Nam, dẫn đầu bởi TP.HCM và ba tỉnh vệ tinh Bình Dương, Đồng Nai, Long An, đang chứng kiến tốc độ đô thị hóa nhanh nhất cả nước. Hàng chục khu đô thị mới, hàng trăm dự án hạ tầng kết nối tạo ra nhu cầu khổng lồ về <strong>thiết kế xây dựng nhà phố</strong> — từ nhà ở tự xây trong hẻm nội thành đến nhà phố thương mại dọc các trục đường lớn.</p>
 <p>Trong bối cảnh đó, việc chọn được một <strong>đơn vị thiết kế và xây dựng nhà phố uy tín</strong> có kinh nghiệm thực địa tại miền Nam là yếu tố then chốt để công trình đạt chất lượng, đúng tiến độ và đảm bảo pháp lý địa phương. Bài viết này phân tích đặc thù từng thị trường và lý do <strong>Kiến Trúc Sao Khuê</strong> là đơn vị phù hợp cho gia chủ khu vực miền Nam.</p>
 
-${imageFigure(IMG_HERO, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>Đặc thù thiết kế xây dựng nhà phố tại từng thị trường miền Nam</h2>
 
@@ -58,7 +59,7 @@ ${imageFigure(IMG_HERO, focusKeyword, 1)}
 </ul>
 <p>Tham khảo: <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>.</p>
 
-${imageFigure(IMG_BUILD, focusKeyword, 2)}
+${imageFigure(SK_IMG_2, focusKeyword, 2)}
 
 <h2>Những yêu cầu chung khi thiết kế nhà phố miền Nam</h2>
 <p>Dù ở TP.HCM, Bình Dương hay Đồng Nai, nhà phố miền Nam đều có những yêu cầu chung mà kiến trúc sư phải hiểu sâu:</p>

@@ -1,7 +1,9 @@
 ﻿/** Nội dung bài viết SEO #22 — slug: mau-nha-pho-3-tang-dep */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("mau-nha-pho-3-tang-dep", 0);
 
-const IMG_P3 = "/images/project_3.jpg";
+
 const KEYWORD = "mẫu nhà phố 3 tầng đẹp";
 
 export const mauNhaPho3TangDep = {
@@ -20,7 +22,7 @@ export const mauNhaPho3TangDep = {
 <p><strong>Mẫu nhà phố 3 tầng</strong> đang là lựa chọn số một của nhiều gia đình TP.HCM trên lô đất từ 60–120m² — vừa đủ diện tích cho 3–4 thành viên, vừa không quá tốn kém về xây dựng và vận hành so với nhà 4–5 tầng. Tại <strong>Kiến Trúc Sao Khuê</strong>, hơn 40% các công trình nhà phố được thiết kế theo mô hình 3 tầng. Bài viết này tổng hợp các <strong>mẫu nhà phố 3 tầng đẹp</strong> phổ biến nhất, hướng dẫn bố trí mặt bằng tối ưu và những điểm cần lưu ý để có mặt tiền ấn tượng.</p>
 <p>Dù bạn đang ở Bình Thạnh, Thủ Đức, Quận 7 hay các tỉnh lân cận như Bình Dương, Đồng Nai — bài viết này sẽ giúp hình dung rõ phương án thiết kế trước khi gặp kiến trúc sư.</p>
 
-${imageFigure(IMG_P3, KEYWORD, 1)}
+${imageFigure(SK_IMG_1, KEYWORD, 1)}
 
 <h2>Vì sao nhà phố 3 tầng được ưa chuộng nhất?</h2>
 <p>So sánh với các phương án khác:</p>
@@ -70,7 +72,7 @@ ${imageFigure(IMG_P3, KEYWORD, 1)}
 <h3>4. Phong cách công nghiệp (Industrial)</h3>
 <p>Bê tông lộ thiên, sắt thép thô, gạch nung mộc, đèn Edison. Phù hợp chủ nhà cá tính, thường kết hợp với không gian làm việc sáng tạo tầng trệt. Ít phổ biến hơn nhưng tạo dấu ấn riêng mạnh.</p>
 
-${imageFigure(IMG_P3, KEYWORD, 2)}
+${imageFigure(SK_IMG_1, KEYWORD, 2)}
 
 <h2>Mặt tiền nhà phố 3 tầng — Ngôn ngữ kiến trúc quan trọng nhất</h2>
 <p>Mặt tiền là yếu tố quyết định cảm nhận đầu tiên và cũng ảnh hưởng đến giá trị bất động sản. Các nguyên tắc thiết kế mặt tiền <strong>nhà phố 3 tầng đẹp</strong>:</p>

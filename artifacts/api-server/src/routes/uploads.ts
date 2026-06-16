@@ -9,6 +9,7 @@ import {
   getSupabaseAdmin,
   isSupabaseStorageEnabled,
 } from "../lib/supabase";
+import { applyLogoWatermark } from "../lib/watermark-image";
 
 const ALLOWED_TYPES = new Set([
   "image/jpeg",
@@ -67,6 +68,28 @@ router.post(
         ? ext
         : ".jpg";
       const folder = typeof req.body?.folder === "string" ? req.body.folder.replace(/[^a-z0-9-]/gi, "") : "uploads";
+      const watermarkRaw = req.body?.watermark;
+      const shouldWatermark =
+        watermarkRaw === "0" || watermarkRaw === "false"
+          ? false
+          : watermarkRaw === "1" || watermarkRaw === "true"
+            ? true
+            : folder === "posts";
+
+      let uploadBuffer = file.buffer;
+      let contentType = file.mimetype;
+      if (shouldWatermark) {
+        try {
+          const watermarked = await applyLogoWatermark(file.buffer, file.mimetype);
+          if (watermarked) {
+            uploadBuffer = watermarked.buffer;
+            contentType = watermarked.contentType;
+          }
+        } catch (wmErr) {
+          console.warn("Watermark skipped:", wmErr);
+        }
+      }
+
       const objectPath = `${folder}/${Date.now()}-${crypto.randomBytes(6).toString("hex")}${safeExt}`;
 
       const supabase = getSupabaseAdmin();
@@ -74,8 +97,8 @@ router.post(
 
       const { error } = await supabase.storage
         .from(bucket)
-        .upload(objectPath, file.buffer, {
-          contentType: file.mimetype,
+        .upload(objectPath, uploadBuffer, {
+          contentType,
           upsert: false,
         });
 

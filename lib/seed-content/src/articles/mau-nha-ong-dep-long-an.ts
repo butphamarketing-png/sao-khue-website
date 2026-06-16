@@ -1,5 +1,8 @@
 ﻿/** Nội dung bài viết SEO #10 — slug: mau-nha-ong-dep-long-an */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("mau-nha-ong-dep-long-an", 0);
+const SK_IMG_2 = slugImage("mau-nha-ong-dep-long-an", 1);
 
 export const mauNhaOngDepLongAn = {
   title: "Mẫu Nhà Ống Đẹp Phù Hợp Gia Đình Trẻ Tại Long An",
@@ -17,7 +20,7 @@ export const mauNhaOngDepLongAn = {
 <p><strong>Mẫu nhà ống đẹp Long An</strong> đang được nhiều gia đình trẻ quan tâm khi sở hữu lô đất mặt tiền 4–5 m tại các khu dân cư Bến Lức, Đức Hòa, Cần Giuộc. Với quỹ đất ngày càng hạn hẹp tại các thị trấn, nhà ống — hay còn gọi là nhà phố dạng ống — trở thành lựa chọn tối ưu nhất về chi phí lẫn công năng.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> đã triển khai nhiều <strong>thiết kế nhà ống Long An</strong> từ 2 đến 4 tầng, đáp ứng đa dạng nhu cầu: ở riêng, kết hợp kinh doanh, hay đón thêm ông bà về ở cùng. Hotline tư vấn: <strong>0909 075 668</strong>.</p>
 
-${imageFigure("/images/project_2.jpg", "mẫu nhà ống đẹp Long An", 1)}
+${imageFigure(SK_IMG_1, "mẫu nhà ống đẹp Long An", 1)}
 
 <h2>Đặc điểm của nhà ống tại Long An</h2>
 <p>Không giống TP.HCM nội thành, <strong>nhà ống Long An</strong> thường có ưu thế hơn về chiều rộng và chiều sâu lô đất. Đặc điểm phổ biến:</p>
@@ -39,7 +42,7 @@ ${imageFigure("/images/project_2.jpg", "mẫu nhà ống đẹp Long An", 1)}
 <h3>Phong cách cổ điển Pháp – Indochine</h3>
 <p>Phào chỉ mặt tiền tinh tế, cột tròn hoặc vuông, ban công sắt uốn. Nhà ống phong cách Pháp tạo điểm nhấn sang trọng giữa khu dân cư. Phù hợp gia đình trung niên, thích không khí hoài cổ và muốn công trình "có hồn" dài lâu.</p>
 
-${imageFigure("/images/project_3.jpg", "mẫu nhà ống đẹp Long An", 2)}
+${imageFigure(SK_IMG_2, "mẫu nhà ống đẹp Long An", 2)}
 
 <h2>Bố cục công năng mẫu nhà ống 2 tầng tại Long An</h2>
 <p>Một thiết kế nhà ống 2 tầng điển hình của Sao Khuê với diện tích đất 5 × 18 m:</p>

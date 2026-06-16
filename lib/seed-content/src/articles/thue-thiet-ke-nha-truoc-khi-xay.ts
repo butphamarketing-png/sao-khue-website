@@ -1,9 +1,10 @@
 ﻿/** Nội dung bài viết SEO #26 — slug: thue-thiet-ke-nha-truoc-khi-xay */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thue-thiet-ke-nha-truoc-khi-xay", 0);
 
 const focusKeyword = "thuê thiết kế nhà";
-const IMG_DESIGN =
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
+
 
 export const thueThietKeNhaTruocKhiXay = {
   title: "Vì Sao Nên Thuê Đơn Vị Thiết Kế Trước Khi Xây Nhà?",
@@ -21,7 +22,7 @@ export const thueThietKeNhaTruocKhiXay = {
 <p>Rất nhiều gia đình ở TP.HCM và các tỉnh lân cận vẫn bước vào công trình với suy nghĩ: "Có thợ quen, cứ xây là được". Chỉ đến khi phòng ngủ tối, cầu thang chắn lối, ống nước đi sai hướng hoặc bị yêu cầu tháo dỡ vì sai chỉ giới — lúc đó mới hiểu giá trị của việc <strong>thuê thiết kế nhà</strong> từ đầu.</p>
 <p>Bài viết này phân tích cụ thể vì sao <strong>thuê đơn vị thiết kế trước khi xây</strong> không phải là chi phí thêm mà là khoản đầu tư giúp tiết kiệm gấp nhiều lần, tránh rủi ro pháp lý và tạo ra ngôi nhà đúng như kỳ vọng. Góc nhìn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị đã triển khai hàng trăm hồ sơ thiết kế – thi công nhà phố tại TP.HCM, Bình Dương và Đồng Nai.</p>
 
-${imageFigure(IMG_DESIGN, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>Thiết kế nhà là gì? Khác gì với "vẽ tay theo ý chủ nhà"?</h2>
 <p>Nhiều người nhầm lẫn rằng "thiết kế nhà" chỉ là vẽ mặt bằng đơn giản trên giấy A4. Trên thực tế, một bộ <strong>hồ sơ thiết kế</strong> chuyên nghiệp bao gồm:</p>
@@ -60,7 +61,7 @@ ${imageFigure(IMG_DESIGN, focusKeyword, 1)}
 <h3>Thẩm mỹ đồng bộ, tránh "nhà chắp vá"</h3>
 <p>Nhà không có thiết kế thường có dấu hiệu "chắp vá": cửa sổ to nhỏ ngẫu nhiên, sơn tường khác tông với gạch ốp, lan can sắt không khớp phong cách mặt tiền. Thiết kế tổng thể đồng bộ từ mặt đứng đến nội thất là yếu tố tạo nên nhà đẹp bền qua thời gian.</p>
 
-${imageFigure(IMG_DESIGN, focusKeyword, 2)}
+${imageFigure(SK_IMG_1, focusKeyword, 2)}
 
 <h2>Hồ sơ thiết kế bàn giao — Sao Khuê cung cấp gì?</h2>
 <p>Gói <strong>thiết kế nhà</strong> tại Kiến Trúc Sao Khuê bao gồm đầy đủ:</p>

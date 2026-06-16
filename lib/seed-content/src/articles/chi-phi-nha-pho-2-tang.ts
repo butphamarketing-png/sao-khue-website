@@ -1,7 +1,9 @@
 ﻿/** Nội dung bài viết SEO #21 — slug: chi-phi-nha-pho-2-tang */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("chi-phi-nha-pho-2-tang", 0);
 
-const IMG_P2 = "/images/project_2.jpg";
+
 const KEYWORD = "chi phí nhà phố 2 tầng";
 
 export const chiPhiNhaPho2Tang = {
@@ -20,7 +22,7 @@ export const chiPhiNhaPho2Tang = {
 <p><strong>Nhà phố 2 tầng</strong> là mô hình ưu tiên của hàng nghìn gia đình tại TP.HCM, Bình Dương và Đồng Nai khi có lô đất từ 60–100m². So với nhà 3–4 tầng, <strong>chi phí nhà phố 2 tầng</strong> vừa sức hơn, thời gian thi công ngắn hơn và kết cấu đơn giản hơn — phù hợp ngân sách gia đình trẻ từ <strong>800 triệu đến 1,5 tỷ</strong> tuỳ quy mô và vật liệu. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng phân tích chi phí thực tế và hướng dẫn tối ưu ngân sách trong bài viết này.</p>
 <p>Nội dung bao gồm: các yếu tố tác động đến <strong>báo giá nhà 2 tầng</strong>, bảng đơn giá tham khảo, ví dụ tính chi phí theo diện tích cụ thể, cách tiết kiệm mà không giảm chất lượng — và câu hỏi thường gặp từ chủ đầu tư.</p>
 
-${imageFigure(IMG_P2, KEYWORD, 1)}
+${imageFigure(SK_IMG_1, KEYWORD, 1)}
 
 <h2>Các yếu tố quyết định chi phí nhà phố 2 tầng</h2>
 <p>Không có một con số "giá xây nhà 2 tầng cố định" vì mỗi công trình có đặc thù riêng. Những yếu tố tác động chính:</p>
@@ -64,7 +66,7 @@ Cộng chi phí ngoài hợp đồng (điện nước tạm, dự phòng 8%): <s
 Phần thô × 3.700.000 đ/m²: <strong>≈ 500 triệu đồng</strong><br />
 Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~750–850 triệu</strong>.</p>
 
-${imageFigure(IMG_P2, KEYWORD, 2)}
+${imageFigure(SK_IMG_1, KEYWORD, 2)}
 
 <h2>Phân tích tỷ trọng chi phí nhà phố 2 tầng</h2>
 <p>Hiểu tỷ lệ từng nhóm giúp bạn kiểm soát dự toán và biết nên tiết kiệm ở đâu:</p>

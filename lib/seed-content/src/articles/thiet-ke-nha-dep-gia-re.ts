@@ -1,8 +1,9 @@
 ﻿/** Nội dung bài viết SEO #23 — slug: thiet-ke-nha-dep-gia-re */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thiet-ke-nha-dep-gia-re", 0);
 
-const IMG_DESIGN =
-  "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
+
 const KEYWORD = "thiết kế nhà đẹp giá rẻ";
 
 export const thietKeNhaDepGiaRe = {
@@ -21,7 +22,7 @@ export const thietKeNhaDepGiaRe = {
 <p>Khi ngân sách hạn chế, câu hỏi đầu tiên nhiều gia đình trẻ đặt ra là: <em>"Có thể có ngôi nhà đẹp mà không phải vay quá nhiều không?"</em>. Câu trả lời là <strong>có</strong> — nếu bạn biết cách <strong>tối ưu thiết kế ngay từ đầu</strong>, thay vì cắt giảm tuỳ tiện giữa chừng. <strong>Thiết kế nhà đẹp giá rẻ</strong> không có nghĩa là nhà xấu hoặc kém chất lượng — mà là nhà được thiết kế thông minh, tập trung ngân sách vào đúng chỗ và loại bỏ những khoản chi không thực sự cần thiết.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> đã thiết kế và thi công nhiều công trình <strong>nhà phố đẹp trong tầm ngân sách 700 triệu – 1,2 tỷ</strong> cho gia đình trẻ tại TP.HCM, Bình Dương và Đồng Nai. Bài viết này chia sẻ toàn bộ bí quyết thực chiến từ hàng trăm công trình thực tế.</p>
 
-${imageFigure(IMG_DESIGN, KEYWORD, 1)}
+${imageFigure(SK_IMG_1, KEYWORD, 1)}
 
 <h2>Sự khác biệt giữa "nhà rẻ" và "nhà đẹp giá rẻ"</h2>
 <p>Nhiều người nhầm lẫn giữa hai khái niệm:</p>
@@ -72,7 +73,7 @@ ${imageFigure(IMG_DESIGN, KEYWORD, 1)}
 </ul>
 <p>Quan trọng: kết cấu và hạ tầng kỹ thuật phải làm đúng và đủ ngay từ giai đoạn 1 — không để "làm thêm sau" với kết cấu chịu lực hay ống điện nước.</p>
 
-${imageFigure(IMG_DESIGN, KEYWORD, 2)}
+${imageFigure(SK_IMG_1, KEYWORD, 2)}
 
 <h2>Những khoản hay bị "thổi phồng" làm tăng chi phí</h2>
 <p>Khi thiết kế nhà trong tầm ngân sách, hãy cẩn thận với các hạng mục dễ bị đẩy chi phí:</p>

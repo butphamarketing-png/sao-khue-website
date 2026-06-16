@@ -1,5 +1,9 @@
 ﻿/** Nội dung bài viết SEO #12 — slug: xay-nha-tron-goi-dak-lak */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("xay-nha-tron-goi-dak-lak", 0);
+const SK_IMG_2 = slugImage("xay-nha-tron-goi-dak-lak", 1);
+const SK_IMG_3 = slugImage("xay-nha-tron-goi-dak-lak", 2);
 
 export const xayNhaTronGoiDakLak = {
   title: "Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng",
@@ -17,7 +21,7 @@ export const xayNhaTronGoiDakLak = {
 <p><strong>Xây nhà trọn gói Đắk Lắk</strong> là hình thức chủ đầu tư giao toàn bộ dự án — từ thiết kế, cung cấp vật liệu, thi công đến bàn giao hoàn thiện — cho một đơn vị duy nhất. Đây là xu hướng được nhiều gia đình tại Buôn Ma Thuột, Buôn Hồ, Ea Kar và các huyện trong tỉnh Đắk Lắk lựa chọn trong những năm gần đây.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong>, địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM, là đơn vị chuyên nghiệp nhận <strong>thi công trọn gói</strong> tại Đắk Lắk và các tỉnh Tây Nguyên. Chúng tôi cam kết <strong>bảo hành kết cấu 10 năm</strong> và hoàn thiện đúng tiến độ đã thỏa thuận.</p>
 
-${imageFigure("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200", "xây nhà trọn gói Đắk Lắk", 1)}
+${imageFigure(SK_IMG_1, "xây nhà trọn gói Đắk Lắk", 1)}
 
 <h2>Xây nhà trọn gói Đắk Lắk bao gồm những gì?</h2>
 <p>Gói <strong>xây nhà trọn gói Đắk Lắk</strong> của Sao Khuê bao trọn từ đầu đến cuối:</p>
@@ -51,7 +55,7 @@ ${imageFigure("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto
 <h3>Nhân công địa phương</h3>
 <p>Sao Khuê kết hợp đội thợ có kinh nghiệm tại chỗ với giám sát kỹ thuật cử từ TP.HCM — đảm bảo tiêu chuẩn thi công đồng đều, không phụ thuộc hoàn toàn vào nhân công một nguồn.</p>
 
-${imageFigure("/images/project_2.jpg", "xây nhà trọn gói Đắk Lắk", 2)}
+${imageFigure(SK_IMG_2, "xây nhà trọn gói Đắk Lắk", 2)}
 
 <h2>Quy trình xây nhà trọn gói Đắk Lắk tại Sao Khuê</h2>
 <ol>
@@ -116,6 +120,6 @@ ${homeLinkParagraph()}
 ${seoCtaBlock("xây nhà trọn gói Đắk Lắk")}
 
 
-${imageFigure("/images/project_3.jpg", "xây nhà trọn gói Đắk Lắk", 3)}
+${imageFigure(SK_IMG_3, "xây nhà trọn gói Đắk Lắk", 3)}
 `.trim(),
 };

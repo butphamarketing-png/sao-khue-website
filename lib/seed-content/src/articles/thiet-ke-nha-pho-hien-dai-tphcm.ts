@@ -1,3 +1,7 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 0);
+const SK_IMG_2 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 1);
+const SK_IMG_3 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 2);
 ﻿/** Nội dung bài viết SEO #3 — slug: thiet-ke-nha-pho-hien-dai-tphcm */
 export const thietKeNhaPhoHienDaiTphcm = {
   title: "Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM",
@@ -16,7 +20,7 @@ export const thietKeNhaPhoHienDaiTphcm = {
 <p>Bài viết dành cho chủ đất đang tìm <strong>đơn vị thiết kế nhà phố uy tín</strong>, muốn hiểu <strong>quy trình</strong>, <strong>chi phí tham khảo</strong>, <strong>phong cách hiện đại</strong> phù hợp TP.HCM và lợi ích khi gộp <strong>thiết kế + thi công</strong> một nhà thầu — theo chuẩn nội dung SEO (heading rõ, từ khóa tự nhiên, liên kết nội bộ, FAQ). Nội dung cập nhật theo thực tiễn thị trường xây dựng TP.HCM năm 2026.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="thiết kế nhà phố tphcm" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="thiết kế nhà phố tphcm" loading="lazy" decoding="async" />
 <figcaption>thiết kế nhà phố tphcm</figcaption>
 </figure>
 
@@ -54,7 +58,7 @@ export const thietKeNhaPhoHienDaiTphcm = {
 <p>Khách hàng có thể tham khảo <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">thiết kế nhà phong cách hiện đại</a> trong portfolio Sao Khuê trước khi chốt phương án.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_3.jpg" alt="thiết kế nhà phố hiện đại" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="thiết kế nhà phố hiện đại" loading="lazy" decoding="async" />
 <figcaption>thiết kế nhà phố hiện đại</figcaption>
 </figure>
 
@@ -111,7 +115,7 @@ export const thietKeNhaPhoHienDaiTphcm = {
 <p>Khu vực lân cận: <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">mẫu nhà phố 2 tầng Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&amp;fit=crop&amp;q=80&amp;w=1200" alt="mẫu nhà phố tphcm" loading="lazy" decoding="async" />
+<img src="${SK_IMG_3}" alt="mẫu nhà phố tphcm" loading="lazy" decoding="async" />
 <figcaption>mẫu nhà phố tphcm</figcaption>
 </figure>
 

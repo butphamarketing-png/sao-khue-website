@@ -1,8 +1,9 @@
 ﻿/** Nội dung bài viết SEO #19 — slug: du-toan-chi-phi-xay-nha */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("du-toan-chi-phi-xay-nha", 0);
 
-const IMG_PLAN =
-  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200";
+
 const KEYWORD = "dự toán chi phí xây nhà";
 
 export const duToanChiPhiXayNha = {
@@ -21,7 +22,7 @@ export const duToanChiPhiXayNha = {
 <p><strong>Dự toán chi phí xây nhà</strong> là bước không thể bỏ qua trước khi khởi công bất kỳ công trình nào — từ nhà phố nhỏ đến biệt thự. Đây không chỉ là con số ước tính sơ bộ, mà là <strong>bảng phân tích chi tiết từng hạng mục</strong>: móng, kết cấu, hoàn thiện, điện nước, cửa — giúp chủ nhà nắm rõ ngân sách, tránh phát sinh và so sánh giữa các nhà thầu một cách công bằng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> hướng dẫn quy trình lập <strong>bảng dự toán</strong> chuẩn trong bài viết này.</p>
 <p>Bài viết dành cho chủ đất chuẩn bị xây nhà phố, nhà ở riêng lẻ hoặc nâng tầng tại TP.HCM, Bình Dương, Đồng Nai — muốn hiểu cách <strong>bóc tách khối lượng</strong>, xác định <strong>chi phí ẩn</strong>, và sử dụng dự toán như công cụ đàm phán với nhà thầu.</p>
 
-${imageFigure(IMG_PLAN, KEYWORD, 1)}
+${imageFigure(SK_IMG_1, KEYWORD, 1)}
 
 <h2>Dự toán chi phí xây nhà gồm những phần nào?</h2>
 <p>Một <strong>bảng dự toán xây nhà</strong> đầy đủ thường chia thành các nhóm hạng mục sau:</p>
@@ -75,7 +76,7 @@ ${imageFigure(IMG_PLAN, KEYWORD, 1)}
   <li><strong>Dự phòng phát sinh:</strong> Cộng thêm <strong>5–10%</strong> tổng dự toán làm quỹ dự phòng (địa chất bất ngờ, thay đổi nhỏ thiết kế, trượt giá vật liệu).</li>
 </ol>
 
-${imageFigure(IMG_PLAN, KEYWORD, 2)}
+${imageFigure(SK_IMG_1, KEYWORD, 2)}
 
 <h2>Chi phí ẩn thường bị bỏ sót trong dự toán</h2>
 <p>Ngay cả khi bạn đã có bảng dự toán chi tiết, một số khoản thường bị quên và gây "sốc" chi phí cuối dự án:</p>

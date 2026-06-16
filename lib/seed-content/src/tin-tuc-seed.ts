@@ -32,6 +32,7 @@ import {
   xuHuongThietKeNhaPhoHienDai,
 } from "./articles";
 import { TIN_TUC_BATCH } from "./tin-tuc-calendar-data";
+import { slugImage } from "./site-images";
 
 export type TinTucSeedEntry = { slug: string; image: string; article: SeoArticle };
 
@@ -59,24 +60,19 @@ const ARTICLE_BY_SLUG: Record<string, SeoArticle> = {
   "kien-truc-sao-khue-don-vi-uy-tin": kienTrucSaoKhueDonViUyTin,
 };
 
-const PLAN = "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200";
-const BUILD = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200";
-const DESIGN = "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200";
-const HERO = "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200";
-
 /** 30 bài tin tức theo lịch nội dung (calendar #1–#30, bài #30 = tin tức thương hiệu). */
 export const TIN_TUC_SEED_ENTRIES: TinTucSeedEntry[] = [
-  { slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", image: "/images/project_3.jpg", article: congTyXayDungNhaPhoUyTinTphcm },
-  { slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", image: PLAN, article: baoGiaXayNhaTronGoiMoiNhatTphcm },
-  { slug: "thiet-ke-nha-pho-hien-dai-tphcm", image: "/images/project_2.jpg", article: thietKeNhaPhoHienDaiTphcm },
-  { slug: "mau-nha-pho-2-tang-binh-duong", image: "/images/project_2.jpg", article: mauNhaPho2TangBinhDuong },
-  { slug: "thiet-ke-thi-cong-nha-pho-dong-nai", image: DESIGN, article: thietKeThiCongNhaPhoDongNai },
+  { slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", image: slugImage("cong-ty-xay-dung-nha-pho-uy-tin-tphcm"), article: congTyXayDungNhaPhoUyTinTphcm },
+  { slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", image: slugImage("bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"), article: baoGiaXayNhaTronGoiMoiNhatTphcm },
+  { slug: "thiet-ke-nha-pho-hien-dai-tphcm", image: slugImage("thiet-ke-nha-pho-hien-dai-tphcm"), article: thietKeNhaPhoHienDaiTphcm },
+  { slug: "mau-nha-pho-2-tang-binh-duong", image: slugImage("mau-nha-pho-2-tang-binh-duong"), article: mauNhaPho2TangBinhDuong },
+  { slug: "thiet-ke-thi-cong-nha-pho-dong-nai", image: slugImage("thiet-ke-thi-cong-nha-pho-dong-nai"), article: thietKeThiCongNhaPhoDongNai },
   ...TIN_TUC_BATCH.map((b) => ({
     slug: b.slug,
     image: b.image,
     article: ARTICLE_BY_SLUG[b.slug]!,
   })),
-  { slug: "cam-nang-xay-nha-2026", image: HERO, article: camNangXayNha2026 },
-  { slug: "luat-xay-dung-moi-nhat", image: HERO, article: luatXayDungMoiNhat },
-  { slug: "phong-thuy-nha-o", image: HERO, article: phongThuyNhaO },
+  { slug: "cam-nang-xay-nha-2026", image: slugImage("cam-nang-xay-nha-2026"), article: camNangXayNha2026 },
+  { slug: "luat-xay-dung-moi-nhat", image: slugImage("luat-xay-dung-moi-nhat"), article: luatXayDungMoiNhat },
+  { slug: "phong-thuy-nha-o", image: slugImage("phong-thuy-nha-o"), article: phongThuyNhaO },
 ];

@@ -45,7 +45,7 @@ export function FeaturedImagePanel({
       <h4 className="text-sm font-bold text-slate-900">Hình đại diện</h4>
       <p className="mt-1 text-xs leading-relaxed text-slate-500">
         Kéo thả hoặc chọn ảnh. Khuyến nghị <strong>1200×630 px</strong> (ngang) — đẹp trên
-        Facebook/Zalo và Google.
+        Facebook/Zalo và Google. Logo Sao Khuê sẽ được tự động đóng dấu khi tải lên.
         {suggestedFilename ? (
           <>
             {" "}

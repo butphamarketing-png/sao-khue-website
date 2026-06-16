@@ -1,9 +1,10 @@
 ﻿/** Nội dung bài viết SEO #24 — slug: xay-nha-ngan-sach-1-ty-2 */
 import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("xay-nha-ngan-sach-1-ty-2", 0);
 
 const focusKeyword = "xây nhà 1 tỷ 2";
-const IMG_BUILD =
-  "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200";
+
 
 export const xayNhaNganSach1Ty2 = {
   title: "Giải Pháp Xây Nhà Chỉ Với Ngân Sách Từ 1 Tỷ 2",
@@ -21,7 +22,7 @@ export const xayNhaNganSach1Ty2 = {
 <p>Ngân sách <strong>1 tỷ 2</strong> (1,2 tỷ đồng) để xây nhà là câu hỏi nhiều gia đình trẻ đặt ra khi cầm sổ đất trong tay. Câu trả lời là: <strong>hoàn toàn khả thi</strong> — nếu bạn lên kế hoạch đúng, chọn phương án thiết kế hợp lý và hợp tác với nhà thầu <strong>minh bạch về báo giá</strong>. Ngược lại, nếu thiếu bản vẽ, thiếu dự toán chi tiết, ngân sách ấy có thể "bay hơi" trước khi nhà đến tầng 2.</p>
 <p>Bài viết này giúp bạn hiểu rõ: <strong>xây nhà 1 tỷ 2</strong> được nhà như thế nào, cần làm gì để kiểm soát chi phí hiệu quả và những bẫy phổ biến khiến ngân sách vượt trần. Đây là góc nhìn thực tiễn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị thiết kế và thi công nhà phố tại TP.HCM, Bình Dương, Đồng Nai với nhiều dự án ở phân khúc ngân sách hợp lý.</p>
 
-${imageFigure(IMG_BUILD, focusKeyword, 1)}
+${imageFigure(SK_IMG_1, focusKeyword, 1)}
 
 <h2>1 tỷ 2 xây được nhà gì? Tham khảo thực tế năm 2026</h2>
 <p>Để ước lượng, hãy tính theo đơn giá xây dựng phổ biến tại TP.HCM và các vùng lân cận. Lưu ý rằng đơn giá có thể thay đổi tùy thời điểm, vị trí và yêu cầu cụ thể:</p>
@@ -64,7 +65,7 @@ ${imageFigure(IMG_BUILD, focusKeyword, 1)}
 <h3>Chiến lược 5: Phân bổ ngân sách đúng trọng tâm</h3>
 <p>Đừng tiết kiệm ở kết cấu chịu lực (bê tông, thép, chống thấm móng) nhưng hoàn toàn có thể linh hoạt ở hoàn thiện nội thất. Tỷ lệ phân bổ hợp lý: <strong>55–60% cho kết cấu và phần thô</strong>, <strong>40–45% cho hoàn thiện</strong>. Bê tông M200+ và thép đúng mác là nền tảng của ngôi nhà bền 50 năm — không thể thương lượng.</p>
 
-${imageFigure(IMG_BUILD, focusKeyword, 2)}
+${imageFigure(SK_IMG_1, focusKeyword, 2)}
 
 <h2>Dự toán mẫu — Nhà phố 3 tầng ngân sách 1 tỷ 2 tại TP.HCM</h2>
 <p>Dưới đây là dự toán tham khảo cho nhà phố 3 tầng, diện tích đất 4×15 m, xây trọn gói tại khu vực TP.HCM và vùng ven (năm 2026):</p>

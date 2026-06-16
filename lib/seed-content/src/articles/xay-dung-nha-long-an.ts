@@ -1,5 +1,9 @@
 ﻿/** Nội dung bài viết SEO #8 — slug: xay-dung-nha-long-an */
 import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("xay-dung-nha-long-an", 0);
+const SK_IMG_2 = slugImage("xay-dung-nha-long-an", 1);
+const SK_IMG_3 = slugImage("xay-dung-nha-long-an", 2);
 
 export const xayDungNhaLongAn = {
   title: "Công Ty Xây Dựng Nhà Uy Tín Tại Long An",
@@ -17,7 +21,7 @@ export const xayDungNhaLongAn = {
 <p><strong>Xây dựng nhà Long An</strong> đang trở thành xu hướng mạnh khi nhiều gia đình chuyển về các huyện Bến Lức, Cần Đước, Đức Hòa, Tân An định cư sau giai đoạn tích lũy. Nhu cầu <strong>thi công nhà phố Long An</strong> tăng cao, kéo theo đó là hàng loạt nhà thầu thiếu kinh nghiệm, báo giá thấp nhưng thi công sơ sài, gây thiệt hại lớn cho chủ nhà.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM — đã triển khai nhiều công trình tại Long An và các tỉnh giáp ranh TP.HCM. Chúng tôi cung cấp dịch vụ <strong>xây nhà trọn gói Long An</strong> đầy đủ từ thiết kế, thi công đến bàn giao, với <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
-${imageFigure("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200", "xây dựng nhà Long An", 1)}
+${imageFigure(SK_IMG_1, "xây dựng nhà Long An", 1)}
 
 <h2>Tại sao nhiều gia đình chọn xây nhà tại Long An?</h2>
 <p>Long An có vị trí cửa ngõ phía Tây TP.HCM, giá đất vẫn còn hợp lý so với nội thành, hạ tầng ngày càng hoàn thiện. Những lý do khiến Long An trở thành điểm đến lý tưởng để định cư và đầu tư bất động sản:</p>
@@ -40,7 +44,7 @@ ${imageFigure("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto
 <h3>Nhà xưởng, nhà kho kết hợp ở</h3>
 <p>Phù hợp hộ kinh doanh, sản xuất nhỏ tại các khu công nghiệp. Kết cấu thép hoặc bê tông cốt thép, mái tôn cách nhiệt — thiết kế linh hoạt theo đặc thù từng ngành nghề.</p>
 
-${imageFigure("/images/project_2.jpg", "xây dựng nhà Long An", 2)}
+${imageFigure(SK_IMG_2, "xây dựng nhà Long An", 2)}
 
 <h2>Quy trình xây dựng nhà Long An tại Sao Khuê</h2>
 <ol>
@@ -87,6 +91,6 @@ ${homeLinkParagraph()}
 ${seoCtaBlock("xây dựng nhà Long An")}
 
 
-${imageFigure("/images/project_3.jpg", "xây dựng nhà Long An", 3)}
+${imageFigure(SK_IMG_3, "xây dựng nhà Long An", 3)}
 `.trim(),
 };

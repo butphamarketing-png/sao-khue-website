@@ -1,3 +1,6 @@
+import { slugImage } from "../site-images";
+const SK_IMG_1 = slugImage("thiet-ke-nha-dep-phu-yen", 0);
+const SK_IMG_2 = slugImage("thiet-ke-nha-dep-phu-yen", 1);
 ﻿/** Nội dung bài viết SEO #15 — slug: thiet-ke-nha-dep-phu-yen */
 export const thietKeNhaDepPhuYen = {
   title: "Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên",
@@ -16,7 +19,7 @@ export const thietKeNhaDepPhuYen = {
 <p>Bài viết này hướng đến chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa và các huyện thị Phú Yên đang tìm đơn vị <strong>thiết kế nhà</strong> uy tín, muốn có ngôi nhà vừa đẹp, vừa tiện nghi và phù hợp ngân sách.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="thiet-ke-nha-dep-phu-yen-1" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="thiet-ke-nha-dep-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-dep-phu-yen-1</figcaption>
 </figure>
 
@@ -54,7 +57,7 @@ export const thietKeNhaDepPhuYen = {
 </ol>
 
 <figure class="article-figure article-figure--inline">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1200" alt="thiet-ke-nha-dep-phu-yen-2" loading="lazy" decoding="async" />
+<img src="${SK_IMG_1}" alt="thiet-ke-nha-dep-phu-yen-2" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-dep-phu-yen-2</figcaption>
 </figure>
 
@@ -100,7 +103,7 @@ export const thietKeNhaDepPhuYen = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/project_2.jpg" alt="thiet-ke-nha-dep-phu-yen-3" loading="lazy" decoding="async" />
+<img src="${SK_IMG_2}" alt="thiet-ke-nha-dep-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-dep-phu-yen-3</figcaption>
 </figure>
 
