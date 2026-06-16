@@ -2,7 +2,7 @@
  * Lịch nội dung SEO — 30 bài (1 dòng = 1 bài).
  * Cập nhật `status` khi đã có slug trong seedPosts.
  *
- * Batch 5 (Bình Dương + TP.HCM): #121–#170. Batch 6 (sửa nhà miền Trung): #171–#196.
+ * Batch 6 (sửa nhà miền Trung): #171–#196. Batch 7 (xây nhà miền Trung): #197–#246.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -19,6 +19,7 @@ export { phuYenDakLakKeywordCalendarBatch3 } from "./phu-yen-dak-lak-keyword-cal
 export { longAnDongNaiKeywordCalendar } from "./long-an-dong-nai-keyword-calendar";
 export { binhDuongTphcmKeywordCalendar } from "./binh-duong-tphcm-keyword-calendar";
 export { mienTrungSuaNhaKeywordCalendar } from "./mien-trung-sua-nha-keyword-calendar";
+export { mienTrungXayNhaKeywordCalendar } from "./mien-trung-xay-nha-keyword-calendar";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },

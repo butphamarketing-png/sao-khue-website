@@ -45,6 +45,8 @@ import {
   binhDuongTphcmTinTucSlugs,
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
+  mienTrungXayNhaArticlesBySlug,
+  mienTrungXayNhaSlugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -197,6 +199,9 @@ export const seedPosts: SeedPost[] = [
   ),
   ...mienTrungSuaNhaSlugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), mienTrungSuaNhaArticlesBySlug[slug]!),
+  ),
+  ...mienTrungXayNhaSlugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), mienTrungXayNhaArticlesBySlug[slug]!),
   ),
 ];
 

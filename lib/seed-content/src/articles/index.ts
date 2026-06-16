@@ -50,6 +50,11 @@ export { xayDungNhaPhuYen } from "./xay-dung-nha-phu-yen";
 export { xayDungNhaDakLak } from "./xay-dung-nha-dak-lak";
 export { suaChuaCaiTaoNhaTphcm } from "./sua-chua-cai-tao-nha-tphcm";
 export {
+  mienTrungXayNhaArticlesBySlug,
+  mienTrungXayNhaSlugs,
+  getMienTrungXayNhaArticle,
+} from "./mien-trung-xay-nha-tin-tuc-articles";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,

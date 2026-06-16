@@ -18950,6 +18950,3756 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-dung-nha-mien-trung$slug$,
+  $title$Xây Dựng Nhà Miền Trung — Trọn Gói Uy Tín$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây dựng nhà miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây dựng nhà miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>xây dựng nhà miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây dựng nhà miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="xay-dung-nha-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-mien-trung-1</figcaption>
+</figure>
+
+<h2>xây dựng nhà miền Trung — Phạm vi dịch vụ Sao Khuê</h2>
+<p>Sao Khuê nhận <strong>thiết kế và thi công xây nhà trọn gói</strong> tại các tỉnh miền Trung — một đầu mối từ khảo sát đến bàn giao.</p>
+<h3>Duyên hải</h3>
+<p>Phú Yên, Khánh Hòa, Bình Định, Quảng Ngãi, Quảng Nam, Huế — nhà phố, biệt thự ven biển, chống thấm và chịu gió bão.</p>
+<h3>Tây Nguyên</h3>
+<p>Đắk Lắk, Gia Lai, Kon Tum — nhà phố, nhà vườn, thi công phù hợp khí hậu cao nguyên.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="xay-dung-nha-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình xây dựng nhà miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây dựng nhà miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây dựng nhà miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="xay-dung-nha-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
+  $mt$xây dựng nhà miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ xây dựng nhà miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây dựng nhà miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-gia-lai$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>công ty xây dựng Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="cong-ty-xay-dung-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-gia-lai-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Gia Lai — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Gia Lai.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="cong-ty-xay-dung-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="cong-ty-xay-dung-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
+  $mt$công ty xây dựng Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-pleiku-gia-lai$slug$,
+  $title$Xây Nhà Tại Pleiku Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Pleiku Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Pleiku Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>xây nhà Pleiku Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Pleiku Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-pleiku-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-pleiku-gia-lai-1</figcaption>
+</figure>
+
+<h2>xây nhà Pleiku Gia Lai — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Pleiku. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-pleiku-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-pleiku-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Pleiku Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Pleiku Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Pleiku Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-pleiku-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-pleiku-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
+  $mt$xây nhà Pleiku Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Pleiku Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Pleiku Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-gia-lai$slug$,
+  $title$Xây Nhà Trọn Gói Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>xây nhà trọn gói Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="xay-nha-tron-goi-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-gia-lai-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Gia Lai — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Gia Lai — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="xay-nha-tron-goi-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="xay-nha-tron-goi-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
+  $mt$xây nhà trọn gói Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-gia-lai$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>thiết kế nhà Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="thiet-ke-nha-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-gia-lai-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Gia Lai — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Pleiku. Đặc thù: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="thiet-ke-nha-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="thiet-ke-nha-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
+  $mt$thiết kế nhà Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-gia-lai$slug$,
+  $title$Xây Nhà 2 Tầng Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>xây nhà 2 tầng Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 2 tầng Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="xay-nha-2-tang-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-gia-lai-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Gia Lai — Kết cấu an toàn</h2>
+<p>Móng, cột, dầm BTCT đúng tiêu chuẩn TCVN — đặc biệt quan trọng tại Gia Lai (cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-2-tang-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-2-tang-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
+  $mt$xây nhà 2 tầng Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-gia-lai$slug$,
+  $title$Chi Phí Xây Nhà Tại Gia Lai (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>chi phí xây nhà Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="chi-phi-xay-nha-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-gia-lai-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Gia Lai</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,5 – 4,8 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,0 – 7,2 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="chi-phi-xay-nha-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="chi-phi-xay-nha-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
+  $mt$chi phí xây nhà Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-gia-lai$slug$,
+  $title$Xây Biệt Thự Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>xây biệt thự Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây biệt thự Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-51.jpg" alt="xay-biet-thu-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-gia-lai-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Gia Lai — Biệt thự chuẩn kỹ thuật</h2>
+<p>Không gian sân vườn, hồ bơi — thiết kế theo phong cách chủ nhà tại Pleiku.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="xay-biet-thu-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-42.jpg" alt="xay-biet-thu-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
+  $mt$xây biệt thự Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây biệt thự Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-gia-lai$slug$,
+  $title$Mẫu Nhà Phố Đẹp Tại Gia Lai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Gia Lai: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Gia Lai — Chuyên nghiệp tại Gia Lai</h2>
+<p><strong>nhà phố Gia Lai</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Gia Lai</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cao nguyên Pleiku — mưa lớn theo mùa, cần mái dốc và thoát nước tốt.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà phố Gia Lai</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="nha-pho-gia-lai-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-gia-lai-1</figcaption>
+</figure>
+
+<h2>nhà phố Gia Lai — Mẫu nhà phố tham khảo</h2>
+<p>Nhà phố mặt tiền 4–5 m, 1–3 tầng — giếng trời thông gió, phòng ngủ đủ ánh sáng. Sao Khuê thiết kế và thi công trọn gói tại Gia Lai.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="nha-pho-gia-lai-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-gia-lai-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Gia Lai tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-gia-lai">xây nhà trọn gói Gia Lai</a>, <a href="/tin-tuc/sua-chua-nha-gia-lai">sửa chữa nhà Gia Lai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Gia Lai</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Gia Lai.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Gia Lai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Gia Lai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="nha-pho-gia-lai-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-gia-lai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
+  $mt$nhà phố Gia Lai | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà phố Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-khanh-hoa$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>công ty xây dựng Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-34.jpg" alt="cong-ty-xay-dung-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Khánh Hòa — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Khánh Hòa.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="cong-ty-xay-dung-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="cong-ty-xay-dung-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
+  $mt$công ty xây dựng Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-nha-trang$slug$,
+  $title$Xây Nhà Tại Nha Trang Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Nha Trang: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Nha Trang — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>xây nhà Nha Trang</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Nha Trang</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="xay-nha-nha-trang-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nha-trang-1</figcaption>
+</figure>
+
+<h2>xây nhà Nha Trang — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Nha Trang. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="xay-nha-nha-trang-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nha-trang-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Nha Trang tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Nha Trang</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Nha Trang</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="xay-nha-nha-trang-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nha-trang-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
+  $mt$xây nhà Nha Trang | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Nha Trang tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Nha Trang, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-khanh-hoa$slug$,
+  $title$Xây Nhà Trọn Gói Tại Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>xây nhà trọn gói Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-tron-goi-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Khánh Hòa — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Khánh Hòa — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xay-nha-tron-goi-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-tron-goi-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
+  $mt$xây nhà trọn gói Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-khanh-hoa$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>thiết kế nhà Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="thiet-ke-nha-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Khánh Hòa — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Nha Trang. Đặc thù: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="thiet-ke-nha-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="thiet-ke-nha-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
+  $mt$thiết kế nhà Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-khanh-hoa$slug$,
+  $title$Xây Nhà 2 Tầng Tại Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>xây nhà 2 tầng Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 2 tầng Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="xay-nha-2-tang-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Khánh Hòa — Kết cấu an toàn</h2>
+<p>Móng, cột, dầm BTCT đúng tiêu chuẩn TCVN — đặc biệt quan trọng tại Khánh Hòa (Nha Trang ven biển — chống muối, chống thấm và chịu gió bão).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-48.jpg" alt="xay-nha-2-tang-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-2-tang-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
+  $mt$xây nhà 2 tầng Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-khanh-hoa$slug$,
+  $title$Chi Phí Xây Nhà Tại Khánh Hòa (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>chi phí xây nhà Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="chi-phi-xay-nha-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Khánh Hòa</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="chi-phi-xay-nha-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="chi-phi-xay-nha-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
+  $mt$chi phí xây nhà Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-nha-trang$slug$,
+  $title$Xây Biệt Thự Ven Biển Tại Nha Trang$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Nha Trang: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Nha Trang — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>xây biệt thự Nha Trang</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây biệt thự Nha Trang</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="xay-biet-thu-nha-trang-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-nha-trang-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Nha Trang — Biệt thự chuẩn kỹ thuật</h2>
+<p>Ven biển — vật liệu chịu muối, chống thấm kỹ tại Nha Trang.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="xay-biet-thu-nha-trang-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-nha-trang-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Nha Trang tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Nha Trang</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Nha Trang</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xay-biet-thu-nha-trang-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-nha-trang-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
+  $mt$xây biệt thự Nha Trang | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Nha Trang tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây biệt thự Nha Trang, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-khanh-hoa$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Tại Khánh Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng Khánh Hòa: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng Khánh Hòa — Chuyên nghiệp tại Khánh Hòa</h2>
+<p><strong>nhà thầu xây dựng Khánh Hòa</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Khánh Hòa</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Nha Trang ven biển — chống muối, chống thấm và chịu gió bão.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà thầu xây dựng Khánh Hòa</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="nha-thau-xay-dung-khanh-hoa-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-khanh-hoa-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng Khánh Hòa — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Khánh Hòa.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="nha-thau-xay-dung-khanh-hoa-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-khanh-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng Khánh Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-nha-trang">xây nhà Nha Trang</a>, <a href="/tin-tuc/sua-chua-nha-khanh-hoa">sửa chữa nhà Khánh Hòa</a>.</p>
+
+<h2>Lưu ý xây nhà tại Khánh Hòa</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Khánh Hòa.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng Khánh Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng Khánh Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="nha-thau-xay-dung-khanh-hoa-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-khanh-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
+  $mt$nhà thầu xây dựng Khánh Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-binh-dinh$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>công ty xây dựng Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="cong-ty-xay-dung-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-binh-inh-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Bình Định — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Bình Định.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="cong-ty-xay-dung-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="cong-ty-xay-dung-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
+  $mt$công ty xây dựng Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-quy-nhon$slug$,
+  $title$Xây Nhà Tại Quy Nhơn Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Quy Nhơn Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Quy Nhơn Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>xây nhà Quy Nhơn Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Quy Nhơn Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-quy-nhon-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quy-nhon-binh-inh-1</figcaption>
+</figure>
+
+<h2>xây nhà Quy Nhơn Bình Định — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Quy Nhơn. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="xay-nha-quy-nhon-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quy-nhon-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Quy Nhơn Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Quy Nhơn Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Quy Nhơn Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="xay-nha-quy-nhon-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quy-nhon-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
+  $mt$xây nhà Quy Nhơn Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Quy Nhơn Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Quy Nhơn Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-binh-dinh$slug$,
+  $title$Xây Nhà Trọn Gói Tại Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>xây nhà trọn gói Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-tron-goi-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-binh-inh-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Bình Định — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Bình Định — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="xay-nha-tron-goi-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-tron-goi-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
+  $mt$xây nhà trọn gói Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-binh-dinh$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>thiết kế nhà Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="thiet-ke-nha-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-binh-inh-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Bình Định — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Quy Nhơn. Đặc thù: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="thiet-ke-nha-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="thiet-ke-nha-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
+  $mt$thiết kế nhà Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-binh-dinh$slug$,
+  $title$Xây Nhà 2 Tầng Tại Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>xây nhà 2 tầng Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 2 tầng Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-2-tang-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-binh-inh-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Bình Định — Kết cấu an toàn</h2>
+<p>Móng, cột, dầm BTCT đúng tiêu chuẩn TCVN — đặc biệt quan trọng tại Bình Định (Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="xay-nha-2-tang-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-2-tang-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
+  $mt$xây nhà 2 tầng Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-binh-dinh$slug$,
+  $title$Chi Phí Xây Nhà Tại Bình Định (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>chi phí xây nhà Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="chi-phi-xay-nha-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-binh-inh-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Bình Định</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="chi-phi-xay-nha-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="chi-phi-xay-nha-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
+  $mt$chi phí xây nhà Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-quy-nhon$slug$,
+  $title$Xây Biệt Thự Tại Quy Nhơn$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Quy Nhơn: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Quy Nhơn — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>xây biệt thự Quy Nhơn</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây biệt thự Quy Nhơn</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="xay-biet-thu-quy-nhon-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-quy-nhon-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Quy Nhơn — Biệt thự chuẩn kỹ thuật</h2>
+<p>Ven biển — vật liệu chịu muối, chống thấm kỹ tại Quy Nhơn.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="xay-biet-thu-quy-nhon-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-quy-nhon-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Quy Nhơn tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Quy Nhơn</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Quy Nhơn</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="xay-biet-thu-quy-nhon-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-quy-nhon-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
+  $mt$xây biệt thự Quy Nhơn | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Quy Nhơn tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây biệt thự Quy Nhơn, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-binh-dinh$slug$,
+  $title$Mẫu Nhà Phố Đẹp Tại Bình Định$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Bình Định: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Bình Định — Chuyên nghiệp tại Bình Định</h2>
+<p><strong>nhà phố Bình Định</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Bình Định</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Quy Nhơn — nhu cầu nhà phố và biệt thự ven biển tăng mạnh.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà phố Bình Định</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="nha-pho-binh-inh-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-binh-inh-1</figcaption>
+</figure>
+
+<h2>nhà phố Bình Định — Mẫu nhà phố tham khảo</h2>
+<p>Nhà phố mặt tiền 4–5 m, 1–3 tầng — giếng trời thông gió, phòng ngủ đủ ánh sáng. Sao Khuê thiết kế và thi công trọn gói tại Bình Định.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="nha-pho-binh-inh-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-binh-inh-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Bình Định tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quy-nhon">xây nhà Quy Nhơn</a>, <a href="/tin-tuc/sua-chua-nha-binh-dinh">sửa chữa nhà Bình Định</a>.</p>
+
+<h2>Lưu ý xây nhà tại Bình Định</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Bình Định.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Bình Định</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Bình Định</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="nha-pho-binh-inh-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-binh-inh-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
+  $mt$nhà phố Bình Định | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà phố Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-quang-ngai$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Quảng Ngãi$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Quảng Ngãi: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Quảng Ngãi — Chuyên nghiệp tại Quảng Ngãi</h2>
+<p><strong>công ty xây dựng Quảng Ngãi</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Ngãi</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Quảng Ngãi</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="cong-ty-xay-dung-quang-ngai-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-ngai-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Quảng Ngãi — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Quảng Ngãi.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="cong-ty-xay-dung-quang-ngai-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-ngai-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Quảng Ngãi tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quang-ngai">xây nhà Quảng Ngãi</a>, <a href="/tin-tuc/sua-chua-nha-quang-ngai">sửa chữa nhà Quảng Ngãi</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Ngãi</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Ngãi.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Quảng Ngãi</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Quảng Ngãi</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="cong-ty-xay-dung-quang-ngai-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-ngai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
+  $mt$công ty xây dựng Quảng Ngãi | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-quang-ngai$slug$,
+  $title$Xây Nhà Tại Quảng Ngãi$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Quảng Ngãi: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Quảng Ngãi — Chuyên nghiệp tại Quảng Ngãi</h2>
+<p><strong>xây nhà Quảng Ngãi</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Ngãi</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Quảng Ngãi</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="xay-nha-quang-ngai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quang-ngai-1</figcaption>
+</figure>
+
+<h2>xây nhà Quảng Ngãi — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Quảng Ngãi. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="xay-nha-quang-ngai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quang-ngai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Quảng Ngãi tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/sua-chua-nha-quang-ngai">sửa chữa nhà Quảng Ngãi</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Ngãi</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Ngãi.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Quảng Ngãi</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Quảng Ngãi</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-quang-ngai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-quang-ngai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
+  $mt$xây nhà Quảng Ngãi | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-quang-ngai$slug$,
+  $title$Xây Nhà Trọn Gói Tại Quảng Ngãi$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Quảng Ngãi: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Quảng Ngãi — Chuyên nghiệp tại Quảng Ngãi</h2>
+<p><strong>xây nhà trọn gói Quảng Ngãi</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Ngãi</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Quảng Ngãi</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-34.jpg" alt="xay-nha-tron-goi-quang-ngai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-ngai-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Quảng Ngãi — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Quảng Ngãi — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="xay-nha-tron-goi-quang-ngai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-ngai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Quảng Ngãi tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quang-ngai">xây nhà Quảng Ngãi</a>, <a href="/tin-tuc/sua-chua-nha-quang-ngai">sửa chữa nhà Quảng Ngãi</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Ngãi</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Ngãi.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Quảng Ngãi</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Quảng Ngãi</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="xay-nha-tron-goi-quang-ngai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-ngai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
+  $mt$xây nhà trọn gói Quảng Ngãi | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-quang-ngai$slug$,
+  $title$Chi Phí Xây Nhà Tại Quảng Ngãi (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Quảng Ngãi: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Quảng Ngãi — Chuyên nghiệp tại Quảng Ngãi</h2>
+<p><strong>chi phí xây nhà Quảng Ngãi</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Ngãi</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Quảng Ngãi</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="chi-phi-xay-nha-quang-ngai-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-ngai-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Quảng Ngãi</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="chi-phi-xay-nha-quang-ngai-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-ngai-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Quảng Ngãi tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quang-ngai">xây nhà Quảng Ngãi</a>, <a href="/tin-tuc/sua-chua-nha-quang-ngai">sửa chữa nhà Quảng Ngãi</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Ngãi</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Ngãi.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Quảng Ngãi</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Quảng Ngãi</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="chi-phi-xay-nha-quang-ngai-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-ngai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
+  $mt$chi phí xây nhà Quảng Ngãi | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-quang-ngai$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Quảng Ngãi$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Quảng Ngãi: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Quảng Ngãi — Chuyên nghiệp tại Quảng Ngãi</h2>
+<p><strong>thiết kế nhà Quảng Ngãi</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Ngãi</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Quảng Ngãi</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="thiet-ke-nha-quang-ngai-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-quang-ngai-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Quảng Ngãi — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Quảng Ngãi. Đặc thù: ven biển và đồi núi — móng cần khảo sát địa chất kỹ.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="thiet-ke-nha-quang-ngai-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-quang-ngai-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Quảng Ngãi tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-quang-ngai">xây nhà Quảng Ngãi</a>, <a href="/tin-tuc/sua-chua-nha-quang-ngai">sửa chữa nhà Quảng Ngãi</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Ngãi</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Ngãi.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Quảng Ngãi</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Quảng Ngãi</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-29.jpg" alt="thiet-ke-nha-quang-ngai-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-quang-ngai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
+  $mt$thiết kế nhà Quảng Ngãi | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-kon-tum$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Kon Tum$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Kon Tum: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Kon Tum — Chuyên nghiệp tại Kon Tum</h2>
+<p><strong>công ty xây dựng Kon Tum</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Kon Tum</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Kon Tum</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="cong-ty-xay-dung-kon-tum-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-kon-tum-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Kon Tum — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Kon Tum.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="cong-ty-xay-dung-kon-tum-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-kon-tum-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Kon Tum tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-kon-tum">xây nhà Kon Tum</a>, <a href="/tin-tuc/sua-chua-nha-kon-tum">sửa chữa nhà Kon Tum</a>.</p>
+
+<h2>Lưu ý xây nhà tại Kon Tum</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Kon Tum.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Kon Tum</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Kon Tum</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="cong-ty-xay-dung-kon-tum-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-kon-tum-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
+  $mt$công ty xây dựng Kon Tum | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-kon-tum$slug$,
+  $title$Xây Nhà Tại Kon Tum$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Kon Tum: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Kon Tum — Chuyên nghiệp tại Kon Tum</h2>
+<p><strong>xây nhà Kon Tum</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Kon Tum</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Kon Tum</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-29.jpg" alt="xay-nha-kon-tum-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-kon-tum-1</figcaption>
+</figure>
+
+<h2>xây nhà Kon Tum — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Kon Tum. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="xay-nha-kon-tum-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-kon-tum-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Kon Tum tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/sua-chua-nha-kon-tum">sửa chữa nhà Kon Tum</a>.</p>
+
+<h2>Lưu ý xây nhà tại Kon Tum</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Kon Tum.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Kon Tum</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Kon Tum</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="xay-nha-kon-tum-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-kon-tum-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
+  $mt$xây nhà Kon Tum | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-kon-tum$slug$,
+  $title$Xây Nhà Trọn Gói Tại Kon Tum$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Kon Tum: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Kon Tum — Chuyên nghiệp tại Kon Tum</h2>
+<p><strong>xây nhà trọn gói Kon Tum</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Kon Tum</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Kon Tum</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xay-nha-tron-goi-kon-tum-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-kon-tum-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Kon Tum — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Kon Tum — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="xay-nha-tron-goi-kon-tum-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-kon-tum-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Kon Tum tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-kon-tum">xây nhà Kon Tum</a>, <a href="/tin-tuc/sua-chua-nha-kon-tum">sửa chữa nhà Kon Tum</a>.</p>
+
+<h2>Lưu ý xây nhà tại Kon Tum</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Kon Tum.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Kon Tum</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Kon Tum</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="xay-nha-tron-goi-kon-tum-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-kon-tum-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
+  $mt$xây nhà trọn gói Kon Tum | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-kon-tum$slug$,
+  $title$Chi Phí Xây Nhà Tại Kon Tum (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Kon Tum: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Kon Tum — Chuyên nghiệp tại Kon Tum</h2>
+<p><strong>chi phí xây nhà Kon Tum</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Kon Tum</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Kon Tum</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="chi-phi-xay-nha-kon-tum-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-kon-tum-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Kon Tum</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,5 – 4,8 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,0 – 7,2 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="chi-phi-xay-nha-kon-tum-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-kon-tum-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Kon Tum tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-kon-tum">xây nhà Kon Tum</a>, <a href="/tin-tuc/sua-chua-nha-kon-tum">sửa chữa nhà Kon Tum</a>.</p>
+
+<h2>Lưu ý xây nhà tại Kon Tum</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Kon Tum.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Kon Tum</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Kon Tum</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-42.jpg" alt="chi-phi-xay-nha-kon-tum-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-kon-tum-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
+  $mt$chi phí xây nhà Kon Tum | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-kon-tum$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Kon Tum$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Kon Tum: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Kon Tum — Chuyên nghiệp tại Kon Tum</h2>
+<p><strong>thiết kế nhà Kon Tum</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Kon Tum</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Kon Tum</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="thiet-ke-nha-kon-tum-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-kon-tum-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Kon Tum — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Kon Tum. Đặc thù: vùng cao — cách nhiệt, chống ẩm mốc và thoát nước mưa.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="thiet-ke-nha-kon-tum-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-kon-tum-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Kon Tum tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-kon-tum">xây nhà Kon Tum</a>, <a href="/tin-tuc/sua-chua-nha-kon-tum">sửa chữa nhà Kon Tum</a>.</p>
+
+<h2>Lưu ý xây nhà tại Kon Tum</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại Kon Tum.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Kon Tum</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Kon Tum</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="thiet-ke-nha-kon-tum-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-kon-tum-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
+  $mt$thiết kế nhà Kon Tum | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-quang-nam$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Quảng Nam$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Quảng Nam: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Quảng Nam — Chuyên nghiệp tại Quảng Nam</h2>
+<p><strong>công ty xây dựng Quảng Nam</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Nam</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Quảng Nam</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="cong-ty-xay-dung-quang-nam-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-nam-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Quảng Nam — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Quảng Nam.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="cong-ty-xay-dung-quang-nam-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-nam-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Quảng Nam tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hoi-an-quang-nam">xây nhà Hội An</a>, <a href="/tin-tuc/xay-nha-tron-goi-quang-nam">xây nhà trọn gói Quảng Nam</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Nam</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Nam.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Quảng Nam</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Quảng Nam</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="cong-ty-xay-dung-quang-nam-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-quang-nam-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
+  $mt$công ty xây dựng Quảng Nam | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-hoi-an-quang-nam$slug$,
+  $title$Xây Nhà Tại Hội An Quảng Nam$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Hội An Quảng Nam: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Hội An Quảng Nam — Chuyên nghiệp tại Quảng Nam</h2>
+<p><strong>xây nhà Hội An Quảng Nam</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Nam</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Hội An Quảng Nam</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="xay-nha-hoi-an-quang-nam-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hoi-an-quang-nam-1</figcaption>
+</figure>
+
+<h2>xây nhà Hội An Quảng Nam — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Hội An / Tam Kỳ. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="xay-nha-hoi-an-quang-nam-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hoi-an-quang-nam-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Hội An Quảng Nam tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-quang-nam">xây nhà trọn gói Quảng Nam</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Nam</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Nam.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Hội An Quảng Nam</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Hội An Quảng Nam</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-hoi-an-quang-nam-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hoi-an-quang-nam-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
+  $mt$xây nhà Hội An Quảng Nam | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Hội An Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Hội An Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-quang-nam$slug$,
+  $title$Xây Nhà Trọn Gói Tại Quảng Nam$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Quảng Nam: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Quảng Nam — Chuyên nghiệp tại Quảng Nam</h2>
+<p><strong>xây nhà trọn gói Quảng Nam</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Nam</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Quảng Nam</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="xay-nha-tron-goi-quang-nam-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-nam-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Quảng Nam — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Quảng Nam — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="xay-nha-tron-goi-quang-nam-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-nam-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Quảng Nam tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hoi-an-quang-nam">xây nhà Hội An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Nam</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Nam.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Quảng Nam</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Quảng Nam</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="xay-nha-tron-goi-quang-nam-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-quang-nam-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
+  $mt$xây nhà trọn gói Quảng Nam | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tam-ky-quang-nam$slug$,
+  $title$Xây Nhà Tại Tam Kỳ Quảng Nam$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Tam Kỳ Quảng Nam: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Tam Kỳ Quảng Nam — Chuyên nghiệp tại Quảng Nam</h2>
+<p><strong>xây nhà Tam Kỳ Quảng Nam</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Nam</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Tam Kỳ Quảng Nam</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-34.jpg" alt="xay-nha-tam-ky-quang-nam-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tam-ky-quang-nam-1</figcaption>
+</figure>
+
+<h2>xây nhà Tam Kỳ Quảng Nam — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Hội An / Tam Kỳ. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="xay-nha-tam-ky-quang-nam-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tam-ky-quang-nam-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Tam Kỳ Quảng Nam tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hoi-an-quang-nam">xây nhà Hội An</a>, <a href="/tin-tuc/xay-nha-tron-goi-quang-nam">xây nhà trọn gói Quảng Nam</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Nam</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Nam.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Tam Kỳ Quảng Nam</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Tam Kỳ Quảng Nam</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-tam-ky-quang-nam-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tam-ky-quang-nam-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
+  $mt$xây nhà Tam Kỳ Quảng Nam | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Tam Kỳ Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Tam Kỳ Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-quang-nam$slug$,
+  $title$Chi Phí Xây Nhà Tại Quảng Nam (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Quảng Nam: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Quảng Nam — Chuyên nghiệp tại Quảng Nam</h2>
+<p><strong>chi phí xây nhà Quảng Nam</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Quảng Nam</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: Hội An, Tam Kỳ — quy hoạch di sản và khu dân cư mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Quảng Nam</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="chi-phi-xay-nha-quang-nam-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-nam-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Quảng Nam</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="chi-phi-xay-nha-quang-nam-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-nam-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Quảng Nam tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hoi-an-quang-nam">xây nhà Hội An</a>, <a href="/tin-tuc/xay-nha-tron-goi-quang-nam">xây nhà trọn gói Quảng Nam</a>.</p>
+
+<h2>Lưu ý xây nhà tại Quảng Nam</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Quảng Nam.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Quảng Nam</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Quảng Nam</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="chi-phi-xay-nha-quang-nam-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-quang-nam-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
+  $mt$chi phí xây nhà Quảng Nam | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-hue$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Huế$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Huế: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Huế — Chuyên nghiệp tại Huế</h2>
+<p><strong>công ty xây dựng Huế</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Huế</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Huế</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="cong-ty-xay-dung-hue-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-hue-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Huế — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại Huế.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="cong-ty-xay-dung-hue-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-hue-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Huế tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hue">xây nhà Huế</a>, <a href="/tin-tuc/xay-nha-tron-goi-hue">xây nhà trọn gói Huế</a>.</p>
+
+<h2>Lưu ý xây nhà tại Huế</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Huế.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Huế</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Huế</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="cong-ty-xay-dung-hue-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-hue-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
+  $mt$công ty xây dựng Huế | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-hue$slug$,
+  $title$Xây Nhà Tại Huế$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Huế: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Huế — Chuyên nghiệp tại Huế</h2>
+<p><strong>xây nhà Huế</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Huế</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Huế</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="xay-nha-hue-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hue-1</figcaption>
+</figure>
+
+<h2>xây nhà Huế — Giải pháp Sao Khuê</h2>
+<p>Trọn gói khảo sát → thiết kế → thi công → bàn giao tại Huế. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="xay-nha-hue-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hue-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Huế tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-tron-goi-hue">xây nhà trọn gói Huế</a>.</p>
+
+<h2>Lưu ý xây nhà tại Huế</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Huế.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Huế</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Huế</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-hue-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-hue-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
+  $mt$xây nhà Huế | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-hue$slug$,
+  $title$Xây Nhà Trọn Gói Tại Huế$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Huế: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Huế — Chuyên nghiệp tại Huế</h2>
+<p><strong>xây nhà trọn gói Huế</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Huế</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Huế</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-tron-goi-hue-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-hue-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Huế — Trọn gói một đầu mối</h2>
+<p>Thiết kế, vật tư, thi công, bàn giao tại Huế — tiết kiệm thời gian và tránh phát sinh chi phí cho chủ nhà.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="xay-nha-tron-goi-hue-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-hue-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Huế tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hue">xây nhà Huế</a>.</p>
+
+<h2>Lưu ý xây nhà tại Huế</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Huế.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Huế</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Huế</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="xay-nha-tron-goi-hue-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-hue-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
+  $mt$xây nhà trọn gói Huế | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-hue$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Huế$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà Huế: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà Huế — Chuyên nghiệp tại Huế</h2>
+<p><strong>thiết kế nhà Huế</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Huế</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà Huế</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="thiet-ke-nha-hue-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-hue-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà Huế — Thiết kế phù hợp khí hậu</h2>
+<p>Phối cảnh 3D, bản vẽ thi công, tối ưu thông gió và ánh sáng tự nhiên tại Huế. Đặc thù: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="thiet-ke-nha-hue-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-hue-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà Huế tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hue">xây nhà Huế</a>, <a href="/tin-tuc/xay-nha-tron-goi-hue">xây nhà trọn gói Huế</a>.</p>
+
+<h2>Lưu ý xây nhà tại Huế</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Huế.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà Huế</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà Huế</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="thiet-ke-nha-hue-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-hue-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
+  $mt$thiết kế nhà Huế | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-hue$slug$,
+  $title$Chi Phí Xây Nhà Tại Huế (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Huế: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Huế — Chuyên nghiệp tại Huế</h2>
+<p><strong>chi phí xây nhà Huế</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>Huế</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: cố đô — kiến trúc hài hòa mái ngói, thông gió mùa nóng ẩm.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Huế</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="chi-phi-xay-nha-hue-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-hue-1</figcaption>
+</figure>
+
+<h2>Bảng giá — chi phí xây nhà Huế</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="chi-phi-xay-nha-hue-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-hue-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Huế tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-mien-trung">xây dựng nhà miền Trung</a>, <a href="/tin-tuc/xay-nha-hue">xây nhà Huế</a>, <a href="/tin-tuc/xay-nha-tron-goi-hue">xây nhà trọn gói Huế</a>.</p>
+
+<h2>Lưu ý xây nhà tại Huế</h2><ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, tường ngoài — bắt buộc ven biển.</li>
+  <li><strong>Chịu bão:</strong> Kết cấu BTCT, cửa sổ chịu gió.</li>
+  <li><strong>Giấy phép:</strong> Tuân thủ quy hoạch địa phương tại Huế.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Huế</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Huế</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="chi-phi-xay-nha-hue-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-hue-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
+  $mt$chi phí xây nhà Huế | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-mien-trung$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Miền Trung$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>nhà thầu xây dựng miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà thầu xây dựng miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="nha-thau-xay-dung-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-mien-trung-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng miền Trung — Chọn đơn vị uy tín</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, công trình tham chiếu tại miền Trung.</li>
+  <li>Giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành kết cấu 10 năm</strong> — cam kết bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-42.jpg" alt="nha-thau-xay-dung-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="nha-thau-xay-dung-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
+  $mt$nhà thầu xây dựng miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-mien-trung$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Miền Trung$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$báo giá xây nhà miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>báo giá xây nhà miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>báo giá xây nhà miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="bao-gia-xay-nha-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-mien-trung-1</figcaption>
+</figure>
+
+<h2>Bảng giá — báo giá xây nhà miền Trung</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,8 – 5,2 triệu đ/m² sàn</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,5 – 7,8 triệu đ/m² sàn</td></tr>
+  </tbody>
+</table>
+<p><a href="/bao-gia">Báo giá online</a> · Hotline 0909 075 668</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="bao-gia-xay-nha-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình báo giá xây nhà miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn báo giá xây nhà miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="bao-gia-xay-nha-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
+  $mt$báo giá xây nhà miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ báo giá xây nhà miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$báo giá xây nhà miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-3-tang-mien-trung$slug$,
+  $title$Xây Nhà 3 Tầng Tại Miền Trung$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 3 tầng miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 3 tầng miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>xây nhà 3 tầng miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 3 tầng miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-3-tang-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-mien-trung-1</figcaption>
+</figure>
+
+<h2>xây nhà 3 tầng miền Trung — Kết cấu an toàn</h2>
+<p>Móng, cột, dầm BTCT đúng tiêu chuẩn TCVN — đặc biệt quan trọng tại miền Trung (duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk)).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-3-tang-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 3 tầng miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 3 tầng miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 3 tầng miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-3-tang-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
+  $mt$xây nhà 3 tầng miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 3 tầng miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 3 tầng miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-gia-re-mien-trung$slug$,
+  $title$Xây Nhà Giá Rẻ Tại Miền Trung$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà giá rẻ miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà giá rẻ miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>xây nhà giá rẻ miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà giá rẻ miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-48.jpg" alt="xay-nha-gia-re-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-mien-trung-1</figcaption>
+</figure>
+
+<h2>xây nhà giá rẻ miền Trung — Tối ưu ngân sách</h2>
+<ul>
+  <li>Chọn vật liệu phù hợp — không ép dùng hạng cao khi không cần.</li>
+  <li>Thiết kế gọn, tận dụng diện tích — giảm chi phí m² sàn.</li>
+  <li>Báo giá từng hạng mục — minh bạch, không phát sinh bất ngờ.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="xay-nha-gia-re-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà giá rẻ miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà giá rẻ miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà giá rẻ miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="xay-nha-gia-re-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
+  $mt$xây nhà giá rẻ miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà giá rẻ miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà giá rẻ miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-1-tret-1-lau-mien-trung$slug$,
+  $title$Xây Nhà 1 Trệt 1 Lầu Tại Miền Trung$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 1 trệt 1 lầu miền Trung: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 1 trệt 1 lầu miền Trung — Chuyên nghiệp tại miền Trung</h2>
+<p><strong>xây nhà 1 trệt 1 lầu miền Trung</strong> là nhu cầu thực tế khi nhiều gia đình tại <strong>miền Trung</strong> chọn xây nhà mới hoặc đầu tư bất động sản. Đặc thù khu vực: duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk).</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 1 trệt 1 lầu miền Trung</strong> — khảo sát miễn phí, báo giá minh bạch theo hạng mục, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-1-tret-1-lau-mien-trung-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-mien-trung-1</figcaption>
+</figure>
+
+<h2>xây nhà 1 trệt 1 lầu miền Trung — Kết cấu an toàn</h2>
+<p>Móng, cột, dầm BTCT đúng tiêu chuẩn TCVN — đặc biệt quan trọng tại miền Trung (duyên hải Nam Trung Bộ (Phú Yên, Khánh Hòa, Bình Định, Quảng Nam) và Tây Nguyên (Gia Lai, Kon Tum, Đắk Lắk)).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-1-tret-1-lau-mien-trung-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-mien-trung-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 1 trệt 1 lầu miền Trung tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; tư vấn</strong> — địa hình, quy hoạch, nhu cầu gia đình.</li>
+  <li><strong>Thiết kế &amp; báo giá</strong> — bản vẽ, dự toán chi tiết từng hạng mục.</li>
+  <li><strong>Thi công</strong> — giám sát móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành</strong> — bàn giao, cam kết kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/sua-chua-cai-tao-nha-mien-trung">sửa chữa nhà miền Trung</a>.</p>
+
+<h2>Lưu ý xây nhà tại miền Trung</h2><ul>
+  <li><strong>Thoát nước mưa:</strong> Mái dốc, cống thoát đủ công suất.</li>
+  <li><strong>Cách nhiệt:</strong> Tường, mái — giảm nóng mùa khô.</li>
+  <li><strong>Móng:</strong> Khảo sát địa chất trước khi đào tại miền Trung.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 1 trệt 1 lầu miền Trung</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 1 trệt 1 lầu miền Trung</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-1-tret-1-lau-mien-trung-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-mien-trung-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
+  $mt$xây nhà 1 trệt 1 lầu miền Trung | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 1 trệt 1 lầu miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 1 trệt 1 lầu miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
 COMMIT;
 
 -- Kiểm tra:

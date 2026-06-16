@@ -1,0 +1,373 @@
+/**
+ * Lịch từ khóa — xây dựng nhà miền Trung & Tây Nguyên (#197–#246).
+ */
+import type { ContentCalendarItem } from "./content-calendar";
+
+export const mienTrungXayNhaKeywordCalendar: ContentCalendarItem[] = [
+  {
+    no: 197,
+    title: "Xây Dựng Nhà Miền Trung — Trọn Gói Uy Tín",
+    keyword: "xây dựng nhà miền Trung",
+    slug: "xay-dung-nha-mien-trung",
+    status: "done",
+  },
+
+  // —— Gia Lai ——
+  {
+    no: 198,
+    title: "Công Ty Xây Dựng Uy Tín Tại Gia Lai",
+    keyword: "công ty xây dựng Gia Lai",
+    slug: "cong-ty-xay-dung-gia-lai",
+    status: "done",
+  },
+  {
+    no: 199,
+    title: "Xây Nhà Tại Pleiku Gia Lai",
+    keyword: "xây nhà Pleiku Gia Lai",
+    slug: "xay-nha-pleiku-gia-lai",
+    status: "done",
+  },
+  {
+    no: 200,
+    title: "Xây Nhà Trọn Gói Tại Gia Lai",
+    keyword: "xây nhà trọn gói Gia Lai",
+    slug: "xay-nha-tron-goi-gia-lai",
+    status: "done",
+  },
+  {
+    no: 201,
+    title: "Thiết Kế Nhà Đẹp Tại Gia Lai",
+    keyword: "thiết kế nhà Gia Lai",
+    slug: "thiet-ke-nha-gia-lai",
+    status: "done",
+  },
+  {
+    no: 202,
+    title: "Xây Nhà 2 Tầng Tại Gia Lai",
+    keyword: "xây nhà 2 tầng Gia Lai",
+    slug: "xay-nha-2-tang-gia-lai",
+    status: "done",
+  },
+  {
+    no: 203,
+    title: "Chi Phí Xây Nhà Tại Gia Lai (2026)",
+    keyword: "chi phí xây nhà Gia Lai",
+    slug: "chi-phi-xay-nha-gia-lai",
+    status: "done",
+  },
+  {
+    no: 204,
+    title: "Xây Biệt Thự Tại Gia Lai",
+    keyword: "xây biệt thự Gia Lai",
+    slug: "xay-biet-thu-gia-lai",
+    status: "done",
+  },
+  {
+    no: 205,
+    title: "Mẫu Nhà Phố Đẹp Tại Gia Lai",
+    keyword: "nhà phố Gia Lai",
+    slug: "nha-pho-gia-lai",
+    status: "done",
+  },
+
+  // —— Khánh Hòa ——
+  {
+    no: 206,
+    title: "Công Ty Xây Dựng Uy Tín Tại Khánh Hòa",
+    keyword: "công ty xây dựng Khánh Hòa",
+    slug: "cong-ty-xay-dung-khanh-hoa",
+    status: "done",
+  },
+  {
+    no: 207,
+    title: "Xây Nhà Tại Nha Trang Khánh Hòa",
+    keyword: "xây nhà Nha Trang",
+    slug: "xay-nha-nha-trang",
+    status: "done",
+  },
+  {
+    no: 208,
+    title: "Xây Nhà Trọn Gói Tại Khánh Hòa",
+    keyword: "xây nhà trọn gói Khánh Hòa",
+    slug: "xay-nha-tron-goi-khanh-hoa",
+    status: "done",
+  },
+  {
+    no: 209,
+    title: "Thiết Kế Nhà Đẹp Tại Khánh Hòa",
+    keyword: "thiết kế nhà Khánh Hòa",
+    slug: "thiet-ke-nha-khanh-hoa",
+    status: "done",
+  },
+  {
+    no: 210,
+    title: "Xây Nhà 2 Tầng Tại Khánh Hòa",
+    keyword: "xây nhà 2 tầng Khánh Hòa",
+    slug: "xay-nha-2-tang-khanh-hoa",
+    status: "done",
+  },
+  {
+    no: 211,
+    title: "Chi Phí Xây Nhà Tại Khánh Hòa (2026)",
+    keyword: "chi phí xây nhà Khánh Hòa",
+    slug: "chi-phi-xay-nha-khanh-hoa",
+    status: "done",
+  },
+  {
+    no: 212,
+    title: "Xây Biệt Thự Ven Biển Tại Nha Trang",
+    keyword: "xây biệt thự Nha Trang",
+    slug: "xay-biet-thu-nha-trang",
+    status: "done",
+  },
+  {
+    no: 213,
+    title: "Nhà Thầu Xây Dựng Uy Tín Tại Khánh Hòa",
+    keyword: "nhà thầu xây dựng Khánh Hòa",
+    slug: "nha-thau-xay-dung-khanh-hoa",
+    status: "done",
+  },
+
+  // —— Bình Định ——
+  {
+    no: 214,
+    title: "Công Ty Xây Dựng Uy Tín Tại Bình Định",
+    keyword: "công ty xây dựng Bình Định",
+    slug: "cong-ty-xay-dung-binh-dinh",
+    status: "done",
+  },
+  {
+    no: 215,
+    title: "Xây Nhà Tại Quy Nhơn Bình Định",
+    keyword: "xây nhà Quy Nhơn Bình Định",
+    slug: "xay-nha-quy-nhon",
+    status: "done",
+  },
+  {
+    no: 216,
+    title: "Xây Nhà Trọn Gói Tại Bình Định",
+    keyword: "xây nhà trọn gói Bình Định",
+    slug: "xay-nha-tron-goi-binh-dinh",
+    status: "done",
+  },
+  {
+    no: 217,
+    title: "Thiết Kế Nhà Đẹp Tại Bình Định",
+    keyword: "thiết kế nhà Bình Định",
+    slug: "thiet-ke-nha-binh-dinh",
+    status: "done",
+  },
+  {
+    no: 218,
+    title: "Xây Nhà 2 Tầng Tại Bình Định",
+    keyword: "xây nhà 2 tầng Bình Định",
+    slug: "xay-nha-2-tang-binh-dinh",
+    status: "done",
+  },
+  {
+    no: 219,
+    title: "Chi Phí Xây Nhà Tại Bình Định (2026)",
+    keyword: "chi phí xây nhà Bình Định",
+    slug: "chi-phi-xay-nha-binh-dinh",
+    status: "done",
+  },
+  {
+    no: 220,
+    title: "Xây Biệt Thự Tại Quy Nhơn",
+    keyword: "xây biệt thự Quy Nhơn",
+    slug: "xay-biet-thu-quy-nhon",
+    status: "done",
+  },
+  {
+    no: 221,
+    title: "Mẫu Nhà Phố Đẹp Tại Bình Định",
+    keyword: "nhà phố Bình Định",
+    slug: "nha-pho-binh-dinh",
+    status: "done",
+  },
+
+  // —— Quảng Ngãi ——
+  {
+    no: 222,
+    title: "Công Ty Xây Dựng Uy Tín Tại Quảng Ngãi",
+    keyword: "công ty xây dựng Quảng Ngãi",
+    slug: "cong-ty-xay-dung-quang-ngai",
+    status: "done",
+  },
+  {
+    no: 223,
+    title: "Xây Nhà Tại Quảng Ngãi",
+    keyword: "xây nhà Quảng Ngãi",
+    slug: "xay-nha-quang-ngai",
+    status: "done",
+  },
+  {
+    no: 224,
+    title: "Xây Nhà Trọn Gói Tại Quảng Ngãi",
+    keyword: "xây nhà trọn gói Quảng Ngãi",
+    slug: "xay-nha-tron-goi-quang-ngai",
+    status: "done",
+  },
+  {
+    no: 225,
+    title: "Chi Phí Xây Nhà Tại Quảng Ngãi (2026)",
+    keyword: "chi phí xây nhà Quảng Ngãi",
+    slug: "chi-phi-xay-nha-quang-ngai",
+    status: "done",
+  },
+  {
+    no: 226,
+    title: "Thiết Kế Nhà Đẹp Tại Quảng Ngãi",
+    keyword: "thiết kế nhà Quảng Ngãi",
+    slug: "thiet-ke-nha-quang-ngai",
+    status: "done",
+  },
+
+  // —— Kon Tum ——
+  {
+    no: 227,
+    title: "Công Ty Xây Dựng Uy Tín Tại Kon Tum",
+    keyword: "công ty xây dựng Kon Tum",
+    slug: "cong-ty-xay-dung-kon-tum",
+    status: "done",
+  },
+  {
+    no: 228,
+    title: "Xây Nhà Tại Kon Tum",
+    keyword: "xây nhà Kon Tum",
+    slug: "xay-nha-kon-tum",
+    status: "done",
+  },
+  {
+    no: 229,
+    title: "Xây Nhà Trọn Gói Tại Kon Tum",
+    keyword: "xây nhà trọn gói Kon Tum",
+    slug: "xay-nha-tron-goi-kon-tum",
+    status: "done",
+  },
+  {
+    no: 230,
+    title: "Chi Phí Xây Nhà Tại Kon Tum (2026)",
+    keyword: "chi phí xây nhà Kon Tum",
+    slug: "chi-phi-xay-nha-kon-tum",
+    status: "done",
+  },
+  {
+    no: 231,
+    title: "Thiết Kế Nhà Đẹp Tại Kon Tum",
+    keyword: "thiết kế nhà Kon Tum",
+    slug: "thiet-ke-nha-kon-tum",
+    status: "done",
+  },
+
+  // —— Quảng Nam ——
+  {
+    no: 232,
+    title: "Công Ty Xây Dựng Uy Tín Tại Quảng Nam",
+    keyword: "công ty xây dựng Quảng Nam",
+    slug: "cong-ty-xay-dung-quang-nam",
+    status: "done",
+  },
+  {
+    no: 233,
+    title: "Xây Nhà Tại Hội An Quảng Nam",
+    keyword: "xây nhà Hội An Quảng Nam",
+    slug: "xay-nha-hoi-an-quang-nam",
+    status: "done",
+  },
+  {
+    no: 234,
+    title: "Xây Nhà Trọn Gói Tại Quảng Nam",
+    keyword: "xây nhà trọn gói Quảng Nam",
+    slug: "xay-nha-tron-goi-quang-nam",
+    status: "done",
+  },
+  {
+    no: 235,
+    title: "Xây Nhà Tại Tam Kỳ Quảng Nam",
+    keyword: "xây nhà Tam Kỳ Quảng Nam",
+    slug: "xay-nha-tam-ky-quang-nam",
+    status: "done",
+  },
+  {
+    no: 236,
+    title: "Chi Phí Xây Nhà Tại Quảng Nam (2026)",
+    keyword: "chi phí xây nhà Quảng Nam",
+    slug: "chi-phi-xay-nha-quang-nam",
+    status: "done",
+  },
+
+  // —— Thừa Thiên Huế ——
+  {
+    no: 237,
+    title: "Công Ty Xây Dựng Uy Tín Tại Huế",
+    keyword: "công ty xây dựng Huế",
+    slug: "cong-ty-xay-dung-hue",
+    status: "done",
+  },
+  {
+    no: 238,
+    title: "Xây Nhà Tại Huế",
+    keyword: "xây nhà Huế",
+    slug: "xay-nha-hue",
+    status: "done",
+  },
+  {
+    no: 239,
+    title: "Xây Nhà Trọn Gói Tại Huế",
+    keyword: "xây nhà trọn gói Huế",
+    slug: "xay-nha-tron-goi-hue",
+    status: "done",
+  },
+  {
+    no: 240,
+    title: "Thiết Kế Nhà Đẹp Tại Huế",
+    keyword: "thiết kế nhà Huế",
+    slug: "thiet-ke-nha-hue",
+    status: "done",
+  },
+  {
+    no: 241,
+    title: "Chi Phí Xây Nhà Tại Huế (2026)",
+    keyword: "chi phí xây nhà Huế",
+    slug: "chi-phi-xay-nha-hue",
+    status: "done",
+  },
+
+  // —— Hub / tổng hợp miền Trung ——
+  {
+    no: 242,
+    title: "Nhà Thầu Xây Dựng Uy Tín Miền Trung",
+    keyword: "nhà thầu xây dựng miền Trung",
+    slug: "nha-thau-xay-dung-mien-trung",
+    status: "done",
+  },
+  {
+    no: 243,
+    title: "Báo Giá Xây Nhà Trọn Gói Miền Trung",
+    keyword: "báo giá xây nhà miền Trung",
+    slug: "bao-gia-xay-nha-mien-trung",
+    status: "done",
+  },
+  {
+    no: 244,
+    title: "Xây Nhà 3 Tầng Tại Miền Trung",
+    keyword: "xây nhà 3 tầng miền Trung",
+    slug: "xay-nha-3-tang-mien-trung",
+    status: "done",
+  },
+  {
+    no: 245,
+    title: "Xây Nhà Giá Rẻ Tại Miền Trung",
+    keyword: "xây nhà giá rẻ miền Trung",
+    slug: "xay-nha-gia-re-mien-trung",
+    status: "done",
+  },
+  {
+    no: 246,
+    title: "Xây Nhà 1 Trệt 1 Lầu Tại Miền Trung",
+    keyword: "xây nhà 1 trệt 1 lầu miền Trung",
+    slug: "xay-nha-1-tret-1-lau-mien-trung",
+    status: "done",
+  },
+];
