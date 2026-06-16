@@ -37,6 +37,10 @@ import {
   suaChuaCaiTaoNhaTanPhu,
   suaChuaCaiTaoNhaQuan1,
   suaChuaCaiTaoNhaHocMon,
+  phuYenDakLakTinTucArticlesBySlug,
+  phuYenDakLakTinTucSlugs,
+  longAnDongNaiTinTucArticlesBySlug,
+  longAnDongNaiTinTucSlugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -178,6 +182,12 @@ export const seedPosts: SeedPost[] = [
   seoPost("sua-chua-cai-tao-nha-tan-phu", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-tan-phu"), suaChuaCaiTaoNhaTanPhu),
   seoPost("sua-chua-cai-tao-nha-quan-1", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-quan-1"), suaChuaCaiTaoNhaQuan1),
   seoPost("sua-chua-cai-tao-nha-hoc-mon", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-hoc-mon"), suaChuaCaiTaoNhaHocMon),
+  ...phuYenDakLakTinTucSlugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), phuYenDakLakTinTucArticlesBySlug[slug]!),
+  ),
+  ...longAnDongNaiTinTucSlugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), longAnDongNaiTinTucArticlesBySlug[slug]!),
+  ),
 ];
 
 export {

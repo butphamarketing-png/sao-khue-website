@@ -6072,6 +6072,7089 @@ ON CONFLICT (slug) DO UPDATE SET
   meta_description = EXCLUDED.meta_description,
   meta_keywords = EXCLUDED.meta_keywords,
   updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-phu-yen$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>công ty xây dựng Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>công ty xây dựng Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="cong-ty-xay-dung-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-phu-yen-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Phú Yên — Tiêu chí chọn đơn vị uy tín</h2>
+<ul>
+  <li><strong>Hồ sơ pháp lý rõ ràng:</strong> Giấy phép kinh doanh, hợp đồng thi công chi tiết.</li>
+  <li><strong>Công trình tham chiếu:</strong> Ảnh tiến độ, biên bản nghiệm thu tại Phú Yên.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu 10 năm, hạng mục hoàn thiện theo biên bản.</li>
+</ul>
+<h2>Dịch vụ công ty xây dựng Phú Yên của Sao Khuê</h2>
+<p>Sao Khuê nhận <strong>thiết kế + thi công trọn gói</strong> hoặc từng hạng mục tại Tuy Hòa và toàn tỉnh. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="cong-ty-xay-dung-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="cong-ty-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
+  $mt$Công ty xây dựng Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tuy-hoa$slug$,
+  $title$Xây Nhà Trọn Gói Tại Tuy Hòa Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Tuy Hòa: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Tuy Hòa — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà Tuy Hòa</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Tuy Hòa</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-tuy-hoa-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-hoa-1</figcaption>
+</figure>
+
+<h2>xây nhà Tuy Hòa — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="xay-nha-tuy-hoa-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Tuy Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Tuy Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Tuy Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-tuy-hoa-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
+  $mt$Xây nhà Tuy Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-phu-yen$slug$,
+  $title$Mẫu Nhà Phố Đẹp Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>nhà phố Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà phố Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-phu-yen-1</figcaption>
+</figure>
+
+<h2>nhà phố Phú Yên — Tối ưu mặt tiền hẹp</h2>
+<p>Nhà phố tại Tuy Hòa thường mặt tiền 4–5 m, sâu 15–20 m. Sao Khuê tối ưu <strong>giếng trời, thông tầng</strong> và phòng ngủ đủ sáng.</p>
+<ul>
+  <li>2–4 tầng, kinh doanh tầng trệt (nếu cần).</li>
+  <li>Chống thấm sân thượng — bắt buộc tại Phú Yên.</li>
+  <li>Nội thất hiện đại, tiết kiệm điện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
+  $mt$Nhà phố Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-phan-tho-phu-yen$slug$,
+  $title$Thi Công Nhà Phần Thô Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phần thô Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phần thô Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>thi công nhà phần thô Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà phần thô Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="thi-cong-nha-phan-tho-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-phu-yen-1</figcaption>
+</figure>
+
+<h2>thi công nhà phần thô Phú Yên — Phạm vi và tiêu chuẩn</h2>
+<p>Gói <strong>phần thô</strong> bao gồm: đào móng, cốt thép, đổ bê tông, xây tường, dầm sàn, kết cấu mái — chưa hoàn thiện nội thất.</p>
+<ul>
+  <li><strong>Móng:</strong> Theo khảo sát địa chất Phú Yên.</li>
+  <li><strong>Khung BTCT:</strong> Nghiệm thu cốt thép trước mỗi lần đổ.</li>
+  <li><strong>Mái:</strong> Chống bão, thoát nước nhanh.</li>
+</ul>
+<p>Chủ nhà có thể tự hoàn thiện hoặc ký tiếp gói trọn gói với Sao Khuê.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="thi-cong-nha-phan-tho-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phần thô Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phần thô Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phần thô Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-phan-tho-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
+  $mt$Thi công nhà phần thô Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phần thô Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà phần thô Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-phu-yen$slug$,
+  $title$Xây Biệt Thự Ven Biển Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây biệt thự Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây biệt thự Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="xay-biet-thu-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Phú Yên — Giải pháp Sao Khuê</h2>
+<p>Biệt thự tại Phú Yên thường trên lô đất rộng — cần thiết kế sân vườn, hồ bơi (nếu có) và chống muối biển.</p>
+<ul>
+  <li>Thiết kế 2D/3D theo phong cách chủ nhà.</li>
+  <li>Kết cấu chịu tải, móng phù hợp địa hình.</li>
+  <li>Hoàn thiện cao cấp hoặc tiêu chuẩn — linh hoạt ngân sách.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="xay-biet-thu-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="xay-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
+  $mt$Xây biệt thự Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-phu-yen$slug$,
+  $title$Chi Phí Xây Nhà Tại Phú Yên Bao Nhiêu?$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>chi phí xây nhà Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>chi phí xây nhà Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-42.jpg" alt="chi-phi-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — chi phí xây nhà Phú Yên</h2>
+<table>
+  <thead><tr><th>Hạng mục</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,2 – 4,5 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>6,5 – 9 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>10 – 14 triệu đ/m² sàn</td><td>Vật liệu tốt, nội thất</td></tr>
+  </tbody>
+</table>
+<h2>Yếu tố ảnh hưởng chi phí xây nhà Phú Yên</h2>
+<ul>
+  <li>Diện tích sàn, số tầng, độ phức tạp móng.</li>
+  <li>Vật liệu hoàn thiện (gạch, sơn, thiết bị vệ sinh).</li>
+  <li>Vị trí công trình — chi phí vận chuyển vật tư tại Phú Yên.</li>
+</ul>
+<p>Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline để nhận dự toán theo m² thực tế.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="chi-phi-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="chi-phi-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
+  $mt$Chi phí xây nhà Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$mau-nha-pho-phu-yen$slug$,
+  $title$Top Mẫu Nhà Phố Hiện Đại Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$mẫu nhà phố Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà phố Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>mẫu nhà phố Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>mẫu nhà phố Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="mau-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-phu-yen-1</figcaption>
+</figure>
+
+<h2>mẫu nhà phố Phú Yên — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố ven biển, giếng trời thông gió.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Mái hiên rộng, chịu nắng gió biển.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Phú Yên.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="mau-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình mẫu nhà phố Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn mẫu nhà phố Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>mẫu nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
+  $mt$Mẫu nhà phố Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ mẫu nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$mẫu nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-ven-bien-phu-yen$slug$,
+  $title$Xây Nhà Ven Biển Tại Phú Yên — Giải Pháp Chống Muối$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà ven biển Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà ven biển Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà ven biển Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà ven biển Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-ven-bien-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ven-bien-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà ven biển Phú Yên — Kỹ thuật chống muối và chống bão</h2>
+<ul>
+  <li><strong>Vật liệu:</strong> Thép, bu lông inox gần biển; sơn chống muối.</li>
+  <li><strong>Chống thấm:</strong> Mái, ban công, tường hướng biển — lớp waterproof kép.</li>
+  <li><strong>Mái và cửa sổ:</strong> Chịu gió, neo chắc theo tiêu chuẩn vùng bão.</li>
+</ul>
+<p>Khu Sông Cầu, Tuy An, Đông Hòa là các khu vực Sao Khuê thường triển khai <strong>xây nhà ven biển Phú Yên</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-ven-bien-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ven-bien-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà ven biển Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà ven biển Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà ven biển Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-ven-bien-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ven-bien-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
+  $mt$Xây nhà ven biển Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà ven biển Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà ven biển Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-pho-phu-yen$slug$,
+  $title$Dịch Vụ Thiết Kế Nhà Phố Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà phố Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà phố Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>thiết kế nhà phố Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thiết kế nhà phố Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="thiet-ke-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-phu-yen-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà phố Phú Yên — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố ven biển, giếng trời thông gió.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Mái hiên rộng, chịu nắng gió biển.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Phú Yên.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="thiet-ke-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà phố Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà phố Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="thiet-ke-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
+  $mt$Thiết kế nhà phố Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-phu-yen$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>nhà thầu xây dựng Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà thầu xây dựng Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="nha-thau-xay-dung-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-phu-yen-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng Phú Yên — Tiêu chí chọn đơn vị uy tín</h2>
+<ul>
+  <li><strong>Hồ sơ pháp lý rõ ràng:</strong> Giấy phép kinh doanh, hợp đồng thi công chi tiết.</li>
+  <li><strong>Công trình tham chiếu:</strong> Ảnh tiến độ, biên bản nghiệm thu tại Phú Yên.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu 10 năm, hạng mục hoàn thiện theo biên bản.</li>
+</ul>
+<h2>Dịch vụ nhà thầu xây dựng Phú Yên của Sao Khuê</h2>
+<p>Sao Khuê nhận <strong>thiết kế + thi công trọn gói</strong> hoặc từng hạng mục tại Tuy Hòa và toàn tỉnh. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="nha-thau-xay-dung-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="nha-thau-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
+  $mt$Nhà thầu xây dựng Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-song-cau-phu-yen$slug$,
+  $title$Xây Nhà Tại Sông Cầu Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Sông Cầu Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Sông Cầu Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà Sông Cầu Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Sông Cầu Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-song-cau-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-song-cau-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà Sông Cầu Phú Yên — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="xay-nha-song-cau-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-song-cau-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Sông Cầu Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Sông Cầu Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Sông Cầu Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-song-cau-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-song-cau-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
+  $mt$Xây nhà Sông Cầu Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Sông Cầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Sông Cầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-cap-4-phu-yen$slug$,
+  $title$Xây Nhà Cấp 4 Giá Rẻ Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà cấp 4 Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà cấp 4 Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà cấp 4 Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà cấp 4 Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-cap-4-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà cấp 4 Phú Yên — Giải pháp tiết kiệm</h2>
+<p>Nhà cấp 4 phù hợp gia đình ngân sách vừa phải tại Phú Yên: 1 trệt, móng đơn hoặc băng, thi công nhanh 2–4 tháng.</p>
+<ul>
+  <li>Diện tích 60–120 m² sàn phổ biến.</li>
+  <li>Có thể nâng cấp lên 1 trệt 1 lầu khi tài chính ổn định.</li>
+  <li>Sao Khuê tư vấn mở rộng sau này ngay từ khâu móng.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-48.jpg" alt="xay-nha-cap-4-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà cấp 4 Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà cấp 4 Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà cấp 4 Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-cap-4-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
+  $mt$Xây nhà cấp 4 Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà cấp 4 Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà cấp 4 Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$hoan-thien-nha-phu-yen$slug$,
+  $title$Hoàn Thiện Nhà Phần Thô Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$hoàn thiện nhà Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Hoàn thiện nhà Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>hoàn thiện nhà Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>hoàn thiện nhà Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="hoan-thien-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>hoàn thiện nhà Phú Yên — Hạng mục hoàn thiện</h2>
+<ul>
+  <li><strong>Trát, sơn, lát gạch</strong> — WC, bếp, phòng ngủ.</li>
+  <li><strong>Trần thạch cao, cửa, lan can</strong> theo bản vẽ.</li>
+  <li><strong>Điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Nội thất tùy chọn:</strong> Tủ bếp, tủ âm tường theo ngân sách.</li>
+</ul>
+<p>Sao Khuê khảo sát nhà phần thô hiện có tại Tuy Hòa trước khi báo giá — tránh phát sinh bất ngờ.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="hoan-thien-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình hoàn thiện nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn hoàn thiện nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>hoàn thiện nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="hoan-thien-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
+  $mt$Hoàn thiện nhà Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ hoàn thiện nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$hoàn thiện nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-phu-yen$slug$,
+  $title$Xây Nhà 2 Tầng Tại Phú Yên — Báo Giá & Mẫu Đẹp$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà 2 tầng Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 2 tầng Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-2-tang-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Phú Yên — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Tuy Hòa cần khảo sát móng kỹ — đặc biệt đất đồi ven biển.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xay-nha-2-tang-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-2-tang-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
+  $mt$Xây nhà 2 tầng Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$kien-truc-nha-pho-phu-yen$slug$,
+  $title$Kiến Trúc Nhà Phố Hiện Đại Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$kiến trúc nhà phố Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Kiến trúc nhà phố Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>kiến trúc nhà phố Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>kiến trúc nhà phố Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="kien-truc-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-phu-yen-1</figcaption>
+</figure>
+
+<h2>kiến trúc nhà phố Phú Yên — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố ven biển, giếng trời thông gió.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Mái hiên rộng, chịu nắng gió biển.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Phú Yên.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="kien-truc-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình kiến trúc nhà phố Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn kiến trúc nhà phố Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>kiến trúc nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="kien-truc-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
+  $mt$Kiến trúc nhà phố Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ kiến trúc nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$kiến trúc nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-dak-lak$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>công ty xây dựng Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>công ty xây dựng Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="cong-ty-xay-dung-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ak-lak-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Đắk Lắk — Tiêu chí chọn đơn vị uy tín</h2>
+<ul>
+  <li><strong>Hồ sơ pháp lý rõ ràng:</strong> Giấy phép kinh doanh, hợp đồng thi công chi tiết.</li>
+  <li><strong>Công trình tham chiếu:</strong> Ảnh tiến độ, biên bản nghiệm thu tại Đắk Lắk.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu 10 năm, hạng mục hoàn thiện theo biên bản.</li>
+</ul>
+<h2>Dịch vụ công ty xây dựng Đắk Lắk của Sao Khuê</h2>
+<p>Sao Khuê nhận <strong>thiết kế + thi công trọn gói</strong> hoặc từng hạng mục tại Buôn Ma Thuột và toàn tỉnh. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="cong-ty-xay-dung-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="cong-ty-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
+  $mt$Công ty xây dựng Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$công ty xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-buon-ma-thuot$slug$,
+  $title$Xây Nhà Trọn Gói Tại Buôn Ma Thuột$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Buôn Ma Thuột: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Buôn Ma Thuột — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà Buôn Ma Thuột</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Buôn Ma Thuột</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="xay-nha-buon-ma-thuot-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ma-thuot-1</figcaption>
+</figure>
+
+<h2>xây nhà Buôn Ma Thuột — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="xay-nha-buon-ma-thuot-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ma-thuot-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Buôn Ma Thuột tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Buôn Ma Thuột</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Buôn Ma Thuột</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-buon-ma-thuot-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ma-thuot-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
+  $mt$Xây nhà Buôn Ma Thuột | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-buon-ma-thuot$slug$,
+  $title$Mẫu Nhà Phố Đẹp Tại Buôn Ma Thuột$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Buôn Ma Thuột: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Buôn Ma Thuột — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>nhà phố Buôn Ma Thuột</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà phố Buôn Ma Thuột</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="nha-pho-buon-ma-thuot-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-buon-ma-thuot-1</figcaption>
+</figure>
+
+<h2>nhà phố Buôn Ma Thuột — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="nha-pho-buon-ma-thuot-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-buon-ma-thuot-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Buôn Ma Thuột tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Buôn Ma Thuột</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Buôn Ma Thuột</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="nha-pho-buon-ma-thuot-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-buon-ma-thuot-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
+  $mt$Nhà phố Buôn Ma Thuột | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà phố Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-phan-tho-dak-lak$slug$,
+  $title$Thi Công Nhà Phần Thô Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phần thô Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phần thô Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>thi công nhà phần thô Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà phần thô Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="thi-cong-nha-phan-tho-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-ak-lak-1</figcaption>
+</figure>
+
+<h2>thi công nhà phần thô Đắk Lắk — Phạm vi và tiêu chuẩn</h2>
+<p>Gói <strong>phần thô</strong> bao gồm: đào móng, cốt thép, đổ bê tông, xây tường, dầm sàn, kết cấu mái — chưa hoàn thiện nội thất.</p>
+<ul>
+  <li><strong>Móng:</strong> Theo khảo sát địa chất Đắk Lắk.</li>
+  <li><strong>Khung BTCT:</strong> Nghiệm thu cốt thép trước mỗi lần đổ.</li>
+  <li><strong>Mái:</strong> Dốc đủ, chống thấm trần mùa mưa.</li>
+</ul>
+<p>Chủ nhà có thể tự hoàn thiện hoặc ký tiếp gói trọn gói với Sao Khuê.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="thi-cong-nha-phan-tho-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phần thô Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phần thô Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phần thô Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-phan-tho-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
+  $mt$Thi công nhà phần thô Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phần thô Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà phần thô Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-dak-lak$slug$,
+  $title$Xây Biệt Thự Vùng Cao Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây biệt thự Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây biệt thự Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="xay-biet-thu-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Đắk Lắk — Giải pháp Sao Khuê</h2>
+<p>Biệt thự tại Đắk Lắk thường trên lô đất rộng — cần thiết kế sân vườn, hồ bơi (nếu có) và cách nhiệt tốt cho khí hậu cao nguyên.</p>
+<ul>
+  <li>Thiết kế 2D/3D theo phong cách chủ nhà.</li>
+  <li>Kết cấu chịu tải, móng phù hợp địa hình.</li>
+  <li>Hoàn thiện cao cấp hoặc tiêu chuẩn — linh hoạt ngân sách.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="xay-biet-thu-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-biet-thu-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
+  $mt$Xây biệt thự Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây biệt thự Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-dak-lak$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$báo giá xây nhà Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>báo giá xây nhà Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>báo giá xây nhà Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="bao-gia-xay-nha-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ak-lak-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — báo giá xây nhà Đắk Lắk</h2>
+<table>
+  <thead><tr><th>Hạng mục</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,0 – 4,2 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>6 – 8,5 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>9 – 13 triệu đ/m² sàn</td><td>Vật liệu tốt, nội thất</td></tr>
+  </tbody>
+</table>
+<h2>Yếu tố ảnh hưởng báo giá xây nhà Đắk Lắk</h2>
+<ul>
+  <li>Diện tích sàn, số tầng, độ phức tạp móng.</li>
+  <li>Vật liệu hoàn thiện (gạch, sơn, thiết bị vệ sinh).</li>
+  <li>Vị trí công trình — chi phí vận chuyển vật tư tại Đắk Lắk.</li>
+</ul>
+<p>Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline để nhận dự toán theo m² thực tế.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="bao-gia-xay-nha-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình báo giá xây nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn báo giá xây nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="bao-gia-xay-nha-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
+  $mt$Báo giá xây nhà Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ báo giá xây nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$báo giá xây nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$mau-nha-pho-dak-lak$slug$,
+  $title$Top Mẫu Nhà Phố Hiện Đại Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$mẫu nhà phố Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà phố Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>mẫu nhà phố Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>mẫu nhà phố Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="mau-nha-pho-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ak-lak-1</figcaption>
+</figure>
+
+<h2>mẫu nhà phố Đắk Lắk — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố cao nguyên, mái dốc thoát mưa.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Sân vườn, hành lang thoáng Tây Nguyên.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Đắk Lắk.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="mau-nha-pho-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình mẫu nhà phố Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn mẫu nhà phố Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>mẫu nhà phố Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="mau-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
+  $mt$Mẫu nhà phố Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ mẫu nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$mẫu nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-1-tret-1-lau-dak-lak$slug$,
+  $title$Xây Nhà 1 Trệt 1 Lầu Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 1 trệt 1 lầu Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 1 trệt 1 lầu Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà 1 trệt 1 lầu Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 1 trệt 1 lầu Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="xay-nha-1-tret-1-lau-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà 1 trệt 1 lầu Đắk Lắk — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Buôn Ma Thuột cần khảo sát móng kỹ — đặc biệt đất bazan và đồi Tây Nguyên.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-1-tret-1-lau-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 1 trệt 1 lầu Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 1 trệt 1 lầu Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 1 trệt 1 lầu Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="xay-nha-1-tret-1-lau-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
+  $mt$Xây nhà 1 trệt 1 lầu Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 1 trệt 1 lầu Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 1 trệt 1 lầu Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-biet-thu-dak-lak$slug$,
+  $title$Thiết Kế Biệt Thự Hiện Đại Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế biệt thự Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế biệt thự Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>thiết kế biệt thự Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thiết kế biệt thự Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="thiet-ke-biet-thu-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-ak-lak-1</figcaption>
+</figure>
+
+<h2>thiết kế biệt thự Đắk Lắk — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố cao nguyên, mái dốc thoát mưa.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Sân vườn, hành lang thoáng Tây Nguyên.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Đắk Lắk.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="thiet-ke-biet-thu-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế biệt thự Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế biệt thự Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế biệt thự Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="thiet-ke-biet-thu-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
+  $mt$Thiết kế biệt thự Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế biệt thự Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế biệt thự Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-dak-lak$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>nhà thầu xây dựng Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà thầu xây dựng Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="nha-thau-xay-dung-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ak-lak-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng Đắk Lắk — Tiêu chí chọn đơn vị uy tín</h2>
+<ul>
+  <li><strong>Hồ sơ pháp lý rõ ràng:</strong> Giấy phép kinh doanh, hợp đồng thi công chi tiết.</li>
+  <li><strong>Công trình tham chiếu:</strong> Ảnh tiến độ, biên bản nghiệm thu tại Đắk Lắk.</li>
+  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm từng giai đoạn.</li>
+  <li><strong>Bảo hành bằng văn bản:</strong> Kết cấu 10 năm, hạng mục hoàn thiện theo biên bản.</li>
+</ul>
+<h2>Dịch vụ nhà thầu xây dựng Đắk Lắk của Sao Khuê</h2>
+<p>Sao Khuê nhận <strong>thiết kế + thi công trọn gói</strong> hoặc từng hạng mục tại Buôn Ma Thuột và toàn tỉnh. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="nha-thau-xay-dung-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="nha-thau-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
+  $mt$Nhà thầu xây dựng Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-buon-ho-dak-lak$slug$,
+  $title$Xây Nhà Tại Buôn Hồ Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Buôn Hồ Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Buôn Hồ Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà Buôn Hồ Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Buôn Hồ Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-buon-ho-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ho-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà Buôn Hồ Đắk Lắk — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="xay-nha-buon-ho-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ho-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Buôn Hồ Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Buôn Hồ Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Buôn Hồ Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-buon-ho-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-buon-ho-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
+  $mt$Xây nhà Buôn Hồ Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Buôn Hồ Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Buôn Hồ Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-cap-4-dak-lak$slug$,
+  $title$Xây Nhà Cấp 4 Giá Rẻ Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà cấp 4 Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà cấp 4 Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà cấp 4 Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà cấp 4 Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-cap-4-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà cấp 4 Đắk Lắk — Giải pháp tiết kiệm</h2>
+<p>Nhà cấp 4 phù hợp gia đình ngân sách vừa phải tại Đắk Lắk: 1 trệt, móng đơn hoặc băng, thi công nhanh 2–4 tháng.</p>
+<ul>
+  <li>Diện tích 60–120 m² sàn phổ biến.</li>
+  <li>Có thể nâng cấp lên 1 trệt 1 lầu khi tài chính ổn định.</li>
+  <li>Sao Khuê tư vấn mở rộng sau này ngay từ khâu móng.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="xay-nha-cap-4-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà cấp 4 Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà cấp 4 Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà cấp 4 Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-cap-4-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-cap-4-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
+  $mt$Xây nhà cấp 4 Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà cấp 4 Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà cấp 4 Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$hoan-thien-nha-dak-lak$slug$,
+  $title$Hoàn Thiện Nhà Phần Thô Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$hoàn thiện nhà Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Hoàn thiện nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>hoàn thiện nhà Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>hoàn thiện nhà Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="hoan-thien-nha-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-ak-lak-1</figcaption>
+</figure>
+
+<h2>hoàn thiện nhà Đắk Lắk — Hạng mục hoàn thiện</h2>
+<ul>
+  <li><strong>Trát, sơn, lát gạch</strong> — WC, bếp, phòng ngủ.</li>
+  <li><strong>Trần thạch cao, cửa, lan can</strong> theo bản vẽ.</li>
+  <li><strong>Điện nước, chống giật</strong> — an toàn cho gia đình.</li>
+  <li><strong>Nội thất tùy chọn:</strong> Tủ bếp, tủ âm tường theo ngân sách.</li>
+</ul>
+<p>Sao Khuê khảo sát nhà phần thô hiện có tại Buôn Ma Thuột trước khi báo giá — tránh phát sinh bất ngờ.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="hoan-thien-nha-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình hoàn thiện nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn hoàn thiện nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>hoàn thiện nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="hoan-thien-nha-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
+  $mt$Hoàn thiện nhà Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ hoàn thiện nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$hoàn thiện nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-3-tang-dak-lak$slug$,
+  $title$Xây Nhà 3 Tầng Tại Đắk Lắk — Chi Phí & Quy Trình$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 3 tầng Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 3 tầng Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà 3 tầng Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 3 tầng Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-3-tang-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà 3 tầng Đắk Lắk — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Buôn Ma Thuột cần khảo sát móng kỹ — đặc biệt đất bazan và đồi Tây Nguyên.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="xay-nha-3-tang-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 3 tầng Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 3 tầng Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 3 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-12.jpg" alt="xay-nha-3-tang-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
+  $mt$Xây nhà 3 tầng Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 3 tầng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 3 tầng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$kien-truc-nha-pho-dak-lak$slug$,
+  $title$Kiến Trúc Nhà Phố Tây Nguyên Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$kiến trúc nhà phố Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Kiến trúc nhà phố Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>kiến trúc nhà phố Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>kiến trúc nhà phố Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="kien-truc-nha-pho-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-ak-lak-1</figcaption>
+</figure>
+
+<h2>kiến trúc nhà phố Đắk Lắk — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố cao nguyên, mái dốc thoát mưa.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Sân vườn, hành lang thoáng Tây Nguyên.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Đắk Lắk.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="kien-truc-nha-pho-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình kiến trúc nhà phố Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn kiến trúc nhà phố Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>kiến trúc nhà phố Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="kien-truc-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>kien-truc-nha-pho-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
+  $mt$Kiến trúc nhà phố Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ kiến trúc nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$kiến trúc nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-tron-goi-phu-yen$slug$,
+  $title$Thi Công Nhà Trọn Gói Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà trọn gói Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà trọn gói Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>thi công nhà trọn gói Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà trọn gói Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="thi-cong-nha-tron-goi-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-phu-yen-1</figcaption>
+</figure>
+
+<h2>thi công nhà trọn gói Phú Yên — Một đầu mối từ A đến Z</h2>
+<p>Gói <strong>thi công trọn gói</strong> tại Phú Yên: thiết kế (nếu cần), vật tư, nhân công, giám sát, bàn giao — chủ nhà không phải tự chạy nhiều nhà thầu.</p>
+<ul>
+  <li>Báo giá khóa theo hợp đồng hoặc theo hạng mục.</li>
+  <li>Bảo hành kết cấu 10 năm.</li>
+  <li>Tiến độ rõ ràng, cập nhật hình ảnh công trình.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="thi-cong-nha-tron-goi-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà trọn gói Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà trọn gói Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà trọn gói Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-tron-goi-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
+  $mt$Thi công nhà trọn gói Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà trọn gói Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà trọn gói Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-biet-thu-phu-yen$slug$,
+  $title$Thiết Kế Biệt Thự Đẹp Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế biệt thự Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế biệt thự Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>thiết kế biệt thự Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thiết kế biệt thự Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-51.jpg" alt="thiet-ke-biet-thu-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-phu-yen-1</figcaption>
+</figure>
+
+<h2>thiết kế biệt thự Phú Yên — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố ven biển, giếng trời thông gió.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Mái hiên rộng, chịu nắng gió biển.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Phú Yên.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-34.jpg" alt="thiet-ke-biet-thu-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế biệt thự Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế biệt thự Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế biệt thự Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="thiet-ke-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-biet-thu-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
+  $mt$Thiết kế biệt thự Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-3-tang-phu-yen$slug$,
+  $title$Xây Nhà 3 Tầng Tại Phú Yên — Chi Phí & Mẫu Đẹp$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 3 tầng Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 3 tầng Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà 3 tầng Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 3 tầng Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-3-tang-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà 3 tầng Phú Yên — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Tuy Hòa cần khảo sát móng kỹ — đặc biệt đất đồi ven biển.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="xay-nha-3-tang-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 3 tầng Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 3 tầng Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 3 tầng Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-3-tang-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-3-tang-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
+  $mt$Xây nhà 3 tầng Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 3 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 3 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-1-tret-1-lau-phu-yen$slug$,
+  $title$Xây Nhà 1 Trệt 1 Lầu Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 1 trệt 1 lầu Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 1 trệt 1 lầu Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà 1 trệt 1 lầu Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 1 trệt 1 lầu Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="xay-nha-1-tret-1-lau-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà 1 trệt 1 lầu Phú Yên — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Tuy Hòa cần khảo sát móng kỹ — đặc biệt đất đồi ven biển.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-1-tret-1-lau-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 1 trệt 1 lầu Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 1 trệt 1 lầu Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 1 trệt 1 lầu Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-1-tret-1-lau-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-1-tret-1-lau-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
+  $mt$Xây nhà 1 trệt 1 lầu Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 1 trệt 1 lầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 1 trệt 1 lầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-ong-phu-yen$slug$,
+  $title$Mẫu Nhà Ống Đẹp Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà ống Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà ống Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>nhà ống Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà ống Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="nha-ong-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>nha-ong-phu-yen-1</figcaption>
+</figure>
+
+<h2>nhà ống Phú Yên — Tối ưu nhà ống hẹp</h2>
+<p><strong>Nhà ống</strong> mặt tiền 3,5–4 m tại Phú Yên — giải pháp giếng trời, cầu thang sáng và phòng ngủ đủ thông gió.</p>
+<ul>
+  <li>2–4 tầng, công năng đủ cho gia đình 4–6 người.</li>
+  <li>Tận dụng sân sau, phòng thờ (nếu cần).</li>
+  <li>Chi phí hợp lý hơn nhà ngang rộng.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="nha-ong-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>nha-ong-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà ống Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà ống Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà ống Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="nha-ong-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>nha-ong-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
+  $mt$Nhà ống Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ nhà ống Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà ống Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-homestay-phu-yen$slug$,
+  $title$Xây Homestay Ven Biển Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây homestay Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây homestay Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây homestay Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây homestay Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="xay-homestay-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-homestay-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây homestay Phú Yên — Thiết kế lưu trú ven biển</h2>
+<p><strong>Homestay Phú Yên</strong> cần thiết kế riêng phòng, sân chung, bếp và chống muối biển.</p>
+<ul>
+  <li>Phòng ngủ đủ tiện nghi, WC riêng hoặc chung.</li>
+  <li>Khu vực check-in, bãi xe, sân BBQ.</li>
+  <li>Vật liệu bền, dễ bảo trì khi cho thuê.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-homestay-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-homestay-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây homestay Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây homestay Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây homestay Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="xay-homestay-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-homestay-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
+  $mt$Xây homestay Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây homestay Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây homestay Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-nha-phu-yen$slug$,
+  $title$Sửa Chữa Nhà Cũ Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$sửa chữa nhà Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa nhà Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>sửa chữa nhà Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>sửa chữa nhà Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="sua-chua-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>sửa chữa nhà Phú Yên — Khảo sát và thi công</h2>
+<p>Sao Khuê nhận <strong>sửa chữa, cải tạo nhà cũ</strong> tại Phú Yên: chống thấm, gia cố kết cấu, thay điện nước, tái bố trí phòng.</p>
+<ul>
+  <li>Khảo sát hiện trạng miễn phí trước khi báo giá.</li>
+  <li>Báo giá theo hạng mục — tránh phát sinh bất ngờ.</li>
+  <li>Che chắn công trình, vệ sinh hàng ngày khi thi công.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="sua-chua-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình sửa chữa nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="sua-chua-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
+  $mt$Sửa chữa nhà Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$sửa chữa nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cai-tao-nha-phu-yen$slug$,
+  $title$Cải Tạo Nhà Trọn Gói Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$cải tạo nhà Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Cải tạo nhà Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>cải tạo nhà Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>cải tạo nhà Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="cai-tao-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>cải tạo nhà Phú Yên — Khảo sát và thi công</h2>
+<p>Sao Khuê nhận <strong>sửa chữa, cải tạo nhà cũ</strong> tại Phú Yên: chống thấm, gia cố kết cấu, thay điện nước, tái bố trí phòng.</p>
+<ul>
+  <li>Khảo sát hiện trạng miễn phí trước khi báo giá.</li>
+  <li>Báo giá theo hạng mục — tránh phát sinh bất ngờ.</li>
+  <li>Che chắn công trình, vệ sinh hàng ngày khi thi công.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="cai-tao-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình cải tạo nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn cải tạo nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>cải tạo nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="cai-tao-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
+  $mt$Cải tạo nhà Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ cải tạo nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$cải tạo nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nang-tang-nha-phu-yen$slug$,
+  $title$Nâng Tầng Nhà Phố Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nâng tầng nhà Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nâng tầng nhà Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>nâng tầng nhà Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nâng tầng nhà Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="nang-tang-nha-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-phu-yen-1</figcaption>
+</figure>
+
+<h2>nâng tầng nhà Phú Yên — Gia cố trước khi mở rộng</h2>
+<p><strong>Nâng tầng nhà phố</strong> tại Tuy Hòa cần đánh giá móng, cột, tường chịu lực. Sao Khuê lập phương án gia cố và hồ sơ xin phép trước khi thi công.</p>
+<ul>
+  <li>Khảo sát kết cấu hiện hữu bằng kỹ thuật.</li>
+  <li>Thiết kế tầng mới đồng bộ mặt tiền.</li>
+  <li>Thi công an toàn, nghiệm thu từng giai đoạn.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="nang-tang-nha-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình nâng tầng nhà Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nâng tầng nhà Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nâng tầng nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="nang-tang-nha-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
+  $mt$Nâng tầng nhà Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ nâng tầng nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nâng tầng nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xin-giay-phep-xay-dung-phu-yen$slug$,
+  $title$Xin Giấy Phép Xây Dựng Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xin giấy phép xây dựng Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xin giấy phép xây dựng Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xin giấy phép xây dựng Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xin giấy phép xây dựng Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="xin-giay-phep-xay-dung-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-phu-yen-1</figcaption>
+</figure>
+
+<h2>xin giấy phép xây dựng Phú Yên — Hỗ trợ hồ sơ pháp lý</h2>
+<p>Xây dựng tại Phú Yên cần <strong>giấy phép xây dựng</strong> đúng quy định. Sao Khuê tư vấn chuẩn bị hồ sơ: bản vẽ, sổ đất, đơn đề nghị theo mẫu địa phương.</p>
+<ul>
+  <li>Tư vấn loại công trình được phép xây.</li>
+  <li>Hồ sơ thiết kế đạt chuẩn nộp cơ quan.</li>
+  <li>Đồng hành chủ nhà trong quá trình thẩm định.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="xin-giay-phep-xay-dung-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xin giấy phép xây dựng Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xin giấy phép xây dựng Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xin giấy phép xây dựng Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xin-giay-phep-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
+  $mt$Xin giấy phép xây dựng Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xin giấy phép xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xin giấy phép xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-gia-re-phu-yen$slug$,
+  $title$Xây Nhà Giá Rẻ Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà giá rẻ Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà giá rẻ Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà giá rẻ Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà giá rẻ Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-gia-re-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà giá rẻ Phú Yên — Tối ưu ngân sách</h2>
+<p>Sao Khuê đề xuất phương án <strong>xây nhà tiết kiệm</strong> tại Phú Yên: mặt bằng gọn, vật liệu hợp lý, thi công trọn gói một đầu mối — tránh phát sinh.</p>
+<ul>
+  <li>Chọn gói phần thô hoặc trọn gói tiêu chuẩn.</li>
+  <li>Ưu tiên công năng thiết yếu trước trang trí.</li>
+  <li>Dự toán minh bạch từng hạng mục.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="xay-nha-gia-re-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà giá rẻ Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà giá rẻ Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà giá rẻ Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-gia-re-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
+  $mt$Xây nhà giá rẻ Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà giá rẻ Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà giá rẻ Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-pho-tuy-hoa$slug$,
+  $title$Thi Công Nhà Phố Tại Tuy Hòa$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phố Tuy Hòa: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phố Tuy Hòa — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>thi công nhà phố Tuy Hòa</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà phố Tuy Hòa</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="thi-cong-nha-pho-tuy-hoa-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-tuy-hoa-1</figcaption>
+</figure>
+
+<h2>thi công nhà phố Tuy Hòa — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="thi-cong-nha-pho-tuy-hoa-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-tuy-hoa-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phố Tuy Hòa tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phố Tuy Hòa</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Tuy Hòa</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="thi-cong-nha-pho-tuy-hoa-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-tuy-hoa-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
+  $mt$Thi công nhà phố Tuy Hòa | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phố Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà phố Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-dong-hoa-phu-yen$slug$,
+  $title$Xây Nhà Tại Đông Hòa Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Đông Hòa Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Đông Hòa Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà Đông Hòa Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Đông Hòa Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-ong-hoa-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ong-hoa-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà Đông Hòa Phú Yên — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="xay-nha-ong-hoa-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ong-hoa-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Đông Hòa Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Đông Hòa Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Đông Hòa Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-ong-hoa-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ong-hoa-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
+  $mt$Xây nhà Đông Hòa Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Đông Hòa Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Đông Hòa Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tuy-an-phu-yen$slug$,
+  $title$Xây Nhà Tại Tuy An Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Tuy An Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Tuy An Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>xây nhà Tuy An Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Tuy An Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-tuy-an-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-an-phu-yen-1</figcaption>
+</figure>
+
+<h2>xây nhà Tuy An Phú Yên — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xay-nha-tuy-an-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-an-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Tuy An Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Tuy An Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Tuy An Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-tuy-an-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tuy-an-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
+  $mt$Xây nhà Tuy An Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Tuy An Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Tuy An Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-vuon-phu-yen$slug$,
+  $title$Xây Nhà Vườn Tại Phú Yên$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà vườn Phú Yên: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà vườn Phú Yên — Giải pháp chuyên nghiệp tại Phú Yên</h2>
+<p><strong>nhà vườn Phú Yên</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Phú Yên</strong> — đặc biệt khu vực <strong>Tuy Hòa</strong> và các huyện lân cận. Với khí hậu ven biển nắng gió, hơi muối và mùa mưa bão, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà vườn Phú Yên</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="nha-vuon-phu-yen-1" loading="lazy" decoding="async" />
+<figcaption>nha-vuon-phu-yen-1</figcaption>
+</figure>
+
+<h2>nhà vườn Phú Yên — Không gian xanh</h2>
+<p>Nhà vườn tại Phú Yên — sân trước, sân sau, cây cảnh. Sao Khuê thiết kế mở rộng sinh hoạt ngoài trời, mái hiên che mưa nắng.</p>
+<ul>
+  <li>Lô đất rộng 150–300 m² phổ biến.</li>
+  <li>Kết hợp 1–2 tầng, gara, sân BBQ.</li>
+  <li>Móng phù hợp địa hình đồi ven biển.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="nha-vuon-phu-yen-2" loading="lazy" decoding="async" />
+<figcaption>nha-vuon-phu-yen-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà vườn Phú Yên tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Phú Yên.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-phu-yen">xây dựng nhà Phú Yên</a>, <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>, <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Phú Yên</h2><ul>
+  <li><strong>Chống thấm &amp; muối biển</strong> — bắt buộc gần biển.</li>
+  <li><strong>Móng đất đồi:</strong> Khảo sát địa chất trước khi đào.</li>
+  <li><strong>Mùa thi công:</strong> Tránh bão kéo dài khi đổ mái.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà vườn Phú Yên</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà vườn Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-51.jpg" alt="nha-vuon-phu-yen-3" loading="lazy" decoding="async" />
+<figcaption>nha-vuon-phu-yen-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
+  $mt$Nhà vườn Phú Yên | Sao Khuê$mt$,
+  $md$Dịch vụ nhà vườn Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà vườn Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-tron-goi-dak-lak$slug$,
+  $title$Thi Công Nhà Trọn Gói Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà trọn gói Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà trọn gói Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>thi công nhà trọn gói Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà trọn gói Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="thi-cong-nha-tron-goi-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ak-lak-1</figcaption>
+</figure>
+
+<h2>thi công nhà trọn gói Đắk Lắk — Một đầu mối từ A đến Z</h2>
+<p>Gói <strong>thi công trọn gói</strong> tại Đắk Lắk: thiết kế (nếu cần), vật tư, nhân công, giám sát, bàn giao — chủ nhà không phải tự chạy nhiều nhà thầu.</p>
+<ul>
+  <li>Báo giá khóa theo hợp đồng hoặc theo hạng mục.</li>
+  <li>Bảo hành kết cấu 10 năm.</li>
+  <li>Tiến độ rõ ràng, cập nhật hình ảnh công trình.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="thi-cong-nha-tron-goi-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà trọn gói Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà trọn gói Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà trọn gói Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-tron-goi-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
+  $mt$Thi công nhà trọn gói Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà trọn gói Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà trọn gói Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-dep-dak-lak$slug$,
+  $title$Thiết Kế Nhà Đẹp Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà đẹp Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà đẹp Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>thiết kế nhà đẹp Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thiết kế nhà đẹp Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="thiet-ke-nha-ep-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-ep-ak-lak-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà đẹp Đắk Lắk — Phong cách và công năng</h2>
+<p>Sao Khuê tư vấn <strong>mặt bằng tối ưu</strong>, phối cảnh 3D và hồ sơ kỹ thuật thi công — phù hợp nhà phố cao nguyên, mái dốc thoát mưa.</p>
+<ul>
+  <li><strong>Hiện đại:</strong> Mặt tiền gọn, kính cường lực, ban công xanh.</li>
+  <li><strong>Tối giản:</strong> Chi phí hợp lý, công năng đủ dùng cho gia đình trẻ.</li>
+  <li><strong>Indochine / Tropical:</strong> Sân vườn, hành lang thoáng Tây Nguyên.</li>
+</ul>
+<h2>Hồ sơ thiết kế bàn giao</h2>
+<p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ và tư vấn xin phép xây dựng tại Đắk Lắk.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="thiet-ke-nha-ep-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-ep-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà đẹp Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà đẹp Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà đẹp Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="thiet-ke-nha-ep-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-ep-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
+  $mt$Thiết kế nhà đẹp Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà đẹp Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thiết kế nhà đẹp Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-buon-ma-thuot$slug$,
+  $title$Xây Nhà 2 Tầng Tại Buôn Ma Thuột$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Buôn Ma Thuột: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Buôn Ma Thuột — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà 2 tầng Buôn Ma Thuột</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà 2 tầng Buôn Ma Thuột</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-49.jpg" alt="xay-nha-2-tang-buon-ma-thuot-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-buon-ma-thuot-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Buôn Ma Thuột — Quy mô và chi phí</h2>
+<p>Nhà nhiều tầng tại Buôn Ma Thuột cần khảo sát móng kỹ — đặc biệt đất bazan và đồi Tây Nguyên.</p>
+<ul>
+  <li><strong>Thiết kế:</strong> Cầu thang, giếng trời, thông tầng hợp lý.</li>
+  <li><strong>Thi công:</strong> Giàn giáo an toàn, nghiệm thu sàn từng tầng.</li>
+  <li><strong>Thời gian:</strong> Thường 4–8 tháng tùy diện tích và gói hoàn thiện.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-2-tang-buon-ma-thuot-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-buon-ma-thuot-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Buôn Ma Thuột tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Buôn Ma Thuột</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Buôn Ma Thuột</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-2-tang-buon-ma-thuot-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-buon-ma-thuot-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
+  $mt$Xây nhà 2 tầng Buôn Ma Thuột | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-ong-dak-lak$slug$,
+  $title$Mẫu Nhà Ống Đẹp Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà ống Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà ống Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>nhà ống Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nhà ống Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="nha-ong-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>nha-ong-ak-lak-1</figcaption>
+</figure>
+
+<h2>nhà ống Đắk Lắk — Tối ưu nhà ống hẹp</h2>
+<p><strong>Nhà ống</strong> mặt tiền 3,5–4 m tại Đắk Lắk — giải pháp giếng trời, cầu thang sáng và phòng ngủ đủ thông gió.</p>
+<ul>
+  <li>2–4 tầng, công năng đủ cho gia đình 4–6 người.</li>
+  <li>Tận dụng sân sau, phòng thờ (nếu cần).</li>
+  <li>Chi phí hợp lý hơn nhà ngang rộng.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="nha-ong-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>nha-ong-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà ống Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà ống Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà ống Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="nha-ong-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>nha-ong-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
+  $mt$Nhà ống Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ nhà ống Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nhà ống Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-vuon-dak-lak$slug$,
+  $title$Xây Nhà Vườn Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà vườn Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà vườn Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà vườn Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà vườn Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="xay-nha-vuon-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-vuon-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà vườn Đắk Lắk — Không gian xanh</h2>
+<p>Nhà vườn tại Đắk Lắk — sân trước, sân sau, cây cảnh. Sao Khuê thiết kế mở rộng sinh hoạt ngoài trời, mái hiên che mưa nắng.</p>
+<ul>
+  <li>Lô đất rộng 150–300 m² phổ biến.</li>
+  <li>Kết hợp 1–2 tầng, gara, sân BBQ.</li>
+  <li>Móng phù hợp địa hình cao nguyên.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="xay-nha-vuon-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-vuon-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà vườn Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà vườn Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà vườn Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="xay-nha-vuon-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-vuon-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
+  $mt$Xây nhà vườn Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà vườn Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà vườn Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-nha-dak-lak$slug$,
+  $title$Sửa Chữa Nhà Cũ Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$sửa chữa nhà Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>sửa chữa nhà Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>sửa chữa nhà Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="sua-chua-nha-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ak-lak-1</figcaption>
+</figure>
+
+<h2>sửa chữa nhà Đắk Lắk — Khảo sát và thi công</h2>
+<p>Sao Khuê nhận <strong>sửa chữa, cải tạo nhà cũ</strong> tại Đắk Lắk: chống thấm, gia cố kết cấu, thay điện nước, tái bố trí phòng.</p>
+<ul>
+  <li>Khảo sát hiện trạng miễn phí trước khi báo giá.</li>
+  <li>Báo giá theo hạng mục — tránh phát sinh bất ngờ.</li>
+  <li>Che chắn công trình, vệ sinh hàng ngày khi thi công.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="sua-chua-nha-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình sửa chữa nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="sua-chua-nha-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
+  $mt$Sửa chữa nhà Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$sửa chữa nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cai-tao-nha-dak-lak$slug$,
+  $title$Cải Tạo Nhà Trọn Gói Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$cải tạo nhà Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Cải tạo nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>cải tạo nhà Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>cải tạo nhà Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="cai-tao-nha-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-ak-lak-1</figcaption>
+</figure>
+
+<h2>cải tạo nhà Đắk Lắk — Khảo sát và thi công</h2>
+<p>Sao Khuê nhận <strong>sửa chữa, cải tạo nhà cũ</strong> tại Đắk Lắk: chống thấm, gia cố kết cấu, thay điện nước, tái bố trí phòng.</p>
+<ul>
+  <li>Khảo sát hiện trạng miễn phí trước khi báo giá.</li>
+  <li>Báo giá theo hạng mục — tránh phát sinh bất ngờ.</li>
+  <li>Che chắn công trình, vệ sinh hàng ngày khi thi công.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="cai-tao-nha-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình cải tạo nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn cải tạo nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>cải tạo nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-12.jpg" alt="cai-tao-nha-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
+  $mt$Cải tạo nhà Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ cải tạo nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$cải tạo nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nang-tang-nha-pho-dak-lak$slug$,
+  $title$Nâng Tầng Nhà Phố Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nâng tầng nhà phố Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Nâng tầng nhà phố Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>nâng tầng nhà phố Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>nâng tầng nhà phố Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="nang-tang-nha-pho-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-pho-ak-lak-1</figcaption>
+</figure>
+
+<h2>nâng tầng nhà phố Đắk Lắk — Gia cố trước khi mở rộng</h2>
+<p><strong>Nâng tầng nhà phố</strong> tại Buôn Ma Thuột cần đánh giá móng, cột, tường chịu lực. Sao Khuê lập phương án gia cố và hồ sơ xin phép trước khi thi công.</p>
+<ul>
+  <li>Khảo sát kết cấu hiện hữu bằng kỹ thuật.</li>
+  <li>Thiết kế tầng mới đồng bộ mặt tiền.</li>
+  <li>Thi công an toàn, nghiệm thu từng giai đoạn.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="nang-tang-nha-pho-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-pho-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình nâng tầng nhà phố Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nâng tầng nhà phố Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nâng tầng nhà phố Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-43.jpg" alt="nang-tang-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>nang-tang-nha-pho-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
+  $mt$Nâng tầng nhà phố Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ nâng tầng nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$nâng tầng nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xin-giay-phep-xay-dung-dak-lak$slug$,
+  $title$Xin Giấy Phép Xây Dựng Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xin giấy phép xây dựng Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xin giấy phép xây dựng Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xin giấy phép xây dựng Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xin giấy phép xây dựng Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="xin-giay-phep-xay-dung-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-ak-lak-1</figcaption>
+</figure>
+
+<h2>xin giấy phép xây dựng Đắk Lắk — Hỗ trợ hồ sơ pháp lý</h2>
+<p>Xây dựng tại Đắk Lắk cần <strong>giấy phép xây dựng</strong> đúng quy định. Sao Khuê tư vấn chuẩn bị hồ sơ: bản vẽ, sổ đất, đơn đề nghị theo mẫu địa phương.</p>
+<ul>
+  <li>Tư vấn loại công trình được phép xây.</li>
+  <li>Hồ sơ thiết kế đạt chuẩn nộp cơ quan.</li>
+  <li>Đồng hành chủ nhà trong quá trình thẩm định.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xin-giay-phep-xay-dung-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xin giấy phép xây dựng Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xin giấy phép xây dựng Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xin giấy phép xây dựng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="xin-giay-phep-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xin-giay-phep-xay-dung-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
+  $mt$Xin giấy phép xây dựng Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xin giấy phép xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xin giấy phép xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-gia-re-dak-lak$slug$,
+  $title$Xây Nhà Giá Rẻ Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà giá rẻ Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà giá rẻ Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà giá rẻ Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà giá rẻ Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="xay-nha-gia-re-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà giá rẻ Đắk Lắk — Tối ưu ngân sách</h2>
+<p>Sao Khuê đề xuất phương án <strong>xây nhà tiết kiệm</strong> tại Đắk Lắk: mặt bằng gọn, vật liệu hợp lý, thi công trọn gói một đầu mối — tránh phát sinh.</p>
+<ul>
+  <li>Chọn gói phần thô hoặc trọn gói tiêu chuẩn.</li>
+  <li>Ưu tiên công năng thiết yếu trước trang trí.</li>
+  <li>Dự toán minh bạch từng hạng mục.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-gia-re-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà giá rẻ Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà giá rẻ Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà giá rẻ Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-gia-re-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-gia-re-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
+  $mt$Xây nhà giá rẻ Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà giá rẻ Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà giá rẻ Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-pho-buon-ma-thuot$slug$,
+  $title$Thi Công Nhà Phố Tại Buôn Ma Thuột$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phố Buôn Ma Thuột: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phố Buôn Ma Thuột — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>thi công nhà phố Buôn Ma Thuột</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>thi công nhà phố Buôn Ma Thuột</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-pho-buon-ma-thuot-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-buon-ma-thuot-1</figcaption>
+</figure>
+
+<h2>thi công nhà phố Buôn Ma Thuột — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="thi-cong-nha-pho-buon-ma-thuot-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-buon-ma-thuot-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phố Buôn Ma Thuột tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phố Buôn Ma Thuột</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Buôn Ma Thuột</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="thi-cong-nha-pho-buon-ma-thuot-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-buon-ma-thuot-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
+  $mt$Thi công nhà phố Buôn Ma Thuột | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phố Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$thi công nhà phố Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-shophouse-dak-lak$slug$,
+  $title$Xây Shophouse Kinh Doanh Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây shophouse Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây shophouse Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây shophouse Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây shophouse Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="xay-shophouse-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-shophouse-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây shophouse Đắk Lắk — Kết hợp ở và kinh doanh</h2>
+<p>Shophouse tại Buôn Ma Thuột — tầng trệt kinh doanh, tầng trên sinh hoạt. Sao Khuê tối ưu mặt tiền, thang máy (nếu cần) và hệ thống điện nước tách biệt.</p>
+<ul>
+  <li>Thiết kế mặt tiền thu hút khách.</li>
+  <li>Kết cấu chịu tải khu vực bán hàng.</li>
+  <li>Thông thoáng, an toàn PCCC.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xay-shophouse-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-shophouse-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây shophouse Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây shophouse Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây shophouse Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-06.jpg" alt="xay-shophouse-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-shophouse-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
+  $mt$Xây shophouse Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây shophouse Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây shophouse Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-3-tang-dak-lak$slug$,
+  $title$Chi Phí Xây Nhà 3 Tầng Tại Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà 3 tầng Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà 3 tầng Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>chi phí xây nhà 3 tầng Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>chi phí xây nhà 3 tầng Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="chi-phi-xay-nha-3-tang-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-3-tang-ak-lak-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — chi phí xây nhà 3 tầng Đắk Lắk</h2>
+<table>
+  <thead><tr><th>Hạng mục</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,0 – 4,2 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>6 – 8,5 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>9 – 13 triệu đ/m² sàn</td><td>Vật liệu tốt, nội thất</td></tr>
+  </tbody>
+</table>
+<h2>Yếu tố ảnh hưởng chi phí xây nhà 3 tầng Đắk Lắk</h2>
+<ul>
+  <li>Diện tích sàn, số tầng, độ phức tạp móng.</li>
+  <li>Vật liệu hoàn thiện (gạch, sơn, thiết bị vệ sinh).</li>
+  <li>Vị trí công trình — chi phí vận chuyển vật tư tại Đắk Lắk.</li>
+</ul>
+<p>Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline để nhận dự toán theo m² thực tế.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-07.jpg" alt="chi-phi-xay-nha-3-tang-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-3-tang-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà 3 tầng Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà 3 tầng Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà 3 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-31.jpg" alt="chi-phi-xay-nha-3-tang-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-3-tang-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
+  $mt$Chi phí xây nhà 3 tầng Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà 3 tầng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$chi phí xây nhà 3 tầng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-ea-kar-dak-lak$slug$,
+  $title$Xây Nhà Tại Ea Kar Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Ea Kar Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Ea Kar Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà Ea Kar Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Ea Kar Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="xay-nha-ea-kar-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ea-kar-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà Ea Kar Đắk Lắk — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-ea-kar-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ea-kar-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Ea Kar Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Ea Kar Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Ea Kar Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-ea-kar-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ea-kar-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
+  $mt$Xây nhà Ea Kar Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Ea Kar Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Ea Kar Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-krong-buk-dak-lak$slug$,
+  $title$Xây Nhà Tại Krông Búk Đắk Lắk$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Krông Búk Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Krông Búk Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
+<p><strong>xây nhà Krông Búk Đắk Lắk</strong> là nhu cầu thực tế của nhiều gia đình và nhà đầu tư tại <strong>Đắk Lắk</strong> — đặc biệt khu vực <strong>Buôn Ma Thuột</strong> và các huyện lân cận. Với khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan, việc chọn đơn vị có kinh nghiệm giúp tránh phát sinh chi phí do thấm nước, nứt kết cấu hoặc thiết kế không phù hợp.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai dịch vụ <strong>xây nhà Krông Búk Đắk Lắk</strong> từ khảo sát, tư vấn, thi công đến bàn giao — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-krong-buk-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-krong-buk-ak-lak-1</figcaption>
+</figure>
+
+<h2>xây nhà Krông Búk Đắk Lắk — Đặc thù địa phương</h2>
+<p>Sao Khuê đã triển khai nhiều công trình tại khu vực này — am hiểu quy hoạch, giấy phép xây dựng và đội thợ địa phương có tay nghề.</p>
+<ul>
+  <li>Khảo sát lô đất tận nơi hoặc trực tuyến.</li>
+  <li>Báo giá theo hạng mục, tiến độ thanh toán rõ ràng.</li>
+  <li>Giám sát kỹ thuật từ TP.HCM + hiện trường.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-krong-buk-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-krong-buk-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Krông Búk Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi nhu cầu, đo đạc lô đất tại Đắk Lắk.</li>
+  <li><strong>Thiết kế / dự toán:</strong> Phương án và báo giá chi tiết.</li>
+  <li><strong>Hợp đồng:</strong> Tiến độ, thanh toán theo giai đoạn.</li>
+  <li><strong>Thi công:</strong> Giám sát, nhật ký, hình ảnh tiến độ.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao hồ sơ hoàn công.</li>
+</ol>
+<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+
+<h2>Lưu ý khi triển khai tại Đắk Lắk</h2><ul>
+  <li><strong>Cách nhiệt:</strong> Tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Mái dốc:</strong> Thoát nước mưa nhanh — tránh thấm trần.</li>
+  <li><strong>Móng bazan:</strong> Không đào quá sâu vùng đá.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Krông Búk Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Krông Búk Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-krong-buk-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-krong-buk-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
+  $mt$Xây nhà Krông Búk Đắk Lắk | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Krông Búk Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
+  $mk$xây nhà Krông Búk Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-long-an$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>công ty xây dựng Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-34.jpg" alt="cong-ty-xay-dung-long-an-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-long-an-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Long An — Tiêu chí chọn nhà thầu</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, tiến độ thanh toán theo giai đoạn.</li>
+  <li>Công trình tham chiếu tại Long An — ảnh nghiệm thu thực tế.</li>
+  <li>Giám sát móng, cốt thép, chống thấm trước khi đổ tiếp.</li>
+  <li>Bảo hành kết cấu 10 năm bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-39.jpg" alt="cong-ty-xay-dung-long-an-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="cong-ty-xay-dung-long-an-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
+  $mt$công ty xây dựng Long An | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$công ty xây dựng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tron-goi-long-an$slug$,
+  $title$Xây Nhà Trọn Gói Giá Tốt Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà trọn gói Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà trọn gói Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>xây nhà trọn gói Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà trọn gói Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="xay-nha-tron-goi-long-an-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-long-an-1</figcaption>
+</figure>
+
+<h2>xây nhà trọn gói Long An — Một đầu mối</h2>
+<p>Thiết kế + vật tư + thi công + bàn giao. Tiết kiệm thời gian cho chủ nhà ở Tân An và các huyện lân cận.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-tron-goi-long-an-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà trọn gói Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà trọn gói Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-tron-goi-long-an-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
+  $mt$xây nhà trọn gói Long An | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà trọn gói Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà trọn gói Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-pho-long-an$slug$,
+  $title$Thi Công Nhà Phố Hiện Đại Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phố Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phố Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>thi công nhà phố Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thi công nhà phố Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="thi-cong-nha-pho-long-an-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-long-an-1</figcaption>
+</figure>
+
+<h2>thi công nhà phố Long An — Nhà phố mặt tiền 4–5 m</h2>
+<p>Tối ưu giếng trời, cầu thang, chống thấm sân thượng — chuẩn nhà phố Long An.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="thi-cong-nha-pho-long-an-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phố Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phố Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="thi-cong-nha-pho-long-an-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-pho-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
+  $mt$thi công nhà phố Long An | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$thi công nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-pho-long-an$slug$,
+  $title$Dịch Vụ Thiết Kế Nhà Phố Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà phố Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà phố Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>thiết kế nhà phố Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà phố Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="thiet-ke-nha-pho-long-an-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-long-an-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà phố Long An — Thiết kế tối ưu công năng</h2>
+<p>Sao Khuê tư vấn mặt bằng, phối cảnh 3D — phù hợp nhà phố Tân An, giếng trời thông gió, tận dụng sân sau.</p>
+<ul>
+  <li>Phong cách hiện đại, tối giản hoặc Indochine.</li>
+  <li>Hồ sơ 2D/3D, dự toán sơ bộ, tư vấn giấy phép.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-24.jpg" alt="thiet-ke-nha-pho-long-an-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà phố Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà phố Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà phố Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="thiet-ke-nha-pho-long-an-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
+  $mt$thiết kế nhà phố Long An | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$thiết kế nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-long-an$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$báo giá xây nhà Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>báo giá xây nhà Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>báo giá xây nhà Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="bao-gia-xay-nha-long-an-1" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-long-an-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — báo giá xây nhà Long An</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,4 – 4,8 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5 – 6,5 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>7 – 9,5 triệu đ/m² sàn</td><td>Vật liệu tốt</td></tr>
+  </tbody>
+</table>
+<p>Giá tại Long An thường thấp hơn nội thành TP.HCM 5–12%. Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="bao-gia-xay-nha-long-an-2" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình báo giá xây nhà Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn báo giá xây nhà Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="bao-gia-xay-nha-long-an-3" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
+  $mt$báo giá xây nhà Long An | Sao Khuê$mt$,
+  $md$Dịch vụ báo giá xây nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$báo giá xây nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-long-an$slug$,
+  $title$Chi Phí Xây Nhà Tại Long An Bao Nhiêu?$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>chi phí xây nhà Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="chi-phi-xay-nha-long-an-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-long-an-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — chi phí xây nhà Long An</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,4 – 4,8 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5 – 6,5 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>7 – 9,5 triệu đ/m² sàn</td><td>Vật liệu tốt</td></tr>
+  </tbody>
+</table>
+<p>Giá tại Long An thường thấp hơn nội thành TP.HCM 5–12%. Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="chi-phi-xay-nha-long-an-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="chi-phi-xay-nha-long-an-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
+  $mt$chi phí xây nhà Long An | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$chi phí xây nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-long-an$slug$,
+  $title$Mẫu Nhà Phố Đẹp Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>nhà phố Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà phố Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="nha-pho-long-an-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-long-an-1</figcaption>
+</figure>
+
+<h2>nhà phố Long An — Nhà phố mặt tiền 4–5 m</h2>
+<p>Tối ưu giếng trời, cầu thang, chống thấm sân thượng — chuẩn nhà phố Long An.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="nha-pho-long-an-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="nha-pho-long-an-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
+  $mt$nhà phố Long An | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-tan-an-long-an$slug$,
+  $title$Xây Nhà Tại Tân An Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Tân An Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Tân An Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>xây nhà Tân An Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Tân An Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-20.jpg" alt="xay-nha-tan-an-long-an-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tan-an-long-an-1</figcaption>
+</figure>
+
+<h2>xây nhà Tân An Long An — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-28.jpg" alt="xay-nha-tan-an-long-an-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tan-an-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Tân An Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Tân An Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Tân An Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-tan-an-long-an-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tan-an-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
+  $mt$xây nhà Tân An Long An | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Tân An Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Tân An Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-ben-luc-long-an$slug$,
+  $title$Xây Nhà Tại Bến Lức Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Bến Lức Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Bến Lức Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>xây nhà Bến Lức Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Bến Lức Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="xay-nha-ben-luc-long-an-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ben-luc-long-an-1</figcaption>
+</figure>
+
+<h2>xây nhà Bến Lức Long An — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="xay-nha-ben-luc-long-an-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ben-luc-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Bến Lức Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Bến Lức Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Bến Lức Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-ben-luc-long-an-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ben-luc-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
+  $mt$xây nhà Bến Lức Long An | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Bến Lức Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Bến Lức Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-can-giuoc-long-an$slug$,
+  $title$Xây Nhà Tại Cần Giuộc Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Cần Giuộc Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Cần Giuộc Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>xây nhà Cần Giuộc Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Cần Giuộc Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-32.jpg" alt="xay-nha-can-giuoc-long-an-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-can-giuoc-long-an-1</figcaption>
+</figure>
+
+<h2>xây nhà Cần Giuộc Long An — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-can-giuoc-long-an-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-can-giuoc-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Cần Giuộc Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Cần Giuộc Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Cần Giuộc Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-can-giuoc-long-an-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-can-giuoc-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
+  $mt$xây nhà Cần Giuộc Long An | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Cần Giuộc Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Cần Giuộc Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-phan-tho-long-an$slug$,
+  $title$Thi Công Nhà Phần Thô Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà phần thô Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà phần thô Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>thi công nhà phần thô Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thi công nhà phần thô Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="thi-cong-nha-phan-tho-long-an-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-long-an-1</figcaption>
+</figure>
+
+<h2>thi công nhà phần thô Long An — Phạm vi phần thô</h2>
+<p>Móng, khung BTCT, mái — chưa hoàn thiện. Khảo sát địa chất đất yếu ven sông trước khi đào móng.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="thi-cong-nha-phan-tho-long-an-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà phần thô Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà phần thô Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phần thô Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-08.jpg" alt="thi-cong-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-phan-tho-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
+  $mt$thi công nhà phần thô Long An | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà phần thô Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$thi công nhà phần thô Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-long-an$slug$,
+  $title$Xây Nhà 2 Tầng Tại Long An — Báo Giá & Mẫu$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>xây nhà 2 tầng Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 2 tầng Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-17.jpg" alt="xay-nha-2-tang-long-an-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-long-an-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Long An — Nhà 2 tầng phổ biến</h2>
+<p>Diện tích 60–100 m²/tầng, thời gian thi công 4–6 tháng. Gia cố móng kỹ tại Tân An.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-2-tang-long-an-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-2-tang-long-an-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
+  $mt$xây nhà 2 tầng Long An | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-long-an$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>nhà thầu xây dựng Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà thầu xây dựng Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="nha-thau-xay-dung-long-an-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-long-an-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng Long An — Tiêu chí chọn nhà thầu</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, tiến độ thanh toán theo giai đoạn.</li>
+  <li>Công trình tham chiếu tại Long An — ảnh nghiệm thu thực tế.</li>
+  <li>Giám sát móng, cốt thép, chống thấm trước khi đổ tiếp.</li>
+  <li>Bảo hành kết cấu 10 năm bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-30.jpg" alt="nha-thau-xay-dung-long-an-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-13.jpg" alt="nha-thau-xay-dung-long-an-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
+  $mt$nhà thầu xây dựng Long An | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$hoan-thien-nha-long-an$slug$,
+  $title$Hoàn Thiện Nhà Phần Thô Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$hoàn thiện nhà Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Hoàn thiện nhà Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>hoàn thiện nhà Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>hoàn thiện nhà Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-38.jpg" alt="hoan-thien-nha-long-an-1" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-long-an-1</figcaption>
+</figure>
+
+<h2>hoàn thiện nhà Long An — Hoàn thiện sau thô</h2>
+<ul>
+  <li>Trát, sơn, lát gạch, trần, cửa.</li>
+  <li>Điện nước, thiết bị vệ sinh.</li>
+  <li>Nội thất tùy chọn theo ngân sách.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="hoan-thien-nha-long-an-2" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình hoàn thiện nhà Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn hoàn thiện nhà Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>hoàn thiện nhà Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-01.jpg" alt="hoan-thien-nha-long-an-3" loading="lazy" decoding="async" />
+<figcaption>hoan-thien-nha-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
+  $mt$hoàn thiện nhà Long An | Sao Khuê$mt$,
+  $md$Dịch vụ hoàn thiện nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$hoàn thiện nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-nha-long-an$slug$,
+  $title$Sửa Chữa Nhà Cũ Tại Long An$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$sửa chữa nhà Long An: Sao Khuê thiết kế + thi công trọn gói tại Long An. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa nhà Long An — Giải pháp chuyên nghiệp tại Long An</h2>
+<p><strong>sửa chữa nhà Long An</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Long An</strong> — cửa ngõ phía Tây TP.HCM, giá đất hợp lý và nhiều khu dân cư mới tại Bến Lức, Cần Giuộc, Đức Hòa. Khu vực <strong>Tân An</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>sửa chữa nhà Long An</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="sua-chua-nha-long-an-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-long-an-1</figcaption>
+</figure>
+
+<h2>sửa chữa nhà Long An — Sửa chữa trọn gói</h2>
+<p>Chống thấm, gia cố, thay điện nước, cải tạo nội thất nhà cũ tại Long An.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="sua-chua-nha-long-an-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-long-an-2</figcaption>
+</figure>
+
+<h2>Quy trình sửa chữa nhà Long An tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Long An.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-long-an">xây dựng nhà Long An</a>, <a href="/tin-tuc/bao-gia-xay-nha-phan-tho-long-an">báo giá phần thô Long An</a>, <a href="/tin-tuc/mau-nha-ong-dep-long-an">mẫu nhà ống Long An</a>.</p>
+
+<h2>Lưu ý xây nhà tại Long An</h2><ul>
+  <li><strong>Móng đất yếu:</strong> Khảo sát địa chất — vùng ven sông Vàm Cỏ.</li>
+  <li><strong>Thoát nước:</strong> Cốt nền và mái dốc đủ khi mưa lớn.</li>
+  <li><strong>Giấy phép:</strong> Mỗi huyện có quy định tầng cao, lộ giới riêng.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa nhà Long An</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Long An</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="sua-chua-nha-long-an-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-long-an-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
+  $mt$sửa chữa nhà Long An | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-dung-nha-dong-nai$slug$,
+  $title$Công Ty Xây Dựng Uy Tín Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây dựng nhà Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây dựng nhà Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây dựng nhà Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây dựng nhà Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="xay-dung-nha-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây dựng nhà Đồng Nai — Dịch vụ Sao Khuê</h2>
+<p>Trọn gói từ khảo sát đến bàn giao tại Đồng Nai. Liên kết vùng: TP.HCM — Bình Dương — <strong>Đồng Nai</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="xay-dung-nha-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây dựng nhà Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây dựng nhà Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây dựng nhà Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-19.jpg" alt="xay-dung-nha-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-dung-nha-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
+  $mt$xây dựng nhà Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây dựng nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây dựng nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cong-ty-xay-dung-dong-nai$slug$,
+  $title$Công Ty Xây Dựng Chuyên Nghiệp Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$công ty xây dựng Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Công ty xây dựng Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>công ty xây dựng Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>công ty xây dựng Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="cong-ty-xay-dung-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ong-nai-1</figcaption>
+</figure>
+
+<h2>công ty xây dựng Đồng Nai — Tiêu chí chọn nhà thầu</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, tiến độ thanh toán theo giai đoạn.</li>
+  <li>Công trình tham chiếu tại Đồng Nai — ảnh nghiệm thu thực tế.</li>
+  <li>Giám sát móng, cốt thép, chống thấm trước khi đổ tiếp.</li>
+  <li>Bảo hành kết cấu 10 năm bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="cong-ty-xay-dung-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình công ty xây dựng Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn công ty xây dựng Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>công ty xây dựng Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-23.jpg" alt="cong-ty-xay-dung-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>cong-ty-xay-dung-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
+  $mt$công ty xây dựng Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ công ty xây dựng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$công ty xây dựng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thiet-ke-nha-pho-dong-nai$slug$,
+  $title$Thiết Kế Nhà Phố Đẹp Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thiết kế nhà phố Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thiết kế nhà phố Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>thiết kế nhà phố Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thiết kế nhà phố Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-50.jpg" alt="thiet-ke-nha-pho-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-ong-nai-1</figcaption>
+</figure>
+
+<h2>thiết kế nhà phố Đồng Nai — Thiết kế tối ưu công năng</h2>
+<p>Sao Khuê tư vấn mặt bằng, phối cảnh 3D — phù hợp nhà phố Biên Hòa, giếng trời thông gió, tận dụng sân sau.</p>
+<ul>
+  <li>Phong cách hiện đại, tối giản hoặc Indochine.</li>
+  <li>Hồ sơ 2D/3D, dự toán sơ bộ, tư vấn giấy phép.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="thiet-ke-nha-pho-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình thiết kế nhà phố Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thiết kế nhà phố Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà phố Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="thiet-ke-nha-pho-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
+  $mt$thiết kế nhà phố Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ thiết kế nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$thiết kế nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$bao-gia-xay-nha-dong-nai$slug$,
+  $title$Báo Giá Xây Nhà Trọn Gói Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$báo giá xây nhà Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Báo giá xây nhà Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>báo giá xây nhà Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>báo giá xây nhà Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="bao-gia-xay-nha-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ong-nai-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — báo giá xây nhà Đồng Nai</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,5 – 5 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,2 – 7 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>7 – 9,5 triệu đ/m² sàn</td><td>Vật liệu tốt</td></tr>
+  </tbody>
+</table>
+<p>Giá tại Đồng Nai thường thấp hơn nội thành TP.HCM 5–12%. Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="bao-gia-xay-nha-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình báo giá xây nhà Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn báo giá xây nhà Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="bao-gia-xay-nha-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>bao-gia-xay-nha-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
+  $mt$báo giá xây nhà Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ báo giá xây nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$báo giá xây nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$chi-phi-xay-nha-dong-nai$slug$,
+  $title$Chi Phí Xây Nhà Tại Đồng Nai (2026)$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$chi phí xây nhà Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Chi phí xây nhà Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>chi phí xây nhà Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>chi phí xây nhà Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-04.jpg" alt="chi-phi-xay-nha-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-ong-nai-1</figcaption>
+</figure>
+
+<h2>Bảng giá tham khảo — chi phí xây nhà Đồng Nai</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (2026)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3,5 – 5 triệu đ/m² sàn</td><td>Móng, khung, mái</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>5,2 – 7 triệu đ/m² sàn</td><td>Hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>7 – 9,5 triệu đ/m² sàn</td><td>Vật liệu tốt</td></tr>
+  </tbody>
+</table>
+<p>Giá tại Đồng Nai thường thấp hơn nội thành TP.HCM 5–12%. Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-09.jpg" alt="chi-phi-xay-nha-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình chi phí xây nhà Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn chi phí xây nhà Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-14.jpg" alt="chi-phi-xay-nha-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>chi-phi-xay-nha-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
+  $mt$chi phí xây nhà Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ chi phí xây nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$chi phí xây nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-pho-dong-nai$slug$,
+  $title$Mẫu Nhà Phố Hiện Đại Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà phố Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà phố Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>nhà phố Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà phố Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-15.jpg" alt="nha-pho-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-ong-nai-1</figcaption>
+</figure>
+
+<h2>nhà phố Đồng Nai — Nhà phố mặt tiền 4–5 m</h2>
+<p>Tối ưu giếng trời, cầu thang, chống thấm sân thượng — chuẩn nhà phố Đồng Nai.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="nha-pho-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà phố Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà phố Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà phố Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="nha-pho-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
+  $mt$nhà phố Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-bien-hoa-dong-nai$slug$,
+  $title$Xây Nhà Tại Biên Hòa Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Biên Hòa Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Biên Hòa Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây nhà Biên Hòa Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Biên Hòa Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-bien-hoa-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-bien-hoa-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây nhà Biên Hòa Đồng Nai — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-bien-hoa-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-bien-hoa-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Biên Hòa Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Biên Hòa Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Biên Hòa Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-bien-hoa-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-bien-hoa-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
+  $mt$xây nhà Biên Hòa Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Biên Hòa Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Biên Hòa Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-long-thanh-dong-nai$slug$,
+  $title$Xây Nhà Tại Long Thành Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Long Thành Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Long Thành Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây nhà Long Thành Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Long Thành Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="xay-nha-long-thanh-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-long-thanh-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây nhà Long Thành Đồng Nai — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-long-thanh-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-long-thanh-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Long Thành Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Long Thành Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Long Thành Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-long-thanh-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-long-thanh-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
+  $mt$xây nhà Long Thành Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Long Thành Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Long Thành Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-nhon-trach-dong-nai$slug$,
+  $title$Xây Nhà Tại Nhơn Trạch Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà Nhơn Trạch Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà Nhơn Trạch Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây nhà Nhơn Trạch Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà Nhơn Trạch Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-46.jpg" alt="xay-nha-nhon-trach-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nhon-trach-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây nhà Nhơn Trạch Đồng Nai — Kinh nghiệm địa phương</h2>
+<p>Sao Khuê am hiểu quy hoạch và giấy phép xây dựng khu vực này — khảo sát tận nơi, báo giá theo hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-nhon-trach-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nhon-trach-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà Nhơn Trạch Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà Nhơn Trạch Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà Nhơn Trạch Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-nhon-trach-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-nhon-trach-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
+  $mt$xây nhà Nhơn Trạch Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà Nhơn Trạch Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà Nhơn Trạch Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$thi-cong-nha-tron-goi-dong-nai$slug$,
+  $title$Thi Công Nhà Trọn Gói Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$thi công nhà trọn gói Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Thi công nhà trọn gói Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>thi công nhà trọn gói Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>thi công nhà trọn gói Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-29.jpg" alt="thi-cong-nha-tron-goi-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ong-nai-1</figcaption>
+</figure>
+
+<h2>thi công nhà trọn gói Đồng Nai — Một đầu mối</h2>
+<p>Thiết kế + vật tư + thi công + bàn giao. Tiết kiệm thời gian cho chủ nhà ở Biên Hòa và các huyện lân cận.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-11.jpg" alt="thi-cong-nha-tron-goi-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình thi công nhà trọn gói Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn thi công nhà trọn gói Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà trọn gói Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-35.jpg" alt="thi-cong-nha-tron-goi-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>thi-cong-nha-tron-goi-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
+  $mt$thi công nhà trọn gói Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ thi công nhà trọn gói Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$thi công nhà trọn gói Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-nha-2-tang-dong-nai$slug$,
+  $title$Xây Nhà 2 Tầng Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây nhà 2 tầng Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà 2 tầng Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây nhà 2 tầng Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây nhà 2 tầng Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-2-tang-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây nhà 2 tầng Đồng Nai — Nhà 2 tầng phổ biến</h2>
+<p>Diện tích 60–100 m²/tầng, thời gian thi công 4–6 tháng. Gia cố móng kỹ tại Biên Hòa.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="xay-nha-2-tang-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà 2 tầng Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà 2 tầng Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 2 tầng Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-2-tang-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-2-tang-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
+  $mt$xây nhà 2 tầng Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà 2 tầng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà 2 tầng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$mau-nha-pho-dong-nai$slug$,
+  $title$Top Mẫu Nhà Phố Đẹp Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$mẫu nhà phố Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Mẫu nhà phố Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>mẫu nhà phố Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>mẫu nhà phố Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="mau-nha-pho-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ong-nai-1</figcaption>
+</figure>
+
+<h2>mẫu nhà phố Đồng Nai — Thiết kế tối ưu công năng</h2>
+<p>Sao Khuê tư vấn mặt bằng, phối cảnh 3D — phù hợp nhà phố Biên Hòa, giếng trời thông gió, tận dụng sân sau.</p>
+<ul>
+  <li>Phong cách hiện đại, tối giản hoặc Indochine.</li>
+  <li>Hồ sơ 2D/3D, dự toán sơ bộ, tư vấn giấy phép.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="mau-nha-pho-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình mẫu nhà phố Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn mẫu nhà phố Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>mẫu nhà phố Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-16.jpg" alt="mau-nha-pho-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
+  $mt$mẫu nhà phố Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ mẫu nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$mẫu nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$xay-biet-thu-dong-nai$slug$,
+  $title$Xây Biệt Thự Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$xây biệt thự Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây biệt thự Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>xây biệt thự Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>xây biệt thự Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-10.jpg" alt="xay-biet-thu-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ong-nai-1</figcaption>
+</figure>
+
+<h2>xây biệt thự Đồng Nai — Biệt thự vùng ven</h2>
+<p>Lô đất rộng tại Đồng Nai — sân vườn, hồ bơi (nếu có), thiết kế 2D/3D trước khi thi công.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="xay-biet-thu-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình xây biệt thự Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây biệt thự Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây biệt thự Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-40.jpg" alt="xay-biet-thu-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>xay-biet-thu-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
+  $mt$xây biệt thự Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ xây biệt thự Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây biệt thự Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$nha-thau-xay-dung-dong-nai$slug$,
+  $title$Nhà Thầu Xây Dựng Uy Tín Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$nhà thầu xây dựng Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Nhà thầu xây dựng Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>nhà thầu xây dựng Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>nhà thầu xây dựng Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-26.jpg" alt="nha-thau-xay-dung-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ong-nai-1</figcaption>
+</figure>
+
+<h2>nhà thầu xây dựng Đồng Nai — Tiêu chí chọn nhà thầu</h2>
+<ul>
+  <li>Hợp đồng rõ ràng, tiến độ thanh toán theo giai đoạn.</li>
+  <li>Công trình tham chiếu tại Đồng Nai — ảnh nghiệm thu thực tế.</li>
+  <li>Giám sát móng, cốt thép, chống thấm trước khi đổ tiếp.</li>
+  <li>Bảo hành kết cấu 10 năm bằng văn bản.</li>
+</ul>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-42.jpg" alt="nha-thau-xay-dung-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình nhà thầu xây dựng Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn nhà thầu xây dựng Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>nhà thầu xây dựng Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-05.jpg" alt="nha-thau-xay-dung-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>nha-thau-xay-dung-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
+  $mt$nhà thầu xây dựng Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ nhà thầu xây dựng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$nhà thầu xây dựng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-nha-dong-nai$slug$,
+  $title$Sửa Chữa Nhà Cũ Tại Đồng Nai$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$sửa chữa nhà Đồng Nai: Sao Khuê thiết kế + thi công trọn gói tại Đồng Nai. Bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa nhà Đồng Nai — Giải pháp chuyên nghiệp tại Đồng Nai</h2>
+<p><strong>sửa chữa nhà Đồng Nai</strong> là nhu cầu lớn khi nhiều gia đình chọn định cư tại <strong>Đồng Nai</strong> — vệ tinh công nghiệp phía Đông TP.HCM, hạ tầng mạnh quanh Biên Hòa, Long Thành, Nhơn Trạch. Khu vực <strong>Biên Hòa</strong> và các huyện lân cận đang phát triển nhanh, đòi hỏi đơn vị thi công am hiểu móng đất yếu, thoát nước và quy hoạch địa phương.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>sửa chữa nhà Đồng Nai</strong> từ khảo sát, thiết kế, thi công đến bàn giao — <strong>bảo hành kết cấu 10 năm</strong>, báo giá minh bạch. Hotline <strong>0909 075 668</strong>.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-22.jpg" alt="sua-chua-nha-ong-nai-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ong-nai-1</figcaption>
+</figure>
+
+<h2>sửa chữa nhà Đồng Nai — Sửa chữa trọn gói</h2>
+<p>Chống thấm, gia cố, thay điện nước, cải tạo nội thất nhà cũ tại Đồng Nai.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-37.jpg" alt="sua-chua-nha-ong-nai-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ong-nai-2</figcaption>
+</figure>
+
+<h2>Quy trình sửa chữa nhà Đồng Nai tại Sao Khuê</h2>
+<ol>
+  <li>Khảo sát &amp; tư vấn miễn phí tại Đồng Nai.</li>
+  <li>Thiết kế / dự toán chi tiết.</li>
+  <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
+  <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
+  <li>Bàn giao &amp; bảo hành kết cấu 10 năm.</li>
+</ol>
+<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dong-nai">xây dựng nhà Đồng Nai</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">xây nhà trọn gói Đồng Nai</a>.</p>
+
+<h2>Lưu ý xây nhà tại Đồng Nai</h2><ul>
+  <li><strong>Khu công nghiệp:</strong> Lưu ý rung, bụi — thiết kế cửa sổ kín hợp lý.</li>
+  <li><strong>Hạ tầng Long Thành:</strong> Cơ hội đầu tư nhà ở tăng — chọn móng vững.</li>
+  <li><strong>Chống thấm:</strong> Mùa mưa miền Nam — mái và sân thượng cần kỹ thuật tốt.</li>
+</ul>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa nhà Đồng Nai</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Đồng Nai</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-41.jpg" alt="sua-chua-nha-ong-nai-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-ong-nai-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
+  $mt$sửa chữa nhà Đồng Nai | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
 COMMIT;
 
 -- Kiểm tra:

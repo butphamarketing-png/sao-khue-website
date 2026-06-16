@@ -2,6 +2,8 @@
  * Lịch nội dung SEO — 30 bài (1 dòng = 1 bài).
  * Cập nhật `status` khi đã có slug trong seedPosts.
  *
+ * Batch 2–3 (Phú Yên + Đắk Lắk): #31–#90. Batch 4 (Long An + Đồng Nai): #91–#120.
+ *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
 export type ContentCalendarItem = {
@@ -11,6 +13,10 @@ export type ContentCalendarItem = {
   slug?: string;
   status: "done" | "planned";
 };
+
+export { phuYenDakLakKeywordCalendar } from "./phu-yen-dak-lak-keyword-calendar";
+export { phuYenDakLakKeywordCalendarBatch3 } from "./phu-yen-dak-lak-keyword-calendar-batch3";
+export { longAnDongNaiKeywordCalendar } from "./long-an-dong-nai-keyword-calendar";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },
