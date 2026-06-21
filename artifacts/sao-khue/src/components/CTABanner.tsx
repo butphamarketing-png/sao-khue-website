@@ -1,11 +1,12 @@
-import { Link } from "wouter";
 import { ArrowRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCtaBanner, usePrimaryPhone, telHref } from "@/lib/site-settings";
+import { useQuoteRequest } from "@/lib/quote-request-context";
 
 export function CTABanner() {
   const phone = usePrimaryPhone();
   const cta = useCtaBanner();
+  const { openQuoteRequest } = useQuoteRequest();
 
   return (
     <section className="py-12 md:py-16">
@@ -41,15 +42,14 @@ export function CTABanner() {
                 </a>
               </Button>
               <Button
-                asChild
+                type="button"
                 size="lg"
                 variant="outline"
                 className="h-12 rounded-full border-white/30 bg-white/10 px-8 text-white backdrop-blur hover:bg-white hover:text-primary"
+                onClick={openQuoteRequest}
               >
-                <Link href={cta.secondaryHref}>
-                  {cta.secondaryLabel}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                {cta.secondaryLabel}
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>

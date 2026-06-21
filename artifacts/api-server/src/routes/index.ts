@@ -7,6 +7,7 @@ import { siteSettingsRouter } from "./site-settings";
 import uploadsRouter from "./uploads";
 import sitemapRouter from "./sitemap";
 import rssRouter from "./rss";
+import analyticsRouter from "./analytics";
 
 const router: IRouter = Router();
 
@@ -15,6 +16,7 @@ router.use(authRouter);
 router.use(uploadsRouter);
 router.use(sitemapRouter);
 router.use(rssRouter);
+router.use(analyticsRouter);
 router.use(postsRouter);
 router.use(contactLeadsRouter);
 router.use(siteSettingsRouter);

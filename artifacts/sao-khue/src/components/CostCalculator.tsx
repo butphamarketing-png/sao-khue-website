@@ -1,5 +1,4 @@
 import { useState, type ReactNode } from "react";
-import { Link } from "wouter";
 import {
   Building2,
   Calculator,
@@ -16,6 +15,7 @@ import {
   usePrimaryPhone,
   useSectionMeta,
 } from "@/lib/site-settings";
+import { useQuoteRequest } from "@/lib/quote-request-context";
 
 type LoaiNha = "nha-pho" | "biet-thu" | "cap-bon";
 type DichVu = "phan-tho" | "tron-goi";
@@ -59,6 +59,7 @@ export function CostCalculator() {
   const calculatorConfig = useCalculatorConfig();
   const meta = useSectionMeta();
   const phone = usePrimaryPhone();
+  const { openQuoteRequest } = useQuoteRequest();
   const [loaiNha, setLoaiNha] = useState<LoaiNha>("nha-pho");
   const [dichVu, setDichVu] = useState<DichVu>("phan-tho");
   const [mucDauTu, setMucDauTu] = useState<MucDauTu>("trung-binh");
@@ -441,12 +442,13 @@ export function CostCalculator() {
                           <PhoneCall size={18} />
                           Gọi {phone}
                         </a>
-                        <Link
-                          href="/lien-he"
+                        <button
+                          type="button"
+                          onClick={openQuoteRequest}
                           className="inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-white/40 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/10 sm:w-auto"
                         >
                           Nhận báo giá chính xác
-                        </Link>
+                        </button>
                       </div>
 
                       <p className="mx-auto mt-6 max-w-md text-xs leading-relaxed text-blue-100/90">

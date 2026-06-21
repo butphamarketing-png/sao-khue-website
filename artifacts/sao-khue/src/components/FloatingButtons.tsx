@@ -1,5 +1,5 @@
 import { useState, type MouseEvent, type ReactNode } from "react";
-import { Facebook, MapPin, PhoneCall } from "lucide-react";
+import { ClipboardList, Facebook, MapPin, PhoneCall } from "lucide-react";
 import { SiMessenger, SiZalo } from "react-icons/si";
 import { SocialLinkPickerSheet } from "@/components/SocialLinkPickerSheet";
 import {
@@ -11,6 +11,7 @@ import {
   openExternalUrl,
   type SocialLinkOption,
 } from "@/lib/social-links";
+import { useQuoteRequest } from "@/lib/quote-request-context";
 import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 
 type PickerState = {
@@ -22,6 +23,7 @@ type PickerState = {
 export function FloatingButtons() {
   const s = useSiteSettings();
   const phone = usePrimaryPhone();
+  const { openQuoteRequest } = useQuoteRequest();
   const zaloHref = s.zaloPhone ? `https://zalo.me/${s.zaloPhone.replace(/\s+/g, "")}` : null;
   const mapsHref = resolveGoogleMapsOpenUrl(s);
   const facebookOptions = facebookOptionsFromSettings(s);
@@ -47,6 +49,18 @@ export function FloatingButtons() {
   return (
     <>
       <div className="fixed bottom-24 right-4 z-50 hidden flex-col gap-4 md:flex">
+        <QuickFab
+          href="#"
+          label="Báo giá nhanh"
+          className="bg-gradient-to-br from-primary to-[#0c4a8a] ring-2 ring-white/30"
+          onClick={(e) => {
+            e.preventDefault();
+            openQuoteRequest();
+          }}
+        >
+          <ClipboardList size={24} />
+        </QuickFab>
+
         {s.zaloPhone && zaloHref && (
           <QuickFab href={zaloHref} label="Chat Zalo" className="bg-blue-500">
             <SiZalo size={24} />

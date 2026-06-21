@@ -15,6 +15,7 @@ export type ContactLeadInput = {
   email?: string;
   service?: string;
   message?: string;
+  source?: string;
 };
 
 export async function submitContactLead(input: ContactLeadInput): Promise<ContactLead> {

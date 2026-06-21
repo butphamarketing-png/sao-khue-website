@@ -43,13 +43,15 @@ export function Footer() {
 
           <div>
 
-            <div className="logo-footer-wrap">
-              <BrandLogo
-                src={s.logoUrl}
-                alt={s.companyName}
-                className="logo-footer-img"
-              />
-            </div>
+            <Link href="/" className="group mb-6 inline-flex">
+              <div className="logo-header-wrap">
+                <BrandLogo
+                  src={s.logoUrl}
+                  alt={s.companyName}
+                  className="logo-header-img transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </div>
+            </Link>
 
             <h3 className="mb-2 text-lg font-bold text-white">{s.companyName}</h3>
 

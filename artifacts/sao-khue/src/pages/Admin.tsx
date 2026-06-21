@@ -2215,6 +2215,9 @@ export default function Admin() {
                   <span className="font-semibold text-slate-700">
                     {parseGaMeasurementId(settingsForm.gaTrackingId) || "chưa có"}
                   </span>
+                  . Để hiện biểu đồ truy cập trên Dashboard, thêm{" "}
+                  <strong>GA4_PROPERTY_ID</strong> và <strong>GOOGLE_SERVICE_ACCOUNT_JSON</strong> trên
+                  server (Vercel env).
                 </FieldHint>
               </Field>
 

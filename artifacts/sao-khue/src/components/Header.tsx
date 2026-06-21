@@ -1,14 +1,16 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X, PhoneCall } from "lucide-react";
+import { Menu, X, PhoneCall, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/BrandLogo";
 import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
+import { useQuoteRequest } from "@/lib/quote-request-context";
 import { useEffect, useState } from "react";
 
 export function Header() {
   const s = useSiteSettings();
   const menu = useNavMenu();
   const phone = usePrimaryPhone();
+  const { openQuoteRequest } = useQuoteRequest();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
@@ -75,7 +77,16 @@ export function Header() {
             })}
           </nav>
 
-          <div className="hidden shrink-0 items-center justify-end lg:flex">
+          <div className="hidden shrink-0 items-center justify-end gap-2 lg:flex">
+            <Button
+              type="button"
+              variant="outline"
+              className="h-10 rounded-full border-primary/20 px-3 text-xs font-bold text-primary hover:bg-primary/5 xl:h-11 xl:px-4 xl:text-sm"
+              onClick={openQuoteRequest}
+            >
+              <ClipboardList size={16} className="mr-1.5 shrink-0" />
+              Báo giá
+            </Button>
             <Button
               asChild
               className="btn-gradient-accent group h-10 rounded-full px-3 transition-transform hover:scale-[1.02] xl:h-11 xl:px-5"
@@ -132,7 +143,18 @@ export function Header() {
               {item.title}
             </Link>
           ))}
-          <div className="p-4">
+          <div className="p-4 space-y-2">
+            <Button
+              type="button"
+              className="w-full rounded-full bg-primary hover:bg-primary/90"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openQuoteRequest();
+              }}
+            >
+              <ClipboardList size={18} />
+              <span className="ml-2 font-bold">NHẬN BÁO GIÁ</span>
+            </Button>
             <Button asChild className="w-full rounded-full bg-accent hover:bg-accent/90">
               <a href={telHref(phone)}>
                 <PhoneCall size={18} />

@@ -251,14 +251,6 @@
     @apply h-full w-auto max-w-none object-contain object-left origin-left scale-[2.05] sm:scale-[2.25] lg:scale-[2.55];
   }
 
-  .logo-footer-wrap {
-    @apply relative mb-6 inline-flex max-w-full overflow-hidden rounded-xl bg-white/95 p-3 shadow-lg shadow-black/20 ring-1 ring-white/10;
-  }
-
-  .logo-footer-img {
-    @apply h-16 w-auto max-w-none object-contain object-left origin-left scale-[1.85] md:h-[4.5rem] md:scale-[1.95];
-  }
-
 }
 
 /* —— Full-screen site loader —— */
