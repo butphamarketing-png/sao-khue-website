@@ -35,7 +35,7 @@ export function Footer() {
 
   return (
 
-    <footer className="relative border-t-4 border-accent bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 pb-24 pt-16 text-slate-300 md:pb-8">
+    <footer className="relative border-t-4 border-accent bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 pt-16 text-slate-300">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
       <div className="site-container">
 
@@ -414,33 +414,34 @@ export function Footer() {
 
 
 
-        <div className="flex flex-col items-center justify-between border-t border-slate-800 pt-8 text-center text-sm text-slate-500 md:flex-row">
+        <div className="flex flex-col items-center justify-between border-t border-slate-800 pb-8 pt-8 text-center text-sm text-slate-500 md:flex-row">
 
           <p>
-
-            &copy; {new Date().getFullYear()} {s.companyName}. All rights reserved. Website Design By{" "}
-            <a
-              href="https://butphamarketing.com"
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold text-white/90 underline decoration-white/30 underline-offset-4 transition hover:text-white"
-            >
-              Butphamarketing.com
-            </a>
-
+            &copy; {new Date().getFullYear()} {s.companyName}. All rights reserved.
           </p>
 
           <p className="mt-2 md:mt-0">
-
             {s.taxCode ? `MST: ${s.taxCode} | ` : ""}
-
-            Thiết kế & thi công xây dựng trọn gói TP.HCM
-
+            Thiết kế &amp; thi công xây dựng trọn gói TP.HCM
           </p>
 
         </div>
 
       </div>
+
+      <a
+        href="https://butphamarketing.com"
+        target="_blank"
+        rel="noreferrer"
+        className="group block w-full bg-gradient-to-r from-primary via-[#0c4a8a] to-primary pb-24 pt-3.5 text-center transition-colors hover:from-[#0c4a8a] hover:via-primary hover:to-[#0c4a8a] md:py-3.5"
+      >
+        <span className="text-sm font-medium text-white/90 group-hover:text-white">
+          Website được thiết kế và vận hành bởi{" "}
+          <span className="font-bold text-white underline decoration-white/40 underline-offset-4">
+            butphamarketing.com
+          </span>
+        </span>
+      </a>
 
     </footer>
 
