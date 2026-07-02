@@ -5409,6 +5409,137 @@ INSERT INTO posts (
   slug, title, category, excerpt, content, image_url,
   meta_title, meta_description, meta_keywords, created_at, updated_at
 ) VALUES (
+  $slug$xay-nha-dep-dak-lak$slug$,
+  $title$Xây Nhà Đẹp Tại Đắk Lắk — Thiết Kế & Thi Công Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Xây nhà đẹp Đắk Lắk: nhà phố, biệt thự Buôn Ma Thuột phong cách hiện đại. Sao Khuê thiết kế 3D + thi công trọn gói, bảo hành 10 năm — 0909 075 668.$excerpt$,
+  $content$<h2>Xây nhà đẹp Đắk Lắk — Khi thẩm mỹ đi cùng chất lượng thi công</h2>
+<p><strong>Xây nhà đẹp Đắk Lắk</strong> không chỉ là xây xong một căn nhà đủ ở — mà là tạo ra không gian sống hài hòa: mặt tiền gọn gàng, ánh sáng tự nhiên, vật liệu bền và bố cục phòng hợp lý. Tại <strong>Buôn Ma Thuột</strong>, Buôn Hồ, Ea Kar và các huyện trong tỉnh, nhu cầu nhà phố đẹp, biệt thự vườn và nhà ống hiện đại ngày càng tăng khi chủ đất muốn vừa an cư vừa tạo giá trị lâu dài cho tài sản.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận <strong>xây nhà đẹp Đắk Lắk</strong> trọn gói: khảo sát lô đất, thiết kế kiến trúc 2D/3D, thi công kết cấu và hoàn thiện theo đúng bản vẽ — cam kết <strong>bảo hành kết cấu 10 năm</strong> và báo giá minh bạch từng hạng mục.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-ep-ak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ep-ak-lak-1</figcaption>
+</figure>
+
+<h2>Tiêu chí một căn nhà đẹp tại Đắk Lắk</h2>
+<p>Khí hậu cao nguyên mát, mưa lớn theo mùa và nền đất bazan đòi hỏi thiết kế và thi công phải cân bằng giữa thẩm mỹ và kỹ thuật. Một công trình được gọi là <strong>nhà đẹp</strong> khi đáp ứng các yếu tố sau:</p>
+<ul>
+  <li><strong>Mặt tiền cân đối:</strong> Tỷ lệ cửa, lan can, màu sắc hài hòa — phù hợp phố phường Buôn Ma Thuột hoặc khu dân cư ven đô thị.</li>
+  <li><strong>Công năng rõ ràng:</strong> Phòng khách thông tầng, bếp sáng, phòng ngủ đủ riêng tư, WC khô ướt tách bạch.</li>
+  <li><strong>Thông gió &amp; ánh sáng:</strong> Giếng trời, cửa sổ hướng gió — tận dụng khí hậu mát, giảm phụ thuộc điều hòa.</li>
+  <li><strong>Chống thấm chuẩn:</strong> Mái dốc, thoát nước mưa, lớp waterproof sân thượng — bắt buộc tại Đắk Lắk.</li>
+  <li><strong>Hoàn thiện đồng bộ:</strong> Gạch, sơn, cửa, thiết bị vệ sinh cùng phong cách — không “lắp ghép” tạm bợ.</li>
+</ul>
+<p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a> và <a href="/tin-tuc/thiet-ke-nha-dep-dak-lak">thiết kế nhà đẹp Đắk Lắk</a> để hiểu giai đoạn chuẩn bị trước khi khởi công.</p>
+
+<h2>Phong cách nhà đẹp được ưa chuộng tại Đắk Lắk</h2>
+<h3>Hiện đại tối giản</h3>
+<p>Mặt tiền phẳng, gam trắng–xám–gỗ, kính cường lực và ban công xanh. Phù hợp nhà phố mặt tiền 4–5 m, chi phí hoàn thiện vừa phải nhưng vẫn sang trọng.</p>
+<h3>Tropical / Indochine Tây Nguyên</h3>
+<p>Mái hiên rộng, cột gỗ hoặc giả gỗ, sân vườn cây cảnh — hòa hợp không khí trong lành vùng cao nguyên, thích hợp biệt thự và nhà vườn.</p>
+<h3>Nhà phố kinh doanh</h3>
+<p>Tầng trệt mở cửa hàng, tầng trên sinh hoạt — thiết kế mặt tiền thu hút khách, hệ thống điện nước tách biệt khu bán và khu ở.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-18.jpg" alt="xay-nha-ep-ak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ep-ak-lak-2</figcaption>
+</figure>
+
+<h2>Quy trình xây nhà đẹp Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Tư vấn &amp; khảo sát:</strong> Trao đổi phong cách, ngân sách; đo đạc lô đất, đánh giá địa chất bazan.</li>
+  <li><strong>Thiết kế 2D/3D:</strong> Mặt bằng, phối cảnh ngoại thất, chỉnh sửa đến khi chủ nhà duyệt.</li>
+  <li><strong>Dự toán &amp; hợp đồng:</strong> Báo giá theo gói (phần thô, trọn gói tiêu chuẩn hoặc cao cấp).</li>
+  <li><strong>Thi công kết cấu:</strong> Móng, khung BTCT, mái — nghiệm thu từng giai đoạn.</li>
+  <li><strong>Hoàn thiện &amp; bàn giao:</strong> Trát, lát, sơn, lắp cửa, thiết bị — đúng vật liệu hợp đồng.</li>
+</ol>
+<p>Gia đình có thể chọn <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> — một đầu mối từ thiết kế đến bàn giao, hoặc tách riêng thiết kế và thi công tùy nhu cầu.</p>
+
+<h2>Chi phí xây nhà đẹp Đắk Lắk (tham khảo 2026)</h2>
+<table>
+<thead>
+  <tr>
+    <th>Gói thi công</th>
+    <th>Đơn giá (đ/m² sàn)</th>
+    <th>Đặc điểm</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Trọn gói tiêu chuẩn</td>
+    <td>6.500.000 – 8.500.000</td>
+    <td>Hoàn thiện gọn, vật liệu phổ thông tốt</td>
+  </tr>
+  <tr>
+    <td>Trọn gói khá</td>
+    <td>8.500.000 – 11.000.000</td>
+    <td>Sơn cao cấp, cửa nhôm Xingfa, thiết bị tầm trung</td>
+  </tr>
+  <tr>
+    <td>Trọn gói cao cấp</td>
+    <td>12.000.000 – 16.000.000</td>
+    <td>Đá tự nhiên, gỗ, smart home cơ bản</td>
+  </tr>
+</tbody>
+</table>
+<p><em>(*) Giá chưa gồm nội thất rời. Chi phí phụ thuộc diện tích, số tầng và vật liệu cụ thể. Liên hệ <a href="/lien-he">Sao Khuê</a> để nhận báo giá theo m² thực tế.</em></p>
+
+<h2>Lưu ý khi xây nhà đẹp tại Tây Nguyên</h2>
+<ul>
+  <li><strong>Lên tiến độ mùa khô:</strong> Đổ bê tông và kết cấu mái nên ưu tiên tháng 12 – tháng 4.</li>
+  <li><strong>Móng trên đất bazan:</strong> Khảo sát kỹ trước khi đào — tránh phát sinh xử lý nền.</li>
+  <li><strong>Cách nhiệt:</strong> Chọn kính, tường và mái giảm nhiệt — tiết kiệm điện sưởi/điều hòa.</li>
+  <li><strong>Vận chuyển vật tư:</strong> Một số vật liệu đặc chủng cần đặt hàng sớm do khoảng cách từ TP.HCM.</li>
+  <li><strong>Giám sát từ xa:</strong> Sao Khuê gửi ảnh, video tiến độ hàng tuần qua Zalo cho chủ nhà ở xa.</li>
+</ul>
+
+<h2>Vì sao chọn Sao Khuê để xây nhà đẹp Đắk Lắk?</h2>
+<ul>
+  <li><strong>Thiết kế + thi công một đơn vị:</strong> Bản vẽ và hiện trường đồng bộ — hạn chế lệch so với phối cảnh 3D.</li>
+  <li><strong>Kinh nghiệm Tây Nguyên &amp; miền Nam:</strong> Am hiểu khí hậu, địa hình và quy trình giám sát chéo.</li>
+  <li><strong>Bảo hành kết cấu 10 năm:</strong> Cam kết bằng văn bản trong hợp đồng.</li>
+  <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — tránh phát sinh bất ngờ.</li>
+</ul>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí xây nhà 2 tầng Đắk Lắk</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> trên website.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn xây nhà đẹp Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà đẹp Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-45.jpg" alt="xay-nha-ep-ak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-ep-ak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
+  $mt$Xây Nhà Đẹp Đắk Lắk | Thiết Kế & Thi Công | Sao Khuê$mt$,
+  $md$Dịch vụ xây nhà đẹp Đắk Lắk: mặt tiền ấn tượng, công năng tối ưu, hoàn thiện cao cấp. Báo giá minh bạch, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
+  $mk$xây nhà đẹp Đắk Lắk, thiết kế nhà đẹp Đắk Lắk, xây nhà trọn gói Đắk Lắk, nhà phố Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
   $slug$sua-chua-cai-tao-nha-tphcm$slug$,
   $title$Sửa Chữa Cải Tạo Nhà TP.HCM — Trọn Gói Theo Quận Huyện$title$,
   $cat$tin-tuc$cat$,
@@ -5487,7 +5618,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="sua-chua-cai-tao-nha-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-cai-tao-nha-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà TP.HCM | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà TP.HCM uy tín: Quận 1–12, Thủ Đức, Bình Thạnh, Gò Vấp, Bình Chánh… Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm, sửa chữa nhà theo quận, công ty sửa nhà tphcm, kiến trúc sao khuê$mk$,
@@ -5558,7 +5689,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Bình Thạnh | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Bình Thạnh uy tín: chống thấm, sửa nhà cũ, cải tạo trọn gói. Khảo sát miễn phí. Hotline 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Bình Thạnh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Bình Thạnh, cải tạo nhà cũ Quận Bình Thạnh, kiến trúc sao khuê$mk$,
@@ -5629,7 +5760,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Thủ Đức | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Thủ Đức: nhà phố, biệt thự khu đô thị. Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Thủ Đức, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói TP. Thủ Đức, cải tạo nhà cũ TP. Thủ Đức, kiến trúc sao khuê$mk$,
@@ -5700,7 +5831,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Quận 7 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Quận 7: biệt thự, nhà phố khu Nam. Khảo sát miễn phí, thi công trọn gói. 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Quận 7, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 7, cải tạo nhà cũ Quận 7, kiến trúc sao khuê$mk$,
@@ -5771,7 +5902,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Gò Vấp | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Gò Vấp uy tín: sửa nhà cũ, chống thấm, cải tạo trọn gói. Khảo sát tận nơi. Hotline 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Gò Vấp, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Gò Vấp, cải tạo nhà cũ Quận Gò Vấp, kiến trúc sao khuê$mk$,
@@ -5842,7 +5973,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Bình Chánh | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Bình Chánh: Vĩnh Lộc, Tân Nhựt, Bình Hưng… Báo giá rõ ràng, thi công uy tín. 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Bình Chánh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Bình Chánh, cải tạo nhà cũ Huyện Bình Chánh, kiến trúc sao khuê$mk$,
@@ -5913,7 +6044,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Tân Phú | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Tân Phú: khảo sát miễn phí, báo giá hạng mục. Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Tân Phú, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Tân Phú, cải tạo nhà cũ Quận Tân Phú, kiến trúc sao khuê$mk$,
@@ -5984,7 +6115,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Quận 1 | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Quận 1: kinh nghiệm nhà phố hẹp, shophouse. Báo giá minh bạch. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Quận 1, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 1, cải tạo nhà cũ Quận 1, kiến trúc sao khuê$mk$,
@@ -6055,7 +6186,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Hóc Môn | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Hóc Môn uy tín: sửa nhà cũ, cải tạo trọn gói theo xã. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Hóc Môn, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Hóc Môn, cải tạo nhà cũ Huyện Hóc Môn, kiến trúc sao khuê$mk$,
@@ -6136,7 +6267,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="cong-ty-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$Công ty xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6215,7 +6346,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-tuy-hoa-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tuy-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$Xây nhà Tuy Hòa | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6294,7 +6425,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$Nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6374,7 +6505,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-phan-tho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$Thi công nhà phần thô Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6453,7 +6584,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-23.jpg" alt="xay-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
   $mt$Xây biệt thự Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6541,7 +6672,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-17.jpg" alt="chi-phi-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
   $mt$Chi phí xây nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6622,7 +6753,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
   $mt$Mẫu nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$mẫu nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6701,7 +6832,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-ven-bien-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ven-bien-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
   $mt$Xây nhà ven biển Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà ven biển Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà ven biển Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6782,7 +6913,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="thiet-ke-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
   $mt$Thiết kế nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6863,7 +6994,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-05.jpg" alt="nha-thau-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
   $mt$Nhà thầu xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6942,7 +7073,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-song-cau-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-song-cau-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-17.jpg$img$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
   $mt$Xây nhà Sông Cầu Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Sông Cầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Sông Cầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7021,7 +7152,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-cap-4-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-cap-4-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-18.jpg$img$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
   $mt$Xây nhà cấp 4 Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà cấp 4 Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà cấp 4 Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7101,7 +7232,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="hoan-thien-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-19.jpg$img$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
   $mt$Hoàn thiện nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$hoàn thiện nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7180,7 +7311,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-2-tang-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-20.jpg$img$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
   $mt$Xây nhà 2 tầng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7261,7 +7392,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="kien-truc-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>kien-truc-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-21.jpg$img$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
   $mt$Kiến trúc nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ kiến trúc nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$kiến trúc nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7342,7 +7473,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-22.jpg" alt="cong-ty-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
   $mt$Công ty xây dựng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7421,7 +7552,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
   $mt$Xây nhà Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7500,7 +7631,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="nha-pho-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
   $mt$Nhà phố Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7580,7 +7711,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-phan-tho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
   $mt$Thi công nhà phần thô Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7659,7 +7790,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-biet-thu-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
   $mt$Xây biệt thự Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7747,7 +7878,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="bao-gia-xay-nha-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-27.jpg$img$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
   $mt$Báo giá xây nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$báo giá xây nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7828,7 +7959,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-06.jpg" alt="mau-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-28.jpg$img$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
   $mt$Mẫu nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$mẫu nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7907,7 +8038,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="xay-nha-1-tret-1-lau-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-tret-1-lau-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-29.jpg$img$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
   $mt$Xây nhà 1 trệt 1 lầu Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 1 trệt 1 lầu Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 trệt 1 lầu Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -7988,7 +8119,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="thiet-ke-biet-thu-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-biet-thu-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
   $mt$Thiết kế biệt thự Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế biệt thự Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế biệt thự Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8069,7 +8200,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="nha-thau-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
   $mt$Nhà thầu xây dựng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8148,7 +8279,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-buon-ho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-buon-ho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
   $mt$Xây nhà Buôn Hồ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Buôn Hồ Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Buôn Hồ Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8227,7 +8358,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-cap-4-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-cap-4-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
   $mt$Xây nhà cấp 4 Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà cấp 4 Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà cấp 4 Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8307,7 +8438,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="hoan-thien-nha-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$Hoàn thiện nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$hoàn thiện nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8386,7 +8517,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-12.jpg" alt="xay-nha-3-tang-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$Xây nhà 3 tầng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8467,7 +8598,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="kien-truc-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>kien-truc-nha-pho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$Kiến trúc nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ kiến trúc nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$kiến trúc nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8546,7 +8677,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-tron-goi-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
   $mt$Thi công nhà trọn gói Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -8627,7 +8758,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-17.jpg" alt="thiet-ke-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-biet-thu-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$Thiết kế biệt thự Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -8706,7 +8837,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-3-tang-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$Xây nhà 3 tầng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -8785,7 +8916,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-1-tret-1-lau-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-tret-1-lau-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$Xây nhà 1 trệt 1 lầu Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 1 trệt 1 lầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 trệt 1 lầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -8864,7 +8995,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="nha-ong-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-ong-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
   $mt$Nhà ống Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà ống Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà ống Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -8943,7 +9074,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="xay-homestay-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-homestay-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$Xây homestay Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây homestay Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây homestay Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9022,7 +9153,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-08.jpg" alt="sua-chua-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$Sửa chữa nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9101,7 +9232,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-15.jpg" alt="cai-tao-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$Cải tạo nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$cải tạo nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9180,7 +9311,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-24.jpg" alt="nang-tang-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nang-tang-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
   $mt$Nâng tầng nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nâng tầng nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nâng tầng nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9259,7 +9390,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xin-giay-phep-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xin-giay-phep-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
   $mt$Xin giấy phép xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xin giấy phép xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xin giấy phép xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9338,7 +9469,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-gia-re-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-gia-re-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$Xây nhà giá rẻ Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà giá rẻ Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà giá rẻ Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9417,7 +9548,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="thi-cong-nha-pho-tuy-hoa-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-tuy-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-48.jpg$img$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
   $mt$Thi công nhà phố Tuy Hòa | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phố Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phố Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9496,7 +9627,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-ong-hoa-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ong-hoa-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-49.jpg$img$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
   $mt$Xây nhà Đông Hòa Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Đông Hòa Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Đông Hòa Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9575,7 +9706,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-tuy-an-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tuy-an-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-50.jpg$img$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
   $mt$Xây nhà Tuy An Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tuy An Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tuy An Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9654,7 +9785,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-51.jpg" alt="nha-vuon-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-vuon-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$Nhà vườn Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà vườn Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà vườn Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -9733,7 +9864,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-tron-goi-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$Thi công nhà trọn gói Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -9814,7 +9945,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="thiet-ke-nha-ep-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-ep-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$Thiết kế nhà đẹp Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà đẹp Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà đẹp Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -9893,7 +10024,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-2-tang-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$Xây nhà 2 tầng Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -9972,7 +10103,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="nha-ong-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>nha-ong-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$Nhà ống Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ nhà ống Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà ống Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10051,7 +10182,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-37.jpg" alt="xay-nha-vuon-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-vuon-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$Xây nhà vườn Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà vườn Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà vườn Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10130,7 +10261,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-47.jpg" alt="sua-chua-nha-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$Sửa chữa nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10209,7 +10340,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-12.jpg" alt="cai-tao-nha-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$Cải tạo nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$cải tạo nhà Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10288,7 +10419,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-43.jpg" alt="nang-tang-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>nang-tang-nha-pho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$Nâng tầng nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ nâng tầng nhà phố Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nâng tầng nhà phố Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10367,7 +10498,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="xin-giay-phep-xay-dung-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xin-giay-phep-xay-dung-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$Xin giấy phép xây dựng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xin giấy phép xây dựng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xin giấy phép xây dựng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10446,7 +10577,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-gia-re-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-gia-re-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$Xây nhà giá rẻ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà giá rẻ Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà giá rẻ Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10525,7 +10656,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-03.jpg" alt="thi-cong-nha-pho-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$Thi công nhà phố Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phố Buôn Ma Thuột uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phố Buôn Ma Thuột, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10604,7 +10735,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-06.jpg" alt="xay-shophouse-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-shophouse-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$Xây shophouse Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây shophouse Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây shophouse Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10692,7 +10823,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-31.jpg" alt="chi-phi-xay-nha-3-tang-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-3-tang-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
   $mt$Chi phí xây nhà 3 tầng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà 3 tầng Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà 3 tầng Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10771,7 +10902,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-ea-kar-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ea-kar-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
   $mt$Xây nhà Ea Kar Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Ea Kar Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Ea Kar Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10850,7 +10981,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-krong-buk-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-krong-buk-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
   $mt$Xây nhà Krông Búk Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Krông Búk Đắk Lắk uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Krông Búk Đắk Lắk, xây nhà Đắk Lắk, xây nhà trọn gói Đắk Lắk, Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -10929,7 +11060,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="cong-ty-xay-dung-long-an-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
   $mt$công ty xây dựng Long An | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$công ty xây dựng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11003,7 +11134,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-21.jpg" alt="xay-nha-tron-goi-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
   $mt$xây nhà trọn gói Long An | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà trọn gói Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11077,7 +11208,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="thi-cong-nha-pho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
   $mt$thi công nhà phố Long An | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$thi công nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11155,7 +11286,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-18.jpg" alt="thiet-ke-nha-pho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-17.jpg$img$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
   $mt$thiết kế nhà phố Long An | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$thiết kế nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11237,7 +11368,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="bao-gia-xay-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-18.jpg$img$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
   $mt$báo giá xây nhà Long An | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$báo giá xây nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11319,7 +11450,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="chi-phi-xay-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-19.jpg$img$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
   $mt$chi phí xây nhà Long An | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$chi phí xây nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11393,7 +11524,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="nha-pho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-20.jpg$img$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
   $mt$nhà phố Long An | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$nhà phố Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11467,7 +11598,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-tan-an-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tan-an-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-21.jpg$img$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
   $mt$xây nhà Tân An Long An | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tân An Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Tân An Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11541,7 +11672,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-ben-luc-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ben-luc-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
   $mt$xây nhà Bến Lức Long An | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Bến Lức Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Bến Lức Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11615,7 +11746,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-can-giuoc-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-can-giuoc-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
   $mt$xây nhà Cần Giuộc Long An | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Cần Giuộc Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Cần Giuộc Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11689,7 +11820,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-08.jpg" alt="thi-cong-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
   $mt$thi công nhà phần thô Long An | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$thi công nhà phần thô Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11763,7 +11894,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-2-tang-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
   $mt$xây nhà 2 tầng Long An | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11842,7 +11973,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="nha-thau-xay-dung-long-an-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
   $mt$nhà thầu xây dựng Long An | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11920,7 +12051,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="hoan-thien-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-27.jpg$img$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
   $mt$hoàn thiện nhà Long An | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$hoàn thiện nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -11994,7 +12125,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-16.jpg" alt="sua-chua-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-28.jpg$img$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
   $mt$sửa chữa nhà Long An | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Long An: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Long An, xây nhà Long An, xây nhà trọn gói Long An, Tân An, kiến trúc sao khuê$mk$,
@@ -12068,7 +12199,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="xay-dung-nha-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-29.jpg$img$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
   $mt$xây dựng nhà Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây dựng nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây dựng nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12147,7 +12278,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-23.jpg" alt="cong-ty-xay-dung-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
   $mt$công ty xây dựng Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$công ty xây dựng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12225,7 +12356,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="thiet-ke-nha-pho-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
   $mt$thiết kế nhà phố Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$thiết kế nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12307,7 +12438,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-04.jpg" alt="bao-gia-xay-nha-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
   $mt$báo giá xây nhà Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$báo giá xây nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12389,7 +12520,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="chi-phi-xay-nha-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
   $mt$chi phí xây nhà Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$chi phí xây nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12463,7 +12594,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-05.jpg" alt="nha-pho-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$nhà phố Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12537,7 +12668,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-bien-hoa-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-bien-hoa-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$xây nhà Biên Hòa Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Biên Hòa Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Biên Hòa Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12611,7 +12742,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-long-thanh-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-long-thanh-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$xây nhà Long Thành Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Long Thành Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Long Thành Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12685,7 +12816,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-nhon-trach-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-nhon-trach-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
   $mt$xây nhà Nhơn Trạch Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Nhơn Trạch Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà Nhơn Trạch Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12759,7 +12890,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="thi-cong-nha-tron-goi-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$thi công nhà trọn gói Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12833,7 +12964,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-2-tang-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$xây nhà 2 tầng Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12911,7 +13042,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-16.jpg" alt="mau-nha-pho-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$mẫu nhà phố Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$mẫu nhà phố Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -12985,7 +13116,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-40.jpg" alt="xay-biet-thu-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
   $mt$xây biệt thự Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây biệt thự Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -13064,7 +13195,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-05.jpg" alt="nha-thau-xay-dung-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$nhà thầu xây dựng Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -13138,7 +13269,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="sua-chua-nha-ong-nai-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-ong-nai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$sửa chữa nhà Đồng Nai | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Đồng Nai: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Đồng Nai, xây nhà Đồng Nai, xây nhà trọn gói Đồng Nai, Biên Hòa, kiến trúc sao khuê$mk$,
@@ -13211,7 +13342,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-51.jpg" alt="xay-dung-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$xây dựng nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây dựng nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây dựng nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13288,7 +13419,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="cong-ty-xay-dung-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
   $mt$công ty xây dựng Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13361,7 +13492,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-16.jpg" alt="thiet-ke-nha-pho-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
   $mt$thiết kế nhà phố Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà phố Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13441,7 +13572,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="bao-gia-xay-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$báo giá xây nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$báo giá xây nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13521,7 +13652,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="chi-phi-xay-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-48.jpg$img$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
   $mt$chi phí xây nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13594,7 +13725,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-08.jpg" alt="nha-pho-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-49.jpg$img$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
   $mt$nhà phố Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13667,7 +13798,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-51.jpg" alt="xay-nha-thu-dau-mot-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-thu-dau-mot-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-50.jpg$img$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
   $mt$xây nhà Thủ Dầu Một Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Thủ Dầu Một Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Thủ Dầu Một Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13740,7 +13871,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-06.jpg" alt="xay-nha-di-an-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-di-an-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$xây nhà Dĩ An Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Dĩ An Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Dĩ An Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13813,7 +13944,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-tan-uyen-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tan-uyen-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$xây nhà Tân Uyên Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tân Uyên Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tân Uyên Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13886,7 +14017,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="thi-cong-nha-tron-goi-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$thi công nhà trọn gói Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -13959,7 +14090,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-28.jpg" alt="thi-cong-nha-phan-tho-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$thi công nhà phần thô Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14032,7 +14163,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-49.jpg" alt="xay-nha-2-tang-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$xây nhà 2 tầng Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14105,7 +14236,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-16.jpg" alt="mau-nha-pho-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$mẫu nhà phố Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$mẫu nhà phố Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14182,7 +14313,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-11.jpg" alt="nha-thau-xay-dung-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$nhà thầu xây dựng Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14255,7 +14386,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="hoan-thien-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$hoàn thiện nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$hoàn thiện nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14328,7 +14459,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-21.jpg" alt="sua-chua-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$sửa chữa nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14406,7 +14537,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="cai-tao-nha-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$cải tạo nhà Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$cải tạo nhà Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14479,7 +14610,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-31.jpg" alt="xay-biet-thu-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$xây biệt thự Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14552,7 +14683,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="nha-ong-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>nha-ong-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$nhà ống Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ nhà ống Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà ống Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14625,7 +14756,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-05.jpg" alt="xay-nha-ben-cat-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ben-cat-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$xây nhà Bến Cát Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Bến Cát Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Bến Cát Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14698,7 +14829,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-bau-bang-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-bau-bang-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
   $mt$xây nhà Bàu Bàng Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Bàu Bàng Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Bàu Bàng Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14771,7 +14902,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="thiet-ke-biet-thu-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-biet-thu-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
   $mt$thiết kế biệt thự Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế biệt thự Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế biệt thự Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14844,7 +14975,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-20.jpg" alt="nang-tang-nha-pho-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>nang-tang-nha-pho-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
   $mt$nâng tầng nhà phố Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ nâng tầng nhà phố Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nâng tầng nhà phố Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14917,7 +15048,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-37.jpg" alt="xay-shophouse-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-shophouse-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
   $mt$xây shophouse Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây shophouse Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây shophouse Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -14990,7 +15121,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-gia-re-binh-duong-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-gia-re-binh-duong-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
   $mt$xây nhà giá rẻ Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà giá rẻ Bình Dương: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà giá rẻ Bình Dương, xây nhà Bình Dương, kiến trúc sao khuê$mk$,
@@ -15063,7 +15194,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="xay-dung-nha-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
   $mt$xây dựng nhà TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ xây dựng nhà TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây dựng nhà TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15140,7 +15271,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="cong-ty-xay-dung-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-17.jpg$img$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
   $mt$công ty xây dựng TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15213,7 +15344,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="thi-cong-nha-tron-goi-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-18.jpg$img$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
   $mt$thi công nhà trọn gói TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15286,7 +15417,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="thiet-ke-nha-pho-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-19.jpg$img$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
   $mt$thiết kế nhà phố TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà phố TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15366,7 +15497,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="chi-phi-xay-nha-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-20.jpg$img$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
   $mt$chi phí xây nhà TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15439,7 +15570,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="nha-pho-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-21.jpg$img$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
   $mt$nhà phố TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15512,7 +15643,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-2-tang-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
   $mt$xây nhà 2 tầng TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15585,7 +15716,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xay-nha-3-tang-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
   $mt$xây nhà 3 tầng TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15662,7 +15793,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="nha-thau-xay-dung-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
   $mt$nhà thầu xây dựng TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15735,7 +15866,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-phan-tho-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
   $mt$thi công nhà phần thô TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô TP.HCM: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô TP.HCM, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15813,7 +15944,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-34.jpg" alt="sua-chua-nha-quan-2-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-2-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
   $mt$sửa chữa nhà Quận 2 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 2: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 2, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15891,7 +16022,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="sua-chua-nha-quan-3-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-3-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-27.jpg$img$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
   $mt$sửa chữa nhà Quận 3 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 3: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 3, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -15969,7 +16100,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="sua-chua-nha-quan-4-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-4-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-28.jpg$img$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
   $mt$sửa chữa nhà Quận 4 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 4: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 4, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16047,7 +16178,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-37.jpg" alt="sua-chua-nha-quan-5-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-5-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-29.jpg$img$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
   $mt$sửa chữa nhà Quận 5 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 5: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 5, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16125,7 +16256,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="sua-chua-nha-quan-6-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-6-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
   $mt$sửa chữa nhà Quận 6 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 6: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 6, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16203,7 +16334,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-40.jpg" alt="sua-chua-nha-quan-8-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-8-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
   $mt$sửa chữa nhà Quận 8 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 8: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 8, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16281,7 +16412,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-40.jpg" alt="sua-chua-nha-quan-10-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-10-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
   $mt$sửa chữa nhà Quận 10 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 10: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 10, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16359,7 +16490,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="sua-chua-nha-quan-11-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-11-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
   $mt$sửa chữa nhà Quận 11 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 11: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 11, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16437,7 +16568,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="sua-chua-nha-quan-12-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quan-12-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$sửa chữa nhà Quận 12 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quận 12: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Quận 12, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16515,7 +16646,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="sua-chua-nha-binh-tan-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-binh-tan-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$sửa chữa nhà Bình Tân | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Bình Tân: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Bình Tân, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16593,7 +16724,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-48.jpg" alt="sua-chua-nha-phu-nhuan-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-phu-nhuan-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$sửa chữa nhà Phú Nhuận | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Phú Nhuận: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Phú Nhuận, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16671,7 +16802,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="sua-chua-nha-tan-binh-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-tan-binh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
   $mt$sửa chữa nhà Tân Bình | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Tân Bình: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Tân Bình, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16749,7 +16880,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="sua-chua-nha-nha-be-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-nha-be-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$sửa chữa nhà Nhà Bè | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Nhà Bè: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Nhà Bè, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16827,7 +16958,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-31.jpg" alt="sua-chua-nha-cu-chi-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-cu-chi-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$sửa chữa nhà Củ Chi | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Củ Chi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Củ Chi, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16905,7 +17036,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-43.jpg" alt="sua-chua-nha-can-gio-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-can-gio-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$sửa chữa nhà Cần Giờ | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Cần Giờ: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Cần Giờ, xây nhà TP.HCM, kiến trúc sao khuê$mk$,
@@ -16983,7 +17114,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="sua-chua-cai-tao-nha-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-cai-tao-nha-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
   $mt$sửa chữa cải tạo nhà miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà miền Trung uy tín tại miền Trung. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà miền Trung, sửa chữa nhà miền Trung, cải tạo nhà miền Trung, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17062,7 +17193,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-20.jpg" alt="sua-nha-tuy-hoa-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-tuy-hoa-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$sửa nhà Tuy Hòa Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Tuy Hòa Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Tuy Hòa Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17141,7 +17272,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="sua-nha-song-cau-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-song-cau-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$sửa nhà Sông Cầu Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Sông Cầu Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Sông Cầu Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17219,7 +17350,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-43.jpg" alt="cai-tao-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$cải tạo nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà phố Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà phố Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17297,7 +17428,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="chong-tham-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>chong-tham-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
   $mt$chống thấm nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ chống thấm nhà Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$chống thấm nhà Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17371,7 +17502,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-49.jpg" alt="sua-nha-ven-bien-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-ven-bien-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
   $mt$sửa nhà ven biển Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà ven biển Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà ven biển Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17450,7 +17581,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-31.jpg" alt="sua-nha-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$sửa nhà Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Buôn Ma Thuột uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Buôn Ma Thuột, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17529,7 +17660,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="sua-nha-buon-ho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-buon-ho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-48.jpg$img$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
   $mt$sửa nhà Buôn Hồ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Buôn Hồ Đắk Lắk uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Buôn Hồ Đắk Lắk, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17607,7 +17738,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-40.jpg" alt="cai-tao-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-pho-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-49.jpg$img$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
   $mt$cải tạo nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà phố Đắk Lắk uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà phố Đắk Lắk, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17681,7 +17812,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="gia-co-nha-cu-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>gia-co-nha-cu-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-50.jpg$img$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
   $mt$gia cố nhà cũ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ gia cố nhà cũ Đắk Lắk uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$gia cố nhà cũ Đắk Lắk, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17759,7 +17890,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="chong-tham-nha-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>chong-tham-nha-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$chống thấm nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ chống thấm nhà Đắk Lắk uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$chống thấm nhà Đắk Lắk, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17838,7 +17969,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="sua-chua-nha-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$sửa chữa nhà Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Gia Lai uy tín tại Gia Lai. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Gia Lai, sửa chữa nhà Gia Lai, cải tạo nhà Gia Lai, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17917,7 +18048,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-48.jpg" alt="sua-nha-pleiku-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-pleiku-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$sửa nhà Pleiku Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Pleiku Gia Lai uy tín tại Gia Lai. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Pleiku Gia Lai, sửa chữa nhà Gia Lai, cải tạo nhà Gia Lai, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -17995,7 +18126,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-34.jpg" alt="cai-tao-nha-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$cải tạo nhà Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Gia Lai uy tín tại Gia Lai. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà Gia Lai, sửa chữa nhà Gia Lai, cải tạo nhà Gia Lai, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18074,7 +18205,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="sua-chua-nha-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$sửa chữa nhà Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Khánh Hòa uy tín tại Khánh Hòa. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Khánh Hòa, sửa chữa nhà Khánh Hòa, cải tạo nhà Khánh Hòa, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18153,7 +18284,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="sua-nha-nha-trang-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-nha-trang-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$sửa nhà Nha Trang | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Nha Trang uy tín tại Khánh Hòa. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Nha Trang, sửa chữa nhà Khánh Hòa, cải tạo nhà Khánh Hòa, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18231,7 +18362,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="cai-tao-nha-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$cải tạo nhà Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Khánh Hòa uy tín tại Khánh Hòa. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà Khánh Hòa, sửa chữa nhà Khánh Hòa, cải tạo nhà Khánh Hòa, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18310,7 +18441,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-03.jpg" alt="sua-chua-nha-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$sửa chữa nhà Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Bình Định uy tín tại Bình Định. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Bình Định, sửa chữa nhà Bình Định, cải tạo nhà Bình Định, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18389,7 +18520,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="sua-nha-quy-nhon-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>sua-nha-quy-nhon-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$sửa nhà Quy Nhơn Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ sửa nhà Quy Nhơn Bình Định uy tín tại Bình Định. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa nhà Quy Nhơn Bình Định, sửa chữa nhà Bình Định, cải tạo nhà Bình Định, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18467,7 +18598,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-30.jpg" alt="cai-tao-nha-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$cải tạo nhà Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Bình Định uy tín tại Bình Định. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà Bình Định, sửa chữa nhà Bình Định, cải tạo nhà Bình Định, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18546,7 +18677,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="sua-chua-nha-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$sửa chữa nhà Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Quảng Ngãi uy tín tại Quảng Ngãi. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Quảng Ngãi, sửa chữa nhà Quảng Ngãi, cải tạo nhà Quảng Ngãi, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18624,7 +18755,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-03.jpg" alt="cai-tao-nha-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$cải tạo nhà Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Quảng Ngãi uy tín tại Quảng Ngãi. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà Quảng Ngãi, sửa chữa nhà Quảng Ngãi, cải tạo nhà Quảng Ngãi, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18703,7 +18834,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-22.jpg" alt="sua-chua-nha-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$sửa chữa nhà Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Kon Tum uy tín tại Kon Tum. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$sửa chữa nhà Kon Tum, sửa chữa nhà Kon Tum, cải tạo nhà Kon Tum, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18781,7 +18912,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-29.jpg" alt="cai-tao-nha-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
   $mt$cải tạo nhà Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Kon Tum uy tín tại Kon Tum. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$cải tạo nhà Kon Tum, sửa chữa nhà Kon Tum, cải tạo nhà Kon Tum, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18855,7 +18986,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-08.jpg" alt="nang-tang-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nang-tang-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
   $mt$nâng tầng nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nâng tầng nhà Phú Yên uy tín tại Phú Yên. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$nâng tầng nhà Phú Yên, sửa chữa nhà Phú Yên, cải tạo nhà Phú Yên, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -18933,7 +19064,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="hoan-thien-nha-cu-ak-lak-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-cu-ak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
   $mt$hoàn thiện nhà cũ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà cũ Đắk Lắk uy tín tại Đắk Lắk. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.$md$,
   $mk$hoàn thiện nhà cũ Đắk Lắk, sửa chữa nhà Đắk Lắk, cải tạo nhà Đắk Lắk, sửa nhà trọn gói, kiến trúc sao khuê$mk$,
@@ -19010,7 +19141,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="xay-dung-nha-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
   $mt$xây dựng nhà miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ xây dựng nhà miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây dựng nhà miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
@@ -19087,7 +19218,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="cong-ty-xay-dung-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
   $mt$công ty xây dựng Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19160,7 +19291,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-pleiku-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-pleiku-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
   $mt$xây nhà Pleiku Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Pleiku Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Pleiku Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19233,7 +19364,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="xay-nha-tron-goi-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-17.jpg$img$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
   $mt$xây nhà trọn gói Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19306,7 +19437,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="thiet-ke-nha-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-18.jpg$img$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
   $mt$thiết kế nhà Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19379,7 +19510,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-2-tang-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-19.jpg$img$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
   $mt$xây nhà 2 tầng Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19459,7 +19590,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-47.jpg" alt="chi-phi-xay-nha-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-20.jpg$img$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
   $mt$chi phí xây nhà Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19532,7 +19663,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="xay-biet-thu-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-21.jpg$img$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
   $mt$xây biệt thự Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19605,7 +19736,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-43.jpg" alt="nha-pho-gia-lai-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-gia-lai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
   $mt$nhà phố Gia Lai | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Gia Lai tại Gia Lai: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Gia Lai, xây nhà Gia Lai, xây nhà trọn gói Gia Lai, công ty xây dựng Gia Lai, kiến trúc sao khuê$mk$,
@@ -19682,7 +19813,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-24.jpg" alt="cong-ty-xay-dung-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
   $mt$công ty xây dựng Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -19755,7 +19886,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-23.jpg" alt="xay-nha-nha-trang-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-nha-trang-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
   $mt$xây nhà Nha Trang | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Nha Trang tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Nha Trang, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -19828,7 +19959,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="xay-nha-tron-goi-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
   $mt$xây nhà trọn gói Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -19901,7 +20032,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="thiet-ke-nha-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
   $mt$thiết kế nhà Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -19974,7 +20105,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-2-tang-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-27.jpg$img$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
   $mt$xây nhà 2 tầng Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -20054,7 +20185,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="chi-phi-xay-nha-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-28.jpg$img$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
   $mt$chi phí xây nhà Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -20127,7 +20258,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xay-biet-thu-nha-trang-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-nha-trang-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-29.jpg$img$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
   $mt$xây biệt thự Nha Trang | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Nha Trang tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Nha Trang, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -20204,7 +20335,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-40.jpg" alt="nha-thau-xay-dung-khanh-hoa-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-khanh-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
   $mt$nhà thầu xây dựng Khánh Hòa | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Khánh Hòa tại Khánh Hòa: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Khánh Hòa, xây nhà Khánh Hòa, xây nhà trọn gói Khánh Hòa, công ty xây dựng Khánh Hòa, kiến trúc sao khuê$mk$,
@@ -20281,7 +20412,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="cong-ty-xay-dung-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
   $mt$công ty xây dựng Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20354,7 +20485,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-20.jpg" alt="xay-nha-quy-nhon-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-quy-nhon-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
   $mt$xây nhà Quy Nhơn Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Quy Nhơn Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Quy Nhơn Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20427,7 +20558,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-tron-goi-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
   $mt$xây nhà trọn gói Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20500,7 +20631,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-47.jpg" alt="thiet-ke-nha-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$thiết kế nhà Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20573,7 +20704,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-2-tang-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$xây nhà 2 tầng Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20653,7 +20784,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="chi-phi-xay-nha-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$chi phí xây nhà Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20726,7 +20857,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-20.jpg" alt="xay-biet-thu-quy-nhon-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-quy-nhon-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
   $mt$xây biệt thự Quy Nhơn | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Quy Nhơn tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Quy Nhơn, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20799,7 +20930,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="nha-pho-binh-inh-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-binh-inh-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$nhà phố Bình Định | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Bình Định tại Bình Định: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Bình Định, xây nhà Bình Định, xây nhà trọn gói Bình Định, công ty xây dựng Bình Định, kiến trúc sao khuê$mk$,
@@ -20876,7 +21007,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-23.jpg" alt="cong-ty-xay-dung-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$công ty xây dựng Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
@@ -20949,7 +21080,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$xây nhà Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
@@ -21022,7 +21153,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="xay-nha-tron-goi-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
   $mt$xây nhà trọn gói Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
@@ -21102,7 +21233,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="chi-phi-xay-nha-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$chi phí xây nhà Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
@@ -21175,7 +21306,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-29.jpg" alt="thiet-ke-nha-quang-ngai-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-quang-ngai-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$thiết kế nhà Quảng Ngãi | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Quảng Ngãi tại Quảng Ngãi: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Quảng Ngãi, xây nhà Quảng Ngãi, xây nhà trọn gói Quảng Ngãi, công ty xây dựng Quảng Ngãi, kiến trúc sao khuê$mk$,
@@ -21252,7 +21383,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="cong-ty-xay-dung-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$công ty xây dựng Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
@@ -21325,7 +21456,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="xay-nha-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
   $mt$xây nhà Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
@@ -21398,7 +21529,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="xay-nha-tron-goi-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
   $mt$xây nhà trọn gói Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
@@ -21478,7 +21609,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-42.jpg" alt="chi-phi-xay-nha-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$chi phí xây nhà Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
@@ -21551,7 +21682,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-49.jpg" alt="thiet-ke-nha-kon-tum-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-kon-tum-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-48.jpg$img$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
   $mt$thiết kế nhà Kon Tum | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Kon Tum tại Kon Tum: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Kon Tum, xây nhà Kon Tum, xây nhà trọn gói Kon Tum, công ty xây dựng Kon Tum, kiến trúc sao khuê$mk$,
@@ -21628,7 +21759,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="cong-ty-xay-dung-quang-nam-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-quang-nam-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-49.jpg$img$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
   $mt$công ty xây dựng Quảng Nam | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
@@ -21701,7 +21832,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-16.jpg" alt="xay-nha-hoi-an-quang-nam-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-hoi-an-quang-nam-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-50.jpg$img$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
   $mt$xây nhà Hội An Quảng Nam | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Hội An Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Hội An Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
@@ -21774,7 +21905,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-03.jpg" alt="xay-nha-tron-goi-quang-nam-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-quang-nam-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$xây nhà trọn gói Quảng Nam | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
@@ -21847,7 +21978,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-tam-ky-quang-nam-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tam-ky-quang-nam-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$xây nhà Tam Kỳ Quảng Nam | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tam Kỳ Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tam Kỳ Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
@@ -21927,7 +22058,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-22.jpg" alt="chi-phi-xay-nha-quang-nam-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-quang-nam-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$chi phí xây nhà Quảng Nam | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Quảng Nam tại Quảng Nam: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Quảng Nam, xây nhà Quảng Nam, xây nhà trọn gói Quảng Nam, công ty xây dựng Quảng Nam, kiến trúc sao khuê$mk$,
@@ -22004,7 +22135,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="cong-ty-xay-dung-hue-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-hue-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$công ty xây dựng Huế | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
@@ -22077,7 +22208,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-hue-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-hue-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$xây nhà Huế | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
@@ -22150,7 +22281,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-45.jpg" alt="xay-nha-tron-goi-hue-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tron-goi-hue-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$xây nhà trọn gói Huế | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
@@ -22223,7 +22354,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-49.jpg" alt="thiet-ke-nha-hue-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-hue-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$thiết kế nhà Huế | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
@@ -22303,7 +22434,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="chi-phi-xay-nha-hue-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-hue-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$chi phí xây nhà Huế | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Huế tại Huế: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Huế, xây nhà Huế, xây nhà trọn gói Huế, công ty xây dựng Huế, kiến trúc sao khuê$mk$,
@@ -22380,7 +22511,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-06.jpg" alt="nha-thau-xay-dung-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$nhà thầu xây dựng miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
@@ -22460,7 +22591,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-49.jpg" alt="bao-gia-xay-nha-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$báo giá xây nhà miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$báo giá xây nhà miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
@@ -22533,7 +22664,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-3-tang-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$xây nhà 3 tầng miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
@@ -22610,7 +22741,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="xay-nha-gia-re-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-gia-re-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$xây nhà giá rẻ miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà giá rẻ miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà giá rẻ miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
@@ -22683,7 +22814,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-1-tret-1-lau-mien-trung-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-tret-1-lau-mien-trung-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$xây nhà 1 trệt 1 lầu miền Trung | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 1 trệt 1 lầu miền Trung tại miền Trung: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 trệt 1 lầu miền Trung, xây nhà miền Trung, xây nhà trọn gói miền Trung, công ty xây dựng miền Trung, kiến trúc sao khuê$mk$,
