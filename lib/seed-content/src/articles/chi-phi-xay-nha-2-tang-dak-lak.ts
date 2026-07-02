@@ -1,7 +1,13 @@
+import { faqSection, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
-const SK_IMG_1 = slugImage("chi-phi-xay-nha-2-tang-dak-lak", 0);
-const SK_IMG_2 = slugImage("chi-phi-xay-nha-2-tang-dak-lak", 1);
-﻿/** Nội dung bài viết SEO #13 — slug: chi-phi-xay-nha-2-tang-dak-lak */
+
+const FOCUS = "chi phí xây nhà 2 tầng Đắk Lắk";
+const SLUG = "chi-phi-xay-nha-2-tang-dak-lak";
+const SK_IMG_1 = slugImage(SLUG, 0);
+const SK_IMG_2 = slugImage(SLUG, 1);
+const SK_IMG_3 = slugImage(SLUG, 2);
+
+/** Nội dung bài viết SEO #13 — slug: chi-phi-xay-nha-2-tang-dak-lak */
 export const chiPhiXayNha2TangDakLak = {
   title: "Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?",
   excerpt:
@@ -11,17 +17,14 @@ export const chiPhiXayNha2TangDakLak = {
     "Chi phí xây nhà 2 tầng tại Đắk Lắk: đơn giá phần thô, hoàn thiện, nội thất cơ bản. Dự toán minh bạch, tránh phát sinh. Tư vấn miễn phí 0909 075 668.",
   metaKeywords:
     "chi phí xây nhà 2 tầng Đắk Lắk, báo giá nhà 2 tầng Đắk Lắk, dự toán xây nhà Đắk Lắk, đơn giá vật liệu xây dựng, xây nhà trọn gói Đắk Lắk",
-  imageAlt: "chi phí xây nhà 2 tầng Đắk Lắk",
-  imageCaption: "chi phí xây nhà 2 tầng Đắk Lắk",
+  imageAlt: FOCUS,
+  imageCaption: `${FOCUS} — thi công Sao Khuê`,
   content: `
 <h2>Chi phí xây nhà 2 tầng Đắk Lắk — Tổng quan 2026</h2>
 <p><strong>Chi phí xây nhà 2 tầng Đắk Lắk</strong> năm 2026 dao động đáng kể tuỳ diện tích đất, tiêu chuẩn hoàn thiện và nhà thầu thi công. Hiểu đúng cấu trúc chi phí giúp chủ nhà lên kế hoạch tài chính chắc chắn, tránh bị "vỡ ngân sách" giữa chừng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — đơn vị có kinh nghiệm thi công tại các tỉnh Tây Nguyên — tổng hợp bài viết này để giúp bạn hiểu rõ <strong>dự toán xây nhà</strong>, từ phần móng đến hoàn thiện nội thất.</p>
 <p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H'leo, Krông Buk, Cư M'gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
 
-<figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_1}" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
-<figcaption>chi-phi-xay-nha-2-tang-dak-lak-1</figcaption>
-</figure>
+${imageFigure(SK_IMG_1, FOCUS, 1)}
 
 <h2>Các yếu tố ảnh hưởng chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <p>Không có một mức giá cố định áp dụng cho mọi công trình. Những yếu tố dưới đây quyết định con số cuối cùng trong <strong>báo giá nhà 2 tầng</strong>:</p>
@@ -47,10 +50,7 @@ export const chiPhiXayNha2TangDakLak = {
 </table>
 <p><em>Ví dụ: Nhà 2 tầng 5×18 m (~162 m² sàn), tiêu chuẩn trung bình tại Đắk Lắk: tổng khoảng <strong>1,4 – 1,9 tỷ đồng</strong> (bao gồm phần thô + hoàn thiện, chưa nội thất rời).</em></p>
 
-<figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_1}" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
-<figcaption>chi-phi-xay-nha-2-tang-dak-lak-2</figcaption>
-</figure>
+${imageFigure(SK_IMG_2, FOCUS, 2)}
 
 <h2>Dự toán chi tiết nhà 2 tầng 5×15 m tại Buôn Ma Thuột</h2>
 <p>Để hình dung cụ thể, đây là bản <strong>dự toán xây nhà</strong> mẫu cho căn nhà phố 2 tầng điển hình tại Buôn Ma Thuột (tiêu chuẩn trung bình):</p>
@@ -97,22 +97,18 @@ export const chiPhiXayNha2TangDakLak = {
   <li><strong>Ký hợp đồng rõ ràng:</strong> Ghi rõ thương hiệu vật liệu, quy cách kỹ thuật — tránh nhà thầu thay thế vật liệu kém hơn.</li>
 </ul>
 
-<figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_2}" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
-<figcaption>chi-phi-xay-nha-2-tang-dak-lak-3</figcaption>
-</figure>
+${imageFigure(SK_IMG_3, FOCUS, 3)}
 
 <h2>Quy trình báo giá xây nhà 2 tầng tại Sao Khuê</h2>
 <ol>
-  <li><strong>Liên hệ & tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
+  <li><strong>Liên hệ &amp; tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
   <li><strong>Khảo sát hiện trạng:</strong> Đội kỹ thuật Sao Khuê kiểm tra lô đất, hướng nhà (miễn phí trong phạm vi hỗ trợ).</li>
   <li><strong>Phương án thiết kế sơ bộ:</strong> 1–2 phương án mặt bằng phù hợp ngân sách và nhu cầu.</li>
   <li><strong>Lập dự toán chi tiết:</strong> Phân tách từng hạng mục — phần thô, hoàn thiện, điện nước, cầu thang, cửa.</li>
   <li><strong>Ký hợp đồng:</strong> Cố định đơn giá, tiến độ, vật liệu — cam kết không phát sinh khi giữ nguyên thiết kế.</li>
-  <li><strong>Thi công & giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
-  <li><strong>Nghiệm thu & bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
+  <li><strong>Thi công &amp; giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
 </ol>
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>So sánh chi phí xây nhà 2 tầng theo khu vực Đắk Lắk</h2>
 <p>Giá xây dựng không đồng đều trên toàn tỉnh:</p>
@@ -121,16 +117,32 @@ export const chiPhiXayNha2TangDakLak = {
   <li><strong>Huyện Krông Pắc, Ea Kar:</strong> Thấp hơn khoảng 8–15%, nhân công địa phương dồi dào.</li>
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/don-gia-xay-nha-dak-lak">đơn giá xây nhà Đắk Lắk</a> và <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a>.</p>
 
+${faqSection(
+  [
+    {
+      q: "Nhà 2 tầng 100 m² sàn tại Đắk Lắk hết bao nhiêu?",
+      a: "Trọn gói tiêu chuẩn khoảng 600 – 850 triệu; trung bình–khá 850 triệu – 1,1 tỷ. Tùy vật liệu và thiết kế cụ thể.",
+    },
+    {
+      q: "Chi phí tính theo m² sàn hay diện tích đất?",
+      a: "Theo m² sàn xây dựng (tổng các tầng). Diện tích đất ảnh hưởng móng và sân vườn — báo riêng.",
+    },
+    {
+      q: "Có khảo sát và báo giá miễn phí không?",
+      a: "Có — khảo sát sơ bộ miễn phí trong phạm vi Đắk Lắk. Dự toán chi tiết sau khi có số đo và nhu cầu rõ.",
+    },
+    {
+      q: "Phần thô rẻ hơn trọn gói bao nhiêu?",
+      a: "Phần thô thường 3 – 4,2 triệu/m² sàn; hoàn thiện thêm 2 – 5 triệu/m². Trọn gói gộp một hợp đồng, ít phát sinh hơn.",
+    },
+  ],
+  "Câu hỏi thường gặp về chi phí xây nhà 2 tầng Đắk Lắk",
+)}
 
-<h2>Liên hệ tư vấn chi phí xây nhà 2 tầng Đắk Lắk</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà 2 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+${homeLinkParagraph()}
+
+${seoCtaBlock(FOCUS)}
 `.trim(),
 };

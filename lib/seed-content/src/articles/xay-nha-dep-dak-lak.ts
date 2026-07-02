@@ -1,5 +1,5 @@
 /** Nội dung bài viết SEO — slug: xay-nha-dep-dak-lak */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { homeLinkParagraph, imageFigure, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 
 const FOCUS = "xây nhà đẹp Đắk Lắk";
@@ -103,6 +103,28 @@ ${imageFigure(SK_IMG_2, FOCUS, 2)}
   <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — tránh phát sinh bất ngờ.</li>
 </ul>
 <p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí xây nhà 2 tầng Đắk Lắk</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> trên website.</p>
+
+${faqSection(
+  [
+    {
+      q: "Xây nhà đẹp Đắk Lắk khác xây nhà trọn gói thế nào?",
+      a: "Xây nhà đẹp nhấn mạnh thiết kế, mặt tiền và hoàn thiện cao cấp — thường đi kèm phối cảnh 3D và vật liệu tốt hơn gói tiêu chuẩn.",
+    },
+    {
+      q: "Chi phí xây nhà đẹp tại Đắk Lắk?",
+      a: "Trọn gói khá–cao cấp khoảng 8,5 – 16 triệu đ/m² sàn tùy vật liệu. Liên hệ để báo giá theo bản vẽ.",
+    },
+    {
+      q: "Có thiết kế 3D trước khi thi công không?",
+      a: "Có — Sao Khuê triển khai 2D/3D, chỉnh sửa đến khi chủ nhà duyệt trước khi khởi công.",
+    },
+    {
+      q: "Bảo hành xây nhà đẹp bao lâu?",
+      a: "Bảo hành kết cấu 10 năm; hoàn thiện theo hạng mục hợp đồng.",
+    },
+  ],
+  "Câu hỏi thường gặp về xây nhà đẹp Đắk Lắk",
+)}
 
 ${homeLinkParagraph()}
 

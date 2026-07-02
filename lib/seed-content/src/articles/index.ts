@@ -49,6 +49,8 @@ export { kienTrucSaoKhueDonViUyTin } from "./kien-truc-sao-khue-don-vi-uy-tin";
 export { xayDungNhaPhuYen } from "./xay-dung-nha-phu-yen";
 export { xayDungNhaDakLak } from "./xay-dung-nha-dak-lak";
 export { xayNhaDepDakLak } from "./xay-nha-dep-dak-lak";
+export { suaChuaNhaDakLak } from "./sua-chua-nha-dak-lak";
+export { caiTaoNhaDakLak } from "./cai-tao-nha-dak-lak";
 export { suaChuaCaiTaoNhaTphcm } from "./sua-chua-cai-tao-nha-tphcm";
 export {
   mienTrungXayNhaArticlesBySlug,

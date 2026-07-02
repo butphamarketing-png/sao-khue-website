@@ -29,6 +29,8 @@ import {
   xayDungNhaPhuYen,
   xayDungNhaDakLak,
   xayNhaDepDakLak,
+  suaChuaNhaDakLak,
+  caiTaoNhaDakLak,
   suaChuaCaiTaoNhaTphcm,
   suaChuaCaiTaoNhaBinhThanh,
   suaChuaCaiTaoNhaThuDuc,
@@ -56,6 +58,9 @@ import { matchesCategory, normalizeCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
+
+/** Bài pillar viết tay — không dùng bản factory phu-yen-dak-lak. */
+const DAK_LAK_HAND_PILLAR_SLUGS = new Set(["sua-chua-nha-dak-lak", "cai-tao-nha-dak-lak"]);
 
 export type SeedPost = {
   slug: string;
@@ -179,6 +184,8 @@ export const seedPosts: SeedPost[] = [
   seoPost("xay-dung-nha-phu-yen", "tin-tuc", featuredImageForSlug("xay-dung-nha-phu-yen"), xayDungNhaPhuYen),
   seoPost("xay-dung-nha-dak-lak", "tin-tuc", featuredImageForSlug("xay-dung-nha-dak-lak"), xayDungNhaDakLak),
   seoPost("xay-nha-dep-dak-lak", "tin-tuc", featuredImageForSlug("xay-nha-dep-dak-lak"), xayNhaDepDakLak),
+  seoPost("sua-chua-nha-dak-lak", "tin-tuc", featuredImageForSlug("sua-chua-nha-dak-lak"), suaChuaNhaDakLak),
+  seoPost("cai-tao-nha-dak-lak", "tin-tuc", featuredImageForSlug("cai-tao-nha-dak-lak"), caiTaoNhaDakLak),
   seoPost("sua-chua-cai-tao-nha-tphcm", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-tphcm"), suaChuaCaiTaoNhaTphcm),
   seoPost("sua-chua-cai-tao-nha-binh-thanh", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-binh-thanh"), suaChuaCaiTaoNhaBinhThanh),
   seoPost("sua-chua-cai-tao-nha-thu-duc", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-thu-duc"), suaChuaCaiTaoNhaThuDuc),
@@ -188,7 +195,7 @@ export const seedPosts: SeedPost[] = [
   seoPost("sua-chua-cai-tao-nha-tan-phu", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-tan-phu"), suaChuaCaiTaoNhaTanPhu),
   seoPost("sua-chua-cai-tao-nha-quan-1", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-quan-1"), suaChuaCaiTaoNhaQuan1),
   seoPost("sua-chua-cai-tao-nha-hoc-mon", "tin-tuc", featuredImageForSlug("sua-chua-cai-tao-nha-hoc-mon"), suaChuaCaiTaoNhaHocMon),
-  ...phuYenDakLakTinTucSlugs.map((slug) =>
+  ...phuYenDakLakTinTucSlugs.filter((slug) => !DAK_LAK_HAND_PILLAR_SLUGS.has(slug)).map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), phuYenDakLakTinTucArticlesBySlug[slug]!),
   ),
   ...longAnDongNaiTinTucSlugs.map((slug) =>

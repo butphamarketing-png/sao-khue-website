@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #11 — slug: thiet-ke-nha-pho-dak-lak */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thiet-ke-nha-pho-dak-lak", 0);
 const SK_IMG_2 = slugImage("thiet-ke-nha-pho-dak-lak", 1);
@@ -110,10 +110,32 @@ ${homeLinkParagraph()}
   <li><strong>Hồ sơ pháp lý:</strong> Hỗ trợ chuẩn bị bộ hồ sơ xin phép xây dựng đúng quy định tỉnh Đắk Lắk.</li>
   <li><strong>Phản hồi nhanh:</strong> Zalo, điện thoại — hỗ trợ trong giờ hành chính, phản hồi khẩn trong 4 giờ.</li>
 </ul>
-<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công vào một đơn vị.</p>
+<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> và <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công.</p>
+
+${faqSection(
+  [
+    {
+      q: "Thiết kế nhà phố Đắk Lắk có làm online được không?",
+      a: "Có — Sao Khuê khảo sát qua video call + ảnh lô đất, bàn giao file CAD/PDF đầy đủ.",
+    },
+    {
+      q: "Chi phí thiết kế nhà phố Đắk Lắk?",
+      a: "Khoảng 150.000 – 300.000 đ/m² sàn tùy gói 2D hoặc 2D+3D. Miễn giảm khi ký thi công trọn gói.",
+    },
+    {
+      q: "Thiết kế có hỗ trợ xin giấy phép không?",
+      a: "Có — tư vấn hồ sơ xin phép xây dựng theo quy định tỉnh Đắk Lắk (theo gói).",
+    },
+    {
+      q: "Thiết kế xong có thi công luôn không?",
+      a: "Có — một đầu mối Sao Khuê từ thiết kế đến bàn giao, tránh lệch bản vẽ.",
+    },
+  ],
+  "Câu hỏi thường gặp về thiết kế nhà phố Đắk Lắk",
+)}
 
 ${seoCtaBlock("thiết kế nhà phố Đắk Lắk")}
-
+
 
 ${imageFigure(SK_IMG_3, "thiết kế nhà phố Đắk Lắk", 3)}
 `.trim(),

@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #12 — slug: xay-nha-tron-goi-dak-lak */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("xay-nha-tron-goi-dak-lak", 0);
 const SK_IMG_2 = slugImage("xay-nha-tron-goi-dak-lak", 1);
@@ -117,8 +117,34 @@ ${homeLinkParagraph()}
   <li><strong>Nghiệm thu từng giai đoạn:</strong> Chủ nhà xác nhận trước khi thanh toán đợt tiếp theo.</li>
 </ul>
 
+${faqSection(
+  [
+    {
+      q: "Xây nhà trọn gói Đắk Lắk bao gồm những gì?",
+      a: "Thiết kế (nếu cần), thi công phần thô, hoàn thiện, điện nước cơ bản và bàn giao — một đầu mối từ Sao Khuê.",
+    },
+    {
+      q: "Bảo hành xây nhà trọn gói bao lâu?",
+      a: "Bảo hành kết cấu 10 năm; hoàn thiện theo hạng mục trong hợp đồng.",
+    },
+    {
+      q: "Chi phí trọn gói tính theo m² sàn hay diện tích đất?",
+      a: "Theo m² sàn xây dựng (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân.",
+    },
+    {
+      q: "Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?",
+      a: "Có — đội hiện trường tại Đắk Lắk + giám sát kỹ thuật từ TP.HCM, báo cáo tiến độ hàng tuần qua Zalo.",
+    },
+    {
+      q: "Nên khởi công mùa nào tại Đắk Lắk?",
+      a: "Ưu tiên móng, khung tháng 12 – tháng 4 (mùa khô). Hoàn thiện có thể mùa mưa nếu mái kín.",
+    },
+  ],
+  "Câu hỏi thường gặp về xây nhà trọn gói Đắk Lắk",
+)}
+
 ${seoCtaBlock("xây nhà trọn gói Đắk Lắk")}
-
+
 
 ${imageFigure(SK_IMG_3, "xây nhà trọn gói Đắk Lắk", 3)}
 `.trim(),

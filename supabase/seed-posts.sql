@@ -2676,7 +2676,17 @@ INSERT INTO posts (
   <li><strong>Hồ sơ pháp lý:</strong> Hỗ trợ chuẩn bị bộ hồ sơ xin phép xây dựng đúng quy định tỉnh Đắk Lắk.</li>
   <li><strong>Phản hồi nhanh:</strong> Zalo, điện thoại — hỗ trợ trong giờ hành chính, phản hồi khẩn trong 4 giờ.</li>
 </ul>
-<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công vào một đơn vị.</p>
+<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> và <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công.</p>
+
+<h2>Câu hỏi thường gặp về thiết kế nhà phố Đắk Lắk</h2>
+<h3>Thiết kế nhà phố Đắk Lắk có làm online được không?</h3>
+<p>Có — Sao Khuê khảo sát qua video call + ảnh lô đất, bàn giao file CAD/PDF đầy đủ.</p>
+<h3>Chi phí thiết kế nhà phố Đắk Lắk?</h3>
+<p>Khoảng 150.000 – 300.000 đ/m² sàn tùy gói 2D hoặc 2D+3D. Miễn giảm khi ký thi công trọn gói.</p>
+<h3>Thiết kế có hỗ trợ xin giấy phép không?</h3>
+<p>Có — tư vấn hồ sơ xin phép xây dựng theo quy định tỉnh Đắk Lắk (theo gói).</p>
+<h3>Thiết kế xong có thi công luôn không?</h3>
+<p>Có — một đầu mối Sao Khuê từ thiết kế đến bàn giao, tránh lệch bản vẽ.</p>
 
 <h2>Liên hệ tư vấn thiết kế nhà phố Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà phố Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
@@ -2687,7 +2697,6 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
-
 
 
 <figure class="article-figure article-figure--inline">
@@ -2825,6 +2834,18 @@ INSERT INTO posts (
   <li><strong>Nghiệm thu từng giai đoạn:</strong> Chủ nhà xác nhận trước khi thanh toán đợt tiếp theo.</li>
 </ul>
 
+<h2>Câu hỏi thường gặp về xây nhà trọn gói Đắk Lắk</h2>
+<h3>Xây nhà trọn gói Đắk Lắk bao gồm những gì?</h3>
+<p>Thiết kế (nếu cần), thi công phần thô, hoàn thiện, điện nước cơ bản và bàn giao — một đầu mối từ Sao Khuê.</p>
+<h3>Bảo hành xây nhà trọn gói bao lâu?</h3>
+<p>Bảo hành kết cấu 10 năm; hoàn thiện theo hạng mục trong hợp đồng.</p>
+<h3>Chi phí trọn gói tính theo m² sàn hay diện tích đất?</h3>
+<p>Theo m² sàn xây dựng (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân.</p>
+<h3>Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?</h3>
+<p>Có — đội hiện trường tại Đắk Lắk + giám sát kỹ thuật từ TP.HCM, báo cáo tiến độ hàng tuần qua Zalo.</p>
+<h3>Nên khởi công mùa nào tại Đắk Lắk?</h3>
+<p>Ưu tiên móng, khung tháng 12 – tháng 4 (mùa khô). Hoàn thiện có thể mùa mưa nếu mái kín.</p>
+
 <h2>Liên hệ tư vấn xây nhà trọn gói Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -2834,7 +2855,6 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
-
 
 
 <figure class="article-figure article-figure--inline">
@@ -2900,7 +2920,7 @@ INSERT INTO posts (
 <p><em>Ví dụ: Nhà 2 tầng 5×18 m (~162 m² sàn), tiêu chuẩn trung bình tại Đắk Lắk: tổng khoảng <strong>1,4 – 1,9 tỷ đồng</strong> (bao gồm phần thô + hoàn thiện, chưa nội thất rời).</em></p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-24.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
+<img src="/images/sao-khue/sk-06.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-2</figcaption>
 </figure>
 
@@ -2950,21 +2970,20 @@ INSERT INTO posts (
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-06.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
+<img src="/images/sao-khue/sk-30.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-3</figcaption>
 </figure>
 
 <h2>Quy trình báo giá xây nhà 2 tầng tại Sao Khuê</h2>
 <ol>
-  <li><strong>Liên hệ & tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
+  <li><strong>Liên hệ &amp; tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
   <li><strong>Khảo sát hiện trạng:</strong> Đội kỹ thuật Sao Khuê kiểm tra lô đất, hướng nhà (miễn phí trong phạm vi hỗ trợ).</li>
   <li><strong>Phương án thiết kế sơ bộ:</strong> 1–2 phương án mặt bằng phù hợp ngân sách và nhu cầu.</li>
   <li><strong>Lập dự toán chi tiết:</strong> Phân tách từng hạng mục — phần thô, hoàn thiện, điện nước, cầu thang, cửa.</li>
   <li><strong>Ký hợp đồng:</strong> Cố định đơn giá, tiến độ, vật liệu — cam kết không phát sinh khi giữ nguyên thiết kế.</li>
-  <li><strong>Thi công & giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
-  <li><strong>Nghiệm thu & bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
+  <li><strong>Thi công &amp; giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
 </ol>
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>So sánh chi phí xây nhà 2 tầng theo khu vực Đắk Lắk</h2>
 <p>Giá xây dựng không đồng đều trên toàn tỉnh:</p>
@@ -2973,7 +2992,19 @@ INSERT INTO posts (
   <li><strong>Huyện Krông Pắc, Ea Kar:</strong> Thấp hơn khoảng 8–15%, nhân công địa phương dồi dào.</li>
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/don-gia-xay-nha-dak-lak">đơn giá xây nhà Đắk Lắk</a> và <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a>.</p>
 
+<h2>Câu hỏi thường gặp về chi phí xây nhà 2 tầng Đắk Lắk</h2>
+<h3>Nhà 2 tầng 100 m² sàn tại Đắk Lắk hết bao nhiêu?</h3>
+<p>Trọn gói tiêu chuẩn khoảng 600 – 850 triệu; trung bình–khá 850 triệu – 1,1 tỷ. Tùy vật liệu và thiết kế cụ thể.</p>
+<h3>Chi phí tính theo m² sàn hay diện tích đất?</h3>
+<p>Theo m² sàn xây dựng (tổng các tầng). Diện tích đất ảnh hưởng móng và sân vườn — báo riêng.</p>
+<h3>Có khảo sát và báo giá miễn phí không?</h3>
+<p>Có — khảo sát sơ bộ miễn phí trong phạm vi Đắk Lắk. Dự toán chi tiết sau khi có số đo và nhu cầu rõ.</p>
+<h3>Phần thô rẻ hơn trọn gói bao nhiêu?</h3>
+<p>Phần thô thường 3 – 4,2 triệu/m² sàn; hoàn thiện thêm 2 – 5 triệu/m². Trọn gói gộp một hợp đồng, ít phát sinh hơn.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>Liên hệ tư vấn chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà 2 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
@@ -5575,6 +5606,16 @@ INSERT INTO posts (
 </ul>
 <p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí xây nhà 2 tầng Đắk Lắk</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> trên website.</p>
 
+<h2>Câu hỏi thường gặp về xây nhà đẹp Đắk Lắk</h2>
+<h3>Xây nhà đẹp Đắk Lắk khác xây nhà trọn gói thế nào?</h3>
+<p>Xây nhà đẹp nhấn mạnh thiết kế, mặt tiền và hoàn thiện cao cấp — thường đi kèm phối cảnh 3D và vật liệu tốt hơn gói tiêu chuẩn.</p>
+<h3>Chi phí xây nhà đẹp tại Đắk Lắk?</h3>
+<p>Trọn gói khá–cao cấp khoảng 8,5 – 16 triệu đ/m² sàn tùy vật liệu. Liên hệ để báo giá theo bản vẽ.</p>
+<h3>Có thiết kế 3D trước khi thi công không?</h3>
+<p>Có — Sao Khuê triển khai 2D/3D, chỉnh sửa đến khi chủ nhà duyệt trước khi khởi công.</p>
+<h3>Bảo hành xây nhà đẹp bao lâu?</h3>
+<p>Bảo hành kết cấu 10 năm; hoàn thiện theo hạng mục hợp đồng.</p>
+
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>Liên hệ tư vấn xây nhà đẹp Đắk Lắk</h2>
@@ -5595,6 +5636,285 @@ INSERT INTO posts (
   $mt$Xây Nhà Đẹp Đắk Lắk | Thiết Kế & Thi Công | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà đẹp Đắk Lắk: mặt tiền ấn tượng, công năng tối ưu, hoàn thiện cao cấp. Báo giá minh bạch, bảo hành kết cấu 10 năm. Gọi 0909 075 668.$md$,
   $mk$xây nhà đẹp Đắk Lắk, thiết kế nhà đẹp Đắk Lắk, xây nhà trọn gói Đắk Lắk, nhà phố Buôn Ma Thuột, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$sua-chua-nha-dak-lak$slug$,
+  $title$Sửa Chữa Nhà Tại Đắk Lắk — Chống Thấm, Gia Cố Trọn Gói$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Sửa chữa nhà Đắk Lắk: chống thấm mái, gia cố kết cấu, sửa điện nước. Sao Khuê khảo sát miễn phí, báo giá từng hạng mục — 0909 075 668.$excerpt$,
+  $content$<h2>Sửa chữa nhà Đắk Lắk — Giải pháp khi nhà đã xuống cấp</h2>
+<p><strong>Sửa chữa nhà Đắk Lắk</strong> là nhu cầu cấp thiết khi căn nhà tại <strong>Buôn Ma Thuột</strong>, Buôn Hồ, Ea Kar và các huyện đã sử dụng 10–30 năm — xuất hiện thấm mái, tường nứt, sàn lún, điện nước lỗi thời. Khí hậu cao nguyên mưa lớn (tháng 5–11) khiến hư hỏng lan nhanh nếu không xử lý đúng kỹ thuật.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>sửa chữa nhà Đắk Lắk</strong> trọn gói hoặc theo từng hạng mục — khảo sát hiện trạng miễn phí, báo giá rõ ràng, giám sát kỹ thuật và bảo hành theo biên bản nghiệm thu.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-03.jpg" alt="sua-chua-nha-dak-lak-1" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-dak-lak-1</figcaption>
+</figure>
+
+<h2>Dịch vụ sửa chữa nhà Đắk Lắk của Sao Khuê</h2>
+<ul>
+  <li><strong>Chống thấm:</strong> Mái, sân thượng, ban công, WC — xử lý gốc, không chỉ trát lại.</li>
+  <li><strong>Gia cố kết cấu:</strong> Tường nứt, cột yếu, sàn lún — đánh giá kỹ thuật trước khi hoàn thiện.</li>
+  <li><strong>Sửa điện nước:</strong> Thay dây, ống âm tường, aptomat chống giật theo tiêu chuẩn.</li>
+  <li><strong>Hoàn thiện:</strong> Trát, sơn, lát gạch WC, bếp, phòng khách.</li>
+  <li><strong>Sửa mái, thay tôn:</strong> Mái dốc, thoát nước mưa — đặc thù mùa mưa Tây Nguyên.</li>
+</ul>
+<p>Xem thêm <a href="/tin-tuc/chong-tham-nha-dak-lak">chống thấm nhà Đắk Lắk</a>, <a href="/tin-tuc/gia-co-nha-cu-dak-lak">gia cố nhà cũ Đắk Lắk</a> và <a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo nhà Đắk Lắk</a> nếu cần nâng cấp toàn diện.</p>
+
+<h2>Khi nào cần sửa chữa nhà tại Đắk Lắk?</h2>
+<ul>
+  <li>Trần, tường ố vàng sau mùa mưa — dấu hiệu thấm mái hoặc khe hở.</li>
+  <li>Tường nứt rộng hơn 2 mm — cần gia cố trước khi trát.</li>
+  <li>Điện chập, nước yếu, ống gỉ — nguy cơ an toàn.</li>
+  <li>Chuẩn bị cho thuê hoặc bán nhà — nâng cấp nhanh tăng giá trị.</li>
+  <li>Nhà 20–30 năm chưa được bảo trì định kỳ.</li>
+</ul>
+
+<h2>Quy trình sửa chữa nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát:</strong> Ghi nhận hiện trạng — thấm, nứt, điện nước, ảnh từng khu vực.</li>
+  <li><strong>Báo giá chi tiết:</strong> Tách từng hạng mục — không ép ký gói thừa.</li>
+  <li><strong>Thi công:</strong> Che chắn đồ đạc, vệ sinh hàng ngày, giám sát kỹ thuật.</li>
+  <li><strong>Nghiệm thu:</strong> Chống thấm, điện nước, hoàn thiện — ký biên bản từng phần.</li>
+  <li><strong>Bảo hành:</strong> Chống thấm 3–5 năm, hoàn thiện 1–2 năm theo hạng mục.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-25.jpg" alt="sua-chua-nha-dak-lak-2" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-dak-lak-2</figcaption>
+</figure>
+
+<h2>Chi phí sửa chữa nhà Đắk Lắk (tham khảo 2026)</h2>
+<table>
+  <thead><tr><th>Loại sửa chữa</th><th>Đơn giá tham khảo</th><th>Thời gian</th></tr></thead>
+  <tbody>
+    <tr><td>Sửa nhẹ (sơn, lát)</td><td>1,5 – 3 triệu đ/m²</td><td>2–4 tuần</td></tr>
+    <tr><td>Sửa WC, bếp, mái</td><td>4 – 7 triệu đ/m²</td><td>1–2 tháng</td></tr>
+    <tr><td>Sửa toàn diện + gia cố</td><td>8 – 15 triệu đ/m²</td><td>2–4 tháng</td></tr>
+  </tbody>
+</table>
+<p><em>Giá phụ thuộc hiện trạng nhà. Liên hệ để khảo sát và báo giá chính xác.</em></p>
+
+<h2>Sai lầm thường gặp khi sửa nhà tại Đắk Lắk</h2>
+<ul>
+  <li>Chỉ trát lại mà không xử lý thấm gốc — ố vàng tái phát sau mùa mưa.</li>
+  <li>Tự thuê thợ rời — không đồng bộ tiến độ, khó đòi bảo hành.</li>
+  <li>Bỏ qua gia cố khi tường nứt lớn — nguy cơ an toàn.</li>
+  <li>Sửa mùa mưa không che chắn — chất lượng waterproof kém.</li>
+</ul>
+
+<h2>Lưu ý sửa chữa tại Tây Nguyên</h2>
+<ul>
+  <li>Ưu tiên chống thấm mái trước mùa mưa (tháng 4–5).</li>
+  <li>Nghiệm thu ngâm nước 24–48 giờ trước lát gạch sân thượng.</li>
+  <li>Gia cố kết cấu trước khi đục tường mở rộng phòng.</li>
+  <li>Thay điện nước âm tường khi sửa toàn căn — tránh để lại hệ thống cũ.</li>
+</ul>
+
+<h2>Trung tâm bài viết sửa chữa — Đắk Lắk</h2>
+<p>Trang này là <strong>trụ cột SEO</strong> cho dịch vụ sửa chữa nhà tại Đắk Lắk. Bạn có thể đi sâu theo nhu cầu:</p>
+<h3>Sửa chữa theo hạng mục</h3>
+<ul>
+  <li><a href="/tin-tuc/sua-chua-cai-tao-nha-dak-lak">sửa chữa cải tạo nhà Đắk Lắk</a> · <a href="/tin-tuc/sua-chua-nha-tron-goi-dak-lak">sửa chữa nhà trọn gói Đắk Lắk</a> · <a href="/tin-tuc/sua-nha-cu-dak-lak">sửa nhà cũ Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/sua-mai-nha-dak-lak">sửa mái nhà Đắk Lắk</a> · <a href="/tin-tuc/sua-nha-tham-dot-dak-lak">sửa nhà thấm dột Đắk Lắk</a> · <a href="/tin-tuc/chong-tham-nha-dak-lak">chống thấm nhà Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/sua-dien-nuoc-nha-dak-lak">sửa điện nước nhà Đắk Lắk</a> · <a href="/tin-tuc/sua-tuong-nut-nha-dak-lak">sửa tường nứt nhà Đắk Lắk</a> · <a href="/tin-tuc/gia-co-nha-cu-dak-lak">gia cố nhà cũ Đắk Lắk</a></li>
+</ul>
+<h3>Theo khu vực</h3>
+<ul>
+  <li><a href="/tin-tuc/sua-chua-nha-buon-ma-thuot">sửa chữa nhà Buôn Ma Thuột</a> · <a href="/tin-tuc/sua-chua-nha-buon-ho-dak-lak">sửa chữa nhà Buôn Hồ</a> · <a href="/tin-tuc/sua-chua-nha-ea-kar-dak-lak">sửa chữa nhà Ea Kar</a></li>
+  <li><a href="/tin-tuc/sua-chua-nha-krong-ana-dak-lak">sửa chữa nhà Krông Ana</a> · <a href="/tin-tuc/sua-chua-nha-krong-buk-dak-lak">sửa chữa nhà Krông Búk</a></li>
+</ul>
+<h3>Xây dựng &amp; cải tạo liên quan</h3>
+<ul>
+  <li><a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo nhà Đắk Lắk</a> · <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a></li>
+</ul>
+
+<h2>Câu hỏi thường gặp về sửa chữa nhà Đắk Lắk</h2>
+<h3>Sửa chữa nhà Đắk Lắk mất bao lâu?</h3>
+<p>Sửa nhẹ 2–4 tuần; sửa toàn căn 2–4 tháng tùy hiện trạng. Sao Khuê báo tiến độ cụ thể sau khảo sát.</p>
+<h3>Có thể ở trong nhà khi sửa không?</h3>
+<p>Có thể với sửa từng phần — Sao Khuê che chắn, vệ sinh hàng ngày. Sửa toàn diện nên tạm chuyển khu vực sinh hoạt.</p>
+<h3>Sửa chữa có bảo hành không?</h3>
+<p>Có — chống thấm 3–5 năm, hoàn thiện 1–2 năm theo hạng mục. Biên bản nghiệm thu kèm hợp đồng.</p>
+<h3>Sao Khuê có nhận sửa từng hạng mục không?</h3>
+<p>Có — không bắt buộc gói trọn. Chủ nhà chọn sửa mái, WC, điện nước riêng lẻ hoặc trọn gói.</p>
+<h3>Khi nào nên cải tạo thay vì chỉ sửa chữa?</h3>
+<p>Khi cần thay đổi lớn công năng, mặt tiền, bố trí phòng — cải tạo đầu tư lớn hơn nhưng nâng giá trị nhà rõ rệt. Tư vấn miễn phí tại trang cải tạo nhà Đắk Lắk.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn sửa chữa nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-47.jpg" alt="sua-chua-nha-dak-lak-3" loading="lazy" decoding="async" />
+<figcaption>sua-chua-nha-dak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
+  $mt$Sửa Chữa Nhà Đắk Lắk | Chống Thấm & Gia Cố | Sao Khuê$mt$,
+  $md$Dịch vụ sửa chữa nhà Đắk Lắk uy tín: chống thấm, gia cố, sửa điện nước, hoàn thiện. Khảo sát miễn phí, bảo hành theo hạng mục. Gọi 0909 075 668.$md$,
+  $mk$sửa chữa nhà Đắk Lắk, chống thấm nhà Đắk Lắk, gia cố nhà cũ Đắk Lắk, sửa nhà Buôn Ma Thuột, sửa chữa nhà trọn gói Đắk Lắk, kiến trúc sao khuê$mk$,
+  now(),
+  now()
+)
+ON CONFLICT (slug) DO UPDATE SET
+  title = EXCLUDED.title,
+  category = EXCLUDED.category,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  image_url = EXCLUDED.image_url,
+  meta_title = EXCLUDED.meta_title,
+  meta_description = EXCLUDED.meta_description,
+  meta_keywords = EXCLUDED.meta_keywords,
+  updated_at = now();
+INSERT INTO posts (
+  slug, title, category, excerpt, content, image_url,
+  meta_title, meta_description, meta_keywords, created_at, updated_at
+) VALUES (
+  $slug$cai-tao-nha-dak-lak$slug$,
+  $title$Cải Tạo Nhà Tại Đắk Lắk — Nâng Cấp Không Gian Sống$title$,
+  $cat$tin-tuc$cat$,
+  $excerpt$Cải tạo nhà Đắk Lắk: tái bố trí phòng, làm mới mặt tiền, gia cố kết cấu. Sao Khuê thiết kế 2D/3D + thi công trọn gói — 0909 075 668.$excerpt$,
+  $content$<h2>Cải tạo nhà Đắk Lắk — Nâng cấp không gian mà không xây mới</h2>
+<p><strong>Cải tạo nhà Đắk Lắk</strong> giúp nâng cấp căn nhà 15–30 năm tại <strong>Buôn Ma Thuột</strong> và các huyện — tái bố trí phòng, làm mới mặt tiền, mở rộng bếp hoặc WC mà không cần phá bỏ xây mới hoàn toàn. Khi kết cấu còn tốt, cải tạo thường tiết kiệm 30–50% so với xây mới.</p>
+<p><strong>Kiến Trúc Sao Khuê</strong> nhận <strong>cải tạo nhà Đắk Lắk</strong> trọn gói: khảo sát, phương án 2D/3D (nếu cần), gia cố kết cấu, thi công và bàn giao — cam kết minh bạch tiến độ và vật liệu đúng hợp đồng.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-53.jpg" alt="cai-tao-nha-dak-lak-1" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-dak-lak-1</figcaption>
+</figure>
+
+<h2>Dịch vụ cải tạo nhà Đắk Lắk của Sao Khuê</h2>
+<ul>
+  <li><strong>Tái bố trí phòng:</strong> Gộp, tách phòng, mở rộng bếp, thêm WC.</li>
+  <li><strong>Mặt tiền:</strong> Ốp đá, sơn, thay cửa nhôm kính, lan can mới.</li>
+  <li><strong>Gia cố kết cấu:</strong> Xử lý trước khi đục tường, mở rộng phòng.</li>
+  <li><strong>Điện nước mới:</strong> Âm tường, thiết bị đồng bộ phong cách.</li>
+  <li><strong>Sân thượng, giếng trời:</strong> Tận dụng không gian, lấy sáng tự nhiên.</li>
+</ul>
+<p>Tham khảo <a href="/tin-tuc/cai-tao-nha-cu-dak-lak">cải tạo nhà cũ Đắk Lắk</a>, <a href="/tin-tuc/tai-thiet-nha-dak-lak">tái thiết nhà Đắk Lắk</a> và <a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a> để chọn phương án phù hợp.</p>
+
+<h2>Khi nào nên cải tạo thay vì xây mới?</h2>
+<ul>
+  <li>Kết cấu còn tốt — móng, cột, dầm ổn định.</li>
+  <li>Cần thay đổi công năng — thêm phòng, mở bếp, kinh doanh tầng trệt.</li>
+  <li>Ngân sách hạn chế — cải tạo nhanh hơn, rẻ hơn xây mới.</li>
+  <li>Quy hoạch không cho phép xây mới hoàn toàn.</li>
+  <li>Muốn giữ vị trí, hướng nhà hiện tại.</li>
+</ul>
+
+<h2>Quy trình cải tạo nhà Đắk Lắk tại Sao Khuê</h2>
+<ol>
+  <li><strong>Khảo sát &amp; đề xuất:</strong> Đo hiện trạng, phác thảo phương án, phối cảnh 3D (nếu đổi mặt tiền).</li>
+  <li><strong>Dự toán &amp; hợp đồng:</strong> Tiến độ, thanh toán 4–5 đợt theo giai đoạn.</li>
+  <li><strong>Gia cố (nếu cần):</strong> Xử lý kết cấu trước khi đục tường.</li>
+  <li><strong>Thi công cải tạo:</strong> Điện nước âm tường, hoàn thiện, lắp cửa thiết bị.</li>
+  <li><strong>Bàn giao &amp; bảo hành:</strong> Vệ sinh, biên bản nghiệm thu từng hạng mục.</li>
+</ol>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-27.jpg" alt="cai-tao-nha-dak-lak-2" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-dak-lak-2</figcaption>
+</figure>
+
+<h2>Chi phí cải tạo nhà Đắk Lắk (tham khảo 2026)</h2>
+<table>
+  <thead><tr><th>Phạm vi cải tạo</th><th>Đơn giá tham khảo</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Cải tạo một phần (bếp, WC)</td><td>3 – 6 triệu đ/m²</td><td>Không đụng kết cấu</td></tr>
+    <tr><td>Cải tạo toàn căn</td><td>6 – 12 triệu đ/m²</td><td>Điện nước + hoàn thiện mới</td></tr>
+    <tr><td>Tái thiết + gia cố</td><td>10 – 18 triệu đ/m²</td><td>Thay đổi lớn công năng</td></tr>
+  </tbody>
+</table>
+
+<h2>Sai lầm thường gặp khi cải tạo nhà</h2>
+<ul>
+  <li>Đục tường không đánh giá kết cấu — ảnh hưởng cột, dầm chịu lực.</li>
+  <li>Cải tạo từng phần rời rạc — màu sơn, gạch không đồng bộ.</li>
+  <li>Tiết kiệm chống thấm sân thượng — thấm sau 1–2 mùa mưa.</li>
+  <li>Không xin phép khi thay đổi mặt tiền lớn — rủi ro pháp lý.</li>
+</ul>
+
+<h2>Lưu ý cải tạo tại Tây Nguyên</h2>
+<ul>
+  <li>Gia cố và chống thấm trước khi hoàn thiện — mùa mưa Đắk Lắk kéo dài.</li>
+  <li>Giếng trời, cửa sổ — tận dụng khí hậu mát, giảm điện điều hòa.</li>
+  <li>Vật liệu cách nhiệt khi mở rộng mái hiên, sân thượng.</li>
+  <li>Phối hợp tiến độ nếu tầng trệt kinh doanh — giảm gián đoạn.</li>
+</ul>
+
+<h2>Trung tâm bài viết cải tạo — Đắk Lắk</h2>
+<p>Trang này là <strong>trụ cột SEO</strong> cho dịch vụ cải tạo nhà tại Đắk Lắk. Bạn có thể đi sâu theo nhu cầu:</p>
+<h3>Cải tạo theo loại nhà</h3>
+<ul>
+  <li><a href="/tin-tuc/cai-tao-nha-cu-dak-lak">cải tạo nhà cũ Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-nha-tron-goi-dak-lak">cải tạo nhà trọn gói Đắk Lắk</a> · <a href="/tin-tuc/lam-moi-nha-cu-dak-lak">làm mới nhà cũ Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/cai-tao-nha-ong-dak-lak">cải tạo nhà ống Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-nha-2-tang-dak-lak">cải tạo nhà 2 tầng Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-mat-tien-nha-dak-lak">cải tạo mặt tiền nhà Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/nang-cap-nha-cu-dak-lak">nâng cấp nhà cũ Đắk Lắk</a> · <a href="/tin-tuc/tai-thiet-nha-dak-lak">tái thiết nhà Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-san-thuong-dak-lak">cải tạo sân thượng Đắk Lắk</a></li>
+</ul>
+<h3>Theo khu vực</h3>
+<ul>
+  <li><a href="/tin-tuc/cai-tao-nha-buon-ma-thuot">cải tạo nhà Buôn Ma Thuột</a> · <a href="/tin-tuc/cai-tao-nha-buon-ho-dak-lak">cải tạo nhà Buôn Hồ</a> · <a href="/tin-tuc/cai-tao-nha-ea-kar-dak-lak">cải tạo nhà Ea Kar</a></li>
+  <li><a href="/tin-tuc/cai-tao-nha-krong-nang-dak-lak">cải tạo nhà Krông Năng</a> · <a href="/tin-tuc/cai-tao-nha-pho-dak-lak">cải tạo nhà phố Đắk Lắk</a></li>
+</ul>
+<h3>Sửa chữa &amp; xây mới liên quan</h3>
+<ul>
+  <li><a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a> · <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> · <a href="/tin-tuc/nang-tang-nha-pho-dak-lak">nâng tầng nhà phố Đắk Lắk</a></li>
+</ul>
+
+<h2>Câu hỏi thường gặp về cải tạo nhà Đắk Lắk</h2>
+<h3>Cải tạo nhà Đắk Lắk khác sửa chữa thế nào?</h3>
+<p>Cải tạo thay đổi công năng, mặt tiền, bố trí phòng — sửa chữa chủ yếu khắc phục hư hỏng. Cải tạo thường đầu tư lớn hơn nhưng nâng giá trị nhà rõ rệt.</p>
+<h3>Cải tạo nhà cũ có cần phá tường không?</h3>
+<p>Tùy phương án — mở rộng phòng, giếng trời cần đục tường có đánh giá kết cấu. Sao Khuê khảo sát trước khi đề xuất.</p>
+<h3>Chi phí cải tạo so với xây mới?</h3>
+<p>Thường tiết kiệm 30–50% nếu kết cấu còn tốt. Nếu móng yếu, có thể xây mới kinh tế hơn — tư vấn miễn phí.</p>
+<h3>Có thiết kế 3D trước khi cải tạo không?</h3>
+<p>Có — đặc biệt khi đổi mặt tiền, bố trí phòng. Chủ nhà duyệt phối cảnh trước khi thi công.</p>
+<h3>Bảo hành sau cải tạo?</h3>
+<p>Theo hạng mục: chống thấm 3–5 năm, hoàn thiện 1–2 năm, gia cố theo thỏa thuận hợp đồng.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+
+<h2>Liên hệ tư vấn cải tạo nhà Đắk Lắk</h2>
+<p>Nếu bạn đang tìm kiếm giải pháp <strong>cải tạo nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<ul>
+  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
+  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+</ul>
+<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/sao-khue/sk-12.jpg" alt="cai-tao-nha-dak-lak-3" loading="lazy" decoding="async" />
+<figcaption>cai-tao-nha-dak-lak-3</figcaption>
+</figure>$content$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
+  $mt$Cải Tạo Nhà Đắk Lắk | Tái Thiết Trọn Gói | Sao Khuê$mt$,
+  $md$Dịch vụ cải tạo nhà Đắk Lắk: nâng cấp nhà cũ, mặt tiền, mở rộng phòng. Khảo sát miễn phí, bảo hành theo hạng mục. Gọi 0909 075 668.$md$,
+  $mk$cải tạo nhà Đắk Lắk, nâng cấp nhà cũ Đắk Lắk, làm mới nhà cũ Đắk Lắk, cải tạo nhà phố Đắk Lắk, tái thiết nhà Buôn Ma Thuột, kiến trúc sao khuê$mk$,
   now(),
   now()
 )
@@ -5690,7 +6010,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="sua-chua-cai-tao-nha-tphcm-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-cai-tao-nha-tphcm-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà TP.HCM | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà TP.HCM uy tín: Quận 1–12, Thủ Đức, Bình Thạnh, Gò Vấp, Bình Chánh… Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm, sửa chữa nhà theo quận, công ty sửa nhà tphcm, kiến trúc sao khuê$mk$,
@@ -5761,7 +6081,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Bình Thạnh | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Bình Thạnh uy tín: chống thấm, sửa nhà cũ, cải tạo trọn gói. Khảo sát miễn phí. Hotline 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Bình Thạnh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Bình Thạnh, cải tạo nhà cũ Quận Bình Thạnh, kiến trúc sao khuê$mk$,
@@ -5832,7 +6152,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Thủ Đức | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Thủ Đức: nhà phố, biệt thự khu đô thị. Báo giá minh bạch, bảo hành hạng mục. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Thủ Đức, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói TP. Thủ Đức, cải tạo nhà cũ TP. Thủ Đức, kiến trúc sao khuê$mk$,
@@ -5903,7 +6223,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Quận 7 | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Quận 7: biệt thự, nhà phố khu Nam. Khảo sát miễn phí, thi công trọn gói. 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Quận 7, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 7, cải tạo nhà cũ Quận 7, kiến trúc sao khuê$mk$,
@@ -5974,7 +6294,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Gò Vấp | Trọn Gói | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Gò Vấp uy tín: sửa nhà cũ, chống thấm, cải tạo trọn gói. Khảo sát tận nơi. Hotline 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Gò Vấp, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Gò Vấp, cải tạo nhà cũ Quận Gò Vấp, kiến trúc sao khuê$mk$,
@@ -6045,7 +6365,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Bình Chánh | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Bình Chánh: Vĩnh Lộc, Tân Nhựt, Bình Hưng… Báo giá rõ ràng, thi công uy tín. 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Bình Chánh, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Bình Chánh, cải tạo nhà cũ Huyện Bình Chánh, kiến trúc sao khuê$mk$,
@@ -6116,7 +6436,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/sao-khue/sk-07.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Tân Phú | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa cải tạo nhà Tân Phú: khảo sát miễn phí, báo giá hạng mục. Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Tân Phú, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận Tân Phú, cải tạo nhà cũ Quận Tân Phú, kiến trúc sao khuê$mk$,
@@ -6187,7 +6507,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/sao-khue/sk-08.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Quận 1 | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Quận 1: kinh nghiệm nhà phố hẹp, shophouse. Báo giá minh bạch. Gọi 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Quận 1, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Quận 1, cải tạo nhà cũ Quận 1, kiến trúc sao khuê$mk$,
@@ -6258,7 +6578,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/sao-khue/sk-09.jpg$img$,
   $mt$Sửa Chữa Cải Tạo Nhà Hóc Môn | Sao Khuê$mt$,
   $md$Sửa chữa cải tạo nhà Hóc Môn uy tín: sửa nhà cũ, cải tạo trọn gói theo xã. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$sửa chữa cải tạo nhà Hóc Môn, sửa chữa cải tạo nhà TP.HCM, sửa nhà trọn gói Huyện Hóc Môn, cải tạo nhà cũ Huyện Hóc Môn, kiến trúc sao khuê$mk$,
@@ -6339,7 +6659,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="cong-ty-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-10.jpg$img$,
   $mt$Công ty xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6418,7 +6738,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="xay-nha-tuy-hoa-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tuy-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/sao-khue/sk-11.jpg$img$,
   $mt$Xây nhà Tuy Hòa | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6497,7 +6817,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/sao-khue/sk-12.jpg$img$,
   $mt$Nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6577,7 +6897,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-phan-tho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/sao-khue/sk-13.jpg$img$,
   $mt$Thi công nhà phần thô Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6656,7 +6976,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-23.jpg" alt="xay-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-14.jpg$img$,
   $mt$Xây biệt thự Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6744,7 +7064,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-17.jpg" alt="chi-phi-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/sao-khue/sk-15.jpg$img$,
   $mt$Chi phí xây nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ chi phí xây nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$chi phí xây nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6825,7 +7145,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-16.jpg$img$,
   $mt$Mẫu nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$mẫu nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6904,7 +7224,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-ven-bien-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-ven-bien-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-17.jpg$img$,
   $mt$Xây nhà ven biển Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà ven biển Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà ven biển Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -6985,7 +7305,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="thiet-ke-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/sao-khue/sk-18.jpg$img$,
   $mt$Thiết kế nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7066,7 +7386,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-05.jpg" alt="nha-thau-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-17.jpg$img$,
+  $img$/images/sao-khue/sk-19.jpg$img$,
   $mt$Nhà thầu xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7145,7 +7465,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-36.jpg" alt="xay-nha-song-cau-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-song-cau-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-18.jpg$img$,
+  $img$/images/sao-khue/sk-20.jpg$img$,
   $mt$Xây nhà Sông Cầu Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Sông Cầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Sông Cầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7224,7 +7544,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-10.jpg" alt="xay-nha-cap-4-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-cap-4-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-19.jpg$img$,
+  $img$/images/sao-khue/sk-21.jpg$img$,
   $mt$Xây nhà cấp 4 Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà cấp 4 Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà cấp 4 Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7304,7 +7624,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-46.jpg" alt="hoan-thien-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-20.jpg$img$,
+  $img$/images/sao-khue/sk-22.jpg$img$,
   $mt$Hoàn thiện nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$hoàn thiện nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7383,7 +7703,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-2-tang-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-21.jpg$img$,
+  $img$/images/sao-khue/sk-23.jpg$img$,
   $mt$Xây nhà 2 tầng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7464,7 +7784,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="kien-truc-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>kien-truc-nha-pho-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/sao-khue/sk-24.jpg$img$,
   $mt$Kiến trúc nhà phố Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ kiến trúc nhà phố Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$kiến trúc nhà phố Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -7667,7 +7987,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-22.jpg" alt="cong-ty-xay-dung-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>cong-ty-xay-dung-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/sao-khue/sk-25.jpg$img$,
   $mt$Công ty xây dựng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ công ty xây dựng Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$công ty xây dựng Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -7871,7 +8191,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-nha-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-26.jpg$img$,
   $mt$Xây nhà Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Buôn Ma Thuột uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Buôn Ma Thuột, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -8075,7 +8395,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-33.jpg" alt="nha-pho-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>nha-pho-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/sao-khue/sk-27.jpg$img$,
   $mt$Nhà phố Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ nhà phố Buôn Ma Thuột uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà phố Buôn Ma Thuột, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -8279,7 +8599,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-phan-tho-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-phan-tho-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/sao-khue/sk-28.jpg$img$,
   $mt$Thi công nhà phần thô Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phần thô Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phần thô Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -8482,7 +8802,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-09.jpg" alt="xay-biet-thu-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-biet-thu-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-27.jpg$img$,
+  $img$/images/sao-khue/sk-29.jpg$img$,
   $mt$Xây biệt thự Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây biệt thự Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây biệt thự Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -8685,7 +9005,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="bao-gia-xay-nha-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-28.jpg$img$,
+  $img$/images/sao-khue/sk-30.jpg$img$,
   $mt$Báo giá xây nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ báo giá xây nhà Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$báo giá xây nhà Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, kiến trúc sao khuê$mk$,
@@ -8889,7 +9209,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-06.jpg" alt="mau-nha-pho-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>mau-nha-pho-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-29.jpg$img$,
+  $img$/images/sao-khue/sk-31.jpg$img$,
   $mt$Mẫu nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ mẫu nhà phố Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$mẫu nhà phố Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -9092,7 +9412,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="xay-nha-1-tret-1-lau-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-tret-1-lau-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/sao-khue/sk-32.jpg$img$,
   $mt$Xây nhà 1 trệt 1 lầu Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 1 trệt 1 lầu Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 trệt 1 lầu Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -9295,7 +9615,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-14.jpg" alt="thiet-ke-biet-thu-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-biet-thu-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/sao-khue/sk-33.jpg$img$,
   $mt$Thiết kế biệt thự Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế biệt thự Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế biệt thự Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -9498,7 +9818,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-44.jpg" alt="nha-thau-xay-dung-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>nha-thau-xay-dung-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/sao-khue/sk-34.jpg$img$,
   $mt$Nhà thầu xây dựng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ nhà thầu xây dựng Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà thầu xây dựng Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -9702,7 +10022,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-30.jpg" alt="xay-nha-buon-ho-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-buon-ho-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$Xây nhà Buôn Hồ Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Buôn Hồ Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Buôn Hồ Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -9905,7 +10225,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-07.jpg" alt="xay-nha-cap-4-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-cap-4-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$Xây nhà cấp 4 Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà cấp 4 Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà cấp 4 Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -10108,7 +10428,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-32.jpg" alt="hoan-thien-nha-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>hoan-thien-nha-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$Hoàn thiện nhà Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$hoàn thiện nhà Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -10311,7 +10631,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-12.jpg" alt="xay-nha-3-tang-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-38.jpg$img$,
   $mt$Xây nhà 3 tầng Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -10515,7 +10835,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-27.jpg" alt="kien-truc-nha-pho-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>kien-truc-nha-pho-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$Kiến trúc nhà phố Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ kiến trúc nhà phố Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$kiến trúc nhà phố Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -10594,7 +10914,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-53.jpg" alt="thi-cong-nha-tron-goi-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$Thi công nhà trọn gói Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -10675,7 +10995,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-17.jpg" alt="thiet-ke-biet-thu-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-biet-thu-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$Thiết kế biệt thự Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế biệt thự Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế biệt thự Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -10754,7 +11074,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-26.jpg" alt="xay-nha-3-tang-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-3-tang-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-42.jpg$img$,
   $mt$Xây nhà 3 tầng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 3 tầng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 3 tầng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -10833,7 +11153,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-1-tret-1-lau-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-tret-1-lau-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$Xây nhà 1 trệt 1 lầu Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 1 trệt 1 lầu Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 trệt 1 lầu Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -10912,7 +11232,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="nha-ong-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-ong-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$Nhà ống Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà ống Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà ống Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -10991,7 +11311,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-41.jpg" alt="xay-homestay-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-homestay-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$Xây homestay Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây homestay Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây homestay Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11070,7 +11390,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-08.jpg" alt="sua-chua-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>sua-chua-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/sao-khue/sk-46.jpg$img$,
   $mt$Sửa chữa nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ sửa chữa nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$sửa chữa nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11149,7 +11469,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-15.jpg" alt="cai-tao-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>cai-tao-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/sao-khue/sk-47.jpg$img$,
   $mt$Cải tạo nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ cải tạo nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$cải tạo nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11228,7 +11548,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-24.jpg" alt="nang-tang-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nang-tang-nha-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$Nâng tầng nhà Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nâng tầng nhà Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nâng tầng nhà Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11307,7 +11627,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-02.jpg" alt="xin-giay-phep-xay-dung-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xin-giay-phep-xay-dung-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-49.jpg$img$,
   $mt$Xin giấy phép xây dựng Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xin giấy phép xây dựng Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xin giấy phép xây dựng Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11386,7 +11706,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-35.jpg" alt="xay-nha-gia-re-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-gia-re-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-48.jpg$img$,
+  $img$/images/sao-khue/sk-50.jpg$img$,
   $mt$Xây nhà giá rẻ Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà giá rẻ Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà giá rẻ Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11465,7 +11785,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-13.jpg" alt="thi-cong-nha-pho-tuy-hoa-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-tuy-hoa-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-49.jpg$img$,
+  $img$/images/sao-khue/sk-51.jpg$img$,
   $mt$Thi công nhà phố Tuy Hòa | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phố Tuy Hòa uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà phố Tuy Hòa, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11544,7 +11864,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-01.jpg" alt="xay-nha-dong-hoa-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-dong-hoa-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-50.jpg$img$,
+  $img$/images/sao-khue/sk-52.jpg$img$,
   $mt$Xây nhà Đông Hòa Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Đông Hòa Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Đông Hòa Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11623,7 +11943,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-25.jpg" alt="xay-nha-tuy-an-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-tuy-an-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-51.jpg$img$,
+  $img$/images/sao-khue/sk-53.jpg$img$,
   $mt$Xây nhà Tuy An Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà Tuy An Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà Tuy An Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11702,7 +12022,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-51.jpg" alt="nha-vuon-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>nha-vuon-phu-yen-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-52.jpg$img$,
+  $img$/images/sao-khue/sk-01.jpg$img$,
   $mt$Nhà vườn Phú Yên | Sao Khuê$mt$,
   $md$Dịch vụ nhà vườn Phú Yên uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà vườn Phú Yên, xây nhà Phú Yên, xây nhà trọn gói Phú Yên, Tuy Hòa, kiến trúc sao khuê$mk$,
@@ -11905,7 +12225,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-50.jpg" alt="thi-cong-nha-tron-goi-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-tron-goi-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-53.jpg$img$,
+  $img$/images/sao-khue/sk-02.jpg$img$,
   $mt$Thi công nhà trọn gói Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà trọn gói Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thi công nhà trọn gói Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -12108,7 +12428,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-52.jpg" alt="thiet-ke-nha-dep-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>thiet-ke-nha-dep-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/sao-khue/sk-03.jpg$img$,
   $mt$Thiết kế nhà đẹp Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà đẹp Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$thiết kế nhà đẹp Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -12311,7 +12631,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-19.jpg" alt="xay-nha-2-tang-buon-ma-thuot-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-2-tang-buon-ma-thuot-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/sao-khue/sk-04.jpg$img$,
   $mt$Xây nhà 2 tầng Buôn Ma Thuột | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà 2 tầng Buôn Ma Thuột uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 2 tầng Buôn Ma Thuột, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -12515,7 +12835,7 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-38.jpg" alt="nha-ong-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>nha-ong-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-05.jpg$img$,
   $mt$Nhà ống Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ nhà ống Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$nhà ống Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
@@ -12718,387 +13038,10 @@ INSERT INTO posts (
 <img src="/images/sao-khue/sk-37.jpg" alt="xay-nha-vuon-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>xay-nha-vuon-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-06.jpg$img$,
   $mt$Xây nhà vườn Đắk Lắk | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà vườn Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà vườn Đắk Lắk, xây dựng nhà Đắk Lắk, thi công nhà Đắk Lắk, nhà phố Buôn Ma Thuột, báo giá xây nhà Đắk Lắk, kiến trúc sao khuê$mk$,
-  now(),
-  now()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = now();
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$sua-chua-nha-dak-lak$slug$,
-  $title$Sửa Chữa Nhà Cũ Tại Đắk Lắk$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$sửa chữa nhà Đắk Lắk: Sao Khuê khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm — hotline 0909 075 668.$excerpt$,
-  $content$<h2>Sửa chữa nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
-<p><strong>sửa chữa nhà Đắk Lắk</strong> là nhu cầu cấp thiết khi nhà ở tại <strong>Đắk Lắk</strong> đã xuống cấp sau 10–25 năm sử dụng — xuất hiện thấm mái, nứt tường, sàn lún nhẹ, hệ thống điện nước lỗi thời. Với khí hậu cao nguyên mát, mưa lớn theo mùa (tháng 5–11) và nền đất bazan phổ biến tại Buôn Ma Thuột, Buôn Hồ, Ea Kar và các huyện, việc sửa chữa đúng kỹ thuật giúp kéo dài tuổi thọ công trình và tránh phát sinh chi phí khi làm ẩu.</p>
-<p><strong>Kiến Trúc Sao Khuê</strong> (TP.HCM) triển khai <strong>sửa chữa nhà Đắk Lắk</strong> — khảo sát hiện trạng miễn phí, báo giá từng hạng mục rõ ràng, thi công có giám sát kỹ thuật và bảo hành theo biên bản nghiệm thu.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-03.jpg" alt="sua-chua-nha-dak-lak-1" loading="lazy" decoding="async" />
-<figcaption>sua-chua-nha-dak-lak-1</figcaption>
-</figure>
-
-<h2>Khi nào nên sửa chữa nhà Đắk Lắk?</h2>
-<p>Gia chủ nên chủ động sửa chữa khi phát hiện một hoặc nhiều dấu hiệu sau tại nhà ở Đắk Lắk:</p>
-<ul>
-  <li><strong>Trần, tường bị ố vàng, bong tróc</strong> sau mùa mưa — dấu hiệu thấm mái hoặc khe hở mái hiên.</li>
-  <li><strong>Tường nứt dọc, ngang</strong> rộng hơn 2 mm — cần đánh giá gia cố trước khi trát lại.</li>
-  <li><strong>Điện chập, nước yếu, ống gỉ</strong> — nguy cơ cháy nổ, rò rỉ ngầm.</li>
-  <li><strong>Sàn lún, nghiêng cửa</strong> — có thể liên quan móng hoặc nền đất.</li>
-  <li><strong>Chuẩn bị cho thuê hoặc bán nhà</strong> — nâng cấp nhanh để tăng giá trị tài sản.</li>
-</ul>
-<p>Hoãn sửa chữa khi trời mưa liên tục có thể khiến hư hỏng lan rộng — đặc biệt tại Tây Nguyên mùa mưa kéo dài.</p>
-
-<h2>sửa chữa nhà Đắk Lắk — Tiêu chí chọn đơn vị uy tín</h2>
-<p>Thị trường xây dựng Đắk Lắk có nhiều nhà thầu — chủ đất nên đánh giá <strong>sửa chữa nhà Đắk Lắk</strong> theo các tiêu chí khách quan:</p>
-<ul>
-  <li><strong>Hồ sơ công trình:</strong> Ảnh thực tế, địa điểm, quy mô tương tự yêu cầu của bạn.</li>
-  <li><strong>Hợp đồng rõ ràng:</strong> Vật liệu, tiến độ, thanh toán, bảo hành — không cam kết mơ hồ.</li>
-  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu từng giai đoạn, nhật ký thi công.</li>
-  <li><strong>Phản hồi khách hàng:</strong> Zalo, Google Maps, Facebook — đối chiếu nhiều nguồn.</li>
-</ul>
-<p>Sao Khuê minh bạch báo giá và cam kết bảo hành kết cấu 10 năm cho công trình xây mới.</p>
-
-
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-25.jpg" alt="sua-chua-nha-dak-lak-2" loading="lazy" decoding="async" />
-<figcaption>sua-chua-nha-dak-lak-2</figcaption>
-</figure>
-
-<h2>Quy trình sửa chữa nhà Đắk Lắk tại Sao Khuê</h2>
-<ol>
-  <li><strong>Tiếp nhận &amp; khảo sát:</strong> Ghi nhận hiện trạng — thấm, nứt, điện nước, ảnh chụp từng khu vực.</li>
-  <li><strong>Báo giá chi tiết:</strong> Tách từng hạng mục, thời gian, vật tư — không ép ký gói thừa.</li>
-  <li><strong>Che chắn &amp; thi công:</strong> Bảo vệ đồ đạc, vệ sinh hàng ngày, giám sát kỹ thuật.</li>
-  <li><strong>Nghiệm thu từng phần:</strong> Chống thấm, điện nước, hoàn thiện — ký biên bản.</li>
-  <li><strong>Bảo hành:</strong> Theo hạng mục — chống thấm 3–5 năm, hoàn thiện 1–2 năm.</li>
-</ol>
-<p>Tham khảo thêm: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-dep-dak-lak">xây nhà đẹp Đắk Lắk</a>.</p>
-
-<h2>Chi phí sửa chữa nhà Đắk Lắk (ước tính 2026)</h2>
-<table>
-  <thead><tr><th>Loại sửa chữa</th><th>Đơn giá tham khảo</th><th>Thời gian</th></tr></thead>
-  <tbody>
-    <tr><td>Sửa nhẹ (sơn, lát)</td><td>1,5 – 3 triệu đ/m²</td><td>2–4 tuần</td></tr>
-    <tr><td>Sửa WC, bếp, mái</td><td>4 – 7 triệu đ/m²</td><td>1–2 tháng</td></tr>
-    <tr><td>Sửa toàn diện + gia cố</td><td>8 – 15 triệu đ/m²</td><td>2–4 tháng</td></tr>
-  </tbody>
-</table>
-<p><em>Giá chưa gồm thiết kế nội thất. Liên hệ để khảo sát và báo giá chính xác theo hiện trạng nhà.</em></p>
-
-<h2>Sai lầm thường gặp khi sửa chữa nhà Đắk Lắk</h2>
-<ul>
-  <li><strong>Chỉ trát lại mà không xử lý thấm gốc</strong> — ố vàng tái phát sau mùa mưa.</li>
-  <li><strong>Tự thuê thợ rời</strong> — không đồng bộ tiến độ, khó đòi bảo hành.</li>
-  <li><strong>Bỏ qua gia cố</strong> khi tường nứt lớn — nguy cơ an toàn.</li>
-  <li><strong>Không nghiệm thu chống thấm</strong> — thi công lớp waterproof ẩu.</li>
-</ul>
-
-<h2>Checklist trước khi bắt đầu sửa chữa/cải tạo — sửa chữa nhà Đắk Lắk</h2>
-<p>Chuẩn bị kỹ trước khi ký hợp đồng giúp giảm rủi ro phát sinh và tranh chấp tiến độ tại Đắk Lắk:</p>
-<ul>
-  <li><strong>Giấy tờ đất:</strong> Sổ đỏ, quy hoạch, ranh giới — xác nhận không tranh chấp.</li>
-  <li><strong>Khảo sát địa chất:</strong> Đặc biệt đất bazan, vùng dốc — ảnh hưởng móng và chi phí.</li>
-  <li><strong>Ngân sách dự phòng:</strong> Thêm 10–15% cho phát sinh ngoài dự kiến (điện nước ngầm, đất yếu).</li>
-  <li><strong>Thời gian sinh hoạt:</strong> Nếu ở trong nhà khi sửa — lên kế hoạch tách khu vực thi công.</li>
-  <li><strong>Giấy phép xây dựng:</strong> Sao Khuê hỗ trợ hồ sơ nếu công trình yêu cầu.</li>
-  <li><strong>Phong cách &amp; công năng:</strong> Số phòng, gara, kinh doanh — thống nhất trước khi vẽ.</li>
-</ul>
-
-<h2>Thời gian thi công sửa chữa nhà Đắk Lắk</h2>
-<table>
-  <thead><tr><th>Quy mô</th><th>Thời gian ước tính</th><th>Ghi chú</th></tr></thead>
-  <tbody>
-    <tr><td>Sửa một phòng (WC, bếp)</td><td>2 – 3 tuần</td><td>Không đụng kết cấu</td></tr>
-    <tr><td>Sửa mái, chống thấm</td><td>1 – 2 tuần</td><td>Ưu tiên mùa khô</td></tr>
-    <tr><td>Sửa toàn căn</td><td>2 – 4 tháng</td><td>Gia cố + hoàn thiện</td></tr>
-  </tbody>
-</table>
-<p>Tiến độ thực tế phụ thuộc hiện trạng nhà và thời tiết — Sao Khuê cam kết báo cáo tiến độ hàng tuần.</p>
-
-<h2>Hợp đồng và thanh toán khi sửa chữa nhà Đắk Lắk</h2>
-<p>Sao Khuê áp dụng mô hình thanh toán theo tiến độ nghiệm thu — minh bạch, bảo vệ quyền lợi chủ đầu tư:</p>
-<ol>
-  <li><strong>Đợt 1 (20–30%):</strong> Ký hợp đồng, triển khai móng hoặc khảo sát + chuẩn bị mặt bằng.</li>
-  <li><strong>Đợt 2 (25–30%):</strong> Hoàn thành khung BTCT / gia cố kết cấu chính.</li>
-  <li><strong>Đợt 3 (25–30%):</strong> Hoàn thành mái, tường, điện nước âm tường.</li>
-  <li><strong>Đợt 4 (15–20%):</strong> Hoàn thiện, nghiệm thu, bàn giao.</li>
-</ol>
-<p>Hợp đồng ghi rõ: vật liệu, đơn giá, thời gian, bảo hành, xử lý phát sinh. Chủ nhà không thanh toán đợt tiếp theo khi hạng mục trước chưa nghiệm thu.</p>
-<p>Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">báo giá online</a> để nhận mẫu hợp đồng và dự toán chi tiết cho <strong>sửa chữa nhà Đắk Lắk</strong>.</p>
-
-<h2>Lưu ý khi triển khai tại Đắk Lắk</h2>
-<p>Đắk Lắk có đặc thù khí hậu và địa hình khác vùng đồng bằng — áp dụng kinh nghiệm thi công miền Nam cần điều chỉnh:</p>
-<ul>
-  <li><strong>Cách nhiệt:</strong> Tường, mái, kính Low-E — tiết kiệm điện sưởi/điều hòa ban đêm se lạnh.</li>
-  <li><strong>Mái dốc ≥ 15°:</strong> Thoát nước mưa nhanh — tránh đọng nước, thấm trần.</li>
-  <li><strong>Móng trên bazan:</strong> Khảo sát kỹ — tránh đào sâu vùng đá, xử lý nền yếu.</li>
-  <li><strong>Mùa thi công:</strong> Ưu tiên đổ móng, khung tháng 12 – tháng 4; hoàn thiện có thể mùa mưa nếu mái kín.</li>
-  <li><strong>Vận chuyển:</strong> Lên kế hoạch vật tư đặc chủng sớm — khoảng cách từ TP.HCM ~340 km.</li>
-</ul>
-
-<h2>Vì sao chọn Sao Khuê cho sửa chữa nhà Đắk Lắk?</h2>
-<ul>
-  <li><strong>Kinh nghiệm Tây Nguyên &amp; miền Nam:</strong> Đã triển khai nhiều công trình tại Đắk Lắk — am hiểu khí hậu, địa hình.</li>
-  <li><strong>Một đầu mối:</strong> Thiết kế + thi công (hoặc sửa chữa trọn gói) — tránh lệch bản vẽ và phát sinh.</li>
-  <li><strong>Bảo hành kết cấu 10 năm</strong> (xây mới) / bảo hành theo hạng mục (sửa, cải tạo).</li>
-  <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — thanh toán theo tiến độ nghiệm thu.</li>
-  <li><strong>Giám sát từ xa:</strong> Ảnh, video tiến độ hàng tuần qua Zalo — thuận tiện chủ nhà ở TP.HCM.</li>
-</ul>
-<p>Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a> trên website Sao Khuê.</p>
-
-<h2>Bài viết liên quan — sửa chữa nhà Đắk Lắk</h2>
-<p>Tham khảo thêm các trang trụ cột và bài cùng chủ đề tại <strong>Đắk Lắk</strong>:</p>
-<h3>Trang trụ cột</h3>
-<ul>
-  <li><a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo nhà Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a></li>
-</ul>
-<h3>Cùng nhóm dịch vụ</h3>
-<ul>
-  <li><a href="/tin-tuc/sua-chua-cai-tao-nha-dak-lak">sửa chữa cải tạo nhà Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/sua-nha-cu-dak-lak">sửa nhà cũ Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/sua-chua-nha-tron-goi-dak-lak">sửa chữa nhà trọn gói Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/sua-chua-nha-pho-dak-lak">sửa chữa nhà phố Đắk Lắk</a></li>
-</ul>
-
-<h2>Câu hỏi thường gặp về sửa chữa nhà Đắk Lắk</h2>
-<h3>sửa chữa nhà Đắk Lắk mất bao lâu?</h3>
-<p>Sửa nhẹ 2–4 tuần; sửa toàn căn 2–4 tháng tùy hiện trạng. Sao Khuê báo tiến độ cụ thể sau khảo sát.</p>
-<h3>Có thể ở trong nhà khi sửa không?</h3>
-<p>Có thể với sửa từng phần — Sao Khuê che chắn, vệ sinh hàng ngày. Sửa toàn diện nên tạm chuyển khu vực sinh hoạt.</p>
-<h3>Chi phí sửa chữa nhà Đắk Lắk phát sinh thường do đâu?</h3>
-<p>Phát hiện thêm hư hỏng kết cấu, điện nước ngầm, tường nứt sâu — cần báo chủ nhà trước khi thi công bổ sung.</p>
-<h3>Sửa xong có bảo hành không?</h3>
-<p>Có — chống thấm 3–5 năm, hoàn thiện 1–2 năm theo hạng mục. Biên bản nghiệm thu kèm hợp đồng.</p>
-<h3>Sao Khuê có nhận sửa từng hạng mục không?</h3>
-<p>Có — không bắt buộc gói trọn. Chủ nhà chọn sửa mái, WC, điện nước riêng lẻ hoặc trọn gói.</p>
-<h3>Khi nào nên gia cố thay vì chỉ trát lại?</h3>
-<p>Khi vết nứt rộng hơn 2 mm, sàn lún, cột nghiêng — cần kỹ sư đánh giá trước khi hoàn thiện.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn sửa chữa nhà Đắk Lắk</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>sửa chữa nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-47.jpg" alt="sua-chua-nha-dak-lak-3" loading="lazy" decoding="async" />
-<figcaption>sua-chua-nha-dak-lak-3</figcaption>
-</figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
-  $mt$Sửa chữa nhà Đắk Lắk | Sao Khuê$mt$,
-  $md$Dịch vụ sửa chữa nhà Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
-  $mk$sửa chữa nhà Đắk Lắk, chống thấm nhà Đắk Lắk, gia cố nhà cũ Đắk Lắk, sửa nhà Buôn Ma Thuột, kiến trúc sao khuê$mk$,
-  now(),
-  now()
-)
-ON CONFLICT (slug) DO UPDATE SET
-  title = EXCLUDED.title,
-  category = EXCLUDED.category,
-  excerpt = EXCLUDED.excerpt,
-  content = EXCLUDED.content,
-  image_url = EXCLUDED.image_url,
-  meta_title = EXCLUDED.meta_title,
-  meta_description = EXCLUDED.meta_description,
-  meta_keywords = EXCLUDED.meta_keywords,
-  updated_at = now();
-INSERT INTO posts (
-  slug, title, category, excerpt, content, image_url,
-  meta_title, meta_description, meta_keywords, created_at, updated_at
-) VALUES (
-  $slug$cai-tao-nha-dak-lak$slug$,
-  $title$Cải Tạo Nhà Trọn Gói Tại Đắk Lắk$title$,
-  $cat$tin-tuc$cat$,
-  $excerpt$cải tạo nhà Đắk Lắk: Sao Khuê khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm — hotline 0909 075 668.$excerpt$,
-  $content$<h2>Cải tạo nhà Đắk Lắk — Giải pháp chuyên nghiệp tại Đắk Lắk</h2>
-<p><strong>cải tạo nhà Đắk Lắk</strong> giúp nâng cấp không gian sống tại <strong>Đắk Lắk</strong> mà không cần phá bỏ xây mới hoàn toàn — phù hợp nhà 15–30 năm cần làm mới mặt tiền, tái bố trí phòng, mở rộng bếp hoặc WC. Khí hậu cao nguyên mát, mưa lớn theo mùa (tháng 5–11) và nền đất bazan phổ biến tại Buôn Ma Thuột, Buôn Hồ, Ea Kar và các huyện đòi hỏi xử lý chống thấm và gia cố kết cấu trước khi hoàn thiện.</p>
-<p><strong>Kiến Trúc Sao Khuê</strong> nhận <strong>cải tạo nhà Đắk Lắk</strong> trọn gói: khảo sát, thiết kế phương án 2D/3D (nếu cần), thi công và bàn giao — cam kết minh bạch tiến độ, vật liệu đúng hợp đồng.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-53.jpg" alt="cai-tao-nha-dak-lak-1" loading="lazy" decoding="async" />
-<figcaption>cai-tao-nha-dak-lak-1</figcaption>
-</figure>
-
-<h2>Khi nào nên cải tạo nhà Đắk Lắk?</h2>
-<p><strong>Cải tạo nhà</strong> phù hợp khi kết cấu còn tốt nhưng không gian sống không còn đáp ứng nhu cầu:</p>
-<ul>
-  <li>Gia đình thêm thành viên — cần thêm phòng ngủ, WC.</li>
-  <li>Nhà cũ thiếu ánh sáng — bổ sung giếng trời, mở rộng cửa sổ.</li>
-  <li>Mặt tiền lỗi thời — muốn làm mới để kinh doanh hoặc tăng giá trị.</li>
-  <li>Chuyển đổi công năng — tầng trệt kinh doanh, tầng trên ở.</li>
-  <li>Nhà đã sửa chữa nhiều lần rời rạc — cần tái thiết đồng bộ.</li>
-</ul>
-
-<h2>cải tạo nhà Đắk Lắk — Tiêu chí chọn đơn vị uy tín</h2>
-<p>Thị trường xây dựng Đắk Lắk có nhiều nhà thầu — chủ đất nên đánh giá <strong>cải tạo nhà Đắk Lắk</strong> theo các tiêu chí khách quan:</p>
-<ul>
-  <li><strong>Hồ sơ công trình:</strong> Ảnh thực tế, địa điểm, quy mô tương tự yêu cầu của bạn.</li>
-  <li><strong>Hợp đồng rõ ràng:</strong> Vật liệu, tiến độ, thanh toán, bảo hành — không cam kết mơ hồ.</li>
-  <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu từng giai đoạn, nhật ký thi công.</li>
-  <li><strong>Phản hồi khách hàng:</strong> Zalo, Google Maps, Facebook — đối chiếu nhiều nguồn.</li>
-</ul>
-<p>Sao Khuê minh bạch báo giá và cam kết bảo hành kết cấu 10 năm cho công trình xây mới.</p>
-
-
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-27.jpg" alt="cai-tao-nha-dak-lak-2" loading="lazy" decoding="async" />
-<figcaption>cai-tao-nha-dak-lak-2</figcaption>
-</figure>
-
-<h2>Quy trình cải tạo nhà Đắk Lắk tại Sao Khuê</h2>
-<ol>
-  <li><strong>Khảo sát &amp; đề xuất:</strong> Đo hiện trạng, phác thảo phương án mới, phối cảnh 3D (nếu đổi mặt tiền).</li>
-  <li><strong>Dự toán &amp; hợp đồng:</strong> Tiến độ, thanh toán 4–5 đợt theo giai đoạn.</li>
-  <li><strong>Gia cố (nếu cần):</strong> Xử lý kết cấu trước khi đục tường, mở rộng phòng.</li>
-  <li><strong>Thi công cải tạo:</strong> Điện nước âm tường, hoàn thiện, lắp cửa thiết bị.</li>
-  <li><strong>Bàn giao &amp; bảo hành:</strong> Vệ sinh, hướng dẫn sử dụng, biên bản nghiệm thu.</li>
-</ol>
-<p>Tham khảo: <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>, <a href="/tin-tuc/xay-nha-dep-dak-lak">xây nhà đẹp Đắk Lắk</a>.</p>
-
-<h2>Chi phí cải tạo nhà Đắk Lắk (ước tính 2026)</h2>
-<table>
-  <thead><tr><th>Phạm vi cải tạo</th><th>Đơn giá tham khảo</th><th>Ghi chú</th></tr></thead>
-  <tbody>
-    <tr><td>Cải tạo một phần (bếp, WC)</td><td>3 – 6 triệu đ/m²</td><td>Không đụng kết cấu</td></tr>
-    <tr><td>Cải tạo toàn căn</td><td>6 – 12 triệu đ/m²</td><td>Điện nước + hoàn thiện mới</td></tr>
-    <tr><td>Tái thiết + gia cố</td><td>10 – 18 triệu đ/m²</td><td>Thay đổi lớn công năng</td></tr>
-  </tbody>
-</table>
-
-<h2>Sai lầm thường gặp khi cải tạo nhà Đắk Lắk</h2>
-<ul>
-  <li><strong>Đục tường không đánh giá kết cấu</strong> — ảnh hưởng cột, dầm chịu lực.</li>
-  <li><strong>Cải tạo từng phần rời rạc</strong> — màu sơn, gạch không đồng bộ.</li>
-  <li><strong>Tiết kiệm chống thấm</strong> — sân thượng thấm sau 1–2 mùa mưa.</li>
-  <li><strong>Không xin phép</strong> khi thay đổi mặt tiền, nâng tầng — rủi ro pháp lý.</li>
-</ul>
-
-<h2>Checklist trước khi bắt đầu sửa chữa/cải tạo — cải tạo nhà Đắk Lắk</h2>
-<p>Chuẩn bị kỹ trước khi ký hợp đồng giúp giảm rủi ro phát sinh và tranh chấp tiến độ tại Đắk Lắk:</p>
-<ul>
-  <li><strong>Giấy tờ đất:</strong> Sổ đỏ, quy hoạch, ranh giới — xác nhận không tranh chấp.</li>
-  <li><strong>Khảo sát địa chất:</strong> Đặc biệt đất bazan, vùng dốc — ảnh hưởng móng và chi phí.</li>
-  <li><strong>Ngân sách dự phòng:</strong> Thêm 10–15% cho phát sinh ngoài dự kiến (điện nước ngầm, đất yếu).</li>
-  <li><strong>Thời gian sinh hoạt:</strong> Nếu ở trong nhà khi sửa — lên kế hoạch tách khu vực thi công.</li>
-  <li><strong>Giấy phép xây dựng:</strong> Sao Khuê hỗ trợ hồ sơ nếu công trình yêu cầu.</li>
-  <li><strong>Phong cách &amp; công năng:</strong> Số phòng, gara, kinh doanh — thống nhất trước khi vẽ.</li>
-</ul>
-
-<h2>Thời gian thi công cải tạo nhà Đắk Lắk</h2>
-<table>
-  <thead><tr><th>Phạm vi</th><th>Thời gian ước tính</th><th>Ghi chú</th></tr></thead>
-  <tbody>
-    <tr><td>Cải tạo mặt tiền</td><td>3 – 6 tuần</td><td>Có thể ở trong nhà</td></tr>
-    <tr><td>Cải tạo toàn căn</td><td>2 – 4 tháng</td><td>Điện nước + hoàn thiện</td></tr>
-    <tr><td>Tái thiết + gia cố</td><td>4 – 6 tháng</td><td>Thay đổi lớn công năng</td></tr>
-  </tbody>
-</table>
-
-<h2>Hợp đồng và thanh toán khi cải tạo nhà Đắk Lắk</h2>
-<p>Sao Khuê áp dụng mô hình thanh toán theo tiến độ nghiệm thu — minh bạch, bảo vệ quyền lợi chủ đầu tư:</p>
-<ol>
-  <li><strong>Đợt 1 (20–30%):</strong> Ký hợp đồng, triển khai móng hoặc khảo sát + chuẩn bị mặt bằng.</li>
-  <li><strong>Đợt 2 (25–30%):</strong> Hoàn thành khung BTCT / gia cố kết cấu chính.</li>
-  <li><strong>Đợt 3 (25–30%):</strong> Hoàn thành mái, tường, điện nước âm tường.</li>
-  <li><strong>Đợt 4 (15–20%):</strong> Hoàn thiện, nghiệm thu, bàn giao.</li>
-</ol>
-<p>Hợp đồng ghi rõ: vật liệu, đơn giá, thời gian, bảo hành, xử lý phát sinh. Chủ nhà không thanh toán đợt tiếp theo khi hạng mục trước chưa nghiệm thu.</p>
-<p>Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">báo giá online</a> để nhận mẫu hợp đồng và dự toán chi tiết cho <strong>cải tạo nhà Đắk Lắk</strong>.</p>
-
-<h2>Lưu ý khi triển khai tại Đắk Lắk</h2>
-<p>Đắk Lắk có đặc thù khí hậu và địa hình khác vùng đồng bằng — áp dụng kinh nghiệm thi công miền Nam cần điều chỉnh:</p>
-<ul>
-  <li><strong>Cách nhiệt:</strong> Tường, mái, kính Low-E — tiết kiệm điện sưởi/điều hòa ban đêm se lạnh.</li>
-  <li><strong>Mái dốc ≥ 15°:</strong> Thoát nước mưa nhanh — tránh đọng nước, thấm trần.</li>
-  <li><strong>Móng trên bazan:</strong> Khảo sát kỹ — tránh đào sâu vùng đá, xử lý nền yếu.</li>
-  <li><strong>Mùa thi công:</strong> Ưu tiên đổ móng, khung tháng 12 – tháng 4; hoàn thiện có thể mùa mưa nếu mái kín.</li>
-  <li><strong>Vận chuyển:</strong> Lên kế hoạch vật tư đặc chủng sớm — khoảng cách từ TP.HCM ~340 km.</li>
-</ul>
-
-<h2>Vì sao chọn Sao Khuê cho cải tạo nhà Đắk Lắk?</h2>
-<ul>
-  <li><strong>Kinh nghiệm Tây Nguyên &amp; miền Nam:</strong> Đã triển khai nhiều công trình tại Đắk Lắk — am hiểu khí hậu, địa hình.</li>
-  <li><strong>Một đầu mối:</strong> Thiết kế + thi công (hoặc sửa chữa trọn gói) — tránh lệch bản vẽ và phát sinh.</li>
-  <li><strong>Bảo hành kết cấu 10 năm</strong> (xây mới) / bảo hành theo hạng mục (sửa, cải tạo).</li>
-  <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — thanh toán theo tiến độ nghiệm thu.</li>
-  <li><strong>Giám sát từ xa:</strong> Ảnh, video tiến độ hàng tuần qua Zalo — thuận tiện chủ nhà ở TP.HCM.</li>
-</ul>
-<p>Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a> trên website Sao Khuê.</p>
-
-<h2>Bài viết liên quan — cải tạo nhà Đắk Lắk</h2>
-<p>Tham khảo thêm các trang trụ cột và bài cùng chủ đề tại <strong>Đắk Lắk</strong>:</p>
-<h3>Trang trụ cột</h3>
-<ul>
-  <li><a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a></li>
-</ul>
-<h3>Cùng nhóm dịch vụ</h3>
-<ul>
-  <li><a href="/tin-tuc/cai-tao-nha-cu-dak-lak">cải tạo nhà cũ Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/cai-tao-nha-tron-goi-dak-lak">cải tạo nhà trọn gói Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/cai-tao-nha-ong-dak-lak">cải tạo nhà ống Đắk Lắk</a></li>
-  <li><a href="/tin-tuc/cai-tao-nha-2-tang-dak-lak">cải tạo nhà 2 tầng Đắk Lắk</a></li>
-</ul>
-
-<h2>Câu hỏi thường gặp về cải tạo nhà Đắk Lắk</h2>
-<h3>cải tạo nhà Đắk Lắk khác sửa chữa thế nào?</h3>
-<p>Cải tạo thay đổi công năng, mặt tiền, bố trí phòng — sửa chữa chủ yếu khắc phục hư hỏng. Cải tạo thường đầu tư lớn hơn nhưng nâng giá trị nhà rõ rệt.</p>
-<h3>Cải tạo nhà cũ tại Đắk Lắk có cần phá tường không?</h3>
-<p>Tùy phương án — mở rộng phòng, giếng trời cần đục tường có đánh giá kết cấu. Sao Khuê khảo sát trước khi đề xuất.</p>
-<h3>Chi phí cải tạo nhà Đắk Lắk so với xây mới?</h3>
-<p>Thường tiết kiệm 30–50% nếu kết cấu còn tốt. Nếu móng yếu, có thể xây mới kinh tế hơn — tư vấn miễn phí.</p>
-<h3>Có thiết kế 3D trước khi cải tạo không?</h3>
-<p>Có — đặc biệt khi đổi mặt tiền, bố trí phòng. Chủ nhà duyệt phối cảnh trước khi thi công.</p>
-<h3>Thời gian cải tạo ảnh hưởng kinh doanh tầng trệt?</h3>
-<p>Sao Khuê lên tiến độ tách giai đoạn — thi công ban đêm hoặc theo từng mặt tiền nếu cần giảm gián đoạn.</p>
-<h3>Bảo hành sau cải tạo?</h3>
-<p>Theo hạng mục: chống thấm 3–5 năm, hoàn thiện 1–2 năm, gia cố theo thỏa thuận hợp đồng.</p>
-
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
-
-<h2>Liên hệ tư vấn cải tạo nhà Đắk Lắk</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>cải tạo nhà Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
-<ul>
-  <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
-  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>
-  <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
-</ul>
-<p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
-
-<figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-12.jpg" alt="cai-tao-nha-dak-lak-3" loading="lazy" decoding="async" />
-<figcaption>cai-tao-nha-dak-lak-3</figcaption>
-</figure>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
-  $mt$Cải tạo nhà Đắk Lắk | Sao Khuê$mt$,
-  $md$Dịch vụ cải tạo nhà Đắk Lắk uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.$md$,
-  $mk$cải tạo nhà Đắk Lắk, nâng cấp nhà cũ Đắk Lắk, làm mới nhà cũ Đắk Lắk, cải tạo nhà phố Đắk Lắk, kiến trúc sao khuê$mk$,
   now(),
   now()
 )
