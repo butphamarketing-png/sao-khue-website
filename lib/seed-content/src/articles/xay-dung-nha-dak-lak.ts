@@ -1,5 +1,5 @@
 /** Nội dung bài viết SEO — slug: xay-dung-nha-dak-lak */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { homeLinkParagraph, imageFigure, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 
 const FOCUS = "xây dựng nhà Đắk Lắk";
@@ -69,6 +69,60 @@ ${imageFigure(SK_IMG_2, FOCUS, 2)}
   <li>Móng trên đất bazan: khảo sát kỹ, tránh đào quá sâu vùng đá.</li>
   <li>Lên tiến độ tránh mùa mưa kéo dài (tháng 9–12).</li>
 </ul>
+
+<h2>Trung tâm bài viết xây dựng — Đắk Lắk</h2>
+<p>Trang này là <strong>trụ cột SEO</strong> cho toàn bộ chủ đề xây dựng tại Đắk Lắk. Bạn có thể đi sâu theo nhu cầu:</p>
+<h3>Xây nhà mới</h3>
+<ul>
+  <li><a href="/tin-tuc/xay-nha-dak-lak">xây nhà Đắk Lắk</a> · <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> · <a href="/tin-tuc/xay-nha-dep-dak-lak">xây nhà đẹp Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/xay-nha-buon-ma-thuot">xây nhà Buôn Ma Thuột</a> · <a href="/tin-tuc/don-gia-xay-nha-dak-lak">đơn giá xây nhà Đắk Lắk</a> · <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/xay-nha-krong-ana-dak-lak">xây nhà Krông Ana</a> · <a href="/tin-tuc/xay-nha-ea-sup-dak-lak">xây nhà Ea Súp</a> · <a href="/tin-tuc/xay-nha-cu-mgar-dak-lak">xây nhà Cư M'gar</a></li>
+</ul>
+<h3>Sửa chữa &amp; cải tạo</h3>
+<ul>
+  <li><a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a> · <a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo nhà Đắk Lắk</a> · <a href="/tin-tuc/sua-chua-cai-tao-nha-dak-lak">sửa chữa cải tạo nhà Đắk Lắk</a></li>
+  <li><a href="/tin-tuc/cai-tao-nha-cu-dak-lak">cải tạo nhà cũ Đắk Lắk</a> · <a href="/tin-tuc/chong-tham-nha-dak-lak">chống thấm nhà Đắk Lắk</a> · <a href="/tin-tuc/gia-co-nha-cu-dak-lak">gia cố nhà cũ Đắk Lắk</a></li>
+</ul>
+<h3>Thiết kế &amp; chi phí</h3>
+<ul>
+  <li><a href="/tin-tuc/thiet-ke-nha-pho-dak-lak">thiết kế nhà phố Đắk Lắk</a> · <a href="/tin-tuc/thiet-ke-nha-dep-dak-lak">thiết kế nhà đẹp Đắk Lắk</a> · <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí xây nhà 2 tầng Đắk Lắk</a></li>
+</ul>
+
+<h2>Bảng đơn giá tham khảo (2026)</h2>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (đ/m² sàn)</th><th>Phù hợp</th></tr></thead>
+  <tbody>
+    <tr><td>Phần thô</td><td>3.000.000 – 4.200.000</td><td>Chủ nhà tự hoàn thiện</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>6.000.000 – 8.500.000</td><td>Nhà phố 2–3 tầng</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>9.000.000 – 13.000.000</td><td>Biệt thự, vật liệu tốt</td></tr>
+  </tbody>
+</table>
+
+${faqSection(
+  [
+    {
+      q: "Xây dựng nhà Đắk Lắk có cần giấy phép không?",
+      a: "Tùy quy mô và quy hoạch. Nhà ở riêng lẻ dưới ngưỡng quy định có thể miễn giấy phép — nên xác nhận với UBND phường/xã. Sao Khuê hỗ trợ làm hồ sơ khi cần.",
+    },
+    {
+      q: "Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?",
+      a: "Có. Đội hiện trường tại Đắk Lắk kết hợp giám sát kỹ thuật từ TP.HCM. Báo cáo ảnh, video tiến độ hàng tuần qua Zalo.",
+    },
+    {
+      q: "Chi phí xây nhà Đắk Lắk tính theo m² sàn hay diện tích đất?",
+      a: "Đơn giá thường tính theo m² sàn xây dựng (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân vườn.",
+    },
+    {
+      q: "Nên khởi công mùa nào tại Đắk Lắk?",
+      a: "Ưu tiên đổ móng, khung tháng 12 – tháng 4 (mùa khô). Hoàn thiện có thể mùa mưa nếu mái đã kín.",
+    },
+    {
+      q: "Bảo hành xây dựng nhà Đắk Lắk bao lâu?",
+      a: "Sao Khuê bảo hành kết cấu 10 năm cho công trình xây mới; hoàn thiện theo hạng mục trong hợp đồng.",
+    },
+  ],
+  "Câu hỏi thường gặp về xây dựng nhà Đắk Lắk",
+)}
 
 ${homeLinkParagraph()}
 

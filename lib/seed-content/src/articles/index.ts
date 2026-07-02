@@ -56,6 +56,11 @@ export {
   getMienTrungXayNhaArticle,
 } from "./mien-trung-xay-nha-tin-tuc-articles";
 export {
+  dakLakBatch4ArticlesBySlug,
+  dakLakBatch4Slugs,
+  getDakLakBatch4Article,
+} from "./dak-lak-tin-tuc-articles-batch4";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,

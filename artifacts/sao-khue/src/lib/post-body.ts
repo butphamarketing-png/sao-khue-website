@@ -1,10 +1,7 @@
 import {
   buildImageAlt,
-  getPostPublicPath,
   injectArticleToc,
-  normalizeCategory,
   prepareArticleHtml,
-  stripFaqSectionFromHtml,
 } from "@workspace/seed-content";
 import { enhanceArticleHtml } from "@/lib/seo";
 
@@ -42,11 +39,7 @@ export function renderArticleBody(post: PostLike): {
 } {
   const imageAlt = resolvePostImageAlt(post);
   const imageCaption = resolvePostImageCaption(post);
-  const rawContent = post.content ?? "";
-  const isTinTuc =
-    (post.category && normalizeCategory(post.category) === "tin-tuc") ||
-    (post.slug && getPostPublicPath(post as { slug: string; category: string }).startsWith("/tin-tuc/"));
-  const content = isTinTuc ? stripFaqSectionFromHtml(rawContent) : rawContent;
+  const content = post.content ?? "";
   const { html: withImage, featuredInjected } = prepareArticleHtml(content, {
     imageUrl: post.imageUrl,
     imageAlt,

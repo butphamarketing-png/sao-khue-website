@@ -48,11 +48,12 @@ import {
   mienTrungSuaNhaSlugs,
   mienTrungXayNhaArticlesBySlug,
   mienTrungXayNhaSlugs,
+  dakLakBatch4ArticlesBySlug,
+  dakLakBatch4Slugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
-import { stripFaqSectionFromHtml } from "./article-seo-blocks";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
 
@@ -80,10 +81,7 @@ function seoPost(
   const imageAlt =
     article.imageAlt?.trim() || buildImageAlt({ slug, metaKeywords });
   const imageCaption = article.imageCaption?.trim() || imageAlt;
-  const content =
-    normalizeCategory(category) === "tin-tuc"
-      ? stripFaqSectionFromHtml(article.content)
-      : article.content;
+  const content = article.content;
 
   return {
     slug,
@@ -204,6 +202,9 @@ export const seedPosts: SeedPost[] = [
   ),
   ...mienTrungXayNhaSlugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), mienTrungXayNhaArticlesBySlug[slug]!),
+  ),
+  ...dakLakBatch4Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakBatch4ArticlesBySlug[slug]!),
   ),
 ];
 

@@ -2,6 +2,7 @@
  * 26 bài tin tức — sửa chữa / cải tạo nhà miền Trung (#171–#196).
  */
 import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { mienTrungSuaNhaKeywordCalendar } from "../mien-trung-sua-nha-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -191,6 +192,14 @@ function hubLinksHtml(p: Province, excludeSlug: string): string {
 }
 
 function buildArticle(b: Brief): SeoArticleShape {
+  if (b.province === "dak-lak") {
+    return buildDakLakSeoArticle({
+      slug: b.slug,
+      title: b.title,
+      focusKeyword: b.focusKeyword,
+    });
+  }
+
   const kw = b.focusKeyword;
   const prov = PROVINCE_LABEL[b.province];
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);

@@ -7,6 +7,8 @@ export function slugifyAlt(focusKeyword: string): string {
   return focusKeyword
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/đ/g, "d")
+    .replace(/Đ/g, "d")
     .toLowerCase()
     .replace(/\./g, "")
     .replace(/\s+/g, "-")

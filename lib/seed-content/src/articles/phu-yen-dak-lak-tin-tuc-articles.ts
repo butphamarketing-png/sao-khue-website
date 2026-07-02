@@ -3,6 +3,7 @@
  * Sinh từ lịch từ khóa; mỗi bài: H1=title, slug, meta, 3 ảnh, không FAQ.
  */
 import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { phuYenDakLakKeywordCalendar } from "../phu-yen-dak-lak-keyword-calendar";
 import { phuYenDakLakKeywordCalendarBatch3 } from "../phu-yen-dak-lak-keyword-calendar-batch3";
 import { slugImage } from "../site-images";
@@ -357,6 +358,14 @@ function notesSection(b: Brief): string {
 }
 
 function buildArticle(b: Brief): SeoArticleShape {
+  if (b.region === "dak-lak") {
+    return buildDakLakSeoArticle({
+      slug: b.slug,
+      title: b.title,
+      focusKeyword: b.focusKeyword,
+    });
+  }
+
   const img1 = slugImage(b.slug, 0);
   const img2 = slugImage(b.slug, 1);
   const img3 = slugImage(b.slug, 2);

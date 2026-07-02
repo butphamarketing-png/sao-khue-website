@@ -11,7 +11,6 @@ import {
   normalizeCategory,
   prepareArticleHtml,
   seedPosts,
-  stripFaqSectionFromHtml,
 } from "../../../lib/seed-content/src/index.ts";
 import {
   defaultCategoryPages,
@@ -327,10 +326,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       post.imageAlt?.trim() ||
       buildImageAlt({ slug: post.slug, metaKeywords: post.metaKeywords });
     const imageCaption = post.imageCaption?.trim() || imageAlt;
-    const articleContent =
-      normalizeCategory(post.category) === "tin-tuc"
-        ? stripFaqSectionFromHtml(post.content ?? "")
-        : (post.content ?? "");
+    const articleContent = post.content ?? "";
     const { html: prepared } = prepareArticleHtml(articleContent, {
       imageUrl: post.imageUrl,
       imageAlt,
@@ -352,10 +348,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const sectionPath =
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
-    const postFaq =
-      normalizeCategory(post.category) === "tin-tuc" || path.startsWith("/tin-tuc/")
-        ? []
-        : extractFaqFromArticleHtml(post.content ?? "");
+    const postFaq = extractFaqFromArticleHtml(post.content ?? "");
     const jsonLd = [
       {
         "@context": "https://schema.org",
