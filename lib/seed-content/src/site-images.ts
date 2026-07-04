@@ -19,11 +19,10 @@ export const XAY_NHA_IMAGE_COUNT = 4;
 export const XAY_NHA_IMAGE_DIR = "/images/xay-nha";
 
 /** Ảnh render/banner đẹp — chỉ dùng cho thumbnail (featuredImageForSlug). */
-const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 6, 9, 11, 13] as const;
-const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 7, 8] as const;
-const FEATURED_CAI_TAO = [1, 2, 3, 5, 10, 11, 12] as const;
-const FEATURED_XAY_NHA = [1, 2, 3, 4] as const;
-/** Banner quảng cáo sk-35 … sk-52 — tránh ảnh thi công thô / lễ động thổ. */
+const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as const;
+const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 6, 7, 8, 9] as const;
+const FEATURED_CAI_TAO = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
+/** Banner quảng cáo — tránh ảnh thi công thô / lễ động thổ (sk-01 … sk-34). */
 const FEATURED_SK = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 52] as const;
 
 function isNha2TangSlug(slug: string): boolean {
@@ -69,8 +68,28 @@ function hashSlug(slug: string, slot = 0): number {
   return h;
 }
 
-function pickFeaturedIndex(pool: readonly number[], slug: string): number {
-  return pool[hashSlug(slug) % pool.length]!;
+function mapIndices(count: number, fn: (index: number) => string): string[] {
+  return Array.from({ length: count }, (_, i) => fn(i + 1));
+}
+
+function mapFeatured(indices: readonly number[], fn: (index: number) => string): string[] {
+  return indices.map((i) => fn(i));
+}
+
+function uniqueUrls(urls: readonly string[]): readonly string[] {
+  return [...new Set(urls)];
+}
+
+function buildThumbPool(...groups: readonly string[][]): readonly string[] {
+  return uniqueUrls(groups.flat());
+}
+
+function pickFromUrlPool(pool: readonly string[], slug: string): string {
+  if (pool.length === 0) return `${SAO_KHUE_IMAGE_DIR}/sk-35.jpg`;
+  const h = hashSlug(slug);
+  const h2 = hashSlug(slug, 1);
+  const idx = ((h ^ (h2 * 2654435761)) >>> 0) % pool.length;
+  return pool[idx]!;
 }
 
 export function nha2TangImage(index: number): string {
@@ -98,21 +117,41 @@ export function siteImage(index: number): string {
   return `${SAO_KHUE_IMAGE_DIR}/sk-${String(n).padStart(2, "0")}.jpg`;
 }
 
-/** Ảnh đại diện — chọn từ pool render/banner đẹp, mỗi slug một ảnh ổn định. */
+/** Pool thumbnail — gộp nhiều folder render/banner để giảm trùng ảnh giữa các bài. */
+const THUMB_POOL_XAY_NHA = buildThumbPool(
+  mapIndices(XAY_NHA_IMAGE_COUNT, xayNhaImage),
+  mapFeatured(FEATURED_NHA_2_TANG, nha2TangImage),
+  mapFeatured(FEATURED_SK, siteImage),
+);
+
+const THUMB_POOL_CAI_TAO = buildThumbPool(mapFeatured(FEATURED_CAI_TAO, caiTaoImage));
+
+const THUMB_POOL_NHA_CAP_4 = buildThumbPool(
+  mapFeatured(FEATURED_NHA_CAP_4, nhaCap4Image),
+  mapFeatured(FEATURED_NHA_2_TANG, nha2TangImage),
+);
+
+const THUMB_POOL_NHA_2_TANG = buildThumbPool(
+  mapFeatured(FEATURED_NHA_2_TANG, nha2TangImage),
+  mapIndices(XAY_NHA_IMAGE_COUNT, xayNhaImage),
+  mapFeatured(FEATURED_SK, siteImage),
+);
+
+const THUMB_POOL_GENERAL = buildThumbPool(
+  mapFeatured(FEATURED_SK, siteImage),
+  mapFeatured(FEATURED_NHA_2_TANG, nha2TangImage),
+  mapFeatured(FEATURED_NHA_CAP_4, nhaCap4Image),
+  mapIndices(XAY_NHA_IMAGE_COUNT, xayNhaImage),
+  mapFeatured(FEATURED_CAI_TAO, caiTaoImage),
+);
+
+/** Ảnh đại diện — pool lớn, hash slug ổn định, ít trùng hơn. */
 export function featuredImageForSlug(slug: string): string {
-  if (isCaiTaoSlug(slug)) {
-    return caiTaoImage(pickFeaturedIndex(FEATURED_CAI_TAO, slug));
-  }
-  if (isNhaCap4Slug(slug)) {
-    return nhaCap4Image(pickFeaturedIndex(FEATURED_NHA_CAP_4, slug));
-  }
-  if (isXayNhaSlug(slug)) {
-    return xayNhaImage(pickFeaturedIndex(FEATURED_XAY_NHA, slug));
-  }
-  if (isNha2TangSlug(slug)) {
-    return nha2TangImage(pickFeaturedIndex(FEATURED_NHA_2_TANG, slug));
-  }
-  return siteImage(pickFeaturedIndex(FEATURED_SK, slug));
+  if (isCaiTaoSlug(slug)) return pickFromUrlPool(THUMB_POOL_CAI_TAO, slug);
+  if (isNhaCap4Slug(slug)) return pickFromUrlPool(THUMB_POOL_NHA_CAP_4, slug);
+  if (isXayNhaSlug(slug)) return pickFromUrlPool(THUMB_POOL_XAY_NHA, slug);
+  if (isNha2TangSlug(slug)) return pickFromUrlPool(THUMB_POOL_NHA_2_TANG, slug);
+  return pickFromUrlPool(THUMB_POOL_GENERAL, slug);
 }
 
 /** Ảnh trong nội dung bài (slot 1, 2, …). */
