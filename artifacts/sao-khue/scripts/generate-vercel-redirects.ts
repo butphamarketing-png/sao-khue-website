@@ -111,6 +111,7 @@ export default function middleware(request: { url: string }): Response | undefin
 
   const dest = REDIRECTS[pathname];
   if (dest) return redirect301(dest, request.url);
+  return undefined;
 }
 
 export const config = {
