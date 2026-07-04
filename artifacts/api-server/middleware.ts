@@ -1,20 +1,18 @@
 /**
  * Edge redirects — Hobby plan không hỗ trợ bulkRedirectsPath và giới hạn 1.024 routes.
- * Chạy trước static files; bulk-redirects.json sinh bởi generate-vercel-redirects.ts.
+ * Chạy trước static files; bulk-redirects.ts sinh bởi generate-vercel-redirects.ts.
  */
-import bulkRedirects from "./bulk-redirects.json";
-
-type BulkRedirect = { source: string; destination: string };
+import { BULK_REDIRECTS } from "./bulk-redirects";
 
 const REDIRECT_MAP = new Map<string, string>(
-  (bulkRedirects as BulkRedirect[]).map((r) => [r.source, r.destination]),
+  BULK_REDIRECTS.map((r) => [r.source, r.destination]),
 );
 
-function redirect301(path: string, request: Request): Response {
-  return Response.redirect(new URL(path, request.url).toString(), 301);
+function redirect301(path: string, requestUrl: string): Response {
+  return Response.redirect(new URL(path, requestUrl).toString(), 301);
 }
 
-export default function middleware(request: Request): Response | undefined {
+export default function middleware(request: { url: string }): Response | undefined {
   const url = new URL(request.url);
 
   if (url.hostname === "kientrucsaokhue.com") {
@@ -30,17 +28,17 @@ export default function middleware(request: Request): Response | undefined {
   }
 
   if (pathname.startsWith("/gioi-thieu/")) {
-    return redirect301(`/bai-viet/${pathname.slice("/gioi-thieu/".length)}`, request);
+    return redirect301(`/bai-viet/${pathname.slice("/gioi-thieu/".length)}`, request.url);
   }
   if (pathname.startsWith("/kinh-nghiem-xay-dung/")) {
-    return redirect301(`/tin-tuc/${pathname.slice("/kinh-nghiem-xay-dung/".length)}`, request);
+    return redirect301(`/tin-tuc/${pathname.slice("/kinh-nghiem-xay-dung/".length)}`, request.url);
   }
   if (pathname.startsWith("/kinh-nghiem/")) {
-    return redirect301(`/tin-tuc/${pathname.slice("/kinh-nghiem/".length)}`, request);
+    return redirect301(`/tin-tuc/${pathname.slice("/kinh-nghiem/".length)}`, request.url);
   }
 
   const dest = REDIRECT_MAP.get(pathname);
-  if (dest) return redirect301(dest, request);
+  if (dest) return redirect301(dest, request.url);
 
   return undefined;
 }
