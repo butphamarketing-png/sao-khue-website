@@ -2,10 +2,10 @@
  * Edge redirects — Hobby plan không hỗ trợ bulkRedirectsPath và giới hạn 1.024 routes.
  * Chạy trước static files; bulk-redirects.ts sinh bởi generate-vercel-redirects.ts.
  */
-import { BULK_REDIRECTS } from "./bulk-redirects";
+import { BULK_REDIRECTS, type BulkRedirect } from "./bulk-redirects.js";
 
 const REDIRECT_MAP = new Map<string, string>(
-  BULK_REDIRECTS.map((r) => [r.source, r.destination]),
+  BULK_REDIRECTS.map((r: BulkRedirect) => [r.source, r.destination]),
 );
 
 function redirect301(path: string, requestUrl: string): Response {
