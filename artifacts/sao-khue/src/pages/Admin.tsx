@@ -3605,7 +3605,7 @@ function AboutPreviewCard({
       <div className="overflow-hidden rounded-[28px] border border-slate-200 bg-white">
         <div className="relative aspect-[4/3] overflow-hidden rounded-[24px]">
           <img
-            src={settings.homeAboutImageUrl || "/images/about.png"}
+            src={settings.homeAboutImageUrl || "/images/about.jpg"}
             alt={settings.homeAboutTitle || "Thong tin cong ty"}
             className="h-full w-full object-cover"
           />

@@ -195,7 +195,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   homeAboutBody:
     "Với tầm nhìn trở thành công ty hàng đầu trong ngành kiến trúc và xây dựng, Sao Khuê tự hào sở hữu đội ngũ kiến trúc sư, kỹ sư giỏi chuyên môn và giàu nhiệt huyết.",
   homeAboutPointsJson: JSON.stringify(defaultAboutPoints),
-  homeAboutImageUrl: "/images/about.png",
+  homeAboutImageUrl: "/images/about.jpg",
   homeAboutExperienceLabel: "Năm Kinh Nghiệm\nXây Dựng",
   homeAboutExperienceYears: "10+",
   homeCalculatorConfigJson: JSON.stringify({

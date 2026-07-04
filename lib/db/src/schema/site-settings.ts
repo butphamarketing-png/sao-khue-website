@@ -64,7 +64,7 @@ export const siteSettingsTable = pgTable("site_settings", {
   homeAboutPointsJson: text("home_about_points_json").notNull().default("[]"),
   homeAboutImageUrl: text("home_about_image_url")
     .notNull()
-    .default("/images/about.png"),
+    .default("/images/about.jpg"),
   homeAboutExperienceLabel: text("home_about_experience_label")
     .notNull()
     .default("Nam Kinh Nghiem\nXay Dung"),
