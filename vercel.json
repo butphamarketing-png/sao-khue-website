@@ -22,38 +22,5 @@
     }
   ],
   "framework": null,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "kientrucsaokhue.com"
-        }
-      ],
-      "destination": "https://www.kientrucsaokhue.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/gioi-thieu/:path*",
-      "destination": "/bai-viet/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/kinh-nghiem-xay-dung/:path*",
-      "destination": "/tin-tuc/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/kinh-nghiem/:path*",
-      "destination": "/tin-tuc/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path(.+)/",
-      "destination": "/:path",
-      "permanent": true
-    }
-  ],
-  "bulkRedirectsPath": "artifacts/api-server/bulk-redirects.json"
+  "redirects": []
 }
