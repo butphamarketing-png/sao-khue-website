@@ -405,8 +405,8 @@ export function useSiteSettings(): SiteSettingsFull {
 }
 
 export function useHeroSlides(): HeroSlide[] {
-  const settings = useSiteSettings();
-  return restoreHeroSlides(parseJsonArray(settings.heroSlidesJson, defaultHeroSlides));
+  // Luôn dùng hero-1 mặc định, bỏ qua dữ liệu trong database
+  return restoreHeroSlides(defaultHeroSlides);
 }
 
 export function useCommitments(): CommitmentItem[] {
