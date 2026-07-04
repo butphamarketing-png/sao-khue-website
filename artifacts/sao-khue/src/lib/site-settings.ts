@@ -72,18 +72,11 @@ export type CostCalculatorConfig = {
 
 export const defaultHeroSlides: HeroSlide[] = [
   {
-    image: "/Hình ảnh Sao Khuê/709186386_122101607732492832_4515489096750497635_n.jpg",
+    image: "/images/hero-1.jpg",
     title: "Đội ngũ Kiến Trúc Sao Khuê — tận tâm uy tín chất lượng",
     subtitle: "Kiến Trúc Sao Khuê",
     description:
       "Công ty TNHH Kiến Trúc Sao Khuê — thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh.",
-  },
-  {
-    image: "/Hình ảnh Sao Khuê/710424274_122101609238492832_2281162746759516103_n.jpg",
-    title: "Uy tín — chất lượng — tận tâm",
-    subtitle: "Xây dựng biệt thự hiện đại",
-    description:
-      "Với đội ngũ kỹ sư, kiến trúc sư giàu kinh nghiệm, chúng tôi tự hào đồng hành cùng hàng trăm gia đình kiến tạo tổ ấm mơ ước.",
   },
   {
     image: "/Hình ảnh Sao Khuê/710813108_122101652768492832_5553984770734683253_n.jpg",
