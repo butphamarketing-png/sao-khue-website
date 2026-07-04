@@ -195,7 +195,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   homeAboutBody:
     "Với tầm nhìn trở thành công ty hàng đầu trong ngành kiến trúc và xây dựng, Sao Khuê tự hào sở hữu đội ngũ kiến trúc sư, kỹ sư giỏi chuyên môn và giàu nhiệt huyết.",
   homeAboutPointsJson: JSON.stringify(defaultAboutPoints),
-  homeAboutImageUrl: "/images/about.jpg",
+  homeAboutImageUrl: "/images/about.jpg?v=2",
   homeAboutExperienceLabel: "Năm Kinh Nghiệm\nXây Dựng",
   homeAboutExperienceYears: "10+",
   homeCalculatorConfigJson: JSON.stringify({
@@ -450,6 +450,19 @@ export function useCalculatorConfig(): CostCalculatorConfig {
   });
 }
 
+const STOCK_ABOUT_IMAGE = /unsplash\.com|images\.unsplash|\/images\/project_|\/images\/interior_/i;
+
+function resolveAboutImageUrl(url?: string): string {
+  const val = (url ?? "").trim();
+  if (!val || STOCK_ABOUT_IMAGE.test(val)) {
+    return defaultSiteSettings.homeAboutImageUrl;
+  }
+  if (val.startsWith("/images/about.")) {
+    return `${val.split("?")[0]}?v=2`;
+  }
+  return val;
+}
+
 export function useAboutContent() {
   const settings = useSiteSettings();
 
@@ -458,7 +471,7 @@ export function useAboutContent() {
     title: settings.homeAboutTitle || defaultSiteSettings.homeAboutTitle,
     intro: settings.homeAboutIntro || defaultSiteSettings.homeAboutIntro,
     body: settings.homeAboutBody || defaultSiteSettings.homeAboutBody,
-    imageUrl: settings.homeAboutImageUrl || defaultSiteSettings.homeAboutImageUrl,
+    imageUrl: resolveAboutImageUrl(settings.homeAboutImageUrl),
     experienceLabel:
       restoreKnownVietnameseText(
         settings.homeAboutExperienceLabel || defaultSiteSettings.homeAboutExperienceLabel,
