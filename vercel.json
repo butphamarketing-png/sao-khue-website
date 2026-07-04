@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "pnpm install --ignore-scripts",
+  "installCommand": "pnpm install --ignore-scripts --no-frozen-lockfile",
   "buildCommand": "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/sao-khue run build && cp -r artifacts/sao-khue/dist/public/. artifacts/api-server/public/ && pnpm --filter @workspace/api-server run vercel-build",
   "outputDirectory": "artifacts/api-server/public",
   "rewrites": [
