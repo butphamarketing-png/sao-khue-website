@@ -12,6 +12,7 @@
     "seed-posts": "tsx scripts/seed-posts.ts",
     "export-seed-sql": "tsx scripts/export-seed-sql.ts",
     "export-seed-sql-batches": "tsx scripts/export-seed-sql-batches.ts",
+    "export-update-thumbnails-sql": "tsx scripts/export-update-thumbnails-sql.ts",
     "seed-site-settings": "tsx scripts/seed-site-settings.ts",
     "verify-posts": "tsx scripts/verify-posts.ts"
   },

@@ -1,4 +1,4 @@
--- Batch 01/15 — bài 1–10 / 149
+-- Batch 01/33 — bài 1–10 / 326
 -- Supabase SQL Editor: New query → Paste → Run (từng file một)
 
 BEGIN;
@@ -217,6 +217,7 @@ INSERT INTO posts (
   <li><a href="/bao-gia">Trang báo giá &amp; tính chi phí</a> — ước lượng online.</li>
 </ul>
 
+
 <h2>Liên hệ nhận báo giá xây nhà trọn gói mới nhất</h2>
 <p>Bạn cần <strong>báo giá xây nhà TP.HCM</strong> chính xác, minh bạch cho dự án sắp tới?</p>
 <ul>
@@ -227,7 +228,7 @@ INSERT INTO posts (
   <li><strong>Đặt lịch khảo sát:</strong> <a href="/lien-he">/lien-he</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Báo giá rõ ràng, thi công uy tín, xây tổ ấm bền vững cho gia đình bạn.</p>$content$,
-  $img$/images/sao-khue/sk-23.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Báo Giá Xây Nhà Trọn Gói TP.HCM 2026 | Sao Khuê$mt$,
   $md$Báo giá xây nhà TP.HCM 2026: trọn gói 4,85–6,7 triệu/m², phần thô 3,55–3,8 triệu/m². Khảo sát miễn phí, dự toán minh bạch — 0909 075 668.$md$,
   $mk$báo giá xây nhà tphcm, báo giá xây nhà trọn gói, đơn giá xây nhà 2026, xây nhà trọn gói giá bao nhiêu, chi phí xây nhà tphcm, sao khuê$mk$,
@@ -407,6 +408,7 @@ INSERT INTO posts (
 <h2>Kinh nghiệm thực tế từ công trình nhà phố Sao Khuê</h2>
 <p>Trên lô <strong>5m × 18m</strong> tại Bình Thạnh, chúng tôi triển khai <strong>nhà phố 4 tầng</strong> với giếng trời giữa nhà, phòng khách thông tầng — bàn giao đúng tiến độ (chi tiết <a href="/cong-trinh/xay-nha-pho-binh-thanh">tại đây</a>). Tại Quận 3, dự án <strong>cải tạo nhà phố cũ</strong> cho thấy việc gia cố, chống thấm và thay hệ thống điện nước đòi hỏi khảo sát kỹ trước khi tháo dỡ (<a href="/cong-trinh/sua-nha-quan-3">xem case study</a>). Những kinh nghiệm này được đúc kết vào quy trình <strong>xây dựng nhà phố TP.HCM</strong> hiện tại: không “copy” thiết kế mà không xem đất, không bỏ qua chống thấm sân thượng, luôn nghiệm thu cốt thép trước khi đổ sàn tầng tiếp theo.</p>
 
+
 <h2>Liên hệ công ty xây dựng nhà phố Sao Khuê — Khảo sát miễn phí</h2>
 <p>Bạn đang tìm <strong>công ty xây dựng nhà phố uy tín tại TP.HCM</strong> cho dự án xây mới, cải tạo hoặc nâng tầng? Hãy liên hệ Sao Khuê để được tư vấn, khảo sát mặt bằng và nhận <strong>báo giá minh bạch</strong>:</p>
 <ul>
@@ -418,7 +420,7 @@ INSERT INTO posts (
   <li><strong>Xem công trình:</strong> <a href="/cong-trinh">/cong-trinh</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Uy tín từ thiết kế đến thi công, <strong>xây dựng nhà phố TP.HCM</strong> đúng tiến độ, đúng cam kết, xây dựng tổ ấm bền vững cho gia đình bạn.</p>$content$,
-  $img$/images/sao-khue/sk-22.jpg$img$,
+  $img$/images/xay-nha/xay-nha-04.jpg$img$,
   $mt$Công Ty Xây Dựng Nhà Phố Uy Tín TP.HCM | Sao Khuê$mt$,
   $md$Công ty xây dựng nhà phố TP.HCM uy tín: thi công trọn gói, báo giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$xây dựng nhà phố tphcm, công ty xây dựng nhà phố, xây nhà phố uy tín, nhà thầu xây nhà phố, xây nhà trọn gói tphcm, kiến trúc sao khuê$mk$,
@@ -448,6 +450,11 @@ INSERT INTO posts (
 <p><strong>Nhà phố 2 tầng Bình Dương</strong> đang là lựa chọn hàng đầu của gia đình trẻ, vợ chồng mới cưới và chủ đất tại <strong>Thuận An, Dĩ An, Thủ Dầu Một, Tân Uyên</strong> — khi cần <strong>diện tích ở đủ dùng</strong>, <strong>chi phí xây dựng hợp lý hơn nhà 3–4 tầng</strong> và thời gian thi công ngắn hơn. Khác với nhà phố nội ô TP.HCM thường xếp 4–5 tầng trên lô hẹp, nhiều khu dân cư và đô thị mới ven sông Sài Gòn tại Bình Dương cho phép <strong>mặt tiền 5 m, chiều sâu 16–20 m</strong>, xây <strong>2 tầng + mái</strong> vẫn đảm bảo công năng thoải mái.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> triển khai <strong>thiết kế và thi công nhà phố</strong> tại Bình Dương — từ mẫu <strong>2 tầng hiện đại</strong> đến nhà phố 3–4 tầng (xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>). Bài viết tổng hợp <strong>mẫu nhà phố 2 tầng đẹp</strong> được khách hàng quan tâm nhiều nhất, gợi ý bố trí công năng, phong cách và <strong>chi phí tham khảo</strong> khi xây tại Bình Dương năm 2026.</p>
 
+<figure class="article-figure article-figure--inline">
+<img src="/images/nha-2-tang/nha-2-tang-01.jpg" alt="nha-pho-2-tang-binh-duong-1" loading="lazy" decoding="async" />
+<figcaption>nha-pho-2-tang-binh-duong-1</figcaption>
+</figure>
+
 <h2>Vì sao nhà phố 2 tầng phổ biến tại Bình Dương?</h2>
 <ul>
   <li><strong>Quy mô gia đình:</strong> 2–4 thành viên — tầng trệt sinh hoạt chung, tầng 2 phòng ngủ đủ dùng.</li>
@@ -476,8 +483,18 @@ INSERT INTO posts (
 <h3>1. Nhà phố 2 tầng hiện đại — Mặt tiền 5 m, giếng trời giữa</h3>
 <p>Phong cách <strong>tối giản</strong>: gam trắng–xám, cửa nhôm kính, lan can kính hoặc lam gỗ. <strong>Tầng trệt:</strong> phòng khách + bếp mở, WC khách, gara xe máy/ô tô nhỏ. <strong>Tầng 2:</strong> 2–3 phòng ngủ, WC master, ban công phía sau. <strong>Giếng trời</strong> (3–4 m²) giữa nhà giúp lấy sáng cho cầu thang và phòng giữa — rất phù hợp lô <strong>5×16 m</strong> tại Thuận An, Dĩ An.</p>
 
+<figure class="article-figure article-figure--inline">
+<img src="/images/nha-2-tang/nha-2-tang-02.jpg" alt="nha-pho-2-tang-binh-duong-2" loading="lazy" decoding="async" />
+<figcaption>nha-pho-2-tang-binh-duong-2</figcaption>
+</figure>
+
 <h3>2. Nhà phố 2 tầng mái Thái — Phù hợp khu dân cư truyền thống</h3>
 <p><strong>Mái Thái</strong> dốc vừa, thoát nước mưa tốt, tạo cảm giác ấm áp. Tầng trệt có thể dành <strong>phòng thờ</strong> hoặc phòng khách riêng; tầng 2 ba phòng ngủ cho gia đình 2 con. Màu sắc: trắng kem, gạch ốp tông đất, cửa gỗ công nghiệp cao cấp.</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/nha-2-tang/nha-2-tang-03.jpg" alt="nha-pho-2-tang-binh-duong-3" loading="lazy" decoding="async" />
+<figcaption>nha-pho-2-tang-binh-duong-3</figcaption>
+</figure>
 
 <h3>3. Nhà phố 2 tầng tầng trệt kinh doanh</h3>
 <p>Phổ biến ven <strong>QL13, đường DT743</strong> và khu dân cư mật độ cao: <strong>tầng trệt mở cửa kinh doanh</strong> (quán cà phê, văn phòng, shop thời trang), tầng 2 là khu ở riêng — cần thiết kế <strong>âm thanh, PCCC và lối thoát</strong> rõ ràng. Sao Khuê tư vấn tách luồng khách và sinh hoạt gia đình ngay từ bản vẽ.</p>
@@ -485,8 +502,18 @@ INSERT INTO posts (
 <h3>4. Nhà phố 2 tầng phong cách Indochine / tropical</h3>
 <p>Gỗ lam, mái hiên, cây xanh sân nhỏ phía sau hoặc sân thượng. Phù hợp chủ nhà thích không gian thoáng, không quá “công nghiệp”. Kết hợp <strong>gạch terrazzo, đá tự nhiên</strong> tạo điểm nhấn.</p>
 
+<figure class="article-figure article-figure--inline">
+<img src="/images/nha-2-tang/nha-2-tang-04.jpg" alt="nha-pho-2-tang-binh-duong-4" loading="lazy" decoding="async" />
+<figcaption>nha-pho-2-tang-binh-duong-4</figcaption>
+</figure>
+
 <h3>5. Nhà phố 2 tầng tối ưu ngân sách gia đình trẻ</h3>
 <p>Ưu tiên <strong>công năng cốt lõi</strong>: 1 phòng khách, bếp, 2 phòng ngủ, 2 WC; hoàn thiện vật tư tầm trung tốt; dự trù <strong>nâng tầng</strong> sau 5–7 năm. Đây là nhóm khách hay tìm <strong>mẫu nhà phố 2 tầng Bình Dương</strong> với ngân sách <strong>1,2–1,8 tỷ</strong> trọn gói (tham khảo, tùy vật liệu).</p>
+
+<figure class="article-figure article-figure--inline">
+<img src="/images/nha-2-tang/nha-2-tang-05.jpg" alt="nha-pho-2-tang-binh-duong-5" loading="lazy" decoding="async" />
+<figcaption>nha-pho-2-tang-binh-duong-5</figcaption>
+</figure>
 
 <h2>Gợi ý bố trí công năng tầng trệt &amp; tầng 2</h2>
 <p>Trên lô <strong>5 m × 16 m</strong>, bố trí hợp lý thường như sau:</p>
@@ -528,6 +555,7 @@ INSERT INTO posts (
   <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
 </ul>
 
+
 <h2>Liên hệ tư vấn mẫu nhà phố 2 tầng Bình Dương</h2>
 <p>Bạn đã có lô đất và muốn chốt <strong>mẫu nhà phố 2 tầng đẹp</strong> phù hợp Bình Dương?</p>
 <ul>
@@ -537,7 +565,7 @@ INSERT INTO posts (
   <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Thiết kế mẫu chuẩn, thi công uy tín, đồng hành xây tổ ấm tại Bình Dương.</p>$content$,
-  $img$/images/sao-khue/sk-25.jpg$img$,
+  $img$/images/nha-2-tang/nha-2-tang-13.jpg$img$,
   $mt$Nhà Phố 2 Tầng Bình Dương Đẹp | Sao Khuê$mt$,
   $md$Mẫu nhà phố 2 tầng Bình Dương đẹp, tối ưu ánh sáng trên lô 5x16–5x20m. Chi phí tham khảo, xu hướng 2026. Sao Khuê thiết kế & xây trọn gói — 0909 075 668.$md$,
   $mk$nhà phố 2 tầng Bình Dương, mẫu nhà phố 2 tầng, thiết kế nhà phố Bình Dương, xây nhà 2 tầng Bình Dương, nhà phố hiện đại, kiến trúc sao khuê$mk$,
@@ -652,6 +680,7 @@ INSERT INTO posts (
   <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
 </ul>
 
+
 <h2>Liên hệ thiết kế &amp; thi công nhà phố Đồng Nai</h2>
 <ul>
   <li><strong>Hotline:</strong> 0909 075 668</li>
@@ -660,7 +689,7 @@ INSERT INTO posts (
   <li><strong>Liên hệ:</strong> <a href="/lien-he">/lien-he</a> · <a href="/bao-gia">/bao-gia</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Thiết kế chuẩn, thi công nhà phố Đồng Nai uy tín, bàn giao đúng cam kết.</p>$content$,
-  $img$/images/sao-khue/sk-26.jpg$img$,
+  $img$/images/xay-nha/xay-nha-04.jpg$img$,
   $mt$Thi Công Nhà Phố Đồng Nai | Sao Khuê$mt$,
   $md$Thiết kế và thi công nhà phố hiện đại Đồng Nai. Sao Khuê: mặt bằng 3D, trọn gói, bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$thi công nhà phố Đồng Nai, thiết kế nhà phố Đồng Nai, nhà phố hiện đại Đồng Nai, xây nhà phố Đồng Nai, kiến trúc sao khuê$mk$,
@@ -790,6 +819,7 @@ INSERT INTO posts (
 <figcaption>mẫu nhà phố tphcm</figcaption>
 </figure>
 
+
 <h2>Liên hệ thiết kế nhà phố TP.HCM</h2>
 <ul>
   <li><strong>Hotline:</strong> 0909 075 668</li>
@@ -798,7 +828,7 @@ INSERT INTO posts (
   <li><strong>Báo giá xây dựng:</strong> <a href="/bao-gia">/bao-gia</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — <strong>Thiết kế nhà phố TP.HCM</strong> chuẩn kỹ thuật, thẩm mỹ hiện đại, sẵn sàng đồng hành từ bản vẽ đến công trình hoàn thiện.</p>$content$,
-  $img$/images/sao-khue/sk-24.jpg$img$,
+  $img$/images/sao-khue/sk-41.jpg$img$,
   $mt$Thiết Kế Nhà Phố TP.HCM | Phong Cách Hiện Đại | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố TP.HCM: hiện đại, ánh sáng, công năng trên lô hẹp. Hồ sơ 2D/3D, xin phép. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$thiết kế nhà phố TP.HCM, thiết kế nhà phố hiện đại, mẫu nhà phố tphcm, thi công nhà phố tphcm, kiến trúc sao khuê$mk$,
@@ -893,7 +923,7 @@ INSERT INTO posts (
   <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
 </ul>
 <p><strong>Sao Khuê</strong> — Kiến tạo tổ ấm bền vững, đúng tiến độ, đúng cam kết.</p>$content$,
-  $img$/images/sao-khue/sk-30.jpg$img$,
+  $img$/images/xay-nha/xay-nha-02.jpg$img$,
   $mt$Xây Nhà Trọn Gói TP.HCM 2026 — Giá Tốt, Bảo Hành 10 Năm | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói TP.HCM chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.$md$,
   $mk$xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ, xây nhà chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê$mk$,
@@ -1010,7 +1040,7 @@ INSERT INTO posts (
   <li><strong>Báo giá online:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
 </ul>
 <p><strong>Sao Khuê</strong> — Đồng hành xây dựng tổ ấm tại Bình Dương: đúng tiến độ, đúng cam kết, chuyên nghiệp từ khảo sát đến bàn giao.</p>$content$,
-  $img$/images/sao-khue/sk-31.jpg$img$,
+  $img$/images/xay-nha/xay-nha-01.jpg$img$,
   $mt$Xây Nhà Trọn Gói Bình Dương | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Bình Dương chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.$md$,
   $mk$xây nhà trọn gói Bình Dương, xây nhà trọn gói giá rẻ Bình Dương, nhà thầu xây dựng Bình Dương, xây nhà chìa khóa trao tay, kiến trúc sao khuê$mk$,
@@ -1145,7 +1175,7 @@ INSERT INTO posts (
   <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></li>
 </ul>
 <p><strong>Kiến Trúc Sao Khuê</strong> — Xây nhà trọn gói Đồng Nai giá tốt, chất lượng chuẩn, bàn giao đúng cam kết.</p>$content$,
-  $img$/images/sao-khue/sk-32.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Xây Nhà Trọn Gói Đồng Nai Giá Tốt | Sao Khuê$mt$,
   $md$Xây nhà trọn gói Đồng Nai giá tốt, chìa khóa trao tay. Đơn giá 4,85–6,7 triệu/m², miễn phí thiết kế 2D/3D. Sao Khuê thi công uy tín — 0909 075 668.$md$,
   $mk$xây nhà trọn gói Đồng Nai, xây nhà trọn gói giá rẻ Đồng Nai, nhà thầu xây dựng Đồng Nai, xây nhà chìa khóa trao tay, kiến trúc sao khuê$mk$,
@@ -1252,7 +1282,7 @@ INSERT INTO posts (
   <li><strong>Liên hệ trực tiếp:</strong> <a href="/lien-he">Trang liên hệ</a></li>
 </ul>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — Đồng hành cùng gia đình bạn biến ngôi nhà cũ thành không gian sống an toàn, đẹp và bền vững.</p>$content$,
-  $img$/images/sao-khue/sk-33.jpg$img$,
+  $img$/images/cai-tao/cai-tao-05.jpg$img$,
   $mt$Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm | Kiến Trúc Sao Khuê$mt$,
   $md$Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành dài hạn. Hotline 0909 075 668 — Sao Khuê.$md$,
   $mk$sửa nhà trọn gói tphcm, sửa chữa nhà tp hcm, cải tạo nhà phố, sửa nhà giá rẻ, kiến trúc sao khuê$mk$,
@@ -1318,7 +1348,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p><a href="/lien-he">/lien-he</a> · <a href="/bao-gia">/bao-gia</a> · Xem <a href="/cong-trinh/sua-nha-quan-3">công trình Q.3</a></p>$content$,
-  $img$/images/sao-khue/sk-34.jpg$img$,
+  $img$/images/cai-tao/cai-tao-02.jpg$img$,
   $mt$Sửa Chữa Nhà TP.HCM — Chống Thấm, Sơn Sửa | Sao Khuê$mt$,
   $md$Sửa chữa nhà TP.HCM uy tín: chống thấm mái, sân thượng, sơn nước, điện nước. Khảo sát miễn phí 0909 075 668.$md$,
   $mk$sửa chữa nhà tphcm, sửa nhà giá rẻ, chống thấm nhà, sơn sửa nhà phố, sao khuê$mk$,

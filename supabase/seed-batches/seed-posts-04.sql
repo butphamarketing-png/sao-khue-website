@@ -1,4 +1,4 @@
--- Batch 04/15 — bài 31–40 / 149
+-- Batch 04/33 — bài 31–40 / 326
 -- Supabase SQL Editor: New query → Paste → Run (từng file một)
 
 BEGIN;
@@ -16,7 +16,7 @@ INSERT INTO posts (
 <p>Bài viết này trình bày chi tiết <strong>quy trình thi công nhà phố</strong>, những yêu cầu kỹ thuật đặc thù cho vùng ven biển, bảng giá tham khảo và kinh nghiệm chọn nhà thầu uy tín tại Phú Yên.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-17.jpg" alt="thi-cong-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="thi-cong-nha-pho-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-1</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ INSERT INTO posts (
 <p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-dep-phu-yen">thiết kế nhà đẹp Phú Yên</a> và <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> tại Sao Khuê.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-17.jpg" alt="thi-cong-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="thi-cong-nha-pho-phu-yen-2" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-2</figcaption>
 </figure>
 
@@ -92,9 +92,10 @@ INSERT INTO posts (
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-22.jpg" alt="thi-cong-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="thi-cong-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
 </figure>
+
 
 <h2>Liên hệ tư vấn thi công nhà phố Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
@@ -105,7 +106,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-07.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Thi Công Nhà Phố Phú Yên | Hiện Đại Uy Tín | Sao Khuê$mt$,
   $md$Dịch vụ thi công nhà phố tại Phú Yên: phần thô, hoàn thiện, trọn gói. Báo giá minh bạch, bảo hành kết cấu. Tư vấn miễn phí 0909 075 668.$md$,
   $mk$thi công nhà phố Phú Yên, xây nhà Phú Yên, nhà phố Tuy Hòa, thi công trọn gói Phú Yên, nhà thầu Phú Yên$mk$,
@@ -224,6 +225,7 @@ INSERT INTO posts (
 <figcaption>thiet-ke-nha-dep-phu-yen-3</figcaption>
 </figure>
 
+
 <h2>Liên hệ tư vấn thiết kế nhà đẹp Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà đẹp Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -233,7 +235,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-08.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$Thiết Kế Nhà Đẹp Phú Yên | Kiến Trúc Hiện Đại | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà đẹp tại Phú Yên: mẫu nhà phố biển, phối cảnh 3D, hồ sơ kỹ thuật đầy đủ. Tư vấn miễn phí 0909 075 668.$md$,
   $mk$thiết kế nhà đẹp Phú Yên, kiến trúc Phú Yên, mẫu nhà phố biển, phối cảnh 3D, thiết kế nhà Tuy Hòa$mk$,
@@ -264,7 +266,7 @@ INSERT INTO posts (
 <p>Bài viết này dành cho chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa và các khu vực lân cận đang cần <strong>đơn giá thi công</strong> tham khảo để lên kế hoạch tài chính.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-27.jpg" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-1</figcaption>
 </figure>
 
@@ -317,7 +319,7 @@ INSERT INTO posts (
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-27.jpg" alt="bao-gia-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="bao-gia-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-2</figcaption>
 </figure>
 
@@ -357,7 +359,7 @@ INSERT INTO posts (
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-43.jpg" alt="bao-gia-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-02.jpg" alt="bao-gia-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-3</figcaption>
 </figure>
 
@@ -372,6 +374,7 @@ INSERT INTO posts (
 </ul>
 <p>Sao Khuê cam kết gửi <strong>dự toán chi tiết theo hạng mục</strong> trong vòng 3–5 ngày làm việc sau khi khảo sát thực tế.</p>
 
+
 <h2>Liên hệ báo giá xây nhà Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -381,7 +384,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-09.jpg$img$,
+  $img$/images/xay-nha/xay-nha-01.jpg$img$,
   $mt$Báo Giá Xây Nhà Trọn Gói Phú Yên 2026 | Chi Tiết | Sao Khuê$mt$,
   $md$Báo giá xây nhà trọn gói tại Phú Yên: đơn giá thi công, dự toán chi tiết, cam kết minh bạch. Sao Khuê tư vấn miễn phí — 0909 075 668.$md$,
   $mk$báo giá xây nhà Phú Yên, xây nhà trọn gói Phú Yên, đơn giá thi công Phú Yên, dự toán xây nhà Phú Yên, chi phí xây nhà Tuy Hòa$mk$,
@@ -412,7 +415,7 @@ INSERT INTO posts (
 <p>Bài viết này đặc biệt hữu ích với chủ nhà lần đầu xây dựng, muốn hiểu rõ <strong>kinh nghiệm xây nhà phố</strong>, <strong>pháp lý xây dựng</strong> và các bẫy "phát sinh" thường gặp để tránh.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-28.jpg" alt="luu-y-xay-nha-pho-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="luu-y-xay-nha-pho-1" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-1</figcaption>
 </figure>
 
@@ -449,7 +452,7 @@ INSERT INTO posts (
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-28.jpg" alt="luu-y-xay-nha-pho-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="luu-y-xay-nha-pho-2" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-2</figcaption>
 </figure>
 
@@ -496,7 +499,7 @@ INSERT INTO posts (
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-23.jpg" alt="luu-y-xay-nha-pho-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="luu-y-xay-nha-pho-3" loading="lazy" decoding="async" />
 <figcaption>luu-y-xay-nha-pho-3</figcaption>
 </figure>
 
@@ -543,6 +546,7 @@ INSERT INTO posts (
   <li>☐ Phương án xử lý chống thấm đã thống nhất</li>
 </ul>
 
+
 <h2>Liên hệ tư vấn lưu ý xây nhà phố</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>lưu ý xây nhà phố</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -552,7 +556,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-10.jpg$img$,
+  $img$/images/xay-nha/xay-nha-04.jpg$img$,
   $mt$Lưu Ý Xây Nhà Phố Quan Trọng | Kinh Nghiệm Thực Tế | Sao Khuê$mt$,
   $md$Những lưu ý xây nhà phố không thể bỏ qua: pháp lý, kết cấu, chống thấm, hợp đồng nhà thầu, giám sát thi công. Cập nhật 2026.$md$,
   $mk$lưu ý xây nhà phố, kinh nghiệm xây nhà phố, pháp lý xây dựng, chống thấm nhà phố, chọn nhà thầu xây dựng$mk$,
@@ -583,7 +587,7 @@ INSERT INTO posts (
 <p>Bài viết dành cho chủ đất chuẩn bị xây nhà phố, nhà ở riêng lẻ hoặc nâng tầng tại TP.HCM, Bình Dương, Đồng Nai — muốn hiểu cách <strong>bóc tách khối lượng</strong>, xác định <strong>chi phí ẩn</strong>, và sử dụng dự toán như công cụ đàm phán với nhà thầu.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-02.jpg" alt="du-toan-chi-phi-xay-nha-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="du-toan-chi-phi-xay-nha-1" loading="lazy" decoding="async" />
 <figcaption>du-toan-chi-phi-xay-nha-1</figcaption>
 </figure>
 
@@ -640,7 +644,7 @@ INSERT INTO posts (
 </ol>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-02.jpg" alt="du-toan-chi-phi-xay-nha-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="du-toan-chi-phi-xay-nha-2" loading="lazy" decoding="async" />
 <figcaption>du-toan-chi-phi-xay-nha-2</figcaption>
 </figure>
 
@@ -721,7 +725,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-11.jpg$img$,
+  $img$/images/xay-nha/xay-nha-01.jpg$img$,
   $mt$Dự Toán Chi Phí Xây Nhà Chính Xác 2026 | Sao Khuê$mt$,
   $md$Cách lập dự toán chi phí xây nhà: bóc tách khối lượng, bảng đơn giá tham khảo, các khoản ẩn cần dự phòng. Khảo sát miễn phí — 0909 075 668.$md$,
   $mk$dự toán chi phí xây nhà, bảng dự toán xây nhà, chi phí ẩn xây nhà, bóc tách khối lượng, đơn giá xây nhà 2026, kiến trúc sao khuê$mk$,
@@ -861,7 +865,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-12.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$Xu Hướng Thiết Kế Nhà Phố Hiện Đại 2026 | Sao Khuê$mt$,
   $md$Khám phá xu hướng thiết kế nhà phố hiện đại 2026: tối giản, lam che nắng, giếng trời, không gian xanh, smart home. Tư vấn miễn phí — 0909 075 668.$md$,
   $mk$xu hướng thiết kế nhà phố, nhà phố hiện đại 2026, mặt tiền nhà phố, thiết kế nhà phố tối giản, công năng thông minh, kiến trúc sao khuê$mk$,
@@ -892,7 +896,7 @@ INSERT INTO posts (
 <p>Nội dung bao gồm: các yếu tố tác động đến <strong>báo giá nhà 2 tầng</strong>, bảng đơn giá tham khảo, ví dụ tính chi phí theo diện tích cụ thể, cách tiết kiệm mà không giảm chất lượng — và câu hỏi thường gặp từ chủ đầu tư.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-42.jpg" alt="chi-phi-nha-pho-2-tang-1" loading="lazy" decoding="async" />
+<img src="/images/nha-2-tang/nha-2-tang-14.jpg" alt="chi-phi-nha-pho-2-tang-1" loading="lazy" decoding="async" />
 <figcaption>chi-phi-nha-pho-2-tang-1</figcaption>
 </figure>
 
@@ -939,7 +943,7 @@ Phần thô × 3.700.000 đ/m²: <strong>≈ 500 triệu đồng</strong><br />
 Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~750–850 triệu</strong>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-42.jpg" alt="chi-phi-nha-pho-2-tang-2" loading="lazy" decoding="async" />
+<img src="/images/nha-2-tang/nha-2-tang-14.jpg" alt="chi-phi-nha-pho-2-tang-2" loading="lazy" decoding="async" />
 <figcaption>chi-phi-nha-pho-2-tang-2</figcaption>
 </figure>
 
@@ -998,7 +1002,7 @@ Hoàn thiện sau (ước tính riêng): ~250–350 triệu. Tổng: <strong>~75
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-13.jpg$img$,
+  $img$/images/nha-2-tang/nha-2-tang-03.jpg$img$,
   $mt$Chi Phí Xây Nhà Phố 2 Tầng Hiện Đại 2026 | Sao Khuê$mt$,
   $md$Chi phí xây nhà phố 2 tầng 2026: trọn gói 800 triệu – 1,5 tỷ tuỳ diện tích và vật liệu. Bảng đơn giá, ví dụ tính thực tế, tư vấn miễn phí — 0909 075 668.$md$,
   $mk$chi phí nhà phố 2 tầng, báo giá nhà 2 tầng, xây nhà phố 2 tầng bao nhiêu tiền, đơn giá nhà 2 tầng 2026, mẫu nhà 2 tầng tphcm, kiến trúc sao khuê$mk$,
@@ -1029,8 +1033,8 @@ INSERT INTO posts (
 <p>Dù bạn đang ở Bình Thạnh, Thủ Đức, Quận 7 hay các tỉnh lân cận như Bình Dương, Đồng Nai — bài viết này sẽ giúp hình dung rõ phương án thiết kế trước khi gặp kiến trúc sư.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-3-tang-ep-1" loading="lazy" decoding="async" />
-<figcaption>mau-nha-pho-3-tang-ep-1</figcaption>
+<img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-3-tang-dep-1" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-3-tang-dep-1</figcaption>
 </figure>
 
 <h2>Vì sao nhà phố 3 tầng được ưa chuộng nhất?</h2>
@@ -1082,8 +1086,8 @@ INSERT INTO posts (
 <p>Bê tông lộ thiên, sắt thép thô, gạch nung mộc, đèn Edison. Phù hợp chủ nhà cá tính, thường kết hợp với không gian làm việc sáng tạo tầng trệt. Ít phổ biến hơn nhưng tạo dấu ấn riêng mạnh.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-3-tang-ep-2" loading="lazy" decoding="async" />
-<figcaption>mau-nha-pho-3-tang-ep-2</figcaption>
+<img src="/images/sao-khue/sk-09.jpg" alt="mau-nha-pho-3-tang-dep-2" loading="lazy" decoding="async" />
+<figcaption>mau-nha-pho-3-tang-dep-2</figcaption>
 </figure>
 
 <h2>Mặt tiền nhà phố 3 tầng — Ngôn ngữ kiến trúc quan trọng nhất</h2>
@@ -1140,7 +1144,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-14.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$Mẫu Nhà Phố 3 Tầng Đẹp, Tối Ưu Công Năng 2026 | Sao Khuê$mt$,
   $md$Mẫu nhà phố 3 tầng đẹp 2026: thiết kế hiện đại, Indochine, tropical-modern. Bố trí mặt bằng hợp lý, mặt tiền ấn tượng. Tư vấn miễn phí — 0909 075 668.$md$,
   $mk$mẫu nhà phố 3 tầng đẹp, thiết kế nhà phố 3 tầng, mặt bằng nhà phố 3 tầng, nhà phố hiện đại 3 tầng, mặt tiền nhà phố, kiến trúc sao khuê$mk$,
@@ -1171,8 +1175,8 @@ INSERT INTO posts (
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> đã thiết kế và thi công nhiều công trình <strong>nhà phố đẹp trong tầm ngân sách 700 triệu – 1,2 tỷ</strong> cho gia đình trẻ tại TP.HCM, Bình Dương và Đồng Nai. Bài viết này chia sẻ toàn bộ bí quyết thực chiến từ hàng trăm công trình thực tế.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-38.jpg" alt="thiet-ke-nha-ep-gia-re-1" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-ep-gia-re-1</figcaption>
+<img src="/images/sao-khue/sk-38.jpg" alt="thiet-ke-nha-dep-gia-re-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-dep-gia-re-1</figcaption>
 </figure>
 
 <h2>Sự khác biệt giữa "nhà rẻ" và "nhà đẹp giá rẻ"</h2>
@@ -1225,8 +1229,8 @@ INSERT INTO posts (
 <p>Quan trọng: kết cấu và hạ tầng kỹ thuật phải làm đúng và đủ ngay từ giai đoạn 1 — không để "làm thêm sau" với kết cấu chịu lực hay ống điện nước.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-38.jpg" alt="thiet-ke-nha-ep-gia-re-2" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-ep-gia-re-2</figcaption>
+<img src="/images/sao-khue/sk-38.jpg" alt="thiet-ke-nha-dep-gia-re-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-dep-gia-re-2</figcaption>
 </figure>
 
 <h2>Những khoản hay bị "thổi phồng" làm tăng chi phí</h2>
@@ -1278,7 +1282,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-15.jpg$img$,
+  $img$/images/sao-khue/sk-36.jpg$img$,
   $mt$Thiết Kế Nhà Đẹp Giá Rẻ, Tối Ưu Ngân Sách 2026 | Sao Khuê$mt$,
   $md$Thiết kế nhà đẹp giá rẻ không phải là không thể: tối ưu công năng, chọn vật liệu đúng chỗ, tránh chi phí dư thừa. Tư vấn miễn phí — 0909 075 668.$md$,
   $mk$thiết kế nhà đẹp giá rẻ, nhà phố giá rẻ, tối ưu chi phí thiết kế, công năng cơ bản, xây nhà tiết kiệm, kiến trúc sao khuê$mk$,
@@ -1309,7 +1313,7 @@ INSERT INTO posts (
 <p>Bài viết này giúp bạn hiểu rõ: <strong>xây nhà 1 tỷ 2</strong> được nhà như thế nào, cần làm gì để kiểm soát chi phí hiệu quả và những bẫy phổ biến khiến ngân sách vượt trần. Đây là góc nhìn thực tiễn từ <strong>Kiến Trúc Sao Khuê</strong> — đơn vị thiết kế và thi công nhà phố tại TP.HCM, Bình Dương, Đồng Nai với nhiều dự án ở phân khúc ngân sách hợp lý.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-1-ty-2-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="xay-nha-1-ty-2-1" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-ty-2-1</figcaption>
 </figure>
 
@@ -1355,7 +1359,7 @@ INSERT INTO posts (
 <p>Đừng tiết kiệm ở kết cấu chịu lực (bê tông, thép, chống thấm móng) nhưng hoàn toàn có thể linh hoạt ở hoàn thiện nội thất. Tỷ lệ phân bổ hợp lý: <strong>55–60% cho kết cấu và phần thô</strong>, <strong>40–45% cho hoàn thiện</strong>. Bê tông M200+ và thép đúng mác là nền tảng của ngôi nhà bền 50 năm — không thể thương lượng.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-44.jpg" alt="xay-nha-1-ty-2-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="xay-nha-1-ty-2-2" loading="lazy" decoding="async" />
 <figcaption>xay-nha-1-ty-2-2</figcaption>
 </figure>
 
@@ -1397,6 +1401,8 @@ INSERT INTO posts (
 
 <p>Tham khảo thêm dự án thực tế và bảng giá tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
+
+
 <h2>Liên hệ tư vấn xây nhà 1 tỷ 2</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà 1 tỷ 2</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -1406,7 +1412,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-16.jpg$img$,
+  $img$/images/xay-nha/xay-nha-01.jpg$img$,
   $mt$Xây Nhà 1 Tỷ 2 | Giải Pháp Tiết Kiệm Hiệu Quả | Kiến Trúc Sao Khuê$mt$,
   $md$Xây nhà 1 tỷ 2: lên phương án mặt bằng, chọn vật liệu hợp lý, tránh phát sinh chi phí. Tư vấn miễn phí từ Kiến Trúc Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà 1 tỷ 2, xây nhà tiết kiệm, phương án mặt bằng, vật liệu hợp lý, xây nhà ngân sách thấp, dự toán xây nhà$mk$,

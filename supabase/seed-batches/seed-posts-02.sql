@@ -1,4 +1,4 @@
--- Batch 02/15 — bài 11–20 / 149
+-- Batch 02/33 — bài 11–20 / 326
 -- Supabase SQL Editor: New query → Paste → Run (từng file một)
 
 BEGIN;
@@ -63,7 +63,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Liên hệ tư vấn</a> · Địa chỉ: Quận Bình Thạnh, TP.HCM.</p>$content$,
-  $img$/images/sao-khue/sk-35.jpg$img$,
+  $img$/images/xay-nha/xay-nha-02.jpg$img$,
   $mt$Xây Dựng Phần Thô Nhà Phố TP.HCM | Đơn Giá 3,55–3,8 Triệu/m² | Sao Khuê$mt$,
   $md$Xây phần thô TP.HCM uy tín: nhân công + vật tư thô, giám sát kỹ thuật, bảo hành kết cấu 10 năm. Khảo sát miễn phí — Sao Khuê 0909 075 668.$md$,
   $mk$xây dựng phần thô, xây thô nhà phố tphcm, đơn giá xây thô 2026, thi công phần thô, sao khuê$mk$,
@@ -131,7 +131,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ thiết kế</h2>
 <p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · <a href="/lien-he">Đặt lịch tư vấn</a></p>$content$,
-  $img$/images/sao-khue/sk-36.jpg$img$,
+  $img$/images/sao-khue/sk-48.jpg$img$,
   $mt$Thiết Kế Nhà Ở TP.HCM — Kiến Trúc 2D/3D | Sao Khuê$mt$,
   $md$Thiết kế nhà phố, biệt thự TP.HCM: mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật. Kiến trúc sư Sao Khuê — tư vấn 0909 075 668.$md$,
   $mk$thiết kế nhà tphcm, thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc, sao khuê$mk$,
@@ -194,7 +194,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình</a> tham khảo.</p>$content$,
-  $img$/images/sao-khue/sk-37.jpg$img$,
+  $img$/images/sao-khue/sk-40.jpg$img$,
   $mt$Nâng Tầng Nhà Phố TP.HCM — Khảo Sát Kết Cấu | Sao Khuê$mt$,
   $md$Nâng tầng nhà phố an toàn tại TP.HCM: khảo sát móng, gia cố, thi công trọn gói. Bảo hành kết cấu 10 năm. Tư vấn 0909 075 668.$md$,
   $mk$nâng tầng nhà phố, nâng tầng nhà cũ tphcm, gia cố nâng tầng, xin phép nâng tầng, sao khuê$mk$,
@@ -251,7 +251,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p><strong>0909 075 668</strong> · <a href="/bao-gia">Báo giá</a> · <a href="/lien-he">Liên hệ</a></p>$content$,
-  $img$/images/sao-khue/sk-38.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$Hoàn Thiện Nhà Trọn Gói TP.HCM | Sao Khuê$mt$,
   $md$Dịch vụ hoàn thiện nhà, căn hộ thô tại TP.HCM. Sơn, gạch, thiết bị vệ sinh, tủ bếp. Hotline 0909 075 668 — khảo sát miễn phí.$md$,
   $mk$hoàn thiện nhà, hoàn thiện nhà thô, hoàn thiện căn hộ, sửa chữa hoàn thiện, sao khuê$mk$,
@@ -316,7 +316,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · 245/8 Bình Lợi, Quận Bình Thạnh, TP.HCM</p>$content$,
-  $img$/images/sao-khue/sk-39.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Khuyến Mại Xây Dựng 2026 — Tặng Thiết Kế | Sao Khuê$mt$,
   $md$Chương trình khuyến mại xây nhà trọn gói TP.HCM: tặng thiết kế, đơn giá ưu đãi. Sao Khuê — hotline 0909 075 668, khảo sát miễn phí.$md$,
   $mk$khuyến mại xây dựng, ưu đãi xây nhà, tặng thiết kế xây nhà, xây nhà trọn gói giá rẻ, sao khuê$mk$,
@@ -369,7 +369,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về chúng tôi</a> · Hotline <strong>0909 075 668</strong></p>$content$,
-  $img$/images/sao-khue/sk-40.jpg$img$,
+  $img$/images/sao-khue/sk-43.jpg$img$,
   $mt$Sơ Đồ Tổ Chức — Sao Khuê | Cơ Cấu Công Ty$mt$,
   $md$Tìm hiểu sơ đồ tổ chức Kiến Trúc Sao Khuê: các phòng ban phụ trách thiết kế, thi công và chăm sóc khách hàng. Hotline 0909 075 668.$md$,
   $mk$sơ đồ tổ chức sao khuê, cơ cấu công ty xây dựng, kiến trúc sao khuê$mk$,
@@ -426,7 +426,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình tiêu biểu</a></p>$content$,
-  $img$/images/sao-khue/sk-41.jpg$img$,
+  $img$/images/sao-khue/sk-39.jpg$img$,
   $mt$Về Chúng Tôi — Kiến Trúc Sao Khuê | 10+ Năm Kinh Nghiệm$mt$,
   $md$Sao Khuê — thiết kế và thi công nhà phố, biệt thự TP.HCM từ 2014. Uy tín, chất lượng, tận tâm. Hotline 0909 075 668.$md$,
   $mk$về sao khuê, công ty xây dựng tphcm, kiến trúc sao khuê, nhà thầu uy tín, xây dựng nhà phố$mk$,
@@ -481,7 +481,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a></p>$content$,
-  $img$/images/sao-khue/sk-42.jpg$img$,
+  $img$/images/sao-khue/sk-45.jpg$img$,
   $mt$Hoạt Động Sao Khuê — Cộng Đồng & Đào Tạo$mt$,
   $md$Hoạt động Công ty Kiến Trúc Sao Khuê: đào tạo thợ, an toàn công trình, chia sẻ kiến thức xây dựng. Theo dõi fanpage và tin tức.$md$,
   $mk$hoạt động sao khuê, công ty xây dựng tphcm, kiến trúc sao khuê, tin tức xây dựng$mk$,
@@ -541,7 +541,7 @@ INSERT INTO posts (
   <li>Hoặc gọi <strong>0909 075 668</strong> để được hướng dẫn.</li>
 </ol>
 <p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về công ty</a> và <a href="/gioi-thieu/so-do-to-chuc">sơ đồ tổ chức</a>.</p>$content$,
-  $img$/images/sao-khue/sk-43.jpg$img$,
+  $img$/images/sao-khue/sk-35.jpg$img$,
   $mt$Tuyển Dụng 2026 — Kiến Trúc Sao Khuê | Kỹ Sư, KTS$mt$,
   $md$Tuyển dụng Sao Khuê 2026: kỹ sư, kiến trúc sư, giám sát thi công nhà phố. Gửi CV qua email hoặc hotline 0909 075 668.$md$,
   $mk$tuyển dụng sao khuê, tuyển kỹ sư xây dựng tphcm, tuyển kiến trúc sư, việc làm xây dựng$mk$,
@@ -601,7 +601,7 @@ INSERT INTO posts (
   <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Liên hệ</a></li>
   <li>Xem thêm <a href="/cong-trinh/sua-nha-quan-3">cải tạo Quận 3</a></li>
 </ul>$content$,
-  $img$/images/sao-khue/sk-44.jpg$img$,
+  $img$/images/xay-nha/xay-nha-01.jpg$img$,
   $mt$Xây Nhà Phố Bình Thạnh 4 Tầng | Công Trình Sao Khuê$mt$,
   $md$Công trình xây nhà phố Quận Bình Thạnh: 5x18m, 4 tầng, phong cách hiện đại. Sao Khuê thi công trọn gói — tư vấn 0909 075 668.$md$,
   $mk$xây nhà phố bình thạnh, công trình nhà phố, xây nhà 4 tầng tphcm, sao khuê$mk$,

@@ -1,4 +1,4 @@
--- Batch 03/15 — bài 21–30 / 149
+-- Batch 03/33 — bài 21–30 / 326
 -- Supabase SQL Editor: New query → Paste → Run (từng file một)
 
 BEGIN;
@@ -45,7 +45,7 @@ INSERT INTO posts (
   <li><a href="/lien-he">Liên hệ khảo sát miễn phí</a></li>
   <li>Xem thêm <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> (TP.HCM)</li>
 </ul>$content$,
-  $img$/images/sao-khue/sk-45.jpg$img$,
+  $img$/images/xay-nha/xay-nha-02.jpg$img$,
   $mt$Xây Nhà Phố Thuận An Bình Dương | Sao Khuê$mt$,
   $md$Công trình xây nhà phố Thuận An, Bình Dương: 4 tầng, thi công trọn gói, báo giá minh bạch. Tham khảo mẫu Sao Khuê — 0909 075 668.$md$,
   $mk$xây nhà phố thuận an, xây nhà bình dương, công trình nhà phố, xây nhà trọn gói bình dương, sao khuê$mk$,
@@ -101,7 +101,7 @@ INSERT INTO posts (
 
 <h2>Đặt lịch khảo sát nhà cũ</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">xây mới Bình Thạnh</a></p>$content$,
-  $img$/images/sao-khue/sk-46.jpg$img$,
+  $img$/images/cai-tao/cai-tao-05.jpg$img$,
   $mt$Sửa Nhà Quận 3 — Cải Tạo Nhà Phố Cũ | Sao Khuê$mt$,
   $md$Công trình cải tạo nhà phố Quận 3: gia đình 6 người, không gian hiện đại. Sao Khuê sửa nhà trọn gói — 0909 075 668.$md$,
   $mk$sửa nhà quận 3, cải tạo nhà phố cũ, sửa chữa nhà tphcm, công trình sao khuê$mk$,
@@ -156,7 +156,7 @@ INSERT INTO posts (
 
 <h2>Liên hệ</h2>
 <p><strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố hiện đại</a></p>$content$,
-  $img$/images/sao-khue/sk-47.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$Thiết Kế Biệt Thự Thủ Đức | Sân Vườn 200m² | Sao Khuê$mt$,
   $md$Thiết kế biệt thự sân vườn Thủ Đức: phong cách Á Đông hiện đại, tối ưu gió sáng. Sao Khuê — hotline 0909 075 668.$md$,
   $mk$thiết kế biệt thự thủ đức, biệt thự sân vườn, thiết kế nhà vườn tphcm, sao khuê$mk$,
@@ -241,7 +241,7 @@ INSERT INTO posts (
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM — đã triển khai nhiều công trình tại Long An và các tỉnh giáp ranh TP.HCM. Chúng tôi cung cấp dịch vụ <strong>xây nhà trọn gói Long An</strong> đầy đủ từ thiết kế, thi công đến bàn giao, với <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-11.jpg" alt="xay-dung-nha-long-an-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="xay-dung-nha-long-an-1" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-long-an-1</figcaption>
 </figure>
 
@@ -267,7 +267,7 @@ INSERT INTO posts (
 <p>Phù hợp hộ kinh doanh, sản xuất nhỏ tại các khu công nghiệp. Kết cấu thép hoặc bê tông cốt thép, mái tôn cách nhiệt — thiết kế linh hoạt theo đặc thù từng ngành nghề.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-33.jpg" alt="xay-dung-nha-long-an-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="xay-dung-nha-long-an-2" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-long-an-2</figcaption>
 </figure>
 
@@ -323,11 +323,13 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
+
+
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-13.jpg" alt="xay-dung-nha-long-an-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="xay-dung-nha-long-an-3" loading="lazy" decoding="async" />
 <figcaption>xay-dung-nha-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-01.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Xây Dựng Nhà Long An Uy Tín | Trọn Gói | Sao Khuê$mt$,
   $md$Dịch vụ xây dựng nhà Long An: nhà phố, nhà ống, thi công trọn gói. Bảo hành 10 năm kết cấu, báo giá minh bạch. Gọi ngay 0909 075 668.$md$,
   $mk$xây dựng nhà Long An, xây nhà trọn gói Long An, thi công nhà phố Long An, báo giá xây nhà Long An, công ty xây dựng Long An$mk$,
@@ -358,7 +360,7 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp <strong>báo giá xây nhà phần thô Long An</strong> minh bạch theo từng hạng mục, cam kết đúng đơn giá đã ký không phát sinh tùy tiện. Hotline tư vấn miễn phí: <strong>0909 075 668</strong>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-35.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-1" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phan-tho-long-an-1</figcaption>
 </figure>
 
@@ -425,7 +427,7 @@ INSERT INTO posts (
 <p>Thay đổi vị trí cột, dầm hoặc sàn sau khi đã đổ bê tông là phát sinh tốn kém nhất. Sao Khuê khuyến nghị chốt bản vẽ kỹ thuật hoàn chỉnh <strong>trước khi khởi công</strong> — xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-51.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-2" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phan-tho-long-an-2</figcaption>
 </figure>
 
@@ -507,11 +509,13 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
+
+
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-14.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="bao-gia-xay-nha-phan-tho-long-an-3" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phan-tho-long-an-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-02.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Báo Giá Xây Nhà Phần Thô Long An 2026 | Chi Tiết | Sao Khuê$mt$,
   $md$Đơn giá xây nhà phần thô Long An 2026: móng, khung bê tông, tường gạch, sàn. Bảng giá minh bạch theo m² sàn. Sao Khuê — 0909 075 668.$md$,
   $mk$báo giá xây nhà phần thô Long An, xây phần thô Long An, đơn giá phần thô, chi phí phần thô nhà phố, nhà phố Long An giá rẻ$mk$,
@@ -542,8 +546,8 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong> đã triển khai nhiều <strong>thiết kế nhà ống Long An</strong> từ 2 đến 4 tầng, đáp ứng đa dạng nhu cầu: ở riêng, kết hợp kinh doanh, hay đón thêm ông bà về ở cùng. Hotline tư vấn: <strong>0909 075 668</strong>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-20.jpg" alt="mau-nha-ong-ep-long-an-1" loading="lazy" decoding="async" />
-<figcaption>mau-nha-ong-ep-long-an-1</figcaption>
+<img src="/images/sao-khue/sk-20.jpg" alt="mau-nha-ong-dep-long-an-1" loading="lazy" decoding="async" />
+<figcaption>mau-nha-ong-dep-long-an-1</figcaption>
 </figure>
 
 <h2>Đặc điểm của nhà ống tại Long An</h2>
@@ -567,8 +571,8 @@ INSERT INTO posts (
 <p>Phào chỉ mặt tiền tinh tế, cột tròn hoặc vuông, ban công sắt uốn. Nhà ống phong cách Pháp tạo điểm nhấn sang trọng giữa khu dân cư. Phù hợp gia đình trung niên, thích không khí hoài cổ và muốn công trình "có hồn" dài lâu.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-45.jpg" alt="mau-nha-ong-ep-long-an-2" loading="lazy" decoding="async" />
-<figcaption>mau-nha-ong-ep-long-an-2</figcaption>
+<img src="/images/sao-khue/sk-45.jpg" alt="mau-nha-ong-dep-long-an-2" loading="lazy" decoding="async" />
+<figcaption>mau-nha-ong-dep-long-an-2</figcaption>
 </figure>
 
 <h2>Bố cục công năng mẫu nhà ống 2 tầng tại Long An</h2>
@@ -619,7 +623,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-03.jpg$img$,
+  $img$/images/sao-khue/sk-44.jpg$img$,
   $mt$Mẫu Nhà Ống Đẹp Long An 2026 | Hiện Đại | Sao Khuê$mt$,
   $md$Tổng hợp mẫu nhà ống đẹp Long An phù hợp gia đình trẻ: lô hẹp 4–5m, 2–3 tầng, công năng tối ưu. Thiết kế & thi công trọn gói — 0909 075 668.$md$,
   $mk$mẫu nhà ống đẹp Long An, thiết kế nhà ống Long An, nhà phố hẹp Long An, công năng nhà ống, mẫu nhà ống 2 tầng Long An$mk$,
@@ -650,8 +654,8 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>thiết kế nhà phố Đắk Lắk</strong> từ xa với quy trình hoàn toàn trực tuyến — từ trao đổi nhu cầu, khảo sát online, đến bàn giao hồ sơ 2D/3D. Hotline tư vấn: <strong>0909 075 668</strong>. Địa chỉ công ty: 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-50.jpg" alt="thiet-ke-nha-pho-ak-lak-1" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-pho-ak-lak-1</figcaption>
+<img src="/images/sao-khue/sk-50.jpg" alt="thiet-ke-nha-pho-dak-lak-1" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-dak-lak-1</figcaption>
 </figure>
 
 <h2>Đặc thù thiết kế nhà phố tại Đắk Lắk và Buôn Ma Thuột</h2>
@@ -675,8 +679,8 @@ INSERT INTO posts (
 <p>Mặt tiền khối hộp gọn, cửa kính lớn hướng Đông – Bắc đón sáng buổi sáng mát. Lam che nắng dọc hướng Tây. Phù hợp gia đình trẻ thích không gian sạch, dễ bảo trì tại Buôn Ma Thuột.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-02.jpg" alt="thiet-ke-nha-pho-ak-lak-2" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-pho-ak-lak-2</figcaption>
+<img src="/images/sao-khue/sk-02.jpg" alt="thiet-ke-nha-pho-dak-lak-2" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-dak-lak-2</figcaption>
 </figure>
 
 <h2>Hồ sơ thiết kế nhà phố Đắk Lắk — Sao Khuê bàn giao</h2>
@@ -744,7 +748,17 @@ INSERT INTO posts (
   <li><strong>Hồ sơ pháp lý:</strong> Hỗ trợ chuẩn bị bộ hồ sơ xin phép xây dựng đúng quy định tỉnh Đắk Lắk.</li>
   <li><strong>Phản hồi nhanh:</strong> Zalo, điện thoại — hỗ trợ trong giờ hành chính, phản hồi khẩn trong 4 giờ.</li>
 </ul>
-<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công vào một đơn vị.</p>
+<p>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a> và <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> nếu bạn muốn tích hợp luôn phần thi công.</p>
+
+<h2>Câu hỏi thường gặp về thiết kế nhà phố Đắk Lắk</h2>
+<h3>Thiết kế nhà phố Đắk Lắk có làm online được không?</h3>
+<p>Có — Sao Khuê khảo sát qua video call + ảnh lô đất, bàn giao file CAD/PDF đầy đủ.</p>
+<h3>Chi phí thiết kế nhà phố Đắk Lắk?</h3>
+<p>Khoảng 150.000 – 300.000 đ/m² sàn tùy gói 2D hoặc 2D+3D. Miễn giảm khi ký thi công trọn gói.</p>
+<h3>Thiết kế có hỗ trợ xin giấy phép không?</h3>
+<p>Có — tư vấn hồ sơ xin phép xây dựng theo quy định tỉnh Đắk Lắk (theo gói).</p>
+<h3>Thiết kế xong có thi công luôn không?</h3>
+<p>Có — một đầu mối Sao Khuê từ thiết kế đến bàn giao, tránh lệch bản vẽ.</p>
 
 <h2>Liên hệ tư vấn thiết kế nhà phố Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thiết kế nhà phố Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
@@ -756,11 +770,12 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
+
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-07.jpg" alt="thiet-ke-nha-pho-ak-lak-3" loading="lazy" decoding="async" />
-<figcaption>thiet-ke-nha-pho-ak-lak-3</figcaption>
+<img src="/images/sao-khue/sk-07.jpg" alt="thiet-ke-nha-pho-dak-lak-3" loading="lazy" decoding="async" />
+<figcaption>thiet-ke-nha-pho-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-04.jpg$img$,
+  $img$/images/sao-khue/sk-37.jpg$img$,
   $mt$Thiết Kế Nhà Phố Đắk Lắk | Phối Cảnh 3D | Sao Khuê$mt$,
   $md$Dịch vụ thiết kế nhà phố Đắk Lắk: kiến trúc hiện đại phù hợp khí hậu cao nguyên, hồ sơ 2D/3D đầy đủ. Tư vấn miễn phí — 0909 075 668.$md$,
   $mk$thiết kế nhà phố Đắk Lắk, kiến trúc nhà phố Buôn Ma Thuột, bản vẽ nhà phố Đắk Lắk, thiết kế 3D Đắk Lắk, thi công nhà phố Đắk Lắk$mk$,
@@ -791,8 +806,8 @@ INSERT INTO posts (
 <p><strong>Kiến Trúc Sao Khuê</strong>, địa chỉ 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM, là đơn vị chuyên nghiệp nhận <strong>thi công trọn gói</strong> tại Đắk Lắk và các tỉnh Tây Nguyên. Chúng tôi cam kết <strong>bảo hành kết cấu 10 năm</strong> và hoàn thiện đúng tiến độ đã thỏa thuận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-53.jpg" alt="xay-nha-tron-goi-ak-lak-1" loading="lazy" decoding="async" />
-<figcaption>xay-nha-tron-goi-ak-lak-1</figcaption>
+<img src="/images/xay-nha/xay-nha-03.jpg" alt="xay-nha-tron-goi-dak-lak-1" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-dak-lak-1</figcaption>
 </figure>
 
 <h2>Xây nhà trọn gói Đắk Lắk bao gồm những gì?</h2>
@@ -828,8 +843,8 @@ INSERT INTO posts (
 <p>Sao Khuê kết hợp đội thợ có kinh nghiệm tại chỗ với giám sát kỹ thuật cử từ TP.HCM — đảm bảo tiêu chuẩn thi công đồng đều, không phụ thuộc hoàn toàn vào nhân công một nguồn.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-47.jpg" alt="xay-nha-tron-goi-ak-lak-2" loading="lazy" decoding="async" />
-<figcaption>xay-nha-tron-goi-ak-lak-2</figcaption>
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="xay-nha-tron-goi-dak-lak-2" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-dak-lak-2</figcaption>
 </figure>
 
 <h2>Quy trình xây nhà trọn gói Đắk Lắk tại Sao Khuê</h2>
@@ -892,6 +907,18 @@ INSERT INTO posts (
   <li><strong>Nghiệm thu từng giai đoạn:</strong> Chủ nhà xác nhận trước khi thanh toán đợt tiếp theo.</li>
 </ul>
 
+<h2>Câu hỏi thường gặp về xây nhà trọn gói Đắk Lắk</h2>
+<h3>Xây nhà trọn gói Đắk Lắk bao gồm những gì?</h3>
+<p>Thiết kế (nếu cần), thi công phần thô, hoàn thiện, điện nước cơ bản và bàn giao — một đầu mối từ Sao Khuê.</p>
+<h3>Bảo hành xây nhà trọn gói bao lâu?</h3>
+<p>Bảo hành kết cấu 10 năm; hoàn thiện theo hạng mục trong hợp đồng.</p>
+<h3>Chi phí trọn gói tính theo m² sàn hay diện tích đất?</h3>
+<p>Theo m² sàn xây dựng (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân.</p>
+<h3>Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?</h3>
+<p>Có — đội hiện trường tại Đắk Lắk + giám sát kỹ thuật từ TP.HCM, báo cáo tiến độ hàng tuần qua Zalo.</p>
+<h3>Nên khởi công mùa nào tại Đắk Lắk?</h3>
+<p>Ưu tiên móng, khung tháng 12 – tháng 4 (mùa khô). Hoàn thiện có thể mùa mưa nếu mái kín.</p>
+
 <h2>Liên hệ tư vấn xây nhà trọn gói Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>xây nhà trọn gói Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
 <ul>
@@ -902,11 +929,12 @@ INSERT INTO posts (
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>
 
+
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-52.jpg" alt="xay-nha-tron-goi-ak-lak-3" loading="lazy" decoding="async" />
-<figcaption>xay-nha-tron-goi-ak-lak-3</figcaption>
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="xay-nha-tron-goi-dak-lak-3" loading="lazy" decoding="async" />
+<figcaption>xay-nha-tron-goi-dak-lak-3</figcaption>
 </figure>$content$,
-  $img$/images/sao-khue/sk-05.jpg$img$,
+  $img$/images/xay-nha/xay-nha-03.jpg$img$,
   $mt$Xây Nhà Trọn Gói Đắk Lắk Uy Tín | Bảo Hành 10 Năm | Sao Khuê$mt$,
   $md$Dịch vụ xây nhà trọn gói Đắk Lắk: thiết kế + thi công + bàn giao, bảo hành kết cấu 10 năm, báo giá minh bạch. Gọi 0909 075 668.$md$,
   $mk$xây nhà trọn gói Đắk Lắk, nhà thầu Đắk Lắk, thi công trọn gói Đắk Lắk, bảo hành kết cấu, xây nhà Buôn Ma Thuột$mk$,
@@ -937,7 +965,7 @@ INSERT INTO posts (
 <p>Bài viết phù hợp với chủ đất tại Buôn Ma Thuột, Ea H'leo, Krông Buk, Cư M'gar và các huyện lân cận đang cân nhắc <strong>xây nhà 2 tầng</strong> để ở hoặc kết hợp kinh doanh tầng trệt.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-24.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-04.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-1" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-1</figcaption>
 </figure>
 
@@ -966,7 +994,7 @@ INSERT INTO posts (
 <p><em>Ví dụ: Nhà 2 tầng 5×18 m (~162 m² sàn), tiêu chuẩn trung bình tại Đắk Lắk: tổng khoảng <strong>1,4 – 1,9 tỷ đồng</strong> (bao gồm phần thô + hoàn thiện, chưa nội thất rời).</em></p>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-24.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-01.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-2" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-2</figcaption>
 </figure>
 
@@ -1016,21 +1044,20 @@ INSERT INTO posts (
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="/images/sao-khue/sk-06.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
+<img src="/images/xay-nha/xay-nha-02.jpg" alt="chi-phi-xay-nha-2-tang-dak-lak-3" loading="lazy" decoding="async" />
 <figcaption>chi-phi-xay-nha-2-tang-dak-lak-3</figcaption>
 </figure>
 
 <h2>Quy trình báo giá xây nhà 2 tầng tại Sao Khuê</h2>
 <ol>
-  <li><strong>Liên hệ & tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
+  <li><strong>Liên hệ &amp; tư vấn ban đầu:</strong> Chủ nhà cung cấp diện tích đất, nhu cầu phòng ốc, ngân sách dự kiến.</li>
   <li><strong>Khảo sát hiện trạng:</strong> Đội kỹ thuật Sao Khuê kiểm tra lô đất, hướng nhà (miễn phí trong phạm vi hỗ trợ).</li>
   <li><strong>Phương án thiết kế sơ bộ:</strong> 1–2 phương án mặt bằng phù hợp ngân sách và nhu cầu.</li>
   <li><strong>Lập dự toán chi tiết:</strong> Phân tách từng hạng mục — phần thô, hoàn thiện, điện nước, cầu thang, cửa.</li>
   <li><strong>Ký hợp đồng:</strong> Cố định đơn giá, tiến độ, vật liệu — cam kết không phát sinh khi giữ nguyên thiết kế.</li>
-  <li><strong>Thi công & giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
-  <li><strong>Nghiệm thu & bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
+  <li><strong>Thi công &amp; giám sát:</strong> Báo cáo tiến độ định kỳ, ảnh công trình gửi chủ nhà.</li>
+  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bảo hành kết cấu 10 năm, hoàn thiện 2 năm theo hợp đồng Sao Khuê.</li>
 </ol>
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>So sánh chi phí xây nhà 2 tầng theo khu vực Đắk Lắk</h2>
 <p>Giá xây dựng không đồng đều trên toàn tỉnh:</p>
@@ -1039,6 +1066,19 @@ INSERT INTO posts (
   <li><strong>Huyện Krông Pắc, Ea Kar:</strong> Thấp hơn khoảng 8–15%, nhân công địa phương dồi dào.</li>
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/don-gia-xay-nha-dak-lak">đơn giá xây nhà Đắk Lắk</a> và <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a>.</p>
+
+<h2>Câu hỏi thường gặp về chi phí xây nhà 2 tầng Đắk Lắk</h2>
+<h3>Nhà 2 tầng 100 m² sàn tại Đắk Lắk hết bao nhiêu?</h3>
+<p>Trọn gói tiêu chuẩn khoảng 600 – 850 triệu; trung bình–khá 850 triệu – 1,1 tỷ. Tùy vật liệu và thiết kế cụ thể.</p>
+<h3>Chi phí tính theo m² sàn hay diện tích đất?</h3>
+<p>Theo m² sàn xây dựng (tổng các tầng). Diện tích đất ảnh hưởng móng và sân vườn — báo riêng.</p>
+<h3>Có khảo sát và báo giá miễn phí không?</h3>
+<p>Có — khảo sát sơ bộ miễn phí trong phạm vi Đắk Lắk. Dự toán chi tiết sau khi có số đo và nhu cầu rõ.</p>
+<h3>Phần thô rẻ hơn trọn gói bao nhiêu?</h3>
+<p>Phần thô thường 3 – 4,2 triệu/m² sàn; hoàn thiện thêm 2 – 5 triệu/m². Trọn gói gộp một hợp đồng, ít phát sinh hơn.</p>
+
+<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>Liên hệ tư vấn chi phí xây nhà 2 tầng Đắk Lắk</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>chi phí xây nhà 2 tầng Đắk Lắk</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
@@ -1049,7 +1089,7 @@ INSERT INTO posts (
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>$content$,
-  $img$/images/sao-khue/sk-06.jpg$img$,
+  $img$/images/xay-nha/xay-nha-04.jpg$img$,
   $mt$Chi Phí Xây Nhà 2 Tầng Đắk Lắk 2026 | Báo Giá Chi Tiết | Sao Khuê$mt$,
   $md$Chi phí xây nhà 2 tầng tại Đắk Lắk: đơn giá phần thô, hoàn thiện, nội thất cơ bản. Dự toán minh bạch, tránh phát sinh. Tư vấn miễn phí 0909 075 668.$md$,
   $mk$chi phí xây nhà 2 tầng Đắk Lắk, báo giá nhà 2 tầng Đắk Lắk, dự toán xây nhà Đắk Lắk, đơn giá vật liệu xây dựng, xây nhà trọn gói Đắk Lắk$mk$,

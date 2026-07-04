@@ -18,8 +18,13 @@ export const CAI_TAO_IMAGE_DIR = "/images/cai-tao";
 export const XAY_NHA_IMAGE_COUNT = 4;
 export const XAY_NHA_IMAGE_DIR = "/images/xay-nha";
 
-const featuredIndexBySlug = new Map<string, number>();
-let nextFeaturedIndex = 1;
+/** Ảnh render/banner đẹp — chỉ dùng cho thumbnail (featuredImageForSlug). */
+const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 6, 9, 11, 13] as const;
+const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 7, 8] as const;
+const FEATURED_CAI_TAO = [1, 2, 3, 5, 10, 11, 12] as const;
+const FEATURED_XAY_NHA = [1, 2, 3, 4] as const;
+/** Banner quảng cáo sk-35 … sk-52 — tránh ảnh thi công thô / lễ động thổ. */
+const FEATURED_SK = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 52] as const;
 
 function isNha2TangSlug(slug: string): boolean {
   return slug.includes("2-tang");
@@ -64,6 +69,10 @@ function hashSlug(slug: string, slot = 0): number {
   return h;
 }
 
+function pickFeaturedIndex(pool: readonly number[], slug: string): number {
+  return pool[hashSlug(slug) % pool.length]!;
+}
+
 export function nha2TangImage(index: number): string {
   const n = ((Math.floor(index) - 1 + NHA_2_TANG_IMAGE_COUNT * 1000) % NHA_2_TANG_IMAGE_COUNT) + 1;
   return `${NHA_2_TANG_IMAGE_DIR}/nha-2-tang-${String(n).padStart(2, "0")}.jpg`;
@@ -89,26 +98,21 @@ export function siteImage(index: number): string {
   return `${SAO_KHUE_IMAGE_DIR}/sk-${String(n).padStart(2, "0")}.jpg`;
 }
 
-/** Ảnh đại diện — mỗi slug một ảnh riêng (theo thứ tự khai báo trong seed). */
+/** Ảnh đại diện — chọn từ pool render/banner đẹp, mỗi slug một ảnh ổn định. */
 export function featuredImageForSlug(slug: string): string {
   if (isCaiTaoSlug(slug)) {
-    return caiTaoImage((hashSlug(slug) % CAI_TAO_IMAGE_COUNT) + 1);
+    return caiTaoImage(pickFeaturedIndex(FEATURED_CAI_TAO, slug));
   }
   if (isNhaCap4Slug(slug)) {
-    return nhaCap4Image((hashSlug(slug) % NHA_CAP_4_IMAGE_COUNT) + 1);
+    return nhaCap4Image(pickFeaturedIndex(FEATURED_NHA_CAP_4, slug));
   }
   if (isXayNhaSlug(slug)) {
-    return xayNhaImage((hashSlug(slug) % XAY_NHA_IMAGE_COUNT) + 1);
+    return xayNhaImage(pickFeaturedIndex(FEATURED_XAY_NHA, slug));
   }
   if (isNha2TangSlug(slug)) {
-    return nha2TangImage((hashSlug(slug) % NHA_2_TANG_IMAGE_COUNT) + 1);
+    return nha2TangImage(pickFeaturedIndex(FEATURED_NHA_2_TANG, slug));
   }
-  let i = featuredIndexBySlug.get(slug);
-  if (i === undefined) {
-    i = nextFeaturedIndex++;
-    featuredIndexBySlug.set(slug, i);
-  }
-  return siteImage(i);
+  return siteImage(pickFeaturedIndex(FEATURED_SK, slug));
 }
 
 /** Ảnh trong nội dung bài (slot 1, 2, …). */
