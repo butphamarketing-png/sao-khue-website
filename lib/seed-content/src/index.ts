@@ -256,7 +256,7 @@ export {
   mergePostMedia,
 } from "./post-media";
 
-export { featuredImageForSlug, slugImage, siteImage } from "./site-images";
+export { caiTaoImage, featuredImageForSlug, nha2TangImage, nhaCap4Image, slugImage, siteImage, xayNhaImage } from "./site-images";
 
 /** Chuẩn bài SEO dài (Rank Math / WP). */
 export const ARTICLE_WORDS_TARGET_MIN = 1500;

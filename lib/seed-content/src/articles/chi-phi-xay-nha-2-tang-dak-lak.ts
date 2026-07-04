@@ -7,7 +7,7 @@ const SK_IMG_1 = slugImage(SLUG, 0);
 const SK_IMG_2 = slugImage(SLUG, 1);
 const SK_IMG_3 = slugImage(SLUG, 2);
 
-/** Nội dung bài viết SEO #13 — slug: chi-phi-xay-nha-2-tang-dak-lak */
+﻿/** Nội dung bài viết SEO #13 — slug: chi-phi-xay-nha-2-tang-dak-lak */
 export const chiPhiXayNha2TangDakLak = {
   title: "Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?",
   excerpt:

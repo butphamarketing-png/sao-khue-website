@@ -1,4 +1,14 @@
-﻿/** Nội dung bài viết SEO — slug: mau-nha-pho-2-tang-binh-duong */
+/** Nội dung bài viết SEO — slug: mau-nha-pho-2-tang-binh-duong */
+import { imageFigure } from "../article-seo-blocks";
+import { nha2TangImage } from "../site-images";
+
+const KEYWORD = "nhà phố 2 tầng Bình Dương";
+const IMG_1 = nha2TangImage(1);
+const IMG_2 = nha2TangImage(2);
+const IMG_3 = nha2TangImage(3);
+const IMG_4 = nha2TangImage(4);
+const IMG_5 = nha2TangImage(5);
+
 export const mauNhaPho2TangBinhDuong = {
   title: "Mẫu Nhà Phố 2 Tầng Đẹp Được Ưa Chuộng Tại Bình Dương",
   excerpt:
@@ -8,10 +18,14 @@ export const mauNhaPho2TangBinhDuong = {
     "Mẫu nhà phố 2 tầng Bình Dương đẹp, tối ưu ánh sáng trên lô 5x16–5x20m. Chi phí tham khảo, xu hướng 2026. Sao Khuê thiết kế & xây trọn gói — 0909 075 668.",
   metaKeywords:
     "nhà phố 2 tầng Bình Dương, mẫu nhà phố 2 tầng, thiết kế nhà phố Bình Dương, xây nhà 2 tầng Bình Dương, nhà phố hiện đại, kiến trúc sao khuê",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} — mẫu thiết kế Sao Khuê`,
   content: `
 <h2>Nhà phố 2 tầng Bình Dương — Xu hướng được ưa chuộng</h2>
 <p><strong>Nhà phố 2 tầng Bình Dương</strong> đang là lựa chọn hàng đầu của gia đình trẻ, vợ chồng mới cưới và chủ đất tại <strong>Thuận An, Dĩ An, Thủ Dầu Một, Tân Uyên</strong> — khi cần <strong>diện tích ở đủ dùng</strong>, <strong>chi phí xây dựng hợp lý hơn nhà 3–4 tầng</strong> và thời gian thi công ngắn hơn. Khác với nhà phố nội ô TP.HCM thường xếp 4–5 tầng trên lô hẹp, nhiều khu dân cư và đô thị mới ven sông Sài Gòn tại Bình Dương cho phép <strong>mặt tiền 5 m, chiều sâu 16–20 m</strong>, xây <strong>2 tầng + mái</strong> vẫn đảm bảo công năng thoải mái.</p>
 <p><strong>Kiến Trúc Sao Khuê</strong> triển khai <strong>thiết kế và thi công nhà phố</strong> tại Bình Dương — từ mẫu <strong>2 tầng hiện đại</strong> đến nhà phố 3–4 tầng (xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>). Bài viết tổng hợp <strong>mẫu nhà phố 2 tầng đẹp</strong> được khách hàng quan tâm nhiều nhất, gợi ý bố trí công năng, phong cách và <strong>chi phí tham khảo</strong> khi xây tại Bình Dương năm 2026.</p>
+
+${imageFigure(IMG_1, KEYWORD, 1)}
 
 <h2>Vì sao nhà phố 2 tầng phổ biến tại Bình Dương?</h2>
 <ul>
@@ -41,8 +55,12 @@ export const mauNhaPho2TangBinhDuong = {
 <h3>1. Nhà phố 2 tầng hiện đại — Mặt tiền 5 m, giếng trời giữa</h3>
 <p>Phong cách <strong>tối giản</strong>: gam trắng–xám, cửa nhôm kính, lan can kính hoặc lam gỗ. <strong>Tầng trệt:</strong> phòng khách + bếp mở, WC khách, gara xe máy/ô tô nhỏ. <strong>Tầng 2:</strong> 2–3 phòng ngủ, WC master, ban công phía sau. <strong>Giếng trời</strong> (3–4 m²) giữa nhà giúp lấy sáng cho cầu thang và phòng giữa — rất phù hợp lô <strong>5×16 m</strong> tại Thuận An, Dĩ An.</p>
 
+${imageFigure(IMG_2, KEYWORD, 2)}
+
 <h3>2. Nhà phố 2 tầng mái Thái — Phù hợp khu dân cư truyền thống</h3>
 <p><strong>Mái Thái</strong> dốc vừa, thoát nước mưa tốt, tạo cảm giác ấm áp. Tầng trệt có thể dành <strong>phòng thờ</strong> hoặc phòng khách riêng; tầng 2 ba phòng ngủ cho gia đình 2 con. Màu sắc: trắng kem, gạch ốp tông đất, cửa gỗ công nghiệp cao cấp.</p>
+
+${imageFigure(IMG_3, KEYWORD, 3)}
 
 <h3>3. Nhà phố 2 tầng tầng trệt kinh doanh</h3>
 <p>Phổ biến ven <strong>QL13, đường DT743</strong> và khu dân cư mật độ cao: <strong>tầng trệt mở cửa kinh doanh</strong> (quán cà phê, văn phòng, shop thời trang), tầng 2 là khu ở riêng — cần thiết kế <strong>âm thanh, PCCC và lối thoát</strong> rõ ràng. Sao Khuê tư vấn tách luồng khách và sinh hoạt gia đình ngay từ bản vẽ.</p>
@@ -50,8 +68,12 @@ export const mauNhaPho2TangBinhDuong = {
 <h3>4. Nhà phố 2 tầng phong cách Indochine / tropical</h3>
 <p>Gỗ lam, mái hiên, cây xanh sân nhỏ phía sau hoặc sân thượng. Phù hợp chủ nhà thích không gian thoáng, không quá “công nghiệp”. Kết hợp <strong>gạch terrazzo, đá tự nhiên</strong> tạo điểm nhấn.</p>
 
+${imageFigure(IMG_4, KEYWORD, 4)}
+
 <h3>5. Nhà phố 2 tầng tối ưu ngân sách gia đình trẻ</h3>
 <p>Ưu tiên <strong>công năng cốt lõi</strong>: 1 phòng khách, bếp, 2 phòng ngủ, 2 WC; hoàn thiện vật tư tầm trung tốt; dự trù <strong>nâng tầng</strong> sau 5–7 năm. Đây là nhóm khách hay tìm <strong>mẫu nhà phố 2 tầng Bình Dương</strong> với ngân sách <strong>1,2–1,8 tỷ</strong> trọn gói (tham khảo, tùy vật liệu).</p>
+
+${imageFigure(IMG_5, KEYWORD, 5)}
 
 <h2>Gợi ý bố trí công năng tầng trệt &amp; tầng 2</h2>
 <p>Trên lô <strong>5 m × 16 m</strong>, bố trí hợp lý thường như sau:</p>
