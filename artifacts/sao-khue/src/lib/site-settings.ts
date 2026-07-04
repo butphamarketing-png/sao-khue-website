@@ -78,13 +78,6 @@ export const defaultHeroSlides: HeroSlide[] = [
     description:
       "Công ty TNHH Kiến Trúc Sao Khuê — thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh.",
   },
-  {
-    image: "/Hình ảnh Sao Khuê/710813108_122101652768492832_5553984770734683253_n.jpg",
-    title: "Thi công đúng tiến độ và bảo hành dài hạn",
-    subtitle: "Quản lý dự án chuyên nghiệp",
-    description:
-      "Minh bạch trong báo giá, sử dụng vật tư chính hãng, không phát sinh chi phí. Bảo hành kết cấu lên đến 10 năm.",
-  },
 ];
 
 export const defaultCommitments: CommitmentItem[] = [
