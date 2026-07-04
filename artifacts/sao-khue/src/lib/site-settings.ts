@@ -72,22 +72,22 @@ export type CostCalculatorConfig = {
 
 export const defaultHeroSlides: HeroSlide[] = [
   {
-    image: "/images/hero-1.png",
-    title: "KIẾN TẠO KHÔNG GIAN SỐNG ĐẲNG CẤP",
-    subtitle: "Thiết kế và thi công nhà phố, biệt thự trọn gói",
+    image: "/images/hero-1.jpg",
+    title: "Đội ngũ Kiến Trúc Sao Khuê — tận tâm uy tín chất lượng",
+    subtitle: "Kiến Trúc Sao Khuê",
     description:
-      "Công ty TNHH Kiến Trúc Sao Khuê cam kết mang đến những giải pháp không gian hoàn hảo, tối ưu chi phí và chất lượng vượt trội.",
+      "Công ty TNHH Kiến Trúc Sao Khuê — thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh.",
   },
   {
     image: "/images/hero-2.png",
-    title: "UY TÍN - CHẤT LƯỢNG - TẬN TÂM",
+    title: "Uy tín — chất lượng — tận tâm",
     subtitle: "Xây dựng biệt thự hiện đại",
     description:
       "Với đội ngũ kỹ sư, kiến trúc sư giàu kinh nghiệm, chúng tôi tự hào đồng hành cùng hàng trăm gia đình kiến tạo tổ ấm mơ ước.",
   },
   {
     image: "/images/hero-3.png",
-    title: "THI CÔNG ĐÚNG TIẾN ĐỘ VÀ BẢO HÀNH DÀI HẠN",
+    title: "Thi công đúng tiến độ và bảo hành dài hạn",
     subtitle: "Quản lý dự án chuyên nghiệp",
     description:
       "Minh bạch trong báo giá, sử dụng vật tư chính hãng, không phát sinh chi phí. Bảo hành kết cấu lên đến 10 năm.",
