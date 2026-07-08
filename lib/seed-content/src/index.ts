@@ -52,6 +52,8 @@ import {
   mienTrungXayNhaSlugs,
   dakLakBatch4ArticlesBySlug,
   dakLakBatch4Slugs,
+  dakLakTphcmBatch5ArticlesBySlug,
+  dakLakTphcmBatch5Slugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -212,6 +214,9 @@ export const seedPosts: SeedPost[] = [
   ),
   ...dakLakBatch4Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakBatch4ArticlesBySlug[slug]!),
+  ),
+  ...dakLakTphcmBatch5Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakTphcmBatch5ArticlesBySlug[slug]!),
   ),
 ];
 

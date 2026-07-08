@@ -4,6 +4,7 @@
  *
  * Batch 6 (sửa nhà miền Trung): #171–#196. Batch 7 (xây nhà miền Trung): #197–#246.
  * Batch 8 (Đắk Lắk — xây/sửa/cải tạo): #247–#296.
+ * Batch 9 (Đắk Lắk + TP.HCM mở rộng): #297–#396.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -22,6 +23,7 @@ export { binhDuongTphcmKeywordCalendar } from "./binh-duong-tphcm-keyword-calend
 export { mienTrungSuaNhaKeywordCalendar } from "./mien-trung-sua-nha-keyword-calendar";
 export { mienTrungXayNhaKeywordCalendar } from "./mien-trung-xay-nha-keyword-calendar";
 export { dakLakKeywordCalendarBatch4 } from "./dak-lak-keyword-calendar-batch4";
+export { dakLakTphcmKeywordCalendarBatch5 } from "./dak-lak-tphcm-keyword-calendar-batch5";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },

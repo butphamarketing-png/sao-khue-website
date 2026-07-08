@@ -63,6 +63,11 @@ export {
   getDakLakBatch4Article,
 } from "./dak-lak-tin-tuc-articles-batch4";
 export {
+  dakLakTphcmBatch5ArticlesBySlug,
+  dakLakTphcmBatch5Slugs,
+  getDakLakTphcmBatch5Article,
+} from "./dak-lak-tphcm-tin-tuc-articles-batch5";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,
