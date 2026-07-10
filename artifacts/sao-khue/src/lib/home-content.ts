@@ -79,9 +79,10 @@ export type CategoryPageContent = {
 export type CategoryPagesMap = Record<string, CategoryPageContent>;
 
 export const defaultStats: StatItem[] = [
-  { icon: "building-2", value: "500+", label: "Công trình bàn giao" },
-  { icon: "users", value: "50+", label: "Kỹ sư & kiến trúc sư" },
-  { icon: "shield-check", value: "10 năm", label: "Bảo hành kết cấu" },
+  { icon: "map-pin", value: "63+", label: "Phục vụ tỉnh thành" },
+  { icon: "calendar", value: "10+", label: "Năm kinh nghiệm" },
+  { icon: "building-2", value: "500+", label: "Công trình đã thi công" },
+  { icon: "users", value: "50+", label: "Kỹ sư & thợ lành nghề" },
 ];
 
 export const defaultTestimonials: TestimonialItem[] = [
@@ -323,3 +324,80 @@ export const defaultFeaturedPosts: FeaturedPostsConfig = {
   projects: [],
   news: [],
 };
+
+export type HomePostsBandConfig = {
+  id: string;
+  title: string;
+  viewAllHref: string;
+  viewAllLabel?: string;
+  category?: string;
+  slugKeywords?: string[];
+  slugs?: string[];
+  limit?: number;
+};
+
+/** Các khối bài viết trang chủ — bố cục kiểu Quang Hào */
+export const defaultHomePostsBands: HomePostsBandConfig[] = [
+  {
+    id: "bao-gia",
+    title: "BÁO GIÁ",
+    viewAllHref: "/bao-gia",
+    slugKeywords: ["bao-gia", "don-gia", "chi-phi"],
+    slugs: [
+      "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+      "bao-gia-xay-nha-phan-tho-long-an",
+      "thiet-ke-nha-dep-gia-re",
+      "bao-gia-xay-nha-tron-goi-phu-yen",
+    ],
+    limit: 4,
+  },
+  {
+    id: "thiet-ke",
+    title: "THIẾT KẾ KIẾN TRÚC",
+    viewAllHref: "/dich-vu/thiet-ke-nha",
+    slugKeywords: ["thiet-ke"],
+    slugs: [
+      "thiet-ke-nha-pho-hien-dai-tphcm",
+      "thiet-ke-nha-dep-gia-re",
+      "thiet-ke-nha-biet-thu-thu-duc",
+      "thiet-ke-nha-pho-dak-lak",
+    ],
+    limit: 4,
+  },
+  {
+    id: "xay-moi",
+    title: "XÂY DỰNG NHÀ TRỌN GÓI",
+    viewAllHref: "/dich-vu/xay-nha-tron-goi",
+    slugKeywords: ["xay-nha", "tron-goi", "xay-dung"],
+    slugs: [
+      "xay-nha-tron-goi-tphcm",
+      "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+      "thiet-ke-thi-cong-nha-pho-dong-nai",
+      "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+    ],
+    limit: 4,
+  },
+  {
+    id: "hoat-dong",
+    title: "HOẠT ĐỘNG CỦA SAO KHUÊ",
+    viewAllHref: "/bai-viet/hoat-dong-sao-khue",
+    category: "gioi-thieu",
+    slugs: ["hoat-dong-sao-khue", "ve-chung-toi", "tuyen-dung", "so-do-to-chuc"],
+    limit: 4,
+  },
+  {
+    id: "sua-chua",
+    title: "SỬA CHỮA NHÀ CHUYÊN NGHIỆP TP.HCM",
+    viewAllHref: "/dich-vu/sua-chua-nha",
+    slugKeywords: ["sua-chua", "cai-tao", "lam-moi", "sua-nha"],
+    limit: 4,
+  },
+  {
+    id: "cam-nang",
+    title: "CẨM NANG",
+    viewAllHref: "/tin-tuc",
+    slugKeywords: ["cam-nang", "quy-trinh", "kinh-nghiem", "phong-thuy"],
+    slugs: ["cam-nang-xay-nha-2026", "quy-trinh-xay-nha-tron-goi-a-z", "luat-xay-dung-moi-nhat"],
+    limit: 4,
+  },
+];

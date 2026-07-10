@@ -8,6 +8,7 @@ import {
   Ruler,
   Sparkles,
 } from "lucide-react";
+import { QhSectionTitle } from "@/components/QhSectionTitle";
 import { SectionHeader } from "@/components/SectionHeader";
 import {
   telHref,
@@ -55,7 +56,7 @@ const inputCls =
   "w-full rounded-xl border border-slate-200/80 bg-white px-3.5 py-2.5 text-sm text-slate-800 shadow-sm outline-none transition placeholder:text-slate-400 hover:border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20";
 const selectCls = inputCls;
 
-export function CostCalculator() {
+export function CostCalculator({ titleVariant = "default" }: { titleVariant?: "default" | "qh" }) {
   const calculatorConfig = useCalculatorConfig();
   const meta = useSectionMeta();
   const phone = usePrimaryPhone();
@@ -172,18 +173,35 @@ export function CostCalculator() {
   }
 
   return (
-    <section id="tinh-chi-phi" className="section-white relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute -right-32 top-20 h-72 w-72 rounded-full bg-primary/5 blur-3xl"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -left-24 bottom-10 h-64 w-64 rounded-full bg-accent/5 blur-3xl"
-        aria-hidden
-      />
+    <section
+      id="tinh-chi-phi"
+      className={
+        titleVariant === "qh"
+          ? "qh-home-band qh-home-calculator"
+          : "section-white relative overflow-hidden"
+      }
+    >
+      {titleVariant !== "qh" && (
+        <>
+          <div
+            className="pointer-events-none absolute -right-32 top-20 h-72 w-72 rounded-full bg-primary/5 blur-3xl"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute -left-24 bottom-10 h-64 w-64 rounded-full bg-accent/5 blur-3xl"
+            aria-hidden
+          />
+        </>
+      )}
 
-      <div className="site-container relative">
-        <SectionHeader title={meta.calculator.title} subtitle={meta.calculator.subtitle} />
+      {titleVariant === "qh" && <QhSectionTitle title="TÍNH PHÍ XÂY DỰNG" />}
+
+      <div className={`site-container relative ${titleVariant === "qh" ? "py-6 md:py-8" : ""}`}>
+        {titleVariant === "qh" ? (
+          <p className="qh-home-calculator__intro">{meta.calculator.subtitle}</p>
+        ) : (
+          <SectionHeader title={meta.calculator.title} subtitle={meta.calculator.subtitle} />
+        )}
 
         <div className="mx-auto max-w-5xl">
           <div className="overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white shadow-[0_8px_40px_-12px_rgba(15,23,42,0.12)] ring-1 ring-slate-900/5">

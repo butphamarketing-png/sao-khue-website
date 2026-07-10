@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "wouter";
-import { ArrowUpRight } from "lucide-react";
+import { QhSectionTitle } from "@/components/QhSectionTitle";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useListPosts } from "@workspace/api-client-react";
@@ -9,22 +9,25 @@ import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedByCategory } from "@/lib/featured-posts";
 import { getPostPublicPath } from "@/lib/post-url";
 
-// Fix blank admin page
-
 const fallback = [
-  { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", slug: "" },
-  { id: 2, title: "Nhà phố tân cổ điển anh Tuấn - Q.7", imageUrl: "/images/project_2.jpg", slug: "" },
-  { id: 3, title: "Nhà phố 3 tầng anh Hùng - Bình Thạnh", imageUrl: "/images/project_3.jpg", slug: "" },
-  { id: 4, title: "Nội thất căn hộ Vinhomes chị Mai", imageUrl: "/images/interior_2.jpg", slug: "" },
-  { id: 5, title: "Biệt thự vườn cô Hoa - Đồng Nai", imageUrl: "/images/project_4.jpg", slug: "" },
-  { id: 6, title: "Thiết kế nhà phố kết hợp kinh doanh", imageUrl: "/images/interior_3.jpg", slug: "" },
-  { id: 7, title: "Nhà phố hiện đại 4 tầng - Gò Vấp", imageUrl: "/images/interior_4.jpg", slug: "" },
-  { id: 8, title: "Biệt thự nghỉ dưỡng chú Ba - Vũng Tàu", imageUrl: "/images/project-1.png", slug: "" },
+  { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", href: "/cong-trinh" },
+  { id: 2, title: "Nhà phố tân cổ điển anh Tuấn - Q.7", imageUrl: "/images/project_2.jpg", href: "/cong-trinh" },
+  { id: 3, title: "Nhà phố 3 tầng anh Hùng - Bình Thạnh", imageUrl: "/images/project_3.jpg", href: "/cong-trinh" },
+  { id: 4, title: "Nội thất căn hộ Vinhomes chị Mai", imageUrl: "/images/interior_2.jpg", href: "/cong-trinh" },
+  { id: 5, title: "Biệt thự vườn cô Hoa - Đồng Nai", imageUrl: "/images/project_4.jpg", href: "/cong-trinh" },
+  { id: 6, title: "Thiết kế nhà phố kết hợp kinh doanh", imageUrl: "/images/interior_3.jpg", href: "/cong-trinh" },
+  { id: 7, title: "Nhà phố hiện đại 4 tầng - Gò Vấp", imageUrl: "/images/interior_4.jpg", href: "/cong-trinh" },
+  { id: 8, title: "Biệt thự nghỉ dưỡng chú Ba - Vũng Tàu", imageUrl: "/images/project-1.png", href: "/cong-trinh" },
 ];
 
-export function ProjectsSection() {
+type Props = {
+  variant?: "default" | "qh";
+};
+
+export function ProjectsSection({ variant = "default" }: Props) {
   const meta = useSectionMeta();
   const featuredConfig = useFeaturedPostsConfig();
+  const [activeTab, setActiveTab] = useState<"all" | "ongoing">("all");
   const { data, isLoading } = useListPosts({ category: "cong-trinh", limit: 100 });
   const posts = resolvePosts(data, { category: "cong-trinh", limit: 100 });
   const picked = pickFeaturedByCategory(posts, featuredConfig, "projects", "cong-trinh", 8);
@@ -35,16 +38,82 @@ export function ProjectsSection() {
           title: p.title,
           imageUrl: p.imageUrl || "/images/project_1.jpg",
           href: getPostPublicPath(p),
+          slug: p.slug,
         }))
       : fallback;
+
+  const visibleProjects =
+    activeTab === "ongoing"
+      ? projects.filter((p) => "slug" in p && String(p.slug).includes("dang-thi-cong"))
+      : projects;
+
+  const displayProjects = (visibleProjects.length > 0 ? visibleProjects : projects).slice(0, 8);
+
+  if (variant === "qh") {
+    return (
+      <section id="cong-trinh" className="qh-home-band qh-home-projects">
+        <QhSectionTitle title="CÔNG TRÌNH TIÊU BIỂU" />
+
+        <div className="site-container py-6 md:py-8">
+          <div className="qh-home-projects__tabs">
+            <button
+              type="button"
+              className={activeTab === "all" ? "is-active" : ""}
+              onClick={() => setActiveTab("all")}
+            >
+              Tất cả
+            </button>
+            <button
+              type="button"
+              className={activeTab === "ongoing" ? "is-active" : ""}
+              onClick={() => setActiveTab("ongoing")}
+            >
+              Công trình đang thi công
+            </button>
+          </div>
+
+          <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
+            {isLoading
+              ? Array.from({ length: 8 }).map((_, index) => (
+                  <Skeleton key={`project-sk-${index}`} className="aspect-[4/3] w-full rounded-md" />
+                ))
+              : displayProjects.map((project) => (
+                  <Link
+                    key={project.id}
+                    href={project.href}
+                    className="qh-home-project-card group"
+                  >
+                    <div className="qh-home-project-card__image-wrap">
+                      <img
+                        src={project.imageUrl}
+                        alt={project.title}
+                        className="qh-home-project-card__image"
+                        loading="lazy"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src =
+                            "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800";
+                        }}
+                      />
+                    </div>
+                    <h3 className="qh-home-project-card__title">{project.title}</h3>
+                  </Link>
+                ))}
+          </div>
+
+          <div className="mt-6 text-center md:mt-8">
+            <Link href="/cong-trinh" className="qh-home-band__cta">
+              XEM TẤT CẢ CÔNG TRÌNH
+            </Link>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="cong-trinh" className="section-alt">
       <div className="site-container">
-        <SectionHeader
-          title={meta.projects.title}
-          subtitle={meta.projects.subtitle}
-        />
+        <SectionHeader title={meta.projects.title} subtitle={meta.projects.subtitle} />
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {isLoading
@@ -55,52 +124,28 @@ export function ProjectsSection() {
                 >
                   <Skeleton className="aspect-[4/3] w-full rounded-2xl" />
                   <Skeleton className="mt-4 h-5 w-4/5" />
-                  <Skeleton className="mt-3 h-4 w-1/2" />
                 </div>
               ))
-            : projects.map((project, index) => {
-                const link =
-                  "href" in project && project.href ? project.href : "/cong-trinh";
-                return (
-                  <motion.div
-                    key={project.id}
-                    initial={{ opacity: 0, scale: 0.96 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.45, delay: index * 0.05 }}
-                    className="group"
-                  >
-                    <Link
-                      href={link}
-                      className="relative block overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_18px_45px_rgba(15,23,42,0.08)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(23,87,157,0.18)]"
-                    >
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
-                          src={project.imageUrl}
-                          alt={project.title}
-                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src =
-                              "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800";
-                          }}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/20 to-transparent opacity-90" />
-                        <div className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur transition-transform duration-300 group-hover:scale-110">
-                          <ArrowUpRight size={20} />
-                        </div>
-                        <div className="absolute inset-x-0 bottom-0 p-5">
-                          <div className="mb-3 inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.25em] text-white/80 backdrop-blur">
-                            Công trình
-                          </div>
-                          <h3 className="line-clamp-2 text-lg font-bold leading-tight text-white">
-                            {project.title}
-                          </h3>
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.div>
-                );
-              })}
+            : projects.map((project) => (
+                <Link
+                  key={project.id}
+                  href={project.href}
+                  className="group overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1"
+                >
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={project.imageUrl}
+                      alt={project.title}
+                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="line-clamp-2 text-sm font-bold text-slate-800 group-hover:text-primary">
+                      {project.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
         </div>
 
         <div className="mt-12 text-center">

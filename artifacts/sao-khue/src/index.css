@@ -685,3 +685,162 @@ html {
 .qh-mobile-nav {
   @apply z-40;
 }
+
+/* —— Trang chủ kiểu Quang Hào —— */
+.qh-section-title {
+  background: #1a6b35;
+  @apply py-3 text-center md:py-3.5;
+}
+
+.qh-section-title h2 {
+  @apply text-lg font-extrabold uppercase tracking-wide text-white md:text-xl;
+}
+
+.qh-home-ticker {
+  overflow: hidden;
+  background: #c62828;
+  color: #fff;
+  @apply py-2 text-xs font-semibold md:text-sm;
+}
+
+.qh-home-ticker__track {
+  display: flex;
+  width: max-content;
+  animation: qh-ticker 40s linear infinite;
+  white-space: nowrap;
+}
+
+.qh-home-ticker__track span {
+  padding-right: 4rem;
+}
+
+@keyframes qh-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.qh-home-band {
+  @apply border-b border-slate-200 bg-white;
+}
+
+.qh-home-band__cta {
+  @apply inline-flex items-center justify-center rounded-sm px-6 py-2.5 text-xs font-bold uppercase tracking-wide text-white transition md:text-sm;
+  background: #1a6b35;
+}
+
+.qh-home-band__cta:hover {
+  background: #228b3a;
+}
+
+.qh-home-card {
+  @apply overflow-hidden border border-slate-200 bg-white shadow-sm transition hover:shadow-md;
+}
+
+.qh-home-card__image-wrap {
+  @apply block overflow-hidden;
+}
+
+.qh-home-card__image {
+  @apply aspect-[16/10] h-full w-full object-cover transition duration-500 group-hover:scale-105;
+}
+
+.qh-home-card__body {
+  @apply p-4;
+}
+
+.qh-home-card__title {
+  @apply mb-2 text-sm font-bold leading-snug text-slate-800 md:text-[15px];
+}
+
+.qh-home-card__title a:hover {
+  color: #1a6b35;
+}
+
+.qh-home-card__excerpt {
+  @apply line-clamp-4 text-xs leading-6 text-slate-600 md:text-sm;
+}
+
+.qh-home-stats {
+  @apply border-b border-slate-200 bg-white;
+}
+
+.qh-home-stats__item {
+  @apply border border-slate-200 bg-white p-4 text-center md:p-6;
+}
+
+.qh-home-stats__icon {
+  @apply mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full text-white;
+  background: #1a6b35;
+}
+
+.qh-home-stats__value {
+  @apply text-3xl font-extrabold md:text-4xl;
+  color: #1a6b35;
+}
+
+.qh-home-stats__label {
+  @apply mt-2 text-xs font-bold uppercase tracking-wide text-slate-700 md:text-sm;
+}
+
+.qh-home-projects__tabs {
+  @apply flex flex-wrap gap-2;
+}
+
+.qh-home-projects__tabs button {
+  @apply rounded-sm border border-slate-300 px-4 py-2 text-xs font-bold uppercase tracking-wide text-slate-700 transition md:text-sm;
+}
+
+.qh-home-projects__tabs button.is-active,
+.qh-home-projects__tabs button:hover {
+  color: #fff;
+  background: #1a6b35;
+  border-color: #1a6b35;
+}
+
+.qh-home-project-card {
+  @apply block overflow-hidden border border-slate-200 bg-white transition hover:shadow-md;
+}
+
+.qh-home-project-card__image-wrap {
+  @apply overflow-hidden;
+}
+
+.qh-home-project-card__image {
+  @apply aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105;
+}
+
+.qh-home-project-card__title {
+  @apply line-clamp-2 p-3 text-xs font-bold leading-snug text-slate-800 md:text-sm;
+}
+
+.qh-home-calculator__intro {
+  @apply mx-auto mb-6 max-w-4xl text-center text-sm leading-relaxed text-slate-600 md:text-base;
+}
+
+.qh-home-testimonial {
+  @apply relative border border-slate-200 bg-slate-50 p-5 md:p-6;
+}
+
+.qh-home-testimonial__icon {
+  @apply mb-2 text-primary/15;
+}
+
+.qh-home-testimonial__text {
+  @apply mb-4 text-sm leading-relaxed text-slate-700;
+}
+
+.qh-home-testimonial__meta {
+  @apply border-t border-slate-200 pt-3 text-sm;
+}
+
+.qh-home-testimonial__meta strong {
+  @apply block font-bold text-primary;
+}
+
+.qh-home-testimonial__meta span {
+  @apply text-xs uppercase tracking-wide text-slate-500;
+}
