@@ -632,7 +632,7 @@ html {
 }
 
 .qh-main-nav__inner {
-  @apply site-container flex max-w-[1440px] items-stretch;
+  @apply container mx-auto flex max-w-[1440px] items-stretch px-4 sm:px-6;
 }
 
 .qh-main-nav__home {
