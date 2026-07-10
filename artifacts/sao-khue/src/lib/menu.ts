@@ -6,36 +6,100 @@ export type MenuItem = {
   shortTitle?: string;
   href: string;
   category?: string;
-  /** @deprecated Không còn menu xổ cấp — chỉ dùng khi CMS menu JSON cũ */
   children?: MenuItem[];
 };
 
-/** Menu con dịch vụ — chỉ map URL /dich-vu/{leaf}, không hiện dropdown header */
-const dichVuUrlChildren: MenuItem[] = [
-  { title: "Xây nhà trọn gói", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
-  { title: "Xây nhà trọn gói Bình Dương", href: "/dich-vu/xay-nha-tron-goi-binh-duong", category: "dich-vu" },
-  { title: "Xây nhà trọn gói Đồng Nai", href: "/dich-vu/xay-nha-tron-goi-dong-nai", category: "dich-vu" },
-  { title: "Sửa chữa nhà", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-  { title: "Xây dựng phần thô", href: "/dich-vu/xay-dung-phan-tho", category: "dich-vu" },
-  { title: "Thiết kế nhà", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },
-  { title: "Nâng tầng nhà phố", href: "/dich-vu/nang-tang-nha-pho", category: "dich-vu" },
-  { title: "Hoàn thiện nhà", href: "/dich-vu/hoan-thien-nha", category: "dich-vu" },
-  { title: "Khuyến mại xây dựng", href: "/dich-vu/khuyen-mai", category: "dich-vu" },
-];
-
-/** Menu phẳng: bấm mục → trang danh sách hoặc bài viết (không hover dropdown) */
+/** Menu kiểu Quang Hào — thanh ngang + dropdown hover */
 export const defaultNavMenu: MenuItem[] = [
-  { title: "TRANG CHỦ", href: "/" },
-  { title: "GIỚI THIỆU", href: `/bai-viet/${ABOUT_POST_SLUG}` },
   {
-    title: "DỊCH VỤ",
-    href: "/dich-vu",
-    category: "dich-vu",
-    children: dichVuUrlChildren,
+    title: "GIỚI THIỆU",
+    href: `/bai-viet/${ABOUT_POST_SLUG}`,
+    category: "gioi-thieu",
+    children: [
+      { title: "TỔNG QUAN", href: `/bai-viet/${ABOUT_POST_SLUG}`, category: "gioi-thieu" },
+      { title: "THÔNG ĐIỆP CEO", href: `/bai-viet/${ABOUT_POST_SLUG}`, category: "gioi-thieu" },
+      { title: "TẦM NHÌN - SỨ MỆNH", href: `/bai-viet/${ABOUT_POST_SLUG}`, category: "gioi-thieu" },
+      { title: "HỒ SƠ NĂNG LỰC", href: "/bai-viet/so-do-to-chuc", category: "gioi-thieu" },
+    ],
   },
-  { title: "CÔNG TRÌNH", href: "/cong-trinh", category: "cong-trinh" },
-  { title: "BẢNG BÁO GIÁ", shortTitle: "BÁO GIÁ", href: "/bao-gia" },
-  { title: "TIN TỨC", href: "/tin-tuc", category: "tin-tuc" },
+  {
+    title: "BÁO GIÁ",
+    href: "/bao-gia",
+    children: [
+      { title: "BÁO GIÁ THIẾT KẾ", href: "/tin-tuc/thiet-ke-nha-dep-gia-re" },
+      { title: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an" },
+      { title: "BÁO GIÁ TRỌN GÓI", href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm" },
+      { title: "BÁO GIÁ HOÀN THIỆN", href: "/dich-vu/hoan-thien-nha", category: "dich-vu" },
+      { title: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "QUY TRÌNH", href: "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z" },
+      { title: "BẢO HÀNH", href: `/bai-viet/${ABOUT_POST_SLUG}` },
+    ],
+  },
+  {
+    title: "THIẾT KẾ",
+    href: "/dich-vu/thiet-ke-nha",
+    category: "dich-vu",
+    children: [
+      { title: "THIẾT KẾ NHÀ PHỐ", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },
+      { title: "THIẾT KẾ BIỆT THỰ", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", category: "cong-trinh" },
+      { title: "THIẾT KẾ NỘI THẤT", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },
+    ],
+  },
+  {
+    title: "XÂY MỚI",
+    href: "/dich-vu/xay-nha-tron-goi",
+    category: "dich-vu",
+    children: [
+      { title: "Nhà phố", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
+      { title: "Biệt thự", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", category: "cong-trinh" },
+      { title: "Nhà cấp 4", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
+    ],
+  },
+  {
+    title: "HOẠT ĐỘNG",
+    href: "/bai-viet/hoat-dong-sao-khue",
+    category: "gioi-thieu",
+  },
+  {
+    title: "CẢI TẠO",
+    href: "/dich-vu/sua-chua-nha",
+    category: "dich-vu",
+    children: [
+      { title: "Nhà phố", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "Biệt thự", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "Cải tạo nhà cũ", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+    ],
+  },
+  {
+    title: "CÔNG TRÌNH",
+    href: "/cong-trinh",
+    category: "cong-trinh",
+    children: [
+      { title: "CÔNG TRÌNH TIÊU BIỂU", href: "/cong-trinh", category: "cong-trinh" },
+      { title: "CÔNG TRÌNH ĐANG THI CÔNG", href: "/cong-trinh", category: "cong-trinh" },
+    ],
+  },
+  {
+    title: "CẨM NANG",
+    href: "/tin-tuc",
+    category: "tin-tuc",
+    children: [
+      { title: "Cẩm nang nhà phố", href: "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm", category: "tin-tuc" },
+      { title: "Cẩm nang biệt thự", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", category: "cong-trinh" },
+      { title: "Cẩm nang cải tạo nhà", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "Cẩm nang thiết kế", href: "/tin-tuc/thiet-ke-nha-dep-gia-re", category: "tin-tuc" },
+      { title: "Cẩm nang xây nhà A–Z", href: "/tin-tuc/cam-nang-xay-nha-2026", category: "tin-tuc" },
+    ],
+  },
+  {
+    title: "TIN NỘI BỘ",
+    href: "/bai-viet/hoat-dong-sao-khue",
+    category: "gioi-thieu",
+    children: [
+      { title: "HOẠT ĐỘNG NỘI BỘ", href: "/bai-viet/hoat-dong-sao-khue", category: "gioi-thieu" },
+      { title: "TUYỂN DỤNG", href: "/bai-viet/tuyen-dung", category: "gioi-thieu" },
+    ],
+  },
   { title: "LIÊN HỆ", href: "/lien-he" },
 ];
 

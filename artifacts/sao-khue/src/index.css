@@ -595,3 +595,93 @@ html {
     min-height: 520px;
   }
 }
+
+/* —— Header kiểu Quang Hào —— */
+.qh-topbar {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+}
+
+.qh-topbar__left {
+  @apply flex items-center px-4 py-2;
+  background: #1a6b35;
+}
+
+.qh-topbar__right {
+  @apply flex min-w-0 items-center justify-end gap-4 px-4 py-2;
+  background: #c62828;
+}
+
+.qh-topbar__contact {
+  @apply inline-flex min-w-0 max-w-full items-center gap-1.5 font-medium;
+}
+
+.qh-topbar__contact--link {
+  @apply transition hover:text-white/85;
+}
+
+.qh-site-header {
+  @apply shadow-[0_4px_24px_rgba(15,23,42,0.08)];
+}
+
+.qh-hotline__avatar {
+  @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-primary/20 bg-primary/5;
+}
+
+.qh-main-nav {
+  background: #1a6b35;
+}
+
+.qh-main-nav__inner {
+  @apply site-container flex max-w-[1440px] items-stretch;
+}
+
+.qh-main-nav__home {
+  @apply flex shrink-0 items-center justify-center border-r border-white/15 px-4 text-white transition;
+  min-width: 3.25rem;
+}
+
+.qh-main-nav__home:hover,
+.qh-main-nav__home.is-active {
+  background: #228b3a;
+}
+
+.qh-main-nav__item {
+  @apply relative flex shrink-0;
+}
+
+.qh-main-nav__link {
+  @apply flex h-full min-h-[46px] items-center gap-1 border-r border-white/15 px-3 text-[11px] font-bold uppercase tracking-wide text-white transition xl:px-4 xl:text-xs;
+  white-space: nowrap;
+}
+
+.qh-main-nav__link:hover,
+.qh-main-nav__link.is-active,
+.qh-main-nav__link.is-open {
+  background: #228b3a;
+}
+
+.qh-main-nav__chevron {
+  @apply opacity-80;
+}
+
+.qh-main-nav__dropdown {
+  @apply pointer-events-none absolute left-0 top-full z-[60] min-w-[220px] opacity-0 shadow-xl transition;
+  background: #228b3a;
+}
+
+.qh-main-nav__dropdown.is-visible {
+  @apply pointer-events-auto opacity-100;
+}
+
+.qh-main-nav__dropdown-link {
+  @apply block border-b border-white/10 px-4 py-2.5 text-[11px] font-bold uppercase tracking-wide text-white transition last:border-b-0 xl:text-xs;
+}
+
+.qh-main-nav__dropdown-link:hover,
+.qh-main-nav__dropdown-link.is-active {
+  background: #2da44e;
+}
+
+.qh-mobile-nav {
+  @apply z-40;
+}
