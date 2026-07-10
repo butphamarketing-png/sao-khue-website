@@ -73,10 +73,24 @@ export type CostCalculatorConfig = {
 export const defaultHeroSlides: HeroSlide[] = [
   {
     image: "/images/hero-1.jpg",
-    title: "Đội ngũ Kiến Trúc Sao Khuê — tận tâm uy tín chất lượng",
+    title: "Thiết kế & xây nhà trọn gói",
     subtitle: "Kiến Trúc Sao Khuê",
     description:
-      "Công ty TNHH Kiến Trúc Sao Khuê — thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh.",
+      "Kiến tạo không gian sống hiện đại, bền vững và đẳng cấp. Hotline 0909 075 668.",
+  },
+  {
+    image: "/images/hero-2.jpg",
+    title: "Thiết kế & thi công nhà phố, biệt thự",
+    subtitle: "Kiến Trúc Sao Khuê",
+    description:
+      "Uy tín — chất lượng — tận tâm. Tư vấn và khảo sát miễn phí tại công trình.",
+  },
+  {
+    image: "/images/hero-3.jpg",
+    title: "Cải tạo sửa chữa nhà",
+    subtitle: "Kiến Trúc Sao Khuê",
+    description:
+      "Cải tạo nhà cũ thành không gian mới — minh bạch báo giá, đúng tiến độ.",
   },
 ];
 
@@ -405,8 +419,11 @@ export function useSiteSettings(): SiteSettingsFull {
 }
 
 export function useHeroSlides(): HeroSlide[] {
-  // Luôn dùng hero-1 mặc định, bỏ qua dữ liệu trong database
-  return restoreHeroSlides(defaultHeroSlides);
+  const settings = useSiteSettings();
+  const parsed = parseJsonArray<HeroSlide>(settings.heroSlidesJson, defaultHeroSlides);
+  // Dùng bộ 3 slide mặc định khi DB chưa cấu hình đủ (ví dụ chỉ còn 1 slide cũ)
+  const slides = parsed.filter((s) => s.image?.trim()).length >= 3 ? parsed : defaultHeroSlides;
+  return restoreHeroSlides(slides);
 }
 
 export function useCommitments(): CommitmentItem[] {

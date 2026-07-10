@@ -30,24 +30,24 @@ const defaults: Record<string, string> = {
   heroSlidesJson: JSON.stringify([
     {
       image: "/images/hero-1.jpg",
-      title: "??i ng? Ki?n Trúc Sao Khuê — t?n tâm uy tín ch?t l??ng",
-      subtitle: "Ki?n Trúc Sao Khuê",
+      title: "Thi?t k? & xây nh? tr?n gói",
+      subtitle: "Ki?n Trúc Sao Khu?",
       description:
-        "Công ty TNHH Ki?n Trúc Sao Khuê — thi?t k? và thi công nhà ph?, bi?t th? tr?n gói t?i TP.HCM và các t?nh.",
+        "Ki?n t?o không gian s?ng hi?n ð?i, b?n v?ng v? ð?ng c?p. Hotline 0909 075 668.",
     },
     {
-      image: "/images/hero-2.png",
-      title: "Uy tín — ch?t l??ng — t?n tâm",
-      subtitle: "Xây d?ng bi?t th? hi?n ??i",
+      image: "/images/hero-2.jpg",
+      title: "Thi?t k? & thi công nh? ph?, bi?t th?",
+      subtitle: "Ki?n Trúc Sao Khu?",
       description:
-        "V?i ??i ng? k? s?, ki?n trúc s? giàu kinh nghi?m, chúng tôi t? hào ??ng hành cùng hàng tr?m gia ?ình ki?n t?o t? ?m m? ??c.",
+        "Uy tín ? ch?t l??ng ? t?n tâm. T? v?n v? kh?o sát mi?n phí t?i công tr?nh.",
     },
     {
-      image: "/images/hero-3.png",
-      title: "Thi công ?úng ti?n ?? và b?o hành dài h?n",
-      subtitle: "Qu?n lý d? án chuyên nghi?p",
+      image: "/images/hero-3.jpg",
+      title: "C?i t?o s?a ch?a nh?",
+      subtitle: "Ki?n Trúc Sao Khu?",
       description:
-        "Minh b?ch trong báo giá, s? d?ng v?t t? chính hãng, không phát sinh chi phí. B?o hành k?t c?u lên ??n 10 n?m.",
+        "C?i t?o nh? c? th?nh không gian m?i ? minh b?ch báo giá, ðúng ti?n ð?.",
     },
   ]),
   homePricingJson: JSON.stringify([
