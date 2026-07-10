@@ -596,14 +596,14 @@ html {
   }
 }
 
-/* —— Header kiểu Quang Hào —— */
+/* —— Header kiểu Quang Hào (màu chính: xanh dương Sao Khuê #17579d) —— */
 .qh-topbar {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
 }
 
 .qh-topbar__left {
   @apply flex items-center px-4 py-2;
-  background: #1a6b35;
+  background: #17579d;
 }
 
 .qh-topbar__right {
@@ -628,7 +628,7 @@ html {
 }
 
 .qh-main-nav {
-  background: #1a6b35;
+  background: #17579d;
 }
 
 .qh-main-nav__inner {
@@ -642,7 +642,7 @@ html {
 
 .qh-main-nav__home:hover,
 .qh-main-nav__home.is-active {
-  background: #228b3a;
+  background: #1e6bb8;
 }
 
 .qh-main-nav__item {
@@ -657,7 +657,7 @@ html {
 .qh-main-nav__link:hover,
 .qh-main-nav__link.is-active,
 .qh-main-nav__link.is-open {
-  background: #228b3a;
+  background: #1e6bb8;
 }
 
 .qh-main-nav__chevron {
@@ -666,7 +666,7 @@ html {
 
 .qh-main-nav__dropdown {
   @apply pointer-events-none absolute left-0 top-full z-[60] min-w-[220px] opacity-0 shadow-xl transition;
-  background: #228b3a;
+  background: #1e6bb8;
 }
 
 .qh-main-nav__dropdown.is-visible {
@@ -679,16 +679,16 @@ html {
 
 .qh-main-nav__dropdown-link:hover,
 .qh-main-nav__dropdown-link.is-active {
-  background: #2da44e;
+  background: #2389cf;
 }
 
 .qh-mobile-nav {
   @apply z-40;
 }
 
-/* —— Trang chủ kiểu Quang Hào —— */
+/* —— Trang chủ (layout Quang Hào, màu xanh dương Sao Khuê) —— */
 .qh-section-title {
-  background: #1a6b35;
+  background: #17579d;
   @apply py-3 text-center md:py-3.5;
 }
 
@@ -729,11 +729,11 @@ html {
 
 .qh-home-band__cta {
   @apply inline-flex items-center justify-center rounded-sm px-6 py-2.5 text-xs font-bold uppercase tracking-wide text-white transition md:text-sm;
-  background: #1a6b35;
+  background: #17579d;
 }
 
 .qh-home-band__cta:hover {
-  background: #228b3a;
+  background: #1e6bb8;
 }
 
 .qh-home-card {
@@ -757,7 +757,7 @@ html {
 }
 
 .qh-home-card__title a:hover {
-  color: #1a6b35;
+  color: #17579d;
 }
 
 .qh-home-card__excerpt {
@@ -774,12 +774,12 @@ html {
 
 .qh-home-stats__icon {
   @apply mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full text-white;
-  background: #1a6b35;
+  background: #17579d;
 }
 
 .qh-home-stats__value {
   @apply text-3xl font-extrabold md:text-4xl;
-  color: #1a6b35;
+  color: #17579d;
 }
 
 .qh-home-stats__label {
@@ -797,8 +797,8 @@ html {
 .qh-home-projects__tabs button.is-active,
 .qh-home-projects__tabs button:hover {
   color: #fff;
-  background: #1a6b35;
-  border-color: #1a6b35;
+  background: #17579d;
+  border-color: #17579d;
 }
 
 .qh-home-project-card {
