@@ -686,6 +686,15 @@ html {
   @apply z-40;
 }
 
+/* Popup đặt lịch — trên màn hình loading (z-100) */
+body:has(.quote-request-dialog[data-state="open"]) [data-radix-dialog-overlay] {
+  z-index: 110;
+}
+
+.quote-request-dialog {
+  z-index: 110;
+}
+
 /* —— Trang chủ (layout Quang Hào, màu xanh dương Sao Khuê) —— */
 .qh-section-title {
   background: #17579d;

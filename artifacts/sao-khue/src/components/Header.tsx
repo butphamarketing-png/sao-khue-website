@@ -1,8 +1,10 @@
 import { Link, useLocation } from "wouter";
-import { ChevronDown, Menu, PhoneCall, X } from "lucide-react";
+import { ChevronDown, ClipboardList, Menu, PhoneCall, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { BrandLogo } from "@/components/BrandLogo";
 import { MainNav } from "@/components/MainNav";
 import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/site-settings";
+import { useQuoteRequest } from "@/lib/quote-request-context";
 import { useEffect, useState } from "react";
 import type { MenuItem } from "@/lib/menu";
 
@@ -20,6 +22,7 @@ export function Header() {
   const s = useSiteSettings();
   const menu = useNavMenu();
   const phone = usePrimaryPhone();
+  const { openQuoteRequest } = useQuoteRequest();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [expandedMobile, setExpandedMobile] = useState<string | null>(null);
   const [location] = useLocation();
@@ -58,6 +61,16 @@ export function Header() {
             </div>
 
             <div className="flex shrink-0 items-center justify-end gap-2 sm:gap-3">
+              <Button
+                type="button"
+                variant="outline"
+                className="hidden h-10 rounded-sm border-primary/25 px-3 text-xs font-bold uppercase tracking-wide text-primary hover:bg-primary hover:text-white lg:inline-flex xl:px-4"
+                onClick={openQuoteRequest}
+              >
+                <ClipboardList size={16} className="mr-1.5 shrink-0" />
+                Đặt lịch
+              </Button>
+
               {phone && (
                 <a
                   href={telHref(phone)}
@@ -158,6 +171,27 @@ export function Header() {
               </div>
             );
           })}
+          <div className="space-y-2 p-4">
+            <Button
+              type="button"
+              className="w-full rounded-sm bg-primary font-bold uppercase tracking-wide hover:bg-primary/90"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openQuoteRequest();
+              }}
+            >
+              <ClipboardList size={18} />
+              <span className="ml-2">Đặt lịch tư vấn</span>
+            </Button>
+            {phone && (
+              <Button asChild className="w-full rounded-sm bg-accent font-bold uppercase hover:bg-accent/90">
+                <a href={telHref(phone)}>
+                  <PhoneCall size={18} />
+                  <span className="ml-2">Gọi hotline</span>
+                </a>
+              </Button>
+            )}
+          </div>
         </div>
       )}
     </header>

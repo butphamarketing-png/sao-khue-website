@@ -10,7 +10,8 @@ import {
 import { QuoteRequestModal } from "@/components/QuoteRequestModal";
 
 const AUTO_OPEN_KEY = "saokhue-quote-popup-auto";
-const AUTO_OPEN_DELAY_MS = 1400;
+const AUTO_OPEN_AFTER_LOADER_MS = 500;
+const AUTO_OPEN_FALLBACK_MS = 3600;
 
 type QuoteRequestContextValue = {
   open: boolean;
@@ -27,15 +28,30 @@ export function QuoteRequestProvider({ children }: { children: ReactNode }) {
   const closeQuoteRequest = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
-    if (typeof sessionStorage === "undefined") return;
+    if (typeof window === "undefined" || typeof sessionStorage === "undefined") return;
     if (sessionStorage.getItem(AUTO_OPEN_KEY) === "1") return;
+    if (window.location.pathname.replace(/\/$/, "").endsWith("/admin")) return;
 
-    const timer = window.setTimeout(() => {
+    const openOnce = () => {
+      if (sessionStorage.getItem(AUTO_OPEN_KEY) === "1") return;
       sessionStorage.setItem(AUTO_OPEN_KEY, "1");
       setOpen(true);
-    }, AUTO_OPEN_DELAY_MS);
+    };
 
-    return () => window.clearTimeout(timer);
+    const onLoaderDone = () => {
+      window.setTimeout(openOnce, AUTO_OPEN_AFTER_LOADER_MS);
+    };
+
+    window.addEventListener("saokhue:loader-done", onLoaderDone, { once: true });
+    const fallback = window.setTimeout(() => {
+      window.removeEventListener("saokhue:loader-done", onLoaderDone);
+      openOnce();
+    }, AUTO_OPEN_FALLBACK_MS);
+
+    return () => {
+      window.removeEventListener("saokhue:loader-done", onLoaderDone);
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   const value = useMemo(

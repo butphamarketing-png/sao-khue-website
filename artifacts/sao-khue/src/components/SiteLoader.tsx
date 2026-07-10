@@ -51,6 +51,12 @@ export function SiteLoader() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!visible) {
+      window.dispatchEvent(new CustomEvent("saokhue:loader-done"));
+    }
+  }, [visible]);
+
   const brandShort =
     s.companyName?.includes("SAO KHUÊ") || s.companyName?.includes("Sao Khuê")
       ? "KIẾN TRÚC SAO KHUÊ"

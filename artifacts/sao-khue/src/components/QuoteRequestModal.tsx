@@ -95,14 +95,14 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[92vh] max-w-lg overflow-y-auto rounded-2xl border-slate-200 p-0 sm:max-w-xl">
+      <DialogContent className="quote-request-dialog z-[110] max-h-[92vh] max-w-lg overflow-y-auto rounded-2xl border-slate-200 p-0 sm:max-w-xl">
         <div className="border-b border-slate-100 bg-gradient-to-r from-primary/5 via-white to-accent/5 px-6 py-5">
           <DialogHeader className="space-y-1 text-left">
             <DialogTitle className="text-xl font-bold text-slate-900 md:text-2xl">
-              Yêu cầu tư vấn &amp; báo giá
+              Đặt lịch tư vấn &amp; báo giá
             </DialogTitle>
             <DialogDescription className="text-sm text-slate-600">
-              Điền thông tin — Kiến Trúc Sao Khuê sẽ khảo sát và báo giá miễn phí.
+              Điền thông tin — Sao Khuê sẽ liên hệ khảo sát và báo giá miễn phí.
             </DialogDescription>
           </DialogHeader>
         </div>
