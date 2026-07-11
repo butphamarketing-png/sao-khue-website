@@ -33,13 +33,20 @@ type PostRow = {
   metaKeywords?: string | null;
 };
 
+/** Banner thumbnail tùy chỉnh trong /images/articles/ — luôn ưu tiên seed. */
+function hasCustomArticleThumbnail(seed: SeedPost): boolean {
+  return (seed.imageUrl ?? "").includes("/images/articles/");
+}
+
 /** Gộp ảnh/nội dung từ seed khi DB còn URL hoặc HTML cũ. */
 export function mergePostMedia<T extends PostRow>(row: T, seed?: SeedPost): T {
   if (!seed) return row;
 
-  const imageUrl = isLegacyPostImageUrl(row.imageUrl)
+  const imageUrl = hasCustomArticleThumbnail(seed)
     ? seed.imageUrl
-    : String(row.imageUrl ?? "").trim() || seed.imageUrl;
+    : isLegacyPostImageUrl(row.imageUrl)
+      ? seed.imageUrl
+      : String(row.imageUrl ?? "").trim() || seed.imageUrl;
   const content = isLegacyPostContent(row.content) ? seed.content : (row.content ?? seed.content);
 
   return {
