@@ -56,4 +56,5 @@ export const contentCalendar: ContentCalendarItem[] = [
   { no: 28, title: "Top Mẫu Nhà Phố Đẹp Dẫn Đầu Xu Hướng Hiện Nay", keyword: "mẫu nhà phố đẹp", slug: "top-mau-nha-pho-dep-xu-huong", status: "done" },
   { no: 29, title: "Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam", keyword: "thiết kế xây dựng nhà phố", slug: "thiet-ke-xay-dung-nha-pho-mien-nam", status: "done" },
   { no: 30, title: "Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp", keyword: "Kiến Trúc Sao Khuê", slug: "kien-truc-sao-khue-don-vi-uy-tin", status: "done" },
+  { no: 31, title: "Báo Giá Xây Nhà Mới Trọn Gói 2026", keyword: "báo giá xây nhà mới", slug: "bao-gia-xay-nha-moi", status: "done" },
 ];

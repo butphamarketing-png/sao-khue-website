@@ -1,11 +1,39 @@
 import { Link } from "wouter";
+import type { Post } from "@workspace/api-client-react";
 import { useListPosts } from "@workspace/api-client-react";
 import { QhSectionTitle } from "@/components/QhSectionTitle";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { HomePostsBandConfig } from "@/lib/home-content";
-import { pickBandPosts } from "@/lib/post-band";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { getPostPublicPath } from "@/lib/post-url";
+
+function pickBandPosts(allPosts: Post[], config: HomePostsBandConfig): Post[] {
+  const limit = config.limit ?? 4;
+  const bySlug = new Map(allPosts.map((p) => [p.slug, p]));
+
+  if (config.slugs?.length) {
+    const picked: Post[] = [];
+    for (const slug of config.slugs) {
+      const post = bySlug.get(slug);
+      if (post) picked.push(post);
+    }
+    if (picked.length > 0) return picked.slice(0, limit);
+  }
+
+  let filtered = allPosts;
+  if (config.category) {
+    filtered = filtered.filter((p) => p.category === config.category);
+  }
+  if (config.slugKeywords?.length) {
+    filtered = filtered.filter((p) => {
+      const slug = p.slug.toLowerCase();
+      const title = p.title.toLowerCase();
+      return config.slugKeywords!.some((kw) => slug.includes(kw) || title.includes(kw));
+    });
+  }
+
+  return filtered.slice(0, limit);
+}
 
 type Props = {
   config: HomePostsBandConfig;

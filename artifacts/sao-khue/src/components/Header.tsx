@@ -7,11 +7,9 @@ import { useSiteSettings, telHref, useNavMenu, usePrimaryPhone } from "@/lib/sit
 import { useQuoteRequest } from "@/lib/quote-request-context";
 import { useEffect, useState } from "react";
 import type { MenuItem } from "@/lib/menu";
-import { isBaoGiaArticlePath } from "@/lib/menu";
 
 function isItemActive(location: string, item: MenuItem): boolean {
   if (location === item.href) return true;
-  if (item.href === "/bao-gia" && isBaoGiaArticlePath(location)) return true;
   if (item.category && location.startsWith(`/${item.category}`)) return true;
   if (item.category === "tin-tuc" && location.startsWith("/kinh-nghiem")) return true;
   if (item.children?.some((child) => location === child.href || location.startsWith(`${child.href}/`))) {

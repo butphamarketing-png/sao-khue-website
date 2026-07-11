@@ -1,11 +1,6 @@
 import {
   suaNhaTronGoiTphcm,
   xayNhaTronGoiTphcm,
-  xayNhaMoi,
-  caiTaoNhaCu,
-  xayDungNha3Tang,
-  xayDungNha2Tang,
-  xayDungBietThu,
   xayNhaTronGoiBinhDuong,
   xayDungPhanTho,
   thietKeNha,
@@ -27,8 +22,7 @@ import {
   phongThuyNhaO,
   congTyXayDungNhaPhoUyTinTphcm,
   baoGiaXayNhaTronGoiMoiNhatTphcm,
-  baoGiaPillarArticlesBySlug,
-  BAO_GIA_PILLAR_SLUGS,
+  baoGiaXayNhaMoi,
   mauNhaPho2TangBinhDuong,
   xayNhaTronGoiDongNai,
   thietKeThiCongNhaPhoDongNai,
@@ -126,13 +120,16 @@ const FALLBACK_TIMESTAMP = "2026-01-15T00:00:00.000Z";
 /** 23 bài — khớp menu con + bài công trình bổ sung */
 export const seedPosts: SeedPost[] = [
   seoPost(
+    "bao-gia-xay-nha-moi",
+    "tin-tuc",
+    featuredImageForSlug("bao-gia-xay-nha-moi"),
+    baoGiaXayNhaMoi,
+  ),
+  seoPost(
     "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
     "tin-tuc",
     featuredImageForSlug("bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"),
     baoGiaXayNhaTronGoiMoiNhatTphcm,
-  ),
-  ...BAO_GIA_PILLAR_SLUGS.map((slug) =>
-    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), baoGiaPillarArticlesBySlug[slug]),
   ),
   seoPost(
     "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
@@ -158,15 +155,10 @@ export const seedPosts: SeedPost[] = [
     featuredImageForSlug("thiet-ke-nha-pho-hien-dai-tphcm"),
     thietKeNhaPhoHienDaiTphcm,
   ),
-  seoPost("xay-dung-biet-thu", "dich-vu", featuredImageForSlug("xay-dung-biet-thu"), xayDungBietThu),
-  seoPost("xay-dung-nha-2-tang", "dich-vu", featuredImageForSlug("xay-dung-nha-2-tang"), xayDungNha2Tang),
-  seoPost("xay-dung-nha-3-tang", "dich-vu", featuredImageForSlug("xay-dung-nha-3-tang"), xayDungNha3Tang),
-  seoPost("xay-nha-moi", "dich-vu", featuredImageForSlug("xay-nha-moi"), xayNhaMoi),
   seoPost("xay-nha-tron-goi-tphcm", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-tphcm"), xayNhaTronGoiTphcm),
   seoPost("xay-nha-tron-goi-binh-duong", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-binh-duong"), xayNhaTronGoiBinhDuong),
   seoPost("xay-nha-tron-goi-dong-nai", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-dong-nai"), xayNhaTronGoiDongNai),
   seoPost("sua-nha-tron-goi-tphcm", "dich-vu", featuredImageForSlug("sua-nha-tron-goi-tphcm"), suaNhaTronGoiTphcm),
-  seoPost("cai-tao-nha-cu", "dich-vu", featuredImageForSlug("cai-tao-nha-cu"), caiTaoNhaCu),
   seoPost("sua-chua-nha-tphcm", "dich-vu", featuredImageForSlug("sua-chua-nha-tphcm"), suaChuaNhaTphcm),
   seoPost("xay-dung-phan-tho", "dich-vu", featuredImageForSlug("xay-dung-phan-tho"), xayDungPhanTho),
   seoPost("thiet-ke-nha", "dich-vu", featuredImageForSlug("thiet-ke-nha"), thietKeNha),

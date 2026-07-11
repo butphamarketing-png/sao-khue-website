@@ -30,107 +30,107 @@ const defaults: Record<string, string> = {
   heroSlidesJson: JSON.stringify([
     {
       image: "/images/hero-1.jpg",
-      title: "Thi?t k? & xây nh? tr?n gói",
-      subtitle: "Ki?n Trúc Sao Khu?",
+      title: "Thiáº¿t káº¿ & xÃ¢y nhÃ  trá»n gÃ³i",
+      subtitle: "Kiáº¿n TrÃºc Sao KhuÃª",
       description:
-        "Ki?n t?o không gian s?ng hi?n ğ?i, b?n v?ng v? ğ?ng c?p. Hotline 0909 075 668.",
+        "Kiáº¿n táº¡o khÃ´ng gian sá»‘ng hiá»‡n Ä‘áº¡i, bá»n vá»¯ng vÃ  Ä‘áº³ng cáº¥p. Hotline 0909 075 668.",
     },
     {
       image: "/images/hero-2.jpg",
-      title: "Thi?t k? & thi công nh? ph?, bi?t th?",
-      subtitle: "Ki?n Trúc Sao Khu?",
+      title: "Thiáº¿t káº¿ & thi cÃ´ng nhÃ  phá»‘, biá»‡t thá»±",
+      subtitle: "Kiáº¿n TrÃºc Sao KhuÃª",
       description:
-        "Uy tín ? ch?t l??ng ? t?n tâm. T? v?n v? kh?o sát mi?n phí t?i công tr?nh.",
+        "Uy tÃ­n â€” cháº¥t lÆ°á»£ng â€” táº­n tÃ¢m. TÆ° váº¥n vÃ  kháº£o sÃ¡t miá»…n phÃ­ táº¡i cÃ´ng trÃ¬nh.",
     },
     {
       image: "/images/hero-3.jpg",
-      title: "C?i t?o s?a ch?a nh?",
-      subtitle: "Ki?n Trúc Sao Khu?",
+      title: "Cáº£i táº¡o sá»­a chá»¯a nhÃ ",
+      subtitle: "Kiáº¿n TrÃºc Sao KhuÃª",
       description:
-        "C?i t?o nh? c? th?nh không gian m?i ? minh b?ch báo giá, ğúng ti?n ğ?.",
+        "Cáº£i táº¡o nhÃ  cÅ© thÃ nh khÃ´ng gian má»›i â€” minh báº¡ch bÃ¡o giÃ¡, Ä‘Ãºng tiáº¿n Ä‘á»™.",
     },
   ]),
   homePricingJson: JSON.stringify([
     {
       id: "phan-tho",
-      name: "XY D?NG PH?N TH",
+      name: "XÂY D?NG PH?N THÂ",
       priceFrom: "3.550.000",
       priceTo: "3.800.000",
-      unit: "d/m",
-      note: "Bao g?m nhn cng v v?t tu th",
+      unit: "d/mÂ",
+      note: "Bao g?m nhÂn cÂng vÂ v?t tu thÂ",
       features: [
-        "Cung c?p v?t tu th",
-        "Nhn cng xy th ton b? cng trnh",
-        "Nhn cng hon thi?n co b?n",
-        "L?p d?t h? th?ng di?n nu?c m tu?ng",
-        "B?o hnh k?t c?u 10 nam",
+        "Cung c?p v?t tu thÂ",
+        "NhÂn cÂng xÂy thÂ toÂn b? cÂng trÂnh",
+        "NhÂn cÂng hoÂn thi?n co b?n",
+        "L?p d?t h? th?ng di?n nu?c Âm tu?ng",
+        "B?o hÂnh k?t c?u 10 nam",
       ],
       ctaHref: "/lien-he",
-      ctaLabel: "Nh?n bo gi chi ti?t",
+      ctaLabel: "Nh?n bÂo giÂ chi ti?t",
     },
     {
       id: "tron-goi",
-      name: "XY NH TR?N GI",
+      name: "XÂY NHÂ TR?N GÂI",
       priceFrom: "4.850.000",
       priceTo: "6.700.000",
-      unit: "d/m",
-      note: "Cha kha trao tay - vo ? ngay",
+      unit: "d/mÂ",
+      note: "ChÂa khÂa trao tay - vÂo ? ngay",
       features: [
-        "Bao g?m ton b? d?ch v? xy th",
-        "Cung c?p v?t tu hon thi?n",
+        "Bao g?m toÂn b? d?ch v? xÂy thÂ",
+        "Cung c?p v?t tu hoÂn thi?n",
         "L?p d?t c?a, lan can, c?u thang, thi?t b? v? sinh",
-        "Mi?n ph thi?t k? ki?n trc 2D/3D",
-        "B?o hnh hon thi?n 12-36 thng",
+        "Mi?n phÂ thi?t k? ki?n trÂc 2D/3D",
+        "B?o hÂnh hoÂn thi?n 12-36 thÂng",
       ],
       ctaHref: "/lien-he",
-      ctaLabel: "Nh?n bo gi chi ti?t",
+      ctaLabel: "Nh?n bÂo giÂ chi ti?t",
       highlighted: true,
     },
   ]),
   homeStatsJson: JSON.stringify([
-    { icon: "building-2", value: "500+", label: "Cng trnh bn giao" },
+    { icon: "building-2", value: "500+", label: "CÂng trÂnh bÂn giao" },
     { icon: "hard-hat", value: "10+", label: "Nam kinh nghi?m" },
-    { icon: "users", value: "50+", label: "K? su & ki?n trc su" },
-    { icon: "shield-check", value: "10 nam", label: "B?o hnh k?t c?u" },
+    { icon: "users", value: "50+", label: "K? su & ki?n trÂc su" },
+    { icon: "shield-check", value: "10 nam", label: "B?o hÂnh k?t c?u" },
   ]),
   homeQuoteServicesJson: JSON.stringify([
-    { id: "1", title: "XY NH\nTR?N GI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi ti?t" },
-    { id: "2", title: "S?A CH?A\nNH CU", link: "/dich-vu/sua-chua-nha", buttonLabel: "Xem chi ti?t" },
-    { id: "3", title: "THI?T K?\nKI?N TRC", link: "/dich-vu/thiet-ke-kien-truc", buttonLabel: "Xem chi ti?t" },
-    { id: "4", title: "THI CNG\nPH?N TH", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi ti?t" },
+    { id: "1", title: "XÂY NHÂ\nTR?N GÂI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi ti?t" },
+    { id: "2", title: "S?A CH?A\nNHÂ CU", link: "/dich-vu/sua-chua-nha", buttonLabel: "Xem chi ti?t" },
+    { id: "3", title: "THI?T K?\nKI?N TRÂC", link: "/dich-vu/thiet-ke-kien-truc", buttonLabel: "Xem chi ti?t" },
+    { id: "4", title: "THI CÂNG\nPH?N THÂ", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi ti?t" },
   ]),
   homeCtaJson: JSON.stringify({
-    eyebrow: "T?n tm  Uy tn  Ch?t lu?ng",
-    title: "S?n sng b?t d?u cng trnh c?a b?n?",
-    subtitle: "Lin h? ngay d? du?c kh?o st mi?n ph v nh?n bo gi chi ti?t trong 2448h.",
-    secondaryLabel: "Nh?n bo gi",
+    eyebrow: "T?n tÂm Â Uy tÂn Â Ch?t lu?ng",
+    title: "S?n sÂng b?t d?u cÂng trÂnh c?a b?n?",
+    subtitle: "LiÂn h? ngay d? du?c kh?o sÂt mi?n phÂ vÂ nh?n bÂo giÂ chi ti?t trong 24Â48h.",
+    secondaryLabel: "Nh?n bÂo giÂ",
     secondaryHref: "/lien-he",
   }),
   homeTestimonialsJson: JSON.stringify([
     {
-      name: "Anh Tu?n  Qu?n 7",
-      project: "Xy nh ph? 4 t?ng",
-      text: "Sao Khu thi cng dng ti?n d?, bo gi minh b?ch khng pht sinh. ?i gim st nhi?t tnh, bn giao nh d?p hon mong d?i.",
+      name: "Anh Tu?n Â Qu?n 7",
+      project: "XÂy nhÂ ph? 4 t?ng",
+      text: "Sao KhuÂ thi cÂng dÂng ti?n d?, bÂo giÂ minh b?ch khÂng phÂt sinh. Â?i giÂm sÂt nhi?t tÂnh, bÂn giao nhÂ d?p hon mong d?i.",
     },
     {
-      name: "Ch? Lan  Bnh Th?nh",
-      project: "C?i t?o nh cu",
-      text: "Tu v?n r?t k? t? khu thi?t k? d?n v?t tu. Cng trnh g?n gng, s?ch s? sau m?i ngy thi cng. Gia dnh r?t hi lng.",
+      name: "Ch? Lan Â BÂnh Th?nh",
+      project: "C?i t?o nhÂ cu",
+      text: "Tu v?n r?t k? t? khÂu thi?t k? d?n v?t tu. CÂng trÂnh g?n gÂng, s?ch s? sau m?i ngÂy thi cÂng. Gia dÂnh r?t hÂi lÂng.",
     },
     {
-      name: "Ch Ba  ?ng Nai",
-      project: "Bi?t th? sn vu?n",
-      text: "Lm vi?c chuyn nghi?p, h?p d?ng r rng. Hotline h? tr? nhanh khi c?n di?u ch?nh trong qu trnh xy d?ng.",
+      name: "ChÂ Ba Â Â?ng Nai",
+      project: "Bi?t th? sÂn vu?n",
+      text: "LÂm vi?c chuyÂn nghi?p, h?p d?ng rÂ rÂng. Hotline h? tr? nhanh khi c?n di?u ch?nh trong quÂ trÂnh xÂy d?ng.",
     },
   ]),
   homeFaqJson: JSON.stringify([
     {
-      q: "Sao Khu bo gi xy nh tr?n gi nhu th? no?",
-      a: "Chng ti kh?o st m?t b?ng, l?p d? ton chi ti?t theo h?ng m?c v v?t tu. Bo gi minh b?ch, cam k?t khng pht sinh khi khng c yu c?u thay d?i t? khch hng.",
+      q: "Sao KhuÂ bÂo giÂ xÂy nhÂ tr?n gÂi nhu th? nÂo?",
+      a: "ChÂng tÂi kh?o sÂt m?t b?ng, l?p d? toÂn chi ti?t theo h?ng m?c vÂ v?t tu. BÂo giÂ minh b?ch, cam k?t khÂng phÂt sinh khi khÂng cÂ yÂu c?u thay d?i t? khÂch hÂng.",
     },
     {
-      q: "C du?c tu v?n v kh?o st mi?n ph khng?",
-      a: "C. Hotline 0909 075 668 h? tr? 24/7. K? su s? kh?o st hi?n tr?ng v tu v?n so b? mi?n ph t?i cng trnh.",
+      q: "CÂ du?c tu v?n vÂ kh?o sÂt mi?n phÂ khÂng?",
+      a: "CÂ. Hotline 0909 075 668 h? tr? 24/7. K? su s? kh?o sÂt hi?n tr?ng vÂ tu v?n so b? mi?n phÂ t?i cÂng trÂnh.",
     },
   ]),
 };
@@ -162,7 +162,7 @@ async function main() {
   }
 
   if (Object.keys(patch).length === 0) {
-    console.log("Site settings already populated  nothing to seed.");
+    console.log("Site settings already populated Â nothing to seed.");
     return;
   }
 

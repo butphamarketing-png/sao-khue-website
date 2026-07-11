@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { ChevronDown, Home } from "lucide-react";
 import type { MenuItem } from "@/lib/menu";
-import { isBaoGiaArticlePath } from "@/lib/menu";
 
 type Props = {
   menu: MenuItem[];
@@ -11,7 +10,6 @@ type Props = {
 
 function isItemActive(location: string, item: MenuItem): boolean {
   if (location === item.href) return true;
-  if (item.href === "/bao-gia" && isBaoGiaArticlePath(location)) return true;
   if (item.category && location.startsWith(`/${item.category}`)) return true;
   if (item.category === "tin-tuc" && location.startsWith("/kinh-nghiem")) return true;
   if (item.children?.some((child) => isItemActive(location, child))) return true;
