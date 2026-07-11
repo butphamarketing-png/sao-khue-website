@@ -18,7 +18,7 @@ export const CAI_TAO_IMAGE_DIR = "/images/cai-tao";
 export const XAY_NHA_IMAGE_COUNT = 4;
 export const XAY_NHA_IMAGE_DIR = "/images/xay-nha";
 
-/** Ảnh render/banner đẹp — chỉ dùng cho thumbnail (featuredImageForSlug). */
+/** Ảnh render/banner đẹp — chỉ dùng cho thumbnail (featuredImageForSlug). Không chèn logo/icon. */
 const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as const;
 const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 6, 7, 8, 9] as const;
 const FEATURED_CAI_TAO = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
