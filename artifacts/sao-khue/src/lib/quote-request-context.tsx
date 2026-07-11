@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { QuoteRequestModal } from "@/components/QuoteRequestModal";
+import { isSiteLoaderDone } from "@/lib/site-loader-state";
 
 const AUTO_OPEN_KEY = "saokhue-quote-popup-auto";
 const AUTO_OPEN_AFTER_LOADER_MS = 500;
@@ -38,9 +39,16 @@ export function QuoteRequestProvider({ children }: { children: ReactNode }) {
       setOpen(true);
     };
 
-    const onLoaderDone = () => {
+    const scheduleOpen = () => {
       window.setTimeout(openOnce, AUTO_OPEN_AFTER_LOADER_MS);
     };
+
+    if (isSiteLoaderDone()) {
+      scheduleOpen();
+      return;
+    }
+
+    const onLoaderDone = () => scheduleOpen();
 
     window.addEventListener("saokhue:loader-done", onLoaderDone, { once: true });
     const fallback = window.setTimeout(() => {

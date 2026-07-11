@@ -14,6 +14,7 @@ import PostPage from "@/pages/PostPage";
 import Admin from "@/pages/Admin";
 import { SiteHead } from "@/components/SiteHead";
 import { SiteLoader } from "@/components/SiteLoader";
+import { QuoteRequestProvider } from "@/lib/quote-request-context";
 import { LegacySlugRedirect } from "@/components/LegacySlugRedirect";
 import { BaiVietCanonicalRedirect } from "@/components/BaiVietCanonicalRedirect";
 
@@ -105,9 +106,11 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={(import.meta.env.BASE_URL ?? "/").replace(/\/$/, "")}>
-          <SiteHead />
-          <SiteLoader />
-          <Router />
+          <QuoteRequestProvider>
+            <SiteHead />
+            <SiteLoader />
+            <Router />
+          </QuoteRequestProvider>
         </WouterRouter>
         <Toaster />
       </TooltipProvider>

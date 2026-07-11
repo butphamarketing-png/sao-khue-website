@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BrandLogo } from "@/components/BrandLogo";
+import { markSiteLoaderDone } from "@/lib/site-loader-state";
 import { useSiteSettings, useTopBarSlogan } from "@/lib/site-settings";
 
 const MIN_VISIBLE_MS = 900;
@@ -53,6 +54,7 @@ export function SiteLoader() {
 
   useEffect(() => {
     if (!visible) {
+      markSiteLoaderDone();
       window.dispatchEvent(new CustomEvent("saokhue:loader-done"));
     }
   }, [visible]);
