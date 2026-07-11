@@ -859,3 +859,93 @@ body:has(.quote-request-dialog[data-state="open"]) [data-radix-dialog-overlay] {
 .qh-home-testimonial__meta span {
   @apply text-xs uppercase tracking-wide text-slate-500;
 }
+
+/* —— Trang hub /bao-gia (kiểu Quang Hào: bài viết + sidebar tính phí) —— */
+.qh-bao-gia-layout {
+  @apply grid gap-8 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_300px];
+}
+
+.qh-bao-gia-main {
+  @apply min-w-0;
+}
+
+.qh-bao-gia-sidebar {
+  @apply lg:sticky lg:top-24 lg:self-start;
+}
+
+.qh-bao-gia-sidebar__panel {
+  @apply border border-slate-200 bg-white p-4 shadow-sm;
+}
+
+.qh-bao-gia-sidebar__title {
+  @apply mb-3 border-b-2 border-primary pb-2 text-center text-sm font-extrabold uppercase tracking-wide text-primary;
+}
+
+.qh-bao-gia-sidebar__subtitle {
+  @apply mb-3 text-center text-xs font-bold uppercase tracking-wide text-slate-600;
+}
+
+.qh-bao-gia-sidebar__links {
+  @apply space-y-1;
+}
+
+.qh-bao-gia-sidebar__link {
+  @apply block border-b border-slate-100 py-2 text-xs font-semibold uppercase leading-snug text-slate-700 transition hover:text-primary;
+}
+
+.qh-bao-gia-sidebar__buttons {
+  @apply space-y-2;
+}
+
+.qh-bao-gia-sidebar__btn {
+  @apply block w-full px-3 py-2.5 text-center text-[11px] font-bold uppercase tracking-wide text-white transition hover:opacity-90;
+}
+
+.qh-bao-gia-sidebar__btn--green {
+  background: #2e7d32;
+}
+
+.qh-bao-gia-sidebar__btn--red {
+  background: #c62828;
+}
+
+.qh-bao-gia-sidebar__btn--yellow {
+  background: #f9a825;
+  color: #1f2937;
+}
+
+.qh-bao-gia-sidebar__btn--pink {
+  background: #ec407a;
+}
+
+.qh-bao-gia-sidebar__btn--teal {
+  background: #00695c;
+}
+
+.qh-bao-gia-sidebar__btn--blue {
+  background: #1565c0;
+}
+
+.qh-bao-gia-sidebar__btn--orange {
+  background: #e65100;
+}
+
+.qh-bao-gia-pagination {
+  @apply mt-8 flex flex-wrap items-center justify-center gap-3;
+}
+
+.qh-bao-gia-pagination__btn {
+  @apply rounded border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary disabled:cursor-not-allowed disabled:opacity-40;
+}
+
+.qh-bao-gia-pagination__pages {
+  @apply flex flex-wrap items-center gap-1;
+}
+
+.qh-bao-gia-pagination__page {
+  @apply flex h-9 min-w-9 items-center justify-center rounded border border-slate-200 bg-white px-2 text-sm font-semibold text-slate-700 transition hover:border-primary hover:text-primary;
+}
+
+.qh-bao-gia-pagination__page.is-active {
+  @apply border-primary bg-primary text-white;
+}

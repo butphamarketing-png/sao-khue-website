@@ -9,6 +9,16 @@ export type MenuItem = {
   children?: MenuItem[];
 };
 
+/** Từ khóa slug thuộc hub Báo giá — dùng highlight menu & lọc bài */
+export const BAO_GIA_SLUG_KEYWORDS = ["bao-gia", "don-gia", "chi-phi"] as const;
+
+export function isBaoGiaArticlePath(path: string): boolean {
+  const clean = path.split("?")[0];
+  if (clean === "/bao-gia") return true;
+  const slug = clean.split("/").filter(Boolean).pop() ?? "";
+  return BAO_GIA_SLUG_KEYWORDS.some((kw) => slug.includes(kw));
+}
+
 /** Menu kiểu Quang Hào — thanh ngang + dropdown hover */
 export const defaultNavMenu: MenuItem[] = [
   {
@@ -27,10 +37,10 @@ export const defaultNavMenu: MenuItem[] = [
     href: "/bao-gia",
     children: [
       { title: "BÁO GIÁ THIẾT KẾ", href: "/tin-tuc/thiet-ke-nha-dep-gia-re" },
-      { title: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an" },
+      { title: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-tphcm" },
       { title: "BÁO GIÁ TRỌN GÓI", href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm" },
-      { title: "BÁO GIÁ HOÀN THIỆN", href: "/dich-vu/hoan-thien-nha", category: "dich-vu" },
-      { title: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "BÁO GIÁ HOÀN THIỆN", href: "/tin-tuc/hoan-thien-nha-tphcm" },
+      { title: "BÁO GIÁ CẢI TẠO", href: "/tin-tuc/chi-phi-cai-tao-nha-tphcm" },
       { title: "QUY TRÌNH", href: "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z" },
       { title: "BẢO HÀNH", href: `/bai-viet/${ABOUT_POST_SLUG}` },
     ],
