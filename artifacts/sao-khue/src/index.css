@@ -692,13 +692,58 @@ html {
   @apply z-40;
 }
 
-/* Popup đặt lịch — trên màn hình loading (z-100) */
-body:has(.quote-request-dialog[data-state="open"]) [data-radix-dialog-overlay] {
-  z-index: 110;
+/* Popup đặt lịch — luôn nổi trên loader (z-100) và header */
+.quote-request-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.quote-request-dialog {
-  z-index: 110;
+.quote-request-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgb(0 0 0 / 0.8);
+  cursor: pointer;
+}
+
+.quote-request-modal__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 36rem;
+  max-height: 92vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.35);
+}
+
+.quote-request-modal__close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 2;
+  display: inline-flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 0;
+  background: rgb(255 255 255 / 0.92);
+  color: #475569;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.12);
+}
+
+.quote-request-modal__close:hover {
+  color: #0f172a;
 }
 
 /* —— Trang chủ (layout Quang Hào, màu xanh dương Sao Khuê) —— */

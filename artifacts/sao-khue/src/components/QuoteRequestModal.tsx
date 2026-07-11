@@ -1,14 +1,8 @@
-import { useState, type FormEvent } from "react";
-import { Facebook, Hammer, Home, PhoneCall, Send } from "lucide-react";
+import { useEffect, useState, type FormEvent } from "react";
+import { createPortal } from "react-dom";
+import { Facebook, Hammer, Home, PhoneCall, Send, X } from "lucide-react";
 import { SiMessenger, SiZalo } from "react-icons/si";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -47,6 +41,23 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
   const [projectType, setProjectType] = useState<ProjectType>("xay-moi");
   const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState(EMPTY_FORM);
+
+  useEffect(() => {
+    if (!open || typeof document === "undefined") return;
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onOpenChange(false);
+    };
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open, onOpenChange]);
 
   const resetAndClose = () => {
     setForm(EMPTY_FORM);
@@ -93,18 +104,33 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
     }
   };
 
-  return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="quote-request-dialog z-[110] max-h-[92vh] max-w-lg overflow-y-auto rounded-2xl border-slate-200 p-0 sm:max-w-xl">
+  if (!open || typeof document === "undefined") return null;
+
+  return createPortal(
+    <div className="quote-request-modal" role="dialog" aria-modal="true" aria-labelledby="quote-request-title">
+      <button
+        type="button"
+        className="quote-request-modal__backdrop"
+        aria-label="Đóng form đặt lịch"
+        onClick={() => onOpenChange(false)}
+      />
+      <div className="quote-request-modal__panel">
+        <button
+          type="button"
+          className="quote-request-modal__close"
+          aria-label="Đóng"
+          onClick={() => onOpenChange(false)}
+        >
+          <X className="h-5 w-5" />
+        </button>
+
         <div className="border-b border-slate-100 bg-gradient-to-r from-primary/5 via-white to-accent/5 px-6 py-5">
-          <DialogHeader className="space-y-1 text-left">
-            <DialogTitle className="text-xl font-bold text-slate-900 md:text-2xl">
-              Đặt lịch tư vấn &amp; báo giá
-            </DialogTitle>
-            <DialogDescription className="text-sm text-slate-600">
-              Điền thông tin — Sao Khuê sẽ liên hệ khảo sát và báo giá miễn phí.
-            </DialogDescription>
-          </DialogHeader>
+          <h2 id="quote-request-title" className="text-xl font-bold text-slate-900 md:text-2xl">
+            Đặt lịch tư vấn &amp; báo giá
+          </h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Điền thông tin — Sao Khuê sẽ liên hệ khảo sát và báo giá miễn phí.
+          </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5 px-6 py-5">
@@ -238,8 +264,9 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
             </div>
           </div>
         </form>
-      </DialogContent>
-    </Dialog>
+      </div>
+    </div>,
+    document.body,
   );
 }
 
