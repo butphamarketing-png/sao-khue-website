@@ -140,9 +140,11 @@ export function PageBannersEditor({
   banners: PageBannersMap;
   setBanners: (b: PageBannersMap) => void;
 }) {
-  const keys: (keyof PageBannersMap)[] = ["pricing", "contact", "notFound"];
+  const keys: (keyof PageBannersMap)[] = ["pricing", "thietKe", "xayMoi", "contact", "notFound"];
   const labels: Record<keyof PageBannersMap, string> = {
     pricing: "Trang /bao-gia",
+    thietKe: "Trang /thiet-ke",
+    xayMoi: "Trang /xay-moi",
     contact: "Trang /lien-he",
     notFound: "Trang 404",
   };

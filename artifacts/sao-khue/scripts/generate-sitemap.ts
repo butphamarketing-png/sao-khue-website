@@ -17,6 +17,8 @@ const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://
 const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/", priority: "1.00", changefreq: "weekly" },
   { path: "/bao-gia", priority: "0.92", changefreq: "weekly" },
+  { path: "/thiet-ke", priority: "0.91", changefreq: "weekly" },
+  { path: "/xay-moi", priority: "0.91", changefreq: "weekly" },
   { path: "/lien-he", priority: "0.88", changefreq: "monthly" },
   { path: "/bai-viet/ve-chung-toi", priority: "0.85", changefreq: "monthly" },
   { path: "/dich-vu", priority: "0.90", changefreq: "weekly" },

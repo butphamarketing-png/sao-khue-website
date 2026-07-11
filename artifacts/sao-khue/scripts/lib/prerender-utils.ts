@@ -1,7 +1,10 @@
 /** Helpers for prerender script only (no Vite path aliases). */
 
 export function enhanceArticleHtml(html: string, defaultImageAlt?: string): string {
-  let out = html.replace(/\n/g, "<br/>");
+  let out = html.replace(/>\s+</g, "><").trim();
+  if (!/<(?:p|h[1-6]|ul|ol|li|table|div|figure|blockquote)\b/i.test(out)) {
+    out = out.replace(/\n/g, "<br/>");
+  }
   out = out.replace(/<img\b([^>]*)>/gi, (_match, attrs: string) => {
     let next = attrs;
     if (defaultImageAlt && !/\balt\s*=/i.test(next)) {

@@ -37,6 +37,7 @@ const PHU_YEN_HUB = [
 ];
 
 const DAK_LAK_HUB = [
+  "/tin-tuc/thiet-ke-nha-dep-dak-lak",
   "/tin-tuc/xay-dung-nha-dak-lak",
   "/tin-tuc/thiet-ke-nha-pho-dak-lak",
   "/tin-tuc/xay-nha-tron-goi-dak-lak",

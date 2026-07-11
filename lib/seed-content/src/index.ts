@@ -32,6 +32,11 @@ import {
   mauNhaPho2TangBinhDuong,
   xayNhaTronGoiDongNai,
   thietKeThiCongNhaPhoDongNai,
+  thietKeNhaDepDongNai,
+  thietKeNhaDepLongAn,
+  thietKeNhaDepBinhDuong,
+  thietKeNhaDepDakLak,
+  thietKeNhaDepTphcm,
   thietKeNhaPhoHienDaiTphcm,
   xayDungNhaPhuYen,
   xayDungNhaDakLak,
@@ -69,7 +74,11 @@ import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
 
 /** Bài pillar viết tay — không dùng bản factory phu-yen-dak-lak. */
-const DAK_LAK_HAND_PILLAR_SLUGS = new Set(["sua-chua-nha-dak-lak", "cai-tao-nha-dak-lak"]);
+const DAK_LAK_HAND_PILLAR_SLUGS = new Set([
+  "sua-chua-nha-dak-lak",
+  "cai-tao-nha-dak-lak",
+  "thiet-ke-nha-dep-dak-lak",
+]);
 
 export type SeedPost = {
   slug: string;
@@ -153,6 +162,36 @@ export const seedPosts: SeedPost[] = [
     thietKeThiCongNhaPhoDongNai,
   ),
   seoPost(
+    "thiet-ke-nha-dep-dong-nai",
+    "tin-tuc",
+    featuredImageForSlug("thiet-ke-nha-dep-dong-nai"),
+    thietKeNhaDepDongNai,
+  ),
+  seoPost(
+    "thiet-ke-nha-dep-long-an",
+    "tin-tuc",
+    featuredImageForSlug("thiet-ke-nha-dep-long-an"),
+    thietKeNhaDepLongAn,
+  ),
+  seoPost(
+    "thiet-ke-nha-dep-binh-duong",
+    "tin-tuc",
+    featuredImageForSlug("thiet-ke-nha-dep-binh-duong"),
+    thietKeNhaDepBinhDuong,
+  ),
+  seoPost(
+    "thiet-ke-nha-dep-dak-lak",
+    "tin-tuc",
+    featuredImageForSlug("thiet-ke-nha-dep-dak-lak"),
+    thietKeNhaDepDakLak,
+  ),
+  seoPost(
+    "thiet-ke-nha-dep-tphcm",
+    "tin-tuc",
+    featuredImageForSlug("thiet-ke-nha-dep-tphcm"),
+    thietKeNhaDepTphcm,
+  ),
+  seoPost(
     "thiet-ke-nha-pho-hien-dai-tphcm",
     "tin-tuc",
     featuredImageForSlug("thiet-ke-nha-pho-hien-dai-tphcm"),
@@ -230,7 +269,7 @@ export const seedPosts: SeedPost[] = [
   ...dakLakBatch4Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakBatch4ArticlesBySlug[slug]!),
   ),
-  ...dakLakTphcmBatch5Slugs.map((slug) =>
+  ...dakLakTphcmBatch5Slugs.filter((slug) => slug !== "thiet-ke-nha-dep-tphcm").map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakTphcmBatch5ArticlesBySlug[slug]!),
   ),
 ];

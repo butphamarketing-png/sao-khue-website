@@ -8,6 +8,8 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
+import ThietKe from "@/pages/ThietKe";
+import XayMoi from "@/pages/XayMoi";
 import Contact from "@/pages/Contact";
 import CategoryPage from "@/pages/CategoryPage";
 import PostPage from "@/pages/PostPage";
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/lien-he" component={Contact} />
       <Route path="/bao-gia" component={Pricing} />
+      <Route path="/thiet-ke" component={ThietKe} />
+      <Route path="/xay-moi" component={XayMoi} />
       <Route path="/admin" component={Admin} />
       <Route path="/adminbp">
         <Redirect to="/admin" />

@@ -159,6 +159,12 @@ const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
   "bao-gia-xay-dung-nha-3-tang": "/images/articles/xay-dung-nha-3-tang.jpg",
   "bao-gia-xay-dung-biet-thu": "/images/articles/xay-dung-biet-thu.jpg",
   "bao-gia-nang-tang-nha-pho": "/images/articles/nang-tang-nha-pho.jpg",
+  "thiet-ke-nha-dep-dong-nai": "/images/articles/thiet-ke-nha-dep-dong-nai.jpg",
+  "thiet-ke-nha-dep-long-an": "/images/articles/thiet-ke-nha-dep-long-an.jpg",
+  "thiet-ke-nha-dep-binh-duong": "/images/articles/thiet-ke-nha-dep-binh-duong.jpg",
+  "thiet-ke-nha-dep-phu-yen": "/images/articles/thiet-ke-nha-dep-phu-yen.jpg",
+  "thiet-ke-nha-dep-dak-lak": "/images/articles/thiet-ke-nha-dep-dak-lak.jpg",
+  "thiet-ke-nha-dep-tphcm": "/images/articles/thiet-ke-nha-dep-tphcm.jpg",
 };
 
 /** Ảnh đại diện — pool lớn, hash slug ổn định, ít trùng hơn. */

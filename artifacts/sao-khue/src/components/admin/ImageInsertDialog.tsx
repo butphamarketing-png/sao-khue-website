@@ -102,7 +102,7 @@ export function ImageInsertDialog({
   async function onPickFile(file: File) {
     setUploading(true);
     try {
-      const uploaded = await uploadImageFile(file, imageFolder);
+      const uploaded = await uploadImageFile(file, imageFolder, { watermark: true });
       setUrl(uploaded);
     } catch (err) {
       alert(err instanceof Error ? err.message : "Không tải được ảnh");
@@ -127,7 +127,7 @@ export function ImageInsertDialog({
           <DialogTitle>Thuộc tính ảnh</DialogTitle>
           {imageFolder === "posts" ? (
             <p className="text-xs text-muted-foreground">
-              Ảnh tải lên sẽ tự động có logo Sao Khuê ở trên cùng, giữa ảnh.
+              Ảnh chèn vào nội dung bài sẽ tự động có logo Sao Khuê ở trên cùng, giữa ảnh.
             </p>
           ) : null}
         </DialogHeader>

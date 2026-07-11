@@ -13,6 +13,18 @@
     <priority>0.92</priority>
   </url>
   <url>
+    <loc>https://www.kientrucsaokhue.com/thiet-ke</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/xay-moi</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.91</priority>
+  </url>
+  <url>
     <loc>https://www.kientrucsaokhue.com/lien-he</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -98,6 +110,36 @@
   </url>
   <url>
     <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-dong-nai</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-long-an</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-binh-duong</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-dak-lak</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-tphcm</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -248,6 +290,36 @@
   </url>
   <url>
     <loc>https://www.kientrucsaokhue.com/cong-trinh/thiet-ke-nha-phong-cach-hien-dai</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-dong-nai</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-long-an</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-binh-duong</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-dak-lak</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-tphcm</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -752,12 +824,6 @@
   </url>
   <url>
     <loc>https://www.kientrucsaokhue.com/tin-tuc/thi-cong-nha-tron-goi-dak-lak</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-dak-lak</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -2546,12 +2612,6 @@
   </url>
   <url>
     <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-biet-thu-tphcm</loc>
-    <lastmod>2026-07-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.kientrucsaokhue.com/tin-tuc/thiet-ke-nha-dep-tphcm</loc>
     <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>

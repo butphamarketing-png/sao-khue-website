@@ -1,5 +1,5 @@
 export type UploadImageOptions = {
-  /** Mặc định: bật khi folder là `posts` (ảnh bài viết). */
+  /** Mặc định: tắt. Chỉ bật khi chèn ảnh vào nội dung bài viết. */
   watermark?: boolean;
 };
 
@@ -12,7 +12,7 @@ export async function uploadImageFile(
   const form = new FormData();
   form.append("file", file);
   form.append("folder", folder);
-  const watermark = options?.watermark ?? folder === "posts";
+  const watermark = options?.watermark === true;
   form.append("watermark", watermark ? "1" : "0");
 
   const res = await fetch("/api/uploads", {

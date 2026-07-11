@@ -69,12 +69,7 @@ router.post(
         : ".jpg";
       const folder = typeof req.body?.folder === "string" ? req.body.folder.replace(/[^a-z0-9-]/gi, "") : "uploads";
       const watermarkRaw = req.body?.watermark;
-      const shouldWatermark =
-        watermarkRaw === "0" || watermarkRaw === "false"
-          ? false
-          : watermarkRaw === "1" || watermarkRaw === "true"
-            ? true
-            : folder === "posts";
+      const shouldWatermark = watermarkRaw === "1" || watermarkRaw === "true";
 
       let uploadBuffer = file.buffer;
       let contentType = file.mimetype;

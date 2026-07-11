@@ -346,7 +346,12 @@ export function buildArticleSchema(
 
 /** Chuẩn hóa HTML bài viết: lazy-load ảnh, alt, external link an toàn */
 export function enhanceArticleHtml(html: string, defaultImageAlt?: string): string {
-  let out = html.replace(/\n/g, "<br/>");
+  // Bỏ khoảng trắng giữa thẻ HTML — tránh chèn <br/> ảo gây giãn dòng (ul/li, h2/p…)
+  let out = html.replace(/>\s+</g, "><").trim();
+  // Chỉ dùng <br/> khi nội dung thuần text (không có thẻ block)
+  if (!/<(?:p|h[1-6]|ul|ol|li|table|div|figure|blockquote)\b/i.test(out)) {
+    out = out.replace(/\n/g, "<br/>");
+  }
   out = out.replace(/<img\b([^>]*)>/gi, (_match, attrs: string) => {
     let next = attrs;
     const safeAlt = defaultImageAlt?.replace(/"/g, "&quot;") ?? "";

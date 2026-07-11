@@ -290,6 +290,8 @@ export type PageBannerContent = {
 
 export type PageBannersMap = {
   pricing: PageBannerContent;
+  thietKe: PageBannerContent;
+  xayMoi: PageBannerContent;
   contact: PageBannerContent;
   notFound: PageBannerContent;
 };
@@ -305,6 +307,16 @@ export const defaultPageBanners: PageBannersMap = {
     title: "Báo giá xây dựng",
     subtitle:
       "Tham khảo đơn giá xây thô, trọn gói và công cụ tính chi phí nhanh — minh bạch, không phát sinh.",
+  },
+  thietKe: {
+    title: "Thiết kế kiến trúc",
+    subtitle:
+      "Thiết kế nhà ở TP.HCM — nhà phố, biệt thự 2D/3D. Tối ưu mặt bằng, phong thủy và ngân sách gia đình.",
+  },
+  xayMoi: {
+    title: "Xây nhà trọn gói",
+    subtitle:
+      "Xây nhà mới trọn gói 2026 — chìa khóa trao tay, minh bạch, bảo hành kết cấu 10 năm.",
   },
   contact: {
     title: "Liên hệ",
@@ -360,35 +372,46 @@ export const defaultHomePostsBands: HomePostsBandConfig[] = [
   {
     id: "thiet-ke",
     title: "THIẾT KẾ KIẾN TRÚC",
-    viewAllHref: "/dich-vu/thiet-ke-nha",
+    viewAllHref: "/thiet-ke",
     slugKeywords: ["thiet-ke"],
     slugs: [
+      "thiet-ke-nha-dep-tphcm",
+      "thiet-ke-nha-dep-dak-lak",
+      "thiet-ke-nha-dep-phu-yen",
+      "thiet-ke-nha-dep-binh-duong",
+      "thiet-ke-nha-dep-long-an",
+      "thiet-ke-nha-dep-dong-nai",
       "thiet-ke-nha-pho-hien-dai-tphcm",
       "thiet-ke-nha-dep-gia-re",
       "thiet-ke-nha-biet-thu-thu-duc",
       "thiet-ke-nha-pho-dak-lak",
+      "thiet-ke-thi-cong-nha-pho-dong-nai",
+      "xu-huong-thiet-ke-nha-pho-hien-dai",
+      "thue-thiet-ke-nha-truoc-khi-xay",
+      "thiet-ke-xay-dung-nha-pho-mien-nam",
     ],
     limit: 4,
   },
   {
     id: "xay-moi",
     title: "XÂY DỰNG NHÀ TRỌN GÓI",
-    viewAllHref: "/dich-vu/xay-nha-tron-goi",
+    viewAllHref: "/xay-moi",
     slugKeywords: ["xay-nha", "tron-goi", "xay-dung"],
     slugs: [
       "bao-gia-xay-nha-moi",
       "xay-nha-tron-goi-tphcm",
       "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
-      "thiet-ke-thi-cong-nha-pho-dong-nai",
+      "xay-nha-moi",
+      "xay-nha-tron-goi-binh-duong",
+      "xay-nha-tron-goi-dong-nai",
+      "xay-dung-nha-2-tang",
+      "xay-dung-nha-3-tang",
+      "xay-dung-biet-thu",
+      "xay-dung-phan-tho",
+      "quy-trinh-xay-nha-tron-goi-a-z",
+      "bao-gia-xay-nha-tron-goi-phu-yen",
+      "xay-nha-tron-goi-dak-lak",
     ],
-    limit: 4,
-  },
-  {
-    id: "hoat-dong",
-    title: "HOẠT ĐỘNG CỦA SAO KHUÊ",
-    viewAllHref: "/bai-viet/hoat-dong-sao-khue",
-    category: "gioi-thieu",
-    slugs: ["hoat-dong-sao-khue", "ve-chung-toi", "tuyen-dung", "so-do-to-chuc"],
     limit: 4,
   },
   {

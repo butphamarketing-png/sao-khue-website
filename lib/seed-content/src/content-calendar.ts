@@ -40,7 +40,7 @@ export const contentCalendar: ContentCalendarItem[] = [
   { no: 12, title: "Xây Nhà Trọn Gói Tại Đắk Lắk Uy Tín Chất Lượng", keyword: "xây nhà trọn gói Đắk Lắk", slug: "xay-nha-tron-goi-dak-lak", status: "done" },
   { no: 13, title: "Chi Phí Xây Nhà 2 Tầng Tại Đắk Lắk Bao Nhiêu?", keyword: "chi phí xây nhà 2 tầng Đắk Lắk", slug: "chi-phi-xay-nha-2-tang-dak-lak", status: "done" },
   { no: 14, title: "Thi Công Nhà Phố Hiện Đại Tại Phú Yên", keyword: "thi công nhà phố Phú Yên", slug: "thi-cong-nha-pho-phu-yen", status: "done" },
-  { no: 15, title: "Công Ty Thiết Kế Nhà Đẹp Tại Phú Yên", keyword: "thiết kế nhà đẹp Phú Yên", slug: "thiet-ke-nha-dep-phu-yen", status: "done" },
+  { no: 15, title: "Thiết Kế Nhà Đẹp Phú Yên", keyword: "thiết kế nhà đẹp Phú Yên", slug: "thiet-ke-nha-dep-phu-yen", status: "done" },
   { no: 16, title: "Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết", keyword: "báo giá xây nhà Phú Yên", slug: "bao-gia-xay-nha-tron-goi-phu-yen", status: "done" },
   { no: 17, title: "Kinh Nghiệm Xây Nhà Tiết Kiệm Chi Phí Năm 2026", keyword: "kinh nghiệm xây nhà", slug: "cam-nang-xay-nha-2026", status: "done" },
   { no: 18, title: "Những Lưu Ý Quan Trọng Khi Xây Nhà Phố", keyword: "lưu ý xây nhà phố", slug: "luu-y-xay-nha-pho", status: "done" },
@@ -57,4 +57,9 @@ export const contentCalendar: ContentCalendarItem[] = [
   { no: 29, title: "Đơn Vị Thiết Kế Và Xây Dựng Nhà Phố Uy Tín Miền Nam", keyword: "thiết kế xây dựng nhà phố", slug: "thiet-ke-xay-dung-nha-pho-mien-nam", status: "done" },
   { no: 30, title: "Kiến Trúc Sao Khuê – Đơn Vị Thiết Kế Xây Dựng Nhà Phố Chuyên Nghiệp", keyword: "Kiến Trúc Sao Khuê", slug: "kien-truc-sao-khue-don-vi-uy-tin", status: "done" },
   { no: 31, title: "Báo Giá Xây Nhà Mới Trọn Gói 2026", keyword: "báo giá xây nhà mới", slug: "bao-gia-xay-nha-moi", status: "done" },
+  { no: 32, title: "Thiết Kế Nhà Đẹp Đồng Nai", keyword: "thiết kế nhà đẹp Đồng Nai", slug: "thiet-ke-nha-dep-dong-nai", status: "done" },
+  { no: 33, title: "Thiết Kế Nhà Đẹp Long An", keyword: "thiết kế nhà đẹp Long An", slug: "thiet-ke-nha-dep-long-an", status: "done" },
+  { no: 34, title: "Thiết Kế Nhà Đẹp Bình Dương", keyword: "thiết kế nhà đẹp Bình Dương", slug: "thiet-ke-nha-dep-binh-duong", status: "done" },
+  { no: 35, title: "Thiết Kế Nhà Đẹp Đắk Lắk", keyword: "thiết kế nhà đẹp Đắk Lắk", slug: "thiet-ke-nha-dep-dak-lak", status: "done" },
+  { no: 36, title: "Thiết Kế Nhà Đẹp TP.HCM", keyword: "thiết kế nhà đẹp TP.HCM", slug: "thiet-ke-nha-dep-tphcm", status: "done" },
 ];

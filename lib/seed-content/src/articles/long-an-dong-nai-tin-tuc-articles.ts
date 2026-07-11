@@ -27,6 +27,7 @@ type Brief = {
 };
 
 const LONG_AN_HUB = [
+  "/tin-tuc/thiet-ke-nha-dep-long-an",
   "/tin-tuc/xay-dung-nha-long-an",
   "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an",
   "/tin-tuc/mau-nha-ong-dep-long-an",

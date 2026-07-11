@@ -182,6 +182,38 @@ function buildStaticPages(): PrerenderPage[] {
       `),
     },
     {
+      path: "/thiet-ke",
+      meta: {
+        title: `Thiết kế kiến trúc nhà ở 2D/3D | ${BRAND_SHORT}`,
+        description: `${defaultPageBanners.thietKe.subtitle} Thiết kế nhà phố, biệt thự và tư vấn trước khi xây.`,
+        path: "/thiet-ke",
+        keywords: "thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc tphcm",
+        ogImage: DEFAULT_OG,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>${escapeHtml(defaultPageBanners.thietKe.title)}</h1>
+        <p>${escapeHtml(defaultPageBanners.thietKe.subtitle)}</p>
+        <p><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà phố</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
+      `),
+    },
+    {
+      path: "/xay-moi",
+      meta: {
+        title: `Xây nhà trọn gói 2026 — Chìa khóa trao tay | ${BRAND_SHORT}`,
+        description: `${defaultPageBanners.xayMoi.subtitle} Xây nhà phố, biệt thự, nhà cấp 4 và thi công trọn gói.`,
+        path: "/xay-moi",
+        keywords: "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự tphcm",
+        ogImage: DEFAULT_OG,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>${escapeHtml(defaultPageBanners.xayMoi.title)}</h1>
+        <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
+        <p><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
+      `),
+    },
+    {
       path: "/lien-he",
       meta: {
         title: `Liên hệ ${BRAND_SHORT} | Hotline 0909 075 668`,

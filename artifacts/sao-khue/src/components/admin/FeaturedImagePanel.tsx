@@ -31,7 +31,7 @@ export function FeaturedImagePanel({
     setError(null);
     setUploading(true);
     try {
-      const url = await uploadImageFile(file, folder);
+      const url = await uploadImageFile(file, folder, { watermark: false });
       onChange(url);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Upload thất bại");
@@ -45,7 +45,7 @@ export function FeaturedImagePanel({
       <h4 className="text-sm font-bold text-slate-900">Hình đại diện</h4>
       <p className="mt-1 text-xs leading-relaxed text-slate-500">
         Kéo thả hoặc chọn ảnh. Khuyến nghị <strong>1200×630 px</strong> (ngang) — đẹp trên
-        Facebook/Zalo và Google. Logo Sao Khuê tự động đóng dấu ở trên giữa ảnh khi tải lên.
+        Facebook/Zalo và Google. Ảnh đại diện <strong>không</strong> đóng dấu logo (chỉ ảnh trong nội dung bài mới có watermark).
         {suggestedFilename ? (
           <>
             {" "}

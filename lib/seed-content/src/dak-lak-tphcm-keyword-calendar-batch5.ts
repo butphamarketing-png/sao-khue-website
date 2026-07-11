@@ -89,7 +89,7 @@ export const dakLakTphcmKeywordCalendarBatch5: ContentCalendarItem[] = [
   { no: 375, title: "Thi Công Phần Thô Tại TP.HCM", keyword: "thi công phần thô TP.HCM", slug: "thi-cong-phan-tho-tphcm", status: "planned" },
   { no: 376, title: "Xin Giấy Phép Xây Dựng Tại TP.HCM", keyword: "xin giấy phép xây dựng TP.HCM", slug: "xin-giay-phep-xay-dung-tphcm", status: "planned" },
   { no: 377, title: "Thiết Kế Biệt Thự Tại TP.HCM", keyword: "thiết kế biệt thự TP.HCM", slug: "thiet-ke-biet-thu-tphcm", status: "planned" },
-  { no: 378, title: "Thiết Kế Nhà Đẹp Tại TP.HCM", keyword: "thiết kế nhà đẹp TP.HCM", slug: "thiet-ke-nha-dep-tphcm", status: "planned" },
+  { no: 378, title: "Thiết Kế Nhà Đẹp Tại TP.HCM", keyword: "thiết kế nhà đẹp TP.HCM", slug: "thiet-ke-nha-dep-tphcm", status: "done" },
   { no: 379, title: "Kiến Trúc Nhà Phố Tại TP.HCM", keyword: "kiến trúc nhà phố TP.HCM", slug: "kien-truc-nha-pho-tphcm", status: "planned" },
   { no: 380, title: "Mẫu Nhà Phố Tại TP.HCM", keyword: "mẫu nhà phố TP.HCM", slug: "mau-nha-pho-tphcm", status: "planned" },
   { no: 381, title: "Chống Thấm Nhà Tại TP.HCM", keyword: "chống thấm nhà TP.HCM", slug: "chong-tham-nha-tphcm", status: "planned" },
