@@ -112,7 +112,15 @@ export function FloatingButtons() {
       </div>
 
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid grid-cols-5 gap-2">
+          <MobileBarButton
+            label="Báo giá"
+            className="bg-primary text-white"
+            onClick={openQuoteRequest}
+          >
+            <ClipboardList size={18} />
+          </MobileBarButton>
+
           {mapsHref ? (
             <MobileBarButton
               label="Maps"

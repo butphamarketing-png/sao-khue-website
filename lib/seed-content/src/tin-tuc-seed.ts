@@ -1,7 +1,6 @@
 /** Đăng ký 30 bài tin tức — khớp content-calendar + luật/phong thủy bổ sung. */
 import type { SeoArticle } from "./articles";
 import {
-  baoGiaXayNhaMoi,
   baoGiaXayNhaTronGoiMoiNhatTphcm,
   baoGiaXayNhaPhanThoLongAn,
   baoGiaXayNhaTronGoiPhuYen,
@@ -63,7 +62,6 @@ const ARTICLE_BY_SLUG: Record<string, SeoArticle> = {
 
 /** 30 bài tin tức theo lịch nội dung (calendar #1–#30, bài #30 = tin tức thương hiệu). */
 export const TIN_TUC_SEED_ENTRIES: TinTucSeedEntry[] = [
-  { slug: "bao-gia-xay-nha-moi", image: featuredImageForSlug("bao-gia-xay-nha-moi"), article: baoGiaXayNhaMoi },
   { slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", image: featuredImageForSlug("cong-ty-xay-dung-nha-pho-uy-tin-tphcm"), article: congTyXayDungNhaPhoUyTinTphcm },
   { slug: "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", image: featuredImageForSlug("bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"), article: baoGiaXayNhaTronGoiMoiNhatTphcm },
   { slug: "thiet-ke-nha-pho-hien-dai-tphcm", image: featuredImageForSlug("thiet-ke-nha-pho-hien-dai-tphcm"), article: thietKeNhaPhoHienDaiTphcm },

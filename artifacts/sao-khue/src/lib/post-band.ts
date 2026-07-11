@@ -1,7 +1,16 @@
 import type { Post } from "@workspace/api-client-react";
+import { getFallbackPost } from "@workspace/seed-content";
 import type { HomePostsBandConfig } from "@/lib/home-content";
+import { repairPostText } from "./post-encoding";
 
-/** Ghép bài ghim (slugs) trước, sau đó lọc theo category / slugKeywords. */
+function postForSlug(slug: string, bySlug: Map<string, Post>): Post | undefined {
+  const fromApi = bySlug.get(slug);
+  if (fromApi) return fromApi;
+  const fallback = getFallbackPost(slug);
+  return fallback ? repairPostText(fallback as Post) : undefined;
+}
+
+/** Ghép bài ghim (slugs) trước — dùng seed fallback nếu DB chưa có slug. */
 export function pickBandPosts(allPosts: Post[], config: HomePostsBandConfig): Post[] {
   const limit = config.limit ?? 4;
   const bySlug = new Map(allPosts.map((p) => [p.slug, p]));
@@ -10,7 +19,7 @@ export function pickBandPosts(allPosts: Post[], config: HomePostsBandConfig): Po
 
   if (config.slugs?.length) {
     for (const slug of config.slugs) {
-      const post = bySlug.get(slug);
+      const post = postForSlug(slug, bySlug);
       if (post && !seen.has(post.slug)) {
         out.push(post);
         seen.add(post.slug);

@@ -1,5 +1,10 @@
 export { suaNhaTronGoiTphcm } from "./sua-nha-tron-goi-tphcm";
 export { xayNhaTronGoiTphcm } from "./xay-nha-tron-goi-tphcm";
+export { xayNhaMoi } from "./xay-nha-moi";
+export { caiTaoNhaCu } from "./cai-tao-nha-cu";
+export { xayDungNha3Tang } from "./xay-dung-nha-3-tang";
+export { xayDungNha2Tang } from "./xay-dung-nha-2-tang";
+export { xayDungBietThu } from "./xay-dung-biet-thu";
 export { xayNhaTronGoiBinhDuong } from "./xay-nha-tron-goi-binh-duong";
 export { xayDungPhanTho } from "./xay-dung-phan-tho";
 export { thietKeNha } from "./thiet-ke-nha";
@@ -21,7 +26,16 @@ export { luatXayDungMoiNhat } from "./luat-xay-dung-moi-nhat";
 export { phongThuyNhaO } from "./phong-thuy-nha-o";
 export { congTyXayDungNhaPhoUyTinTphcm } from "./cong-ty-xay-dung-nha-pho-uy-tin-tphcm";
 export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
-export { baoGiaXayNhaMoi } from "./bao-gia-xay-nha-moi";
+export {
+  baoGiaXayNhaMoi,
+  baoGiaCaiTaoNhaCu,
+  baoGiaXayDungNha2Tang,
+  baoGiaXayDungNha3Tang,
+  baoGiaXayDungBietThu,
+  baoGiaNangTangNhaPho,
+  BAO_GIA_PILLAR_SLUGS,
+  baoGiaPillarArticlesBySlug,
+} from "./bao-gia-pillar-articles";
 export { mauNhaPho2TangBinhDuong } from "./mau-nha-pho-2-tang-binh-duong";
 export { xayNhaTronGoiDongNai } from "./xay-nha-tron-goi-dong-nai";
 export { thietKeThiCongNhaPhoDongNai } from "./thiet-ke-thi-cong-nha-pho-dong-nai";
