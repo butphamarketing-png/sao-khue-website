@@ -26,6 +26,16 @@ export { luatXayDungMoiNhat } from "./luat-xay-dung-moi-nhat";
 export { phongThuyNhaO } from "./phong-thuy-nha-o";
 export { congTyXayDungNhaPhoUyTinTphcm } from "./cong-ty-xay-dung-nha-pho-uy-tin-tphcm";
 export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
+export {
+  baoGiaXayNhaMoi,
+  baoGiaCaiTaoNhaCu,
+  baoGiaXayDungNha2Tang,
+  baoGiaXayDungNha3Tang,
+  baoGiaXayDungBietThu,
+  baoGiaNangTangNhaPho,
+  BAO_GIA_PILLAR_SLUGS,
+  baoGiaPillarArticlesBySlug,
+} from "./bao-gia-pillar-articles";
 export { mauNhaPho2TangBinhDuong } from "./mau-nha-pho-2-tang-binh-duong";
 export { xayNhaTronGoiDongNai } from "./xay-nha-tron-goi-dong-nai";
 export { thietKeThiCongNhaPhoDongNai } from "./thiet-ke-thi-cong-nha-pho-dong-nai";
