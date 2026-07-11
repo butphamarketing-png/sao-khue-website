@@ -1,5 +1,10 @@
 export { suaNhaTronGoiTphcm } from "./sua-nha-tron-goi-tphcm";
 export { xayNhaTronGoiTphcm } from "./xay-nha-tron-goi-tphcm";
+export { xayNhaMoi } from "./xay-nha-moi";
+export { caiTaoNhaCu } from "./cai-tao-nha-cu";
+export { xayDungNha3Tang } from "./xay-dung-nha-3-tang";
+export { xayDungNha2Tang } from "./xay-dung-nha-2-tang";
+export { xayDungBietThu } from "./xay-dung-biet-thu";
 export { xayNhaTronGoiBinhDuong } from "./xay-nha-tron-goi-binh-duong";
 export { xayDungPhanTho } from "./xay-dung-phan-tho";
 export { thietKeNha } from "./thiet-ke-nha";

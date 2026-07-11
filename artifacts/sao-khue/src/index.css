@@ -596,6 +596,12 @@ html {
   }
 }
 
+.hero-home__img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
 /* —— Header kiểu Quang Hào (màu chính: xanh dương Sao Khuê #17579d) —— */
 .qh-topbar {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);

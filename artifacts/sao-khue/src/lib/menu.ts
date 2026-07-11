@@ -47,12 +47,15 @@ export const defaultNavMenu: MenuItem[] = [
   },
   {
     title: "XÂY MỚI",
-    href: "/dich-vu/xay-nha-tron-goi",
+    href: "/dich-vu/xay-nha-moi",
     category: "dich-vu",
     children: [
-      { title: "Nhà phố", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
-      { title: "Biệt thự", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", category: "cong-trinh" },
-      { title: "Nhà cấp 4", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
+      { title: "XÂY NHÀ MỚI", href: "/dich-vu/xay-nha-moi", category: "dich-vu" },
+      { title: "Nhà 2 tầng", href: "/dich-vu/xay-dung-nha-2-tang", category: "dich-vu" },
+      { title: "Nhà 3 tầng", href: "/dich-vu/xay-dung-nha-3-tang", category: "dich-vu" },
+      { title: "Nhà phố", href: "/dich-vu/xay-nha-tron-goi-tphcm", category: "dich-vu" },
+      { title: "Biệt thự", href: "/dich-vu/xay-dung-biet-thu", category: "dich-vu" },
+      { title: "Nhà cấp 4", href: "/dich-vu/xay-nha-tron-goi-tphcm", category: "dich-vu" },
     ],
   },
   {
@@ -62,12 +65,14 @@ export const defaultNavMenu: MenuItem[] = [
   },
   {
     title: "CẢI TẠO",
-    href: "/dich-vu/sua-chua-nha",
+    href: "/dich-vu/cai-tao-nha-cu",
     category: "dich-vu",
     children: [
-      { title: "Nhà phố", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-      { title: "Biệt thự", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-      { title: "Cải tạo nhà cũ", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "Nâng tầng nhà phố", href: "/dich-vu/nang-tang-nha-pho", category: "dich-vu" },
+      { title: "Cải tạo nhà cũ", href: "/dich-vu/cai-tao-nha-cu", category: "dich-vu" },
+      { title: "Nhà phố", href: "/dich-vu/sua-chua-nha-tphcm", category: "dich-vu" },
+      { title: "Biệt thự", href: "/dich-vu/sua-chua-nha-tphcm", category: "dich-vu" },
+      { title: "Sửa chữa trọn gói", href: "/dich-vu/sua-nha-tron-goi-tphcm", category: "dich-vu" },
     ],
   },
   {

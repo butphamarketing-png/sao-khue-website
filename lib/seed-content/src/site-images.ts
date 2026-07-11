@@ -145,8 +145,20 @@ const THUMB_POOL_GENERAL = buildThumbPool(
   mapFeatured(FEATURED_CAI_TAO, caiTaoImage),
 );
 
+/** Thumbnail tùy chỉnh — ưu tiên hiển thị trang chủ / OG. */
+const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
+  "xay-nha-moi": "/images/articles/xay-nha-moi.jpg",
+  "cai-tao-nha-cu": "/images/articles/cai-tao-nha-cu.jpg",
+  "xay-dung-nha-3-tang": "/images/articles/xay-dung-nha-3-tang.jpg",
+  "xay-dung-nha-2-tang": "/images/articles/xay-dung-nha-2-tang.jpg",
+  "xay-dung-biet-thu": "/images/articles/xay-dung-biet-thu.jpg",
+  "nang-tang-nha-pho": "/images/articles/nang-tang-nha-pho.jpg",
+};
+
 /** Ảnh đại diện — pool lớn, hash slug ổn định, ít trùng hơn. */
 export function featuredImageForSlug(slug: string): string {
+  const custom = CUSTOM_FEATURED_IMAGES[slug];
+  if (custom) return custom;
   if (isCaiTaoSlug(slug)) return pickFromUrlPool(THUMB_POOL_CAI_TAO, slug);
   if (isNhaCap4Slug(slug)) return pickFromUrlPool(THUMB_POOL_NHA_CAP_4, slug);
   if (isXayNhaSlug(slug)) return pickFromUrlPool(THUMB_POOL_XAY_NHA, slug);

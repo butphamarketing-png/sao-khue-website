@@ -367,13 +367,13 @@ export const defaultHomePostsBands: HomePostsBandConfig[] = [
   {
     id: "xay-moi",
     title: "XÂY DỰNG NHÀ TRỌN GÓI",
-    viewAllHref: "/dich-vu/xay-nha-tron-goi",
-    slugKeywords: ["xay-nha", "tron-goi", "xay-dung"],
+    viewAllHref: "/dich-vu/xay-nha-moi",
+    slugKeywords: ["xay-nha", "xay-nha-moi", "tron-goi", "xay-dung"],
     slugs: [
-      "xay-nha-tron-goi-tphcm",
-      "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
-      "thiet-ke-thi-cong-nha-pho-dong-nai",
-      "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
+      "xay-dung-biet-thu",
+      "xay-dung-nha-2-tang",
+      "xay-dung-nha-3-tang",
+      "xay-nha-moi",
     ],
     limit: 4,
   },
@@ -388,8 +388,14 @@ export const defaultHomePostsBands: HomePostsBandConfig[] = [
   {
     id: "sua-chua",
     title: "SỬA CHỮA NHÀ CHUYÊN NGHIỆP TP.HCM",
-    viewAllHref: "/dich-vu/sua-chua-nha",
-    slugKeywords: ["sua-chua", "cai-tao", "lam-moi", "sua-nha"],
+    viewAllHref: "/dich-vu/nang-tang-nha-pho",
+    slugKeywords: ["nang-tang", "cai-tao", "sua-chua", "lam-moi", "sua-nha"],
+    slugs: [
+      "nang-tang-nha-pho",
+      "cai-tao-nha-cu",
+      "sua-chua-nha-tphcm",
+      "sua-nha-tron-goi-tphcm",
+    ],
     limit: 4,
   },
   {
