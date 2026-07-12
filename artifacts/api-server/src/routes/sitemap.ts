@@ -16,6 +16,8 @@ type SitemapEntry = {
 const STATIC_PAGES: SitemapEntry[] = [
   { loc: "/", changefreq: "weekly", priority: 1.0, lastmod: null },
   { loc: "/bao-gia", changefreq: "weekly", priority: 0.95, lastmod: null },
+  { loc: "/thiet-ke", changefreq: "weekly", priority: 0.91, lastmod: null },
+  { loc: "/xay-moi", changefreq: "weekly", priority: 0.91, lastmod: null },
   { loc: "/lien-he", changefreq: "monthly", priority: 0.9, lastmod: null },
   { loc: "/bai-viet/ve-chung-toi", changefreq: "monthly", priority: 0.85, lastmod: null },
   { loc: "/dich-vu", changefreq: "weekly", priority: 0.9, lastmod: null },
@@ -107,7 +109,12 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 router.get("/sitemap.xml", async (_req, res) => {
   const postUrls = await collectPostUrls();
-  const urls = [...staticUrls(), ...postUrls];
+  const seen = new Set<string>();
+  const urls = [...staticUrls(), ...postUrls].filter((u) => {
+    if (seen.has(u.loc)) return false;
+    seen.add(u.loc);
+    return true;
+  });
   res.set("Content-Type", "application/xml; charset=utf-8");
   res.send(buildSitemapXml(urls));
 });

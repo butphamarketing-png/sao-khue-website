@@ -1,7 +1,7 @@
 /**
  * 100 bài tin tức SEO — batch 5 (#297–#396): 50 Đắk Lắk + 50 TP.HCM.
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { dakLakTphcmKeywordCalendarBatch5 } from "../dak-lak-tphcm-keyword-calendar-batch5";
 import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { slugImage } from "../site-images";
@@ -145,9 +145,9 @@ function buildTphcmArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê thi công uy tín tại ${loc}, bảo hành 10 năm — 0909 075 668.`,
-    metaTitle: `${kw} | Sao Khuê`.slice(0, 65),
-    metaDescription: `Dịch vụ ${kw} tại ${loc}: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.`.slice(0, 160),
+    excerpt: buildCtrExcerpt(kw, { slug: b.slug, batchTopic: b.topic, location: loc }),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, { slug: b.slug, batchTopic: b.topic, location: loc }),
     metaKeywords: `${kw}, xây nhà TP.HCM, kiến trúc sao khuê`,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,

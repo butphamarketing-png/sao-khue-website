@@ -1,7 +1,7 @@
 /**
  * 26 bài tin tức — sửa chữa / cải tạo nhà miền Trung (#171–#196).
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { mienTrungSuaNhaKeywordCalendar } from "../mien-trung-sua-nha-keyword-calendar";
 import { slugImage } from "../site-images";
@@ -206,9 +206,9 @@ function buildArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê khảo sát miễn phí, báo giá hạng mục, bảo hành thi công — 0909 075 668.`,
-    metaTitle: `${kw} | Sao Khuê`.slice(0, 65),
-    metaDescription: `Dịch vụ ${kw} uy tín tại ${prov}. Chống thấm, gia cố, cải tạo trọn gói. Gọi 0909 075 668.`.slice(0, 160),
+    excerpt: buildCtrExcerpt(kw, { slug: b.slug, batchTopic: b.topic, location: prov }),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, { slug: b.slug, batchTopic: b.topic, location: prov }),
     metaKeywords: `${kw}, sửa chữa nhà ${prov}, cải tạo nhà ${prov}, sửa nhà trọn gói, kiến trúc sao khuê`,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,

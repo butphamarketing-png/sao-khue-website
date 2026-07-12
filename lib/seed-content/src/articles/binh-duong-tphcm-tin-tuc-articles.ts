@@ -1,7 +1,7 @@
 /**
  * 50 bài tin tức SEO — Bình Dương & TP.HCM (#121–#170).
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { binhDuongTphcmKeywordCalendar } from "../binh-duong-tphcm-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -187,9 +187,13 @@ function buildArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê thi công uy tín, bảo hành 10 năm — 0909 075 668.`,
-    metaTitle: `${kw} | Sao Khuê`.slice(0, 65),
-    metaDescription: `Dịch vụ ${kw}: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.`.slice(0, 160),
+    excerpt: buildCtrExcerpt(kw, { slug: b.slug, batchTopic: b.topic, location: regionLabel(b.region) }),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, {
+      slug: b.slug,
+      batchTopic: b.topic,
+      location: regionLabel(b.region),
+    }),
     metaKeywords: `${kw}, xây nhà ${regionLabel(b.region)}, kiến trúc sao khuê`,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,

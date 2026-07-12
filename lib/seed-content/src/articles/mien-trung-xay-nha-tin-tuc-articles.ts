@@ -1,7 +1,7 @@
 /**
  * 50 bài tin tức — xây dựng nhà miền Trung & Tây Nguyên (#197–#246).
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { mienTrungXayNhaKeywordCalendar } from "../mien-trung-xay-nha-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -236,13 +236,9 @@ function buildArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê thi công uy tín, bảo hành kết cấu 10 năm — 0909 075 668.`,
-    metaTitle: `${kw} | Sao Khuê`.slice(0, 65),
-    metaDescription:
-      `Dịch vụ ${kw} tại ${prov}: khảo sát miễn phí, báo giá rõ ràng. Kiến Trúc Sao Khuê — 0909 075 668.`.slice(
-        0,
-        160,
-      ),
+    excerpt: buildCtrExcerpt(kw, { slug: b.slug, batchTopic: b.topic, location: prov }),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, { slug: b.slug, batchTopic: b.topic, location: prov }),
     metaKeywords: `${kw}, xây nhà ${prov}, xây nhà trọn gói ${prov}, công ty xây dựng ${prov}, kiến trúc sao khuê`,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,

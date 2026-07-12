@@ -2,7 +2,7 @@
  * 50 bài tin tức SEO — Đắk Lắk batch #247–#296 (xây nhà, sửa chữa, cải tạo).
  * Chuẩn: 1500+ từ, ≥6 H2, 3 ảnh, alt slugified đúng, meta Rank Math.
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { dakLakKeywordCalendarBatch4 } from "../dak-lak-keyword-calendar-batch4";
 import { slugImage } from "../site-images";
 
@@ -691,13 +691,20 @@ function buildArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm — hotline 0909 075 668.`,
-    metaTitle: `${h2Lead} | Sao Khuê`.slice(0, 65),
-    metaDescription:
-      `Dịch vụ ${kw} uy tín tại Đắk Lắk. Khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu. Kiến Trúc Sao Khuê — 0909 075 668.`.slice(
-        0,
-        160,
-      ),
+    excerpt: buildCtrExcerpt(kw, {
+      slug: b.slug,
+      intent: b.category === "repair" ? "repair" : b.category === "renovate" ? "renovation" : "build",
+      location: "Đắk Lắk",
+    }),
+    metaTitle: buildCtrMetaTitle(kw, {
+      slug: b.slug,
+      intent: b.category === "repair" ? "repair" : b.category === "renovate" ? "renovation" : "build",
+    }),
+    metaDescription: buildCtrMetaDescription(kw, {
+      slug: b.slug,
+      intent: b.category === "repair" ? "repair" : b.category === "renovate" ? "renovation" : "build",
+      location: "Đắk Lắk",
+    }),
     metaKeywords: buildMetaKeywords(kw, b.category),
     imageAlt: kw,
     imageCaption: `${kw} — thi công Sao Khuê`,

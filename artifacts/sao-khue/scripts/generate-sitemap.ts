@@ -65,7 +65,7 @@ const urls: SitemapEntry[] = [
     changefreq: "monthly",
     lastmod: toLastmod(p.updatedAt ?? p.createdAt) ?? BUILD_DATE,
   })),
-];
+].filter((entry, index, arr) => arr.findIndex((e) => e.path === entry.path) === index);
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

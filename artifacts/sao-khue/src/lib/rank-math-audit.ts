@@ -506,6 +506,29 @@ export function auditRankMath(
   );
 
   const imageCount = countArticleImages(contentHtml, post.imageUrl);
+  const isTemplateMetaDesc =
+    /^Dịch vụ .+: khảo sát miễn phí/i.test(metaDesc) ||
+    /^Dịch vụ .+ tại .+: khảo sát miễn phí/i.test(metaDesc);
+  const hasWeakInlineAlt = /<img[^>]+alt=["'][a-z0-9-]+-\d+["']/i.test(contentHtml);
+  push(
+    checks,
+    "meta_desc_ctr",
+    "title",
+    "Meta description không dùng template lặp",
+    isTemplateMetaDesc ? "warn" : metaDesc.length >= 80 ? "pass" : "skip",
+    3,
+    isTemplateMetaDesc ? "Mô tả giống hàng trăm bài khác — nên thêm lợi ích cụ thể" : undefined,
+  );
+  push(
+    checks,
+    "inline_image_alt",
+    "content",
+    "Alt ảnh trong bài = từ khóa (không dùng slug)",
+    hasWeakInlineAlt ? "warn" : imageCount > 0 ? "pass" : "skip",
+    3,
+    hasWeakInlineAlt ? "Phát hiện alt dạng sua-nha-quy-nhon-1 — nên dùng focus keyword" : undefined,
+  );
+
   if (imageCount >= ARTICLE_IMAGES_TARGET_MIN) {
     push(
       checks,

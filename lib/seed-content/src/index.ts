@@ -132,8 +132,17 @@ export type FallbackPost = SeedPost & {
 
 const FALLBACK_TIMESTAMP = "2026-01-15T00:00:00.000Z";
 
+function dedupeSeedPosts(posts: SeedPost[]): SeedPost[] {
+  const seen = new Set<string>();
+  return posts.filter((p) => {
+    if (seen.has(p.slug)) return false;
+    seen.add(p.slug);
+    return true;
+  });
+}
+
 /** 23 bài — khớp menu con + bài công trình bổ sung */
-export const seedPosts: SeedPost[] = [
+const seedPostsRaw: SeedPost[] = [
   seoPost(
     "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
     "tin-tuc",
@@ -274,6 +283,8 @@ export const seedPosts: SeedPost[] = [
   ),
 ];
 
+export const seedPosts: SeedPost[] = dedupeSeedPosts(seedPostsRaw);
+
 export {
   DEFAULT_POST_CATEGORY,
   normalizeCategory,
@@ -307,7 +318,7 @@ export {
   TOC_MIN_H2,
 } from "./article-toc";
 
-export { stripFaqSectionFromHtml } from "./article-seo-blocks";
+export { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, stripFaqSectionFromHtml } from "./article-seo-blocks";
 
 export {
   isLegacyPostImageUrl,

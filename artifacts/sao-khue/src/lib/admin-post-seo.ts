@@ -1,4 +1,5 @@
 import { SEO_DESC_MAX, SEO_TITLE_MAX, truncateMeta } from "@/lib/seo";
+import { buildCtrMetaDescription, buildCtrMetaTitle, getPrimaryFocusKeyword } from "@workspace/seed-content";
 
 const CATEGORY_KEYWORD: Record<string, string[]> = {
   "dich-vu": ["xây dựng", "thi công", "báo giá xây nhà", "tphcm"],
@@ -17,14 +18,26 @@ export function plainTextFromHtml(html: string): string {
     .trim();
 }
 
-export function buildAutoMetaTitle(title: string, brand: string): string {
+export function buildAutoMetaTitle(title: string, brand: string, slug = ""): string {
   const t = title.trim();
   if (!t) return "";
-  const withBrand = t.includes(brand) ? t : `${t} | ${brand}`;
-  return truncateMeta(withBrand, SEO_TITLE_MAX);
+  if (t.includes(brand)) return truncateMeta(t, SEO_TITLE_MAX);
+  const ctr = buildCtrMetaTitle(t, { slug });
+  if (ctr) return ctr;
+  return truncateMeta(`${t} | ${brand}`, SEO_TITLE_MAX);
 }
 
-export function buildAutoMetaDescription(excerpt: string, contentHtml: string): string {
+export function buildAutoMetaDescription(
+  excerpt: string,
+  contentHtml: string,
+  slug = "",
+  metaKeywords = "",
+): string {
+  const primary = getPrimaryFocusKeyword(metaKeywords);
+  if (primary) {
+    const ctr = buildCtrMetaDescription(primary, { slug });
+    if (ctr) return ctr;
+  }
   const plain = excerpt.trim() || plainTextFromHtml(contentHtml);
   if (!plain) return "";
   return truncateMeta(plain, SEO_DESC_MAX);

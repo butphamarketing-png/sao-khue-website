@@ -976,11 +976,12 @@ export default function Admin() {
       const slug =
         prev.slug.trim() || (prev.title.trim() ? slugifyVietnamese(prev.title) : "");
       const metaKeywords = buildAutoMetaKeywords(slug, prev.category, subLabel);
+      const excerpt = prev.excerpt.trim() || buildAutoExcerpt(prev.content);
       return {
         ...prev,
-        excerpt: prev.excerpt.trim() || buildAutoExcerpt(prev.content),
-        metaTitle: buildAutoMetaTitle(prev.title, brand),
-        metaDescription: buildAutoMetaDescription(prev.excerpt, prev.content),
+        excerpt,
+        metaTitle: buildAutoMetaTitle(prev.title, brand, slug),
+        metaDescription: buildAutoMetaDescription(excerpt, prev.content, slug, metaKeywords),
         metaKeywords,
         imageAlt: prev.imageAlt.trim() || buildImageAlt({ slug, metaKeywords }),
         imageCaption:

@@ -2,7 +2,7 @@
  * 30 bài tin tức SEO — Phú Yên & Đắk Lắk (batch #31–#60).
  * Sinh từ lịch từ khóa; mỗi bài: H1=title, slug, meta, 3 ảnh, không FAQ.
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { phuYenDakLakKeywordCalendar } from "../phu-yen-dak-lak-keyword-calendar";
 import { phuYenDakLakKeywordCalendarBatch3 } from "../phu-yen-dak-lak-keyword-calendar-batch3";
@@ -373,23 +373,23 @@ function buildArticle(b: Brief): SeoArticleShape {
   const kw = b.focusKeyword;
   const metaKw = `${kw}, xây nhà ${regionLabel(b.region)}, xây nhà trọn gói ${regionLabel(b.region)}, ${regionCity(b.region)}, kiến trúc sao khuê`;
 
-  const excerpt =
-    b.region === "phu-yen"
-      ? `${kw}: thiết kế, thi công trọn gói tại Tuy Hòa, Sông Cầu. Sao Khuê bảo hành 10 năm — 0909 075 668.`
-      : `${kw}: nhà phố, biệt thự Buôn Ma Thuột. Báo giá minh bạch, giám sát kỹ thuật — 0909 075 668.`;
-
-  const metaTitle =
-    kw.length > 42 ? `${kw} | Sao Khuê` : `${kw.charAt(0).toUpperCase() + kw.slice(1)} | Sao Khuê`;
-
-  const metaDescription = `Dịch vụ ${kw} uy tín: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Kiến Trúc Sao Khuê — 0909 075 668.`;
+  const excerpt = buildCtrExcerpt(kw, {
+    slug: b.slug,
+    batchTopic: b.topic,
+    location: regionLabel(b.region),
+  });
 
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
 
   return {
     title: b.title,
     excerpt,
-    metaTitle: metaTitle.length > 65 ? `${kw} | Sao Khuê` : metaTitle,
-    metaDescription: metaDescription.slice(0, 160),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, {
+      slug: b.slug,
+      batchTopic: b.topic,
+      location: regionLabel(b.region),
+    }),
     metaKeywords: metaKw,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,

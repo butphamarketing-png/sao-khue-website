@@ -464,6 +464,35 @@ function writePage(template: string, page: PrerenderPage, outRoot: string) {
 
 type PrerenderPost = SeedPost & { createdAt?: string; updatedAt?: string };
 
+const seedBySlug = new Map(seedPosts.map((p) => [p.slug, p]));
+
+function isStaleSeoMeta(metaTitle: string, metaDescription: string): boolean {
+  const title = metaTitle.trim();
+  const desc = metaDescription.trim();
+  if (!title && !desc) return true;
+  if (/^Dịch vụ .+:( khảo sát| uy tín)/i.test(desc)) return true;
+  if (/^Dịch vụ .+ tại .+:( khảo sát| uy tín)/i.test(desc)) return true;
+  if (/\| Sao Khuê$/i.test(title) && !/—/.test(title)) return true;
+  return false;
+}
+
+function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
+  const seed = seedBySlug.get(row.slug);
+  if (!seed) return row;
+  const stale = isStaleSeoMeta(row.metaTitle ?? "", row.metaDescription ?? "");
+  if (!stale) return row;
+  return {
+    ...row,
+    excerpt: seed.excerpt || row.excerpt,
+    content: seed.content || row.content,
+    imageAlt: seed.imageAlt || row.imageAlt,
+    imageCaption: seed.imageCaption || row.imageCaption,
+    metaTitle: seed.metaTitle || row.metaTitle,
+    metaDescription: seed.metaDescription || row.metaDescription,
+    metaKeywords: seed.metaKeywords || row.metaKeywords,
+  };
+}
+
 async function loadPostsForPrerender(): Promise<PrerenderPost[]> {
   // Vercel build: tránh kết nối DB (pg/ssl) — dùng seed. Bật PRERENDER_USE_DB=1 nếu cần.
   if (process.env.VERCEL && process.env.PRERENDER_USE_DB !== "1") {
@@ -478,21 +507,23 @@ async function loadPostsForPrerender(): Promise<PrerenderPost[]> {
     const { db, postsTable } = await import("@workspace/db");
     const rows = await db.select().from(postsTable);
     if (rows.length === 0) return seedPosts;
-    return rows.map((r) => ({
-      slug: r.slug,
-      title: r.title,
-      category: r.category,
-      excerpt: r.excerpt,
-      content: r.content,
-      imageUrl: r.imageUrl,
-      imageAlt: r.imageAlt,
-      imageCaption: r.imageCaption,
-      metaTitle: r.metaTitle || undefined,
-      metaDescription: r.metaDescription || undefined,
-      metaKeywords: r.metaKeywords || undefined,
-      createdAt: r.createdAt?.toISOString(),
-      updatedAt: r.updatedAt?.toISOString(),
-    }));
+    return rows.map((r) =>
+      mergeSeedSeo({
+        slug: r.slug,
+        title: r.title,
+        category: r.category,
+        excerpt: r.excerpt,
+        content: r.content,
+        imageUrl: r.imageUrl,
+        imageAlt: r.imageAlt,
+        imageCaption: r.imageCaption,
+        metaTitle: r.metaTitle || undefined,
+        metaDescription: r.metaDescription || undefined,
+        metaKeywords: r.metaKeywords || undefined,
+        createdAt: r.createdAt?.toISOString(),
+        updatedAt: r.updatedAt?.toISOString(),
+      }),
+    );
   } catch (err) {
     console.warn("[prerender] DB unavailable, using seed posts:", err);
     return seedPosts;

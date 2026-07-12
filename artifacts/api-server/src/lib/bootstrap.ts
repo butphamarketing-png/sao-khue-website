@@ -17,6 +17,8 @@ export async function seedPostsToDatabase(): Promise<number> {
           excerpt: p.excerpt,
           content: p.content,
           imageUrl: p.imageUrl,
+          imageAlt: p.imageAlt ?? "",
+          imageCaption: p.imageCaption ?? p.imageAlt ?? "",
           metaTitle: p.metaTitle ?? "",
           metaDescription: p.metaDescription ?? "",
           metaKeywords: p.metaKeywords ?? "",

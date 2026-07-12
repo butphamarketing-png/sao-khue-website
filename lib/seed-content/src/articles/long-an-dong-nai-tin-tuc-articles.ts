@@ -1,7 +1,7 @@
 /**
  * 30 bài tin tức SEO — Long An & Đồng Nai (#91–#120).
  */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { longAnDongNaiKeywordCalendar } from "../long-an-dong-nai-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -191,12 +191,13 @@ function buildArticle(b: Brief): SeoArticleShape {
 
   return {
     title: b.title,
-    excerpt: `${kw}: Sao Khuê thiết kế + thi công trọn gói tại ${regionLabel(b.region)}. Bảo hành 10 năm — 0909 075 668.`,
-    metaTitle: `${kw} | Sao Khuê`.slice(0, 65),
-    metaDescription: `Dịch vụ ${kw}: khảo sát miễn phí, báo giá rõ ràng, bảo hành kết cấu 10 năm. Gọi 0909 075 668.`.slice(
-      0,
-      160,
-    ),
+    excerpt: buildCtrExcerpt(kw, { slug: b.slug, batchTopic: b.topic, location: regionLabel(b.region) }),
+    metaTitle: buildCtrMetaTitle(kw, { slug: b.slug, batchTopic: b.topic }),
+    metaDescription: buildCtrMetaDescription(kw, {
+      slug: b.slug,
+      batchTopic: b.topic,
+      location: regionLabel(b.region),
+    }),
     metaKeywords: `${kw}, xây nhà ${regionLabel(b.region)}, xây nhà trọn gói ${regionLabel(b.region)}, ${regionCity(b.region)}, kiến trúc sao khuê`,
     imageAlt: kw,
     imageCaption: `${kw} — Sao Khuê`,
