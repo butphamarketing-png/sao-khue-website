@@ -1,7 +1,13 @@
 /**
  * 50 bài tin tức — xây dựng nhà miền Trung & Tây Nguyên (#197–#246).
  */
-import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, mapBatchTopicToIntent, seoCtaBlock } from "../article-seo-blocks";
+import {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+} from "../article-content-blocks";
 import { mienTrungXayNhaKeywordCalendar } from "../mien-trung-xay-nha-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -233,6 +239,7 @@ function buildArticle(b: Brief): SeoArticleShape {
   const kw = b.focusKeyword;
   const prov = PROVINCE_LABEL[b.province];
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
+  const intent = mapBatchTopicToIntent(b.topic, b.slug);
 
   return {
     title: b.title,
@@ -249,6 +256,8 @@ function buildArticle(b: Brief): SeoArticleShape {
 
 ${imageFigure(slugImage(b.slug, 0), kw, 1)}
 
+${articleWhenNeededBlock(intent, kw, prov)}
+
 ${topicSection(b)}
 
 ${imageFigure(slugImage(b.slug, 1), kw, 2)}
@@ -264,7 +273,13 @@ ${imageFigure(slugImage(b.slug, 1), kw, 2)}
 
 ${notesSection(b)}
 
+${articlePricingTableBlock(intent, prov, b.slug, kw)}
+
+${articleMistakesBlock(intent, kw, prov)}
+
 ${homeLinkParagraph()}
+
+${buildIntentFaq(intent, kw, prov)}
 
 ${seoCtaBlock(kw)}
 

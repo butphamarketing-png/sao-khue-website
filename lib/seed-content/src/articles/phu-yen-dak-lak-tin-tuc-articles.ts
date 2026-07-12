@@ -2,7 +2,13 @@
  * 30 bài tin tức SEO — Phú Yên & Đắk Lắk (batch #31–#60).
  * Sinh từ lịch từ khóa; mỗi bài: H1=title, slug, meta, 3 ảnh, không FAQ.
  */
-import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, mapBatchTopicToIntent, seoCtaBlock } from "../article-seo-blocks";
+import {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+} from "../article-content-blocks";
 import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { phuYenDakLakKeywordCalendar } from "../phu-yen-dak-lak-keyword-calendar";
 import { phuYenDakLakKeywordCalendarBatch3 } from "../phu-yen-dak-lak-keyword-calendar-batch3";
@@ -380,6 +386,8 @@ function buildArticle(b: Brief): SeoArticleShape {
   });
 
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
+  const region = regionLabel(b.region);
+  const intent = mapBatchTopicToIntent(b.topic, b.slug);
 
   return {
     title: b.title,
@@ -399,6 +407,8 @@ ${introParagraph(b)}
 
 ${imageFigure(img1, kw, 1)}
 
+${articleWhenNeededBlock(intent, kw, region)}
+
 ${topicSection(b)}
 
 ${imageFigure(img2, kw, 2)}
@@ -407,7 +417,13 @@ ${processSection(b)}
 
 ${notesSection(b)}
 
+${articlePricingTableBlock(intent, region, b.slug, kw)}
+
+${articleMistakesBlock(intent, kw, region)}
+
 ${homeLinkParagraph()}
+
+${buildIntentFaq(intent, kw, region)}
 
 ${seoCtaBlock(kw)}
 

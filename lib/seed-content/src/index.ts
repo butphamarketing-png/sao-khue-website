@@ -321,6 +321,17 @@ export {
 export { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, stripFaqSectionFromHtml } from "./article-seo-blocks";
 
 export {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+  detectContentRegion,
+  detectRepairSubtopic,
+  metaPriceHint,
+  type ContentIntent,
+} from "./article-content-blocks";
+
+export {
   isLegacyPostImageUrl,
   isLegacyPostContent,
   mergePostMedia,

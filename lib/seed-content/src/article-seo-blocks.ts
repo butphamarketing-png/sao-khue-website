@@ -2,6 +2,11 @@
  * Khối HTML dùng chung — CTA, ảnh, link trang chủ (chuẩn brief SEO).
  */
 import { buildInlineImageFigure } from "./image-seo";
+import {
+  detectRepairSubtopic,
+  metaPriceHint,
+  type RepairSubtopic,
+} from "./article-content-blocks";
 
 export const META_TITLE_MAX = 60;
 export const META_DESC_MAX = 160;
@@ -165,32 +170,91 @@ function locationSuffix(keyword: string, location?: string): string {
   return ` tại ${loc}`;
 }
 
-const META_DESC_TEMPLATES: Record<MetaTitleIntent, (kw: string, at: string) => string> = {
-  repair: (kw, at) =>
-    `${kw}${at}: chống thấm, gia cố kết cấu trọn gói. Khảo sát miễn phí, bảo hành 10 năm. Hotline 0909 075 668.`,
-  renovation: (kw, at) =>
-    `${kw}${at} — tiết kiệm 20–40%, nâng tầm không gian sống. Báo giá minh bạch từng hạng mục. Gọi 0909 075 668.`,
-  build: (kw, at) =>
-    `${kw}${at}: thiết kế + thi công trọn gói, bàn giao đúng hạn. Cam kết BH kết cấu 10 năm — 0909 075 668.`,
-  pricing: (kw, at) =>
-    `Bảng giá ${kw} cập nhật 2026${at}. Minh bạch từng hạng mục, không phát sinh bất ngờ. Sao Khuê — 0909 075 668.`,
-  design: (kw, at) =>
-    `${kw}${at}: phối cảnh 3D, tối ưu thông gió & ánh sáng. Tư vấn miễn phí — Kiến Trúc Sao Khuê 0909 075 668.`,
-  general: (kw, at) =>
-    `${kw}${at} uy tín. Khảo sát miễn phí, báo giá rõ từng hạng mục. Sao Khuê — 0909 075 668.`,
-};
+function slugVariant(slug: string, count: number): number {
+  let h = 0;
+  for (const ch of slug) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return h % count;
+}
+
+function stripPricingKeyword(kw: string): string {
+  return kw.replace(/^báo giá\s+/i, "").replace(/^chi phí\s+/i, "").trim() || kw;
+}
+
+function repairDescVariants(kw: string, at: string, sub: RepairSubtopic): string[] {
+  const base = `${kw}${at}`;
+  const hints: Record<RepairSubtopic, string[]> = {
+    waterproof: [
+      `${base}: xử lý thấm dột tận gốc, BH chống thấm 5 năm. Khảo sát miễn phí — từ 5 triệu/m².`,
+      `Nhà thấm mốc${at}? ${base} trọn gói, nghiệm thu ngâm nước. Gọi Sao Khuê 0909 075 668.`,
+    ],
+    electrical: [
+      `${base}: thay điện nước âm tường, an toàn PCCC. Báo giá rõ từng hạng mục — 0909 075 668.`,
+      `Sửa điện nước cũ${at}? ${base} uy tín, bảo hành 2 năm. Khảo sát miễn phí.`,
+    ],
+    structural: [
+      `${base}: gia cố cột, dầm, tường nứt đúng kỹ thuật. Kỹ sư khảo sát trước khi thi công.`,
+      `Tường nứt, sàn lún${at}? ${base} — đánh giá kết cấu miễn phí. Hotline 0909 075 668.`,
+    ],
+    roof: [
+      `${base}: thay mái, chống thấm kỹ, vật liệu bền. BH mái 3–5 năm — khảo sát miễn phí.`,
+      `Mái dột mỗi mùa mưa${at}? ${base} trọn gói. Sao Khuê 0909 075 668.`,
+    ],
+    general: [
+      `${base}: chống thấm, gia cố trọn gói ${metaPriceHint("repair")}. Khảo sát miễn phí, BH 10 năm.`,
+      `Nhà xuống cấp${at}? ${base} — báo giá từng hạng mục, không phát sinh. Gọi 0909 075 668.`,
+      `${base} uy tín: sơn, lát, WC, điện nước. Tiết kiệm 20–40% so với xây mới.`,
+    ],
+  };
+  return hints[sub];
+}
+
+const BUILD_DESC_VARIANTS = (kw: string, at: string, price: string) => [
+  `${kw}${at}: thiết kế + thi công trọn gói ${price}. BH kết cấu 10 năm — 0909 075 668.`,
+  `Xây nhà đẹp${at}? ${kw} một đầu mối, bàn giao đúng hạn. Khảo sát miễn phí — Sao Khuê.`,
+  `${kw}${at} uy tín — giám sát móng, cốt thép từng giai đoạn. ${price}.`,
+];
+
+const RENOVATION_DESC_VARIANTS = (kw: string, at: string) => [
+  `${kw}${at} — tiết kiệm 30–50%, đẹp như nhà mới. Báo giá minh bạch — 0909 075 668.`,
+  `Nhà cũ${at}? ${kw} trọn gói, phối cảnh 3D trước thi công. Sao Khuê tư vấn miễn phí.`,
+  `${kw}: nâng tầm không gian, tăng giá trị BĐS. Khảo sát & dự toán miễn phí.`,
+];
 
 /**
- * Meta description thu hút click — hook theo intent, tránh template "Dịch vụ ${kw}…" lặp.
+ * Meta description thu hút click — biến thể theo slug + hook theo subtopic.
  */
 export function buildCtrMetaDescription(
   keyword: string,
   opts?: { intent?: MetaTitleIntent; slug?: string; batchTopic?: string; location?: string },
 ): string {
+  const slug = opts?.slug ?? "";
   const intent = resolveMetaIntent(keyword, opts);
   const kw = titleCaseVi(keyword);
   const at = locationSuffix(keyword, opts?.location);
-  return META_DESC_TEMPLATES[intent](kw, at).slice(0, META_DESC_MAX);
+  const loc = opts?.location ?? "";
+
+  let desc = "";
+
+  if (intent === "repair") {
+    const variants = repairDescVariants(kw, at, detectRepairSubtopic(slug));
+    desc = variants[slugVariant(slug, variants.length)]!;
+  } else if (intent === "build") {
+    const variants = BUILD_DESC_VARIANTS(kw, at, metaPriceHint("build", loc, slug));
+    desc = variants[slugVariant(slug, variants.length)]!;
+  } else if (intent === "renovation") {
+    const variants = RENOVATION_DESC_VARIANTS(kw, at);
+    desc = variants[slugVariant(slug, variants.length)]!;
+  } else if (intent === "pricing") {
+    const label = titleCaseVi(stripPricingKeyword(keyword));
+    const price = metaPriceHint("pricing", loc, slug);
+    desc = `Bảng giá ${label} 2026${at}: ${price}. Khảo sát miễn phí, không phát sinh — Sao Khuê 0909 075 668.`;
+  } else if (intent === "design") {
+    desc = `${kw}${at}: phối cảnh 3D, tối ưu thông gió & ánh sáng. Tư vấn miễn phí — Kiến Trúc Sao Khuê.`;
+  } else {
+    desc = `${kw}${at} uy tín. Khảo sát miễn phí, báo giá rõ từng hạng mục — 0909 075 668.`;
+  }
+
+  return desc.slice(0, META_DESC_MAX);
 }
 
 const EXCERPT_TEMPLATES: Record<MetaTitleIntent, (kw: string, at: string) => string> = {

@@ -1,7 +1,13 @@
 /**
  * 30 bài tin tức SEO — Long An & Đồng Nai (#91–#120).
  */
-import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, mapBatchTopicToIntent, seoCtaBlock } from "../article-seo-blocks";
+import {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+} from "../article-content-blocks";
 import { longAnDongNaiKeywordCalendar } from "../long-an-dong-nai-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -188,6 +194,8 @@ function buildArticle(b: Brief): SeoArticleShape {
   const img2 = slugImage(b.slug, 1);
   const img3 = slugImage(b.slug, 2);
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
+  const region = regionLabel(b.region);
+  const intent = mapBatchTopicToIntent(b.topic, b.slug);
 
   return {
     title: b.title,
@@ -207,13 +215,15 @@ ${introParagraph(b)}
 
 ${imageFigure(img1, kw, 1)}
 
+${articleWhenNeededBlock(intent, kw, region)}
+
 ${topicSection(b)}
 
 ${imageFigure(img2, kw, 2)}
 
 <h2>Quy trình ${kw} tại Sao Khuê</h2>
 <ol>
-  <li>Khảo sát &amp; tư vấn miễn phí tại ${regionLabel(b.region)}.</li>
+  <li>Khảo sát &amp; tư vấn miễn phí tại ${region}.</li>
   <li>Thiết kế / dự toán chi tiết.</li>
   <li>Ký hợp đồng — tiến độ thanh toán rõ ràng.</li>
   <li>Thi công có giám sát, nghiệm thu từng hạng mục.</li>
@@ -223,7 +233,13 @@ ${imageFigure(img2, kw, 2)}
 
 ${notesSection(b)}
 
+${articlePricingTableBlock(intent, region, b.slug, kw)}
+
+${articleMistakesBlock(intent, kw, region)}
+
 ${homeLinkParagraph()}
+
+${buildIntentFaq(intent, kw, region)}
 
 ${seoCtaBlock(kw)}
 

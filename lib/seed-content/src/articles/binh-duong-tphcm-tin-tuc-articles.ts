@@ -1,7 +1,13 @@
 /**
  * 50 bài tin tức SEO — Bình Dương & TP.HCM (#121–#170).
  */
-import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, mapBatchTopicToIntent, seoCtaBlock } from "../article-seo-blocks";
+import {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+} from "../article-content-blocks";
 import { binhDuongTphcmKeywordCalendar } from "../binh-duong-tphcm-keyword-calendar";
 import { slugImage } from "../site-images";
 
@@ -184,6 +190,8 @@ function notesSection(b: Brief): string {
 function buildArticle(b: Brief): SeoArticleShape {
   const kw = b.focusKeyword;
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
+  const loc = b.districtLabel ?? regionLabel(b.region);
+  const intent = mapBatchTopicToIntent(b.topic, b.slug);
 
   return {
     title: b.title,
@@ -203,6 +211,8 @@ ${introParagraph(b)}
 
 ${imageFigure(slugImage(b.slug, 0), kw, 1)}
 
+${articleWhenNeededBlock(intent, kw, loc)}
+
 ${topicSection(b)}
 
 ${imageFigure(slugImage(b.slug, 1), kw, 2)}
@@ -218,7 +228,13 @@ ${imageFigure(slugImage(b.slug, 1), kw, 2)}
 
 ${notesSection(b)}
 
+${articlePricingTableBlock(intent, loc, b.slug, kw)}
+
+${articleMistakesBlock(intent, kw, loc)}
+
 ${homeLinkParagraph()}
+
+${buildIntentFaq(intent, kw, loc)}
 
 ${seoCtaBlock(kw)}
 

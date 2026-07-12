@@ -1,7 +1,13 @@
 /**
  * 26 bài tin tức — sửa chữa / cải tạo nhà miền Trung (#171–#196).
  */
-import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, homeLinkParagraph, imageFigure, mapBatchTopicToIntent, seoCtaBlock } from "../article-seo-blocks";
+import {
+  articleMistakesBlock,
+  articlePricingTableBlock,
+  articleWhenNeededBlock,
+  buildIntentFaq,
+} from "../article-content-blocks";
 import { buildDakLakSeoArticle } from "./dak-lak-tin-tuc-articles-batch4";
 import { mienTrungSuaNhaKeywordCalendar } from "../mien-trung-sua-nha-keyword-calendar";
 import { slugImage } from "../site-images";
@@ -203,6 +209,7 @@ function buildArticle(b: Brief): SeoArticleShape {
   const kw = b.focusKeyword;
   const prov = PROVINCE_LABEL[b.province];
   const h2Lead = kw.charAt(0).toUpperCase() + kw.slice(1);
+  const intent = mapBatchTopicToIntent(b.topic, b.slug);
 
   return {
     title: b.title,
@@ -219,6 +226,8 @@ function buildArticle(b: Brief): SeoArticleShape {
 
 ${imageFigure(slugImage(b.slug, 0), kw, 1)}
 
+${articleWhenNeededBlock(intent, kw, prov)}
+
 ${topicSection(b)}
 
 ${imageFigure(slugImage(b.slug, 1), kw, 2)}
@@ -232,14 +241,13 @@ ${imageFigure(slugImage(b.slug, 1), kw, 2)}
 </ol>
 <p>Tham khảo: ${hubLinksHtml(b.province, b.slug)}.</p>
 
-<h2>Chi phí ${kw} (ước tính)</h2>
-<ul>
-  <li>Sửa nhẹ (sơn, lát): 1,5 – 3 triệu đ/m².</li>
-  <li>Cải tạo WC, bếp: 4 – 7 triệu đ/m².</li>
-  <li>Cải tạo toàn diện + gia cố: 8 – 15 triệu đ/m².</li>
-</ul>
+${articlePricingTableBlock(intent, prov, b.slug, kw)}
+
+${articleMistakesBlock(intent, kw, prov)}
 
 ${homeLinkParagraph()}
+
+${buildIntentFaq(intent, kw, prov)}
 
 ${seoCtaBlock(kw)}
 
