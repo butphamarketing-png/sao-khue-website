@@ -66,6 +66,14 @@ import {
   dakLakBatch4Slugs,
   dakLakTphcmBatch5ArticlesBySlug,
   dakLakTphcmBatch5Slugs,
+  tphcmBatch6ArticlesBySlug,
+  tphcmBatch6Slugs,
+  xayNhaTphcmBatch7ArticlesBySlug,
+  xayNhaTphcmBatch7Slugs,
+  xayCaiTaoTphcmBatch8ArticlesBySlug,
+  xayCaiTaoTphcmBatch8Slugs,
+  xayCaiTaoTphcmBatch9ArticlesBySlug,
+  xayCaiTaoTphcmBatch9Slugs,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -281,6 +289,18 @@ const seedPostsRaw: SeedPost[] = [
   ...dakLakTphcmBatch5Slugs.filter((slug) => slug !== "thiet-ke-nha-dep-tphcm").map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), dakLakTphcmBatch5ArticlesBySlug[slug]!),
   ),
+  ...tphcmBatch6Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), tphcmBatch6ArticlesBySlug[slug]!),
+  ),
+  ...xayNhaTphcmBatch7Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), xayNhaTphcmBatch7ArticlesBySlug[slug]!),
+  ),
+  ...xayCaiTaoTphcmBatch8Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), xayCaiTaoTphcmBatch8ArticlesBySlug[slug]!),
+  ),
+  ...xayCaiTaoTphcmBatch9Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), xayCaiTaoTphcmBatch9ArticlesBySlug[slug]!),
+  ),
 ];
 
 export const seedPosts: SeedPost[] = dedupeSeedPosts(seedPostsRaw);
@@ -293,6 +313,7 @@ export {
 } from "./categories";
 
 export { getPostPublicPath } from "./public-path";
+export { INDEXING_BATCH_SLUGS, xayCaiTaoTphcmBatch8Slugs, xayCaiTaoTphcmBatch9Slugs, xayNhaTphcmBatch7Slugs } from "./indexing-batches";
 export {
   buildImageAlt,
   pickImageAltKeyword,

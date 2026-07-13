@@ -93,3 +93,16 @@ Sitemap: ${SITE_URL}/sitemap.xml
 writeFileSync(join(outDir, "sitemap.xml"), xml, "utf8");
 writeFileSync(join(outDir, "robots.txt"), robots, "utf8");
 console.log(`[sitemap] Wrote ${urls.length} URLs → ${outDir}/sitemap.xml`);
+
+if (process.env.AUTO_SUBMIT_INDEXING === "1" || process.env.AUTO_SUBMIT_INDEXING === "true") {
+  const sitemapUrl = `${SITE_URL}/sitemap.xml`;
+  const encoded = encodeURIComponent(sitemapUrl);
+  for (const pingUrl of [
+    `https://www.bing.com/ping?sitemap=${encoded}`,
+    `https://www.google.com/ping?sitemap=${encoded}`,
+  ]) {
+    fetch(pingUrl)
+      .then((r) => console.log(`[sitemap] Ping ${pingUrl.includes("bing") ? "Bing" : "Google"}: ${r.ok ? "OK" : r.status}`))
+      .catch((err) => console.warn("[sitemap] Ping failed:", err instanceof Error ? err.message : err));
+  }
+}

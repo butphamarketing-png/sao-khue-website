@@ -5,6 +5,10 @@
  * Batch 6 (sửa nhà miền Trung): #171–#196. Batch 7 (xây nhà miền Trung): #197–#246.
  * Batch 8 (Đắk Lắk — xây/sửa/cải tạo): #247–#296.
  * Batch 9 (Đắk Lắk + TP.HCM mở rộng): #297–#396.
+ * Batch 10 (TP.HCM 100 từ khóa sạch): #397–#496.
+ * Batch 11 (100 từ khóa xây nhà TP.HCM): #597–#696.
+ * Batch 12 (100 từ khóa xây/cải tạo TP.HCM): #697–#796.
+ * Batch 13 (100 từ khóa phường/hẻm/gia cố TP.HCM): #797–#896.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -24,6 +28,10 @@ export { mienTrungSuaNhaKeywordCalendar } from "./mien-trung-sua-nha-keyword-cal
 export { mienTrungXayNhaKeywordCalendar } from "./mien-trung-xay-nha-keyword-calendar";
 export { dakLakKeywordCalendarBatch4 } from "./dak-lak-keyword-calendar-batch4";
 export { dakLakTphcmKeywordCalendarBatch5 } from "./dak-lak-tphcm-keyword-calendar-batch5";
+export { tphcmKeywordCalendarBatch6 } from "./tphcm-keyword-calendar-batch6";
+export { xayNhaTphcmKeywordCalendarBatch7 } from "./xay-nha-tphcm-keyword-calendar-batch7";
+export { xayCaiTaoTphcmKeywordCalendarBatch8 } from "./xay-cai-tao-tphcm-keyword-calendar-batch8";
+export { xayCaiTaoTphcmKeywordCalendarBatch9 } from "./xay-cai-tao-tphcm-keyword-calendar-batch9";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },

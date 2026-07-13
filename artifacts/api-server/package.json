@@ -10,6 +10,7 @@
     "start": "node --enable-source-maps ./dist/index.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "seed-posts": "tsx scripts/seed-posts.ts",
+    "submit-indexing": "tsx scripts/submit-indexing.ts",
     "export-seed-sql": "tsx scripts/export-seed-sql.ts",
     "export-seed-sql-batches": "tsx scripts/export-seed-sql-batches.ts",
     "export-update-thumbnails-sql": "tsx scripts/export-update-thumbnails-sql.ts",

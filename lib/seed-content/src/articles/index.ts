@@ -88,6 +88,26 @@ export {
   getDakLakTphcmBatch5Article,
 } from "./dak-lak-tphcm-tin-tuc-articles-batch5";
 export {
+  tphcmBatch6ArticlesBySlug,
+  tphcmBatch6Slugs,
+  getTphcmBatch6Article,
+} from "./tphcm-tin-tuc-articles-batch6";
+export {
+  xayNhaTphcmBatch7ArticlesBySlug,
+  xayNhaTphcmBatch7Slugs,
+  getXayNhaTphcmBatch7Article,
+} from "./xay-nha-tphcm-tin-tuc-articles-batch7";
+export {
+  xayCaiTaoTphcmBatch8ArticlesBySlug,
+  xayCaiTaoTphcmBatch8Slugs,
+  getXayCaiTaoTphcmBatch8Article,
+} from "./xay-cai-tao-tphcm-tin-tuc-articles-batch8";
+export {
+  xayCaiTaoTphcmBatch9ArticlesBySlug,
+  xayCaiTaoTphcmBatch9Slugs,
+  getXayCaiTaoTphcmBatch9Article,
+} from "./xay-cai-tao-tphcm-tin-tuc-articles-batch9";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,
