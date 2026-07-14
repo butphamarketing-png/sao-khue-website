@@ -16,6 +16,11 @@ export function HomePostsBand({ config }: Props) {
   const { data, isLoading } = useListPosts({ limit: 200 });
   const allPosts = resolvePosts(data, { limit: 200 });
   const items = pickBandPosts(allPosts, config);
+  const limit = config.limit ?? 4;
+  const gridClass =
+    limit >= 6
+      ? "grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3"
+      : "grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4";
 
   return (
     <section id={config.id} className="qh-home-band">
@@ -23,8 +28,8 @@ export function HomePostsBand({ config }: Props) {
 
       <div className="site-container py-6 md:py-8">
         {isLoading ? (
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {Array.from({ length: config.limit ?? 4 }).map((_, index) => (
+          <div className={gridClass}>
+            {Array.from({ length: limit }).map((_, index) => (
               <div key={`${config.id}-sk-${index}`} className="qh-home-card">
                 <Skeleton className="qh-home-card__image" />
                 <div className="qh-home-card__body space-y-3">
@@ -38,7 +43,7 @@ export function HomePostsBand({ config }: Props) {
         ) : items.length === 0 ? (
           <p className="text-center text-sm text-slate-500">Chưa có bài viết cho mục này.</p>
         ) : (
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className={gridClass}>
             {items.map((item) => (
               <article key={item.id} className="qh-home-card group">
                 <Link href={getPostPublicPath(item)} className="qh-home-card__image-wrap">

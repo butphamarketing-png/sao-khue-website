@@ -272,10 +272,10 @@ export const defaultCategoryPages: CategoryPagesMap = {
     highlights: ["Nhà phố hiện đại", "Biệt thự sân vườn", "Cải tạo, nâng tầng"],
   },
   "tin-tuc": {
-    title: "Tin tức xây dựng",
+    title: "Tin tức",
     description:
-      "Bài viết, cẩm nang, kinh nghiệm thực tế và kiến thức pháp lý giúp chủ nhà chủ động hơn khi xây nhà, chọn nhà thầu và giám sát công trình.",
-    highlights: ["Cẩm nang xây nhà A–Z", "Luật xây dựng cập nhật", "Báo giá & xu hướng"],
+      "Tổng hợp tất cả bài viết: cẩm nang xây nhà, báo giá, cải tạo, thiết kế và kinh nghiệm thực tế từ Kiến Trúc Sao Khuê.",
+    highlights: ["Cẩm nang xây nhà A–Z", "Báo giá & chi phí", "Cải tạo & sửa chữa"],
   },
 };
 
@@ -416,10 +416,18 @@ export const defaultHomePostsBands: HomePostsBandConfig[] = [
   },
   {
     id: "sua-chua",
-    title: "SỬA CHỮA NHÀ CHUYÊN NGHIỆP TP.HCM",
+    title: "CẢI TẠO NHÀ CHUYÊN NGHIỆP TP.HCM",
     viewAllHref: "/dich-vu/sua-chua-nha",
-    slugKeywords: ["sua-chua", "cai-tao", "lam-moi", "sua-nha"],
-    limit: 4,
+    slugKeywords: ["sua-chua", "cai-tao", "lam-moi", "sua-nha", "nang-tang", "chong-tham"],
+    slugs: [
+      "cai-tao-nha-cu-tphcm",
+      "cai-tao-nha-tron-goi-tphcm",
+      "cai-tao-nha-pho-tphcm",
+      "nang-tang-nha-pho-tphcm",
+      "chong-tham-nha-tphcm",
+      "cai-tao-mat-tien-nha-tphcm",
+    ],
+    limit: 6,
   },
   {
     id: "cam-nang",

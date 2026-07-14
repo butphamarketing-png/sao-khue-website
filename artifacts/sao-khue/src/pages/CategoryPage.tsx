@@ -38,7 +38,7 @@ export default function CategoryPage({ category }: Props) {
   const menu = useNavMenu();
   const phone = usePrimaryPhone();
   const normalized = normalizeCategory(category);
-  const { data: posts, isLoading } = useListPosts({ category: normalized });
+  const { data: posts, isLoading } = useListPosts({ category: normalized, limit: 1000 });
   const items = resolvePosts(posts, { category: normalized });
 
   useEffect(() => {

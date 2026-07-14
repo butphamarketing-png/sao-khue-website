@@ -49,7 +49,7 @@ router.get("/posts", async (req, res) => {
   try {
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
-    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
+    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 2000) : undefined;
 
     const q = db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
     if (category) q.where(inArray(postsTable.category, categoriesForFilter(category)));
@@ -60,7 +60,7 @@ router.get("/posts", async (req, res) => {
     console.error("[posts] list failed, using fallback", err);
     const category = typeof req.query.category === "string" ? req.query.category : undefined;
     const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
-    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 100) : undefined;
+    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 2000) : undefined;
     res.json(listFallbackPosts({ category, limit }));
   }
 });

@@ -75,18 +75,12 @@ export const defaultNavMenu: MenuItem[] = [
     href: "/dich-vu/sua-chua-nha",
     category: "dich-vu",
     children: [
-      { title: "Nhà phố", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-      { title: "Biệt thự", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-      { title: "Cải tạo nhà cũ", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
-    ],
-  },
-  {
-    title: "CÔNG TRÌNH",
-    href: "/cong-trinh",
-    category: "cong-trinh",
-    children: [
-      { title: "CÔNG TRÌNH TIÊU BIỂU", href: "/cong-trinh", category: "cong-trinh" },
-      { title: "CÔNG TRÌNH ĐANG THI CÔNG", href: "/cong-trinh", category: "cong-trinh" },
+      { title: "CẢI TẠO NHÀ CŨ", href: "/tin-tuc/cai-tao-nha-cu-tphcm", category: "tin-tuc" },
+      { title: "CẢI TẠO NHÀ TRỌN GÓI", href: "/tin-tuc/cai-tao-nha-tron-goi-tphcm", category: "tin-tuc" },
+      { title: "CẢI TẠO NHÀ PHỐ", href: "/tin-tuc/cai-tao-nha-pho-tphcm", category: "tin-tuc" },
+      { title: "NÂNG TẦNG NHÀ PHỐ", href: "/tin-tuc/nang-tang-nha-pho-tphcm", category: "tin-tuc" },
+      { title: "CHỐNG THẤM NHÀ", href: "/tin-tuc/chong-tham-nha-tphcm", category: "tin-tuc" },
+      { title: "CẢI TẠO MẶT TIỀN", href: "/tin-tuc/cai-tao-mat-tien-nha-tphcm", category: "tin-tuc" },
     ],
   },
   {
@@ -96,19 +90,15 @@ export const defaultNavMenu: MenuItem[] = [
     children: [
       { title: "Cẩm nang nhà phố", href: "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm", category: "tin-tuc" },
       { title: "Cẩm nang biệt thự", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", category: "cong-trinh" },
-      { title: "Cẩm nang cải tạo nhà", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
+      { title: "Cẩm nang cải tạo nhà", href: "/tin-tuc/cai-tao-nha-cu-tphcm", category: "tin-tuc" },
       { title: "Cẩm nang thiết kế", href: "/tin-tuc/thiet-ke-nha-dep-gia-re", category: "tin-tuc" },
       { title: "Cẩm nang xây nhà A–Z", href: "/tin-tuc/cam-nang-xay-nha-2026", category: "tin-tuc" },
     ],
   },
   {
-    title: "TIN NỘI BỘ",
-    href: "/bai-viet/hoat-dong-sao-khue",
-    category: "gioi-thieu",
-    children: [
-      { title: "HOẠT ĐỘNG NỘI BỘ", href: "/bai-viet/hoat-dong-sao-khue", category: "gioi-thieu" },
-      { title: "TUYỂN DỤNG", href: "/bai-viet/tuyen-dung", category: "gioi-thieu" },
-    ],
+    title: "TIN TỨC",
+    href: "/tin-tuc",
+    category: "tin-tuc",
   },
   { title: "LIÊN HỆ", href: "/lien-he" },
 ];
