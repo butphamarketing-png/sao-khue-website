@@ -277,7 +277,7 @@ export function buildCtrExcerpt(
   return EXCERPT_TEMPLATES[intent](keyword, at).slice(0, maxLen);
 }
 
-export const SITE_HOME = "https://kientrucsaokhue.com/";
+export const SITE_HOME = "https://www.kientrucsaokhue.com/";
 export const SITE_FANPAGE = "https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi";
 
 export function slugifyAlt(focusKeyword: string): string {

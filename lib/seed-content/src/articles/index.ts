@@ -138,6 +138,12 @@ export {
   suaChuaCaiTaoNhaHocMon,
 } from "./sua-chua-cai-tao-nha-quan-huyen";
 
+export {
+  moneyPageOverridesBySlug,
+  MONEY_PAGE_OVERRIDE_SLUGS,
+} from "./money-page-overrides";
+export type { MoneyPageOverride } from "./money-page-overrides";
+
 export type SeoArticle = {
   title: string;
   excerpt: string;

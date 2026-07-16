@@ -12,6 +12,16 @@ export const veChungToi = {
 <h2>Về Công ty TNHH Kiến Trúc Sao Khuê</h2>
 <p><strong>Sao Khuê</strong> (Công ty TNHH Kiến Trúc Sao Khuê) là đơn vị <strong>thiết kế và thi công xây dựng</strong> nhà ở dân dụng tại TP.HCM với hơn <strong>10 năm kinh nghiệm</strong> và hơn <strong>500 công trình</strong> đã bàn giao. Chúng tôi chuyên <strong>nhà phố, biệt thự, cải tạo, nâng tầng</strong> — cam kết minh bạch báo giá, trực tiếp thi công và bảo hành dài hạn.</p>
 
+<h2>Thông tin pháp lý &amp; tin cậy</h2>
+<ul>
+  <li><strong>Tên pháp nhân:</strong> Công ty TNHH Kiến Trúc Sao Khuê</li>
+  <li><strong>Trụ sở:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
+  <li><strong>Hotline:</strong> 0909 075 668 (tư vấn / khảo sát 24/7)</li>
+  <li><strong>Website:</strong> <a href="https://www.kientrucsaokhue.com/">www.kientrucsaokhue.com</a></li>
+  <li><strong>Cam kết:</strong> Hợp đồng rõ hạng mục — không bán thầu trá hình — bảo hành kết cấu <strong>10 năm</strong></li>
+</ul>
+<p>Quý khách có thể yêu cầu xem <strong>hồ sơ năng lực, mã số thuế và giấy phép kinh doanh</strong> khi làm việc trực tiếp với bộ phận kinh doanh.</p>
+
 <h2>Sứ mệnh và giá trị</h2>
 <ul>
   <li><strong>Uy tín:</strong> Làm đúng cam kết hợp đồng, không bán thầu trá hình.</li>
@@ -22,8 +32,8 @@ export const veChungToi = {
 <h2>Năng lực cốt lõi</h2>
 <ul>
   <li><a href="/dich-vu/thiet-ke-nha">Thiết kế kiến trúc</a> 2D/3D, tối ưu công năng.</li>
-  <li><a href="/dich-vu/xay-dung-phan-tho">Xây dựng phần thô</a> và <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</li>
-  <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa chữa, cải tạo</a> nhà cũ.</li>
+  <li><a href="/dich-vu/xay-dung-phan-tho">Xây dựng phần thô</a> và <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</li>
+  <li><a href="/dich-vu/sua-chua-nha">Sửa chữa, cải tạo</a> nhà cũ.</li>
   <li><a href="/dich-vu/hoan-thien-nha">Hoàn thiện</a> sau thô.</li>
 </ul>
 
@@ -39,6 +49,6 @@ export const veChungToi = {
 <p>Trụ sở: <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong>. Nhận thi công toàn TP.HCM và tỉnh lân cận: Bình Dương, Đồng Nai, Long An…</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh">công trình tiêu biểu</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · Xem thêm <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây dựng nhà phố uy tín</a></p>
 `.trim(),
 };

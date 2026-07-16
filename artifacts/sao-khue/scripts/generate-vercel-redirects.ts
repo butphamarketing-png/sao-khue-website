@@ -109,6 +109,12 @@ export default function middleware(request) {
   if (pathname.startsWith("/kinh-nghiem/")) {
     return redirect301(\`/tin-tuc/\${pathname.slice("/kinh-nghiem/".length)}\`, request.url);
   }
+  if (pathname.startsWith("/danh-muc/")) {
+    return redirect301("/tin-tuc", request.url);
+  }
+  if (pathname.startsWith("/category/")) {
+    return redirect301("/tin-tuc", request.url);
+  }
 
   const dest = REDIRECTS[pathname];
   if (dest) return redirect301(dest, request.url);

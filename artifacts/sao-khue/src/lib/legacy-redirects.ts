@@ -10,6 +10,15 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
   "sua-nha-tron-goi": "/dich-vu/sua-nha-tron-goi-tphcm",
   "sua-chua-nha-tron-goi": "/dich-vu/sua-chua-nha",
+  "dich-vu-sua-nha-tron-goi-sao-khue": "/dich-vu/sua-chua-nha",
+  "sua-nha-tphcmsua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
+  "sua-nha-tphcm": "/dich-vu/sua-chua-nha",
+  "sua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
+  "bang-bao-gia-sua-chua-nha-tron-goi-tai-tp-hcm": "/tin-tuc/bao-gia-sua-chua-nha-tphcm",
+  "don-gia-sua-chua-nha-moi-nhat-tai-tp-hcm-nam-2023": "/tin-tuc/bao-gia-sua-chua-nha-tphcm",
+  "sua-nha-tron-goi-anh-thuan-thanh-pho-thu-duc": "/tin-tuc/sua-nha-thu-duc",
+  "mot-so-hinh-anh-cai-tao-nha-tai-kien-truc-sao-khue": "/tin-tuc/cai-tao-nha-tphcm",
+  "quy-trinh-xay-dung": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
 
   // Xây nhà trọn gói
   "xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
@@ -20,6 +29,8 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "xay-dung-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
   "xay-nha-tron-goi-binh-duong": "/dich-vu/xay-nha-tron-goi-binh-duong",
   "xay-nha-tron-goi-dong-nai": "/dich-vu/xay-nha-tron-goi-dong-nai",
+  "xay-nha-tai-tp-hcm": "/tin-tuc/xay-nha-tphcm",
+  "chi-phi-xay-nha-pho": "/tin-tuc/chi-phi-xay-nha-tphcm",
 
   // Top-level service shortcuts
   "thiet-ke-nha": "/dich-vu/thiet-ke-nha",
@@ -35,10 +46,11 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "hoat-dong-sao-khue": "/bai-viet/hoat-dong-sao-khue",
   "tuyen-dung": "/bai-viet/tuyen-dung",
 
-  // WordPress taxonomy
+  // WordPress taxonomy / archives
   "category": "/dich-vu",
   "tag": "/tin-tuc",
   "author": "/bai-viet/ve-chung-toi",
+  "danh-muc": "/tin-tuc",
 
   // Common typos / old paths
   "gioi-thieu-ve-chung-toi": "/bai-viet/ve-chung-toi",
@@ -151,6 +163,13 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/bai-viet/thiet-ke-biet-thu-thu-duc", "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc"],
   ["/dich-vu/thiet-ke-nha-pho-hien-dai-tphcm", "/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm"],
   ["/adminbp", "/admin"],
+  // WordPress category archives still indexed
+  ["/danh-muc", "/tin-tuc"],
+  ["/danh-muc/bao-gia", "/bao-gia"],
+  ["/danh-muc/bao-gia/xay-nha-tron-goi", "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"],
+  ["/category/bao-gia", "/bao-gia"],
+  ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi"],
+  ["/category/sua-chua-nha", "/dich-vu/sua-chua-nha"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
@@ -173,6 +192,8 @@ export function collectServerRedirects(): Map<string, string> {
   add("/gioi-thieu/:path*", "/bai-viet/:path*");
   add("/kinh-nghiem/:path*", "/tin-tuc/:path*");
   add("/kinh-nghiem-xay-dung/:path*", "/tin-tuc/:path*");
+  add("/danh-muc/:path*", "/tin-tuc");
+  add("/category/:path*", "/tin-tuc");
 
   for (const [slug, target] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
     add(`/${slug}`, target);

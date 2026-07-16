@@ -1,7 +1,11 @@
 import { Router, type IRouter } from "express";
+import { readFileSync, existsSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { db, postsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
 import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
+import { logger } from "../lib/logger";
 
 const SITE_URL =
   (process.env.SITE_URL ?? "https://www.kientrucsaokhue.com").replace(/\/$/, "");
@@ -54,39 +58,75 @@ ${urls
 }
 
 function staticUrls(): SitemapEntry[] {
+  const today = new Date().toISOString().slice(0, 10);
   return STATIC_PAGES.map((p) => ({
     ...p,
     loc: p.loc === "/" ? `${SITE_URL}/` : `${SITE_URL}${p.loc}`,
+    lastmod: today,
+  }));
+}
+
+function seedPostUrls(): SitemapEntry[] {
+  return seedPosts.map((p) => ({
+    loc: `${SITE_URL}${getPostPublicPath(p)}`,
+    lastmod: "2026-07-16",
+    changefreq: "monthly" as const,
+    priority: 0.8,
   }));
 }
 
 async function collectPostUrls(): Promise<SitemapEntry[]> {
-  const toEntry = (p: { slug: string; category: string; updatedAt?: Date | string }) => ({
-    loc: `${SITE_URL}${getPostPublicPath(p)}`,
-    lastmod:
-      p.updatedAt instanceof Date
-        ? p.updatedAt.toISOString().split("T")[0]
-        : typeof p.updatedAt === "string"
-          ? p.updatedAt.slice(0, 10)
-          : "2026-01-15",
-    changefreq: "monthly" as const,
-    priority: 0.8,
-  });
-
   try {
-    const posts = await db
-      .select({
-        slug: postsTable.slug,
-        category: postsTable.category,
-        updatedAt: postsTable.updatedAt,
-      })
-      .from(postsTable)
-      .orderBy(desc(postsTable.updatedAt));
+    const posts = await Promise.race([
+      db
+        .select({
+          slug: postsTable.slug,
+          category: postsTable.category,
+          updatedAt: postsTable.updatedAt,
+        })
+        .from(postsTable)
+        .orderBy(desc(postsTable.updatedAt)),
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("sitemap db timeout")), 8000),
+      ),
+    ]);
 
-    return posts.map(toEntry);
-  } catch {
-    return seedPosts.map((p) => toEntry({ ...p, updatedAt: "2026-01-15" }));
+    if (!posts.length) return seedPostUrls();
+
+    return posts.map((p) => ({
+      loc: `${SITE_URL}${getPostPublicPath(p)}`,
+      lastmod:
+        p.updatedAt instanceof Date
+          ? p.updatedAt.toISOString().split("T")[0]
+          : typeof p.updatedAt === "string"
+            ? p.updatedAt.slice(0, 10)
+            : "2026-07-16",
+      changefreq: "monthly" as const,
+      priority: 0.8,
+    }));
+  } catch (err) {
+    logger.warn({ err }, "sitemap: DB unavailable — falling back to seedPosts");
+    return seedPostUrls();
   }
+}
+
+function tryReadStaticSitemap(): string | null {
+  try {
+    const here = path.dirname(fileURLToPath(import.meta.url));
+    const candidates = [
+      path.resolve(here, "../../public/sitemap.xml"),
+      path.resolve(process.cwd(), "public/sitemap.xml"),
+    ];
+    for (const file of candidates) {
+      if (existsSync(file)) {
+        const xml = readFileSync(file, "utf8");
+        if (xml.includes("<urlset") && xml.includes("<loc>")) return xml;
+      }
+    }
+  } catch {
+    /* ignore */
+  }
+  return null;
 }
 
 const router: IRouter = Router();
@@ -99,24 +139,40 @@ Disallow: /admin
 Disallow: /api/
 
 Sitemap: ${SITE_URL}/sitemap.xml
-
-# RSS (Google Discover / đọc tin)
-# ${SITE_URL}/feed.xml
 `;
   res.set("Content-Type", "text/plain; charset=utf-8");
   res.send(body);
 });
 
 router.get("/sitemap.xml", async (_req, res) => {
-  const postUrls = await collectPostUrls();
-  const seen = new Set<string>();
-  const urls = [...staticUrls(), ...postUrls].filter((u) => {
-    if (seen.has(u.loc)) return false;
-    seen.add(u.loc);
-    return true;
-  });
-  res.set("Content-Type", "application/xml; charset=utf-8");
-  res.send(buildSitemapXml(urls));
+  try {
+    const postUrls = await collectPostUrls();
+    const seen = new Set<string>();
+    const urls = [...staticUrls(), ...postUrls].filter((u) => {
+      if (seen.has(u.loc)) return false;
+      seen.add(u.loc);
+      return true;
+    });
+    res.set("Content-Type", "application/xml; charset=utf-8");
+    res.set("Cache-Control", "public, max-age=3600");
+    res.send(buildSitemapXml(urls));
+  } catch (err) {
+    logger.error({ err }, "sitemap.xml generation failed");
+    const fallback = tryReadStaticSitemap();
+    if (fallback) {
+      res.set("Content-Type", "application/xml; charset=utf-8");
+      res.send(fallback);
+      return;
+    }
+    try {
+      const urls = [...staticUrls(), ...seedPostUrls()];
+      res.set("Content-Type", "application/xml; charset=utf-8");
+      res.send(buildSitemapXml(urls));
+    } catch (err2) {
+      logger.error({ err: err2 }, "sitemap.xml seed fallback failed");
+      res.status(503).type("text/plain").send("Sitemap temporarily unavailable");
+    }
+  }
 });
 
 export default router;

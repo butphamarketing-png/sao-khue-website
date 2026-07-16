@@ -74,6 +74,7 @@ import {
   xayCaiTaoTphcmBatch8Slugs,
   xayCaiTaoTphcmBatch9ArticlesBySlug,
   xayCaiTaoTphcmBatch9Slugs,
+  moneyPageOverridesBySlug,
   type SeoArticle,
 } from "./articles";
 import { matchesCategory, normalizeCategory } from "./categories";
@@ -303,7 +304,26 @@ const seedPostsRaw: SeedPost[] = [
   ),
 ];
 
-export const seedPosts: SeedPost[] = dedupeSeedPosts(seedPostsRaw);
+export const seedPosts: SeedPost[] = applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw));
+
+function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
+  return posts.map((p) => {
+    const override = moneyPageOverridesBySlug[p.slug];
+    if (!override) return p;
+    const imageAlt = override.imageAlt?.trim() || p.imageAlt;
+    return {
+      ...p,
+      title: override.title?.trim() || p.title,
+      excerpt: override.excerpt,
+      content: override.content,
+      metaTitle: override.metaTitle,
+      metaDescription: override.metaDescription,
+      metaKeywords: override.metaKeywords,
+      imageAlt,
+      imageCaption: override.imageCaption?.trim() || imageAlt || p.imageCaption,
+    };
+  });
+}
 
 export {
   DEFAULT_POST_CATEGORY,
