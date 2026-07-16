@@ -53,6 +53,11 @@ const DESIGN_CLUSTER: HubLink[] = [
 ];
 
 const DISTRICT_HUBS: { match: RegExp; link: HubLink }[] = [
+  { match: /tron-goi-quan-7|xay-nha-quan-7/, link: { href: "/tin-tuc/xay-nha-tron-goi-quan-7", label: "Trọn gói Quận 7" } },
+  { match: /tron-goi-quan-3|quan-3/, link: { href: "/tin-tuc/xay-nha-tron-goi-quan-3", label: "Trọn gói Quận 3" } },
+  { match: /tron-goi-tan-binh|tan-binh/, link: { href: "/tin-tuc/xay-nha-tron-goi-tan-binh", label: "Trọn gói Tân Bình" } },
+  { match: /tron-goi-binh-tan|binh-tan/, link: { href: "/tin-tuc/xay-nha-tron-goi-binh-tan", label: "Trọn gói Bình Tân" } },
+  { match: /tron-goi-nha-be|xay-nha-nha-be/, link: { href: "/tin-tuc/xay-nha-tron-goi-nha-be", label: "Trọn gói Nhà Bè" } },
   { match: /binh-thanh/, link: { href: "/tin-tuc/xay-nha-binh-thanh", label: "Xây nhà Bình Thạnh" } },
   { match: /thu-duc/, link: { href: "/tin-tuc/xay-nha-thu-duc", label: "Xây nhà Thủ Đức" } },
   { match: /quan-7/, link: { href: "/tin-tuc/xay-nha-quan-7", label: "Xây nhà Quận 7" } },

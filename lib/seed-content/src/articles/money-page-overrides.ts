@@ -6,6 +6,10 @@ import {
   MONEY_PAGE_OVERRIDE_SLUGS_BATCH2,
   moneyPageOverridesBatch2,
 } from "./money-page-overrides-batch2";
+import {
+  MONEY_PAGE_OVERRIDE_SLUGS_BATCH3,
+  moneyPageOverridesBatch3,
+} from "./money-page-overrides-batch3";
 
 export type MoneyPageOverride = {
   title?: string;
@@ -50,6 +54,7 @@ export const MONEY_PAGE_OVERRIDE_SLUGS: string[] = [
   "sua-nha-cu-tphcm",
   "lam-moi-nha-cu-tphcm",
   ...MONEY_PAGE_OVERRIDE_SLUGS_BATCH2,
+  ...MONEY_PAGE_OVERRIDE_SLUGS_BATCH3,
 ];
 
 export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
@@ -2490,4 +2495,5 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   },
 
   ...moneyPageOverridesBatch2,
+  ...moneyPageOverridesBatch3,
 };
