@@ -2,6 +2,10 @@
  * Hand-crafted SEO content overrides for top money pages.
  * Each entry is intentionally unique (H2s, local tips, FAQ, pricing notes).
  */
+import {
+  MONEY_PAGE_OVERRIDE_SLUGS_BATCH2,
+  moneyPageOverridesBatch2,
+} from "./money-page-overrides-batch2";
 
 export type MoneyPageOverride = {
   title?: string;
@@ -45,6 +49,7 @@ export const MONEY_PAGE_OVERRIDE_SLUGS: string[] = [
   "cam-nang-xay-nha-2026",
   "sua-nha-cu-tphcm",
   "lam-moi-nha-cu-tphcm",
+  ...MONEY_PAGE_OVERRIDE_SLUGS_BATCH2,
 ];
 
 export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
@@ -2483,4 +2488,6 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 <h2>Đặt lịch làm mới nhà</h2>
 <p>Hotline <strong>0909 075 668</strong> · Văn phòng 245/8 Bình Lợi, Q. Bình Thạnh.</p>`,
   },
+
+  ...moneyPageOverridesBatch2,
 };

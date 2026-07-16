@@ -15,6 +15,7 @@ export const CONG_TRINH_CASE_STUDIES: HubLink[] = [
 
 export const TIN_TUC_MAIN_HUBS: HubLink[] = [
   { href: "/tin-tuc/xay-nha-tphcm", label: "Xây nhà TP.HCM" },
+  { href: "/tin-tuc/cai-tao-nha-tphcm", label: "Cải tạo nhà TP.HCM" },
   { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
   { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
   { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
