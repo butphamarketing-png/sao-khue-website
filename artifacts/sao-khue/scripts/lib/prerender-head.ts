@@ -1,6 +1,7 @@
 /** Pure HTML head builders for static prerender (no DOM). */
 
 export const GSC_VERIFICATION_TOKEN = "YwY_bBLvygZlyntSLWYe9bShrCJQJKbq_A5IMOJtUIo";
+export const BING_VERIFICATION_TOKEN = "51EDA808239AC9FD6C41A2B221789CEF";
 
 export type PrerenderMeta = {
   title: string;
@@ -48,6 +49,7 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
   const ogImage = /^https?:\/\//i.test(rawOg) ? rawOg : absoluteUrl(siteUrl, rawOg);
   const lines: string[] = [
     `<meta name="google-site-verification" content="${escapeHtml(GSC_VERIFICATION_TOKEN)}" />`,
+    `<meta name="msvalidate.01" content="${escapeHtml(BING_VERIFICATION_TOKEN)}" />`,
     `<title>${escapeHtml(title)}</title>`,
     `<meta name="description" content="${escapeHtml(description)}" />`,
     `<meta name="robots" content="${robots}" />`,

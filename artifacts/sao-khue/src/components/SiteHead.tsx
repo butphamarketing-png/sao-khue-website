@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { BING_VERIFICATION_TOKEN } from "@/lib/bing-verification";
 import { BUNDLED_LOGO_URL } from "@/lib/brand-assets";
 import { parseGaMeasurementId } from "@/lib/google-integrations";
 import {
@@ -64,6 +65,7 @@ export function SiteHead() {
     setMetaName("geo.region", "VN-SG");
     setMetaName("geo.placename", "Thành phố Hồ Chí Minh");
     setMetaName("google-site-verification", s.gscVerification);
+    setMetaName("msvalidate.01", BING_VERIFICATION_TOKEN);
     setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
     setMetaProperty("og:locale", "vi_VN");
 
