@@ -32,6 +32,7 @@ import {
   resolvePostSlugFromCategorySegment,
 } from "@/lib/post-url";
 import { renderArticleBody, resolvePostImageAlt } from "@/lib/post-body";
+import { PostHubLinksSection } from "@/components/PostHubLinksSection";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -243,6 +244,10 @@ export default function PostPage() {
               />
             </div>
           </div>
+        )}
+
+        {post && (
+          <PostHubLinksSection slug={post.slug} category={post.category} />
         )}
 
         {post && sectionPath && (

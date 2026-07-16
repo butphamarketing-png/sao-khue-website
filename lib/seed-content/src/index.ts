@@ -362,6 +362,17 @@ export {
 export { buildCtrExcerpt, buildCtrMetaDescription, buildCtrMetaTitle, stripFaqSectionFromHtml } from "./article-seo-blocks";
 
 export {
+  CONG_TRINH_CASE_STUDIES,
+  TIN_TUC_MAIN_HUBS,
+  hubLinkParagraph,
+  resolvePostHubLinks,
+  resolveRelevantCaseStudies,
+  type HubLink,
+} from "./hub-links";
+
+export { caseStudyRelatedBlock } from "./case-study-blocks";
+
+export {
   articleMistakesBlock,
   articlePricingTableBlock,
   articleWhenNeededBlock,

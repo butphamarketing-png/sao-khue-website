@@ -10,14 +10,11 @@ import { pickFeaturedByCategory } from "@/lib/featured-posts";
 import { getPostPublicPath } from "@/lib/post-url";
 
 const fallback = [
-  { id: 1, title: "Biệt thự hiện đại chị Lan - Q.2", imageUrl: "/images/project_1.jpg", href: "/cong-trinh" },
-  { id: 2, title: "Nhà phố tân cổ điển anh Tuấn - Q.7", imageUrl: "/images/project_2.jpg", href: "/cong-trinh" },
-  { id: 3, title: "Nhà phố 3 tầng anh Hùng - Bình Thạnh", imageUrl: "/images/project_3.jpg", href: "/cong-trinh" },
-  { id: 4, title: "Nội thất căn hộ Vinhomes chị Mai", imageUrl: "/images/interior_2.jpg", href: "/cong-trinh" },
-  { id: 5, title: "Biệt thự vườn cô Hoa - Đồng Nai", imageUrl: "/images/project_4.jpg", href: "/cong-trinh" },
-  { id: 6, title: "Thiết kế nhà phố kết hợp kinh doanh", imageUrl: "/images/interior_3.jpg", href: "/cong-trinh" },
-  { id: 7, title: "Nhà phố hiện đại 4 tầng - Gò Vấp", imageUrl: "/images/interior_4.jpg", href: "/cong-trinh" },
-  { id: 8, title: "Biệt thự nghỉ dưỡng chú Ba - Vũng Tàu", imageUrl: "/images/project-1.png", href: "/cong-trinh" },
+  { id: 1, title: "Xây nhà phố 4 tầng Bình Thạnh", imageUrl: "/images/project_1.jpg", href: "/cong-trinh/xay-nha-pho-binh-thanh" },
+  { id: 2, title: "Xây nhà phố Thuận An, Bình Dương", imageUrl: "/images/project_2.jpg", href: "/cong-trinh/xay-nha-pho-thuan-an" },
+  { id: 3, title: "Cải tạo nhà phố Quận 3", imageUrl: "/images/project_3.jpg", href: "/cong-trinh/sua-nha-quan-3" },
+  { id: 4, title: "Biệt thự sân vườn Thủ Đức", imageUrl: "/images/interior_2.jpg", href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc" },
+  { id: 5, title: "Nhà phố phong cách hiện đại", imageUrl: "/images/interior_3.jpg", href: "/cong-trinh/thiet-ke-nha-phong-cach-hien-dai" },
 ];
 
 type Props = {

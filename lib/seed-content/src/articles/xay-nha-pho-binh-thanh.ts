@@ -1,4 +1,6 @@
 /** Nội dung bài viết SEO — slug: xay-nha-pho-binh-thanh */
+import { caseStudyRelatedBlock } from "../case-study-blocks";
+
 export const xayNhaPhoBinhThanh = {
   title: "Công Trình Xây Nhà Phố 4 Tầng Quận Bình Thạnh — Sao Khuê",
   excerpt:
@@ -40,8 +42,10 @@ export const xayNhaPhoBinhThanh = {
 <p>Sao Khuê nhận <strong>xây nhà phố</strong> toàn TP.HCM. Liên hệ khảo sát miễn phí:</p>
 <ul>
   <li>Hotline <strong>0909 075 668</strong></li>
-  <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Liên hệ</a></li>
-  <li>Xem thêm <a href="/cong-trinh/sua-nha-quan-3">cải tạo Quận 3</a></li>
+  <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></li>
+  <li>Xem thêm <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a></li>
 </ul>
+
+${caseStudyRelatedBlock("xay-nha-pho-binh-thanh")}
 `.trim(),
 };

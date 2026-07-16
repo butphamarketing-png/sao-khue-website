@@ -1,4 +1,6 @@
 /** Nội dung bài viết SEO — slug: sua-nha-quan-3 */
+import { caseStudyRelatedBlock } from "../case-study-blocks";
+
 export const suaNhaQuan3 = {
   title: "Cải Tạo Nhà Phố Cũ Quận 3 — Công Trình Sao Khuê",
   excerpt:
@@ -38,6 +40,8 @@ export const suaNhaQuan3 = {
 </ul>
 
 <h2>Đặt lịch khảo sát nhà cũ</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">xây mới Bình Thạnh</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · Xem <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ TP.HCM</a></p>
+
+${caseStudyRelatedBlock("sua-nha-quan-3")}
 `.trim(),
 };

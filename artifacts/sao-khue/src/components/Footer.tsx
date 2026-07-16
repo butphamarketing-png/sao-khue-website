@@ -195,6 +195,16 @@ export function Footer() {
 
               </li>
 
+              <li>
+
+                <Link href="/cong-trinh" className="flex items-center transition-colors hover:text-accent">
+
+                  <ArrowRight className="mr-2 h-4 w-4" /> CÔNG TRÌNH TIÊU BIỂU
+
+                </Link>
+
+              </li>
+
             </ul>
 
           </div>

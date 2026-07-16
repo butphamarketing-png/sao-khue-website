@@ -27,6 +27,8 @@ import {
 } from "@/lib/seo";
 import { getPostPublicPath } from "@/lib/post-url";
 import { resolvePostImageAlt } from "@/lib/post-body";
+import { TinTucHubStrip } from "@/components/TinTucHubStrip";
+import { CONG_TRINH_CASE_STUDIES } from "@workspace/seed-content";
 
 interface Props {
   category: string;
@@ -101,6 +103,31 @@ export default function CategoryPage({ category }: Props) {
       </PageBanner>
 
       <CategoryShowcase category={normalized} />
+
+      {isNewsLayout && <TinTucHubStrip />}
+
+      {normalized === "cong-trinh" && (
+        <section className="site-container pb-6">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+            <h2 className="text-lg font-bold text-primary">Case study thực tế — Sao Khuê</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              5 công trình nhà phố, biệt thự và cải tạo đã bàn giao tại TP.HCM và lân cận. Mỗi dự án có
+              thông số, giải pháp kỹ thuật và ảnh minh họa.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {CONG_TRINH_CASE_STUDIES.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-primary hover:text-primary"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <div className="site-container pb-12 pt-2 lg:pb-16">
         <p className="mb-6 text-slate-600">

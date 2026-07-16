@@ -1,4 +1,6 @@
 /** Nội dung bài viết SEO — slug: xay-nha-pho-thuan-an */
+import { caseStudyRelatedBlock } from "../case-study-blocks";
+
 export const xayNhaPhoThuanAn = {
   title: "Công Trình Xây Nhà Phố 4 Tầng Tại Thuận An, Bình Dương",
   excerpt:
@@ -41,7 +43,9 @@ export const xayNhaPhoThuanAn = {
 <ul>
   <li>Hotline <strong>0909 075 668</strong></li>
   <li><a href="/lien-he">Liên hệ khảo sát miễn phí</a></li>
-  <li>Xem thêm <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> (TP.HCM)</li>
+  <li>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a></li>
 </ul>
+
+${caseStudyRelatedBlock("xay-nha-pho-thuan-an")}
 `.trim(),
 };

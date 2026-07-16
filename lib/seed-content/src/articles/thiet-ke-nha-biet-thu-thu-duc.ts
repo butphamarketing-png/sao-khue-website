@@ -1,4 +1,6 @@
 ﻿/** Nội dung bài viết SEO — slug: thiet-ke-nha-biet-thu-thu-duc */
+import { caseStudyRelatedBlock } from "../case-study-blocks";
+
 export const thietKeNhaBietThuThuDuc = {
   title: "Thiết Kế Biệt Thự Sân Vườn Thủ Đức — 200m² Á Đông Hiện Đại",
   excerpt:
@@ -37,6 +39,8 @@ export const thietKeNhaBietThuThuDuc = {
 <p>Tùy vật liệu; tham khảo <a href="/bao-gia">bảng giá</a> hoặc gọi khảo sát.</p>
 
 <h2>Liên hệ</h2>
-<p><strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố hiện đại</a></p>
+<p><strong>0909 075 668</strong> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
+
+${caseStudyRelatedBlock("thiet-ke-nha-biet-thu-thu-duc")}
 `.trim(),
 };

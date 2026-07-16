@@ -268,8 +268,8 @@ export const defaultCategoryPages: CategoryPagesMap = {
   "cong-trinh": {
     title: "Công trình tiêu biểu",
     description:
-      "Khám phá các dự án nhà phố, biệt thự và cải tạo mà Sao Khuê đã thiết kế, thi công và bàn giao cho khách hàng tại TP.HCM và các tỉnh lân cận.",
-    highlights: ["Nhà phố hiện đại", "Biệt thự sân vườn", "Cải tạo, nâng tầng"],
+      "5 case study thực tế: xây nhà phố Bình Thạnh, Thuận An, cải tạo Quận 3, biệt thự Thủ Đức và nhà phố hiện đại — có thông số, giải pháp kỹ thuật và ảnh minh họa.",
+    highlights: ["Nhà phố 4 tầng Bình Thạnh", "Cải tạo Quận 3", "Biệt thự Thủ Đức"],
   },
   "tin-tuc": {
     title: "Tin tức",

@@ -1,4 +1,6 @@
 /** Nội dung bài viết SEO — slug: thiet-ke-nha-phong-cach-hien-dai */
+import { caseStudyRelatedBlock } from "../case-study-blocks";
+
 export const thietKeNhaPhongCachHienDai = {
   title: "Thiết Kế Nhà Phố Hiện Đại TP.HCM — 3–4 Tầng Tối Ưu Ánh Sáng",
   excerpt:
@@ -36,6 +38,8 @@ export const thietKeNhaPhongCachHienDai = {
 <p>Chiều cao, lộ giới, cửa sổ hướng ra đường cần tuân thủ quy định địa phương. Sao Khuê tư vấn sơ bộ trước khi chốt bản vẽ — xem <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng</a>.</p>
 
 <h2>Liên hệ thiết kế</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">/lien-he</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
+
+${caseStudyRelatedBlock("thiet-ke-nha-phong-cach-hien-dai")}
 `.trim(),
 };
