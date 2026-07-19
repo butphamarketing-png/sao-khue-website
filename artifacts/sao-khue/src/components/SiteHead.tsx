@@ -98,6 +98,8 @@ export function SiteHead() {
         ].filter((url) => typeof url === "string" && url.trim()) as string[],
         description: s.footerDescription,
         openingHours: s.workingHours,
+        taxID: s.taxCode?.trim() || undefined,
+        foundingDate: "2014",
         aggregateRating:
           reviewCount >= 3
             ? { ratingValue: 4.9, reviewCount }
@@ -122,6 +124,7 @@ export function SiteHead() {
     s.hotline1,
     s.instagramUrl,
     s.logoUrl,
+    s.taxCode,
     s.youtubeUrl,
     ogImage,
     origin,

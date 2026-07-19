@@ -16,15 +16,31 @@ const SITE_URL = (process.env.SITE_URL ?? process.env.VITE_SITE_URL ?? "https://
 
 const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/", priority: "1.00", changefreq: "weekly" },
-  { path: "/bao-gia", priority: "0.92", changefreq: "weekly" },
+  { path: "/bao-gia", priority: "0.95", changefreq: "weekly" },
   { path: "/thiet-ke", priority: "0.91", changefreq: "weekly" },
-  { path: "/xay-moi", priority: "0.91", changefreq: "weekly" },
+  { path: "/xay-moi", priority: "0.93", changefreq: "weekly" },
   { path: "/lien-he", priority: "0.88", changefreq: "monthly" },
-  { path: "/bai-viet/ve-chung-toi", priority: "0.85", changefreq: "monthly" },
+  { path: "/bai-viet/ve-chung-toi", priority: "0.88", changefreq: "monthly" },
   { path: "/dich-vu", priority: "0.90", changefreq: "weekly" },
+  { path: "/dich-vu/xay-nha-tron-goi", priority: "0.93", changefreq: "weekly" },
   { path: "/cong-trinh", priority: "0.85", changefreq: "weekly" },
   { path: "/tin-tuc", priority: "0.85", changefreq: "weekly" },
 ];
+
+function moneyPostPriority(slug: string, path: string): string {
+  const s = `${slug} ${path}`.toLowerCase();
+  if (
+    /bao-gia-xay-nha-tron-goi|don-gia-xay-nha|chi-phi-xay-nha|xay-nha-gia-re|xay-nha-tphcm$|xay-nha-tron-goi-tphcm|cai-tao-nha-cu|thiet-ke-nha-pho-tphcm|cong-ty-xay-dung-nha-pho-uy-tin/.test(
+      s,
+    )
+  ) {
+    return "0.93";
+  }
+  if (/bao-gia|don-gia|chi-phi|tron-goi|cai-tao|thiet-ke-nha|xay-nha-2-tang|xay-nha-3-tang|gia-re|uy-tin/.test(s)) {
+    return "0.88";
+  }
+  return "0.80";
+}
 
 function escapeXml(value: string): string {
   return value
@@ -59,12 +75,15 @@ const urls: SitemapEntry[] = [
     ...entry,
     lastmod: BUILD_DATE,
   })),
-  ...seedPosts.map((p) => ({
-    path: getPostPublicPath(p),
-    priority: "0.80",
-    changefreq: "monthly",
-    lastmod: toLastmod(p.updatedAt ?? p.createdAt) ?? BUILD_DATE,
-  })),
+  ...seedPosts.map((p) => {
+    const path = getPostPublicPath(p);
+    return {
+      path,
+      priority: moneyPostPriority(p.slug, path),
+      changefreq: "monthly",
+      lastmod: toLastmod(p.updatedAt ?? p.createdAt) ?? BUILD_DATE,
+    };
+  }),
 ].filter((entry, index, arr) => arr.findIndex((e) => e.path === entry.path) === index);
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

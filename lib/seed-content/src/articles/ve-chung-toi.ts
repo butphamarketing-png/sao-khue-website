@@ -5,9 +5,9 @@ export const veChungToi = {
     "Giới thiệu Công ty TNHH Kiến Trúc Sao Khuê: 500+ công trình, đội ngũ chuyên môn, quy trình minh bạch, bảo hành 10 năm kết cấu.",
   metaTitle: "Về Chúng Tôi — Kiến Trúc Sao Khuê | 10+ Năm Kinh Nghiệm",
   metaDescription:
-    "Sao Khuê — thiết kế và thi công nhà phố, biệt thự TP.HCM từ 2014. Uy tín, chất lượng, tận tâm. Hotline 0909 075 668.",
+    "Sao Khuê — xây nhà trọn gói, thiết kế nhà phố, cải tạo nhà cũ TP.HCM từ 2014. Báo giá minh bạch. Hotline 0909 075 668.",
   metaKeywords:
-    "về sao khuê, công ty xây dựng tphcm, kiến trúc sao khuê, nhà thầu uy tín, xây dựng nhà phố",
+    "công ty xây dựng tphcm, xây nhà trọn gói, báo giá xây nhà, thiết kế nhà phố, cải tạo nhà cũ, kiến trúc sao khuê, nhà thầu uy tín",
   content: `
 <h2>Về Công ty TNHH Kiến Trúc Sao Khuê</h2>
 <p><strong>Sao Khuê</strong> (Công ty TNHH Kiến Trúc Sao Khuê) là đơn vị <strong>thiết kế và thi công xây dựng</strong> nhà ở dân dụng tại TP.HCM với hơn <strong>10 năm kinh nghiệm</strong> và hơn <strong>500 công trình</strong> đã bàn giao. Chúng tôi chuyên <strong>nhà phố, biệt thự, cải tạo, nâng tầng</strong> — cam kết minh bạch báo giá, trực tiếp thi công và bảo hành dài hạn.</p>
@@ -18,7 +18,8 @@ export const veChungToi = {
   <li><strong>Trụ sở:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
   <li><strong>Hotline:</strong> 0909 075 668 (tư vấn / khảo sát 24/7)</li>
   <li><strong>Website:</strong> <a href="https://www.kientrucsaokhue.com/">www.kientrucsaokhue.com</a></li>
-  <li><strong>Cam kết:</strong> Hợp đồng rõ hạng mục — không bán thầu trá hình — bảo hành kết cấu <strong>10 năm</strong></li>
+  <li><strong>Thành lập:</strong> 2014 · Bảo hành kết cấu <strong>10 năm</strong></li>
+  <li><strong>Cam kết:</strong> Hợp đồng rõ hạng mục — không bán thầu trá hình</li>
 </ul>
 <p>Quý khách có thể yêu cầu xem <strong>hồ sơ năng lực, mã số thuế và giấy phép kinh doanh</strong> khi làm việc trực tiếp với bộ phận kinh doanh.</p>
 
@@ -31,10 +32,11 @@ export const veChungToi = {
 
 <h2>Năng lực cốt lõi</h2>
 <ul>
-  <li><a href="/dich-vu/thiet-ke-nha">Thiết kế kiến trúc</a> 2D/3D, tối ưu công năng.</li>
-  <li><a href="/dich-vu/xay-dung-phan-tho">Xây dựng phần thô</a> và <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</li>
-  <li><a href="/dich-vu/sua-chua-nha">Sửa chữa, cải tạo</a> nhà cũ.</li>
-  <li><a href="/dich-vu/hoan-thien-nha">Hoàn thiện</a> sau thô.</li>
+  <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> chìa khóa trao tay tại TP.HCM.</li>
+  <li><a href="/bao-gia">Báo giá xây dựng</a> · <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a> · <a href="/tin-tuc/chi-phi-xay-nha-tphcm">chi phí xây nhà</a>.</li>
+  <li><a href="/tin-tuc/thiet-ke-nha-pho-tphcm">Thiết kế nhà phố</a> 2D/3D, tối ưu công năng.</li>
+  <li><a href="/tin-tuc/cai-tao-nha-cu-tphcm">Cải tạo nhà cũ</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</li>
+  <li><a href="/tin-tuc/xay-nha-gia-re-tphcm">Xây nhà giá rẻ</a> tối ưu ngân sách an toàn.</li>
 </ul>
 
 <h2>Con số nổi bật</h2>
@@ -49,6 +51,6 @@ export const veChungToi = {
 <p>Trụ sở: <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong>. Nhận thi công toàn TP.HCM và tỉnh lân cận: Bình Dương, Đồng Nai, Long An…</p>
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · Xem thêm <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây dựng nhà phố uy tín</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây dựng nhà phố uy tín</a> · <a href="/cong-trinh">Công trình tiêu biểu</a></p>
 `.trim(),
 };

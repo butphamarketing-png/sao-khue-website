@@ -205,6 +205,32 @@ export function Footer() {
 
               </li>
 
+              <li>
+                <Link href="/bao-gia" className="flex items-center transition-colors hover:text-accent">
+                  <ArrowRight className="mr-2 h-4 w-4" /> BÁO GIÁ XÂY DỰNG
+                </Link>
+              </li>
+              <li>
+                <Link href="/dich-vu/xay-nha-tron-goi" className="flex items-center transition-colors hover:text-accent">
+                  <ArrowRight className="mr-2 h-4 w-4" /> XÂY NHÀ TRỌN GÓI
+                </Link>
+              </li>
+              <li>
+                <Link href="/tin-tuc/don-gia-xay-nha-tphcm" className="flex items-center transition-colors hover:text-accent">
+                  <ArrowRight className="mr-2 h-4 w-4" /> ĐƠN GIÁ XÂY NHÀ
+                </Link>
+              </li>
+              <li>
+                <Link href="/tin-tuc/cai-tao-nha-cu-tphcm" className="flex items-center transition-colors hover:text-accent">
+                  <ArrowRight className="mr-2 h-4 w-4" /> CẢI TẠO NHÀ CŨ
+                </Link>
+              </li>
+              <li>
+                <Link href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm" className="flex items-center transition-colors hover:text-accent">
+                  <ArrowRight className="mr-2 h-4 w-4" /> CÔNG TY UY TÍN
+                </Link>
+              </li>
+
             </ul>
 
           </div>

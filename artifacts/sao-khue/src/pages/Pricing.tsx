@@ -58,7 +58,7 @@ export default function Pricing() {
       " Tổng hợp bài viết báo giá xây nhà, phần thô, trọn gói, cải tạo và công cụ tính chi phí.",
     path: currentPage > 1 ? `/bao-gia?trang=${currentPage}` : "/bao-gia",
     keywords:
-      "báo giá xây nhà, đơn giá xây dựng, xây nhà trọn gói giá, xây phần thô tphcm",
+      "báo giá xây nhà trọn gói, đơn giá xây nhà, chi phí xây nhà, xây nhà giá rẻ, báo giá cải tạo nhà, xây nhà trọn gói tphcm",
     ogImage,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),

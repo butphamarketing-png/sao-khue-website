@@ -26,13 +26,15 @@ export const defaultNavMenu: MenuItem[] = [
     title: "BÁO GIÁ",
     href: "/bao-gia",
     children: [
-      { title: "BÁO GIÁ THIẾT KẾ", href: "/tin-tuc/thiet-ke-nha-dep-gia-re" },
-      { title: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-long-an" },
       { title: "BÁO GIÁ TRỌN GÓI", href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm" },
+      { title: "ĐƠN GIÁ XÂY NHÀ", href: "/tin-tuc/don-gia-xay-nha-tphcm" },
+      { title: "CHI PHÍ XÂY NHÀ", href: "/tin-tuc/chi-phi-xay-nha-tphcm" },
+      { title: "XÂY NHÀ GIÁ RẺ", href: "/tin-tuc/xay-nha-gia-re-tphcm" },
+      { title: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-tphcm" },
+      { title: "BÁO GIÁ CẢI TẠO", href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm" },
+      { title: "BÁO GIÁ THIẾT KẾ", href: "/tin-tuc/thiet-ke-nha-dep-gia-re" },
       { title: "BÁO GIÁ HOÀN THIỆN", href: "/dich-vu/hoan-thien-nha", category: "dich-vu" },
-      { title: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-chua-nha", category: "dich-vu" },
       { title: "QUY TRÌNH", href: "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z" },
-      { title: "BẢO HÀNH", href: `/bai-viet/${ABOUT_POST_SLUG}` },
     ],
   },
   {
@@ -40,7 +42,8 @@ export const defaultNavMenu: MenuItem[] = [
     href: "/thiet-ke",
     category: "dich-vu",
     children: [
-      { title: "THIẾT KẾ NHÀ PHỐ", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },
+      { title: "THIẾT KẾ NHÀ PHỐ", href: "/tin-tuc/thiet-ke-nha-pho-tphcm", category: "tin-tuc" },
+      { title: "DỊCH VỤ THIẾT KẾ", href: "/dich-vu/thiet-ke-nha", category: "dich-vu" },
       { title: "THIẾT KẾ NHÀ ĐẸP TP.HCM", href: "/tin-tuc/thiet-ke-nha-dep-tphcm", category: "tin-tuc" },
       { title: "THIẾT KẾ NHÀ ĐẸP ĐẮK LẮK", href: "/tin-tuc/thiet-ke-nha-dep-dak-lak", category: "tin-tuc" },
       { title: "THIẾT KẾ NHÀ ĐẸP PHÚ YÊN", href: "/tin-tuc/thiet-ke-nha-dep-phu-yen", category: "tin-tuc" },
@@ -93,6 +96,7 @@ export const defaultNavMenu: MenuItem[] = [
       { title: "Cẩm nang cải tạo nhà", href: "/tin-tuc/cai-tao-nha-cu-tphcm", category: "tin-tuc" },
       { title: "Cẩm nang thiết kế", href: "/tin-tuc/thiet-ke-nha-dep-gia-re", category: "tin-tuc" },
       { title: "Cẩm nang xây nhà A–Z", href: "/tin-tuc/cam-nang-xay-nha-2026", category: "tin-tuc" },
+      { title: "Công ty xây dựng uy tín", href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", category: "tin-tuc" },
     ],
   },
   {

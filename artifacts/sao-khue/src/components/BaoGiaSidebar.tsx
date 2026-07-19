@@ -1,16 +1,17 @@
 import { Link } from "wouter";
 import type { MenuItem } from "@/lib/menu";
 
-const COST_BUTTONS = [
-  { label: "CHI PHÍ XÂY DỰNG", href: "#tinh-chi-phi", tone: "green" },
-  { label: "CHI PHÍ THIẾT BỊ", href: "#tinh-chi-phi", tone: "red" },
-  { label: "CHI PHÍ QUẢN LÝ DỰ ÁN", href: "#tinh-chi-phi", tone: "yellow" },
-  { label: "CHI PHÍ NGUYÊN VẬT LIỆU", href: "#tinh-chi-phi", tone: "pink" },
-  { label: "CHI PHÍ TƯ VẤN XÂY DỰNG", href: "#tinh-chi-phi", tone: "teal" },
-  { label: "CHI PHÍ DỰ PHÒNG", href: "#tinh-chi-phi", tone: "blue" },
-  { label: "CHI PHÍ CÁC HẠNG MỤC CHUNG", href: "#tinh-chi-phi", tone: "orange" },
-  { label: "CHI PHÍ NHÂN CÔNG", href: "#tinh-chi-phi", tone: "green" },
-  { label: "CHI PHÍ KHÁC...", href: "#tinh-chi-phi", tone: "green" },
+/** Link crawlable tới trang money — ưu tiên SEO hơn hash calculator. */
+const MONEY_LINKS = [
+  { label: "BÁO GIÁ TRỌN GÓI TP.HCM", href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", tone: "green" },
+  { label: "ĐƠN GIÁ XÂY NHÀ", href: "/tin-tuc/don-gia-xay-nha-tphcm", tone: "red" },
+  { label: "CHI PHÍ XÂY NHÀ", href: "/tin-tuc/chi-phi-xay-nha-tphcm", tone: "yellow" },
+  { label: "XÂY NHÀ GIÁ RẺ", href: "/tin-tuc/xay-nha-gia-re-tphcm", tone: "pink" },
+  { label: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-tphcm", tone: "teal" },
+  { label: "BÁO GIÁ CẢI TẠO", href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", tone: "blue" },
+  { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi", tone: "orange" },
+  { label: "CẢI TẠO NHÀ CŨ", href: "/tin-tuc/cai-tao-nha-cu-tphcm", tone: "green" },
+  { label: "TÍNH CHI PHÍ NHANH", href: "#tinh-chi-phi", tone: "green" },
 ] as const;
 
 type Props = {
@@ -36,18 +37,28 @@ export function BaoGiaSidebar({ menuChildren }: Props) {
       )}
 
       <div className="qh-bao-gia-sidebar__panel">
-        <h2 className="qh-bao-gia-sidebar__title">TÍNH PHÍ XÂY DỰNG</h2>
-        <p className="qh-bao-gia-sidebar__subtitle">TÍNH CHI PHÍ XÂY NHÀ</p>
+        <h2 className="qh-bao-gia-sidebar__title">TỪ KHÓA NỔI BẬT</h2>
+        <p className="qh-bao-gia-sidebar__subtitle">BÁO GIÁ &amp; CHI PHÍ XÂY NHÀ</p>
         <div className="qh-bao-gia-sidebar__buttons">
-          {COST_BUTTONS.map((btn) => (
-            <a
-              key={btn.label}
-              href={btn.href}
-              className={`qh-bao-gia-sidebar__btn qh-bao-gia-sidebar__btn--${btn.tone}`}
-            >
-              {btn.label}
-            </a>
-          ))}
+          {MONEY_LINKS.map((btn) =>
+            btn.href.startsWith("#") ? (
+              <a
+                key={btn.label}
+                href={btn.href}
+                className={`qh-bao-gia-sidebar__btn qh-bao-gia-sidebar__btn--${btn.tone}`}
+              >
+                {btn.label}
+              </a>
+            ) : (
+              <Link
+                key={btn.label}
+                href={btn.href}
+                className={`qh-bao-gia-sidebar__btn qh-bao-gia-sidebar__btn--${btn.tone}`}
+              >
+                {btn.label}
+              </Link>
+            ),
+          )}
         </div>
       </div>
     </aside>

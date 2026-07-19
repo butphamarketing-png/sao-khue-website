@@ -241,6 +241,8 @@ export type LocalBusinessInput = {
   description?: string;
   /** Link Google Maps (hasMap) — khớp NAP & embed trên /lien-he */
   mapsUrl?: string;
+  taxID?: string;
+  foundingDate?: string;
 };
 
 export type AggregateRatingInput = {
@@ -248,12 +250,20 @@ export type AggregateRatingInput = {
   reviewCount: number;
 };
 
+const DEFAULT_SERVICE_OFFERS = [
+  { name: "Xây nhà trọn gói TP.HCM", url: "/dich-vu/xay-nha-tron-goi" },
+  { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
+  { name: "Cải tạo nhà cũ", url: "/dich-vu/sua-chua-nha" },
+  { name: "Báo giá xây dựng", url: "/bao-gia" },
+];
+
 export function buildLocalBusinessSchema(
   input: LocalBusinessInput & {
     openingHours?: string;
     aggregateRating?: AggregateRatingInput;
   },
 ) {
+  const origin = input.url.replace(/\/$/, "");
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
@@ -266,6 +276,24 @@ export function buildLocalBusinessSchema(
     email: input.email || undefined,
     image: input.image,
     priceRange: "$$",
+    taxID: input.taxID?.trim() || undefined,
+    foundingDate: input.foundingDate?.trim() || "2014",
+    knowsAbout: [
+      "Xây nhà trọn gói",
+      "Báo giá xây nhà",
+      "Cải tạo nhà cũ",
+      "Thiết kế nhà phố",
+      "Xây dựng TP.HCM",
+    ],
+    makesOffer: DEFAULT_SERVICE_OFFERS.map((s) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: s.name,
+        url: `${origin}${s.url}`,
+        provider: { "@type": "LocalBusiness", name: input.name },
+      },
+    })),
     openingHours: input.openingHours || undefined,
     aggregateRating: input.aggregateRating
       ? {

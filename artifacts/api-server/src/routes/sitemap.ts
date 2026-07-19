@@ -21,13 +21,29 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: "/", changefreq: "weekly", priority: 1.0, lastmod: null },
   { loc: "/bao-gia", changefreq: "weekly", priority: 0.95, lastmod: null },
   { loc: "/thiet-ke", changefreq: "weekly", priority: 0.91, lastmod: null },
-  { loc: "/xay-moi", changefreq: "weekly", priority: 0.91, lastmod: null },
+  { loc: "/xay-moi", changefreq: "weekly", priority: 0.93, lastmod: null },
   { loc: "/lien-he", changefreq: "monthly", priority: 0.9, lastmod: null },
-  { loc: "/bai-viet/ve-chung-toi", changefreq: "monthly", priority: 0.85, lastmod: null },
+  { loc: "/bai-viet/ve-chung-toi", changefreq: "monthly", priority: 0.88, lastmod: null },
   { loc: "/dich-vu", changefreq: "weekly", priority: 0.9, lastmod: null },
+  { loc: "/dich-vu/xay-nha-tron-goi", changefreq: "weekly", priority: 0.93, lastmod: null },
   { loc: "/cong-trinh", changefreq: "weekly", priority: 0.85, lastmod: null },
   { loc: "/tin-tuc", changefreq: "weekly", priority: 0.85, lastmod: null },
 ];
+
+function moneyPostPriority(slug: string): number {
+  const s = slug.toLowerCase();
+  if (
+    /bao-gia-xay-nha-tron-goi|don-gia-xay-nha|chi-phi-xay-nha|xay-nha-gia-re|xay-nha-tphcm$|xay-nha-tron-goi-tphcm|cai-tao-nha-cu|thiet-ke-nha-pho-tphcm|cong-ty-xay-dung-nha-pho-uy-tin/.test(
+      s,
+    )
+  ) {
+    return 0.93;
+  }
+  if (/bao-gia|don-gia|chi-phi|tron-goi|cai-tao|thiet-ke-nha|xay-nha-2-tang|xay-nha-3-tang|gia-re|uy-tin/.test(s)) {
+    return 0.88;
+  }
+  return 0.8;
+}
 
 function escapeXml(value: string): string {
   return value
@@ -71,7 +87,7 @@ function seedPostUrls(): SitemapEntry[] {
     loc: `${SITE_URL}${getPostPublicPath(p)}`,
     lastmod: "2026-07-16",
     changefreq: "monthly" as const,
-    priority: 0.8,
+    priority: moneyPostPriority(p.slug),
   }));
 }
 
@@ -102,7 +118,7 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
             ? p.updatedAt.slice(0, 10)
             : "2026-07-16",
       changefreq: "monthly" as const,
-      priority: 0.8,
+      priority: moneyPostPriority(p.slug),
     }));
   } catch (err) {
     logger.warn({ err }, "sitemap: DB unavailable — falling back to seedPosts");

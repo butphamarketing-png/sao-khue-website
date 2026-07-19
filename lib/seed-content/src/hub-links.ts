@@ -15,28 +15,32 @@ export const CONG_TRINH_CASE_STUDIES: HubLink[] = [
 
 export const TIN_TUC_MAIN_HUBS: HubLink[] = [
   { href: "/tin-tuc/xay-nha-tphcm", label: "Xây nhà TP.HCM" },
-  { href: "/tin-tuc/cai-tao-nha-tphcm", label: "Cải tạo nhà TP.HCM" },
-  { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
   { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
+  { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà" },
+  { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà" },
+  { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
+  { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
+  { href: "/tin-tuc/thiet-ke-nha-pho-tphcm", label: "Thiết kế nhà phố" },
   { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
-  { href: "/tin-tuc/thiet-ke-nha-dep-tphcm", label: "Thiết kế nhà đẹp TP.HCM" },
-  { href: "/tin-tuc/cam-nang-xay-nha-2026", label: "Cẩm nang xây nhà 2026" },
 ];
 
 const BUILD_CLUSTER: HubLink[] = [
-  { href: "/dich-vu/xay-nha-tron-goi-tphcm", label: "Dịch vụ xây nhà trọn gói" },
+  { href: "/dich-vu/xay-nha-tron-goi", label: "Dịch vụ xây nhà trọn gói" },
+  { href: "/xay-moi", label: "Xây nhà mới trọn gói" },
+  { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
   { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà TP.HCM" },
   { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà TP.HCM" },
-  { href: "/tin-tuc/xay-nha-trong-hem-tphcm", label: "Xây nhà trong hẻm TP.HCM" },
-  { href: "/tin-tuc/xin-giay-phep-xay-dung-tphcm", label: "Xin giấy phép xây dựng" },
+  { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
+  { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
 ];
 
 const RENOVATION_CLUSTER: HubLink[] = [
   { href: "/dich-vu/cai-tao-nha-cu", label: "Dịch vụ cải tạo nhà cũ" },
+  { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
   { href: "/tin-tuc/cai-tao-nha-tron-goi-tphcm", label: "Cải tạo nhà trọn gói TP.HCM" },
+  { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" },
   { href: "/tin-tuc/chi-phi-cai-tao-nha-tphcm", label: "Chi phí cải tạo nhà" },
   { href: "/tin-tuc/nang-tang-nha-pho-tphcm", label: "Nâng tầng nhà phố" },
-  { href: "/tin-tuc/cai-tao-mat-tien-nha-tphcm", label: "Cải tạo mặt tiền" },
 ];
 
 const REPAIR_CLUSTER: HubLink[] = [
@@ -49,6 +53,8 @@ const REPAIR_CLUSTER: HubLink[] = [
 const DESIGN_CLUSTER: HubLink[] = [
   { href: "/dich-vu/thiet-ke-nha", label: "Dịch vụ thiết kế nhà" },
   { href: "/tin-tuc/thiet-ke-nha-pho-tphcm", label: "Thiết kế nhà phố TP.HCM" },
+  { href: "/tin-tuc/thiet-ke-nha-dep-tphcm", label: "Thiết kế nhà đẹp TP.HCM" },
+  { href: "/tin-tuc/thiet-ke-nha-dep-gia-re", label: "Thiết kế nhà đẹp giá rẻ" },
   { href: "/thiet-ke", label: "Trang thiết kế kiến trúc" },
 ];
 
@@ -109,7 +115,14 @@ function clusterForTopic(topic: PostTopic): HubLink[] {
     case "design":
       return DESIGN_CLUSTER;
     case "pricing":
-      return [...BUILD_CLUSTER.slice(0, 2), ...RENOVATION_CLUSTER.slice(0, 2)];
+      return [
+        { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
+        { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà TP.HCM" },
+        { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà TP.HCM" },
+        { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
+        { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" },
+        { href: "/bao-gia", label: "Bảng báo giá xây dựng" },
+      ];
     default:
       return TIN_TUC_MAIN_HUBS.slice(0, 4);
   }
