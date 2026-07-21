@@ -98,7 +98,8 @@ async function buildAll() {
       "puppeteer-core",
       "electron",
     ],
-    sourcemap: "linked",
+    // Linked maps bloat the Vercel function (~12MB); skip on Vercel / vercel-build.
+    sourcemap: process.env.VERCEL || process.argv.includes("--no-sourcemap") ? false : "linked",
     // Make sure packages that are cjs only (e.g. express) but are bundled continue to work in our esm output file
     banner: {
       js: `import { createRequire as __bannerCrReq } from 'node:module';

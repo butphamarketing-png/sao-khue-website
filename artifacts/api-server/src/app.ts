@@ -17,15 +17,15 @@ const app: Express = express();
 const apiDir = path.dirname(fileURLToPath(import.meta.url));
 /**
  * Resolve frontend static root at runtime.
- * Avoid a statically analyzable path into `.../images` so Vercel NFT
- * does not bundle hundreds of MB of JPEGs into the serverless function.
- * On Vercel, `outputDirectory: public` already serves images via CDN.
+ * Keep paths NFT-opaque: never pass a statically joined `.../sao-khue/...` or
+ * `.../images` segment — Vercel file tracing would pack ~200MB+ of assets into
+ * the serverless function. On Vercel, `outputDirectory: public` serves via CDN.
  */
 function resolveFrontendDistDir(): string {
+  const publicSeg = ["pub", "lic"].join("");
   const candidates = [
-    path.resolve(apiDir, "..", "public"),
-    path.resolve(process.cwd(), "public"),
-    path.resolve(apiDir, "..", "..", "sao-khue", "dist", "public"),
+    path.resolve(apiDir, "..", publicSeg),
+    path.resolve(process.cwd(), publicSeg),
   ];
   for (const dir of candidates) {
     if (existsSync(path.join(dir, "index.html"))) return dir;
@@ -70,14 +70,7 @@ app.use((req, res, next) => {
 });
 
 if (existsSync(frontendIndexPath)) {
-  const imagesDir = path.join(frontendDistDir, "images");
-  if (!existsSync(path.join(imagesDir, "logo.png"))) {
-    logger.warn(
-      { imagesDir },
-      "public/images/logo.png missing from build; site uses bundled logo in /assets/",
-    );
-  }
-
+  // Skip static image-tree probes here — they make NFT include public/images.
   app.use(express.static(frontendDistDir));
 
   const notFoundHtmlPath = path.join(frontendDistDir, "404.html");
