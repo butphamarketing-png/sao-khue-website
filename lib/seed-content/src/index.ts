@@ -74,6 +74,8 @@ import {
   xayCaiTaoTphcmBatch8Slugs,
   xayCaiTaoTphcmBatch9ArticlesBySlug,
   xayCaiTaoTphcmBatch9Slugs,
+  nhomKinhBatch10ArticlesBySlug,
+  nhomKinhBatch10Slugs,
   moneyPageOverridesBySlug,
   type SeoArticle,
 } from "./articles";
@@ -301,6 +303,9 @@ const seedPostsRaw: SeedPost[] = [
   ),
   ...xayCaiTaoTphcmBatch9Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), xayCaiTaoTphcmBatch9ArticlesBySlug[slug]!),
+  ),
+  ...nhomKinhBatch10Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), nhomKinhBatch10ArticlesBySlug[slug]!),
   ),
 ];
 

@@ -18,6 +18,53 @@ export const CAI_TAO_IMAGE_DIR = "/images/cai-tao";
 export const XAY_NHA_IMAGE_COUNT = 4;
 export const XAY_NHA_IMAGE_DIR = "/images/xay-nha";
 
+/** Ảnh bài nhôm kính — public/images/nhom-kinh/{slug}.jpg (1 ảnh/bài, không logo). */
+export const NHOM_KINH_IMAGE_DIR = "/images/nhom-kinh";
+
+const NHOM_KINH_SLUG_PREFIXES = [
+  "thi-cong-nhom-kinh",
+  "nha-thau-thi-cong-nhom-kinh",
+  "cua-nhom-kinh",
+  "cua-di-nhom-kinh",
+  "cua-nhom-xingfa",
+  "cua-nhom-slim",
+  "mau-cua-nhom-kinh",
+  "bao-gia-cua-nhom",
+  "bao-gia-vach-ngan",
+  "bao-gia-mat-dung",
+  "gia-cua-nhom-kinh",
+  "bang-gia-nhom-kinh",
+  "gia-thi-cong-nhom-kinh",
+  "chi-phi-lam-cua-nhom",
+  "vach-ngan-nhom-kinh",
+  "vach-kinh-cuong-luc",
+  "mat-dung-nhom-kinh",
+  "thi-cong-mat-dung-nhom",
+  "mau-vach-ngan-nhom",
+  "lan-can-kinh",
+  "cau-thang-kinh",
+  "phong-tam-kinh",
+  "buong-tam-kinh",
+  "mai-kinh-nhom",
+  "tu-bep-nhom-kinh",
+  "cua-luoi-chong-muoi",
+  "nen-chon-cua-nhom",
+  "nhom-xingfa-he",
+  "cach-chon-cua-nhom",
+  "uu-nhuoc-diem-cua-nhom",
+  "xu-huong-nhom-kinh",
+  "phu-kien-cua-nhom",
+  "kinh-nghiem-thi-cong-nhom",
+] as const;
+
+export function isNhomKinhSlug(slug: string): boolean {
+  return NHOM_KINH_SLUG_PREFIXES.some((prefix) => slug.startsWith(prefix));
+}
+
+export function nhomKinhArticleImage(slug: string): string {
+  return `${NHOM_KINH_IMAGE_DIR}/${slug}.jpg`;
+}
+
 /** Ảnh render/banner đẹp — chỉ dùng cho thumbnail (featuredImageForSlug). Không chèn logo/icon. */
 const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as const;
 const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 6, 7, 8, 9] as const;
@@ -169,6 +216,7 @@ const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
 
 /** Ảnh đại diện — pool lớn, hash slug ổn định, ít trùng hơn. */
 export function featuredImageForSlug(slug: string): string {
+  if (isNhomKinhSlug(slug)) return nhomKinhArticleImage(slug);
   const custom = CUSTOM_FEATURED_IMAGES[slug];
   if (custom) return custom;
   if (isCaiTaoSlug(slug)) return pickFromUrlPool(THUMB_POOL_CAI_TAO, slug);
@@ -180,6 +228,7 @@ export function featuredImageForSlug(slug: string): string {
 
 /** Ảnh trong nội dung bài (slot 1, 2, …). */
 export function slugImage(slug: string, slot = 0): string {
+  if (isNhomKinhSlug(slug)) return nhomKinhArticleImage(slug);
   if (isCaiTaoSlug(slug)) {
     return caiTaoImage((hashSlug(slug, slot) % CAI_TAO_IMAGE_COUNT) + 1);
   }

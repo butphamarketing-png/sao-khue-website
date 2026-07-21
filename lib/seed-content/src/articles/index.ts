@@ -108,6 +108,11 @@ export {
   getXayCaiTaoTphcmBatch9Article,
 } from "./xay-cai-tao-tphcm-tin-tuc-articles-batch9";
 export {
+  nhomKinhBatch10ArticlesBySlug,
+  nhomKinhBatch10Slugs,
+  getNhomKinhBatch10Article,
+} from "./nhom-kinh-tin-tuc-articles-batch10";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,
