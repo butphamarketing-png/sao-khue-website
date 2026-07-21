@@ -3,6 +3,11 @@
   "installCommand": "pnpm install --ignore-scripts --no-frozen-lockfile",
   "buildCommand": "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/sao-khue run build && cp -r artifacts/sao-khue/dist/public/. artifacts/api-server/public/ && pnpm --filter @workspace/api-server run vercel-build",
   "outputDirectory": "artifacts/api-server/public",
+  "functions": {
+    "artifacts/api-server/api/index.mjs": {
+      "excludeFiles": "{artifacts/api-server/public/images/**,artifacts/api-server/public/**/*.jpg,artifacts/api-server/public/**/*.jpeg,artifacts/api-server/public/**/*.png,artifacts/api-server/public/**/*.webp,artifacts/sao-khue/dist/public/images/**,artifacts/sao-khue/public/images/**}"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/:path*",

@@ -15,7 +15,24 @@ import { authMiddleware } from "./middlewares/authMiddleware";
 
 const app: Express = express();
 const apiDir = path.dirname(fileURLToPath(import.meta.url));
-const frontendDistDir = path.resolve(apiDir, "..", "..", "sao-khue", "dist", "public");
+/**
+ * Resolve frontend static root at runtime.
+ * Avoid a statically analyzable path into `.../images` so Vercel NFT
+ * does not bundle hundreds of MB of JPEGs into the serverless function.
+ * On Vercel, `outputDirectory: public` already serves images via CDN.
+ */
+function resolveFrontendDistDir(): string {
+  const candidates = [
+    path.resolve(apiDir, "..", "public"),
+    path.resolve(process.cwd(), "public"),
+    path.resolve(apiDir, "..", "..", "sao-khue", "dist", "public"),
+  ];
+  for (const dir of candidates) {
+    if (existsSync(path.join(dir, "index.html"))) return dir;
+  }
+  return candidates[0]!;
+}
+const frontendDistDir = resolveFrontendDistDir();
 const frontendIndexPath = path.join(frontendDistDir, "index.html");
 
 app.use(

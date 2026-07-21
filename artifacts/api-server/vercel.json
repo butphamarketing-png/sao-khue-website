@@ -3,6 +3,11 @@
   "installCommand": "cd ../.. && pnpm install --ignore-scripts --no-frozen-lockfile",
   "buildCommand": "cd ../.. && PORT=5173 BASE_PATH=/ pnpm --filter @workspace/sao-khue run build && cp -r artifacts/sao-khue/dist/public/. artifacts/api-server/public/ && cd artifacts/api-server && node build.mjs",
   "outputDirectory": "public",
+  "functions": {
+    "api/index.mjs": {
+      "excludeFiles": "{public/images/**,public/**/*.jpg,public/**/*.jpeg,public/**/*.png,public/**/*.webp,public/**/*.gif,../sao-khue/dist/public/images/**,../sao-khue/public/images/**,../sao-khue/dist/public/**/*.jpg,../sao-khue/dist/public/**/*.png}"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/:path*",

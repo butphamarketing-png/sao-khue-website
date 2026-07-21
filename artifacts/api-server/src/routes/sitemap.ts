@@ -129,9 +129,11 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
 function tryReadStaticSitemap(): string | null {
   try {
     const here = path.dirname(fileURLToPath(import.meta.url));
+    // Build path at runtime so NFT does not pull the entire `public/` tree into the function.
+    const publicRoot = path.join(here, "..", "..", "public");
     const candidates = [
-      path.resolve(here, "../../public/sitemap.xml"),
-      path.resolve(process.cwd(), "public/sitemap.xml"),
+      path.join(publicRoot, "sitemap.xml"),
+      path.join(process.cwd(), "public", "sitemap.xml"),
     ];
     for (const file of candidates) {
       if (existsSync(file)) {
