@@ -62,7 +62,7 @@ const BRAND_SHORT = "Kiến Trúc Sao Khuê";
 const DEFAULT_OG = `${SITE_URL}/images/hero-1.jpg`;
 const FOOTER_DESC =
   "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói uy tín tại TP.HCM. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
-const SITE_ADDRESS = "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM";
+const SITE_ADDRESS = "36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM";
 const SITE_PHONE = "+84909075668";
 const SITE_EMAIL = "kientrucsaokhue@gmail.com";
 

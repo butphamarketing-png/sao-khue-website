@@ -2338,13 +2338,13 @@ export default function Admin() {
 
               <FormSection title="Địa chỉ">
                 <div className="grid grid-cols-1 gap-4">
-                  <Field label="Địa chỉ trụ sở">
+                  <Field label="Chi nhánh TP.HCM">
                     <Input
                       value={settingsForm.address1}
                       onChange={(e) => updateSettingField("address1", e.target.value)}
                     />
                   </Field>
-                  <Field label="Địa chỉ văn phòng">
+                  <Field label="Chi nhánh 2 – Đắk Lắk">
                     <Input
                       value={settingsForm.address2}
                       onChange={(e) => updateSettingField("address2", e.target.value)}

@@ -89,8 +89,19 @@ export default function Contact() {
                 <MapPin size={20} />
               </div>
               <div>
-                <div className="text-xs font-bold uppercase tracking-wide text-slate-500">Trụ sở</div>
+                <div className="text-xs font-bold uppercase tracking-wide text-slate-500">Chi nhánh TP.HCM</div>
                 <div className="text-sm font-semibold leading-relaxed text-slate-800">{s.address1}</div>
+              </div>
+            </div>
+          )}
+          {s.address2 && (
+            <div className="card-premium flex items-start gap-4 p-5 sm:col-span-2 lg:col-span-1">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <MapPin size={20} />
+              </div>
+              <div>
+                <div className="text-xs font-bold uppercase tracking-wide text-slate-500">Chi nhánh 2 – Đắk Lắk</div>
+                <div className="text-sm font-semibold leading-relaxed text-slate-800">{s.address2}</div>
               </div>
             </div>
           )}

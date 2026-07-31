@@ -165,8 +165,8 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   hotline1: PRIMARY_PHONE,
   hotline2: "",
   email: "kientrucsaokhue@gmail.com",
-  address1: "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
-  address2: "36 đường 27, KĐT Vạn Phúc, phường Hiệp Bình, TP.HCM",
+  address1: "36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM",
+  address2: "Xuân Thạnh 2, Tây Hòa, Đắk Lắk",
   workingHours: "T2–T7, 8:00–17:30",
   logoUrl: LOCAL_LOGO,
   loadingLogoUrl: LOCAL_LOGO,
@@ -399,6 +399,16 @@ export function useSiteSettings(): SiteSettingsFull {
   }
   
   const merged = { ...defaultSiteSettings, ...(data as Record<string, unknown> | undefined) } as SiteSettingsFull;
+  const address1Raw = restoreKnownVietnameseText(merged.address1 as string);
+  const address2Raw = restoreKnownVietnameseText(merged.address2 as string);
+  const legacyHq = [
+    "245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM",
+    "245/8 Binh Loi, Phuong 13, Quan Binh Thanh, TP.HCM",
+  ];
+  const legacyVp = [
+    "36 đường 27, KĐT Vạn Phúc, phường Hiệp Bình, TP.HCM",
+    "36 Đường 27, KĐT Vạn Phúc, phường Hiệp Bình, TP.HCM",
+  ];
   return {
     ...merged,
     gscVerification: (merged.gscVerification as string)?.trim() || GSC_VERIFICATION_TOKEN,
@@ -406,8 +416,12 @@ export function useSiteSettings(): SiteSettingsFull {
     loadingLogoUrl: resolveLogoUrl((merged.loadingLogoUrl as string) || (merged.logoUrl as string)),
     companyName: restoreKnownVietnameseText(merged.companyName as string),
     footerDescription: restoreKnownVietnameseText(merged.footerDescription as string),
-    address1: restoreKnownVietnameseText(merged.address1 as string),
-    address2: restoreKnownVietnameseText(merged.address2 as string),
+    address1: legacyHq.includes(address1Raw) || legacyVp.includes(address1Raw)
+      ? (defaultSiteSettings.address1 as string)
+      : address1Raw || (defaultSiteSettings.address1 as string),
+    address2: legacyHq.includes(address2Raw) || legacyVp.includes(address2Raw)
+      ? (defaultSiteSettings.address2 as string)
+      : address2Raw || (defaultSiteSettings.address2 as string),
     hotline1: (merged.hotline1 as string)?.trim() || (merged.hotline2 as string)?.trim() || PRIMARY_PHONE,
     hotline2: "",
     homeAboutEyebrow: restoreKnownVietnameseText(merged.homeAboutEyebrow as string),

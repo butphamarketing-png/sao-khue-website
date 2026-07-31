@@ -73,7 +73,7 @@ export function Footer() {
 
                   <span>
 
-                    <strong className="text-white">Trụ sở:</strong> {s.address1}
+                    <strong className="text-white">Chi nhánh TP.HCM:</strong> {s.address1}
 
                   </span>
 
@@ -89,7 +89,7 @@ export function Footer() {
 
                   <span>
 
-                    <strong className="text-white">VP:</strong> {s.address2}
+                    <strong className="text-white">Chi nhánh 2 – Đắk Lắk:</strong> {s.address2}
 
                   </span>
 
