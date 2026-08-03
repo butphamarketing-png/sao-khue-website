@@ -10,6 +10,7 @@
  * Batch 12 (100 từ khóa xây/cải tạo TP.HCM): #697–#796.
  * Batch 13 (100 từ khóa phường/hẻm/gia cố TP.HCM): #797–#896.
  * Batch 14 (50 từ khóa nhôm kính TP.HCM): #897–#946.
+ * Batch 15 (100 từ khóa ngắn head/commercial): #947–#1046.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -34,6 +35,7 @@ export { xayNhaTphcmKeywordCalendarBatch7 } from "./xay-nha-tphcm-keyword-calend
 export { xayCaiTaoTphcmKeywordCalendarBatch8 } from "./xay-cai-tao-tphcm-keyword-calendar-batch8";
 export { xayCaiTaoTphcmKeywordCalendarBatch9 } from "./xay-cai-tao-tphcm-keyword-calendar-batch9";
 export { nhomKinhKeywordCalendarBatch10 } from "./nhom-kinh-keyword-calendar-batch10";
+export { shortKeywordCalendarBatch15 } from "./short-keyword-calendar-batch15";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },
