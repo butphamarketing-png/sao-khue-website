@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { db, postsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
-import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
+import { getPostPublicPath, seedPosts, isSitemapIndexablePost, shouldNoindexPostSlug } from "@workspace/seed-content";
 import { logger } from "../lib/logger";
 
 const SITE_URL =
@@ -22,6 +22,8 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: "/bao-gia", changefreq: "weekly", priority: 0.95, lastmod: null },
   { loc: "/thiet-ke", changefreq: "weekly", priority: 0.91, lastmod: null },
   { loc: "/xay-moi", changefreq: "weekly", priority: 0.93, lastmod: null },
+  { loc: "/xay-nha", changefreq: "weekly", priority: 0.95, lastmod: null },
+  { loc: "/cai-tao-nha", changefreq: "weekly", priority: 0.95, lastmod: null },
   { loc: "/lien-he", changefreq: "monthly", priority: 0.9, lastmod: null },
   { loc: "/bai-viet/ve-chung-toi", changefreq: "monthly", priority: 0.88, lastmod: null },
   { loc: "/dich-vu", changefreq: "weekly", priority: 0.9, lastmod: null },
@@ -83,7 +85,7 @@ function staticUrls(): SitemapEntry[] {
 }
 
 function seedPostUrls(): SitemapEntry[] {
-  return seedPosts.map((p) => ({
+  return seedPosts.filter((p) => isSitemapIndexablePost(p)).map((p) => ({
     loc: `${SITE_URL}${getPostPublicPath(p)}`,
     lastmod: "2026-07-16",
     changefreq: "monthly" as const,
@@ -109,7 +111,9 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
 
     if (!posts.length) return seedPostUrls();
 
-    return posts.map((p) => ({
+    return posts
+      .filter((p) => isSitemapIndexablePost(p) && !shouldNoindexPostSlug(p.slug))
+      .map((p) => ({
       loc: `${SITE_URL}${getPostPublicPath(p)}`,
       lastmod:
         p.updatedAt instanceof Date

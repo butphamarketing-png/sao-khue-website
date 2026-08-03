@@ -16,6 +16,22 @@
     {
       "source": "/feed.xml",
       "destination": "/api/feed.xml"
+    },
+    {
+      "source": "/xay-nha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/cai-tao-nha",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/xay-moi",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/thiet-ke",
+      "destination": "/index.html"
     }
   ],
   "framework": null,

@@ -6,7 +6,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Button } from "@/components/ui/button";
 import { useGetPostBySlug, useListPosts } from "@workspace/api-client-react";
-import { getFallbackPost } from "@workspace/seed-content";
+import { getFallbackPost, shouldNoindexPostSlug } from "@workspace/seed-content";
 import { resolvePost, resolvePosts } from "@/lib/posts-with-fallback";
 import { resolveLogoUrl, useNavMenu, useSiteSettings } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
@@ -108,6 +108,9 @@ export default function PostPage() {
 
   const seoPost = post ?? bundledPost;
   const seoPath = seoPost ? getPostPublicPath(seoPost, menu) : undefined;
+  const postNoindex =
+    Boolean((seoPost as { noindex?: boolean } | undefined)?.noindex) ||
+    (seoPost ? shouldNoindexPostSlug(seoPost.slug) : false);
 
   usePageSeo(
     seoPost && seoPath
@@ -121,6 +124,7 @@ export default function PostPage() {
           ogType: "article",
           publishedTime: seoPost.createdAt,
           modifiedTime: seoPost.updatedAt,
+          noindex: postNoindex,
           jsonLd: [
             buildArticleSchema({
               headline: seoPost.title,

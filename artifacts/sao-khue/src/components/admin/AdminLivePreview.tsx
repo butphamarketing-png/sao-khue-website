@@ -5,6 +5,8 @@ import { PreviewShell } from "./admin-ui";
 const PREVIEW_PATHS = [
   { label: "Trang chủ", path: "/" },
   { label: "Báo giá", path: "/bao-gia" },
+  { label: "Xây nhà (Ads)", path: "/xay-nha" },
+  { label: "Cải tạo (Ads)", path: "/cai-tao-nha" },
   { label: "Liên hệ", path: "/lien-he" },
   { label: "Dịch vụ", path: "/dich-vu" },
   { label: "Công trình", path: "/cong-trinh" },

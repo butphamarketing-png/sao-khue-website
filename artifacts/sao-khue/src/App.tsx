@@ -10,6 +10,8 @@ import Services from "@/pages/Services";
 import Pricing from "@/pages/Pricing";
 import ThietKe from "@/pages/ThietKe";
 import XayMoi from "@/pages/XayMoi";
+import XayNha from "@/pages/XayNha";
+import CaiTaoNha from "@/pages/CaiTaoNha";
 import Contact from "@/pages/Contact";
 import CategoryPage from "@/pages/CategoryPage";
 import PostPage from "@/pages/PostPage";
@@ -40,6 +42,8 @@ function Router() {
       <Route path="/bao-gia" component={Pricing} />
       <Route path="/thiet-ke" component={ThietKe} />
       <Route path="/xay-moi" component={XayMoi} />
+      <Route path="/xay-nha" component={XayNha} />
+      <Route path="/cai-tao-nha" component={CaiTaoNha} />
       <Route path="/admin" component={Admin} />
       <Route path="/adminbp">
         <Redirect to="/admin" />

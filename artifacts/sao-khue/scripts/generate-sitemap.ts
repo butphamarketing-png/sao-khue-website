@@ -4,7 +4,7 @@
 import { writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { seedPosts } from "../../../lib/seed-content/src/index.ts";
+import { seedPosts, isSitemapIndexablePost } from "../../../lib/seed-content/src/index.ts";
 import { getPostPublicPath } from "../src/lib/post-url.ts";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
@@ -19,6 +19,8 @@ const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/bao-gia", priority: "0.95", changefreq: "weekly" },
   { path: "/thiet-ke", priority: "0.91", changefreq: "weekly" },
   { path: "/xay-moi", priority: "0.93", changefreq: "weekly" },
+  { path: "/xay-nha", priority: "0.95", changefreq: "weekly" },
+  { path: "/cai-tao-nha", priority: "0.95", changefreq: "weekly" },
   { path: "/lien-he", priority: "0.88", changefreq: "monthly" },
   { path: "/bai-viet/ve-chung-toi", priority: "0.88", changefreq: "monthly" },
   { path: "/dich-vu", priority: "0.90", changefreq: "weekly" },
@@ -75,7 +77,9 @@ const urls: SitemapEntry[] = [
     ...entry,
     lastmod: BUILD_DATE,
   })),
-  ...seedPosts.map((p) => {
+  ...seedPosts
+    .filter((p) => isSitemapIndexablePost(p))
+    .map((p) => {
     const path = getPostPublicPath(p);
     return {
       path,

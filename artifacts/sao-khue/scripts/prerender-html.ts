@@ -214,6 +214,42 @@ function buildStaticPages(): PrerenderPage[] {
       `),
     },
     {
+      path: "/xay-nha",
+      meta: {
+        title: `Xây nhà trọn gói TP.HCM — Báo giá miễn phí | ${BRAND_SHORT}`,
+        description:
+          "Xây nhà trọn gói chìa khóa trao tay tại TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
+        path: "/xay-nha",
+        keywords: "xây nhà, xây nhà trọn gói, xây nhà tphcm, đơn giá xây nhà",
+        ogImage: `${SITE_URL}/images/xay-nha/xay-nha-01.jpg`,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
+        <p>Khảo sát miễn phí — báo giá minh bạch — bảo hành kết cấu 10 năm tại TP.HCM, Bình Dương, Đồng Nai.</p>
+        <p>Phần thô từ 3,55 triệu/m² · Trọn gói từ 4,85 triệu/m².</p>
+        <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
+      `),
+    },
+    {
+      path: "/cai-tao-nha",
+      meta: {
+        title: `Cải tạo nhà cũ TP.HCM — Sửa nhà trọn gói | ${BRAND_SHORT}`,
+        description:
+          "Cải tạo nhà cũ, sửa nhà trọn gói tại TP.HCM. Làm mới từ 1–2 triệu/m², cải tạo sâu 3,5–5 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
+        path: "/cai-tao-nha",
+        keywords: "cải tạo nhà, cải tạo nhà cũ, sửa nhà trọn gói, cải tạo nhà phố",
+        ogImage: `${SITE_URL}/images/cai-tao/cai-tao-01.jpg`,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>Cải tạo nhà cũ — nâng cấp toàn diện</h1>
+        <p>Sửa chữa · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.</p>
+        <p>Làm mới từ 1–2 triệu/m² · Cải tạo sâu 3,5–5 triệu/m².</p>
+        <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/cai-tao-nha#bao-gia">Nhận báo giá miễn phí</a></p>
+      `),
+    },
+    {
       path: "/lien-he",
       meta: {
         title: `Liên hệ ${BRAND_SHORT} | Hotline 0909 075 668`,
@@ -412,6 +448,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ogType: "article",
         publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
         modifiedTime: post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",
+        noindex: Boolean(post.noindex),
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -480,7 +517,9 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
   const seed = seedBySlug.get(row.slug);
   if (!seed) return row;
   const stale = isStaleSeoMeta(row.metaTitle ?? "", row.metaDescription ?? "");
-  if (!stale) return row;
+  if (!stale) {
+    return { ...row, noindex: seed.noindex ?? row.noindex };
+  }
   return {
     ...row,
     excerpt: seed.excerpt || row.excerpt,
@@ -490,6 +529,7 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
     metaTitle: seed.metaTitle || row.metaTitle,
     metaDescription: seed.metaDescription || row.metaDescription,
     metaKeywords: seed.metaKeywords || row.metaKeywords,
+    noindex: seed.noindex ?? row.noindex,
   };
 }
 

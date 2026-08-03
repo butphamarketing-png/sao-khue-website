@@ -83,6 +83,7 @@ import { matchesCategory, normalizeCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
+import { shouldNoindexPostSlug } from "./sitemap-policy";
 
 /** Bài pillar viết tay — không dùng bản factory phu-yen-dak-lak. */
 const DAK_LAK_HAND_PILLAR_SLUGS = new Set([
@@ -103,6 +104,8 @@ export type SeedPost = {
   metaTitle?: string;
   metaDescription?: string;
   metaKeywords?: string;
+  /** Thin/factory SEO — không đưa vào sitemap, robots noindex. */
+  noindex?: boolean;
 };
 
 function seoPost(
@@ -309,7 +312,9 @@ const seedPostsRaw: SeedPost[] = [
   ),
 ];
 
-export const seedPosts: SeedPost[] = applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw));
+export const seedPosts: SeedPost[] = applySitemapNoindexFlags(
+  applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw)),
+);
 
 function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
   return posts.map((p) => {
@@ -326,7 +331,15 @@ function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
       metaKeywords: override.metaKeywords,
       imageAlt,
       imageCaption: override.imageCaption?.trim() || imageAlt || p.imageCaption,
+      noindex: false,
     };
+  });
+}
+
+function applySitemapNoindexFlags(posts: SeedPost[]): SeedPost[] {
+  return posts.map((p) => {
+    if (p.noindex === false) return p;
+    return shouldNoindexPostSlug(p.slug) ? { ...p, noindex: true } : p;
   });
 }
 
@@ -339,6 +352,17 @@ export {
 
 export { getPostPublicPath } from "./public-path";
 export { INDEXING_BATCH_SLUGS, xayCaiTaoTphcmBatch8Slugs, xayCaiTaoTphcmBatch9Slugs, xayNhaTphcmBatch7Slugs } from "./indexing-batches";
+
+export {
+  THIN_FACTORY_SLUGS,
+  isMoneyPageSlug,
+  isSitemapIndexablePost,
+  shouldNoindexPostSlug,
+  shouldSpaShellFallback,
+  SPA_SHELL_FALLBACK_PATHS,
+} from "./sitemap-policy";
+
+export { MONEY_PAGE_OVERRIDE_SLUGS } from "./articles/money-page-overrides";
 export {
   buildImageAlt,
   pickImageAltKeyword,

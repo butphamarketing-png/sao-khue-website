@@ -8,6 +8,7 @@ import {
   type ReactNode,
 } from "react";
 import { QuoteRequestModal } from "@/components/QuoteRequestModal";
+import { isAdsLandingPath } from "@/lib/ads-landing";
 import { isSiteLoaderDone } from "@/lib/site-loader-state";
 
 const AUTO_OPEN_KEY = "saokhue-quote-popup-auto";
@@ -31,7 +32,8 @@ export function QuoteRequestProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined" || typeof sessionStorage === "undefined") return;
     if (sessionStorage.getItem(AUTO_OPEN_KEY) === "1") return;
-    if (window.location.pathname.replace(/\/$/, "").endsWith("/admin")) return;
+    const path = window.location.pathname.replace(/\/$/, "") || "/";
+    if (path.endsWith("/admin") || isAdsLandingPath(path)) return;
 
     const openOnce = () => {
       if (sessionStorage.getItem(AUTO_OPEN_KEY) === "1") return;

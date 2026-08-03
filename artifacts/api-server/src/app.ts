@@ -12,6 +12,7 @@ import rssRouter from "./routes/rss";
 import { logger } from "./lib/logger";
 import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
+import { shouldSpaShellFallback } from "@workspace/seed-content";
 
 const app: Express = express();
 const apiDir = path.dirname(fileURLToPath(import.meta.url));
@@ -100,6 +101,13 @@ if (existsSync(frontendIndexPath)) {
 
     const htmlPath = resolvePrerenderedHtml(pathOnly);
     if (!htmlPath) {
+      // Landing/hub SPA routes: serve shell so ads URLs không 404 khi thiếu prerender.
+      if (shouldSpaShellFallback(pathOnly) && existsSync(frontendIndexPath)) {
+        res.sendFile(frontendIndexPath, (err) => {
+          if (err) next(err);
+        });
+        return;
+      }
       sendNotFound(res);
       return;
     }
