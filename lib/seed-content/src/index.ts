@@ -85,6 +85,8 @@ import {
   shortKeywordBatch17Slugs,
   shortKeywordBatch18ArticlesBySlug,
   shortKeywordBatch18Slugs,
+  shortKeywordBatch19ArticlesBySlug,
+  shortKeywordBatch19Slugs,
   moneyPageOverridesBySlug,
   type SeoArticle,
 } from "./articles";
@@ -336,6 +338,9 @@ const seedPostsRaw: SeedPost[] = [
   ),
   ...shortKeywordBatch18Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch18ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch19Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch19ArticlesBySlug[slug]!),
   ),
 ];
 

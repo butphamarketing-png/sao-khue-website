@@ -14,6 +14,7 @@
  * Batch 16 (100 từ khóa ngắn — hoàn thiện/nội thất/pháp lý/geo/Ads): #1047–#1146.
  * Batch 17 (100 từ khóa ngắn — chống thấm/MEP/ngân sách/nâng tầng/geo/kinh nghiệm): #1147–#1246.
  * Batch 18 (100 từ khóa ngắn — mặt tiền/phong cách/nhôm kính/sân vườn/geo/Ads): #1247–#1346.
+ * Batch 19 (100 từ khóa ngắn — kết cấu/mái/phòng/so sánh/geo/FAQ): #1347–#1446.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -42,6 +43,7 @@ export { shortKeywordCalendarBatch15 } from "./short-keyword-calendar-batch15";
 export { shortKeywordCalendarBatch16 } from "./short-keyword-calendar-batch16";
 export { shortKeywordCalendarBatch17 } from "./short-keyword-calendar-batch17";
 export { shortKeywordCalendarBatch18 } from "./short-keyword-calendar-batch18";
+export { shortKeywordCalendarBatch19 } from "./short-keyword-calendar-batch19";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },
