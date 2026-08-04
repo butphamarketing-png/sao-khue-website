@@ -26,6 +26,7 @@ import {
   luatXayDungMoiNhat,
   phongThuyNhaO,
   congTyXayDungNhaPhoUyTinTphcm,
+  nhaThauXayNhaTronGoiTphcm,
   baoGiaXayNhaTronGoiMoiNhatTphcm,
   baoGiaPillarArticlesBySlug,
   BAO_GIA_PILLAR_SLUGS,
@@ -173,6 +174,12 @@ const seedPostsRaw: SeedPost[] = [
     "tin-tuc",
     featuredImageForSlug("cong-ty-xay-dung-nha-pho-uy-tin-tphcm"),
     congTyXayDungNhaPhoUyTinTphcm,
+  ),
+  seoPost(
+    "nha-thau-xay-nha-tron-goi-tphcm",
+    "tin-tuc",
+    featuredImageForSlug("nha-thau-xay-nha-tron-goi-tphcm"),
+    nhaThauXayNhaTronGoiTphcm,
   ),
   seoPost(
     "mau-nha-pho-2-tang-binh-duong",

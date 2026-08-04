@@ -12,6 +12,7 @@ import {
   type SocialLinkOption,
 } from "@/lib/social-links";
 import { useQuoteRequest } from "@/lib/quote-request-context";
+import { trackAdsConversion } from "@/lib/ads-conversions";
 import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 
 type PickerState = {
@@ -62,7 +63,12 @@ export function FloatingButtons() {
         </QuickFab>
 
         {s.zaloPhone && zaloHref && (
-          <QuickFab href={zaloHref} label="Chat Zalo" className="bg-blue-500">
+          <QuickFab
+            href={zaloHref}
+            label="Chat Zalo"
+            className="bg-blue-500"
+            onClick={() => trackAdsConversion("zalo", { source: "floating" })}
+          >
             <SiZalo size={24} />
           </QuickFab>
         )}
@@ -104,7 +110,12 @@ export function FloatingButtons() {
         )}
 
         {phone && (
-          <QuickFab href={telHref(phone)} label={phone} className="bg-accent shadow-[0_0_15px_rgba(230,57,70,0.5)]">
+          <QuickFab
+            href={telHref(phone)}
+            label={phone}
+            className="bg-accent shadow-[0_0_15px_rgba(230,57,70,0.5)]"
+            onClick={() => trackAdsConversion("call", { source: "floating" })}
+          >
             <div className="absolute inset-0 rounded-full bg-accent opacity-20 animate-ping" />
             <PhoneCall size={28} className="relative" />
           </QuickFab>
@@ -173,7 +184,10 @@ export function FloatingButtons() {
             <MobileBarButton
               label="Zalo"
               className="bg-blue-500 text-white"
-              onClick={() => openExternalUrl(zaloHref)}
+              onClick={() => {
+                trackAdsConversion("zalo", { source: "mobile_bar" });
+                openExternalUrl(zaloHref);
+              }}
             >
               <SiZalo size={18} />
             </MobileBarButton>

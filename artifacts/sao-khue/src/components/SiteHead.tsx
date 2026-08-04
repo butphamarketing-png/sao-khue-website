@@ -47,9 +47,15 @@ function injectGA(id: string) {
   s1.dataset.ga = "1";
   document.head.appendChild(s1);
 
+  const adsId = (import.meta.env.VITE_GOOGLE_ADS_ID as string | undefined)?.trim() ?? "";
+  const adsMatch = adsId.match(/AW-\d+/i)?.[0] ?? "";
+  const adsConfig = adsMatch
+    ? `gtag('config','${adsMatch.replace(/'/g, "")}');`
+    : "";
+
   const s2 = document.createElement("script");
   s2.dataset.ga = "1";
-  s2.text = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${id.replace(/'/g, "")}');`;
+  s2.text = `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${id.replace(/'/g, "")}');${adsConfig}`;
   document.head.appendChild(s2);
 }
 

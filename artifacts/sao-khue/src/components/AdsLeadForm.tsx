@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { submitContactLead } from "@/lib/contact-leads-api";
+import { trackAdsConversion } from "@/lib/ads-conversions";
 import { buildAdsLeadSource, type AdsLandingConfig } from "@/lib/ads-landing";
 import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 import { toast } from "@/hooks/use-toast";
@@ -48,6 +49,10 @@ export function AdsLeadForm({ config, compact = false, anchorId }: Props) {
         service: config.serviceLabel,
         message,
         source: buildAdsLeadSource(config.source),
+      });
+      trackAdsConversion("lead", {
+        landing_path: config.path,
+        service: config.serviceLabel,
       });
       toast({
         title: "Đã gửi yêu cầu báo giá",
@@ -164,6 +169,7 @@ export function AdsLeadForm({ config, compact = false, anchorId }: Props) {
         {phone && (
           <a
             href={telHref(phone)}
+            onClick={() => trackAdsConversion("call", { landing_path: config.path })}
             className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-primary/20 bg-primary/5 text-sm font-bold text-primary transition hover:bg-primary hover:text-white"
           >
             <PhoneCall size={16} />
@@ -175,6 +181,7 @@ export function AdsLeadForm({ config, compact = false, anchorId }: Props) {
             href={zaloHref}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackAdsConversion("zalo", { landing_path: config.path })}
             className="inline-flex h-11 items-center justify-center gap-2 rounded-lg border border-[#0068ff]/25 bg-[#0068ff]/5 text-sm font-bold text-[#0068ff] transition hover:bg-[#0068ff] hover:text-white"
           >
             <SiZalo size={18} />

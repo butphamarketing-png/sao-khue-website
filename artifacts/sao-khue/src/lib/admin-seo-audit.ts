@@ -71,4 +71,4 @@ export function summarizeSeoAudits(audits: PostSeoAudit[]) {
       : 0;
   return { ok, warn, error, total: audits.length, needsWork: warn + error, avgScore };
 }
-
+

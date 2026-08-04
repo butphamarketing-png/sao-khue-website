@@ -93,6 +93,12 @@ function seedPostUrls(): SitemapEntry[] {
   }));
 }
 
+function toLastmod(value: unknown): string {
+  if (value instanceof Date) return value.toISOString().split("T")[0] ?? "2026-07-16";
+  if (typeof value === "string") return value.slice(0, 10);
+  return "2026-07-16";
+}
+
 async function collectPostUrls(): Promise<SitemapEntry[]> {
   try {
     const posts = await Promise.race([
@@ -114,16 +120,11 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
     return posts
       .filter((p) => isSitemapIndexablePost(p) && !shouldNoindexPostSlug(p.slug))
       .map((p) => ({
-      loc: `${SITE_URL}${getPostPublicPath(p)}`,
-      lastmod:
-        p.updatedAt instanceof Date
-          ? p.updatedAt.toISOString().split("T")[0]
-          : typeof p.updatedAt === "string"
-            ? p.updatedAt.slice(0, 10)
-            : "2026-07-16",
-      changefreq: "monthly" as const,
-      priority: moneyPostPriority(p.slug),
-    }));
+        loc: `${SITE_URL}${getPostPublicPath(p)}`,
+        lastmod: toLastmod(p.updatedAt),
+        changefreq: "monthly" as const,
+        priority: moneyPostPriority(p.slug),
+      }));
   } catch (err) {
     logger.warn({ err }, "sitemap: DB unavailable — falling back to seedPosts");
     return seedPostUrls();
@@ -169,6 +170,14 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 router.get("/sitemap.xml", async (_req, res) => {
   try {
+    const staticSitemap = tryReadStaticSitemap();
+    if (staticSitemap) {
+      res.set("Content-Type", "application/xml; charset=utf-8");
+      res.set("Cache-Control", "public, max-age=3600");
+      res.send(staticSitemap);
+      return;
+    }
+
     const postUrls = await collectPostUrls();
     const seen = new Set<string>();
     const urls = [...staticUrls(), ...postUrls].filter((u) => {

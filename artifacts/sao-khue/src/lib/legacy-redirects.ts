@@ -170,6 +170,11 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/category/bao-gia", "/bao-gia"],
   ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi"],
   ["/category/sua-chua-nha", "/dich-vu/sua-chua-nha"],
+  // GSC ghosts — soft-200 homepage; 301 về bài/hub thật
+  ["/tin-tuc/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
+  ["/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
+  ["/tin-tuc/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
+  ["/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */

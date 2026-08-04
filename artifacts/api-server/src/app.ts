@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import { pinoHttp } from "pino-http";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import router from "./routes";
 import sitemapRouter from "./routes/sitemap";
 import rssRouter from "./routes/rss";
@@ -13,6 +13,31 @@ import { logger } from "./lib/logger";
 import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
 import { shouldSpaShellFallback } from "@workspace/seed-content";
+
+const CONTENT_PREFIXES = ["/tin-tuc/", "/dich-vu/", "/cong-trinh/", "/bai-viet/"] as const;
+
+function loadKnownPaths(frontendDistDir: string): Set<string> | null {
+  const candidates = [
+    path.join(frontendDistDir, "known-paths.json"),
+    path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "public", "known-paths.json"),
+  ];
+  for (const file of candidates) {
+    if (!existsSync(file)) continue;
+    try {
+      const raw = JSON.parse(readFileSync(file, "utf8")) as { paths?: string[] };
+      if (Array.isArray(raw.paths) && raw.paths.length > 0) {
+        return new Set(raw.paths);
+      }
+    } catch (err) {
+      logger.warn({ err, file }, "failed to load known-paths.json");
+    }
+  }
+  return null;
+}
+
+function isContentPath(pathname: string): boolean {
+  return CONTENT_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+}
 
 const app: Express = express();
 const apiDir = path.dirname(fileURLToPath(import.meta.url));
@@ -75,6 +100,7 @@ if (existsSync(frontendIndexPath)) {
   app.use(express.static(frontendDistDir));
 
   const notFoundHtmlPath = path.join(frontendDistDir, "404.html");
+  const knownPaths = loadKnownPaths(frontendDistDir);
 
   function resolvePrerenderedHtml(pathOnly: string): string | null {
     if (pathOnly === "/") {
@@ -85,6 +111,7 @@ if (existsSync(frontendIndexPath)) {
   }
 
   function sendNotFound(res: Response) {
+    res.set("X-Robots-Tag", "noindex, nofollow");
     if (existsSync(notFoundHtmlPath)) {
       res.status(404).sendFile(notFoundHtmlPath);
       return;
@@ -96,6 +123,18 @@ if (existsSync(frontendIndexPath)) {
     const pathOnly = req.path.split("?")[0] ?? req.path;
     if (/\.(png|jpe?g|gif|webp|svg|ico|woff2?|ttf|map)$/i.test(pathOnly)) {
       res.status(404).end();
+      return;
+    }
+
+    // `/404` is a prerendered asset, but it should still respond as a real 404 page.
+    if (pathOnly === "/404") {
+      sendNotFound(res);
+      return;
+    }
+
+    // Content URL không nằm trong seed/menu → hard 404 (không soft-200 SPA shell).
+    if (knownPaths && isContentPath(pathOnly) && !knownPaths.has(pathOnly)) {
+      sendNotFound(res);
       return;
     }
 

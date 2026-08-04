@@ -3,6 +3,7 @@ import { PhoneCall } from "lucide-react";
 import { SiZalo } from "react-icons/si";
 import { BrandLogo } from "@/components/BrandLogo";
 import { FloatingButtons } from "@/components/FloatingButtons";
+import { trackAdsConversion } from "@/lib/ads-conversions";
 import { useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 import type { ReactNode } from "react";
 
@@ -36,6 +37,7 @@ export function AdsLandingShell({ children }: Props) {
                 href={zaloHref}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackAdsConversion("zalo", { source: "ads_shell" })}
                 className="inline-flex h-10 items-center gap-1.5 rounded-lg bg-[#0068ff] px-3 text-xs font-bold uppercase tracking-wide text-white transition hover:brightness-110"
               >
                 <SiZalo size={18} />
@@ -45,6 +47,7 @@ export function AdsLandingShell({ children }: Props) {
             {phone && (
               <a
                 href={telHref(phone)}
+                onClick={() => trackAdsConversion("call", { source: "ads_shell" })}
                 className="inline-flex h-10 items-center gap-1.5 rounded-lg bg-accent px-3 text-xs font-bold uppercase tracking-wide text-white shadow-md transition hover:brightness-110 sm:px-4"
               >
                 <PhoneCall size={16} />

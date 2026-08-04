@@ -3,11 +3,14 @@
  * Chạy trong `pnpm build`; cập nhật middleware.js + xóa redirects khỏi vercel.json.
  *
  * Hobby plan: không dùng bulkRedirectsPath (chỉ Pro+). Redirects chạy qua middleware.js.
+ * Unknown content paths → HTTP 404 (tránh soft-200 homepage → GSC "Crawled – not indexed").
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectServerRedirects } from "../src/lib/legacy-redirects.ts";
+import { collectKnownPaths } from "../src/lib/known-paths.ts";
+import { seedPosts } from "../../../lib/seed-content/src/index.ts";
 
 export type VercelRedirect = {
   source: string;
@@ -65,10 +68,12 @@ function patchVercelJson(vercelPath: string) {
   writeFileSync(vercelPath, `${JSON.stringify(config, null, 2)}\n`, "utf8");
 }
 
-function writeMiddleware(rules: BulkRedirect[], filePath: string) {
+function writeMiddleware(rules: BulkRedirect[], knownPaths: string[], filePath: string) {
   const entries = rules
     .map((r) => `  ${JSON.stringify(r.source)}: ${JSON.stringify(r.destination)}`)
     .join(",\n");
+
+  const knownEntries = knownPaths.map((p) => `  ${JSON.stringify(p)}: 1`).join(",\n");
 
   writeFileSync(
     filePath,
@@ -76,48 +81,79 @@ function writeMiddleware(rules: BulkRedirect[], filePath: string) {
 /**
  * Edge redirects — Hobby plan không hỗ trợ bulkRedirectsPath và giới hạn 1.024 routes.
  * Plain JS (not .ts) — tránh TS "Emit skipped" vì file nằm ngoài rootDir src/.
+ * KNOWN_PATHS: URL hợp lệ; path nội dung lạ → HTTP 404 (không soft-200 homepage).
  */
 const REDIRECTS = {
 ${entries},
 };
 
+const KNOWN_PATHS = {
+${knownEntries},
+};
+
+const CONTENT_PREFIXES = ["/tin-tuc/", "/dich-vu/", "/cong-trinh/", "/bai-viet/"];
+
 function redirect301(path, requestUrl) {
-  return Response.redirect(new URL(path, requestUrl).toString(), 301);
+  const target = new URL(path, requestUrl);
+  target.hostname = "www.kientrucsaokhue.com";
+  if (target.pathname.length > 1 && target.pathname.endsWith("/")) {
+    target.pathname = target.pathname.slice(0, -1);
+  }
+  return Response.redirect(target.toString(), 301);
+}
+
+function notFound404() {
+  const html = \`<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>404 | Kiến Trúc Sao Khuê</title><link rel="canonical" href="https://www.kientrucsaokhue.com/404"></head><body style="font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem"><h1>404 — Không tìm thấy trang</h1><p>Trang bạn yêu cầu không tồn tại hoặc đã được di chuyển.</p><p><a href="/">Về trang chủ</a> · <a href="/tin-tuc">Tin tức</a></p></body></html>\`;
+  return new Response(html, {
+    status: 404,
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "public, max-age=300",
+    },
+  });
+}
+
+function isContentPath(pathname) {
+  return CONTENT_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
 export default function middleware(request) {
   const url = new URL(request.url);
 
-  if (url.hostname === "kientrucsaokhue.com") {
-    url.hostname = "www.kientrucsaokhue.com";
-    return Response.redirect(url.toString(), 301);
-  }
+  const normalizedPathname =
+    url.pathname.length > 1 && url.pathname.endsWith("/")
+      ? url.pathname.slice(0, -1)
+      : url.pathname;
 
-  const { pathname } = url;
-
-  if (pathname.length > 1 && pathname.endsWith("/")) {
-    url.pathname = pathname.slice(0, -1);
-    return Response.redirect(url.toString(), 301);
+  if (normalizedPathname.startsWith("/gioi-thieu/")) {
+    return redirect301(\`/bai-viet/\${normalizedPathname.slice("/gioi-thieu/".length)}\`, request.url);
   }
-
-  if (pathname.startsWith("/gioi-thieu/")) {
-    return redirect301(\`/bai-viet/\${pathname.slice("/gioi-thieu/".length)}\`, request.url);
+  if (normalizedPathname.startsWith("/kinh-nghiem-xay-dung/")) {
+    return redirect301(\`/tin-tuc/\${normalizedPathname.slice("/kinh-nghiem-xay-dung/".length)}\`, request.url);
   }
-  if (pathname.startsWith("/kinh-nghiem-xay-dung/")) {
-    return redirect301(\`/tin-tuc/\${pathname.slice("/kinh-nghiem-xay-dung/".length)}\`, request.url);
+  if (normalizedPathname.startsWith("/kinh-nghiem/")) {
+    return redirect301(\`/tin-tuc/\${normalizedPathname.slice("/kinh-nghiem/".length)}\`, request.url);
   }
-  if (pathname.startsWith("/kinh-nghiem/")) {
-    return redirect301(\`/tin-tuc/\${pathname.slice("/kinh-nghiem/".length)}\`, request.url);
-  }
-  if (pathname.startsWith("/danh-muc/")) {
+  if (normalizedPathname.startsWith("/danh-muc/")) {
     return redirect301("/tin-tuc", request.url);
   }
-  if (pathname.startsWith("/category/")) {
+  if (normalizedPathname.startsWith("/category/")) {
     return redirect301("/tin-tuc", request.url);
   }
 
-  const dest = REDIRECTS[pathname];
+  const dest = REDIRECTS[normalizedPathname];
   if (dest) return redirect301(dest, request.url);
+
+  if (url.hostname !== "www.kientrucsaokhue.com" || normalizedPathname !== url.pathname) {
+    const search = url.search ?? "";
+    return redirect301(\`\${normalizedPathname}\${search}\`, request.url);
+  }
+
+  // Soft-200 homepage cho URL bài ảo → GSC "Crawled – not indexed". Chặn sớm bằng 404.
+  if (isContentPath(normalizedPathname) && !KNOWN_PATHS[normalizedPathname]) {
+    return notFound404();
+  }
 }
 
 export const config = {
@@ -137,9 +173,12 @@ const middlewareFile = join(apiServerDir, "middleware.js");
 
 const all = buildGscRedirects();
 const bulk = toBulkRedirects(all);
+const known = [...collectKnownPaths(seedPosts)].sort();
 
-writeMiddleware(bulk, middlewareFile);
+writeMiddleware(bulk, known, middlewareFile);
 patchVercelJson(join(repoRoot, "vercel.json"));
 patchVercelJson(join(apiServerDir, "vercel.json"));
 
-console.log(`[redirects] ${bulk.length} rules → middleware.js (Hobby Edge Middleware)`);
+console.log(
+  `[redirects] ${bulk.length} rules + ${known.length} known paths → middleware.js (Hobby Edge Middleware)`,
+);
