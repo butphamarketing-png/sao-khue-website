@@ -157,6 +157,16 @@ import {
   shortKeywordBatch53Slugs,
   shortKeywordBatch54ArticlesBySlug,
   shortKeywordBatch54Slugs,
+  shortKeywordBatch55ArticlesBySlug,
+  shortKeywordBatch55Slugs,
+  shortKeywordBatch56ArticlesBySlug,
+  shortKeywordBatch56Slugs,
+  shortKeywordBatch57ArticlesBySlug,
+  shortKeywordBatch57Slugs,
+  shortKeywordBatch58ArticlesBySlug,
+  shortKeywordBatch58Slugs,
+  shortKeywordBatch59ArticlesBySlug,
+  shortKeywordBatch59Slugs,
   moneyPageOverridesBySlug,
   type SeoArticle,
 } from "./articles";
@@ -516,6 +526,21 @@ const seedPostsRaw: SeedPost[] = [
   ),
   ...shortKeywordBatch54Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch54ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch55Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch55ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch56Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch56ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch57Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch57ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch58Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch58ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch59Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch59ArticlesBySlug[slug]!),
   ),
 ];
 
