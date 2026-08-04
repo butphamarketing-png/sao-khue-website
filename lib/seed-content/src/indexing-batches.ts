@@ -8,6 +8,11 @@ import { shortKeywordBatch16Slugs } from "./articles/short-keyword-tin-tuc-artic
 import { shortKeywordBatch17Slugs } from "./articles/short-keyword-tin-tuc-articles-batch17";
 import { shortKeywordBatch18Slugs } from "./articles/short-keyword-tin-tuc-articles-batch18";
 import { shortKeywordBatch19Slugs } from "./articles/short-keyword-tin-tuc-articles-batch19";
+import { shortKeywordBatch20Slugs } from "./articles/short-keyword-tin-tuc-articles-batch20";
+import { shortKeywordBatch21Slugs } from "./articles/short-keyword-tin-tuc-articles-batch21";
+import { shortKeywordBatch22Slugs } from "./articles/short-keyword-tin-tuc-articles-batch22";
+import { shortKeywordBatch23Slugs } from "./articles/short-keyword-tin-tuc-articles-batch23";
+import { shortKeywordBatch24Slugs } from "./articles/short-keyword-tin-tuc-articles-batch24";
 
 export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "7": xayNhaTphcmBatch7Slugs,
@@ -19,6 +24,11 @@ export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "17": shortKeywordBatch17Slugs,
   "18": shortKeywordBatch18Slugs,
   "19": shortKeywordBatch19Slugs,
+  "20": shortKeywordBatch20Slugs,
+  "21": shortKeywordBatch21Slugs,
+  "22": shortKeywordBatch22Slugs,
+  "23": shortKeywordBatch23Slugs,
+  "24": shortKeywordBatch24Slugs,
 };
 
 export {
@@ -31,4 +41,9 @@ export {
   shortKeywordBatch17Slugs,
   shortKeywordBatch18Slugs,
   shortKeywordBatch19Slugs,
+  shortKeywordBatch20Slugs,
+  shortKeywordBatch21Slugs,
+  shortKeywordBatch22Slugs,
+  shortKeywordBatch23Slugs,
+  shortKeywordBatch24Slugs,
 };
