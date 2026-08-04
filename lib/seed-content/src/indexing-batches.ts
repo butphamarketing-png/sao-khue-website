@@ -4,6 +4,7 @@ import { xayCaiTaoTphcmBatch8Slugs } from "./articles/xay-cai-tao-tphcm-tin-tuc-
 import { xayCaiTaoTphcmBatch9Slugs } from "./articles/xay-cai-tao-tphcm-tin-tuc-articles-batch9";
 import { nhomKinhBatch10Slugs } from "./articles/nhom-kinh-tin-tuc-articles-batch10";
 import { shortKeywordBatch15Slugs } from "./articles/short-keyword-tin-tuc-articles-batch15";
+import { shortKeywordBatch16Slugs } from "./articles/short-keyword-tin-tuc-articles-batch16";
 
 export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "7": xayNhaTphcmBatch7Slugs,
@@ -11,6 +12,7 @@ export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "9": xayCaiTaoTphcmBatch9Slugs,
   "10": nhomKinhBatch10Slugs,
   "15": shortKeywordBatch15Slugs,
+  "16": shortKeywordBatch16Slugs,
 };
 
 export {
@@ -19,4 +21,5 @@ export {
   xayCaiTaoTphcmBatch9Slugs,
   nhomKinhBatch10Slugs,
   shortKeywordBatch15Slugs,
+  shortKeywordBatch16Slugs,
 };
