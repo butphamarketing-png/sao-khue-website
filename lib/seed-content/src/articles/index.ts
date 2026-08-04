@@ -264,6 +264,31 @@ export {
   getShortKeywordBatch44Article,
 } from "./short-keyword-tin-tuc-articles-batch44";
 export {
+  shortKeywordBatch45ArticlesBySlug,
+  shortKeywordBatch45Slugs,
+  getShortKeywordBatch45Article,
+} from "./short-keyword-tin-tuc-articles-batch45";
+export {
+  shortKeywordBatch46ArticlesBySlug,
+  shortKeywordBatch46Slugs,
+  getShortKeywordBatch46Article,
+} from "./short-keyword-tin-tuc-articles-batch46";
+export {
+  shortKeywordBatch47ArticlesBySlug,
+  shortKeywordBatch47Slugs,
+  getShortKeywordBatch47Article,
+} from "./short-keyword-tin-tuc-articles-batch47";
+export {
+  shortKeywordBatch48ArticlesBySlug,
+  shortKeywordBatch48Slugs,
+  getShortKeywordBatch48Article,
+} from "./short-keyword-tin-tuc-articles-batch48";
+export {
+  shortKeywordBatch49ArticlesBySlug,
+  shortKeywordBatch49Slugs,
+  getShortKeywordBatch49Article,
+} from "./short-keyword-tin-tuc-articles-batch49";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,
