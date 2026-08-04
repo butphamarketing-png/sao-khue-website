@@ -374,6 +374,7 @@ const REDIRECTS = {
   "/bai-viet/phong-tam-kinh-tphcm": "/tin-tuc/phong-tam-kinh-tphcm",
   "/bai-viet/phong-thuy-nha-o": "/tin-tuc/phong-thuy-nha-o",
   "/bai-viet/phu-kien-cua-nhom-kinh-nao-tot": "/tin-tuc/phu-kien-cua-nhom-kinh-nao-tot",
+  "/bai-viet/quy-trinh-thiet-ke": "/dich-vu/thiet-ke-nha",
   "/bai-viet/quy-trinh-xay-nha-ngan": "/tin-tuc/quy-trinh-xay-nha-ngan",
   "/bai-viet/quy-trinh-xay-nha-tron-goi-a-z": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
   "/bai-viet/son-nha-cu-tphcm": "/tin-tuc/son-nha-cu-tphcm",
@@ -493,6 +494,7 @@ const REDIRECTS = {
   "/bai-viet/sua-nha-tro-dak-lak": "/tin-tuc/sua-nha-tro-dak-lak",
   "/bai-viet/sua-nha-tron-goi-buon-ma-thuot": "/tin-tuc/sua-nha-tron-goi-buon-ma-thuot",
   "/bai-viet/sua-nha-tron-goi-ngan": "/tin-tuc/sua-nha-tron-goi-ngan",
+  "/bai-viet/sua-nha-tron-goi-quan-go-vap": "/tin-tuc/sua-nha-go-vap",
   "/bai-viet/sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
   "/bai-viet/sua-nha-trong-hem-tphcm": "/tin-tuc/sua-nha-trong-hem-tphcm",
   "/bai-viet/sua-nha-uy-tin-ngan": "/tin-tuc/sua-nha-uy-tin-ngan",
@@ -574,6 +576,7 @@ const REDIRECTS = {
   "/bai-viet/thiet-ke-nha-kon-tum": "/tin-tuc/thiet-ke-nha-kon-tum",
   "/bai-viet/thiet-ke-nha-mat-tien-tphcm": "/tin-tuc/thiet-ke-nha-mat-tien-tphcm",
   "/bai-viet/thiet-ke-nha-ngan": "/tin-tuc/thiet-ke-nha-ngan",
+  "/bai-viet/thiet-ke-nha-pho-2-tang": "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm",
   "/bai-viet/thiet-ke-nha-pho-2-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm",
   "/bai-viet/thiet-ke-nha-pho-3-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-3-tang-tphcm",
   "/bai-viet/thiet-ke-nha-pho-4-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-4-tang-tphcm",
@@ -1205,6 +1208,7 @@ const REDIRECTS = {
   "/chong-tham-nha-thu-duc": "/tin-tuc/chong-tham-nha-thu-duc",
   "/chong-tham-nha-tphcm": "/tin-tuc/chong-tham-nha-tphcm",
   "/chong-tham-toilet-tphcm": "/tin-tuc/chong-tham-toilet-tphcm",
+  "/cong-trinh/xay-nha": "/cong-trinh",
   "/cong-ty-cai-tao-nha-tphcm": "/tin-tuc/cong-ty-cai-tao-nha-tphcm",
   "/cong-ty-sua-chua-nha-tphcm": "/tin-tuc/cong-ty-sua-chua-nha-tphcm",
   "/cong-ty-xay-dung-binh-dinh": "/tin-tuc/cong-ty-xay-dung-binh-dinh",
@@ -1304,6 +1308,7 @@ const REDIRECTS = {
   "/lan-can-kinh-cuong-luc-tphcm": "/tin-tuc/lan-can-kinh-cuong-luc-tphcm",
   "/lat-gach-nen-nha-tphcm": "/tin-tuc/lat-gach-nen-nha-tphcm",
   "/lien-he-ngay": "/lien-he",
+  "/luat-xay-dung": "/tin-tuc/luat-xay-dung-moi-nhat",
   "/luat-xay-dung-moi-nhat": "/tin-tuc/luat-xay-dung-moi-nhat",
   "/luu-y-xay-nha-pho": "/tin-tuc/luu-y-xay-nha-pho",
   "/mai-kinh-nhom-tphcm": "/tin-tuc/mai-kinh-nhom-tphcm",
@@ -1392,10 +1397,12 @@ const REDIRECTS = {
   "/phu-kien-cua-nhom-kinh-nao-tot": "/tin-tuc/phu-kien-cua-nhom-kinh-nao-tot",
   "/pricing": "/bao-gia",
   "/projects": "/cong-trinh",
+  "/quy-trinh-thiet-ke": "/dich-vu/thiet-ke-nha",
   "/quy-trinh-xay-dung": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
   "/quy-trinh-xay-nha-ngan": "/tin-tuc/quy-trinh-xay-nha-ngan",
   "/quy-trinh-xay-nha-tron-goi-a-z": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
   "/services": "/dich-vu",
+  "/shop": "/",
   "/so-do-to-chuc": "/bai-viet/so-do-to-chuc",
   "/son-nha-cu-tphcm": "/tin-tuc/son-nha-cu-tphcm",
   "/son-nha-dak-lak": "/tin-tuc/son-nha-dak-lak",
@@ -1604,6 +1611,7 @@ const REDIRECTS = {
   "/thiet-ke-nha-kon-tum": "/tin-tuc/thiet-ke-nha-kon-tum",
   "/thiet-ke-nha-mat-tien-tphcm": "/tin-tuc/thiet-ke-nha-mat-tien-tphcm",
   "/thiet-ke-nha-ngan": "/tin-tuc/thiet-ke-nha-ngan",
+  "/thiet-ke-nha-pho-2-tang": "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm",
   "/thiet-ke-nha-pho-2-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm",
   "/thiet-ke-nha-pho-3-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-3-tang-tphcm",
   "/thiet-ke-nha-pho-4-tang-tphcm": "/tin-tuc/thiet-ke-nha-pho-4-tang-tphcm",
@@ -1644,6 +1652,9 @@ const REDIRECTS = {
   "/thiet-ke-thi-cong-nha-thu-duc": "/tin-tuc/thiet-ke-thi-cong-nha-thu-duc",
   "/thiet-ke-xay-dung-nha-pho-mien-nam": "/tin-tuc/thiet-ke-xay-dung-nha-pho-mien-nam",
   "/thue-thiet-ke-nha-truoc-khi-xay": "/tin-tuc/thue-thiet-ke-nha-truoc-khi-xay",
+  "/tin-tuc/luat-xay-dung": "/tin-tuc/luat-xay-dung-moi-nhat",
+  "/tin-tuc/sua-nha-tron-goi": "/dich-vu/sua-nha-tron-goi-tphcm",
+  "/tin-tuc/sua-nha-tron-goi-quan-go-vap": "/tin-tuc/sua-nha-go-vap",
   "/tin-tuc/thiet-ke-nha-cap-4-dak-lak": "/tin-tuc/thiet-ke-nha-dep-dak-lak",
   "/tin-tuc/xay-nha-tron-goi-quan-binh-thanh": "/tin-tuc/xay-nha-tron-goi-binh-thanh",
   "/top-mau-nha-pho-dep-xu-huong": "/tin-tuc/top-mau-nha-pho-dep-xu-huong",
@@ -3043,8 +3054,6 @@ const KNOWN_PATHS = {
   "/xay-nha": 1,
 };
 
-const CONTENT_PREFIXES = ["/tin-tuc/", "/dich-vu/", "/cong-trinh/", "/bai-viet/"];
-
 function redirect301(path, requestUrl) {
   const target = new URL(path, requestUrl);
   target.hostname = "www.kientrucsaokhue.com";
@@ -3066,8 +3075,33 @@ function notFound404() {
   });
 }
 
-function isContentPath(pathname) {
-  return CONTENT_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+/** WP leftovers (?doc/d888, ?p=930, ?page_id=…) — giữ utm/gclid. */
+function cleanSearch(search) {
+  if (!search || search === "?") return null;
+  const params = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
+  const kept = new URLSearchParams();
+  let hasJunk = false;
+  for (const [key, value] of params) {
+    if (/^(utm_|gclid|fbclid|gbraid|wbraid|msclkid)/i.test(key)) {
+      kept.set(key, value);
+      continue;
+    }
+    if (
+      key.includes("/") ||
+      key === "p" ||
+      key === "page_id" ||
+      key === "doc" ||
+      key === "attachment_id" ||
+      key === "preview"
+    ) {
+      hasJunk = true;
+      continue;
+    }
+    kept.set(key, value);
+  }
+  if (!hasJunk) return null;
+  const s = kept.toString();
+  return s ? `?${s}` : "";
 }
 
 export default function middleware(request) {
@@ -3093,17 +3127,25 @@ export default function middleware(request) {
   if (normalizedPathname.startsWith("/category/")) {
     return redirect301("/tin-tuc", request.url);
   }
+  if (normalizedPathname.startsWith("/tag/") || normalizedPathname === "/tag") {
+    return redirect301("/tin-tuc", request.url);
+  }
 
   const dest = REDIRECTS[normalizedPathname];
   if (dest) return redirect301(dest, request.url);
+
+  const cleaned = cleanSearch(url.search ?? "");
+  if (cleaned !== null) {
+    return redirect301(`${normalizedPathname}${cleaned}`, request.url);
+  }
 
   if (url.hostname !== "www.kientrucsaokhue.com" || normalizedPathname !== url.pathname) {
     const search = url.search ?? "";
     return redirect301(`${normalizedPathname}${search}`, request.url);
   }
 
-  // Soft-200 homepage cho URL bài ảo → GSC "Crawled – not indexed". Chặn sớm bằng 404.
-  if (isContentPath(normalizedPathname) && !KNOWN_PATHS[normalizedPathname]) {
+  // Soft-200 homepage → GSC "Alternate page with proper canonical". Chặn bằng 404.
+  if (!KNOWN_PATHS[normalizedPathname]) {
     return notFound404();
   }
 }

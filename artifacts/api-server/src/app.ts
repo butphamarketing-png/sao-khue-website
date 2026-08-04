@@ -14,8 +14,6 @@ import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
 import { shouldSpaShellFallback } from "@workspace/seed-content";
 
-const CONTENT_PREFIXES = ["/tin-tuc/", "/dich-vu/", "/cong-trinh/", "/bai-viet/"] as const;
-
 function loadKnownPaths(frontendDistDir: string): Set<string> | null {
   const candidates = [
     path.join(frontendDistDir, "known-paths.json"),
@@ -33,10 +31,6 @@ function loadKnownPaths(frontendDistDir: string): Set<string> | null {
     }
   }
   return null;
-}
-
-function isContentPath(pathname: string): boolean {
-  return CONTENT_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
 const app: Express = express();
@@ -132,8 +126,8 @@ if (existsSync(frontendIndexPath)) {
       return;
     }
 
-    // Content URL không nằm trong seed/menu → hard 404 (không soft-200 SPA shell).
-    if (knownPaths && isContentPath(pathOnly) && !knownPaths.has(pathOnly)) {
+    // URL không nằm trong seed/menu → hard 404 (không soft-200 SPA shell / homepage).
+    if (knownPaths && !knownPaths.has(pathOnly) && pathOnly !== "/404") {
       sendNotFound(res);
       return;
     }

@@ -175,6 +175,19 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
   ["/tin-tuc/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
   ["/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
+  // GSC "Alternate page with proper canonical" — WP leftovers + near-miss
+  ["/tin-tuc/luat-xay-dung", "/tin-tuc/luat-xay-dung-moi-nhat"],
+  ["/luat-xay-dung", "/tin-tuc/luat-xay-dung-moi-nhat"],
+  ["/bai-viet/sua-nha-tron-goi-quan-go-vap", "/tin-tuc/sua-nha-go-vap"],
+  ["/tin-tuc/sua-nha-tron-goi-quan-go-vap", "/tin-tuc/sua-nha-go-vap"],
+  ["/bai-viet/quy-trinh-thiet-ke", "/dich-vu/thiet-ke-nha"],
+  ["/quy-trinh-thiet-ke", "/dich-vu/thiet-ke-nha"],
+  ["/cong-trinh/xay-nha", "/cong-trinh"],
+  ["/tin-tuc/sua-nha-tron-goi", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/bai-viet/thiet-ke-nha-pho-2-tang", "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm"],
+  ["/thiet-ke-nha-pho-2-tang", "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm"],
+  ["/tag", "/tin-tuc"],
+  ["/shop", "/"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
@@ -199,6 +212,7 @@ export function collectServerRedirects(): Map<string, string> {
   add("/kinh-nghiem-xay-dung/:path*", "/tin-tuc/:path*");
   add("/danh-muc/:path*", "/tin-tuc");
   add("/category/:path*", "/tin-tuc");
+  add("/tag/:path*", "/tin-tuc");
 
   for (const [slug, target] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
     add(`/${slug}`, target);

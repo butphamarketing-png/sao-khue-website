@@ -91,8 +91,6 @@ const KNOWN_PATHS = {
 ${knownEntries},
 };
 
-const CONTENT_PREFIXES = ["/tin-tuc/", "/dich-vu/", "/cong-trinh/", "/bai-viet/"];
-
 function redirect301(path, requestUrl) {
   const target = new URL(path, requestUrl);
   target.hostname = "www.kientrucsaokhue.com";
@@ -114,8 +112,33 @@ function notFound404() {
   });
 }
 
-function isContentPath(pathname) {
-  return CONTENT_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+/** WP leftovers (?doc/d888, ?p=930, ?page_id=…) — giữ utm/gclid. */
+function cleanSearch(search) {
+  if (!search || search === "?") return null;
+  const params = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
+  const kept = new URLSearchParams();
+  let hasJunk = false;
+  for (const [key, value] of params) {
+    if (/^(utm_|gclid|fbclid|gbraid|wbraid|msclkid)/i.test(key)) {
+      kept.set(key, value);
+      continue;
+    }
+    if (
+      key.includes("/") ||
+      key === "p" ||
+      key === "page_id" ||
+      key === "doc" ||
+      key === "attachment_id" ||
+      key === "preview"
+    ) {
+      hasJunk = true;
+      continue;
+    }
+    kept.set(key, value);
+  }
+  if (!hasJunk) return null;
+  const s = kept.toString();
+  return s ? \`?\${s}\` : "";
 }
 
 export default function middleware(request) {
@@ -141,17 +164,25 @@ export default function middleware(request) {
   if (normalizedPathname.startsWith("/category/")) {
     return redirect301("/tin-tuc", request.url);
   }
+  if (normalizedPathname.startsWith("/tag/") || normalizedPathname === "/tag") {
+    return redirect301("/tin-tuc", request.url);
+  }
 
   const dest = REDIRECTS[normalizedPathname];
   if (dest) return redirect301(dest, request.url);
+
+  const cleaned = cleanSearch(url.search ?? "");
+  if (cleaned !== null) {
+    return redirect301(\`\${normalizedPathname}\${cleaned}\`, request.url);
+  }
 
   if (url.hostname !== "www.kientrucsaokhue.com" || normalizedPathname !== url.pathname) {
     const search = url.search ?? "";
     return redirect301(\`\${normalizedPathname}\${search}\`, request.url);
   }
 
-  // Soft-200 homepage cho URL bài ảo → GSC "Crawled – not indexed". Chặn sớm bằng 404.
-  if (isContentPath(normalizedPathname) && !KNOWN_PATHS[normalizedPathname]) {
+  // Soft-200 homepage → GSC "Alternate page with proper canonical". Chặn bằng 404.
+  if (!KNOWN_PATHS[normalizedPathname]) {
     return notFound404();
   }
 }
