@@ -129,6 +129,11 @@ export {
   getShortKeywordBatch17Article,
 } from "./short-keyword-tin-tuc-articles-batch17";
 export {
+  shortKeywordBatch18ArticlesBySlug,
+  shortKeywordBatch18Slugs,
+  getShortKeywordBatch18Article,
+} from "./short-keyword-tin-tuc-articles-batch18";
+export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,
   getMienTrungSuaNhaArticle,
