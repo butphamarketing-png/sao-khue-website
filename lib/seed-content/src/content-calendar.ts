@@ -19,6 +19,7 @@
  * Batch 25–29 (500 từ khóa ngắn tiếp theo): #1947–#2446.
  * Batch 30–34 (500 từ khóa ngắn tiếp theo): #2447–#2946.
  * Batch 35–39 (500 từ khóa ngắn tiếp theo): #2947–#3446.
+ * Batch 40–44 (500 từ khóa ngắn tiếp theo): #3447–#3946.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -68,6 +69,11 @@ export { shortKeywordCalendarBatch36 } from "./short-keyword-calendar-batch36";
 export { shortKeywordCalendarBatch37 } from "./short-keyword-calendar-batch37";
 export { shortKeywordCalendarBatch38 } from "./short-keyword-calendar-batch38";
 export { shortKeywordCalendarBatch39 } from "./short-keyword-calendar-batch39";
+export { shortKeywordCalendarBatch40 } from "./short-keyword-calendar-batch40";
+export { shortKeywordCalendarBatch41 } from "./short-keyword-calendar-batch41";
+export { shortKeywordCalendarBatch42 } from "./short-keyword-calendar-batch42";
+export { shortKeywordCalendarBatch43 } from "./short-keyword-calendar-batch43";
+export { shortKeywordCalendarBatch44 } from "./short-keyword-calendar-batch44";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },
