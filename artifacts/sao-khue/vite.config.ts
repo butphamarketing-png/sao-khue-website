@@ -44,6 +44,14 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    rollupOptions: {
+      onwarn(warning, defaultHandler) {
+        // `"use client"` (shadcn) + sourcemap noise — không phải lỗi build thật.
+        if (warning.code === "MODULE_LEVEL_DIRECTIVE") return;
+        if (warning.message?.includes("Can't resolve original location of error")) return;
+        defaultHandler(warning);
+      },
+    },
   },
   server: {
     port,
