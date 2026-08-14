@@ -8,6 +8,9 @@ const DEFAULT_SITE_URL = "https://www.kientrucsaokhue.com";
 
 export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
+export const DEFAULT_OG_IMAGE_ALT =
+  "Kiến Trúc Sao Khuê — thiết kế và xây nhà trọn gói TP.HCM";
+export const OG_SITE_NAME = "Kiến Trúc Sao Khuê";
 
 export const CATEGORY_CRUMBS: Record<string, { label: string; path: string }> = {
   "dich-vu": { label: "Dịch vụ", path: "/dich-vu" },
@@ -200,9 +203,10 @@ export function applyPageSeo(input: PageSeoInput) {
   setMetaProperty("og:description", description);
   setMetaProperty("og:url", canonical);
   setMetaProperty("og:locale", "vi_VN");
+  setMetaProperty("og:site_name", OG_SITE_NAME);
   if (ogImage) {
     setMetaProperty("og:image", ogImage);
-    if (input.ogImageAlt) setMetaProperty("og:image:alt", input.ogImageAlt);
+    setMetaProperty("og:image:alt", input.ogImageAlt || DEFAULT_OG_IMAGE_ALT);
   }
 
   if (isArticle && input.publishedTime) {
@@ -267,7 +271,11 @@ export function buildLocalBusinessSchema(
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+    "@id": `${origin}/#localbusiness`,
     name: input.name,
+    logo: input.image
+      ? { "@type": "ImageObject", url: input.image }
+      : undefined,
     description:
       input.description ??
       "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh lân cận.",
@@ -322,13 +330,15 @@ export function buildLocalBusinessSchema(
 }
 
 export function buildWebSiteSchema(name: string, url: string) {
+  const origin = url.replace(/\/$/, "");
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${origin}/#website`,
     name,
     url,
     inLanguage: "vi-VN",
-    publisher: { "@type": "Organization", name },
+    publisher: { "@type": "Organization", "@id": `${origin}/#localbusiness`, name },
   };
 }
 

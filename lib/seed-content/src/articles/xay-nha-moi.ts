@@ -21,7 +21,7 @@ export const xayNhaMoi = {
   imageCaption: "Xây nhà mới — biệt thự hiện đại, thi công trọn gói Kiến Trúc Sao Khuê",
   content: `
 <h2>Xây nhà mới — Giải pháp trọn gói từ thiết kế đến bàn giao</h2>
-<p><strong>Xây nhà mới</strong> là hành trình đầu tư lớn nhất của nhiều gia đình: từ lúc có mảnh đất trống đến khi nhận chìa khóa căn nhà hoàn chỉnh. Khác với <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà cũ</a> hay <a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo</a>, <strong>xây nhà mới trọn gói</strong> đòi hỏi quy hoạch pháp lý, thiết kế kiến trúc, dự toán chi tiết và quản lý thi công chặt chẽ để tránh phát sinh chi phí, chậm tiến độ hoặc kết cấu không đạt chuẩn.</p>
+<p><strong>Xây nhà mới</strong> là hành trình đầu tư lớn nhất của nhiều gia đình: từ lúc có mảnh đất trống đến khi nhận chìa khóa căn nhà hoàn chỉnh. Khác với <a href="/dich-vu/sua-chua-nha">sửa chữa nhà cũ</a> hay <a href="/tin-tuc/cai-tao-nha-dak-lak">cải tạo</a>, <strong>xây nhà mới trọn gói</strong> đòi hỏi quy hoạch pháp lý, thiết kế kiến trúc, dự toán chi tiết và quản lý thi công chặt chẽ để tránh phát sinh chi phí, chậm tiến độ hoặc kết cấu không đạt chuẩn.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>xây nhà mới</strong> tại TP.HCM, Bình Dương, Đồng Nai, Đắk Lắk và các tỉnh lân cận — <strong>một đầu mối duy nhất</strong> từ khảo sát, thiết kế 2D/3D, thi công phần thô, hoàn thiện đến nghiệm thu bàn giao. Hơn <strong>500 công trình</strong> đã hoàn thành, <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
 ${imageFigure(IMG_1, FOCUS, 1)}
@@ -29,7 +29,7 @@ ${imageFigure(IMG_1, FOCUS, 1)}
 <h2>Xây nhà mới là gì? Khác gì so với xây phần thô?</h2>
 <p><strong>Xây nhà mới</strong> (xây dựng mới hoàn toàn) là thi công công trình trên lô đất chưa có nhà hoặc đã tháo dỡ công trình cũ, bao gồm: làm móng, dựng kết cấu, mái, hoàn thiện và lắp đặt hệ thống điện nước cơ bản. Gia chủ có thể chọn:</p>
 <ul>
-  <li><strong>Xây nhà mới trọn gói:</strong> Nhà thầu đảm nhận toàn bộ — chìa khóa trao tay. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</li>
+  <li><strong>Xây nhà mới trọn gói:</strong> Nhà thầu đảm nhận toàn bộ — chìa khóa trao tay. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</li>
   <li><strong>Xây nhà mới phần thô:</strong> Chỉ thi công kết cấu, gia chủ tự hoàn thiện. Xem <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</li>
   <li><strong>Thiết kế + thi công:</strong> Sao Khuê lên bản vẽ kiến trúc rồi triển khai thi công theo hợp đồng.</li>
 </ul>

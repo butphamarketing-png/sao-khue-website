@@ -49,10 +49,9 @@ Không viết mới trước — củng cố + internal link + đảm bảo inde
 | Ưu tiên | Keyword / slug gợi ý | Lý do |
 |---------|----------------------|-------|
 | P0 | `bao-gia-sua-nha-tron-goi-tphcm` | Khớp Ads A3 — đã seed |
-| P0 | `sua-nha-tron-goi-binh-thanh` hoặc quận trọng điểm HCM | Geo + intent sửa |
-| P1 | `xay-nha-phan-tho-tphcm` money page rõ | Khớp Ads B3 |
-| P1 | `cai-tao-nha-dang-o-tphcm` | Intent gần chốt |
-| P1 | `nang-tang-nha-pho-binh-thanh` | Bổ sung A4 |
+| P0 | Geo cải tạo 6 quận + `cong-ty-sua-chua-nha-tphcm` | Ads 100 KW — đã seed |
+| P1 | `cai-tao-nha-dang-o-tphcm` · `nang-tang-nha-cu-tphcm` · `chong-tham-san-thuong-tphcm` | Đã seed |
+| P1 | `thi-cong-phan-tho-tphcm` · `bao-gia-xay-nha-2026` · chìa khóa trao tay | Ads B — đã seed |
 | P2 | `cong-ty-xay-nha-tron-goi-uy-tin-tphcm` | Khác góc với bài nhà thầu |
 | P2 | Long An / Bình Dương money **1 bài/khu** nếu Ads mở geo | Không làm full calendar |
 

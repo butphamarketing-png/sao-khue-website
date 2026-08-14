@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #28 — slug: top-mau-nha-pho-dep-xu-huong */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("top-mau-nha-pho-dep-xu-huong", 0);
 const SK_IMG_2 = slugImage("top-mau-nha-pho-dep-xu-huong", 1);
@@ -117,7 +117,12 @@ ${imageFigure(SK_IMG_2, focusKeyword, 3)}
 </ul>
 
 ${homeLinkParagraph("Xem toàn bộ portfolio và mẫu thiết kế tại")}
-
+
+${faqSection([
+  { q: "Mẫu nhà phố đẹp trên mạng có áp dụng nguyên bản không?", a: "Không nên. Cần chỉnh theo mặt tiền, hướng nắng, lộ giới và ngân sách lô đất thực tế." },
+  { q: "Xu hướng nào phổ biến nhất 2026?", a: "Tối giản, lam che nắng, giếng trời xanh. Tropical-modern hợp lô rộng hơn hoặc nhà vườn." },
+  { q: "Xem công trình thật của Sao Khuê ở đâu?", a: "Mục /cong-trinh trên website và hẹn xem hiện trường (theo lịch). Hotline 0909 075 668." },
+])}
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

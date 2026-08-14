@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #21 — slug: chi-phi-nha-pho-2-tang */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("chi-phi-nha-pho-2-tang", 0);
 
@@ -15,8 +15,8 @@ export const chiPhiNhaPho2Tang = {
     "Chi phí xây nhà phố 2 tầng 2026: trọn gói 800 triệu – 1,5 tỷ tuỳ diện tích và vật liệu. Bảng đơn giá, ví dụ tính thực tế, tư vấn miễn phí — 0909 075 668.",
   metaKeywords:
     "chi phí nhà phố 2 tầng, báo giá nhà 2 tầng, xây nhà phố 2 tầng bao nhiêu tiền, đơn giá nhà 2 tầng 2026, mẫu nhà 2 tầng tphcm, kiến trúc sao khuê",
-  imageAlt: "chi-phi-nha-pho-2-tang",
-  imageCaption: "chi-phi-nha-pho-2-tang",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} 2026 — Sao Khuê`,
   content: `
 <h2>Chi phí nhà phố 2 tầng — Tại sao đây là lựa chọn phổ biến?</h2>
 <p><strong>Nhà phố 2 tầng</strong> là mô hình ưu tiên của hàng nghìn gia đình tại TP.HCM, Bình Dương và Đồng Nai khi có lô đất từ 60–100m². So với nhà 3–4 tầng, <strong>chi phí nhà phố 2 tầng</strong> vừa sức hơn, thời gian thi công ngắn hơn và kết cấu đơn giản hơn — phù hợp ngân sách gia đình trẻ từ <strong>800 triệu đến 1,5 tỷ</strong> tuỳ quy mô và vật liệu. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng phân tích chi phí thực tế và hướng dẫn tối ưu ngân sách trong bài viết này.</p>
@@ -90,7 +90,7 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Chọn gói trọn gói thay vì chia nhỏ:</strong> Một nhà thầu chịu trách nhiệm từ đầu đến cuối — tránh phát sinh giữa các bên.</li>
   <li><strong>Không thay đổi thiết kế sau khi đã khởi công:</strong> Mỗi lần đổi ý giữa chừng có thể phát sinh 20–50 triệu (đục phá, vật tư dư, nhân công dừng chờ).</li>
   <li><strong>Chọn vật liệu hợp lý theo từng khu vực:</strong> Không nhất thiết toàn bộ phải cao cấp — tập trung vào phòng khách, phòng ngủ chính; phòng phụ dùng vật liệu tiêu chuẩn.</li>
-  <li><strong>Tận dụng chương trình khuyến mãi thiết kế:</strong> Sao Khuê thường miễn phí thiết kế khi ký xây trọn gói — xem <a href="/dich-vu/khuyen-mai-xay-dung">khuyến mãi hiện hành</a>.</li>
+  <li><strong>Tận dụng chương trình khuyến mãi thiết kế:</strong> Sao Khuê thường miễn phí thiết kế khi ký xây trọn gói — xem <a href="/dich-vu/khuyen-mai">khuyến mãi hiện hành</a>.</li>
 </ul>
 
 <h2>Chi phí nhà phố 2 tầng vs. Mua nhà sẵn cùng ngân sách</h2>
@@ -111,6 +111,12 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Bàn giao & bảo hành:</strong> Kết cấu 10 năm, hoàn thiện 12–36 tháng tùy hạng mục.</li>
 </ol>
 <p>Tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>, <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố 2 tầng Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> để hiểu thêm quy trình làm việc.</p>
+
+${faqSection([
+  { q: "Chi phí nhà phố 2 tầng TP.HCM khoảng bao nhiêu?", a: "Gói trọn gói tiêu chuẩn thường 800 triệu – 1,5 tỷ tùy diện tích sàn và vật liệu (chưa nội thất). Hẻm hẹp / nền yếu có thể cao hơn." },
+  { q: "Xây 2 tầng rồi nâng tầng sau có được không?", a: "Được nếu thiết kế từ đầu dự trù kết cấu (cột–móng). Không nên “đổ thêm” lên tường gạch không gia cố." },
+  { q: "Làm sao tiết kiệm mà không giảm chất lượng?", a: "Giữ thép–bê tông–chống thấm chuẩn; cắt phào chỉ và nội thất phụ. Chọn trọn gói một đầu mối để tránh phát sinh giữa nhiều đội thợ." },
+])}
 
 ${homeLinkParagraph()}
 

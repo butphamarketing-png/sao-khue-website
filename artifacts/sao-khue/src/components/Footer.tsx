@@ -187,7 +187,7 @@ export function Footer() {
 
               <li>
 
-                <Link href="/gioi-thieu" className="flex items-center transition-colors hover:text-accent">
+                <Link href="/bai-viet/ve-chung-toi" className="flex items-center transition-colors hover:text-accent">
 
                   <ArrowRight className="mr-2 h-4 w-4" /> GIỚI THIỆU
 

@@ -56,10 +56,12 @@ export default function Pricing() {
     description:
       banner.subtitle +
       " Tổng hợp bài viết báo giá xây nhà, phần thô, trọn gói, cải tạo và công cụ tính chi phí.",
-    path: currentPage > 1 ? `/bao-gia?trang=${currentPage}` : "/bao-gia",
+    path: "/bao-gia",
+    noindex: currentPage > 1,
     keywords:
       "báo giá xây nhà trọn gói, đơn giá xây nhà, chi phí xây nhà, xây nhà giá rẻ, báo giá cải tạo nhà, xây nhà trọn gói tphcm",
     ogImage,
+    ogImageAlt: `Báo giá xây dựng 2026 — ${brand}`,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Báo giá", banner.subtitle, absoluteUrl("/bao-gia")),

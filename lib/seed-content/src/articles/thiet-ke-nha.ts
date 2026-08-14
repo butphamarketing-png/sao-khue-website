@@ -31,7 +31,7 @@ export const thietKeNha = {
 <p>Tham khảo <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">mẫu nhà phố hiện đại</a> và <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> trên website.</p>
 
 <h2>Thiết kế và thi công trọn gói</h2>
-<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> tại Sao Khuê, khách hàng được <strong>miễn phí thiết kế kiến trúc 2D/3D</strong> (theo quy mô công trình áp dụng). Thiết kế và thi công cùng một đơn vị giúp giảm sai lệch giữa bản vẽ và hiện trường.</p>
+<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> tại Sao Khuê, khách hàng được <strong>miễn phí thiết kế kiến trúc 2D/3D</strong> (theo quy mô công trình áp dụng). Thiết kế và thi công cùng một đơn vị giúp giảm sai lệch giữa bản vẽ và hiện trường.</p>
 
 <h2>Quy trình thiết kế</h2>
 <ol>
@@ -47,9 +47,15 @@ export const thietKeNha = {
 <h3>Chi phí thiết kế riêng?</h3>
 <p>Báo giá theo diện tích sàn và độ phức tạp. Liên hệ <strong>0909 075 668</strong> để nhận báo giá.</p>
 <h3>Có kết hợp phong thủy không?</h3>
-<p>Có thể tư vấn bố trí theo yêu cầu — xem thêm <a href="/kinh-nghiem/phong-thuy-nha-o">phong thủy nhà ở</a>.</p>
+<p>Có thể tư vấn bố trí theo yêu cầu — xem thêm <a href="/tin-tuc/phong-thuy-nha-o">phong thủy nhà ở</a>.</p>
 
 <h2>Liên hệ thiết kế</h2>
-<p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · <a href="/lien-he">Đặt lịch tư vấn</a></p>
+<p>Hotline <strong>0909 075 668</strong> · Email kientrucsaokhue@gmail.com · <a href="/lien-he">Đặt lịch tư vấn</a> · Hub <a href="/thiet-ke">/thiet-ke</a></p>
+
+<h2>Thiết kế nhà ống 4–5m mặt tiền</h2>
+<p>Ưu tiên giếng trời, cầu thang lấy sáng, không chia phòng vụn. Mặt tiền kinh doanh: tách điện quán / nhà ở ngay từ bản vẽ. Hồ sơ xin phép khớp số tầng–chỉ giới — không vẽ 3D rồi mới hỏi phường.</p>
+
+<h2>Bàn giao file thiết kế</h2>
+<p>Chủ nhà nhận mặt bằng, mặt đứng, mặt cắt, phối cảnh 3D và danh mục cửa–ốp cơ bản. Khi Sao Khuê thi công: as-built và biên bản nghiệm thu kèm BH. Đổi giếng/cửa giữa chừng: phụ lục giá trước khi thợ làm.</p>
 `.trim(),
 };

@@ -1,4 +1,4 @@
-﻿/** Nội dung bài viết SEO — slug: xay-dung-phan-tho */
+/** Nội dung bài viết SEO — slug: xay-dung-phan-tho */
 export const xayDungPhanTho = {
   title: "Xây Dựng Phần Thô Nhà Phố TP.HCM — Giá Tốt 2026",
   excerpt:
@@ -20,7 +20,7 @@ export const xayDungPhanTho = {
   <li>Hệ thống điện, nước, thoát nước âm tường.</li>
   <li>Nhân công hoàn thiện thô cơ bản (trát ngoài trong mức hợp đồng).</li>
 </ul>
-<p>Sau phần thô, bạn có thể ký tiếp gói <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> hoặc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> ngay từ đầu.</p>
+<p>Sau phần thô, bạn có thể ký tiếp gói <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> hoặc <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> ngay từ đầu.</p>
 
 <h2>Đơn giá xây phần thô tham khảo 2026</h2>
 <table>

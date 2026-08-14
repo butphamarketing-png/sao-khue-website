@@ -1,5 +1,5 @@
 /** Nội dung bài viết SEO — slug: sua-chua-cai-tao-nha-tphcm */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { faqSection, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 
 const FOCUS = "sửa chữa cải tạo nhà TP.HCM";
@@ -34,7 +34,7 @@ ${imageFigure(SK_IMG_1, FOCUS, 1)}
   <li><strong>Nâng tầng, mở rộng:</strong> Thêm tầng hoặc nhà phía sau theo giấy phép.</li>
   <li><strong>Thay hệ thống MEP:</strong> Điện, nước, thoát nước đạt chuẩn an toàn.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a>, <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/cong-trinh/sua-nha-quan-3">công trình cải tạo Quận 3</a>.</p>
+<p>Xem thêm <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>, <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> và <a href="/cong-trinh/sua-nha-quan-3">công trình cải tạo Quận 3</a>.</p>
 
 <h2>Sửa chữa cải tạo nhà theo quận nội thành (Quận 1 – 12)</h2>
 <h3>Quận 1, Quận 3, Quận 4, Quận 5, Quận 6</h3>
@@ -71,6 +71,34 @@ ${imageFigure(SK_IMG_2, FOCUS, 2)}
   <li><strong>Cải tạo toàn diện + gia cố:</strong> 8 – 15 triệu đ/m² tùy hiện trạng.</li>
 </ul>
 <p>Dùng <a href="/bao-gia">báo giá online</a> hoặc gọi hotline để nhận dự toán theo diện tích thực tế.</p>
+
+<h2>Khi nào sửa, khi nào nên xây lại</h2>
+<p>Nhà nứt chân chim, thấm WC, điện cũ nhưng cột–móng còn: <strong>cải tạo</strong> rẻ và nhanh hơn xây mới. Cột võng, móng lún lệch, nhà cấp 4 muốn 4 tầng trên nền yếu: khảo sát kết cấu — có thể <strong>phá dỡ xây lại</strong> an toàn hơn “nâng tầng giá rẻ”. Sao Khuê nói thẳng phương án, không bán gói sửa khi khung không cứu được.</p>
+<ul>
+  <li>Sửa nhẹ (sơn, lát, chống thấm điểm): ở lại được.</li>
+  <li>Cải tạo bếp–WC + điện nước: chia khu, 1 WC phụ.</li>
+  <li>Gia cố / nâng tầng: thường chuyển tạm 2–8 tuần.</li>
+</ul>
+<p>Landing Ads: <a href="/cai-tao-nha">/cai-tao-nha</a>. Xây mới: <a href="/xay-nha">/xay-nha</a>.</p>
+
+${faqSection([
+  {
+    q: "Sửa chữa cải tạo nhà TP.HCM hết bao lâu?",
+    a: "Sơn–lát nhà phố 3 tầng: 2–4 tuần. Cải tạo bếp–WC: 1–3 tuần/khu. Gia cố + nâng tầng: 2–6 tháng tùy phép và hiện trạng.",
+  },
+  {
+    q: "Có khảo sát miễn phí từng quận không?",
+    a: "Có tại 22 quận/huyện TP.HCM. Hẻm xe máy: vẫn đến. Gọi 0909 075 668, gửi ảnh hiện trạng và vị trí.",
+  },
+  {
+    q: "Cải tạo nhà đang ở được không?",
+    a: "Được nếu chia khu, giữ 1 WC. Đục kết cấu / thay ống đứng: nên chuyển tạm. Xem bài cải tạo nhà đang ở.",
+  },
+  {
+    q: "Bảo hành hạng mục sửa chữa thế nào?",
+    a: "Chống thấm theo hệ thống (thường 24–60 tháng). Sơn–ốp theo biên bản. Kết cấu nếu gia cố: ghi rõ phạm vi, không BH phần không đụng tới.",
+  },
+])}
 
 ${homeLinkParagraph()}
 

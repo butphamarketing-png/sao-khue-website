@@ -1,7 +1,7 @@
 import { Router, type IRouter } from "express";
 import { db, postsTable } from "@workspace/db";
 import { desc } from "drizzle-orm";
-import { getPostPublicPath, seedPosts } from "@workspace/seed-content";
+import { getPostPublicPath, seedPosts, isSitemapIndexablePost, shouldNoindexPostSlug } from "@workspace/seed-content";
 
 const SITE_URL =
   (process.env.SITE_URL ?? "https://www.kientrucsaokhue.com").replace(/\/$/, "");
@@ -45,9 +45,16 @@ router.get("/feed.xml", async (_req, res) => {
       })
       .from(postsTable)
       .orderBy(desc(postsTable.updatedAt))
-      .limit(30);
+      .limit(80);
   } catch {
-    posts = seedPosts.slice(0, 30).map((p) => ({
+    posts = [];
+  }
+
+  const indexable = (p: { slug: string; category?: string }) =>
+    isSitemapIndexablePost(p) && !shouldNoindexPostSlug(p.slug);
+
+  if (!posts.length) {
+    posts = seedPosts.filter(indexable).slice(0, 30).map((p) => ({
       slug: p.slug,
       category: p.category,
       title: p.title,
@@ -55,6 +62,8 @@ router.get("/feed.xml", async (_req, res) => {
       content: p.content,
       updatedAt: "2026-01-15",
     }));
+  } else {
+    posts = posts.filter(indexable).slice(0, 30);
   }
 
   const items = posts
@@ -89,6 +98,7 @@ ${items}
 </rss>`;
 
   res.set("Content-Type", "application/rss+xml; charset=utf-8");
+  res.set("Cache-Control", "public, max-age=1800");
   res.send(xml);
 });
 

@@ -29,6 +29,18 @@ import {
   nhaThauXayNhaTronGoiTphcm,
   baoGiaXayNhaTronGoiMoiNhatTphcm,
   baoGiaSuaNhaTronGoiTphcm,
+  adsBoSung100CaiTaoBySlug,
+  ADS_BO_SUNG_100_CAI_TAO_SLUGS,
+  adsBoSung100XayNhaBySlug,
+  ADS_BO_SUNG_100_XAY_NHA_SLUGS,
+  adsBoSung100Dot2CaiTaoBySlug,
+  ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS,
+  adsBoSung100Dot2XayNhaBySlug,
+  ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS,
+  adsBoSung100Dot3CaiTaoBySlug,
+  ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS,
+  adsBoSung100Dot3XayNhaBySlug,
+  ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS,
   baoGiaPillarArticlesBySlug,
   BAO_GIA_PILLAR_SLUGS,
   mauNhaPho2TangBinhDuong,
@@ -178,6 +190,24 @@ import {
   shortKeywordBatch63Slugs,
   shortKeywordBatch64ArticlesBySlug,
   shortKeywordBatch64Slugs,
+  shortKeywordBatch65ArticlesBySlug,
+  shortKeywordBatch65Slugs,
+  shortKeywordBatch66ArticlesBySlug,
+  shortKeywordBatch66Slugs,
+  shortKeywordBatch67ArticlesBySlug,
+  shortKeywordBatch67Slugs,
+  shortKeywordBatch68ArticlesBySlug,
+  shortKeywordBatch68Slugs,
+  shortKeywordBatch69ArticlesBySlug,
+  shortKeywordBatch69Slugs,
+  shortKeywordBatch70ArticlesBySlug,
+  shortKeywordBatch70Slugs,
+  shortKeywordBatch71ArticlesBySlug,
+  shortKeywordBatch71Slugs,
+  shortKeywordBatch72ArticlesBySlug,
+  shortKeywordBatch72Slugs,
+  shortKeywordBatch73ArticlesBySlug,
+  shortKeywordBatch73Slugs,
   moneyPageOverridesBySlug,
   type SeoArticle,
 } from "./articles";
@@ -186,6 +216,8 @@ import { buildImageAlt } from "./image-seo";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
 import { shouldNoindexPostSlug } from "./sitemap-policy";
+import { applySoftSeoDepthR3 } from "./soft-seo-depth-r3";
+import { applySoftSeoDepthR5 } from "./soft-seo-depth-r5";
 
 /** Bài pillar viết tay — không dùng bản factory phu-yen-dak-lak. */
 const DAK_LAK_HAND_PILLAR_SLUGS = new Set([
@@ -285,6 +317,24 @@ const seedPostsRaw: SeedPost[] = [
     "tin-tuc",
     featuredImageForSlug("bao-gia-sua-nha-tron-goi-tphcm"),
     baoGiaSuaNhaTronGoiTphcm,
+  ),
+  ...ADS_BO_SUNG_100_CAI_TAO_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100CaiTaoBySlug[slug]!),
+  ),
+  ...ADS_BO_SUNG_100_XAY_NHA_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100XayNhaBySlug[slug]!),
+  ),
+  ...ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100Dot2CaiTaoBySlug[slug]!),
+  ),
+  ...ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100Dot2XayNhaBySlug[slug]!),
+  ),
+  ...ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100Dot3CaiTaoBySlug[slug]!),
+  ),
+  ...ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), adsBoSung100Dot3XayNhaBySlug[slug]!),
   ),
   seoPost(
     "mau-nha-pho-2-tang-binh-duong",
@@ -574,10 +624,41 @@ const seedPostsRaw: SeedPost[] = [
   ...shortKeywordBatch64Slugs.map((slug) =>
     seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch64ArticlesBySlug[slug]!),
   ),
+  ...shortKeywordBatch65Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch65ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch66Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch66ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch67Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch67ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch68Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch68ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch69Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch69ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch70Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch70ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch71Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch71ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch72Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch72ArticlesBySlug[slug]!),
+  ),
+  ...shortKeywordBatch73Slugs.map((slug) =>
+    seoPost(slug, "tin-tuc", featuredImageForSlug(slug), shortKeywordBatch73ArticlesBySlug[slug]!),
+  ),
 ];
 
 export const seedPosts: SeedPost[] = applySitemapNoindexFlags(
-  applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw)),
+  applySoftSeoDepthR5(
+    applySoftSeoDepthR3(
+      padShortMetaDescriptions(applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw))),
+    ),
+  ),
 );
 
 function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
@@ -597,6 +678,48 @@ function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
       imageCaption: override.imageCaption?.trim() || imageAlt || p.imageCaption,
       noindex: false,
     };
+  });
+}
+
+/** Meta description/title ngắn → pad để snippet Google ổn định hơn. */
+function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
+  const descPad = " Khảo sát miễn phí, báo giá minh bạch — 0909 075 668.";
+  return posts.map((p) => {
+    if (shouldNoindexPostSlug(p.slug) && p.noindex !== false) return p;
+    let next = p;
+
+    const desc = (next.metaDescription ?? "").trim();
+    if (desc.length > 0 && desc.length < 120) {
+      const base = desc.replace(/\s*[—–-]\s*0909\s*075\s*668\.?$/iu, "").trim();
+      const padded = `${base}${descPad}`.replace(/\s+/g, " ").trim().slice(0, 160);
+      next = { ...next, metaDescription: padded };
+    }
+
+    const title = (next.metaTitle ?? "").trim();
+    if (title.length > 0 && title.length < 40) {
+      let t = title;
+      if (!/2026/i.test(t)) {
+        t = t
+          .replace(/\s*\|\s*Sao Khuê\s*$/i, " 2026 | Sao Khuê")
+          .replace(/\s*[—–-]\s*Sao Khuê\s*$/i, " 2026 — Sao Khuê");
+        if (!/2026/i.test(t)) t = `${t} 2026`;
+      }
+      if (t.length < 40 && !/Sao Khuê/i.test(t)) t = `${t} | Sao Khuê`;
+      if (t.length < 40) t = `${t.replace(/\s*$/, "")} — Báo giá`;
+      next = { ...next, metaTitle: t.slice(0, 60) };
+    }
+
+    // Pad lại nếu vẫn dưới ngưỡng (title/desc bị cắt hoặc đã có đuôi hotline).
+    const desc2 = (next.metaDescription ?? "").trim();
+    if (desc2.length > 0 && desc2.length < 120) {
+      const extra = " Tư vấn & khảo sát miễn phí tại TP.HCM.";
+      next = {
+        ...next,
+        metaDescription: `${desc2}${extra}`.replace(/\s+/g, " ").trim().slice(0, 160),
+      };
+    }
+
+    return next;
   });
 }
 

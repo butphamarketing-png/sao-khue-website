@@ -1,5 +1,5 @@
 /** Nội dung bài viết SEO — slug: mau-nha-pho-2-tang-binh-duong */
-import { imageFigure } from "../article-seo-blocks";
+import { imageFigure, faqSection } from "../article-seo-blocks";
 import { nha2TangImage } from "../site-images";
 
 const KEYWORD = "nhà phố 2 tầng Bình Dương";
@@ -115,6 +115,12 @@ ${imageFigure(IMG_5, KEYWORD, 5)}
   <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
 </ul>
 
+
+${faqSection([
+  { q: "Nhà phố 2 tầng Bình Dương phổ biến kích thước nào?", a: "Thường mặt tiền 5m, sâu 16–20m — trệt sinh hoạt, tầng 2 phòng ngủ. Lô hẹp hơn vẫn làm được nếu tối ưu cầu thang và giếng trời." },
+  { q: "Chi phí xây 2 tầng Bình Dương khoảng bao nhiêu?", a: "Tham khảo thấp hơn nội thành TP.HCM cùng quy mô; số chính thức sau khảo sát địa chất và GPXD tỉnh. Gọi 0909 075 668." },
+  { q: "Sau này nâng thêm tầng được không?", a: "Được nếu thiết kế từ đầu dự trù kết cấu. Xem thêm dịch vụ nâng tầng nhà phố khi gia đình đông thêm." },
+])}
 
 <h2>Liên hệ tư vấn mẫu nhà phố 2 tầng Bình Dương</h2>
 <p>Bạn đã có lô đất và muốn chốt <strong>mẫu nhà phố 2 tầng đẹp</strong> phù hợp Bình Dương?</p>

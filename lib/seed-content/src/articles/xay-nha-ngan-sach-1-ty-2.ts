@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #24 — slug: xay-nha-ngan-sach-1-ty-2 */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("xay-nha-ngan-sach-1-ty-2", 0);
 
@@ -104,7 +104,12 @@ ${imageFigure(SK_IMG_1, focusKeyword, 2)}
 </ul>
 
 ${homeLinkParagraph("Tham khảo thêm dự án thực tế và bảng giá tại")}
-
+
+${faqSection([
+  { q: "Ngân sách 1–1,2 tỷ xây được nhà mấy tầng?", a: "Thường nhà phố 2 tầng lô nhỏ–trung bình, gói tiêu chuẩn, chưa nội thất cao cấp. 3 tầng chỉ khả thi nếu lô nhỏ và cắt hoàn thiện." },
+  { q: "Có nên vay thêm để xây 3 tầng ngay?", a: "Chỉ khi nhu cầu phòng ngủ bắt buộc. Nhiều gia đình xây 2 tầng đúng kết cấu dự trù nâng sau — an toàn hơn vay quá sức." },
+  { q: "Sao Khuê có hỗ trợ phân kỳ thanh toán không?", a: "Có trong HĐ trọn gói: chia đợt theo móng–thô–hoàn thiện. Không đòi đóng hết trước khi khởi công." },
+])}
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

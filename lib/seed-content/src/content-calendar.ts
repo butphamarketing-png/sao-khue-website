@@ -24,6 +24,15 @@
  * Batch 50–54 (500 từ khóa ngắn tiếp theo): #4447–#4946.
  * Batch 55–59 (500 từ khóa ngắn tiếp theo): #4947–#5446.
  * Batch 60–64 (500 từ khóa ngắn tiếp theo): #5447–#5946.
+ * Batch 65 (100 từ khóa SEO indexable *-sk65): #5947–#6046.
+ * Batch 66 (100 từ khóa SEO indexable *-sk66): #6047–#6146.
+ * Batch 67 (100 từ khóa SEO indexable *-sk67): #6147–#6246.
+ * Batch 68 (100 từ khóa SEO indexable *-sk68): #6247–#6346.
+ * Batch 69 (100 từ khóa SEO indexable *-sk69): #6347–#6446.
+ * Batch 70 (100 từ khóa SEO indexable *-sk70): #6447–#6546.
+ * Batch 71 (100 từ khóa SEO indexable *-sk71): #6547–#6646.
+ * Batch 72 (100 từ khóa SEO indexable *-sk72): #6647–#6746.
+ * Batch 73 (100 từ khóa SEO indexable *-sk73): #6747–#6846.
  *
  * Chuẩn bài: 1500–2500 từ, 2–3 ảnh (alt = từ khóa), TOC tự chèn (≥3 H2).
  */
@@ -98,6 +107,15 @@ export { shortKeywordCalendarBatch61 } from "./short-keyword-calendar-batch61";
 export { shortKeywordCalendarBatch62 } from "./short-keyword-calendar-batch62";
 export { shortKeywordCalendarBatch63 } from "./short-keyword-calendar-batch63";
 export { shortKeywordCalendarBatch64 } from "./short-keyword-calendar-batch64";
+export { shortKeywordCalendarBatch65 } from "./short-keyword-calendar-batch65";
+export { shortKeywordCalendarBatch66 } from "./short-keyword-calendar-batch66";
+export { shortKeywordCalendarBatch67 } from "./short-keyword-calendar-batch67";
+export { shortKeywordCalendarBatch68 } from "./short-keyword-calendar-batch68";
+export { shortKeywordCalendarBatch69 } from "./short-keyword-calendar-batch69";
+export { shortKeywordCalendarBatch70 } from "./short-keyword-calendar-batch70";
+export { shortKeywordCalendarBatch71 } from "./short-keyword-calendar-batch71";
+export { shortKeywordCalendarBatch72 } from "./short-keyword-calendar-batch72";
+export { shortKeywordCalendarBatch73 } from "./short-keyword-calendar-batch73";
 
 export const contentCalendar: ContentCalendarItem[] = [
   { no: 1, title: "Công Ty Xây Dựng Nhà Phố Uy Tín Tại TP.HCM", keyword: "xây dựng nhà phố TP.HCM", slug: "cong-ty-xay-dung-nha-pho-uy-tin-tphcm", status: "done" },

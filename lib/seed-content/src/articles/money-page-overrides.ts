@@ -54,6 +54,57 @@ export const MONEY_PAGE_OVERRIDE_SLUGS: string[] = [
   "cam-nang-xay-nha-2026",
   "sua-nha-cu-tphcm",
   "lam-moi-nha-cu-tphcm",
+  "cai-tao-nha-dang-o-tphcm",
+  "cong-ty-sua-chua-nha-tphcm",
+  "chong-tham-san-thuong-tphcm",
+  "nang-tang-nha-cu-tphcm",
+  "cai-tao-nha-cap-4-tphcm",
+  "cai-tao-nha-binh-thanh",
+  "cai-tao-nha-thu-duc",
+  "cai-tao-nha-go-vap",
+  "cai-tao-nha-tan-binh",
+  "cai-tao-nha-tan-phu",
+  "cai-tao-nha-quan-7",
+  "xay-nha-chia-khoa-trao-tay-tphcm",
+  "bao-gia-xay-nha-2026",
+  "thi-cong-phan-tho-tphcm",
+  "xay-nha-pho-1-tret-2-lau-tphcm",
+  "xay-nha-cap-4-mai-thai-tphcm",
+  "cai-tao-nha-quan-1",
+  "cai-tao-nha-quan-3",
+  "cai-tao-nha-quan-8",
+  "cai-tao-nha-quan-10",
+  "cai-tao-nha-quan-12",
+  "cai-tao-nha-phu-nhuan",
+  "cai-tao-nha-binh-tan",
+  "cai-tao-nha-nha-be",
+  "cai-tao-nha-binh-chanh",
+  "cai-tao-nha-hoc-mon",
+  "cai-tao-bep-wc-tphcm",
+  "son-nha-va-noi-that-tphcm",
+  "cai-tao-nha-2-tang-tphcm",
+  "cai-tao-nha-cho-thue-tphcm",
+  "xay-nha-co-ham-tphcm",
+  "xay-nha-pho-4x16-tphcm",
+  "xay-nha-cho-thue-tphcm",
+  "chi-phi-xay-nha-3-tang-tphcm",
+  "xay-nha-tra-gop-tphcm",
+  "cai-tao-nha-quan-4",
+  "cai-tao-nha-quan-5",
+  "cai-tao-nha-quan-6",
+  "cai-tao-nha-quan-9",
+  "cai-tao-nha-quan-11",
+  "cai-tao-nha-cu-chi",
+  "cai-tao-gieng-troi-nha-pho-tphcm",
+  "cai-tao-nha-ket-hop-kinh-doanh-tphcm",
+  "cai-tao-gac-lung-nha-pho-tphcm",
+  "chong-tham-tuong-wc-tphcm",
+  "xin-giay-phep-cai-tao-nha-tphcm",
+  "ep-coc-nha-pho-tphcm",
+  "xay-nha-lech-tang-tphcm",
+  "xay-nha-4x12-tphcm",
+  "don-gia-hoan-thien-nha-2026",
+  "xay-nha-tiet-kiem-tphcm",
   ...MONEY_PAGE_OVERRIDE_SLUGS_BATCH2,
   ...MONEY_PAGE_OVERRIDE_SLUGS_BATCH3,
 ];
@@ -72,7 +123,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageCaption: "Công trình xây nhà TP.HCM do Kiến Trúc Sao Khuê thi công",
     content: `<h2>Xây nhà TP.HCM khác gì so với tỉnh lân cận?</h2>
 <p><strong>Xây nhà TP.HCM</strong> không chỉ là đổ bê tông và xây tường. Mặt bằng thường hẹp, đường hẻm hạn chế xe tải, địa chất nhiều khu vực yếu (đặc biệt gần kênh rạch), và thủ tục giấy phép xây dựng chặt theo quy hoạch từng quận. <strong>Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Q. Bình Thạnh) đã thi công nhiều nhà phố, nhà trong hẻm và công trình cải tạo tại nội thành — bảo hành kết cấu <strong>10 năm</strong>.</p>
-<p>Bài viết giúp bạn nắm quy trình thực tế, các gói phổ biến và cách tránh phát sinh khi chọn nhà thầu. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> hoặc ước lượng nhanh tại <a href="/bao-gia">bảng báo giá</a>.</p>
+<p>Bài viết giúp bạn nắm quy trình thực tế, các gói phổ biến và cách tránh phát sinh khi chọn nhà thầu. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> hoặc ước lượng nhanh tại <a href="/bao-gia">bảng báo giá</a>.</p>
 
 <h2>Ba lựa chọn phổ biến khi xây nhà tại TP.HCM</h2>
 <ol>
@@ -148,7 +199,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Bảng báo giá xây nhà trọn gói mới nhất tại TP.HCM",
     content: `<h2>Cách đọc báo giá xây nhà trọn gói cho đúng</h2>
 <p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> chỉ hữu ích khi bạn hiểu phạm vi: phần thô, hoàn thiện, thiết bị nào được gồm, và diện tích tính theo m² sàn quy đổi chứ không phải diện tích đất. <strong>Kiến Trúc Sao Khuê</strong> công bố đơn giá tham khảo 2026 kèm điều kiện áp dụng — tránh so sánh “quả táo với quả cam” giữa các nhà thầu.</p>
-<p>Ước lượng nhanh tại <a href="/bao-gia">máy tính báo giá</a>, rồi đặt lịch khảo sát để nhận dự toán chính thức. Dịch vụ chi tiết: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
+<p>Ước lượng nhanh tại <a href="/bao-gia">máy tính báo giá</a>, rồi đặt lịch khảo sát để nhận dự toán chính thức. Dịch vụ chi tiết: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
 
 <h2>Bảng báo giá theo gói (cập nhật 2026)</h2>
 <table>
@@ -382,7 +433,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Cải tạo nhà phố TP.HCM — không gian sáng và thông thoáng",
     content: `<h2>Cải tạo nhà phố TP.HCM: bài toán nhà ống hẹp</h2>
 <p><strong>Cải tạo nhà phố TP.HCM</strong> thường xoay quanh ba việc: lấy sáng, thông gió và tách khu vực ướt khỏi khu vực ở. Nhà ống 3,5–5m mặt tiền dễ tối sâu — Sao Khuê ưu tiên giải pháp giếng trời, ô thoáng liên tầng và bố trí cầu thang hợp lý trước khi bàn chuyện ốp đá đắt tiền.</p>
-<p>Dịch vụ hỗ trợ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây mới trọn gói</a> nếu cải tạo không còn hiệu quả.</p>
+<p>Dịch vụ hỗ trợ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/dich-vu/xay-nha-tron-goi">xây mới trọn gói</a> nếu cải tạo không còn hiệu quả.</p>
 
 <h2>Giải pháp kỹ thuật hay dùng cho nhà phố</h2>
 <ul>
@@ -526,7 +577,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Nâng tầng nhà phố tại TP.HCM",
     content: `<h2>Nâng tầng nhà phố TP.HCM: đừng làm khi chưa biết móng</h2>
 <p><strong>Nâng tầng nhà phố TP.HCM</strong> là hạng mục rủi ro nếu chỉ nhìn “nhà hàng xóm cũng thêm tầng”. Mỗi móng, mỗi địa chất khác nhau. <strong>Kiến Trúc Sao Khuê</strong> bắt buộc khảo sát/đánh giá chịu lực trước khi lập phương án gia cố hoặc khuyên xây mới.</p>
-<p>Liên quan: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa – gia cố</a>.</p>
+<p>Liên quan: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa – gia cố</a>.</p>
 
 <h2>Điều kiện kỹ thuật tối thiểu</h2>
 <ul>
@@ -692,7 +743,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Thiết kế nhà đẹp TP.HCM — phối cảnh nhà phố",
     content: `<h2>Thiết kế nhà đẹp TP.HCM bắt đầu từ mặt bằng, không từ “mặt tiền Pinterest”</h2>
 <p><strong>Thiết kế nhà đẹp TP.HCM</strong> phải tôn trọng bề ngang hẹp, chiều sâu dài, quy định lộ giới và ngân sách xây thực tế. Bản vẽ đẹp nhưng không thi công được trong hẻm 2,5m hoặc đội giá gấp đôi là thiết kế thất bại. <strong>Kiến Trúc Sao Khuê</strong> gắn thiết kế với dự toán và biện pháp thi công ngay từ đầu.</p>
-<p>Khi đã có thiết kế, triển khai <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> giúp đồng bộ từ ý tưởng đến bàn giao.</p>
+<p>Khi đã có thiết kế, triển khai <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> giúp đồng bộ từ ý tưởng đến bàn giao.</p>
 
 <h2>Phong cách phù hợp khí hậu &amp; đô thị TP.HCM</h2>
 <ul>
@@ -768,7 +819,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Chi phí xây nhà TP.HCM — dự toán minh bạch",
     content: `<h2>Chi phí xây nhà TP.HCM không chỉ là đơn giá/m²</h2>
 <p>Nhiều chủ nhà nhân diện tích đất với một con số trên mạng rồi thiếu tiền giữa chừng. <strong>Chi phí xây nhà TP.HCM</strong> gồm: xây dựng (thô/hoàn thiện), giấy phép, điện nước tạm, vận chuyển hẻm, nội thất, và quỹ dự phòng. <strong>Kiến Trúc Sao Khuê</strong> lập dự toán theo hạng mục để bạn thấy rõ từng khoản.</p>
-<p>Công cụ hỗ trợ: <a href="/bao-gia">tính chi phí online</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>.</p>
+<p>Công cụ hỗ trợ: <a href="/bao-gia">tính chi phí online</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>.</p>
 
 <h2>Các nhóm chi phí cần liệt kê</h2>
 <ul>
@@ -854,7 +905,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Đơn giá xây nhà TP.HCM theo m² sàn",
     content: `<h2>Đơn giá xây nhà TP.HCM: con số nào mới đáng tin?</h2>
 <p><strong>Đơn giá xây nhà TP.HCM</strong> chỉ có ý nghĩa khi kèm phạm vi (thô hay trọn gói), chủng loại vật tư và cách tính diện tích sàn quy đổi. Hai nhà thầu báo cùng 5 triệu/m² có thể chênh nhau nửa tỷ vì một bên gồm cửa + chống thấm, một bên không. <strong>Kiến Trúc Sao Khuê</strong> luôn gửi chú thích đơn giá kèm dự toán.</p>
-<p>So sánh thêm tại <a href="/bao-gia">bảng báo giá</a> và gói <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
+<p>So sánh thêm tại <a href="/bao-gia">bảng báo giá</a> và gói <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
 
 <h2>Khung đơn giá tham khảo 2026</h2>
 <table>
@@ -1105,7 +1156,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Công ty xây dựng nhà phố uy tín TP.HCM — Kiến Trúc Sao Khuê",
     content: `<h2>Công ty xây dựng nhà phố uy tín TP.HCM nhìn vào đâu?</h2>
 <p>Tìm <strong>công ty xây dựng nhà phố uy tín TP.HCM</strong> đừng chỉ xem fanpage đẹp. Cần hợp đồng chi tiết, tiến độ thanh toán hợp lý, công trình đã làm có thể thăm, và bảo hành kết cấu rõ ràng. <strong>Kiến Trúc Sao Khuê</strong> làm nhà phố nội thành nhiều năm, văn phòng tại 245/8 Bình Lợi, Q. Bình Thạnh — bảo hành kết cấu <strong>10 năm</strong>.</p>
-<p>Triển khai qua <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> hoặc xem <a href="/bao-gia">báo giá</a>.</p>
+<p>Triển khai qua <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> hoặc xem <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Checklist 8 tiêu chí trước khi ký</h2>
 <ol>
@@ -1187,7 +1238,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà giá rẻ TP.HCM — tối ưu ngân sách an toàn",
     content: `<h2>Xây nhà giá rẻ TP.HCM: rẻ vẫn phải đứng vững</h2>
 <p><strong>Xây nhà giá rẻ TP.HCM</strong> là mục tiêu hợp lý nếu bạn cắt đúng chỗ: đơn giản mặt đứng, giảm đá tự nhiên, chọn gói hoàn thiện vừa đủ — <em>không</em> cắt thép, không bỏ chống thấm, không thuê nhà thầu không bảo hành. <strong>Kiến Trúc Sao Khuê</strong> tư vấn tối ưu ngân sách trên nguyên tắc an toàn.</p>
-<p>Tham khảo <a href="/bao-gia">báo giá</a> và <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>.</p>
+<p>Tham khảo <a href="/bao-gia">báo giá</a> và <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>.</p>
 
 <h2>Những chỗ nên tiết kiệm</h2>
 <ul>
@@ -1267,7 +1318,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà 2 tầng tại TP.HCM",
     content: `<h2>Xây nhà 2 tầng TP.HCM phù hợp gia đình nào?</h2>
 <p><strong>Xây nhà 2 tầng TP.HCM</strong> hợp hộ 3–5 người, ngân sách vừa, hoặc đất nhỏ muốn giảm tải móng so với nhà cao tầng. Vẫn cần thiết kế lấy sáng vì nhà ống dễ tối. <strong>Kiến Trúc Sao Khuê</strong> tối ưu tầng trệt (khách–bếp) và tầng 1 (ngủ–WC) trước khi trang trí mặt tiền.</p>
-<p>Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> · <a href="/bao-gia">tính chi phí</a>.</p>
+<p>Xem <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> · <a href="/bao-gia">tính chi phí</a>.</p>
 
 <h2>Gợi ý mặt bằng nhà 2 tầng mặt tiền 4–5m</h2>
 <ul>
@@ -1346,7 +1397,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà 3 tầng tại TP.HCM",
     content: `<h2>Xây nhà 3 tầng TP.HCM: lựa chọn “vừa đủ” phổ biến nhất</h2>
 <p><strong>Xây nhà 3 tầng TP.HCM</strong> đáp ứng đa số gia đình đa thế hệ: trệt tiếp khách/để xe, lầu 1–2 dành ngủ và sinh hoạt. Cao hơn nữa tăng chi phí kết cấu và hoàn thiện rõ rệt. <strong>Kiến Trúc Sao Khuê</strong> hay đề xuất 3 tầng + sân thượng nhẹ khi đất 4×16–5×20m.</p>
-<p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p><a href="/dich-vu/xay-nha-tron-goi">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Gợi ý phân tầng công năng</h2>
 <ul>
@@ -1434,7 +1485,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà trong hẻm nhỏ tại TP.HCM",
     content: `<h2>Xây nhà trong hẻm TP.HCM: giá mặt tiền không áp dụng nguyên si</h2>
 <p><strong>Xây nhà trong hẻm TP.HCM</strong> đối mặt hạn chế xe tải, giờ đổ bê tông, tập kết vật liệu và phản ánh hàng xóm. Đơn giá/m² quảng cáo trên đường lớn thường thiếu phụ phí “bốc vác”. <strong>Kiến Trúc Sao Khuê</strong> khảo sát bề ngang hẻm trước khi chốt dự toán.</p>
-<p>Gói thi công: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p>Gói thi công: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Phân loại hẻm &amp; ảnh hưởng thi công</h2>
 <ul>
@@ -1512,7 +1563,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xin giấy phép xây dựng tại TP.HCM",
     content: `<h2>Xin giấy phép xây dựng TP.HCM: làm đúng để tránh phạt &amp; tháo dỡ</h2>
 <p><strong>Xin giấy phép xây dựng TP.HCM</strong> là bước pháp lý trước khi đào móng hoặc thay đổi kết cấu lớn. Mỗi quận/huyện có quy trình tiếp nhận theo phân cấp; hồ sơ cần khớp quy hoạch và hiện trạng đất. <strong>Kiến Trúc Sao Khuê</strong> hỗ trợ tư vấn hồ sơ khi đi kèm thiết kế–thi công.</p>
-<p>Sau khi có phép, triển khai <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> đúng bản vẽ được duyệt.</p>
+<p>Sau khi có phép, triển khai <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> đúng bản vẽ được duyệt.</p>
 
 <h2>Thành phần hồ sơ thường gặp (nhà ở riêng lẻ)</h2>
 <ul>
@@ -1588,7 +1639,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Hoàn thiện nhà thô tại TP.HCM",
     content: `<h2>Hoàn thiện nhà TP.HCM: giai đoạn quyết định trải nghiệm ở</h2>
 <p><strong>Hoàn thiện nhà TP.HCM</strong> biến phần thô thành không gian sạch, kín nước, đủ điện. Sai trình tự (sơn trước khi xử lý thấm, lát trước khi chạy ống) gây sửa đi sửa lại. <strong>Kiến Trúc Sao Khuê</strong> lập tiến độ hoàn thiện theo lớp: kỹ thuật → ướt → khô → lắp đặt.</p>
-<p>Nếu chưa có thô, xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>. Sửa hoàn thiện cũ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</p>
+<p>Nếu chưa có thô, xem <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>. Sửa hoàn thiện cũ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</p>
 
 <h2>Hạng mục hoàn thiện tiêu chuẩn</h2>
 <ul>
@@ -1668,7 +1719,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Gia cố nhà cũ tại TP.HCM — xử lý kết cấu",
     content: `<h2>Gia cố nhà cũ TP.HCM không phải “trát thêm xi măng”</h2>
 <p><strong>Gia cố nhà cũ TP.HCM</strong> là bài toán kết cấu: bổ sung khả năng chịu lực khi nhà nứt nguy hiểm, lún lệch, cải tạo tải tăng hoặc chuẩn bị nâng tầng. Làm sai cách có thể hại hơn không làm. <strong>Kiến Trúc Sao Khuê</strong> khảo sát hiện trạng trước, lập phương án rồi mới thi công — bảo hành kết cấu <strong>10 năm</strong> với phần gia cố thuộc phạm vi hợp đồng.</p>
-<p>Liên quan: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · nếu khung quá yếu có thể cân nhắc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây lại trọn gói</a>.</p>
+<p>Liên quan: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · nếu khung quá yếu có thể cân nhắc <a href="/dich-vu/xay-nha-tron-goi">xây lại trọn gói</a>.</p>
 
 <h2>Dấu hiệu cần kỹ sư xem mặt</h2>
 <ul>
@@ -1748,7 +1799,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Cải tạo mặt tiền nhà phố tại TP.HCM",
     content: `<h2>Cải tạo mặt tiền nhà TP.HCM: đẹp nhưng đừng làm yếu tường</h2>
 <p><strong>Cải tạo mặt tiền nhà TP.HCM</strong> thay đổi cảm nhận cả căn: cửa, ốp, sơn, đèn, mái đón. Nhà phố cũ hay bị khoan quá nhiều để ốp đá nặng trên tường gạch không gia cố — rủi ro bong và nguy hiểm. <strong>Kiến Trúc Sao Khuê</strong> chọn vật liệu theo khả năng chịu của tường hiện trạng.</p>
-<p>Kết hợp sửa bên trong: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · xây mới: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>.</p>
+<p>Kết hợp sửa bên trong: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · xây mới: <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>.</p>
 
 <h2>Các hướng nâng cấp mặt dựng phổ biến</h2>
 <ul>
@@ -1819,15 +1870,15 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     title: "Xây Nhà Bình Thạnh — Gần Văn Phòng Sao Khuê, Am Hiểu Hiện Trường",
     excerpt:
       "Xây nhà Bình Thạnh: hẻm nhỏ, đất nền cũ, giấy phép địa bàn. Sao Khuê tại Bình Lợi — 0909 075 668.",
-    metaTitle: "Xây Nhà Bình Thạnh — Sao Khuê Tại Chỗ",
+    metaTitle: "Xây Nhà Bình Thạnh 2026 — Sao Khuê Tại Bình Lợi",
     metaDescription:
-      "Xây nhà Bình Thạnh: đơn giá, lưu ý hẻm &amp; nền đất, khảo sát nhanh. Hotline 0909 075 668.",
+      "Xây nhà Bình Thạnh: đơn giá, lưu ý hẻm & nền đất, khảo sát nhanh gần văn phòng Bình Lợi. Hotline 0909 075 668.",
     metaKeywords:
       "xây nhà bình thạnh, xây nhà phố bình thạnh, nhà thầu bình thạnh, sao khuê bình lợi",
     imageAlt: "Xây nhà tại quận Bình Thạnh — Kiến Trúc Sao Khuê",
     content: `<h2>Xây nhà Bình Thạnh: địa bàn “sân nhà” của Sao Khuê</h2>
 <p><strong>Xây nhà Bình Thạnh</strong> thường gặp nền đất khu vực gần kênh, nhà trong hẻm cụt và mật độ xây dày. Văn phòng <strong>Kiến Trúc Sao Khuê</strong> tại <strong>245/8 Bình Lợi, Q. Bình Thạnh</strong> giúp khảo sát nhanh, giám sát hiện trường sát sao hơn nhiều quận xa.</p>
-<p>Triển khai <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> · ước lượng <a href="/bao-gia">báo giá</a>.</p>
+<p>Triển khai <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> · ước lượng <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Đặc thù thi công tại Bình Thạnh</h2>
 <ul>
@@ -1910,7 +1961,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà tại TP. Thủ Đức",
     content: `<h2>Xây nhà Thủ Đức: đa dạng hiện trạng từ đất nền đến nhà hẻm</h2>
 <p><strong>Xây nhà Thủ Đức</strong> (TP. Thủ Đức) gồm cả đất dự án tương đối chuẩn và nhà trong khu dân cư cũ đường nhỏ. Cần đọc kỹ quy hoạch, chỉ giới và tiện ích ngầm trước khi đào. <strong>Kiến Trúc Sao Khuê</strong> nhận khảo sát và thi công theo năng lực đội — bảo hành kết cấu 10 năm.</p>
-<p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p><a href="/dich-vu/xay-nha-tron-goi">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Lưu ý khi xây tại Thủ Đức</h2>
 <ul>
@@ -1992,7 +2043,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà tại Quận 7 TP.HCM",
     content: `<h2>Xây nhà Quận 7: kỳ vọng hoàn thiện thường cao hơn mặt bằng chung</h2>
 <p><strong>Xây nhà Quận 7</strong> gắn với nhiều khu dân cư quy hoạch, nhà liền kề và yêu cầu mặt đứng sạch sẽ. Chủ nhà thường quan tâm vật liệu cửa, đá, chống ồn hơn là chỉ “xây xong”. <strong>Kiến Trúc Sao Khuê</strong> lập dự toán tách phần kỹ thuật và phần thẩm mỹ để kiểm soát ngân sách.</p>
-<p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p><a href="/dich-vu/xay-nha-tron-goi">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Điểm cần lưu ý khi xây Q7</h2>
 <ul>
@@ -2074,7 +2125,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Xây nhà tại quận Gò Vấp",
     content: `<h2>Xây nhà Gò Vấp: bài toán nhà ống sâu &amp; hẻm đông</h2>
 <p><strong>Xây nhà Gò Vấp</strong> đặc trưng mặt tiền 3,5–5m, chiều sâu lớn, hẻm xe máy/xe hơi ken dày. Ưu tiên công năng và lấy sáng hơn mặt đứng rườm rà. <strong>Kiến Trúc Sao Khuê</strong> tối ưu giếng trời, cầu thang và bố trí WC mỗi sàn cho gia đình đông.</p>
-<p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p><a href="/dich-vu/xay-nha-tron-goi">Xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Thực tế hiện trường Gò Vấp</h2>
 <ul>
@@ -2158,7 +2209,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Thiết kế nhà phố TP.HCM — mặt bằng và phối cảnh",
     content: `<h2>Thiết kế nhà phố TP.HCM: thước đo là ở được, không chỉ “nhìn sang”</h2>
 <p><strong>Thiết kế nhà phố TP.HCM</strong> giải quyết đất hẹp, sâu, tiếp giáp hai bên. Bản vẽ tốt phải chỉ ra lối thoát hiểm, thông gió, vị trí ống kỹ thuật và cách thi công trong hẻm. <strong>Kiến Trúc Sao Khuê</strong> gắn thiết kế với dự toán xây để tránh “vẽ xong không xây nổi”.</p>
-<p>Sau thiết kế: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
+<p>Sau thiết kế: <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> · <a href="/bao-gia">báo giá</a>.</p>
 
 <h2>Nguyên tắc mặt bằng nhà phố</h2>
 <ul>
@@ -2240,7 +2291,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Cẩm nang xây nhà 2026 — hướng dẫn chủ nhà",
     content: `<h2>Cẩm nang xây nhà 2026: làm chủ cuộc chơi trước khi đào đất</h2>
 <p><strong>Cẩm nang xây nhà 2026</strong> dành cho chủ nhà TP.HCM muốn giảm rủi ro: tiền thiếu giữa chừng, thầu bỏ việc, thấm sau một mùa mưa. <strong>Kiến Trúc Sao Khuê</strong> rút kinh nghiệm hiện trường thành checklist ngắn — kèm bảo hành kết cấu 10 năm khi thi công với chúng tôi.</p>
-<p>Công cụ: <a href="/bao-gia">tính chi phí</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa</a>.</p>
+<p>Công cụ: <a href="/bao-gia">tính chi phí</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa</a>.</p>
 
 <h2>Bước 1 — Khoanh ngân sách thật</h2>
 <ul>
@@ -2421,7 +2472,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageAlt: "Làm mới nhà cũ tại TP.HCM",
     content: `<h2>Làm mới nhà cũ TP.HCM khác cải tạo sâu ở điểm nào?</h2>
 <p><strong>Làm mới nhà cũ TP.HCM</strong> tập trung thay “lớp da” và chỉnh nhẹ công năng: sơn, lát, đèn, tủ bếp module, TBVS, mặt tiền nhẹ — không đập phá kết cấu lớn. Phù hợp nhà còn chắc, muốn ở tiếp hoặc cho thuê nhanh. <strong>Kiến Trúc Sao Khuê</strong> gói việc theo checklist để chốt ngân sách gọn.</p>
-<p>Nếu cần đập thông/gia cố: chuyển sang <a href="/dich-vu/sua-chua-nha">sửa chữa – cải tạo</a>. Xây mới: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>.</p>
+<p>Nếu cần đập thông/gia cố: chuyển sang <a href="/dich-vu/sua-chua-nha">sửa chữa – cải tạo</a>. Xây mới: <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>.</p>
 
 <h2>Gói làm mới hay chọn</h2>
 <ul>
@@ -2498,3 +2549,74 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   ...moneyPageOverridesBatch2,
   ...moneyPageOverridesBatch3,
 };
+
+/**
+ * Soft-depth — đẩy money page còn ~1.800–2.000 ký tự lên ngưỡng SEO chắc hơn.
+ * Mỗi slug 1–2 H2 riêng, không copy khung.
+ */
+const MONEY_SOFT_DEPTH: Record<string, string> = {
+  "xay-nha-4-tang-tphcm": `<h2>Ngân sách 4 tầng — đọc đúng mốc</h2><p>Nhà phố 4×16–5×18 nội thành thường vài tỷ (chưa cọc nếu nền yếu). Đừng lấy đơn giá 3 tầng nhân 4/3. Cho thuê: WC từng tầng + điện tách tính riêng. Tra phép chiều cao trước khi vay thêm một sàn. Hotline <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-quan-2": `<h2>Checklist khảo sát Q.2 / Thủ Đức</h2><p>Ảnh hẻm + mặt tiền, sổ (che số), số tầng mong muốn, thô hay trọn gói. Đất ven sông: hỏi cọc sớm. Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo. Landing <a href="/xay-nha">/xay-nha</a>.</p>`,
+  "xay-shophouse-tphcm": `<h2>Vật tư trệt quán hay bị quên</h2><p>Sàn chống trơn, tủ điện 3 pha, hút mùi, cửa kính đúng hệ nhôm. Báo tách dòng — không nuốt vào m² “nhà ở”. Cải tạo sẵn: <a href="/tin-tuc/cai-tao-nha-ket-hop-kinh-doanh-tphcm">cải tạo kết hợp kinh doanh</a>.</p>`,
+  "xay-nha-mat-tien-tphcm": `<h2>Tiến độ nhà mặt tiền</h2><p>Facade thường làm sau khi tường khô. Biển hộp đèn / lam: phụ lục. Chỉ giới lộ giới hỏi phường trước khi đúc bậc cấp. Gọi <strong>0909 075 668</strong> gửi ảnh mặt đứng hiện trạng.</p>`,
+  "xay-nha-5-tang-tphcm": `<h2>Cho thuê 5 tầng — PCCC sớm</h2><p>Hỏi thoát hiểm và số tầng được phép trước khi vẽ 3D. Điện tách từng tầng, WC riêng. So <a href="/tin-tuc/xay-nha-4-tang-tphcm">4 tầng</a> nếu quy hoạch không cho 5.</p>`,
+  "don-gia-hoan-thien-nha-2026": `<h2>Cách đọc đơn giá hoàn thiện</h2><p>Mốc 2,5–5,5 triệu/m² thường chưa nội thất gỗ và điều hòa. Gạch/sơn/cửa ghi mã rõ. Nhà thô: nghiệm thu chống thấm WC–sân trước khi ốp. Xem <a href="/dich-vu/hoan-thien-nha">dịch vụ hoàn thiện</a>.</p>`,
+  "xay-biet-thu-tphcm": `<h2>Hợp đồng biệt thự nên tách gì?</h2><p>Nhà / sân / hàng rào / hồ — nghiệm thu từng khối. Không dùng “giá nhà phố” cho biệt thự 200m²+. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a>.</p>`,
+  "sua-dien-nuoc-nha-tphcm": `<h2>Báo giá theo điểm vs gói đồng bộ</h2><p>Vài ổ cắm: tính điểm. Cả nhà dây nhôm + ống sắt: gói đồng bộ rẻ hơn đục ba lần. Gửi sơ đồ tầng khi gọi hotline.</p>`,
+  "xay-nha-tan-phu": `<h2>Gửi hồ sơ khảo sát Tân Phú</h2><p>Ảnh hẻm, cao độ nền so đường, số tầng. Khu thấp: hỏi van thoát và cao trệt. <a href="/tin-tuc/xay-nha-tron-goi-tan-phu">Trọn gói Tân Phú</a> · 0909 075 668.</p>`,
+  "nang-tang-nha-tphcm": `<h2>Sau khi được phép nâng tầng</h2><p>Gia cố → đổ sàn → tường → chống thấm tum → hoàn thiện. Không ở tum khi chưa nghiệm thu chống thấm. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
+  "xay-nha-tron-goi-binh-thanh": `<h2>Vật tư và nghiệm thu Bình Thạnh</h2><p>List thép–xi măng–sơn trong HĐ. Ảnh cốt thép trước đổ. Văn phòng Bình Lợi — giám sát hiện trường nhanh. Gửi ảnh hẻm: <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-tron-goi-binh-duong": `<h2>Xin phép Bình Dương khác TP.HCM chỗ nào?</h2><p>Hồ sơ theo UBND tỉnh/phường mới. Đơn giá không copy Sài Gòn. Hẹn khảo sát trước (không drop-in). Case <a href="/cong-trinh/xay-nha-pho-thuan-an">Thuận An</a>.</p>`,
+  "xay-nha-tron-goi-quan-10": `<h2>Hẻm và giờ đổ bê tông Q.10</h2><p>Nhiều hẻm xe máy: bơm từ mặt tiền, ca sớm. Liền kề: biên bản tường chung. Báo phụ phí logistics rõ trong dự toán.</p>`,
+  "xay-nha-tron-goi-thu-duc": `<h2>Gửi ảnh khảo sát Thủ Đức</h2><p>KDC hay phố cũ? Ven rạch? Facade CĐT? Trả lời 3 câu này giúp báo đúng gói. Hotline <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-tron-goi-quan-6": `<h2>Nhà phố Q.6 — mặt tiền vs hẻm</h2><p>Mặt tiền kinh doanh: điện tách, PCCC. Hẻm: logistics. Không dùng một đơn giá m² cho cả hai. Landing <a href="/xay-nha">/xay-nha</a>.</p>`,
+  "xay-nha-tron-goi-quan-5": `<h2>Shophouse / nhà ở Q.5</h2><p>Trệt quán đông khách: hỏi công năng khi GPXD. Lầu ở lối riêng nếu được. Xem <a href="/tin-tuc/xay-shophouse-tphcm">xây shophouse</a>.</p>`,
+  "xay-nha-tiet-kiem-tphcm": `<h2>Cắt gì được, cắt gì không?</h2><p>Được: phào chỉ, đèn dư, nội thất phụ. Không: thép–bê tông–chống thấm–điện chống giật. Sao Khuê ghi rõ trong dự toán trước khi ký.</p>`,
+  "xay-nha-tron-goi-tan-phu": `<h2>Tiến độ đội Tân Phú</h2><p>Hẻm hẹp: ca đổ sớm. Ngập cục bộ: cao độ trệt + chống thấm chân tường. Gửi ảnh hiện trạng khi gọi hotline.</p>`,
+  "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Khi nào nên tách thiết kế riêng?</h2><p>Nếu chưa chốt thầu: thuê thiết kế trước vẫn được. Ký trọn gói Sao Khuê: thường miễn phí thiết kế theo chương trình — xem <a href="/dich-vu/khuyen-mai">khuyến mại</a>.</p>`,
+  "xay-nha-tron-goi-quan-8": `<h2>Nền và kênh khu Q.8</h2><p>Một số tuyến gần kênh: khảo sát địa chất trước khi hứa 4 tầng. Phụ phí cọc tách dòng khỏi m² trọn gói.</p>`,
+  "xay-nha-tron-goi-quan-11": `<h2>Checklist khởi công Q.11</h2><p>GPXD đúng phường, biên bản hàng xóm, list vật tư facade, lịch đổ bê tông. Không đào móng khi chưa chốt 4 điểm này.</p>`,
+  "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Thanh toán phần thô theo mốc</h2><p>Móng → sàn các tầng → mái chờ. Giữ lại % đến nghiệm thu thô (ngâm sân thượng). Không trả hết khi còn hạng mục chờ.</p>`,
+  "xay-nha-cho-thue-tphcm": `<h2>Mặt bằng cho thuê hiệu quả</h2><p>WC từng phòng/tầng, điện tách, lối đi chung rõ. Đừng copy nhà ở gia đình rồi “chia phòng sau”. PCCC hỏi sớm nếu nhiều phòng.</p>`,
+  "xay-nha-tron-goi-nha-be": `<h2>Sân vườn và cao độ Nhà Bè</h2><p>Ven kênh: cao độ nền + thoát nước. Sân–hàng rào tính phụ lục. Có thể tách thô rồi hoàn thiện theo quý nếu cashflow giãn.</p>`,
+  "xay-nha-tron-goi-phu-nhuan": `<h2>Hẻm Phú Nhuận và liền kề</h2><p>Nhiều tuyến hẹp: xe phế thải nhỏ, bơm bê tông từ mặt tiền. Biên bản tường chung trước đào móng. Gọi <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-tron-goi-hoc-mon": `<h2>Đất nền Hóc Môn</h2><p>Khu dân cư mới vs đất vườn: địa chất và đường vào khác nhau. Không áp đơn giá nội thành. Khảo sát tận lô trước khi ký.</p>`,
+  "xay-nha-4x12-tphcm": `<h2>Công năng lô 4×12</h2><p>Cầu thang chữ I, giếng nhỏ, ít hành lang. 1 trệt 2–3 lầu phổ biến. Xem thêm <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">4×16</a> nếu lô sâu hơn.</p>`,
+  "xin-giay-phep-cai-tao-nha-tphcm": `<h2>Hồ sơ cải tạo thường cần</h2><p>GPXD cũ (nếu có), ảnh hiện trạng, bản vẽ cải tạo, cam kết an toàn. Đổi mặt đứng lớn / nâng tầng: không làm xong mới xin. Sao Khuê tư vấn hiện trạng trong HĐ.</p>`,
+  "xay-nha-tron-goi-binh-tan": `<h2>Logistics Bình Tân</h2><p>Đường lớn dễ xe; hẻm trong khu: phụ phí khiêng. GPXD theo phường. Báo giá sau đo đất — không chốt “giá mạng”.</p>`,
+  "xay-nha-tron-goi-cu-chi": `<h2>Công trình Củ Chi — lịch đội</h2><p>Xa trung tâm: khảo sát hẹn trước, lịch đổ theo xa lộ. Đất vườn / nền mới: khoan địa chất. Hotline <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-tron-goi-quan-7": `<h2>Q.7 / khu Nam — facade và hẻm</h2><p>Khu đô thị mới: facade đồng bộ hơn. Hẻm cũ: logistics. Chốt thô hay trọn gói trước khi ký phụ lục cửa kính.</p>`,
+  "xay-nha-tron-goi-tan-binh": `<h2>Gần sân bay Tân Bình</h2><p>Một số tuyến hạn chế chiều cao. Tra phường trước khi vẽ 5 tầng. Ồn máy bay: cách âm cửa kính nếu cần — báo phụ lục.</p>`,
+  "xay-nha-uy-tin-tphcm": `<h2>Sau bàn giao — bảo hành</h2><p>CSKH lập phiếu, kỹ thuật khảo sát hạng mục trong HĐ. Kết cấu tới 10 năm. Không “thợ cũ tự vá” ngoài quy trình. Văn phòng 245/8 Bình Lợi.</p>`,
+  "cai-tao-nha-tphcm": `<h2>Gửi ảnh để ước lượng nhanh</h2><p>WC, giếng, mặt tiền, nứt cột (nếu có). Sao Khuê tách việc bắt buộc / hoãn được. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
+  "chi-phi-cai-tao-nha-tphcm": `<h2>Ví dụ cashflow cải tạo</h2><p>Chia đợt: chống thấm → điện nước → lát/sơn → mặt tiền. Giữ 10% dự phòng. Không trả hết trước nghiệm thu cuối.</p>`,
+};
+
+for (const [slug, extra] of Object.entries(MONEY_SOFT_DEPTH)) {
+  const page = moneyPageOverridesBySlug[slug];
+  if (page) page.content = `${page.content}\n${extra}`;
+}
+
+/** Vòng 2 — đẩy soft-thin còn lại qua ngưỡng ~2000 ký tự (unique theo slug). */
+const MONEY_SOFT_DEPTH_R2: Record<string, string> = {
+  "don-gia-hoan-thien-nha-2026": `<h2>Ba gói hoàn thiện hay gặp</h2><p>Cơ bản (gạch–sơn–cửa gỗ công nghiệp), trung (đá ốp WC, cửa nhôm kính), cao (gỗ tự nhiên, thiết bị vệ sinh nhập). Mỗi gói ghi mã vật tư trong HĐ — tránh “gói A/B” mơ hồ. Nội thất rời và điều hòa luôn phụ lục. Hotline <strong>0909 075 668</strong> gửi ảnh nhà thô để ước lượng đúng gói.</p>`,
+  "xay-nha-tiet-kiem-tphcm": `<h2>Lịch thanh toán khi siết ngân sách</h2><p>Chia mốc móng–sàn–mái–hoàn thiện; giữ 10% đến nghiệm thu. Đừng cắt chống thấm tum/WC để “giảm giá” — sửa sau đắt hơn. Có thể làm thô trước, hoàn thiện theo quý nếu cashflow giãn. Landing <a href="/xay-nha">/xay-nha</a>.</p>`,
+  "xay-nha-cho-thue-tphcm": `<h2>Xin phép và PCCC nhà cho thuê</h2><p>Nhiều phòng / nhà trọ: hỏi số tầng và lối thoát trước khi vẽ. Điện tách từng phòng giúp thu tiền và an toàn. Không chia phòng sau khi đã đổ sàn theo mặt bằng gia đình. Sao Khuê tư vấn công năng khi khảo sát — gọi <strong>0909 075 668</strong>.</p>`,
+  "xay-nha-4x12-tphcm": `<h2>Ngân sách lô 4×12 nội thành</h2><p>1 trệt 2–3 lầu phổ biến vài tỷ (chưa cọc nếu nền yếu). Hẻm hẹp: phụ phí bơm bê tông. Giếng trời nhỏ + cửa sổ sau lấy sáng. So <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">4×16</a> nếu cần phòng ngủ thêm. Báo giá sau đo đất — không chốt theo m² mạng.</p>`,
+  "xin-giay-phep-cai-tao-nha-tphcm": `<h2>Cải tạo nào hay phải xin lại phép?</h2><p>Đổi mặt đứng lớn, nâng tầng, đục cột chịu lực, mở cửa lớn sang hàng xóm — thường cần hồ sơ. Sơn–ốp–điện nước trong nhà: thường không. Sao Khuê đọc hiện trạng trước khi hứa “làm nhanh không phép”. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
+  "xay-nha-tan-phu": `<h2>Nhà phố Tân Phú — mặt tiền vs hẻm</h2><p>Mặt tiền kinh doanh: điện tách, PCCC. Hẻm sâu: logistics + giờ đổ. Khu thấp: cao độ trệt và van thoát. Không dùng một đơn giá m² cho cả hai. Xem <a href="/tin-tuc/xay-nha-tron-goi-tan-phu">trọn gói Tân Phú</a>.</p>`,
+  "xay-nha-5-tang-tphcm": `<h2>Kết cấu và thang máy 5 tầng</h2><p>Cột–móng theo số tầng thực tế; không “cộng thêm một sàn” vào bản 4 tầng. Thang máy (nếu có) tính hố + điện 3 pha phụ lục. Tra chiều cao phường trước khi vay. So <a href="/tin-tuc/xay-nha-4-tang-tphcm">4 tầng</a> nếu quy hoạch không cho 5.</p>`,
+  "xay-nha-lech-tang-tphcm": `<h2>Lệch tầng — khi nào nên chọn?</h2><p>Lô sâu hẹp, cần giếng trời lệch, hoặc tách khu ở / cho thuê từng nửa nhà. Kết cấu và chống thấm sàn lệch phức tạp hơn nhà đều tầng — dự toán không copy m² nhà thẳng. Khảo sát hiện trạng trước khi vẽ 3D. Hotline <strong>0909 075 668</strong>.</p><h2>Xin phép lệch tầng</h2><p>Chiều cao tổng và chỉ giới phải khớp GPXD. Không tự đúc thêm nửa sàn sau khi đã nghiệm thu. Sao Khuê ghi rõ số tầng / sàn lệch trong HĐ và biên bản hàng xóm nếu ảnh hưởng tường chung.</p>`,
+  "sua-dien-nuoc-nha-tphcm": `<h2>Dấu hiệu nên thay hệ thống cũ</h2><p>Ổ nóng, CB nhảy liên tục, ống nước gỉ / áp yếu tầng trên, dây nhôm lộ. Nhà cải tạo WC: đổi ống PVC đồng bộ trước khi ốp. Báo theo điểm hoặc gói đồng bộ — gửi sơ đồ tầng khi gọi hotline. Liên quan: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</p>`,
+  "xay-biet-thu-tphcm": `<h2>Tiến độ biệt thự TP.HCM</h2><p>Thường 9–14 tháng với 200–400m² sàn (chưa sân–hồ phức tạp). Địa chất ven kênh / KDC quyết định cọc. HĐ tách nhà / sân / hàng rào / hồ. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · hotline <strong>0909 075 668</strong>.</p>`,
+  "xay-shophouse-tphcm": `<h2>Xin phép shophouse / nhà ở kết hợp</h2><p>Trệt quán: hỏi công năng khi GPXD, lối thoát, điện 3 pha. Lầu ở lối riêng nếu được. Facade kính–biển tính phụ lục. Không dùng đơn giá “nhà ở thuần” cho trệt kinh doanh. Xem <a href="/tin-tuc/cai-tao-nha-ket-hop-kinh-doanh-tphcm">cải tạo kết hợp KD</a>.</p>`,
+  "xay-nha-tron-goi-go-vap": `<h2>Trọn gói Gò Vấp — khảo sát gì?</h2><p>Ảnh hẻm + mặt tiền, sổ (che số), số tầng, thô hay trọn gói. Nhiều tuyến hẹp: bơm bê tông từ mặt tiền, ca sớm. Liền kề: biên bản tường chung. Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo. Landing <a href="/xay-nha">/xay-nha</a> · <strong>0909 075 668</strong>.</p><h2>Vật tư và nghiệm thu</h2><p>List thép–xi măng–sơn trong HĐ. Ảnh cốt thép trước đổ. Không nhận “giá mạng” không đo đất.</p>`,
+  "xay-nha-tron-goi-quan-4": `<h2>Nhà phố Q.4 — logistics và nền</h2><p>Hẻm gần kênh / thấp: hỏi cao độ trệt và thoát nước. Xe phế thải nhỏ, giờ đổ sớm. Mặt tiền kinh doanh: điện tách. Báo phụ phí logistics rõ — không nuốt vào m². Hotline <strong>0909 075 668</strong>.</p><h2>Gói thô vs trọn gói Q.4</h2><p>Thô: móng–khung–mái chờ. Trọn gói: thêm hoàn thiện theo list. Chốt gói trước khi ký phụ lục cửa kính facade.</p>`,
+  "xay-nha-tron-goi-thu-duc": `<h2>KDC vs phố cũ Thủ Đức</h2><p>KDC: facade đồng bộ, đường rộng hơn. Phố cũ / gần rạch: địa chất + hẻm. Không một đơn giá cho cả TP. Thủ Đức. Gửi 3 ảnh (hẻm, mặt tiền, sổ che số) khi gọi hotline — báo đúng gói thô/trọn.</p>`,
+  "nang-tang-nha-tphcm": `<h2>Khi nào không nên nâng tầng?</h2><p>Móng/cột yếu không gia cố được trong ngân sách, quy hoạch không cho thêm sàn, hoặc hàng xóm không đồng thuận tường chung. Sao Khuê khảo sát kết cấu trước khi hứa “thêm một lầu”. Thay bằng cải tạo công năng nếu phép không cho. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
+};
+
+for (const [slug, extra] of Object.entries(MONEY_SOFT_DEPTH_R2)) {
+  const page = moneyPageOverridesBySlug[slug];
+  if (page) page.content = `${page.content}\n${extra}`;
+}

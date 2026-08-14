@@ -106,14 +106,26 @@ export function articlePricingTableBlock(
 ): string {
   const region = detectContentRegion(location, slug);
   const kw = keyword || "dịch vụ";
+  const v = slugVariant(slug || `${kw}|${location}`, 3);
   if (intent === "repair" || intent === "renovation") {
+    const extra: PriceRow[] = [
+      { label: "Phụ phí hẻm &lt; 3m / ba gác", price: "+8 – 12% nhân công vận chuyển" },
+      { label: "Che chắn nhà đang ở", price: "+10 – 20% so với nhà trống" },
+      { label: "Gia cố phát sinh sau mở tường", price: "Tách dòng, không gộp đơn giá ảo" },
+    ];
+    const rows = [...REPAIR_PRICES, extra[v]];
     return `<h2>Chi phí ${kw} (ước tính 2026)</h2>
-<p>Giá phụ thuộc hiện trạng nhà, vật liệu và phạm vi thi công — bảng dưới đây mang tính <strong>tham khảo</strong>:</p>
-${pricingTableHtml(REPAIR_PRICES)}
+<p>Giá phụ thuộc hiện trạng nhà, vật liệu và phạm vi thi công tại <strong>${location || "khu vực thi công"}</strong> — bảng dưới đây mang tính <strong>tham khảo</strong>:</p>
+${pricingTableHtml(rows)}
 <p>Dùng <a href="/bao-gia">công cụ báo giá online</a> hoặc gọi <strong>0909 075 668</strong> để nhận dự toán sau khảo sát tận nơi.</p>`;
   }
   if (intent === "pricing" || intent === "build") {
-    const rows = BUILD_PRICES[region];
+    const extra: PriceRow[] = [
+      { label: "Ép cọc / móng đất yếu", price: "12 – 18% tổng giá trị (nếu cần)" },
+      { label: "Xin GPXD + bản vẽ thi công", price: "Báo theo hồ sơ phường, tách hợp đồng" },
+      { label: "Hoàn thiện mặt tiền đường lớn", price: "Cao hơn hẻm trong 8 – 15%" },
+    ];
+    const rows = [...BUILD_PRICES[region], extra[v]];
     return `<h2>Bảng giá ${kw} tham khảo 2026</h2>
 <p>Đơn giá tại <strong>${location || "khu vực của bạn"}</strong> — cập nhật theo thị trường, chưa gồm thiết kế phức tạp hoặc móng đặc biệt:</p>
 ${pricingTableHtml(rows)}
@@ -199,8 +211,46 @@ export function articleMistakesBlock(intent: ContentIntent, keyword: string, loc
       "Thanh toán quá nhanh trước khi nghiệm thu từng hạng mục.",
     ],
   };
-  const list = items[intent]
-    .map((i) => `<li>${i}</li>`)
+  const seed = slugVariant(`${keyword}|${location}|${intent}`, 4);
+  const extras: Record<ContentIntent, string[]> = {
+    repair: [
+      "Bỏ qua thoát nước sân/mái — chống thấm xong vẫn đọng, thấm lại chân tường.",
+      "Cắt điện cả nhà khi chỉ sửa một tầng — gia đình đang ở bị gián đoạn cả tuần.",
+      "Thuê thợ sơn trước khi xử lý thấm WC tầng trên.",
+      "Không ghi thương hiệu keo chống thấm / sơn trong hợp đồng.",
+    ],
+    renovation: [
+      "Đập thông lấy sáng khi chưa xác định tường chịu lực.",
+      "Nâng tum/sân thượng vượt phép rồi mới xin — dễ bị yêu cầu hoàn trả.",
+      "Làm mặt tiền trước, chống thấm sân sau — sơn mới bị loang.",
+      "Không lập lịch che chắn khi gia đình còn ở trong nhà.",
+    ],
+    build: [
+      "Chọn móng theo nhà hàng xóm, không khoan địa chất khu đất yếu / ven rạch.",
+      "Thanh toán 70% trước khi đổ móng xong — mất đòn bẩy nghiệm thu.",
+      "Bỏ giếng trời nhà ống sâu — nhà tối, ẩm, tốn điện.",
+      "Không ghi mác bê tông, thép trong hợp đồng phần thô.",
+    ],
+    pricing: [
+      "So giá trọn gói với phần thô trên Facebook mà không đối chiếu hạng mục.",
+      "Bỏ dòng vận chuyển hẻm — phát sinh 8–15% lúc đổ vật tư.",
+      "Tin ‘giá trọn gói đã gồm GPXD’ khi hợp đồng không ghi.",
+      "Không hỏi bảo hành kết cấu bằng văn bản.",
+    ],
+    design: [
+      "Duyệt 3D đẹp nhưng không có bản vẽ kết cấu — thợ thi công sai dầm.",
+      "Bỏ quy hoạch lộ giới, vẽ sát ranh rồi kẹt phép.",
+      "Không tính tải máy lạnh / bồn nước mái vào kết cấu.",
+      "Thiết kế không khớp khí hậu mưa TP.HCM — mái đọng, giếng trời dột.",
+    ],
+    general: [
+      "Chọn thầu không có địa chỉ / hợp đồng pháp nhân.",
+      "Không chụp hiện trạng trước khi giao nhà cho đội.",
+    ],
+  };
+  const pool = [...items[intent], extras[intent][seed] ?? extras[intent][0]];
+  const list = pool
+    .map((i) => `<li>${i.replace("${loc}", loc)}</li>`)
     .join("\n  ");
   return `<h2>Lỗi thường gặp khi ${keyword}</h2>
 <ul>
@@ -306,7 +356,27 @@ export function buildIntentFaq(intent: ContentIntent, keyword: string, location 
       },
     ],
   };
-  const body = faqs[intent]
+  const extraFaqs: { q: string; a: string }[] = [
+    {
+      q: `Nhà đang ở thì làm ${keyword} được không${loc}?`,
+      a: "Sơn, lát, WC từng phòng: được nếu chia khu. Đục kết cấu, nâng tầng, khoan cọc: nên chuyển tạm. Sao Khuê ghi lịch che chắn trong hợp đồng.",
+    },
+    {
+      q: `Hẻm hẹp có ảnh hưởng giá ${keyword} không?`,
+      a: "Hẻm &lt; 3m thường +8–12% vận chuyển. Ghi dòng này trong dự toán trước khi ký — không phụ thu miệng.",
+    },
+    {
+      q: `${keyword} có cần giấy phép không${loc}?`,
+      a: "Sơn–lát–chống thấm thường không. Đổi kết cấu, số tầng, mặt đứng lớn, công năng: kiểm tra GPXD. Sao Khuê không thi công vượt phép.",
+    },
+    {
+      q: `Thanh toán ${keyword} chia mấy đợt?`,
+      a: "Theo giai đoạn nghiệm thu (móng/thô hoặc chống thấm/điện/hoàn thiện). Không thu 70% trước khi làm. Chi tiết trong hợp đồng.",
+    },
+  ];
+  const picked = extraFaqs[slugVariant(`${keyword}|${location}`, extraFaqs.length)];
+  const all = [...faqs[intent], picked];
+  const body = all
     .map((item) => `<h3>${item.q}</h3>\n<p>${item.a}</p>`)
     .join("\n");
   return `<h2>Câu hỏi thường gặp về ${keyword}</h2>\n${body}`;

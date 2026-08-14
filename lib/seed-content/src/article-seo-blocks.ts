@@ -102,14 +102,20 @@ export function mapBatchTopicToIntent(batchTopic: string, slug = ""): MetaTitleI
 }
 
 function trimKeywordForTitle(keyword: string, maxLen: number): string {
-  let kw = titleCaseVi(keyword);
+  const kw = titleCaseVi(keyword);
   if (kw.length <= maxLen) return kw;
 
-  const withoutProvince = kw.replace(
-    /\s+(Bình Định|Phú Yên|Đắk Lắk|Gia Lai|Khánh Hòa|Quảng Ngãi|Kon Tum|Quảng Nam|Huế|TP\.HCM|Đồng Nai|Long An|Bình Dương|Miền Trung)$/i,
-    "",
-  );
-  if (withoutProvince.length <= maxLen) return withoutProvince;
+  const parts = kw.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) {
+    const tail = parts.slice(-2).join(" ");
+    const head = parts.slice(0, -2).join(" ");
+    if (tail.length + 4 <= maxLen) {
+      const room = maxLen - tail.length - 1;
+      if (!head) return tail.slice(0, maxLen);
+      const clipped = head.length <= room ? head : `${head.slice(0, Math.max(room - 1, 1)).trimEnd()}…`;
+      return `${clipped} ${tail}`.slice(0, maxLen);
+    }
+  }
 
   return kw.slice(0, Math.max(maxLen - 1, 1)).trimEnd() + "…";
 }

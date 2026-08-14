@@ -1,4 +1,6 @@
 /** Nội dung bài viết SEO — slug: tuyen-dung */
+import { faqSection } from "../article-seo-blocks";
+
 export const tuyenDung = {
   title: "Tuyển Dụng Sao Khuê 2026 — Kỹ Sư, Kiến Trúc Sư, Giám Sát",
   excerpt:
@@ -42,6 +44,18 @@ export const tuyenDung = {
   <li>Tiêu đề: [Ứng tuyển] Họ tên — Vị trí</li>
   <li>Hoặc gọi <strong>0909 075 668</strong> để được hướng dẫn.</li>
 </ol>
-<p>Tìm hiểu thêm <a href="/gioi-thieu/ve-chung-toi">về công ty</a> và <a href="/gioi-thieu/so-do-to-chuc">sơ đồ tổ chức</a>.</p>
+<p>Tìm hiểu thêm <a href="/bai-viet/ve-chung-toi">về công ty</a> và <a href="/bai-viet/so-do-to-chuc">sơ đồ tổ chức</a>.</p>
+
+${faqSection([
+  { q: "Đang tuyển những vị trí nào?", a: "Theo nhu cầu từng quý: kiến trúc sư, kỹ sư/giám sát, dự toán, kinh doanh, thợ lành nghề. Gửi CV ghi rõ vị trí mong muốn." },
+  { q: "Ứng tuyển cần gửi gì?", a: "CV + portfolio (KTS) hoặc ảnh công trình đã tham gia (giám sát/thợ). Tiêu đề email: [Ứng tuyển] Họ tên — Vị trí." },
+  { q: "Làm việc chủ yếu văn phòng hay công trường?", a: "Kỹ sư/giám sát đi hiện trường nhiều; KTS và dự toán kết hợp văn phòng Bình Lợi và khảo sát lô đất." },
+])}
+
+<h2>Làm việc tại công trường nhà phố TP.HCM</h2>
+<p>Giám sát và kỹ sư đi hiện trường hẻm, ca đổ bê tông sớm, phối hợp hàng xóm. Ứng viên cần chịu được tiến độ thực tế, không chỉ ngồi văn phòng. Hồ sơ gửi email, phản hồi trong giờ làm việc.</p>
+
+<h2>Quy trình sau khi nhận CV</h2>
+<p>Sàng lọc hồ sơ → trao đổi ngắn (điện thoại/Zalo) → phỏng vấn / thử việc theo vị trí. Thợ lành nghề có thể được mời ra công trình đang làm để đánh giá tay nghề. Không thu phí tuyển dụng.</p>
 `.trim(),
 };

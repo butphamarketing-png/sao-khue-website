@@ -1,0 +1,65 @@
+# Paste khi tạo campaign Xây nhà (chưa mở ngay — đợi Cải tạo hết học)
+# Exact = [keyword] | Phrase = "keyword"
+
+# === B1 Xây trọn gói / nhà thầu ===
+[xây nhà trọn gói tphcm]
+[nhà thầu xây nhà tphcm]
+[công ty xây nhà trọn gói tphcm]
+[xây nhà trọn gói]
+[nhà thầu xây nhà]
+[công ty xây dựng tphcm]
+[xây nhà chìa khóa trao tay tphcm]
+"xây nhà trọn gói tphcm"
+"nhà thầu xây nhà tphcm"
+"công ty xây nhà trọn gói"
+"xây nhà mới tphcm"
+"công ty xây dựng tphcm"
+"xây nhà chìa khóa trao tay"
+"nhà thầu xây dựng tphcm"
+"thi công xây nhà trọn gói"
+
+# === B2 Báo giá xây ===
+[báo giá xây nhà tphcm]
+[đơn giá xây nhà tphcm]
+[chi phí xây nhà tphcm]
+[báo giá xây nhà trọn gói]
+[đơn giá xây nhà trọn gói]
+[giá xây nhà phố tphcm]
+"báo giá xây nhà tphcm"
+"đơn giá xây nhà"
+"chi phí xây nhà tphcm"
+"báo giá xây nhà trọn gói"
+"đơn giá xây nhà trọn gói"
+"giá xây nhà phố"
+"bảng giá xây nhà tphcm"
+"chi phí xây nhà phố"
+
+# === B3 Phần thô / nhà phố ===
+[xây nhà phần thô tphcm]
+[xây nhà phố tphcm]
+[xây dựng phần thô tphcm]
+[xây nhà phố]
+[xây biệt thự tphcm]
+[xây nhà cấp 4 tphcm]
+"xây nhà phần thô"
+"xây nhà phố tphcm"
+"xây dựng phần thô tphcm"
+"xây biệt thự tphcm"
+"xây nhà cấp 4 tphcm"
+"xây nhà 1 trệt 1 lầu"
+"xây nhà 3 tầng tphcm"
+
+# === Negatives (Phrase) — Campaign Xây nhà ===
+"sửa nhà"
+"sửa chữa"
+"cải tạo"
+"nâng tầng"
+"chống thấm mái"
+"nông thôn"
+"tuyển dụng"
+"việc làm"
+"là gì"
+"download"
+"pdf"
+"thiết kế kiến trúc"
+"mẫu nhà đẹp"

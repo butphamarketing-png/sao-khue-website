@@ -117,7 +117,7 @@ ${imageFigure(IMG_2, FOCUS, 2)}
     <tr><td>Phù hợp</td><td>Lô trống, nhà cũ xuống cấp nặng</td><td>Nhà còn vững, cần làm mới</td></tr>
   </tbody>
 </table>
-<p>Nếu kết cấu cũ còn tốt, xem <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> hoặc <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà TP.HCM</a> để tiết kiệm ngân sách.</p>
+<p>Nếu kết cấu cũ còn tốt, xem <a href="/dich-vu/nang-tang-nha-pho">nâng tầng nhà phố</a> hoặc <a href="/dich-vu/sua-chua-nha">sửa chữa nhà TP.HCM</a> để tiết kiệm ngân sách.</p>
 
 ${imageFigure(IMG_3, FOCUS, 3)}
 

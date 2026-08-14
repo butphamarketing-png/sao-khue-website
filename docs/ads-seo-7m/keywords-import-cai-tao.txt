@@ -1,0 +1,86 @@
+# Paste vào Google Ads → Chiến dịch Cải tạo → Từ khóa
+# Exact = [keyword] | Phrase = "keyword"
+# Ưu tiên thêm vào nhóm quảng cáo tương ứng
+
+# === A1 Cải tạo nhà ===
+[cải tạo nhà]
+[cải tạo nhà tphcm]
+[cải tạo nhà cũ tphcm]
+[cải tạo nhà phố tphcm]
+[cải tạo nhà cũ]
+[cải tạo nhà phố]
+[cải tạo nhà cấp 4 tphcm]
+[dịch vụ cải tạo nhà tphcm]
+"cải tạo nhà"
+"cải tạo nhà tphcm"
+"cải tạo nhà cũ"
+"cải tạo nhà phố"
+"cải tạo nhà trọn gói"
+"cải tạo nhà cấp 4"
+"dịch vụ cải tạo nhà"
+"cải tạo nhà cũ tphcm"
+
+# === A2 Sửa nhà trọn gói ===
+[sửa nhà trọn gói tphcm]
+[sửa chữa nhà tphcm]
+[sửa nhà tphcm]
+[sửa nhà trọn gói]
+[dịch vụ sửa nhà tphcm]
+[dịch vụ sửa chữa nhà tphcm]
+[công ty sửa nhà tphcm]
+"sửa nhà trọn gói tphcm"
+"sửa chữa nhà tphcm"
+"sửa nhà trọn gói"
+"công ty sửa nhà tphcm"
+"dịch vụ sửa nhà tphcm"
+"dịch vụ sửa chữa nhà"
+"dịch vụ sửa chữa nhà trọn gói"
+"sửa chữa nhà trọn gói"
+
+# === A3 Báo giá ===
+[báo giá cải tạo nhà tphcm]
+[báo giá sửa nhà tphcm]
+[chi phí cải tạo nhà tphcm]
+[báo giá cải tạo nhà]
+[báo giá sửa nhà]
+[chi phí sửa nhà]
+[đơn giá sửa nhà trọn gói]
+[bảng dự toán sửa chữa nhà]
+"báo giá cải tạo nhà"
+"báo giá sửa nhà"
+"chi phí cải tạo nhà"
+"đơn giá sửa nhà"
+"chi phí sửa nhà"
+"đơn giá sửa nhà trọn gói"
+"bảng dự toán sửa chữa nhà"
+"giá sửa nhà trọn gói"
+"giá sửa chữa nhà"
+
+# === A4 Nâng tầng / gia cố / chống thấm ===
+[nâng tầng nhà phố tphcm]
+[nâng tầng nhà phố]
+[gia cố nhà cũ tphcm]
+[gia cố nhà cũ]
+[chống thấm nhà cũ tphcm]
+[sửa nhà chống thấm tphcm]
+"nâng tầng nhà phố"
+"gia cố nhà cũ"
+"nâng tầng nhà tphcm"
+"chống thấm nhà cũ"
+"sửa nhà chống thấm"
+"gia cố kết cấu nhà cũ"
+"làm mới mặt tiền nhà phố"
+
+# === Negatives (Phrase) — Campaign Cải tạo ===
+"nông thôn"
+"cấp 4 nông thôn"
+"xây nhà mới"
+"xây biệt thự mới"
+"đất trống"
+"mẫu nhà đẹp"
+"thiết kế kiến trúc"
+"tuyển dụng"
+"việc làm"
+"là gì"
+"download"
+"pdf"

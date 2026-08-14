@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #20 — slug: xu-huong-thiet-ke-nha-pho-hien-dai */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("xu-huong-thiet-ke-nha-pho-hien-dai", 0);
 
@@ -15,8 +15,8 @@ export const xuHuongThietKeNhaPhoHienDai = {
     "Khám phá xu hướng thiết kế nhà phố hiện đại 2026: tối giản, lam che nắng, giếng trời, không gian xanh, smart home. Tư vấn miễn phí — 0909 075 668.",
   metaKeywords:
     "xu hướng thiết kế nhà phố, nhà phố hiện đại 2026, mặt tiền nhà phố, thiết kế nhà phố tối giản, công năng thông minh, kiến trúc sao khuê",
-  imageAlt: "xu-huong-thiet-ke-nha-pho-hien-dai",
-  imageCaption: "xu-huong-thiet-ke-nha-pho-hien-dai",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} 2026 — Sao Khuê`,
   content: `
 <h2>Xu hướng thiết kế nhà phố hiện đại — Tổng quan 2026</h2>
 <p><strong>Xu hướng thiết kế nhà phố hiện đại</strong> tại TP.HCM và các đô thị lớn miền Nam đang chuyển dịch mạnh trong những năm gần đây. Áp lực từ lô đất hẹp, nhu cầu sống tiện nghi và ảnh hưởng của kiến trúc quốc tế đã tạo ra những phong cách nhà phố mới — không chỉ đẹp về hình thức, mà còn <strong>tối ưu công năng, tiết kiệm năng lượng và thích nghi khí hậu nhiệt đới</strong>. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> tổng hợp các xu hướng nổi bật nhất năm 2026 để chủ đất tham khảo trước khi chốt phương án thiết kế.</p>
@@ -114,6 +114,12 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Tham khảo công trình thực tế:</strong> Đến thăm công trình đã bàn giao, không chỉ xem ảnh render.</li>
 </ol>
 <p>Xem thêm <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố TP.HCM</a>, <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">phong cách hiện đại</a> và <a href="/tin-tuc/luu-y-xay-nha-pho">lưu ý xây nhà phố</a>.</p>
+
+${faqSection([
+  { q: "Xu hướng nhà phố nào phù hợp lô hẹp 4m?", a: "Tối giản + giếng trời + lam che nắng hướng Tây. Tránh mặt tiền phào chỉ dày và cửa kính lớn không che — nóng và tốn diện tích." },
+  { q: "Tropical-modern có đắt hơn tối giản không?", a: "Thường cao hơn vì vật liệu ngoài trời (gỗ/nhôm, cây xanh, lam). Cùng diện tích có thể chênh 8–15% hoàn thiện mặt đứng." },
+  { q: "Có nên làm smart home ngay khi xây mới?", a: "Nên chừa ống sẵn cho mạng, camera, khóa cửa; thiết bị có thể lắp sau theo ngân sách. Tránh đục tường lại sau 1–2 năm." },
+])}
 
 ${homeLinkParagraph()}
 

@@ -15,8 +15,9 @@ export default function About() {
   usePageSeo({
     title: `Về chúng tôi | ${brand}`,
     description: content?.description ?? "Giới thiệu Sao Khuê — thiết kế và xây dựng uy tín TP.HCM.",
-    path: "/gioi-thieu",
+    path: "/bai-viet/ve-chung-toi",
     ogImage,
+    ogImageAlt: `Về chúng tôi — ${brand}`,
   });
 
   return (

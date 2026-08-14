@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #8 — slug: xay-dung-nha-long-an */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("xay-dung-nha-long-an", 0);
 const SK_IMG_2 = slugImage("xay-dung-nha-long-an", 1);
@@ -88,8 +88,13 @@ ${homeLinkParagraph()}
 <h3>Quy định xây dựng địa phương</h3>
 <p>Mỗi huyện tại Long An có quy định riêng về chiều cao, mật độ xây dựng, lộ giới và khoảng lùi. Sao Khuê hỗ trợ tra cứu quy hoạch và hoàn thiện hồ sơ xin phép xây dựng đúng quy định địa phương. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
 
+${faqSection([
+  { q: "Xây nhà Long An có cần khảo sát địa chất không?", a: "Nên, đặc biệt ven sông Vàm Cỏ và vùng trũng: đất yếu dễ lún. Sao Khuê tư vấn móng cọc / bè trước khi chốt đơn giá thô." },
+  { q: "Đơn giá xây Long An có rẻ hơn TP.HCM không?", a: "Thường thấp hơn nội thành khoảng 5–15% nhờ nhân công và vận chuyển khu vực — vẫn phụ thuộc hẻm, nền và gói hoàn thiện." },
+  { q: "Sao Khuê hỗ trợ xin phép xây tại Long An không?", a: "Có trong phạm vi hợp đồng: tra quy hoạch huyện và hoàn thiện hồ sơ theo quy định địa phương." },
+])}
+
 ${seoCtaBlock("xây dựng nhà Long An")}
-
 
 ${imageFigure(SK_IMG_3, "xây dựng nhà Long An", 3)}
 `.trim(),

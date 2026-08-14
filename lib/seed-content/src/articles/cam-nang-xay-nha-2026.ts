@@ -1,4 +1,4 @@
-﻿/** Nội dung bài viết SEO — slug: cam-nang-xay-nha-2026 */
+/** Nội dung bài viết SEO — slug: cam-nang-xay-nha-2026 */
 export const camNangXayNha2026 = {
   title: "Cẩm Nang Xây Nhà 2026 — Từ A Đến Z Cho Người Mới",
   excerpt:
@@ -10,7 +10,7 @@ export const camNangXayNha2026 = {
     "cẩm nang xây nhà, kinh nghiệm xây nhà, xây nhà lần đầu, quy trình xây nhà, sao khuê",
   content: `
 <h2>Cẩm nang xây nhà 2026 — Chủ nhà cần chuẩn bị gì?</h2>
-<p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
+<p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
 
 <h2>Bước 1: Xác định nhu cầu và ngân sách</h2>
 <ul>
@@ -20,7 +20,7 @@ export const camNangXayNha2026 = {
 </ul>
 
 <h2>Bước 2: Kiểm tra pháp lý đất đai</h2>
-<p>Đảm bảo sổ đỏ/hợp đồng, quy hoạch xây dựng, lộ giới, hướng nhà. Các hạng mục thay đổi kết cấu, nâng tầng cần <strong>giấy phép xây dựng</strong> — xem thêm <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng cần lưu ý</a>.</p>
+<p>Đảm bảo sổ đỏ/hợp đồng, quy hoạch xây dựng, lộ giới, hướng nhà. Các hạng mục thay đổi kết cấu, nâng tầng cần <strong>giấy phép xây dựng</strong> — xem thêm <a href="/tin-tuc/luat-xay-dung-moi-nhat">luật xây dựng cần lưu ý</a>.</p>
 
 <h2>Bước 3: Chọn nhà thầu uy tín</h2>
 <p>Tiêu chí nên có:</p>

@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #23 — slug: thiet-ke-nha-dep-gia-re */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thiet-ke-nha-dep-gia-re", 0);
 
@@ -15,8 +15,8 @@ export const thietKeNhaDepGiaRe = {
     "Thiết kế nhà đẹp giá rẻ không phải là không thể: tối ưu công năng, chọn vật liệu đúng chỗ, tránh chi phí dư thừa. Tư vấn miễn phí — 0909 075 668.",
   metaKeywords:
     "thiết kế nhà đẹp giá rẻ, nhà phố giá rẻ, tối ưu chi phí thiết kế, công năng cơ bản, xây nhà tiết kiệm, kiến trúc sao khuê",
-  imageAlt: "thiet-ke-nha-dep-gia-re",
-  imageCaption: "thiet-ke-nha-dep-gia-re",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} — tối ưu ngân sách Sao Khuê`,
   content: `
 <h2>Thiết kế nhà đẹp giá rẻ — Có thực sự khả thi?</h2>
 <p>Khi ngân sách hạn chế, câu hỏi đầu tiên nhiều gia đình trẻ đặt ra là: <em>"Có thể có ngôi nhà đẹp mà không phải vay quá nhiều không?"</em>. Câu trả lời là <strong>có</strong> — nếu bạn biết cách <strong>tối ưu thiết kế ngay từ đầu</strong>, thay vì cắt giảm tuỳ tiện giữa chừng. <strong>Thiết kế nhà đẹp giá rẻ</strong> không có nghĩa là nhà xấu hoặc kém chất lượng — mà là nhà được thiết kế thông minh, tập trung ngân sách vào đúng chỗ và loại bỏ những khoản chi không thực sự cần thiết.</p>
@@ -112,6 +112,12 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Để lại dự phòng ít nhất 10%:</strong> Không dùng hết ngân sách vào thi công — luôn giữ lại phần dự phòng.</li>
 </ol>
 <p>Xem thêm <a href="/tin-tuc/cam-nang-xay-nha-2026">cẩm nang xây nhà 2026</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà mới nhất</a> để có cái nhìn toàn diện hơn.</p>
+
+${faqSection([
+  { q: "Thiết kế nhà đẹp giá rẻ có nghĩa là cắt chất lượng không?", a: "Không. Nghĩa là ưu tiên công năng, tỷ lệ mặt đứng và vật liệu đúng chỗ — cắt phào chỉ, nội thất dư thừa, không cắt thép–bê tông–chống thấm." },
+  { q: "Ngân sách dưới 1 tỷ nên chọn nhà mấy tầng?", a: "Lô nhỏ: 2 tầng hoặc 2 tầng + tum. Lô 5×15–5×18: có thể 3 tầng gói tiêu chuẩn nếu kiểm soát hoàn thiện. Khảo sát miễn phí 0909 075 668." },
+  { q: "Miễn phí thiết kế khi nào?", a: "Khi ký xây trọn gói theo chương trình Sao Khuê (theo quy mô). Thiết kế riêng không thi công vẫn tính phí theo hồ sơ." },
+])}
 
 ${homeLinkParagraph()}
 

@@ -1,7 +1,8 @@
+import { faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("bao-gia-xay-nha-tron-goi-phu-yen", 0);
 const SK_IMG_2 = slugImage("bao-gia-xay-nha-tron-goi-phu-yen", 1);
-﻿/** Nội dung bài viết SEO #16 — slug: bao-gia-xay-nha-tron-goi-phu-yen */
+/** Nội dung bài viết SEO #16 — slug: bao-gia-xay-nha-tron-goi-phu-yen */
 export const baoGiaXayNhaTronGoiPhuYen = {
   title: "Báo Giá Xây Nhà Trọn Gói Tại Phú Yên Chi Tiết",
   excerpt:
@@ -72,8 +73,8 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_1}" alt="bao-gia-xay-nha-phu-yen-2" loading="lazy" decoding="async" />
-<figcaption>bao-gia-xay-nha-phu-yen-2</figcaption>
+<img src="${SK_IMG_1}" alt="Báo giá xây nhà trọn gói Phú Yên — bảng hạng mục" loading="lazy" decoding="async" />
+<figcaption>Báo giá xây nhà trọn gói Phú Yên — minh bạch theo hạng mục</figcaption>
 </figure>
 
 <h2>Ví dụ dự toán nhà phố 3 tầng tại Tuy Hòa</h2>
@@ -112,8 +113,8 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_2}" alt="bao-gia-xay-nha-phu-yen-3" loading="lazy" decoding="async" />
-<figcaption>bao-gia-xay-nha-phu-yen-3</figcaption>
+<img src="${SK_IMG_2}" alt="Dự toán xây nhà phố Phú Yên tham khảo" loading="lazy" decoding="async" />
+<figcaption>Dự toán xây nhà phố Phú Yên — tham khảo trước khảo sát thực tế</figcaption>
 </figure>
 
 <h2>Cách nhận báo giá xây nhà Phú Yên chính xác từ Sao Khuê</h2>
@@ -127,6 +128,12 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </ul>
 <p>Sao Khuê cam kết gửi <strong>dự toán chi tiết theo hạng mục</strong> trong vòng 3–5 ngày làm việc sau khi khảo sát thực tế.</p>
 
+
+${faqSection([
+  { q: "Báo giá xây nhà Phú Yên trên mạng có đúng không?", a: "Chỉ là mốc tham khảo. Giá HĐ phụ thuộc nền, hẻm, số tầng và gói hoàn thiện sau khảo sát thực tế tại Tuy Hòa / huyện." },
+  { q: "Trọn gói Phú Yên gồm những gì?", a: "Thường từ móng–thô–hoàn thiện cơ bản, điện nước, cửa theo HĐ. Nội thất rời và thiết bị cao cấp tính riêng nếu không ghi trong gói." },
+  { q: "Nhận dự toán chi tiết mất bao lâu?", a: "Sau khảo sát, Sao Khuê gửi bảng hạng mục trong khoảng 3–5 ngày làm việc. Gọi 0909 075 668 hoặc form /lien-he." },
+])}
 
 <h2>Liên hệ báo giá xây nhà Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

@@ -1,4 +1,6 @@
 ﻿/** Nội dung bài viết SEO — slug: thiet-ke-thi-cong-nha-pho-dong-nai */
+import { faqSection } from "../article-seo-blocks";
+
 export const thietKeThiCongNhaPhoDongNai = {
   title: "Thiết Kế Và Thi Công Nhà Phố Hiện Đại Tại Đồng Nai",
   excerpt:
@@ -98,6 +100,12 @@ export const thietKeThiCongNhaPhoDongNai = {
   <li><strong>Hàng xóm &amp; an toàn:</strong> Che chắn, giảm bụi ồn trong khu dân cư đông.</li>
 </ul>
 
+
+${faqSection([
+  { q: "Sao Khuê thi công nhà phố Đồng Nai ở đâu?", a: "Biên Hòa, Long Thành, Nhơn Trạch, Trảng Bom và huyện lân cận — khảo sát lịch đội trước khi hẹn khởi công." },
+  { q: "Thiết kế + thi công một đơn vị có lợi gì?", a: "Giảm lệch 3D–hiện trường, một đầu mối bảo hành kết cấu. Đổi chi tiết giữa chừng ghi phụ lục giá." },
+  { q: "Đơn giá Đồng Nai có copy TP.HCM không?", a: "Không. Nhân công, vận chuyển và GPXD theo tỉnh — báo sau khảo sát lô đất cụ thể." },
+])}
 
 <h2>Liên hệ thiết kế &amp; thi công nhà phố Đồng Nai</h2>
 <ul>

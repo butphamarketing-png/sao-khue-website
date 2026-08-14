@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #27 — slug: quy-trinh-xay-nha-tron-goi-a-z */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("quy-trinh-xay-nha-tron-goi-a-z", 0);
 
@@ -94,8 +94,13 @@ ${imageFigure(SK_IMG_1, focusKeyword, 2)}
   <li>Chính sách bảo hành: thời gian, phạm vi bảo hành phải ghi rõ trong hợp đồng.</li>
 </ul>
 
+${faqSection([
+  { q: "Quy trình xây nhà trọn gói mất bao lâu?", a: "Nhà phố 2–3 tầng thường 5–8 tháng (chưa kể xin phép). 4–5 tầng hoặc nền yếu kéo dài hơn. Hợp đồng ghi mốc theo ngày làm việc." },
+  { q: "Thanh toán trọn gói chia mấy đợt?", a: "Thường 4–6 đợt gắn móng–thô–hoàn thiện–bàn giao. Không đặt cọc toàn bộ từ đầu; giữ lại một phần đến nghiệm thu." },
+  { q: "Chủ nhà cần làm gì trong quy trình?", a: "Cung cấp sổ đất, duyệt mặt bằng và vật tư, tham gia nghiệm thu từng giai đoạn. Sao Khuê lo thiết kế, phép (theo HĐ), thi công và bảo hành." },
+])}
+
 ${homeLinkParagraph("Tìm hiểu thêm về dịch vụ và tiêu chuẩn thi công tại")}
-
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

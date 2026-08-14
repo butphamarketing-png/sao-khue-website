@@ -69,7 +69,7 @@ ${imageFigure(IMG_2, FOCUS, 2)}
     <tr><td>Thiết kế + thi công</td><td>Bản vẽ + trọn gói xây dựng</td><td>Một đơn vị từ A–Z</td></tr>
   </tbody>
 </table>
-<p>Chi tiết: <a href="/thiet-ke">xem tất cả bài thiết kế</a> · <a href="/bao-gia">bảng báo giá xây dựng</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
+<p>Chi tiết: <a href="/thiet-ke">xem tất cả bài thiết kế</a> · <a href="/bao-gia">bảng báo giá xây dựng</a> · <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
 
 <h2>Quy trình thiết kế nhà đẹp TP.HCM tại Sao Khuê</h2>
 <ol>
@@ -109,7 +109,7 @@ ${imageFigure(IMG_3, FOCUS, 3)}
 <ul>
   <li><strong>Trụ sở TP.HCM:</strong> 245/8 Bình Lợi, Q. Bình Thạnh — khảo sát nhanh nội thành.</li>
   <li><strong>Thiết kế 2D/3D chuyên nghiệp:</strong> Hơn <strong>500 công trình</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
-  <li><strong>Thi công trọn gói:</strong> Từ bản vẽ đến bàn giao — <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</li>
+  <li><strong>Thi công trọn gói:</strong> Từ bản vẽ đến bàn giao — <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</li>
   <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục.</li>
   <li><strong>Bảo hành kết cấu 10 năm</strong> khi ký hợp đồng thi công trọn gói.</li>
 </ul>

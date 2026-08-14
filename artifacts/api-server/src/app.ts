@@ -75,8 +75,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(authMiddleware);
 
 app.use("/api", router);
+/** Root + /api — Vercel rewrite /sitemap.xml|/robots.txt|/feed.xml → /api/... */
 app.use(sitemapRouter);
 app.use(rssRouter);
+app.use("/api", sitemapRouter);
+app.use("/api", rssRouter);
 
 /** WordPress-style trailing slashes — /sua-nha-tron-goi-tphcm/ → /sua-nha-tron-goi-tphcm */
 app.use((req, res, next) => {

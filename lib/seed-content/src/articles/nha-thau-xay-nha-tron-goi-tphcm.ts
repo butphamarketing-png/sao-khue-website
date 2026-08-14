@@ -34,7 +34,7 @@ ${imageFigure(IMG_1, FOCUS, 1)}
   <li><strong>Ngân sách cần chốt sớm</strong> để tránh phát sinh do bóc tách thiếu hạng mục.</li>
   <li><strong>Khu đất khó thi công</strong> như hẻm nhỏ, nền đất yếu, cần giải pháp móng và tổ chức thi công chặt chẽ.</li>
 </ul>
-<p>Nếu bạn đang ở giai đoạn tìm đơn vị phù hợp, nên tham khảo song song <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói</a> để hình dung mặt bằng chi phí.</p>
+<p>Nếu bạn đang ở giai đoạn tìm đơn vị phù hợp, nên tham khảo song song <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói</a> để hình dung mặt bằng chi phí.</p>
 
 <h2>Tiêu chí chọn nhà thầu xây nhà trọn gói TP.HCM uy tín</h2>
 <h3>1. Báo giá bóc tách rõ từng phần</h3>

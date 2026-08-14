@@ -45,9 +45,18 @@ export function isMoneyPageSlug(slug: string): boolean {
   return MONEY_SET.has(slug);
 }
 
+/**
+ * Factory từ khóa ngắn (calendar batch 15–64) — slug luôn kết thúc `-ngan`.
+ * Trùng khung intro/H2/FAQ; money page không dùng suffix này.
+ */
+function isShortKeywordFactorySlug(slug: string): boolean {
+  return slug.endsWith("-ngan");
+}
+
 /** Thin factory trừ money/hand pillar → noindex + bỏ sitemap. */
 export function shouldNoindexPostSlug(slug: string): boolean {
   if (MONEY_SET.has(slug) || HAND_PILLAR_SLUGS.has(slug)) return false;
+  if (isShortKeywordFactorySlug(slug)) return true;
   return THIN_FACTORY_SLUGS.has(slug);
 }
 

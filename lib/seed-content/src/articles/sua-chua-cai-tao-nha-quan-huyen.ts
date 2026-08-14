@@ -51,8 +51,16 @@ ${imageFigure(img1, o.focusKeyword, 1)}
 
 ${imageFigure(img2, o.focusKeyword, 2)}
 
-<h2>Chi phí ${o.focusKeyword} (ước tính)</h2>
-<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán chính xác cho nhà tại ${o.districtLabel}.</p>
+<h2>Ở trong nhà khi ${o.focusKeyword}</h2>
+<p>${o.localNote} Sao Khuê chia khu thi công, che bạt, hút bụi cuối ngày; giữ 1 WC và bếp phụ nếu gia đình không chuyển chỗ. Đục tường chịu lực hoặc gia cố móng: nên chuyển tạm 1–2 tuần.</p>
+
+<h2>Chi phí ${o.focusKeyword} (ước tính 2026)</h2>
+<p>Giá phụ thuộc diện tích, độ phức tạp và vật liệu tại ${o.districtLabel}. Tham khảo: sửa nhẹ 1,5–3 triệu đ/m²; sửa công năng 2,5–3,5 triệu đ/m²; cải tạo toàn diện 8–15 triệu đ/m². Hẻm hẹp cộng vận chuyển. Liên hệ <strong>0909 075 668</strong> hoặc <a href="/bao-gia">/bao-gia</a> để nhận dự toán sau khảo sát.</p>
+
+<h2>FAQ — ${o.focusKeyword}</h2>
+<details><summary>${o.focusKeyword.charAt(0).toUpperCase() + o.focusKeyword.slice(1)} hết bao nhiêu?</summary><p>Không có giá ảo qua ảnh. Sao Khuê lập dự toán từng hạng mục sau khảo sát tại ${o.districtLabel}. Phát sinh chỉ khi đổi phạm vi hoặc mở tường gặp mục kết cấu.</p></details>
+<details><summary>Sửa nhà ${o.districtLabel} khi đang ở được không?</summary><p>Sơn, lát, WC từng phòng: được nếu chia khu. Đục kết cấu, nâng tầng: nên chuyển tạm. Che chắn ghi trong hợp đồng.</p></details>
+<details><summary>Khảo sát ${o.districtLabel} có phí không?</summary><p>${/Huyện|Hóc Môn|Bình Chánh/i.test(o.districtLabel) ? "Miễn phí, hẹn trước 1 ngày vì khoảng cách từ Bình Thạnh." : "Nội thành TP.HCM: khảo sát miễn phí."} Gọi 0909 075 668.</p></details>
 
 ${homeLinkParagraph()}
 

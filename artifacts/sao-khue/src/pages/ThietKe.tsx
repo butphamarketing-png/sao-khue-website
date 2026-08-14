@@ -55,10 +55,12 @@ export default function ThietKe() {
     description:
       banner.subtitle +
       " Tổng hợp bài viết thiết kế nhà phố, biệt thự, nội thất và quy trình tư vấn thiết kế trước khi xây.",
-    path: currentPage > 1 ? `/thiet-ke?trang=${currentPage}` : "/thiet-ke",
+    path: "/thiet-ke",
+    noindex: currentPage > 1,
     keywords:
       "thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc tphcm, thiết kế nhà 2d 3d",
     ogImage,
+    ogImageAlt: `Thiết kế kiến trúc nhà ở — ${brand}`,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Thiết kế kiến trúc", banner.subtitle, absoluteUrl("/thiet-ke")),

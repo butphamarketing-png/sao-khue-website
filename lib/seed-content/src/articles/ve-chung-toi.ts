@@ -1,11 +1,13 @@
 /** Nội dung bài viết SEO — slug: ve-chung-toi */
+import { faqSection } from "../article-seo-blocks";
+
 export const veChungToi = {
   title: "Về Sao Khuê — Hơn 10 Năm Thiết Kế & Xây Dựng TP.HCM",
   excerpt:
     "Giới thiệu Công ty TNHH Kiến Trúc Sao Khuê: 500+ công trình, đội ngũ chuyên môn, quy trình minh bạch, bảo hành 10 năm kết cấu.",
   metaTitle: "Về Chúng Tôi — Kiến Trúc Sao Khuê | 10+ Năm Kinh Nghiệm",
   metaDescription:
-    "Sao Khuê — xây nhà trọn gói, thiết kế nhà phố, cải tạo nhà cũ TP.HCM từ 2014. Báo giá minh bạch. Hotline 0909 075 668.",
+    "Sao Khuê — xây nhà trọn gói, thiết kế nhà phố, cải tạo nhà cũ TP.HCM từ 2014. Trụ sở Bình Thạnh, BH kết cấu 10 năm. Hotline 0909 075 668.",
   metaKeywords:
     "công ty xây dựng tphcm, xây nhà trọn gói, báo giá xây nhà, thiết kế nhà phố, cải tạo nhà cũ, kiến trúc sao khuê, nhà thầu uy tín",
   content: `
@@ -48,9 +50,24 @@ export const veChungToi = {
 </ul>
 
 <h2>Khu vực hoạt động</h2>
-<p>Trụ sở: <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong>. Nhận thi công toàn TP.HCM và tỉnh lân cận: Bình Dương, Đồng Nai, Long An…</p>
+<p>Trụ sở: <strong>245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</strong>. Nhận thi công toàn TP.HCM (Bình Thạnh, Thủ Đức, Gò Vấp, Tân Bình, Tân Phú, Q.7…) và tỉnh lân cận: Bình Dương, Đồng Nai, Long An. Có chi nhánh hỗ trợ khu vực Đắk Lắk — khảo sát hẹn trước.</p>
+
+<h2>Cách làm việc với Sao Khuê</h2>
+<ol>
+  <li>Gọi <strong>0909 075 668</strong> hoặc gửi form <a href="/lien-he">liên hệ</a> — ảnh nhà/đất + vị trí.</li>
+  <li>Khảo sát hiện trạng (miễn phí nội thành khi đi kèm báo giá thi công).</li>
+  <li>Dự toán theo hạng mục, list vật tư, mốc nghiệm thu.</li>
+  <li>Ký hợp đồng — thi công — bàn giao — bảo hành.</li>
+</ol>
+<p>Xem công trình: <a href="/cong-trinh">/cong-trinh</a> · sơ đồ bộ phận: <a href="/bai-viet/so-do-to-chuc">sơ đồ tổ chức</a>.</p>
+
+${faqSection([
+  { q: "Sao Khuê có bán thầu không?", a: "Không. Trực tiếp thi công và giám sát. Hợp đồng ghi rõ vật tư, mốc nghiệm thu, BH kết cấu 10 năm." },
+  { q: "Có cần đến văn phòng Bình Thạnh không?", a: "Không bắt buộc. Có thể khảo sát tại công trình. Văn phòng 245/8 Bình Lợi dùng khi ký HĐ / xem mẫu." },
+  { q: "Nhận thi công tỉnh không?", a: "Có: Bình Dương, Đồng Nai, Long An, Đắk Lắk (hẹn lịch). Gói nhỏ xa nội thành có thể phụ phí di chuyển." },
+])}
 
 <h2>Liên hệ</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây dựng nhà phố uy tín</a> · <a href="/cong-trinh">Công trình tiêu biểu</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây dựng nhà phố uy tín</a></p>
 `.trim(),
 };

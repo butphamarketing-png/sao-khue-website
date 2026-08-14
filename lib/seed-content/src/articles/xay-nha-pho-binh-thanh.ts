@@ -1,5 +1,6 @@
 /** Nội dung bài viết SEO — slug: xay-nha-pho-binh-thanh */
 import { caseStudyRelatedBlock } from "../case-study-blocks";
+import { faqSection } from "../article-seo-blocks";
 
 export const xayNhaPhoBinhThanh = {
   title: "Công Trình Xây Nhà Phố 4 Tầng Quận Bình Thạnh — Sao Khuê",
@@ -20,7 +21,7 @@ export const xayNhaPhoBinhThanh = {
   <li><strong>Quy mô:</strong> 4 tầng + sân thượng</li>
   <li><strong>Diện tích khu đất:</strong> ~5m x 18m</li>
   <li><strong>Phong cách:</strong> Hiện đại, gam trung tính, lan can kính</li>
-  <li><strong>Hình thức:</strong> <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a></li>
+  <li><strong>Hình thức:</strong> <a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a></li>
 </ul>
 
 <h2>Giải pháp thiết kế — thi công</h2>
@@ -43,8 +44,20 @@ export const xayNhaPhoBinhThanh = {
 <ul>
   <li>Hotline <strong>0909 075 668</strong></li>
   <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></li>
-  <li>Xem thêm <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a></li>
+  <li>Xem thêm <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a> · <a href="/tin-tuc/xay-nha-tron-goi-binh-thanh">trọn gói Bình Thạnh</a></li>
 </ul>
+
+<h2>Vì sao lô 5×18m chọn 4 tầng?</h2>
+<p>Nội thành Bình Thạnh đất hẹp: 4 tầng lấy đủ phòng ngủ + giếng trời, đúng phép phường. Trệt khách–bếp, lầu ngủ, tum phơi. Văn phòng Sao Khuê tại Bình Lợi nên giám sát hiện trường nhanh hơn quận xa.</p>
+<p>Mốc ngân sách nhà phố 4 tầng lô tương tự: xem <a href="/tin-tuc/xay-nha-4-tang-tphcm">xây nhà 4 tầng TP.HCM</a>. Số trên mạng không thay khảo sát hẻm–móng.</p>
+
+${faqSection([
+  { q: "Nhà 5×18m Bình Thạnh xây 4 tầng được không?", a: "Phụ thuộc quy hoạch phường và PCCC, không chỉ kích thước lô. Tra phép trước khi vẽ 3D." },
+  { q: "Giếng trời giữa nhà có tốn diện tích không?", a: "Chiếm một phần sàn nhưng lấy sáng 3–4 tầng — nhà ống không giếng thường tối giữa." },
+])}
+
+<h2>Tiến độ thực tế công trình Bình Thạnh</h2>
+<p>Móng–đài vài tuần (cọc thêm nếu nền yếu). Mỗi sàn thô khoảng 2–3 tuần. Hoàn thiện 6–10 tuần tùy vật tư. Hẻm hẹp: ca đổ sớm, xe phế thải nhỏ — phụ phí ghi rõ. Chủ nhà nhận ảnh tiến độ định kỳ; nghiệm thu từng giai đoạn trước khi chuyển đợt thanh toán.</p>
 
 ${caseStudyRelatedBlock("xay-nha-pho-binh-thanh")}
 `.trim(),

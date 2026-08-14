@@ -29,6 +29,30 @@ export { nhaThauXayNhaTronGoiTphcm } from "./nha-thau-xay-nha-tron-goi-tphcm";
 export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
 export { baoGiaSuaNhaTronGoiTphcm } from "./bao-gia-sua-nha-tron-goi-tphcm";
 export {
+  adsBoSung100CaiTaoBySlug,
+  ADS_BO_SUNG_100_CAI_TAO_SLUGS,
+} from "./ads-bo-sung-100-cai-tao";
+export {
+  adsBoSung100XayNhaBySlug,
+  ADS_BO_SUNG_100_XAY_NHA_SLUGS,
+} from "./ads-bo-sung-100-xay-nha";
+export {
+  adsBoSung100Dot2CaiTaoBySlug,
+  ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS,
+} from "./ads-bo-sung-100-dot2-cai-tao";
+export {
+  adsBoSung100Dot2XayNhaBySlug,
+  ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS,
+} from "./ads-bo-sung-100-dot2-xay-nha";
+export {
+  adsBoSung100Dot3CaiTaoBySlug,
+  ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS,
+} from "./ads-bo-sung-100-dot3-cai-tao";
+export {
+  adsBoSung100Dot3XayNhaBySlug,
+  ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS,
+} from "./ads-bo-sung-100-dot3-xay-nha";
+export {
   baoGiaXayNhaMoi,
   baoGiaCaiTaoNhaCu,
   baoGiaXayDungNha2Tang,
@@ -364,6 +388,51 @@ export {
   shortKeywordBatch64Slugs,
   getShortKeywordBatch64Article,
 } from "./short-keyword-tin-tuc-articles-batch64";
+export {
+  shortKeywordBatch65ArticlesBySlug,
+  shortKeywordBatch65Slugs,
+  getShortKeywordBatch65Article,
+} from "./short-keyword-tin-tuc-articles-batch65";
+export {
+  shortKeywordBatch66ArticlesBySlug,
+  shortKeywordBatch66Slugs,
+  getShortKeywordBatch66Article,
+} from "./short-keyword-tin-tuc-articles-batch66";
+export {
+  shortKeywordBatch67ArticlesBySlug,
+  shortKeywordBatch67Slugs,
+  getShortKeywordBatch67Article,
+} from "./short-keyword-tin-tuc-articles-batch67";
+export {
+  shortKeywordBatch68ArticlesBySlug,
+  shortKeywordBatch68Slugs,
+  getShortKeywordBatch68Article,
+} from "./short-keyword-tin-tuc-articles-batch68";
+export {
+  shortKeywordBatch69ArticlesBySlug,
+  shortKeywordBatch69Slugs,
+  getShortKeywordBatch69Article,
+} from "./short-keyword-tin-tuc-articles-batch69";
+export {
+  shortKeywordBatch70ArticlesBySlug,
+  shortKeywordBatch70Slugs,
+  getShortKeywordBatch70Article,
+} from "./short-keyword-tin-tuc-articles-batch70";
+export {
+  shortKeywordBatch71ArticlesBySlug,
+  shortKeywordBatch71Slugs,
+  getShortKeywordBatch71Article,
+} from "./short-keyword-tin-tuc-articles-batch71";
+export {
+  shortKeywordBatch72ArticlesBySlug,
+  shortKeywordBatch72Slugs,
+  getShortKeywordBatch72Article,
+} from "./short-keyword-tin-tuc-articles-batch72";
+export {
+  shortKeywordBatch73ArticlesBySlug,
+  shortKeywordBatch73Slugs,
+  getShortKeywordBatch73Article,
+} from "./short-keyword-tin-tuc-articles-batch73";
 export {
   mienTrungSuaNhaArticlesBySlug,
   mienTrungSuaNhaSlugs,

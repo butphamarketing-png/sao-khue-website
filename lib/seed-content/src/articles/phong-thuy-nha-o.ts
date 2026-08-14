@@ -31,17 +31,26 @@ export const phongThuyNhaO = {
   <li>Lấn chiếm lộ giới để mở rộng mặt tiền.</li>
   <li>Bỏ qua chống thấm, thoát nước mái và sân thượng.</li>
 </ul>
-<p>Kết hợp tư vấn phong thủy với <a href="/kinh-nghiem/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> và nhà thầu có giám sát kỹ thuật.</p>
+<p>Kết hợp tư vấn phong thủy với <a href="/tin-tuc/cam-nang-xay-nha-2026">cẩm nang xây nhà</a> và nhà thầu có giám sát kỹ thuật.</p>
+
+<h2>FAQ phong thủy khi xây nhà phố</h2>
+<h3>Ép hướng nhà trái quy hoạch được không?</h3>
+<p>Không. Lộ giới, chỉ giới và giấy phép đứng trước. Kiến trúc sư xoay công năng (cửa, giếng trời, bếp) trong khung pháp lý — không lấn ranh để “hợp tuổi”.</p>
+<h3>Giếng trời nhà ống có phải yếu tố phong thủy?</h3>
+<p>Vừa thông khí (phong thủy) vừa lấy sáng, giảm ẩm — đây là giải pháp kỹ thuật nhà phố TP.HCM, không phải đồ trang trí.</p>
 
 <h2>Sao Khuê hỗ trợ thế nào?</h2>
 <ul>
   <li>Lắng nghe yêu cầu hướng, bố trí phòng theo gu gia đình.</li>
   <li>Đề xuất phương án đẹp, khả thi về kết cấu và pháp lý.</li>
-  <li>Thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
+  <li>Thi công <a href="/dich-vu/xay-nha-tron-goi">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
 </ul>
 
 
 <h2>Liên hệ tư vấn thiết kế</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
+
+<h2>Phong thủy và khí hậu nhiệt đới</h2>
+<p>Nhà phố TP.HCM cần thông gió và chống nóng hướng Tây nhiều hơn “hợp tuổi” trên giấy. Lam, giếng trời, màu sáng là giải pháp kỹ thuật — Sao Khuê ưu tiên ở được thật, không đục kết cấu vì lời đồn.</p>
 `.trim(),
 };

@@ -53,6 +53,15 @@ import { shortKeywordBatch61Slugs } from "./articles/short-keyword-tin-tuc-artic
 import { shortKeywordBatch62Slugs } from "./articles/short-keyword-tin-tuc-articles-batch62";
 import { shortKeywordBatch63Slugs } from "./articles/short-keyword-tin-tuc-articles-batch63";
 import { shortKeywordBatch64Slugs } from "./articles/short-keyword-tin-tuc-articles-batch64";
+import { shortKeywordBatch65Slugs } from "./articles/short-keyword-tin-tuc-articles-batch65";
+import { shortKeywordBatch66Slugs } from "./articles/short-keyword-tin-tuc-articles-batch66";
+import { shortKeywordBatch67Slugs } from "./articles/short-keyword-tin-tuc-articles-batch67";
+import { shortKeywordBatch68Slugs } from "./articles/short-keyword-tin-tuc-articles-batch68";
+import { shortKeywordBatch69Slugs } from "./articles/short-keyword-tin-tuc-articles-batch69";
+import { shortKeywordBatch70Slugs } from "./articles/short-keyword-tin-tuc-articles-batch70";
+import { shortKeywordBatch71Slugs } from "./articles/short-keyword-tin-tuc-articles-batch71";
+import { shortKeywordBatch72Slugs } from "./articles/short-keyword-tin-tuc-articles-batch72";
+import { shortKeywordBatch73Slugs } from "./articles/short-keyword-tin-tuc-articles-batch73";
 
 export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "7": xayNhaTphcmBatch7Slugs,
@@ -109,6 +118,15 @@ export const INDEXING_BATCH_SLUGS: Record<string, readonly string[]> = {
   "62": shortKeywordBatch62Slugs,
   "63": shortKeywordBatch63Slugs,
   "64": shortKeywordBatch64Slugs,
+  "65": shortKeywordBatch65Slugs,
+  "66": shortKeywordBatch66Slugs,
+  "67": shortKeywordBatch67Slugs,
+  "68": shortKeywordBatch68Slugs,
+  "69": shortKeywordBatch69Slugs,
+  "70": shortKeywordBatch70Slugs,
+  "71": shortKeywordBatch71Slugs,
+  "72": shortKeywordBatch72Slugs,
+  "73": shortKeywordBatch73Slugs,
 };
 
 export {
@@ -166,4 +184,13 @@ export {
   shortKeywordBatch62Slugs,
   shortKeywordBatch63Slugs,
   shortKeywordBatch64Slugs,
+  shortKeywordBatch65Slugs,
+  shortKeywordBatch66Slugs,
+  shortKeywordBatch67Slugs,
+  shortKeywordBatch68Slugs,
+  shortKeywordBatch69Slugs,
+  shortKeywordBatch70Slugs,
+  shortKeywordBatch71Slugs,
+  shortKeywordBatch72Slugs,
+  shortKeywordBatch73Slugs,
 };

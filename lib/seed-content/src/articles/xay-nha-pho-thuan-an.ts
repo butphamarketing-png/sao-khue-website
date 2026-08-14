@@ -1,5 +1,6 @@
 /** Nội dung bài viết SEO — slug: xay-nha-pho-thuan-an */
 import { caseStudyRelatedBlock } from "../case-study-blocks";
+import { faqSection } from "../article-seo-blocks";
 
 export const xayNhaPhoThuanAn = {
   title: "Công Trình Xây Nhà Phố 4 Tầng Tại Thuận An, Bình Dương",
@@ -45,6 +46,15 @@ export const xayNhaPhoThuanAn = {
   <li><a href="/lien-he">Liên hệ khảo sát miễn phí</a></li>
   <li>Xem thêm <a href="/tin-tuc/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a></li>
 </ul>
+
+<h2>Thuận An khác nội thành TP.HCM chỗ nào?</h2>
+<p>GPXD theo tỉnh Bình Dương. Đội từ Bình Thạnh khảo sát hẹn trước — gói trọn gói 3–4 tầng ít phụ phí hơn gói sửa nhỏ. Đơn giá m² Sài Gòn không copy nguyên lên lô Thuận An / Dĩ An.</p>
+<p>Lô 5×16 hẹp hơn 5×18 Bình Thạnh: cầu thang và giếng chiếm tỷ lệ lớn hơn. Mặt tiền gọn, lan can kính tầng trên để lấy sáng.</p>
+
+${faqSection([
+  { q: "Xây nhà Thuận An có phụ phí di chuyển không?", a: "Gói trọn gói nhà phố thường gộp. Gói sửa nhỏ / khảo sát lẻ: hẹn lịch, có thể phụ phí. Hỏi khi gọi 0909 075 668." },
+  { q: "Lô 5×16 xây 4 tầng được không?", a: "Theo quy hoạch phường/xã Thuận An, không theo ý chủ nhà. Tra phép trước khi thiết kế." },
+])}
 
 ${caseStudyRelatedBlock("xay-nha-pho-thuan-an")}
 `.trim(),

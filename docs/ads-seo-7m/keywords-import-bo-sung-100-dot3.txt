@@ -1,0 +1,137 @@
+# 100 từ khóa bổ sung đợt 3 — Kiến Trúc Sao Khuê
+# Không trùng A1–A4 / B1–B3, đợt 1, đợt 2
+# Exact = [keyword] | Phrase = "keyword" — không Broad
+#
+# Money pages:
+# Geo → /tin-tuc/cai-tao-nha-{quan-4|quan-5|quan-6|quan-9|quan-11|cu-chi}
+# Giếng trời / cầu thang / ban công / tầng trệt → /tin-tuc/cai-tao-gieng-troi-nha-pho-tphcm
+# Kinh doanh / ngập / 4 tầng → /tin-tuc/cai-tao-nha-ket-hop-kinh-doanh-tphcm
+# Gác lửng / thông tầng / ống 4m → /tin-tuc/cai-tao-gac-lung-nha-pho-tphcm
+# Thấm tường / WC / mái tôn → /tin-tuc/chong-tham-tuong-wc-tphcm
+# Xin phép cải tạo → /tin-tuc/xin-giay-phep-cai-tao-nha-tphcm
+# Ép cọc → /tin-tuc/ep-coc-nha-pho-tphcm
+# Lệch tầng / gara / 5 tầng → /tin-tuc/xay-nha-lech-tang-tphcm
+# 4x12 / 5x16 → /tin-tuc/xay-nha-4x12-tphcm
+# Hoàn thiện 2026 → /tin-tuc/don-gia-hoan-thien-nha-2026
+# Tiết kiệm → /tin-tuc/xay-nha-tiet-kiem-tphcm
+# Long An (đã có) → /tin-tuc/xay-dung-nha-long-an
+# GPXD (đã có) → /tin-tuc/xin-giay-phep-xay-dung-tphcm
+# Trọn gói Q.1/3/9/10 (đã có) → /tin-tuc/xay-nha-tron-goi-quan-{1|3|9|10}
+
+# ========== CAMPAIGN CẢI TẠO (60) ==========
+
+# --- E1 Geo còn lại ---
+[cải tạo nhà quận 4]
+[cải tạo nhà quận 5]
+[cải tạo nhà quận 6]
+[cải tạo nhà quận 9]
+[cải tạo nhà quận 11]
+[cải tạo nhà củ chi]
+[sửa nhà quận 8]
+[sửa nhà quận 10]
+[sửa nhà phú nhuận]
+[sửa nhà nhà bè]
+"cải tạo nhà quận 4"
+"cải tạo nhà quận 5"
+"cải tạo nhà quận 9"
+"cải tạo nhà củ chi"
+"sửa nhà quận 10"
+"sửa nhà phú nhuận"
+
+# --- E2 Không gian / kết cấu nhẹ ---
+[cải tạo giếng trời nhà phố]
+[cải tạo cầu thang nhà phố]
+[cải tạo ban công nhà phố]
+[cải tạo tầng trệt nhà phố]
+[thông tầng nhà phố tphcm]
+[thay mái tôn nhà tphcm]
+[sửa cửa nhà phố tphcm]
+[cải tạo nhà ống 4m]
+"cải tạo giếng trời"
+"cải tạo cầu thang nhà phố"
+"cải tạo ban công"
+"cải tạo tầng trệt"
+"thông tầng nhà phố"
+"thay mái tôn nhà"
+[xin giấy phép cải tạo nhà]
+"xin giấy phép cải tạo nhà"
+
+# --- E3 Kinh doanh / tình huống ---
+[cải tạo nhà kết hợp kinh doanh]
+[cải tạo nhà mặt tiền kinh doanh]
+[sửa nhà sau mưa ngập tphcm]
+[cải tạo nhà cũ 4 tầng tphcm]
+[sửa nhà khẩn cấp tphcm]
+[cải tạo nhà ống hẹp tphcm]
+[dịch vụ cải tạo nhà phố tphcm]
+[nhà thầu cải tạo nhà tphcm]
+"cải tạo nhà kết hợp kinh doanh"
+"sửa nhà sau mưa ngập"
+"cải tạo nhà cũ 4 tầng"
+"cải tạo nhà ống hẹp"
+"nhà thầu cải tạo nhà"
+"dịch vụ cải tạo nhà phố tphcm"
+
+# --- E4 Thấm / gác lửng / cửa ---
+[chống thấm tường ngoài tphcm]
+[chống thấm wc tphcm]
+[sửa sàn nhà tphcm]
+[cải tạo phòng ngủ nhà phố]
+[làm gác lửng nhà phố]
+[cải tạo nhà có gác lửng]
+[sơn mặt tiền nhà phố]
+[thay cửa nhôm kính nhà phố]
+"chống thấm tường ngoài"
+"chống thấm wc tphcm"
+"làm gác lửng nhà phố"
+"sơn mặt tiền nhà phố"
+"thay cửa nhôm kính"
+"cải tạo phòng ngủ nhà phố"
+
+# ========== CAMPAIGN XÂY NHÀ (40) ==========
+
+# --- F1 Geo xây ---
+[xây nhà trọn gói quận 1]
+[xây nhà trọn gói quận 3]
+[xây nhà trọn gói quận 9]
+[xây nhà trọn gói quận 10]
+[xây nhà trọn gói long an]
+[xây nhà long an]
+[xây nhà thủ đức trọn gói]
+[xây nhà gò vấp trọn gói]
+"xây nhà trọn gói quận 1"
+"xây nhà trọn gói quận 3"
+"xây nhà trọn gói long an"
+"xây nhà long an"
+"xây nhà trọn gói quận 9"
+"xây nhà trọn gói quận 10"
+
+# --- F2 Loại / kỹ thuật ---
+[ép cọc nhà phố tphcm]
+[xây nhà lệch tầng tphcm]
+[xây nhà có gara tphcm]
+[xây nhà 5 tầng tphcm]
+[xây nhà 4x12 tphcm]
+[xây nhà 5x16 tphcm]
+[hoàn thiện nhà phố tphcm]
+[giám sát thi công nhà phố]
+"ép cọc nhà phố"
+"xây nhà lệch tầng"
+"xây nhà có gara"
+"xây nhà 5 tầng tphcm"
+"hoàn thiện nhà phố tphcm"
+"giám sát thi công nhà phố"
+
+# --- F3 Giá / phép ---
+[đơn giá hoàn thiện nhà 2026]
+[chi phí ép cọc nhà phố]
+[báo giá xây nhà 4x12]
+[giấy phép xây dựng nhà phố tphcm]
+[chi phí xin phép xây nhà tphcm]
+[xây nhà tiết kiệm tphcm]
+"đơn giá hoàn thiện nhà 2026"
+"chi phí ép cọc nhà phố"
+"báo giá xây nhà 4x12"
+"giấy phép xây dựng nhà phố"
+"xây nhà tiết kiệm tphcm"
+"chi phí xin phép xây nhà"

@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #26 — slug: thue-thiet-ke-nha-truoc-khi-xay */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thue-thiet-ke-nha-truoc-khi-xay", 0);
 
@@ -100,7 +100,12 @@ ${imageFigure(SK_IMG_1, focusKeyword, 2)}
 <p>Với nhà phố 3 tầng diện tích ~150 m² sàn, tổng phí thiết kế đầy đủ thường từ <strong>27–42 triệu</strong> — chiếm khoảng 2–3% tổng chi phí xây dựng. Đây là khoản bảo hiểm rẻ nhất cho công trình của bạn.</p>
 
 ${homeLinkParagraph("Xem thêm dự án thực tế và portfolio thiết kế tại")}
-
+
+${faqSection([
+  { q: "Thuê thiết kế trước khi xây có bắt buộc không?", a: "Không bắt buộc pháp lý với mọi trường hợp, nhưng hồ sơ đầy đủ giúp xin phép và thi công đúng — giảm phát sinh và tranh chấp với thầu." },
+  { q: "Phí thiết kế khoảng bao nhiêu?", a: "Nhà phố thường vài chục triệu tùy m² và mức hồ sơ (2D / 2D+3D / kèm kết cấu). Miễn phí khi ký trọn gói theo chương trình." },
+  { q: "Thiết kế xong có bắt buộc thuê Sao Khuê thi công không?", a: "Không. Bạn có thể mang hồ sơ đi thi công nơi khác; nếu ký trọn gói thì được ưu đãi thiết kế." },
+])}
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

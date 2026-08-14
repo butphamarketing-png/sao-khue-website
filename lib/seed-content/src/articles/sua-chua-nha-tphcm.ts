@@ -48,6 +48,23 @@ export const suaChuaNhaTphcm = {
 <p>Sửa nhỏ trong nhà thường không; thay đổi mặt tiền, kết cấu cần tư vấn pháp lý.</p>
 
 <h2>Liên hệ</h2>
-<p><a href="/lien-he">/lien-he</a> · <a href="/bao-gia">/bao-gia</a> · Xem <a href="/cong-trinh/sua-nha-quan-3">công trình Q.3</a></p>
+<p><a href="/lien-he">/lien-he</a> · <a href="/bao-gia">/bao-gia</a> · Xem <a href="/cong-trinh/sua-nha-quan-3">công trình Q.3</a> · Landing <a href="/cai-tao-nha">/cai-tao-nha</a></p>
+
+<h2>Sửa điểm vs cải tạo toàn nhà</h2>
+<p>Chống thấm 1 sân, sơn 1 tầng, thay 1 WC: gói sửa chữa. Đập thông, đổi layout, nâng tầng: xem <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>. Sao Khuê nói thẳng gói nào phù hợp sau khảo sát — không bán “sửa nhẹ” khi khung cần gia cố.</p>
+<p>Nhà đang ở: chia khu, giữ 1 WC. Gọi <strong>0909 075 668</strong>, gửi ảnh hiện trạng.</p>
+
+<h2>Quy trình sửa chữa tại Sao Khuê</h2>
+<ol>
+  <li>Gửi ảnh / mô tả qua Zalo hoặc form <a href="/lien-he">liên hệ</a>.</li>
+  <li>Kỹ sư khảo sát tận nhà (nội thành miễn phí theo lịch).</li>
+  <li>Dự toán theo hạng mục: chống thấm, sơn, điện nước, ốp lát.</li>
+  <li>Thi công theo khu; dọn dẹp cuối ngày.</li>
+  <li>Nghiệm thu + BH hoàn thiện theo HĐ; gia cố kết cấu tới 10 năm nếu có.</li>
+</ol>
+<p>Landing Ads cải tạo: <a href="/cai-tao-nha">/cai-tao-nha</a> · Báo giá tham khảo: <a href="/bao-gia">/bao-gia</a>.</p>
+
+<h2>Bảo hành sau sửa chữa</h2>
+<p>Hoàn thiện 12–36 tháng theo hạng mục; gia cố kết cấu tới 10 năm nếu có trong HĐ. Giữ biên bản nghiệm thu và ảnh trước–sau để đối chiếu khi bảo hành. Hotline CSKH: <strong>0909 075 668</strong>.</p>
 `.trim(),
 };

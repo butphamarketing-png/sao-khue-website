@@ -4,7 +4,7 @@ import { AdsLandingShell } from "@/components/AdsLandingShell";
 import { AdsLeadForm } from "@/components/AdsLeadForm";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { type AdsLandingConfig } from "@/lib/ads-landing";
-import { buildFAQSchema, absoluteUrl } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 import { useOpenGraphImage, useSiteSettings, telHref, usePrimaryPhone } from "@/lib/site-settings";
 
 type Props = {
@@ -23,19 +23,28 @@ export function AdsLandingPage({ config }: Props) {
     path: config.path,
     keywords: config.keywords,
     ogImage: config.heroImage || ogImage,
+    ogImageAlt: `${config.serviceLabel} — ${brand}`,
     jsonLd: [
+      buildBreadcrumbSchema([
+        { name: "Trang chủ", path: "/" },
+        { name: config.serviceLabel, path: config.path },
+      ]),
       buildFAQSchema(config.faqs.map((f) => ({ q: f.q, a: f.a }))),
       {
         "@context": "https://schema.org",
         "@type": "Service",
         name: config.serviceLabel,
         provider: {
-          "@type": "Organization",
+          "@type": "LocalBusiness",
           name: brand,
           telephone: phone || "0909075668",
           url: absoluteUrl("/"),
         },
-        areaServed: "VN",
+        areaServed: [
+          { "@type": "City", name: "Thành phố Hồ Chí Minh" },
+          { "@type": "AdministrativeArea", name: "Bình Dương" },
+          { "@type": "AdministrativeArea", name: "Đồng Nai" },
+        ],
         url: absoluteUrl(config.path),
         description: config.seoDescription,
       },

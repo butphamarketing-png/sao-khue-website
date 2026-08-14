@@ -3,6 +3,7 @@ import { PageBanner } from "@/components/PageBanner";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { CTABanner } from "@/components/CTABanner";
 import { usePageSeo } from "@/hooks/use-page-seo";
+import { buildBreadcrumbSchema } from "@/lib/seo";
 import { useCategoryPages, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function Projects() {
@@ -20,6 +21,13 @@ export default function Projects() {
     path: "/cong-trinh",
     keywords: "công trình xây dựng, nhà phố, biệt thự, xây nhà tphcm",
     ogImage,
+    ogImageAlt: `Công trình đã thi công — ${brand}`,
+    jsonLd: [
+      buildBreadcrumbSchema([
+        { name: "Trang chủ", path: "/" },
+        { name: "Công trình", path: "/cong-trinh" },
+      ]),
+    ],
   });
 
   return (

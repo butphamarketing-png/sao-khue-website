@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #30 — slug: kien-truc-sao-khue-don-vi-uy-tin */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("kien-truc-sao-khue-don-vi-uy-tin", 0);
 const SK_IMG_2 = slugImage("kien-truc-sao-khue-don-vi-uy-tin", 1);
@@ -105,7 +105,11 @@ ${imageFigure(SK_IMG_3, focusKeyword, 3)}
 </ol>
 
 ${homeLinkParagraph("Tìm hiểu toàn bộ dịch vụ và dự án của Sao Khuê tại")}
-
+
+${faqSection([
+  { q: "Sao Khuê khác nhà thầu báo giá miệng chỗ nào?", a: "HĐ list vật tư, mốc nghiệm thu, BH kết cấu 10 năm, văn phòng 245/8 Bình Lợi. Không đòi 50% trước khi đào móng." },
+  { q: "Có nhận Bình Dương, Đồng Nai không?", a: "Có. Cùng tiêu chuẩn với TP.HCM. Case: Thuận An, Biên Hòa — khảo sát hẹn trước." },
+])}
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

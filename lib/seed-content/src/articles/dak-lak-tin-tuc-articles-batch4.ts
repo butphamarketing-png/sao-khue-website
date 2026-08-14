@@ -568,7 +568,7 @@ function whyChooseSection(b: Brief): string {
   <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — thanh toán theo tiến độ nghiệm thu.</li>
   <li><strong>Giám sát từ xa:</strong> Ảnh, video tiến độ hàng tuần qua Zalo — thuận tiện chủ nhà ở TP.HCM.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a> trên website Sao Khuê.</p>`;
+<p>Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> trên website Sao Khuê.</p>`;
 }
 
 function checklistSection(b: Brief): string {

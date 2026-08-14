@@ -86,6 +86,7 @@ export function ProjectsSection({ variant = "default" }: Props) {
                         alt={project.title}
                         className="qh-home-project-card__image"
                         loading="lazy"
+                        decoding="async"
                         onError={(e) => {
                           (e.target as HTMLImageElement).src =
                             "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800";

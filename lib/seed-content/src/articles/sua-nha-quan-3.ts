@@ -1,5 +1,6 @@
 /** Nội dung bài viết SEO — slug: sua-nha-quan-3 */
 import { caseStudyRelatedBlock } from "../case-study-blocks";
+import { faqSection } from "../article-seo-blocks";
 
 export const suaNhaQuan3 = {
   title: "Cải Tạo Nhà Phố Cũ Quận 3 — Công Trình Sao Khuê",
@@ -30,7 +31,7 @@ export const suaNhaQuan3 = {
   <li><strong>Gia cố cầu thang</strong>, cải thiện chiếu sáng.</li>
   <li>Hoàn thiện nội thất: sơn, gạch, trần theo phong cách chủ nhà chọn.</li>
 </ul>
-<p>Dịch vụ: <a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói</a> · <a href="/dich-vu/sua-chua-nha-tphcm">Sửa chữa nhà</a></p>
+<p>Dịch vụ: <a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói</a> · <a href="/dich-vu/sua-chua-nha">Sửa chữa nhà</a></p>
 
 <h2>Kết quả</h2>
 <ul>
@@ -40,7 +41,19 @@ export const suaNhaQuan3 = {
 </ul>
 
 <h2>Đặt lịch khảo sát nhà cũ</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · Xem <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ TP.HCM</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · Xem <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ TP.HCM</a> · <a href="/tin-tuc/cai-tao-nha-quan-3">cải tạo nhà Quận 3</a>.</p>
+
+<h2>Hẻm Quận 3 và nhà đang ở</h2>
+<p>Nhiều tuyến Q.3 không mở xe tải: vật tư khiêng, phế thải xe nhỏ, ca đổ hạn giờ. Gia đình 6 người ở lại được khi chia khu (giữ 1 WC); đập thông / thay ống đứng: chuyển tạm 10–14 ngày. Che chắn bụi ghi trong HĐ.</p>
+
+${faqSection([
+  { q: "Cải tạo nhà phố Q.3 hết bao lâu?", a: "Case này ~3,5 tháng gói toàn diện. Sơn–lát nhẹ 2–4 tuần. Gia cố + nâng tầng lâu hơn, phụ thuộc phép." },
+  { q: "Nhà 30 năm tuổi có cần gia cố không?", a: "Khảo sát cột–móng trước. Nứt chân chim khác nứt kết cấu. Sao Khuê không sơn che nếu khung yếu." },
+])}
+
+<h2>Bài học từ công trình Quận 3</h2>
+<p>Nhà cũ nội thành: điện nước thay đồng bộ rẻ hơn vá từng điểm. Chống thấm tầng trệt làm trước sơn–lát. Gia đình đông: chốt ít nhất 3 phòng ngủ + 2 WC trong brief trước khi đập. Hẻm hẹp — phụ phí logistics ghi rõ, không “bất ngờ” cuối gói.</p>
+<p>Muốn khảo sát nhà tương tự Q.3 / trung tâm: gọi <strong>0909 075 668</strong>, gửi ảnh hiện trạng.</p>
 
 ${caseStudyRelatedBlock("sua-nha-quan-3")}
 `.trim(),

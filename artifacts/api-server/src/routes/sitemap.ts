@@ -85,18 +85,28 @@ function staticUrls(): SitemapEntry[] {
 }
 
 function seedPostUrls(): SitemapEntry[] {
-  return seedPosts.filter((p) => isSitemapIndexablePost(p)).map((p) => ({
-    loc: `${SITE_URL}${getPostPublicPath(p)}`,
-    lastmod: "2026-07-16",
-    changefreq: "monthly" as const,
-    priority: moneyPostPriority(p.slug),
-  }));
+  const today = new Date().toISOString().slice(0, 10);
+  return seedPosts
+    .filter((p) => isSitemapIndexablePost(p) && !shouldNoindexPostSlug(p.slug))
+    .map((p) => ({
+      loc: `${SITE_URL}${getPostPublicPath(p)}`,
+      lastmod: today,
+      changefreq: "monthly" as const,
+      priority: moneyPostPriority(p.slug),
+    }));
 }
 
 function toLastmod(value: unknown): string {
   if (value instanceof Date) return value.toISOString().split("T")[0] ?? "2026-07-16";
   if (typeof value === "string") return value.slice(0, 10);
   return "2026-07-16";
+}
+
+/** Hard guard — không bao giờ đưa factory `-ngan` vào sitemap dù DB/seed lệch. */
+function isSafeSitemapSlug(slug: string): boolean {
+  if (shouldNoindexPostSlug(slug)) return false;
+  if (slug.endsWith("-ngan")) return false;
+  return true;
 }
 
 async function collectPostUrls(): Promise<SitemapEntry[]> {
@@ -117,14 +127,26 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
 
     if (!posts.length) return seedPostUrls();
 
-    return posts
-      .filter((p) => isSitemapIndexablePost(p) && !shouldNoindexPostSlug(p.slug))
+    const fromDb = posts
+      .filter((p) => isSitemapIndexablePost(p) && isSafeSitemapSlug(p.slug))
       .map((p) => ({
         loc: `${SITE_URL}${getPostPublicPath(p)}`,
         lastmod: toLastmod(p.updatedAt),
         changefreq: "monthly" as const,
         priority: moneyPostPriority(p.slug),
       }));
+
+    // DB cũ / chưa re-seed có thể còn hàng nghìn factory — fallback seed sạch.
+    // Ngưỡng 2500: đủ cho money + batch sk65+ (~900+) nhưng vẫn bắt dump ~3000+ -ngan.
+    if (fromDb.length > 2500 || fromDb.some((u) => u.loc.includes("-ngan"))) {
+      logger.warn(
+        { dbCount: fromDb.length },
+        "sitemap: DB URL count suspicious — using seedPostUrls",
+      );
+      return seedPostUrls();
+    }
+
+    return fromDb;
   } catch (err) {
     logger.warn({ err }, "sitemap: DB unavailable — falling back to seedPosts");
     return seedPostUrls();
@@ -138,6 +160,9 @@ function tryReadStaticSitemap(): string | null {
     const publicSeg = ["pub", "lic"].join("");
     const publicRoot = path.join(here, "..", "..", publicSeg);
     const candidates = [
+      path.join(publicRoot, "sitemap.seed.xml"),
+      path.join(process.cwd(), publicSeg, "sitemap.seed.xml"),
+      // Legacy name — chỉ dùng nếu không còn bản tĩnh sitemap.xml cạnh rewrite.
       path.join(publicRoot, "sitemap.xml"),
       path.join(process.cwd(), publicSeg, "sitemap.xml"),
     ];
@@ -168,16 +193,14 @@ Sitemap: ${SITE_URL}/sitemap.xml
   res.send(body);
 });
 
+function staticSitemapLooksStale(xml: string): boolean {
+  // Artifact cũ còn ~5000 URL factory slug kết thúc `-ngan` — không được serve lại.
+  // Không dùng includes("-ngan") vì trùng "ngan-sach".
+  return xml.includes("-ngan</loc>") || (xml.match(/<url>/g) ?? []).length > 2500;
+}
+
 router.get("/sitemap.xml", async (_req, res) => {
   try {
-    const staticSitemap = tryReadStaticSitemap();
-    if (staticSitemap) {
-      res.set("Content-Type", "application/xml; charset=utf-8");
-      res.set("Cache-Control", "public, max-age=3600");
-      res.send(staticSitemap);
-      return;
-    }
-
     const postUrls = await collectPostUrls();
     const seen = new Set<string>();
     const urls = [...staticUrls(), ...postUrls].filter((u) => {
@@ -191,7 +214,7 @@ router.get("/sitemap.xml", async (_req, res) => {
   } catch (err) {
     logger.error({ err }, "sitemap.xml generation failed");
     const fallback = tryReadStaticSitemap();
-    if (fallback) {
+    if (fallback && !staticSitemapLooksStale(fallback)) {
       res.set("Content-Type", "application/xml; charset=utf-8");
       res.send(fallback);
       return;

@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ContactCTASection } from "@/components/ContactCTASection";
 import { usePageSeo } from "@/hooks/use-page-seo";
+import { buildBreadcrumbSchema } from "@/lib/seo";
 import { useCategoryPages, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function Services() {
@@ -21,6 +22,13 @@ export default function Services() {
     path: "/dich-vu",
     keywords: "dịch vụ xây dựng, xây nhà trọn gói, xây phần thô, thiết kế nhà tphcm",
     ogImage,
+    ogImageAlt: `Dịch vụ xây dựng — ${brand}`,
+    jsonLd: [
+      buildBreadcrumbSchema([
+        { name: "Trang chủ", path: "/" },
+        { name: "Dịch vụ", path: "/dich-vu" },
+      ]),
+    ],
   });
 
   return (

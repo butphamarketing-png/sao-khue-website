@@ -31,6 +31,7 @@ export default function Home() {
     keywords:
       "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà, công ty xây dựng tphcm",
     ogImage,
+    ogImageAlt: `${brand} — thiết kế và xây nhà trọn gói TP.HCM`,
     jsonLd: faqSchema ?? undefined,
   });
 

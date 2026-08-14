@@ -617,6 +617,44 @@ html {
   transform: translateZ(0);
 }
 
+.hero-home__copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4.5rem;
+  z-index: 12;
+  padding: 1.25rem 1.25rem 0.75rem;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.12) 70%, transparent 100%);
+}
+
+.hero-home__title {
+  margin: 0;
+  max-width: 40rem;
+  font-size: clamp(1.35rem, 3.2vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.hero-home__tag {
+  margin: 0.4rem 0 0;
+  max-width: 36rem;
+  font-size: clamp(0.8rem, 1.5vw, 1.05rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (min-width: 768px) {
+  .hero-home__copy {
+    bottom: 3.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* —— Header kiểu Quang Hào (màu chính: xanh dương Sao Khuê #17579d) —— */
 .qh-topbar {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);

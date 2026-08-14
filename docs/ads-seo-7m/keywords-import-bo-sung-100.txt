@@ -1,0 +1,137 @@
+# 100 từ khóa bổ sung — Kiến Trúc Sao Khuê
+# Không trùng list A1–A4 / B1–B3 hiện có
+# Exact = [keyword] | Phrase = "keyword"
+# Thêm vào nhóm tương ứng; đừng dán Broad
+#
+# Money pages (sau deploy + GSC index):
+# A1 geo     → /tin-tuc/cai-tao-nha-{binh-thanh|thu-duc|go-vap|tan-binh|tan-phu|quan-7}
+# A1 loại    → /tin-tuc/cai-tao-nha-cap-4-tphcm  (nhà ống, cấp 4, làm mới)
+# A2 sửa     → /tin-tuc/cong-ty-sua-chua-nha-tphcm
+# A2 đang ở  → /tin-tuc/cai-tao-nha-dang-o-tphcm
+# A3 báo giá → /tin-tuc/bao-gia-sua-nha-tron-goi-tphcm (đã có)
+# A4 thấm    → /tin-tuc/chong-tham-san-thuong-tphcm
+# A4 nâng    → /tin-tuc/nang-tang-nha-cu-tphcm
+# B1 chìa khóa → /tin-tuc/xay-nha-chia-khoa-trao-tay-tphcm
+# B1 geo xây → /tin-tuc/xay-nha-tron-goi-{binh-thanh|thu-duc|go-vap|quan-7} (đã có)
+# B2 giá 2026 → /tin-tuc/bao-gia-xay-nha-2026
+# B3 thô     → /tin-tuc/thi-cong-phan-tho-tphcm
+# B3 loại    → /tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm
+# B3 cấp 4   → /tin-tuc/xay-nha-cap-4-mai-thai-tphcm
+
+# ========== CAMPAIGN CẢI TẠO (60) ==========
+
+# --- A1 Cải tạo (geo + loại nhà) ---
+[cải tạo nhà bình thạnh]
+[cải tạo nhà thủ đức]
+[cải tạo nhà gò vấp]
+[cải tạo nhà tân bình]
+[cải tạo nhà tân phú]
+[cải tạo nhà quận 7]
+[cải tạo nhà ống tphcm]
+[cải tạo nhà đang ở tphcm]
+[cải tạo nhà cấp 4]
+[làm mới nhà cũ tphcm]
+"cải tạo nhà bình thạnh"
+"cải tạo nhà thủ đức"
+"cải tạo nhà gò vấp"
+"cải tạo nhà ống"
+"cải tạo nhà đang ở"
+"làm mới nhà cũ"
+
+# --- A2 Sửa nhà ---
+[sửa nhà cũ tphcm]
+[sửa nhà phố tphcm]
+[sửa nhà bình thạnh]
+[sửa nhà thủ đức]
+[sửa nhà gò vấp]
+[công ty sửa chữa nhà tphcm]
+[sửa nhà không phát sinh]
+[sửa nhà đang ở tphcm]
+"sửa nhà cũ tphcm"
+"sửa nhà phố tphcm"
+"sửa nhà bình thạnh"
+"sửa nhà thủ đức"
+"công ty sửa chữa nhà tphcm"
+"sửa nhà đang ở"
+
+# --- A3 Báo giá / chi phí sửa-cải tạo ---
+[báo giá sửa nhà trọn gói]
+[báo giá sửa nhà trọn gói tphcm]
+[giá cải tạo nhà tphcm]
+[chi phí cải tạo nhà phố]
+[đơn giá cải tạo nhà tphcm]
+[báo giá nâng tầng nhà phố]
+[chi phí sửa nhà trọn gói tphcm]
+[dự toán sửa nhà tphcm]
+"báo giá sửa nhà trọn gói"
+"báo giá sửa nhà trọn gói tphcm"
+"giá cải tạo nhà tphcm"
+"chi phí cải tạo nhà phố"
+"đơn giá cải tạo nhà"
+"báo giá nâng tầng nhà phố"
+
+# --- A4 Hạng mục: thấm / mái / mặt tiền / điện nước ---
+[cải tạo mặt tiền nhà tphcm]
+[chống thấm sân thượng tphcm]
+[sửa mái nhà tphcm]
+[sửa nhà thấm dột tphcm]
+[sửa điện nước nhà tphcm]
+[gia cố nhà phố tphcm]
+[nâng tầng nhà cũ tphcm]
+[cải tạo sân thượng tphcm]
+"cải tạo mặt tiền nhà"
+"chống thấm sân thượng"
+"sửa mái nhà tphcm"
+"sửa nhà thấm dột"
+"sửa điện nước nhà"
+"nâng tầng nhà cũ tphcm"
+[sửa nhà quận 7]
+"cải tạo nhà tân phú"
+
+# ========== CAMPAIGN XÂY NHÀ (40) ==========
+
+# --- B1 Nhà thầu / trọn gói ---
+[xây nhà trọn gói bình thạnh]
+[xây nhà trọn gói thủ đức]
+[xây nhà trọn gói gò vấp]
+[xây nhà trọn gói quận 7]
+[nhà thầu xây nhà phố tphcm]
+[thi công nhà phố tphcm]
+[xây nhà chìa khóa trao tay]
+[công ty xây nhà tphcm]
+"xây nhà trọn gói bình thạnh"
+"xây nhà trọn gói thủ đức"
+"xây nhà trọn gói gò vấp"
+"nhà thầu xây nhà phố"
+"thi công nhà phố tphcm"
+"công ty xây nhà tphcm"
+
+# --- B2 Báo giá xây ---
+[báo giá xây nhà 2026]
+[chi phí xây nhà phố tphcm]
+[đơn giá xây nhà 2026 tphcm]
+[giá xây nhà trọn gói tphcm]
+[bảng dự toán xây nhà tphcm]
+[báo giá xây nhà phần thô]
+"báo giá xây nhà 2026"
+"chi phí xây nhà phố tphcm"
+"giá xây nhà trọn gói tphcm"
+"bảng dự toán xây nhà"
+"báo giá xây nhà phần thô"
+"đơn giá xây nhà 2026"
+
+# --- B3 Loại nhà / phần thô ---
+[xây nhà 2 tầng tphcm]
+[xây nhà 4 tầng tphcm]
+[xây nhà trong hẻm tphcm]
+[xây nhà phố 1 trệt 2 lầu]
+[xây nhà phần thô]
+[thi công phần thô tphcm]
+[xây biệt thự mini tphcm]
+[xây nhà cấp 4 mái thái tphcm]
+"xây nhà 2 tầng tphcm"
+"xây nhà 4 tầng tphcm"
+"xây nhà trong hẻm"
+"xây nhà phố 1 trệt 2 lầu"
+"xây nhà phần thô tphcm"
+"xây biệt thự mini tphcm"

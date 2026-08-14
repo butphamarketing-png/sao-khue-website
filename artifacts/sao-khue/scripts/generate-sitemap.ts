@@ -1,7 +1,7 @@
 /**
  * Sinh sitemap.xml + robots.txt tĩnh — Google nhận XML, không phải HTML SPA.
  */
-import { writeFileSync } from "node:fs";
+import { writeFileSync, mkdirSync, unlinkSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { seedPosts, isSitemapIndexablePost } from "../../../lib/seed-content/src/index.ts";
@@ -65,6 +65,8 @@ function toLastmod(iso?: string | null): string | undefined {
 
 const BUILD_DATE = new Date().toISOString().slice(0, 10);
 
+mkdirSync(outDir, { recursive: true });
+
 type SitemapEntry = {
   path: string;
   priority: string;
@@ -78,7 +80,7 @@ const urls: SitemapEntry[] = [
     lastmod: BUILD_DATE,
   })),
   ...seedPosts
-    .filter((p) => isSitemapIndexablePost(p))
+    .filter((p) => isSitemapIndexablePost(p) && !p.noindex)
     .map((p) => {
     const path = getPostPublicPath(p);
     return {
@@ -113,9 +115,21 @@ Disallow: /api/
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
 
-writeFileSync(join(outDir, "sitemap.xml"), xml, "utf8");
+// Không ghi sitemap.xml vào public/ — Vercel phục vụ file tĩnh trước rewrite,
+// khiến CDN có thể cache bản factory cũ (~3000 URL -ngan). Sitemap chỉ qua /api.
 writeFileSync(join(outDir, "robots.txt"), robots, "utf8");
-console.log(`[sitemap] Wrote ${urls.length} URLs → ${outDir}/sitemap.xml`);
+console.log(`[sitemap] Wrote robots.txt (${urls.length} seed URLs for API fallback)`);
+
+const apiPublic = join(scriptDir, "..", "..", "api-server", "public");
+mkdirSync(apiPublic, { recursive: true });
+writeFileSync(join(apiPublic, "sitemap.seed.xml"), xml, "utf8");
+writeFileSync(join(apiPublic, "robots.txt"), robots, "utf8");
+// Xóa bản tĩnh cũ nếu còn (tránh đè rewrite /sitemap.xml → API).
+for (const dir of [outDir, apiPublic]) {
+  const stale = join(dir, "sitemap.xml");
+  if (existsSync(stale)) unlinkSync(stale);
+}
+console.log(`[sitemap] Wrote ${urls.length} URLs → ${apiPublic}/sitemap.seed.xml`);
 
 if (process.env.AUTO_SUBMIT_INDEXING === "1" || process.env.AUTO_SUBMIT_INDEXING === "true") {
   const sitemapUrl = `${SITE_URL}/sitemap.xml`;

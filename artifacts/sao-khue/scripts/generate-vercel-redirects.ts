@@ -141,6 +141,14 @@ function cleanSearch(search) {
   return s ? \`?\${s}\` : "";
 }
 
+function rewriteToApi(pathname, requestUrl) {
+  const target = new URL(requestUrl);
+  target.pathname = \`/api\${pathname}\`;
+  return new Response(null, {
+    headers: { "x-middleware-rewrite": target.toString() },
+  });
+}
+
 export default function middleware(request) {
   const url = new URL(request.url);
 
@@ -148,6 +156,15 @@ export default function middleware(request) {
     url.pathname.length > 1 && url.pathname.endsWith("/")
       ? url.pathname.slice(0, -1)
       : url.pathname;
+
+  // Ưu tiên API động — tránh CDN phục vụ sitemap.xml cũ (~3000 URL factory -ngan).
+  if (
+    normalizedPathname === "/sitemap.xml" ||
+    normalizedPathname === "/robots.txt" ||
+    normalizedPathname === "/feed.xml"
+  ) {
+    return rewriteToApi(normalizedPathname, request.url);
+  }
 
   if (normalizedPathname.startsWith("/gioi-thieu/")) {
     return redirect301(\`/bai-viet/\${normalizedPathname.slice("/gioi-thieu/".length)}\`, request.url);
@@ -189,7 +206,10 @@ export default function middleware(request) {
 
 export const config = {
   matcher: [
-    "/((?!api|images|assets|favicon.ico|robots.txt|sitemap.xml|feed.xml|.*\\\\.[a-zA-Z0-9]+$).*)",
+    "/((?!api|images|assets|favicon.ico|.*\\\\.[a-zA-Z0-9]+$).*)",
+    "/sitemap.xml",
+    "/robots.txt",
+    "/feed.xml",
   ],
 };
 `,

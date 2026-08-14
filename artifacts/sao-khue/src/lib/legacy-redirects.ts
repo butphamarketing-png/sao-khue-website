@@ -170,6 +170,9 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/category/bao-gia", "/bao-gia"],
   ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi"],
   ["/category/sua-chua-nha", "/dich-vu/sua-chua-nha"],
+  ["/dich-vu/xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi"],
+  ["/dich-vu/sua-chua-nha-tphcm", "/dich-vu/sua-chua-nha"],
+  ["/dich-vu/khuyen-mai-xay-dung", "/dich-vu/khuyen-mai"],
   // GSC ghosts — soft-200 homepage; 301 về bài/hub thật
   ["/tin-tuc/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
   ["/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],

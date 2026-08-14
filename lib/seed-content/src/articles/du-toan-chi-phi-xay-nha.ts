@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #19 — slug: du-toan-chi-phi-xay-nha */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("du-toan-chi-phi-xay-nha", 0);
 
@@ -15,8 +15,8 @@ export const duToanChiPhiXayNha = {
     "Cách lập dự toán chi phí xây nhà: bóc tách khối lượng, bảng đơn giá tham khảo, các khoản ẩn cần dự phòng. Khảo sát miễn phí — 0909 075 668.",
   metaKeywords:
     "dự toán chi phí xây nhà, bảng dự toán xây nhà, chi phí ẩn xây nhà, bóc tách khối lượng, đơn giá xây nhà 2026, kiến trúc sao khuê",
-  imageAlt: "du-toan-chi-phi-xay-nha",
-  imageCaption: "du-toan-chi-phi-xay-nha",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} — hướng dẫn Sao Khuê`,
   content: `
 <h2>Dự toán chi phí xây nhà — Nền tảng để kiểm soát ngân sách</h2>
 <p><strong>Dự toán chi phí xây nhà</strong> là bước không thể bỏ qua trước khi khởi công bất kỳ công trình nào — từ nhà phố nhỏ đến biệt thự. Đây không chỉ là con số ước tính sơ bộ, mà là <strong>bảng phân tích chi tiết từng hạng mục</strong>: móng, kết cấu, hoàn thiện, điện nước, cửa — giúp chủ nhà nắm rõ ngân sách, tránh phát sinh và so sánh giữa các nhà thầu một cách công bằng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> hướng dẫn quy trình lập <strong>bảng dự toán</strong> chuẩn trong bài viết này.</p>
@@ -143,6 +143,12 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Dự toán bổ sung:</strong> Khi phát sinh thay đổi thiết kế trong thi công → phụ lục hợp đồng.</li>
 </ul>
 <p>Kiến Trúc Sao Khuê cung cấp <strong>dự toán thi công chi tiết</strong> kèm theo hồ sơ thiết kế — không gộp "gói lump sum" mơ hồ. Tham khảo thêm <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a> và <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">xây dựng nhà phố uy tín</a>.</p>
+
+${faqSection([
+  { q: "Dự toán sơ bộ và dự toán thi công khác nhau thế nào?", a: "Sơ bộ ước theo m² và gói vật liệu trước khi có bản vẽ chi tiết. Dự toán thi công bóc tách khối lượng từ hồ sơ kỹ thuật — dùng để ký hợp đồng." },
+  { q: "Nên dự phòng bao nhiêu %?", a: "Ít nhất 10–15% tổng ngân sách cho phát sinh nền, vật tư tăng giá và thay đổi nhỏ. Không dùng hết ngân sách vào gói thầu ban đầu." },
+  { q: "Sao Khuê có lập dự toán miễn phí không?", a: "Ước lượng sơ bộ sau khảo sát miễn phí nội thành. Dự toán chi tiết theo hạng mục đi kèm khi chốt phương án thiết kế / ký trọn gói." },
+])}
 
 ${homeLinkParagraph()}
 

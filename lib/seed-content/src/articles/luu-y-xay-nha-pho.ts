@@ -1,7 +1,8 @@
+import { faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("luu-y-xay-nha-pho", 0);
 const SK_IMG_2 = slugImage("luu-y-xay-nha-pho", 1);
-﻿/** Nội dung bài viết SEO #18 — slug: luu-y-xay-nha-pho */
+/** Nội dung bài viết SEO #18 — slug: luu-y-xay-nha-pho */
 export const luuYXayNhaPho = {
   title: "Những Lưu Ý Quan Trọng Khi Xây Nhà Phố",
   excerpt:
@@ -32,7 +33,7 @@ export const luuYXayNhaPho = {
   <li><strong>Tầng cao được phép:</strong> Mỗi khu vực có quy định khác nhau về số tầng tối đa.</li>
   <li><strong>Lộ giới tương lai:</strong> Một số tuyến đường có lộ giới quy hoạch rộng hơn hiện tại — xây sát mặt đường có thể bị thu hồi sau vài năm.</li>
 </ul>
-<p>Xem thêm <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng mới nhất</a> cập nhật 2026 để nắm các quy định hiện hành.</p>
+<p>Xem thêm <a href="/tin-tuc/luat-xay-dung-moi-nhat">luật xây dựng mới nhất</a> cập nhật 2026 để nắm các quy định hiện hành.</p>
 
 <h2>Lưu ý 2: Thiết kế trước — Không được bỏ qua</h2>
 <p>Một trong những <strong>lưu ý xây nhà phố</strong> mà đội ngũ Sao Khuê nhấn mạnh nhất: <strong>không bao giờ bắt đầu thi công khi chưa có bản vẽ thiết kế hoàn chỉnh</strong>.</p>
@@ -150,6 +151,12 @@ export const luuYXayNhaPho = {
   <li>☐ Phương án xử lý chống thấm đã thống nhất</li>
 </ul>
 
+
+${faqSection([
+  { q: "Lưu ý quan trọng nhất trước khi khởi công nhà phố?", a: "Có GPXD đúng quy hoạch, bản vẽ kết cấu, dự toán chi tiết và hợp đồng list vật tư. Không đổ móng khi chưa chốt các điểm này." },
+  { q: "Làm sao tránh phát sinh chi phí?", a: "Không đổi thiết kế sau đổ bê tông, giữ quỹ dự phòng 10–15%, nghiệm thu từng giai đoạn trước khi trả đợt." },
+  { q: "Chống thấm nên làm khi nào?", a: "WC, sân thượng, mái — làm đúng lớp theo HĐ trước lát/sơn. Sửa thấm sau luôn đắt hơn làm đúng lần đầu." },
+])}
 
 <h2>Liên hệ tư vấn lưu ý xây nhà phố</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>lưu ý xây nhà phố</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>

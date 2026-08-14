@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #22 — slug: mau-nha-pho-3-tang-dep */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("mau-nha-pho-3-tang-dep", 0);
 
@@ -15,8 +15,8 @@ export const mauNhaPho3TangDep = {
     "Mẫu nhà phố 3 tầng đẹp 2026: thiết kế hiện đại, Indochine, tropical-modern. Bố trí mặt bằng hợp lý, mặt tiền ấn tượng. Tư vấn miễn phí — 0909 075 668.",
   metaKeywords:
     "mẫu nhà phố 3 tầng đẹp, thiết kế nhà phố 3 tầng, mặt bằng nhà phố 3 tầng, nhà phố hiện đại 3 tầng, mặt tiền nhà phố, kiến trúc sao khuê",
-  imageAlt: "mau-nha-pho-3-tang-dep",
-  imageCaption: "mau-nha-pho-3-tang-dep",
+  imageAlt: KEYWORD,
+  imageCaption: `${KEYWORD} — thiết kế Sao Khuê`,
   content: `
 <h2>Mẫu nhà phố 3 tầng đẹp — Cân bằng hoàn hảo giữa diện tích và chi phí</h2>
 <p><strong>Mẫu nhà phố 3 tầng</strong> đang là lựa chọn số một của nhiều gia đình TP.HCM trên lô đất từ 60–120m² — vừa đủ diện tích cho 3–4 thành viên, vừa không quá tốn kém về xây dựng và vận hành so với nhà 4–5 tầng. Tại <strong>Kiến Trúc Sao Khuê</strong>, hơn 40% các công trình nhà phố được thiết kế theo mô hình 3 tầng. Bài viết này tổng hợp các <strong>mẫu nhà phố 3 tầng đẹp</strong> phổ biến nhất, hướng dẫn bố trí mặt bằng tối ưu và những điểm cần lưu ý để có mặt tiền ấn tượng.</p>
@@ -116,6 +116,12 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   </tbody>
 </table>
 <p><em>Ghi chú: Giá tham khảo chưa gồm nội thất, thiết kế riêng và xin phép xây dựng. Liên hệ Sao Khuê để có báo giá chính xác sau khảo sát.</em></p>
+
+${faqSection([
+  { q: "Nhà phố 3 tầng phù hợp gia đình bao nhiêu người?", a: "Thường 3–5 thành viên trên lô 60–100m²: trệt sinh hoạt, 2–3 phòng ngủ + WC. Cần thêm phòng hoặc cho thuê thì cân nhắc 4 tầng hoặc gác lửng." },
+  { q: "Chi phí xây nhà phố 3 tầng khoảng bao nhiêu?", a: "Gói tiêu chuẩn 2026 thường khoảng 800 triệu – 1,7 tỷ tùy lô và vật liệu (chưa nội thất). Báo giá chính thức sau khảo sát — 0909 075 668." },
+  { q: "Có nên làm giếng trời nhà 3 tầng không?", a: "Nên, đặc biệt lô sâu >15m: giếng 1,5×1,5m cạnh cầu thang giúp sáng và thông gió tầng giữa, giảm điện chiếu sáng." },
+])}
 
 ${homeLinkParagraph()}
 

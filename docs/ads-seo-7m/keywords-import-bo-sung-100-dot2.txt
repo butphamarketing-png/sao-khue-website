@@ -1,0 +1,134 @@
+# 100 từ khóa bổ sung đợt 2 — Kiến Trúc Sao Khuê
+# Không trùng A1–A4 / B1–B3 và file bo-sung-100 (đợt 1)
+# Exact = [keyword] | Phrase = "keyword" — không Broad
+#
+# Money pages:
+# Geo cải tạo → /tin-tuc/cai-tao-nha-{quan-1|quan-3|quan-8|quan-10|quan-12|phu-nhuan|binh-tan|nha-be|binh-chanh|hoc-mon}
+# Bếp / WC   → /tin-tuc/cai-tao-bep-wc-tphcm
+# Sơn / NT   → /tin-tuc/son-nha-va-noi-that-tphcm
+# 2–3 tầng   → /tin-tuc/cai-tao-nha-2-tang-tphcm
+# Cho thuê   → /tin-tuc/cai-tao-nha-cho-thue-tphcm
+# Hầm / tum  → /tin-tuc/xay-nha-co-ham-tphcm
+# Lô 4x16    → /tin-tuc/xay-nha-pho-4x16-tphcm
+# Xây cho thuê → /tin-tuc/xay-nha-cho-thue-tphcm
+# Chi phí 3 tầng → /tin-tuc/chi-phi-xay-nha-3-tang-tphcm
+# Trả góp    → /tin-tuc/xay-nha-tra-gop-tphcm
+# Geo xây đã có: /tin-tuc/xay-nha-tron-goi-{tan-binh|tan-phu|binh-tan|nha-be|quan-2|quan-12}
+
+# ========== CAMPAIGN CẢI TẠO (60) ==========
+
+# --- C1 Geo mới ---
+[cải tạo nhà quận 1]
+[cải tạo nhà quận 3]
+[cải tạo nhà quận 8]
+[cải tạo nhà quận 10]
+[cải tạo nhà quận 12]
+[cải tạo nhà phú nhuận]
+[cải tạo nhà bình tân]
+[cải tạo nhà nhà bè]
+[cải tạo nhà bình chánh]
+[cải tạo nhà hóc môn]
+"cải tạo nhà quận 1"
+"cải tạo nhà quận 3"
+"cải tạo nhà phú nhuận"
+"cải tạo nhà bình tân"
+"cải tạo nhà nhà bè"
+"cải tạo nhà quận 12"
+
+# --- C2 Sửa nhà geo / loại ---
+[sửa nhà quận 1]
+[sửa nhà quận 3]
+[sửa nhà tân bình]
+[sửa nhà tân phú]
+[sửa nhà bình tân]
+[sửa chữa nhà phố tphcm]
+[sửa nhà cấp 4 tphcm]
+[sửa nhà trọn gói bình thạnh]
+"sửa nhà quận 1"
+"sửa nhà quận 3"
+"sửa nhà tân bình"
+"sửa nhà tân phú"
+"sửa chữa nhà phố"
+"sửa nhà cấp 4 tphcm"
+
+# --- C3 Bếp / WC / sơn / nội thất ---
+[cải tạo nhà bếp tphcm]
+[cải tạo nhà vệ sinh tphcm]
+[sửa nhà vệ sinh tphcm]
+[sơn nhà trọn gói tphcm]
+[cải tạo nội thất nhà phố]
+[sửa trần nhà tphcm]
+[thay gạch nền nhà tphcm]
+[cải tạo phòng khách nhà phố]
+"cải tạo nhà bếp"
+"sửa nhà vệ sinh tphcm"
+"sơn nhà trọn gói tphcm"
+"cải tạo nội thất nhà phố"
+"sửa trần nhà"
+"thay gạch nền nhà"
+
+# --- C4 2–3 tầng / mở rộng / cho thuê ---
+[phá dỡ nhà cũ tphcm]
+[cải tạo nhà 2 tầng tphcm]
+[cải tạo nhà 3 tầng tphcm]
+[mở rộng nhà phố tphcm]
+[đập thông nhà phố tphcm]
+[cải tạo nhà cho thuê tphcm]
+[sửa nhà trước khi cho thuê]
+[cải tạo nhà nát tphcm]
+"cải tạo nhà 2 tầng"
+"cải tạo nhà 3 tầng"
+"mở rộng nhà phố"
+"đập thông nhà phố"
+"cải tạo nhà cho thuê"
+"cải tạo nhà nát"
+[sửa tường nứt nhà tphcm]
+"sửa tường nứt nhà"
+
+# ========== CAMPAIGN XÂY NHÀ (40) ==========
+
+# --- D1 Geo xây (quận chưa có trong đợt 1) ---
+[xây nhà trọn gói tân bình]
+[xây nhà trọn gói tân phú]
+[xây nhà trọn gói bình tân]
+[xây nhà trọn gói nhà bè]
+[xây nhà trọn gói quận 2]
+[xây nhà trọn gói quận 12]
+[xây nhà bình dương]
+[xây nhà đồng nai]
+"xây nhà trọn gói tân bình"
+"xây nhà trọn gói tân phú"
+"xây nhà trọn gói bình tân"
+"xây nhà trọn gói nhà bè"
+"xây nhà bình dương"
+"xây nhà đồng nai"
+
+# --- D2 Loại nhà / lô đất ---
+[xây nhà có hầm tphcm]
+[xây nhà phố 4x16 tphcm]
+[xây nhà 5x20 tphcm]
+[xây nhà liền kề tphcm]
+[xây nhà mái bằng tphcm]
+[xây nhà có tum tphcm]
+[xây nhà cho thuê tphcm]
+[nhà thầu xây nhà cấp 4]
+"xây nhà có hầm tphcm"
+"xây nhà phố 4x16"
+"xây nhà liền kề"
+"xây nhà mái bằng"
+"xây nhà có tum"
+"xây nhà cho thuê tphcm"
+
+# --- D3 Giá / tiến độ / trả góp ---
+[giá xây nhà cấp 4 tphcm]
+[chi phí xây nhà 3 tầng tphcm]
+[báo giá xây nhà 4x16]
+[đơn giá xây thô 2026]
+[xây nhà trả góp tphcm]
+[thời gian xây nhà trọn gói]
+"giá xây nhà cấp 4"
+"chi phí xây nhà 3 tầng"
+"báo giá xây nhà 4x16"
+"đơn giá xây thô 2026"
+"xây nhà trả góp"
+"thời gian xây nhà trọn gói"

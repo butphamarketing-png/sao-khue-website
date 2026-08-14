@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #29 — slug: thiet-ke-xay-dung-nha-pho-mien-nam */
-import { imageFigure, seoCtaBlock, homeLinkParagraph } from "../article-seo-blocks";
+import { imageFigure, seoCtaBlock, homeLinkParagraph, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thiet-ke-xay-dung-nha-pho-mien-nam", 0);
 const SK_IMG_2 = slugImage("thiet-ke-xay-dung-nha-pho-mien-nam", 1);
@@ -96,8 +96,13 @@ ${imageFigure(SK_IMG_2, focusKeyword, 2)}
   <li><strong>Phản hồi nhanh và minh bạch:</strong> Cách công ty trả lời câu hỏi trước khi ký hợp đồng phản ánh cách họ phục vụ trong quá trình thi công.</li>
 </ol>
 
+${faqSection([
+  { q: "Sao Khuê thi công nhà phố ở tỉnh nào miền Nam?", a: "Trọng tâm TP.HCM, Bình Dương, Đồng Nai và các huyện giáp ranh (Long An…). Công trình xa hơn cần khảo sát lịch đội trước khi hẹn." },
+  { q: "Thiết kế và xây dựng có nên cùng một đơn vị?", a: "Nên: giảm lệch 3D–hiện trường, một đầu mối bảo hành. Đổi chi tiết giữa chừng ghi phụ lục giá — không để thợ “cải tiến” tại chỗ." },
+  { q: "Nhà phố nội thành khác nhà phố Bình Dương chỗ nào?", a: "Nội thành: lô hẹp, hẻm, quy hoạch phức tạp. Bình Dương: lô rộng hơn, đơn giá và GPXD theo tỉnh — không copy m² Sài Gòn." },
+])}
+
 ${homeLinkParagraph("Tìm hiểu đầy đủ dịch vụ và vùng thi công của Sao Khuê tại")}
-
 
 ${seoCtaBlock(focusKeyword)}
 `.trim(),

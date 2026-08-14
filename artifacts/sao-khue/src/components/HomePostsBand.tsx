@@ -53,6 +53,7 @@ export function HomePostsBand({ config }: Props) {
                       alt={item.title}
                       className="qh-home-card__image"
                       loading="lazy"
+                      decoding="async"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src =
                           "https://images.unsplash.com/photo-1541889028647-5c256a124021?auto=format&fit=crop&q=80&w=800";

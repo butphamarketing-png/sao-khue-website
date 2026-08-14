@@ -27,7 +27,7 @@ export const caiTaoNhaCu = {
 ${imageFigure(IMG_1, FOCUS, 1)}
 
 <h2>Cải tạo nhà cũ là gì? Khác gì sửa chữa nhà?</h2>
-<p><strong>Cải tạo nhà cũ</strong> là nâng cấp toàn diện hoặc từng phần căn nhà đã có: thay đổi bố cục phòng, làm mới mặt tiền, nâng cấp điện nước, ốp lát, trần, cửa — có thể kèm gia cố kết cấu. Khác với <a href="/dich-vu/sua-chua-nha-tphcm">sửa chữa nhà</a> (xử lý hư hỏng cụ thể như chống thấm, sơn vá), cải tạo hướng tới <strong>thay đổi không gian sống</strong> và nâng tầm giá trị bất động sản.</p>
+<p><strong>Cải tạo nhà cũ</strong> là nâng cấp toàn diện hoặc từng phần căn nhà đã có: thay đổi bố cục phòng, làm mới mặt tiền, nâng cấp điện nước, ốp lát, trần, cửa — có thể kèm gia cố kết cấu. Khác với <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> (xử lý hư hỏng cụ thể như chống thấm, sơn vá), cải tạo hướng tới <strong>thay đổi không gian sống</strong> và nâng tầm giá trị bất động sản.</p>
 <ul>
   <li><strong>Sửa chữa:</strong> Chống thấm, sơn, thay gạch hỏng — quy mô nhỏ, nhanh.</li>
   <li><strong>Cải tạo:</strong> Đục tường, mở rộng phòng, đổi mặt tiền, nâng tầng — quy mô lớn hơn.</li>

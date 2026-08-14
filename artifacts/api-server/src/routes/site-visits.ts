@@ -1,6 +1,6 @@
 import { Router, type IRouter, type Request, type Response } from "express";
 import { db, siteVisitsTable, contactLeadsTable } from "@workspace/db";
-import { and, desc, eq, gte } from "drizzle-orm";
+import { and, desc, eq, gte, sql } from "drizzle-orm";
 import { z } from "zod";
 import { isAdmin } from "../lib/auth";
 import { getClientIp, getRequestGeo } from "../lib/client-ip";

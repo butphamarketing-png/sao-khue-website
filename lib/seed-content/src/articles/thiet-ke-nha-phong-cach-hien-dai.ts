@@ -1,5 +1,6 @@
 /** Nội dung bài viết SEO — slug: thiet-ke-nha-phong-cach-hien-dai */
 import { caseStudyRelatedBlock } from "../case-study-blocks";
+import { faqSection } from "../article-seo-blocks";
 
 export const thietKeNhaPhongCachHienDai = {
   title: "Thiết Kế Nhà Phố Hiện Đại TP.HCM — 3–4 Tầng Tối Ưu Ánh Sáng",
@@ -32,13 +33,24 @@ export const thietKeNhaPhongCachHienDai = {
 </ul>
 
 <h2>Thiết kế và thi công</h2>
-<p>Gói <a href="/dich-vu/thiet-ke-nha">thiết kế</a> + <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> — miễn phí thiết kế khi ký thi công (theo chương trình). Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> đã thi công.</p>
+<p>Gói <a href="/dich-vu/thiet-ke-nha">thiết kế</a> + <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> — miễn phí thiết kế khi ký thi công (theo chương trình). Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> đã thi công.</p>
 
 <h2>Lưu ý quy hoạch</h2>
-<p>Chiều cao, lộ giới, cửa sổ hướng ra đường cần tuân thủ quy định địa phương. Sao Khuê tư vấn sơ bộ trước khi chốt bản vẽ — xem <a href="/kinh-nghiem/luat-xay-dung-moi-nhat">luật xây dựng</a>.</p>
+<p>Chiều cao, lộ giới, cửa sổ hướng ra đường cần tuân thủ quy định địa phương. Sao Khuê tư vấn sơ bộ trước khi chốt bản vẽ — xem <a href="/tin-tuc/luat-xay-dung-moi-nhat">luật xây dựng</a>.</p>
 
 <h2>Liên hệ thiết kế</h2>
 <p>Hotline <strong>0909 075 668</strong> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></p>
+
+<h2>Nhà phố hiện đại kết hợp ở và quán</h2>
+<p>Trệt cửa kính, lầu ở lối riêng nếu được. Điện 3 pha, hút mùi, WC khách tính từ bản vẽ — không “cải tiến” khi đã đổ sàn. Xem <a href="/tin-tuc/xay-nha-mat-tien-tphcm">xây nhà mặt tiền</a>.</p>
+
+${faqSection([
+  { q: "Nhà phố 4m làm hiện đại có bí không?", a: "Giếng trời + màu sáng + cửa kính lầu. Không đục dầm chui. Khảo sát thông thủy trước khi cắt sàn." },
+  { q: "Thiết kế hiện đại có đắt hơn tân cổ không?", a: "Mặt dựng kính/đá có thể cao hơn. Công năng 3–4 tầng không đắt hơn nếu chốt list vật tư sớm." },
+])}
+
+<h2>Vật liệu mặt đứng phổ biến 2026</h2>
+<p>Sơn texture mờ, gạch ốp matt, lam nhôm, kính low-e hướng Tây. Chốt list trước khi đổ sàn ban công — đổi hệ cửa giữa chừng phát sinh phụ lục. Sao Khuê đưa mã vật tư vào HĐ khi ký thi công kèm thiết kế.</p>
 
 ${caseStudyRelatedBlock("thiet-ke-nha-phong-cach-hien-dai")}
 `.trim(),

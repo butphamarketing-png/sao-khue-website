@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #9 — slug: bao-gia-xay-nha-phan-tho-long-an */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("bao-gia-xay-nha-phan-tho-long-an", 0);
 const SK_IMG_2 = slugImage("bao-gia-xay-nha-phan-tho-long-an", 1);
@@ -155,8 +155,13 @@ ${homeLinkParagraph()}
   <li>Bảo hành kết cấu sau bàn giao.</li>
 </ul>
 
+${faqSection([
+  { q: "Báo giá phần thô Long An gồm những gì?", a: "Thường gồm móng, khung bê tông, tường, sàn, mái chờ, điện nước chờ. Không gồm ốp lát, sơn, cửa, thiết bị WC, nội thất." },
+  { q: "Vì sao giá thô trên mạng khác giá khảo sát?", a: "Mạng thường chưa tính cọc nền yếu, hẻm hẹp và vận chuyển. Giá HĐ sau đo đất và bản vẽ kết cấu." },
+  { q: "Nghiệm thu phần thô cần kiểm tra gì?", a: "Mác bê tông, đường kính thép, neo đai, chống thấm mái chờ, vị trí ổ điện nước. Không thanh toán hết khi chưa ngâm thử sân thượng." },
+])}
+
 ${seoCtaBlock("báo giá xây nhà phần thô Long An")}
-
 
 ${imageFigure(SK_IMG_3, "báo giá xây nhà phần thô Long An", 3)}
 `.trim(),

@@ -1,5 +1,5 @@
 ﻿/** Nội dung bài viết SEO #10 — slug: mau-nha-ong-dep-long-an */
-import { imageFigure, homeLinkParagraph, seoCtaBlock } from "../article-seo-blocks";
+import { imageFigure, homeLinkParagraph, seoCtaBlock, faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("mau-nha-ong-dep-long-an", 0);
 const SK_IMG_2 = slugImage("mau-nha-ong-dep-long-an", 1);
@@ -83,7 +83,13 @@ ${homeLinkParagraph()}
   <li><strong>Bỏ qua chống thấm sân thượng:</strong> Dột xuống tầng dưới sau 2–3 mùa mưa.</li>
 </ul>
 
+${faqSection([
+  { q: "Nhà ống Long An mặt tiền bao nhiêu là đẹp?", a: "Phổ biến 4–5m: đủ chỗ xe + cầu thang + phòng khách nếu bố trí giếng trời. Dưới 3,5m cần tối ưu cầu thang chữ I và ánh sáng bên." },
+  { q: "Nhà ống 2 hay 3 tầng phù hợp gia đình trẻ?", a: "2 tầng nếu 2–3 người / ngân sách chặt. 3 tầng khi cần 3–4 phòng ngủ hoặc tầng trệt kinh doanh nhỏ." },
+  { q: "Có mẫu sẵn hay phải thiết kế riêng?", a: "Sao Khuê có thư viện mẫu tham khảo nhưng luôn chỉnh theo lô đất, hướng và quy hoạch huyện — không copy nguyên mẫu trên mạng." },
+])}
+
 ${seoCtaBlock("mẫu nhà ống đẹp Long An")}
-
+
 `.trim(),
 };

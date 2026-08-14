@@ -143,6 +143,7 @@ function buildStaticPages(): PrerenderPage[] {
         keywords:
           "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà",
         ogImage: DEFAULT_OG,
+        ogImageAlt: `${BRAND_SHORT} — thiết kế và xây nhà trọn gói TP.HCM`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -173,6 +174,7 @@ function buildStaticPages(): PrerenderPage[] {
         path: "/bao-gia",
         keywords: "báo giá xây nhà, đơn giá xây dựng, xây nhà trọn gói giá",
         ogImage: DEFAULT_OG,
+        ogImageAlt: `Báo giá xây dựng 2026 — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -189,6 +191,7 @@ function buildStaticPages(): PrerenderPage[] {
         path: "/thiet-ke",
         keywords: "thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc tphcm",
         ogImage: DEFAULT_OG,
+        ogImageAlt: `Thiết kế kiến trúc nhà ở — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -200,11 +203,12 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/xay-moi",
       meta: {
-        title: `Xây nhà trọn gói 2026 — Chìa khóa trao tay | ${BRAND_SHORT}`,
-        description: `${defaultPageBanners.xayMoi.subtitle} Xây nhà phố, biệt thự, nhà cấp 4 và thi công trọn gói.`,
+        title: `Kinh nghiệm xây nhà mới 2026 | ${BRAND_SHORT}`,
+        description: `${defaultPageBanners.xayMoi.subtitle} Tổng hợp bài viết xây nhà mới, nhà phố, biệt thự, nhà cấp 4 và quy trình thi công trọn gói.`,
         path: "/xay-moi",
         keywords: "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự tphcm",
         ogImage: DEFAULT_OG,
+        ogImageAlt: `Kinh nghiệm xây nhà mới 2026 — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -222,6 +226,7 @@ function buildStaticPages(): PrerenderPage[] {
         path: "/xay-nha",
         keywords: "xây nhà, xây nhà trọn gói, xây nhà tphcm, đơn giá xây nhà",
         ogImage: `${SITE_URL}/images/xay-nha/xay-nha-01.jpg`,
+        ogImageAlt: `Xây nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -234,18 +239,19 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/cai-tao-nha",
       meta: {
-        title: `Cải tạo nhà cũ TP.HCM — Sửa nhà trọn gói | ${BRAND_SHORT}`,
+        title: `Báo Giá Sửa Nhà Trọn Gói TP.HCM | ${BRAND_SHORT}`,
         description:
-          "Cải tạo nhà cũ, sửa nhà trọn gói tại TP.HCM. Làm mới từ 1–2 triệu/m², cải tạo sâu 3,5–5 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
+          "Báo giá sửa nhà trọn gói TP.HCM: làm mới 1–2 triệu/m², cải tạo 2,5–5 triệu/m². Khảo sát miễn phí, bảo hành kết cấu 10 năm — 0909 075 668.",
         path: "/cai-tao-nha",
-        keywords: "cải tạo nhà, cải tạo nhà cũ, sửa nhà trọn gói, cải tạo nhà phố",
+        keywords: "báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm",
         ogImage: `${SITE_URL}/images/cai-tao/cai-tao-01.jpg`,
+        ogImageAlt: `Cải tạo sửa nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Cải tạo nhà cũ — nâng cấp toàn diện</h1>
-        <p>Sửa chữa · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.</p>
-        <p>Làm mới từ 1–2 triệu/m² · Cải tạo sâu 3,5–5 triệu/m².</p>
+        <h1>Cải tạo &amp; sửa nhà trọn gói — báo giá rõ từng hạng mục</h1>
+        <p>Báo giá sửa nhà · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.</p>
+        <p>Làm mới từ 1–2 triệu/m² · Cải tạo 2,5–5 triệu/m².</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/cai-tao-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
@@ -257,6 +263,7 @@ function buildStaticPages(): PrerenderPage[] {
         path: "/lien-he",
         keywords: "liên hệ xây dựng, báo giá xây nhà tphcm",
         ogImage: DEFAULT_OG,
+        ogImageAlt: `Liên hệ ${BRAND_SHORT} — khảo sát và báo giá`,
       },
       bodyHtml: shell(`
         ${navHome()}
@@ -445,6 +452,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         path,
         keywords: post.metaKeywords?.trim(),
         ogImage: resolveAbsoluteImage(post.imageUrl) || DEFAULT_OG,
+        ogImageAlt: imageAlt,
         ogType: "article",
         publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
         modifiedTime: post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",

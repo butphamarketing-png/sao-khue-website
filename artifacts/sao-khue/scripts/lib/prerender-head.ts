@@ -9,11 +9,16 @@ export type PrerenderMeta = {
   path: string;
   keywords?: string;
   ogImage?: string;
+  ogImageAlt?: string;
   ogType?: string;
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
 };
+
+const OG_SITE_NAME = "Kiến Trúc Sao Khuê";
+const DEFAULT_OG_IMAGE_ALT =
+  "Kiến Trúc Sao Khuê — thiết kế và xây nhà trọn gói TP.HCM";
 
 export function escapeHtml(text: string): string {
   return text
@@ -59,10 +64,12 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
     `<meta property="og:description" content="${escapeHtml(description)}" />`,
     `<meta property="og:url" content="${escapeHtml(canonical)}" />`,
     `<meta property="og:locale" content="vi_VN" />`,
+    `<meta property="og:site_name" content="${escapeHtml(OG_SITE_NAME)}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
     `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
     `<meta property="og:image" content="${escapeHtml(ogImage)}" />`,
+    `<meta property="og:image:alt" content="${escapeHtml(meta.ogImageAlt?.trim() || DEFAULT_OG_IMAGE_ALT)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(ogImage)}" />`,
   ];
   if (meta.keywords) {

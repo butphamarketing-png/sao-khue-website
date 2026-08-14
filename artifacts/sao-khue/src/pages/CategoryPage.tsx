@@ -1,12 +1,11 @@
-import { useEffect } from "react";
-import { Link } from "wouter";
+import { useEffect, useMemo } from "react";
+import { Link, useLocation, useSearch } from "wouter";
 import { PageShell } from "@/components/PageShell";
 import { PageBanner } from "@/components/PageBanner";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { CTABanner } from "@/components/CTABanner";
 import { useListPosts } from "@workspace/api-client-react";
 import { findMenuByPath } from "@/lib/menu";
-import { useLocation } from "wouter";
 import { resolvePosts } from "@/lib/posts-with-fallback";
 import { categoryLabel, normalizeCategory } from "@/lib/categories";
 import {
@@ -29,23 +28,34 @@ import { getPostPublicPath } from "@/lib/post-url";
 import { resolvePostImageAlt } from "@/lib/post-body";
 import { TinTucHubStrip } from "@/components/TinTucHubStrip";
 import { CONG_TRINH_CASE_STUDIES } from "@workspace/seed-content";
+import { paginatePosts } from "@/lib/post-band";
 
 interface Props {
   category: string;
 }
 
+const PER_PAGE = 24;
+
 export default function CategoryPage({ category }: Props) {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
+  const search = useSearch();
   const s = useSiteSettings();
   const menu = useNavMenu();
   const phone = usePrimaryPhone();
   const normalized = normalizeCategory(category);
   const { data: posts, isLoading } = useListPosts({ category: normalized, limit: 1000 });
-  const items = resolvePosts(posts, { category: normalized });
+  const allItems = resolvePosts(posts, { category: normalized });
+
+  const page = useMemo(() => {
+    const raw = new URLSearchParams(search).get("trang");
+    const n = raw ? parseInt(raw, 10) : 1;
+    return Number.isFinite(n) && n > 0 ? n : 1;
+  }, [search]);
+  const { items, totalPages, total, page: currentPage } = paginatePosts(allItems, page, PER_PAGE);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [location]);
+  }, [location, currentPage]);
 
   const currentItem = findMenuByPath(location, menu);
   const pageTitle = currentItem?.title || categoryLabel(category);
@@ -86,8 +96,10 @@ export default function CategoryPage({ category }: Props) {
     title: `${pageTitle} | ${brand}`,
     description: seoDescription,
     path,
+    noindex: currentPage > 1,
     keywords: `${pageTitle}, xây dựng tphcm, ${brand}`,
     ogImage,
+    ogImageAlt: `${pageTitle} — ${brand}`,
     jsonLd: jsonLd.length > 0 ? jsonLd : undefined,
   });
 
@@ -95,6 +107,11 @@ export default function CategoryPage({ category }: Props) {
   const gridClass = isNewsLayout
     ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     : "grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3";
+
+  function goToPage(next: number) {
+    const safe = Math.min(Math.max(1, next), totalPages);
+    setLocation(safe === 1 ? path : `${path}?trang=${safe}`);
+  }
 
   return (
     <PageShell>
@@ -131,8 +148,8 @@ export default function CategoryPage({ category }: Props) {
 
       <div className="site-container pb-12 pt-2 lg:pb-16">
         <p className="mb-6 text-slate-600">
-          {items.length > 0
-            ? `${items.length} bài trong mục "${pageTitle}". Chọn bài để xem chi tiết.`
+          {total > 0
+            ? `${total} bài trong mục "${pageTitle}"${totalPages > 1 ? ` — trang ${currentPage}/${totalPages}` : ""}. Chọn bài để xem chi tiết.`
             : `Đang cập nhật nội dung cho mục "${pageTitle}".`}
         </p>
 
@@ -170,6 +187,8 @@ export default function CategoryPage({ category }: Props) {
                     src={post.imageUrl?.trim() || "/images/project_3.jpg"}
                     alt={resolvePostImageAlt(post)}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src =
                         "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800";
@@ -198,6 +217,38 @@ export default function CategoryPage({ category }: Props) {
               </article>
             ))}
           </div>
+        )}
+        {totalPages > 1 && (
+          <nav className="qh-bao-gia-pagination mt-8" aria-label={`Phân trang ${pageTitle}`}>
+            <button
+              type="button"
+              className="qh-bao-gia-pagination__btn"
+              disabled={currentPage <= 1}
+              onClick={() => goToPage(currentPage - 1)}
+            >
+              ← Trước
+            </button>
+            <div className="qh-bao-gia-pagination__pages">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={`qh-bao-gia-pagination__page ${n === currentPage ? "is-active" : ""}`}
+                  onClick={() => goToPage(n)}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+            <button
+              type="button"
+              className="qh-bao-gia-pagination__btn"
+              disabled={currentPage >= totalPages}
+              onClick={() => goToPage(currentPage + 1)}
+            >
+              Sau →
+            </button>
+          </nav>
         )}
       </div>
 

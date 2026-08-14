@@ -2,6 +2,7 @@ import { PageShell } from "@/components/PageShell";
 import { ContactCTASection } from "@/components/ContactCTASection";
 import { FAQSection } from "@/components/FAQSection";
 import { PageBanner } from "@/components/PageBanner";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import {
   useOpenGraphImage,
@@ -13,6 +14,30 @@ import {
 } from "@/lib/site-settings";
 import { MapEmbed } from "@/components/MapEmbed";
 import { usePageSeo } from "@/hooks/use-page-seo";
+import { buildBreadcrumbSchema } from "@/lib/seo";
+
+const CONTACT_FAQS = [
+  {
+    q: "Khảo sát nhà ở TP.HCM mất bao lâu, có mất phí không?",
+    a: "Khảo sát hiện trạng nội thành thường 30–60 phút, miễn phí khi đi kèm báo giá thi công. Hẻm xe máy vẫn đến được. Gửi ảnh nhà + vị trí trước để kỹ sư chuẩn bị.",
+  },
+  {
+    q: "Có bắt buộc đến văn phòng Bình Thạnh không?",
+    a: "Không. Có thể gọi 0909 075 668, gửi form trên trang này, hoặc hẹn khảo sát tại công trình. Văn phòng 245/8 Bình Lợi dùng khi ký hợp đồng / xem mẫu.",
+  },
+  {
+    q: "Chi nhánh Đắk Lắk nhận khảo sát thế nào?",
+    a: "Có địa chỉ chi nhánh 2 tại Đắk Lắk. Công trình Buôn Ma Thuột / tỉnh: hẹn lịch trước. Gói lớn vẫn do cùng đội kỹ thuật Sao Khuê.",
+  },
+  {
+    q: "Gửi form liên hệ xong được gọi lại khi nào?",
+    a: "Trong giờ làm việc thường trong ngày. Ngoài giờ: hotline 24/7 cho việc khẩn (dột, chập điện). Báo giá chính thức sau khảo sát, không chốt hợp đồng chỉ qua ảnh.",
+  },
+  {
+    q: "Báo giá qua Zalo / ảnh nhà có chính xác không?",
+    a: "Ảnh giúp ước mốc. Đơn giá m² trên mạng chưa gồm hẻm, móng cọc, hoàn thiện. Sao Khuê chốt sau đo đạc tại chỗ.",
+  },
+];
 
 export default function Contact() {
   const s = useSiteSettings();
@@ -21,6 +46,10 @@ export default function Contact() {
   const phone = usePrimaryPhone();
   const ogImage = useOpenGraphImage();
   const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const breadcrumbs = [
+    { name: "Trang chủ", path: "/" },
+    { name: "Liên hệ", path: "/lien-he" },
+  ];
 
   usePageSeo({
     title: `Liên hệ ${brand} | Hotline ${phone}`,
@@ -31,12 +60,15 @@ export default function Contact() {
     path: "/lien-he",
     keywords: "liên hệ xây dựng, báo giá xây nhà, khảo sát miễn phí tphcm",
     ogImage,
+    ogImageAlt: `Liên hệ ${brand} — khảo sát và báo giá xây nhà`,
+    jsonLd: [buildBreadcrumbSchema(breadcrumbs)],
   });
 
   return (
     <PageShell>
       <PageBanner title={banner.title}>
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
+        <Breadcrumbs items={breadcrumbs} light className="mt-4" />
       </PageBanner>
 
       <section className="site-container py-10 md:py-14">
@@ -131,7 +163,9 @@ export default function Contact() {
 
       <FAQSection
         title="Câu hỏi khi liên hệ"
-        subtitle="Một số thắc mắc thường gặp trước khi gặp đội ngũ tư vấn."
+        subtitle="Khảo sát, văn phòng Bình Thạnh, chi nhánh Đắk Lắk và cách chốt báo giá."
+        items={CONTACT_FAQS}
+        enableSchema
         className="section-muted pb-20"
       />
     </PageShell>

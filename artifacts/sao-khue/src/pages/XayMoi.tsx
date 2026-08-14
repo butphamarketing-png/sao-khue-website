@@ -52,14 +52,16 @@ export default function XayMoi() {
   ];
 
   usePageSeo({
-    title: `Xây nhà trọn gói 2026 — Chìa khóa trao tay | ${brand}`,
+    title: `Kinh nghiệm xây nhà mới 2026 | ${brand}`,
     description:
       banner.subtitle +
       " Tổng hợp bài viết xây nhà mới, nhà phố, biệt thự, nhà cấp 4 và quy trình thi công trọn gói.",
-    path: currentPage > 1 ? `/xay-moi?trang=${currentPage}` : "/xay-moi",
+    path: "/xay-moi",
+    noindex: currentPage > 1,
     keywords:
       "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự, xây nhà tphcm",
     ogImage,
+    ogImageAlt: `Kinh nghiệm xây nhà mới 2026 — ${brand}`,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Xây nhà trọn gói", banner.subtitle, absoluteUrl("/xay-moi")),

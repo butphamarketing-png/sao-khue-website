@@ -63,7 +63,7 @@ export function AboutSection() {
               size="lg"
               className="rounded-full bg-primary px-8 shadow-lg shadow-primary/20 hover:bg-primary/90"
             >
-              <Link href="/gioi-thieu">
+              <Link href="/bai-viet/ve-chung-toi">
                 Xem chi tiết
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

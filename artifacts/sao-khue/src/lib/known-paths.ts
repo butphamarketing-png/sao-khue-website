@@ -1,4 +1,4 @@
-import { getPostPublicPath, type SeedPost, seedPosts } from "@workspace/seed-content";
+import { getPostPublicPath, type SeedPost, seedPosts, shouldNoindexPostSlug } from "@workspace/seed-content";
 import { defaultNavMenu } from "./menu";
 
 /** Tập URL hợp lệ — dùng middleware Vercel + Express 404. */
@@ -21,6 +21,8 @@ export function collectKnownPaths(posts: SeedPost[] = seedPosts): Set<string> {
   ]);
 
   for (const post of posts) {
+    // Factory/thin (noindex) — không đưa vào known paths → Edge 404, tiết kiệm crawl budget.
+    if (shouldNoindexPostSlug(post.slug) || post.noindex) continue;
     paths.add(getPostPublicPath(post));
   }
 

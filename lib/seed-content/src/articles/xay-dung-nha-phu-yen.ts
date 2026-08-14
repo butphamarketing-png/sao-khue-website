@@ -1,5 +1,5 @@
 /** Nội dung bài viết SEO — slug: xay-dung-nha-phu-yen */
-import { homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
+import { faqSection, homeLinkParagraph, imageFigure, seoCtaBlock } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 
 const FOCUS = "xây dựng nhà Phú Yên";
@@ -75,6 +75,11 @@ ${imageFigure(SK_IMG_2, FOCUS, 2)}
 </ul>
 
 ${homeLinkParagraph()}
+
+${faqSection([
+  { q: "Sao Khuê xây nhà Phú Yên từ TP.HCM thế nào?", a: "Khảo sát hẹn trước, giám sát kỹ thuật + thợ địa phương. Gói trọn gói nhà phố/biệt thự ven biển. Gọi 0909 075 668." },
+  { q: "Nhà gần biển cần chú ý gì?", a: "Chống thấm–muối, mái neo gió bão, vật tư phù hợp khí hậu. Không copy đơn giá nội thành TP.HCM." },
+])}
 
 ${seoCtaBlock(FOCUS)}
 

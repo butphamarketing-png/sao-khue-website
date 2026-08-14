@@ -1,8 +1,9 @@
+import { faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 0);
 const SK_IMG_2 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 1);
 const SK_IMG_3 = slugImage("thiet-ke-nha-pho-hien-dai-tphcm", 2);
-﻿/** Nội dung bài viết SEO #3 — slug: thiet-ke-nha-pho-hien-dai-tphcm */
+/** Nội dung bài viết SEO #3 — slug: thiet-ke-nha-pho-hien-dai-tphcm */
 export const thietKeNhaPhoHienDaiTphcm = {
   title: "Thiết Kế Nhà Phố Hiện Đại Đẹp Tại TP.HCM",
   excerpt:
@@ -115,10 +116,16 @@ export const thietKeNhaPhoHienDaiTphcm = {
 <p>Khu vực lân cận: <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">mẫu nhà phố 2 tầng Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>, <a href="/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai">thi công nhà phố Đồng Nai</a>.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_3}" alt="mẫu nhà phố tphcm" loading="lazy" decoding="async" />
-<figcaption>mẫu nhà phố tphcm</figcaption>
+<img src="${SK_IMG_3}" alt="Mẫu nhà phố hiện đại TP.HCM — Sao Khuê" loading="lazy" decoding="async" />
+<figcaption>Mẫu nhà phố hiện đại TP.HCM — thiết kế tối ưu lô hẹp</figcaption>
 </figure>
 
+
+${faqSection([
+  { q: "Thiết kế nhà phố hiện đại TP.HCM gồm những hồ sơ gì?", a: "Mặt bằng, mặt đứng, mặt cắt, kết cấu sơ bộ, điện nước và phối cảnh 3D. Hồ sơ xin phép theo yêu cầu phường." },
+  { q: "Lô hẹp 3–4m có thiết kế đẹp được không?", a: "Được: giếng trời, cầu thang gọn, màu sáng, cửa kính có che nắng. Không nên nhồi phào chỉ dày." },
+  { q: "Miễn phí thiết kế khi nào?", a: "Khi ký xây trọn gói theo chương trình Sao Khuê. Thiết kế riêng không thi công tính phí theo quy mô." },
+])}
 
 <h2>Liên hệ thiết kế nhà phố TP.HCM</h2>
 <ul>

@@ -1,7 +1,8 @@
+import { faqSection } from "../article-seo-blocks";
 import { slugImage } from "../site-images";
 const SK_IMG_1 = slugImage("thi-cong-nha-pho-phu-yen", 0);
 const SK_IMG_2 = slugImage("thi-cong-nha-pho-phu-yen", 1);
-﻿/** Nội dung bài viết SEO #14 — slug: thi-cong-nha-pho-phu-yen */
+/** Nội dung bài viết SEO #14 — slug: thi-cong-nha-pho-phu-yen */
 export const thiCongNhaPhoPhuYen = {
   title: "Thi Công Nhà Phố Hiện Đại Tại Phú Yên",
   excerpt:
@@ -95,10 +96,16 @@ export const thiCongNhaPhoPhuYen = {
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_2}" alt="thi-cong-nha-pho-phu-yen-3" loading="lazy" decoding="async" />
-<figcaption>thi-cong-nha-pho-phu-yen-3</figcaption>
+<img src="${SK_IMG_2}" alt="Thi công nhà phố Phú Yên — kết cấu và hoàn thiện" loading="lazy" decoding="async" />
+<figcaption>Thi công nhà phố Phú Yên — kết cấu bền vững, hoàn thiện đồng bộ</figcaption>
 </figure>
 
+
+${faqSection([
+  { q: "Thi công nhà phố Phú Yên cần lưu ý khí hậu gì?", a: "Mùa mưa bão (khoảng tháng 9–12): che chắn, chống thấm mái sớm, lịch đổ bê tông linh hoạt. Ven biển: bảo vệ thép khỏi muối." },
+  { q: "Sao Khuê có đội thi công tại Tuy Hòa không?", a: "Có triển khai theo lịch khảo sát; công trình xa TP.HCM cần hẹn trước. Hotline 0909 075 668." },
+  { q: "Nên chọn thô hay trọn gói tại Phú Yên?", a: "Trọn gói khi muốn một đầu mối và bảo hành thống nhất. Tách thô nếu tự chọn hoàn thiện theo quý — vẫn cần nghiệm thu thô chặt." },
+])}
 
 <h2>Liên hệ tư vấn thi công nhà phố Phú Yên</h2>
 <p>Nếu bạn đang tìm kiếm giải pháp <strong>thi công nhà phố Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
