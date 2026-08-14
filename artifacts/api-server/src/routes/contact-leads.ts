@@ -3,6 +3,7 @@ import { db, contactLeadsTable } from "@workspace/db";
 import { desc, eq } from "drizzle-orm";
 import { z } from "zod";
 import { isAdmin } from "../lib/auth";
+import { getClientIp } from "../lib/client-ip";
 
 const LeadInput = z.object({
   name: z.string().min(1).max(120),
@@ -34,7 +35,10 @@ router.post("/contact-leads", async (req, res) => {
       res.status(400).json({ error: parsed.error.message });
       return;
     }
-    const [row] = await db.insert(contactLeadsTable).values(parsed.data).returning();
+    const [row] = await db
+      .insert(contactLeadsTable)
+      .values({ ...parsed.data, ip: getClientIp(req).slice(0, 64) })
+      .returning();
     res.status(201).json(serialize(row));
   } catch (err) {
     console.error("[contact-leads] create failed", err);

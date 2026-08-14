@@ -13,7 +13,7 @@
 | Buffer scale / test | 500.000đ | — | Đẩy vào campaign thắng sau tuần 2–3 |
 
 **Sitelinks (cả 2 campaign):**
-- Cải tạo: `/bao-gia`, `/dich-vu/sua-chua-nha`, `/tin-tuc/bao-gia-cai-tao-nha-tphcm`, `/lien-he`
+- Cải tạo: `/bao-gia`, `/dich-vu/sua-chua-nha`, `/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm`, `/lien-he`
 - Xây mới: `/bao-gia`, `/dich-vu/xay-nha-tron-goi`, `/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm`, `/lien-he`
 
 **Call asset:** bật số `0909 075 668`  
@@ -28,15 +28,22 @@
 ### Ad group A1 — Cải tạo nhà
 | Keyword | Match |
 |---------|-------|
+| [cải tạo nhà] | Exact |
 | [cải tạo nhà tphcm] | Exact |
 | [cải tạo nhà cũ tphcm] | Exact |
 | [cải tạo nhà phố tphcm] | Exact |
 | [cải tạo nhà cũ] | Exact |
 | [cải tạo nhà phố] | Exact |
+| [cải tạo nhà cấp 4 tphcm] | Exact |
+| [dịch vụ cải tạo nhà tphcm] | Exact |
+| "cải tạo nhà" | Phrase |
 | "cải tạo nhà tphcm" | Phrase |
 | "cải tạo nhà cũ" | Phrase |
 | "cải tạo nhà phố" | Phrase |
 | "cải tạo nhà trọn gói" | Phrase |
+| "cải tạo nhà cấp 4" | Phrase |
+| "dịch vụ cải tạo nhà" | Phrase |
+| "cải tạo nhà cũ tphcm" | Phrase |
 
 ### Ad group A2 — Sửa nhà trọn gói
 | Keyword | Match |
@@ -45,10 +52,17 @@
 | [sửa chữa nhà tphcm] | Exact |
 | [sửa nhà tphcm] | Exact |
 | [sửa nhà trọn gói] | Exact |
+| [dịch vụ sửa nhà tphcm] | Exact |
+| [dịch vụ sửa chữa nhà tphcm] | Exact |
+| [công ty sửa nhà tphcm] | Exact |
 | "sửa nhà trọn gói tphcm" | Phrase |
 | "sửa chữa nhà tphcm" | Phrase |
 | "sửa nhà trọn gói" | Phrase |
 | "công ty sửa nhà tphcm" | Phrase |
+| "dịch vụ sửa nhà tphcm" | Phrase |
+| "dịch vụ sửa chữa nhà" | Phrase |
+| "dịch vụ sửa chữa nhà trọn gói" | Phrase |
+| "sửa chữa nhà trọn gói" | Phrase |
 
 ### Ad group A3 — Báo giá cải tạo / sửa
 | Keyword | Match |
@@ -58,21 +72,35 @@
 | [chi phí cải tạo nhà tphcm] | Exact |
 | [báo giá cải tạo nhà] | Exact |
 | [báo giá sửa nhà] | Exact |
+| [chi phí sửa nhà] | Exact |
+| [đơn giá sửa nhà trọn gói] | Exact |
+| [bảng dự toán sửa chữa nhà] | Exact |
 | "báo giá cải tạo nhà" | Phrase |
 | "báo giá sửa nhà" | Phrase |
 | "chi phí cải tạo nhà" | Phrase |
 | "đơn giá sửa nhà" | Phrase |
+| "chi phí sửa nhà" | Phrase |
+| "đơn giá sửa nhà trọn gói" | Phrase |
+| "bảng dự toán sửa chữa nhà" | Phrase |
+| "giá sửa nhà trọn gói" | Phrase |
+| "giá sửa chữa nhà" | Phrase |
 
-### Ad group A4 — Nâng tầng / gia cố
+### Ad group A4 — Nâng tầng / gia cố / chống thấm
 | Keyword | Match |
 |---------|-------|
 | [nâng tầng nhà phố tphcm] | Exact |
 | [nâng tầng nhà phố] | Exact |
 | [gia cố nhà cũ tphcm] | Exact |
 | [gia cố nhà cũ] | Exact |
+| [chống thấm nhà cũ tphcm] | Exact |
+| [sửa nhà chống thấm tphcm] | Exact |
 | "nâng tầng nhà phố" | Phrase |
 | "gia cố nhà cũ" | Phrase |
 | "nâng tầng nhà tphcm" | Phrase |
+| "chống thấm nhà cũ" | Phrase |
+| "sửa nhà chống thấm" | Phrase |
+| "gia cố kết cấu nhà cũ" | Phrase |
+| "làm mới mặt tiền nhà phố" | Phrase |
 
 ### RSA — Campaign A (Cải tạo)
 
@@ -113,10 +141,16 @@
 | [công ty xây nhà trọn gói tphcm] | Exact |
 | [xây nhà trọn gói] | Exact |
 | [nhà thầu xây nhà] | Exact |
+| [công ty xây dựng tphcm] | Exact |
+| [xây nhà chìa khóa trao tay tphcm] | Exact |
 | "xây nhà trọn gói tphcm" | Phrase |
 | "nhà thầu xây nhà tphcm" | Phrase |
 | "công ty xây nhà trọn gói" | Phrase |
 | "xây nhà mới tphcm" | Phrase |
+| "công ty xây dựng tphcm" | Phrase |
+| "xây nhà chìa khóa trao tay" | Phrase |
+| "nhà thầu xây dựng tphcm" | Phrase |
+| "thi công xây nhà trọn gói" | Phrase |
 
 ### Ad group B2 — Báo giá xây
 | Keyword | Match |
@@ -125,21 +159,33 @@
 | [đơn giá xây nhà tphcm] | Exact |
 | [chi phí xây nhà tphcm] | Exact |
 | [báo giá xây nhà trọn gói] | Exact |
+| [đơn giá xây nhà trọn gói] | Exact |
+| [giá xây nhà phố tphcm] | Exact |
 | "báo giá xây nhà tphcm" | Phrase |
 | "đơn giá xây nhà" | Phrase |
 | "chi phí xây nhà tphcm" | Phrase |
 | "báo giá xây nhà trọn gói" | Phrase |
+| "đơn giá xây nhà trọn gói" | Phrase |
+| "giá xây nhà phố" | Phrase |
+| "bảng giá xây nhà tphcm" | Phrase |
+| "chi phí xây nhà phố" | Phrase |
 
-### Ad group B3 — Phần thô / nhà phố
+### Ad group B3 — Phần thô / nhà phố / biệt thự
 | Keyword | Match |
 |---------|-------|
 | [xây nhà phần thô tphcm] | Exact |
 | [xây nhà phố tphcm] | Exact |
 | [xây dựng phần thô tphcm] | Exact |
 | [xây nhà phố] | Exact |
+| [xây biệt thự tphcm] | Exact |
+| [xây nhà cấp 4 tphcm] | Exact |
 | "xây nhà phần thô" | Phrase |
 | "xây nhà phố tphcm" | Phrase |
 | "xây dựng phần thô tphcm" | Phrase |
+| "xây biệt thự tphcm" | Phrase |
+| "xây nhà cấp 4 tphcm" | Phrase |
+| "xây nhà 1 trệt 1 lầu" | Phrase |
+| "xây nhà 3 tầng tphcm" | Phrase |
 
 ### RSA — Campaign B (Xây mới)
 
@@ -198,6 +244,13 @@ salary
 lương
 cách vẽ
 sketchup
+nông thôn
+tự làm
+diy
+youtube
+game
+phim
+truyện
 ```
 
 **Negative riêng Campaign Xây mới (tránh lẫn sửa/cải tạo):**
@@ -207,15 +260,37 @@ sửa chữa
 cải tạo
 nâng tầng
 chống thấm mái
+nhà cấp 4 nông thôn
 ```
-*(chỉ thêm nếu search terms cho thấy lẫn nặng; tuần 1 có thể chưa cần)*
 
-**Negative riêng Campaign Cải tạo (tránh lẫn xây mới lớn):**
+**Negative riêng Campaign Cải tạo (tránh lẫn xây mới lớn / lệch địa bàn):**
 ```
 xây nhà mới
 xây biệt thự mới
 đất trống
+nông thôn
+cấp 4 nông thôn
+mẫu nhà đẹp
+thiết kế kiến trúc
 ```
+
+---
+
+## Bổ sung từ Search terms thực tế (Cải tạo — tuần đầu)
+
+Đã quan sát trên Ads → thêm vào list trên (ưu tiên import ngay vào campaign đang chạy):
+
+| Search term thấy | Hành động |
+|------------------|-----------|
+| báo giá sửa nhà | Giữ / đã có — top cost |
+| cải tạo nhà cũ | Giữ |
+| cải tạo nhà / cải tạo nhà phố | Thêm Exact/Phrase A1 |
+| dịch vụ sửa nhà tphcm | Thêm A2 |
+| đơn giá sửa nhà trọn gói | Thêm A3 |
+| chi phí sửa nhà | Thêm A3 |
+| bảng dự toán sửa chữa nhà | Thêm A3 |
+| cải tạo nhà cấp 4 | Thêm Phrase A1 + gắn **tphcm** Exact |
+| cải tạo nhà cấp 4 nông thôn đẹp | **Negative:** nông thôn |
 
 ---
 

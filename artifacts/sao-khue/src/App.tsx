@@ -18,6 +18,7 @@ import PostPage from "@/pages/PostPage";
 import Admin from "@/pages/Admin";
 import { SiteHead } from "@/components/SiteHead";
 import { SiteLoader } from "@/components/SiteLoader";
+import { SiteVisitTracker } from "@/components/SiteVisitTracker";
 import { QuoteRequestProvider } from "@/lib/quote-request-context";
 import { LegacySlugRedirect } from "@/components/LegacySlugRedirect";
 import { BaiVietCanonicalRedirect } from "@/components/BaiVietCanonicalRedirect";
@@ -116,6 +117,7 @@ function App() {
         <WouterRouter base={(import.meta.env.BASE_URL ?? "/").replace(/\/$/, "")}>
           <QuoteRequestProvider>
             <SiteHead />
+            <SiteVisitTracker />
             <SiteLoader />
             <Router />
           </QuoteRequestProvider>

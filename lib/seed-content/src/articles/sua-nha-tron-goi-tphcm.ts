@@ -1,13 +1,13 @@
 ﻿/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm */
 export const suaNhaTronGoiTphcm = {
-  title: "Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm",
+  title: "Sửa Nhà Trọn Gói TP.HCM 2026 — Báo Giá Minh Bạch | Sao Khuê",
   excerpt:
-    "Dịch vụ sửa chữa nhà trọn gói giá rẻ tại TPHCM. Hơn 10 năm kinh nghiệm — Kiến trúc Sao Khuê mang đến sự an tâm cho mọi công trình.",
-  metaTitle: "Dịch Vụ Sửa Nhà Trọn Gói TPHCM Tận Tâm | Kiến Trúc Sao Khuê",
+    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá sửa nhà theo hạng mục, thi công một đầu mối, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
+  metaTitle: "Sửa Nhà Trọn Gói TP.HCM — Báo Giá 2026 | Sao Khuê",
   metaDescription:
-    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành dài hạn. Hotline 0909 075 668 — Sao Khuê.",
+    "Sửa nhà trọn gói TP.HCM: báo giá sửa nhà 1–5 triệu/m² tùy mức độ. Khảo sát miễn phí, không phát sinh ảo — 0909 075 668.",
   metaKeywords:
-    "sửa nhà trọn gói tphcm, sửa chữa nhà tp hcm, cải tạo nhà phố, sửa nhà giá rẻ, kiến trúc sao khuê",
+    "sửa nhà trọn gói tphcm, báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa chữa nhà tp hcm, cải tạo nhà phố, dịch vụ sửa nhà tphcm, kiến trúc sao khuê",
   content: `
 <h2>Dịch vụ sửa nhà trọn gói tại TP.HCM — An tâm từ khảo sát đến bàn giao</h2>
 <p>Nhà ở sau nhiều năm sử dụng thường xuất hiện các vấn đề: <strong>ẩm mốc, nứt tường, hệ thống điện nước xuống cấp, không gian chật chội</strong> hoặc lỗi thời so với nhu cầu sinh hoạt hiện đại. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp <strong>dịch vụ sửa nhà trọn gói tại TP.HCM</strong> — một giải pháp toàn diện giúp chủ nhà tiết kiệm thời gian, kiểm soát chi phí và đảm bảo chất lượng thi công.</p>
@@ -30,7 +30,7 @@ export const suaNhaTronGoiTphcm = {
 </ul>
 
 <h2>Báo giá sửa nhà trọn gói TP.HCM tham khảo 2026</h2>
-<p>Giá sửa nhà phụ thuộc hiện trạng công trình, vật liệu và phạm vi thi công. Dưới đây là <strong>mức tham khảo</strong> để chủ nhà dự trù ngân sách (chưa gồm thiết kế phức tạp hoặc vật liệu cao cấp đặc biệt):</p>
+<p><strong>Báo giá sửa nhà</strong> phụ thuộc hiện trạng, vật liệu và phạm vi. Bảng dưới là mốc để dự trù — chi tiết đầy đủ tại <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói TP.HCM</a>:</p>
 <table>
   <thead>
     <tr><th>Hạng mục</th><th>Đơn giá tham khảo</th><th>Ghi chú</th></tr>

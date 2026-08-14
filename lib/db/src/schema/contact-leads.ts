@@ -8,6 +8,7 @@ export const contactLeadsTable = pgTable("contact_leads", {
   service: text("service").notNull().default(""),
   message: text("message").notNull().default(""),
   source: text("source").notNull().default("website"),
+  ip: text("ip").notNull().default(""),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
 

@@ -1,22 +1,7 @@
--- Tạo bảng posts (chỉ chạy nếu chưa có — bỏ qua nếu đã migrate từ Drizzle)
+import { getPool } from "@workspace/db";
+import { logger } from "./logger";
 
-CREATE TABLE IF NOT EXISTS posts (
-  id SERIAL PRIMARY KEY,
-  slug VARCHAR(255) NOT NULL UNIQUE,
-  title TEXT NOT NULL,
-  category VARCHAR(64) NOT NULL,
-  excerpt TEXT NOT NULL DEFAULT '',
-  content TEXT NOT NULL DEFAULT '',
-  image_url TEXT NOT NULL DEFAULT '',
-  meta_title TEXT NOT NULL DEFAULT '',
-  meta_description TEXT NOT NULL DEFAULT '',
-  meta_keywords TEXT NOT NULL DEFAULT '',
-  created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-  updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE INDEX IF NOT EXISTS posts_category_idx ON posts (category);
-
+const DDL = `
 CREATE TABLE IF NOT EXISTS contact_leads (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
@@ -28,6 +13,8 @@ CREATE TABLE IF NOT EXISTS contact_leads (
   ip TEXT NOT NULL DEFAULT '',
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+ALTER TABLE contact_leads ADD COLUMN IF NOT EXISTS ip TEXT NOT NULL DEFAULT '';
 
 CREATE TABLE IF NOT EXISTS site_visits (
   id SERIAL PRIMARY KEY,
@@ -42,3 +29,10 @@ CREATE TABLE IF NOT EXISTS site_visits (
 
 CREATE INDEX IF NOT EXISTS site_visits_ip_idx ON site_visits (ip);
 CREATE INDEX IF NOT EXISTS site_visits_created_at_idx ON site_visits (created_at DESC);
+`;
+
+export async function ensureAppTables(): Promise<void> {
+  const pool = getPool();
+  await pool.query(DDL);
+  logger.info("Ensured contact_leads and site_visits tables");
+}

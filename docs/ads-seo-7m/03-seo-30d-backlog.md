@@ -31,6 +31,7 @@ Không viết mới trước — củng cố + internal link + đảm bảo inde
 | 5 | `/dich-vu/sua-chua-nha` | Service hub sửa/cải tạo |
 | 6 | `/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm` | Money pricing xây |
 | 7 | `/tin-tuc/bao-gia-cai-tao-nha-tphcm` | Money pricing cải tạo |
+| 7b | `/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm` | Money pricing sửa nhà (Ads A3) |
 | 8 | `/tin-tuc/cai-tao-nha-tphcm` | Hub SEO cải tạo |
 | 9 | `/tin-tuc/chi-phi-xay-nha-tphcm` | Chi phí xây |
 | 10 | `/tin-tuc/xay-nha-tphcm` | Hub SEO xây |
@@ -47,7 +48,7 @@ Không viết mới trước — củng cố + internal link + đảm bảo inde
 
 | Ưu tiên | Keyword / slug gợi ý | Lý do |
 |---------|----------------------|-------|
-| P0 | `bao-gia-sua-nha-tron-goi-tphcm` (nếu chưa đủ mạnh so với page hiện có) | Khớp Ads A3 |
+| P0 | `bao-gia-sua-nha-tron-goi-tphcm` | Khớp Ads A3 — đã seed |
 | P0 | `sua-nha-tron-goi-binh-thanh` hoặc quận trọng điểm HCM | Geo + intent sửa |
 | P1 | `xay-nha-phan-tho-tphcm` money page rõ | Khớp Ads B3 |
 | P1 | `cai-tao-nha-dang-o-tphcm` | Intent gần chốt |

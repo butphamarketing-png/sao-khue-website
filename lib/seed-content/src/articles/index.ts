@@ -27,6 +27,7 @@ export { phongThuyNhaO } from "./phong-thuy-nha-o";
 export { congTyXayDungNhaPhoUyTinTphcm } from "./cong-ty-xay-dung-nha-pho-uy-tin-tphcm";
 export { nhaThauXayNhaTronGoiTphcm } from "./nha-thau-xay-nha-tron-goi-tphcm";
 export { baoGiaXayNhaTronGoiMoiNhatTphcm } from "./bao-gia-xay-nha-tron-goi-moi-nhat-tphcm";
+export { baoGiaSuaNhaTronGoiTphcm } from "./bao-gia-sua-nha-tron-goi-tphcm";
 export {
   baoGiaXayNhaMoi,
   baoGiaCaiTaoNhaCu,

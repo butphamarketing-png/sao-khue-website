@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
-import { BarChart3, ExternalLink, Globe, Inbox, Loader2, Newspaper, SearchCheck, Users } from "lucide-react";
+import { BarChart3, ExternalLink, Globe, Inbox, Loader2, Newspaper, RefreshCw, SearchCheck, ShieldAlert, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Panel } from "@/components/admin/admin-ui";
 import { fetchAnalyticsTraffic, type AnalyticsDailyRow, type AnalyticsTrafficResponse } from "@/lib/analytics-api";
+import { fetchSiteVisits, type SiteVisitRow, type SiteVisitsResponse } from "@/lib/site-visits-api";
 import { parseGaMeasurementId } from "@/lib/google-integrations";
 import type { AdminView } from "@/components/admin/admin-views";
 
@@ -87,6 +88,153 @@ function TrafficChart({ daily }: { daily: AnalyticsDailyRow[] }) {
   );
 }
 
+function formatVisitTime(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "—";
+  return d.toLocaleString("vi-VN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    day: "2-digit",
+    month: "2-digit",
+  });
+}
+
+function locationLabel(row: SiteVisitRow): string {
+  const parts = [row.city, row.region, row.country].filter(Boolean);
+  return parts.length ? parts.join(", ") : "Không xác định";
+}
+
+function VisitorTable() {
+  const [data, setData] = useState<SiteVisitsResponse | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [onlySuspicious, setOnlySuspicious] = useState(false);
+
+  async function load() {
+    setLoading(true);
+    const next = await fetchSiteVisits(31);
+    setData(next);
+    setLoading(false);
+  }
+
+  useEffect(() => {
+    void load();
+  }, []);
+
+  const rows = useMemo(() => {
+    const all = data?.rows ?? [];
+    return onlySuspicious ? all.filter((r) => r.level === "nghi ngờ") : all;
+  }, [data, onlySuspicious]);
+
+  const monthLabel = useMemo(() => {
+    const now = new Date();
+    return `Từ ngày 1 đến hết tháng ${now.getMonth() + 1} năm ${now.getFullYear()}`;
+  }, []);
+
+  return (
+    <Panel>
+      <div className="flex flex-wrap items-start justify-between gap-3 border-b border-violet-50 bg-gradient-to-r from-violet-50/50 to-white px-6 py-4">
+        <div>
+          <h3 className="flex items-center gap-2 text-xl font-bold text-slate-900">
+            <Users className="h-5 w-5 text-violet-600" />
+            Người truy cập và IP
+          </h3>
+          <p className="mt-1 text-sm text-slate-500">{monthLabel}. Cột Lead hiện khi IP đó đã gửi form liên hệ.</p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Button
+            type="button"
+            size="sm"
+            variant={onlySuspicious ? "outline" : "default"}
+            className={onlySuspicious ? "rounded-lg" : "rounded-lg bg-violet-600 hover:bg-violet-700"}
+            onClick={() => setOnlySuspicious(false)}
+          >
+            Tất cả
+          </Button>
+          <Button
+            type="button"
+            size="sm"
+            variant={onlySuspicious ? "default" : "outline"}
+            className={onlySuspicious ? "rounded-lg bg-amber-600 hover:bg-amber-700" : "rounded-lg"}
+            onClick={() => setOnlySuspicious(true)}
+          >
+            Chỉ nghi ngờ
+          </Button>
+          <Button type="button" size="sm" variant="outline" className="rounded-lg" onClick={() => void load()}>
+            <RefreshCw className="mr-1 h-3.5 w-3.5" />
+            Làm mới
+          </Button>
+        </div>
+      </div>
+
+      <div className="space-y-4 p-6">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <TrafficStatPill label="Lượt ghi nhận" value={formatNumber(data?.totals.visits ?? 0)} />
+          <TrafficStatPill label="IP khác nhau" value={formatNumber(data?.totals.uniqueIps ?? 0)} />
+          <div className="rounded-xl border border-amber-100 bg-amber-50/60 px-4 py-3 text-center shadow-sm">
+            <div className="flex items-center justify-center gap-1 text-lg font-black text-amber-700">
+              <ShieldAlert className="h-4 w-4" />
+              {formatNumber(data?.totals.suspicious ?? 0)}
+            </div>
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-500">IP nghi ngờ</div>
+          </div>
+        </div>
+
+        {loading ? (
+          <div className="flex h-40 items-center justify-center gap-2 text-sm text-slate-500">
+            <Loader2 className="h-5 w-5 animate-spin text-violet-500" />
+            Đang tải nhật ký truy cập…
+          </div>
+        ) : rows.length === 0 ? (
+          <p className="rounded-xl border border-dashed border-slate-200 p-8 text-center text-sm text-slate-500">
+            Chưa có lượt truy cập ghi nhận. Bảng sẽ hiện sau khi khách vào website (trừ trang admin).
+          </p>
+        ) : (
+          <div className="overflow-x-auto rounded-xl border border-slate-200">
+            <table className="min-w-full text-left text-sm">
+              <thead className="bg-slate-50 text-[11px] font-bold uppercase tracking-wide text-slate-500">
+                <tr>
+                  <th className="px-3 py-2">IP</th>
+                  <th className="px-3 py-2">Địa điểm</th>
+                  <th className="px-3 py-2">Mức</th>
+                  <th className="px-3 py-2">Lượt</th>
+                  <th className="px-3 py-2">Lead</th>
+                  <th className="px-3 py-2">Lần cuối</th>
+                  <th className="px-3 py-2">Trang</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => (
+                  <tr key={`${row.ip}-${row.lastSeen}`} className="border-t border-slate-100">
+                    <td className="whitespace-nowrap px-3 py-2 font-mono text-xs text-slate-700">{row.ip}</td>
+                    <td className="px-3 py-2 text-slate-600">{locationLabel(row)}</td>
+                    <td className="px-3 py-2">
+                      <span
+                        className={
+                          row.level === "nghi ngờ"
+                            ? "rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-800"
+                            : "rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800"
+                        }
+                      >
+                        {row.level}
+                      </span>
+                    </td>
+                    <td className="px-3 py-2 font-semibold text-slate-800">{row.visits}</td>
+                    <td className="max-w-[180px] truncate px-3 py-2 text-violet-700">{row.lead || "—"}</td>
+                    <td className="whitespace-nowrap px-3 py-2 text-slate-500">{formatVisitTime(row.lastSeen)}</td>
+                    <td className="max-w-[220px] truncate px-3 py-2 font-mono text-xs text-slate-500" title={row.lastPath}>
+                      {row.lastPath}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </Panel>
+  );
+}
+
 export function AdminDashboardExtras({
   gaTrackingRaw,
   postCount,
@@ -122,6 +270,7 @@ export function AdminDashboardExtras({
   }, [traffic]);
 
   return (
+    <div className="space-y-6">
     <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
       <Panel>
         <div className="border-b border-violet-50 bg-gradient-to-r from-violet-50/50 to-white px-6 py-4">
@@ -237,6 +386,8 @@ export function AdminDashboardExtras({
           />
         </div>
       </Panel>
+    </div>
+    <VisitorTable />
     </div>
   );
 }

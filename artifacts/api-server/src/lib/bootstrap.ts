@@ -2,6 +2,7 @@ import { db, postsTable, pingDatabase } from "@workspace/db";
 import { seedPosts } from "@workspace/seed-content";
 import { sql } from "drizzle-orm";
 import { logger } from "./logger";
+import { ensureAppTables } from "./ensure-tables";
 
 export async function seedPostsToDatabase(): Promise<number> {
   let count = 0;
@@ -35,6 +36,12 @@ export async function bootstrapDatabase(): Promise<void> {
   if (!connected) {
     logger.warn("Database unavailable — API will serve bundled fallback posts");
     return;
+  }
+
+  try {
+    await ensureAppTables();
+  } catch (err) {
+    logger.error({ err }, "Failed to ensure app tables");
   }
 
   try {

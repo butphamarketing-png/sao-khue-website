@@ -88,7 +88,7 @@ function isCaiTaoSlug(slug: string): boolean {
     slug.includes("lam-moi") ||
     slug.includes("nang-cap") ||
     slug.includes("tai-thiet") ||
-    slug.startsWith("sua-nha")
+    slug.includes("sua-nha")
   );
 }
 
@@ -105,7 +105,10 @@ function isXayNhaSlug(slug: string): boolean {
     slug.includes("doi-tho") ||
     slug.includes("nha-thau") ||
     slug.includes("cong-ty-xay") ||
-    (slug.includes("tron-goi") && !slug.includes("sua-chua") && !slug.includes("cai-tao"))
+    (slug.includes("tron-goi") &&
+      !slug.includes("sua-chua") &&
+      !slug.includes("sua-nha") &&
+      !slug.includes("cai-tao"))
   );
 }
 

@@ -350,9 +350,13 @@ export function ContactInboxPanel({ onLeadsLoaded }: InboxPanelProps) {
         </div>
       </div>
       {leads.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-slate-200 p-8 text-center text-sm text-slate-500">
-          Chưa có liên hệ nào từ form website.
-        </p>
+        <div className="rounded-xl border border-dashed border-slate-200 p-8 text-center text-sm text-slate-500">
+          <p className="font-medium text-slate-700">Chưa có liên hệ nào từ form website.</p>
+          <p className="mt-2 leading-relaxed">
+            Hộp thư này chỉ lưu khách khi họ gửi form trên kientrucsaokhue.com (báo giá / liên hệ / landing Ads).
+            Số liệu Google Ads, cuộc gọi điện thoại hay WordPress cũ <strong>không tự chuyển vào đây</strong>.
+          </p>
+        </div>
       ) : (
         leads.map((lead) => (
           <div

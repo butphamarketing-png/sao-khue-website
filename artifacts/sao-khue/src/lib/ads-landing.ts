@@ -58,7 +58,7 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/xay-nha/xay-nha-01.jpg",
   heroImageAlt: "Thi công xây nhà trọn gói Sao Khuê",
   keywords:
-    "xây nhà, xây nhà trọn gói, xây nhà tphcm, đơn giá xây nhà, xây nhà chìa khóa trao tay",
+    "xây nhà trọn gói, xây nhà tphcm, nhà thầu xây nhà tphcm, đơn giá xây nhà, báo giá xây nhà trọn gói, xây nhà phần thô, xây nhà phố tphcm, xây nhà chìa khóa trao tay",
   seoTitle: "Xây nhà trọn gói TP.HCM — Báo giá miễn phí | Sao Khuê",
   seoDescription:
     "Xây nhà trọn gói chìa khóa trao tay tại TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
@@ -143,17 +143,17 @@ export const CAI_TAO_NHA_LANDING: AdsLandingConfig = {
   source: "ads-cai-tao-nha",
   serviceLabel: "Cải tạo nhà",
   brandHeadline: "Kiến Trúc Sao Khuê",
-  h1: "Cải tạo nhà cũ — nâng cấp toàn diện",
+  h1: "Cải tạo & sửa nhà trọn gói — báo giá rõ từng hạng mục",
   support:
-    "Sửa chữa · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.",
+    "Báo giá sửa nhà · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.",
   heroImage: "/images/cai-tao/cai-tao-01.jpg",
   heroImageAlt: "Cải tạo sửa chữa nhà Sao Khuê",
   keywords:
-    "cải tạo nhà, cải tạo nhà cũ, sửa nhà trọn gói, cải tạo nhà phố, nâng tầng nhà",
-  seoTitle: "Cải tạo nhà cũ TP.HCM — Sửa nhà trọn gói | Sao Khuê",
+    "báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa nhà trọn gói tphcm, cải tạo nhà, cải tạo nhà cũ tphcm, cải tạo nhà phố, nâng tầng nhà phố, chống thấm nhà cũ, dịch vụ sửa nhà tphcm",
+  seoTitle: "Báo Giá Sửa Nhà Trọn Gói TP.HCM | Sao Khuê",
   seoDescription:
-    "Cải tạo nhà cũ, sửa nhà trọn gói tại TP.HCM. Làm mới từ 1–2 triệu/m², cải tạo sâu 3,5–5 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
-  formTitle: "Nhận báo giá cải tạo nhà trong 15 phút",
+    "Báo giá sửa nhà trọn gói TP.HCM: làm mới 1–2 triệu/m², cải tạo 2,5–5 triệu/m². Khảo sát miễn phí, bảo hành kết cấu 10 năm — 0909 075 668.",
+  formTitle: "Nhận báo giá sửa nhà trong 15 phút",
   benefits: [
     {
       title: "Khảo sát hiện trạng",
@@ -209,6 +209,10 @@ export const CAI_TAO_NHA_LANDING: AdsLandingConfig = {
     { src: "/images/cai-tao/cai-tao-11.jpg", alt: "Cải tạo nhà Sao Khuê 4" },
   ],
   faqs: [
+    {
+      q: "Báo giá sửa nhà trọn gói hết bao nhiêu?",
+      a: "Làm mới khoảng 1–2 triệu/m²; sửa nhà trọn gói / cải tạo công năng 2,5–3,5 triệu/m²; cải tạo sâu hoặc gia cố khoảng 3,5–5 triệu/m². Báo giá chính thức sau khảo sát.",
+    },
     {
       q: "Chi phí cải tạo nhà cũ khoảng bao nhiêu?",
       a: "Làm mới khoảng 1–2 triệu/m²; cải tạo công năng 2,5–3,5 triệu/m²; cải tạo sâu / gia cố khoảng 3,5–5 triệu/m² tùy hiện trạng.",

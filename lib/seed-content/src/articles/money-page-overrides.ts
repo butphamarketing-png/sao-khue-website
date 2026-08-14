@@ -35,6 +35,7 @@ export const MONEY_PAGE_OVERRIDE_SLUGS: string[] = [
   "chi-phi-xay-nha-tphcm",
   "don-gia-xay-nha-tphcm",
   "bao-gia-sua-chua-nha-tphcm",
+  "bao-gia-sua-nha-tron-goi-tphcm",
   "bao-gia-cai-tao-nha-tphcm",
   "cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
   "xay-nha-gia-re-tphcm",
@@ -926,18 +927,18 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   },
 
   "bao-gia-sua-chua-nha-tphcm": {
-    title: "Báo Giá Sửa Chữa Nhà TP.HCM — Theo Hạng Mục Rõ Ràng",
+    title: "Báo Giá Sửa Chữa Nhà TP.HCM — Từng Hạng Mục, Không Gộp Cục",
     excerpt:
-      "Báo giá sửa chữa nhà TP.HCM: chống thấm, điện nước, sơn sửa. Khảo sát trước khi báo — 0909 075 668.",
-    metaTitle: "Báo Giá Sửa Chữa Nhà TP.HCM | Theo Hạng Mục",
+      "Báo giá sửa nhà / sửa chữa nhà TP.HCM theo bệnh: thấm, điện nước, sơn. Khảo sát trước khi chốt — 0909 075 668.",
+    metaTitle: "Báo Giá Sửa Chữa Nhà TP.HCM 2026 | Sao Khuê",
     metaDescription:
-      "Báo giá sửa chữa nhà TP.HCM theo hạng mục: thấm, điện, nước, sơn. Khảo sát miễn phí — 0909 075 668.",
+      "Báo giá sửa nhà TP.HCM theo hạng mục: thấm, điện, nước, sơn. Gói trọn gói xem trang riêng. Khảo sát miễn phí — 0909 075 668.",
     metaKeywords:
-      "báo giá sửa chữa nhà tphcm, giá sửa nhà, chi phí sửa chữa nhà, sửa nhà hết bao nhiêu",
+      "báo giá sửa chữa nhà tphcm, báo giá sửa nhà, giá sửa nhà, chi phí sửa chữa nhà, sửa nhà hết bao nhiêu",
     imageAlt: "Báo giá sửa chữa nhà tại TP.HCM",
-    content: `<h2>Báo giá sửa chữa nhà TP.HCM nên tách theo bệnh, không gộp “một cục”</h2>
-<p><strong>Báo giá sửa chữa nhà TP.HCM</strong> minh bạch khi liệt kê từng bệnh: thấm WC, thay đường ống, sơn lại, sửa mái… Gộp một giá trọn nhà dễ thiếu hạng mục hoặc đội giá mơ hồ. <strong>Kiến Trúc Sao Khuê</strong> khảo sát hiện trạng rồi mới chốt số.</p>
-<p>Dịch vụ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · tham khảo thêm <a href="/bao-gia">/bao-gia</a>.</p>
+    content: `<h2>Báo giá sửa nhà TP.HCM nên tách theo bệnh, không gộp “một cục”</h2>
+<p><strong>Báo giá sửa nhà</strong> (sửa chữa theo hạng mục) minh bạch khi liệt kê từng bệnh: thấm WC, thay đường ống, sơn lại, sửa mái… Gộp một giá trọn nhà dễ thiếu hạng mục. Nếu bạn cần gói đồng bộ cả nhà, xem <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói</a>. <strong>Kiến Trúc Sao Khuê</strong> khảo sát hiện trạng rồi mới chốt số.</p>
+<p>Dịch vụ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/cai-tao-nha">cải tạo nhà</a> · <a href="/bao-gia">/bao-gia</a>.</p>
 
 <h2>Bảng báo giá theo hạng mục thường gặp</h2>
 <table>
