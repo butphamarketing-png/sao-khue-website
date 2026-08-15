@@ -14,10 +14,19 @@ import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
 import { shouldSpaShellFallback } from "@workspace/seed-content";
 
+/** Opaque so Vercel NFT does not pack the entire static tree into api/index. */
+function publicDirName(): string {
+  return ["pub", "lic"].join("");
+}
+
 function loadKnownPaths(frontendDistDir: string): Set<string> | null {
+  const here = path.dirname(fileURLToPath(import.meta.url));
+  const pub = publicDirName();
   const candidates = [
     path.join(frontendDistDir, "known-paths.json"),
-    path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "public", "known-paths.json"),
+    // Prefer dist copy (small) over scanning the CDN static root.
+    path.join(here, "known-paths.json"),
+    path.join(here, "..", pub, "known-paths.json"),
   ];
   for (const file of candidates) {
     if (!existsSync(file)) continue;
@@ -38,11 +47,12 @@ const apiDir = path.dirname(fileURLToPath(import.meta.url));
 /**
  * Resolve frontend static root at runtime.
  * Keep paths NFT-opaque: never pass a statically joined `.../sao-khue/...` or
- * `.../images` segment — Vercel file tracing would pack ~200MB+ of assets into
- * the serverless function. On Vercel, `outputDirectory: public` serves via CDN.
+ * literal `public` / `images` segments — Vercel file tracing would pack
+ * ~200MB+ of assets into the serverless function.
+ * On Vercel, `outputDirectory: public` serves via CDN — skip Express static.
  */
 function resolveFrontendDistDir(): string {
-  const publicSeg = ["pub", "lic"].join("");
+  const publicSeg = publicDirName();
   const candidates = [
     path.resolve(apiDir, "..", publicSeg),
     path.resolve(process.cwd(), publicSeg),
@@ -54,6 +64,7 @@ function resolveFrontendDistDir(): string {
 }
 const frontendDistDir = resolveFrontendDistDir();
 const frontendIndexPath = path.join(frontendDistDir, "index.html");
+const isVercel = Boolean(process.env.VERCEL);
 
 app.use(
   pinoHttp({
@@ -92,8 +103,9 @@ app.use((req, res, next) => {
   next();
 });
 
-if (existsSync(frontendIndexPath)) {
-  // Skip static image-tree probes here — they make NFT include public/images.
+// Vercel: static HTML/assets come from outputDirectory (CDN). Shipping them inside
+// the serverless function blows the 250MB limit (~110MB+ images/prerender).
+if (!isVercel && existsSync(frontendIndexPath)) {
   app.use(express.static(frontendDistDir));
 
   const notFoundHtmlPath = path.join(frontendDistDir, "404.html");
@@ -152,7 +164,7 @@ if (existsSync(frontendIndexPath)) {
       if (err) next(err);
     });
   });
-} else {
+} else if (!isVercel) {
   logger.warn(
     { frontendDistDir },
     "Frontend build not found; serving API only",

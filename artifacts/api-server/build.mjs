@@ -139,6 +139,14 @@ globalThis.__dirname = __bannerPath.dirname(globalThis.__filename);
   const assetsDest = path.resolve(distDir, "assets");
   await mkdir(assetsDest, { recursive: true });
   await cp(assetsSrc, assetsDest, { recursive: true });
+
+  // Small known-paths copy for local Express 404 — keep out of NFT public/ tree.
+  const knownSrc = path.resolve(artifactDir, "public", "known-paths.json");
+  try {
+    await cp(knownSrc, path.resolve(distDir, "known-paths.json"));
+  } catch {
+    /* optional until frontend build has run */
+  }
 }
 
 buildAll().catch((err) => {

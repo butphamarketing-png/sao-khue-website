@@ -1,15 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import sharp from "sharp";
 
 const WATERMARK_MIMES = new Set(["image/jpeg", "image/png", "image/webp"]);
 
 function resolveLogoPath(): string {
   const here = path.dirname(fileURLToPath(import.meta.url));
+  // Opaque folder name — avoid literal "assets"+"png" static joins that NFT over-includes.
+  const assetsSeg = ["ass", "ets"].join("");
+  const logoName = ["watermark-logo", ".", "png"].join("");
   const candidates = [
-    path.join(here, "..", "assets", "watermark-logo.png"),
-    path.join(here, "..", "..", "assets", "watermark-logo.png"),
+    path.join(here, assetsSeg, logoName),
+    path.join(here, "..", assetsSeg, logoName),
+    path.join(here, "..", "..", assetsSeg, logoName),
   ];
   for (const candidate of candidates) {
     if (fs.existsSync(candidate)) return candidate;
@@ -29,6 +32,8 @@ export async function applyLogoWatermark(
 ): Promise<WatermarkResult | null> {
   if (!WATERMARK_MIMES.has(mimetype)) return null;
 
+  // Dynamic import keeps sharp out of the cold-start graph when unused; still externalized in esbuild.
+  const sharp = (await import("sharp")).default;
   const base = sharp(input);
   const meta = await base.metadata();
   const width = meta.width ?? 0;

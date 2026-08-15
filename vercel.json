@@ -5,7 +5,7 @@
   "outputDirectory": "artifacts/api-server/public",
   "functions": {
     "artifacts/api-server/api/index.mjs": {
-      "excludeFiles": "{artifacts/api-server/public/**,artifacts/sao-khue/**,artifacts/mockup-sandbox/**,artifacts/api-server/scripts/**,artifacts/api-server/src/**,artifacts/api-server/**/*.map}"
+      "excludeFiles": "{artifacts/api-server/public/**,artifacts/sao-khue/**,artifacts/mockup-sandbox/**,artifacts/api-server/scripts/**,artifacts/api-server/src/**,artifacts/api-server/**/*.map,attached_assets/**,lib/seed-content/src/articles/**}"
     }
   },
   "rewrites": [

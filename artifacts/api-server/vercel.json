@@ -5,7 +5,7 @@
   "outputDirectory": "public",
   "functions": {
     "api/index.mjs": {
-      "excludeFiles": "{public/**,../sao-khue/**,../mockup-sandbox/**,scripts/**,src/**,**/*.map}"
+      "excludeFiles": "{public/**,../sao-khue/**,../mockup-sandbox/**,scripts/**,src/**,**/*.map,../../attached_assets/**,../../lib/seed-content/src/articles/**}"
     }
   },
   "rewrites": [
