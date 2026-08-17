@@ -225,7 +225,7 @@ function buildStaticPages(): PrerenderPage[] {
           "Xây nhà trọn gói chìa khóa trao tay tại TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
         path: "/xay-nha",
         keywords: "xây nhà, xây nhà trọn gói, xây nhà tphcm, đơn giá xây nhà",
-        ogImage: `${SITE_URL}/images/xay-nha/xay-nha-01.jpg`,
+        ogImage: `${SITE_URL}/images/ads/hero-xay-nha.jpg`,
         ogImageAlt: `Xây nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
@@ -244,7 +244,7 @@ function buildStaticPages(): PrerenderPage[] {
           "Báo giá sửa nhà trọn gói TP.HCM: làm mới 1–2 triệu/m², cải tạo 2,5–5 triệu/m². Khảo sát miễn phí, bảo hành kết cấu 10 năm — 0909 075 668.",
         path: "/cai-tao-nha",
         keywords: "báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm",
-        ogImage: `${SITE_URL}/images/cai-tao/cai-tao-01.jpg`,
+        ogImage: `${SITE_URL}/images/ads/hero-cai-tao.jpg`,
         ogImageAlt: `Cải tạo sửa nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`

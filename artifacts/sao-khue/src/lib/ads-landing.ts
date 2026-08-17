@@ -55,8 +55,8 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   h1: "Xây nhà trọn gói chìa khóa trao tay",
   support:
     "Khảo sát miễn phí — báo giá minh bạch — bảo hành kết cấu 10 năm tại TP.HCM, Bình Dương, Đồng Nai.",
-  heroImage: "/images/xay-nha/xay-nha-01.jpg",
-  heroImageAlt: "Thi công xây nhà trọn gói Sao Khuê",
+  heroImage: "/images/ads/hero-xay-nha.jpg",
+  heroImageAlt: "Nhà phố hiện đại xây trọn gói Sao Khuê",
   keywords:
     "xây nhà trọn gói, xây nhà tphcm, nhà thầu xây nhà tphcm, đơn giá xây nhà, báo giá xây nhà trọn gói, xây nhà phần thô, xây nhà phố tphcm, xây nhà chìa khóa trao tay",
   seoTitle: "Xây nhà trọn gói TP.HCM — Báo giá miễn phí | Sao Khuê",
@@ -146,8 +146,8 @@ export const CAI_TAO_NHA_LANDING: AdsLandingConfig = {
   h1: "Cải tạo & sửa nhà trọn gói — báo giá rõ từng hạng mục",
   support:
     "Báo giá sửa nhà · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.",
-  heroImage: "/images/cai-tao/cai-tao-01.jpg",
-  heroImageAlt: "Cải tạo sửa chữa nhà Sao Khuê",
+  heroImage: "/images/ads/hero-cai-tao.jpg",
+  heroImageAlt: "Nhà phố sau cải tạo Sao Khuê",
   keywords:
     "báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa nhà trọn gói tphcm, cải tạo nhà, cải tạo nhà cũ tphcm, cải tạo nhà phố, nâng tầng nhà phố, chống thấm nhà cũ, dịch vụ sửa nhà tphcm",
   seoTitle: "Báo Giá Sửa Nhà Trọn Gói TP.HCM | Sao Khuê",

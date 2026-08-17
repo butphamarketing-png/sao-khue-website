@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, ChevronDown, PhoneCall, ShieldCheck } from "lucide-react";
+import { CheckCircle2, ChevronDown, PhoneCall } from "lucide-react";
 import { AdsLandingShell } from "@/components/AdsLandingShell";
 import { AdsLeadForm } from "@/components/AdsLeadForm";
 import { usePageSeo } from "@/hooks/use-page-seo";
@@ -16,6 +16,10 @@ export function AdsLandingPage({ config }: Props) {
   const phone = usePrimaryPhone();
   const ogImage = useOpenGraphImage() || config.heroImage;
   const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const trustChips = config.trustLine
+    .split("·")
+    .map((part) => part.trim())
+    .filter(Boolean);
 
   usePageSeo({
     title: config.seoTitle,
@@ -53,31 +57,32 @@ export function AdsLandingPage({ config }: Props) {
 
   return (
     <AdsLandingShell>
-      {/* Hero */}
-      <section className="relative min-h-[min(100svh,920px)] overflow-hidden">
-        <img
-          src={config.heroImage}
-          alt={config.heroImageAlt}
-          className="absolute inset-0 h-full w-full object-cover"
-          fetchPriority="high"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#062a4a]/92 via-[#0a3d6b]/78 to-[#062a4a]/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(230,57,70,0.22),transparent_55%)]" />
+      {/* Hero: navy đặc cho chữ — ảnh công trình chỉ bên phải, không đè headline */}
+      <section className="relative overflow-hidden bg-[#062a4a]">
+        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[min(56%,740px)] lg:block">
+          <img
+            src={config.heroImage}
+            alt=""
+            className="h-full w-full object-cover object-center"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#062a4a] via-[#062a4a]/55 to-black/25" />
+        </div>
 
-        <div className="site-container relative z-10 grid min-h-[min(100svh,920px)] items-center gap-8 py-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12 lg:py-14">
+        <div className="site-container relative z-10 grid min-h-[min(100svh,820px)] items-center gap-8 py-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-10 lg:py-14">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.55 }}
             className="text-white"
           >
-            <p className="font-display text-2xl font-bold uppercase tracking-[0.04em] text-white sm:text-3xl md:text-4xl">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-blue-200/90">
               {config.brandHeadline}
             </p>
-            <h1 className="mt-3 max-w-xl font-display text-3xl font-bold uppercase leading-tight tracking-wide sm:text-4xl md:text-[2.6rem]">
+            <h1 className="mt-3 max-w-xl font-display text-3xl font-bold uppercase leading-[1.15] tracking-wide text-white sm:text-4xl md:text-[2.45rem]">
               {config.h1}
             </h1>
-            <p className="mt-4 max-w-lg text-base leading-relaxed text-blue-100/95 sm:text-lg">
+            <p className="mt-4 max-w-lg text-base leading-relaxed text-blue-100 sm:text-lg">
               {config.support}
             </p>
 
@@ -91,7 +96,7 @@ export function AdsLandingPage({ config }: Props) {
               {phone && (
                 <a
                   href={telHref(phone)}
-                  className="inline-flex h-12 items-center gap-2 rounded-lg border border-white/35 bg-white/10 px-5 text-sm font-bold uppercase tracking-wide text-white backdrop-blur transition hover:bg-white/20"
+                  className="inline-flex h-12 items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-5 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white/20"
                 >
                   <PhoneCall size={18} />
                   {phone}
@@ -99,10 +104,19 @@ export function AdsLandingPage({ config }: Props) {
               )}
             </div>
 
-            <p className="mt-5 flex items-start gap-2 text-sm text-blue-100/85">
-              <ShieldCheck size={18} className="mt-0.5 shrink-0 text-accent" />
-              {config.trustLine}
-            </p>
+            {trustChips.length > 0 && (
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {trustChips.map((chip) => (
+                  <li
+                    key={chip}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-blue-50 ring-1 ring-white/15"
+                  >
+                    <CheckCircle2 size={14} className="shrink-0 text-accent" />
+                    {chip}
+                  </li>
+                ))}
+              </ul>
+            )}
           </motion.div>
 
           <motion.div
@@ -292,12 +306,12 @@ export function AdsLandingPage({ config }: Props) {
 
       {/* Final CTA */}
       <section className="relative overflow-hidden py-14 md:py-20">
-        <img
-          src={config.gallery[1]?.src || config.heroImage}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          loading="lazy"
-        />
+          <img
+            src={config.heroImage}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            loading="lazy"
+          />
         <div className="absolute inset-0 bg-gradient-to-r from-[#062a4a]/95 via-[#0a3d6b]/90 to-[#062a4a]/80" />
         <div className="site-container relative z-10 grid items-center gap-8 lg:grid-cols-2">
           <div className="text-white">
