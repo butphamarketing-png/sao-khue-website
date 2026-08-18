@@ -814,8 +814,6 @@ const BATCH2_META_DESC: Record<string, string> = {
     "Xây nhà 5 tầng TP.HCM: tra quy hoạch chiều cao, PCCC, thang máy, móng cọc. Khảo sát phép trước khi vẽ — 0909 075 668.",
   "xay-nha-tron-goi-binh-duong":
     "Xây nhà trọn gói Bình Dương (Thuận An, Dĩ An): GPXD tỉnh, đơn giá riêng, không copy m² TP.HCM — 0909 075 668.",
-  "xay-nha-tron-goi-go-vap":
-    "Xây nhà trọn gói Gò Vấp: lô 4×16, hẻm hẹp, giếng trời, liền kề. BH kết cấu 10 năm — 0909 075 668.",
   "cai-tao-nha-ong-tphcm":
     "Cải tạo nhà ống TP.HCM: giếng trời, WC giữa nhà, mặt tiền, ở được khi chia khu. Khảo sát kết cấu — 0909 075 668.",
   "nang-tang-nha-tphcm":
@@ -826,10 +824,6 @@ const BATCH2_META_DESC: Record<string, string> = {
     "Thiết kế thi công nhà phố TP.HCM một đầu mối: 3D khớp kết cấu, phụ lục khi đổi, BH 10 năm — 0909 075 668.",
   "xay-nha-quan-2":
     "Xây nhà Quận 2 / Thủ Đức: đất yếu, hẻm 3m, thô hoặc trọn gói. Khảo sát miễn phí — 0909 075 668.",
-  "xay-nha-tron-goi-thu-duc":
-    "Xây nhà trọn gói Thủ Đức: KDC mới vs phố cũ Hiệp Bình, móng ven rạch, facade CĐT — 0909 075 668.",
-  "xay-nha-tron-goi-binh-thanh":
-    "Xây nhà trọn gói Bình Thạnh: Bình Lợi, hẻm Nơ Trang Long, giám sát gần văn phòng Sao Khuê — 0909 075 668.",
 };
 
 for (const [slug, desc] of Object.entries(BATCH2_META_DESC)) {
@@ -849,6 +843,9 @@ const BATCH2_DEPTH_3: Record<string, string> = {
   "nang-tang-nha-tphcm": `<h2>Hồ sơ nâng tầng nên có</h2><p>GPXD cũ, ảnh nứt, đo lún (nếu có), bản vẽ gia cố. Phường có thể yêu cầu thẩm tra kết cấu. Sao Khuê không đổ sàn thêm khi chưa có phương án kỹ sư. Liên hệ 245/8 Bình Lợi.</p>`,
   "xay-biet-thu-tphcm": `<h2>Chọn nhà thầu biệt thự</h2><p>Cần đội am hiểu địa chất ven kênh và KDC. HĐ tách sân–hồ–nhà. BH kết cấu 10 năm. Không nhận “giá nhà phố” cho biệt thự. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Thủ Đức</a> · <a href="/tin-tuc/xay-nha-nha-be">Nhà Bè</a>.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Tiến độ đội thi công Bình Dương</h2><p>Khảo sát hẹn trước (không drop-in như nội thành). Gói 3–4 tầng: lịch đổ bê tông theo xa lộ. GPXD tỉnh khác TP.HCM — chốt hồ sơ trước đào móng.</p>`,
+  "xay-nha-mat-tien-tphcm": `<h2>Nhà mặt tiền cho thuê vs ở</h2><p>Cho thuê trệt: PCCC, WC khách, điện 3 pha. Ở thuần: facade vẫn cần chỉ giới nhưng tải điện thấp hơn. Đừng dùng một bản vẽ cho cả hai. Cải tạo sẵn: <a href="/tin-tuc/cai-tao-mat-tien-nha-tphcm">cải tạo mặt tiền</a>.</p>`,
+  "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Một HĐ thiết kế–thi công lợi gì?</h2><p>Tránh KTS vẽ 3D không thi công được, thầu cắt chi tiết. Đổi cửa/giếng giữa chừng: phụ lục giá. BH kết cấu 10 năm khi Sao Khuê thi công đúng bản vẽ duyệt.</p>`,
+  "xay-nha-uy-tin-tphcm": `<h2>Xem công trình đang làm</h2><p>Nhà thầu uy tín cho xem hiện trường (hẹn trước). Kiểm tra cốt thép, nhật ký, biên bản nghiệm thu. Văn phòng 245/8 Bình Lợi. Không chuyển khoản lớn trước khi có HĐ và địa chỉ rõ.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Bảng thô 2026 — đọc đúng</h2><p>3,5–5,5 triệu/m² nhà phố thường chưa cọc, chưa hoàn thiện. Hẻm hẹp + nền yếu làm m² “rẻ” trên mạng thành đắt thật. Máy tính <a href="/bao-gia">/bao-gia</a> chỉ mốc; HĐ sau khảo sát.</p>`,
   "chi-phi-cai-tao-nha-tphcm": `<h2>Cách chốt ngân sách cải tạo</h2><p>Gửi ảnh hiện trạng + việc muốn làm (WC, giếng, mặt tiền). Sao Khuê tách bắt buộc / hoãn được. Đừng chốt “một cục” khi chưa đo nhà. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
 };
@@ -936,6 +933,11 @@ const BATCH2_DEPTH_5: Record<string, string> = {
   "xay-nha-tron-goi-quan-2": `<h2>Vật tư facade khu Thảo Điền</h2><p>Cửa kính lớn, đá ốp, đèn âm — báo tách dòng, không nuốt vào m² trọn gói. Đất yếu: cọc 12–18% tổng. Biên bản hiện trạng hàng xóm trước đào hố. Gọi <strong>0909 075 668</strong>.</p>`,
   "xay-shophouse-tphcm": `<h2>Giờ ồn và hàng xóm shophouse</h2><p>Quán mở sớm/khuya: cách âm sàn trệt–lầu 1, cửa kính kín gió. Xe hàng không chắn hẻm. Hỏi công năng khi xin GPXD — làm xong mới xin dễ bị yêu cầu hoàn trả mặt đứng.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Case Thuận An / Dĩ An</h2><p>Lô KDC đường xe hơi giảm logistics; GPXD tỉnh Bình Dương khác TP.HCM. Đơn giá hoàn thiện có thể thấp hơn nội thành nếu chọn vật tư địa phương — không copy bảng m² Sài Gòn. Xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>`,
+  "nang-tang-nha-tphcm": `<h2>Chi phí nâng 1 tầng tham khảo</h2><p>Gia cố cột–móng + sàn mới + hoàn thiện tum: thường vài trăm triệu đến hơn 1 tỷ tùy nhà phố 3–4 tầng cũ. Số sau khảo sát; không báo “giá m² nâng” khi chưa khoan kiểm tra.</p>`,
+  "sua-dien-nuoc-nha-tphcm": `<h2>Nghiệm thu điện nước</h2><p>Đo chống giật, thử áp lực nước, chụp ống trước khi trát lại tường. Giữ sơ đồ tủ điện trong hồ sơ bảo hành. Gói lớn nên ghép <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a> nếu đục nhiều.</p>`,
+  "xay-nha-mat-tien-tphcm": `<h2>Bảng hiệu và chỉ giới</h2><p>Biển hộp đèn, lam chắn mưa, bậc cấp không lấn lộ giới. Vỉa hè / cổng: hỏi phường. Cải tạo mặt đứng sẵn: <a href="/tin-tuc/cai-tao-mat-tien-nha-tphcm">cải tạo mặt tiền</a>.</p>`,
+  "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Bàn giao hồ sơ khi một HĐ</h2><p>Chủ nhà nhận bản vẽ as-built, danh mục vật tư đã dùng, biên bản nghiệm thu và cam kết BH kết cấu 10 năm. Đổi cửa/giếng giữa chừng: phụ lục trước khi thợ làm.</p>`,
+  "xay-nha-uy-tin-tphcm": `<h2>Cam kết Sao Khuê trên HĐ</h2><p>List thép–xi măng–sơn–keo chống thấm; nghiệm thu móng–thô–hoàn thiện; giữ lại % đến bàn giao; địa chỉ 245/8 Bình Lợi. Không nhận đặt cọc lớn trước khi có HĐ và lịch khảo sát.</p>`,
 };
 
 for (const [slug, extra] of Object.entries(BATCH2_DEPTH_5)) {
@@ -945,6 +947,7 @@ for (const [slug, extra] of Object.entries(BATCH2_DEPTH_5)) {
 
 /** Khối 6 — đẩy 3 money page còn sát ngưỡng 1.800 ký tự. */
 const BATCH2_DEPTH_6: Record<string, string> = {
+  "cai-tao-nha-ong-tphcm": `<h2>Ngân sách cải tạo nhà ống tham khảo</h2><p>Sơn–lát–WC: vài chục đến hơn trăm triệu. Đập thông + giếng + mặt tiền: thường 0,4–1,2 tỷ tùy độ sâu. Số sau đo nhà — không chốt “một cục” qua Zalo. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "xay-nha-tron-goi-quan-2": `<h2>Checklist khởi công Q.2 / Thủ Đức</h2><p>GPXD đúng phường mới, biên bản hàng xóm trước đào móng, phương án cọc nếu đất yếu, list vật tư facade. Không đổ móng khi chưa chốt các điểm này. Hotline <strong>0909 075 668</strong>.</p>`,
 };
 

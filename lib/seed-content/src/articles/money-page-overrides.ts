@@ -10,6 +10,7 @@ import {
   MONEY_PAGE_OVERRIDE_SLUGS_BATCH3,
   moneyPageOverridesBatch3,
 } from "./money-page-overrides-batch3";
+import { p1GeoHandcraftOverrides } from "./p1-geo-handcraft";
 
 export type MoneyPageOverride = {
   title?: string;
@@ -2578,6 +2579,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 
   ...moneyPageOverridesBatch2,
   ...moneyPageOverridesBatch3,
+  ...p1GeoHandcraftOverrides,
 };
 
 /**
@@ -2595,28 +2597,20 @@ const MONEY_SOFT_DEPTH: Record<string, string> = {
   "sua-dien-nuoc-nha-tphcm": `<h2>Báo giá theo điểm vs gói đồng bộ</h2><p>Vài ổ cắm: tính điểm. Cả nhà dây nhôm + ống sắt: gói đồng bộ rẻ hơn đục ba lần. Gửi sơ đồ tầng khi gọi hotline.</p>`,
   "xay-nha-tan-phu": `<h2>Gửi hồ sơ khảo sát Tân Phú</h2><p>Ảnh hẻm, cao độ nền so đường, số tầng. Khu thấp: hỏi van thoát và cao trệt. <a href="/tin-tuc/xay-nha-tron-goi-tan-phu">Trọn gói Tân Phú</a> · 0909 075 668.</p>`,
   "nang-tang-nha-tphcm": `<h2>Sau khi được phép nâng tầng</h2><p>Gia cố → đổ sàn → tường → chống thấm tum → hoàn thiện. Không ở tum khi chưa nghiệm thu chống thấm. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
-  "xay-nha-tron-goi-binh-thanh": `<h2>Vật tư và nghiệm thu Bình Thạnh</h2><p>List thép–xi măng–sơn trong HĐ. Ảnh cốt thép trước đổ. Văn phòng Bình Lợi — giám sát hiện trường nhanh. Gửi ảnh hẻm: <strong>0909 075 668</strong>.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Xin phép Bình Dương khác TP.HCM chỗ nào?</h2><p>Hồ sơ theo UBND tỉnh/phường mới. Đơn giá không copy Sài Gòn. Hẹn khảo sát trước (không drop-in). Case <a href="/cong-trinh/xay-nha-pho-thuan-an">Thuận An</a>.</p>`,
   "xay-nha-tron-goi-quan-10": `<h2>Hẻm và giờ đổ bê tông Q.10</h2><p>Nhiều hẻm xe máy: bơm từ mặt tiền, ca sớm. Liền kề: biên bản tường chung. Báo phụ phí logistics rõ trong dự toán.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>Gửi ảnh khảo sát Thủ Đức</h2><p>KDC hay phố cũ? Ven rạch? Facade CĐT? Trả lời 3 câu này giúp báo đúng gói. Hotline <strong>0909 075 668</strong>.</p>`,
   "xay-nha-tron-goi-quan-6": `<h2>Nhà phố Q.6 — mặt tiền vs hẻm</h2><p>Mặt tiền kinh doanh: điện tách, PCCC. Hẻm: logistics. Không dùng một đơn giá m² cho cả hai. Landing <a href="/xay-nha">/xay-nha</a>.</p>`,
   "xay-nha-tron-goi-quan-5": `<h2>Shophouse / nhà ở Q.5</h2><p>Trệt quán đông khách: hỏi công năng khi GPXD. Lầu ở lối riêng nếu được. Xem <a href="/tin-tuc/xay-shophouse-tphcm">xây shophouse</a>.</p>`,
   "xay-nha-tiet-kiem-tphcm": `<h2>Cắt gì được, cắt gì không?</h2><p>Được: phào chỉ, đèn dư, nội thất phụ. Không: thép–bê tông–chống thấm–điện chống giật. Sao Khuê ghi rõ trong dự toán trước khi ký.</p>`,
-  "xay-nha-tron-goi-tan-phu": `<h2>Tiến độ đội Tân Phú</h2><p>Hẻm hẹp: ca đổ sớm. Ngập cục bộ: cao độ trệt + chống thấm chân tường. Gửi ảnh hiện trạng khi gọi hotline.</p>`,
   "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Khi nào nên tách thiết kế riêng?</h2><p>Nếu chưa chốt thầu: thuê thiết kế trước vẫn được. Ký trọn gói Sao Khuê: thường miễn phí thiết kế theo chương trình — xem <a href="/dich-vu/khuyen-mai">khuyến mại</a>.</p>`,
   "xay-nha-tron-goi-quan-8": `<h2>Nền và kênh khu Q.8</h2><p>Một số tuyến gần kênh: khảo sát địa chất trước khi hứa 4 tầng. Phụ phí cọc tách dòng khỏi m² trọn gói.</p>`,
   "xay-nha-tron-goi-quan-11": `<h2>Checklist khởi công Q.11</h2><p>GPXD đúng phường, biên bản hàng xóm, list vật tư facade, lịch đổ bê tông. Không đào móng khi chưa chốt 4 điểm này.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Thanh toán phần thô theo mốc</h2><p>Móng → sàn các tầng → mái chờ. Giữ lại % đến nghiệm thu thô (ngâm sân thượng). Không trả hết khi còn hạng mục chờ.</p>`,
   "xay-nha-cho-thue-tphcm": `<h2>Mặt bằng cho thuê hiệu quả</h2><p>WC từng phòng/tầng, điện tách, lối đi chung rõ. Đừng copy nhà ở gia đình rồi “chia phòng sau”. PCCC hỏi sớm nếu nhiều phòng.</p>`,
-  "xay-nha-tron-goi-nha-be": `<h2>Sân vườn và cao độ Nhà Bè</h2><p>Ven kênh: cao độ nền + thoát nước. Sân–hàng rào tính phụ lục. Có thể tách thô rồi hoàn thiện theo quý nếu cashflow giãn.</p>`,
-  "xay-nha-tron-goi-phu-nhuan": `<h2>Hẻm Phú Nhuận và liền kề</h2><p>Nhiều tuyến hẹp: xe phế thải nhỏ, bơm bê tông từ mặt tiền. Biên bản tường chung trước đào móng. Gọi <strong>0909 075 668</strong>.</p>`,
   "xay-nha-tron-goi-hoc-mon": `<h2>Đất nền Hóc Môn</h2><p>Khu dân cư mới vs đất vườn: địa chất và đường vào khác nhau. Không áp đơn giá nội thành. Khảo sát tận lô trước khi ký.</p>`,
   "xay-nha-4x12-tphcm": `<h2>Công năng lô 4×12</h2><p>Cầu thang chữ I, giếng nhỏ, ít hành lang. 1 trệt 2–3 lầu phổ biến. Xem thêm <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">4×16</a> nếu lô sâu hơn.</p>`,
   "xin-giay-phep-cai-tao-nha-tphcm": `<h2>Hồ sơ cải tạo thường cần</h2><p>GPXD cũ (nếu có), ảnh hiện trạng, bản vẽ cải tạo, cam kết an toàn. Đổi mặt đứng lớn / nâng tầng: không làm xong mới xin. Sao Khuê tư vấn hiện trạng trong HĐ.</p>`,
-  "xay-nha-tron-goi-binh-tan": `<h2>Logistics Bình Tân</h2><p>Đường lớn dễ xe; hẻm trong khu: phụ phí khiêng. GPXD theo phường. Báo giá sau đo đất — không chốt “giá mạng”.</p>`,
   "xay-nha-tron-goi-cu-chi": `<h2>Công trình Củ Chi — lịch đội</h2><p>Xa trung tâm: khảo sát hẹn trước, lịch đổ theo xa lộ. Đất vườn / nền mới: khoan địa chất. Hotline <strong>0909 075 668</strong>.</p>`,
-  "xay-nha-tron-goi-quan-7": `<h2>Q.7 / khu Nam — facade và hẻm</h2><p>Khu đô thị mới: facade đồng bộ hơn. Hẻm cũ: logistics. Chốt thô hay trọn gói trước khi ký phụ lục cửa kính.</p>`,
-  "xay-nha-tron-goi-tan-binh": `<h2>Gần sân bay Tân Bình</h2><p>Một số tuyến hạn chế chiều cao. Tra phường trước khi vẽ 5 tầng. Ồn máy bay: cách âm cửa kính nếu cần — báo phụ lục.</p>`,
   "xay-nha-uy-tin-tphcm": `<h2>Sau bàn giao — bảo hành</h2><p>CSKH lập phiếu, kỹ thuật khảo sát hạng mục trong HĐ. Kết cấu tới 10 năm. Không “thợ cũ tự vá” ngoài quy trình. Văn phòng 245/8 Bình Lợi.</p>`,
   "cai-tao-nha-tphcm": `<h2>Gửi ảnh để ước lượng nhanh</h2><p>WC, giếng, mặt tiền, nứt cột (nếu có). Sao Khuê tách việc bắt buộc / hoãn được. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "chi-phi-cai-tao-nha-tphcm": `<h2>Ví dụ cashflow cải tạo</h2><p>Chia đợt: chống thấm → điện nước → lát/sơn → mặt tiền. Giữ 10% dự phòng. Không trả hết trước nghiệm thu cuối.</p>`,
@@ -2640,9 +2634,7 @@ const MONEY_SOFT_DEPTH_R2: Record<string, string> = {
   "sua-dien-nuoc-nha-tphcm": `<h2>Dấu hiệu nên thay hệ thống cũ</h2><p>Ổ nóng, CB nhảy liên tục, ống nước gỉ / áp yếu tầng trên, dây nhôm lộ. Nhà cải tạo WC: đổi ống PVC đồng bộ trước khi ốp. Báo theo điểm hoặc gói đồng bộ — gửi sơ đồ tầng khi gọi hotline. Liên quan: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</p>`,
   "xay-biet-thu-tphcm": `<h2>Tiến độ biệt thự TP.HCM</h2><p>Thường 9–14 tháng với 200–400m² sàn (chưa sân–hồ phức tạp). Địa chất ven kênh / KDC quyết định cọc. HĐ tách nhà / sân / hàng rào / hồ. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · hotline <strong>0909 075 668</strong>.</p>`,
   "xay-shophouse-tphcm": `<h2>Xin phép shophouse / nhà ở kết hợp</h2><p>Trệt quán: hỏi công năng khi GPXD, lối thoát, điện 3 pha. Lầu ở lối riêng nếu được. Facade kính–biển tính phụ lục. Không dùng đơn giá “nhà ở thuần” cho trệt kinh doanh. Xem <a href="/tin-tuc/cai-tao-nha-ket-hop-kinh-doanh-tphcm">cải tạo kết hợp KD</a>.</p>`,
-  "xay-nha-tron-goi-go-vap": `<h2>Trọn gói Gò Vấp — khảo sát gì?</h2><p>Ảnh hẻm + mặt tiền, sổ (che số), số tầng, thô hay trọn gói. Nhiều tuyến hẹp: bơm bê tông từ mặt tiền, ca sớm. Liền kề: biên bản tường chung. Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo. Landing <a href="/xay-nha">/xay-nha</a> · <strong>0909 075 668</strong>.</p><h2>Vật tư và nghiệm thu</h2><p>List thép–xi măng–sơn trong HĐ. Ảnh cốt thép trước đổ. Không nhận “giá mạng” không đo đất.</p>`,
   "xay-nha-tron-goi-quan-4": `<h2>Nhà phố Q.4 — logistics và nền</h2><p>Hẻm gần kênh / thấp: hỏi cao độ trệt và thoát nước. Xe phế thải nhỏ, giờ đổ sớm. Mặt tiền kinh doanh: điện tách. Báo phụ phí logistics rõ — không nuốt vào m². Hotline <strong>0909 075 668</strong>.</p><h2>Gói thô vs trọn gói Q.4</h2><p>Thô: móng–khung–mái chờ. Trọn gói: thêm hoàn thiện theo list. Chốt gói trước khi ký phụ lục cửa kính facade.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>KDC vs phố cũ Thủ Đức</h2><p>KDC: facade đồng bộ, đường rộng hơn. Phố cũ / gần rạch: địa chất + hẻm. Không một đơn giá cho cả TP. Thủ Đức. Gửi 3 ảnh (hẻm, mặt tiền, sổ che số) khi gọi hotline — báo đúng gói thô/trọn.</p>`,
   "nang-tang-nha-tphcm": `<h2>Khi nào không nên nâng tầng?</h2><p>Móng/cột yếu không gia cố được trong ngân sách, quy hoạch không cho thêm sàn, hoặc hàng xóm không đồng thuận tường chung. Sao Khuê khảo sát kết cấu trước khi hứa “thêm một lầu”. Thay bằng cải tạo công năng nếu phép không cho. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
 };
 
