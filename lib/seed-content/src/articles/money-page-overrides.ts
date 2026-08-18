@@ -123,7 +123,10 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     imageCaption: "Công trình xây nhà TP.HCM do Kiến Trúc Sao Khuê thi công",
     content: `<h2>Xây nhà TP.HCM khác gì so với tỉnh lân cận?</h2>
 <p><strong>Xây nhà TP.HCM</strong> không chỉ là đổ bê tông và xây tường. Mặt bằng thường hẹp, đường hẻm hạn chế xe tải, địa chất nhiều khu vực yếu (đặc biệt gần kênh rạch), và thủ tục giấy phép xây dựng chặt theo quy hoạch từng quận. <strong>Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Q. Bình Thạnh) đã thi công nhiều nhà phố, nhà trong hẻm và công trình cải tạo tại nội thành — bảo hành kết cấu <strong>10 năm</strong>.</p>
-<p>Bài viết giúp bạn nắm quy trình thực tế, các gói phổ biến và cách tránh phát sinh khi chọn nhà thầu. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> hoặc ước lượng nhanh tại <a href="/bao-gia">bảng báo giá</a>.</p>
+<p>Bài viết giúp bạn nắm quy trình thực tế, các gói phổ biến và cách tránh phát sinh khi chọn nhà thầu. Dịch vụ chính: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>. Ngân sách thấp: <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a>. Ước lượng: <a href="/bao-gia">bảng báo giá</a>.</p>
+
+<h2>Xây nhà trọn gói hay tách thô — chọn gói trên cùng lô đất Sài Gòn</h2>
+<p>Người gõ “xây nhà TP.HCM” rồi “xây nhà trọn gói Sài Gòn” thường đang so hai phương án. Trọn gói một bảo hành; tách thô linh hoạt vật liệu. Bảng mốc m² ngay dưới. Chi tiết đơn giá: <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà TP.HCM</a>.</p>
 
 <h2>Ba lựa chọn phổ biến khi xây nhà tại TP.HCM</h2>
 <ol>
@@ -195,7 +198,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     metaDescription:
       "Báo giá xây nhà trọn gói mới nhất TP.HCM: bảng giá theo gói, cách tính m² sàn, khoản ngoài đơn giá. Gọi 0909 075 668.",
     metaKeywords:
-      "báo giá xây nhà trọn gói, báo giá xây nhà tphcm, đơn giá xây nhà 2026, xây nhà trọn gói giá bao nhiêu",
+      "báo giá xây nhà trọn gói tphcm, bảng giá xây nhà trọn gói tphcm, báo giá xây nhà trọn gói 2026, đơn giá xây nhà 2026",
     imageAlt: "Bảng báo giá xây nhà trọn gói mới nhất tại TP.HCM",
     content: `<h2>Cách đọc báo giá xây nhà trọn gói cho đúng</h2>
 <p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> chỉ hữu ích khi bạn hiểu phạm vi: phần thô, hoàn thiện, thiết bị nào được gồm, và diện tích tính theo m² sàn quy đổi chứ không phải diện tích đất. <strong>Kiến Trúc Sao Khuê</strong> công bố đơn giá tham khảo 2026 kèm điều kiện áp dụng — tránh so sánh “quả táo với quả cam” giữa các nhà thầu.</p>
@@ -245,7 +248,11 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li>Ký hợp đồng — bảo hành kết cấu 10 năm.</li>
 </ul>
 
-<h2>FAQ báo giá xây nhà trọn gói</h2>
+<h2>FAQ báo giá xây nhà trọn gói TP.HCM</h2>
+<details>
+  <summary>Bảng giá xây nhà trọn gói TP.HCM 2026 lấy ở đâu?</summary>
+  <p>Khung trên trang này (tiêu chuẩn 4,85–5,5 triệu/m²). Máy tính nhanh: <a href="/bao-gia">/bao-gia</a>. Giá khóa sau khảo sát — không dùng bảng web làm hợp đồng.</p>
+</details>
 <details>
   <summary>Báo giá trên web có phải giá khóa không?</summary>
   <p>Không. Đây là khung tham khảo 2026. Giá khóa sau khảo sát địa chất, bản vẽ và danh mục vật tư đã chốt trong hợp đồng.</p>
@@ -815,7 +822,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     metaDescription:
       "Chi phí xây nhà TP.HCM: các khoản cần dự trù, ví dụ tính nhanh, dự phòng 8–12%. Gọi 0909 075 668.",
     metaKeywords:
-      "chi phí xây nhà tphcm, xây nhà hết bao nhiêu, dự toán xây nhà, ngân sách xây nhà",
+      "chi phí xây nhà tphcm, xây nhà trọn gói tphcm hết bao nhiêu, xây nhà hết bao nhiêu, dự toán xây nhà",
     imageAlt: "Chi phí xây nhà TP.HCM — dự toán minh bạch",
     content: `<h2>Chi phí xây nhà TP.HCM không chỉ là đơn giá/m²</h2>
 <p>Nhiều chủ nhà nhân diện tích đất với một con số trên mạng rồi thiếu tiền giữa chừng. <strong>Chi phí xây nhà TP.HCM</strong> gồm: xây dựng (thô/hoàn thiện), giấy phép, điện nước tạm, vận chuyển hẻm, nội thất, và quỹ dự phòng. <strong>Kiến Trúc Sao Khuê</strong> lập dự toán theo hạng mục để bạn thấy rõ từng khoản.</p>
@@ -877,6 +884,10 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 
 <h2>FAQ chi phí xây nhà</h2>
 <details>
+  <summary>Xây nhà trọn gói TP.HCM hết bao nhiêu?</summary>
+  <p>Nhân sàn quy đổi với 4,85–6,7 triệu/m² tùy gói, rồi cộng móng cọc, phụ phí hẻm, pháp lý, nội thất. Ví dụ 280 m² × 5,2 triệu ≈ 1,46 tỷ xây (chưa nội thất). Sao Khuê lập dự toán sau khảo sát — 0909 075 668.</p>
+</details>
+<details>
   <summary>Nhà 5×20m 4 tầng roughly bao nhiêu?</summary>
   <p>Sàn quy đổi thường ~350–400 m² tùy cách tính mái/ban công. Nhân với 5–6 triệu/m² trọn gói cho khung tham khảo 1,75–2,4 tỷ (chưa nội thất). Cần khảo sát để chốt.</p>
 </details>
@@ -901,7 +912,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     metaDescription:
       "Đơn giá xây nhà TP.HCM: thô 3,55–3,8 triệu/m², trọn gói từ 4,85 triệu. Cách tính sàn quy đổi — 0909 075 668.",
     metaKeywords:
-      "đơn giá xây nhà tphcm, đơn giá xây dựng, giá xây nhà theo m2, đơn giá phần thô",
+      "đơn giá xây nhà tphcm, đơn giá xây nhà trọn gói tphcm, đơn giá xây nhà m2 tphcm 2026, đơn giá phần thô",
     imageAlt: "Đơn giá xây nhà TP.HCM theo m² sàn",
     content: `<h2>Đơn giá xây nhà TP.HCM: con số nào mới đáng tin?</h2>
 <p><strong>Đơn giá xây nhà TP.HCM</strong> chỉ có ý nghĩa khi kèm phạm vi (thô hay trọn gói), chủng loại vật tư và cách tính diện tích sàn quy đổi. Hai nhà thầu báo cùng 5 triệu/m² có thể chênh nhau nửa tỷ vì một bên gồm cửa + chống thấm, một bên không. <strong>Kiến Trúc Sao Khuê</strong> luôn gửi chú thích đơn giá kèm dự toán.</p>
@@ -920,6 +931,9 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   </tbody>
 </table>
 <p><strong>Ghi chú đơn giá:</strong> Chưa gồm nội thất gỗ, điều hòa, phí cọc khoan đặc biệt, phụ phí hẻm siêu hẹp.</p>
+
+<h2>Đơn giá xây nhà trọn gói TP.HCM (m² sàn quy đổi)</h2>
+<p><strong>Đơn giá xây nhà trọn gói TP.HCM</strong> 2026: tiêu chuẩn 4,85–5,5 triệu/m²; khá 5,5–6,0; cao cấp từ 6,0. Phần thô 3,55–3,8. Cách quy đổi mái/ban công quyết định tổng tiền — yêu cầu phụ lục in trong dự toán. Bảng gói đầy đủ: <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
 
 <h2>Cách tính m² sàn quy đổi (hiểu nhanh)</h2>
 <ul>
@@ -1152,7 +1166,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     metaDescription:
       "Chọn công ty xây dựng nhà phố uy tín TP.HCM: tiêu chí hợp đồng, bảo hành, tham quan công trình. 0909 075 668.",
     metaKeywords:
-      "công ty xây dựng nhà phố uy tín tphcm, nhà thầu nhà phố, xây nhà phố tphcm, kiến trúc sao khuê",
+      "công ty xây nhà trọn gói tphcm, công ty xây dựng nhà phố uy tín tphcm, nhà thầu nhà phố, xây nhà phố tphcm, kiến trúc sao khuê",
     imageAlt: "Công ty xây dựng nhà phố uy tín TP.HCM — Kiến Trúc Sao Khuê",
     content: `<h2>Công ty xây dựng nhà phố uy tín TP.HCM nhìn vào đâu?</h2>
 <p>Tìm <strong>công ty xây dựng nhà phố uy tín TP.HCM</strong> đừng chỉ xem fanpage đẹp. Cần hợp đồng chi tiết, tiến độ thanh toán hợp lý, công trình đã làm có thể thăm, và bảo hành kết cấu rõ ràng. <strong>Kiến Trúc Sao Khuê</strong> làm nhà phố nội thành nhiều năm, văn phòng tại 245/8 Bình Lợi, Q. Bình Thạnh — bảo hành kết cấu <strong>10 năm</strong>.</p>
@@ -1181,6 +1195,9 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
     <tr><td>Thầu lại nhiều lớp</td><td>Giá chào thấp</td><td>Dễ mất kiểm soát chất lượng</td><td>Không khuyến nghị nhà phố</td></tr>
   </tbody>
 </table>
+
+<h2>Công ty xây nhà trọn gói TP.HCM khác đội thợ thế nào?</h2>
+<p><strong>Công ty xây nhà trọn gói TP.HCM</strong> có pháp nhân, hợp đồng, giám sát và bảo hành kết cấu trên giấy. Đội thợ rẻ hơn nhưng khó truy trách nhiệm khi thấm, nứt. Sao Khuê thuộc nhóm công ty: MST, văn phòng Bình Lợi, BH kết cấu 10 năm. So tiêu chí nhà thầu: <a href="/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm">nhà thầu xây nhà trọn gói TP.HCM</a>.</p>
 
 <h2>Vì sao nhà phố cần nhà thầu am hiểu đô thị?</h2>
 <p>Hẻm nhỏ, giờ đổ bê tông hạn chế, tường chung, xin phép theo từng quận — kinh nghiệm hiện trường quan trọng hơn brochure. Sao Khuê ưu tiên biện pháp thi công thực tế trước khi hứa “nhanh nhất – rẻ nhất”.</p>
@@ -1227,18 +1244,18 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   },
 
   "xay-nha-gia-re-tphcm": {
-    title: "Xây Nhà Giá Rẻ TP.HCM — Tiết Kiệm Đúng Chỗ, Không Cắt Kết Cấu",
+    title: "Xây Nhà Trọn Gói Giá Rẻ TP.HCM — Tiết Kiệm Đúng Chỗ, Không Cắt Kết Cấu",
     excerpt:
-      "Xây nhà giá rẻ TP.HCM: tối ưu thiết kế & vật tư hoàn thiện, giữ an toàn kết cấu. Tư vấn 0909 075 668.",
-    metaTitle: "Xây Nhà Giá Rẻ TP.HCM — Tiết Kiệm Đúng",
+      "Xây nhà trọn gói giá rẻ TP.HCM: gói tiêu chuẩn 4,85–5,5 triệu/m², cắt hạng mục thẩm mỹ, giữ an toàn kết cấu. Tư vấn 0909 075 668.",
+    metaTitle: "Xây Nhà Trọn Gói Giá Rẻ TP.HCM 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà giá rẻ TP.HCM: cắt giảm hạng mục nào an toàn, ngân sách mẫu. Sao Khuê 0909 075 668.",
+      "Xây nhà trọn gói giá rẻ TP.HCM: gói 4,85–5,5 triệu/m², chỗ được cắt / không được cắt. Sao Khuê BH kết cấu 10 năm — 0909 075 668.",
     metaKeywords:
-      "xây nhà giá rẻ tphcm, xây nhà tiết kiệm, nhà phố giá rẻ, tối ưu chi phí xây nhà",
-    imageAlt: "Xây nhà giá rẻ TP.HCM — tối ưu ngân sách an toàn",
-    content: `<h2>Xây nhà giá rẻ TP.HCM: rẻ vẫn phải đứng vững</h2>
-<p><strong>Xây nhà giá rẻ TP.HCM</strong> là mục tiêu hợp lý nếu bạn cắt đúng chỗ: đơn giản mặt đứng, giảm đá tự nhiên, chọn gói hoàn thiện vừa đủ — <em>không</em> cắt thép, không bỏ chống thấm, không thuê nhà thầu không bảo hành. <strong>Kiến Trúc Sao Khuê</strong> tư vấn tối ưu ngân sách trên nguyên tắc an toàn.</p>
-<p>Tham khảo <a href="/bao-gia">báo giá</a> và <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>.</p>
+      "xây nhà trọn gói giá rẻ tphcm, xây nhà giá rẻ tphcm, xây nhà trọn gói 4 triệu m2, xây nhà trọn gói 5 triệu m2, sao khuê",
+    imageAlt: "Xây nhà trọn gói giá rẻ TP.HCM — tối ưu ngân sách an toàn",
+    content: `<h2>Xây nhà trọn gói giá rẻ TP.HCM: rẻ vẫn phải đứng vững</h2>
+<p><strong>Xây nhà trọn gói giá rẻ TP.HCM</strong> là gói tiêu chuẩn: thô + hoàn thiện cơ bản, mốc <strong>4,85–5,5 triệu/m²</strong> sàn quy đổi (tham khảo 2026). “Giá rẻ” đúng nghĩa là cắt mặt đứng đắp nổi, đá tự nhiên, nội thất gỗ — <em>không</em> cắt thép, chống thấm, điện đúng tải hay bảo hành. <strong>Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Bình Thạnh) tư vấn tối ưu ngân sách trên nguyên tắc an toàn.</p>
+<p>Dịch vụ đầy đủ (mọi gói): <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>. Ước lượng: <a href="/bao-gia">/bao-gia</a>.</p>
 
 <h2>Những chỗ nên tiết kiệm</h2>
 <ul>
@@ -1288,14 +1305,18 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 <h2>Ví dụ cắt giảm hạng mục thẩm mỹ an toàn</h2>
 <p>Bỏ đá tự nhiên mặt tiền, giảm phào chỉ, chọn gạch 60×60 phổ thông, để trống một phần tủ âm — có thể tiết kiệm rõ trên giấy. <strong>Xây nhà giá rẻ TP.HCM</strong> vẫn giữ nguyên chống thấm và hệ điện. Đó là ranh giới Sao Khuê không thương lượng.</p>
 
-<h2>FAQ xây nhà giá rẻ</h2>
+<h2>FAQ xây nhà trọn gói giá rẻ TP.HCM</h2>
+<details>
+  <summary>Xây nhà trọn gói giá rẻ TP.HCM hết bao nhiêu 1m²?</summary>
+  <p>Gói tiêu chuẩn tham khảo <strong>4,85–5,5 triệu/m²</strong> (thô + hoàn thiện cơ bản). Hẻm &lt; 2,5m hoặc móng cọc cộng phụ lục — không lấy “4 triệu m²” trên mạng làm giá khóa.</p>
+</details>
 <details>
   <summary>Có xây nhà 1 tỷ ở TP.HCM được không?</summary>
   <p>Phụ thuộc diện tích sàn. Nhà nhỏ 1–2 tầng phần thô + HT tối giản có thể tiếp cận; nhà 4–5 tầng sàn lớn thì 1 tỷ thường không đủ nếu tính đủ pháp lý và hoàn thiện.</p>
 </details>
 <details>
   <summary>Xây thô trước, hoàn thiện sau có tiết kiệm không?</summary>
-  <p>Có thể giãn dòng tiền. Cần chống thấm và bảo vệ phần thô tốt kẻo chờ lâu bị xuống cấp.</p>
+  <p>Có thể giãn dòng tiền. Cần chống thấm và bảo vệ phần thô tốt kẻo chờ lâu bị xuống cấp. So <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>
 </details>
 <details>
   <summary>Sao Khuê có gói tiết kiệm không?</summary>
@@ -1380,6 +1401,9 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <summary>Có xây 2 tầng trong hẻm 3m được không?</summary>
   <p>Được, phổ biến ở TP.HCM. Cần biện pháp vận chuyển vật liệu và chống ồn hàng xóm.</p>
 </details>
+
+<h2>Xây nhà 2 tầng trọn gói TP.HCM — mốc chi phí</h2>
+<p>Gói <strong>xây nhà 2 tầng trọn gói TP.HCM</strong> thường ít sàn hơn 3–4 tầng nên tổng thấp hơn; đơn giá m² vẫn theo gói tiêu chuẩn/khá. Hẻm: xem <a href="/tin-tuc/xay-nha-trong-hem-tphcm">xây nhà trong hẻm</a>. Dịch vụ: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
 
 <h2>Nhận tư vấn nhà 2 tầng</h2>
 <p><strong>0909 075 668</strong> · 245/8 Bình Lợi, Q. Bình Thạnh · Bảo hành kết cấu 10 năm.</p>`,
@@ -1469,6 +1493,9 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <p>Sao Khuê bảo hành kết cấu 10 năm cho phần thi công theo hợp đồng.</p>
 </details>
 
+<h2>Chi phí xây nhà phố 3 tầng TP.HCM (trọn gói)</h2>
+<p><strong>Chi phí xây nhà phố 3 tầng TP.HCM</strong> lấy từ bảng sàn quy đổi ở trên × gói 4,85–6,0 triệu/m², cộng móng nếu nền yếu. Muốn gói tiêu chuẩn: <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a>. Hub dịch vụ: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
+
 <h2>Đặt khảo sát đất xây 3 tầng</h2>
 <p><strong>0909 075 668</strong> · 245/8 Bình Lợi, Bình Thạnh.</p>`,
   },
@@ -1546,6 +1573,9 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <summary>Bảo hành kết cấu có khác nhà mặt tiền?</summary>
   <p>Không — vẫn 10 năm với phần Sao Khuê thi công, miễn đúng quy trình và không tự ý đục phá kết cấu sau bàn giao.</p>
 </details>
+
+<h2>Xây nhà trong hẻm trọn gói TP.HCM</h2>
+<p><strong>Xây nhà trong hẻm trọn gói TP.HCM</strong> vẫn dùng khung đơn giá m² + phụ lục logistics (bơm, bốc vác, giờ đổ). Không so giá mạng của nhà mặt tiền. Gói dịch vụ: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> · báo giá: <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">bảng giá 2026</a>.</p>
 
 <h2>Khảo sát hẻm trước khi báo giá</h2>
 <p>Gửi ảnh bề ngang hẻm + vị trí nhà. Hotline <strong>0909 075 668</strong> · 245/8 Bình Lợi, Bình Thạnh.</p>`,

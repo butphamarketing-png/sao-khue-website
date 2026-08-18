@@ -29,10 +29,44 @@ CREATE TABLE IF NOT EXISTS site_visits (
 
 CREATE INDEX IF NOT EXISTS site_visits_ip_idx ON site_visits (ip);
 CREATE INDEX IF NOT EXISTS site_visits_created_at_idx ON site_visits (created_at DESC);
+
+-- Backend uses DATABASE_URL (BYPASSRLS). RLS + no anon policies blocks Supabase Data API.
+DO $$
+DECLARE
+  t text;
+BEGIN
+  FOREACH t IN ARRAY ARRAY[
+    'sessions',
+    'users',
+    'contact_leads',
+    'site_settings',
+    'site_visits',
+    'posts'
+  ]
+  LOOP
+    IF to_regclass('public.' || t) IS NOT NULL THEN
+      EXECUTE format('ALTER TABLE public.%I ENABLE ROW LEVEL SECURITY', t);
+      EXECUTE format('REVOKE ALL ON TABLE public.%I FROM anon, authenticated', t);
+    END IF;
+  END LOOP;
+END $$;
 `;
 
 export async function ensureAppTables(): Promise<void> {
   const pool = getPool();
   await pool.query(DDL);
-  logger.info("Ensured contact_leads and site_visits tables");
+  logger.info("Ensured app tables + RLS (backend-only access)");
+}
+
+/** Idempotent for serverless cold starts (Vercel never runs index.ts bootstrap). */
+let ensureOnce: Promise<void> | null = null;
+
+export function ensureAppTablesOnce(): Promise<void> {
+  if (!ensureOnce) {
+    ensureOnce = ensureAppTables().catch((err) => {
+      ensureOnce = null;
+      throw err;
+    });
+  }
+  return ensureOnce;
 }

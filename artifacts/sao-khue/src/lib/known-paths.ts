@@ -1,4 +1,5 @@
 import { getPostPublicPath, type SeedPost, seedPosts, shouldNoindexPostSlug } from "@workspace/seed-content";
+import { collectMauNhaPaths } from "./mau-nha";
 import { defaultNavMenu } from "./menu";
 
 /** Tập URL hợp lệ — dùng middleware Vercel + Express 404. */
@@ -11,6 +12,7 @@ export function collectKnownPaths(posts: SeedPost[] = seedPosts): Set<string> {
     "/xay-moi",
     "/xay-nha",
     "/cai-tao-nha",
+    ...collectMauNhaPaths(),
     "/admin",
     "/dich-vu",
     "/cong-trinh",

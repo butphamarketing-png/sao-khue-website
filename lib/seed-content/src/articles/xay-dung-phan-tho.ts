@@ -7,7 +7,7 @@ export const xayDungPhanTho = {
   metaDescription:
     "Xây phần thô TP.HCM uy tín: nhân công + vật tư thô, giám sát kỹ thuật, bảo hành kết cấu 10 năm. Khảo sát miễn phí — Sao Khuê 0909 075 668.",
   metaKeywords:
-    "xây dựng phần thô, xây thô nhà phố tphcm, đơn giá xây thô 2026, thi công phần thô, sao khuê",
+    "xây dựng phần thô, xây nhà phần thô tphcm, xây nhà phần thô và hoàn thiện tphcm, đơn giá xây thô 2026, thi công phần thô, sao khuê",
   content: `
 <h2>Xây dựng phần thô nhà phố — Nền móng vững chắc cho ngôi nhà</h2>
 <p><strong>Phần thô</strong> là khung xương của công trình: móng, cột, dầm sàn, tường bao che, mái và hệ thống điện nước âm tường. Chất lượng giai đoạn này quyết định độ an toàn và tuổ thọ nhà. <strong>Sao Khuê</strong> nhận <strong>thi công xây dựng phần thô</strong> tại TP.HCM cho nhà phố, biệt thự, nhà ở riêng lẻ — phù hợp chủ nhà đã có bản vẽ thiết kế hoặc muốn chủ động giai đoạn hoàn thiện.</p>
@@ -50,6 +50,9 @@ export const xayDungPhanTho = {
   <li>Thi công theo đúng hồ sơ, cập nhật hình ảnh tiến độ.</li>
   <li>Nghiệm thu, bàn giao hồ sơ as-built và kích hoạt bảo hành.</li>
 </ol>
+
+<h2>Xây nhà phần thô và hoàn thiện — khi nào tách, khi nào trọn gói?</h2>
+<p><strong>Xây nhà phần thô và hoàn thiện</strong> tách hợp đồng phù hợp chủ nhà muốn chọn gạch–sơn sau. Rủi ro: lệch cao độ, ổ cắm, chống thấm nếu hai nhà thầu không đồng bộ. Gia đình lần đầu xây tại TP.HCM thường chọn <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> để một bảo hành. Đơn giá thô 3,55–3,8 triệu/m²; trọn gói từ 4,85 triệu — xem <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a>.</p>
 
 <h2>FAQ — Xây phần thô</h2>
 <h3>Phần thô khác trọn gói thế nào?</h3>

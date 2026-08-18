@@ -27,6 +27,9 @@ export const xayNhaTronGoiDongNai = {
 </ul>
 <p>Trụ sở tại <strong>Bình Thạnh, TP.HCM</strong> — đội khảo sát và thi công Đồng Nai thường xuyên; chi phí di chuyển (nếu có) được báo trước khi ký hợp đồng.</p>
 
+<h2>Xây nhà trọn gói giá rẻ Biên Hòa, Long Thành, Nhơn Trạch, Trảng Bom</h2>
+<p>KW huyện gộp vào pillar Đồng Nai (chưa tách URL mỏng). <strong>Xây nhà trọn gói giá rẻ Biên Hòa / Long Thành / Nhơn Trạch / Trảng Bom</strong>: gói tiêu chuẩn cùng mốc m²; khác nền đất, khoảng cách kho vật tư và GPXD. Báo giá sau khảo sát hiện trường — 0909 075 668.</p>
+
 <h2>Vì sao xây trọn gói Đồng Nai được xem là “giá tốt”?</h2>
 <ul>
   <li><strong>Chi phí đất &amp; quy mô:</strong> Nhiều lô rộng hơn nội thành, có thể xây <strong>2–3 tầng</strong> với tổng diện tích sàn hợp lý — xem <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">mẫu nhà phố 2 tầng</a> vùng lân cận.</li>

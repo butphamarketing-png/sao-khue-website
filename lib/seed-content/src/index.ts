@@ -218,6 +218,7 @@ import { featuredImageForSlug } from "./site-images";
 import { shouldNoindexPostSlug } from "./sitemap-policy";
 import { applySoftSeoDepthR3 } from "./soft-seo-depth-r3";
 import { applySoftSeoDepthR5 } from "./soft-seo-depth-r5";
+import { applyThinArticleRebuild } from "./rebuild-thin-articles";
 
 /** Bài pillar viết tay — không dùng bản factory phu-yen-dak-lak. */
 const DAK_LAK_HAND_PILLAR_SLUGS = new Set([
@@ -654,9 +655,11 @@ const seedPostsRaw: SeedPost[] = [
 ];
 
 export const seedPosts: SeedPost[] = applySitemapNoindexFlags(
-  applySoftSeoDepthR5(
-    applySoftSeoDepthR3(
-      padShortMetaDescriptions(applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw))),
+  applyThinArticleRebuild(
+    applySoftSeoDepthR5(
+      applySoftSeoDepthR3(
+        padShortMetaDescriptions(applyMoneyPageOverrides(dedupeSeedPosts(seedPostsRaw))),
+      ),
     ),
   ),
 );

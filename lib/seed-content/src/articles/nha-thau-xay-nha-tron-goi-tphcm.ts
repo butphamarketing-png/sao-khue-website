@@ -114,8 +114,8 @@ ${faqSection([
     a: "Nhà thầu trọn gói quản lý toàn bộ quy trình: thiết kế, dự toán, vật tư, kỹ thuật, tiến độ và bảo hành. Đội thợ thường chỉ đảm nhận thi công một phần và chủ nhà phải tự điều phối.",
   },
   {
-    q: "Có nên chọn nhà thầu báo giá rẻ nhất không?",
-    a: "Không nên chỉ nhìn giá. Quan trọng là phạm vi công việc, thương hiệu vật tư, cách tính diện tích và điều khoản phát sinh. Giá quá thấp thường đi kèm rủi ro cắt vật tư hoặc thiếu hạng mục.",
+    q: "Nhà thầu xây nhà trọn gói uy tín TP.HCM cần giấy tờ gì?",
+    a: "Pháp nhân, địa chỉ văn phòng kiểm chứng, hợp đồng có list vật tư, bảo hành kết cấu bằng văn bản (Sao Khuê 10 năm), và công trình có thể xem. Giá thấp không list vật tư là dấu hiệu rủi ro — xem thêm xây nhà trọn gói giá rẻ TP.HCM để biết chỗ được cắt.",
   },
   {
     q: "Nhà thầu xây nhà trọn gói có bao gồm xin phép xây dựng không?",

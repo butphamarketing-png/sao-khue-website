@@ -43,7 +43,7 @@ const xayNhaChiaKhoaTraoTay = (() => {
     metaDescription:
       "Xây nhà chìa khóa trao tay, công ty xây nhà TP.HCM, nhà thầu xây nhà phố. BH kết cấu 10 năm — 0909 075 668.",
     metaKeywords:
-      "xây nhà chìa khóa trao tay, công ty xây nhà tphcm, nhà thầu xây nhà phố tphcm, thi công nhà phố tphcm, xây nhà trọn gói bình thạnh",
+      "xây nhà chìa khóa trao tay tphcm, xây nhà chìa khóa trao tay giá rẻ tphcm, công ty xây nhà tphcm, nhà thầu xây nhà phố tphcm, xây nhà trọn gói tphcm",
     content: `
 <h2>Xây nhà chìa khóa trao tay là gì?</h2>
 <p><strong>Xây nhà chìa khóa trao tay</strong> là gói một nhà thầu chịu từ khảo sát, thiết kế, giấy phép (hỗ trợ), <strong>thi công nhà phố TP.HCM</strong> phần thô + hoàn thiện cơ bản đến bàn giao chìa khóa. Chủ nhà không tự điều phối nhiều đội. Đây là mô hình <strong>công ty xây nhà TP.HCM</strong> làm đúng nghĩa — khác đội thô xong “bỏ của chạy lấy người”.</p>
@@ -84,8 +84,8 @@ ${faqSection([
     a: "Nhà 3–4 tầng thường 5–8 tháng tùy mùa mưa và hoàn thiện. Ghi mốc trong hợp đồng.",
   },
   {
-    q: "Chìa khóa trao tay có gồm nội thất không?",
-    a: "Hoàn thiện cơ bản (sơn, lát, WC, cửa) có. Tủ bếp gỗ, sofa, rèm thường gói riêng trừ khi ghi rõ.",
+    q: "Xây nhà chìa khóa trao tay TP.HCM khác xây nhà trọn gói thế nào?",
+    a: "Cùng một mô hình: một đầu mối từ thiết kế đến bàn giao. Trang dịch vụ: xây nhà trọn gói TP.HCM. Gói ngân sách: xây nhà trọn gói giá rẻ TP.HCM.",
   },
 ])}
 ${seoCtaBlock(focus)}

@@ -7,6 +7,9 @@ Bộ deliverable triển khai theo chiến lược đã duyệt.
 | [01-campaign-setup-keywords-rsa.md](./01-campaign-setup-keywords-rsa.md) | 2 campaign, keyword Exact/Phrase, RSA, negatives, checklist setup |
 | [02-conversion-checklist.md](./02-conversion-checklist.md) | GA4 ↔ Ads, env `VITE_GOOGLE_ADS_*`, test events |
 | [03-seo-30d-backlog.md](./03-seo-30d-backlog.md) | Technical deploy, money pages, backlog viết 30 ngày |
+| [05-ke-hoach-500-bai-xay-nha-tron-goi.md](./05-ke-hoach-500-bai-xay-nha-tron-goi.md) | Gom 500 KW xây trọn gói → 54 URL; lịch 12 tuần; template SEO |
+| [keywords-seo-xay-nha-tron-goi-500.txt](./keywords-seo-xay-nha-tron-goi-500.txt) | Master 500 từ khóa |
+| [keywords-seo-xay-nha-tron-goi-500-map.csv](./keywords-seo-xay-nha-tron-goi-500-map.csv) | Map từng KW → URL đích |
 | [04-weekly-ops-template.md](./04-weekly-ops-template.md) | Quy tắc vận hành tuần + ngưỡng pause/scale |
 | [weekly-overview.csv](./weekly-overview.csv) | Sheet tổng quan tuần |
 | [search-terms-log.csv](./search-terms-log.csv) | Log Search terms |

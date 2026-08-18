@@ -58,10 +58,10 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-xay-nha.jpg",
   heroImageAlt: "Nhà phố hiện đại xây trọn gói Sao Khuê",
   keywords:
-    "xây nhà trọn gói, xây nhà tphcm, nhà thầu xây nhà tphcm, đơn giá xây nhà, báo giá xây nhà trọn gói, xây nhà phần thô, xây nhà phố tphcm, xây nhà chìa khóa trao tay",
-  seoTitle: "Xây nhà trọn gói TP.HCM — Báo giá miễn phí | Sao Khuê",
+    "xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ tphcm, xây nhà trọn gói, xây nhà tphcm, nhà thầu xây nhà tphcm, đơn giá xây nhà, báo giá xây nhà trọn gói, xây nhà phần thô, xây nhà phố tphcm, xây nhà chìa khóa trao tay",
+  seoTitle: "Xây nhà trọn gói TP.HCM — Giá rẻ, báo giá miễn phí | Sao Khuê",
   seoDescription:
-    "Xây nhà trọn gói chìa khóa trao tay tại TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
+    "Xây nhà trọn gói TP.HCM, xây nhà trọn gói giá rẻ TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — 0909 075 668.",
   formTitle: "Nhận báo giá xây nhà trong 15 phút",
   benefits: [
     {
@@ -119,8 +119,8 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   ],
   faqs: [
     {
-      q: "Đơn giá xây nhà trọn gói khoảng bao nhiêu?",
-      a: "Tham khảo phần thô khoảng 3,55–3,8 triệu/m² và trọn gói khoảng 4,85–6,7 triệu/m² tùy tiêu chuẩn vật tư. Báo giá chính xác sau khảo sát.",
+      q: "Xây nhà trọn gói giá rẻ TP.HCM hết bao nhiêu?",
+      a: "Gói tiêu chuẩn khoảng 4,85–5,5 triệu/m² thô + hoàn thiện cơ bản. Phần thô khoảng 3,55–3,8 triệu/m². Báo giá chính xác sau khảo sát.",
     },
     {
       q: "Thời gian xây nhà phố 3–4 tầng mất bao lâu?",

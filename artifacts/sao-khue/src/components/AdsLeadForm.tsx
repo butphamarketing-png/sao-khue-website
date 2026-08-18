@@ -73,8 +73,8 @@ export function AdsLeadForm({ config, compact = false, anchorId }: Props) {
   return (
     <div
       id={anchorId}
-      className={`border border-white/20 bg-white shadow-2xl ${
-        compact ? "rounded-2xl p-4 sm:p-5" : "rounded-2xl p-5 sm:p-6 md:p-7"
+      className={`border border-white/25 bg-white/95 shadow-[0_28px_80px_rgba(6,42,74,0.35)] backdrop-blur-sm ${
+        compact ? "p-4 sm:p-5" : "p-5 sm:p-6 md:p-8"
       }`}
     >
       <h2 className="font-display text-lg font-bold uppercase tracking-wide text-primary sm:text-xl">

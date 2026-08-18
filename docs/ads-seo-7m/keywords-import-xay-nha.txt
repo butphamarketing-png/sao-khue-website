@@ -3,6 +3,7 @@
 
 # === B1 Xây trọn gói / nhà thầu ===
 [xây nhà trọn gói tphcm]
+[xây nhà trọn gói giá rẻ tphcm]
 [nhà thầu xây nhà tphcm]
 [công ty xây nhà trọn gói tphcm]
 [xây nhà trọn gói]
@@ -10,6 +11,7 @@
 [công ty xây dựng tphcm]
 [xây nhà chìa khóa trao tay tphcm]
 "xây nhà trọn gói tphcm"
+"xây nhà trọn gói giá rẻ tphcm"
 "nhà thầu xây nhà tphcm"
 "công ty xây nhà trọn gói"
 "xây nhà mới tphcm"

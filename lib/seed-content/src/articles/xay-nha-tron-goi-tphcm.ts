@@ -2,30 +2,40 @@
 export const xayNhaTronGoiTphcm = {
   title: "Xây Nhà Trọn Gói TP.HCM 2026 — Chìa Khóa Trao Tay | Sao Khuê",
   excerpt:
-    "Xây nhà trọn gói tại TP.HCM: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
-  metaTitle: "Xây Nhà Trọn Gói TP.HCM 2026 — Giá Tốt, Bảo Hành 10 Năm | Sao Khuê",
+    "Xây nhà trọn gói TP.HCM (Sài Gòn, Hồ Chí Minh): khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
+  metaTitle: "Xây Nhà Trọn Gói TP.HCM 2026 — Chìa Khóa Trao Tay | Sao Khuê",
   metaDescription:
-    "Dịch vụ xây nhà trọn gói TP.HCM chìa khóa trao tay. Đơn giá tham khảo 4,85–6,7 triệu/m², không phát sinh, miễn phí thiết kế 2D/3D. Tư vấn 0909 075 668.",
+    "Xây nhà trọn gói TP.HCM, Sài Gòn, Hồ Chí Minh: thiết kế–thô–hoàn thiện một đầu mối. Đơn giá 4,85–6,7 triệu/m², BH kết cấu 10 năm. 0909 075 668.",
   metaKeywords:
-    "xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ, xây nhà chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê",
+    "xây nhà trọn gói tphcm, xây nhà trọn gói sài gòn, xây nhà trọn gói hồ chí minh, xây nhà chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê",
   content: `
-<h2>Xây nhà trọn gói tại TP.HCM — Giải pháp chìa khóa trao tay</h2>
-<p>Xây nhà là quyết định tài chính và cuộc sống quan trọng. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp <strong>dịch vụ xây nhà trọn gói tại TP.HCM</strong>, đảm nhận từ thiết kế, thi công phần thô, hoàn thiện đến bàn giao — giúp chủ nhà kiểm soát chi phí, tiến độ và chất lượng với <strong>một đầu mối duy nhất</strong>.</p>
-<p>Với hơn <strong>10 năm kinh nghiệm</strong>, hơn <strong>500 công trình</strong> bàn giao và đội ngũ kiến trúc sư, kỹ sư giám sát tại hiện trường, chúng tôi là đối tác tin cậy của nhiều gia đình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Bình Dương, Đồng Nai…</p>
+<h2>Xây nhà trọn gói TP.HCM — chìa khóa trao tay cho nhà phố Sài Gòn</h2>
+<p><strong>Xây nhà trọn gói TP.HCM</strong> là dịch vụ một nhà thầu đảm nhận từ khảo sát, thiết kế, thi công phần thô, hoàn thiện đến bàn giao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Phường 13, Bình Thạnh) làm việc với chủ nhà nội thành và các quận mới sáp nhập — giúp kiểm soát chi phí, tiến độ và chất lượng bằng <strong>một đầu mối</strong>.</p>
+<p>Hơn <strong>10 năm</strong>, hơn <strong>500 công trình</strong> bàn giao: Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình… và tỉnh giáp ranh. Tìm gói ngân sách thấp hơn: xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a> (cắt đúng hạng mục thẩm mỹ, không cắt kết cấu).</p>
 
-<h2>Xây nhà trọn gói là gì?</h2>
-<p><strong>Xây nhà trọn gói</strong> (hay <em>chìa khóa trao tay</em>) là mô hình nhà thầu đảm nhận toàn bộ: khảo sát đất, thiết kế kiến trúc, dự toán, cung cấp vật tư, thi công móng–thân–mái, hoàn thiện nội ngoại thất, lắp đặt điện nước, cửa, thiết bị vệ sinh cơ bản và nghiệm thu bàn giao.</p>
-<p>Khác với thuê riêng từng đội thợ, trọn gói giúp <strong>đồng bộ chất lượng</strong>, <strong>bảo hành rõ ràng</strong> và giảm rủi ro phát sinh chi phí ngoài dự kiến.</p>
+<h2>Xây nhà trọn gói Sài Gòn / Hồ Chí Minh khác gì “thuê đội lẻ”?</h2>
+<p>Người tìm <strong>xây nhà trọn gói Sài Gòn</strong> hay <strong>xây nhà trọn gói Hồ Chí Minh</strong> thường gặp hẻm hẹp, giờ đổ bê tông hạn chế và tường chung. Mô hình trọn gói (chìa khóa trao tay) gồm khảo sát đất, thiết kế, dự toán, vật tư, móng–thân–mái, hoàn thiện cơ bản, điện nước, cửa, TBVS theo list và nghiệm thu. Khác thuê từng đội: một hợp đồng, một bảo hành kết cấu <strong>10 năm</strong>.</p>
+<p>Chi tiết phạm vi từng dòng: <a href="/tin-tuc/xay-nha-chia-khoa-trao-tay-tphcm">xây nhà chìa khóa trao tay</a>. Chỉ cần khung nhà: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+
+<h2>Xây nhà trọn gói gồm những gì — gói tiêu chuẩn, khá, cao cấp</h2>
+<p>Ba gói Sao Khuê khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu:</p>
+<ul>
+  <li><strong>Tiêu chuẩn:</strong> thô + hoàn thiện cơ bản (sơn, lát, WC phổ thông) — mốc <strong>4,85–5,5 triệu/m²</strong>.</li>
+  <li><strong>Khá:</strong> vật tư tầm trung–khá, mặt đứng chỉn chu hơn — <strong>5,5–6,0 triệu/m²</strong>.</li>
+  <li><strong>Cao cấp:</strong> chi tiết kiến trúc và thiết bị tốt — <strong>6,0–6,7 triệu+/m²</strong>.</li>
+</ul>
+<p><strong>Luôn gồm</strong> (trừ khi phụ lục cắt): thiết kế 2D/3D khi ký thi công (theo quy mô), móng–khung, tường, mái, điện nước âm, chống thấm khu ướt theo hợp đồng, giám sát hiện trường.</p>
+<p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, ở tạm. Cam kết <strong>không phát sinh</strong> khi không đổi thiết kế / chủng loại vật tư — đổi ý thì lập phụ lục, không bù miệng.</p>
 
 <h2>Gói dịch vụ xây nhà trọn gói tại Sao Khuê</h2>
 <ul>
   <li><strong>Thiết kế kiến trúc 2D/3D:</strong> Miễn phí khi ký hợp đồng xây trọn gói (theo quy mô áp dụng).</li>
   <li><strong>Thi công phần thô:</strong> Móng, khung bê tông, xây tường, mái, điện nước âm tường.</li>
   <li><strong>Hoàn thiện:</strong> Trát, sơn, ốp lát, trần, cửa, lan can, cầu thang.</li>
-  <li><strong>Giám sát &amp; quản lý dự án:</strong> Cập nhật tiến độ, nghiệm thu từng hạng mục.</li>
-  <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hợp đồng.</li>
+  <li><strong>Giám sát:</strong> nghiệm thu cốt thép trước đổ, cập nhật tiến độ.</li>
+  <li><strong>Bảo hành:</strong> kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong>.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế và chủ động hoàn thiện.</p>
+<p>Không bán thầu phụ trá hình. Vật tư đúng list đã ký.</p>
 
 <h2>Báo giá xây nhà trọn gói TP.HCM tham khảo 2026</h2>
 <p>Đơn giá phụ thuộc quy mô, vật liệu, mặt bằng và yêu cầu thiết kế. Bảng dưới đây mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí:</p>
@@ -61,14 +71,28 @@ export const xayNhaTronGoiTphcm = {
 </ul>
 
 <h2>Câu hỏi thường gặp (FAQ)</h2>
-<h3>Xây nhà trọn gói mất bao lâu?</h3>
-<p>Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> tùy quy mô, mùa mưa và mức hoàn thiện. Tiến độ cam kết trong hợp đồng.</p>
+<h3>Xây nhà trọn gói TP.HCM mất bao lâu?</h3>
+<p>Nhà phố 3–4 tầng thường <strong>4–7 tháng</strong> (mùa mưa và hẻm hẹp có thể dài hơn). Mốc ghi trong hợp đồng.</p>
 <h3>Có được tư vấn miễn phí không?</h3>
 <p>Có. Hotline <strong>0909 075 668</strong> — kỹ sư khảo sát và tư vấn sơ bộ tại công trình.</p>
 <h3>Xây trọn gói có bao gồm nội thất không?</h3>
 <p>Gói trọn gói thường gồm hoàn thiện cơ bản và thiết bị vệ sinh. Nội thất cao cấp, tủ bếp đặc biệt có thể báo giá thêm hoặc xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<h3>Xây nhà trọn gói gồm những gì — có thiết kế không?</h3>
+<p>Gồm thiết kế 2D/3D khi ký thi công (theo quy mô), thô + hoàn thiện cơ bản theo gói. Nội thất gỗ / điều hòa thường tách. Đọc list trong dự toán trước khi ký.</p>
+<h3>Muốn xây nhà trọn gói giá rẻ TP.HCM thì xem trang nào?</h3>
+<p>Gói tiêu chuẩn 4,85–5,5 triệu/m² và chỗ được cắt / không được cắt: <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a>. Không chốt “giá mạng” khi chưa đo hẻm và nền.</p>
 <h3>Sao Khuê có nhận xây ở Bình Dương, Đồng Nai không?</h3>
 <p>Có. Chúng tôi nhận thi công TP.HCM và các tỉnh lân cận — xem chi tiết <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>
+
+<h2>Đọc tiếp theo nhu cầu (cùng cụm từ khóa)</h2>
+<ul>
+  <li><a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">Báo giá / bảng giá xây nhà trọn gói 2026</a></li>
+  <li><a href="/tin-tuc/don-gia-xay-nha-tphcm">Đơn giá xây nhà theo m²</a> · <a href="/tin-tuc/chi-phi-xay-nha-tphcm">chi phí xây nhà hết bao nhiêu</a></li>
+  <li><a href="/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm">Nhà thầu xây nhà trọn gói uy tín</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây nhà phố</a></li>
+  <li><a href="/tin-tuc/xay-nha-2-tang-tphcm">Nhà 2 tầng</a> · <a href="/tin-tuc/xay-nha-3-tang-tphcm">3 tầng</a> · <a href="/tin-tuc/xay-nha-trong-hem-tphcm">trong hẻm</a></li>
+  <li><a href="/dich-vu/xay-nha-tron-goi-binh-duong">Trọn gói Bình Dương</a> · <a href="/dich-vu/xay-nha-tron-goi-dong-nai">Đồng Nai</a></li>
+</ul>
+<p>Ước lượng nhanh: <a href="/bao-gia">/bao-gia</a>. Ads (không tranh organic): <a href="/xay-nha">/xay-nha</a>.</p>
 
 <h2>Liên hệ báo giá xây nhà trọn gói</h2>
 <ul>

@@ -4,6 +4,7 @@ import { and, desc, eq, gte, sql } from "drizzle-orm";
 import { z } from "zod";
 import { isAdmin } from "../lib/auth";
 import { getClientIp, getRequestGeo } from "../lib/client-ip";
+import { ensureAppTablesOnce } from "../lib/ensure-tables";
 
 const VisitInput = z.object({
   path: z.string().max(300).optional().default("/"),
@@ -64,6 +65,8 @@ router.post("/site-visits", async (req, res) => {
     const userAgent = String(req.headers["user-agent"] ?? "").slice(0, 400);
     const geo = getRequestGeo(req);
 
+    await ensureAppTablesOnce();
+
     const recent = await db
       .select({ id: siteVisitsTable.id })
       .from(siteVisitsTable)
@@ -99,6 +102,7 @@ router.post("/site-visits", async (req, res) => {
 router.get("/site-visits", async (req, res) => {
   if (!requireAdmin(req, res)) return;
   try {
+    await ensureAppTablesOnce();
     const daysRaw = Number(req.query.days ?? 31);
     const days = Number.isFinite(daysRaw) ? Math.min(Math.max(daysRaw, 1), 62) : 31;
     const sinceDate = new Date(Date.now() - days * 86_400_000);

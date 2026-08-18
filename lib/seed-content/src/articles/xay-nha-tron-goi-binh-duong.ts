@@ -28,6 +28,9 @@ export const xayNhaTronGoiBinhDuong = {
 </ul>
 <p>Trụ sở Sao Khuê tại <strong>TP.HCM (Bình Thạnh)</strong> — đội khảo sát và thi công di chuyển Bình Dương thường xuyên; chi phí di chuyển (nếu có) được thông báo rõ trước khi ký hợp đồng.</p>
 
+<h2>Xây nhà trọn gói giá rẻ Thuận An, Dĩ An, Thủ Dầu Một</h2>
+<p>Chưa tách bài huyện khi chưa có hồ sơ công trình đủ sâu. KW <strong>xây nhà trọn gói giá rẻ Thuận An / Dĩ An / Thủ Dầu Một / Tân Uyên / Bến Cát</strong> gộp tại trang này: cùng khung gói tiêu chuẩn 4,85–5,5 triệu/m², khác logistics và GPXD địa phương. Case minh họa: <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a>. Gói ngân sách chung: <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ</a> (nguyên tắc cắt hạng mục giống TP.HCM).</p>
+
 <h2>Gói dịch vụ xây nhà trọn gói tại Sao Khuê</h2>
 <ul>
   <li><strong>Thiết kế kiến trúc 2D/3D:</strong> Miễn phí khi ký hợp đồng xây trọn gói (theo quy mô áp dụng).</li>

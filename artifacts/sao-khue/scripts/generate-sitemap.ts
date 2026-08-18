@@ -5,6 +5,7 @@ import { writeFileSync, mkdirSync, unlinkSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { seedPosts, isSitemapIndexablePost } from "../../../lib/seed-content/src/index.ts";
+import { collectMauNhaPaths } from "../src/lib/mau-nha.ts";
 import { getPostPublicPath } from "../src/lib/post-url.ts";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
@@ -21,6 +22,13 @@ const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/xay-moi", priority: "0.93", changefreq: "weekly" },
   { path: "/xay-nha", priority: "0.95", changefreq: "weekly" },
   { path: "/cai-tao-nha", priority: "0.95", changefreq: "weekly" },
+  { path: "/mau-nha", priority: "0.90", changefreq: "weekly" },
+  { path: "/mau-nha/cap-4", priority: "0.88", changefreq: "weekly" },
+  { path: "/mau-nha/2-tang", priority: "0.88", changefreq: "weekly" },
+  { path: "/mau-nha/3-tang", priority: "0.88", changefreq: "weekly" },
+  { path: "/mau-nha/4-tang", priority: "0.86", changefreq: "weekly" },
+  { path: "/mau-nha/biet-thu", priority: "0.86", changefreq: "weekly" },
+  { path: "/mau-nha/nha-ong", priority: "0.86", changefreq: "weekly" },
   { path: "/lien-he", priority: "0.88", changefreq: "monthly" },
   { path: "/bai-viet/ve-chung-toi", priority: "0.88", changefreq: "monthly" },
   { path: "/dich-vu", priority: "0.90", changefreq: "weekly" },
@@ -79,6 +87,14 @@ const urls: SitemapEntry[] = [
     ...entry,
     lastmod: BUILD_DATE,
   })),
+  ...collectMauNhaPaths()
+    .filter((path) => !STATIC_PATHS.some((entry) => entry.path === path))
+    .map((path) => ({
+      path,
+      priority: "0.70",
+      changefreq: "monthly",
+      lastmod: BUILD_DATE,
+    })),
   ...seedPosts
     .filter((p) => isSitemapIndexablePost(p) && !p.noindex)
     .map((p) => {

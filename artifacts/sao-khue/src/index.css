@@ -1139,3 +1139,43 @@ html {
 .qh-home-testimonial__meta span {
   @apply text-xs uppercase tracking-wide text-slate-500;
 }
+
+/* Landing ads — editorial depth */
+.sk-hero-title {
+  text-shadow:
+    0 0 28px rgba(255, 255, 255, 0.28),
+    0 1px 0 rgba(255, 255, 255, 0.35),
+    0 12px 32px rgba(6, 42, 74, 0.55);
+}
+
+.sk-diamond-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.sk-diamond-row::before,
+.sk-diamond-row::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  max-width: 140px;
+  background: currentColor;
+  opacity: 0.45;
+}
+
+.sk-diamond {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: 1px solid currentColor;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.sk-vignette {
+  background:
+    radial-gradient(ellipse at 28% 42%, transparent 0%, rgba(6, 42, 74, 0.18) 42%, rgba(6, 42, 74, 0.78) 100%),
+    linear-gradient(90deg, rgba(6, 42, 74, 0.82) 0%, rgba(6, 42, 74, 0.35) 48%, rgba(6, 42, 74, 0.2) 100%);
+}

@@ -74,6 +74,18 @@ export const defaultNavMenu: MenuItem[] = [
     ],
   },
   {
+    title: "MẪU NHÀ",
+    href: "/mau-nha",
+    children: [
+      { title: "NHÀ CẤP 4", href: "/mau-nha/cap-4" },
+      { title: "NHÀ 2 TẦNG", href: "/mau-nha/2-tang" },
+      { title: "NHÀ 3 TẦNG", href: "/mau-nha/3-tang" },
+      { title: "NHÀ 4 TẦNG", href: "/mau-nha/4-tang" },
+      { title: "BIỆT THỰ", href: "/mau-nha/biet-thu" },
+      { title: "NHÀ ỐNG", href: "/mau-nha/nha-ong" },
+    ],
+  },
+  {
     title: "CẢI TẠO",
     href: "/dich-vu/sua-chua-nha",
     category: "dich-vu",

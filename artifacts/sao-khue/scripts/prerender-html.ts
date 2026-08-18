@@ -18,6 +18,7 @@ import {
   defaultPageBanners,
 } from "../src/lib/home-content.ts";
 import { defaultNavMenu } from "../src/lib/menu.ts";
+import { MAU_NHA_CATEGORIES } from "../src/lib/mau-nha.ts";
 import {
   getMenuLeafSlug,
   postMatchesSubSlug,
@@ -317,6 +318,71 @@ function buildStaticPages(): PrerenderPage[] {
         <p>${cat.highlights.map((h) => escapeHtml(h)).join(" · ")}</p>
       `),
     });
+  }
+
+  pages.push({
+    path: "/mau-nha",
+    meta: {
+      title: `Mẫu nhà hiện đại — cấp 4, 2 tầng, 3 tầng | ${BRAND_SHORT}`,
+      description:
+        "Catalog mẫu nhà hiện đại Sao Khuê: nhà cấp 4, nhà phố 2–4 tầng, biệt thự, nhà ống. Ảnh thực tế — bấm danh mục để xem list mẫu.",
+      path: "/mau-nha",
+      keywords: "mẫu nhà hiện đại, mẫu nhà cấp 4, mẫu nhà phố 2 tầng",
+      ogImage: `${SITE_URL}${MAU_NHA_CATEGORIES[0]?.cover ?? "/images/hero-1.jpg"}`,
+      ogImageAlt: `Mẫu nhà hiện đại — ${BRAND_SHORT}`,
+    },
+    bodyHtml: shell(`
+      ${navHome()}
+      <h1>Mẫu nhà hiện đại</h1>
+      <p>Chọn loại nhà để xem list mẫu ảnh thực tế.</p>
+      <nav>${MAU_NHA_CATEGORIES.map((c) => `<a href="/mau-nha/${c.slug}">${escapeHtml(c.title)}</a>`).join(" · ")}</nav>
+    `),
+  });
+
+  for (const cat of MAU_NHA_CATEGORIES) {
+    pages.push({
+      path: `/mau-nha/${cat.slug}`,
+      meta: {
+        title: `${cat.title} đẹp hiện đại | ${BRAND_SHORT}`,
+        description: cat.description,
+        path: `/mau-nha/${cat.slug}`,
+        keywords: `${cat.title}, mẫu nhà hiện đại`,
+        ogImage: `${SITE_URL}${cat.cover}`,
+        ogImageAlt: `${cat.title} — ${BRAND_SHORT}`,
+      },
+      bodyHtml: shell(`
+        ${navHome()}
+        <h1>${escapeHtml(cat.title)}</h1>
+        <p>${escapeHtml(cat.description)}</p>
+        <ul>
+          ${cat.models
+            .map(
+              (m) =>
+                `<li><a href="/mau-nha/${cat.slug}/${m.slug}">${escapeHtml(m.name)}</a> — ${escapeHtml(m.size)}</li>`,
+            )
+            .join("\n          ")}
+        </ul>
+      `),
+    });
+    for (const model of cat.models) {
+      pages.push({
+        path: `/mau-nha/${cat.slug}/${model.slug}`,
+        meta: {
+          title: `${model.name} — ${model.size} | ${BRAND_SHORT}`,
+          description: `${model.name} (${model.size}, phong cách ${model.style}). Nhận báo giá xây nhà trọn gói tại Sao Khuê.`,
+          path: `/mau-nha/${cat.slug}/${model.slug}`,
+          keywords: `${model.name}, ${cat.title}, mẫu nhà hiện đại`,
+          ogImage: `${SITE_URL}${model.image}`,
+          ogImageAlt: `${model.name} — ${BRAND_SHORT}`,
+        },
+        bodyHtml: shell(`
+          ${navHome()}
+          <h1>${escapeHtml(model.name)}</h1>
+          <p>${escapeHtml(model.size)} · ${escapeHtml(model.style)}</p>
+          <p><a href="/mau-nha/${cat.slug}">Xem tất cả ${escapeHtml(cat.shortTitle)}</a> · <a href="/xay-nha#bao-gia">Nhận báo giá</a></p>
+        `),
+      });
+    }
   }
 
   return pages;

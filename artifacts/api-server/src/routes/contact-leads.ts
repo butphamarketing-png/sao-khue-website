@@ -4,6 +4,7 @@ import { desc, eq } from "drizzle-orm";
 import { z } from "zod";
 import { isAdmin } from "../lib/auth";
 import { getClientIp } from "../lib/client-ip";
+import { ensureAppTablesOnce } from "../lib/ensure-tables";
 
 const LeadInput = z.object({
   name: z.string().min(1).max(120),
@@ -35,6 +36,7 @@ router.post("/contact-leads", async (req, res) => {
       res.status(400).json({ error: parsed.error.message });
       return;
     }
+    await ensureAppTablesOnce();
     const [row] = await db
       .insert(contactLeadsTable)
       .values({ ...parsed.data, ip: getClientIp(req).slice(0, 64) })
@@ -49,6 +51,7 @@ router.post("/contact-leads", async (req, res) => {
 router.get("/contact-leads", async (req, res) => {
   if (!requireAdmin(req, res)) return;
   try {
+    await ensureAppTablesOnce();
     const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : 100;
     const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 200) : 100;
     const rows = await db
@@ -71,6 +74,7 @@ router.delete("/contact-leads/:id", async (req, res) => {
     return;
   }
   try {
+    await ensureAppTablesOnce();
     await db.delete(contactLeadsTable).where(eq(contactLeadsTable.id, id));
     res.status(204).end();
   } catch (err) {

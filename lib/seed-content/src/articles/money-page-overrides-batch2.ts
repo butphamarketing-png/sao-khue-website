@@ -142,87 +142,219 @@ ${faqSection([
   },
 
   "xay-nha-tron-goi-binh-thanh": {
-    title: "Xây Nhà Trọn Gói Bình Thạnh — Hẻm Hẹp, Giấy Phép & Báo Giá",
+    title: "Xây Nhà Trọn Gói Bình Thạnh — Hẻm, Giấy Phép & Báo Giá 2026",
     excerpt:
-      "Xây nhà trọn gói Bình Thạnh: hẻm, quy hoạch, nhà phố 4 tầng. Sao Khuê trụ sở Bình Lợi — 0909 075 668.",
+      "Xây nhà trọn gói Bình Thạnh: đơn giá 4,85–5,5 triệu/m², hẻm Nơ Trang Long, GPXD. Văn phòng 245/8 Bình Lợi — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Bình Thạnh 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Bình Thạnh: khảo sát, thiết kế, thi công. Am hiểu hẻm & giấy phép. Hotline 0909 075 668.",
-    metaKeywords: "xây nhà trọn gói bình thạnh, xây nhà bình thạnh, nhà thầu bình thạnh, sao khuê",
-    imageAlt: "Xây nhà trọn gói Bình Thạnh — Sao Khuê",
+      "Xây nhà trọn gói Bình Thạnh: đơn giá 4,85–5,5 triệu/m², hẻm hẹp, GPXD. Văn phòng Bình Lợi — khảo sát miễn phí 0909 075 668.",
+    metaKeywords:
+      "xây nhà trọn gói bình thạnh, xây nhà trọn gói giá rẻ bình thạnh, xây nhà bình thạnh, nhà thầu bình thạnh, sao khuê",
+    imageAlt: "Xây nhà trọn gói Bình Thạnh — Kiến Trúc Sao Khuê",
     content: `<h2>Xây nhà trọn gói Bình Thạnh — đặc thù quận nội thành</h2>
-<p><strong>Xây nhà trọn gói Bình Thạnh</strong> hay gặp lô 4–5m mặt tiền, hẻm 2,5–4m, nhà cũ phá dỡ hoặc xây trên nền. Mật độ cao: giờ ồn, vận chuyển, thông báo hàng xóm cần kế hoạch. Sao Khuê đặt trụ sở 245/8 Bình Lợi — khảo sát trong ngày.</p>
-<p>Case: <a href="/cong-trinh/xay-nha-pho-binh-thanh">nhà phố 4 tầng Bình Thạnh</a> · Hub: <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a> · Cải tạo: <a href="/tin-tuc/cai-tao-nha-binh-thanh">cải tạo nhà Bình Thạnh</a>.</p>
-<h2>Quy trình trọn gói tại Bình Thạnh</h2>
+<p><strong>Xây nhà trọn gói Bình Thạnh</strong> là gói một nhà thầu đảm nhận khảo sát, thiết kế, thi công phần thô, hoàn thiện và bàn giao nhà phố tại quận. Bình Thạnh mật độ dân cư cao: lô 4–5m mặt tiền, hẻm 2,5–4m, nhiều nhà cũ phá dỡ hoặc xây trên nền. <strong>Kiến Trúc Sao Khuê</strong> đặt văn phòng tại <strong>245/8 Bình Lợi, Phường 13</strong> — giám sát hiện trường nhanh hơn quận xa, khảo sát thường trong ngày làm việc.</p>
+<p>Hub: <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a> · Pillar: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> · Cải tạo: <a href="/tin-tuc/cai-tao-nha-binh-thanh">cải tạo nhà Bình Thạnh</a> · <a href="/bao-gia">máy tính báo giá</a>.</p>
+
+<h2>Đơn giá và gói giá rẻ tại Bình Thạnh (2026)</h2>
+<p>Đơn giá trọn gói phụ thuộc quy mô sàn, vật tư hoàn thiện và logistics hẻm — không có một con số cho cả quận. Mốc tham khảo sau khảo sát:</p>
+<table>
+  <thead><tr><th>Gói</th><th>Đơn giá (đ/m² sàn)</th><th>Ghi chú Bình Thạnh</th></tr></thead>
+  <tbody>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Thô + hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu</td><td>Vật tư tầm trung–khá</td></tr>
+    <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu</td><td>Chưa hoàn thiện, chưa cọc</td></tr>
+  </tbody>
+</table>
+<p>Nhà phố 4×16, 1 trệt 2 lầu trọn gói cơ bản thường <strong>3,5 – 4,8 tỷ</strong> (chưa cọc nếu nền yếu). 4 tầng ~80–120m² sàn: <strong>3,5 – 5,5 tỷ</strong>. Muốn gói ngân sách thấp hơn: xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a> — cắt phào/đèn, không cắt thép–chống thấm.</p>
+<p><strong>Xây nhà trọn gói giá rẻ Bình Thạnh</strong> vẫn phải tách phụ phí hẻm &lt; 3m (+8–12%), ép cọc nền gần rạch (nếu có) và giờ đổ bê tông — ghi rõ trong dự toán, không “nuốt” vào m².</p>
+
+<h2>Hẻm, logistics và giờ đổ bê tông tại Bình Thạnh</h2>
+<p>Bình Thạnh nhiều tuyến hẻm Nơ Trang Long, Bình Lợi, Xô Viết Nghệ Tĩnh, Điện Biên Phủ. Trước khi ký hợp đồng, Sao Khuê đo bề rộng hẻm và chốt phương án vận chuyển:</p>
+<ul>
+  <li><strong>Hẻm ≥ 4m, xe tải vào được:</strong> đổ bê tông tại chỗ, tiến độ thuận hơn.</li>
+  <li><strong>Hẻm 3–4m:</strong> bơm bê tông từ mặt tiền hoặc xe trộn nhỏ; ca đổ sớm (6h–8h).</li>
+  <li><strong>Hẻm &lt; 3m, xe máy:</strong> khiêng/ba gác, phụ phí logistics ghi phụ lục; phế thải cuối ngày vì hẻm đông.</li>
+</ul>
+<p>Nhà liền kề: biên bản hiện trạng tường chung trước đào móng; khe nhiệt, chống thấm vách giáp. Không khoan sang nhà bên. Mật độ cao → thông báo hàng xóm và khung giờ ồn ghi trong HĐ.</p>
+
+<h2>Giấy phép xây dựng và quy hoạch phường Bình Thạnh</h2>
+<p>Nhiều tuyến Bình Thạnh có lộ giới đường lớn, nhà sát chỉ giới — không copy số tầng nhà bên cạnh. Xây mới trên nền cũ cần hồ sơ GPXD mới; đổi kết cấu/vượt tầng phải tra quy hoạch phường hiện hành.</p>
+<p>Nhà 4–5 tầng cho thuê: hỏi PCCC và lối thoát sớm. Shophouse trệt + ở lầu: hỏi công năng thương mại khi nộp GPXD. Sao Khuê tư vấn hiện trạng trong phạm vi HĐ — không thi công vượt phép. Chi tiết: <a href="/tin-tuc/xin-giay-phep-xay-dung-tphcm">xin giấy phép xây dựng TP.HCM</a>.</p>
+
+<h2>Quy trình xây nhà trọn gói 6 bước (Sao Khuê)</h2>
+<p>Quy trình chuẩn giống <a href="/dich-vu/xay-nha-tron-goi">pillar trọn gói TP.HCM</a>, áp dụng riêng cho Bình Thạnh:</p>
 <ol>
-  <li>Khảo sát lô + bề rộng hẻm (xe tải hay ba gác).</li>
-  <li>Thiết kế 2D/3D, đối chiếu lộ giới đường lớn.</li>
-  <li>Hỗ trợ hồ sơ GPXD.</li>
-  <li>Thi công móng → thô → hoàn thiện; phế thải cuối ngày vì hẻm đông.</li>
-  <li>Bàn giao, BH kết cấu 10 năm.</li>
+  <li><strong>Tiếp nhận:</strong> Hotline / Zalo / <a href="/lien-he">form liên hệ</a> — gửi ảnh hẻm + mặt tiền + sổ (che số).</li>
+  <li><strong>Khảo sát:</strong> Đo lô, hẻm, nền; kiểm tra tường chung; ước lượng logistics.</li>
+  <li><strong>Thiết kế:</strong> 2D/3D, giếng trời nếu nhà sâu; đối chiếu lộ giới.</li>
+  <li><strong>Báo giá &amp; HĐ:</strong> List thép–xi măng–sơn; tách cọc/hẻm; cam kết không phát sinh khi không đổi thiết kế.</li>
+  <li><strong>Thi công:</strong> Móng → thô → hoàn thiện; ảnh cốt thép trước đổ; nghiệm thu từng mốc.</li>
+  <li><strong>Bàn giao:</strong> BH kết cấu <strong>10 năm</strong>, hoàn thiện 12–36 tháng.</li>
 </ol>
-<h2>Chi phí nhà phố Bình Thạnh (2026)</h2>
-<p>Nhà phố 4 tầng ~80–120m² sàn, trọn gói cơ bản thường <strong>3,5 – 5,5 tỷ</strong>. Hẻm sâu &gt; 50m tăng vận chuyển. Nền gần rạch (một số tuyến) có thể phát sinh cọc — tách dòng.</p>
+
+<h2>Công trình mẫu tại Bình Thạnh</h2>
+<p>Case tham chiếu quy mô và tiêu chuẩn thi công — <strong>không phải cam kết giá copy-paste</strong>:</p>
+<ul>
+  <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố 4 tầng Bình Thạnh</a> — lô phố cũ, giếng trời, hoàn thiện cơ bản.</li>
+  <li>Khu Bình Lợi – Xô Viết Nghệ Tĩnh: lô 4×16 hẻm xe hơi, 1 trệt 2 lầu trọn gói cơ bản khoảng 3,5–4,8 tỷ (chưa cọc).</li>
+</ul>
+<p>Gửi ảnh hiện trạng + chiều ngang hẻm khi gọi hotline — báo đúng gói thô/trọn trước khi hẹn đo đất.</p>
+
+<h2>Vật tư, nghiệm thu và giám sát gần văn phòng</h2>
+<p>Trụ sở ngay Bình Lợi giúp kỹ sư xuống hiện trường nhanh khi nghiệm thu móng, sàn, chống thấm. Hợp đồng ghi rõ mác bê tông, đường kính thép, hãng sơn–keo chống thấm. Không nhận “giá mạng” khi chưa đo hẻm và nền.</p>
+<p>Thanh toán theo mốc: móng → sàn các tầng → mái chờ → hoàn thiện; giữ lại 5–10% đến bàn giao. Landing Ads (không tranh organic): <a href="/xay-nha">/xay-nha</a>.</p>
+
 ${faqSection([
-  { q: "Hẻm Bình Lợi – Nơ Trang Long xây 4 tầng được không?", a: "Theo GPXD và lộ giới từng thửa, không theo ý chủ nhà. Sao Khuê tra trước khi vẽ." },
-  { q: "Khảo sát Bình Thạnh có trong ngày không?", a: "Thường được vì văn phòng ngay Bình Lợi. Gọi 0909 075 668." },
+  { q: "Hẻm Bình Lợi – Nơ Trang Long xây 4 tầng được không?", a: "Theo GPXD và lộ giới từng thửa, không theo ý chủ nhà. Sao Khuê tra quy hoạch phường trước khi vẽ 3D — không hứa tầng khi chưa có xác nhận." },
+  { q: "Khảo sát Bình Thạnh có trong ngày không?", a: "Thường được vì văn phòng 245/8 Bình Lợi. Gọi 0909 075 668 gửi ảnh hẻm + sổ (che số) để xếp lịch." },
+  { q: "Xây nhà trọn gói giá rẻ Bình Thạnh bao nhiêu?", a: "Gói tiêu chuẩn 4,85–5,5 triệu/m² sàn + phụ phí hẻm/cọc tách dòng. Xem mốc giá rẻ city-wide tại trang giá rẻ TP.HCM — không chốt một cục qua Zalo." },
+  { q: "Hẻm dưới 3m có xây trọn gói được không?", a: "Được với phương án bơm bê tông từ mặt tiền, xe phế thải nhỏ, ca sớm. Phụ phí logistics ghi rõ trong dự toán trước khi ký." },
+  { q: "Sao Khuê có bảo hành kết cấu không?", a: "Có — 10 năm kết cấu theo hạng mục trong HĐ khi thi công trọn gói. Biên bản ảnh cốt thép lưu trong hồ sơ bảo hành." },
+  { q: "Nên chọn thô hay trọn gói tại Bình Thạnh?", a: "Trọn gói khi muốn một đầu mối facade + chống thấm. Tách thô nếu nội thất cao cấp chọn sau — xem /dich-vu/xay-dung-phan-tho." },
 ])}
-<p>Hotline <strong>0909 075 668</strong></p>`,
+<p>Hotline <strong>0909 075 668</strong> · <a href="/lien-he">Đặt lịch khảo sát</a> · <a href="/bao-gia">/bao-gia</a> · 245/8 Bình Lợi, P.13, Bình Thạnh · kientrucsaokhue.com</p>`,
   },
 
   "xay-nha-tron-goi-thu-duc": {
-    title: "Xây Nhà Trọn Gói Thủ Đức — Nhà Phố, Biệt Thự & KDC Mới",
+    title: "Xây Nhà Trọn Gói Thủ Đức — Nhà Phố, Biệt Thự & KDC Mới 2026",
     excerpt:
-      "Xây nhà trọn gói TP. Thủ Đức: nhà phố, biệt thự sân vườn, KDC. Sao Khuê thi công trực tiếp — BH 10 năm.",
+      "Xây nhà trọn gói Thủ Đức: KDC mới vs phố cũ, móng ven rạch, facade CĐT. Sao Khuê BH 10 năm — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Thủ Đức 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Thủ Đức: thiết kế, thi công, bảo hành. Kinh nghiệm biệt thự & nhà phố. 0909 075 668.",
-    metaKeywords: "xây nhà trọn gói thủ đức, xây nhà thủ đức, nhà thầu thủ đức",
-    imageAlt: "Xây nhà trọn gói Thủ Đức",
+      "Xây nhà trọn gói Thủ Đức: nhà phố 3,5–6 tỷ, KDC vs hẻm Hiệp Bình, GPXD phường mới. Khảo sát miễn phí 0909 075 668.",
+    metaKeywords:
+      "xây nhà trọn gói thủ đức, xây nhà trọn gói giá rẻ thủ đức, xây nhà thủ đức, nhà thầu thủ đức, sao khuê",
+    imageAlt: "Xây nhà trọn gói Thủ Đức — Kiến Trúc Sao Khuê",
     content: `<h2>Xây nhà trọn gói Thủ Đức — từ nhà phố đến biệt thự</h2>
-<p>TP. Thủ Đức có KDC mới (lô rộng, xe tải) lẫn phố cũ cần xây lại. <strong>Xây nhà trọn gói Thủ Đức</strong> với Sao Khuê: khảo sát, thiết kế, thi công, BH kết cấu 10 năm. Quy hoạch từng phường cũ (Q.2 / Q.9 / Thủ Đức) khác nhau — không copy số tầng nhà bên cạnh.</p>
-<p><a href="/tin-tuc/xay-nha-thu-duc">xây nhà Thủ Đức</a> · <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · <a href="/tin-tuc/cai-tao-nha-thu-duc">cải tạo Thủ Đức</a>.</p>
-<h2>Lưu ý khi xây tại Thủ Đức</h2>
+<p><strong>Xây nhà trọn gói Thủ Đức</strong> gom khảo sát, thiết kế, thi công móng–thô–hoàn thiện và bàn giao một đầu mối. TP. Thủ Đức sau sáp nhập gồm khu cũ Q.2, Q.9 và Thủ Đức — quy hoạch và thủ tục GPXD theo <strong>phường hiện hành</strong>, không copy hồ sơ nhà bên cạnh. Sao Khuê nhận nhà phố hẻm, KDC mới lô rộng và biệt thự sân vườn; BH kết cấu <strong>10 năm</strong>.</p>
+<p><a href="/tin-tuc/xay-nha-thu-duc">Xây nhà Thủ Đức</a> · <a href="/tin-tuc/xay-nha-tron-goi-quan-2">trọn gói Q.2 cũ</a> · <a href="/dich-vu/xay-nha-tron-goi">pillar TP.HCM</a> · <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · <a href="/bao-gia">/bao-gia</a>.</p>
+
+<h2>Đơn giá và gói giá rẻ tại Thủ Đức (2026)</h2>
+<p>Hai “Thủ Đức” trong thực tế báo giá — <strong>KDC đường lớn</strong> khác <strong>phố cũ hẻm Hiệp Bình / Linh Xuân</strong> — không dùng chung một đơn giá m²:</p>
+<table>
+  <thead><tr><th>Phân khúc</th><th>Mốc trọn gói (tham khảo)</th><th>Đặc thù</th></tr></thead>
+  <tbody>
+    <tr><td>Nhà phố 3 tầng, lô 4×16 KDC</td><td>3,5 – 4,8 tỷ</td><td>Logistics dễ, facade theo quy chế CĐT</td></tr>
+    <tr><td>Nhà phố 4 tầng, ~100m² sàn</td><td>3,5 – 6 tỷ</td><td>Tùy hoàn thiện và hẻm</td></tr>
+    <tr><td>Biệt thự 200m²+ sàn</td><td>8 – 15 tỷ+</td><td>Sân–hồ tách phụ lục</td></tr>
+    <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Chưa cọc ven rạch</td></tr>
+  </tbody>
+</table>
+<p><strong>Xây nhà trọn gói giá rẻ Thủ Đức</strong> nên hiểu là gói tiêu chuẩn + cắt hạng mục thẩm mỹ (phào, đèn), không cắt móng–thép–chống thấm. Chi tiết city-wide: <a href="/tin-tuc/xay-nha-gia-re-tphcm">giá rẻ TP.HCM</a>.</p>
+
+<h2>KDC mới vs phố cũ — logistics và thi công</h2>
+<p><strong>KDC mới</strong> (Long Thạnh Mỹ, Lê Văn Việt, nhiều khu ven xa lộ): đường xe tải, ít phụ phí hẻm; nhưng <strong>facade, màu sơn, hàng rào</strong> phải đúng quy chế chủ đầu tư — hỏi trước khi chọn đá ốp/cửa kính lớn.</p>
+<p><strong>Phố cũ / ven rạch</strong> (Hiệp Bình, Linh Xuân, một số tuyến gần sông): hẻm hẹp, nền yếu — khoan địa chất trước khi hứa 4 tầng. Cọc/ep cọc có thể <strong>12–18% tổng giá trị</strong>, tách dòng khỏi m² trọn gói. Tường vây chống sụt hàng xóm khi đào sâu.</p>
+
+<h2>Giấy phép xây dựng tại TP. Thủ Đức</h2>
+<p>Thủ tục GPXD nộp theo phường thuộc TP. Thủ Đức. Phường cũ Q.2 (Thảo Điền, An Khánh) khác quy hoạch phường cũ Q.9 (Long Thạnh Mỹ) — tra đúng tên phường trước khi vẽ 3D.</p>
+<p>Đất ven sông: xác nhận chỉ giới, cao độ nền; móng cọc và biện pháp chống sụt tính riêng. KDC: GPXD + quy chế ban quản lý. Sao Khuê không thi công khi quy hoạch chưa rõ. Xem thêm: <a href="/tin-tuc/xin-giay-phep-xay-dung-tphcm">xin GPXD TP.HCM</a>.</p>
+
+<h2>Quy trình trọn gói 6 bước tại Thủ Đức</h2>
+<ol>
+  <li>Gửi ảnh: hẻm/mặt tiền, sổ (che số), số tầng, KDC hay phố cũ, thô hay trọn gói.</li>
+  <li>Khảo sát tận lô: địa chất (ven rạch), quy chế facade (KDC), logistics.</li>
+  <li>Thiết kế 2D/3D + danh mục vật tư; phụ lục facade KDC nếu có.</li>
+  <li>Báo giá minh bạch; ký HĐ — list thép, xi măng, sơn; mốc thanh toán.</li>
+  <li>Thi công 5–8 tháng (nhà phố 3–4 tầng); biệt thự 8–14 tháng. Mùa mưa có thể dời ca đổ.</li>
+  <li>Nghiệm thu, bàn giao, BH kết cấu 10 năm.</li>
+</ol>
+<p>Chi tiết quy trình: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+
+<h2>Công trình mẫu tại Thủ Đức</h2>
 <ul>
-  <li>Tra quy hoạch theo phường hiện hành.</li>
-  <li>Đất ven rạch: khoan địa chất trước móng.</li>
-  <li>KDC: quy chế chủ đầu tư (facade, giờ, rác).</li>
+  <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Thiết kế &amp; thi công biệt thự Thủ Đức</a> — quy mô tham chiếu, không copy giá.</li>
+  <li>Nhà phố KDC đường lớn: logistics thuận, tiến độ thường đúng HĐ hơn hẻm sâu nội thành.</li>
 </ul>
-<h2>Thời gian &amp; chi phí</h2>
-<p>Nhà phố 3–4 tầng: 5–8 tháng, trọn gói thường 3,5–6 tỷ tùy sàn. Biệt thự 200m²+: 8–14 tháng. Đường lớn dễ xe — ít phụ phí hẻm hơn Gò Vấp / Phú Nhuận.</p>
+<p>Cải tạo sâu trên nền cũ: <a href="/tin-tuc/cai-tao-nha-thu-duc">cải tạo nhà Thủ Đức</a>.</p>
+
+<h2>Thời gian, thanh toán và một đầu mối</h2>
+<p>Đường lớn Thủ Đức dễ xe — ít phụ phí hẻm hơn Gò Vấp / Phú Nhuận. Vẫn cần biên bản hàng xóm khi đào móng liền kề. Thanh toán chia mốc; giữ % đến bàn giao. Không đặt cọc lớn trước HĐ.</p>
+<p>Văn phòng Sao Khuê: 245/8 Bình Lợi, Bình Thạnh — đội thi công xuống Thủ Đức theo lịch hẹn. Landing: <a href="/xay-nha">/xay-nha</a>.</p>
+
 ${faqSection([
-  { q: "Xây ở Long Thạnh Mỹ / Lê Văn Việt xin phép thế nào?", a: "Hồ sơ theo phường cũ Q.9 thuộc TP. Thủ Đức — không nhầm quy hoạch Q.2." },
-  { q: "Nền Hiệp Bình yếu có xây 4 tầng được không?", a: "Sau khảo sát móng. Không hứa tầng khi chưa khoan/kiểm địa chất." },
+  { q: "Xây ở Long Thạnh Mỹ / Lê Văn Việt xin phép thế nào?", a: "Hồ sơ theo phường thuộc TP. Thủ Đức (khu cũ Q.9) — không nhầm quy hoạch Q.2. Tra phường trước khi nộp." },
+  { q: "Nền Hiệp Bình yếu có xây 4 tầng được không?", a: "Sau khảo sát móng và khoan địa chất. Không hứa tầng khi chưa có kết quả địa chất và GPXD." },
+  { q: "Xây nhà trọn gói giá rẻ Thủ Đức khác TP.HCM chỗ nào?", a: "KDC rộng giảm logistics; ven rạch tăng cọc. Đơn giá m² city-wide là mốc — số chính sau khảo sát từng lô." },
+  { q: "KDC có bắt facade đồng bộ không?", a: "Thường có quy chế CĐT về màu, hàng rào, chiều cao. Hỏi ban quản lý trước khi chốt vật tư mặt đứng." },
+  { q: "Thủ Đức mất bao lâu?", a: "Nhà phố 3–4 tầng: 5–8 tháng. Biệt thự 200m²+: 8–14 tháng. Chưa kể thời gian chờ GPXD nếu phức tạp." },
+  { q: "Khảo sát Thủ Đức có phí không?", a: "Miễn phí theo lịch hẹn. Gửi 3 ảnh (hẻm, mặt tiền, sổ che số) + mô tả KDC/phố cũ khi gọi 0909 075 668." },
 ])}
-<p><strong>0909 075 668</strong> · <a href="/lien-he">Khảo sát miễn phí</a></p>`,
+<p><strong>0909 075 668</strong> · <a href="/lien-he">Khảo sát miễn phí</a> · <a href="/bao-gia">/bao-gia</a> · kientrucsaokhue.com</p>`,
   },
 
   "xay-nha-tron-goi-go-vap": {
-    title: "Xây Nhà Trọn Gói Gò Vấp — Nhà Phố Hẻm & Mặt Tiền",
+    title: "Xây Nhà Trọn Gói Gò Vấp — Nhà Phố Hẻm & Lô 4×16 2026",
     excerpt:
-      "Xây nhà trọn gói Gò Vấp: nhà phố hẻm sâu, mặt tiền kinh doanh. Báo giá minh bạch — Sao Khuê 0909 075 668.",
+      "Xây nhà trọn gói Gò Vấp: lô 4×16, giếng trời, hẻm Quang Trung. Báo giá minh bạch — Sao Khuê 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Gò Vấp 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Gò Vấp: thiết kế giếng trời, thi công hẻm hẹp, chống thấm. Nhà thầu uy tín — 0909 075 668.",
-    metaKeywords: "xây nhà trọn gói gò vấp, xây nhà gò vấp, nhà thầu gò vấp",
-    imageAlt: "Xây nhà trọn gói Gò Vấp",
-    content: `<h2>Xây nhà trọn gói Gò Vấp — hẻm sâu và ống 4×16</h2>
-<p>Gò Vấp nhiều <strong>nhà phố hẻm</strong> Quang Trung, Lê Đức Thọ, Phan Văn Trị: lô 4×16 phổ biến, cần giếng trời. <strong>Xây nhà trọn gói Gò Vấp</strong> phải tính điểm đổ bê tông, cẩu / ba gác nếu hẻm &lt; 3m, giờ hành chính.</p>
-<p>Hub: <a href="/tin-tuc/xay-nha-go-vap">xây nhà Gò Vấp</a> · lô 4×16: <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">xây nhà phố 4x16</a> · cải tạo: <a href="/tin-tuc/cai-tao-nha-go-vap">cải tạo Gò Vấp</a>.</p>
-<h2>Gói Sao Khuê tại Gò Vấp</h2>
+      "Xây nhà trọn gói Gò Vấp: lô 4×16, hẻm hẹp, giếng trời, 3,2–5,8 tỷ. BH kết cấu 10 năm — khảo sát 0909 075 668.",
+    metaKeywords:
+      "xây nhà trọn gói gò vấp, xây nhà trọn gói giá rẻ gò vấp, xây nhà gò vấp, nhà thầu gò vấp, sao khuê",
+    imageAlt: "Xây nhà trọn gói Gò Vấp — Kiến Trúc Sao Khuê",
+    content: `<h2>Xây nhà trọn gói Gò Vấp — hẻm sâu và nhà ống 4×16</h2>
+<p><strong>Xây nhà trọn gói Gò Vấp</strong> phục vụ nhà phố hẻm Quang Trung, Lê Đức Thọ, Phan Văn Trị, Nguyễn Văn Lượng — lô <strong>4×16</strong> hoặc 4×18 phổ biến, cần giếng trời lấy sáng. Sao Khuê khảo sát miễn phí, thi công trực tiếp (không bán thầu phụ), BH kết cấu <strong>10 năm</strong>. Hẻm hẹp phải tính điểm đổ bê tông, cẩu/ba gác và giờ hành chính ngay từ dự toán.</p>
+<p>Hub: <a href="/tin-tuc/xay-nha-go-vap">xây nhà Gò Vấp</a> · <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">nhà phố 4×16</a> · <a href="/dich-vu/xay-nha-tron-goi">trọn gói TP.HCM</a> · Cải tạo: <a href="/tin-tuc/cai-tao-nha-go-vap">cải tạo Gò Vấp</a> · <a href="/bao-gia">/bao-gia</a>.</p>
+
+<h2>Đơn giá và gói giá rẻ tại Gò Vấp (2026)</h2>
+<table>
+  <thead><tr><th>Quy mô Gò Vấp</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
+  <tbody>
+    <tr><td>Ống 4×16, 1 trệt 2 lầu</td><td>3,2 – 4,8 tỷ</td><td>+ logistics hẻm 8–12%</td></tr>
+    <tr><td>4 tầng, ~80–100m² sàn</td><td>4,0 – 5,8 tỷ</td><td>Chưa cọc nếu nền yếu</td></tr>
+    <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Tách phụ phí hẻm</td></tr>
+  </tbody>
+</table>
+<p>Lô 4×16 Quang Trung – Phan Văn Trị: liền kề cần khe nhiệt, chống thấm tường chung. <strong>Xây nhà trọn gói giá rẻ Gò Vấp</strong> = gói tiêu chuẩn + cắt phào/đèn hợp lý — xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">giá rẻ TP.HCM</a>, không cắt thép–chống thấm.</p>
+
+<h2>Hẻm, đổ bê tông và logistics Gò Vấp</h2>
 <ul>
-  <li>Mặt bằng tối ưu ánh sáng giếng trời nhà sâu.</li>
-  <li>Móng phù hợp khu dân cư lâu năm, nhà liền kề.</li>
-  <li>Chống thấm mái / sân thượng chuẩn mưa TP.HCM.</li>
-  <li>Phụ phí hẻm ghi trước khi ký — không phụ thu miệng.</li>
+  <li><strong>Hẻm &lt; 3m:</strong> bơm bê tông từ mặt tiền; không để xe trộn chắn lối; ca đổ sớm.</li>
+  <li><strong>Hẻm xe máy:</strong> khiêng/ba gác — phụ phí ghi phụ lục, không nuốt vào m².</li>
+  <li><strong>Phế thải:</strong> thu dọn cuối ngày — hẻm đông, hàng xóm sát.</li>
+  <li><strong>Liền kề:</strong> biên bản hiện trạng tường chung trước đào móng; không khoan sang nhà bên.</li>
 </ul>
-<h2>Chi phí tham khảo</h2>
-<p>Ống 4×16 1 trệt 2 lầu trọn gói cơ bản thường 3,2–4,8 tỷ + logistics hẻm 8–12%. 4 tầng: 4,0–5,8 tỷ.</p>
+<p>Gửi ảnh mặt tiền + chiều ngang hẻm, sổ (che số), số tầng mong muốn — Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo đất.</p>
+
+<h2>Giếng trời và thiết kế nhà ống Gò Vấp</h2>
+<p>Nhà sâu 16–20m thiếu giếng trời sẽ tối và ẩm — không bắt buộc pháp lý nhưng nên chốt từ <strong>bản vẽ móng</strong>, không khoét dầm sau (tốn và rủi ro kết cấu). Kích thước tối thiểu ~1,2×1,5m cạnh cầu thang. Nhà cũ thiếu sáng: <a href="/tin-tuc/cai-tao-gieng-troi-nha-pho-tphcm">cải tạo giếng trời</a>.</p>
+<p>Mặt bằng tối ưu ánh sáng, móng phù hợp khu dân cư lâu năm, chống thấm mái/sân thượng chuẩn mưa TP.HCM.</p>
+
+<h2>Giấy phép và quy hoạch phường Gò Vấp</h2>
+<p>Số tầng theo quy hoạch phường — không theo “nhà bên cạnh đang 4 tầng”. Xây mới trên nền: GPXD mới. Nhà cho thuê nhiều phòng: hỏi PCCC sớm. Sao Khuê tra hiện trạng trước khi vẽ 3D vượt phép.</p>
+
+<h2>Quy trình trọn gói 6 bước tại Gò Vấp</h2>
+<ol>
+  <li>Tiếp nhận &amp; ảnh hiện trạng (Zalo/hotline).</li>
+  <li>Khảo sát: đo hẻm, lô, tường chung; chốt logistics.</li>
+  <li>Thiết kế 2D/3D + giếng trời; list vật tư.</li>
+  <li>Báo giá &amp; HĐ — phụ phí hẻm ghi trước khi ký.</li>
+  <li>Thi công móng → thô → hoàn thiện; ảnh cốt thép; nghiệm thu từng mốc.</li>
+  <li>Bàn giao, BH 10 năm kết cấu.</li>
+</ol>
+<p>Quy trình đầy đủ: <a href="/dich-vu/xay-nha-tron-goi">pillar trọn gói</a>.</p>
+
+<h2>Công trình và phân khúc điển hình</h2>
+<p>Gò Vấp mạnh nhà ống 4×16, 1 trệt 2 lầu hoặc 3–4 tầng gia đình. Mặt tiền kinh doanh một số tuyến: tách điện quán–nhà ở, WC khách trệt. So sánh kích thước lô: <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">xây nhà 4×16 TP.HCM</a>.</p>
+
+<h2>Gói Sao Khuê — cam kết minh bạch</h2>
+<ul>
+  <li>List thép–xi măng–sơn trong HĐ; ảnh cốt thép trước đổ.</li>
+  <li>Phụ phí hẻm ghi rõ — không phụ thu miệng cuối gói.</li>
+  <li>Giám sát từ văn phòng 245/8 Bình Lợi, Bình Thạnh.</li>
+  <li>Máy tính mốc: <a href="/bao-gia">/bao-gia</a>; HĐ chính thức sau khảo sát hiện trường.</li>
+</ul>
+
 ${faqSection([
-  { q: "Hẻm xe máy Gò Vấp xây được không?", a: "Được nếu có phương án khiêng / ba gác. Khảo sát đo hẻm trước khi hứa cẩu." },
-  { q: "Nhà ống Gò Vấp có bắt buộc giếng trời không?", a: "Không bắt buộc pháp lý, nhưng nhà sâu 16–20m thiếu giếng trời sẽ tối và ẩm." },
+  { q: "Hẻm xe máy Gò Vấp xây được không?", a: "Được nếu có phương án khiêng/ba gác và bơm bê tông. Khảo sát đo hẻm trước khi hứa cẩu hoặc xe trộn vào." },
+  { q: "Nhà ống Gò Vấp có bắt buộc giếng trời không?", a: "Không bắt buộc pháp lý, nhưng nhà sâu 16–20m nên có giếng ~1,2×1,5m — chốt từ bản vẽ móng." },
+  { q: "Xây nhà trọn gói giá rẻ Gò Vấp bao nhiêu?", a: "Ống 4×16 trọn gói cơ bản thường 3,2–4,8 tỷ + logistics hẻm. Đơn giá m² là mốc — số chính sau đo đất." },
+  { q: "Hẻm Gò Vấp dưới 3m xây được không?", a: "Được: bơm từ mặt tiền, xe phế thải nhỏ, ca sớm. Phụ phí ghi rõ trong dự toán." },
+  { q: "Thời gian thi công Gò Vấp?", a: "Nhà phố 3–4 tầng: 5–8 tháng tùy hẻm và mùa mưa. Hẻm hẹp có thể kéo dài ca đổ." },
+  { q: "Khảo sát Gò Vấp mất phí không?", a: "Miễn phí nội thành theo lịch. Gọi 0909 075 668 · văn phòng Bình Lợi." },
 ])}
-<p>Gọi <strong>0909 075 668</strong></p>`,
+<p>Gọi <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Landing Ads: <a href="/xay-nha">/xay-nha</a></p>`,
   },
 
   "xay-nha-tron-goi-quan-2": {
@@ -617,9 +749,6 @@ const BATCH2_DEPTH: Record<string, string> = {
   "cai-tao-nha-tphcm": `<h2>Nên cải tạo hay xây mới tại TP.HCM?</h2><p>Nhà phố 15–25 năm, móng cọc còn tốt, không lún lệch: cải tạo sâu thường đủ. Nhà cấp 4 nền yếu, nứt cột, muốn thêm 2 tầng: tính xây mới. Sao Khuê nói thẳng sau khảo sát — không bán gói cải tạo khi khung không cứu được. Geo: <a href="/tin-tuc/cai-tao-nha-binh-thanh">Bình Thạnh</a> · <a href="/tin-tuc/cai-tao-nha-go-vap">Gò Vấp</a> · <a href="/tin-tuc/cai-tao-nha-thu-duc">Thủ Đức</a>.</p>`,
   "chi-phi-cai-tao-nha-tphcm": `<h2>Ví dụ chi phí nhà phố 4×16m 2 tầng</h2><p>Làm mới sơn–lát–WC: 120–220 triệu. Sửa công năng (bếp, điện, chống thấm sân): 280–450 triệu. Đập thông + mặt tiền: 0,6–1,0 tỷ. Hẻm &lt; 3m cộng 8–12%. Đây là mốc 2026, không phải báo giá ký HĐ — số chính thức sau đo nhà.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Nghiệm thu phần thô trước khi trả đợt</h2><p>Kiểm tra mác bê tông, đường kính thép, neo đai, chống thấm mái chờ, ổ điện nước đúng vị trí bản vẽ. Không thanh toán hết thô khi sân thượng chưa ngâm thử. Ảnh cốt thép lưu trong hồ sơ bảo hành kết cấu 10 năm.</p>`,
-  "xay-nha-tron-goi-binh-thanh": `<h2>Ví dụ nhà phố Bình Lợi – Xô Viết Nghệ Tĩnh</h2><p>Lô 4×16 hẻm xe hơi: 1 trệt 2 lầu trọn gói cơ bản khoảng 3,5–4,8 tỷ (chưa cọc nếu nền yếu). Hẻm xe máy Nơ Trang Long: thêm logistics, đổ bê tông ca sớm. Văn phòng Sao Khuê ngay Bình Lợi nên giám sát hiện trường nhanh hơn quận xa.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>KDC mới vs phố cũ tại Thủ Đức</h2><p>KDC đường xe tải: giảm vận chuyển, nhưng facade phải đúng quy chế CĐT. Phố cũ Hiệp Bình / Linh Xuân: hẻm và nền gần rạch — khoan địa chất trước khi hứa 4 tầng. Hai gói không dùng chung một đơn giá m².</p>`,
-  "xay-nha-tron-goi-go-vap": `<h2>Đổ bê tông trong hẻm Gò Vấp</h2><p>Hẻm &lt; 3m: bơm bê tông từ mặt tiền, không để xe trộn chắn lối. Phế thải cuối ngày. Giếng trời nhà ống 4×16 nên chốt từ bản vẽ móng, không khoét sau — tốn và rủi ro dầm.</p>`,
   "xay-nha-tron-goi-quan-2": `<h2>Móng ven sông Thảo Điền – An Khánh</h2><p>Đất yếu: cọc có thể 12–18% tổng giá. Chống sụt nhà liền kề khi đào hố — biên bản hiện trạng hàng xóm trước khởi công. Hoàn thiện khu này thường cao hơn Gò Vấp vì mặt đứng và vật tư.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Thuận An, Dĩ An — lịch đội từ Bình Thạnh</h2><p>Gói trọn gói nhà phố 3–4 tầng: khảo sát hẹn trước, ít phụ phí hơn gói sửa nhỏ. GPXD theo tỉnh Bình Dương. Case Thuận An trên mục công trình là tham chiếu quy mô, không phải cam kết giá copy-paste.</p>`,
   "xay-nha-quan-2": `<h2>Chọn nhà thầu xây tại Q.2</h2><p>Ưu tiên đơn vị am hiểu Thủ Đức sau sáp nhập, có phương án móng đất yếu và không hứa số tầng khi chưa tra quy hoạch. So với trọn gói: bài này giúp chốt thô hay trọn gói trước khi ký.</p>`,
@@ -652,14 +781,11 @@ const BATCH2_DEPTH_MORE: Record<string, string> = {
   "xay-shophouse-tphcm": `<h2>Mặt bằng trệt quán</h2><p>Cửa kính, điện 3 pha, hút mùi, WC khách, sàn chống trơn. Lầu ở nên có lối riêng nếu được. Cải tạo nhà sẵn: <a href="/tin-tuc/cai-tao-nha-ket-hop-kinh-doanh-tphcm">cải tạo kết hợp kinh doanh</a>.</p>`,
   "xay-nha-5-tang-tphcm": `<h2>Kết cấu và thang máy 5 tầng</h2><p>Tải lớn hơn 3 tầng: móng cọc, giằng, chống thấm sân bắt buộc. Chừa hố thang từ móng. So sánh: <a href="/tin-tuc/xay-nha-4-tang-tphcm">xây nhà 4 tầng</a>.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Khác đơn giá TP.HCM chỗ nào?</h2><p>Nhân công và vận chuyển khác; hoàn thiện có thể rẻ hơn nội thành nếu chọn vật tư địa phương. Không áp bảng m² Sài Gòn lên lô Dĩ An / Thuận An.</p>`,
-  "xay-nha-tron-goi-go-vap": `<h2>Lô 4×16 Quang Trung – Phan Văn Trị</h2><p>1 trệt 2 lầu trọn gói cơ bản thường 3,2–4,8 tỷ. Liền kề: khe nhiệt, chống thấm tường chung. Xem <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">xây nhà 4×16</a>.</p>`,
   "cai-tao-nha-ong-tphcm": `<h2>Lấy sáng nhà ống hẹp</h2><p>Giếng 1,2–2,0m, màu sáng, cửa kính lầu. Không đục dầm chui. Xem <a href="/tin-tuc/cai-tao-gieng-troi-nha-pho-tphcm">cải tạo giếng trời</a> · <a href="/tin-tuc/cai-tao-gac-lung-nha-pho-tphcm">gác lửng</a>.</p>`,
   "nang-tang-nha-tphcm": `<h2>Nâng 1 tầng nhà phố 3 tầng cũ</h2><p>Kiểm tra cột–móng, gia cố nếu thiếu, xin phép. Thời gian 2–4 tháng tùy gia cố. Không đổ tum vượt phép. Gọi <strong>0909 075 668</strong>.</p>`,
   "xay-nha-uy-tin-tphcm": `<h2>Dấu hiệu nhà thầu rủi ro</h2><p>Báo giá miệng không list vật tư, đòi 50% trước khi đào móng, không có địa chỉ văn phòng, không cho xem công trình đang làm. Sao Khuê: 245/8 Bình Lợi, khảo sát miễn phí, hợp đồng chi tiết.</p>`,
   "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Quy trình thiết kế kèm thi công</h2><p>Khảo sát đất → phương án → bản vẽ xin phép → móng–thô–hoàn thiện. Chủ nhà duyệt vật tư trước khi mua. Landing: <a href="/xay-nha">/xay-nha</a> · <a href="/thiet-ke">/thiet-ke</a>.</p>`,
   "xay-nha-quan-2": `<h2>Hẻm vs đường lớn tại Q.2</h2><p>Đường xe hơi giảm logistics. Hẻm 3m: máy cọc nhỏ hoặc khoan nhồi. Gửi ảnh hẻm + sổ khi gọi <strong>0909 075 668</strong>.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>Phường cũ Q.2 / Q.9</h2><p>Thủ tục GPXD theo TP. Thủ Đức. Đất ven sông: cọc và tường vây tính riêng. Case biệt thự Thủ Đức là quy mô tham chiếu, không copy giá.</p>`,
-  "xay-nha-tron-goi-binh-thanh": `<h2>Quy hoạch và hẻm Bình Thạnh</h2><p>Nhiều tuyến lộ giới, nhà sát. Khảo sát hàng xóm trước đào móng. PCCC nhà 4–5 tầng cho thuê hỏi sớm. Văn phòng 245/8 Bình Lợi — gọi <strong>0909 075 668</strong>.</p>`,
   "chi-phi-cai-tao-nha-tphcm": `<h2>Chi phí ẩn hay bị bỏ sót</h2><p>Giàn giáo mặt tiền, xe phế thải giờ hạn chế, che chắn nhà đang ở, thay ống đứng khi đục WC. Sao Khuê liệt kê phụ lục, không phát sinh miệng cuối gói.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Thô chưa gồm những gì?</h2><p>Cọc/khoan nhồi, hoàn thiện sơn–lát–cửa, nội thất gỗ, điều hòa. Hẻm hẹp cộng nhân công khiêng. Xem <a href="/tin-tuc/thi-cong-phan-tho-tphcm">thi công phần thô</a>.</p>`,
 };
@@ -719,16 +845,10 @@ const BATCH2_DEPTH_3: Record<string, string> = {
   "xay-shophouse-tphcm": `<h2>Xin phép shophouse khác nhà ở thuần</h2><p>Đổi công năng trệt quán: hỏi phường khi nộp GPXD. Biển hiệu, vỉa hè, giờ ồn. Không hoàn thiện kính xong mới xin. Sao Khuê tư vấn hiện trạng, không thi công vượt phép.</p>`,
   "xay-nha-5-tang-tphcm": `<h2>Chi phí 5 tầng so 4 tầng</h2><p>Thêm một sàn + tải móng + PCCC. Đừng lấy đơn giá 3 tầng nhân 5/3. Cho thuê: WC từng tầng, điện tách. Tra phép trước. So <a href="/tin-tuc/xay-nha-4-tang-tphcm">4 tầng</a> · <a href="/tin-tuc/xay-nha-lech-tang-tphcm">lệch tầng</a>.</p>`,
   "xay-nha-tan-phu": `<h2>Hẻm Tân Phú và giờ đổ bê tông</h2><p>Nhiều hẻm xe máy: bơm từ mặt tiền, ca sớm. Tuyến ngập: cao độ trệt + van một chiều thoát. Cấp 4 lên 3 tầng: khảo sát móng bắt buộc, không “đổ thêm” lên tường gạch.</p>`,
-  "xay-nha-tron-goi-go-vap": `<h2>Liền kề Gò Vấp — hàng xóm</h2><p>Biên bản hiện trạng tường chung trước đào móng. Khe nhiệt, chống thấm. Không khoan sang nhà bên. Phế thải cuối ngày — hẻm đông. Gọi <strong>0909 075 668</strong>.</p>`,
   "xay-nha-quan-2": `<h2>Thô hay trọn gói tại Q.2?</h2><p>Trọn gói khi muốn một đầu mối facade + chống thấm. Tách thô nếu nội thất cao cấp chọn sau. Đất yếu: chốt cọc trước khi so m². Xem <a href="/tin-tuc/xay-nha-tron-goi-quan-2">trọn gói Q.2</a>.</p>`,
   "nang-tang-nha-tphcm": `<h2>Hồ sơ nâng tầng nên có</h2><p>GPXD cũ, ảnh nứt, đo lún (nếu có), bản vẽ gia cố. Phường có thể yêu cầu thẩm tra kết cấu. Sao Khuê không đổ sàn thêm khi chưa có phương án kỹ sư. Liên hệ 245/8 Bình Lợi.</p>`,
   "xay-biet-thu-tphcm": `<h2>Chọn nhà thầu biệt thự</h2><p>Cần đội am hiểu địa chất ven kênh và KDC. HĐ tách sân–hồ–nhà. BH kết cấu 10 năm. Không nhận “giá nhà phố” cho biệt thự. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Thủ Đức</a> · <a href="/tin-tuc/xay-nha-nha-be">Nhà Bè</a>.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Tiến độ đội thi công Bình Dương</h2><p>Khảo sát hẹn trước (không drop-in như nội thành). Gói 3–4 tầng: lịch đổ bê tông theo xa lộ. GPXD tỉnh khác TP.HCM — chốt hồ sơ trước đào móng.</p>`,
-  "xay-nha-mat-tien-tphcm": `<h2>Nhà mặt tiền cho thuê vs ở</h2><p>Cho thuê trệt: PCCC, WC khách, điện 3 pha. Ở thuần: facade vẫn cần chỉ giới nhưng tải điện thấp hơn. Đừng dùng một bản vẽ cho cả hai. Cải tạo sẵn: <a href="/tin-tuc/cai-tao-mat-tien-nha-tphcm">cải tạo mặt tiền</a>.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>Ngân sách Thủ Đức 2026</h2><p>Nhà phố 4×16 KDC đường lớn khác hẻm Hiệp Bình. Cọc ven rạch 12–18% tổng. Facade KDC theo quy chế CĐT — hỏi trước khi chọn đá ốp. Khảo sát: <strong>0909 075 668</strong>.</p>`,
-  "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Một HĐ thiết kế–thi công lợi gì?</h2><p>Tránh KTS vẽ 3D không thi công được, thầu cắt chi tiết. Đổi cửa/giếng giữa chừng: phụ lục giá. BH kết cấu 10 năm khi Sao Khuê thi công đúng bản vẽ duyệt.</p>`,
-  "xay-nha-uy-tin-tphcm": `<h2>Xem công trình đang làm</h2><p>Nhà thầu uy tín cho xem hiện trường (hẹn trước). Kiểm tra cốt thép, nhật ký, biên bản nghiệm thu. Văn phòng 245/8 Bình Lợi. Không chuyển khoản lớn trước khi có HĐ và địa chỉ rõ.</p>`,
-  "xay-nha-tron-goi-binh-thanh": `<h2>Tiến độ gần văn phòng Bình Lợi</h2><p>Giám sát hiện trường nhanh hơn quận xa. Hẻm Nơ Trang Long: ca đổ sớm. 1 trệt 2 lầu 4×16: mốc 3,5–4,8 tỷ chưa cọc. Gửi ảnh hẻm khi gọi hotline.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `<h2>Bảng thô 2026 — đọc đúng</h2><p>3,5–5,5 triệu/m² nhà phố thường chưa cọc, chưa hoàn thiện. Hẻm hẹp + nền yếu làm m² “rẻ” trên mạng thành đắt thật. Máy tính <a href="/bao-gia">/bao-gia</a> chỉ mốc; HĐ sau khảo sát.</p>`,
   "chi-phi-cai-tao-nha-tphcm": `<h2>Cách chốt ngân sách cải tạo</h2><p>Gửi ảnh hiện trạng + việc muốn làm (WC, giếng, mặt tiền). Sao Khuê tách bắt buộc / hoãn được. Đừng chốt “một cục” khi chưa đo nhà. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
 };
@@ -755,15 +875,6 @@ const BATCH2_DEPTH_4: Record<string, string> = {
   ])}<h2>So sánh nhanh với xây mới</h2><p>Cải tạo sâu nhà phố 2 tầng thường tiết kiệm 30–50% so xây lại nếu móng còn tốt. Khi nứt cột / lún lệch: tính xây mới an toàn hơn — Sao Khuê nói thẳng sau khảo sát.</p>`,
   "bao-gia-xay-nha-phan-tho-tphcm": `${faqSection([
     { q: "Phần thô có bảo hành không?", a: "Kết cấu theo HĐ (thường tới 10 năm khi Sao Khuê thi công thô). Hoàn thiện sau do bên khác không thuộc BH thô." },
-  ])}`,
-  "xay-nha-tron-goi-binh-thanh": `${faqSection([
-    { q: "Khảo sát Bình Thạnh có mất phí không?", a: "Nội thành miễn phí theo lịch. Văn phòng 245/8 Bình Lợi — gọi 0909 075 668 gửi ảnh hẻm + sổ." },
-  ])}`,
-  "xay-nha-tron-goi-thu-duc": `${faqSection([
-    { q: "Xây trọn gói Thủ Đức khác TP.HCM chỗ nào?", a: "GPXD theo phường Thủ Đức; KDC có quy chế facade. Đất ven rạch cần cọc — tách dòng khỏi m² trọn gói." },
-  ])}`,
-  "xay-nha-tron-goi-go-vap": `${faqSection([
-    { q: "Hẻm Gò Vấp dưới 3m xây được không?", a: "Được: bơm bê tông từ mặt tiền, xe phế thải nhỏ, ca đổ sớm. Phụ phí logistics ghi rõ trong dự toán." },
   ])}`,
   "xay-nha-tron-goi-quan-2": `${faqSection([
     { q: "Quận 2 cũ còn gọi Q.2 trên giấy phép không?", a: "Xin phép theo tên phường thuộc TP. Thủ Đức. Tra đúng phường trước khi nộp hồ sơ." },
@@ -819,19 +930,12 @@ const BATCH2_DEPTH_5: Record<string, string> = {
   "xay-nha-5-tang-tphcm": `<h2>Checklist trước khi chốt 5 tầng</h2><p>Tra quy hoạch chiều cao phường, hỏi PCCC nếu cho thuê, chốt cọc/móng với kỹ sư, chừa hố thang máy từ đầu. Đừng duyệt 3D 5 tầng khi chưa có xác nhận phép — tránh đập bỏ tầng tum. So sánh ngân sách với <a href="/tin-tuc/xay-nha-4-tang-tphcm">nhà 4 tầng</a> trước khi vay thêm một sàn.</p>`,
   "cai-tao-nha-ong-tphcm": `<h2>Thứ tự hạng mục nhà ống đang ở</h2><p>Chống thấm WC giữa nhà → điện nước âm → lát/sơn → mặt tiền cuối. Giữ một lối thoát hiểm và một WC dùng được. Hẻm &lt; 3m: phụ phí xe phế thải ghi phụ lục. Landing Ads: <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "xay-nha-quan-2": `<h2>Gửi hồ sơ khảo sát Q.2 / Thủ Đức</h2><p>Ảnh mặt tiền + hẻm, sổ đỏ (che số nếu cần), số tầng mong muốn, thô hay trọn gói. Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo đất. Hotline <strong>0909 075 668</strong> · văn phòng Bình Lợi.</p>`,
-  "xay-nha-tron-goi-go-vap": `<h2>Giếng trời nhà ống Gò Vấp</h2><p>Lô 4×16–4×18 nên chốt giếng từ bản vẽ móng, không khoét dầm sau. Kích thước tối thiểu ~1,2×1,5m cạnh cầu thang. Xem thêm <a href="/tin-tuc/cai-tao-gieng-troi-nha-pho-tphcm">cải tạo giếng trời</a> nếu nhà cũ thiếu sáng.</p>`,
   "xay-nha-tan-phu": `<h2>Cấp 4 lên phố tại Tân Phú</h2><p>Khảo sát móng bắt buộc trước khi “đổ thêm tầng”. Nhiều nhà cấp 4 tường gạch không đủ cho 3–4 tầng. Phương án: gia cố hoặc tháo dựng lại trọn gói — Sao Khuê tư vấn sau đo nhà, không bán gói nâng khi khung yếu.</p>`,
   "xay-nha-4-tang-tphcm": `<h2>Cho thuê từng tầng nhà 4 tầng</h2><p>Nên tách điện từng tầng, WC riêng, lối đi chung rõ. Hỏi PCCC sớm. Nội thất phòng trọ khác nhà ở gia đình — báo phụ lục hoàn thiện. Case tham chiếu: <a href="/cong-trinh/xay-nha-pho-binh-thanh">nhà phố Bình Thạnh</a>.</p>`,
   "xay-biet-thu-tphcm": `<h2>Tiến độ biệt thự thực tế</h2><p>Nhà 200–400m² sàn thường 9–14 tháng gồm phép, móng, thô, hoàn thiện và sân. Hồ bơi / hàng rào đá tự nhiên kéo dài thêm. HĐ nên ghi mốc nghiệm thu từng khối (nhà / sân / hồ) để chủ nhà kiểm soát dòng tiền.</p>`,
   "xay-nha-tron-goi-quan-2": `<h2>Vật tư facade khu Thảo Điền</h2><p>Cửa kính lớn, đá ốp, đèn âm — báo tách dòng, không nuốt vào m² trọn gói. Đất yếu: cọc 12–18% tổng. Biên bản hiện trạng hàng xóm trước đào hố. Gọi <strong>0909 075 668</strong>.</p>`,
   "xay-shophouse-tphcm": `<h2>Giờ ồn và hàng xóm shophouse</h2><p>Quán mở sớm/khuya: cách âm sàn trệt–lầu 1, cửa kính kín gió. Xe hàng không chắn hẻm. Hỏi công năng khi xin GPXD — làm xong mới xin dễ bị yêu cầu hoàn trả mặt đứng.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Case Thuận An / Dĩ An</h2><p>Lô KDC đường xe hơi giảm logistics; GPXD tỉnh Bình Dương khác TP.HCM. Đơn giá hoàn thiện có thể thấp hơn nội thành nếu chọn vật tư địa phương — không copy bảng m² Sài Gòn. Xem <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>`,
-  "nang-tang-nha-tphcm": `<h2>Chi phí nâng 1 tầng tham khảo</h2><p>Gia cố cột–móng + sàn mới + hoàn thiện tum: thường vài trăm triệu đến hơn 1 tỷ tùy nhà phố 3–4 tầng cũ. Số sau khảo sát; không báo “giá m² nâng” khi chưa khoan kiểm tra.</p>`,
-  "sua-dien-nuoc-nha-tphcm": `<h2>Nghiệm thu điện nước</h2><p>Đo chống giật, thử áp lực nước, chụp ống trước khi trát lại tường. Giữ sơ đồ tủ điện trong hồ sơ bảo hành. Gói lớn nên ghép <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a> nếu đục nhiều.</p>`,
-  "xay-nha-mat-tien-tphcm": `<h2>Bảng hiệu và chỉ giới</h2><p>Biển hộp đèn, lam chắn mưa, bậc cấp không lấn lộ giới. Vỉa hè / cổng: hỏi phường. Cải tạo mặt đứng sẵn: <a href="/tin-tuc/cai-tao-mat-tien-nha-tphcm">cải tạo mặt tiền</a>.</p>`,
-  "xay-nha-tron-goi-thu-duc": `<h2>KDC mới vs phố cũ — bảng so nhanh</h2><p>KDC: đường rộng, facade theo CĐT, logistics dễ. Phố cũ Hiệp Bình/Linh Xuân: hẻm, nền gần rạch, cọc tách dòng. Hai gói không dùng chung một báo giá m².</p>`,
-  "thiet-ke-thi-cong-nha-pho-tphcm": `<h2>Bàn giao hồ sơ khi một HĐ</h2><p>Chủ nhà nhận bản vẽ as-built, danh mục vật tư đã dùng, biên bản nghiệm thu và cam kết BH kết cấu 10 năm. Đổi cửa/giếng giữa chừng: phụ lục trước khi thợ làm.</p>`,
-  "xay-nha-uy-tin-tphcm": `<h2>Cam kết Sao Khuê trên HĐ</h2><p>List thép–xi măng–sơn–keo chống thấm; nghiệm thu móng–thô–hoàn thiện; giữ lại % đến bàn giao; địa chỉ 245/8 Bình Lợi. Không nhận đặt cọc lớn trước khi có HĐ và lịch khảo sát.</p>`,
 };
 
 for (const [slug, extra] of Object.entries(BATCH2_DEPTH_5)) {
@@ -841,8 +945,6 @@ for (const [slug, extra] of Object.entries(BATCH2_DEPTH_5)) {
 
 /** Khối 6 — đẩy 3 money page còn sát ngưỡng 1.800 ký tự. */
 const BATCH2_DEPTH_6: Record<string, string> = {
-  "xay-nha-tron-goi-go-vap": `<h2>Gửi hồ sơ khảo sát Gò Vấp</h2><p>Ảnh mặt tiền + chiều ngang hẻm, sổ (che số nếu cần), số tầng mong muốn. Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo đất. Văn phòng Bình Lợi — gọi <strong>0909 075 668</strong>. So <a href="/tin-tuc/xay-nha-pho-4x16-tphcm">nhà phố 4×16</a>.</p>`,
-  "cai-tao-nha-ong-tphcm": `<h2>Ngân sách cải tạo nhà ống tham khảo</h2><p>Sơn–lát–WC: vài chục đến hơn trăm triệu. Đập thông + giếng + mặt tiền: thường 0,4–1,2 tỷ tùy độ sâu. Số sau đo nhà — không chốt “một cục” qua Zalo. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "xay-nha-tron-goi-quan-2": `<h2>Checklist khởi công Q.2 / Thủ Đức</h2><p>GPXD đúng phường mới, biên bản hàng xóm trước đào móng, phương án cọc nếu đất yếu, list vật tư facade. Không đổ móng khi chưa chốt các điểm này. Hotline <strong>0909 075 668</strong>.</p>`,
 };
 

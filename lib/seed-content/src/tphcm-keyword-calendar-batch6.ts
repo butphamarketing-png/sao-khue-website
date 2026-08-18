@@ -92,6 +92,7 @@ export const tphcmKeywordCalendarBatch6: ContentCalendarItem[] = [
   { no: 470, title: "Thi Công Xây Dựng Tại TP.HCM", keyword: "thi công xây dựng TP.HCM", slug: "thi-cong-xay-dung-tphcm", status: "planned" },
   { no: 471, title: "Giám Sát Thi Công Nhà Tại TP.HCM", keyword: "giám sát thi công nhà TP.HCM", slug: "giam-sat-thi-cong-nha-tphcm", status: "planned" },
   { no: 472, title: "Khảo Sát Nhà Miễn Phí Tại TP.HCM", keyword: "khảo sát nhà miễn phí TP.HCM", slug: "khao-sat-nha-mien-phi-tphcm", status: "planned" },
+  // #473: không viết URL mới — 301 → /tin-tuc/xay-nha-gia-re-tphcm
   { no: 473, title: "Xây Nhà Trọn Gói Giá Rẻ Tại TP.HCM", keyword: "xây nhà trọn gói giá rẻ TP.HCM", slug: "xay-nha-tron-goi-gia-re-tphcm", status: "planned" },
   { no: 474, title: "Xây Nhà Chất Lượng Tại TP.HCM", keyword: "xây nhà chất lượng TP.HCM", slug: "xay-nha-chat-luong-tphcm", status: "planned" },
   { no: 475, title: "Nhà Thầu Sửa Nhà Tại TP.HCM", keyword: "nhà thầu sửa nhà TP.HCM", slug: "nha-thau-sua-nha-tphcm", status: "planned" },

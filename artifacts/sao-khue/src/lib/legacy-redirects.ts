@@ -30,7 +30,7 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "xay-nha-tron-goi-binh-duong": "/dich-vu/xay-nha-tron-goi-binh-duong",
   "xay-nha-tron-goi-dong-nai": "/dich-vu/xay-nha-tron-goi-dong-nai",
   "xay-nha-tai-tp-hcm": "/tin-tuc/xay-nha-tphcm",
-  "chi-phi-xay-nha-pho": "/tin-tuc/chi-phi-xay-nha-tphcm",
+  "xay-nha-tron-goi-gia-re-tphcm": "/tin-tuc/xay-nha-gia-re-tphcm",
 
   // Top-level service shortcuts
   "thiet-ke-nha": "/dich-vu/thiet-ke-nha",
@@ -191,6 +191,9 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/thiet-ke-nha-pho-2-tang", "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm"],
   ["/tag", "/tin-tuc"],
   ["/shop", "/"],
+  // P0 SEO — slug calendar #473 không tách bài; gộp seed “giá rẻ”
+  ["/tin-tuc/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
+  ["/bai-viet/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */

@@ -554,7 +554,14 @@ export function useTopBarSlogan(): string {
 
 export function useNavMenu(): MenuItem[] {
   const settings = useSiteSettings();
-  return parseJsonArray(settings.navMenuJson, defaultNavMenu);
+  const menu = parseJsonArray(settings.navMenuJson, defaultNavMenu);
+  if (menu.some((item) => item.href === "/mau-nha")) return menu;
+  const mauNha = defaultNavMenu.find((item) => item.href === "/mau-nha");
+  if (!mauNha) return menu;
+  const insertAt = menu.findIndex((item) => item.title === "CẢI TẠO");
+  const next = [...menu];
+  next.splice(insertAt >= 0 ? insertAt : Math.max(next.length - 1, 0), 0, mauNha);
+  return next;
 }
 
 export function usePageBanners(): PageBannersMap {

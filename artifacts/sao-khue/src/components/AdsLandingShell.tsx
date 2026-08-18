@@ -61,31 +61,20 @@ export function AdsLandingShell({ children }: Props) {
 
       <main className="relative flex-1 pb-36 md:pb-0">{children}</main>
 
-      <footer className="border-t border-slate-200 bg-slate-50 py-8">
-        <div className="site-container text-center text-sm text-slate-600">
-          <p className="font-bold uppercase tracking-wide text-primary">{brand}</p>
-          {s.address1 && <p className="mt-2">{s.address1}</p>}
-          {phone && (
-            <p className="mt-1">
-              Hotline:{" "}
-              <a href={telHref(phone)} className="font-semibold text-accent">
-                {phone}
-              </a>
-            </p>
+      <footer className="bg-[#062a4a] text-white">
+        <div className="site-container flex flex-col items-center justify-between gap-3 py-5 text-sm font-semibold tracking-wide sm:flex-row">
+          {phone ? (
+            <a href={telHref(phone)} className="inline-flex items-center gap-2">
+              <PhoneCall size={16} />
+              {phone}
+            </a>
+          ) : (
+            <span>{brand}</span>
           )}
-          <p className="mt-4 text-xs text-slate-400">
-            <Link href="/" className="underline-offset-2 hover:underline">
-              Về trang chủ
-            </Link>
-            {" · "}
-            <Link href="/bao-gia" className="underline-offset-2 hover:underline">
-              Báo giá
-            </Link>
-            {" · "}
-            <Link href="/lien-he" className="underline-offset-2 hover:underline">
-              Liên hệ
-            </Link>
-          </p>
+          <span className="hidden h-4 w-px bg-white/45 sm:block" />
+          <a href="https://kientrucsaokhue.com" className="opacity-90 hover:opacity-100">
+            kientrucsaokhue.com
+          </a>
         </div>
       </footer>
 

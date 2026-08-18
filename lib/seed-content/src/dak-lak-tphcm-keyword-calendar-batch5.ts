@@ -69,7 +69,7 @@ export const dakLakTphcmKeywordCalendarBatch5: ContentCalendarItem[] = [
   { no: 355, title: "Nâng Tầng Nhà Phố Tại TP.HCM", keyword: "nâng tầng nhà phố TP.HCM", slug: "nang-tang-nha-pho-tphcm", status: "planned" },
   { no: 356, title: "Nâng Tầng Nhà Tại TP.HCM", keyword: "nâng tầng nhà TP.HCM", slug: "nang-tang-nha-tphcm", status: "planned" },
   { no: 357, title: "Xây Nhà Uy Tín Tại TP.HCM", keyword: "xây nhà uy tín TP.HCM", slug: "xay-nha-uy-tin-tphcm", status: "planned" },
-  { no: 358, title: "Xây Nhà Giá Rẻ Tại TP.HCM", keyword: "xây nhà giá rẻ TP.HCM", slug: "xay-nha-gia-re-tphcm", status: "planned" },
+  { no: 358, title: "Xây Nhà Giá Rẻ Tại TP.HCM", keyword: "xây nhà giá rẻ TP.HCM", slug: "xay-nha-gia-re-tphcm", status: "done" },
   { no: 359, title: "Xây Nhà 4 Tầng Tại TP.HCM", keyword: "xây nhà 4 tầng TP.HCM", slug: "xay-nha-4-tang-tphcm", status: "planned" },
   { no: 360, title: "Xây Nhà 5 Tầng Tại TP.HCM", keyword: "xây nhà 5 tầng TP.HCM", slug: "xay-nha-5-tang-tphcm", status: "planned" },
   { no: 361, title: "Xây Nhà Cấp 4 Tại TP.HCM", keyword: "xây nhà cấp 4 TP.HCM", slug: "xay-nha-cap-4-tphcm", status: "planned" },

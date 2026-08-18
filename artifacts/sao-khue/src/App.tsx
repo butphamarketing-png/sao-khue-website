@@ -12,6 +12,9 @@ import ThietKe from "@/pages/ThietKe";
 import XayMoi from "@/pages/XayMoi";
 import XayNha from "@/pages/XayNha";
 import CaiTaoNha from "@/pages/CaiTaoNha";
+import MauNhaHub from "@/pages/MauNhaHub";
+import MauNhaList from "@/pages/MauNhaList";
+import MauNhaDetail from "@/pages/MauNhaDetail";
 import Contact from "@/pages/Contact";
 import CategoryPage from "@/pages/CategoryPage";
 import PostPage from "@/pages/PostPage";
@@ -45,6 +48,9 @@ function Router() {
       <Route path="/xay-moi" component={XayMoi} />
       <Route path="/xay-nha" component={XayNha} />
       <Route path="/cai-tao-nha" component={CaiTaoNha} />
+      <Route path="/mau-nha/:category/:slug" component={MauNhaDetail} />
+      <Route path="/mau-nha/:category" component={MauNhaList} />
+      <Route path="/mau-nha" component={MauNhaHub} />
       <Route path="/admin" component={Admin} />
       <Route path="/adminbp">
         <Redirect to="/admin" />
