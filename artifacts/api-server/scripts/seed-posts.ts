@@ -1,6 +1,6 @@
 import { seedPostsToDatabase } from "../src/lib/bootstrap";
 import { formatSubmitIndexingLog, submitIndexing } from "../src/lib/submit-indexing";
-import { getPostPublicPath, INDEXING_BATCH_SLUGS } from "@workspace/seed-content";
+import { getPostPublicPath, INDEXING_BATCH_SLUGS, seedPosts } from "@workspace/seed-content";
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 
@@ -20,8 +20,14 @@ function loadEnv() {
 
 loadEnv();
 
+// Bulk seed: ưu tiên DIRECT_URL (session mode) — tránh pgbouncer timeout.
+if (process.env.DIRECT_URL) {
+  process.env.DATABASE_URL = process.env.DIRECT_URL;
+}
+
 async function main() {
   console.log("Seeding posts...");
+  console.log("Total seed rows:", seedPosts.length);
   const count = await seedPostsToDatabase();
   console.log("Done. Total:", count);
 
