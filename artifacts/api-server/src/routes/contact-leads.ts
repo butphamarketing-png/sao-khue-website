@@ -5,6 +5,7 @@ import { z } from "zod";
 import { isAdmin } from "../lib/auth";
 import { getClientIp } from "../lib/client-ip";
 import { ensureAppTablesOnce } from "../lib/ensure-tables";
+import { notifyLeadByEmail } from "../lib/notify-lead-email";
 
 const LeadInput = z.object({
   name: z.string().min(1).max(120),
@@ -41,7 +42,9 @@ router.post("/contact-leads", async (req, res) => {
       .insert(contactLeadsTable)
       .values({ ...parsed.data, ip: getClientIp(req).slice(0, 64) })
       .returning();
-    res.status(201).json(serialize(row));
+    const payload = serialize(row);
+    void notifyLeadByEmail(payload);
+    res.status(201).json(payload);
   } catch (err) {
     console.error("[contact-leads] create failed", err);
     res.status(503).json({ error: "Could not save contact request" });
