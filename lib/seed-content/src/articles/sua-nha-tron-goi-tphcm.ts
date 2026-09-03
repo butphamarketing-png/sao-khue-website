@@ -5,7 +5,7 @@ export const suaNhaTronGoiTphcm = {
     "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá theo hạng mục, thi công một đầu mối, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
   metaTitle: "Sửa Nhà Trọn Gói TP.HCM — Báo Giá 2026 | Sao Khuê",
   metaDescription:
-    "Sửa nhà trọn gói TP.HCM 2026: bảng giá theo hạng mục, khảo khảo sát miễn phí, không phát sinh ảo. Sao Khuê — 0909 075 668.",
+    "Sửa nhà trọn gói TP.HCM 2026: bảng giá theo hạng mục, khảo sát miễn phí, không phát sinh ảo. Sao Khuê — 0909 075 668.",
   metaKeywords:
     "sửa nhà trọn gói tphcm, báo giá sửa nhà, sửa chữa nhà tp hcm, cải tạo nhà phố, kiến trúc sao khuê",
   content: `
