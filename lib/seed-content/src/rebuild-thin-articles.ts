@@ -28,7 +28,7 @@ function shouldSkipThinRebuild(slug: string, category?: string): boolean {
   }
   // Pillar Đắk Lắk / bài tay đã có H2 riêng
   if (
-    /^(sua-chua-nha-dak-lak|cai-tao-nha-dak-lak|thiet-ke-nha-dep-dak-lak|xay-nha-dep-dak-lak)$/.test(
+    /^(sua-chua-nha-dak-lak|cai-tao-nha-dak-lak|thiet-ke-nha-dep-dak-lak|xay-nha-dep-dak-lak|bao-gia-xay-nha-tron-goi-phu-yen)$/.test(
       slug,
     )
   ) {
