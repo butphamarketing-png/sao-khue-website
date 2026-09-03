@@ -188,6 +188,20 @@ export default function middleware(request) {
   const dest = REDIRECTS[normalizedPathname];
   if (dest) return redirect301(dest, request.url);
 
+  // Factory *-skNN / *-ngan đã noindex — 301 gom equity về hub (không soft-404).
+  {
+    const leaf = normalizedPathname.split("/").pop() || "";
+    if (/-sk\\d+$/i.test(leaf) || /-ngan$/i.test(leaf)) {
+      if (/^sua-|^chong-tham|^cai-tao|^nang-tang|^son-/.test(leaf)) {
+        return redirect301("/dich-vu/sua-nha-tron-goi-tphcm", request.url);
+      }
+      if (/^xay-|^thiet-ke|^thi-cong|^bao-gia-xay|^ep-coc|^hoan-thien/.test(leaf)) {
+        return redirect301("/dich-vu/xay-nha-tron-goi", request.url);
+      }
+      return redirect301("/tin-tuc", request.url);
+    }
+  }
+
   const cleaned = cleanSearch(url.search ?? "");
   if (cleaned !== null) {
     return redirect301(\`\${normalizedPathname}\${cleaned}\`, request.url);

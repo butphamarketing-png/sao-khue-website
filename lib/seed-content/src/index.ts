@@ -684,18 +684,37 @@ function applyMoneyPageOverrides(posts: SeedPost[]): SeedPost[] {
   });
 }
 
-/** Meta description/title ngắn → pad để snippet Google ổn định hơn. */
+/** Meta description/title ngắn → pad để snippet Google ổn định hơn (không nhân đôi cụm). */
 function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
-  const descPad = " Khảo sát miễn phí, báo giá minh bạch — 0909 075 668.";
+  const hotlineTail = " — 0909 075 668.";
   return posts.map((p) => {
     if (shouldNoindexPostSlug(p.slug) && p.noindex !== false) return p;
     let next = p;
 
-    const desc = (next.metaDescription ?? "").trim();
+    let desc = (next.metaDescription ?? "").trim();
     if (desc.length > 0 && desc.length < 120) {
-      const base = desc.replace(/\s*[—–-]\s*0909\s*075\s*668\.?$/iu, "").trim();
-      const padded = `${base}${descPad}`.replace(/\s+/g, " ").trim().slice(0, 160);
+      // Gỡ hotline / pad cũ rồi gắn đúng 1 lần — tránh "Khảo sát miễn phí … Khảo sát miễn phí".
+      let base = desc
+        .replace(/(?:\s*[—–-]\s*)?0909\s*075\s*668\.?/giu, "")
+        .replace(/(?:Khảo sát miễn phí(?:, báo giá minh bạch)?\.?\s*)+/giu, " ")
+        .replace(/(?:Tư vấn\s*&\s*khảo sát miễn phí tại TP\.HCM\.?\s*)+/giu, " ")
+        .replace(/\s+/g, " ")
+        .trim()
+        .replace(/[.,;:\s]+$/u, "");
+
+      const needsSurvey = !/khảo sát miễn phí/i.test(base);
+      const needsClarity = !/báo giá minh bạch|minh bạch/i.test(base);
+      const suffixParts: string[] = [];
+      if (needsSurvey && needsClarity) suffixParts.push("Khảo sát miễn phí, báo giá minh bạch");
+      else if (needsSurvey) suffixParts.push("Khảo sát miễn phí");
+      else if (needsClarity) suffixParts.push("Báo giá minh bạch");
+
+      const padded = `${base}${suffixParts.length ? `. ${suffixParts.join(", ")}` : ""}${hotlineTail}`
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 160);
       next = { ...next, metaDescription: padded };
+      desc = padded;
     }
 
     const title = (next.metaTitle ?? "").trim();
@@ -712,24 +731,15 @@ function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
       next = { ...next, metaTitle: t.slice(0, 60) };
     }
 
-    // Pad lại nếu vẫn dưới ngưỡng (title/desc bị cắt hoặc đã có đuôi hotline).
-    const desc2 = (next.metaDescription ?? "").trim();
-    if (desc2.length > 0 && desc2.length < 120) {
-      const extra = " Tư vấn & khảo sát miễn phí tại TP.HCM.";
-      next = {
-        ...next,
-        metaDescription: `${desc2}${extra}`.replace(/\s+/g, " ").trim().slice(0, 160),
-      };
-    }
-
     return next;
   });
 }
 
 function applySitemapNoindexFlags(posts: SeedPost[]): SeedPost[] {
   return posts.map((p) => {
-    if (p.noindex === false) return p;
-    return shouldNoindexPostSlug(p.slug) ? { ...p, noindex: true } : p;
+    // shouldNoindex thắng cả money override (noindex: false) — ví dụ trang cannibal đã 301.
+    if (shouldNoindexPostSlug(p.slug)) return { ...p, noindex: true };
+    return p;
   });
 }
 

@@ -23,6 +23,14 @@ const HAND_PILLAR_SLUGS = new Set([
   "thiet-ke-nha-dep-dak-lak",
 ]);
 
+/**
+ * URL đã 301 về trang tiền khác — noindex + bỏ sitemap để hết cannibalization.
+ * Redirect thật nằm ở legacy-redirects.ts.
+ */
+const CANNIBAL_REDIRECT_SLUGS = new Set([
+  "sua-chua-nha-tron-goi-tphcm",
+]);
+
 const MONEY_SET = new Set(MONEY_PAGE_OVERRIDE_SLUGS);
 
 /** Factory/calendar batches — nội dung mẫu trùng, gây "Crawled – not indexed". */
@@ -47,14 +55,15 @@ export function isMoneyPageSlug(slug: string): boolean {
 
 /**
  * Factory từ khóa ngắn (calendar batch 15–64) — slug luôn kết thúc `-ngan`.
- * Trùng khung intro/H2/FAQ; money page không dùng suffix này.
+ * Batch 65+ dùng suffix `-sk65`…`-sk73` (cùng khung doorway) — cũng noindex.
  */
 function isShortKeywordFactorySlug(slug: string): boolean {
-  return slug.endsWith("-ngan");
+  return slug.endsWith("-ngan") || /-sk\d+$/i.test(slug);
 }
 
 /** Thin factory trừ money/hand pillar → noindex + bỏ sitemap. */
 export function shouldNoindexPostSlug(slug: string): boolean {
+  if (CANNIBAL_REDIRECT_SLUGS.has(slug)) return true;
   if (MONEY_SET.has(slug) || HAND_PILLAR_SLUGS.has(slug)) return false;
   if (isShortKeywordFactorySlug(slug)) return true;
   return THIN_FACTORY_SLUGS.has(slug);

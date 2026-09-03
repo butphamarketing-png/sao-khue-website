@@ -74,7 +74,9 @@ export const SOFT_SEO_DEPTH_R5: Record<string, string> = {
 };
 
 export function applySoftSeoDepthR5<T extends { slug: string; content: string }>(posts: T[]): T[] {
+  const skip = new Set(["ve-chung-toi", "so-do-to-chuc", "hoat-dong-sao-khue", "tuyen-dung"]);
   return posts.map((p) => {
+    if (skip.has(p.slug)) return p;
     const extra = SOFT_SEO_DEPTH_R5[p.slug];
     if (!extra || p.content.includes('data-soft-seo-r5="1"')) return p;
     return { ...p, content: `${p.content}\n<div data-soft-seo-r5="1">\n${extra}\n</div>` };

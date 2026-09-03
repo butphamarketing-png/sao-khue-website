@@ -8,10 +8,34 @@ import {
 } from "./article-content-blocks";
 import { faqSection, homeLinkParagraph, imageFigure, seoCtaBlock } from "./article-seo-blocks";
 import { countWordsFromArticleHtml } from "./article-toc";
-import { isSitemapIndexablePost } from "./sitemap-policy";
+import { isMoneyPageSlug, isSitemapIndexablePost } from "./sitemap-policy";
 import { slugImage } from "./site-images";
+import { normalizeCategory } from "./categories";
 
 const TARGET_MIN = 1500;
+
+/** Không ghi đè nội dung viết tay / trang dịch vụ / giới thiệu — tránh keyword stuffing. */
+function shouldSkipThinRebuild(slug: string, category?: string): boolean {
+  if (isMoneyPageSlug(slug)) return true;
+  const cat = normalizeCategory(category ?? "");
+  if (
+    cat === "dich-vu" ||
+    cat === "cong-trinh" ||
+    cat === "bai-viet" ||
+    cat === "gioi-thieu"
+  ) {
+    return true;
+  }
+  // Pillar Đắk Lắk / bài tay đã có H2 riêng
+  if (
+    /^(sua-chua-nha-dak-lak|cai-tao-nha-dak-lak|thiet-ke-nha-dep-dak-lak|xay-nha-dep-dak-lak)$/.test(
+      slug,
+    )
+  ) {
+    return true;
+  }
+  return false;
+}
 
 type Topic =
   | "repair"
@@ -144,9 +168,9 @@ function intro(kw: string, loc: string, slug: string, topic: Topic): string {
 function scopeSection(kw: string, loc: string, slug: string, topic: Topic): string {
   const lot = lotHint(slug);
   if (topic === "company") {
-    return `<h2>${kw} tại Sao Khuê gồm những gì?</h2>
+    return `<h2>Sao Khuê gồm những gì khi làm việc với chủ nhà?</h2>
 <p>Ban giám đốc chốt hợp đồng và ngân sách. Phòng thiết kế lập mặt bằng – phối cảnh. Đội thi công triển khai hiện trường. Vật tư nhập theo list trong HĐ. CSKH theo dõi bảo hành sau bàn giao.</p>
-<p>Chủ nhà không phải điều phối năm đội thợ lẻ. Một đầu mối chịu trách nhiệm <strong>${kw}</strong> từ tư vấn đến bảo hành.</p>
+<p>Chủ nhà không phải điều phối năm đội thợ lẻ. Một đầu mối chịu trách nhiệm từ tư vấn đến bảo hành — phù hợp nhu cầu <strong>${kw}</strong>.</p>
 <ul>
   <li>Thiết kế 2D/3D khi ký xây trọn gói (theo quy mô).</li>
   <li>Giám sát cốt thép trước mỗi ca đổ.</li>
@@ -155,7 +179,7 @@ function scopeSection(kw: string, loc: string, slug: string, topic: Topic): stri
 </ul>`;
   }
   if (topic === "rough") {
-    return `<h2>Phạm vi ${kw} — phần thô đúng nghĩa</h2>
+    return `<h2>Phạm vi phần thô đúng nghĩa</h2>
 <p>Phần thô gồm móng, đà kiềng, cột, dầm, sàn, tường, mái chờ, điện nước âm. Không gồm ốp lát, sơn, cửa hoàn thiện, thiết bị vệ sinh. Tại <strong>${loc}</strong>, ${lot}.</p>
 <p>Sao Khuê chụp cốt thép trước đổ, ngâm sân thượng/WC theo biên bản. Không nhận “thô giá mạng” khi chưa đo hẻm và nền.</p>
 <ul>
@@ -165,7 +189,7 @@ function scopeSection(kw: string, loc: string, slug: string, topic: Topic): stri
 </ul>`;
   }
   if (topic === "renovation" || topic === "repair") {
-    return `<h2>Phạm vi ${kw} nên chốt trước khi đập</h2>
+    return `<h2>Phạm vi nên chốt trước khi đập</h2>
 <p>Thứ tự đúng: kết cấu &amp; chống thấm → điện nước → ốp lát – sơn – cửa. Đập thông, mở cửa lớn, nâng tầng phải khảo sát cột–móng trước. Tại <strong>${loc}</strong>, ${lot}.</p>
 <p>Nhà đang ở có thể làm theo giai đoạn (WC–bếp trước, mặt tiền sau). Mọi phát sinh ghi phụ lục, không “làm luôn rồi tính”.</p>
 <ul>
@@ -175,16 +199,16 @@ function scopeSection(kw: string, loc: string, slug: string, topic: Topic): stri
 </ul>`;
   }
   if (topic === "pricing") {
-    return `<h2>Cách đọc ${kw} cho đúng</h2>
+    return `<h2>Cách đọc báo giá cho đúng</h2>
 <p>Một con số m² trên mạng không gồm cọc, thang máy, facade kính, hẻm hẹp. Tại <strong>${loc}</strong>, ${lot}. Hãy yêu cầu bảng tách: thô / hoàn thiện / phụ lục.</p>
-<p>Sao Khuê báo sau khảo sát. Máy tính tại <a href="/bao-gia">/bao-gia</a> chỉ để ước lượng — HĐ chính thức sau đo đất.</p>
+<p>Sao Khuê báo sau khảo sát. Máy tính tại <a href="/bao-gia">/bao-gia</a> chỉ để ước lượng — HĐ chính thức sau đo đất. Từ khóa tìm kiếm phổ biến: <strong>${kw}</strong>.</p>
 <ul>
   <li>Thô tham khảo 3,55–3,8 triệu/m² sàn (chưa cọc đặc biệt).</li>
   <li>Trọn gói 4,85–6,7 triệu/m² tùy vật tư.</li>
   <li>Giữ 10% đến nghiệm thu cuối.</li>
 </ul>`;
   }
-  return `<h2>${kw} gồm những hạng mục nào?</h2>
+  return `<h2>Gói dịch vụ gồm những hạng mục nào?</h2>
 <p>Gói trọn gói: thiết kế tối ưu, phần thô, hoàn thiện theo list, nghiệm thu, bảo hành. Gói thô: dừng ở mái chờ. Tại <strong>${loc}</strong>, ${lot}.</p>
 <p>Chốt thô hay trọn gói trước khi ký phụ lục cửa kính và sân. Không cắt thép–chống thấm để “giảm giá”.</p>
 <ul>
@@ -201,16 +225,16 @@ function processSection(kw: string, loc: string, slug: string): string {
     "Biên bản tường chung với hàng xóm ký trước khi đào móng — tránh tranh chấp giữa chừng.",
     "Ảnh nhật ký từng sàn giúp chủ nhà theo dõi dù không có mặt cả ngày.",
   ]);
-  return `<h2>Quy trình ${kw} 6 bước</h2>
+  return `<h2>Quy trình 6 bước</h2>
 <ol>
-  <li><strong>Tiếp nhận:</strong> gọi 0909 075 668 hoặc form <a href="/lien-he">/lien-he</a> — mô tả ${kw} và gửi ảnh.</li>
+  <li><strong>Tiếp nhận:</strong> gọi 0909 075 668 hoặc form <a href="/lien-he">/lien-he</a> — mô tả nhu cầu và gửi ảnh.</li>
   <li><strong>Khảo sát ${loc}:</strong> đo đất, hẻm, cao độ, hỏi GPXD / số tầng cho phép.</li>
   <li><strong>Phương án:</strong> mặt bằng, phối cảnh (nếu cần), list vật tư.</li>
   <li><strong>Báo giá &amp; HĐ:</strong> tách thô / trọn gói / phụ lục; điều khoản phát sinh bằng văn bản.</li>
   <li><strong>Thi công:</strong> giám sát cốt thép, nhật ký, nghiệm thu mốc. ${extra}</li>
   <li><strong>Bàn giao:</strong> vệ sinh, hồ sơ bảo hành, hướng dẫn bảo trì.</li>
 </ol>
-<p>Chi tiết A–Z: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình xây nhà trọn gói</a>.</p>`;
+<p>Chi tiết A–Z: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình xây nhà trọn gói</a>. Gói liên quan: <strong>${kw}</strong>.</p>`;
 }
 
 function localSection(kw: string, loc: string, slug: string): string {
@@ -232,9 +256,9 @@ function localSection(kw: string, loc: string, slug: string): string {
       "Mùa mưa kéo dài: chừa buffer chống thấm tum/WC, không lát gạch sân thượng khi còn ngấm.",
       "Hẻm < 3 m: phụ phí ba gác / bơm từ mặt tiền — hỏi rõ trước khi so giá m².",
     ]);
-  return `<h2>${kw} tại ${loc} — lưu ý hiện trường</h2>
+  return `<h2>Lưu ý hiện trường tại ${loc}</h2>
 <p>${note}</p>
-<p>Gửi 3 ảnh khi hẹn khảo sát: hẻm/đường vào, mặt tiền, hiện trạng bên trong (che số). Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo. ${lotHint(slug)}.</p>
+<p>Gửi 3 ảnh khi hẹn khảo sát: hẻm/đường vào, mặt tiền, hiện trạng bên trong (che số). Sao Khuê ước lượng trong ngày làm việc rồi hẹn đo. ${lotHint(slug)}</p>
 <p>${pick(slug, [
     "Không ký HĐ khi chưa thấy list thép–xi măng–sơn.",
     "Không trả hết khi còn hạng mục tum/WC chưa ngâm nước.",
@@ -243,47 +267,47 @@ function localSection(kw: string, loc: string, slug: string): string {
 }
 
 function mistakesSection(kw: string, slug: string): string {
-  return `<h2>Sai lầm thường gặp khi làm ${kw}</h2>
+  return `<h2>Sai lầm thường gặp</h2>
 <ul>
   <li>${pick(slug, ["Chọn thầu theo giá m² Facebook, không đo hẻm.", "Tin 'bao giấy phép' khi chưa đọc quy hoạch phường.", "Cắt chống thấm tum để tiết kiệm — sửa mùa mưa đắt gấp đôi."], 0)}</li>
   <li>${pick(slug, ["Đổi thiết kế sau khi đã đổ sàn mà không lập phụ lục.", "Thuê nhiều đội lẻ không ai chịu chống thấm.", "Làm facade trước khi xử lý thấm tường ngoài."], 1)}</li>
   <li>${pick(slug, ["Không chụp cốt thép — mất bằng chứng bảo hành.", "Trả 100% trước nghiệm thu cuối.", "Tự ý nâng tầng khi móng cũ không đủ."], 2)}</li>
 </ul>
-<p>Sao Khuê từ chối nhận việc nếu khảo sát cho thấy không an toàn hoặc không xin phép được — nói thẳng trước khi thu tiền.</p>`;
+<p>Sao Khuê từ chối nhận việc nếu khảo sát cho thấy không an toàn hoặc không xin phép được — nói thẳng trước khi thu tiền. Áp dụng khi tìm <strong>${kw}</strong>.</p>`;
 }
 
 function caseSection(kw: string, loc: string, slug: string): string {
   const size = pick(slug, ["4×16 m", "5×18 m", "4×12 m", "5×20 m", "6×16 m"]);
   const floors = pick(slug, ["1 trệt 2 lầu", "1 trệt 1 lầu", "1 trệt 3 lầu", "cấp 4 mái Thái"], 1);
-  return `<h2>Tình huống thực tế gần với ${kw}</h2>
+  return `<h2>Tình huống thực tế gần đây</h2>
 <p>Một gia đình tại <strong>${loc}</strong> có lô ${size}, muốn ${floors}. Yêu cầu ban đầu là “giá rẻ nhất”. Sau khảo sát, Sao Khuê tách: phần bắt buộc (móng/gia cố, chống thấm, điện chống giật) và phần có thể làm sau (phào, đèn trang trí, tủ bếp cao cấp).</p>
-<p>Kết quả: chốt gói ${kw} đúng ngân sách, tiến độ ghi mốc móng–sàn–mái–hoàn thiện. Chủ nhà giữ 10% đến nghiệm thu. Đây không phải case quảng cáo — là cách đọc dự toán để <strong>${kw}</strong> không đội giá giữa chừng.</p>
+<p>Kết quả: chốt gói đúng ngân sách, tiến độ ghi mốc móng–sàn–mái–hoàn thiện. Chủ nhà giữ 10% đến nghiệm thu — tránh đội giá giữa chừng khi làm <strong>${kw}</strong>.</p>
 <p>Muốn xem mẫu ảnh: <a href="/mau-nha">catalog mẫu nhà hiện đại</a> · công trình: <a href="/cong-trinh">/cong-trinh</a>.</p>`;
 }
 
 function extraTopicDepth(kw: string, loc: string, topic: Topic): string {
   if (topic === "company") {
     return `<h2>Cách liên hệ và làm việc hàng ngày</h2>
-<p>Chủ nhà gọi <strong>0909 075 668</strong>, Zalo hoặc form <a href="/lien-he">/lien-he</a>. CSKH ghi nhu cầu ${kw}, hẹn khảo sát, chuyển thiết kế/thi công. Mọi thay đổi phát sinh đi qua phụ lục — không “nói miệng với thợ”. Văn phòng 245/8 Bình Lợi, Bình Thạnh nhận khách trong giờ hành chính.</p>
+<p>Chủ nhà gọi <strong>0909 075 668</strong>, Zalo hoặc form <a href="/lien-he">/lien-he</a>. CSKH ghi nhu cầu, hẹn khảo sát, chuyển thiết kế/thi công. Mọi thay đổi phát sinh đi qua phụ lục — không “nói miệng với thợ”. Văn phòng 245/8 Bình Lợi, Bình Thạnh nhận khách trong giờ hành chính.</p>
 <p>Sau bàn giao, phiếu bảo hành nêu hạng mục kết cấu 10 năm và hoàn thiện theo HĐ. Sự cố trong thời hạn: kỹ thuật khảo sát, xử lý theo cam kết — không đẩy cho thầu phụ đã biến.</p>`;
   }
   if (topic === "legal") {
-    return `<h2>Hồ sơ ${kw} chủ nhà nên chuẩn bị</h2>
+    return `<h2>Hồ sơ chủ nhà nên chuẩn bị</h2>
 <p>Bản sao giấy tờ nhà đất, GPXD cũ (nếu có), ảnh hiện trạng 4 mặt, bản vẽ cải tạo/xây mới. Đổi mặt đứng lớn, nâng tầng, đục cột chịu lực thường phải xin lại. Sơn–ốp–điện nước trong nhà thường không. Sao Khuê đọc hiện trạng trước khi hứa tiến độ.</p>
-<p>Tại ${loc}, chỉ giới đường và chiều cao phường quyết định số tầng. Không đào móng khi hồ sơ còn treo. Landing: <a href="/xay-nha">/xay-nha</a> · <a href="/cai-tao-nha">/cai-tao-nha</a>. Cải tạo nhỏ trong nhà vẫn nên hỏi kỹ sư trước khi đục — tránh đụng dầm, điện âm, ống nước.</p>`;
+<p>Tại ${loc}, chỉ giới đường và chiều cao phường quyết định số tầng. Không đào móng khi hồ sơ còn treo. Landing: <a href="/xay-nha">/xay-nha</a> · <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`;
   }
   if (topic === "fengshui") {
-    return `<h2>${kw} gắn với mặt bằng thật</h2>
+    return `<h2>Phong thủy gắn với mặt bằng thật</h2>
 <p>Cửa chính không đối cầu thang thẳng. Bếp tránh sát cửa trước. Phòng ngủ ưu tiên yên, không đặt đầu giường dưới đà lớn nếu có phương án khác. Sao Khuê điều chỉnh mặt bằng cho ${loc} — không đập nhà để “hóa giải” khi kết cấu đang tốt.</p>
-<p>Giếng trời, cửa sổ sau và lam mặt tiền vừa lấy sáng vừa giảm ẩm. ${kw} chỉ có ý nghĩa khi nhà ở được, xin phép được và thoát nước đúng.</p>`;
+<p>Giếng trời, cửa sổ sau và lam mặt tiền vừa lấy sáng vừa giảm ẩm. Phong thủy chỉ có ý nghĩa khi nhà ở được, xin phép được và thoát nước đúng.</p>`;
   }
   if (topic === "design") {
-    return `<h2>Hồ sơ thiết kế trước khi thi công ${kw}</h2>
+    return `<h2>Hồ sơ thiết kế trước khi thi công</h2>
 <p>Mặt bằng các tầng, mặt đứng, mặt cắt, phối cảnh 3D, dự toán sơ bộ. Chốt công năng (số phòng, xe, bàn thờ, giếng) trước màu sơn. Thiết kế tốt giảm 10–20% phát sinh đập sửa tại ${loc}.</p>
 <p>Catalog: <a href="/mau-nha">mẫu nhà hiện đại</a>. Dịch vụ: <a href="/thiet-ke">/thiet-ke</a>.</p>`;
   }
-  return `<h2>Giám sát hiện trường khi làm ${kw}</h2>
-<p>Mỗi sàn: ảnh cốt thép, biên bản đổ, nhật ký thời tiết. Chủ nhà không cần đứng công trường cả ngày nhưng nên có mốc nghiệm thu. Sao Khuê gửi tiến độ qua Zalo. ${kw} sai ở cốt thép thì hoàn thiện đẹp cũng không cứu được.</p>
+  return `<h2>Giám sát hiện trường</h2>
+<p>Mỗi sàn: ảnh cốt thép, biên bản đổ, nhật ký thời tiết. Chủ nhà không cần đứng công trường cả ngày nhưng nên có mốc nghiệm thu. Sao Khuê gửi tiến độ qua Zalo. Sai ở cốt thép thì hoàn thiện đẹp cũng không cứu được.</p>
 <p>Hẻm hẹp tại ${loc}: xếp ca bơm, bảo vệ mặt đường, thu dọn phế thải trong ngày. Phụ phí ghi rõ — không nuốt vào m².</p>`;
 }
 
@@ -323,7 +347,7 @@ function faq(kw: string, loc: string, topic: Topic): string {
       a: "Phát sinh chỉ khi đổi thiết kế, vật tư hoặc phát hiện địa chất/kết cấu khác khảo sát. Mọi phát sinh báo giá trước, có xác nhận văn bản.",
     },
   ];
-  return faqSection(items, `FAQ — ${kw}`);
+  return faqSection(items, `Câu hỏi thường gặp`);
 }
 
 export function buildRebuiltArticleHtml(input: {
@@ -337,30 +361,31 @@ export function buildRebuiltArticleHtml(input: {
   const intent = intentOf(topic);
   const h2 = kw.charAt(0).toUpperCase() + kw.slice(1);
 
+  // H2 tự nhiên — chỉ nhúng từ khóa 1–2 lần trong body, không nhồi mọi tiêu đề.
   const leadH2 =
     topic === "company"
-      ? `${h2} — cơ cấu và cách Sao Khuê làm việc với chủ nhà`
+      ? "Cơ cấu và cách Sao Khuê làm việc với chủ nhà"
       : topic === "legal"
-        ? `${h2} — hồ sơ, chỉ giới và thi công đúng phép`
+        ? "Hồ sơ, chỉ giới và thi công đúng phép"
         : topic === "fengshui"
-          ? `${h2} — công năng trước, hướng nhà sau`
-          : `${h2} — làm đúng từ khảo sát, không từ giá mạng`;
+          ? "Công năng trước, hướng nhà sau"
+          : `${h2}: làm đúng từ khảo sát, không từ giá mạng`;
 
   const pricing =
     articlePricingTableBlock(intent, loc, input.slug, kw) ||
-    `<h2>Chi phí liên quan tới ${kw}</h2>
-<p>Thiết kế / tư vấn: báo theo hồ sơ. Thi công: xem <a href="/bao-gia">bảng báo giá</a> — thô 3,55–3,8 triệu/m², trọn gói 4,85–6,7 triệu/m² (tham khảo ${loc}).</p>`;
+    `<h2>Chi phí tham khảo tại ${loc}</h2>
+<p>Thiết kế / tư vấn: báo theo hồ sơ. Thi công: xem <a href="/bao-gia">bảng báo giá</a> — thô 3,55–3,8 triệu/m², trọn gói 4,85–6,7 triệu/m² (tham khảo).</p>`;
 
   let html = `
 <h2>${leadH2}</h2>
 ${intro(kw, loc, input.slug, topic)}
 ${homeLinkParagraph("Xem thêm hồ sơ năng lực tại")}
 
-${imageFigure(slugImage(input.slug, 0), kw, 1)}
+${imageFigure(slugImage(input.slug, 0), `${h2} tại ${loc}`, 1)}
 
 ${scopeSection(kw, loc, input.slug, topic)}
 
-${imageFigure(slugImage(input.slug, 1), kw, 2)}
+${imageFigure(slugImage(input.slug, 1), `Hiện trường thi công ${loc}`, 2)}
 
 ${processSection(kw, loc, input.slug)}
 
@@ -368,7 +393,7 @@ ${pricing}
 
 ${localSection(kw, loc, input.slug)}
 
-${imageFigure(slugImage(input.slug, 2), kw, 3)}
+${imageFigure(slugImage(input.slug, 2), `Nghiệm thu công trình ${loc}`, 3)}
 
 ${mistakesSection(kw, input.slug)}
 
@@ -376,28 +401,28 @@ ${caseSection(kw, loc, input.slug)}
 
 ${extraTopicDepth(kw, loc, topic)}
 
-<h2>Vật tư &amp; nghiệm thu khi triển khai ${kw}</h2>
+<h2>Vật tư &amp; nghiệm thu</h2>
 <p>List thép, xi măng, gạch, sơn ghi mã trong hợp đồng. Chủ nhà được xem mẫu gạch–sơn tại công trường trước khi làm diện rộng. ${pick(input.slug, [
     "Không nhận vật tư 'tương đương' khi chưa ký phụ lục.",
     "Nghiệm thu thép: đủ số cây, neo, gối — có ảnh trước đổ.",
     "WC và tum: ngâm nước theo biên bản, không sơn đè chỗ còn ẩm.",
   ])}</p>
-<p>Điện chống giật, tiếp địa, CB từng tầng. Nước: ống PPR/PVC đúng áp. Đây là hạng mục không cắt khi làm <strong>${kw}</strong> cho nhà ở lâu dài.</p>
+<p>Điện chống giật, tiếp địa, CB từng tầng. Nước: ống PPR/PVC đúng áp — hạng mục không cắt khi làm nhà ở lâu dài tại ${loc}.</p>
 
-<h2>Chuẩn bị hồ sơ trước ngày làm ${kw}</h2>
+<h2>Chuẩn bị hồ sơ trước khi khởi công</h2>
 <p>Bản sao giấy tờ nhà đất, ảnh hiện trạng, nhu cầu từng tầng (số phòng, xe, kinh doanh), ngân sách dự kiến. Nếu nhà đang ở, chỉ định khu ưu tiên để hạn chế xáo trộn.</p>
-<p>Sao Khuê đối chiếu hồ sơ với khảo sát, chỉ ra việc bắt buộc và việc có thể dãn theo quý. Chuẩn bị tốt giúp ${kw} chốt HĐ nhanh, ít phát sinh.</p>
+<p>Sao Khuê đối chiếu hồ sơ với khảo sát, chỉ ra việc bắt buộc và việc có thể dãn theo quý — giúp chốt HĐ nhanh, ít phát sinh cho gói <strong>${kw}</strong>.</p>
 
-<h2>Thanh toán theo mốc cho ${kw}</h2>
+<h2>Thanh toán theo mốc</h2>
 <p>Tạm ứng theo nghiệm thu: móng → sàn các tầng → mái chờ → hoàn thiện. Giữ khoảng 10% đến bàn giao. Không trả hết khi tum/WC chưa ngâm nước. Mọi đổi phát sinh lập phụ lục trước khi làm.</p>
-<p>Tại ${loc}, phụ phí hẻm – bơm bê tông – khiêng ghi rõ dòng, không gộp ảo vào đơn giá m² của ${kw}.</p>
+<p>Tại ${loc}, phụ phí hẻm – bơm bê tông – khiêng ghi rõ dòng, không gộp ảo vào đơn giá m².</p>
 
-<h2>Ai phù hợp với ${kw}?</h2>
+<h2>Ai phù hợp với dịch vụ này?</h2>
 <p>Gia đình có đất hoặc nhà cũ tại ${loc}, đã hình dung số tầng và ngân sách, muốn một nhà thầu trực tiếp thi công. ${lotHint(input.slug)}. Nếu chưa chốt GPXD, Sao Khuê tư vấn phép trước khi đào móng.</p>
-<p>Không phù hợp nếu chủ nhà muốn tự mua vật tư lẻ từng ngày mà không nghiệm thu, hoặc yêu cầu cắt kết cấu để lấy giá thấp. ${kw} bền khi thống nhất phạm vi trên giấy.</p>
+<p>Không phù hợp nếu chủ nhà muốn tự mua vật tư lẻ từng ngày mà không nghiệm thu, hoặc yêu cầu cắt kết cấu để lấy giá thấp. Công trình bền khi thống nhất phạm vi trên giấy.</p>
 <p>Nhà đang cho thuê / đang ở: làm theo giai đoạn, che chắn bụi, ưu tiên WC–bếp–điện nước trước mặt tiền. Trao đổi lịch ca đổ để hạn chế ảnh hưởng hàng xóm.</p>
 
-<h2>Checklist trước khi ký ${kw}</h2>
+<h2>Checklist trước khi ký hợp đồng</h2>
 <ul>
   <li>Đã khảo sát hiện trạng, không báo giá qua tin nhắn không ảnh.</li>
   <li>HĐ có list vật tư, tiến độ, bảo hành kết cấu.</li>
@@ -405,7 +430,7 @@ ${extraTopicDepth(kw, loc, topic)}
   <li>Hàng xóm / tường chung đã trao đổi nếu đào móng.</li>
   <li>GPXD hoặc tư vấn phép xong trước khi đục chịu lực / nâng tầng.</li>
 </ul>
-<p>In checklist này khi làm việc với bất kỳ nhà thầu nào — không chỉ Sao Khuê. ${kw} bền khi quy trình rõ, không khi giá thấp nhất.</p>
+<p>In checklist này khi làm việc với bất kỳ nhà thầu nào — không chỉ Sao Khuê. Quy trình rõ quan trọng hơn giá thấp nhất.</p>
 <p>Văn phòng: 245/8 Bình Lợi, P.13, Bình Thạnh, TP.HCM. Zalo/hotline <strong>0909 075 668</strong>.</p>
 
 ${faq(kw, loc, topic)}
@@ -430,6 +455,7 @@ export function applyThinArticleRebuild<
 >(posts: T[]): T[] {
   return posts.map((p) => {
     if (p.noindex) return p;
+    if (shouldSkipThinRebuild(p.slug, p.category)) return p;
     if (!isSitemapIndexablePost({ slug: p.slug, category: p.category })) return p;
     const words = countWordsFromArticleHtml(p.content ?? "");
     if (words >= TARGET_MIN) return p;

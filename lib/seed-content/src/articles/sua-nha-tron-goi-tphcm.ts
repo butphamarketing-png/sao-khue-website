@@ -1,94 +1,90 @@
-﻿/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm */
+﻿/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm (trang tiền sửa nhà) */
 export const suaNhaTronGoiTphcm = {
   title: "Sửa Nhà Trọn Gói TP.HCM 2026 — Báo Giá Minh Bạch | Sao Khuê",
   excerpt:
-    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá sửa nhà theo hạng mục, thi công một đầu mối, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
+    "Sửa nhà trọn gói TP.HCM: khảo sát miễn phí, báo giá theo hạng mục, thi công một đầu mối, bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
   metaTitle: "Sửa Nhà Trọn Gói TP.HCM — Báo Giá 2026 | Sao Khuê",
   metaDescription:
-    "Sửa nhà trọn gói TP.HCM: báo giá sửa nhà 1–5 triệu/m² tùy mức độ. Khảo sát miễn phí, không phát sinh ảo — 0909 075 668.",
+    "Sửa nhà trọn gói TP.HCM 2026: bảng giá theo hạng mục, khảo khảo sát miễn phí, không phát sinh ảo. Sao Khuê — 0909 075 668.",
   metaKeywords:
-    "sửa nhà trọn gói tphcm, báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa chữa nhà tp hcm, cải tạo nhà phố, dịch vụ sửa nhà tphcm, kiến trúc sao khuê",
+    "sửa nhà trọn gói tphcm, báo giá sửa nhà, sửa chữa nhà tp hcm, cải tạo nhà phố, kiến trúc sao khuê",
   content: `
-<h2>Dịch vụ sửa nhà trọn gói tại TP.HCM — An tâm từ khảo sát đến bàn giao</h2>
-<p>Nhà ở sau nhiều năm sử dụng thường xuất hiện các vấn đề: <strong>ẩm mốc, nứt tường, hệ thống điện nước xuống cấp, không gian chật chội</strong> hoặc lỗi thời so với nhu cầu sinh hoạt hiện đại. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp <strong>dịch vụ sửa nhà trọn gói tại TP.HCM</strong> — một giải pháp toàn diện giúp chủ nhà tiết kiệm thời gian, kiểm soát chi phí và đảm bảo chất lượng thi công.</p>
-<p>Với hơn <strong>10 năm kinh nghiệm</strong> và hàng trăm công trình cải tạo, sửa chữa nhà phố, biệt thự, căn hộ tại các quận Bình Thạnh, Thủ Đức, Quận 3, Quận 7, Gò Vấp… chúng tôi hiểu rõ đặc thù từng loại nhà và đưa ra phương án tối ưu cho từng khách hàng.</p>
+<h2>Dịch vụ sửa nhà trọn gói tại TP.HCM</h2>
+<p>Nhà ở sau nhiều năm thường gặp ẩm mốc, nứt tường, điện nước xuống cấp hoặc công năng không còn phù hợp. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> nhận sửa nhà trọn gói tại TP.HCM — một đầu mối từ khảo sát, dự toán, thi công đến bàn giao, giúp chủ nhà kiểm soát chi phí và chất lượng.</p>
+<p>Với hơn <strong>10 năm kinh nghiệm</strong> cải tạo nhà phố, biệt thự và căn hộ tại Bình Thạnh, Thủ Đức, Quận 3, Quận 7, Gò Vấp… chúng tôi lập phương án theo hiện trạng thực tế, không báo giá “ảo” qua tin nhắn không ảnh.</p>
 
-<h2>Sửa nhà trọn gói là gì?</h2>
-<p><strong>Sửa nhà trọn gói</strong> nghĩa là đơn vị thi công đảm nhận toàn bộ quy trình: khảo sát hiện trạng, thiết kế (nếu cần), báo giá chi tiết, cung cấp vật tư, thi công và bàn giao công trình. Chủ nhà không phải tự tìm thợ từng hạng mục, tránh tình trạng <em>“thợ A làm nửa chừng, thợ B làm nửa còn lại”</em> dẫn đến không đồng bộ chất lượng và khó bảo hành.</p>
-<p>Sao Khuê cam kết <strong>một đầu mối duy nhất</strong>, hợp đồng rõ ràng, tiến độ minh bạch và bảo hành theo từng hạng mục.</p>
-
-<h2>Các hạng mục sửa chữa nhà trọn gói</h2>
-<p>Chúng tôi nhận sửa chữa, cải tạo, nâng cấp toàn diện cho nhà phố, nhà cấp 4, biệt thự và căn hộ:</p>
+<h2>Sửa nhà trọn gói gồm những gì?</h2>
+<p><strong>Sửa nhà trọn gói</strong> nghĩa là nhà thầu đảm nhận khảo sát, thiết kế (nếu cần), cung cấp vật tư, thi công và nghiệm thu. Chủ nhà không phải tự ghép thợ từng hạng mục — tránh lệch chất lượng và khó bảo hành.</p>
 <ul>
-  <li><strong>Cải tạo, sửa chữa kết cấu:</strong> gia cố móng, cột, dầm sàn; xử lý nứt tường, lún nền.</li>
-  <li><strong>Chống thấm:</strong> mái, sân thượng, nhà vệ sinh, tường ngoài — giải pháp lâu dài, không vá tạm.</li>
-  <li><strong>Điện — nước — PCCC:</strong> thay dây điện cũ, ống nước, bố trí ổ cắm, thiết bị vệ sinh an toàn.</li>
-  <li><strong>Hoàn thiện nội thất:</strong> trát, sơn, ốp lát, trần thạch cao, tủ bếp, phòng ngủ, phòng khách.</li>
-  <li><strong>Cải tạo mặt tiền:</strong> ốp đá, sơn ngoại thất, lan can, cửa nhôm kính, hệ thống chiếu sáng.</li>
-  <li><strong>Nâng tầng, mở rộng diện tích:</strong> khảo sát kết cấu, thiết kế, xin phép (hỗ trợ tư vấn) và thi công an toàn.</li>
-  <li><strong>Sửa nhà cũ thành nhà mới:</strong> tái thiết công năng, tối ưu ánh sáng, thông gió cho gia đình trẻ hoặc cho thuê.</li>
+  <li><strong>Kết cấu &amp; gia cố:</strong> móng, cột, dầm sàn; xử lý nứt, lún.</li>
+  <li><strong>Chống thấm:</strong> mái, sân thượng, WC, tường ngoài.</li>
+  <li><strong>Điện — nước:</strong> thay đường ống/dây cũ, ổ cắm, thiết bị vệ sinh an toàn.</li>
+  <li><strong>Hoàn thiện:</strong> trát, sơn, ốp lát, trần, tủ bếp, nội thất cơ bản.</li>
+  <li><strong>Mặt tiền:</strong> ốp đá, sơn ngoại thất, cửa nhôm kính, lan can.</li>
+  <li><strong>Nâng tầng / mở rộng:</strong> khảo sát kết cấu, tư vấn phép trước khi đục chịu lực.</li>
 </ul>
 
-<h2>Báo giá sửa nhà trọn gói TP.HCM tham khảo 2026</h2>
-<p><strong>Báo giá sửa nhà</strong> phụ thuộc hiện trạng, vật liệu và phạm vi. Bảng dưới là mốc để dự trù — chi tiết đầy đủ tại <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói TP.HCM</a>:</p>
+<h2>Bảng giá sửa nhà trọn gói TP.HCM 2026 (theo hạng mục)</h2>
+<p>Giá sửa nhà không nên chỉ dựa vào “một con số m²”. Sao Khuê bóc tách theo hạng mục sau khảo sát. Bảng dưới mang tính <strong>tham khảo</strong> — số chính thức sau đo hiện trạng:</p>
 <table>
   <thead>
-    <tr><th>Hạng mục</th><th>Đơn giá tham khảo</th><th>Ghi chú</th></tr>
+    <tr><th>Nhóm hạng mục</th><th>Đơn vị</th><th>Đơn giá tham khảo (2026)</th></tr>
   </thead>
   <tbody>
-    <tr><td>Sửa chữa cơ bản (sơn, lát, nhỏ)</td><td>2,5 – 4 triệu/m²</td><td>Nhà ở mức độ hư hỏng nhẹ</td></tr>
-    <tr><td>Cải tạo toàn diện nội thất</td><td>4 – 7 triệu/m²</td><td>Thay điện nước, trần, sàn, tủ</td></tr>
-    <tr><td>Sửa nhà trọn gói (cải tạo lớn)</td><td>7 – 12 triệu/m²</td><td>Thay đổi bố cục, gia cố, nâng cấp</td></tr>
-    <tr><td>Chống thấm mái / sân thượng</td><td>150 – 350 nghìn/m²</td><td>Tùy lớp phủ và diện tích</td></tr>
-    <tr><td>Nâng thêm 1 tầng nhà phố</td><td>Liên hệ báo giá</td><td>Cần khảo sát kết cấu cụ thể</td></tr>
+    <tr><td>Đập phá, tháo dỡ tường / nền</td><td>m²</td><td>80.000 – 180.000</td></tr>
+    <tr><td>Chống thấm WC / sân thượng</td><td>m²</td><td>180.000 – 450.000</td></tr>
+    <tr><td>Trát tường trong / ngoài</td><td>m²</td><td>120.000 – 220.000</td></tr>
+    <tr><td>Sơn nước trong nhà (gồm lót)</td><td>m²</td><td>90.000 – 160.000</td></tr>
+    <tr><td>Ốp lát gạch (chưa gồm gạch)</td><td>m²</td><td>120.000 – 200.000</td></tr>
+    <tr><td>Cải tạo WC / bếp trọn bộ</td><td>hạng mục</td><td>25 – 80 triệu / khu</td></tr>
+    <tr><td>Điện nước cải tạo (ước theo điểm)</td><td>công trình</td><td>báo sau khảo sát</td></tr>
+    <tr><td>Sơn – lát nhẹ toàn căn</td><td>m² sàn</td><td>1,5 – 3 triệu</td></tr>
+    <tr><td>Cải tạo WC–bếp + hoàn thiện vừa</td><td>m² sàn</td><td>4 – 7 triệu</td></tr>
+    <tr><td>Cải tạo toàn căn (gia cố + hoàn thiện)</td><td>m² sàn</td><td>8 – 15 triệu</td></tr>
   </tbody>
 </table>
-<p><em>Lưu ý:</em> Báo giá chính thức chỉ được lập sau khi Sao Khuê <strong>khảo sát thực tế miễn phí</strong> và thống nhất phương án thi công với chủ nhà.</p>
+<p><em>Lưu ý:</em> Nhà đang ở thường +10–20% che chắn/giai đoạn. Hẻm hẹp có phụ phí logistics — ghi rõ trong dự toán, không gộp ảo vào m². Chi tiết thêm: <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói</a>.</p>
 
-<h2>Quy trình sửa nhà trọn gói 6 bước tại Sao Khuê</h2>
+<h2>Quy trình 6 bước tại Sao Khuê</h2>
 <ol>
-  <li><strong>Tiếp nhận &amp; tư vấn sơ bộ:</strong> Ghi nhận nhu cầu qua hotline, Zalo hoặc form liên hệ trên website.</li>
-  <li><strong>Khảo sát hiện trạng:</strong> Kỹ sư đến tận công trình, chụp hình, đo đạc, ghi nhận hư hỏng và mong muốn cải tạo.</li>
-  <li><strong>Thiết kế &amp; phương án:</strong> Bản vẽ mặt bằng, phối cảnh (nếu cần), danh mục hạng mục và vật tư đề xuất.</li>
-  <li><strong>Báo giá chi tiết &amp; ký hợp đồng:</strong> Minh bạch từng hạng mục, tiến độ thanh toán theo công đoạn.</li>
-  <li><strong>Thi công &amp; giám sát:</strong> Đội thợ lành nghề, giám sát kỹ thuật chặt chẽ, cập nhật tiến độ hàng tuần.</li>
-  <li><strong>Nghiệm thu &amp; bảo hành:</strong> Bàn giao đúng hạn, hồ sơ bảo hành rõ ràng theo từng hạng mục.</li>
+  <li><strong>Tiếp nhận:</strong> Hotline / Zalo / form — mô tả nhu cầu, gửi ảnh hiện trạng.</li>
+  <li><strong>Khảo sát miễn phí:</strong> Đo đạc, ghi nhận thấm–nứt–điện nước, hỏi GPXD nếu đổi mặt đứng / nâng tầng.</li>
+  <li><strong>Phương án:</strong> List hạng mục, vật tư đề xuất, mặt bằng (nếu cần).</li>
+  <li><strong>Báo giá &amp; hợp đồng:</strong> Tách thô / trọn gói / phụ lục; phát sinh chỉ khi có xác nhận văn bản.</li>
+  <li><strong>Thi công &amp; giám sát:</strong> Nhật ký, nghiệm thu mốc; biên bản tường chung trước đào móng nếu cần.</li>
+  <li><strong>Bàn giao &amp; bảo hành:</strong> Hồ sơ bảo hành theo hạng mục (hoàn thiện 12–36 tháng; kết cấu tới 10 năm khi có gia cố).</li>
 </ol>
 
-<h2>Vì sao nên chọn Kiến Trúc Sao Khuê?</h2>
+<h2>Khi nào nên sửa trọn gói thay vì thuê thợ lẻ?</h2>
 <ul>
-  <li><strong>Kinh nghiệm thực tế:</strong> Hơn 10 năm trong lĩnh vực xây dựng dân dụng tại TP.HCM.</li>
-  <li><strong>Báo giá minh bạch:</strong> Không phát sinh bất hợp lý khi đã thống nhất hợp đồng.</li>
-  <li><strong>Vật liệu chính hãng:</strong> Nguồn gốc rõ ràng, có hóa đơn, phù hợp ngân sách từng gia đình.</li>
-  <li><strong>Đội ngũ chuyên môn:</strong> Kiến trúc sư, kỹ sư giám sát và thợ thi công được phân công theo từng hạng mục.</li>
-  <li><strong>Bảo hành uy tín:</strong> Hoàn thiện 12–36 tháng, kết cấu 10 năm (theo hạng mục trong hợp đồng).</li>
-  <li><strong>Hỗ trợ pháp lý:</strong> Tư vấn thủ tục xin giấy phép sửa chữa, cải tạo khi cần.</li>
+  <li>Nhiều hạng mục cùng lúc (thấm + điện nước + sơn + WC).</li>
+  <li>Cần đồng bộ chất lượng và một đầu mối bảo hành.</li>
+  <li>Nhà đang ở — cần che chắn, làm theo giai đoạn, hạn chế xáo trộn.</li>
+  <li>Có khả năng đụng kết cấu / nâng tầng — cần kỹ sư khảo sát trước.</li>
 </ul>
+<p>Nếu chỉ sơn một phòng hoặc thay một thiết bị, thuê thợ nhỏ vẫn hợp lý. Sao Khuê từ chối nhận việc nếu khảo sát cho thấy không an toàn hoặc không xin phép được — nói thẳng trước khi thu tiền.</p>
 
-<h2>Khu vực phục vụ sửa nhà trọn gói</h2>
-<p>Sao Khuê nhận sửa chữa nhà trọn gói trên toàn TP.HCM và vùng lân cận, đặc biệt các quận:</p>
-<p><strong>Quận 1, 3, 4, 5, 6, 7, 8, 10, 11, 12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Phú Nhuận, Bình Tân, Thủ Đức, Nhà Bè, Hóc Môn, Củ Chi…</strong></p>
-<p>Hotline hỗ trợ khảo sát nhanh trong ngày tại nội thành: <strong>0909 075 668</strong>.</p>
+<h2>Khu vực phục vụ</h2>
+<p>Toàn TP.HCM (Quận 1–12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Thủ Đức, Bình Tân, Nhà Bè, Hóc Môn, Củ Chi…) và vùng lân cận khi khảo sát được. Hotline trong ngày nội thành: <strong>0909 075 668</strong>.</p>
 
-<h2>Câu hỏi thường gặp (FAQ)</h2>
-<h3>Sửa nhà trọn gói mất bao lâu?</h3>
-<p>Tùy quy mô: cải tạo nhẹ 2–4 tuần; sửa chữa toàn diện 1–3 tháng; cải tạo lớn có nâng tầng có thể 3–6 tháng. Sao Khuê cam kết tiến độ trong hợp đồng.</p>
-<h3>Có cần xin giấy phép khi sửa nhà không?</h3>
-<p>Sửa chữa nhỏ trong nhà thường không cần. Cải tạo mặt tiền, thay đổi kết cấu, nâng tầng cần giấy phép. Chúng tôi tư vấn miễn phí hồ sơ phù hợp.</p>
-<h3>Thanh toán theo hình thức nào?</h3>
-<p>Thanh toán theo tiến độ công trình: đặt cọc → các đợt theo hạng mục hoàn thành → thanh toán khi nghiệm thu. Không yêu cầu thanh toán 100% trước khi thi công.</p>
-<h3>Có được xem công trình mẫu trước khi ký hợp đồng không?</h3>
-<p>Có. Khách hàng có thể tham khảo <a href="/cong-trinh/sua-nha-quan-3">công trình cải tạo nhà phố Quận 3</a> và các dự án khác trên website, hoặc đặt lịch tham quan công trình đang thi công.</p>
+<h2>Câu hỏi thường gặp</h2>
+<h3>Sửa nhà trọn gói hết bao nhiêu?</h3>
+<p>Phụ thuộc hiện trạng và phạm vi. Ước nhanh theo bảng trên; số chốt sau khảo sát miễn phí. Không dùng đơn giá xây nhà mới (4,85–6,7 triệu/m²) để tính sửa chữa.</p>
+<h3>Mất bao lâu?</h3>
+<p>Cải tạo nhẹ 2–4 tuần; toàn diện 1–3 tháng; có nâng tầng / gia cố có thể 3–6 tháng. Tiến độ ghi trong hợp đồng.</p>
+<h3>Có cần giấy phép không?</h3>
+<p>Sửa nhỏ trong nhà thường không cần. Đổi mặt đứng lớn, đục chịu lực, nâng tầng cần phép — chúng tôi tư vấn hồ sơ phù hợp.</p>
+<h3>Thanh toán thế nào?</h3>
+<p>Theo tiến độ nghiệm thu; giữ khoảng 10% đến bàn giao. Không yêu cầu trả 100% trước khi thi công.</p>
+<h3>Xem công trình mẫu được không?</h3>
+<p>Có — tham khảo <a href="/cong-trinh/sua-nha-quan-3">cải tạo nhà phố Quận 3</a> và các dự án trên <a href="/cong-trinh">mục công trình</a>.</p>
 
-<h2>Liên hệ tư vấn &amp; báo giá miễn phí</h2>
-<p>Bạn đang cần <strong>sửa nhà trọn gói tại TP.HCM</strong> với chi phí hợp lý và chất lượng đảm bảo? Hãy liên hệ Sao Khuê ngay hôm nay:</p>
+<h2>Liên hệ khảo sát &amp; báo giá</h2>
 <ul>
-  <li><strong>Hotline:</strong> 0909 075 668</li>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
-  <li><strong>Form báo giá:</strong> <a href="/bao-gia">Bảng báo giá &amp; yêu cầu tư vấn</a></li>
-  <li><strong>Liên hệ trực tiếp:</strong> <a href="/lien-he">Trang liên hệ</a></li>
+  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Bình Thạnh, TP.HCM</li>
+  <li><a href="/bao-gia">Máy tính báo giá</a> · <a href="/lien-he">Form liên hệ</a> · <a href="/dich-vu/sua-chua-nha">Sửa chữa nhà (hub)</a></li>
 </ul>
-<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> — Đồng hành cùng gia đình bạn biến ngôi nhà cũ thành không gian sống an toàn, đẹp và bền vững.</p>
 `.trim(),
 };

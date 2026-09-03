@@ -102,10 +102,11 @@ function toLastmod(value: unknown): string {
   return "2026-07-16";
 }
 
-/** Hard guard — không bao giờ đưa factory `-ngan` vào sitemap dù DB/seed lệch. */
+/** Hard guard — không bao giờ đưa factory `-ngan` / `-skNN` vào sitemap dù DB/seed lệch. */
 function isSafeSitemapSlug(slug: string): boolean {
   if (shouldNoindexPostSlug(slug)) return false;
   if (slug.endsWith("-ngan")) return false;
+  if (/-sk\d+$/i.test(slug)) return false;
   return true;
 }
 
@@ -137,8 +138,8 @@ async function collectPostUrls(): Promise<SitemapEntry[]> {
       }));
 
     // DB cũ / chưa re-seed có thể còn hàng nghìn factory — fallback seed sạch.
-    // Ngưỡng 2500: đủ cho money + batch sk65+ (~900+) nhưng vẫn bắt dump ~3000+ -ngan.
-    if (fromDb.length > 2500 || fromDb.some((u) => u.loc.includes("-ngan"))) {
+    // Sau noindex -sk/-ngan, seed indexable ~200–400; >800 = dấu hiệu DB bẩn.
+    if (fromDb.length > 800 || fromDb.some((u) => u.loc.includes("-ngan") || /-sk\d+/i.test(u.loc))) {
       logger.warn(
         { dbCount: fromDb.length },
         "sitemap: DB URL count suspicious — using seedPostUrls",

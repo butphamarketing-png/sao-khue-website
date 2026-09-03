@@ -194,6 +194,18 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   // P0 SEO — slug calendar #473 không tách bài; gộp seed “giá rẻ”
   ["/tin-tuc/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
   ["/bai-viet/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
+
+  // GSC 2026-09 — URL chết / soft-404 (Insights trending down)
+  ["/tin-tuc/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/sua-nha-tron-goi-quan-tan-binh", "/tin-tuc/cai-tao-nha-tan-binh"],
+
+  // Cannibalization — gom về 1 URL tiền “sửa nhà trọn gói TP.HCM”
+  ["/tin-tuc/sua-chua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/bai-viet/sua-chua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/sua-chua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/dich-vu/sua-nha", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/bai-viet/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
