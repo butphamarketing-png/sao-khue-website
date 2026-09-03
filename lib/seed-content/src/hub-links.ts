@@ -20,7 +20,7 @@ export const TIN_TUC_MAIN_HUBS: HubLink[] = [
   { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà" },
   { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
   { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
-  { href: "/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm", label: "Báo giá sửa nhà trọn gói" },
+  { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
   { href: "/tin-tuc/thiet-ke-nha-pho-tphcm", label: "Thiết kế nhà phố" },
   { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
 ];
@@ -53,8 +53,7 @@ const RENOVATION_CLUSTER: HubLink[] = [
 ];
 
 const REPAIR_CLUSTER: HubLink[] = [
-  { href: "/tin-tuc/sua-chua-nha-tron-goi-tphcm", label: "Sửa chữa nhà trọn gói" },
-  { href: "/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm", label: "Báo giá sửa nhà trọn gói" },
+  { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
   { href: "/tin-tuc/chong-tham-nha-tphcm", label: "Chống thấm nhà TP.HCM" },
   { href: "/tin-tuc/bao-gia-sua-chua-nha-tphcm", label: "Báo giá sửa chữa nhà" },
   { href: "/tin-tuc/gia-co-nha-cu-tphcm", label: "Gia cố nhà cũ" },
@@ -131,7 +130,7 @@ function parentHubForTopic(topic: PostTopic, slug: string): HubLink | null {
       return { href: "/tin-tuc/thiet-ke-nha-dep-tphcm", label: "Hub thiết kế nhà TP.HCM" };
     case "pricing":
       if (slug.includes("sua")) {
-        return { href: "/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm", label: "Báo giá sửa nhà trọn gói" };
+        return { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" };
       }
       return slug.includes("cai-tao")
         ? { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" }
@@ -158,7 +157,7 @@ function clusterForTopic(topic: PostTopic): HubLink[] {
         { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà TP.HCM" },
         { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
         { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" },
-        { href: "/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm", label: "Báo giá sửa nhà trọn gói" },
+        { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
         { href: "/bao-gia", label: "Bảng báo giá xây dựng" },
       ];
     default:

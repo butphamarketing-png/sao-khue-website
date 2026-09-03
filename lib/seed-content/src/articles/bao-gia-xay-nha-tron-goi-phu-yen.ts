@@ -15,17 +15,17 @@ export const baoGiaXayNhaTronGoiPhuYen = {
   imageAlt: "báo giá xây nhà Phú Yên",
   imageCaption: "báo giá xây nhà Phú Yên",
   content: `
-<h2>Báo giá xây nhà Phú Yên 2026 — Tại sao cần dự toán rõ ràng?</h2>
-<p><strong>Báo giá xây nhà Phú Yên</strong> minh bạch là nền tảng để chủ nhà kiểm soát ngân sách, tránh tình trạng "ký hợp đồng thấp, thi công cao". Năm 2026, giá vật liệu xây dựng và nhân công tại Phú Yên có những biến động đáng kể do sự phát triển của hạ tầng du lịch và khu công nghiệp. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp bảng <strong>báo giá xây nhà trọn gói</strong> chi tiết theo hạng mục — giúp chủ đầu tư nắm rõ từng đồng chi phí trước khi ký hợp đồng.</p>
-<p>Bài viết này dành cho chủ nhà tại TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa và các khu vực lân cận đang cần <strong>đơn giá thi công</strong> tham khảo để lên kế hoạch tài chính.</p>
+<h2>Vì sao chủ nhà Phú Yên cần dự toán rõ trước khi ký?</h2>
+<p><strong>Báo giá xây nhà Phú Yên</strong> minh bạch giúp kiểm soát ngân sách, tránh “ký thấp, thi công cao”. Năm 2026 vật liệu và nhân công tại Tuy Hòa, Sông Cầu biến động theo hạ tầng du lịch. <strong>Kiến Trúc Sao Khuê</strong> lập bảng theo hạng mục — từng đồng trước khi ký hợp đồng.</p>
+<p>Bài này dành cho chủ đất TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa cần mốc đơn giá để lên kế hoạch tài chính.</p>
 
 <figure class="article-figure article-figure--inline">
 <img src="${SK_IMG_1}" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
 <figcaption>bao-gia-xay-nha-phu-yen-1</figcaption>
 </figure>
 
-<h2>Bảng đơn giá xây nhà trọn gói Phú Yên theo tiêu chuẩn</h2>
-<p>Bảng giá dưới đây tổng hợp từ thực tiễn thi công tại Phú Yên năm 2026 (giá chưa bao gồm nội thất rời và phí thiết kế):</p>
+<h2>Bảng đơn giá theo tiêu chuẩn hoàn thiện</h2>
+<p>Tổng hợp từ thực tiễn thi công tại Phú Yên năm 2026 (chưa gồm nội thất rời và phí thiết kế):</p>
 <table>
 <thead><tr><th>Loại công trình</th><th>Tiêu chuẩn cơ bản</th><th>Tiêu chuẩn trung cấp</th><th>Tiêu chuẩn cao cấp</th></tr></thead>
 <tbody>
@@ -73,8 +73,8 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </ul>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_1}" alt="Báo giá xây nhà trọn gói Phú Yên — bảng hạng mục" loading="lazy" decoding="async" />
-<figcaption>Báo giá xây nhà trọn gói Phú Yên — minh bạch theo hạng mục</figcaption>
+<img src="${SK_IMG_1}" alt="Bảng hạng mục thi công nhà phố Phú Yên" loading="lazy" decoding="async" />
+<figcaption>Dự toán theo hạng mục — Sao Khuê tại Phú Yên</figcaption>
 </figure>
 
 <h2>Ví dụ dự toán nhà phố 3 tầng tại Tuy Hòa</h2>
@@ -92,7 +92,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 </table>
 <p><strong>Tổng ước tính:</strong> khoảng <strong>2,07 – 2,3 tỷ đồng</strong> (chưa nội thất rời và chi phí thiết kế).</p>
 
-<h2>Xây nhà trọn gói Phú Yên — Lợi ích so với tự mua vật tư</h2>
+<h2>Trọn gói so với tự mua vật tư, thuê thợ lẻ</h2>
 <p>Nhiều chủ nhà cân nhắc tự mua vật liệu, thuê thợ riêng để "rẻ hơn". Trên thực tế:</p>
 <ul>
   <li><strong>Quản lý mất nhiều thời gian:</strong> Theo dõi đơn hàng vật liệu, điều phối thợ, kiểm tra chất lượng hàng ngày — đặc biệt khó nếu chủ nhà không có kinh nghiệm xây dựng.</li>
@@ -100,9 +100,9 @@ export const baoGiaXayNhaTronGoiPhuYen = {
   <li><strong>Phát sinh khó kiểm soát:</strong> Không có hợp đồng cố định, thợ tự do dễ "thêm hạng mục" và tăng giá.</li>
   <li><strong>Không có bảo hành:</strong> Khi phát sinh thấm, nứt sau bàn giao — không có đơn vị chịu trách nhiệm.</li>
 </ul>
-<p><strong>Xây nhà trọn gói Phú Yên</strong> với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
+<p>Với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
 
-<h2>Các yếu tố làm tăng chi phí xây nhà tại Phú Yên</h2>
+<h2>Yếu tố làm đội chi phí tại Phú Yên</h2>
 <ul>
   <li><strong>Nền đất yếu / gần sông:</strong> Cần gia cố móng sâu hơn — tăng 15–25% chi phí phần móng.</li>
   <li><strong>Vận chuyển vật liệu đặc chủng:</strong> Đá tự nhiên, gỗ công nghiệp nhập từ TP.HCM tăng chi phí logistics.</li>
@@ -110,14 +110,14 @@ export const baoGiaXayNhaTronGoiPhuYen = {
   <li><strong>Thi công mùa mưa:</strong> Tháng 9–12 tại Phú Yên là cao điểm bão lũ — thi công chậm, cần che chắn tốn thêm chi phí.</li>
   <li><strong>Yêu cầu thiết kế đặc biệt:</strong> Nhà biệt thự, nhà xoay góc, nhiều vát — tốn vật liệu và nhân công hơn nhà hình hộp thẳng.</li>
 </ul>
-<p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
+<p>Tham khảo thêm tại <a href="/">trang chủ Sao Khuê</a> và <a href="/dich-vu">danh mục dịch vụ</a>.</p>
 
 <figure class="article-figure article-figure--inline">
 <img src="${SK_IMG_2}" alt="Dự toán xây nhà phố Phú Yên tham khảo" loading="lazy" decoding="async" />
 <figcaption>Dự toán xây nhà phố Phú Yên — tham khảo trước khảo sát thực tế</figcaption>
 </figure>
 
-<h2>Cách nhận báo giá xây nhà Phú Yên chính xác từ Sao Khuê</h2>
+<h2>Cách nhận dự toán chính xác</h2>
 <p>Để nhận báo giá chính xác (không phải ước tính chung chung), cần cung cấp:</p>
 <ul>
   <li>Kích thước lô đất (chiều ngang × chiều sâu).</li>
@@ -135,8 +135,8 @@ ${faqSection([
   { q: "Nhận dự toán chi tiết mất bao lâu?", a: "Sau khảo sát, Sao Khuê gửi bảng hạng mục trong khoảng 3–5 ngày làm việc. Gọi 0909 075 668 hoặc form /lien-he." },
 ])}
 
-<h2>Liên hệ báo giá xây nhà Phú Yên</h2>
-<p>Nếu bạn đang tìm kiếm giải pháp <strong>báo giá xây nhà Phú Yên</strong> chuyên nghiệp, hãy liên hệ <strong>Kiến Trúc Sao Khuê</strong> để được tư vấn miễn phí và nhận báo giá chi tiết.</p>
+<h2>Liên hệ khảo sát tại Phú Yên</h2>
+<p>Gọi <strong>Kiến Trúc Sao Khuê</strong> để nhận bảng hạng mục sau khảo sát thực tế tại Tuy Hòa hoặc huyện.</p>
 <ul>
   <li><strong>Website:</strong> <a href="https://kientrucsaokhue.com/">https://kientrucsaokhue.com/</a></li>
   <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi</a></li>

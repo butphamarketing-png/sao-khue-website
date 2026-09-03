@@ -29,6 +29,7 @@ const HAND_PILLAR_SLUGS = new Set([
  */
 const CANNIBAL_REDIRECT_SLUGS = new Set([
   "sua-chua-nha-tron-goi-tphcm",
+  "bao-gia-sua-nha-tron-goi-tphcm",
   // Cluster sửa chữa cải tạo trùng với cai-tao-nha-* / trang tiền sửa nhà
   "sua-chua-cai-tao-nha-tphcm",
   "sua-chua-cai-tao-nha-binh-thanh",

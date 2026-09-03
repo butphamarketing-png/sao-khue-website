@@ -14,8 +14,9 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "sua-nha-tphcmsua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
   "sua-nha-tphcm": "/dich-vu/sua-chua-nha",
   "sua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
-  "bang-bao-gia-sua-chua-nha-tron-goi-tai-tp-hcm": "/tin-tuc/bao-gia-sua-chua-nha-tphcm",
+  "bang-bao-gia-sua-chua-nha-tron-goi-tai-tp-hcm": "/dich-vu/sua-nha-tron-goi-tphcm",
   "don-gia-sua-chua-nha-moi-nhat-tai-tp-hcm-nam-2023": "/tin-tuc/bao-gia-sua-chua-nha-tphcm",
+  "bao-gia-sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
   "sua-nha-tron-goi-anh-thuan-thanh-pho-thu-duc": "/tin-tuc/sua-nha-thu-duc",
   "mot-so-hinh-anh-cai-tao-nha-tai-kien-truc-sao-khue": "/tin-tuc/cai-tao-nha-tphcm",
   "quy-trinh-xay-dung": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
@@ -206,6 +207,9 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/sua-chua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
   ["/dich-vu/sua-nha", "/dich-vu/sua-nha-tron-goi-tphcm"],
   ["/bai-viet/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/bai-viet/bao-gia-sua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
+  ["/bao-gia-sua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
 
   // Cluster sua-chua-cai-tao → hub cai-tao quận / trang tiền (hết trùng KW)
   ["/tin-tuc/sua-chua-cai-tao-nha-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],

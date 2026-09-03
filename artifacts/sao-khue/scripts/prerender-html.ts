@@ -149,10 +149,24 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(BRAND_SHORT)} — Thiết kế &amp; xây dựng nhà trọn gói TP.HCM</h1>
-        <p>${escapeHtml(FOOTER_DESC)}</p>
+        <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê nhận khảo sát miễn phí, lập dự toán theo hạng mục và thi công nhà phố, biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <h2>Về Sao Khuê</h2>
+        <p>Văn phòng 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
+        <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay.</p>
         <h2>Dịch vụ chính</h2>
-        <p><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a>, <a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a>, <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a>, <a href="/dich-vu/sua-chua-nha">Sửa chữa nhà</a>.</p>
-        <p><a href="/bao-gia">Xem bảng báo giá &amp; tính chi phí xây dựng</a> · <a href="/lien-he">Liên hệ tư vấn miễn phí</a></p>
+        <ul>
+          <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
+          <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố.</li>
+          <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
+        </ul>
+        <h2>Cách làm việc</h2>
+        <ol>
+          <li>Gửi ảnh / mô tả hiện trạng (Zalo hoặc form).</li>
+          <li>Kỹ sư khảo sát miễn phí tại nhà.</li>
+          <li>Dự toán từng hạng mục, chốt vật tư, ký hợp đồng.</li>
+          <li>Thi công, nghiệm thu, kích hoạt bảo hành.</li>
+        </ol>
+        <p><a href="/bao-gia">Bảng báo giá &amp; máy tính chi phí</a> · <a href="/cong-trinh">Công trình đã bàn giao</a> · <a href="/lien-he">Liên hệ tư vấn</a></p>
         <h2>Câu hỏi thường gặp</h2>
         ${defaultFaqs
           .map(
@@ -240,19 +254,19 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/cai-tao-nha",
       meta: {
-        title: `Báo Giá Sửa Nhà Trọn Gói TP.HCM | ${BRAND_SHORT}`,
+        title: `Cải Tạo Nhà Phố TP.HCM — Khảo Sát Miễn Phí | ${BRAND_SHORT}`,
         description:
-          "Báo giá sửa nhà trọn gói TP.HCM: làm mới 1–2 triệu/m², cải tạo 2,5–5 triệu/m². Khảo sát miễn phí, bảo hành kết cấu 10 năm — 0909 075 668.",
+          "Cải tạo nhà phố TP.HCM: làm mới 1–2 triệu/m², đổi công năng 2,5–3,5 triệu/m², gia cố 3,5–5 triệu/m². Khảo sát miễn phí — 0909 075 668.",
         path: "/cai-tao-nha",
-        keywords: "báo giá sửa nhà, báo giá sửa nhà trọn gói, sửa nhà trọn gói tphcm, cải tạo nhà cũ tphcm",
+        keywords: "cải tạo nhà, cải tạo nhà cũ tphcm, cải tạo nhà phố, nâng tầng nhà phố",
         ogImage: `${SITE_URL}/images/ads/hero-cai-tao.jpg`,
-        ogImageAlt: `Cải tạo sửa nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
+        ogImageAlt: `Cải tạo nhà phố TP.HCM — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Cải tạo &amp; sửa nhà trọn gói — báo giá rõ từng hạng mục</h1>
-        <p>Báo giá sửa nhà · cải tạo nhà phố · nâng tầng · chống thấm · làm mới mặt tiền. Khảo sát miễn phí tại TP.HCM.</p>
-        <p>Làm mới từ 1–2 triệu/m² · Cải tạo 2,5–5 triệu/m².</p>
+        <h1>Cải tạo nhà phố — giữ kết cấu, làm mới công năng</h1>
+        <p>Cải tạo nhà cũ, nâng tầng, chống thấm, đổi mặt tiền. Khảo sát hiện trạng miễn phí tại TP.HCM.</p>
+        <p>Làm mới từ 1–2 triệu/m² · Đổi công năng 2,5–3,5 triệu/m² · Gia cố 3,5–5 triệu/m².</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/cai-tao-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },

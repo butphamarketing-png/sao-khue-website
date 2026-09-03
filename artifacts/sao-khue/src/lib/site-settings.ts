@@ -191,9 +191,9 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   homeAboutEyebrow: "Về chúng tôi",
   homeAboutTitle: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
   homeAboutIntro:
-    "Chuyên thiết kế, thi công xây dựng, sửa chữa và cải tạo nhà trọn gói tại TP.HCM, Bình Dương, Đồng Nai và các tỉnh lân cận.",
+    "Chuyên thiết kế, thi công xây mới, sửa chữa và cải tạo nhà phố tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, dự toán theo hạng mục.",
   homeAboutBody:
-    "Với tầm nhìn trở thành công ty hàng đầu trong ngành kiến trúc và xây dựng, Sao Khuê tự hào sở hữu đội ngũ kiến trúc sư, kỹ sư giỏi chuyên môn và giàu nhiệt huyết.",
+    "Sao Khuê trực tiếp thi công và giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi trong hợp đồng; bảo hành kết cấu 10 năm, hoàn thiện 12–36 tháng. Phù hợp nhà phố hẻm, nhà mặt tiền và cải tạo nhà đang ở.",
   homeAboutPointsJson: JSON.stringify(defaultAboutPoints),
   homeAboutImageUrl: "/images/about.jpg?v=2",
   homeAboutExperienceLabel: "Năm Kinh Nghiệm\nXây Dựng",

@@ -1003,7 +1003,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
       "báo giá sửa chữa nhà tphcm, báo giá sửa nhà, giá sửa nhà, chi phí sửa chữa nhà, sửa nhà hết bao nhiêu",
     imageAlt: "Báo giá sửa chữa nhà tại TP.HCM",
     content: `<h2>Báo giá sửa nhà TP.HCM nên tách theo bệnh, không gộp “một cục”</h2>
-<p><strong>Báo giá sửa nhà</strong> (sửa chữa theo hạng mục) minh bạch khi liệt kê từng bệnh: thấm WC, thay đường ống, sơn lại, sửa mái… Gộp một giá trọn nhà dễ thiếu hạng mục. Nếu bạn cần gói đồng bộ cả nhà, xem <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói</a>. <strong>Kiến Trúc Sao Khuê</strong> khảo sát hiện trạng rồi mới chốt số.</p>
+<p><strong>Báo giá sửa nhà</strong> (sửa chữa theo hạng mục) minh bạch khi liệt kê từng bệnh: thấm WC, thay đường ống, sơn lại, sửa mái… Gộp một giá trọn nhà dễ thiếu hạng mục. Nếu bạn cần gói đồng bộ cả nhà, xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói TP.HCM</a>. <strong>Kiến Trúc Sao Khuê</strong> khảo sát hiện trạng rồi mới chốt số.</p>
 <p>Dịch vụ: <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/cai-tao-nha">cải tạo nhà</a> · <a href="/bao-gia">/bao-gia</a>.</p>
 
 <h2>Bảng báo giá theo hạng mục thường gặp</h2>

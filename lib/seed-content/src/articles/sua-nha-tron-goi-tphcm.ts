@@ -43,7 +43,7 @@ export const suaNhaTronGoiTphcm = {
     <tr><td>Cải tạo toàn căn (gia cố + hoàn thiện)</td><td>m² sàn</td><td>8 – 15 triệu</td></tr>
   </tbody>
 </table>
-<p><em>Lưu ý:</em> Nhà đang ở thường +10–20% che chắn/giai đoạn. Hẻm hẹp có phụ phí logistics — ghi rõ trong dự toán, không gộp ảo vào m². Chi tiết thêm: <a href="/tin-tuc/bao-gia-sua-nha-tron-goi-tphcm">báo giá sửa nhà trọn gói</a>.</p>
+<p><em>Lưu ý:</em> Nhà đang ở thường +10–20% che chắn/giai đoạn. Hẻm hẹp có phụ phí logistics — ghi rõ trong dự toán, không gộp ảo vào m². Bảng giá đầy đủ nằm ngay phần trên của trang này.</p>
 
 <h2>Quy trình 6 bước tại Sao Khuê</h2>
 <ol>
