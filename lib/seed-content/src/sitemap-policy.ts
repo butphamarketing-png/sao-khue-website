@@ -24,11 +24,21 @@ const HAND_PILLAR_SLUGS = new Set([
 ]);
 
 /**
- * URL đã 301 về trang tiền khác — noindex + bỏ sitemap để hết cannibalization.
+ * URL đã 301 về trang tiền/hub khác — noindex + bỏ sitemap để hết cannibalization.
  * Redirect thật nằm ở legacy-redirects.ts.
  */
 const CANNIBAL_REDIRECT_SLUGS = new Set([
   "sua-chua-nha-tron-goi-tphcm",
+  // Cluster sửa chữa cải tạo trùng với cai-tao-nha-* / trang tiền sửa nhà
+  "sua-chua-cai-tao-nha-tphcm",
+  "sua-chua-cai-tao-nha-binh-thanh",
+  "sua-chua-cai-tao-nha-thu-duc",
+  "sua-chua-cai-tao-nha-quan-7",
+  "sua-chua-cai-tao-nha-go-vap",
+  "sua-chua-cai-tao-nha-binh-chanh",
+  "sua-chua-cai-tao-nha-tan-phu",
+  "sua-chua-cai-tao-nha-quan-1",
+  "sua-chua-cai-tao-nha-hoc-mon",
 ]);
 
 const MONEY_SET = new Set(MONEY_PAGE_OVERRIDE_SLUGS);
