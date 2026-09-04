@@ -191,9 +191,9 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   homeAboutEyebrow: "Về chúng tôi",
   homeAboutTitle: "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ",
   homeAboutIntro:
-    "Chuyên thiết kế, thi công xây mới, sửa chữa và cải tạo nhà phố tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, dự toán theo hạng mục.",
+    "Chuyên thiết kế, thi công xây mới, sửa chữa và cải tạo nhà phố tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, dự toán theo hạng mục — một đầu mối từ bản vẽ đến chìa khóa trao tay.",
   homeAboutBody:
-    "Sao Khuê trực tiếp thi công và giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi trong hợp đồng; bảo hành kết cấu 10 năm, hoàn thiện 12–36 tháng. Phù hợp nhà phố hẻm, nhà mặt tiền và cải tạo nhà đang ở.",
+    "Sao Khuê trực tiếp thi công và giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi trong hợp đồng; bảo hành kết cấu 10 năm, hoàn thiện 12–36 tháng. Phù hợp nhà phố hẻm, nhà mặt tiền và cải tạo nhà đang ở. Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức · Hotline 0909 075 668 · xem đánh giá trên Google Maps trước khi ký.",
   homeAboutPointsJson: JSON.stringify(defaultAboutPoints),
   homeAboutImageUrl: "/images/about.jpg?v=2",
   homeAboutExperienceLabel: "Năm Kinh Nghiệm\nXây Dựng",

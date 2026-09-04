@@ -33,6 +33,7 @@ import {
 } from "@/lib/post-url";
 import { renderArticleBody, resolvePostImageAlt } from "@/lib/post-body";
 import { PostHubLinksSection } from "@/components/PostHubLinksSection";
+import { MoneyPageTrustBlock } from "@/components/MoneyPageTrustBlock";
 
 function estimateReadingMinutes(content: string) {
   const words = content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
@@ -249,6 +250,8 @@ export default function PostPage() {
             </div>
           </div>
         )}
+
+        {post && <MoneyPageTrustBlock slug={post.slug} />}
 
         {post && (
           <PostHubLinksSection slug={post.slug} category={post.category} />

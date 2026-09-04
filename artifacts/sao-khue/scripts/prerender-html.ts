@@ -151,13 +151,20 @@ function buildStaticPages(): PrerenderPage[] {
         <h1>${escapeHtml(BRAND_SHORT)} — Thiết kế &amp; xây dựng nhà trọn gói TP.HCM</h1>
         <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê nhận khảo sát miễn phí, lập dự toán theo hạng mục và thi công nhà phố, biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
-        <p>Văn phòng 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
-        <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay.</p>
+        <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
+        <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
         <h2>Dịch vụ chính</h2>
         <ul>
           <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
-          <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố.</li>
+          <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố; báo giá theo hạng mục.</li>
           <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
+        </ul>
+        <h2>Công trình đã bàn giao</h2>
+        <ul>
+          <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Nhà phố Thuận An</a></li>
+          <li><a href="/cong-trinh/sua-nha-quan-3">Cải tạo nhà phố Quận 3</a></li>
+          <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Biệt thự Thủ Đức</a></li>
+          <li><a href="/cong-trinh">Xem toàn bộ công trình</a></li>
         </ul>
         <h2>Cách làm việc</h2>
         <ol>

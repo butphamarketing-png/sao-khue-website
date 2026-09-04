@@ -67,6 +67,21 @@ export const suaNhaTronGoiTphcm = {
 <h2>Khu vực phục vụ</h2>
 <p>Toàn TP.HCM (Quận 1–12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Thủ Đức, Bình Tân, Nhà Bè, Hóc Môn, Củ Chi…) và vùng lân cận khi khảo sát được. Hotline trong ngày nội thành: <strong>0909 075 668</strong>.</p>
 
+<h2>Công trình sửa–cải tạo thực tế</h2>
+<p>Ảnh và case dưới đây là công trình Sao Khuê đã bàn giao — dùng để đối chiếu phong cách làm việc trước khi ký:</p>
+<ul>
+  <li><a href="/cong-trinh/sua-nha-quan-3">Cải tạo nhà phố Quận 3</a> — nhà đang ở, che chắn theo giai đoạn.</li>
+  <li><a href="/cong-trinh">Thư viện công trình</a> — xây mới và cải tạo đa quận.</li>
+</ul>
+<p>Muốn xem hiện trường gần khu vực nhà bạn: gọi hotline để sắp xếp (theo lịch chủ nhà đồng ý).</p>
+
+<h2>Địa chỉ &amp; đánh giá Google</h2>
+<ul>
+  <li><strong>Văn phòng TP.HCM:</strong> 36 Đường 27, KDC Vạn Phúc, Thủ Đức.</li>
+  <li><strong>Hiện trường / tiếp khách Bình Thạnh:</strong> 245/8 Bình Lợi, P.13.</li>
+  <li><strong>Google Maps:</strong> <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">xem vị trí và đánh giá</a>.</li>
+</ul>
+
 <h2>Câu hỏi thường gặp</h2>
 <h3>Sửa nhà trọn gói hết bao nhiêu?</h3>
 <p>Phụ thuộc hiện trạng và phạm vi. Ước nhanh theo bảng trên; số chốt sau khảo sát miễn phí. Không dùng đơn giá xây nhà mới (4,85–6,7 triệu/m²) để tính sửa chữa.</p>

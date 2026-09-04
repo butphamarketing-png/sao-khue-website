@@ -70,6 +70,33 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Kinh nghiệm nhà phố, biệt thự</strong> — xem <a href="/cong-trinh">công trình tiêu biểu</a>.</li>
 </ul>
 
+<h2>Công trình thực tế &amp; địa bàn TP.HCM</h2>
+<p>Nhà phố Sài Gòn hay gặp hẻm dưới 3 m, giờ đổ bê tông hạn chế, tường chung và nền yếu. Sao Khuê đo logistics trước khi chốt đơn giá — không lấy “giá mạng mặt tiền” áp vào hẻm sâu.</p>
+<ul>
+  <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Nhà phố Thuận An (Bình Dương)</a> — mẫu chìa khóa trao tay đã bàn giao.</li>
+  <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Biệt thự sân vườn Thủ Đức</a> — thiết kế–thi công đồng bộ.</li>
+  <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố Bình Thạnh</a> — thi công nội thành, giám sát hiện trường.</li>
+</ul>
+<p>Ảnh công trình trên trang là ảnh hiện trường của Sao Khuê. Muốn xem thêm trước khi ký: gọi <strong>0909 075 668</strong> để sắp xếp tham quan (theo lịch chủ nhà).</p>
+
+<h2>Chi phí thường phát sinh — và cách tránh</h2>
+<ul>
+  <li><strong>Đổi vật tư giữa chừng:</strong> chỉ làm khi có phụ lục; chênh lệch ghi rõ trước khi mua.</li>
+  <li><strong>Hẻm hẹp / bơm bê tông:</strong> phụ phí logistics tách dòng, không gộp ảo vào m².</li>
+  <li><strong>Nền yếu / cần cọc:</strong> khảo sát địa chất trước; không “đoán” trong báo giá sơ bộ.</li>
+  <li><strong>Xin phép / thay đổi quy hoạch:</strong> lệ phí nhà nước và thời gian chờ tách khỏi gói thi công.</li>
+</ul>
+<p>Cam kết không phát sinh khi không đổi thiết kế và chủng loại đã ký. Chủ nhà giữ bản dự toán + nhật ký nghiệm thu từng mốc.</p>
+
+<h2>Địa chỉ văn phòng &amp; đánh giá</h2>
+<ul>
+  <li><strong>TP.HCM:</strong> 36 Đường 27, KDC Vạn Phúc, Thủ Đức (hotline 0909 075 668).</li>
+  <li><strong>Chi nhánh hiện trường:</strong> 245/8 Bình Lợi, Phường 13, Bình Thạnh.</li>
+  <li><strong>Đắk Lắk:</strong> Xuân Thạnh 2, Tây Hòa.</li>
+  <li><strong>Google Maps:</strong> <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">xem vị trí &amp; đánh giá</a>.</li>
+</ul>
+<p>Khách sau bàn giao thường phản hồi về tiến độ, minh bạch dự toán và vệ sinh công trình — đối chiếu trên Maps / fanpage trước khi quyết định.</p>
+
 <h2>Câu hỏi thường gặp</h2>
 <h3>Nhà phố 3–4 tầng mất bao lâu?</h3>
 <p>Thường <strong>4–7 tháng</strong> (mùa mưa và hẻm hẹp có thể dài hơn). Mốc ghi trong hợp đồng.</p>

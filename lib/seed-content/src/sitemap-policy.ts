@@ -1,6 +1,6 @@
 /**
  * Chính sách lập chỉ mục — giảm thin/factory content khỏi sitemap + gắn noindex.
- * Money pages (override) luôn được index.
+ * Money pages (override) luôn được index trừ cannibal/redirect.
  */
 import { MONEY_PAGE_OVERRIDE_SLUGS } from "./articles/money-page-overrides";
 import { phuYenDakLakTinTucSlugs } from "./articles/phu-yen-dak-lak-tin-tuc-articles";
@@ -15,12 +15,20 @@ import { xayNhaTphcmBatch7Slugs } from "./articles/xay-nha-tphcm-tin-tuc-article
 import { xayCaiTaoTphcmBatch8Slugs } from "./articles/xay-cai-tao-tphcm-tin-tuc-articles-batch8";
 import { xayCaiTaoTphcmBatch9Slugs } from "./articles/xay-cai-tao-tphcm-tin-tuc-articles-batch9";
 import { nhomKinhBatch10Slugs } from "./articles/nhom-kinh-tin-tuc-articles-batch10";
+import { ADS_BO_SUNG_100_CAI_TAO_SLUGS } from "./articles/ads-bo-sung-100-cai-tao";
+import { ADS_BO_SUNG_100_XAY_NHA_SLUGS } from "./articles/ads-bo-sung-100-xay-nha";
+import { ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS } from "./articles/ads-bo-sung-100-dot2-cai-tao";
+import { ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS } from "./articles/ads-bo-sung-100-dot2-xay-nha";
+import { ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS } from "./articles/ads-bo-sung-100-dot3-cai-tao";
+import { ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS } from "./articles/ads-bo-sung-100-dot3-xay-nha";
 
-/** Bài pillar viết tay Đắk Lắk — không noindex. */
+/** Bài pillar viết tay — không noindex. */
 const HAND_PILLAR_SLUGS = new Set([
   "sua-chua-nha-dak-lak",
   "cai-tao-nha-dak-lak",
   "thiet-ke-nha-dep-dak-lak",
+  "xay-nha-dep-dak-lak",
+  "bao-gia-xay-nha-tron-goi-phu-yen",
 ]);
 
 /**
@@ -58,7 +66,18 @@ export const THIN_FACTORY_SLUGS: ReadonlySet<string> = new Set([
   ...xayCaiTaoTphcmBatch8Slugs,
   ...xayCaiTaoTphcmBatch9Slugs,
   ...nhomKinhBatch10Slugs,
+  // Ads mass batches từng ép index → doorway risk sau spam update 2026
+  ...ADS_BO_SUNG_100_CAI_TAO_SLUGS,
+  ...ADS_BO_SUNG_100_XAY_NHA_SLUGS,
+  ...ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS,
+  ...ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS,
+  ...ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS,
+  ...ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS,
 ]);
+
+/** Tin-tức geo/quận dạng khuôn — thường <700 từ, tranh KW với hub. */
+const DISTRICT_TEMPLATE_SLUG_RE =
+  /^(xay-nha(-tron-goi)?|cai-tao-nha|sua-nha)-(quan-\d+|binh-thanh|binh-tan|binh-chanh|go-vap|thu-duc|tan-binh|tan-phu|hoc-mon|cu-chi|nha-be|phu-nhuan)(-|$)/i;
 
 export function isMoneyPageSlug(slug: string): boolean {
   return MONEY_SET.has(slug);
@@ -75,12 +94,21 @@ function isShortKeywordFactorySlug(slug: string): boolean {
 /** Thin factory trừ money/hand pillar → noindex + bỏ sitemap. */
 export function shouldNoindexPostSlug(slug: string): boolean {
   if (CANNIBAL_REDIRECT_SLUGS.has(slug)) return true;
-  if (MONEY_SET.has(slug) || HAND_PILLAR_SLUGS.has(slug)) return false;
+  if (HAND_PILLAR_SLUGS.has(slug)) return false;
   if (isShortKeywordFactorySlug(slug)) return true;
-  return THIN_FACTORY_SLUGS.has(slug);
+  if (DISTRICT_TEMPLATE_SLUG_RE.test(slug)) return true;
+  if (THIN_FACTORY_SLUGS.has(slug)) return true;
+  // Money page vẫn index trừ khi nằm trong cannibal/factory ở trên.
+  if (MONEY_SET.has(slug)) return false;
+  return false;
 }
 
-export function isSitemapIndexablePost(post: { slug: string; category?: string }): boolean {
+export function isSitemapIndexablePost(post: {
+  slug: string;
+  category?: string;
+  noindex?: boolean;
+}): boolean {
+  if (post.noindex) return false;
   const category = (post.category ?? "").toLowerCase();
   // Dịch vụ / công trình / giới thiệu — luôn đưa vào sitemap
   if (category === "dich-vu" || category === "cong-trinh" || category === "bai-viet") {
