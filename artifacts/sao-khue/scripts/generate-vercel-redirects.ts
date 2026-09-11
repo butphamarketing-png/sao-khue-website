@@ -188,17 +188,31 @@ export default function middleware(request) {
   const dest = REDIRECTS[normalizedPathname];
   if (dest) return redirect301(dest, request.url);
 
-  // Factory *-skNN / *-ngan đã noindex — 301 gom equity về hub (không soft-404).
-  {
-    const leaf = normalizedPathname.split("/").pop() || "";
-    if (/-sk\\d+$/i.test(leaf) || /-ngan$/i.test(leaf)) {
-      if (/^sua-|^chong-tham|^cai-tao|^nang-tang|^son-/.test(leaf)) {
-        return redirect301("/dich-vu/sua-nha-tron-goi-tphcm", request.url);
+  // Factory / thin đã gỡ known-paths — 301 về hub (không 404 nuốt equity).
+  // Keep in sync with sitemap-policy hubForUnknownPathname.
+  if (!KNOWN_PATHS[normalizedPathname]) {
+    const parts = normalizedPathname.split("/").filter(Boolean);
+    const ns = parts[0] || "";
+    const leaf = parts[parts.length - 1] || "";
+    const contentNs =
+      ns === "tin-tuc" || ns === "bai-viet" || ns === "dich-vu" || ns === "cong-trinh";
+    const rootSlug = parts.length === 1 && leaf.includes("-");
+    if (contentNs || rootSlug) {
+      let hub = null;
+      if (/^(sua-|sua-chua-|chong-tham|cai-tao|nang-tang|son-|gia-co|lam-moi|cong-ty-sua|bao-gia-sua|bao-gia-cai|chi-phi-cai|chi-phi-sua)/i.test(leaf)) {
+        hub = "/dich-vu/sua-nha-tron-goi-tphcm";
+      } else if (/^(xay-|thiet-ke|thi-cong|bao-gia-xay|ep-coc|hoan-thien|nha-thau|don-gia|chi-phi-xay|cong-ty-xay)/i.test(leaf)) {
+        hub = "/dich-vu/xay-nha-tron-goi";
+      } else if (/-sk\\d+$/i.test(leaf) || /-ngan$/i.test(leaf)) {
+        hub = "/tin-tuc";
+      } else if (ns === "dich-vu") {
+        hub = "/dich-vu";
+      } else if (ns === "cong-trinh") {
+        hub = "/cong-trinh";
+      } else if (contentNs) {
+        hub = "/tin-tuc";
       }
-      if (/^xay-|^thiet-ke|^thi-cong|^bao-gia-xay|^ep-coc|^hoan-thien/.test(leaf)) {
-        return redirect301("/dich-vu/xay-nha-tron-goi", request.url);
-      }
-      return redirect301("/tin-tuc", request.url);
+      if (hub) return redirect301(hub, request.url);
     }
   }
 

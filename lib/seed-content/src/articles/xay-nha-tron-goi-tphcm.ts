@@ -11,11 +11,11 @@ export const xayNhaTronGoiTphcm = {
   content: `
 <h2>Một đầu mối từ móng đến chìa khóa trao tay</h2>
 <p><strong>Xây nhà trọn gói TP.HCM</strong> nghĩa là một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện và bàn giao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Phường 13, Bình Thạnh) làm việc với chủ nhà nội thành và các quận mới — kiểm soát chi phí, tiến độ, chất lượng bằng <strong>một hợp đồng</strong>.</p>
-<p>Hơn 10 năm, hơn 500 công trình: Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Ngân sách thấp hơn: xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">gói tiêu chuẩn cắt đúng hạng mục thẩm mỹ</a> (không cắt kết cấu).</p>
+<p>Hơn 10 năm, hơn 500 công trình: Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Ngân sách thấp hơn: xem nguyên tắc cắt hạng mục thẩm mỹ (không cắt kết cấu) ngay trên trang này và <a href="/bao-gia">bảng báo giá</a>.</p>
 
 <h2>Khác gì so với thuê từng đội thợ?</h2>
 <p>Nhà phố Sài Gòn thường hẻm hẹp, giờ đổ bê tông hạn chế, tường chung. Mô hình chìa khóa trao tay gồm khảo sát đất, thiết kế, dự toán, vật tư, móng–thân–mái, hoàn thiện cơ bản, điện nước, cửa, thiết bị vệ sinh theo list và nghiệm thu. Khác thuê lẻ: một bảo hành kết cấu <strong>10 năm</strong>.</p>
-<p>Phạm vi từng dòng: <a href="/tin-tuc/xay-nha-chia-khoa-trao-tay-tphcm">xây nhà chìa khóa trao tay</a>. Chỉ cần khung nhà: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+<p>Phạm vi từng dòng: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>. Chỉ cần khung nhà: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
 
 <h2>Ba gói tiêu chuẩn, khá, cao cấp</h2>
 <p>Khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu:</p>
@@ -107,16 +107,15 @@ export const xayNhaTronGoiTphcm = {
 <h3>Có thiết kế trong gói không?</h3>
 <p>Có 2D/3D khi ký thi công (theo quy mô), thô + hoàn thiện cơ bản theo gói. Nội thất gỗ / điều hòa thường tách. Đọc list trong dự toán trước khi ký.</p>
 <h3>Muốn cắt chi phí thì xem trang nào?</h3>
-<p>Gói tiêu chuẩn 4,85–5,5 triệu/m² và chỗ được cắt / không được cắt: <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà giá rẻ TP.HCM</a>. Không chốt “giá mạng” khi chưa đo hẻm và nền.</p>
+<p>Gói tiêu chuẩn 4,85–5,5 triệu/m²: cắt phào/đèn được, không cắt thép–chống thấm. Chi tiết trên trang này và <a href="/bao-gia">bảng báo giá</a>. Không chốt “giá mạng” khi chưa đo hẻm và nền.</p>
 <h3>Sao Khuê có nhận Bình Dương, Đồng Nai không?</h3>
 <p>Có. Xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">công trình Thuận An</a>.</p>
 
 <h2>Đọc tiếp theo nhu cầu</h2>
 <ul>
-  <li><a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">Bảng giá xây nhà 2026</a></li>
-  <li><a href="/tin-tuc/don-gia-xay-nha-tphcm">Đơn giá theo m²</a> · <a href="/tin-tuc/chi-phi-xay-nha-tphcm">chi phí hết bao nhiêu</a></li>
-  <li><a href="/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm">Nhà thầu uy tín</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây nhà phố</a></li>
-  <li><a href="/tin-tuc/xay-nha-2-tang-tphcm">Nhà 2 tầng</a> · <a href="/tin-tuc/xay-nha-3-tang-tphcm">3 tầng</a> · <a href="/tin-tuc/xay-nha-trong-hem-tphcm">trong hẻm</a></li>
+  <li><a href="/bao-gia">Bảng giá &amp; máy tính chi phí</a></li>
+  <li><a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây nhà phố uy tín</a></li>
+  <li><a href="/mau-nha/2-tang">Mẫu nhà 2 tầng</a> · <a href="/mau-nha/3-tang">3 tầng</a> · <a href="/cong-trinh/xay-nha-pho-binh-thanh">nhà phố nội thành</a></li>
   <li><a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a> · <a href="/dich-vu/xay-nha-tron-goi-dong-nai">Đồng Nai</a></li>
 </ul>
 <p>Ước lượng nhanh: <a href="/bao-gia">/bao-gia</a>.</p>

@@ -20,8 +20,7 @@ const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/bao-gia", priority: "0.95", changefreq: "weekly" },
   { path: "/thiet-ke", priority: "0.91", changefreq: "weekly" },
   { path: "/xay-moi", priority: "0.93", changefreq: "weekly" },
-  { path: "/xay-nha", priority: "0.95", changefreq: "weekly" },
-  { path: "/cai-tao-nha", priority: "0.95", changefreq: "weekly" },
+  // /xay-nha + /cai-tao-nha: Ads landing — noindex, không đưa sitemap
   { path: "/mau-nha", priority: "0.90", changefreq: "weekly" },
   { path: "/mau-nha/cap-4", priority: "0.88", changefreq: "weekly" },
   { path: "/mau-nha/2-tang", priority: "0.88", changefreq: "weekly" },
@@ -40,7 +39,7 @@ const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
 function moneyPostPriority(slug: string, path: string): string {
   const s = `${slug} ${path}`.toLowerCase();
   if (
-    /bao-gia-xay-nha-tron-goi|don-gia-xay-nha|chi-phi-xay-nha|xay-nha-gia-re|xay-nha-tphcm$|xay-nha-tron-goi-tphcm|cai-tao-nha-cu|thiet-ke-nha-pho-tphcm|cong-ty-xay-dung-nha-pho-uy-tin/.test(
+    /bao-gia-xay-nha-tron-goi-phu-yen|xay-nha-tron-goi-tphcm|sua-nha-tron-goi-tphcm|cam-nang-xay-nha-2026|cong-ty-xay-dung-nha-pho-uy-tin/.test(
       s,
     )
   ) {

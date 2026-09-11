@@ -216,12 +216,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/tin-tuc/don-gia-xay-nha-tphcm" className="flex items-center transition-colors hover:text-accent">
+                <Link href="/bao-gia" className="flex items-center transition-colors hover:text-accent">
                   <ArrowRight className="mr-2 h-4 w-4" /> ĐƠN GIÁ XÂY NHÀ
                 </Link>
               </li>
               <li>
-                <Link href="/tin-tuc/cai-tao-nha-cu-tphcm" className="flex items-center transition-colors hover:text-accent">
+                <Link href="/cai-tao-nha" className="flex items-center transition-colors hover:text-accent">
                   <ArrowRight className="mr-2 h-4 w-4" /> CẢI TẠO NHÀ CŨ
                 </Link>
               </li>

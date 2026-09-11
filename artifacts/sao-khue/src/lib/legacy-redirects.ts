@@ -1,5 +1,13 @@
 import { getPostPublicPathFromSlug } from "./post-url";
-import { getPostPublicPath, normalizeCategory, seedPosts } from "@workspace/seed-content";
+import {
+  getPostPublicPath,
+  HUB_CAI_TAO,
+  HUB_SUA_NHA,
+  HUB_XAY_NHA,
+  normalizeCategory,
+  seedPosts,
+  shouldNoindexPostSlug,
+} from "@workspace/seed-content";
 
 /**
  * Old WordPress URLs indexed by Google (root-level slugs, no /bai-viet/ prefix).
@@ -9,16 +17,16 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   // Google / bookmarks — sửa nhà trọn gói (bài riêng, không trùng /dich-vu/sua-chua-nha)
   "sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
   "sua-nha-tron-goi": "/dich-vu/sua-nha-tron-goi-tphcm",
-  "sua-chua-nha-tron-goi": "/dich-vu/sua-chua-nha",
-  "dich-vu-sua-nha-tron-goi-sao-khue": "/dich-vu/sua-chua-nha",
-  "sua-nha-tphcmsua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
-  "sua-nha-tphcm": "/dich-vu/sua-chua-nha",
-  "sua-nha-gia-re-ho-chi-minh": "/dich-vu/sua-chua-nha",
-  "bang-bao-gia-sua-chua-nha-tron-goi-tai-tp-hcm": "/dich-vu/sua-nha-tron-goi-tphcm",
-  "don-gia-sua-chua-nha-moi-nhat-tai-tp-hcm-nam-2023": "/tin-tuc/bao-gia-sua-chua-nha-tphcm",
-  "bao-gia-sua-nha-tron-goi-tphcm": "/dich-vu/sua-nha-tron-goi-tphcm",
-  "sua-nha-tron-goi-anh-thuan-thanh-pho-thu-duc": "/tin-tuc/sua-nha-thu-duc",
-  "mot-so-hinh-anh-cai-tao-nha-tai-kien-truc-sao-khue": "/tin-tuc/cai-tao-nha-tphcm",
+  "sua-chua-nha-tron-goi": HUB_SUA_NHA,
+  "dich-vu-sua-nha-tron-goi-sao-khue": HUB_SUA_NHA,
+  "sua-nha-tphcmsua-nha-gia-re-ho-chi-minh": HUB_SUA_NHA,
+  "sua-nha-tphcm": HUB_SUA_NHA,
+  "sua-nha-gia-re-ho-chi-minh": HUB_SUA_NHA,
+  "bang-bao-gia-sua-chua-nha-tron-goi-tai-tp-hcm": HUB_SUA_NHA,
+  "don-gia-sua-chua-nha-moi-nhat-tai-tp-hcm-nam-2023": HUB_SUA_NHA,
+  "bao-gia-sua-nha-tron-goi-tphcm": HUB_SUA_NHA,
+  "sua-nha-tron-goi-anh-thuan-thanh-pho-thu-duc": HUB_SUA_NHA,
+  "mot-so-hinh-anh-cai-tao-nha-tai-kien-truc-sao-khue": HUB_CAI_TAO,
   "quy-trinh-xay-dung": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
 
   // Xây nhà trọn gói
@@ -30,13 +38,13 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "xay-dung-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
   "xay-nha-tron-goi-binh-duong": "/dich-vu/xay-nha-tron-goi-binh-duong",
   "xay-nha-tron-goi-dong-nai": "/dich-vu/xay-nha-tron-goi-dong-nai",
-  "xay-nha-tai-tp-hcm": "/tin-tuc/xay-nha-tphcm",
-  "xay-nha-tron-goi-gia-re-tphcm": "/tin-tuc/xay-nha-gia-re-tphcm",
+  "xay-nha-tai-tp-hcm": HUB_XAY_NHA,
+  "xay-nha-tron-goi-gia-re-tphcm": HUB_XAY_NHA,
 
   // Top-level service shortcuts
   "thiet-ke-nha": "/dich-vu/thiet-ke-nha",
   "xay-dung-phan-tho": "/dich-vu/xay-dung-phan-tho",
-  "sua-chua-nha": "/dich-vu/sua-chua-nha",
+  "sua-chua-nha": HUB_SUA_NHA,
   "nang-tang-nha-pho": "/dich-vu/nang-tang-nha-pho",
   "hoan-thien-nha": "/dich-vu/hoan-thien-nha",
   "khuyen-mai-xay-dung": "/dich-vu/khuyen-mai",
@@ -56,7 +64,10 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   // Common typos / old paths
   "gioi-thieu-ve-chung-toi": "/bai-viet/ve-chung-toi",
   "cong-ty-xay-dung-nha-pho-uy-tin-tphcm": "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
-  "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm": "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
+  "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm": "/dich-vu/xay-nha-tron-goi",
+  "nha-thau-xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi",
+  "xay-nha-moi": "/dich-vu/xay-nha-tron-goi",
+  "bao-gia-xay-nha-moi": "/dich-vu/xay-nha-tron-goi",
   "thiet-ke-thi-cong-nha-pho-dong-nai": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
   "thi-cong-nha-pho-dong-nai": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
   "lien-he-ngay": "/lien-he",
@@ -167,39 +178,43 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   // WordPress category archives still indexed
   ["/danh-muc", "/tin-tuc"],
   ["/danh-muc/bao-gia", "/bao-gia"],
-  ["/danh-muc/bao-gia/xay-nha-tron-goi", "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm"],
+  ["/danh-muc/bao-gia/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi"],
   ["/category/bao-gia", "/bao-gia"],
   ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi"],
-  ["/category/sua-chua-nha", "/dich-vu/sua-chua-nha"],
-  ["/dich-vu/xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi"],
-  ["/dich-vu/sua-chua-nha-tphcm", "/dich-vu/sua-chua-nha"],
+  ["/category/sua-chua-nha", HUB_SUA_NHA],
+  ["/dich-vu/xay-nha-tron-goi-tphcm", HUB_XAY_NHA],
+  ["/dich-vu/sua-chua-nha-tphcm", HUB_SUA_NHA],
+  ["/dich-vu/sua-chua-nha", HUB_SUA_NHA],
   ["/dich-vu/khuyen-mai-xay-dung", "/dich-vu/khuyen-mai"],
   // GSC ghosts — soft-200 homepage; 301 về bài/hub thật
-  ["/tin-tuc/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
-  ["/xay-nha-tron-goi-quan-binh-thanh", "/tin-tuc/xay-nha-tron-goi-binh-thanh"],
+  ["/tin-tuc/xay-nha-tron-goi-quan-binh-thanh", HUB_XAY_NHA],
+  ["/xay-nha-tron-goi-quan-binh-thanh", HUB_XAY_NHA],
   ["/tin-tuc/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
   ["/thiet-ke-nha-cap-4-dak-lak", "/tin-tuc/thiet-ke-nha-dep-dak-lak"],
   // GSC "Alternate page with proper canonical" — WP leftovers + near-miss
   ["/tin-tuc/luat-xay-dung", "/tin-tuc/luat-xay-dung-moi-nhat"],
   ["/luat-xay-dung", "/tin-tuc/luat-xay-dung-moi-nhat"],
-  ["/bai-viet/sua-nha-tron-goi-quan-go-vap", "/tin-tuc/sua-nha-go-vap"],
-  ["/tin-tuc/sua-nha-tron-goi-quan-go-vap", "/tin-tuc/sua-nha-go-vap"],
+  ["/bai-viet/sua-nha-tron-goi-quan-go-vap", HUB_SUA_NHA],
+  ["/tin-tuc/sua-nha-tron-goi-quan-go-vap", HUB_SUA_NHA],
   ["/bai-viet/quy-trinh-thiet-ke", "/dich-vu/thiet-ke-nha"],
   ["/quy-trinh-thiet-ke", "/dich-vu/thiet-ke-nha"],
   ["/cong-trinh/xay-nha", "/cong-trinh"],
   ["/tin-tuc/sua-nha-tron-goi", "/dich-vu/sua-nha-tron-goi-tphcm"],
-  ["/bai-viet/thiet-ke-nha-pho-2-tang", "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm"],
-  ["/thiet-ke-nha-pho-2-tang", "/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm"],
+  ["/bai-viet/thiet-ke-nha-pho-2-tang", HUB_XAY_NHA],
+  ["/thiet-ke-nha-pho-2-tang", HUB_XAY_NHA],
   ["/tag", "/tin-tuc"],
   ["/shop", "/"],
   // P0 SEO — slug calendar #473 không tách bài; gộp seed “giá rẻ”
-  ["/tin-tuc/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
-  ["/bai-viet/xay-nha-tron-goi-gia-re-tphcm", "/tin-tuc/xay-nha-gia-re-tphcm"],
+  ["/tin-tuc/xay-nha-tron-goi-gia-re-tphcm", HUB_XAY_NHA],
+  ["/bai-viet/xay-nha-tron-goi-gia-re-tphcm", HUB_XAY_NHA],
+  ["/tin-tuc/xay-nha-gia-re-tphcm", HUB_XAY_NHA],
+  ["/bai-viet/xay-nha-gia-re-tphcm", HUB_XAY_NHA],
+  ["/xay-nha-gia-re-tphcm", HUB_XAY_NHA],
 
   // GSC 2026-09 — URL chết / soft-404 (Insights trending down)
   ["/tin-tuc/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
   ["/sua-chua-nha-tuy-hoa-phu-yen", "/dich-vu/sua-nha-tron-goi-tphcm"],
-  ["/sua-nha-tron-goi-quan-tan-binh", "/tin-tuc/cai-tao-nha-tan-binh"],
+  ["/sua-nha-tron-goi-quan-tan-binh", HUB_SUA_NHA],
 
   // Cannibalization — gom về 1 URL tiền “sửa nhà trọn gói TP.HCM”
   ["/tin-tuc/sua-chua-nha-tron-goi-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
@@ -215,30 +230,58 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/tin-tuc/sua-chua-cai-tao-nha-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
   ["/sua-chua-cai-tao-nha-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
   ["/bai-viet/sua-chua-cai-tao-nha-tphcm", "/dich-vu/sua-nha-tron-goi-tphcm"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-binh-thanh", "/tin-tuc/cai-tao-nha-binh-thanh"],
-  ["/sua-chua-cai-tao-nha-binh-thanh", "/tin-tuc/cai-tao-nha-binh-thanh"],
-  ["/bai-viet/sua-chua-cai-tao-nha-binh-thanh", "/tin-tuc/cai-tao-nha-binh-thanh"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-thu-duc", "/tin-tuc/cai-tao-nha-thu-duc"],
-  ["/sua-chua-cai-tao-nha-thu-duc", "/tin-tuc/cai-tao-nha-thu-duc"],
-  ["/bai-viet/sua-chua-cai-tao-nha-thu-duc", "/tin-tuc/cai-tao-nha-thu-duc"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-quan-7", "/tin-tuc/cai-tao-nha-quan-7"],
-  ["/sua-chua-cai-tao-nha-quan-7", "/tin-tuc/cai-tao-nha-quan-7"],
-  ["/bai-viet/sua-chua-cai-tao-nha-quan-7", "/tin-tuc/cai-tao-nha-quan-7"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-go-vap", "/tin-tuc/cai-tao-nha-go-vap"],
-  ["/sua-chua-cai-tao-nha-go-vap", "/tin-tuc/cai-tao-nha-go-vap"],
-  ["/bai-viet/sua-chua-cai-tao-nha-go-vap", "/tin-tuc/cai-tao-nha-go-vap"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-binh-chanh", "/tin-tuc/cai-tao-nha-binh-chanh"],
-  ["/sua-chua-cai-tao-nha-binh-chanh", "/tin-tuc/cai-tao-nha-binh-chanh"],
-  ["/bai-viet/sua-chua-cai-tao-nha-binh-chanh", "/tin-tuc/cai-tao-nha-binh-chanh"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-tan-phu", "/tin-tuc/cai-tao-nha-tan-phu"],
-  ["/sua-chua-cai-tao-nha-tan-phu", "/tin-tuc/cai-tao-nha-tan-phu"],
-  ["/bai-viet/sua-chua-cai-tao-nha-tan-phu", "/tin-tuc/cai-tao-nha-tan-phu"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-quan-1", "/tin-tuc/cai-tao-nha-quan-1"],
-  ["/sua-chua-cai-tao-nha-quan-1", "/tin-tuc/cai-tao-nha-quan-1"],
-  ["/bai-viet/sua-chua-cai-tao-nha-quan-1", "/tin-tuc/cai-tao-nha-quan-1"],
-  ["/tin-tuc/sua-chua-cai-tao-nha-hoc-mon", "/tin-tuc/cai-tao-nha-hoc-mon"],
-  ["/sua-chua-cai-tao-nha-hoc-mon", "/tin-tuc/cai-tao-nha-hoc-mon"],
-  ["/bai-viet/sua-chua-cai-tao-nha-hoc-mon", "/tin-tuc/cai-tao-nha-hoc-mon"],
+  ["/tin-tuc/sua-chua-cai-tao-nha-binh-thanh", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-binh-thanh", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-binh-thanh", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-thu-duc", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-thu-duc", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-thu-duc", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-quan-7", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-quan-7", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-quan-7", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-go-vap", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-go-vap", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-go-vap", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-binh-chanh", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-binh-chanh", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-binh-chanh", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-tan-phu", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-tan-phu", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-tan-phu", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-quan-1", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-quan-1", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-quan-1", HUB_SUA_NHA],
+  ["/tin-tuc/sua-chua-cai-tao-nha-hoc-mon", HUB_SUA_NHA],
+  ["/sua-chua-cai-tao-nha-hoc-mon", HUB_SUA_NHA],
+  ["/bai-viet/sua-chua-cai-tao-nha-hoc-mon", HUB_SUA_NHA],
+
+  // District / geo thin — đích cũ 404; gom về landing / trang tiền
+  ["/tin-tuc/cai-tao-nha-tan-binh", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-binh-thanh", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-thu-duc", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-quan-7", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-go-vap", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-binh-chanh", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-tan-phu", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-quan-1", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-hoc-mon", HUB_CAI_TAO],
+  ["/tin-tuc/cai-tao-nha-tphcm", HUB_CAI_TAO],
+  ["/tin-tuc/sua-nha-go-vap", HUB_SUA_NHA],
+  ["/tin-tuc/sua-nha-thu-duc", HUB_SUA_NHA],
+  ["/tin-tuc/bao-gia-sua-chua-nha-tphcm", HUB_SUA_NHA],
+  ["/tin-tuc/xay-nha-tron-goi-binh-thanh", HUB_XAY_NHA],
+  ["/tin-tuc/thiet-ke-nha-pho-2-tang-tphcm", HUB_XAY_NHA],
+  ["/tin-tuc/xay-nha-tphcm", HUB_XAY_NHA],
+
+  // Cannibalization — gom về 1 URL tiền “xây nhà trọn gói TP.HCM”
+  ["/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi"],
+  ["/bai-viet/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi"],
+  ["/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi"],
+  ["/bai-viet/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi"],
+  ["/dich-vu/xay-nha-moi", "/dich-vu/xay-nha-tron-goi"],
+  ["/bai-viet/xay-nha-moi", "/dich-vu/xay-nha-tron-goi"],
+  ["/tin-tuc/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi"],
+  ["/bai-viet/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */
@@ -276,6 +319,9 @@ export function collectServerRedirects(): Map<string, string> {
   }
 
   for (const post of seedPosts) {
+    // Factory/noindex: không 301 /slug → /tin-tuc/slug (đích 404). Catch-all Edge/Express gom về hub.
+    if (shouldNoindexPostSlug(post.slug) || post.noindex) continue;
+
     const canonical = getPostPublicPath(post);
     const cat = normalizeCategory(post.category);
 

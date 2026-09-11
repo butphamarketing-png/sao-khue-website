@@ -12,7 +12,7 @@ import rssRouter from "./routes/rss";
 import { logger } from "./lib/logger";
 import { getCorsOptions } from "./lib/cors";
 import { authMiddleware } from "./middlewares/authMiddleware";
-import { shouldSpaShellFallback } from "@workspace/seed-content";
+import { hubForUnknownPathname, shouldSpaShellFallback } from "@workspace/seed-content";
 
 /** Opaque so Vercel NFT does not pack the entire static tree into api/index. */
 function publicDirName(): string {
@@ -141,8 +141,13 @@ if (!isVercel && existsSync(frontendIndexPath)) {
       return;
     }
 
-    // URL không nằm trong seed/menu → hard 404 (không soft-200 SPA shell / homepage).
+    // URL không nằm trong seed/menu — factory/thin → 301 hub; còn lại 404 (không soft-200).
     if (knownPaths && !knownPaths.has(pathOnly) && pathOnly !== "/404") {
+      const hub = hubForUnknownPathname(pathOnly);
+      if (hub && hub !== pathOnly) {
+        res.redirect(301, hub);
+        return;
+      }
       sendNotFound(res);
       return;
     }

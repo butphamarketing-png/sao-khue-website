@@ -10,6 +10,7 @@ import {
   injectArticleToc,
   normalizeCategory,
   prepareArticleHtml,
+  rewriteRetiredHrefsInHtml,
   seedPosts,
 } from "../../../lib/seed-content/src/index.ts";
 import {
@@ -162,7 +163,7 @@ function buildStaticPages(): PrerenderPage[] {
         <h2>Công trình đã bàn giao</h2>
         <ul>
           <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Nhà phố Thuận An</a></li>
-          <li><a href="/cong-trinh/sua-nha-quan-3">Cải tạo nhà phố Quận 3</a></li>
+          <li><a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố phong cách hiện đại</a></li>
           <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Biệt thự Thủ Đức</a></li>
           <li><a href="/cong-trinh">Xem toàn bộ công trình</a></li>
         </ul>
@@ -242,38 +243,38 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/xay-nha",
       meta: {
-        title: `Xây nhà trọn gói TP.HCM — Báo giá miễn phí | ${BRAND_SHORT}`,
+        title: `Nhận báo giá xây nhà nhanh — Form Ads | ${BRAND_SHORT}`,
         description:
-          "Xây nhà trọn gói chìa khóa trao tay tại TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — hotline 0909 075 668.",
+          "Landing Ads: để lại SĐT nhận báo giá xây nhà phố. Hotline 0909 075 668 — trang dịch vụ chính: /dich-vu/xay-nha-tron-goi.",
         path: "/xay-nha",
-        keywords: "xây nhà, xây nhà trọn gói, xây nhà tphcm, đơn giá xây nhà",
+        keywords: "báo giá xây nhà, form ads xây nhà, ước tính chi phí xây nhà",
         ogImage: `${SITE_URL}/images/ads/hero-xay-nha.jpg`,
-        ogImageAlt: `Xây nhà trọn gói TP.HCM — ${BRAND_SHORT}`,
+        ogImageAlt: `Form báo giá xây nhà — ${BRAND_SHORT}`,
+        noindex: true,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
-        <p>Khảo sát miễn phí — báo giá minh bạch — bảo hành kết cấu 10 năm tại TP.HCM, Bình Dương, Đồng Nai.</p>
-        <p>Phần thô từ 3,55 triệu/m² · Trọn gói từ 4,85 triệu/m².</p>
+        <h1>Nhận báo giá xây nhà nhanh</h1>
+        <p>Landing Ads — khảo sát miễn phí. Trang dịch vụ chính: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
     {
       path: "/cai-tao-nha",
       meta: {
-        title: `Cải Tạo Nhà Phố TP.HCM — Khảo Sát Miễn Phí | ${BRAND_SHORT}`,
+        title: `Nhận báo giá cải tạo nhà — Form Ads | ${BRAND_SHORT}`,
         description:
-          "Cải tạo nhà phố TP.HCM: làm mới 1–2 triệu/m², đổi công năng 2,5–3,5 triệu/m², gia cố 3,5–5 triệu/m². Khảo sát miễn phí — 0909 075 668.",
+          "Landing Ads cải tạo nhà phố. Hotline 0909 075 668 — trang dịch vụ chính: /dich-vu/sua-nha-tron-goi-tphcm.",
         path: "/cai-tao-nha",
-        keywords: "cải tạo nhà, cải tạo nhà cũ tphcm, cải tạo nhà phố, nâng tầng nhà phố",
+        keywords: "báo giá cải tạo nhà, form ads cải tạo, khảo sát cải tạo nhà",
         ogImage: `${SITE_URL}/images/ads/hero-cai-tao.jpg`,
-        ogImageAlt: `Cải tạo nhà phố TP.HCM — ${BRAND_SHORT}`,
+        ogImageAlt: `Form báo giá cải tạo nhà — ${BRAND_SHORT}`,
+        noindex: true,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Cải tạo nhà phố — giữ kết cấu, làm mới công năng</h1>
-        <p>Cải tạo nhà cũ, nâng tầng, chống thấm, đổi mặt tiền. Khảo sát hiện trạng miễn phí tại TP.HCM.</p>
-        <p>Làm mới từ 1–2 triệu/m² · Đổi công năng 2,5–3,5 triệu/m² · Gia cố 3,5–5 triệu/m².</p>
+        <h1>Nhận báo giá cải tạo nhà nhanh</h1>
+        <p>Landing Ads — khảo sát hiện trạng miễn phí. Dịch vụ chính: <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói TP.HCM</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/cai-tao-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
@@ -494,7 +495,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       imageAlt,
       imageCaption,
     });
-    const contentHtml = enhanceArticleHtml(injectArticleToc(prepared), imageAlt);
+    const contentHtml = rewriteRetiredHrefsInHtml(enhanceArticleHtml(injectArticleToc(prepared), imageAlt));
     const crumbs = buildPostBreadcrumbItems(post);
     const crumbNav = crumbs
       .map(

@@ -3,14 +3,14 @@ import type { MenuItem } from "@/lib/menu";
 
 /** Link crawlable tới trang money — ưu tiên SEO hơn hash calculator. */
 const MONEY_LINKS = [
-  { label: "BÁO GIÁ TRỌN GÓI TP.HCM", href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", tone: "green" },
-  { label: "ĐƠN GIÁ XÂY NHÀ", href: "/tin-tuc/don-gia-xay-nha-tphcm", tone: "red" },
-  { label: "CHI PHÍ XÂY NHÀ", href: "/tin-tuc/chi-phi-xay-nha-tphcm", tone: "yellow" },
-  { label: "XÂY NHÀ GIÁ RẺ", href: "/tin-tuc/xay-nha-gia-re-tphcm", tone: "pink" },
-  { label: "BÁO GIÁ PHẦN THÔ", href: "/tin-tuc/bao-gia-xay-nha-phan-tho-tphcm", tone: "teal" },
-  { label: "BÁO GIÁ CẢI TẠO", href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", tone: "blue" },
+  { label: "BÁO GIÁ TRỌN GÓI TP.HCM", href: "/dich-vu/xay-nha-tron-goi", tone: "green" },
+  { label: "ĐƠN GIÁ XÂY NHÀ", href: "/dich-vu/xay-nha-tron-goi", tone: "red" },
+  { label: "CHI PHÍ XÂY NHÀ", href: "/dich-vu/xay-nha-tron-goi", tone: "yellow" },
+  { label: "XÂY NHÀ GIÁ RẺ", href: "/dich-vu/xay-nha-tron-goi", tone: "pink" },
+  { label: "BÁO GIÁ PHẦN THÔ", href: "/dich-vu/xay-dung-phan-tho", tone: "teal" },
+  { label: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-nha-tron-goi-tphcm", tone: "blue" },
   { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi", tone: "orange" },
-  { label: "CẢI TẠO NHÀ CŨ", href: "/tin-tuc/cai-tao-nha-cu-tphcm", tone: "green" },
+  { label: "CẢI TẠO NHÀ CŨ", href: "/cai-tao-nha", tone: "green" },
   { label: "TÍNH CHI PHÍ NHANH", href: "#tinh-chi-phi", tone: "green" },
 ] as const;
 

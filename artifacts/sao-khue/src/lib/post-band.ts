@@ -1,5 +1,5 @@
 import type { Post } from "@workspace/api-client-react";
-import { getFallbackPost } from "@workspace/seed-content";
+import { getFallbackPost, shouldNoindexPostSlug } from "@workspace/seed-content";
 import type { HomePostsBandConfig } from "@/lib/home-content";
 import { repairPostText } from "./post-encoding";
 
@@ -20,7 +20,7 @@ export function pickBandPosts(allPosts: Post[], config: HomePostsBandConfig): Po
   if (config.slugs?.length) {
     for (const slug of config.slugs) {
       const post = postForSlug(slug, bySlug);
-      if (post && !seen.has(post.slug)) {
+      if (post && !seen.has(post.slug) && !shouldNoindexPostSlug(post.slug) && !(post as { noindex?: boolean }).noindex) {
         out.push(post);
         seen.add(post.slug);
       }
@@ -29,7 +29,9 @@ export function pickBandPosts(allPosts: Post[], config: HomePostsBandConfig): Po
 
   if (out.length >= limit) return out.slice(0, limit);
 
-  let filtered = allPosts.filter((p) => !seen.has(p.slug));
+  let filtered = allPosts.filter(
+    (p) => !seen.has(p.slug) && !shouldNoindexPostSlug(p.slug) && !(p as { noindex?: boolean }).noindex,
+  );
   if (config.category) {
     filtered = filtered.filter((p) => p.category === config.category);
   }

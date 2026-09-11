@@ -35,10 +35,10 @@ export const veChungToi = {
 <h2>Năng lực cốt lõi</h2>
 <ul>
   <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> chìa khóa trao tay tại TP.HCM.</li>
-  <li><a href="/bao-gia">Báo giá xây dựng</a> · <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a> · <a href="/tin-tuc/chi-phi-xay-nha-tphcm">chi phí xây nhà</a>.</li>
-  <li><a href="/tin-tuc/thiet-ke-nha-pho-tphcm">Thiết kế nhà phố</a> 2D/3D, tối ưu công năng.</li>
-  <li><a href="/tin-tuc/cai-tao-nha-cu-tphcm">Cải tạo nhà cũ</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a>.</li>
-  <li><a href="/tin-tuc/xay-nha-gia-re-tphcm">Xây nhà giá rẻ</a> tối ưu ngân sách an toàn.</li>
+  <li><a href="/bao-gia">Báo giá xây dựng</a>.</li>
+  <li><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà phố</a> 2D/3D, tối ưu công năng.</li>
+  <li><a href="/cai-tao-nha">Cải tạo nhà cũ</a> · <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a>.</li>
+  <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> tối ưu ngân sách an toàn.</li>
 </ul>
 
 <h2>Con số nổi bật</h2>

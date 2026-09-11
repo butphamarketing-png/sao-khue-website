@@ -70,7 +70,8 @@ export const suaNhaTronGoiTphcm = {
 <h2>Công trình sửa–cải tạo thực tế</h2>
 <p>Ảnh và case dưới đây là công trình Sao Khuê đã bàn giao — dùng để đối chiếu phong cách làm việc trước khi ký:</p>
 <ul>
-  <li><a href="/cong-trinh/sua-nha-quan-3">Cải tạo nhà phố Quận 3</a> — nhà đang ở, che chắn theo giai đoạn.</li>
+  <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố Bình Thạnh</a> — thi công nội thành, giám sát hiện trường.</li>
+  <li><a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Nhà phố phong cách hiện đại</a> — mẫu thiết kế–thi công.</li>
   <li><a href="/cong-trinh">Thư viện công trình</a> — xây mới và cải tạo đa quận.</li>
 </ul>
 <p>Muốn xem hiện trường gần khu vực nhà bạn: gọi hotline để sắp xếp (theo lịch chủ nhà đồng ý).</p>
@@ -92,14 +93,14 @@ export const suaNhaTronGoiTphcm = {
 <h3>Thanh toán thế nào?</h3>
 <p>Theo tiến độ nghiệm thu; giữ khoảng 10% đến bàn giao. Không yêu cầu trả 100% trước khi thi công.</p>
 <h3>Xem công trình mẫu được không?</h3>
-<p>Có — tham khảo <a href="/cong-trinh/sua-nha-quan-3">cải tạo nhà phố Quận 3</a> và các dự án trên <a href="/cong-trinh">mục công trình</a>.</p>
+<p>Có — tham khảo các dự án trên <a href="/cong-trinh">mục công trình</a> (nhà phố Bình Thạnh, Thuận An, biệt thự Thủ Đức) hoặc gọi hotline để sắp xếp tham quan.</p>
 
 <h2>Liên hệ khảo sát &amp; báo giá</h2>
 <ul>
   <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Bình Thạnh, TP.HCM</li>
-  <li><a href="/bao-gia">Máy tính báo giá</a> · <a href="/lien-he">Form liên hệ</a> · <a href="/dich-vu/sua-chua-nha">Sửa chữa nhà (hub)</a></li>
+  <li><a href="/bao-gia">Máy tính báo giá</a> · <a href="/lien-he">Form liên hệ</a> · <a href="/cai-tao-nha">Cải tạo nhà</a></li>
 </ul>
 `.trim(),
 };

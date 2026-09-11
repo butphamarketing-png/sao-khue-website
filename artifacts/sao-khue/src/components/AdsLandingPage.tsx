@@ -59,6 +59,8 @@ export function AdsLandingPage({ config }: Props) {
     keywords: config.keywords,
     ogImage: config.heroImage || ogImage,
     ogImageAlt: `${config.serviceLabel} — ${brand}`,
+    // Ads landing — không tranh index với trang tiền /dich-vu/*
+    noindex: true,
     jsonLd: [
       buildBreadcrumbSchema([
         { name: "Trang chủ", path: "/" },
@@ -134,6 +136,12 @@ export function AdsLandingPage({ config }: Props) {
                   {phone}
                 </a>
               )}
+              <Link
+                href={config.path === "/cai-tao-nha" ? "/dich-vu/sua-nha-tron-goi-tphcm" : "/dich-vu/xay-nha-tron-goi"}
+                className="inline-flex h-12 items-center border border-white/40 px-5 text-sm font-bold uppercase tracking-wide text-white/90 hover:bg-white/10"
+              >
+                Xem dịch vụ chi tiết
+              </Link>
             </div>
 
             {trustChips.length > 0 && (

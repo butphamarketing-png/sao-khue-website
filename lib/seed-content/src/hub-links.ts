@@ -2,109 +2,64 @@
  * Internal linking — hub pillars, topic clusters, case studies.
  * Dùng runtime (PostPage) và có thể tái sử dụng trong seed HTML.
  */
+import { HUB_CAI_TAO, HUB_SUA_NHA, HUB_XAY_NHA } from "./sitemap-policy";
+
 
 export type HubLink = { href: string; label: string };
 
 export const CONG_TRINH_CASE_STUDIES: HubLink[] = [
   { href: "/cong-trinh/xay-nha-pho-binh-thanh", label: "Xây nhà phố Bình Thạnh 4 tầng" },
   { href: "/cong-trinh/xay-nha-pho-thuan-an", label: "Xây nhà phố Thuận An" },
-  { href: "/cong-trinh/sua-nha-quan-3", label: "Cải tạo nhà phố Quận 3" },
-  { href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", label: "Biệt thự sân vườn Thủ Đức" },
   { href: "/cong-trinh/thiet-ke-nha-phong-cach-hien-dai", label: "Nhà phố phong cách hiện đại" },
+  { href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", label: "Biệt thự sân vườn Thủ Đức" },
 ];
 
 export const TIN_TUC_MAIN_HUBS: HubLink[] = [
-  { href: "/tin-tuc/xay-nha-tphcm", label: "Xây nhà TP.HCM" },
-  { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
-  { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà" },
-  { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà" },
-  { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
-  { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
-  { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
-  { href: "/tin-tuc/thiet-ke-nha-pho-tphcm", label: "Thiết kế nhà phố" },
+  { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
+  { href: "/bao-gia", label: "Bảng báo giá xây nhà" },
+  { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ TP.HCM" },
+  { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
+  { href: "/dich-vu/thiet-ke-nha", label: "Thiết kế nhà phố" },
   { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
 ];
 
 const BUILD_CLUSTER: HubLink[] = [
-  { href: "/dich-vu/xay-nha-tron-goi", label: "Dịch vụ xây nhà trọn gói" },
-  { href: "/xay-moi", label: "Xây nhà mới trọn gói" },
-  { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
-  { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà TP.HCM" },
-  { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà TP.HCM" },
-  { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
+  { href: HUB_XAY_NHA, label: "Dịch vụ xây nhà trọn gói" },
+  { href: "/bao-gia", label: "Bảng báo giá & máy tính" },
   { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "Công ty xây dựng uy tín" },
-  { href: "/tin-tuc/xay-nha-chia-khoa-trao-tay-tphcm", label: "Xây nhà chìa khóa trao tay" },
-  { href: "/tin-tuc/bao-gia-xay-nha-2026", label: "Báo giá xây nhà 2026" },
-  { href: "/tin-tuc/xay-nha-pho-4x16-tphcm", label: "Xây nhà phố 4x16" },
-  { href: "/tin-tuc/chi-phi-xay-nha-3-tang-tphcm", label: "Chi phí nhà 3 tầng" },
+  { href: "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z", label: "Quy trình chìa khóa trao tay" },
+  { href: "/mau-nha/2-tang", label: "Mẫu nhà 2 tầng" },
+  { href: "/mau-nha/3-tang", label: "Mẫu nhà 3 tầng" },
+  { href: "/cong-trinh/xay-nha-pho-binh-thanh", label: "Công trình nhà phố Bình Thạnh" },
 ];
 
 const RENOVATION_CLUSTER: HubLink[] = [
-  { href: "/dich-vu/cai-tao-nha-cu", label: "Dịch vụ cải tạo nhà cũ" },
-  { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ TP.HCM" },
-  { href: "/tin-tuc/cai-tao-nha-tron-goi-tphcm", label: "Cải tạo nhà trọn gói TP.HCM" },
-  { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" },
-  { href: "/tin-tuc/chi-phi-cai-tao-nha-tphcm", label: "Chi phí cải tạo nhà" },
-  { href: "/tin-tuc/nang-tang-nha-pho-tphcm", label: "Nâng tầng nhà phố" },
-  { href: "/tin-tuc/cai-tao-nha-dang-o-tphcm", label: "Cải tạo nhà đang ở" },
-  { href: "/tin-tuc/nang-tang-nha-cu-tphcm", label: "Nâng tầng nhà cũ" },
-  { href: "/tin-tuc/cai-tao-bep-wc-tphcm", label: "Cải tạo bếp & WC" },
-  { href: "/tin-tuc/cai-tao-nha-cho-thue-tphcm", label: "Cải tạo nhà cho thuê" },
+  { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ TP.HCM" },
+  { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
+  { href: "/dich-vu/nang-tang-nha-pho", label: "Nâng tầng nhà phố" },
+  { href: "/cong-trinh/sua-nha-quan-3", label: "Công trình cải tạo Quận 3" },
+  { href: "/bao-gia", label: "Bảng báo giá" },
 ];
 
 const REPAIR_CLUSTER: HubLink[] = [
-  { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
-  { href: "/tin-tuc/chong-tham-nha-tphcm", label: "Chống thấm nhà TP.HCM" },
-  { href: "/tin-tuc/bao-gia-sua-chua-nha-tphcm", label: "Báo giá sửa chữa nhà" },
-  { href: "/tin-tuc/gia-co-nha-cu-tphcm", label: "Gia cố nhà cũ" },
-  { href: "/tin-tuc/cong-ty-sua-chua-nha-tphcm", label: "Công ty sửa chữa nhà" },
-  { href: "/tin-tuc/chong-tham-san-thuong-tphcm", label: "Chống thấm sân thượng" },
+  { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
+  { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ" },
+  { href: "/dich-vu/nang-tang-nha-pho", label: "Nâng tầng nhà phố" },
+  { href: "/cong-trinh/sua-nha-quan-3", label: "Công trình sửa nhà Quận 3" },
+  { href: "/bao-gia", label: "Bảng báo giá" },
 ];
 
 const DESIGN_CLUSTER: HubLink[] = [
   { href: "/dich-vu/thiet-ke-nha", label: "Dịch vụ thiết kế nhà" },
-  { href: "/tin-tuc/thiet-ke-nha-pho-tphcm", label: "Thiết kế nhà phố TP.HCM" },
-  { href: "/tin-tuc/thiet-ke-nha-dep-tphcm", label: "Thiết kế nhà đẹp TP.HCM" },
-  { href: "/tin-tuc/thiet-ke-nha-dep-gia-re", label: "Thiết kế nhà đẹp giá rẻ" },
   { href: "/thiet-ke", label: "Trang thiết kế kiến trúc" },
+  { href: "/cong-trinh/thiet-ke-nha-phong-cach-hien-dai", label: "Nhà phố hiện đại" },
+  { href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc", label: "Biệt thự Thủ Đức" },
+  { href: HUB_XAY_NHA, label: "Xây nhà trọn gói" },
 ];
 
 const DISTRICT_HUBS: { match: RegExp; link: HubLink }[] = [
-  { match: /cai-tao-nha-quan-4/, link: { href: "/tin-tuc/cai-tao-nha-quan-4", label: "Cải tạo nhà Quận 4" } },
-  { match: /cai-tao-nha-quan-5/, link: { href: "/tin-tuc/cai-tao-nha-quan-5", label: "Cải tạo nhà Quận 5" } },
-  { match: /cai-tao-nha-quan-6/, link: { href: "/tin-tuc/cai-tao-nha-quan-6", label: "Cải tạo nhà Quận 6" } },
-  { match: /cai-tao-nha-quan-9/, link: { href: "/tin-tuc/cai-tao-nha-quan-9", label: "Cải tạo nhà Quận 9" } },
-  { match: /cai-tao-nha-quan-11/, link: { href: "/tin-tuc/cai-tao-nha-quan-11", label: "Cải tạo nhà Quận 11" } },
-  { match: /cai-tao-nha-cu-chi/, link: { href: "/tin-tuc/cai-tao-nha-cu-chi", label: "Cải tạo nhà Củ Chi" } },
-  { match: /cai-tao-nha-quan-1/, link: { href: "/tin-tuc/cai-tao-nha-quan-1", label: "Cải tạo nhà Quận 1" } },
-  { match: /cai-tao-nha-quan-3/, link: { href: "/tin-tuc/cai-tao-nha-quan-3", label: "Cải tạo nhà Quận 3" } },
-  { match: /cai-tao-nha-quan-8/, link: { href: "/tin-tuc/cai-tao-nha-quan-8", label: "Cải tạo nhà Quận 8" } },
-  { match: /cai-tao-nha-quan-10/, link: { href: "/tin-tuc/cai-tao-nha-quan-10", label: "Cải tạo nhà Quận 10" } },
-  { match: /cai-tao-nha-quan-12/, link: { href: "/tin-tuc/cai-tao-nha-quan-12", label: "Cải tạo nhà Quận 12" } },
-  { match: /cai-tao-nha-phu-nhuan/, link: { href: "/tin-tuc/cai-tao-nha-phu-nhuan", label: "Cải tạo nhà Phú Nhuận" } },
-  { match: /cai-tao-nha-binh-tan/, link: { href: "/tin-tuc/cai-tao-nha-binh-tan", label: "Cải tạo nhà Bình Tân" } },
-  { match: /cai-tao-nha-nha-be/, link: { href: "/tin-tuc/cai-tao-nha-nha-be", label: "Cải tạo nhà Nhà Bè" } },
-  { match: /cai-tao-nha-binh-chanh/, link: { href: "/tin-tuc/cai-tao-nha-binh-chanh", label: "Cải tạo nhà Bình Chánh" } },
-  { match: /cai-tao-nha-hoc-mon/, link: { href: "/tin-tuc/cai-tao-nha-hoc-mon", label: "Cải tạo nhà Hóc Môn" } },
-  { match: /cai-tao-nha-binh-thanh/, link: { href: "/tin-tuc/cai-tao-nha-binh-thanh", label: "Cải tạo nhà Bình Thạnh" } },
-  { match: /cai-tao-nha-thu-duc/, link: { href: "/tin-tuc/cai-tao-nha-thu-duc", label: "Cải tạo nhà Thủ Đức" } },
-  { match: /cai-tao-nha-go-vap/, link: { href: "/tin-tuc/cai-tao-nha-go-vap", label: "Cải tạo nhà Gò Vấp" } },
-  { match: /cai-tao-nha-tan-binh/, link: { href: "/tin-tuc/cai-tao-nha-tan-binh", label: "Cải tạo nhà Tân Bình" } },
-  { match: /cai-tao-nha-tan-phu/, link: { href: "/tin-tuc/cai-tao-nha-tan-phu", label: "Cải tạo nhà Tân Phú" } },
-  { match: /cai-tao-nha-quan-7/, link: { href: "/tin-tuc/cai-tao-nha-quan-7", label: "Cải tạo nhà Quận 7" } },
-  { match: /tron-goi-quan-7|xay-nha-quan-7/, link: { href: "/tin-tuc/xay-nha-tron-goi-quan-7", label: "Trọn gói Quận 7" } },
-  { match: /tron-goi-quan-3|quan-3/, link: { href: "/tin-tuc/xay-nha-tron-goi-quan-3", label: "Trọn gói Quận 3" } },
-  { match: /tron-goi-tan-binh|tan-binh/, link: { href: "/tin-tuc/xay-nha-tron-goi-tan-binh", label: "Trọn gói Tân Bình" } },
-  { match: /tron-goi-binh-tan|binh-tan/, link: { href: "/tin-tuc/xay-nha-tron-goi-binh-tan", label: "Trọn gói Bình Tân" } },
-  { match: /tron-goi-nha-be|xay-nha-nha-be/, link: { href: "/tin-tuc/xay-nha-tron-goi-nha-be", label: "Trọn gói Nhà Bè" } },
-  { match: /binh-thanh/, link: { href: "/tin-tuc/xay-nha-binh-thanh", label: "Xây nhà Bình Thạnh" } },
-  { match: /thu-duc/, link: { href: "/tin-tuc/xay-nha-thu-duc", label: "Xây nhà Thủ Đức" } },
-  { match: /quan-7/, link: { href: "/tin-tuc/xay-nha-quan-7", label: "Xây nhà Quận 7" } },
-  { match: /go-vap/, link: { href: "/tin-tuc/xay-nha-go-vap", label: "Xây nhà Gò Vấp" } },
-  { match: /tan-phu/, link: { href: "/tin-tuc/xay-nha-tan-phu", label: "Xây nhà Tân Phú" } },
-  { match: /quan-2/, link: { href: "/tin-tuc/xay-nha-quan-2", label: "Xây nhà Quận 2" } },
-  { match: /nha-be/, link: { href: "/tin-tuc/xay-nha-nha-be", label: "Xây nhà Nhà Bè" } },
-  { match: /quan-3/, link: { href: "/tin-tuc/sua-nha-cu-tphcm", label: "Sửa nhà cũ TP.HCM" } },
+  { match: /cai-tao|sua-nha|sua-chua|nang-tang|chong-tham/, link: { href: HUB_SUA_NHA, label: "Sửa & cải tạo nhà TP.HCM" } },
+  { match: /xay-nha|tron-goi|thi-cong/, link: { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" } },
 ];
 
 type PostTopic = "build" | "renovation" | "repair" | "design" | "pricing" | "general";
@@ -122,19 +77,17 @@ function classifyPostTopic(slug: string): PostTopic {
 function parentHubForTopic(topic: PostTopic, slug: string): HubLink | null {
   switch (topic) {
     case "build":
-      return { href: "/tin-tuc/xay-nha-tphcm", label: "Hub xây nhà TP.HCM" };
+      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" };
     case "renovation":
     case "repair":
-      return { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Hub cải tạo & sửa nhà TP.HCM" };
+      return { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" };
     case "design":
-      return { href: "/tin-tuc/thiet-ke-nha-dep-tphcm", label: "Hub thiết kế nhà TP.HCM" };
+      return { href: "/dich-vu/thiet-ke-nha", label: "Thiết kế nhà TP.HCM" };
     case "pricing":
-      if (slug.includes("sua")) {
-        return { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" };
+      if (slug.includes("sua") || slug.includes("cai-tao")) {
+        return { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" };
       }
-      return slug.includes("cai-tao")
-        ? { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" }
-        : { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" };
+      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" };
     default:
       return null;
   }
@@ -152,13 +105,10 @@ function clusterForTopic(topic: PostTopic): HubLink[] {
       return DESIGN_CLUSTER;
     case "pricing":
       return [
-        { href: "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", label: "Báo giá xây nhà trọn gói" },
-        { href: "/tin-tuc/don-gia-xay-nha-tphcm", label: "Đơn giá xây nhà TP.HCM" },
-        { href: "/tin-tuc/chi-phi-xay-nha-tphcm", label: "Chi phí xây nhà TP.HCM" },
-        { href: "/tin-tuc/xay-nha-gia-re-tphcm", label: "Xây nhà giá rẻ" },
-        { href: "/tin-tuc/bao-gia-cai-tao-nha-tphcm", label: "Báo giá cải tạo nhà" },
-        { href: "/dich-vu/sua-nha-tron-goi-tphcm", label: "Sửa nhà trọn gói TP.HCM" },
+        { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
         { href: "/bao-gia", label: "Bảng báo giá xây dựng" },
+        { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ" },
+        { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
       ];
     default:
       return TIN_TUC_MAIN_HUBS.slice(0, 4);
@@ -189,8 +139,8 @@ export function resolvePostHubLinks(slug: string, category = "tin-tuc"): HubLink
     return dedupeLinks([
       { href: "/cong-trinh", label: "Tất cả công trình tiêu biểu" },
       ...CONG_TRINH_CASE_STUDIES.filter((c) => !c.href.endsWith(`/${slug}`)),
-      { href: "/tin-tuc/xay-nha-tphcm", label: "Xây nhà TP.HCM" },
-      { href: "/tin-tuc/cai-tao-nha-cu-tphcm", label: "Cải tạo nhà cũ" },
+      { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
+      { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ" },
       { href: "/bao-gia", label: "Bảng báo giá" },
       { href: "/lien-he", label: "Đặt lịch khảo sát" },
     ]).slice(0, 10);
@@ -223,11 +173,11 @@ export function resolveRelevantCaseStudies(slug: string): HubLink[] {
   if (/thu-duc|biet-thu/.test(s)) {
     picks.push(CONG_TRINH_CASE_STUDIES[3]!);
   }
-  if (/quan-3|cai-tao|sua-nha|lam-moi|chong-tham/.test(s)) {
+  if (/quan-3|cai-tao|sua-nha|lam-moi|chong-tham|hien-dai/.test(s)) {
     picks.push(CONG_TRINH_CASE_STUDIES[2]!);
   }
-  if (/thiet-ke|hien-dai|mau-nha/.test(s)) {
-    picks.push(CONG_TRINH_CASE_STUDIES[4]!);
+  if (/thiet-ke|mau-nha/.test(s)) {
+    picks.push(CONG_TRINH_CASE_STUDIES[2]!);
   }
   if (/binh-duong|thuan-an|dong-nai/.test(s)) {
     picks.push(CONG_TRINH_CASE_STUDIES[1]!);

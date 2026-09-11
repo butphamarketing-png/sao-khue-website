@@ -760,6 +760,13 @@ export {
   shouldNoindexPostSlug,
   shouldSpaShellFallback,
   SPA_SHELL_FALLBACK_PATHS,
+  hubForRetiredSlug,
+  hubForUnknownPathname,
+  canonicalInternalPath,
+  rewriteRetiredHrefsInHtml,
+  HUB_SUA_NHA,
+  HUB_XAY_NHA,
+  HUB_CAI_TAO,
 } from "./sitemap-policy";
 
 export { MONEY_PAGE_OVERRIDE_SLUGS } from "./articles/money-page-overrides";

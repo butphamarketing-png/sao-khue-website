@@ -257,7 +257,7 @@ export type AggregateRatingInput = {
 const DEFAULT_SERVICE_OFFERS = [
   { name: "Xây nhà trọn gói TP.HCM", url: "/dich-vu/xay-nha-tron-goi" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
-  { name: "Cải tạo nhà cũ", url: "/dich-vu/sua-chua-nha" },
+  { name: "Cải tạo nhà cũ", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },
 ];
 

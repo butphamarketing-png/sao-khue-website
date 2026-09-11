@@ -58,10 +58,10 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-xay-nha.jpg",
   heroImageAlt: "Nhà phố hiện đại xây trọn gói Sao Khuê",
   keywords:
-    "xây nhà trọn gói tphcm, xây nhà trọn gói giá rẻ tphcm, xây nhà trọn gói, xây nhà tphcm, nhà thầu xây nhà tphcm, đơn giá xây nhà, báo giá xây nhà trọn gói, xây nhà phần thô, xây nhà phố tphcm, xây nhà chìa khóa trao tay",
-  seoTitle: "Xây nhà trọn gói TP.HCM — Giá rẻ, báo giá miễn phí | Sao Khuê",
+    "báo giá xây nhà, form báo giá xây nhà, ước tính chi phí xây nhà phố, landing ads xây nhà, kiến trúc sao khuê",
+  seoTitle: "Nhận báo giá xây nhà nhanh — Form Ads | Sao Khuê",
   seoDescription:
-    "Xây nhà trọn gói TP.HCM, xây nhà trọn gói giá rẻ TP.HCM. Đơn giá phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Khảo sát miễn phí — 0909 075 668.",
+    "Landing Ads: để lại SĐT nhận báo giá xây nhà phố. Phần thô từ 3,55 triệu/m². Hotline 0909 075 668 — không thay trang dịch vụ chính.",
   formTitle: "Nhận báo giá xây nhà trong 15 phút",
   benefits: [
     {
@@ -149,10 +149,10 @@ export const CAI_TAO_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-cai-tao.jpg",
   heroImageAlt: "Nhà phố sau cải tạo Sao Khuê",
   keywords:
-    "cải tạo nhà, cải tạo nhà cũ tphcm, cải tạo nhà phố, nâng tầng nhà phố, chống thấm nhà cũ, dịch vụ cải tạo nhà tphcm",
-  seoTitle: "Cải Tạo Nhà Phố TP.HCM — Khảo Sát Miễn Phí | Sao Khuê",
+    "báo giá cải tạo nhà, form ads cải tạo, khảo sát cải tạo nhà phố, kiến trúc sao khuê",
+  seoTitle: "Nhận báo giá cải tạo nhà — Form Ads | Sao Khuê",
   seoDescription:
-    "Cải tạo nhà phố TP.HCM: làm mới 1–2 triệu/m², đổi công năng 2,5–3,5 triệu/m², gia cố 3,5–5 triệu/m². Khảo sát miễn phí — 0909 075 668.",
+    "Landing Ads: để lại SĐT nhận báo giá cải tạo nhà phố. Hotline 0909 075 668 — không thay trang dịch vụ sửa nhà chính.",
   formTitle: "Nhận báo giá cải tạo trong 15 phút",
   benefits: [
     {

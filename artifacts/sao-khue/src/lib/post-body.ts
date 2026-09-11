@@ -2,6 +2,7 @@ import {
   buildImageAlt,
   injectArticleToc,
   prepareArticleHtml,
+  rewriteRetiredHrefsInHtml,
 } from "@workspace/seed-content";
 import { enhanceArticleHtml } from "@/lib/seo";
 
@@ -50,7 +51,7 @@ export function renderArticleBody(post: PostLike): {
   const tocInjected = withToc !== beforeToc;
 
   return {
-    html: enhanceArticleHtml(withToc, imageAlt),
+    html: rewriteRetiredHrefsInHtml(enhanceArticleHtml(withToc, imageAlt)),
     featuredInjected,
     imageAlt,
     tocInjected,
