@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { BING_VERIFICATION_TOKEN } from "@/lib/bing-verification";
+import { GSC_VERIFICATION_TOKENS } from "@/lib/gsc-verification";
 import { BUNDLED_LOGO_URL } from "@/lib/brand-assets";
 import { parseGaMeasurementId } from "@/lib/google-integrations";
 import {
@@ -70,7 +71,17 @@ export function SiteHead() {
     setMetaName("theme-color", "#17579d");
     setMetaName("geo.region", "VN-SG");
     setMetaName("geo.placename", "Thành phố Hồ Chí Minh");
-    setMetaName("google-site-verification", s.gscVerification);
+    const gscTokens = [...new Set([s.gscVerification, ...GSC_VERIFICATION_TOKENS].filter(Boolean))];
+    const existingGsc = [...document.head.querySelectorAll<HTMLMetaElement>('meta[name="google-site-verification"]')];
+    const haveGsc = new Set(existingGsc.map((el) => el.content));
+    for (const token of gscTokens) {
+      if (haveGsc.has(token)) continue;
+      const el = document.createElement("meta");
+      el.setAttribute("name", "google-site-verification");
+      el.setAttribute("content", token);
+      document.head.appendChild(el);
+      haveGsc.add(token);
+    }
     setMetaName("msvalidate.01", BING_VERIFICATION_TOKEN);
     setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
     setMetaProperty("og:locale", "vi_VN");
