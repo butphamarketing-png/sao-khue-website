@@ -155,4 +155,6 @@ export type ListPostsParams = {
    * @maximum 100
    */
   limit?: number;
+  /** Include full HTML content (admin). Default list omits content. */
+  full?: boolean;
 };

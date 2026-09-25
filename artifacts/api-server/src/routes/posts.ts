@@ -45,23 +45,60 @@ function serialize(p: Record<string, unknown> & {
   };
 }
 
-router.get("/posts", async (req, res) => {
-  try {
-    const category = typeof req.query.category === "string" ? req.query.category : undefined;
-    const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
-    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 2000) : undefined;
+const listPostColumns = {
+  id: postsTable.id,
+  slug: postsTable.slug,
+  title: postsTable.title,
+  category: postsTable.category,
+  excerpt: postsTable.excerpt,
+  imageUrl: postsTable.imageUrl,
+  imageAlt: postsTable.imageAlt,
+  imageCaption: postsTable.imageCaption,
+  metaTitle: postsTable.metaTitle,
+  metaDescription: postsTable.metaDescription,
+  metaKeywords: postsTable.metaKeywords,
+  createdAt: postsTable.createdAt,
+  updatedAt: postsTable.updatedAt,
+} as const;
 
-    const q = db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
+function wantsFullPosts(req: Request): boolean {
+  const raw = req.query.full;
+  return raw === "1" || raw === "true";
+}
+
+function slimFallbackPosts(options?: { category?: string; limit?: number; full?: boolean }) {
+  const rows = listFallbackPosts(options);
+  if (options?.full) return rows;
+  return rows.map((p) => ({ ...p, content: "" }));
+}
+
+router.get("/posts", async (req, res) => {
+  const category = typeof req.query.category === "string" ? req.query.category : undefined;
+  const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
+  const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 2000) : undefined;
+  const full = wantsFullPosts(req);
+
+  try {
+    // List cards không cần HTML bài — bỏ content mặc định (giảm ~300KB+/request).
+    // Admin SEO/editor: ?full=1
+    const q = full
+      ? db.select().from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic()
+      : db.select(listPostColumns).from(postsTable).orderBy(desc(postsTable.createdAt)).$dynamic();
     if (category) q.where(inArray(postsTable.category, categoriesForFilter(category)));
     if (limit) q.limit(limit);
     const rows = await q;
-    res.json(rows.map((row) => mergePostMedia(serialize(row) as any, getFallbackPost(row.slug))));
+    res.json(
+      rows.map((row) =>
+        mergePostMedia(
+          serialize({ ...row, content: full ? (row as { content?: string }).content ?? "" : "" }) as any,
+          getFallbackPost(row.slug),
+          { includeContent: full },
+        ),
+      ),
+    );
   } catch (err) {
     console.error("[posts] list failed, using fallback", err);
-    const category = typeof req.query.category === "string" ? req.query.category : undefined;
-    const limitRaw = typeof req.query.limit === "string" ? parseInt(req.query.limit, 10) : undefined;
-    const limit = limitRaw && !isNaN(limitRaw) ? Math.min(Math.max(limitRaw, 1), 2000) : undefined;
-    res.json(listFallbackPosts({ category, limit }));
+    res.json(slimFallbackPosts({ category, limit, full }));
   }
 });
 

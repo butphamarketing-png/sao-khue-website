@@ -39,15 +39,24 @@ function hasCustomArticleThumbnail(seed: SeedPost): boolean {
 }
 
 /** Gộp ảnh/nội dung từ seed khi DB còn URL hoặc HTML cũ. */
-export function mergePostMedia<T extends PostRow>(row: T, seed?: SeedPost): T {
+export function mergePostMedia<T extends PostRow>(
+  row: T,
+  seed?: SeedPost,
+  opts?: { includeContent?: boolean },
+): T {
   if (!seed) return row;
 
+  const includeContent = opts?.includeContent !== false;
   const imageUrl = hasCustomArticleThumbnail(seed)
     ? seed.imageUrl
     : isLegacyPostImageUrl(row.imageUrl)
       ? seed.imageUrl
       : String(row.imageUrl ?? "").trim() || seed.imageUrl;
-  const content = isLegacyPostContent(row.content) ? seed.content : (row.content ?? seed.content);
+  const content = includeContent
+    ? isLegacyPostContent(row.content)
+      ? seed.content
+      : (row.content ?? seed.content)
+    : "";
 
   return {
     ...row,

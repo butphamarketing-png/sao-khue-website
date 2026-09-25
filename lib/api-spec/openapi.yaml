@@ -162,6 +162,12 @@ paths:
             type: integer
             minimum: 1
             maximum: 100
+        - name: full
+          in: query
+          required: false
+          description: When true, include full HTML content (admin/editor). Default omits content for faster lists.
+          schema:
+            type: boolean
       responses:
         '200':
           description: Posts list

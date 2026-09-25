@@ -8,9 +8,12 @@ import { useFeaturedPostsConfig, useSectionMeta } from "@/lib/site-settings";
 import { pickFeaturedPosts } from "@/lib/featured-posts";
 import { getPostPublicPath } from "@/lib/post-url";
 
-function readingMinutes(content: string | null | undefined) {
-  const words = (content ?? "").replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.ceil(words / 220));
+function readingMinutes(content: string | null | undefined, excerpt?: string | null) {
+  const html = (content ?? "").trim() || (excerpt ?? "");
+  const words = html.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length;
+  // List API omits content — estimate ~4× excerpt words when only excerpt is present.
+  const scaled = (content ?? "").trim() ? words : Math.max(words * 4, 220);
+  return Math.max(1, Math.ceil(scaled / 220));
 }
 
 export function NewsSection() {
@@ -99,7 +102,7 @@ export function NewsSection() {
                     <span className="rounded-full bg-slate-100 px-2 py-1">{item.category}</span>
                     <span className="flex items-center gap-1">
                       <Clock3 className="h-3.5 w-3.5" />
-                      {readingMinutes(item.content)} phút đọc
+                      {readingMinutes(item.content, item.excerpt)} phút đọc
                     </span>
                   </div>
                   <h3 className="mb-3 line-clamp-2 text-xl font-bold text-slate-800 transition-colors group-hover:text-primary">

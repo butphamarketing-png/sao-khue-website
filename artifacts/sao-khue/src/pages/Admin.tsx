@@ -513,7 +513,7 @@ export default function Admin() {
     logout,
   } = useAuth();
   const qc = useQueryClient();
-  const { data: posts, refetch: refetchPosts } = useListPosts();
+  const { data: posts, refetch: refetchPosts } = useListPosts({ full: true });
   const { data: siteData, refetch: refetchSettings } = useGetSiteSettings();
   const create = useCreatePost();
   const update = useUpdatePost();

@@ -35,7 +35,10 @@ export function resolvePosts(
     );
   }
   if (options?.limit) rows = rows.slice(0, options.limit);
-  return rows.map((p) => repairPostText(mergePostMedia(p, getFallbackPost(p.slug))));
+  // List views never need full HTML; skip seed content merge to keep memory/parse light.
+  return rows.map((p) =>
+    repairPostText(mergePostMedia(p, getFallbackPost(p.slug), { includeContent: false })),
+  );
 }
 
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
