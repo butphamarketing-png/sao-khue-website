@@ -15,6 +15,7 @@ import {
   absoluteUrl,
   buildArticleSchema,
   buildBreadcrumbSchema,
+  buildServiceSchema,
   buildFAQSchema,
   buildPostBreadcrumbItems,
   extractFaqFromArticleHtml,
@@ -109,6 +110,7 @@ export default function PostPage() {
 
   const seoPost = post ?? bundledPost;
   const seoPath = seoPost ? getPostPublicPath(seoPost, menu) : undefined;
+  const isRepairService = seoPost?.slug === "sua-nha-tron-goi-tphcm";
   const postNoindex =
     Boolean((seoPost as { noindex?: boolean } | undefined)?.noindex) ||
     (seoPost ? shouldNoindexPostSlug(seoPost.slug) : false);
@@ -127,17 +129,26 @@ export default function PostPage() {
           modifiedTime: seoPost.updatedAt,
           noindex: postNoindex,
           jsonLd: [
-            buildArticleSchema({
-              headline: seoPost.title,
-              description: postDescription,
-              image: seoPost.imageUrl,
-              articleBody: seoPost.content ?? "",
-              datePublished: seoPost.createdAt,
-              dateModified: seoPost.updatedAt,
-              authorName: brandName,
-              url: absoluteUrl(seoPath),
-              publisherLogoUrl: absoluteUrl(resolveLogoUrl(site.logoUrl)),
-            }),
+            isRepairService
+              ? buildServiceSchema({
+                  name: seoPost.title,
+                  description: postDescription,
+                  url: absoluteUrl(seoPath),
+                  providerName: brandName,
+                  serviceType: "Sửa nhà trọn gói",
+                  image: seoPost.imageUrl,
+                })
+              : buildArticleSchema({
+                  headline: seoPost.title,
+                  description: postDescription,
+                  image: seoPost.imageUrl,
+                  articleBody: seoPost.content ?? "",
+                  datePublished: seoPost.createdAt,
+                  dateModified: seoPost.updatedAt,
+                  authorName: brandName,
+                  url: absoluteUrl(seoPath),
+                  publisherLogoUrl: absoluteUrl(resolveLogoUrl(site.logoUrl)),
+                }),
             buildBreadcrumbSchema(breadcrumbItems),
             ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
           ],
@@ -163,7 +174,11 @@ export default function PostPage() {
       <article
         className="site-container max-w-4xl pb-8 pt-4 md:pb-12 md:pt-6"
         itemScope
-        itemType="https://schema.org/BlogPosting"
+        itemType={
+          slug === "sua-nha-tron-goi-tphcm"
+            ? "https://schema.org/Service"
+            : "https://schema.org/BlogPosting"
+        }
       >
         <Button asChild variant="ghost" className="mb-6 -ml-2 text-primary hover:text-primary">
           <Link href="/">

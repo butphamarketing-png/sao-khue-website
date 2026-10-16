@@ -128,6 +128,7 @@ export function setStructuredDataList(id: string, items: Record<string, unknown>
 const PRERENDER_PAGE_SCHEMA_TYPES = new Set([
   "FAQPage",
   "BlogPosting",
+  "Service",
   "BreadcrumbList",
   "ItemList",
   "CollectionPage",
@@ -257,7 +258,7 @@ export type AggregateRatingInput = {
 const DEFAULT_SERVICE_OFFERS = [
   { name: "Xây nhà trọn gói TP.HCM", url: "/dich-vu/xay-nha-tron-goi" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
-  { name: "Cải tạo nhà cũ", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
+  { name: "Sửa nhà trọn gói TP.HCM", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },
 ];
 
@@ -379,6 +380,32 @@ export function buildArticleSchema(
         : undefined,
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": input.url },
+  };
+}
+
+/** Trang dịch vụ — không gắn BlogPosting cho URL tiền như sửa nhà trọn gói. */
+export function buildServiceSchema(input: {
+  name: string;
+  description: string;
+  url: string;
+  providerName: string;
+  serviceType: string;
+  areaServed?: string;
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: input.name,
+    serviceType: input.serviceType,
+    description: input.description,
+    url: input.url,
+    image: input.image ? [resolveOgImage(input.image)] : undefined,
+    provider: { "@type": "Organization", name: input.providerName },
+    areaServed: {
+      "@type": "City",
+      name: input.areaServed ?? "Thành phố Hồ Chí Minh",
+    },
   };
 }
 

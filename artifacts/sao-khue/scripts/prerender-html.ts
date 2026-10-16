@@ -512,22 +512,44 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
     const postFaq = extractFaqFromArticleHtml(post.content ?? "");
+    const published = (post.createdAt ?? "2026-01-15").slice(0, 10);
+    const modified = (
+      post.slug === "sua-nha-tron-goi-tphcm"
+        ? "2026-10-16"
+        : (post.updatedAt ?? post.createdAt ?? "2026-01-15")
+    ).slice(0, 10);
+    const pageSchema =
+      post.slug === "sua-nha-tron-goi-tphcm"
+        ? {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: post.title,
+            serviceType: "Sửa nhà trọn gói",
+            description,
+            url: absoluteUrl(SITE_URL, path),
+            image: resolveAbsoluteImage(post.imageUrl)
+              ? [resolveAbsoluteImage(post.imageUrl)!]
+              : undefined,
+            provider: { "@type": "Organization", name: BRAND },
+            areaServed: { "@type": "City", name: "Thành phố Hồ Chí Minh" },
+          }
+        : {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description,
+            image: resolveAbsoluteImage(post.imageUrl)
+              ? [resolveAbsoluteImage(post.imageUrl)!]
+              : undefined,
+            datePublished: published,
+            dateModified: modified,
+            inLanguage: "vi-VN",
+            wordCount: wordCount > 0 ? wordCount : undefined,
+            author: { "@type": "Organization", name: BRAND },
+            mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(SITE_URL, path) },
+          };
     const jsonLd = [
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        headline: post.title,
-        description,
-        image: resolveAbsoluteImage(post.imageUrl)
-          ? [resolveAbsoluteImage(post.imageUrl)!]
-          : undefined,
-        datePublished: (post.createdAt ?? "2026-01-15").slice(0, 10),
-        dateModified: (post.updatedAt ?? post.createdAt ?? "2026-01-15").slice(0, 10),
-        inLanguage: "vi-VN",
-        wordCount: wordCount > 0 ? wordCount : undefined,
-        author: { "@type": "Organization", name: BRAND },
-        mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(SITE_URL, path) },
-      },
+      pageSchema,
       breadcrumbListJsonLd(crumbs, SITE_URL),
       ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
     ];
@@ -543,7 +565,10 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ogImageAlt: imageAlt,
         ogType: "article",
         publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
-        modifiedTime: post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",
+        modifiedTime:
+          post.slug === "sua-nha-tron-goi-tphcm"
+            ? "2026-10-16T08:00:00.000Z"
+            : (post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z"),
         noindex: Boolean(post.noindex),
       },
       bodyHtml: shell(`
@@ -605,6 +630,7 @@ function isStaleSeoMeta(metaTitle: string, metaDescription: string): boolean {
   if (!title && !desc) return true;
   if (/^Dịch vụ .+:( khảo sát| uy tín)/i.test(desc)) return true;
   if (/^Dịch vụ .+ tại .+:( khảo sát| uy tín)/i.test(desc)) return true;
+  if (/,\s*,/.test(desc)) return true;
   if (/\| Sao Khuê$/i.test(title) && !/—/.test(title)) return true;
   return false;
 }
@@ -612,6 +638,21 @@ function isStaleSeoMeta(metaTitle: string, metaDescription: string): boolean {
 function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
   const seed = seedBySlug.get(row.slug);
   if (!seed) return row;
+  if (row.slug === "sua-nha-tron-goi-tphcm") {
+    return {
+      ...row,
+      title: seed.title,
+      excerpt: seed.excerpt,
+      content: seed.content,
+      imageAlt: seed.imageAlt,
+      imageCaption: seed.imageCaption,
+      metaTitle: seed.metaTitle,
+      metaDescription: seed.metaDescription,
+      metaKeywords: seed.metaKeywords,
+      updatedAt: "2026-10-16T08:00:00.000Z",
+      noindex: seed.noindex ?? row.noindex,
+    };
+  }
   const stale = isStaleSeoMeta(row.metaTitle ?? "", row.metaDescription ?? "");
   if (!stale) {
     return { ...row, noindex: seed.noindex ?? row.noindex };

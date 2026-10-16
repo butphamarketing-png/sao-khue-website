@@ -693,14 +693,24 @@ function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
 
     let desc = (next.metaDescription ?? "").trim();
     if (desc.length > 0 && desc.length < 120) {
-      // Gỡ hotline / pad cũ rồi gắn đúng 1 lần — tránh "Khảo sát miễn phí … Khảo sát miễn phí".
+      // Chỉ gỡ pad ở cuối câu. Xóa giữa câu để lại "hạng mục, , không phát sinh".
       let base = desc
         .replace(/(?:\s*[—–-]\s*)?0909\s*075\s*668\.?/giu, "")
-        .replace(/(?:Khảo sát miễn phí(?:, báo giá minh bạch)?\.?\s*)+/giu, " ")
-        .replace(/(?:Tư vấn\s*&\s*khảo sát miễn phí tại TP\.HCM\.?\s*)+/giu, " ")
+        .trim();
+      const trailingPad =
+        /(?:[.\s—–-]+(?:khảo sát miễn phí(?:,\s*báo giá minh bạch)?|tư vấn\s*&\s*khảo sát miễn phí tại tp\.hcm)\.?)+$/iu;
+      let prev = "";
+      while (base !== prev) {
+        prev = base;
+        base = base.replace(trailingPad, "").trim();
+      }
+      base = base
         .replace(/\s+/g, " ")
+        .replace(/\s+,/g, ",")
+        .replace(/,\s*,+/g, ",")
+        .replace(/:\s*,/g, ":")
         .trim()
-        .replace(/[.,;:\s]+$/u, "");
+        .replace(/^[.,;\s]+|[.,;:\s]+$/gu, "");
 
       const needsSurvey = !/khảo sát miễn phí/i.test(base);
       const needsClarity = !/báo giá minh bạch|minh bạch/i.test(base);
@@ -711,6 +721,7 @@ function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
 
       const padded = `${base}${suffixParts.length ? `. ${suffixParts.join(", ")}` : ""}${hotlineTail}`
         .replace(/\s+/g, " ")
+        .replace(/,(\s*,)+/g, ",")
         .trim()
         .slice(0, 160);
       next = { ...next, metaDescription: padded };
@@ -840,7 +851,10 @@ export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
     metaDescription: seed.metaDescription ?? "",
     metaKeywords: seed.metaKeywords ?? "",
     createdAt: FALLBACK_TIMESTAMP,
-    updatedAt: FALLBACK_TIMESTAMP,
+    updatedAt:
+      seed.slug === "sua-nha-tron-goi-tphcm"
+        ? "2026-10-16T08:00:00.000Z"
+        : FALLBACK_TIMESTAMP,
   };
 }
 

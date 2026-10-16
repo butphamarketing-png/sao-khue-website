@@ -41,11 +41,27 @@ export function resolvePosts(
   );
 }
 
+/** Trang tiền đã viết lại trong seed — DB cũ không được đè nội dung và meta. */
+const SEED_AUTHORITATIVE_SLUGS = new Set(["sua-nha-tron-goi-tphcm"]);
+
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
 export function resolvePost(slug: string | undefined, apiPost: Post | undefined | null): Post | undefined {
   const fallback = slug ? (getFallbackPost(slug) as Post | undefined) : undefined;
   if (!apiPost) return fallback;
   const repaired = repairPostText(apiPost);
   if (!fallback) return repaired;
-  return repairPostText(mergePostMedia(repaired, fallback));
+  const merged = repairPostText(mergePostMedia(repaired, fallback));
+  if (!slug || !SEED_AUTHORITATIVE_SLUGS.has(slug)) return merged;
+  return repairPostText({
+    ...merged,
+    title: fallback.title,
+    excerpt: fallback.excerpt,
+    content: fallback.content,
+    metaTitle: fallback.metaTitle,
+    metaDescription: fallback.metaDescription,
+    metaKeywords: fallback.metaKeywords,
+    imageAlt: fallback.imageAlt,
+    imageCaption: fallback.imageCaption,
+    updatedAt: fallback.updatedAt,
+  });
 }
