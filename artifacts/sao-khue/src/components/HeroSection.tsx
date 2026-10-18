@@ -43,10 +43,7 @@ export function HeroSection() {
         )}
       </AnimatePresence>
 
-      <div className="hero-home__copy">
-        <h1 className="hero-home__title">{brand}</h1>
-        <p className="hero-home__tag">Thiết kế &amp; xây nhà trọn gói tại TP.HCM — khảo sát miễn phí</p>
-      </div>
+      <h1 className="sr-only">{brand} — thiết kế và xây nhà trọn gói tại TP.HCM</h1>
 
       <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center gap-2 sm:bottom-10">
         {slides.map((_, index) => (

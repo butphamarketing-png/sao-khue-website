@@ -2559,11 +2559,7 @@ export default function Admin() {
               </div>
 
               <FormSection title="Preview hero">
-                <HeroPreviewCard
-                  slides={heroSlides}
-                  videoLabel={settingsForm.homeVideoLabel}
-                  hasVideo={Boolean(settingsForm.homeVideoUrl)}
-                />
+                <HeroPreviewCard slides={heroSlides} />
               </FormSection>
             </div>
           </SettingsScreen>
@@ -3542,15 +3538,7 @@ function GeneralPreviewCard({
   );
 }
 
-function HeroPreviewCard({
-  slides,
-  videoLabel,
-  hasVideo,
-}: {
-  slides: HeroSlide[];
-  videoLabel: string;
-  hasVideo: boolean;
-}) {
+function HeroPreviewCard({ slides }: { slides: HeroSlide[] }) {
   const slide = slides[0] ?? defaultHeroSlides[0];
 
   return (
@@ -3563,31 +3551,8 @@ function HeroPreviewCard({
           <img
             src={slide.image || "/images/hero-bg.jpg"}
             alt={slide.title || "Hero"}
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-60"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/30" />
-          <div className="relative z-10 flex h-full min-h-[200px] flex-col justify-end p-6 text-white">
-            <div className="mb-3 inline-flex w-fit rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.26em] text-white/80 backdrop-blur">
-              {slide.subtitle || "Uy tin - chat luong - tan tam"}
-            </div>
-            <h3 className="max-w-xs text-3xl font-bold leading-tight">
-              {slide.title || "Tieu de hero"}
-            </h3>
-            <p className="mt-4 max-w-sm text-sm leading-7 text-white/80">
-              {slide.description || "Mo ta hero se hien thi o day."}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <div className="rounded-full bg-[#17579d] px-5 py-3 text-sm font-semibold">
-                Nhan tu van ngay
-              </div>
-              {hasVideo ? (
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold backdrop-blur">
-                  <PlayCircle size={16} />
-                  {videoLabel || "Xem video"}
-                </div>
-              ) : null}
-            </div>
-          </div>
         </div>
       </div>
     </PreviewShell>
