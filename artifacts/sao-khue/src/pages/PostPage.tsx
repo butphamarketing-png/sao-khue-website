@@ -22,6 +22,7 @@ import {
   findMenuSectionPathForPost,
   truncateMeta,
   SEO_TITLE_MAX,
+  seoBrandName,
 } from "@/lib/seo";
 import { postMatchesSubSlug } from "@/lib/menu-posts";
 import { normalizeCategory } from "@/lib/categories";
@@ -49,6 +50,7 @@ export default function PostPage() {
   const site = useSiteSettings();
   const menu = useNavMenu();
   const brandName = site.companyName || "Kiến Trúc Sao Khuê";
+  const brandSeo = seoBrandName(site.companyName);
   const { data: posts } = useListPosts({ limit: 48 });
   const allPosts = resolvePosts(posts);
 
@@ -96,11 +98,11 @@ export default function PostPage() {
       : [];
   const postTitle = post
     ? truncateMeta(
-        post.metaTitle?.trim() || `${post.title} | ${brandName}`,
+        post.metaTitle?.trim() || `${post.title} | ${brandSeo}`,
         SEO_TITLE_MAX,
       )
     : isLoading
-      ? `Đang tải... | ${brandName}`
+      ? `Đang tải... | ${brandSeo}`
       : brandName;
   const postDescription = post
     ? post.metaDescription?.trim() || post.excerpt || ""
@@ -155,7 +157,7 @@ export default function PostPage() {
         }
       : !isLoading && slug && !bundledPost
         ? {
-            title: `Không tìm thấy bài viết | ${brandName}`,
+            title: `Không tìm thấy bài viết | ${brandSeo}`,
             description: "Bài viết không tồn tại hoặc đã được di chuyển.",
             path: location.split("?")[0],
             noindex: true,

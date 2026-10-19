@@ -8,6 +8,17 @@ const DEFAULT_SITE_URL = "https://www.kientrucsaokhue.com";
 
 export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
+/** Tên ngắn trên title/OG. Tên pháp lý dài làm Google cắt mất từ khóa. */
+export const SEO_BRAND = "Kiến Trúc Sao Khuê";
+export const HOME_SEO_TITLE = `Xây nhà trọn gói TP.HCM | ${SEO_BRAND}`;
+export const HOME_SEO_DESCRIPTION =
+  "Xây nhà trọn gói TP.HCM: thiết kế và thi công nhà phố, biệt thự. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
+
+export function seoBrandName(companyName?: string | null): string {
+  const name = (companyName ?? "").replace(/\s+/g, " ").trim();
+  if (!name || name.length > 32) return SEO_BRAND;
+  return name;
+}
 export const DEFAULT_OG_IMAGE_ALT =
   "Kiến Trúc Sao Khuê — thiết kế và xây nhà trọn gói TP.HCM";
 export const OG_SITE_NAME = "Kiến Trúc Sao Khuê";
@@ -248,6 +259,7 @@ export type LocalBusinessInput = {
   mapsUrl?: string;
   taxID?: string;
   foundingDate?: string;
+  legalName?: string;
 };
 
 export type AggregateRatingInput = {
@@ -274,6 +286,7 @@ export function buildLocalBusinessSchema(
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": `${origin}/#localbusiness`,
     name: input.name,
+    legalName: input.legalName?.trim() || undefined,
     logo: input.image
       ? { "@type": "ImageObject", url: input.image }
       : undefined,

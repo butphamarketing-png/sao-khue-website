@@ -34,7 +34,7 @@ import {
   stripPlainText,
 } from "./lib/seo-prerender.ts";
 import { getPostPublicPath } from "../src/lib/post-url.ts";
-import { buildLocalBusinessSchema, buildWebSiteSchema } from "../src/lib/seo.ts";
+import { buildLocalBusinessSchema, buildWebSiteSchema, HOME_SEO_DESCRIPTION, HOME_SEO_TITLE } from "../src/lib/seo.ts";
 import { DEFAULT_GOOGLE_MAPS_LINK } from "../src/lib/social-links.ts";
 import {
   buildHeadTags,
@@ -139,8 +139,8 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/",
       meta: {
-        title: `${BRAND_SHORT} | Thiết kế & xây dựng nhà trọn gói TP.HCM`,
-        description: FOOTER_DESC,
+        title: HOME_SEO_TITLE,
+        description: HOME_SEO_DESCRIPTION,
         path: "/",
         keywords:
           "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà",
@@ -149,7 +149,7 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>${escapeHtml(BRAND_SHORT)} — Thiết kế &amp; xây dựng nhà trọn gói TP.HCM</h1>
+        <h1>${escapeHtml(HOME_SEO_TITLE)}</h1>
         <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê nhận khảo sát miễn phí, lập dự toán theo hạng mục và thi công nhà phố, biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>

@@ -10,7 +10,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useListPosts } from "@workspace/api-client-react";
 import { useOpenGraphImage, usePageBanner, useSiteSettings, useNavMenu } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
 import { defaultHomePostsBands } from "@/lib/home-content";
 import { paginatePosts, pickBandPosts } from "@/lib/post-band";
 import { resolvePosts } from "@/lib/posts-with-fallback";
@@ -25,7 +25,7 @@ export default function XayMoi() {
   const s = useSiteSettings();
   const menu = useNavMenu();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const [, setLocation] = useLocation();
   const search = useSearch();
 

@@ -5,7 +5,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { MauNhaCategoryStrip } from "@/components/MauNhaChrome";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { getMauNhaModel } from "@/lib/mau-nha";
-import { absoluteUrl, buildBreadcrumbSchema } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, seoBrandName } from "@/lib/seo";
 import { telHref, usePrimaryPhone, useSiteSettings } from "@/lib/site-settings";
 import NotFound from "@/pages/not-found";
 
@@ -14,7 +14,7 @@ export default function MauNhaDetail() {
   const found = getMauNhaModel(categorySlug, slug);
   const s = useSiteSettings();
   const phone = usePrimaryPhone();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const category = found?.category;
   const model = found?.model;
   const related = category && model ? category.models.filter((item) => item.slug !== model.slug).slice(0, 4) : [];

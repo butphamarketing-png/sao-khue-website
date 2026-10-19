@@ -21,6 +21,7 @@ import { ADS_BO_SUNG_100_DOT2_CAI_TAO_SLUGS } from "./articles/ads-bo-sung-100-d
 import { ADS_BO_SUNG_100_DOT2_XAY_NHA_SLUGS } from "./articles/ads-bo-sung-100-dot2-xay-nha";
 import { ADS_BO_SUNG_100_DOT3_CAI_TAO_SLUGS } from "./articles/ads-bo-sung-100-dot3-cai-tao";
 import { ADS_BO_SUNG_100_DOT3_XAY_NHA_SLUGS } from "./articles/ads-bo-sung-100-dot3-xay-nha";
+import { RANKING_KEYWORD_SLUGS } from "./ranking-keyword-slugs";
 
 /** Bài pillar viết tay — không noindex. */
 const HAND_PILLAR_SLUGS = new Set([
@@ -196,6 +197,8 @@ export function rewriteRetiredHrefsInHtml(html: string): string {
 /** Thin factory trừ money/hand pillar → noindex + bỏ sitemap. */
 export function shouldNoindexPostSlug(slug: string): boolean {
   if (CANNIBAL_REDIRECT_SLUGS.has(slug)) return true;
+  // Đã có thứ hạng trang 1 — giữ 200 + index, không 301/404 mất từ khóa.
+  if (RANKING_KEYWORD_SLUGS.has(slug)) return false;
   if (HAND_PILLAR_SLUGS.has(slug)) return false;
   if (isShortKeywordFactorySlug(slug)) return true;
   if (DISTRICT_TEMPLATE_SLUG_RE.test(slug)) return true;

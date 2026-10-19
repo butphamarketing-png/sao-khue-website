@@ -15,6 +15,7 @@ import {
   absoluteUrl,
   buildLocalBusinessSchema,
   buildWebSiteSchema,
+  seoBrandName,
   setMetaName,
   setMetaProperty,
   setStructuredData,
@@ -83,7 +84,9 @@ export function SiteHead() {
       haveGsc.add(token);
     }
     setMetaName("msvalidate.01", BING_VERIFICATION_TOKEN);
-    setMetaProperty("og:site_name", s.companyName || "Kiến Trúc Sao Khuê");
+    const brand = seoBrandName(s.companyName);
+    const legalName = (s.companyName || "").trim();
+    setMetaProperty("og:site_name", brand);
     setMetaProperty("og:locale", "vi_VN");
 
     const faviconHref = resolveLogoUrl(s.logoUrl) || BUNDLED_LOGO_URL || "/favicon.png";
@@ -94,12 +97,12 @@ export function SiteHead() {
     setLink("sitemap", `${origin}/sitemap.xml`, "application/xml");
     setLink("alternate", `${origin}/feed.xml`, "application/rss+xml");
 
-    const brand = s.companyName || "Kiến Trúc Sao Khuê";
     const reviewCount = testimonials.length;
     setStructuredData(
       "organization",
       buildLocalBusinessSchema({
         name: brand,
+        legalName: legalName && legalName !== brand ? legalName : undefined,
         url: origin,
         telephone: s.hotline1 || "",
         email: s.email,

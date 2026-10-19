@@ -2,17 +2,13 @@ import { PageShell } from "@/components/PageShell";
 import { HeroSection } from "@/components/HeroSection";
 import { HomeBelowHero } from "@/components/HomeBelowHero";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { buildFAQSchema, stripHtmlForSchema } from "@/lib/seo";
-import { useFaqs, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
+import { buildFAQSchema, HOME_SEO_DESCRIPTION, HOME_SEO_TITLE, stripHtmlForSchema } from "@/lib/seo";
+import { useFaqs, useOpenGraphImage } from "@/lib/site-settings";
 
 export default function Home() {
-  const s = useSiteSettings();
   const ogImage = useOpenGraphImage();
   const faqs = useFaqs();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
-  const description =
-    s.footerDescription ||
-    "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói uy tín tại TP.HCM. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
+  const description = HOME_SEO_DESCRIPTION;
 
   const faqSchema =
     faqs.length > 0
@@ -25,13 +21,13 @@ export default function Home() {
       : null;
 
   usePageSeo({
-    title: `${brand} | Thiết kế & xây dựng nhà trọn gói TP.HCM`,
+    title: HOME_SEO_TITLE,
     description,
     path: "/",
     keywords:
       "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà, công ty xây dựng tphcm",
     ogImage,
-    ogImageAlt: `${brand} — thiết kế và xây nhà trọn gói TP.HCM`,
+    ogImageAlt: HOME_SEO_TITLE,
     jsonLd: faqSchema ?? undefined,
   });
 

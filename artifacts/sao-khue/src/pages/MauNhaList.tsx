@@ -5,7 +5,7 @@ import { CTABanner } from "@/components/CTABanner";
 import { MauNhaCategoryStrip, MauNhaDiamondHeading } from "@/components/MauNhaChrome";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { getMauNhaCategory } from "@/lib/mau-nha";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
 import { useSiteSettings } from "@/lib/site-settings";
 import NotFound from "@/pages/not-found";
 
@@ -13,7 +13,7 @@ export default function MauNhaList() {
   const { category: categorySlug } = useParams<{ category: string }>();
   const category = getMauNhaCategory(categorySlug);
   const s = useSiteSettings();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const breadcrumbs = category
     ? [
         { name: "Trang chủ", path: "/" },

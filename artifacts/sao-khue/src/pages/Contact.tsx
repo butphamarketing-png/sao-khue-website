@@ -14,7 +14,7 @@ import {
 } from "@/lib/site-settings";
 import { MapEmbed } from "@/components/MapEmbed";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { buildBreadcrumbSchema } from "@/lib/seo";
+import { buildBreadcrumbSchema, seoBrandName } from "@/lib/seo";
 
 const CONTACT_FAQS = [
   {
@@ -45,7 +45,7 @@ export default function Contact() {
   const banner = usePageBanner("contact");
   const phone = usePrimaryPhone();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const breadcrumbs = [
     { name: "Trang chủ", path: "/" },
     { name: "Liên hệ", path: "/lien-he" },

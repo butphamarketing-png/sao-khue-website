@@ -5,13 +5,13 @@ import { CTABanner } from "@/components/CTABanner";
 import { MauNhaCategoryStrip, MauNhaDiamondHeading } from "@/components/MauNhaChrome";
 import { usePageSeo } from "@/hooks/use-page-seo";
 import { MAU_NHA_CATEGORIES } from "@/lib/mau-nha";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
 import { useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function MauNhaHub() {
   const s = useSiteSettings();
   const ogImage = useOpenGraphImage() || MAU_NHA_CATEGORIES[0]?.cover;
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const breadcrumbs = [
     { name: "Trang chủ", path: "/" },
     { name: "Mẫu nhà hiện đại", path: "/mau-nha" },

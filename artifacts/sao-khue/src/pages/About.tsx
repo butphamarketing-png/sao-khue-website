@@ -3,13 +3,14 @@ import { PageBanner } from "@/components/PageBanner";
 import { AboutSection } from "@/components/AboutSection";
 import { CommitmentsSection } from "@/components/CommitmentsSection";
 import { usePageSeo } from "@/hooks/use-page-seo";
+import { seoBrandName } from "@/lib/seo";
 import { useCategoryPages, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function About() {
   const s = useSiteSettings();
   const pages = useCategoryPages();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const content = pages["gioi-thieu"];
 
   usePageSeo({

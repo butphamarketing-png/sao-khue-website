@@ -4,14 +4,14 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ContactCTASection } from "@/components/ContactCTASection";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { buildBreadcrumbSchema } from "@/lib/seo";
+import { buildBreadcrumbSchema, seoBrandName } from "@/lib/seo";
 import { useCategoryPages, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function Services() {
   const s = useSiteSettings();
   const pages = useCategoryPages();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const content = pages["dich-vu"];
 
   usePageSeo({

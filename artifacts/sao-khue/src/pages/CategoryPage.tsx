@@ -23,6 +23,7 @@ import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
   buildItemListSchema,
+  seoBrandName,
 } from "@/lib/seo";
 import { getPostPublicPath } from "@/lib/post-url";
 import { resolvePostImageAlt } from "@/lib/post-body";
@@ -63,7 +64,7 @@ export default function CategoryPage({ category }: Props) {
   const topItem = menu.find((m) => m.category === normalized);
   const categoryPages = useCategoryPages();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const categoryContent = categoryPages[normalized] ?? categoryPages[category];
   const seoDescription =
     categoryContent?.description ??

@@ -3,14 +3,14 @@ import { PageBanner } from "@/components/PageBanner";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { CTABanner } from "@/components/CTABanner";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { buildBreadcrumbSchema } from "@/lib/seo";
+import { buildBreadcrumbSchema, seoBrandName } from "@/lib/seo";
 import { useCategoryPages, useOpenGraphImage, useSiteSettings } from "@/lib/site-settings";
 
 export default function Projects() {
   const s = useSiteSettings();
   const pages = useCategoryPages();
   const ogImage = useOpenGraphImage();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
   const content = pages["cong-trinh"];
 
   usePageSeo({

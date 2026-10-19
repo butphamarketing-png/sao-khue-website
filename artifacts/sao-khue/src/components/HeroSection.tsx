@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { HOME_SEO_TITLE, seoBrandName } from "@/lib/seo";
 import { useHeroSlides, useSiteSettings } from "@/lib/site-settings";
 
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = useHeroSlides();
   const s = useSiteSettings();
-  const brand = s.companyName || "Kiến Trúc Sao Khuê";
+  const brand = seoBrandName(s.companyName);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -43,7 +44,7 @@ export function HeroSection() {
         )}
       </AnimatePresence>
 
-      <h1 className="sr-only">{brand} — thiết kế và xây nhà trọn gói tại TP.HCM</h1>
+      <h1 className="sr-only">{HOME_SEO_TITLE}</h1>
 
       <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center gap-2 sm:bottom-10">
         {slides.map((_, index) => (

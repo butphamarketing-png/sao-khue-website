@@ -98,7 +98,7 @@ import {
   readGoogleFieldsFromApi,
   saveGoogleSettingsDraft,
 } from "@/lib/admin-google-settings";
-import { SEO_DESC_MAX, SEO_TITLE_MAX } from "@/lib/seo";
+import { SEO_DESC_MAX, SEO_TITLE_MAX, seoBrandName } from "@/lib/seo";
 import {
   parseGaMeasurementId,
   parseGscVerificationToken,
@@ -968,7 +968,7 @@ export default function Admin() {
   }
 
   function fillPostSeoAuto() {
-    const brand = settingsForm.companyName?.trim() || "Kiến Trúc Sao Khuê";
+    const brand = seoBrandName(settingsForm.companyName);
     const subLabel = postSubCategory
       ? getMenuChildLabel(postForm.category, postSubCategory, navMenuItems) ?? undefined
       : undefined;
