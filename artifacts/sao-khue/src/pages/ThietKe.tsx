@@ -7,9 +7,9 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useListPosts } from "@workspace/api-client-react";
-import { useOpenGraphImage, usePageBanner, useSiteSettings, useNavMenu } from "@/lib/site-settings";
+import { useOpenGraphImage, usePageBanner, useNavMenu } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, THIET_KE_SEO_DESCRIPTION, THIET_KE_SEO_TITLE } from "@/lib/seo";
 import { defaultHomePostsBands } from "@/lib/home-content";
 import { paginatePosts, pickBandPosts } from "@/lib/post-band";
 import { resolvePosts } from "@/lib/posts-with-fallback";
@@ -21,10 +21,8 @@ const THIET_KE_BAND = defaultHomePostsBands.find((b) => b.id === "thiet-ke")!;
 
 export default function ThietKe() {
   const banner = usePageBanner("thietKe");
-  const s = useSiteSettings();
   const menu = useNavMenu();
   const ogImage = useOpenGraphImage();
-  const brand = seoBrandName(s.companyName);
   const [, setLocation] = useLocation();
   const search = useSearch();
 
@@ -51,16 +49,14 @@ export default function ThietKe() {
   ];
 
   usePageSeo({
-    title: `Thiết kế kiến trúc nhà ở 2D/3D | ${brand}`,
-    description:
-      banner.subtitle +
-      " Tổng hợp bài viết thiết kế nhà phố, biệt thự, nội thất và quy trình tư vấn thiết kế trước khi xây.",
+    title: THIET_KE_SEO_TITLE,
+    description: THIET_KE_SEO_DESCRIPTION,
     path: "/thiet-ke",
     noindex: currentPage > 1,
     keywords:
       "thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc tphcm, thiết kế nhà 2d 3d",
     ogImage,
-    ogImageAlt: `Thiết kế kiến trúc nhà ở — ${brand}`,
+    ogImageAlt: THIET_KE_SEO_TITLE,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Thiết kế kiến trúc", banner.subtitle, absoluteUrl("/thiet-ke")),
@@ -85,7 +81,7 @@ export default function ThietKe() {
 
   return (
     <PageShell>
-      <PageBanner title={banner.title || "Thiết kế kiến trúc"}>
+      <PageBanner title="Thiết kế nhà phố TP.HCM">
         <Breadcrumbs items={breadcrumbs} light className="mt-4" />
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>

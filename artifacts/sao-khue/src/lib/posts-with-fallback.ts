@@ -42,7 +42,10 @@ export function resolvePosts(
 }
 
 /** Trang tiền đã viết lại trong seed — DB cũ không được đè nội dung và meta. */
-const SEED_AUTHORITATIVE_SLUGS = new Set(["sua-nha-tron-goi-tphcm"]);
+const SEED_AUTHORITATIVE_SLUGS = new Set([
+  "sua-nha-tron-goi-tphcm",
+  "xay-nha-tron-goi-tphcm",
+]);
 
 /** Prefer API; fill missing body fields from bundled seed when DB row is incomplete. */
 export function resolvePost(slug: string | undefined, apiPost: Post | undefined | null): Post | undefined {

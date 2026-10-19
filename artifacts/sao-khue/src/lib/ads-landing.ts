@@ -1,3 +1,10 @@
+import {
+  CAI_TAO_SEO_DESCRIPTION,
+  CAI_TAO_SEO_TITLE,
+  XAY_NHA_SEO_DESCRIPTION,
+  XAY_NHA_SEO_TITLE,
+} from "@/lib/seo";
+
 export type AdsPricePackage = {
   name: string;
   price: string;
@@ -58,10 +65,9 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-xay-nha.jpg",
   heroImageAlt: "Nhà phố hiện đại xây trọn gói Sao Khuê",
   keywords:
-    "báo giá xây nhà, form báo giá xây nhà, ước tính chi phí xây nhà phố, landing ads xây nhà, kiến trúc sao khuê",
-  seoTitle: "Nhận báo giá xây nhà nhanh — Form Ads | Sao Khuê",
-  seoDescription:
-    "Landing Ads: để lại SĐT nhận báo giá xây nhà phố. Phần thô từ 3,55 triệu/m². Hotline 0909 075 668 — không thay trang dịch vụ chính.",
+    "xây nhà trọn gói tphcm, xây nhà chìa khóa trao tay, báo giá xây nhà phố, kiến trúc sao khuê",
+  seoTitle: XAY_NHA_SEO_TITLE,
+  seoDescription: XAY_NHA_SEO_DESCRIPTION,
   formTitle: "Nhận báo giá xây nhà trong 15 phút",
   benefits: [
     {
@@ -149,10 +155,9 @@ export const CAI_TAO_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-cai-tao.jpg",
   heroImageAlt: "Nhà phố sau cải tạo Sao Khuê",
   keywords:
-    "báo giá cải tạo nhà, form ads cải tạo, khảo sát cải tạo nhà phố, kiến trúc sao khuê",
-  seoTitle: "Nhận báo giá cải tạo nhà — Form Ads | Sao Khuê",
-  seoDescription:
-    "Landing Ads: để lại SĐT nhận báo giá cải tạo nhà phố. Hotline 0909 075 668 — không thay trang dịch vụ sửa nhà chính.",
+    "cải tạo nhà phố tphcm, nâng tầng nhà phố, chống thấm nhà, kiến trúc sao khuê",
+  seoTitle: CAI_TAO_SEO_TITLE,
+  seoDescription: CAI_TAO_SEO_DESCRIPTION,
   formTitle: "Nhận báo giá cải tạo trong 15 phút",
   benefits: [
     {

@@ -1,11 +1,11 @@
 ﻿/** Nội dung bài viết SEO — slug: xay-nha-tron-goi-tphcm */
 export const xayNhaTronGoiTphcm = {
-  title: "Xây Nhà Trọn Gói TP.HCM — Chìa Khóa Trao Tay | Sao Khuê",
+  title: "Xây nhà trọn gói TP.HCM",
   excerpt:
-    "Một nhà thầu từ khảo sát, thiết kế, phần thô đến hoàn thiện tại TP.HCM. Đơn giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Hotline 0909 075 668.",
-  metaTitle: "Xây Nhà Trọn Gói TP.HCM — Chìa Khóa Trao Tay | Sao Khuê",
+    "Xây nhà trọn gói TP.HCM: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Đơn giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm.",
+  metaTitle: "Xây nhà trọn gói TP.HCM | Kiến Trúc Sao Khuê",
   metaDescription:
-    "Thiết kế–thô–hoàn thiện một đầu mối tại TP.HCM. Đơn giá 4,85–6,7 triệu/m², bảo hành kết cấu 10 năm. Khảo sát miễn phí — 0909 075 668.",
+    "Xây nhà trọn gói TP.HCM từ 4,85 triệu/m²: thiết kế, phần thô và hoàn thiện một hợp đồng. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
   metaKeywords:
     "xây nhà trọn gói tphcm, chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê, đơn giá xây nhà phố",
   content: `
@@ -98,6 +98,8 @@ export const xayNhaTronGoiTphcm = {
 <p>Khách sau bàn giao thường phản hồi về tiến độ, minh bạch dự toán và vệ sinh công trình — đối chiếu trên Maps / fanpage trước khi quyết định.</p>
 
 <h2>Câu hỏi thường gặp</h2>
+<h3>Xây nhà trọn gói TP.HCM giá bao nhiêu?</h3>
+<p><strong>Xây nhà trọn gói TP.HCM</strong> gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Số trong hợp đồng chốt sau khi đo hẻm và nền, không lấy giá mặt tiền áp cho hẻm sâu.</p>
 <h3>Nhà phố 3–4 tầng mất bao lâu?</h3>
 <p>Thường <strong>4–7 tháng</strong> (mùa mưa và hẻm hẹp có thể dài hơn). Mốc ghi trong hợp đồng.</p>
 <h3>Có tư vấn miễn phí không?</h3>

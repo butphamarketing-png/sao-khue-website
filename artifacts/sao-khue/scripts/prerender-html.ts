@@ -34,7 +34,22 @@ import {
   stripPlainText,
 } from "./lib/seo-prerender.ts";
 import { getPostPublicPath } from "../src/lib/post-url.ts";
-import { buildLocalBusinessSchema, buildWebSiteSchema, HOME_SEO_DESCRIPTION, HOME_SEO_TITLE } from "../src/lib/seo.ts";
+import {
+  BAO_GIA_SEO_DESCRIPTION,
+  BAO_GIA_SEO_TITLE,
+  buildLocalBusinessSchema,
+  buildWebSiteSchema,
+  CAI_TAO_SEO_DESCRIPTION,
+  CAI_TAO_SEO_TITLE,
+  HOME_SEO_DESCRIPTION,
+  HOME_SEO_TITLE,
+  THIET_KE_SEO_DESCRIPTION,
+  THIET_KE_SEO_TITLE,
+  XAY_MOI_SEO_DESCRIPTION,
+  XAY_MOI_SEO_TITLE,
+  XAY_NHA_SEO_DESCRIPTION,
+  XAY_NHA_SEO_TITLE,
+} from "../src/lib/seo.ts";
 import { DEFAULT_GOOGLE_MAPS_LINK } from "../src/lib/social-links.ts";
 import {
   buildHeadTags,
@@ -156,7 +171,7 @@ function buildStaticPages(): PrerenderPage[] {
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
         <h2>Dịch vụ chính</h2>
         <ul>
-          <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
+          <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
           <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố; báo giá theo hạng mục.</li>
           <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
         </ul>
@@ -192,8 +207,8 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/bao-gia",
       meta: {
-        title: `Báo giá xây dựng 2026 | ${BRAND_SHORT}`,
-        description: `${defaultPageBanners.pricing.subtitle} Đơn giá phần thô, trọn gói và máy tính chi phí.`,
+        title: BAO_GIA_SEO_TITLE,
+        description: BAO_GIA_SEO_DESCRIPTION,
         path: "/bao-gia",
         keywords: "báo giá xây nhà, đơn giá xây dựng, xây nhà trọn gói giá",
         ogImage: DEFAULT_OG,
@@ -201,7 +216,7 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>${escapeHtml(defaultPageBanners.pricing.title)}</h1>
+        <h1>Báo giá xây nhà trọn gói</h1>
         <p>${escapeHtml(defaultPageBanners.pricing.subtitle)}</p>
         <p>Phần thô từ 3,55 triệu/m² · Trọn gói từ 4,85 triệu/m². <a href="/lien-he">Nhận báo giá chi tiết</a>.</p>
       `),
@@ -209,8 +224,8 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/thiet-ke",
       meta: {
-        title: `Thiết kế kiến trúc nhà ở 2D/3D | ${BRAND_SHORT}`,
-        description: `${defaultPageBanners.thietKe.subtitle} Thiết kế nhà phố, biệt thự và tư vấn trước khi xây.`,
+        title: THIET_KE_SEO_TITLE,
+        description: THIET_KE_SEO_DESCRIPTION,
         path: "/thiet-ke",
         keywords: "thiết kế nhà phố, thiết kế biệt thự, thiết kế kiến trúc tphcm",
         ogImage: DEFAULT_OG,
@@ -218,7 +233,7 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>${escapeHtml(defaultPageBanners.thietKe.title)}</h1>
+        <h1>Thiết kế nhà phố TP.HCM</h1>
         <p>${escapeHtml(defaultPageBanners.thietKe.subtitle)}</p>
         <p><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà phố</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
@@ -226,8 +241,8 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/xay-moi",
       meta: {
-        title: `Kinh nghiệm xây nhà mới 2026 | ${BRAND_SHORT}`,
-        description: `${defaultPageBanners.xayMoi.subtitle} Tổng hợp bài viết xây nhà mới, nhà phố, biệt thự, nhà cấp 4 và quy trình thi công trọn gói.`,
+        title: XAY_MOI_SEO_TITLE,
+        description: XAY_MOI_SEO_DESCRIPTION,
         path: "/xay-moi",
         keywords: "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự tphcm",
         ogImage: DEFAULT_OG,
@@ -235,7 +250,7 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>${escapeHtml(defaultPageBanners.xayMoi.title)}</h1>
+        <h1>Xây nhà mới trọn gói</h1>
         <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
         <p><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
@@ -243,38 +258,34 @@ function buildStaticPages(): PrerenderPage[] {
     {
       path: "/xay-nha",
       meta: {
-        title: `Nhận báo giá xây nhà nhanh — Form Ads | ${BRAND_SHORT}`,
-        description:
-          "Landing Ads: để lại SĐT nhận báo giá xây nhà phố. Hotline 0909 075 668 — trang dịch vụ chính: /dich-vu/xay-nha-tron-goi.",
+        title: XAY_NHA_SEO_TITLE,
+        description: XAY_NHA_SEO_DESCRIPTION,
         path: "/xay-nha",
-        keywords: "báo giá xây nhà, form ads xây nhà, ước tính chi phí xây nhà",
+        keywords: "xây nhà trọn gói tphcm, xây nhà chìa khóa trao tay, báo giá xây nhà phố",
         ogImage: `${SITE_URL}/images/ads/hero-xay-nha.jpg`,
-        ogImageAlt: `Form báo giá xây nhà — ${BRAND_SHORT}`,
-        noindex: true,
+        ogImageAlt: XAY_NHA_SEO_TITLE,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Nhận báo giá xây nhà nhanh</h1>
-        <p>Landing Ads — khảo sát miễn phí. Trang dịch vụ chính: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+        <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
+        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi">Xem dịch vụ xây nhà trọn gói</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
     {
       path: "/cai-tao-nha",
       meta: {
-        title: `Nhận báo giá cải tạo nhà — Form Ads | ${BRAND_SHORT}`,
-        description:
-          "Landing Ads cải tạo nhà phố. Hotline 0909 075 668 — trang dịch vụ chính: /dich-vu/sua-nha-tron-goi-tphcm.",
+        title: CAI_TAO_SEO_TITLE,
+        description: CAI_TAO_SEO_DESCRIPTION,
         path: "/cai-tao-nha",
-        keywords: "báo giá cải tạo nhà, form ads cải tạo, khảo sát cải tạo nhà",
+        keywords: "cải tạo nhà phố tphcm, nâng tầng nhà phố, chống thấm nhà",
         ogImage: `${SITE_URL}/images/ads/hero-cai-tao.jpg`,
-        ogImageAlt: `Form báo giá cải tạo nhà — ${BRAND_SHORT}`,
-        noindex: true,
+        ogImageAlt: CAI_TAO_SEO_TITLE,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Nhận báo giá cải tạo nhà nhanh</h1>
-        <p>Landing Ads — khảo sát hiện trạng miễn phí. Dịch vụ chính: <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói TP.HCM</a>.</p>
+        <h1>Cải tạo nhà phố TP.HCM</h1>
+        <p>${escapeHtml(CAI_TAO_SEO_DESCRIPTION)} <a href="/dich-vu/sua-nha-tron-goi-tphcm">Xem dịch vụ sửa nhà trọn gói</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/cai-tao-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
@@ -518,13 +529,14 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ? "2026-10-16"
         : (post.updatedAt ?? post.createdAt ?? "2026-01-15")
     ).slice(0, 10);
+    const isTurnkey = post.slug === "xay-nha-tron-goi-tphcm";
     const pageSchema =
-      post.slug === "sua-nha-tron-goi-tphcm"
+      post.slug === "sua-nha-tron-goi-tphcm" || isTurnkey
         ? {
             "@context": "https://schema.org",
             "@type": "Service",
-            name: post.title,
-            serviceType: "Sửa nhà trọn gói",
+            name: isTurnkey ? "Xây nhà trọn gói TP.HCM" : post.title,
+            serviceType: isTurnkey ? "Xây nhà trọn gói TP.HCM" : "Sửa nhà trọn gói",
             description,
             url: absoluteUrl(SITE_URL, path),
             image: resolveAbsoluteImage(post.imageUrl)
@@ -638,7 +650,7 @@ function isStaleSeoMeta(metaTitle: string, metaDescription: string): boolean {
 function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
   const seed = seedBySlug.get(row.slug);
   if (!seed) return row;
-  if (row.slug === "sua-nha-tron-goi-tphcm") {
+  if (row.slug === "sua-nha-tron-goi-tphcm" || row.slug === "xay-nha-tron-goi-tphcm") {
     return {
       ...row,
       title: seed.title,

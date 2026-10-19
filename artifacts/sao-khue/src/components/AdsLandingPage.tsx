@@ -59,8 +59,6 @@ export function AdsLandingPage({ config }: Props) {
     keywords: config.keywords,
     ogImage: config.heroImage || ogImage,
     ogImageAlt: `${config.serviceLabel} — ${brand}`,
-    // Ads landing — không tranh index với trang tiền /dich-vu/*
-    noindex: true,
     jsonLd: [
       buildBreadcrumbSchema([
         { name: "Trang chủ", path: "/" },

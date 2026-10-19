@@ -166,10 +166,10 @@ export const defaultProcessSteps: ProcessStep[] = [
 ];
 
 export const defaultQuoteServices: QuoteServiceItem[] = [
-  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/bao-gia", buttonLabel: "Xem chi tiết" },
-  { id: "02", title: "SỬA CHỮA\nNHÀ", link: "/bao-gia", buttonLabel: "Xem chi tiết" },
-  { id: "03", title: "XÂY DỰNG\nPHẦN THÔ", link: "/bao-gia", buttonLabel: "Xem chi tiết" },
-  { id: "04", title: "THIẾT KẾ\nNHÀ", link: "/dich-vu", buttonLabel: "Xem chi tiết" },
+  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi tiết" },
+  { id: "02", title: "SỬA CHỮA\nNHÀ", link: "/dich-vu/sua-nha-tron-goi-tphcm", buttonLabel: "Xem chi tiết" },
+  { id: "03", title: "XÂY DỰNG\nPHẦN THÔ", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi tiết" },
+  { id: "04", title: "THIẾT KẾ\nNHÀ", link: "/dich-vu/thiet-ke-nha", buttonLabel: "Xem chi tiết" },
 ];
 
 export const defaultContactSection: ContactSectionContent = {
@@ -260,19 +260,19 @@ export const defaultCategoryPages: CategoryPagesMap = {
     highlights: ["Hơn 500 công trình bàn giao", "Trực tiếp thi công, không bán thầu", "Bảo hành kết cấu lên đến 10 năm"],
   },
   "dich-vu": {
-    title: "Dịch vụ xây dựng trọn gói",
+    title: "Dịch vụ xây nhà trọn gói TP.HCM",
     description:
       "Từ thiết kế, xây thô, hoàn thiện đến sửa chữa nhà — Sao Khuê cung cấp giải pháp trọn gói, báo giá rõ ràng và cam kết tiến độ.",
     highlights: ["Xây nhà trọn gói chìa khóa trao tay", "Thiết kế kiến trúc 2D/3D", "Tư vấn miễn phí tận nơi"],
   },
   "cong-trinh": {
-    title: "Công trình tiêu biểu",
+    title: "Công trình nhà phố đã thi công",
     description:
       "5 case study thực tế: xây nhà phố Bình Thạnh, Thuận An, cải tạo Quận 3, biệt thự Thủ Đức và nhà phố hiện đại — có thông số, giải pháp kỹ thuật và ảnh minh họa.",
     highlights: ["Nhà phố 4 tầng Bình Thạnh", "Cải tạo Quận 3", "Biệt thự Thủ Đức"],
   },
   "tin-tuc": {
-    title: "Tin tức",
+    title: "Kinh nghiệm xây nhà",
     description:
       "Tổng hợp tất cả bài viết: cẩm nang xây nhà, báo giá, cải tạo, thiết kế và kinh nghiệm thực tế từ Kiến Trúc Sao Khuê.",
     highlights: ["Cẩm nang xây nhà A–Z", "Báo giá & chi phí", "Cải tạo & sửa chữa"],
@@ -304,17 +304,17 @@ export type FeaturedPostsConfig = {
 
 export const defaultPageBanners: PageBannersMap = {
   pricing: {
-    title: "Báo giá xây dựng",
+    title: "Báo giá xây nhà trọn gói",
     subtitle:
       "Tham khảo đơn giá xây thô, trọn gói và công cụ tính chi phí nhanh — minh bạch, không phát sinh.",
   },
   thietKe: {
-    title: "Thiết kế kiến trúc",
+    title: "Thiết kế nhà phố TP.HCM",
     subtitle:
       "Thiết kế nhà ở TP.HCM — nhà phố, biệt thự 2D/3D. Tối ưu mặt bằng, phong thủy và ngân sách gia đình.",
   },
   xayMoi: {
-    title: "Xây nhà trọn gói",
+    title: "Xây nhà mới trọn gói",
     subtitle:
       "Xây nhà mới trọn gói 2026 — chìa khóa trao tay, minh bạch, bảo hành kết cấu 10 năm.",
   },

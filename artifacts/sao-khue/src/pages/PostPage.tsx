@@ -113,6 +113,8 @@ export default function PostPage() {
   const seoPost = post ?? bundledPost;
   const seoPath = seoPost ? getPostPublicPath(seoPost, menu) : undefined;
   const isRepairService = seoPost?.slug === "sua-nha-tron-goi-tphcm";
+  const isTurnkeyService = seoPost?.slug === "xay-nha-tron-goi-tphcm";
+  const isServicePage = isRepairService || isTurnkeyService;
   const postNoindex =
     Boolean((seoPost as { noindex?: boolean } | undefined)?.noindex) ||
     (seoPost ? shouldNoindexPostSlug(seoPost.slug) : false);
@@ -131,13 +133,14 @@ export default function PostPage() {
           modifiedTime: seoPost.updatedAt,
           noindex: postNoindex,
           jsonLd: [
-            isRepairService
+            isServicePage
               ? buildServiceSchema({
-                  name: seoPost.title,
+                  name: isTurnkeyService ? "Xây nhà trọn gói TP.HCM" : seoPost.title,
                   description: postDescription,
                   url: absoluteUrl(seoPath),
                   providerName: brandName,
-                  serviceType: "Sửa nhà trọn gói",
+                  serviceType: isTurnkeyService ? "Xây nhà trọn gói TP.HCM" : "Sửa nhà trọn gói",
+                  areaServed: "Thành phố Hồ Chí Minh",
                   image: seoPost.imageUrl,
                 })
               : buildArticleSchema({
@@ -177,7 +180,7 @@ export default function PostPage() {
         className="site-container max-w-4xl pb-8 pt-4 md:pb-12 md:pt-6"
         itemScope
         itemType={
-          slug === "sua-nha-tron-goi-tphcm"
+          slug === "sua-nha-tron-goi-tphcm" || slug === "xay-nha-tron-goi-tphcm"
             ? "https://schema.org/Service"
             : "https://schema.org/BlogPosting"
         }

@@ -34,6 +34,7 @@ const STATIC_PAGES: SitemapEntry[] = [
 
 function moneyPostPriority(slug: string): number {
   const s = slug.toLowerCase();
+  if (s === "xay-nha-tron-goi-tphcm") return 0.98;
   if (
     /bao-gia-xay-nha-tron-goi|don-gia-xay-nha|chi-phi-xay-nha|xay-nha-gia-re|xay-nha-tphcm$|xay-nha-tron-goi-tphcm|cai-tao-nha-cu|thiet-ke-nha-pho-tphcm|cong-ty-xay-dung-nha-pho-uy-tin/.test(
       s,

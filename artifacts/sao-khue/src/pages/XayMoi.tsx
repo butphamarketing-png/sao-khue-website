@@ -8,9 +8,9 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useListPosts } from "@workspace/api-client-react";
-import { useOpenGraphImage, usePageBanner, useSiteSettings, useNavMenu } from "@/lib/site-settings";
+import { useOpenGraphImage, usePageBanner, useNavMenu } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
+import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, XAY_MOI_SEO_DESCRIPTION, XAY_MOI_SEO_TITLE } from "@/lib/seo";
 import { defaultHomePostsBands } from "@/lib/home-content";
 import { paginatePosts, pickBandPosts } from "@/lib/post-band";
 import { resolvePosts } from "@/lib/posts-with-fallback";
@@ -22,10 +22,8 @@ const XAY_MOI_BAND = defaultHomePostsBands.find((b) => b.id === "xay-moi")!;
 
 export default function XayMoi() {
   const banner = usePageBanner("xayMoi");
-  const s = useSiteSettings();
   const menu = useNavMenu();
   const ogImage = useOpenGraphImage();
-  const brand = seoBrandName(s.companyName);
   const [, setLocation] = useLocation();
   const search = useSearch();
 
@@ -52,16 +50,14 @@ export default function XayMoi() {
   ];
 
   usePageSeo({
-    title: `Kinh nghiệm xây nhà mới 2026 | ${brand}`,
-    description:
-      banner.subtitle +
-      " Tổng hợp bài viết xây nhà mới, nhà phố, biệt thự, nhà cấp 4 và quy trình thi công trọn gói.",
+    title: XAY_MOI_SEO_TITLE,
+    description: XAY_MOI_SEO_DESCRIPTION,
     path: "/xay-moi",
     noindex: currentPage > 1,
     keywords:
       "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự, xây nhà tphcm",
     ogImage,
-    ogImageAlt: `Kinh nghiệm xây nhà mới 2026 — ${brand}`,
+    ogImageAlt: XAY_MOI_SEO_TITLE,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Xây nhà trọn gói", banner.subtitle, absoluteUrl("/xay-moi")),
@@ -86,7 +82,7 @@ export default function XayMoi() {
 
   return (
     <PageShell>
-      <PageBanner title={banner.title || "Xây nhà trọn gói"}>
+      <PageBanner title="Xây nhà mới trọn gói">
         <Breadcrumbs items={breadcrumbs} light className="mt-4" />
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>

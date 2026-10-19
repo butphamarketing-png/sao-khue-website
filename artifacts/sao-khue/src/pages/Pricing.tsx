@@ -8,9 +8,9 @@ import { CTABanner } from "@/components/CTABanner";
 import { PageBanner } from "@/components/PageBanner";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useListPosts } from "@workspace/api-client-react";
-import { useOpenGraphImage, usePageBanner, useSiteSettings, useNavMenu } from "@/lib/site-settings";
+import { useOpenGraphImage, usePageBanner, useNavMenu } from "@/lib/site-settings";
 import { usePageSeo } from "@/hooks/use-page-seo";
-import { absoluteUrl, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema, seoBrandName } from "@/lib/seo";
+import { absoluteUrl, BAO_GIA_SEO_DESCRIPTION, BAO_GIA_SEO_TITLE, buildBreadcrumbSchema, buildCollectionPageSchema, buildItemListSchema } from "@/lib/seo";
 import { defaultHomePostsBands } from "@/lib/home-content";
 import { paginatePosts, pickBandPosts } from "@/lib/post-band";
 import { resolvePosts } from "@/lib/posts-with-fallback";
@@ -22,10 +22,8 @@ const BAO_GIA_BAND = defaultHomePostsBands.find((b) => b.id === "bao-gia")!;
 
 export default function Pricing() {
   const banner = usePageBanner("pricing");
-  const s = useSiteSettings();
   const menu = useNavMenu();
   const ogImage = useOpenGraphImage();
-  const brand = seoBrandName(s.companyName);
   const [, setLocation] = useLocation();
   const search = useSearch();
 
@@ -52,16 +50,14 @@ export default function Pricing() {
   ];
 
   usePageSeo({
-    title: `Báo giá xây dựng 2026 | ${brand}`,
-    description:
-      banner.subtitle +
-      " Tổng hợp bài viết báo giá xây nhà, phần thô, trọn gói, cải tạo và công cụ tính chi phí.",
+    title: BAO_GIA_SEO_TITLE,
+    description: BAO_GIA_SEO_DESCRIPTION,
     path: "/bao-gia",
     noindex: currentPage > 1,
     keywords:
       "báo giá xây nhà trọn gói, đơn giá xây nhà, chi phí xây nhà, xây nhà giá rẻ, báo giá cải tạo nhà, xây nhà trọn gói tphcm",
     ogImage,
-    ogImageAlt: `Báo giá xây dựng 2026 — ${brand}`,
+    ogImageAlt: BAO_GIA_SEO_TITLE,
     jsonLd: [
       buildBreadcrumbSchema(breadcrumbs),
       buildCollectionPageSchema("Báo giá", banner.subtitle, absoluteUrl("/bao-gia")),
@@ -86,7 +82,7 @@ export default function Pricing() {
 
   return (
     <PageShell>
-      <PageBanner title={banner.title || "Báo giá"}>
+      <PageBanner title="Báo giá xây nhà trọn gói">
         <Breadcrumbs items={breadcrumbs} light className="mt-4" />
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>

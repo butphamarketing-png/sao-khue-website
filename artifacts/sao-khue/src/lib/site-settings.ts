@@ -537,9 +537,27 @@ export function useCtaBanner(): CtaBannerContent {
   return parseJsonObject(settings.homeCtaJson, defaultCtaBanner);
 }
 
+const QUOTE_SERVICE_LINKS: Record<string, string> = {
+  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi",
+  "sửa chữa nhà": "/dich-vu/sua-nha-tron-goi-tphcm",
+  "xây dựng phần thô": "/dich-vu/xay-dung-phan-tho",
+  "thiết kế nhà": "/dich-vu/thiet-ke-nha",
+};
+
+/** CMS cũ trỏ cả 4 vòng tròn về /bao-gia — đưa link về đúng trang dịch vụ. */
+function withMoneyQuoteLinks(items: QuoteServiceItem[]): QuoteServiceItem[] {
+  return items.map((item) => {
+    const key = item.title.replace(/\s+/g, " ").trim().toLowerCase();
+    const href = QUOTE_SERVICE_LINKS[key];
+    if (!href) return item;
+    if (item.link === "/bao-gia" || item.link === "/dich-vu") return { ...item, link: href };
+    return item;
+  });
+}
+
 export function useQuoteServices(): QuoteServiceItem[] {
   const settings = useSiteSettings();
-  return parseJsonArray(settings.homeQuoteServicesJson, defaultQuoteServices);
+  return withMoneyQuoteLinks(parseJsonArray(settings.homeQuoteServicesJson, defaultQuoteServices));
 }
 
 export function useContactSection(): ContactSectionContent {

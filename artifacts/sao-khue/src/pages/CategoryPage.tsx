@@ -23,7 +23,10 @@ import {
   buildBreadcrumbSchema,
   buildCollectionPageSchema,
   buildItemListSchema,
+  CONG_TRINH_HEADING,
+  DICH_VU_HEADING,
   seoBrandName,
+  TIN_TUC_HEADING,
 } from "@/lib/seo";
 import { getPostPublicPath } from "@/lib/post-url";
 import { resolvePostImageAlt } from "@/lib/post-body";
@@ -59,7 +62,15 @@ export default function CategoryPage({ category }: Props) {
   }, [location, currentPage]);
 
   const currentItem = findMenuByPath(location, menu);
-  const pageTitle = currentItem?.title || categoryLabel(category);
+  const hubHeading =
+    normalized === "dich-vu"
+      ? DICH_VU_HEADING
+      : normalized === "cong-trinh"
+        ? CONG_TRINH_HEADING
+        : normalized === "tin-tuc"
+          ? TIN_TUC_HEADING
+          : "";
+  const pageTitle = hubHeading || currentItem?.title || categoryLabel(category);
 
   const topItem = menu.find((m) => m.category === normalized);
   const categoryPages = useCategoryPages();
