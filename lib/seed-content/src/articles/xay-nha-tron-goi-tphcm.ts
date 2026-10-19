@@ -8,6 +8,8 @@ export const xayNhaTronGoiTphcm = {
     "Xây nhà trọn gói TP.HCM từ 4,85 triệu/m²: thiết kế, phần thô và hoàn thiện một hợp đồng. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
   metaKeywords:
     "xây nhà trọn gói tphcm, chìa khóa trao tay, nhà thầu xây dựng tp hcm, kiến trúc sao khuê, đơn giá xây nhà phố",
+  imageAlt: "Xây nhà trọn gói TP.HCM — nhà phố Kiến Trúc Sao Khuê",
+  imageCaption: "Xây nhà trọn gói TP.HCM — nhà phố Kiến Trúc Sao Khuê",
   content: `
 <h2>Một đầu mối từ móng đến chìa khóa trao tay</h2>
 <p><strong>Xây nhà trọn gói TP.HCM</strong> nghĩa là một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện và bàn giao. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> (245/8 Bình Lợi, Phường 13, Bình Thạnh) làm việc với chủ nhà nội thành và các quận mới — kiểm soát chi phí, tiến độ, chất lượng bằng <strong>một hợp đồng</strong>.</p>

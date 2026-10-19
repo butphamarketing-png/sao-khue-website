@@ -54,13 +54,14 @@ export const defaultNavMenu: MenuItem[] = [
   },
   {
     title: "XÂY MỚI",
-    href: "/xay-moi",
+    href: "/dich-vu/xay-nha-tron-goi",
     category: "dich-vu",
     children: [
       { title: "NHÀ PHỐ", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
       { title: "BIỆT THỰ", href: "/mau-nha/biet-thu" },
       { title: "NHÀ CẤP 4", href: "/mau-nha/cap-4" },
       { title: "XÂY TRỌN GÓI TP.HCM", href: "/dich-vu/xay-nha-tron-goi", category: "dich-vu" },
+      { title: "KINH NGHIỆM XÂY MỚI", href: "/xay-moi", category: "dich-vu" },
       { title: "NHÀ 2 TẦNG", href: "/mau-nha/2-tang" },
       { title: "NHÀ 3 TẦNG", href: "/mau-nha/3-tang" },
       { title: "XÂY TRỌN GÓI BÌNH DƯƠNG", href: "/dich-vu/xay-nha-tron-goi-binh-duong", category: "dich-vu" },

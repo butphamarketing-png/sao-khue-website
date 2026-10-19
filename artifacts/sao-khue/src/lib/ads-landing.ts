@@ -65,7 +65,7 @@ export const XAY_NHA_LANDING: AdsLandingConfig = {
   heroImage: "/images/ads/hero-xay-nha.jpg",
   heroImageAlt: "Nhà phố hiện đại xây trọn gói Sao Khuê",
   keywords:
-    "xây nhà trọn gói tphcm, xây nhà chìa khóa trao tay, báo giá xây nhà phố, kiến trúc sao khuê",
+    "báo giá xây nhà phố tphcm, xây nhà chìa khóa trao tay, kiến trúc sao khuê",
   seoTitle: XAY_NHA_SEO_TITLE,
   seoDescription: XAY_NHA_SEO_DESCRIPTION,
   formTitle: "Nhận báo giá xây nhà trong 15 phút",

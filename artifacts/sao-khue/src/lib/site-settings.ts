@@ -572,7 +572,9 @@ export function useTopBarSlogan(): string {
 
 export function useNavMenu(): MenuItem[] {
   const settings = useSiteSettings();
-  const menu = parseJsonArray(settings.navMenuJson, defaultNavMenu);
+  const menu = parseJsonArray(settings.navMenuJson, defaultNavMenu).map((item) =>
+    item.href === "/xay-moi" ? { ...item, href: "/dich-vu/xay-nha-tron-goi" } : item,
+  );
   if (menu.some((item) => item.href === "/mau-nha")) return menu;
   const mauNha = defaultNavMenu.find((item) => item.href === "/mau-nha");
   if (!mauNha) return menu;

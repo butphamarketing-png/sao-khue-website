@@ -138,7 +138,7 @@ export function AdsLandingPage({ config }: Props) {
                 href={config.path === "/cai-tao-nha" ? "/dich-vu/sua-nha-tron-goi-tphcm" : "/dich-vu/xay-nha-tron-goi"}
                 className="inline-flex h-12 items-center border border-white/40 px-5 text-sm font-bold uppercase tracking-wide text-white/90 hover:bg-white/10"
               >
-                Xem dịch vụ chi tiết
+                {config.path === "/cai-tao-nha" ? "Xem dịch vụ sửa nhà" : "Xây nhà trọn gói TP.HCM"}
               </Link>
             </div>
 
