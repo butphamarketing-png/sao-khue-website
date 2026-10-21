@@ -165,7 +165,7 @@ ${faqSection([
     <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu</td><td>Chưa hoàn thiện, chưa cọc</td></tr>
   </tbody>
 </table>
-<p>Nhà phố 4×16, 1 trệt 2 lầu trọn gói cơ bản thường <strong>3,5 – 4,8 tỷ</strong> (chưa cọc nếu nền yếu). 4 tầng ~80–120m² sàn: <strong>3,5 – 5,5 tỷ</strong>. Muốn gói ngân sách thấp hơn: xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a> — cắt phào/đèn, không cắt thép–chống thấm.</p>
+<p>Nhà phố 4×16, 1 trệt 2 lầu, 3 sàn ở: 64 × 3 = 192 m² × 4,85 triệu/m² khoảng <strong>931 triệu</strong> phần sàn ở. Đây là phép nhân để hình dung, không phải giá ký. Chưa gồm cọc, mái và phụ phí hẻm. Nhà 4 tầng nhiều sàn hơn nên tổng cao hơn — không có một mức tỷ cho mọi lô. Cách tính: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>. Muốn gói ngân sách thấp hơn: xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ TP.HCM</a> — cắt phào/đèn, không cắt thép–chống thấm.</p>
 <p><strong>Xây nhà trọn gói giá rẻ Bình Thạnh</strong> vẫn phải tách phụ phí hẻm &lt; 3m (+8–12%), ép cọc nền gần rạch (nếu có) và giờ đổ bê tông — ghi rõ trong dự toán, không “nuốt” vào m².</p>
 
 <h2>Hẻm, logistics và giờ đổ bê tông tại Bình Thạnh</h2>
@@ -196,7 +196,7 @@ ${faqSection([
 <p>Case tham chiếu quy mô và tiêu chuẩn thi công — <strong>không phải cam kết giá copy-paste</strong>:</p>
 <ul>
   <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố 4 tầng Bình Thạnh</a> — lô phố cũ, giếng trời, hoàn thiện cơ bản.</li>
-  <li>Khu Bình Lợi – Xô Viết Nghệ Tĩnh: lô 4×16 hẻm xe hơi, 1 trệt 2 lầu trọn gói cơ bản khoảng 3,5–4,8 tỷ (chưa cọc).</li>
+  <li>Khu Bình Lợi – Xô Viết Nghệ Tĩnh: lô 4×16 hẻm xe hơi, 1 trệt 2 lầu — cùng cách tính khoảng 931 triệu phần sàn ở, chưa cọc.</li>
 </ul>
 <p>Gửi ảnh hiện trạng + chiều ngang hẻm khi gọi hotline — báo đúng gói thô/trọn trước khi hẹn đo đất.</p>
 
@@ -221,7 +221,7 @@ ${faqSection([
       "Xây nhà trọn gói Thủ Đức: KDC mới vs phố cũ, móng ven rạch, facade CĐT. Sao Khuê BH 10 năm — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Thủ Đức 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Thủ Đức: nhà phố 3,5–6 tỷ, KDC vs hẻm Hiệp Bình, GPXD phường mới. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Thủ Đức: đơn giá từ 4,85 triệu/m² sàn ở. KDC khác hẻm Hiệp Bình, giấy phép theo phường mới. Khảo sát miễn phí 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói thủ đức, xây nhà trọn gói giá rẻ thủ đức, xây nhà thủ đức, nhà thầu thủ đức, sao khuê",
     imageAlt: "Xây nhà trọn gói Thủ Đức — Kiến Trúc Sao Khuê",
@@ -230,13 +230,13 @@ ${faqSection([
 <p><a href="/tin-tuc/xay-nha-thu-duc">Xây nhà Thủ Đức</a> · <a href="/tin-tuc/xay-nha-tron-goi-quan-2">trọn gói Q.2 cũ</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">pillar TP.HCM</a> · <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · <a href="/bao-gia">/bao-gia</a>.</p>
 
 <h2>Đơn giá và gói giá rẻ tại Thủ Đức (2026)</h2>
-<p>Hai “Thủ Đức” trong thực tế báo giá — <strong>KDC đường lớn</strong> khác <strong>phố cũ hẻm Hiệp Bình / Linh Xuân</strong> — không dùng chung một đơn giá m²:</p>
+<p>Hai “Thủ Đức” trong thực tế báo giá — <strong>KDC đường lớn</strong> khác <strong>phố cũ hẻm Hiệp Bình / Linh Xuân</strong> — cùng khung đơn giá m², khác phụ phí hẻm và facade:</p>
 <table>
   <thead><tr><th>Phân khúc</th><th>Mốc trọn gói (tham khảo)</th><th>Đặc thù</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng, lô 4×16 KDC</td><td>3,5 – 4,8 tỷ</td><td>Logistics dễ, facade theo quy chế CĐT</td></tr>
-    <tr><td>Nhà phố 4 tầng, ~100m² sàn</td><td>3,5 – 6 tỷ</td><td>Tùy hoàn thiện và hẻm</td></tr>
-    <tr><td>Biệt thự 200m²+ sàn</td><td>8 – 15 tỷ+</td><td>Sân–hồ tách phụ lục</td></tr>
+    <tr><td>Nhà phố 3 tầng, lô 4×16 KDC</td><td>Khoảng 931 triệu phần sàn ở</td><td>192 m² × 4,85 triệu. Chưa cọc. Không phải giá ký</td></tr>
+    <tr><td>Nhà phố 4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Nhiều sàn hơn nên tổng cao hơn</td></tr>
+    <tr><td>Biệt thự</td><td>Cùng đơn giá m²</td><td>Sân–hồ tách phụ lục, không nhân một mức tỷ</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Chưa cọc ven rạch</td></tr>
   </tbody>
 </table>
@@ -256,7 +256,7 @@ ${faqSection([
   <li>Khảo sát tận lô: địa chất (ven rạch), quy chế facade (KDC), logistics.</li>
   <li>Thiết kế 2D/3D + danh mục vật tư; phụ lục facade KDC nếu có.</li>
   <li>Báo giá minh bạch; ký HĐ — list thép, xi măng, sơn; mốc thanh toán.</li>
-  <li>Thi công 5–8 tháng (nhà phố 3–4 tầng); biệt thự 8–14 tháng. Mùa mưa có thể dời ca đổ.</li>
+  <li>Thi công 4–7 tháng (nhà phố 3–4 tầng); biệt thự dài hơn. Mùa mưa có thể dời ca đổ.</li>
   <li>Nghiệm thu, bàn giao, BH kết cấu 10 năm.</li>
 </ol>
 <p>Chi tiết quy trình: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
@@ -277,7 +277,7 @@ ${faqSection([
   { q: "Nền Hiệp Bình yếu có xây 4 tầng được không?", a: "Sau khảo sát móng và khoan địa chất. Không hứa tầng khi chưa có kết quả địa chất và GPXD." },
   { q: "Xây nhà trọn gói giá rẻ Thủ Đức khác TP.HCM chỗ nào?", a: "KDC rộng giảm logistics; ven rạch tăng cọc. Đơn giá m² city-wide là mốc — số chính sau khảo sát từng lô." },
   { q: "KDC có bắt facade đồng bộ không?", a: "Thường có quy chế CĐT về màu, hàng rào, chiều cao. Hỏi ban quản lý trước khi chốt vật tư mặt đứng." },
-  { q: "Thủ Đức mất bao lâu?", a: "Nhà phố 3–4 tầng: 5–8 tháng. Biệt thự 200m²+: 8–14 tháng. Chưa kể thời gian chờ GPXD nếu phức tạp." },
+  { q: "Thủ Đức mất bao lâu?", a: "Nhà phố 3–4 tầng: 4–7 tháng. Biệt thự lớn dài hơn. Chưa kể thời gian chờ giấy phép nếu phức tạp." },
   { q: "Khảo sát Thủ Đức có phí không?", a: "Miễn phí theo lịch hẹn. Gửi 3 ảnh (hẻm, mặt tiền, sổ che số) + mô tả KDC/phố cũ khi gọi 0909 075 668." },
 ])}
 <p><strong>0909 075 668</strong> · <a href="/lien-he">Khảo sát miễn phí</a> · <a href="/bao-gia">/bao-gia</a> · kientrucsaokhue.com</p>`,
@@ -289,7 +289,7 @@ ${faqSection([
       "Xây nhà trọn gói Gò Vấp: lô 4×16, giếng trời, hẻm Quang Trung. Báo giá minh bạch — Sao Khuê 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Gò Vấp 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Gò Vấp: lô 4×16, hẻm hẹp, giếng trời, 3,2–5,8 tỷ. BH kết cấu 10 năm — khảo sát 0909 075 668.",
+      "Xây nhà trọn gói Gò Vấp: lô 4×16 từ 4,85 triệu/m² sàn ở, hẻm hẹp, giếng trời. Bảo hành kết cấu 10 năm. Khảo sát 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói gò vấp, xây nhà trọn gói giá rẻ gò vấp, xây nhà gò vấp, nhà thầu gò vấp, sao khuê",
     imageAlt: "Xây nhà trọn gói Gò Vấp — Kiến Trúc Sao Khuê",
@@ -301,8 +301,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Quy mô Gò Vấp</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
   <tbody>
-    <tr><td>Ống 4×16, 1 trệt 2 lầu</td><td>3,2 – 4,8 tỷ</td><td>+ logistics hẻm 8–12%</td></tr>
-    <tr><td>4 tầng, ~80–100m² sàn</td><td>4,0 – 5,8 tỷ</td><td>Chưa cọc nếu nền yếu</td></tr>
+    <tr><td>Ống 4×16, 1 trệt 2 lầu</td><td>Khoảng 931 triệu phần sàn ở</td><td>192 m² × 4,85 triệu. Hẻm tính thêm, chưa phải giá ký</td></tr>
+    <tr><td>4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Nhiều sàn hơn. Chưa cọc nếu nền yếu</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Tách phụ phí hẻm</td></tr>
   </tbody>
 </table>
@@ -349,9 +349,9 @@ ${faqSection([
 ${faqSection([
   { q: "Hẻm xe máy Gò Vấp xây được không?", a: "Được nếu có phương án khiêng/ba gác và bơm bê tông. Khảo sát đo hẻm trước khi hứa cẩu hoặc xe trộn vào." },
   { q: "Nhà ống Gò Vấp có bắt buộc giếng trời không?", a: "Không bắt buộc pháp lý, nhưng nhà sâu 16–20m nên có giếng ~1,2×1,5m — chốt từ bản vẽ móng." },
-  { q: "Xây nhà trọn gói giá rẻ Gò Vấp bao nhiêu?", a: "Ống 4×16 trọn gói cơ bản thường 3,2–4,8 tỷ + logistics hẻm. Đơn giá m² là mốc — số chính sau đo đất." },
+  { q: "Xây nhà trọn gói giá rẻ Gò Vấp bao nhiêu?", a: "Ống 4×16, 1 trệt 2 lầu, 192 m² sàn ở × 4,85 triệu khoảng 931 triệu phần sàn ở, chưa hẻm và chưa cọc. Không phải giá ký. Số chính sau đo đất." },
   { q: "Hẻm Gò Vấp dưới 3m xây được không?", a: "Được: bơm từ mặt tiền, xe phế thải nhỏ, ca sớm. Phụ phí ghi rõ trong dự toán." },
-  { q: "Thời gian thi công Gò Vấp?", a: "Nhà phố 3–4 tầng: 5–8 tháng tùy hẻm và mùa mưa. Hẻm hẹp có thể kéo dài ca đổ." },
+  { q: "Thời gian thi công Gò Vấp?", a: "Nhà phố 3–4 tầng: 4–7 tháng tùy hẻm và mùa mưa. Hẻm hẹp có thể kéo dài ca đổ." },
   { q: "Khảo sát Gò Vấp mất phí không?", a: "Miễn phí nội thành theo lịch. Gọi 0909 075 668 · văn phòng Bình Lợi." },
 ])}
 <p>Gọi <strong>0909 075 668</strong> · <a href="/lien-he">/lien-he</a> · Landing Ads: <a href="/xay-nha">/xay-nha</a></p>`,
@@ -454,7 +454,7 @@ ${faqSection([
   <li>Cấp 4 lên phố: khảo sát móng trước khi hứa thêm tầng.</li>
 </ul>
 <h2>Chi phí</h2>
-<p>Trọn gói Tân Phú cạnh tranh nội thành: phố 3 tầng thường 3,3–4,7 tỷ; 4 tầng 4,2–5,8 tỷ. Hẻm hẹp +5–10%.</p>
+<p>Trọn gói Tân Phú dùng cùng đơn giá từ <strong>4,85 triệu/m²</strong> sàn ở. Phố 3 tầng ít sàn hơn nhà 4 tầng nên tổng thấp hơn. Hẻm hẹp tính phụ phí riêng, không cộng 5–10% vào đơn giá m².</p>
 ${faqSection([
   { q: "Tân Phú có hạn chế tầng gần sân bay không?", a: "Hạn chế chiều cao chủ yếu một số phường Tân Bình. Tân Phú vẫn tra GPXD từng thửa." },
   { q: "Xây trên nền cấp 4 cũ được không?", a: "Được nếu móng đủ hoặc gia cố. Không đổ thêm tầng khi chưa khảo sát." },
@@ -468,21 +468,14 @@ ${faqSection([
       "Xây nhà 4 tầng TP.HCM: diện tích sàn, móng, thang máy. Bảng chi phí 2026 và phép xây dựng.",
     metaTitle: "Xây Nhà 4 Tầng TP.HCM 2026 — Chi Phí & Kỹ Thuật",
     metaDescription:
-      "Xây nhà 4 tầng TP.HCM: chi phí 3,8–8 tỷ, thời gian 5–8 tháng, kết cấu. Trọn gói BH 10 năm — 0909 075 668.",
+      "Xây nhà 4 tầng TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở, nhà phố 3–4 tầng thường 4–7 tháng. Bảo hành kết cấu 10 năm. Gọi 0909 075 668.",
     metaKeywords: "xây nhà 4 tầng tphcm, chi phí nhà 4 tầng, nhà phố 4 tầng",
     imageAlt: "Xây nhà 4 tầng TP.HCM",
     content: `<h2>Xây nhà 4 tầng TP.HCM — khi nào hợp lý?</h2>
-<p><strong>Xây nhà 4 tầng TP.HCM</strong> phổ biến lô 4×15 – 5×20: tối đa diện tích khi quy hoạch cho phép. Cần bản vẽ kết cấu đúng tải, thang bộ + thoát hiểm, chống thấm sân thượng. So sánh 3 tầng: <a href="/tin-tuc/xay-nha-3-tang-tphcm">xây nhà 3 tầng</a> · 5 tầng: <a href="/tin-tuc/xay-nha-5-tang-tphcm">xây nhà 5 tầng</a>.</p>
+<p><strong>Xây nhà 4 tầng TP.HCM</strong> phổ biến lô 4×15 – 5×20: tối đa diện tích khi quy hoạch cho phép. Cần bản vẽ kết cấu đúng tải, thang bộ + thoát hiểm, chống thấm sân thượng. Đơn giá trọn gói: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>. So sánh 3 tầng: <a href="/tin-tuc/xay-nha-3-tang-tphcm">xây nhà 3 tầng</a> · 5 tầng: <a href="/tin-tuc/xay-nha-5-tang-tphcm">xây nhà 5 tầng</a>.</p>
 <p>Case: <a href="/cong-trinh/xay-nha-pho-binh-thanh">4 tầng Bình Thạnh</a>.</p>
 <h2>Chi phí tham khảo (2026)</h2>
-<table>
-  <thead><tr><th>Hạng mục</th><th>Ước tính</th></tr></thead>
-  <tbody>
-    <tr><td>Trọn gói cơ bản (~100m² sàn)</td><td>3,8 – 5,2 tỷ</td></tr>
-    <tr><td>Trọn gói khá / mặt tiền kỹ</td><td>5,5 – 8 tỷ+</td></tr>
-    <tr><td>Thời gian thi công</td><td>5 – 8 tháng</td></tr>
-  </tbody>
-</table>
+<p>Đơn giá trọn gói Sao Khuê từ <strong>4,85 triệu/m²</strong> sàn ở (khá 5,5–6,0; cao cấp từ 6,0). Nhà 4 tầng nhiều sàn hơn nhà 3 tầng nên tổng tiền cao hơn — không có một mức “bao nhiêu tỷ” áp cho mọi lô. Cách nhân m² và những khoản tách (cọc, mái, hẻm): <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>.</p>
 <h2>Kỹ thuật cần chú ý</h2>
 <ul>
   <li>Móng cọc nếu đất yếu / nhà sát.</li>
@@ -645,14 +638,14 @@ ${faqSection([
       "Xây biệt thự TP.HCM: sân vườn, mái Thái, hồ bơi. Sao Khuê thi công cao cấp — BH 10 năm.",
     metaTitle: "Xây Biệt Thự TP.HCM | Thiết Kế & Thi Công",
     metaDescription:
-      "Xây biệt thự TP.HCM: sân vườn, kết cấu, báo giá 8–25 tỷ+. Kinh nghiệm Thủ Đức, Nhà Bè. 0909 075 668.",
+      "Xây biệt thự TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở. Sân, hồ và hàng rào tách phụ lục. Thủ Đức, Nhà Bè. Gọi 0909 075 668.",
     metaKeywords: "xây biệt thự tphcm, thi công biệt thự, xây nhà vườn tphcm",
     imageAlt: "Xây biệt thự TP.HCM",
     content: `<h2>Xây biệt thự TP.HCM — khác nhà phố ở đâu?</h2>
 <p><strong>Xây biệt thự TP.HCM</strong> (Thủ Đức, Nhà Bè, Bình Chánh, Q.7): quy hoạch sân vườn, kết cấu tải lớn hơn, hoàn thiện cao cấp, tiến độ dài hơn. Ngân sách tính m² xây + m² sân/hồ, không chỉ m² sàn nhà phố.</p>
 <p><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> · <a href="/tin-tuc/xay-nha-nha-be">xây nhà Nhà Bè</a> · <a href="/tin-tuc/thiet-ke-nha-dep-tphcm">thiết kế nhà đẹp</a>.</p>
 <h2>Chi phí tham khảo</h2>
-<p>Biệt thự 200–400m² sàn, trọn gói: <strong>8 – 25 tỷ+</strong> tùy nội thất và hồ bơi. Thời gian 9–14 tháng. Ven kênh: địa chất bắt buộc.</p>
+<p>Biệt thự tính cùng đơn giá từ <strong>4,85 triệu/m²</strong> sàn ở. Sân, hồ và hàng rào tách phụ lục. Nhà lớn có tổng cao hơn nhà phố vì nhiều sàn và nhiều chi tiết. Thời gian dài hơn nhà phố 3–4 tầng (4–7 tháng); mốc ghi trong hợp đồng. Ven kênh: địa chất bắt buộc. Cách tính: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>.</p>
 <h2>Hạng mục dễ phát sinh</h2>
 <ul>
   <li>Hàng rào, cổng, sân, chiếu sáng ngoài.</li>
@@ -699,14 +692,14 @@ ${faqSection([
       "Xây nhà 5 tầng TP.HCM: quy hoạch, thang máy, PCCC. Sao Khuê tư vấn kỹ thuật trước khi ký HĐ.",
     metaTitle: "Xây Nhà 5 Tầng TP.HCM 2026 — Phép & Chi Phí",
     metaDescription:
-      "Xây nhà 5 tầng TP.HCM: giấy phép, kết cấu, chi phí 5–9 tỷ, 7–11 tháng. Nhà thầu kinh nghiệm — 0909 075 668.",
+      "Xây nhà 5 tầng TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở. Thang máy và mái tách dòng. Tra giấy phép trước khi vẽ. Gọi 0909 075 668.",
     metaKeywords: "xây nhà 5 tầng tphcm, nhà phố 5 tầng, chi phí nhà 5 tầng",
     imageAlt: "Xây nhà 5 tầng TP.HCM",
     content: `<h2>Xây nhà 5 tầng TP.HCM — không chỉ “thêm một tầng”</h2>
-<p><strong>Xây nhà 5 tầng TP.HCM</strong> thường cho thuê hoặc gia đình đông. Cần chiều cao tối đa theo quy hoạch, thang máy (nếu yêu cầu), PCCC, tải móng. Khung BTCT phải có bản vẽ kết cấu — không đúc thêm tầng lên nhà 4 tầng cũ khi chưa gia cố.</p>
+<p><strong>Xây nhà 5 tầng TP.HCM</strong> thường cho thuê hoặc gia đình đông. Cần chiều cao tối đa theo quy hoạch, thang máy (nếu yêu cầu), PCCC, tải móng. Khung BTCT phải có bản vẽ kết cấu — không đúc thêm tầng lên nhà 4 tầng cũ khi chưa gia cố. Đơn giá m²: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>.</p>
 <p>So sánh: <a href="/tin-tuc/xay-nha-4-tang-tphcm">4 tầng</a> · <a href="/tin-tuc/xay-nha-lech-tang-tphcm">lệch tầng</a> · <a href="/tin-tuc/xin-giay-phep-xay-dung-tphcm">giấy phép xây dựng</a>.</p>
 <h2>Chi phí &amp; thời gian</h2>
-<p>Trọn gói ~120–180m² sàn: <strong>5 – 9 tỷ</strong>, thi công <strong>7 – 11 tháng</strong>. Một số phường (gần sân bay, lộ giới) không cho 5 tầng — tra trước khi vẽ.</p>
+<p>Cùng đơn giá <strong>4,85–6,7 triệu/m²</strong> sàn ở. Nhà 5 tầng nhiều sàn và tải móng hơn nên tổng cao hơn nhà 4 tầng — không lấy đơn giá nhà 3 tầng rồi nhân 5/3. Thang máy và mái tách phụ lục. Thi công dài hơn nhà phố 3–4 tầng (4–7 tháng); mốc ghi trong hợp đồng. Một số phường (gần sân bay, lộ giới) không cho 5 tầng — tra trước khi vẽ.</p>
 <h2>PCCC và thang máy</h2>
 <p>Nhà nhiều phòng cho thuê dễ thuộc diện PCCC. Chừa hố thang từ móng nếu dự kiến lắp máy — khoan sau đắt và rủi ro kết cấu.</p>
 ${faqSection([
@@ -801,17 +794,17 @@ const BATCH2_META_DESC: Record<string, string> = {
   "sua-dien-nuoc-nha-tphcm":
     "Sửa điện nước nhà TP.HCM: thay dây nhôm, ống sắt, tủ điện chống giật. Nhà đang ở làm từng tầng, báo giá theo điểm — 0909 075 668.",
   "xay-nha-4-tang-tphcm":
-    "Xây nhà 4 tầng TP.HCM: chi phí 3,8–8 tỷ, tiến độ 5–8 tháng, kết cấu–PCCC, chừa hố thang. Trọn gói BH 10 năm — 0909 075 668.",
+    "Xây nhà 4 tầng TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở, nhà phố 3–4 tầng thường 4–7 tháng. Bảo hành kết cấu 10 năm. Gọi 0909 075 668.",
   "xay-nha-tron-goi-quan-2":
     "Xây nhà trọn gói Quận 2 / Thủ Đức: móng đất yếu Thảo Điền, hẻm An Khánh, báo giá 2026 minh bạch — 0909 075 668.",
   "xay-nha-tan-phu":
     "Xây nhà Tân Phú: cao độ nền chống ngập, thoát nước, hẻm hẹp, trọn gói hoặc phần thô. Khảo sát miễn phí — 0909 075 668.",
   "xay-biet-thu-tphcm":
-    "Xây biệt thự TP.HCM: sân vườn, hồ bơi, kết cấu Thủ Đức / Nhà Bè. Báo giá 8–25 tỷ+, BH kết cấu 10 năm — 0909 075 668.",
+    "Xây biệt thự TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở. Sân vườn và hồ bơi tách phụ lục. Thủ Đức, Nhà Bè. Bảo hành kết cấu 10 năm — 0909 075 668.",
   "xay-shophouse-tphcm":
     "Xây shophouse TP.HCM: trệt quán, lầu ở, điện 3 pha, PCCC, cửa kính mặt tiền. Trọn gói Sao Khuê — 0909 075 668.",
   "xay-nha-5-tang-tphcm":
-    "Xây nhà 5 tầng TP.HCM: tra quy hoạch chiều cao, PCCC, thang máy, móng cọc. Khảo sát phép trước khi vẽ — 0909 075 668.",
+    "Xây nhà 5 tầng TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở. Thang máy và mái tách dòng. Tra giấy phép trước khi vẽ. Gọi 0909 075 668.",
   "xay-nha-tron-goi-binh-duong":
     "Xây nhà trọn gói Bình Dương (Thuận An, Dĩ An): GPXD tỉnh, đơn giá riêng, không copy m² TP.HCM — 0909 075 668.",
   "cai-tao-nha-ong-tphcm":
@@ -834,7 +827,7 @@ for (const [slug, desc] of Object.entries(BATCH2_META_DESC)) {
 const BATCH2_DEPTH_3: Record<string, string> = {
   "sua-dien-nuoc-nha-tphcm": `<h2>Khi nào nên thay cả hệ thống?</h2><p>Chập từng nhánh, aptomat nhảy liên tục, ống nhỏ giọt trong tường: thay từng điểm chỉ trì hoãn. Nhà phố 3 tầng dây nhôm + ống sắt: gói đồng bộ rẻ hơn đục ba lần. Sao Khuê lập sơ đồ tủ điện trước khi đục, nghiệm thu chống giật. Gói lớn ghép <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a>.</p>`,
   "xay-nha-tron-goi-quan-2": `<h2>Ngân sách trọn gói Q.2 / Thảo Điền</h2><p>Lô 5×20 đường lớn khác hẻm An Khánh. Cọc ven sông tách dòng. Hoàn thiện mặt đứng khu này hay chọn cửa kính lớn — báo phụ lục, không gộp m². Khảo sát miễn phí: gửi sổ + ảnh hẻm, gọi <strong>0909 075 668</strong>.</p>`,
-  "xay-nha-4-tang-tphcm": `<h2>Tiến độ nhà 4 tầng thực tế</h2><p>Móng–đài 3–5 tuần (cọc thêm nếu nền yếu). Thô mỗi sàn 2–3 tuần. Hoàn thiện 6–10 tuần. Tổng 5–8 tháng nhà phố, chưa kể phép chậm. Mùa mưa đổ bê tông có thể dời ngày — HĐ ghi ngày làm việc.</p>`,
+  "xay-nha-4-tang-tphcm": `<h2>Tiến độ nhà 4 tầng thực tế</h2><p>Móng–đài 3–5 tuần (cọc thêm nếu nền yếu). Thô mỗi sàn 2–3 tuần. Hoàn thiện 6–10 tuần. Tổng thường 4–7 tháng nhà phố, chưa kể phép chậm. Mùa mưa đổ bê tông có thể dời ngày — HĐ ghi ngày làm việc.</p>`,
   "cai-tao-nha-ong-tphcm": `<h2>Nhà ống đang ở — chia khu thi công</h2><p>Giữ 1 WC và lối ra hẻm. Sơn–lát từng tầng. Đục giếng / thông tầng: chuyển 10–14 ngày. Hẻm &lt; 3m: xe phế thải nhỏ, phụ phí ghi rõ. Landing: <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "xay-shophouse-tphcm": `<h2>Xin phép shophouse khác nhà ở thuần</h2><p>Đổi công năng trệt quán: hỏi phường khi nộp GPXD. Biển hiệu, vỉa hè, giờ ồn. Không hoàn thiện kính xong mới xin. Sao Khuê tư vấn hiện trạng, không thi công vượt phép.</p>`,
   "xay-nha-5-tang-tphcm": `<h2>Chi phí 5 tầng so 4 tầng</h2><p>Thêm một sàn + tải móng + PCCC. Đừng lấy đơn giá 3 tầng nhân 5/3. Cho thuê: WC từng tầng, điện tách. Tra phép trước. So <a href="/tin-tuc/xay-nha-4-tang-tphcm">4 tầng</a> · <a href="/tin-tuc/xay-nha-lech-tang-tphcm">lệch tầng</a>.</p>`,

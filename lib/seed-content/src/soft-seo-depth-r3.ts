@@ -30,7 +30,7 @@ export const SOFT_SEO_DEPTH_R3: Record<string, string> = {
   "xay-nha-pho-4x16-tphcm": `<h2>Công năng 4×16 phổ biến</h2><p>1 trệt 2–3 lầu, giếng sát thang, khách–bếp mở. So <a href="/tin-tuc/xay-nha-4x12-tphcm">4×12</a> nếu lô hẹp hơn. Báo sau đo đất.</p>`,
   "xay-nha-tron-goi-hoc-mon": `<h2>Hóc Môn — khảo sát tận lô</h2><p>Đất nền mới vs đất vườn khác địa chất. Không áp đơn giá nội thành. Hẹn đội trước khi ký HĐ.</p>`,
   "xay-nha-cho-thue-tphcm": `<h2>PCCC và số phòng hợp pháp</h2><p>Hỏi lối thoát và số tầng trước khi vẽ nhiều phòng. Điện tách từng phòng. Không chia phòng sau khi đổ sàn gia đình.</p>`,
-  "xay-nha-4x12-tphcm": `<h2>Ngân sách 4×12 nội thành</h2><p>1 trệt 2–3 lầu vài tỷ (chưa cọc nếu nền yếu). Hẻm hẹp: phụ phí bơm. Xem thêm bài 4×16 nếu đất sâu hơn.</p>`,
+  "xay-nha-4x12-tphcm": `<h2>Ngân sách 4×12 nội thành</h2><p>1 trệt 2 lầu khoảng 144 m² sàn ở × 4,85 triệu ≈ 698 triệu phần sàn ở, chưa cọc và mái. Hẻm hẹp: phụ phí bơm. Xem thêm bài 4×16 nếu đất sâu hơn.</p>`,
   "thi-cong-phan-tho-tphcm": `<h2>Ảnh nhật ký phần thô</h2><p>Cốt thép, đổ sàn, chống thấm tum — lưu ảnh nghiệm thu. Chủ nhà đối chiếu list HĐ. Liên quan <a href="/dich-vu/xay-dung-phan-tho">xây phần thô</a>.</p>`,
   "xay-nha-tron-goi-cu-chi": `<h2>Củ Chi — lịch xa lộ</h2><p>Khảo sát hẹn trước, lịch đổ theo đường dài. Đất vườn: khoan địa chất. Hotline <strong>0909 075 668</strong>.</p>`,
   "don-gia-hoan-thien-nha-2026": `<h2>Phụ lục hoàn thiện hay quên</h2><p>Điều hòa, tủ bếp gỗ, rèm, sân vườn — luôn phụ lục. Ghi mã gạch–sơn–cửa trong HĐ. Hub <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>`,

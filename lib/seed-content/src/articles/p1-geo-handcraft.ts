@@ -22,7 +22,7 @@ export const p1GeoHandcraftOverrides: Record<string, MoneyPageOverride> = {
       "Xây nhà trọn gói Quận 7: Phú Mỹ Hưng / Tân Phong vs hẻm Tân Thuận, facade BQL, đơn giá 2026. Sao Khuê — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Quận 7 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Quận 7: KDC PMH 5–8 tỷ, hẻm Tân Thuận 3,8–5,8 tỷ, facade BQL. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Quận 7: đơn giá từ 4,85 triệu/m² sàn ở. KDC Phú Mỹ Hưng khác hẻm Tân Thuận, mặt đứng theo ban quản lý. Khảo sát 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói quận 7, xây nhà trọn gói giá rẻ quận 7, xây nhà quận 7, nhà thầu quận 7, sao khuê",
     imageAlt: "Xây nhà trọn gói Quận 7 — Kiến Trúc Sao Khuê",
@@ -34,8 +34,8 @@ export const p1GeoHandcraftOverrides: Record<string, MoneyPageOverride> = {
 <table>
   <thead><tr><th>Phân khúc Q.7</th><th>Mốc trọn gói (tham khảo)</th><th>Đặc thù</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng, hẻm Tân Thuận</td><td>3,8 – 5,8 tỷ</td><td>+ logistics hẻm 8–12%</td></tr>
-    <tr><td>Nhà phố 4 tầng KDC / hoàn thiện cao</td><td>5,0 – 8,0 tỷ</td><td>Facade, cửa kính tách dòng</td></tr>
+    <tr><td>Nhà phố 3 tầng, hẻm Tân Thuận</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Phụ phí hẻm tách dòng, không cộng vào m²</td></tr>
+    <tr><td>Nhà phố 4 tầng KDC / hoàn thiện cao</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Nhiều sàn hơn. Facade, cửa kính tách dòng</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Chưa nội thất gỗ, chưa cọc</td></tr>
   </tbody>
 </table>
@@ -81,7 +81,7 @@ ${faqSection([
       "Xây nhà trọn gói Tân Bình: hạn chế tầng gần sân bay, hẻm Phạm Văn Hai, cách âm. Sao Khuê BH 10 năm — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Tân Bình 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Tân Bình: tra chiều cao gần sân bay, hẻm hẹp, 3,6–6,5 tỷ. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Tân Bình: đơn giá từ 4,85 triệu/m² sàn ở. Tra chiều cao gần sân bay, hẻm hẹp tính riêng. Khảo sát miễn phí 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói tân bình, xây nhà trọn gói giá rẻ tân bình, xây nhà tân bình, nhà thầu tân bình, sao khuê",
     imageAlt: "Xây nhà trọn gói Tân Bình — Kiến Trúc Sao Khuê",
@@ -93,8 +93,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Quy mô Tân Bình</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng</td><td>3,6 – 5,2 tỷ</td><td>Chưa cọc, chưa cách âm đặc biệt</td></tr>
-    <tr><td>Nhà phố 4 tầng</td><td>4,6 – 6,5 tỷ</td><td>Tra phép chiều cao trước</td></tr>
+    <tr><td>Nhà phố 3 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Chưa cọc, chưa cách âm đặc biệt</td></tr>
+    <tr><td>Nhà phố 4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Tra phép chiều cao trước. Nhiều sàn hơn</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>+ ca hành chính / hẻm</td></tr>
   </tbody>
 </table>
@@ -127,7 +127,7 @@ ${faqSection([
 
 ${faqSection([
   { q: "Gần sân bay Tân Bình xây 5 tầng được không?", a: "Tùy phường và hạn chế chiều cao. Sao Khuê tra trước khi vẽ — không hứa 5 tầng khi chưa có xác nhận." },
-  { q: "Xây nhà trọn gói giá rẻ Tân Bình bao nhiêu?", a: "Nhà phố 3 tầng thường 3,6–5,2 tỷ + phụ phí hẻm. Cách âm cửa kính tính phụ lục." },
+  { q: "Xây nhà trọn gói giá rẻ Tân Bình bao nhiêu?", a: "Cùng đơn giá từ 4,85 triệu/m² sàn ở. Phụ phí hẻm và cách âm cửa kính tính riêng. Số chính sau đo đất." },
   { q: "Hẻm Phạm Văn Hai đổ bê tông đêm được không?", a: "Thường không. Ca hành chính / sớm; phụ lục giờ máy trong HĐ." },
   { q: "Ồn máy bay xử lý thế nào?", a: "Cửa kính cách âm, khe kín. Báo tách dòng — không gộp m² trọn gói." },
   { q: "Khảo sát Tân Bình mất phí không?", a: "Miễn phí nội thành theo lịch. 0909 075 668 — văn phòng Bình Lợi." },
@@ -142,7 +142,7 @@ ${faqSection([
       "Xây nhà trọn gói Tân Phú: Tân Sơn Nhì, Phú Thạnh, chống ngập trệt, hẻm hẹp. Sao Khuê BH 10 năm — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Tân Phú 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Tân Phú: cao độ nền chống ngập, hẻm hẹp, 3,3–5,8 tỷ. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Tân Phú: đơn giá từ 4,85 triệu/m² sàn ở, cao độ nền chống ngập, hẻm hẹp. Khảo sát miễn phí 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói tân phú, xây nhà trọn gói giá rẻ tân phú, xây nhà tân phú, nhà thầu tân phú, sao khuê",
     imageAlt: "Xây nhà trọn gói Tân Phú — Kiến Trúc Sao Khuê",
@@ -154,8 +154,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Quy mô Tân Phú</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng / 1 trệt 2 lầu</td><td>3,3 – 4,7 tỷ</td><td>Hẻm xe hơi thuận hơn</td></tr>
-    <tr><td>Nhà phố 4 tầng</td><td>4,2 – 5,8 tỷ</td><td>Chưa cọc nếu nền yếu</td></tr>
+    <tr><td>Nhà phố 3 tầng / 1 trệt 2 lầu</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Lô 4×16, 3 sàn ≈ 931 triệu phần sàn ở, chưa cọc</td></tr>
+    <tr><td>Nhà phố 4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Nhiều sàn hơn. Chưa cọc nếu nền yếu</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Hẻm hẹp +5–10%</td></tr>
   </tbody>
 </table>
@@ -188,7 +188,7 @@ ${faqSection([
 ${faqSection([
   { q: "Nhà Tân Phú khu thấp có cần cao độ nền?", a: "Có — một số tuyến thấp hơn đường: nâng trệt và chống thấm chân tường, van thoát một chiều." },
   { q: "Cấp 4 Tân Phú đổ thêm 2 tầng được không?", a: "Chỉ sau khảo sát móng–cột. Nhiều nhà gạch không đủ — gia cố hoặc xây lại trọn gói. Không đổ thêm “cho vui”." },
-  { q: "Xây nhà trọn gói giá rẻ Tân Phú bao nhiêu?", a: "3 tầng thường 3,3–4,7 tỷ + hẻm 5–10%. Số chính sau đo đất — không chốt giá mạng." },
+  { q: "Xây nhà trọn gói giá rẻ Tân Phú bao nhiêu?", a: "Từ 4,85 triệu/m² sàn ở. Lô 4×16, 1 trệt 2 lầu khoảng 931 triệu phần sàn ở, chưa hẻm và chưa cọc. Không phải giá ký." },
   { q: "Hẻm Tân Phú dưới 3m xây được không?", a: "Được: bơm từ mặt tiền, ca sớm, phụ phí ghi rõ. Khảo sát đo hẻm trước khi hứa cẩu." },
   { q: "Nên thô hay trọn gói?", a: "Hẻm xe hơi 3–4 tầng: trọn gói đỡ phát sinh. Hẻm siêu hẹp / nội thất chọn sau: tách thô." },
   { q: "Khảo sát Tân Phú có phí không?", a: "Miễn phí nội thành theo lịch. 0909 075 668 — 245/8 Bình Lợi, Bình Thạnh." },
@@ -202,7 +202,7 @@ ${faqSection([
       "Xây nhà trọn gói Bình Tân: An Lạc, Bình Hưng Hòa, KDC mới vs hẻm cũ. Sao Khuê báo giá minh bạch — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Bình Tân 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Bình Tân: KDC mới 3,3–4,8 tỷ, nhà 4 tầng 4,2–5,8 tỷ, logistics rõ ràng. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Bình Tân: đơn giá từ 4,85 triệu/m² sàn ở. KDC mới khác hẻm cũ, logistics ghi riêng. Khảo sát miễn phí 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói bình tân, xây nhà trọn gói giá rẻ bình tân, xây nhà bình tân, nhà thầu bình tân, sao khuê",
     imageAlt: "Xây nhà trọn gói Bình Tân — Kiến Trúc Sao Khuê",
@@ -214,8 +214,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Quy mô Bình Tân</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng KDC mới</td><td>3,3 – 4,8 tỷ</td><td>Đường xe tải, ít phụ phí hẻm</td></tr>
-    <tr><td>Nhà phố 4 tầng</td><td>4,2 – 5,8 tỷ</td><td>Hẻm cũ có thể cộng logistics</td></tr>
+    <tr><td>Nhà phố 3 tầng KDC mới</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Đường xe tải, ít phụ phí hẻm</td></tr>
+    <tr><td>Nhà phố 4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Hẻm cũ: logistics tách dòng</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Chưa cọc, chưa nội thất gỗ</td></tr>
   </tbody>
 </table>
@@ -264,7 +264,7 @@ ${faqSection([
       "Xây nhà trọn gói Phú Nhuận: hẻm xe máy, lô nhỏ, giếng trời, liền kề. Sao Khuê khảo sát miễn phí — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Phú Nhuận 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Phú Nhuận: lô nhỏ 3,8–5,6 tỷ, 4 tầng 4,8–7 tỷ, hẻm hẹp và nhà liền kề. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà trọn gói Phú Nhuận: đơn giá từ 4,85 triệu/m² sàn ở. Lô nhỏ, hẻm hẹp và nhà liền kề tính riêng. Khảo sát miễn phí 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói phú nhuận, xây nhà trọn gói giá rẻ phú nhuận, xây nhà phú nhuận, nhà thầu phú nhuận, sao khuê",
     imageAlt: "Xây nhà trọn gói Phú Nhuận — Kiến Trúc Sao Khuê",
@@ -276,8 +276,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Quy mô Phú Nhuận</th><th>Mốc trọn gói (tham khảo)</th><th>Đặc thù</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng</td><td>3,8 – 5,6 tỷ</td><td>Lô nhỏ, công năng chặt</td></tr>
-    <tr><td>Nhà phố 4 tầng</td><td>4,8 – 7,0 tỷ</td><td>Chi phí/m² cao hơn vì hẻm</td></tr>
+    <tr><td>Nhà phố 3 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Lô nhỏ, công năng chặt</td></tr>
+    <tr><td>Nhà phố 4 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Nhiều sàn hơn. Hẻm tính riêng</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,8 triệu</td><td>Hẻm, hoàn thiện ảnh hưởng mạnh</td></tr>
   </tbody>
 </table>
@@ -322,7 +322,7 @@ ${faqSection([
       "Xây nhà trọn gói Nhà Bè: ven kênh, địa chất, cao độ chống ngập, biệt thự và nhà phố. Sao Khuê — 0909 075 668.",
     metaTitle: "Xây Nhà Trọn Gói Nhà Bè 2026 | Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Nhà Bè: nhà phố 3,6–5,5 tỷ, biệt thự 6–15 tỷ+, địa chất ven kênh và cao độ nền. Khảo sát 0909 075 668.",
+      "Xây nhà trọn gói Nhà Bè: đơn giá từ 4,85 triệu/m² sàn ở. Địa chất ven kênh và cao độ nền khảo sát trước. Gọi 0909 075 668.",
     metaKeywords:
       "xây nhà trọn gói nhà bè, xây nhà trọn gói giá rẻ nhà bè, xây nhà nhà bè, nhà thầu nhà bè, sao khuê",
     imageAlt: "Xây nhà trọn gói Nhà Bè — Kiến Trúc Sao Khuê",
@@ -334,8 +334,8 @@ ${faqSection([
 <table>
   <thead><tr><th>Phân khúc Nhà Bè</th><th>Mốc trọn gói (tham khảo)</th><th>Ghi chú</th></tr></thead>
   <tbody>
-    <tr><td>Nhà phố 3 tầng</td><td>3,6 – 5,5 tỷ</td><td>Chưa cọc nếu địa chất yếu</td></tr>
-    <tr><td>Biệt thự / quy mô lớn</td><td>6 – 15 tỷ+</td><td>Sân, hồ, hàng rào tách phụ lục</td></tr>
+    <tr><td>Nhà phố 3 tầng</td><td>4,85 – 6,7 triệu/m² sàn ở</td><td>Chưa cọc nếu địa chất yếu</td></tr>
+    <tr><td>Biệt thự / quy mô lớn</td><td>Cùng đơn giá m²</td><td>Sân, hồ, hàng rào tách phụ lục</td></tr>
     <tr><td>Đơn giá m² tiêu chuẩn</td><td>4,85 – 5,8 triệu</td><td>Đất ven kênh có thể tăng mạnh vì móng</td></tr>
   </tbody>
 </table>

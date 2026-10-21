@@ -10,11 +10,11 @@ export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
 /** Tên ngắn trên title/OG. Tên pháp lý dài làm Google cắt mất từ khóa. */
 export const SEO_BRAND = "Kiến Trúc Sao Khuê";
-/** H1 đúng cụm tìm kiếm. Title trang chủ khác title trang dịch vụ để khỏi trùng snippet. */
-export const HOME_SEO_H1 = "Xây nhà trọn gói TPHCM";
-export const HOME_SEO_TITLE = `${HOME_SEO_H1} — nhà phố, biệt thự | Sao Khuê`;
+/** Trang chủ không giành đúng cụm với /dich-vu/xay-nha-tron-goi-tphcm. */
+export const HOME_SEO_H1 = "Nhà thầu xây nhà phố và biệt thự TPHCM";
+export const HOME_SEO_TITLE = "Kiến Trúc Sao Khuê | nhà phố, biệt thự TPHCM";
 export const HOME_SEO_DESCRIPTION =
-  "Xây nhà trọn gói TPHCM từ 4,85 triệu/m²: nhà phố, biệt thự, một hợp đồng từ thiết kế đến bàn giao. Khảo sát miễn phí, bảo hành kết cấu 10 năm.";
+  "Kiến Trúc Sao Khuê thi công nhà phố và biệt thự tại TPHCM. Gói xây nhà trọn gói từ 4,85 triệu/m², khảo sát miễn phí, bảo hành kết cấu 10 năm.";
 /** Tiêu đề hub — từ khóa đứng trước, đủ ngắn để Google không cắt thương hiệu. */
 export const BAO_GIA_SEO_TITLE = `Báo giá xây nhà trọn gói 2026 | ${SEO_BRAND}`;
 export const BAO_GIA_SEO_DESCRIPTION =
@@ -434,6 +434,9 @@ export function buildServiceSchema(input: {
   image?: string;
   telephone?: string;
   streetAddress?: string;
+  /** Đơn giá mỗi m² sàn ở, không phải tổng giá căn nhà. */
+  pricePerSqm?: { low: number; high: number };
+  dateModified?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -442,11 +445,25 @@ export function buildServiceSchema(input: {
     serviceType: input.serviceType,
     description: input.description,
     url: input.url,
+    dateModified: input.dateModified,
     image: input.image ? [resolveOgImage(input.image)] : undefined,
+    offers: input.pricePerSqm
+      ? {
+          "@type": "AggregateOffer",
+          priceCurrency: "VND",
+          lowPrice: input.pricePerSqm.low,
+          highPrice: input.pricePerSqm.high,
+          unitText: "m² sàn ở",
+          description:
+            "Đơn giá tham khảo mỗi m² sàn ở. Chưa gồm móng cọc, mái, phụ phí hẻm và lệ phí.",
+          url: input.url,
+        }
+      : undefined,
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: input.providerName,
       telephone: input.telephone,
+      openingHours: input.telephone ? "Mo-Sa 08:00-17:30" : undefined,
       address: input.streetAddress
         ? {
             "@type": "PostalAddress",
@@ -529,6 +546,36 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]) {
       position: index + 1,
       name: item.name,
       item: absoluteUrl(item.path),
+    })),
+  };
+}
+
+/** Trích các bước trong mục «Quy trình» (h2 + ol/li). */
+export function extractHowToStepsFromArticleHtml(html: string): { name: string; text: string }[] {
+  const block = html.match(/<h2[^>]*>[^<]*Quy trình[^<]*<\/h2>\s*<ol[^>]*>([\s\S]*?)<\/ol>/i);
+  if (!block) return [];
+  const steps: { name: string; text: string }[] = [];
+  const re = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(block[1])) !== null) {
+    const text = stripHtmlForSchema(match[1]);
+    if (!text) continue;
+    const name = text.split(/[:：]/)[0]?.trim() || text;
+    steps.push({ name, text });
+  }
+  return steps;
+}
+
+export function buildHowToSchema(name: string, steps: { name: string; text: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
     })),
   };
 }

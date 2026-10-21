@@ -17,8 +17,10 @@ import {
   buildBreadcrumbSchema,
   buildServiceSchema,
   buildFAQSchema,
+  buildHowToSchema,
   buildPostBreadcrumbItems,
   extractFaqFromArticleHtml,
+  extractHowToStepsFromArticleHtml,
   findMenuSectionPathForPost,
   truncateMeta,
   SEO_TITLE_MAX,
@@ -144,6 +146,8 @@ export default function PostPage() {
                   image: seoPost.imageUrl,
                   telephone: isTurnkeyService ? "+84909075668" : undefined,
                   streetAddress: isTurnkeyService ? "245/8 Bình Lợi, Phường 13" : undefined,
+                  pricePerSqm: isTurnkeyService ? { low: 4850000, high: 6700000 } : undefined,
+                  dateModified: isTurnkeyService ? seoPost.updatedAt : undefined,
                 })
               : buildArticleSchema({
                   headline: seoPost.title,
@@ -158,6 +162,14 @@ export default function PostPage() {
                 }),
             buildBreadcrumbSchema(breadcrumbItems),
             ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
+            ...(isTurnkeyService && seoPost?.content
+              ? [
+                  buildHowToSchema(
+                    "Quy trình xây nhà trọn gói TPHCM",
+                    extractHowToStepsFromArticleHtml(seoPost.content),
+                  ),
+                ].filter((schema) => (schema.step as unknown[]).length >= 3)
+              : []),
           ],
         }
       : !isLoading && slug && !bundledPost

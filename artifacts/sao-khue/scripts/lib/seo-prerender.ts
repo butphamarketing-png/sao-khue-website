@@ -45,6 +45,35 @@ export function extractFaqFromArticleHtml(html: string): { q: string; a: string 
   return items;
 }
 
+export function extractHowToStepsFromArticleHtml(html: string): { name: string; text: string }[] {
+  const block = html.match(/<h2[^>]*>[^<]*Quy trình[^<]*<\/h2>\s*<ol[^>]*>([\s\S]*?)<\/ol>/i);
+  if (!block) return [];
+  const steps: { name: string; text: string }[] = [];
+  const re = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(block[1])) !== null) {
+    const text = stripPlainText(match[1]);
+    if (!text) continue;
+    const name = text.split(/[:：]/)[0]?.trim() || text;
+    steps.push({ name, text });
+  }
+  return steps;
+}
+
+export function buildHowToSchema(name: string, steps: { name: string; text: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}
+
 export function buildFAQSchema(items: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",

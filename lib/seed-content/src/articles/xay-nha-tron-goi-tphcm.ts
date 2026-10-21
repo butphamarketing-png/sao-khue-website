@@ -30,6 +30,10 @@ export const xayNhaTronGoiTphcm = {
   </tbody>
 </table>
 <p>Ba gói trọn gói khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu. Cắt phào, đèn được. Không cắt thép và chống thấm khu ướt.</p>
+<figure>
+  <img src="/images/xay-nha/xay-nha-02.jpg" alt="Thi công phần thô nhà phố TPHCM — Kiến Trúc Sao Khuê" width="1200" height="800" />
+  <figcaption>Thi công phần thô nhà phố. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 <table>
   <thead>
     <tr><th>Loại nhà</th><th>Gói thường dùng</th><th>Đơn giá</th></tr>
@@ -56,6 +60,30 @@ export const xayNhaTronGoiTphcm = {
 <p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, tiền ở tạm khi xây. Chỉ cần khung nhà, không cần hoàn thiện: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Muốn thêm tủ bếp, trần trang trí: <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <p>Sao Khuê thi công trực tiếp, không bán thầu phụ trá hình. Vật tư đúng chủng loại trong list đã ký. Phạm vi từng bước: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>.</p>
 
+<h2>Trọn gói, thuê từng đội, hay chỉ phần thô?</h2>
+<table>
+  <thead>
+    <tr><th></th><th>Trọn gói</th><th>Thuê từng đội</th><th>Chỉ phần thô</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ai lo vật tư</td><td>Nhà thầu, theo list đã ký</td><td>Chủ nhà hoặc từng đội</td><td>Chủ nhà lo hoàn thiện</td></tr>
+    <tr><td>Hợp đồng</td><td>Một hợp đồng</td><td>Nhiều đội, dễ đùn việc</td><td>Một hợp đồng phần khung</td></tr>
+    <tr><td>Đơn giá Sao Khuê 2026</td><td>4,85 – 6,7 triệu+/m²</td><td>Không áp một đơn giá</td><td>3,55 – 3,8 triệu/m²</td></tr>
+    <tr><td>Bảo hành kết cấu</td><td>10 năm, một đầu mối</td><td>Khó truy khi thấm, nứt</td><td>10 năm phần khung đã ký</td></tr>
+    <tr><td>Hợp nhà phố hẻm TPHCM</td><td>Một đội lo giờ đổ bê tông và tường chung</td><td>Khó xếp lịch nhiều đội trong hẻm</td><td>Khi chủ nhà tự lo sơn, lát, cửa</td></tr>
+  </tbody>
+</table>
+<p>Nhà trong hẻm Sài Gòn thường hợp trọn gói vì lối vào, giờ cấm đổ bê tông và tường chung cần một người chịu trách nhiệm. Chỉ cần khung: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+
+<h2>Trước khi ký hợp đồng</h2>
+<ul>
+  <li>Bản vẽ ghi rõ những sàn nào được nhân đơn giá. Sân thượng và mái không bị cộng vào 931 triệu của ví dụ 4×16.</li>
+  <li>List vật tư có chủng loại. Dòng “tương đương” chung chung thì hỏi lại trước khi ký.</li>
+  <li>Móng cọc, phụ phí hẻm dưới 3 m và lệ phí giấy phép nằm từng dòng riêng.</li>
+  <li>Tiến độ ghi số tháng. Mùa mưa và hẻm hẹp được nêu là lý do được gia hạn, không nói miệng.</li>
+  <li>Bảo hành kết cấu 10 năm có trong hợp đồng. Hoàn thiện 12–36 tháng ghi riêng.</li>
+</ul>
+
 <h2>Cách tính m² khi báo giá</h2>
 <p>Đơn giá nhân với <strong>diện tích sàn ở</strong>, không nhân với diện tích đất rồi cộng sân, mái, tum vào cùng một phép tính.</p>
 <ul>
@@ -68,6 +96,16 @@ export const xayNhaTronGoiTphcm = {
 <h2>Ví dụ nhà phố 4×16 tại TPHCM</h2>
 <p>Lô 4×16 m (64 m² đất), 1 trệt 2 lầu, chỉ tính 3 sàn ở: 64 × 3 = <strong>192 m²</strong>. Lấy mốc thấp gói tiêu chuẩn 4,85 triệu/m² → khoảng <strong>931 triệu</strong> cho phần sàn ở. Đây là phép nhân để hình dung quy mô, không phải giá ký.</p>
 <p>Chưa nằm trong 931 triệu: móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>. Mùa mưa và hẻm hẹp có thể dài hơn. Mốc ghi trong hợp đồng.</p>
+
+<h2>Nhà phố hiện đại, số tầng và mái Nhật</h2>
+<p>Đơn giá m² sàn ở không đổi theo kiểu mái hay số tầng. Thêm tầng là thêm sàn được nhân. Mái, sân thượng và thang máy nằm ngoài phép nhân đó.</p>
+<ul>
+  <li><strong>1 trệt 2 lầu:</strong> 3 sàn ở — đúng kiểu ví dụ 4×16 ở trên. Xem <a href="/tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm">nhà phố 1 trệt 2 lầu</a>.</li>
+  <li><strong>1 trệt 3 lầu, nhà 4 tầng:</strong> thường 4 sàn ở. Lô 4×16 thì 64 × 4 = 256 m² sàn ở, rồi mới nhân đơn giá. Số tầng theo giấy phép phường, không theo bản vẽ thêm tầng. Xem <a href="/tin-tuc/xay-nha-4-tang-tphcm">xây nhà 4 tầng</a>.</li>
+  <li><strong>Nhà 5 tầng:</strong> tải móng lớn hơn. Thang máy, nếu có, chừa hố từ móng và ghi phụ lục — không nằm trong 4,85 triệu/m². Xem <a href="/tin-tuc/xay-nha-5-tang-tphcm">xây nhà 5 tầng</a>.</li>
+  <li><strong>Mái Nhật, mái thái:</strong> là dạng mái, tính ở dòng mái. Nhà một tầng ít sàn hơn nhà phố nhiều lầu nên tổng tiền thấp hơn, dù đơn giá m² cùng khung.</li>
+  <li><strong>Nhà phố hiện đại:</strong> mặt đứng, giếng trời, lan can. Thiết kế nằm trong gói khi ký thi công. Xem <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố hiện đại</a>.</li>
+</ul>
 
 <h2>Xây nhà trọn gói TPHCM theo quận</h2>
 <p>Khung đơn giá giống nhau, từ 4,85 triệu/m² gói tiêu chuẩn. Khác nhau ở hẻm, nền và giấy phép — những khoản này tách khỏi đơn giá m²:</p>
@@ -97,6 +135,17 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành, vệ sinh công trình.</li>
 </ol>
 
+<h2>Thanh toán theo mốc, không thu 100% trước</h2>
+<p>Sao Khuê không thu toàn bộ tiền trước khi khởi công. Đợt sau chỉ trả khi mốc trước đã nghiệm thu. Khung dưới đây để hình dung; tỷ lệ đúng ghi trong hợp đồng theo quy mô:</p>
+<ul>
+  <li><strong>Tạm ứng khi ký:</strong> khoảng 10–15%.</li>
+  <li><strong>Sau móng:</strong> khoảng 20–25%.</li>
+  <li><strong>Các sàn ở:</strong> chia phần còn lại theo tiến độ đổ sàn.</li>
+  <li><strong>Hoàn thiện:</strong> khoảng 20–25%.</li>
+  <li><strong>Bàn giao:</strong> phần còn lại, sau khi nhận hồ sơ bảo hành.</li>
+</ul>
+<p>Chủ nhà tự vay ngân hàng thì Sao Khuê hỗ trợ dự toán để làm hồ sơ. Công ty không phải tổ chức tín dụng.</p>
+
 <h2>Giấy phép xây dựng có nằm trong gói không?</h2>
 <p>Sao Khuê làm hồ sơ thiết kế để xin phép. Lệ phí nhà nước và thời gian chờ quận không gộp vào đơn giá m² — ghi một dòng riêng. Xây khi chưa có phép thì dừng. Tiền phạt không tính vào gói trọn gói.</p>
 
@@ -111,6 +160,10 @@ export const xayNhaTronGoiTphcm = {
 
 <h2>Công trình thực tế tại TP.HCM</h2>
 <p>Nhà phố Sài Gòn hay gặp hẻm dưới 3 m, giờ đổ bê tông hạn chế, tường chung và nền yếu. Sao Khuê đo lối vào trước khi chốt đơn giá.</p>
+<figure>
+  <img src="/images/sao-khue/sk-03.jpg" alt="Nhà phố đã bàn giao — xây nhà trọn gói TPHCM Sao Khuê" width="1200" height="800" />
+  <figcaption>Nhà phố đã hoàn thiện. Xem thêm tại <a href="/cong-trinh">công trình tiêu biểu</a>.</figcaption>
+</figure>
 <ul>
   <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố Bình Thạnh</a> — thi công nội thành, giám sát hiện trường.</li>
   <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Biệt thự sân vườn Thủ Đức</a> — thiết kế và thi công cùng một đơn vị.</li>
@@ -133,6 +186,10 @@ export const xayNhaTronGoiTphcm = {
 <p>Không phát sinh khi giữ nguyên thiết kế và chủng loại đã ký. Đổi ý thì lập phụ lục trước khi mua vật tư hoặc đập đi làm lại.</p>
 <h3>Giấy phép có nằm trong đơn giá m² không?</h3>
 <p>Hồ sơ thiết kế để xin phép có trong gói. Lệ phí nhà nước và ngày chờ quận ghi một dòng riêng, không gộp vào triệu/m².</p>
+<h3>Nhà 1 trệt 3 lầu hoặc 5 tầng tính thế nào?</h3>
+<p>Vẫn nhân đơn giá với số sàn ở. 1 trệt 3 lầu thường là 4 sàn. Mái, sân thượng và thang máy tách dòng. Số tầng phải đúng giấy phép phường.</p>
+<h3>Xây nhà trọn gói TPHCM thanh toán thế nào?</h3>
+<p>Không thu 100% trước. Tạm ứng khi ký khoảng 10–15%, sau móng khoảng 20–25%, hoàn thiện khoảng 20–25%, bàn giao phần còn lại. Đợt sau chỉ trả khi mốc trước đã nghiệm thu. Tỷ lệ đúng nằm trong hợp đồng.</p>
 <h3>Có tư vấn miễn phí không?</h3>
 <p>Có. Hotline 0909 075 668. Kỹ sư khảo sát sơ bộ tại công trình.</p>
 <h3>Sao Khuê có nhận Bình Dương, Đồng Nai không?</h3>
@@ -140,9 +197,11 @@ export const xayNhaTronGoiTphcm = {
 
 <h2>Liên hệ khảo sát</h2>
 <ul>
-  <li><strong>Hotline:</strong> 0909 075 668</li>
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Giờ làm việc:</strong> thứ 2–thứ 7, 8:00–17:30</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Bình Thạnh, TP.HCM</li>
+  <li><strong>Hồ sơ công ty:</strong> <a href="/bai-viet/ve-chung-toi">giới thiệu Sao Khuê</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây nhà phố</a></li>
   <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">đặt lịch</a></li>
 </ul>
 `.trim(),

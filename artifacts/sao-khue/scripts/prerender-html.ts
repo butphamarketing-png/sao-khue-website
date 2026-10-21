@@ -28,8 +28,10 @@ import { enhanceArticleHtml } from "./lib/prerender-utils.ts";
 import {
   breadcrumbListJsonLd,
   buildFAQSchema,
+  buildHowToSchema,
   buildPostBreadcrumbItems,
   extractFaqFromArticleHtml,
+  extractHowToStepsFromArticleHtml,
   itemListJsonLd,
   stripPlainText,
 } from "./lib/seo-prerender.ts";
@@ -167,7 +169,7 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(HOME_SEO_H1)}</h1>
-        <p><strong>Xây nhà trọn gói TPHCM</strong> từ 4,85 triệu/m²: <a href="/dich-vu/xay-nha-tron-goi-tphcm">một nhà thầu lo thiết kế, phần thô và hoàn thiện</a>. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
@@ -547,6 +549,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
             serviceType: isTurnkey ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
             description,
             url: absoluteUrl(SITE_URL, path),
+            dateModified: isTurnkey ? modified : undefined,
             image: resolveAbsoluteImage(post.imageUrl)
               ? [resolveAbsoluteImage(post.imageUrl)!]
               : undefined,
@@ -554,6 +557,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
               "@type": "HomeAndConstructionBusiness",
               name: BRAND,
               telephone: isTurnkey ? "+84909075668" : undefined,
+              openingHours: isTurnkey ? "Mo-Sa 08:00-17:30" : undefined,
               address: isTurnkey
                 ? {
                     "@type": "PostalAddress",
@@ -565,6 +569,18 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
                 : undefined,
             },
             areaServed: { "@type": "City", name: "Thành phố Hồ Chí Minh" },
+            offers: isTurnkey
+              ? {
+                  "@type": "AggregateOffer",
+                  priceCurrency: "VND",
+                  lowPrice: 4850000,
+                  highPrice: 6700000,
+                  unitText: "m² sàn ở",
+                  description:
+                    "Đơn giá tham khảo mỗi m² sàn ở. Chưa gồm móng cọc, mái, phụ phí hẻm và lệ phí.",
+                  url: absoluteUrl(SITE_URL, path),
+                }
+              : undefined,
           }
         : {
             "@context": "https://schema.org",
@@ -585,6 +601,14 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       pageSchema,
       breadcrumbListJsonLd(crumbs, SITE_URL),
       ...(postFaq.length > 0 ? [buildFAQSchema(postFaq)] : []),
+      ...(isTurnkey
+        ? [
+            buildHowToSchema(
+              "Quy trình xây nhà trọn gói TPHCM",
+              extractHowToStepsFromArticleHtml(post.content ?? ""),
+            ),
+          ].filter((schema) => schema.step.length >= 3)
+        : []),
     ];
 
     return {
@@ -682,7 +706,7 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
       metaTitle: seed.metaTitle,
       metaDescription: seed.metaDescription,
       metaKeywords: seed.metaKeywords,
-      updatedAt: row.slug === "xay-nha-tron-goi-tphcm" ? "2026-10-21T14:00:00.000Z" : "2026-10-16T08:00:00.000Z",
+      updatedAt: row.slug === "xay-nha-tron-goi-tphcm" ? "2026-10-21T15:30:00.000Z" : "2026-10-16T08:00:00.000Z",
       noindex: seed.noindex ?? row.noindex,
     };
   }
