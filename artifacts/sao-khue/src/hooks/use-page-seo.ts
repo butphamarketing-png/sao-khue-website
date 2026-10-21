@@ -23,6 +23,7 @@ export function usePageSeo(input: PageSeoInput | null) {
     input?.ogImage,
     input?.ogType,
     input?.noindex,
+    input?.follow,
     input?.publishedTime,
     input?.modifiedTime,
     input?.ogImageAlt,

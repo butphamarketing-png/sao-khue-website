@@ -10,9 +10,11 @@ export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
 /** Tên ngắn trên title/OG. Tên pháp lý dài làm Google cắt mất từ khóa. */
 export const SEO_BRAND = "Kiến Trúc Sao Khuê";
-export const HOME_SEO_TITLE = `Thiết kế và xây nhà phố TP.HCM | ${SEO_BRAND}`;
+/** H1 đúng cụm tìm kiếm. Title trang chủ khác title trang dịch vụ để khỏi trùng snippet. */
+export const HOME_SEO_H1 = "Xây nhà trọn gói TPHCM";
+export const HOME_SEO_TITLE = `${HOME_SEO_H1} — nhà phố, biệt thự | Sao Khuê`;
 export const HOME_SEO_DESCRIPTION =
-  "Thiết kế và thi công nhà phố, biệt thự tại TP.HCM. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
+  "Xây nhà trọn gói TPHCM từ 4,85 triệu/m²: nhà phố, biệt thự, một hợp đồng từ thiết kế đến bàn giao. Khảo sát miễn phí, bảo hành kết cấu 10 năm.";
 /** Tiêu đề hub — từ khóa đứng trước, đủ ngắn để Google không cắt thương hiệu. */
 export const BAO_GIA_SEO_TITLE = `Báo giá xây nhà trọn gói 2026 | ${SEO_BRAND}`;
 export const BAO_GIA_SEO_DESCRIPTION =
@@ -202,6 +204,8 @@ export type PageSeoInput = {
   ogImageAlt?: string;
   ogType?: string;
   noindex?: boolean;
+  /** Cùng noindex: để follow nếu trang ads vẫn trỏ về trang dịch vụ. */
+  follow?: boolean;
   /** ISO 8601 — bài viết (article:published_time) */
   publishedTime?: string;
   modifiedTime?: string;
@@ -217,7 +221,11 @@ export function stripHtmlForSchema(html: string): string {
 
 export function applyPageSeo(input: PageSeoInput) {
   const canonical = absoluteUrl(input.path ?? window.location.pathname);
-  const robots = input.noindex ? "noindex,nofollow" : "index,follow,max-image-preview:large";
+  const robots = input.noindex
+    ? input.follow
+      ? "noindex,follow"
+      : "noindex,nofollow"
+    : "index,follow,max-image-preview:large";
   const title = truncateMeta(input.title, SEO_TITLE_MAX);
   const description = truncateMeta(input.description, SEO_DESC_MAX);
   const ogImage = resolveOgImage(input.ogImage);
@@ -287,7 +295,7 @@ export type AggregateRatingInput = {
 };
 
 const DEFAULT_SERVICE_OFFERS = [
-  { name: "Xây nhà trọn gói TP.HCM", url: "/dich-vu/xay-nha-tron-goi" },
+  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
   { name: "Sửa nhà trọn gói TP.HCM", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },
@@ -311,7 +319,7 @@ export function buildLocalBusinessSchema(
       : undefined,
     description:
       input.description ??
-      "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói tại TP.HCM và các tỉnh lân cận.",
+      "Xây nhà trọn gói TPHCM: thiết kế, phần thô và hoàn thiện một hợp đồng. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
     url: input.url,
     telephone: input.telephone,
     email: input.email || undefined,
@@ -320,11 +328,11 @@ export function buildLocalBusinessSchema(
     taxID: input.taxID?.trim() || undefined,
     foundingDate: input.foundingDate?.trim() || "2014",
     knowsAbout: [
+      "Xây nhà trọn gói TPHCM",
       "Xây nhà trọn gói",
       "Báo giá xây nhà",
       "Cải tạo nhà cũ",
       "Thiết kế nhà phố",
-      "Xây dựng TP.HCM",
     ],
     makesOffer: DEFAULT_SERVICE_OFFERS.map((s) => ({
       "@type": "Offer",

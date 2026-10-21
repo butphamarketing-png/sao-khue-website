@@ -42,6 +42,7 @@ import {
   CAI_TAO_SEO_DESCRIPTION,
   CAI_TAO_SEO_TITLE,
   HOME_SEO_DESCRIPTION,
+  HOME_SEO_H1,
   HOME_SEO_TITLE,
   THIET_KE_SEO_DESCRIPTION,
   THIET_KE_SEO_TITLE,
@@ -141,6 +142,7 @@ function shell(inner: string): string {
 function navHome(): string {
   return `<nav aria-label="Điều hướng">
     <a href="/">Trang chủ</a> ·
+    <a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TPHCM</a> ·
     <a href="/dich-vu">Dịch vụ</a> ·
     <a href="/bao-gia">Báo giá</a> ·
     <a href="/cong-trinh">Công trình</a> ·
@@ -160,12 +162,12 @@ function buildStaticPages(): PrerenderPage[] {
         keywords:
           "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà",
         ogImage: DEFAULT_OG,
-        ogImageAlt: `${BRAND_SHORT} — thiết kế và xây nhà trọn gói TP.HCM`,
+        ogImageAlt: `${BRAND_SHORT} — xây nhà trọn gói TPHCM`,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>${escapeHtml(HOME_SEO_TITLE)}</h1>
-        <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê nhận khảo sát miễn phí, lập dự toán theo hạng mục và thi công nhà phố, biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <h1>${escapeHtml(HOME_SEO_H1)}</h1>
+        <p><strong>Xây nhà trọn gói TPHCM</strong> từ 4,85 triệu/m²: <a href="/dich-vu/xay-nha-tron-goi">một nhà thầu lo thiết kế, phần thô và hoàn thiện</a>. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
@@ -261,7 +263,9 @@ function buildStaticPages(): PrerenderPage[] {
         title: XAY_NHA_SEO_TITLE,
         description: XAY_NHA_SEO_DESCRIPTION,
         path: "/xay-nha",
-        keywords: "xây nhà trọn gói tphcm, xây nhà chìa khóa trao tay, báo giá xây nhà phố",
+        keywords: "xây nhà chìa khóa trao tay, báo giá xây nhà phố, kiến trúc sao khuê",
+        noindex: true,
+        follow: true,
         ogImage: `${SITE_URL}/images/ads/hero-xay-nha.jpg`,
         ogImageAlt: XAY_NHA_SEO_TITLE,
       },
@@ -279,6 +283,8 @@ function buildStaticPages(): PrerenderPage[] {
         description: CAI_TAO_SEO_DESCRIPTION,
         path: "/cai-tao-nha",
         keywords: "cải tạo nhà phố tphcm, nâng tầng nhà phố, chống thấm nhà",
+        noindex: true,
+        follow: true,
         ogImage: `${SITE_URL}/images/ads/hero-cai-tao.jpg`,
         ogImageAlt: CAI_TAO_SEO_TITLE,
       },
@@ -535,8 +541,8 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ? {
             "@context": "https://schema.org",
             "@type": "Service",
-            name: isTurnkey ? "Xây nhà trọn gói TP.HCM" : post.title,
-            serviceType: isTurnkey ? "Xây nhà trọn gói TP.HCM" : "Sửa nhà trọn gói",
+            name: isTurnkey ? "Xây nhà trọn gói TPHCM" : post.title,
+            serviceType: isTurnkey ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
             description,
             url: absoluteUrl(SITE_URL, path),
             image: resolveAbsoluteImage(post.imageUrl)

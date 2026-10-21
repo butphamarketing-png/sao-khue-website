@@ -16,6 +16,8 @@ export type PrerenderMeta = {
   publishedTime?: string;
   modifiedTime?: string;
   noindex?: boolean;
+  /** Khi noindex: vẫn follow để link nội bộ truyền tín hiệu. */
+  follow?: boolean;
 };
 
 const OG_SITE_NAME = "Kiến Trúc Sao Khuê";
@@ -48,7 +50,9 @@ function truncateMeta(text: string, maxLen: number): string {
 export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
   const canonical = absoluteUrl(siteUrl, meta.path);
   const robots = meta.noindex
-    ? "noindex,nofollow"
+    ? meta.follow
+      ? "noindex,follow"
+      : "noindex,nofollow"
     : "index,follow,max-image-preview:large";
   const title = truncateMeta(meta.title, 60);
   const description = truncateMeta(meta.description, 160);

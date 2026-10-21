@@ -57,6 +57,8 @@ export function AdsLandingPage({ config }: Props) {
     description: config.seoDescription,
     path: config.path,
     keywords: config.keywords,
+    noindex: true,
+    follow: true,
     ogImage: config.heroImage || ogImage,
     ogImageAlt: `${config.serviceLabel} — ${brand}`,
     jsonLd: [

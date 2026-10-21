@@ -105,6 +105,10 @@ export const defaultTestimonials: TestimonialItem[] = [
 
 export const defaultFaqs: FaqItem[] = [
   {
+    q: "Xây nhà trọn gói TPHCM hết bao nhiêu?",
+    a: 'Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Số hợp đồng chốt sau khi đo hẻm và nền. Chi tiết tại <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TPHCM</a>.',
+  },
+  {
     q: "Sao Khuê báo giá xây nhà trọn gói như thế nào?",
     a: "Chúng tôi khảo sát mặt bằng, lập dự toán chi tiết theo hạng mục và vật tư. Báo giá minh bạch, cam kết không phát sinh khi không có yêu cầu thay đổi từ khách hàng.",
   },

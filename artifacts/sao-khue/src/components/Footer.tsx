@@ -61,7 +61,11 @@ export function Footer() {
 
             </p>
 
-            <p className="mb-4 text-sm leading-relaxed">{s.footerDescription}</p>
+            <p className="mb-4 text-sm leading-relaxed">
+              {/xây nhà trọn gói tphcm/i.test(s.footerDescription)
+                ? s.footerDescription
+                : `Xây nhà trọn gói TPHCM. ${s.footerDescription}`}
+            </p>
 
             <div className="space-y-3 text-sm">
 
@@ -212,7 +216,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/dich-vu/xay-nha-tron-goi" className="flex items-center transition-colors hover:text-accent">
-                  <ArrowRight className="mr-2 h-4 w-4" /> Xây nhà trọn gói TP.HCM
+                  <ArrowRight className="mr-2 h-4 w-4" /> Xây nhà trọn gói TPHCM
                 </Link>
               </li>
               <li>

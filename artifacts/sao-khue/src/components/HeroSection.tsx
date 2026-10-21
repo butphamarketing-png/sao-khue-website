@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HOME_SEO_TITLE, seoBrandName } from "@/lib/seo";
+import { HOME_SEO_H1, seoBrandName } from "@/lib/seo";
 import { useHeroSlides, useSiteSettings } from "@/lib/site-settings";
 
 export function HeroSection() {
@@ -31,7 +31,7 @@ export function HeroSection() {
             >
               <img
                 src={slide.image}
-                alt={slide.title || `${brand} — thiết kế và xây nhà trọn gói TP.HCM`}
+                alt={index === 0 ? HOME_SEO_H1 : slide.title || `${brand} — ${HOME_SEO_H1}`}
                 className="hero-home__img absolute inset-0 h-full w-full object-cover object-center"
                 width={1920}
                 height={820}
@@ -44,7 +44,7 @@ export function HeroSection() {
         )}
       </AnimatePresence>
 
-      <h1 className="sr-only">{HOME_SEO_TITLE}</h1>
+      <h1 className="sr-only">{HOME_SEO_H1}</h1>
 
       <div className="absolute bottom-6 left-0 right-0 z-10 flex justify-center gap-2 sm:bottom-10">
         {slides.map((_, index) => (

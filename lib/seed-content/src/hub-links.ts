@@ -15,7 +15,7 @@ export const CONG_TRINH_CASE_STUDIES: HubLink[] = [
 ];
 
 export const TIN_TUC_MAIN_HUBS: HubLink[] = [
-  { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
+  { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" },
   { href: "/bao-gia", label: "Bảng báo giá xây nhà" },
   { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ TP.HCM" },
   { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
@@ -59,7 +59,7 @@ const DESIGN_CLUSTER: HubLink[] = [
 
 const DISTRICT_HUBS: { match: RegExp; link: HubLink }[] = [
   { match: /cai-tao|sua-nha|sua-chua|nang-tang|chong-tham/, link: { href: HUB_SUA_NHA, label: "Sửa & cải tạo nhà TP.HCM" } },
-  { match: /xay-nha|tron-goi|thi-cong/, link: { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" } },
+  { match: /xay-nha|tron-goi|thi-cong/, link: { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" } },
 ];
 
 type PostTopic = "build" | "renovation" | "repair" | "design" | "pricing" | "general";
@@ -77,7 +77,7 @@ function classifyPostTopic(slug: string): PostTopic {
 function parentHubForTopic(topic: PostTopic, slug: string): HubLink | null {
   switch (topic) {
     case "build":
-      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" };
+      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" };
     case "renovation":
     case "repair":
       return { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" };
@@ -87,7 +87,7 @@ function parentHubForTopic(topic: PostTopic, slug: string): HubLink | null {
       if (slug.includes("sua") || slug.includes("cai-tao")) {
         return { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" };
       }
-      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" };
+      return { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" };
     default:
       return null;
   }
@@ -105,7 +105,7 @@ function clusterForTopic(topic: PostTopic): HubLink[] {
       return DESIGN_CLUSTER;
     case "pricing":
       return [
-        { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
+        { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" },
         { href: "/bao-gia", label: "Bảng báo giá xây dựng" },
         { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ" },
         { href: HUB_SUA_NHA, label: "Sửa nhà trọn gói TP.HCM" },
@@ -139,7 +139,7 @@ export function resolvePostHubLinks(slug: string, category = "tin-tuc"): HubLink
     return dedupeLinks([
       { href: "/cong-trinh", label: "Tất cả công trình tiêu biểu" },
       ...CONG_TRINH_CASE_STUDIES.filter((c) => !c.href.endsWith(`/${slug}`)),
-      { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TP.HCM" },
+      { href: HUB_XAY_NHA, label: "Xây nhà trọn gói TPHCM" },
       { href: HUB_CAI_TAO, label: "Cải tạo nhà cũ" },
       { href: "/bao-gia", label: "Bảng báo giá" },
       { href: "/lien-he", label: "Đặt lịch khảo sát" },

@@ -135,11 +135,11 @@ export default function PostPage() {
           jsonLd: [
             isServicePage
               ? buildServiceSchema({
-                  name: isTurnkeyService ? "Xây nhà trọn gói TP.HCM" : seoPost.title,
+                  name: isTurnkeyService ? "Xây nhà trọn gói TPHCM" : seoPost.title,
                   description: postDescription,
                   url: absoluteUrl(seoPath),
                   providerName: brandName,
-                  serviceType: isTurnkeyService ? "Xây nhà trọn gói TP.HCM" : "Sửa nhà trọn gói",
+                  serviceType: isTurnkeyService ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
                   areaServed: "Thành phố Hồ Chí Minh",
                   image: seoPost.imageUrl,
                 })

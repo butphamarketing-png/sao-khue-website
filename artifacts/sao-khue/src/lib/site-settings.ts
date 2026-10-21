@@ -73,7 +73,7 @@ export type CostCalculatorConfig = {
 export const defaultHeroSlides: HeroSlide[] = [
   {
     image: "/images/hero-1.jpg",
-    title: "Thiết kế & xây nhà trọn gói",
+    title: "Xây nhà trọn gói TPHCM",
     subtitle: "Kiến Trúc Sao Khuê",
     description:
       "Kiến tạo không gian sống hiện đại, bền vững và đẳng cấp. Hotline 0909 075 668.",
@@ -182,7 +182,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   messengerLabel1: "Cải tạo nhà trọn gói",
   messengerLabel2: "Kiến Trúc Sao Khuê",
   footerDescription:
-    "Uy tín - Chất lượng - Tận tâm. Chúng tôi chuyên thiết kế và thi công xây dựng nhà phố, biệt thự chuyên nghiệp.",
+    "Xây nhà trọn gói TPHCM — uy tín, chất lượng, tận tâm. Thiết kế và thi công nhà phố, biệt thự, một hợp đồng từ bản vẽ đến bàn giao.",
   heroSlidesJson: JSON.stringify(defaultHeroSlides),
   homeCommitmentsJson: JSON.stringify(defaultCommitments),
   homePricingJson: JSON.stringify(defaultPricingItems),
@@ -513,7 +513,10 @@ export function useTestimonials(): TestimonialItem[] {
 
 export function useFaqs(): FaqItem[] {
   const settings = useSiteSettings();
-  return parseJsonArray(settings.homeFaqJson, defaultFaqs);
+  const faqs = parseJsonArray(settings.homeFaqJson, defaultFaqs);
+  const lead = defaultFaqs[0];
+  if (!lead || faqs.some((item) => /xây nhà trọn gói tphcm/i.test(item.q))) return faqs;
+  return [lead, ...faqs];
 }
 
 export function useProcessSteps(): ProcessStep[] {
@@ -570,11 +573,24 @@ export function useTopBarSlogan(): string {
   return settings.topBarSlogan || defaultSiteSettings.topBarSlogan;
 }
 
+function withTurnkeyNavLabel(item: MenuItem): MenuItem {
+  const title =
+    item.title === "XÂY MỚI" && (item.href === "/dich-vu/xay-nha-tron-goi" || item.href === "/xay-moi")
+      ? "XÂY TRỌN GÓI"
+      : item.title === "XÂY TRỌN GÓI TP.HCM"
+        ? "XÂY NHÀ TRỌN GÓI TPHCM"
+        : item.title;
+  return {
+    ...item,
+    title,
+    href: item.href === "/xay-moi" ? "/dich-vu/xay-nha-tron-goi" : item.href,
+    children: item.children?.map(withTurnkeyNavLabel),
+  };
+}
+
 export function useNavMenu(): MenuItem[] {
   const settings = useSiteSettings();
-  const menu = parseJsonArray(settings.navMenuJson, defaultNavMenu).map((item) =>
-    item.href === "/xay-moi" ? { ...item, href: "/dich-vu/xay-nha-tron-goi" } : item,
-  );
+  const menu = parseJsonArray(settings.navMenuJson, defaultNavMenu).map(withTurnkeyNavLabel);
   if (menu.some((item) => item.href === "/mau-nha")) return menu;
   const mauNha = defaultNavMenu.find((item) => item.href === "/mau-nha");
   if (!mauNha) return menu;

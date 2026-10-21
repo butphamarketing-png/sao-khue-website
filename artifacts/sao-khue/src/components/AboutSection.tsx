@@ -43,14 +43,13 @@ export function AboutSection() {
             <h2 className="mb-6 text-3xl font-bold leading-tight text-primary md:text-4xl">
               {content.title}
             </h2>
-            <p className="mb-5 text-lg leading-relaxed text-slate-600">{content.intro}</p>
-            <p className="mb-8 leading-relaxed text-slate-600">
-              {content.body}{" "}
+            <p className="mb-5 text-lg leading-relaxed text-slate-600">
               <Link href="/dich-vu/xay-nha-tron-goi" className="font-semibold text-primary hover:text-accent">
-                Xây nhà trọn gói TP.HCM
+                Xây nhà trọn gói TPHCM
               </Link>{" "}
-              từ 4,85 triệu/m², một hợp đồng từ thiết kế đến bàn giao.
+              từ 4,85 triệu/m² — thiết kế, phần thô và hoàn thiện trong một hợp đồng. {content.intro}
             </p>
+            <p className="mb-8 leading-relaxed text-slate-600">{content.body}</p>
 
             <ul className="mb-10 space-y-3">
               {content.points.map((point, index) => (
