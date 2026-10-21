@@ -20,7 +20,7 @@ export const quyTrinhXayNhaTronGoiAZ = {
   content: `
 <h2>Xây nhà trọn gói là gì? Khác gì thi công từng phần?</h2>
 <p><strong>Xây nhà trọn gói</strong> (hay còn gọi là xây nhà theo gói thầu trọn vẹn) là hình thức ký một hợp đồng duy nhất bao gồm toàn bộ hạng mục từ thiết kế, cung cấp vật tư, thi công đến hoàn thiện và bàn giao chìa khóa. Chủ nhà chỉ cần giám sát một đầu mối, không phải quản lý nhiều đội thợ riêng biệt.</p>
-<p>So với thi công từng phần (chủ nhà tự mua vật liệu, tự thuê thợ), <strong>xây nhà trọn gói</strong> có ưu điểm vượt trội về quản lý tiến độ, kiểm soát chi phí và bảo hành sau bàn giao. Đây là lý do mô hình này ngày càng được ưa chuộng tại TP.HCM, Bình Dương và Đồng Nai. Tham khảo thêm <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói Sao Khuê</a>.</p>
+<p>So với thi công từng phần (chủ nhà tự mua vật liệu, tự thuê thợ), <strong>xây nhà trọn gói</strong> có ưu điểm vượt trội về quản lý tiến độ, kiểm soát chi phí và bảo hành sau bàn giao. Đây là lý do mô hình này ngày càng được ưa chuộng tại TP.HCM, Bình Dương và Đồng Nai. Tham khảo thêm <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> và <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói Sao Khuê</a>.</p>
 
 ${imageFigure(SK_IMG_1, focusKeyword, 1)}
 

@@ -295,7 +295,7 @@ export type AggregateRatingInput = {
 };
 
 const DEFAULT_SERVICE_OFFERS = [
-  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi" },
+  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi-tphcm" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
   { name: "Sửa nhà trọn gói TP.HCM", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },
@@ -432,6 +432,8 @@ export function buildServiceSchema(input: {
   serviceType: string;
   areaServed?: string;
   image?: string;
+  telephone?: string;
+  streetAddress?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -441,7 +443,20 @@ export function buildServiceSchema(input: {
     description: input.description,
     url: input.url,
     image: input.image ? [resolveOgImage(input.image)] : undefined,
-    provider: { "@type": "Organization", name: input.providerName },
+    provider: {
+      "@type": "HomeAndConstructionBusiness",
+      name: input.providerName,
+      telephone: input.telephone,
+      address: input.streetAddress
+        ? {
+            "@type": "PostalAddress",
+            streetAddress: input.streetAddress,
+            addressLocality: "Bình Thạnh",
+            addressRegion: "Hồ Chí Minh",
+            addressCountry: "VN",
+          }
+        : undefined,
+    },
     areaServed: {
       "@type": "City",
       name: input.areaServed ?? "Thành phố Hồ Chí Minh",
@@ -597,15 +612,16 @@ export function buildPostBreadcrumbItems(
   const cat = CATEGORY_CRUMBS[post.category];
   if (cat) items.push({ name: cat.label, path: cat.path });
 
+  const postPath = getPostPublicPath(post, menu);
   const leaf = getPostUrlLeaf(post, menu);
   if (leaf) {
     const child = getMenuChildren(post.category, menu).find(
       (c) => getMenuLeafSlug(c.href) === leaf,
     );
-    if (child) items.push({ name: child.title, path: child.href });
+    if (child && child.href !== postPath) items.push({ name: child.title, path: child.href });
   }
 
-  items.push({ name: post.title, path: getPostPublicPath(post, menu) });
+  items.push({ name: post.title, path: postPath });
   return items;
 }
 

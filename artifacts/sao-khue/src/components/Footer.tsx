@@ -215,7 +215,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dich-vu/xay-nha-tron-goi" className="flex items-center transition-colors hover:text-accent">
+                <Link href="/dich-vu/xay-nha-tron-goi-tphcm" className="flex items-center transition-colors hover:text-accent">
                   <ArrowRight className="mr-2 h-4 w-4" /> Xây nhà trọn gói TPHCM
                 </Link>
               </li>

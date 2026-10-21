@@ -202,7 +202,7 @@ export default function middleware(request) {
       if (/^(sua-|sua-chua-|chong-tham|cai-tao|nang-tang|son-|gia-co|lam-moi|cong-ty-sua|bao-gia-sua|bao-gia-cai|chi-phi-cai|chi-phi-sua)/i.test(leaf)) {
         hub = "/dich-vu/sua-nha-tron-goi-tphcm";
       } else if (/^(xay-|thiet-ke|thi-cong|bao-gia-xay|ep-coc|hoan-thien|nha-thau|don-gia|chi-phi-xay|cong-ty-xay)/i.test(leaf)) {
-        hub = "/dich-vu/xay-nha-tron-goi";
+        hub = "/dich-vu/xay-nha-tron-goi-tphcm";
       } else if (/-sk\\d+$/i.test(leaf) || /-ngan$/i.test(leaf)) {
         hub = "/tin-tuc";
       } else if (ns === "dich-vu") {

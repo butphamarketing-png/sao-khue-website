@@ -103,7 +103,7 @@ function districtFromSlug(slug: string): string | undefined {
 
 function hubLinks(): string {
   const labels = [
-    "xây nhà trọn gói TP.HCM",
+    "Xây nhà trọn gói TPHCM",
     "công ty xây dựng nhà phố TP.HCM",
     "báo giá xây nhà trọn gói TP.HCM",
   ];

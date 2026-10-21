@@ -33,7 +33,7 @@ export const thietKeNhaPhongCachHienDai = {
 </ul>
 
 <h2>Thiết kế và thi công</h2>
-<p>Gói <a href="/dich-vu/thiet-ke-nha">thiết kế</a> + <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> — miễn phí thiết kế khi ký thi công (theo chương trình). Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> đã thi công.</p>
+<p>Gói <a href="/dich-vu/thiet-ke-nha">thiết kế</a> + <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> — miễn phí thiết kế khi ký thi công (theo chương trình). Xem <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình Bình Thạnh</a> đã thi công.</p>
 
 <h2>Lưu ý quy hoạch</h2>
 <p>Chiều cao, lộ giới, cửa sổ hướng ra đường cần tuân thủ quy định địa phương. Sao Khuê tư vấn sơ bộ trước khi chốt bản vẽ — xem <a href="/tin-tuc/luat-xay-dung-moi-nhat">luật xây dựng</a>.</p>

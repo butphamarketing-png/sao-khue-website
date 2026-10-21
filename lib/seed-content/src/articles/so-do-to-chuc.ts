@@ -21,7 +21,7 @@ export const soDoToChuc = {
 <h3>Phòng Thiết kế</h3>
 <p>Kiến trúc sư triển khai <a href="/dich-vu/thiet-ke-nha">thiết kế nhà</a>, mặt bằng, phối cảnh 3D, hồ sơ kỹ thuật phục vụ thi công và xin phép.</p>
 <h3>Phòng Thi công</h3>
-<p>Điều phối đội thợ, giám sát hiện trường, nghiệm thu hạng mục — <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a>, <a href="/dich-vu/xay-dung-phan-tho">phần thô</a>, <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa chữa</a>.</p>
+<p>Điều phối đội thợ, giám sát hiện trường, nghiệm thu hạng mục — <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a>, <a href="/dich-vu/xay-dung-phan-tho">phần thô</a>, <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa chữa</a>.</p>
 <h3>Phòng Vật tư</h3>
 <p>Mua sắm, kiểm tra chủng loại vật tư đúng hợp đồng (xi măng, thép, gạch, thiết bị…).</p>
 <h3>Phòng Kế toán — Hành chính</h3>

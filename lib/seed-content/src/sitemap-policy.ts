@@ -37,7 +37,7 @@ const HAND_PILLAR_SLUGS = new Set([
  * Redirect thật nằm ở legacy-redirects.ts.
  */
 export const HUB_SUA_NHA = "/dich-vu/sua-nha-tron-goi-tphcm";
-export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi";
+export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi-tphcm";
 export const HUB_CAI_TAO = "/cai-tao-nha";
 
 const CANNIBAL_REDIRECT_SLUGS = new Set([
@@ -71,7 +71,7 @@ const CANNIBAL_REDIRECT_SLUGS = new Set([
   "sua-chua-cai-tao-nha-tan-phu",
   "sua-chua-cai-tao-nha-quan-1",
   "sua-chua-cai-tao-nha-hoc-mon",
-  // Cluster xây nhà trọn gói — gom về /dich-vu/xay-nha-tron-goi
+  // Cluster xây nhà trọn gói — gom về /dich-vu/xay-nha-tron-goi-tphcm
   "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
   "nha-thau-xay-nha-tron-goi-tphcm",
   "xay-nha-moi",
@@ -158,10 +158,29 @@ export function hubForUnknownPathname(pathname: string): string | null {
   return null;
 }
 
+/** Geo đã có bài riêng — index dù slug nằm trong batch factory. */
+const PROMOTED_GEO_SLUGS = new Set([
+  "xay-nha-binh-thanh",
+  "xay-nha-thu-duc",
+  "xay-nha-quan-3",
+  "xay-nha-quan-5",
+  "xay-nha-quan-7",
+  "xay-nha-quan-8",
+  "xay-nha-quan-10",
+  "xay-nha-go-vap",
+  "xay-nha-tan-phu",
+  "xay-nha-tan-binh",
+  "xay-nha-binh-tan",
+  "xay-nha-hoc-mon",
+  "xay-nha-cu-chi",
+]);
+
 const CANONICAL_PATH_OVERRIDES: Record<string, string> = {
   "/dich-vu/sua-chua-nha": HUB_SUA_NHA,
   "/dich-vu/sua-chua-nha-tphcm": HUB_SUA_NHA,
   "/dich-vu/xay-nha-moi": HUB_XAY_NHA,
+  "/dich-vu/xay-nha-tron-goi": HUB_XAY_NHA,
+  "/tin-tuc/xay-nha-tron-goi-tphcm": HUB_XAY_NHA,
 };
 
 /** Path nội bộ còn sống; factory/cannibal → hub. */
@@ -199,6 +218,8 @@ export function shouldNoindexPostSlug(slug: string): boolean {
   if (CANNIBAL_REDIRECT_SLUGS.has(slug)) return true;
   // Đã có thứ hạng trang 1 — giữ 200 + index, không 301/404 mất từ khóa.
   if (RANKING_KEYWORD_SLUGS.has(slug)) return false;
+  // Bài geo đã viết tay, sát trang 1 — không nuốt bởi regex quận / batch factory.
+  if (PROMOTED_GEO_SLUGS.has(slug)) return false;
   if (HAND_PILLAR_SLUGS.has(slug)) return false;
   if (isShortKeywordFactorySlug(slug)) return true;
   if (DISTRICT_TEMPLATE_SLUG_RE.test(slug)) return true;
@@ -227,6 +248,7 @@ export function isSitemapIndexablePost(post: {
 /** Shell SPA routes — fallback index.html nếu thiếu prerender (tránh 404 landing ads). */
 export const SPA_SHELL_FALLBACK_PATHS: ReadonlySet<string> = new Set([
   "/",
+  "/dich-vu/xay-nha-tron-goi-tphcm",
   "/bao-gia",
   "/lien-he",
   "/thiet-ke",

@@ -114,7 +114,7 @@ type Row = {
 };
 
 const EXISTS: Record<string, string> = {
-  "hub-tphcm": "/dich-vu/xay-nha-tron-goi",
+  "hub-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
   "bao-gia-tphcm": "/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm",
   "chi-phi-tphcm": "/tin-tuc/chi-phi-xay-nha-tphcm",
   "don-gia-tphcm": "/tin-tuc/don-gia-xay-nha-tphcm",

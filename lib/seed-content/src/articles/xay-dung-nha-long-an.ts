@@ -86,7 +86,7 @@ ${homeLinkParagraph()}
 <p>Vùng đồng bằng có mưa lớn và triều cường theo mùa — thiết kế cần chú trọng độ dốc mái, thoát nước sân, hệ thống van ngăn triều. Sao Khuê thiết kế chi tiết hệ thống thoát nước ngay từ bản vẽ kỹ thuật.</p>
 
 <h3>Quy định xây dựng địa phương</h3>
-<p>Mỗi huyện tại Long An có quy định riêng về chiều cao, mật độ xây dựng, lộ giới và khoảng lùi. Sao Khuê hỗ trợ tra cứu quy hoạch và hoàn thiện hồ sơ xin phép xây dựng đúng quy định địa phương. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
+<p>Mỗi huyện tại Long An có quy định riêng về chiều cao, mật độ xây dựng, lộ giới và khoảng lùi. Sao Khuê hỗ trợ tra cứu quy hoạch và hoàn thiện hồ sơ xin phép xây dựng đúng quy định địa phương. Xem thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a>.</p>
 
 ${faqSection([
   { q: "Xây nhà Long An có cần khảo sát địa chất không?", a: "Nên, đặc biệt ven sông Vàm Cỏ và vùng trũng: đất yếu dễ lún. Sao Khuê tư vấn móng cọc / bè trước khi chốt đơn giá thô." },

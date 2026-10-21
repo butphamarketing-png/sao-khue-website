@@ -83,7 +83,7 @@ ${imageFigure(SK_IMG_1, "báo giá xây nhà phần thô Long An", 1)}
 <p>Tùy độ sâu móng và vị trí công trình, chi phí đào đất và vận chuyển đất ra ngoài dao động <strong>50.000 – 120.000 đ/m²</strong> mặt bằng đào. Vị trí hẻm nhỏ, không có xe tải vào thì giá cao hơn.</p>
 
 <h3>Thay đổi thiết kế giữa chừng</h3>
-<p>Thay đổi vị trí cột, dầm hoặc sàn sau khi đã đổ bê tông là phát sinh tốn kém nhất. Sao Khuê khuyến nghị chốt bản vẽ kỹ thuật hoàn chỉnh <strong>trước khi khởi công</strong> — xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
+<p>Thay đổi vị trí cột, dầm hoặc sàn sau khi đã đổ bê tông là phát sinh tốn kém nhất. Sao Khuê khuyến nghị chốt bản vẽ kỹ thuật hoàn chỉnh <strong>trước khi khởi công</strong> — xem thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a>.</p>
 
 ${imageFigure(SK_IMG_2, "báo giá xây nhà phần thô Long An", 2)}
 

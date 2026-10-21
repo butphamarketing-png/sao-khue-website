@@ -57,7 +57,7 @@ ${a}
   <li><strong>Tùy hợp đồng:</strong> nội thất gỗ, smart home, hồ bơi, thang máy.</li>
   <li><strong>Thường tách:</strong> lệ phí nhà nước, ở tạm, vật tư chủ nhà tự mua ngoài list.</li>
 </ul>
-<p>So sánh nhà thầu: <a href="/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm">nhà thầu xây nhà trọn gói</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+<p>So sánh nhà thầu: <a href="/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm">nhà thầu xây nhà trọn gói</a> · dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
 ${b}
 
 <h2>Xây nhà trọn gói theo quận (Ads geo)</h2>

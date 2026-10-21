@@ -12,7 +12,7 @@ export const thietKeNhaBietThuThuDuc = {
     "thiết kế biệt thự thủ đức, biệt thự sân vườn, thiết kế nhà vườn tphcm, sao khuê",
   content: `
 <h2>Thiết kế biệt thự sân vườn tại TP. Thủ Đức</h2>
-<p>Dự án <strong>biệt thự sân vườn ~200 m²</strong> tại <strong>TP. Thủ Đức</strong> thể hiện phong cách <strong>Á Đông kết hợp hiện đại</strong> — mái Thái, sân trong, không gian mở và riêng tư hài hòa. Sao Khuê đảm nhiệm <a href="/dich-vu/thiet-ke-nha">thiết kế</a> và có thể triển khai <a href="/dich-vu/xay-nha-tron-goi">thi công trọn gói</a>.</p>
+<p>Dự án <strong>biệt thự sân vườn ~200 m²</strong> tại <strong>TP. Thủ Đức</strong> thể hiện phong cách <strong>Á Đông kết hợp hiện đại</strong> — mái Thái, sân trong, không gian mở và riêng tư hài hòa. Sao Khuê đảm nhiệm <a href="/dich-vu/thiet-ke-nha">thiết kế</a> và có thể triển khai <a href="/dich-vu/xay-nha-tron-goi-tphcm">thi công trọn gói</a>.</p>
 
 <h2>Ý tưởng thiết kế</h2>
 <ul>

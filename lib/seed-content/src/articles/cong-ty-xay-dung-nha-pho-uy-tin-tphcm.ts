@@ -47,11 +47,11 @@ export const congTyXayDungNhaPhoUyTinTphcm = {
 <h2>Dịch vụ xây dựng nhà phố trọn gói tại Sao Khuê</h2>
 <p>Chúng tôi cung cấp chuỗi dịch vụ xuyên suốt, phù hợp khách hàng muốn <strong>xây nhà phố trọn gói</strong> hoặc tách từng giai đoạn:</p>
 <h3>Thiết kế kiến trúc nhà phố 2D/3D</h3>
-<p>Phác thảo công năng, mặt bằng từng tầng, phối cảnh 3D, hồ sơ kỹ thuật thi công, hỗ trợ hồ sơ xin phép khi cần. Chi tiết tại <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>. Khách ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> thường được <strong>miễn phí thiết kế</strong> (theo quy mô áp dụng).</p>
+<p>Phác thảo công năng, mặt bằng từng tầng, phối cảnh 3D, hồ sơ kỹ thuật thi công, hỗ trợ hồ sơ xin phép khi cần. Chi tiết tại <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>. Khách ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> thường được <strong>miễn phí thiết kế</strong> (theo quy mô áp dụng).</p>
 <h3>Thi công phần thô nhà phố</h3>
 <p>Móng, cột, dầm, sàn, tường bao che, mái, điện nước âm tường — nền tảng an toàn cho giai đoạn sau. Xem <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
 <h3>Xây nhà phố trọn gói (chìa khóa trao tay)</h3>
-<p>Đảm nhận toàn bộ từ thiết kế đến hoàn thiện cơ bản, bàn giao đưa vào ở hoặc hoàn thiện nội thất nhẹ. Phù hợp chủ nhà bận rộn, cần một nhà thầu chịu trách nhiệm cuối cùng. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+<p>Đảm nhận toàn bộ từ thiết kế đến hoàn thiện cơ bản, bàn giao đưa vào ở hoặc hoàn thiện nội thất nhẹ. Phù hợp chủ nhà bận rộn, cần một nhà thầu chịu trách nhiệm cuối cùng. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
 <h3>Hoàn thiện nhà phố sau thô</h3>
 <p>Trát, sơn, ốp lát, trần, cửa, lan can, thiết bị vệ sinh — khi bạn đã có khung nhà vững. Xem <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <h3>Cải tạo, sửa chữa, nâng tầng nhà phố cũ</h3>

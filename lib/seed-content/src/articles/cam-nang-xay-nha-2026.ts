@@ -10,7 +10,7 @@ export const camNangXayNha2026 = {
     "cẩm nang xây nhà, kinh nghiệm xây nhà, xây nhà lần đầu, quy trình xây nhà, sao khuê",
   content: `
 <h2>Cẩm nang xây nhà 2026 — Chủ nhà cần chuẩn bị gì?</h2>
-<p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
+<p>Xây nhà là dự án lớn, liên quan pháp lý, tài chính và kỹ thuật. Bài viết này tổng hợp <strong>kinh nghiệm thực tế</strong> từ đội ngũ <strong>Sao Khuê</strong> — giúp bạn chủ động hơn khi bắt đầu, dù tự giám sát hay chọn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
 
 <h2>Bước 1: Xác định nhu cầu và ngân sách</h2>
 <ul>

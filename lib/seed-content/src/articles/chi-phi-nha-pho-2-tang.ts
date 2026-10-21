@@ -110,7 +110,7 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Thi công và nghiệm thu:</strong> Giám sát theo hạng mục, chụp ảnh tiến độ cập nhật thường xuyên.</li>
   <li><strong>Bàn giao & bảo hành:</strong> Kết cấu 10 năm, hoàn thiện 12–36 tháng tùy hạng mục.</li>
 </ol>
-<p>Tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>, <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố 2 tầng Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> để hiểu thêm quy trình làm việc.</p>
+<p>Tham khảo <a href="/cong-trinh/xay-nha-pho-binh-thanh">công trình nhà phố Bình Thạnh</a>, <a href="/tin-tuc/mau-nha-pho-2-tang-binh-duong">nhà phố 2 tầng Bình Dương</a> và <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> để hiểu thêm quy trình làm việc.</p>
 
 ${faqSection([
   { q: "Chi phí nhà phố 2 tầng TP.HCM khoảng bao nhiêu?", a: "Gói trọn gói tiêu chuẩn thường 800 triệu – 1,5 tỷ tùy diện tích sàn và vật liệu (chưa nội thất). Hẻm hẹp / nền yếu có thể cao hơn." },

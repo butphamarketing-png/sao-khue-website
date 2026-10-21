@@ -357,8 +357,8 @@ function buildDistrictTurnkey(b: DistrictTurnkeyBrief): MoneyPageOverride {
     ? `<p>Công trình tham chiếu: <a href="${b.caseLink.href}">${b.caseLink.label}</a>.</p>`
     : "";
   const hubLine = b.hubLink
-    ? `<p>Xem thêm: <a href="${b.hubLink.href}">${b.hubLink.label}</a> · <a href="/tin-tuc/xay-nha-tphcm">hub xây nhà TP.HCM</a> · <a href="/dich-vu/xay-nha-tron-goi">dịch vụ trọn gói</a>.</p>`
-    : `<p>Hub: <a href="/tin-tuc/xay-nha-tphcm">xây nhà TP.HCM</a> · <a href="/dich-vu/xay-nha-tron-goi">dịch vụ trọn gói</a> · <a href="/bao-gia">máy tính báo giá</a>.</p>`;
+    ? `<p>Xem thêm: <a href="${b.hubLink.href}">${b.hubLink.label}</a> · <a href="/tin-tuc/xay-nha-tphcm">hub xây nhà TP.HCM</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ trọn gói</a>.</p>`
+    : `<p>Hub: <a href="/tin-tuc/xay-nha-tphcm">xây nhà TP.HCM</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ trọn gói</a> · <a href="/bao-gia">máy tính báo giá</a>.</p>`;
   const d = TURNKEY_DEPTH[b.slug];
   const typical = d?.typical ?? `Nhà phố / lô đất tại ${b.district}.`;
   const soil = d?.soil ?? `Khảo sát địa chất khu ${b.district} trước khi chốt móng.`;

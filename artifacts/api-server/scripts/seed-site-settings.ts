@@ -94,7 +94,7 @@ const defaults: Record<string, string> = {
     { icon: "shield-check", value: "10 nam", label: "B?o hnh k?t c?u" },
   ]),
   homeQuoteServicesJson: JSON.stringify([
-    { id: "1", title: "XY NH\nTR?N GI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi ti?t" },
+    { id: "1", title: "XY NH\nTR?N GI", link: "/dich-vu/xay-nha-tron-goi-tphcm", buttonLabel: "Xem chi ti?t" },
     { id: "2", title: "S?A CH?A\nNH CU", link: "/dich-vu/sua-chua-nha", buttonLabel: "Xem chi ti?t" },
     { id: "3", title: "THI?T K?\nKI?N TRC", link: "/dich-vu/thiet-ke-kien-truc", buttonLabel: "Xem chi ti?t" },
     { id: "4", title: "THI CNG\nPH?N TH", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi ti?t" },

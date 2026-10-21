@@ -23,7 +23,7 @@ export const xayNhaTronGoiDongNai = {
   <li><strong>Huyện Long Thành:</strong> Khu ven sân bay, nhà vườn, đất nền dự án.</li>
   <li><strong>Huyện Nhơn Trạch:</strong> Khu công nghiệp – dân cư, nhà ở công nhân và gia đình trẻ.</li>
   <li><strong>Trảng Bom, Vĩnh Cửu, Thống Nhất…:</strong> Nhà riêng lẻ, cải tạo (theo lịch khảo sát).</li>
-  <li><strong>Liên kết vùng:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi">TP.HCM</a>, Long An — cùng đội ngũ Sao Khuê.</li>
+  <li><strong>Liên kết vùng:</strong> <a href="/dich-vu/xay-nha-tron-goi-binh-duong">Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-tphcm">TP.HCM</a>, Long An — cùng đội ngũ Sao Khuê.</li>
 </ul>
 <p>Trụ sở tại <strong>Bình Thạnh, TP.HCM</strong> — đội khảo sát và thi công Đồng Nai thường xuyên; chi phí di chuyển (nếu có) được báo trước khi ký hợp đồng.</p>
 
@@ -47,7 +47,7 @@ export const xayNhaTronGoiDongNai = {
   <li><strong>Giám sát kỹ thuật:</strong> Nghiệm thu móng, cốt thép, chống thấm.</li>
   <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong>.</li>
 </ul>
-<p>Đã có bản vẽ: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Công trình nội thành: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+<p>Đã có bản vẽ: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Công trình nội thành: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
 
 <h2>Báo giá xây nhà trọn gói Đồng Nai tham khảo 2026</h2>
 <p>Bảng <strong>đơn giá tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí tại Đồng Nai:</p>

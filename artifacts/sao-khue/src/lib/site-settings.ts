@@ -541,7 +541,7 @@ export function useCtaBanner(): CtaBannerContent {
 }
 
 const QUOTE_SERVICE_LINKS: Record<string, string> = {
-  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi",
+  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi-tphcm",
   "sửa chữa nhà": "/dich-vu/sua-nha-tron-goi-tphcm",
   "xây dựng phần thô": "/dich-vu/xay-dung-phan-tho",
   "thiết kế nhà": "/dich-vu/thiet-ke-nha",
@@ -575,7 +575,10 @@ export function useTopBarSlogan(): string {
 
 function withTurnkeyNavLabel(item: MenuItem): MenuItem {
   const title =
-    item.title === "XÂY MỚI" && (item.href === "/dich-vu/xay-nha-tron-goi" || item.href === "/xay-moi")
+    item.title === "XÂY MỚI" &&
+    (item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
+      item.href === "/dich-vu/xay-nha-tron-goi" ||
+      item.href === "/xay-moi")
       ? "XÂY TRỌN GÓI"
       : item.title === "XÂY TRỌN GÓI TP.HCM"
         ? "XÂY NHÀ TRỌN GÓI TPHCM"
@@ -583,7 +586,10 @@ function withTurnkeyNavLabel(item: MenuItem): MenuItem {
   return {
     ...item,
     title,
-    href: item.href === "/xay-moi" ? "/dich-vu/xay-nha-tron-goi" : item.href,
+    href:
+      item.href === "/xay-moi" || item.href === "/dich-vu/xay-nha-tron-goi"
+        ? "/dich-vu/xay-nha-tron-goi-tphcm"
+        : item.href,
     children: item.children?.map(withTurnkeyNavLabel),
   };
 }

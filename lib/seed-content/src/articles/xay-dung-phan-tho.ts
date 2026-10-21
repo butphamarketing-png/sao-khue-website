@@ -20,7 +20,7 @@ export const xayDungPhanTho = {
   <li>Hệ thống điện, nước, thoát nước âm tường.</li>
   <li>Nhân công hoàn thiện thô cơ bản (trát ngoài trong mức hợp đồng).</li>
 </ul>
-<p>Sau phần thô, bạn có thể ký tiếp gói <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> hoặc <a href="/dich-vu/xay-nha-tron-goi">xây trọn gói</a> ngay từ đầu.</p>
+<p>Sau phần thô, bạn có thể ký tiếp gói <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a> hoặc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây trọn gói</a> ngay từ đầu.</p>
 
 <h2>Đơn giá xây phần thô tham khảo 2026</h2>
 <table>
@@ -52,7 +52,7 @@ export const xayDungPhanTho = {
 </ol>
 
 <h2>Xây nhà phần thô và hoàn thiện — khi nào tách, khi nào trọn gói?</h2>
-<p><strong>Xây nhà phần thô và hoàn thiện</strong> tách hợp đồng phù hợp chủ nhà muốn chọn gạch–sơn sau. Rủi ro: lệch cao độ, ổ cắm, chống thấm nếu hai nhà thầu không đồng bộ. Gia đình lần đầu xây tại TP.HCM thường chọn <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> để một bảo hành. Đơn giá thô 3,55–3,8 triệu/m²; trọn gói từ 4,85 triệu — xem <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a>.</p>
+<p><strong>Xây nhà phần thô và hoàn thiện</strong> tách hợp đồng phù hợp chủ nhà muốn chọn gạch–sơn sau. Rủi ro: lệch cao độ, ổ cắm, chống thấm nếu hai nhà thầu không đồng bộ. Gia đình lần đầu xây tại TP.HCM thường chọn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> để một bảo hành. Đơn giá thô 3,55–3,8 triệu/m²; trọn gói từ 4,85 triệu — xem <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a>.</p>
 
 <h2>FAQ — Xây phần thô</h2>
 <h3>Phần thô khác trọn gói thế nào?</h3>

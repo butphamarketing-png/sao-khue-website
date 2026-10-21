@@ -30,7 +30,7 @@ export const hoanThienNha = {
 <p>Thường từ <strong>2,5–5 triệu đ/m²</strong> tùy vật liệu (gạch, sơn, thiết bị). Báo giá chính thức sau khảo sát hiện trạng.</p>
 
 <h2>Kết hợp với xây trọn gói</h2>
-<p>Khách mới xây nên cân nhắc <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> để đồng bộ thiết kế – thi công – bảo hành. Chỉ hoàn thiện riêng phù hợp khi đã có khung nhà vững.</p>
+<p>Khách mới xây nên cân nhắc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> để đồng bộ thiết kế – thi công – bảo hành. Chỉ hoàn thiện riêng phù hợp khi đã có khung nhà vững.</p>
 
 <h2>FAQ</h2>
 <h3>Hoàn thiện mất bao lâu?</h3>

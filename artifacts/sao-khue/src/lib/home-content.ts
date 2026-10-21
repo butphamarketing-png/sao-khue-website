@@ -106,7 +106,7 @@ export const defaultTestimonials: TestimonialItem[] = [
 export const defaultFaqs: FaqItem[] = [
   {
     q: "Xây nhà trọn gói TPHCM hết bao nhiêu?",
-    a: 'Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Số hợp đồng chốt sau khi đo hẻm và nền. Chi tiết tại <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TPHCM</a>.',
+    a: 'Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Số hợp đồng chốt sau khi đo hẻm và nền. Chi tiết tại <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>.',
   },
   {
     q: "Sao Khuê báo giá xây nhà trọn gói như thế nào?",
@@ -170,7 +170,7 @@ export const defaultProcessSteps: ProcessStep[] = [
 ];
 
 export const defaultQuoteServices: QuoteServiceItem[] = [
-  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi", buttonLabel: "Xem chi tiết" },
+  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi-tphcm", buttonLabel: "Xem chi tiết" },
   { id: "02", title: "SỬA CHỮA\nNHÀ", link: "/dich-vu/sua-nha-tron-goi-tphcm", buttonLabel: "Xem chi tiết" },
   { id: "03", title: "XÂY DỰNG\nPHẦN THÔ", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi tiết" },
   { id: "04", title: "THIẾT KẾ\nNHÀ", link: "/dich-vu/thiet-ke-nha", buttonLabel: "Xem chi tiết" },

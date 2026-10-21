@@ -65,7 +65,7 @@ ${imageFigure(SK_IMG_2, "thiết kế nhà phố Đắk Lắk", 2)}
   <li><strong>Bước 4:</strong> Chỉnh sửa theo góp ý (số lần chỉnh theo hợp đồng), hoàn thiện hồ sơ.</li>
   <li><strong>Bước 5:</strong> Bàn giao file CAD, PDF đầy đủ. Hỗ trợ tư vấn thi công nếu cần.</li>
 </ul>
-<p>Tham khảo thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> nếu bạn muốn Sao Khuê đảm nhận cả phần thi công.</p>
+<p>Tham khảo thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a> nếu bạn muốn Sao Khuê đảm nhận cả phần thi công.</p>
 
 <h2>Chi phí thiết kế nhà phố Đắk Lắk (tham khảo)</h2>
 <table>

@@ -318,7 +318,7 @@ function deepTopicSection(b: Brief): string {
 <ul>
   <li>Báo giá theo hiện trạng thực tế, không copy đơn giá tỉnh khác.</li>
   <li>Ưu tiên vật tư dễ bảo trì, phù hợp khí hậu địa phương.</li>
-  <li>Kết nối với hub: <a href="/xay-nha">xây nhà</a> · <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</li>
+  <li>Kết nối với hub: <a href="/xay-nha">xây nhà</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</li>
 </ul>`;
   }
 

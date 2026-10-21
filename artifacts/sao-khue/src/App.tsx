@@ -61,12 +61,18 @@ function Router() {
       <Route path="/bai-viet/:slug" component={BaiVietCanonicalRedirect} />
 
       <Route path="/dich-vu" component={() => <CategoryPage category="dich-vu" />} />
+      <Route path="/dich-vu/xay-nha-tron-goi">
+        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm" />
+      </Route>
       <Route path="/dich-vu/:slug" component={PostPage} />
 
       <Route path="/cong-trinh" component={() => <CategoryPage category="cong-trinh" />} />
       <Route path="/cong-trinh/:slug" component={PostPage} />
 
       <Route path="/tin-tuc" component={() => <CategoryPage category="tin-tuc" />} />
+      <Route path="/tin-tuc/xay-nha-tron-goi-tphcm">
+        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm" />
+      </Route>
       <Route path="/tin-tuc/:slug" component={PostPage} />
 
       <Route path="/gioi-thieu">

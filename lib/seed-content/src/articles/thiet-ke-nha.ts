@@ -31,7 +31,7 @@ export const thietKeNha = {
 <p>Tham khảo <a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">mẫu nhà phố hiện đại</a> và <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a> trên website.</p>
 
 <h2>Thiết kế và thi công trọn gói</h2>
-<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> tại Sao Khuê, khách hàng được <strong>miễn phí thiết kế kiến trúc 2D/3D</strong> (theo quy mô công trình áp dụng). Thiết kế và thi công cùng một đơn vị giúp giảm sai lệch giữa bản vẽ và hiện trường.</p>
+<p>Khi ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> tại Sao Khuê, khách hàng được <strong>miễn phí thiết kế kiến trúc 2D/3D</strong> (theo quy mô công trình áp dụng). Thiết kế và thi công cùng một đơn vị giúp giảm sai lệch giữa bản vẽ và hiện trường.</p>
 
 <h2>Quy trình thiết kế</h2>
 <ol>

@@ -29,7 +29,7 @@ ${imageFigure(IMG_1, FOCUS, 1)}
 <h2>Xây nhà mới là gì? Khác gì so với xây phần thô?</h2>
 <p><strong>Xây nhà mới</strong> (xây dựng mới hoàn toàn) là thi công công trình trên lô đất chưa có nhà hoặc đã tháo dỡ công trình cũ, bao gồm: làm móng, dựng kết cấu, mái, hoàn thiện và lắp đặt hệ thống điện nước cơ bản. Gia chủ có thể chọn:</p>
 <ul>
-  <li><strong>Xây nhà mới trọn gói:</strong> Nhà thầu đảm nhận toàn bộ — chìa khóa trao tay. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</li>
+  <li><strong>Xây nhà mới trọn gói:</strong> Nhà thầu đảm nhận toàn bộ — chìa khóa trao tay. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</li>
   <li><strong>Xây nhà mới phần thô:</strong> Chỉ thi công kết cấu, gia chủ tự hoàn thiện. Xem <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</li>
   <li><strong>Thiết kế + thi công:</strong> Sao Khuê lên bản vẽ kiến trúc rồi triển khai thi công theo hợp đồng.</li>
 </ul>

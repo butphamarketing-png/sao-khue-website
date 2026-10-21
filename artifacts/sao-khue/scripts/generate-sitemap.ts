@@ -31,7 +31,7 @@ const STATIC_PATHS: { path: string; priority: string; changefreq: string }[] = [
   { path: "/lien-he", priority: "0.88", changefreq: "monthly" },
   { path: "/bai-viet/ve-chung-toi", priority: "0.88", changefreq: "monthly" },
   { path: "/dich-vu", priority: "0.90", changefreq: "weekly" },
-  { path: "/dich-vu/xay-nha-tron-goi", priority: "0.98", changefreq: "weekly" },
+  { path: "/dich-vu/xay-nha-tron-goi-tphcm", priority: "0.98", changefreq: "weekly" },
   { path: "/cong-trinh", priority: "0.85", changefreq: "weekly" },
   { path: "/tin-tuc", priority: "0.85", changefreq: "weekly" },
 ];

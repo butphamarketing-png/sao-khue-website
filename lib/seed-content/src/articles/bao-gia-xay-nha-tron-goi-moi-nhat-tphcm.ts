@@ -11,7 +11,7 @@ export const baoGiaXayNhaTronGoiMoiNhatTphcm = {
 
 <h2>Báo giá xây nhà trọn gói TP.HCM là gì?</h2>
 <p><strong>Xây nhà trọn gói</strong> (chìa khóa trao tay) là mô hình nhà thầu báo <strong>một đơn giá tổng thể</strong> (thường tính theo m² sàn xây dựng) bao gồm: thiết kế (nếu trong gói), thi công móng–kết cấu–mái, hoàn thiện cơ bản, điện nước, cửa, thiết bị vệ sinh cơ bản và bàn giao. <strong>Báo giá xây nhà TP.HCM</strong> trọn gói khác với báo giá chỉ <strong>phần thô</strong> hoặc chỉ <strong>hoàn thiện</strong> — bạn cần xác định rõ phạm vi trước khi so sánh giữa các công ty.</p>
-<p>Tại Sao Khuê, báo giá trọn gói được lập sau <strong>khảo sát mặt bằng</strong> và thống nhất phương án thiết kế sơ bộ. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> và <a href="/bao-gia">công cụ tính chi phí online</a>.</p>
+<p>Tại Sao Khuê, báo giá trọn gói được lập sau <strong>khảo sát mặt bằng</strong> và thống nhất phương án thiết kế sơ bộ. Xem thêm dịch vụ <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và <a href="/bao-gia">công cụ tính chi phí online</a>.</p>
 
 <h2>Bảng báo giá xây nhà trọn gói mới nhất 2026 (tham khảo)</h2>
 <p>Đơn giá dưới đây áp dụng cho công trình nhà ở riêng lẻ tại TP.HCM, <strong>mang tính tham khảo</strong>. Báo giá chính thức phụ thuộc quy mô, vật liệu, mặt bằng và thời điểm ký hợp đồng:</p>
@@ -199,12 +199,12 @@ export const baoGiaXayNhaTronGoiMoiNhatTphcm = {
 
 <h2>Kết luận: Nắm báo giá xây nhà TP.HCM trước khi ký hợp đồng</h2>
 <p><strong>Báo giá xây nhà trọn gói mới nhất tại TP.HCM</strong> năm 2026 dao động khoảng <strong>4,85 – 6,7 triệu/m²</strong> (trọn gói) và <strong>3,55 – 3,8 triệu/m²</strong> (phần thô) — tùy vật liệu và quy mô. Con số quan trọng nhất với bạn là <strong>báo giá sau khảo sát</strong>, có dự toán chi tiết và hợp đồng rõ ràng. Đừng chỉ dựa vào quảng cáo “giá rẻ nhất thị trường” mà thiếu phạm vi công việc.</p>
-<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 075 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
+<p>Sao Khuê sẵn sàng đồng hành: từ <a href="/bao-gia">ước lượng online</a>, khảo sát miễn phí, đến thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và bảo hành dài hạn. Gọi ngay <strong>0909 075 668</strong> để nhận <strong>báo giá xây nhà TP.HCM</strong> phù hợp công trình của bạn.</p>
 
 <h2>Liên kết dịch vụ &amp; công cụ báo giá</h2>
 <p>Sau khi nắm <strong>báo giá xây nhà TP.HCM</strong> tham khảo, bạn có thể đi sâu từng hạng mục:</p>
 <ul>
-  <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a> — quy trình và cam kết.</li>
+  <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a> — quy trình và cam kết.</li>
   <li><a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> — tối ưu chi phí từ bản vẽ.</li>
   <li><a href="/dich-vu/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Xây dựng nhà phố</a> — đặc thù nhà phố.</li>
   <li><a href="/bai-viet/luat-xay-dung-moi-nhat">Luật xây dựng</a> — tránh phạt khi xây.</li>

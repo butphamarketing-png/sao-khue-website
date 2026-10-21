@@ -39,7 +39,7 @@ export const xayNhaTronGoiBinhDuong = {
   <li><strong>Giám sát &amp; quản lý dự án:</strong> Cập nhật tiến độ, nghiệm thu từng hạng mục.</li>
   <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hợp đồng.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế; hoặc <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> khi công trình nằm nội thành.</p>
+<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế; hoặc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> khi công trình nằm nội thành.</p>
 
 <h2>Báo giá xây nhà trọn gói Bình Dương tham khảo 2026</h2>
 <p>Đơn giá phụ thuộc quy mô, vật liệu, mặt bằng và yêu cầu thiết kế. Bảng dưới đây mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí tại Bình Dương:</p>

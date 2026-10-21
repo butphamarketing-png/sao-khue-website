@@ -142,7 +142,7 @@ function shell(inner: string): string {
 function navHome(): string {
   return `<nav aria-label="Điều hướng">
     <a href="/">Trang chủ</a> ·
-    <a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TPHCM</a> ·
+    <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> ·
     <a href="/dich-vu">Dịch vụ</a> ·
     <a href="/bao-gia">Báo giá</a> ·
     <a href="/cong-trinh">Công trình</a> ·
@@ -167,13 +167,13 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(HOME_SEO_H1)}</h1>
-        <p><strong>Xây nhà trọn gói TPHCM</strong> từ 4,85 triệu/m²: <a href="/dich-vu/xay-nha-tron-goi">một nhà thầu lo thiết kế, phần thô và hoàn thiện</a>. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <p><strong>Xây nhà trọn gói TPHCM</strong> từ 4,85 triệu/m²: <a href="/dich-vu/xay-nha-tron-goi-tphcm">một nhà thầu lo thiết kế, phần thô và hoàn thiện</a>. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
         <h2>Dịch vụ chính</h2>
         <ul>
-          <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
+          <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
           <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố; báo giá theo hạng mục.</li>
           <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
         </ul>
@@ -254,7 +254,7 @@ function buildStaticPages(): PrerenderPage[] {
         ${navHome()}
         <h1>Xây nhà mới trọn gói</h1>
         <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
-        <p><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
+        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
     },
     {
@@ -272,7 +272,7 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
-        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi">Xem dịch vụ xây nhà trọn gói</a>.</p>
+        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xem dịch vụ xây nhà trọn gói</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
@@ -531,9 +531,11 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const postFaq = extractFaqFromArticleHtml(post.content ?? "");
     const published = (post.createdAt ?? "2026-01-15").slice(0, 10);
     const modified = (
-      post.slug === "sua-nha-tron-goi-tphcm"
-        ? "2026-10-16"
-        : (post.updatedAt ?? post.createdAt ?? "2026-01-15")
+      post.slug === "xay-nha-tron-goi-tphcm"
+        ? "2026-10-21"
+        : post.slug === "sua-nha-tron-goi-tphcm"
+          ? "2026-10-16"
+          : (post.updatedAt ?? post.createdAt ?? "2026-01-15")
     ).slice(0, 10);
     const isTurnkey = post.slug === "xay-nha-tron-goi-tphcm";
     const pageSchema =
@@ -548,7 +550,20 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
             image: resolveAbsoluteImage(post.imageUrl)
               ? [resolveAbsoluteImage(post.imageUrl)!]
               : undefined,
-            provider: { "@type": "Organization", name: BRAND },
+            provider: {
+              "@type": "HomeAndConstructionBusiness",
+              name: BRAND,
+              telephone: isTurnkey ? "+84909075668" : undefined,
+              address: isTurnkey
+                ? {
+                    "@type": "PostalAddress",
+                    streetAddress: "245/8 Bình Lợi, Phường 13",
+                    addressLocality: "Bình Thạnh",
+                    addressRegion: "Hồ Chí Minh",
+                    addressCountry: "VN",
+                  }
+                : undefined,
+            },
             areaServed: { "@type": "City", name: "Thành phố Hồ Chí Minh" },
           }
         : {
@@ -667,7 +682,7 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
       metaTitle: seed.metaTitle,
       metaDescription: seed.metaDescription,
       metaKeywords: seed.metaKeywords,
-      updatedAt: "2026-10-16T08:00:00.000Z",
+      updatedAt: row.slug === "xay-nha-tron-goi-tphcm" ? "2026-10-21T14:00:00.000Z" : "2026-10-16T08:00:00.000Z",
       noindex: seed.noindex ?? row.noindex,
     };
   }

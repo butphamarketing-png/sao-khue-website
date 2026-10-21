@@ -57,7 +57,7 @@ ${imageFigure(SK_IMG_1, focusKeyword, 1)}
 <p>Nếu 1,2 tỷ là toàn bộ vốn hiện có, hãy xây <strong>phần thô hoàn chỉnh</strong> trước (chiếm khoảng 45–55% tổng chi phí), rồi hoàn thiện theo từng tầng hoặc giai đoạn. Phân kỳ đúng cách giúp dọn vào ở sớm hơn trong khi tiếp tục hoàn thiện — không phải vay thêm quá giới hạn tài chính.</p>
 
 <h3>Chiến lược 3: Ký hợp đồng xây nhà trọn gói cố định giá</h3>
-<p>Thay vì tự mua vật liệu và thuê thợ theo ngày, hợp đồng <strong>xây nhà trọn gói</strong> giúp cố định đơn giá, quản lý tiến độ và có người chịu trách nhiệm bảo hành kết cấu. Tham khảo <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">bảng báo giá xây nhà trọn gói mới nhất</a> để so sánh.</p>
+<p>Thay vì tự mua vật liệu và thuê thợ theo ngày, hợp đồng <strong>xây nhà trọn gói</strong> giúp cố định đơn giá, quản lý tiến độ và có người chịu trách nhiệm bảo hành kết cấu. Tham khảo <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">bảng báo giá xây nhà trọn gói mới nhất</a> để so sánh.</p>
 
 <h3>Chiến lược 4: Tối ưu mặt bằng — không xây thừa không gian trống</h3>
 <p>Mỗi phòng phải có công năng rõ ràng. Tránh xây phòng "để dành" rồi bỏ trống nhiều năm — thêm 10 m² sàn tương đương 60–80 triệu chi phí thi công. Bản vẽ mặt bằng tốt từ kiến trúc sư có kinh nghiệm giúp tận dụng từng cm² diện tích, bố trí phòng vệ sinh, kho và cầu thang hợp lý mà không lãng phí không gian.</p>

@@ -25,7 +25,7 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: "/lien-he", changefreq: "monthly", priority: 0.9, lastmod: null },
   { loc: "/bai-viet/ve-chung-toi", changefreq: "monthly", priority: 0.88, lastmod: null },
   { loc: "/dich-vu", changefreq: "weekly", priority: 0.9, lastmod: null },
-  { loc: "/dich-vu/xay-nha-tron-goi", changefreq: "weekly", priority: 0.98, lastmod: null },
+  { loc: "/dich-vu/xay-nha-tron-goi-tphcm", changefreq: "weekly", priority: 0.98, lastmod: null },
   { loc: "/cong-trinh", changefreq: "weekly", priority: 0.85, lastmod: null },
   { loc: "/tin-tuc", changefreq: "weekly", priority: 0.85, lastmod: null },
 ];

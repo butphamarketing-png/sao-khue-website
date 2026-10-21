@@ -67,15 +67,16 @@ export function buildPostBreadcrumbItems(
   const cat = CATEGORY_CRUMBS[post.category];
   if (cat) items.push({ name: cat.label, path: cat.path });
 
+  const postPath = getPostPublicPath(post, menu);
   const leaf = getPostUrlLeaf(post, menu);
   if (leaf) {
     const child = getMenuChildren(post.category, menu).find(
       (c) => getMenuLeafSlug(c.href) === leaf,
     );
-    if (child) items.push({ name: child.title, path: child.href });
+    if (child && child.href !== postPath) items.push({ name: child.title, path: child.href });
   }
 
-  items.push({ name: post.title, path: getPostPublicPath(post, menu) });
+  items.push({ name: post.title, path: postPath });
   return items;
 }
 

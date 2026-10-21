@@ -73,7 +73,7 @@ ${imageFigure(SK_IMG_1, focusKeyword, 2)}
   <li><strong>Hỗ trợ xin giấy phép xây dựng (theo gói):</strong> Chuẩn bị hồ sơ theo quy định từng quận/huyện.</li>
   <li><strong>Dự toán chi phí xây dựng:</strong> Ước lượng theo hạng mục, căn cứ lập hợp đồng thi công.</li>
 </ol>
-<p>Khi ký kết hợp đồng <a href="/dich-vu/xay-nha-tron-goi">thi công trọn gói</a> kèm thiết kế, phí thiết kế thường được ưu đãi hoặc miễn phí theo chính sách từng thời điểm — liên hệ hotline để biết điều kiện cụ thể.</p>
+<p>Khi ký kết hợp đồng <a href="/dich-vu/xay-nha-tron-goi-tphcm">thi công trọn gói</a> kèm thiết kế, phí thiết kế thường được ưu đãi hoặc miễn phí theo chính sách từng thời điểm — liên hệ hotline để biết điều kiện cụ thể.</p>
 
 <h2>Quy trình thuê thiết kế nhà tại Sao Khuê</h2>
 <ol>

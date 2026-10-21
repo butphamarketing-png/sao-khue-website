@@ -107,7 +107,7 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Xác định nhu cầu thực tế:</strong> Bao nhiêu người ở? Có kinh doanh tầng trệt không? Cần bao nhiêu phòng ngủ?</li>
   <li><strong>Chọn mô hình phù hợp:</strong> Ngân sách 700–800 triệu → nhà 2 tầng lô nhỏ. 800 triệu – 1 tỷ → nhà 2 tầng lô trung bình hoặc nhà 3 tầng lô nhỏ.</li>
   <li><strong>Ưu tiên thiết kế đơn giản, đẹp theo tỷ lệ:</strong> Đẹp không phải do nhiều chi tiết mà do tỷ lệ, màu sắc và sự nhất quán.</li>
-  <li><strong>Tìm đơn vị thiết kế – thi công trọn gói:</strong> Một đầu mối, không phát sinh tranh cãi giữa thiết kế và thi công. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</li>
+  <li><strong>Tìm đơn vị thiết kế – thi công trọn gói:</strong> Một đầu mối, không phát sinh tranh cãi giữa thiết kế và thi công. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</li>
   <li><strong>Dự toán trước khi ký:</strong> Yêu cầu bảng hạng mục chi tiết, không chấp nhận "báo giá gộp" không minh bạch. Đọc thêm <a href="/tin-tuc/du-toan-chi-phi-xay-nha">cách dự toán chi phí xây nhà</a>.</li>
   <li><strong>Để lại dự phòng ít nhất 10%:</strong> Không dùng hết ngân sách vào thi công — luôn giữ lại phần dự phòng.</li>
 </ol>

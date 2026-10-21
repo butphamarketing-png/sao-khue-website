@@ -32,7 +32,7 @@ type Brief = {
 
 const TPHCM_HUB: Record<string, { href: string; label: string }[]> = {
   build: [
-    { href: "/dich-vu/xay-nha-tron-goi-tphcm", label: "xây nhà trọn gói TP.HCM" },
+    { href: "/dich-vu/xay-nha-tron-goi-tphcm", label: "Xây nhà trọn gói TPHCM" },
     { href: "/tin-tuc/bao-gia-xay-nha-phan-tho-tphcm", label: "báo giá xây nhà phần thô TP.HCM" },
     { href: "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm", label: "công ty xây dựng nhà phố uy tín" },
   ],

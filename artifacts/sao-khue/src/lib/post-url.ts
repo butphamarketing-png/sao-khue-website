@@ -6,7 +6,6 @@ import { getMenuLeafSlug, inferSubSlugFromPost } from "./menu-posts";
 
 /** Slug bài → segment URL ngắn (menu cũ / SEO). */
 const POST_URL_LEAF_OVERRIDES: Record<string, string> = {
-  "xay-nha-tron-goi-tphcm": "xay-nha-tron-goi",
   "sua-chua-nha-tphcm": "sua-chua-nha",
   "khuyen-mai-xay-dung": "khuyen-mai",
 };
@@ -82,7 +81,7 @@ export function resolvePostSlugFromCategorySegment(
   const exact = inCategory.find((p) => p.slug.toLowerCase() === seg);
   if (exact) return exact.slug;
 
-  // URL ngắn cố định (vd. /dich-vu/xay-nha-tron-goi → xay-nha-tron-goi-tphcm, không nhầm bài *-binh-duong)
+  // URL ngắn cố định (vd. /dich-vu/sua-chua-nha → sua-chua-nha-tphcm, không nhầm bài khác)
   for (const [postSlug, leaf] of Object.entries(POST_URL_LEAF_OVERRIDES)) {
     if (leaf.toLowerCase() !== seg) continue;
     const found = inCategory.find((p) => p.slug === postSlug);

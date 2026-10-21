@@ -43,7 +43,7 @@ export const phongThuyNhaO = {
 <ul>
   <li>Lắng nghe yêu cầu hướng, bố trí phòng theo gu gia đình.</li>
   <li>Đề xuất phương án đẹp, khả thi về kết cấu và pháp lý.</li>
-  <li>Thi công <a href="/dich-vu/xay-nha-tron-goi">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
+  <li>Thi công <a href="/dich-vu/xay-nha-tron-goi-tphcm">trọn gói</a> hoặc <a href="/dich-vu/sua-nha-tron-goi-tphcm">cải tạo</a> theo bản vẽ đã chốt.</li>
 </ul>
 
 

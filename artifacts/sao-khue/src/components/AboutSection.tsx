@@ -44,7 +44,7 @@ export function AboutSection() {
               {content.title}
             </h2>
             <p className="mb-5 text-lg leading-relaxed text-slate-600">
-              <Link href="/dich-vu/xay-nha-tron-goi" className="font-semibold text-primary hover:text-accent">
+              <Link href="/dich-vu/xay-nha-tron-goi-tphcm" className="font-semibold text-primary hover:text-accent">
                 Xây nhà trọn gói TPHCM
               </Link>{" "}
               từ 4,85 triệu/m² — thiết kế, phần thô và hoàn thiện trong một hợp đồng. {content.intro}

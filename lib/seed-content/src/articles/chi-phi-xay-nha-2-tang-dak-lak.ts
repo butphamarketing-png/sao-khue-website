@@ -75,7 +75,7 @@ ${imageFigure(SK_IMG_2, FOCUS, 2)}
   <li><strong>Xây phần thô:</strong> Nhà thầu chỉ làm phần kết cấu — móng, khung, sàn, mái, tường thô. Chi phí thấp hơn nhưng chủ nhà phải tự lo phần hoàn thiện, dễ không đồng bộ.</li>
   <li><strong>Xây trọn gói:</strong> Một hợp đồng bao gồm toàn bộ từ thiết kế đến bàn giao, bao gồm hoàn thiện theo tiêu chuẩn đã thống nhất. Minh bạch, ít phát sinh, có bảo hành.</li>
 </ul>
-<p>Sao Khuê cung cấp cả hai phương án. Với <strong>xây nhà trọn gói Đắk Lắk</strong>, chúng tôi cam kết báo giá cố định theo hợp đồng — không phát sinh khi không thay đổi thiết kế. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
+<p>Sao Khuê cung cấp cả hai phương án. Với <strong>xây nhà trọn gói Đắk Lắk</strong>, chúng tôi cam kết báo giá cố định theo hợp đồng — không phát sinh khi không thay đổi thiết kế. Xem thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">xây nhà trọn gói Đắk Lắk</a>.</p>
 
 <h2>Chi phí ẩn cần lưu ý khi xây nhà 2 tầng Đắk Lắk</h2>
 <p>Nhiều chủ nhà bị sốc vì phát sinh ngoài dự kiến. Hãy đưa các khoản sau vào ngân sách từ đầu:</p>

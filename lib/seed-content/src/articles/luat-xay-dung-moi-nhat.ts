@@ -52,7 +52,7 @@ export const luatXayDungMoiNhat = {
 <p>Chủ nhà là chủ đầu tư, chịu trách nhiệm pháp lý thửa đất. Sao Khuê hỗ trợ hồ sơ và tư vấn hiện trạng; lệ phí nhà nước do chủ nhà nộp.</p>
 
 <h2>Liên hệ thi công đúng quy định</h2>
-<p>Hotline <strong>0909 075 668</strong> · <a href="/dich-vu/xay-nha-tron-goi">Xây trọn gói</a> · <a href="/tin-tuc/cam-nang-xay-nha-2026">Cẩm nang xây nhà</a></p>
+<p>Hotline <strong>0909 075 668</strong> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây trọn gói</a> · <a href="/tin-tuc/cam-nang-xay-nha-2026">Cẩm nang xây nhà</a></p>
 
 <h2>Cập nhật thực tế cho chủ nhà TP.HCM</h2>
 <p>Mỗi quận/phường áp dụng lộ giới và chiều cao khác nhau — đừng copy nhà hàng xóm. Tra cứu quy hoạch trước khi mua bản vẽ sẵn trên mạng. Sao Khuê hỗ trợ đọc hiện trạng thửa đất khi khảo sát miễn phí nội thành.</p>

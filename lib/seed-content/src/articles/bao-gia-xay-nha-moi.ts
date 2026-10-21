@@ -168,7 +168,7 @@ ${faqSection([
   },
   {
     q: "Sao Khuê xây nhà mới ở những khu vực nào?",
-    a: "TP.HCM, Bình Dương, Đồng Nai, Long An, Đắk Lắk, Phú Yên và các tỉnh lân cận. Xem <a href=\"/dich-vu/xay-nha-tron-goi-tphcm\">xây nhà trọn gói TP.HCM</a>.",
+    a: "TP.HCM, Bình Dương, Đồng Nai, Long An, Đắk Lắk, Phú Yên và các tỉnh lân cận. Xem <a href=\"/dich-vu/xay-nha-tron-goi-tphcm\">Xây nhà trọn gói TPHCM</a>.",
   },
 ])}
 

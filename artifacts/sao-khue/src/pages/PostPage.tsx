@@ -142,6 +142,8 @@ export default function PostPage() {
                   serviceType: isTurnkeyService ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
                   areaServed: "Thành phố Hồ Chí Minh",
                   image: seoPost.imageUrl,
+                  telephone: isTurnkeyService ? "+84909075668" : undefined,
+                  streetAddress: isTurnkeyService ? "245/8 Bình Lợi, Phường 13" : undefined,
                 })
               : buildArticleSchema({
                   headline: seoPost.title,

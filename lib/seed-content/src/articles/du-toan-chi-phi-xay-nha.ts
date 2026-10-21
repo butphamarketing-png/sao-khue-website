@@ -133,7 +133,7 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li>Có thể tiết kiệm nếu mua đúng giá — nhưng đòi hỏi thời gian, kinh nghiệm thị trường.</li>
   <li>Rủi ro: mua sai chủng loại, dư thừa hoặc thiếu vật tư, trách nhiệm bảo hành bị phân tán.</li>
 </ul>
-<p>Sao Khuê khuyến nghị: với chủ nhà lần đầu xây, chọn <strong>trọn gói có dự toán chi tiết</strong> — an toàn hơn và dễ kiểm soát hơn phương án tách rời. Xem <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a>.</p>
+<p>Sao Khuê khuyến nghị: với chủ nhà lần đầu xây, chọn <strong>trọn gói có dự toán chi tiết</strong> — an toàn hơn và dễ kiểm soát hơn phương án tách rời. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a>.</p>
 
 <h2>Thời điểm lập dự toán trong tiến trình xây nhà</h2>
 <ul>

@@ -34,7 +34,7 @@ export const thietKeNhaPhoHienDaiTphcm = {
   <li><strong>Thẩm mỹ đồng bộ:</strong> Mặt tiền, lan can, màu sắc nhất quán — đặc trưng <strong>nhà phố hiện đại</strong>.</li>
   <li><strong>Thủ tục pháp lý:</strong> Hồ sơ xin phép xây dựng (khi áp dụng) bám đúng chỉ giới, tầng cao.</li>
 </ul>
-<p>Sao Khuê khuyến nghị: hoàn thiện <strong>bản vẽ thiết kế</strong> trước khi ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> — xem thêm <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
+<p>Sao Khuê khuyến nghị: hoàn thiện <strong>bản vẽ thiết kế</strong> trước khi ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> — xem thêm <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
 
 <h2>Đặc thù thiết kế nhà phố tại TP.HCM</h2>
 <p>So với nhà vườn hoặc biệt thự ven đô, <strong>nhà phố nội thành</strong> có những đặc điểm ảnh hưởng trực tiếp bản vẽ:</p>

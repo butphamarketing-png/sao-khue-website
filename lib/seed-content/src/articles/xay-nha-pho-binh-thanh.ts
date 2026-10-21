@@ -21,7 +21,7 @@ export const xayNhaPhoBinhThanh = {
   <li><strong>Quy mô:</strong> 4 tầng + sân thượng</li>
   <li><strong>Diện tích khu đất:</strong> ~5m x 18m</li>
   <li><strong>Phong cách:</strong> Hiện đại, gam trung tính, lan can kính</li>
-  <li><strong>Hình thức:</strong> <a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói</a></li>
+  <li><strong>Hình thức:</strong> <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói</a></li>
 </ul>
 
 <h2>Giải pháp thiết kế — thi công</h2>

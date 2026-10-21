@@ -100,7 +100,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
   <li><strong>Phát sinh khó kiểm soát:</strong> Không có hợp đồng cố định, thợ tự do dễ "thêm hạng mục" và tăng giá.</li>
   <li><strong>Không có bảo hành:</strong> Khi phát sinh thấm, nứt sau bàn giao — không có đơn vị chịu trách nhiệm.</li>
 </ul>
-<p>Với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
+<p>Với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
 
 <h2>Yếu tố làm đội chi phí tại Phú Yên</h2>
 <ul>

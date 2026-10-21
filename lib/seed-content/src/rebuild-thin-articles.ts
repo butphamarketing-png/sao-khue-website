@@ -312,7 +312,7 @@ function extraTopicDepth(kw: string, loc: string, topic: Topic): string {
 }
 
 function relatedLinks(topic: Topic, slug: string): string {
-  const build = `<p>Liên quan: <a href="/xay-nha">xây nhà trọn gói</a> · <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà</a> · <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a> · <a href="/bao-gia">bảng báo giá</a>.</p>`;
+  const build = `<p>Liên quan: <a href="/xay-nha">xây nhà trọn gói</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà</a> · <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a> · <a href="/bao-gia">bảng báo giá</a>.</p>`;
   const reno = `<p>Liên quan: <a href="/cai-tao-nha">cải tạo nhà</a> · <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/bao-gia">báo giá</a>.</p>`;
   const design = `<p>Liên quan: <a href="/thiet-ke">thiết kế</a> · <a href="/tin-tuc/thiet-ke-nha-dep-tphcm">thiết kế nhà đẹp</a> · <a href="/mau-nha">mẫu nhà hiện đại</a>.</p>`;
   if (topic === "renovation" || topic === "repair") return reno;

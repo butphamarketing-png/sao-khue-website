@@ -85,7 +85,7 @@ ${imageFigure(SK_IMG_2, "Phối cảnh nội thất nhà phố Đắk Lắk", 2)
   <li>Bảo hành kết cấu 10 năm trong hợp đồng.</li>
   <li>Dự toán hạng mục minh bạch — hạn chế phát sinh bất ngờ.</li>
 </ul>
-<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí nhà 2 tầng</a> và <a href="/dich-vu/xay-nha-tron-goi">dịch vụ xây nhà trọn gói</a>.</p>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/chi-phi-xay-nha-2-tang-dak-lak">chi phí nhà 2 tầng</a> và <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a>.</p>
 
 ${faqSection(
   [

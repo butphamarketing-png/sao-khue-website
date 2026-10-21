@@ -10,7 +10,7 @@ export const khuyenMaiXayDung = {
     "khuyến mại xây dựng, ưu đãi xây nhà, tặng thiết kế xây nhà, xây nhà trọn gói giá rẻ, sao khuê",
   content: `
 <h2>Chương trình khuyến mại xây dựng — Ưu đãi khi ký xây trọn gói</h2>
-<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> thường xuyên triển khai <strong>chương trình khuyến mại xây dựng</strong> dành cho khách hàng ký <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> tại TP.HCM và vùng lân cận. Mục tiêu là giúp chủ nhà tiết kiệm chi phí thiết kế ban đầu và khởi công với <strong>báo giá minh bạch</strong>, <strong>bảo hành kết cấu 10 năm</strong>.</p>
+<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> thường xuyên triển khai <strong>chương trình khuyến mại xây dựng</strong> dành cho khách hàng ký <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> tại TP.HCM và vùng lân cận. Mục tiêu là giúp chủ nhà tiết kiệm chi phí thiết kế ban đầu và khởi công với <strong>báo giá minh bạch</strong>, <strong>bảo hành kết cấu 10 năm</strong>.</p>
 
 <h2>Ưu đãi thường áp dụng</h2>
 <ul>

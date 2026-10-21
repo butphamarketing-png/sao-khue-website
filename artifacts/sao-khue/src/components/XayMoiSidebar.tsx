@@ -2,15 +2,15 @@ import { Link } from "wouter";
 import type { MenuItem } from "@/lib/menu";
 
 const CONSTRUCTION_BUTTONS = [
-  { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi", tone: "blue" },
-  { label: "NHÀ PHỐ", href: "/dich-vu/xay-nha-tron-goi", tone: "blue" },
+  { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "blue" },
+  { label: "NHÀ PHỐ", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "blue" },
   { label: "BIỆT THỰ", href: "/mau-nha/biet-thu", tone: "green" },
   { label: "NHÀ CẤP 4", href: "/mau-nha/cap-4", tone: "teal" },
   { label: "NHÀ 2 TẦNG", href: "/mau-nha/2-tang", tone: "orange" },
   { label: "NHÀ 3 TẦNG", href: "/mau-nha/3-tang", tone: "yellow" },
   { label: "XÂY TRỌN GÓI BÌNH DƯƠNG", href: "/dich-vu/xay-nha-tron-goi-binh-duong", tone: "pink" },
   { label: "XÂY TRỌN GÓI ĐỒNG NAI", href: "/dich-vu/xay-nha-tron-goi-dong-nai", tone: "orange" },
-  { label: "BÁO GIÁ XÂY MỚI", href: "/dich-vu/xay-nha-tron-goi", tone: "red" },
+  { label: "BÁO GIÁ XÂY MỚI", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "red" },
   { label: "QUY TRÌNH XÂY NHÀ", href: "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z", tone: "teal" },
   { label: "BẢNG BÁO GIÁ XÂY DỰNG", href: "/bao-gia", tone: "red" },
   { label: "TÍNH CHI PHÍ XÂY NHÀ", href: "#tinh-chi-phi", tone: "yellow" },

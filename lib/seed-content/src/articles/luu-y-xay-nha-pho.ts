@@ -134,7 +134,7 @@ export const luuYXayNhaPho = {
   <li><strong>Tự mua vật tư, thuê thợ:</strong> Tiềm năng tiết kiệm nếu có đủ kiến thức kỹ thuật, thời gian và mối quan hệ mua vật liệu tốt. Rủi ro cao nếu thiếu kinh nghiệm.</li>
   <li><strong>Xây trọn gói:</strong> Một hợp đồng, một đầu mối — ít rủi ro, có bảo hành, không mất thời gian quản lý hàng ngày. Phù hợp đại đa số chủ nhà bận rộn.</li>
 </ul>
-<p>Sao Khuê cung cấp cả hai hình thức — tư vấn trực tiếp để chọn phương án phù hợp nhất với bạn. Xem thêm <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
+<p>Sao Khuê cung cấp cả hai hình thức — tư vấn trực tiếp để chọn phương án phù hợp nhất với bạn. Xem thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói</a> và <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a>.</p>
 <p>Tham khảo thêm thông tin tại <a href="https://kientrucsaokhue.com/" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="https://kientrucsaokhue.com/">kientrucsaokhue.com</a> và <a href="https://kientrucsaokhue.com/">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>
 
 <h2>Bảng kiểm tra nhanh trước khi khởi công nhà phố</h2>

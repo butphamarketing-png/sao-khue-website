@@ -35,7 +35,7 @@ ${imageFigure(SK_IMG_1, focusKeyword, 1)}
 <p>Dịch vụ <strong>thiết kế nhà phố</strong> tại Sao Khuê bao gồm toàn bộ hồ sơ từ mặt bằng công năng, mặt đứng thẩm mỹ, kết cấu sơ bộ, hệ thống điện-nước đến phối cảnh 3D ngoại thất. Kiến trúc sư tư vấn sát nhu cầu từng gia đình — không bán bản vẽ template. Mỗi thiết kế là duy nhất cho từng lô đất, từng gia đình, từng phong cách sống. Tham khảo: <a href="/dich-vu/thiet-ke-nha">dịch vụ thiết kế nhà</a>.</p>
 
 <h3>2. Xây nhà trọn gói</h3>
-<p>Gói <strong>xây nhà trọn gói</strong> của Sao Khuê bao gồm toàn bộ công tác từ khởi công đến bàn giao chìa khóa: cung cấp và giám sát vật tư, thi công phần thô, hoàn thiện, lắp đặt điện-nước và cửa. Một hợp đồng, một đầu mối chịu trách nhiệm, thanh toán theo tiến độ thực tế. Tham khảo: <a href="/dich-vu/xay-nha-tron-goi">xây nhà trọn gói TP.HCM</a>.</p>
+<p>Gói <strong>xây nhà trọn gói</strong> của Sao Khuê bao gồm toàn bộ công tác từ khởi công đến bàn giao chìa khóa: cung cấp và giám sát vật tư, thi công phần thô, hoàn thiện, lắp đặt điện-nước và cửa. Một hợp đồng, một đầu mối chịu trách nhiệm, thanh toán theo tiến độ thực tế. Tham khảo: <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>.</p>
 
 <h3>3. Sửa chữa cải tạo nhà</h3>
 <p>Nâng tầng, mở rộng mặt bằng, cải tạo nội thất, chống thấm — Sao Khuê tiếp nhận mọi quy mô công trình sửa chữa. Đội ngũ khảo sát hiện trạng kỹ trước khi báo giá, tránh phát sinh ảnh hưởng kết cấu hiện hữu. Tham khảo: <a href="/dich-vu/sua-nha-tron-goi">sửa nhà trọn gói TP.HCM</a>.</p>

@@ -112,7 +112,7 @@ ${imageFigure(IMG_5, KEYWORD, 5)}
   <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Công trình nhà phố Thuận An</a> — minh họa thi công tại Bình Dương.</li>
   <li><a href="/cong-trinh/thiet-ke-nha-phong-cach-hien-dai">Mẫu nhà phố hiện đại</a> — phong cách 3–4 tầng TP.HCM.</li>
   <li><a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">Công ty xây dựng nhà phố uy tín</a> — tiêu chí chọn nhà thầu.</li>
-  <li><a href="/dich-vu/xay-nha-tron-goi">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
+  <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> — khi công trình nằm nội thành.</li>
 </ul>
 
 
