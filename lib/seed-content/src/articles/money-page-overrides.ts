@@ -2188,83 +2188,129 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   "xay-nha-quan-7": {
     title: "Xây Nhà Quận 7 — Nhà Phố, Nhà Liền Kề & Yêu Cầu Hoàn Thiện Cao",
     excerpt:
-      "Xây nhà Quận 7: khu dân cư hiện đại, hoàn thiện kỹ, chống thấm chuẩn. Sao Khuê 0909 075 668.",
+      "Xây nhà Quận 7 2026 từ 4,85 triệu/m²: KDC Phú Mỹ Hưng khác hẻm Tân Thuận. Mặt đứng theo ban quản lý.",
     metaTitle: "Xây nhà Quận 7 2026 từ 4,85tr | Sao Khuê",
     metaDescription:
-      "Xây nhà Quận 7 2026 từ 4,85 triệu/m². KDC cần duyệt mặt đứng, hẻm Tân Thuận tính logistics riêng. Khảo sát miễn phí 0909 075 668.",
+      "Xây nhà Quận 7 2026 từ 4,85 triệu/m². KDC Phú Mỹ Hưng khác hẻm Tân Thuận, mặt đứng theo ban quản lý. Khảo sát miễn phí — 0909 075 668.",
     metaKeywords:
       "xây nhà quận 7, xây nhà phố quận 7, nhà thầu quận 7, xây nhà q7",
-    imageAlt: "Xây nhà tại Quận 7 TP.HCM",
-    content: `<h2>Xây nhà Quận 7: kỳ vọng hoàn thiện thường cao hơn mặt bằng chung</h2>
-<p><strong>Xây nhà Quận 7</strong> gắn với nhiều khu dân cư quy hoạch, nhà liền kề và yêu cầu mặt đứng sạch sẽ. Chủ nhà thường quan tâm vật liệu cửa, đá, chống ồn hơn là chỉ “xây xong”. <strong>Kiến Trúc Sao Khuê</strong> lập dự toán tách phần kỹ thuật và phần thẩm mỹ để kiểm soát ngân sách.</p>
-<p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> · <a href="/bao-gia">báo giá</a>.</p>
+    imageAlt: "Xây nhà Quận 7: hố móng đã buộc thép, chưa đổ bê tông — Kiến Trúc Sao Khuê",
+    content: `<p><strong>Xây nhà Quận 7</strong> chia hai mặt bằng: khu dân cư đường lớn như Phú Mỹ Hưng, Tân Phong, Tân Hưng, và hẻm cũ Tân Thuận. Cùng đơn giá m², khác phụ phí hẻm và quy chế mặt đứng. Năm 2026, gói tiêu chuẩn từ <strong>4,85 triệu/m²</strong> sàn ở.</p>
+<h2>Xây nhà Quận 7 là gì?</h2>
+<p>Một nhà thầu lo khảo sát, thiết kế, phần thô, hoàn thiện cơ bản và bàn giao. Khung đơn giá thành phố nằm ở trang <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>. Ước lượng trước khi đo: <a href="/bao-gia">báo giá</a>. Không lấy báo giá khu dân cư áp cho hẻm, và ngược lại.</p>
 
-<h2>Điểm cần lưu ý khi xây Q7</h2>
-<ul>
-  <li>Quy định kiến trúc khu (nếu có) về chiều cao, màu, hàng rào.</li>
-  <li>Nhà liền kề: chống thấm khe nhiệt và tường chung.</li>
-  <li>Nền một số khu san lấp — xem xét khoan địa chất.</li>
-  <li>Giao thông nội khu: giờ xe bê tông phải xin lối.</li>
-</ul>
-
-<h2>Bảng giá tham khảo xây nhà Quận 7</h2>
+<h2>Đơn giá xây nhà Quận 7 2026</h2>
+<p>Số dưới đây là mốc sàn ở. Cửa kính, đá ốp và hàng rào theo ban quản lý là phụ lục, không nhân vào triệu/m².</p>
 <table>
   <thead>
-    <tr><th>Gói</th><th>Đơn giá/m²</th><th>Phù hợp</th></tr>
+    <tr><th>Gói</th><th>Đơn giá 2026</th><th>Ghi chú Quận 7</th></tr>
   </thead>
   <tbody>
-    <tr><td>Tiêu chuẩn</td><td>4,85 – 5,5 triệu</td><td>Nhà ở gia đình</td></tr>
-    <tr><td>Khá</td><td>5,5 – 6,0 triệu</td><td>Hoàn thiện đẹp, cửa tốt hơn</td></tr>
-    <tr><td>Cao cấp</td><td>6,0 – 6,7 triệu+</td><td>Đá, thiết bị, chi tiết kỹ</td></tr>
-    <tr><td>Phần thô</td><td>3,55 – 3,8 triệu</td><td>Chủ tự hoàn thiện sau</td></tr>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu/m²</td><td>Thô + hoàn thiện cơ bản, hợp hẻm cũ</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu/m²</td><td>Cửa và mặt đứng chỉn hơn</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+/m²</td><td>Khu dân cư, chi tiết mặt đứng nhiều</td></tr>
+    <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu/m²</td><td>Chủ nhà lo hoàn thiện sau</td></tr>
   </tbody>
 </table>
-<p><strong>Ghi chú:</strong> Nhiều chủ nhà Q7 chọn gói khá trở lên cho mặt dựng — nên giữ quỹ dự phòng 8–12%.</p>
+<p>Lô 4×16 m, 1 trệt 2 lầu, 3 sàn ở: 64 × 3 = 192 m² × 4,85 triệu/m² khoảng <strong>931 triệu</strong> phần sàn ở. Đây là phép nhân để hình dung, không phải giá ký. Chưa gồm cọc, mặt đứng khu dân cư, mái và lệ phí.</p>
+<h3>Nhà 4 tầng</h3>
+<p>1 trệt 3 lầu thường là 4 sàn ở: 64 × 4 = 256 m² trên lô 4×16, rồi mới nhân đơn giá. Số tầng theo giấy phép phường. Nhà phố 3–4 tầng thường 4–7 tháng. Khu dân cư phải chờ duyệt mặt đứng thì dài hơn, mốc ghi trong hợp đồng.</p>
 
-<h2>Gợi ý thiết kế nhà phố Q7</h2>
+<h2>Khu dân cư và hẻm Tân Thuận</h2>
+<p>Phú Mỹ Hưng và nhiều khu Tân Phong có quy chế màu sơn, hàng rào, mái. Hỏi ban quản lý trước khi chốt đá ốp hoặc cửa kính. Xe bê tông và xe phế thải phải đăng ký lối và giờ. Làm xong rồi bị yêu cầu sửa mặt đứng là phát sinh, tránh bằng cách ghi quy chế vào phụ lục trước khi ký.</p>
+<p>Hẻm Tân Thuận Đông và Tân Thuận Tây hẹp hơn. Đo bề ngang lối vào. Hẻm dưới 3 m thì bơm từ mặt tiền hoặc vận chuyển nhỏ. Phụ phí ghi một dòng, không gộp vào đơn giá m². Nhà sát cần biên bản tường chung trước khi đào móng.</p>
+<figure>
+  <img src="/images/sao-khue/sk-11.jpg" alt="Xây nhà Quận 7: hố móng đã buộc thép, chưa đổ bê tông — Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh hiện trường Sao Khuê, không gắn một lô Quận 7 cụ thể.</figcaption>
+</figure>
+
+<h2>Giấy phép xây dựng tại Quận 7</h2>
+<p>Khu dân cư có giấy phép phường và nội quy ban quản lý. Hẻm có giấy phép phường, lộ giới và số tầng. Sao Khuê làm hồ sơ thiết kế để xin phép. Lệ phí nhà nước và ngày chờ ghi một dòng riêng. Chi tiết: <a href="/tin-tuc/xin-giay-phep-xay-dung-tphcm">xin giấy phép xây dựng TP.HCM</a>.</p>
+<p>Tầng trệt kinh doanh, lầu ở: hỏi điện, khu vệ sinh khách và phòng cháy trước khi vẽ. Xem <a href="/tin-tuc/xay-shophouse-tphcm">xây shophouse</a>. Khung còn dùng được thì tính cải tạo: <a href="/tin-tuc/cai-tao-nha-quan-7">cải tạo nhà Quận 7</a>.</p>
+
+<h2>Xây nhà Quận 7 gồm những gì?</h2>
+<ul>
+  <li><strong>Thiết kế 2D/3D</strong> khi ký thi công. Mặt đứng khu dân cư đối chiếu quy chế trước khi chốt phối cảnh.</li>
+  <li><strong>Phần thô:</strong> móng, khung, tường, mái, điện nước âm.</li>
+  <li><strong>Hoàn thiện cơ bản</strong> theo list. Cửa kính và đá ốp ngoài list là phụ lục.</li>
+  <li><strong>Chống thấm khu ướt</strong> và nghiệm thu cốt thép trước khi đổ.</li>
+  <li><strong>Bảo hành</strong> kết cấu 10 năm, hoàn thiện 12–36 tháng.</li>
+</ul>
+<p>Không gồm nội thất gỗ, điều hòa và lệ phí. Muốn gói thấp hơn ở hẻm cũ: cắt phào và đèn, không cắt thép. Trong khu dân cư, mặt đứng khó cắt vì quy chế. Xem <a href="/tin-tuc/xay-nha-gia-re-tphcm">xây nhà trọn gói giá rẻ</a>. Chỉ khung: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+
+<h2>Trọn gói hay chỉ phần thô?</h2>
+<table>
+  <thead>
+    <tr><th></th><th>Trọn gói</th><th>Chỉ phần thô</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ai lo mặt đứng</td><td>Nhà thầu, theo list và quy chế khu</td><td>Chủ nhà</td></tr>
+    <tr><td>Đơn giá 2026</td><td>4,85 – 6,7 triệu+/m²</td><td>3,55 – 3,8 triệu/m²</td></tr>
+    <tr><td>Khu dân cư</td><td>Một đầu mối lo duyệt xe và mặt đứng</td><td>Chủ nhà tự lo cửa, sơn, hàng rào</td></tr>
+    <tr><td>Hẻm Tân Thuận</td><td>Một đội lo giờ đổ và tường chung</td><td>Chủ nhà tự xếp đội hoàn thiện</td></tr>
+  </tbody>
+</table>
+<p>Gia đình ở xa công trình nên ký trọn gói. Chủ nhà rảnh và tự chọn nội thất cao cấp có thể ký phần thô, rồi hoàn thiện sau. Nền một số khu san lấp cần xem móng trước khi hứa số tầng. Không đoán cọc trong báo giá sơ bộ.</p>
+<p>Trong khu có bảo vệ, đội phải đăng ký xe, giờ làm và chỗ đổ phế thải. Sao Khuê xin lịch với ban quản lý trước ngày đổ bê tông để khỏi dừng giữa ca. Giờ cấm ồn của khu ghi vào phụ lục, không để thợ tự ước.</p>
+<p>Phòng ngủ mặt đường nên cửa kín. Cách âm là hạng mục trong list hoàn thiện, không phải việc dán thêm sau khi đã sơn. Sân thượng để máy cần lối bảo trì và mái che, tính ở dòng mái, không nhân vào m² sàn ở.</p>
+<p>Khi gọi, nói rõ Phú Mỹ Hưng, Tân Phong, Tân Hưng hay hẻm Tân Thuận, và gửi ảnh mặt tiền. Hai loại mặt bằng không ước chung một số. Giờ làm việc thứ 2 đến thứ 7, 8:00–17:30. Văn phòng 245/8 Bình Lợi, Phường 13, Bình Thạnh.</p>
+<p>Không lấy tổng tiền nhà bên cạnh làm giá của mình. Cùng mặt tiền, khác số sàn, khác cọc, khác mặt đứng thì khác tiền. Chốt sau khi đo đất và đọc quy chế khu.</p>
+
+<h2>Trước khi ký hợp đồng</h2>
+<ul>
+  <li>Ghi rõ khu dân cư hay hẻm. Hai loại không dùng chung một báo giá.</li>
+  <li>Quy chế màu, hàng rào, mái đính kèm phụ lục nếu ban quản lý có.</li>
+  <li>Sàn nào được nhân đơn giá. Mặt đứng và mái không cộng vào 931 triệu của ví dụ 4×16.</li>
+  <li>Giờ đổ bê tông, lối xe và chỗ tập kết phế thải ghi trong hợp đồng.</li>
+  <li>Cọc, hẻm và lệ phí mỗi khoản một dòng.</li>
+</ul>
+
+<h2>Thanh toán theo mốc</h2>
+<ul>
+  <li><strong>Tạm ứng khi ký:</strong> khoảng 10–15%.</li>
+  <li><strong>Sau móng:</strong> khoảng 20–25%.</li>
+  <li><strong>Các sàn ở:</strong> chia theo tiến độ đổ sàn.</li>
+  <li><strong>Hoàn thiện:</strong> khoảng 20–25%.</li>
+  <li><strong>Bàn giao:</strong> phần còn lại, sau hồ sơ bảo hành.</li>
+</ul>
+<p>Đợt sau chỉ trả khi mốc trước đã nghiệm thu. Công ty không phải tổ chức tín dụng. Lịch này giống trang <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>.</p>
+
+<h2>Quy trình xây nhà Quận 7</h2>
 <ol>
-  <li>Tầng trệt cao thoáng nếu để xe và khách.</li>
-  <li>Cách âm phòng ngủ mặt đường.</li>
-  <li>Sân thượng có mái che máy &amp; khu phơi.</li>
+  <li><strong>Tư vấn:</strong> hotline, Zalo hoặc <a href="/lien-he">form liên hệ</a>. Nói rõ khu dân cư hay hẻm.</li>
+  <li><strong>Khảo sát mặt bằng:</strong> đo lô, lối vào, quy chế mặt đứng nếu có.</li>
+  <li><strong>Chốt phương án:</strong> mặt bằng, phối cảnh khớp quy chế, list vật tư.</li>
+  <li><strong>Ký hợp đồng:</strong> mặt đứng, hẻm, cọc và lệ phí mỗi khoản một dòng.</li>
+  <li><strong>Thi công:</strong> nghiệm thu cốt thép trước khi đổ. Nhà phố 3–4 tầng thường 4–7 tháng. Chờ duyệt mặt đứng thì dài hơn.</li>
+  <li><strong>Bàn giao:</strong> hồ sơ bảo hành kết cấu 10 năm.</li>
 </ol>
+<figure>
+  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
-<h2>Hoàn thiện chuẩn khu dân cư Quận 7</h2>
-<p>Chủ nhà Q7 thường yêu cầu khe hoàn thiện mỏng, cửa nhôm tốt hơn và chống ồn. Dự toán <strong>xây nhà Quận 7</strong> nên tách dòng vật tư mặt dựng để kiểm soát. Đừng ép gói tiêu chuẩn rồi đòi chi tiết cao cấp giữa chừng.</p>
-<h3>Thi công trong khu có bảo vệ</h3>
-<p>Cần đăng ký xe ra vào, giờ làm việc và vệ sinh đường nội khu. Sao Khuê chủ động xin lịch với BQL để tránh dừng việc đột xuất.</p>
+<h2>Câu hỏi thường gặp</h2>
+<h3>Xây nhà Quận 7 hết bao nhiêu?</h3>
+<p>Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Phần thô 3,55–3,8 triệu/m². Lô 4×16, 1 trệt 2 lầu, 192 m² × 4,85 triệu khoảng 931 triệu — chưa gồm cọc, mặt đứng khu dân cư, mái và lệ phí.</p>
+<h3>Phú Mỹ Hưng khác hẻm Tân Thuận chỗ nào?</h3>
+<p>Khu dân cư có quy chế mặt đứng, giờ xe và lối ra vào. Hẻm tính logistics hẹp và giấy phép phường. Cùng đơn giá m², khác các dòng phụ lục.</p>
+<h3>Ban quản lý có bắt màu sơn không?</h3>
+<p>Nhiều khu có. Hỏi trước khi chọn sơn, hàng rào và cửa kính. Khoản lệch quy chế ghi phụ lục, không gộp vào triệu/m².</p>
+<h3>Xây nhà Quận 7 mất bao lâu?</h3>
+<p>Nhà phố 3–4 tầng thường 4–7 tháng. Khu dân cư chờ duyệt mặt đứng có thể dài hơn. Mốc ghi trong hợp đồng.</p>
+<h3>Giấy phép có nằm trong đơn giá không?</h3>
+<p>Hồ sơ thiết kế để xin phép có trong gói. Lệ phí nhà nước và ngày chờ ghi một dòng riêng. Số tầng theo giấy phép phường.</p>
+<h3>Có nhận cải tạo nhà Quận 7 không?</h3>
+<p>Có khi khung còn dùng được, kể cả làm lại mặt tiền. Xem <a href="/tin-tuc/cai-tao-nha-quan-7">cải tạo nhà Quận 7</a>. Khung không cứu được thì tính xây mới sau khảo sát.</p>
 
-<h2>Ngân sách hoàn thiện “ăn khớp” khu Q7</h2>
-<p>Nhiều căn quanh các khu dân cư Q7 có mặt đứng đồng bộ; nhà lệch chuẩn quá thấp hoặc quá “dát” đều khó chịu. <strong>Xây nhà Quận 7</strong> nên chọn vật liệu cửa–sơn–ốp ở mức khá nếu ngân sách cho phép, thay vì dồn hết tiền vào nội thất rời.</p>
+<h2>Liên hệ xây nhà Quận 7</h2>
 <ul>
-  <li>Cửa và khóa: dùng hàng bền, ít bảo trì.</li>
-  <li>Chống ồn phòng ngủ mặt đường.</li>
-  <li>Sân thượng máy sạch sẽ, có lối bảo trì.</li>
-</ul>
-
-<h2>Đối soát nội quy khu trước khi khởi công Q7</h2>
-<p>In nội quy giờ làm việc, lối xe công trường và yêu cầu vệ sinh. Đưa vào phụ lục hợp đồng để đội thi công tuân thủ. <strong>Xây nhà Quận 7</strong> suôn sẻ khi pháp lý khu và giấy phép nhà nước khớp nhau từ đầu.</p>
-<ul>
-  <li>Giờ cấm ồn.</li>
-  <li>Đăng ký xe.</li>
-  <li>Khu tập kết phế thải.</li>
-</ul>
-
-<h2>FAQ xây nhà Quận 7</h2>
-<details>
-  <summary>Nhà trong khu compound có cần nhà thầu “niêm yết” không?</summary>
-  <p>Một số ban quản lý yêu cầu đăng ký ra vào công trường — Sao Khuê hỗ trợ thủ tục ra vào theo nội quy khu.</p>
-</details>
-<details>
-  <summary>Có nhận thi công cải tạo nhà Q7 không?</summary>
-  <p>Có, đặc biệt cải tạo mặt tiền và hoàn thiện lại trước khi ở/cho thuê.</p>
-</details>
-<details>
-  <summary>Bảo hành?</summary>
-  <p>Kết cấu 10 năm với phần thi công Sao Khuê; hoàn thiện theo hạng mục hợp đồng.</p>
-</details>
-
-<h2>Khảo sát công trình Q7</h2>
-<p><strong>0909 075 668</strong> · 245/8 Bình Lợi, Bình Thạnh.</p>`,
+  <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
+  <li><strong>Giờ làm việc:</strong> thứ 2–thứ 7, 8:00–17:30</li>
+  <li><strong>Văn phòng:</strong> 245/8 Bình Lợi, Phường 13, Bình Thạnh</li>
+  <li><strong>Đơn giá thành phố:</strong> <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a></li>
+  <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">đặt lịch</a></li>
+</ul>`,
   },
 
   "xay-nha-go-vap": {
