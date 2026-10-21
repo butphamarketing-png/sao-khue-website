@@ -198,6 +198,9 @@ const THUMB_POOL_GENERAL = buildThumbPool(
 /** Thumbnail tùy chỉnh — ưu tiên hiển thị trang chủ / OG. */
 const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
   "xay-nha-tron-goi-tphcm": "/images/sao-khue/sk-03.jpg",
+  "xay-nha-binh-thanh": "/images/sao-khue/sk-24.jpg",
+  "xay-nha-thu-duc": "/images/sao-khue/sk-51.jpg",
+  "xay-nha-go-vap": "/images/sao-khue/sk-47.jpg",
   "xay-nha-moi": "/images/articles/xay-nha-moi.jpg",
   "cai-tao-nha-cu": "/images/articles/cai-tao-nha-cu.jpg",
   "xay-dung-nha-3-tang": "/images/articles/xay-dung-nha-3-tang.jpg",
