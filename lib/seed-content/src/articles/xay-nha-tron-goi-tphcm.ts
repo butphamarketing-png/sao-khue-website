@@ -8,13 +8,31 @@ export const xayNhaTronGoiTphcm = {
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m². Một hợp đồng: thiết kế, phần thô, hoàn thiện. Ví dụ nhà phố 4×16, khảo sát miễn phí, bảo hành 10 năm.",
   metaKeywords:
     "xây nhà trọn gói tphcm, xây nhà trọn gói tphcm 2026, đơn giá xây nhà trọn gói, chìa khóa trao tay, kiến trúc sao khuê",
-  imageAlt: "Xây nhà trọn gói TPHCM — nhà phố Kiến Trúc Sao Khuê",
-  imageCaption: "Xây nhà trọn gói TPHCM — nhà phố đã bàn giao của Kiến Trúc Sao Khuê",
+  imageAlt: "Xây nhà trọn gói TPHCM: giàn giáo và máy trộn trong hẻm hẹp — Kiến Trúc Sao Khuê",
+  imageCaption: "Xây nhà trọn gói TPHCM trong hẻm: giàn giáo, gạch và máy trộn. Ảnh hiện trường Sao Khuê.",
   content: `
+<p><strong>Xây nhà trọn gói TPHCM</strong> là giao một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện cơ bản và bàn giao trong <strong>một hợp đồng</strong>. Năm 2026, gói tiêu chuẩn của Sao Khuê từ <strong>4,85 triệu/m²</strong> sàn ở. Gia chủ không tự mua sắt thép và không điều phối nhiều đội thợ.</p>
+
 <h2>Xây nhà trọn gói TPHCM là gì?</h2>
-<p><strong>Xây nhà trọn gói TPHCM</strong> là giao một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện cơ bản và bàn giao trong <strong>một hợp đồng</strong>. Gia chủ không tự mua sắt thép và không điều phối nhiều đội thợ. Năm 2026, gói tiêu chuẩn của Sao Khuê từ <strong>4,85 triệu/m²</strong> sàn ở.</p>
 <p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> ghi list vật tư, tiến độ và bảo hành kết cấu 10 năm vào hợp đồng. Đổi thiết kế hoặc chủng loại thì lập phụ lục — không phát sinh miệng. Văn phòng hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Hotline <strong>0909 075 668</strong>.</p>
 <p>Hơn 10 năm, hơn 500 công trình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Muốn ước lượng trước khi gọi: <a href="/bao-gia">bảng báo giá</a>.</p>
+
+<h2>Xây nhà trọn gói TPHCM gồm những gì?</h2>
+<p><strong>Luôn gồm</strong> khi ký gói trọn gói (trừ khi phụ lục cắt):</p>
+<ul>
+  <li><strong>Thiết kế 2D/3D:</strong> miễn phí khi ký hợp đồng thi công, theo quy mô.</li>
+  <li><strong>Phần thô:</strong> móng, khung bê tông, tường, mái, điện nước âm tường.</li>
+  <li><strong>Hoàn thiện cơ bản:</strong> trát, sơn, ốp lát, trần, cửa, lan can, cầu thang, thiết bị vệ sinh theo list.</li>
+  <li><strong>Chống thấm khu ướt</strong> theo hạng mục đã ghi trong hợp đồng.</li>
+  <li><strong>Giám sát:</strong> nghiệm thu cốt thép trước khi đổ, cập nhật tiến độ.</li>
+  <li><strong>Bảo hành:</strong> kết cấu 10 năm, hoàn thiện 12–36 tháng.</li>
+</ul>
+<figure>
+  <img src="/images/sao-khue/sk-11.jpg" alt="Hố móng đã xây gạch và buộc lưới thép, chưa đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
+<p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, tiền ở tạm khi xây. Chỉ cần khung nhà, không cần hoàn thiện: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Muốn thêm tủ bếp, trần trang trí: <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
+<p>Sao Khuê thi công trực tiếp, không bán thầu phụ trá hình. Vật tư đúng chủng loại trong list đã ký. Phạm vi từng bước: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>.</p>
 
 <h2>Đơn giá xây nhà trọn gói TPHCM 2026</h2>
 <p>Đơn giá dưới đây là mốc tham khảo cho sàn ở. Số ký hợp đồng chỉ có sau khi đo hẻm và nền. Hẻm sâu không dùng đơn giá mặt tiền.</p>
@@ -30,10 +48,6 @@ export const xayNhaTronGoiTphcm = {
   </tbody>
 </table>
 <p>Ba gói trọn gói khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu. Cắt phào, đèn được. Không cắt thép và chống thấm khu ướt.</p>
-<figure>
-  <img src="/images/xay-nha/xay-nha-02.jpg" alt="Thi công phần thô nhà phố TPHCM — Kiến Trúc Sao Khuê" width="1200" height="800" />
-  <figcaption>Thi công phần thô nhà phố. Ảnh hiện trường Sao Khuê.</figcaption>
-</figure>
 <table>
   <thead>
     <tr><th>Loại nhà</th><th>Gói thường dùng</th><th>Đơn giá</th></tr>
@@ -46,19 +60,6 @@ export const xayNhaTronGoiTphcm = {
   </tbody>
 </table>
 <p>Biệt thự không bị nhân hệ số kín. Tổng tiền cao hơn vì nhiều sàn và nhiều chi tiết; đơn giá m² vẫn trong bảng. Cọc, đá ốp ngoài list và nội thất gỗ tách phụ lục.</p>
-
-<h2>Xây nhà trọn gói TPHCM gồm những gì?</h2>
-<p><strong>Luôn gồm</strong> khi ký gói trọn gói (trừ khi phụ lục cắt):</p>
-<ul>
-  <li><strong>Thiết kế 2D/3D:</strong> miễn phí khi ký hợp đồng thi công, theo quy mô.</li>
-  <li><strong>Phần thô:</strong> móng, khung bê tông, tường, mái, điện nước âm tường.</li>
-  <li><strong>Hoàn thiện cơ bản:</strong> trát, sơn, ốp lát, trần, cửa, lan can, cầu thang, thiết bị vệ sinh theo list.</li>
-  <li><strong>Chống thấm khu ướt</strong> theo hạng mục đã ghi trong hợp đồng.</li>
-  <li><strong>Giám sát:</strong> nghiệm thu cốt thép trước khi đổ, cập nhật tiến độ.</li>
-  <li><strong>Bảo hành:</strong> kết cấu 10 năm, hoàn thiện 12–36 tháng.</li>
-</ul>
-<p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, tiền ở tạm khi xây. Chỉ cần khung nhà, không cần hoàn thiện: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Muốn thêm tủ bếp, trần trang trí: <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
-<p>Sao Khuê thi công trực tiếp, không bán thầu phụ trá hình. Vật tư đúng chủng loại trong list đã ký. Phạm vi từng bước: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>.</p>
 
 <h2>Trọn gói, thuê từng đội, hay chỉ phần thô?</h2>
 <table>
@@ -93,7 +94,7 @@ export const xayNhaTronGoiTphcm = {
 </ul>
 <p>Ví dụ cách tính theo từng khổ đất đang có bài riêng: <a href="/tin-tuc/xay-nha-4x15-tphcm">nhà 4×15</a>, <a href="/tin-tuc/xay-nha-5x20-tphcm">nhà 5×20</a>, <a href="/tin-tuc/xay-nha-80m2-tphcm">nhà khoảng 80 m²</a>.</p>
 
-<h2>Ví dụ nhà phố 4×16 tại TPHCM</h2>
+<h3>Ví dụ nhà phố 4×16 tại TPHCM</h3>
 <p>Lô 4×16 m (64 m² đất), 1 trệt 2 lầu, chỉ tính 3 sàn ở: 64 × 3 = <strong>192 m²</strong>. Lấy mốc thấp gói tiêu chuẩn 4,85 triệu/m² → khoảng <strong>931 triệu</strong> cho phần sàn ở. Đây là phép nhân để hình dung quy mô, không phải giá ký.</p>
 <p>Chưa nằm trong 931 triệu: móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>. Mùa mưa và hẻm hẹp có thể dài hơn. Mốc ghi trong hợp đồng.</p>
 
@@ -125,7 +126,7 @@ export const xayNhaTronGoiTphcm = {
   <li><a href="/tin-tuc/xay-nha-cu-chi">Củ Chi</a> — xe bê tông nhiều chuyến, sân và hàng rào tách phụ lục.</li>
 </ul>
 
-<h2>Quy trình 6 bước</h2>
+<h2>Quy trình xây nhà trọn gói TPHCM</h2>
 <ol>
   <li><strong>Tư vấn:</strong> hotline, Zalo hoặc <a href="/lien-he">form liên hệ</a>.</li>
   <li><strong>Khảo sát mặt bằng:</strong> đo đất, lối vào, nền và quy hoạch sơ bộ.</li>
@@ -134,6 +135,10 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Thi công:</strong> nghiệm thu cốt thép trước khi đổ, đúng tiến độ đã ghi.</li>
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành, vệ sinh công trình.</li>
 </ol>
+<figure>
+  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
 <h2>Thanh toán theo mốc, không thu 100% trước</h2>
 <p>Sao Khuê không thu toàn bộ tiền trước khi khởi công. Đợt sau chỉ trả khi mốc trước đã nghiệm thu. Khung dưới đây để hình dung; tỷ lệ đúng ghi trong hợp đồng theo quy mô:</p>
@@ -144,10 +149,14 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Hoàn thiện:</strong> khoảng 20–25%.</li>
   <li><strong>Bàn giao:</strong> phần còn lại, sau khi nhận hồ sơ bảo hành.</li>
 </ul>
+<figure>
+  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 <p>Chủ nhà tự vay ngân hàng thì Sao Khuê hỗ trợ dự toán để làm hồ sơ. Công ty không phải tổ chức tín dụng.</p>
 
 <h2>Giấy phép xây dựng có nằm trong gói không?</h2>
-<p>Sao Khuê làm hồ sơ thiết kế để xin phép. Lệ phí nhà nước và thời gian chờ quận không gộp vào đơn giá m² — ghi một dòng riêng. Xây khi chưa có phép thì dừng. Tiền phạt không tính vào gói trọn gói.</p>
+<p>Sao Khuê làm hồ sơ thiết kế để xin phép. Việc cấp phép thuộc thẩm quyền địa phương, theo quy định do <a href="https://moc.gov.vn/" rel="noopener noreferrer" target="_blank">Bộ Xây dựng</a> ban hành. Lệ phí nhà nước và thời gian chờ quận không gộp vào đơn giá m² — ghi một dòng riêng. Xây khi chưa có phép thì dừng. Tiền phạt không tính vào gói trọn gói.</p>
 
 <h2>Chi phí thường phát sinh — và cách tránh</h2>
 <ul>
@@ -161,8 +170,12 @@ export const xayNhaTronGoiTphcm = {
 <h2>Công trình thực tế tại TP.HCM</h2>
 <p>Nhà phố Sài Gòn hay gặp hẻm dưới 3 m, giờ đổ bê tông hạn chế, tường chung và nền yếu. Sao Khuê đo lối vào trước khi chốt đơn giá.</p>
 <figure>
-  <img src="/images/sao-khue/sk-03.jpg" alt="Nhà phố đã bàn giao — xây nhà trọn gói TPHCM Sao Khuê" width="1200" height="800" />
-  <figcaption>Nhà phố đã hoàn thiện. Xem thêm tại <a href="/cong-trinh">công trình tiêu biểu</a>.</figcaption>
+  <img src="/images/sao-khue/sk-24.jpg" alt="Thi công móng gạch trong hẻm hẹp, thép chờ nhô lên — hiện trường Kiến Trúc Sao Khuê" width="1477" height="1108" loading="lazy" decoding="async" />
+  <figcaption>Móng trong hẻm hẹp, sát tường nhà bên. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-03.jpg" alt="Xây nhà trọn gói TPHCM trong hẻm hẹp: giàn giáo và máy trộn — Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
+  <figcaption>Giàn giáo, gạch và máy trộn khi xây nhà trong hẻm. Xem thêm tại <a href="/cong-trinh">công trình tiêu biểu</a>.</figcaption>
 </figure>
 <ul>
   <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố Bình Thạnh</a> — thi công nội thành, giám sát hiện trường.</li>
@@ -195,12 +208,14 @@ export const xayNhaTronGoiTphcm = {
 <h3>Sao Khuê có nhận Bình Dương, Đồng Nai không?</h3>
 <p>Có. Xem <a href="/dich-vu/xay-nha-tron-goi-binh-duong">xây nhà trọn gói Bình Dương</a>, <a href="/dich-vu/xay-nha-tron-goi-dong-nai">Đồng Nai</a> và <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a>.</p>
 
-<h2>Liên hệ khảo sát</h2>
+<h2>Liên hệ tư vấn xây nhà trọn gói TPHCM</h2>
+<p>Cần chốt <strong>xây nhà trọn gói TPHCM</strong> theo đúng lô đất: gọi hoặc nhắn Zalo, kỹ sư khảo sát rồi mới ra số hợp đồng.</p>
 <ul>
   <li><strong>Hotline / Zalo:</strong> 0909 075 668</li>
   <li><strong>Giờ làm việc:</strong> thứ 2–thứ 7, 8:00–17:30</li>
   <li><strong>Email:</strong> kientrucsaokhue@gmail.com</li>
   <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, Phường 13, Bình Thạnh, TP.HCM</li>
+  <li><strong>Fanpage:</strong> <a href="https://www.facebook.com/dichvusuachuanha.caitaonhatrongoi" rel="noopener noreferrer" target="_blank">Kiến Trúc Sao Khuê</a></li>
   <li><strong>Hồ sơ công ty:</strong> <a href="/bai-viet/ve-chung-toi">giới thiệu Sao Khuê</a> · <a href="/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm">công ty xây nhà phố</a></li>
   <li><strong>Báo giá:</strong> <a href="/bao-gia">/bao-gia</a> · <a href="/lien-he">đặt lịch</a></li>
 </ul>

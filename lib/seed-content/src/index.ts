@@ -855,7 +855,7 @@ export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
       seed.slug === "sua-nha-tron-goi-tphcm"
         ? "2026-10-16T08:00:00.000Z"
         : seed.slug === "xay-nha-tron-goi-tphcm"
-          ? "2026-10-21T15:30:00.000Z"
+          ? "2026-10-21T16:10:00.000Z"
           : FALLBACK_TIMESTAMP,
   };
 }
