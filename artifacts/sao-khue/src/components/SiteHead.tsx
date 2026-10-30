@@ -71,7 +71,7 @@ export function SiteHead() {
   useEffect(() => {
     setMetaName("theme-color", "#17579d");
     setMetaName("geo.region", "VN-SG");
-    setMetaName("geo.placename", "Thành phố Hồ Chí Minh");
+    setMetaName("geo.placename", "TP.HCM và Đắk Lắk");
     const gscTokens = [...new Set([s.gscVerification, ...GSC_VERIFICATION_TOKENS].filter(Boolean))];
     const existingGsc = [...document.head.querySelectorAll<HTMLMetaElement>('meta[name="google-site-verification"]')];
     const haveGsc = new Set(existingGsc.map((el) => el.content));
@@ -108,6 +108,7 @@ export function SiteHead() {
         email: s.email,
         image: ogImage || resolveLogoUrl(s.logoUrl) || BUNDLED_OPENGRAPH_URL,
         address: s.address1,
+        branchAddress: s.address2,
         sameAs: [
           s.facebookUrl,
           s.facebookUrl2,
@@ -132,6 +133,7 @@ export function SiteHead() {
     injectGA(parseGaMeasurementId(s.gaTrackingId));
   }, [
     s.address1,
+    s.address2,
     s.companyName,
     s.email,
     s.facebookUrl,

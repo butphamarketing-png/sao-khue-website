@@ -132,8 +132,8 @@ ${faqSection(
       a: "Theo m² sàn xây dựng (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân.",
     },
     {
-      q: "Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?",
-      a: "Có — đội hiện trường tại Đắk Lắk + giám sát kỹ thuật từ TP.HCM, báo cáo tiến độ hàng tuần qua Zalo.",
+      q: "Thi công tại Đắk Lắk có đội giám sát tại chỗ không?",
+      a: "Có. Đội thi công tại Đắk Lắk (Xuân Thạnh 2, Tây Hòa) báo cáo ảnh và video tiến độ hàng tuần qua Zalo.",
     },
     {
       q: "Nên khởi công mùa nào tại Đắk Lắk?",

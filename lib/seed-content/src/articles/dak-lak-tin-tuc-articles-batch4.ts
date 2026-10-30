@@ -223,7 +223,7 @@ function topicSection(b: Brief): string {
   <li>Khảo sát lô đất tận nơi hoặc trực tuyến (video call + ảnh thực địa).</li>
   <li>Điều chỉnh tiến độ theo mùa mưa — ưu tiên kết cấu mùa khô.</li>
   <li>Phối hợp vận chuyển vật tư từ kho tỉnh hoặc từ TP.HCM — tối ưu chi phí.</li>
-  <li>Giám sát kỹ thuật định kỳ từ TP.HCM + đội hiện trường tại ${loc ?? "Đắk Lắk"}.</li>
+  <li>Đội thi công tại ${loc ?? "Đắk Lắk"} giám sát hiện trường, gửi ảnh và video tiến độ qua Zalo.</li>
 </ul>
 <p>Chủ đất tại ${loc ?? "huyện"} có thể tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> và <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a>.</p>`;
     case "roof":
@@ -554,7 +554,7 @@ function notesSection(): string {
   <li><strong>Mái dốc ≥ 15°:</strong> Thoát nước mưa nhanh — tránh đọng nước, thấm trần.</li>
   <li><strong>Móng trên bazan:</strong> Khảo sát kỹ — tránh đào sâu vùng đá, xử lý nền yếu.</li>
   <li><strong>Mùa thi công:</strong> Ưu tiên đổ móng, khung tháng 12 – tháng 4; hoàn thiện có thể mùa mưa nếu mái kín.</li>
-  <li><strong>Vận chuyển:</strong> Lên kế hoạch vật tư đặc chủng sớm — khoảng cách từ TP.HCM ~340 km.</li>
+  <li><strong>Vận chuyển:</strong> Đặt vật tư đặc chủng sớm — một số hạng mục chuyển từ kho TP.HCM về công trình Đắk Lắk.</li>
 </ul>`;
 }
 
@@ -568,7 +568,7 @@ function whyChooseSection(b: Brief): string {
   <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — thanh toán theo tiến độ nghiệm thu.</li>
   <li><strong>Giám sát từ xa:</strong> Ảnh, video tiến độ hàng tuần qua Zalo — thuận tiện chủ nhà ở TP.HCM.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a> và <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> trên website Sao Khuê.</p>`;
+<p>Xem thêm <a href="/tin-tuc/xay-nha-dak-lak">xây nhà Đắk Lắk</a> và <a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a>.</p>`;
 }
 
 function checklistSection(b: Brief): string {
@@ -645,8 +645,8 @@ function faqSection(b: Brief): string {
 <p>Tùy quy mô và quy hoạch. Nhà ở riêng lẻ dưới ngưỡng quy định có thể miễn giấy phép — nhưng nên xác nhận với UBND phường/xã${loc}. Sao Khuê hỗ trợ làm hồ sơ khi cần.</p>
 <h3>Chi phí ${kw} tính theo m² sàn hay diện tích đất?</h3>
 <p>Đơn giá xây dựng thường tính theo <strong>m² sàn xây dựng</strong> (tổng diện tích các tầng). Diện tích đất chỉ ảnh hưởng móng, sân vườn — báo riêng trong dự toán.</p>
-<h3>Sao Khuê ở TP.HCM, thi công${loc} có giám sát không?</h3>
-<p>Có. Đội hiện trường tại Đắk Lắk + giám sát kỹ thuật từ TP.HCM. Báo cáo ảnh, video tiến độ hàng tuần qua Zalo — chủ nhà theo dõi từ xa.</p>
+<h3>Thi công${loc} có đội giám sát tại chỗ không?</h3>
+<p>Có. Đội thi công tại Đắk Lắk (Xuân Thạnh 2, Tây Hòa) báo cáo ảnh và video tiến độ hàng tuần qua Zalo.</p>
 <h3>Bảo hành ${kw} bao lâu?</h3>
 <p>Xây mới: bảo hành kết cấu 10 năm. Sửa chữa, cải tạo: chống thấm 3–5 năm, hoàn thiện 1–2 năm — theo biên bản nghiệm thu từng hạng mục.</p>
 <h3>Có khảo sát miễn phí không?</h3>

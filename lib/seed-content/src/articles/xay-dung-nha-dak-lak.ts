@@ -105,8 +105,8 @@ ${faqSection(
       a: "Tùy quy mô và quy hoạch. Nhà ở riêng lẻ dưới ngưỡng quy định có thể miễn giấy phép — nên xác nhận với UBND phường/xã. Sao Khuê hỗ trợ làm hồ sơ khi cần.",
     },
     {
-      q: "Sao Khuê ở TP.HCM, thi công Đắk Lắk có giám sát không?",
-      a: "Có. Đội hiện trường tại Đắk Lắk kết hợp giám sát kỹ thuật từ TP.HCM. Báo cáo ảnh, video tiến độ hàng tuần qua Zalo.",
+      q: "Thi công tại Đắk Lắk có đội giám sát tại chỗ không?",
+      a: "Có. Đội thi công tại Đắk Lắk (Xuân Thạnh 2, Tây Hòa) báo cáo ảnh và video tiến độ hàng tuần qua Zalo.",
     },
     {
       q: "Chi phí xây nhà Đắk Lắk tính theo m² sàn hay diện tích đất?",

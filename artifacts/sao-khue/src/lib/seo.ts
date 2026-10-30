@@ -382,8 +382,8 @@ export function buildLocalBusinessSchema(
     address: {
       "@type": "PostalAddress",
       streetAddress: input.address,
-      addressLocality: "Thủ Đức",
-      addressRegion: "Hồ Chí Minh",
+      addressLocality: hq.addressLocality,
+      addressRegion: hq.addressRegion,
       addressCountry: "VN",
     },
     location: [
@@ -393,21 +393,21 @@ export function buildLocalBusinessSchema(
         address: {
           "@type": "PostalAddress",
           streetAddress: input.address,
-          addressLocality: "Thủ Đức",
-          addressRegion: "Hồ Chí Minh",
+          addressLocality: hq.addressLocality,
+          addressRegion: hq.addressRegion,
           addressCountry: "VN",
         },
       },
-      ...(input.branchAddress?.trim()
+      ...(branch && branchParts
         ? [
             {
               "@type": "Place",
               name: "Kiến Trúc Sao Khuê Đắk Lắk",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: input.branchAddress.trim(),
-                addressLocality: "Tây Hòa",
-                addressRegion: "Đắk Lắk",
+                streetAddress: branch,
+                addressLocality: branchParts.addressLocality,
+                addressRegion: branchParts.addressRegion,
                 addressCountry: "VN",
               },
             },

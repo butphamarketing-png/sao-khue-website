@@ -14,13 +14,14 @@ export const BRAND_SUFFIX = " | Sao Khuê";
 
 export type MetaTitleIntent = "repair" | "renovation" | "build" | "pricing" | "design" | "general";
 
+/** Hook ngắn — chỉ gắn khi từ khóa + địa danh vẫn nằm trọn trong 60 ký tự. */
 const META_TITLE_HOOKS: Record<MetaTitleIntent, string> = {
-  repair: "Uy Tín, Chống Thấm Trọn Gói",
-  renovation: "Tiết Kiệm, Đẹp Hơn",
-  build: "Trọn Gói, BH 10 Năm",
-  pricing: "Minh Bạch 2026",
-  design: "Phối Cảnh 3D",
-  general: "Uy Tín, Khảo Sát Miễn Phí",
+  repair: "Chống thấm",
+  renovation: "Đẹp hơn",
+  build: "BH 10 năm",
+  pricing: "Giá 2026",
+  design: "Phối cảnh 3D",
+  general: "Khảo sát miễn phí",
 };
 
 const TITLE_CASE_SKIP = new Set(["tại", "và", "của", "theo", "cho", "với", "trên", "dưới"]);
@@ -101,28 +102,22 @@ export function mapBatchTopicToIntent(batchTopic: string, slug = ""): MetaTitleI
   }
 }
 
-function trimKeywordForTitle(keyword: string, maxLen: number): string {
+/** Giữ nguyên cụm từ khóa. Chỉ bỏ từ đầu nếu không còn chỗ cho hậu tố thương hiệu. */
+function fitKeywordForTitle(keyword: string, maxLen: number): string {
   const kw = titleCaseVi(keyword);
   if (kw.length <= maxLen) return kw;
-
   const parts = kw.split(/\s+/).filter(Boolean);
-  if (parts.length >= 2) {
-    const tail = parts.slice(-2).join(" ");
-    const head = parts.slice(0, -2).join(" ");
-    if (tail.length + 4 <= maxLen) {
-      const room = maxLen - tail.length - 1;
-      if (!head) return tail.slice(0, maxLen);
-      const clipped = head.length <= room ? head : `${head.slice(0, Math.max(room - 1, 1)).trimEnd()}…`;
-      return `${clipped} ${tail}`.slice(0, maxLen);
-    }
-  }
-
-  return kw.slice(0, Math.max(maxLen - 1, 1)).trimEnd() + "…";
+  while (parts.length > 1 && parts.join(" ").length > maxLen) parts.shift();
+  const joined = parts.join(" ");
+  if (joined.length <= maxLen) return joined;
+  const slice = joined.slice(0, maxLen);
+  const lastSpace = slice.lastIndexOf(" ");
+  return (lastSpace > maxLen * 0.6 ? slice.slice(0, lastSpace) : slice).trimEnd();
 }
 
 /**
- * Meta title thu hút click: từ khóa + hook giá trị + thương hiệu (≤65 ký tự).
- * Thay cho pattern cũ `${kw} | Sao Khuê` quá khô trên SERP.
+ * Meta title: từ khóa (kèm địa danh) đứng trước, hook chỉ khi còn chỗ, ≤60 ký tự.
+ * Không chèn dấu … vào giữa tên địa phương.
  */
 export function buildCtrMetaTitle(
   keyword: string,
@@ -133,28 +128,14 @@ export function buildCtrMetaTitle(
     opts?.intent ??
     (opts?.batchTopic ? mapBatchTopicToIntent(opts.batchTopic, slug) : detectMetaTitleIntent(keyword, slug));
   const hook = META_TITLE_HOOKS[intent];
-  const separator = " — ";
-  const budget = META_TITLE_MAX - BRAND_SUFFIX.length;
-  const hookBudget = budget - separator.length - hook.length;
+  const kw = titleCaseVi(keyword);
+  const withHook = `${kw} — ${hook}${BRAND_SUFFIX}`;
+  if (withHook.length <= META_TITLE_MAX) return withHook;
 
-  const kw = trimKeywordForTitle(keyword, hookBudget);
-  let title = `${kw}${separator}${hook}${BRAND_SUFFIX}`;
+  const plain = `${kw}${BRAND_SUFFIX}`;
+  if (plain.length <= META_TITLE_MAX) return plain;
 
-  if (title.length > META_TITLE_MAX) {
-    const shortHook =
-      intent === "repair"
-        ? "Trọn Gói"
-        : intent === "build"
-          ? "Uy Tín"
-          : intent === "pricing"
-            ? "2026"
-            : "Miễn Phí";
-    const shortBudget = budget - separator.length - shortHook.length;
-    const shortKw = trimKeywordForTitle(keyword, shortBudget);
-    title = `${shortKw}${separator}${shortHook}${BRAND_SUFFIX}`;
-  }
-
-  return title.slice(0, META_TITLE_MAX);
+  return `${fitKeywordForTitle(keyword, META_TITLE_MAX - BRAND_SUFFIX.length)}${BRAND_SUFFIX}`;
 }
 
 function resolveMetaIntent(
@@ -260,7 +241,15 @@ export function buildCtrMetaDescription(
     desc = `${kw}${at} uy tín. Khảo sát miễn phí, báo giá rõ từng hạng mục — 0909 075 668.`;
   }
 
-  return desc.slice(0, META_DESC_MAX);
+  return clipAtWord(desc, META_DESC_MAX);
+}
+
+function clipAtWord(text: string, maxLen: number): string {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= maxLen) return normalized;
+  const slice = normalized.slice(0, maxLen);
+  const lastSpace = slice.lastIndexOf(" ");
+  return (lastSpace > maxLen * 0.7 ? slice.slice(0, lastSpace) : slice).trimEnd();
 }
 
 const EXCERPT_TEMPLATES: Record<MetaTitleIntent, (kw: string, at: string) => string> = {
@@ -280,7 +269,7 @@ export function buildCtrExcerpt(
 ): string {
   const intent = resolveMetaIntent(keyword, opts);
   const at = locationSuffix(keyword, opts?.location);
-  return EXCERPT_TEMPLATES[intent](keyword, at).slice(0, maxLen);
+  return clipAtWord(EXCERPT_TEMPLATES[intent](titleCaseVi(keyword), at), maxLen);
 }
 
 export const SITE_HOME = "https://www.kientrucsaokhue.com/";
@@ -309,9 +298,9 @@ export function imageFigure(
   return buildInlineImageFigure(src, kw, `${kw} — hình ${index}`);
 }
 
-/** Ba liên kết trang chủ trong đoạn văn (yêu cầu brief). */
+/** Một liên kết về trang chủ (www) và hai liên kết nội bộ — tránh 3 anchor trùng homepage. */
 export function homeLinkParagraph(intro = "Tham khảo thêm thông tin tại"): string {
-  return `<p>${intro} <a href="${SITE_HOME}" rel="noopener">Kiến Trúc Sao Khuê</a> — website chính thức <a href="${SITE_HOME}">kientrucsaokhue.com</a> và <a href="${SITE_HOME}">dịch vụ thiết kế xây dựng</a> trọn gói tại TP.HCM và các tỉnh lân cận.</p>`;
+  return `<p>${intro} <a href="${SITE_HOME}">Kiến Trúc Sao Khuê</a> — xem <a href="/dich-vu">dịch vụ xây nhà</a> và <a href="/bao-gia">báo giá</a> tại TP.HCM và Đắk Lắk.</p>`;
 }
 
 export function seoCtaBlock(focusKeyword: string): string {
@@ -321,7 +310,7 @@ export function seoCtaBlock(focusKeyword: string): string {
   <li><strong>Website:</strong> <a href="${SITE_HOME}">${SITE_HOME}</a></li>
   <li><strong>Fanpage:</strong> <a href="${SITE_FANPAGE}" rel="noopener noreferrer" target="_blank">${SITE_FANPAGE}</a></li>
   <li><strong>Hotline:</strong> 0909 075 668 · <strong>Email:</strong> kientrucsaokhue@gmail.com</li>
-  <li><strong>Địa chỉ:</strong> 245/8 Bình Lợi, P.13, Q. Bình Thạnh, TP.HCM</li>
+  <li><strong>Địa chỉ:</strong> TP.HCM: 36 Đường 27, KDC Vạn Phúc, Thủ Đức · Đắk Lắk: Xuân Thạnh 2, Tây Hòa</li>
 </ul>
 <p>Hoặc để lại thông tin tại <a href="/lien-he">form liên hệ</a> — đội ngũ phản hồi trong giờ hành chính.</p>`;
 }
