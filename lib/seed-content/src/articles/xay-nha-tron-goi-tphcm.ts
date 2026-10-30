@@ -3,7 +3,7 @@ export const xayNhaTronGoiTphcm = {
   title: "Xây nhà trọn gói TPHCM",
   excerpt:
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Có ví dụ nhà phố 4×16, bảo hành kết cấu 10 năm.",
-  metaTitle: "Xây nhà trọn gói TPHCM 2026 | Sao Khuê",
+  metaTitle: "Xây nhà trọn gói TPHCM 2026 | Kiến Trúc Sao Khuê",
   metaDescription:
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m². Một hợp đồng: thiết kế, phần thô, hoàn thiện. Ví dụ nhà phố 4×16, khảo sát miễn phí, bảo hành 10 năm.",
   metaKeywords:

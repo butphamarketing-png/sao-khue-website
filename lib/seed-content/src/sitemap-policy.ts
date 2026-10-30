@@ -37,7 +37,7 @@ const HAND_PILLAR_SLUGS = new Set([
  * Redirect thật nằm ở legacy-redirects.ts.
  */
 export const HUB_SUA_NHA = "/dich-vu/sua-nha-tron-goi-tphcm";
-export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi-tphcm";
+export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi-tphcm-2026";
 export const HUB_CAI_TAO = "/cai-tao-nha";
 
 const CANNIBAL_REDIRECT_SLUGS = new Set([
@@ -180,6 +180,7 @@ const CANONICAL_PATH_OVERRIDES: Record<string, string> = {
   "/dich-vu/sua-chua-nha-tphcm": HUB_SUA_NHA,
   "/dich-vu/xay-nha-moi": HUB_XAY_NHA,
   "/dich-vu/xay-nha-tron-goi": HUB_XAY_NHA,
+  "/dich-vu/xay-nha-tron-goi-tphcm": HUB_XAY_NHA,
   "/tin-tuc/xay-nha-tron-goi-tphcm": HUB_XAY_NHA,
 };
 
@@ -192,6 +193,15 @@ export function canonicalInternalPath(pathname: string): string {
     return hubForRetiredSlug(leaf) ?? hubForUnknownPathname(normalized) ?? normalized;
   }
   return normalized;
+}
+
+/** Apex không www tách tín hiệu canonical — luôn về host www. */
+export function rewriteApexHostInHtml(html: string): string {
+  if (!html) return html;
+  return html.replace(
+    /https?:\/\/(?!www\.)kientrucsaokhue\.com/gi,
+    "https://www.kientrucsaokhue.com",
+  );
 }
 
 /** Sửa href trong HTML seed — Google + user không còn đi URL 404/noindex. */

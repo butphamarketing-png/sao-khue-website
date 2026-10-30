@@ -30,12 +30,12 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "quy-trinh-xay-dung": "/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z",
 
   // Xây nhà trọn gói
-  "xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-nha-tron-goi": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-dung-nha-dep": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-dung-nha-dep-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-dung-nha-tron-goi": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-dung-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
+  "xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-nha-tron-goi": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-dung-nha-dep": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-dung-nha-dep-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-dung-nha-tron-goi": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-dung-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
   "xay-nha-tron-goi-binh-duong": "/dich-vu/xay-nha-tron-goi-binh-duong",
   "xay-nha-tron-goi-dong-nai": "/dich-vu/xay-nha-tron-goi-dong-nai",
   "xay-nha-tai-tp-hcm": HUB_XAY_NHA,
@@ -64,10 +64,10 @@ export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   // Common typos / old paths
   "gioi-thieu-ve-chung-toi": "/bai-viet/ve-chung-toi",
   "cong-ty-xay-dung-nha-pho-uy-tin-tphcm": "/tin-tuc/cong-ty-xay-dung-nha-pho-uy-tin-tphcm",
-  "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "nha-thau-xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "xay-nha-moi": "/dich-vu/xay-nha-tron-goi-tphcm",
-  "bao-gia-xay-nha-moi": "/dich-vu/xay-nha-tron-goi-tphcm",
+  "bao-gia-xay-nha-tron-goi-moi-nhat-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "nha-thau-xay-nha-tron-goi-tphcm": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xay-nha-moi": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "bao-gia-xay-nha-moi": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
   "thiet-ke-thi-cong-nha-pho-dong-nai": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
   "thi-cong-nha-pho-dong-nai": "/tin-tuc/thiet-ke-thi-cong-nha-pho-dong-nai",
   "lien-he-ngay": "/lien-he",
@@ -178,9 +178,9 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   // WordPress category archives still indexed
   ["/danh-muc", "/tin-tuc"],
   ["/danh-muc/bao-gia", "/bao-gia"],
-  ["/danh-muc/bao-gia/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi-tphcm"],
+  ["/danh-muc/bao-gia/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
   ["/category/bao-gia", "/bao-gia"],
-  ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi-tphcm"],
+  ["/category/xay-nha-tron-goi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
   ["/category/sua-chua-nha", HUB_SUA_NHA],
   ["/dich-vu/xay-nha-tron-goi", HUB_XAY_NHA],
   ["/dich-vu/sua-chua-nha-tphcm", HUB_SUA_NHA],
@@ -274,14 +274,14 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/tin-tuc/xay-nha-tphcm", HUB_XAY_NHA],
 
   // Cannibalization — gom về 1 URL tiền “xây nhà trọn gói TP.HCM”
-  ["/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/bai-viet/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/bai-viet/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/dich-vu/xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/bai-viet/xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/tin-tuc/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm"],
-  ["/bai-viet/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm"],
+  ["/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/bai-viet/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/tin-tuc/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/bai-viet/nha-thau-xay-nha-tron-goi-tphcm", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/dich-vu/xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/bai-viet/xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/tin-tuc/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
+  ["/bai-viet/bao-gia-xay-nha-moi", "/dich-vu/xay-nha-tron-goi-tphcm-2026"],
 ];
 
 /** Redirect 301 Vercel — một nguồn, không sinh trùng từ nhiều vòng lặp. */

@@ -10,7 +10,7 @@ export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
 /** Tên ngắn trên title/OG. Tên pháp lý dài làm Google cắt mất từ khóa. */
 export const SEO_BRAND = "Kiến Trúc Sao Khuê";
-/** Trang chủ không giành đúng cụm với /dich-vu/xay-nha-tron-goi-tphcm. */
+/** Trang chủ không giành đúng cụm với /dich-vu/xay-nha-tron-goi-tphcm-2026. */
 export const HOME_SEO_H1 = "Nhà thầu xây nhà phố và biệt thự TPHCM";
 export const HOME_SEO_TITLE = "Kiến Trúc Sao Khuê | nhà phố, biệt thự TPHCM";
 export const HOME_SEO_DESCRIPTION =
@@ -287,6 +287,8 @@ export type LocalBusinessInput = {
   taxID?: string;
   foundingDate?: string;
   legalName?: string;
+  /** Chi nhánh Đắk Lắk — cùng NAP với footer. */
+  branchAddress?: string;
 };
 
 export type AggregateRatingInput = {
@@ -295,11 +297,24 @@ export type AggregateRatingInput = {
 };
 
 const DEFAULT_SERVICE_OFFERS = [
-  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi-tphcm" },
+  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi-tphcm-2026" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
   { name: "Sửa nhà trọn gói TP.HCM", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },
 ];
+
+function postalParts(address: string): { addressLocality: string; addressRegion: string } {
+  if (/đắk lắk/i.test(address)) {
+    return { addressLocality: "Tây Hòa", addressRegion: "Đắk Lắk" };
+  }
+  if (/thủ đức/i.test(address)) {
+    return { addressLocality: "Thủ Đức", addressRegion: "Hồ Chí Minh" };
+  }
+  if (/bình thạnh/i.test(address)) {
+    return { addressLocality: "Bình Thạnh", addressRegion: "Hồ Chí Minh" };
+  }
+  return { addressLocality: "TP. Hồ Chí Minh", addressRegion: "Hồ Chí Minh" };
+}
 
 export function buildLocalBusinessSchema(
   input: LocalBusinessInput & {
@@ -308,6 +323,9 @@ export function buildLocalBusinessSchema(
   },
 ) {
   const origin = input.url.replace(/\/$/, "");
+  const hq = postalParts(input.address);
+  const branch = input.branchAddress?.trim() ?? "";
+  const branchParts = branch ? postalParts(branch) : null;
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
@@ -319,7 +337,7 @@ export function buildLocalBusinessSchema(
       : undefined,
     description:
       input.description ??
-      "Xây nhà trọn gói TPHCM: thiết kế, phần thô và hoàn thiện một hợp đồng. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
+      "Thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và Đắk Lắk. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
     url: input.url,
     telephone: input.telephone,
     email: input.email || undefined,
@@ -329,6 +347,8 @@ export function buildLocalBusinessSchema(
     foundingDate: input.foundingDate?.trim() || "2014",
     knowsAbout: [
       "Xây nhà trọn gói TPHCM",
+      "Xây nhà Đắk Lắk",
+      "Sửa nhà Đắk Lắk",
       "Xây nhà trọn gói",
       "Báo giá xây nhà",
       "Cải tạo nhà cũ",
@@ -355,16 +375,45 @@ export function buildLocalBusinessSchema(
       : undefined,
     areaServed: [
       { "@type": "City", name: "Thành phố Hồ Chí Minh" },
+      { "@type": "AdministrativeArea", name: "Đắk Lắk" },
       { "@type": "AdministrativeArea", name: "Bình Dương" },
       { "@type": "AdministrativeArea", name: "Đồng Nai" },
     ],
     address: {
       "@type": "PostalAddress",
       streetAddress: input.address,
-      addressLocality: "TP. Hồ Chí Minh",
+      addressLocality: "Thủ Đức",
       addressRegion: "Hồ Chí Minh",
       addressCountry: "VN",
     },
+    location: [
+      {
+        "@type": "Place",
+        name: "Kiến Trúc Sao Khuê TP.HCM",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: input.address,
+          addressLocality: "Thủ Đức",
+          addressRegion: "Hồ Chí Minh",
+          addressCountry: "VN",
+        },
+      },
+      ...(input.branchAddress?.trim()
+        ? [
+            {
+              "@type": "Place",
+              name: "Kiến Trúc Sao Khuê Đắk Lắk",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: input.branchAddress.trim(),
+                addressLocality: "Tây Hòa",
+                addressRegion: "Đắk Lắk",
+                addressCountry: "VN",
+              },
+            },
+          ]
+        : []),
+    ],
     sameAs: input.sameAs.length > 0 ? input.sameAs : undefined,
     hasMap: input.mapsUrl?.trim() || undefined,
   };

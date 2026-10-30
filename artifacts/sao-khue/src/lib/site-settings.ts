@@ -182,7 +182,7 @@ export const defaultSiteSettings: SiteSettings & Record<string, unknown> = {
   messengerLabel1: "Cải tạo nhà trọn gói",
   messengerLabel2: "Kiến Trúc Sao Khuê",
   footerDescription:
-    "Xây nhà trọn gói TPHCM — uy tín, chất lượng, tận tâm. Thiết kế và thi công nhà phố, biệt thự, một hợp đồng từ bản vẽ đến bàn giao.",
+    "Thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và Đắk Lắk. Một hợp đồng từ bản vẽ đến bàn giao, khảo sát miễn phí, bảo hành kết cấu 10 năm.",
   heroSlidesJson: JSON.stringify(defaultHeroSlides),
   homeCommitmentsJson: JSON.stringify(defaultCommitments),
   homePricingJson: JSON.stringify(defaultPricingItems),
@@ -541,7 +541,7 @@ export function useCtaBanner(): CtaBannerContent {
 }
 
 const QUOTE_SERVICE_LINKS: Record<string, string> = {
-  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi-tphcm",
+  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
   "sửa chữa nhà": "/dich-vu/sua-nha-tron-goi-tphcm",
   "xây dựng phần thô": "/dich-vu/xay-dung-phan-tho",
   "thiết kế nhà": "/dich-vu/thiet-ke-nha",
@@ -576,7 +576,8 @@ export function useTopBarSlogan(): string {
 function withTurnkeyNavLabel(item: MenuItem): MenuItem {
   const title =
     item.title === "XÂY MỚI" &&
-    (item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
+    (item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026" ||
+      item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
       item.href === "/dich-vu/xay-nha-tron-goi" ||
       item.href === "/xay-moi")
       ? "XÂY TRỌN GÓI"
@@ -587,8 +588,10 @@ function withTurnkeyNavLabel(item: MenuItem): MenuItem {
     ...item,
     title,
     href:
-      item.href === "/xay-moi" || item.href === "/dich-vu/xay-nha-tron-goi"
-        ? "/dich-vu/xay-nha-tron-goi-tphcm"
+      item.href === "/xay-moi" ||
+      item.href === "/dich-vu/xay-nha-tron-goi" ||
+      item.href === "/dich-vu/xay-nha-tron-goi-tphcm"
+        ? "/dich-vu/xay-nha-tron-goi-tphcm-2026"
         : item.href,
     children: item.children?.map(withTurnkeyNavLabel),
   };

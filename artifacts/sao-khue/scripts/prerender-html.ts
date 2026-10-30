@@ -10,6 +10,7 @@ import {
   injectArticleToc,
   normalizeCategory,
   prepareArticleHtml,
+  rewriteApexHostInHtml,
   rewriteRetiredHrefsInHtml,
   seedPosts,
 } from "../../../lib/seed-content/src/index.ts";
@@ -81,8 +82,9 @@ const BRAND = "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ";
 const BRAND_SHORT = "Kiến Trúc Sao Khuê";
 const DEFAULT_OG = `${SITE_URL}/images/hero-1.jpg`;
 const FOOTER_DESC =
-  "Thiết kế và thi công xây dựng nhà phố, biệt thự trọn gói uy tín tại TP.HCM. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
+  "Thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và Đắk Lắk. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
 const SITE_ADDRESS = "36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM";
+const SITE_BRANCH = "Xuân Thạnh 2, Tây Hòa, Đắk Lắk";
 const SITE_PHONE = "+84909075668";
 const SITE_EMAIL = "kientrucsaokhue@gmail.com";
 
@@ -95,6 +97,7 @@ function globalBusinessJsonLd(): Record<string, unknown>[] {
       email: SITE_EMAIL,
       image: DEFAULT_OG,
       address: SITE_ADDRESS,
+      branchAddress: SITE_BRANCH,
       sameAs: [],
       description: FOOTER_DESC,
       openingHours: "Mo-Fr 08:00-17:30",
@@ -144,7 +147,7 @@ function shell(inner: string): string {
 function navHome(): string {
   return `<nav aria-label="Điều hướng">
     <a href="/">Trang chủ</a> ·
-    <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> ·
+    <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TPHCM</a> ·
     <a href="/dich-vu">Dịch vụ</a> ·
     <a href="/bao-gia">Báo giá</a> ·
     <a href="/cong-trinh">Công trình</a> ·
@@ -169,13 +172,13 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(HOME_SEO_H1)}</h1>
-        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TPHCM</a> từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
         <h2>Dịch vụ chính</h2>
         <ul>
-          <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
+          <li><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
           <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố; báo giá theo hạng mục.</li>
           <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
         </ul>
@@ -256,7 +259,7 @@ function buildStaticPages(): PrerenderPage[] {
         ${navHome()}
         <h1>Xây nhà mới trọn gói</h1>
         <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
-        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
+        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
     },
     {
@@ -274,7 +277,7 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
-        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xem dịch vụ xây nhà trọn gói</a>.</p>
+        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xem dịch vụ xây nhà trọn gói</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },
@@ -514,7 +517,9 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       imageAlt,
       imageCaption,
     });
-    const contentHtml = rewriteRetiredHrefsInHtml(enhanceArticleHtml(injectArticleToc(prepared), imageAlt));
+    const contentHtml = rewriteApexHostInHtml(
+      rewriteRetiredHrefsInHtml(enhanceArticleHtml(injectArticleToc(prepared), imageAlt)),
+    );
     const crumbs = buildPostBreadcrumbItems(post);
     const crumbNav = crumbs
       .map(
@@ -689,6 +694,15 @@ function isStaleSeoMeta(metaTitle: string, metaDescription: string): boolean {
   if (/^Dịch vụ .+ tại .+:( khảo sát| uy tín)/i.test(desc)) return true;
   if (/,\s*,/.test(desc)) return true;
   if (/\| Sao Khuê$/i.test(title) && !/—/.test(title)) return true;
+  if (title.includes("…")) return true;
+  return false;
+}
+
+function rowNeedsSeedSeo(row: PrerenderPost): boolean {
+  if (isStaleSeoMeta(row.metaTitle ?? "", row.metaDescription ?? "")) return true;
+  const content = row.content ?? "";
+  if (content.includes("Sao Khuê ở TP.HCM")) return true;
+  if (/https?:\/\/(?!www\.)kientrucsaokhue\.com/i.test(content)) return true;
   return false;
 }
 
@@ -710,8 +724,7 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
       noindex: seed.noindex ?? row.noindex,
     };
   }
-  const stale = isStaleSeoMeta(row.metaTitle ?? "", row.metaDescription ?? "");
-  if (!stale) {
+  if (!rowNeedsSeedSeo(row)) {
     return { ...row, noindex: seed.noindex ?? row.noindex };
   }
   return {

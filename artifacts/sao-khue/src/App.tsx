@@ -62,7 +62,10 @@ function Router() {
 
       <Route path="/dich-vu" component={() => <CategoryPage category="dich-vu" />} />
       <Route path="/dich-vu/xay-nha-tron-goi">
-        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm" />
+        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm-2026" />
+      </Route>
+      <Route path="/dich-vu/xay-nha-tron-goi-tphcm">
+        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm-2026" />
       </Route>
       <Route path="/dich-vu/:slug" component={PostPage} />
 
@@ -71,7 +74,7 @@ function Router() {
 
       <Route path="/tin-tuc" component={() => <CategoryPage category="tin-tuc" />} />
       <Route path="/tin-tuc/xay-nha-tron-goi-tphcm">
-        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm" />
+        <Redirect to="/dich-vu/xay-nha-tron-goi-tphcm-2026" />
       </Route>
       <Route path="/tin-tuc/:slug" component={PostPage} />
 

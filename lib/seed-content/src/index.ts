@@ -215,7 +215,7 @@ import { matchesCategory, normalizeCategory } from "./categories";
 import { buildImageAlt } from "./image-seo";
 import { TIN_TUC_SEED_ENTRIES } from "./tin-tuc-seed";
 import { featuredImageForSlug } from "./site-images";
-import { shouldNoindexPostSlug } from "./sitemap-policy";
+import { rewriteApexHostInHtml, rewriteRetiredHrefsInHtml, shouldNoindexPostSlug } from "./sitemap-policy";
 import { applySoftSeoDepthR3 } from "./soft-seo-depth-r3";
 import { applySoftSeoDepthR5 } from "./soft-seo-depth-r5";
 import { applyThinArticleRebuild } from "./rebuild-thin-articles";
@@ -253,7 +253,7 @@ function seoPost(
   const imageAlt =
     article.imageAlt?.trim() || buildImageAlt({ slug, metaKeywords });
   const imageCaption = article.imageCaption?.trim() || imageAlt;
-  const content = article.content;
+  const content = rewriteApexHostInHtml(rewriteRetiredHrefsInHtml(article.content));
 
   return {
     slug,
@@ -774,6 +774,7 @@ export {
   hubForRetiredSlug,
   hubForUnknownPathname,
   canonicalInternalPath,
+  rewriteApexHostInHtml,
   rewriteRetiredHrefsInHtml,
   HUB_SUA_NHA,
   HUB_XAY_NHA,
