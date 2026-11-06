@@ -1,0 +1,9 @@
+gap_id,topic,evidence,status,priority
+GAP-01,Định danh URL trụ cột,URL được giao https://www.kientrucsaokhue.com/dich-vu/xay-nha-tron-goi-tphcm trả 301 về /dich-vu/xay-nha-tron-goi-tphcm-2026. URL ngắn /dich-vu/xay-nha-tron-goi cũng 301 cùng đích.,Đã xác minh,P0
+GAP-02,Chủng loại vật tư,Bài trụ cột nói list nằm trong hợp đồng và không nêu hãng. Đối thủ trong mẫu giá (Ngôi Nhà Hoàn Hảo, Việt Quang, PCC) có bảng gói và hệ số diện tích.,Đã xác minh trên bài Sao Khuê; đối thủ là mẫu tìm kiếm,P1
+GAP-03,Hồ sơ công trình,Sitemap chỉ có 4 case study. Trang trụ cột và giới thiệu nói hơn 500 công trình. Mô tả /cong-trinh ghi ảnh minh họa.,Đã xác minh số URL và câu chữ; con số 500 chưa xác minh,P1
+GAP-04,Nhân sự phụ trách,Không thấy trang Person / kiến trúc sư chủ trì gắn với bài trụ cột.,Đã xác minh trong schema trang trụ cột (không có Person),P2
+GAP-05,Hợp đồng và nghiệm thu,Bài có mốc thanh toán 10–15% / 20–25% và 6 bước. Chưa có mẫu biên bản nghiệm thu hay điều khoản phạt tiến độ.,Đã xác minh nội dung bài,P2
+GAP-06,Địa chỉ pháp lý thống nhất,Schema dịch vụ dùng 245/8 Bình Lợi. Settings mặc định address1 là 36 Đường 27 Vạn Phúc. Bài liệt kê cả hai cộng Đắk Lắk.,Đã xác minh mã và JSON-LD,P1
+GAP-07,Giờ hotline,Bài và schema Mo-Sa 08:00-17:30. Meta /lien-he và Contact.tsx vẫn nói 24/7.,Đã xác minh,P1
+GAP-08,Tên pháp lý,Schema provider: CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ. LocalBusiness name: Kiến Trúc Sao Khuê. defaultCategoryPages gioi-thieu: Công ty TNHH Kiến Trúc Sao Khuê.,Đã xác minh mã,P1

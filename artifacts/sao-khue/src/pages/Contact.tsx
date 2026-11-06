@@ -31,7 +31,7 @@ const CONTACT_FAQS = [
   },
   {
     q: "Gửi form liên hệ xong được gọi lại khi nào?",
-    a: "Trong giờ làm việc thường trong ngày. Ngoài giờ: hotline 24/7 cho việc khẩn (dột, chập điện). Báo giá chính thức sau khảo sát, không chốt hợp đồng chỉ qua ảnh.",
+    a: "Giờ làm việc thứ 2–thứ 7, 8:00–17:30. Trong giờ thường được gọi lại trong ngày. Ngoài giờ để lại tin nhắn, kỹ sư trả lời khi mở cửa. Báo giá chính thức sau khảo sát, không chốt hợp đồng chỉ qua ảnh.",
   },
   {
     q: "Báo giá qua Zalo / ảnh nhà có chính xác không?",
@@ -111,7 +111,7 @@ export default function Contact() {
             <div>
               <div className="text-xs font-bold uppercase tracking-wide text-slate-500">Giờ làm việc</div>
               <div className="text-sm font-semibold text-slate-800">{s.workingHours || "8:00 – 17:30"}</div>
-              <div className="text-xs text-slate-500">Hotline hỗ trợ 24/7</div>
+              <div className="text-xs text-slate-500">Thứ 2–thứ 7, 8:00–17:30</div>
             </div>
           </div>
 

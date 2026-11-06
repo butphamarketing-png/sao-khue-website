@@ -1,0 +1,8 @@
+priority,action,do_not
+P0,Giữ nguyên URL https://www.kientrucsaokhue.com/dich-vu/xay-nha-tron-goi-tphcm-2026. Trong Search Console chỉ yêu cầu lập chỉ mục URL này sau khi HTML title là Xây nhà trọn gói TPHCM 2026 | Báo giá Sao Khuê.,Không 301 thêm lần nữa. Không tạo trang báo giá 2026 thứ hai. Không đưa từ 4,85tr vào title.
+P0,Đối chiếu deployment aff1b72. /bao-gia /xay-moi /thiet-ke phải hết title BÁO GIÁ THIẾT KẾ và KINH NGHIỆM XÂY MỚI.,Không kết luận deploy lỗi nếu chưa xem log Vercel. Hiện chỉ xác nhận HTML lệch mã.
+P1,Một địa chỉ schema một tên pháp lý một câu giờ làm. Gỡ 24/7 ở meta liên hệ và Contact.tsx nếu tổng đài không trực đêm.,Không bịa MST hay số năm nếu sổ công ty khác.
+P1,Viết lại 4 hồ sơ /cong-trinh với địa điểm diện tích tầng phạm vi thời gian ảnh giai đoạn và một link đúng cụm xây nhà trọn gói TPHCM về URL 2026.,Không đăng hàng loạt trang quận mới khi chưa có công trình ở quận đó.
+P1,Gắn sự kiện generate_lead khi form chính thành công. Giữ click_call và click_zalo. Kiểm tra trong GA4 DebugView.,Không gửi form thử lên production.
+P2,Ảnh trụ cột xuất WebP. Bỏ priceRange $. dateModified lấy từ ngày sửa bài.,Không bịa Core Web Vitals.
+P2,Phụ lục vật tư chỉ khi có list hợp đồng thật. Giải thích cách nhân sàn ở khác hệ số móng mái của đối thủ.,Không chép đơn giá An Cư Ngôi Nhà Hoàn Hảo hay Việt Quang.

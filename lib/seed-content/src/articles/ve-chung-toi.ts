@@ -18,7 +18,7 @@ export const veChungToi = {
 <ul>
   <li><strong>Tên pháp nhân:</strong> Công ty TNHH Kiến Trúc Sao Khuê</li>
   <li><strong>Trụ sở:</strong> 245/8 Bình Lợi, Phường 13, Quận Bình Thạnh, TP.HCM</li>
-  <li><strong>Hotline:</strong> 0909 075 668 (tư vấn / khảo sát 24/7)</li>
+  <li><strong>Hotline:</strong> 0909 075 668 (thứ 2–thứ 7, 8:00–17:30)</li>
   <li><strong>Website:</strong> <a href="https://www.kientrucsaokhue.com/">www.kientrucsaokhue.com</a></li>
   <li><strong>Thành lập:</strong> 2014 · Bảo hành kết cấu <strong>10 năm</strong></li>
   <li><strong>Cam kết:</strong> Hợp đồng rõ hạng mục — không bán thầu trá hình</li>

@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { submitContactLead } from "@/lib/contact-leads-api";
+import { trackAdsConversion } from "@/lib/ads-conversions";
 import {
   facebookUrlsFromSettings,
   messengerUrlsFromSettings,
@@ -67,6 +68,10 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
+    const name = form.name.trim();
+    const phone = form.phone.trim();
+    if (!name || !phone) return;
     setSubmitting(true);
     const serviceLabel = projectType === "xay-moi" ? "Xây mới" : "Cải tạo";
     const message = [
@@ -81,12 +86,13 @@ export function QuoteRequestModal({ open, onOpenChange }: Props) {
 
     try {
       await submitContactLead({
-        name: form.name.trim(),
-        phone: form.phone.trim(),
+        name,
+        phone,
         service: serviceLabel,
         message,
         source: "quote-popup",
       });
+      trackAdsConversion("lead", { source: "quote_popup" });
 
       toast({
         title: "Đã gửi yêu cầu báo giá",

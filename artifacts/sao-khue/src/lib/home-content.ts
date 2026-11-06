@@ -178,7 +178,7 @@ export const defaultContactSection: ContactSectionContent = {
   titleAccent: "miễn phí",
   description:
     "Để lại thông tin, đội ngũ kiến trúc sư và kỹ sư của Sao Khuê sẽ liên hệ tư vấn và khảo sát tận nơi hoàn toàn miễn phí.",
-  hotlineLabel: "Hotline tư vấn 24/7",
+  hotlineLabel: "Hotline T2–T7, 8:00–17:30",
   addressLabel: "Trụ sở chính",
   formTitle: "Nhận báo giá ngay",
   submitLabel: "Gửi yêu cầu",
@@ -211,7 +211,7 @@ export const defaultSectionMeta: HomeSectionMeta = {
   },
   contact: {
     title: "Liên hệ tư vấn",
-    subtitle: "Hotline 24/7 — khảo sát miễn phí — báo giá trong 24–48 giờ.",
+    subtitle: "Thứ 2–thứ 7, 8:00–17:30 — khảo sát miễn phí — báo giá trong 24–48 giờ.",
   },
   testimonials: {
     title: "Khách hàng nói gì về Sao Khuê",
@@ -320,7 +320,7 @@ export const defaultPageBanners: PageBannersMap = {
   },
   contact: {
     title: "Liên hệ",
-    subtitle: "Hotline 24/7 — khảo sát miễn phí — báo giá trong 24–48 giờ.",
+    subtitle: "Thứ 2–thứ 7, 8:00–17:30 — khảo sát miễn phí — báo giá trong 24–48 giờ.",
   },
   notFound: {
     title: "404 — Không tìm thấy trang",

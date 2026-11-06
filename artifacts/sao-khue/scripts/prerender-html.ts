@@ -12,6 +12,7 @@ import {
   prepareArticleHtml,
   rewriteApexHostInHtml,
   rewriteRetiredHrefsInHtml,
+  getFallbackPost,
   seedPosts,
 } from "../../../lib/seed-content/src/index.ts";
 import {
@@ -432,7 +433,10 @@ function buildStaticPages(): PrerenderPage[] {
   return pages;
 }
 
-function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
+function buildMenuSubPages(
+  posts: SeedPost[],
+  reservedPaths: ReadonlySet<string>,
+): PrerenderPage[] {
   const pages: PrerenderPage[] = [];
 
   for (const section of defaultNavMenu) {
@@ -440,6 +444,7 @@ function buildMenuSubPages(posts: SeedPost[]): PrerenderPage[] {
 
     for (const child of section.children) {
       const path = child.href;
+      if (reservedPaths.has(path)) continue;
       const leaf = getMenuLeafSlug(path);
       const matched = posts.filter((p) =>
         postMatchesSubSlug(p, leaf, defaultNavMenu),
@@ -537,13 +542,8 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
 
     const postFaq = extractFaqFromArticleHtml(post.content ?? "");
     const published = (post.createdAt ?? "2026-01-15").slice(0, 10);
-    const modified = (
-      post.slug === "xay-nha-tron-goi-tphcm"
-        ? "2026-10-21"
-        : post.slug === "sua-nha-tron-goi-tphcm"
-          ? "2026-10-16"
-          : (post.updatedAt ?? post.createdAt ?? "2026-01-15")
-    ).slice(0, 10);
+    const editorialUpdatedAt = getFallbackPost(post.slug)?.updatedAt;
+    const modified = (post.updatedAt ?? editorialUpdatedAt ?? post.createdAt ?? "2026-01-15").slice(0, 10);
     const isTurnkey = post.slug === "xay-nha-tron-goi-tphcm";
     const pageSchema =
       post.slug === "sua-nha-tron-goi-tphcm" || isTurnkey
@@ -627,10 +627,7 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ogImageAlt: imageAlt,
         ogType: "article",
         publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
-        modifiedTime:
-          post.slug === "sua-nha-tron-goi-tphcm"
-            ? "2026-10-16T08:00:00.000Z"
-            : (post.updatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z"),
+        modifiedTime: post.updatedAt ?? editorialUpdatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",
         noindex: Boolean(post.noindex),
       },
       bodyHtml: shell(`
@@ -720,7 +717,7 @@ function mergeSeedSeo(row: PrerenderPost): PrerenderPost {
       metaTitle: seed.metaTitle,
       metaDescription: seed.metaDescription,
       metaKeywords: seed.metaKeywords,
-      updatedAt: row.slug === "xay-nha-tron-goi-tphcm" ? "2026-10-21T15:30:00.000Z" : "2026-10-16T08:00:00.000Z",
+      updatedAt: getFallbackPost(row.slug)?.updatedAt ?? row.updatedAt,
       noindex: seed.noindex ?? row.noindex,
     };
   }
@@ -781,9 +778,11 @@ async function main() {
   const templatePath = join(distDir, "index.html");
   const template = readFileSync(templatePath, "utf8");
   const posts = await loadPostsForPrerender();
+  const staticPages = buildStaticPages();
+  const reservedPaths = new Set(staticPages.map((page) => page.path));
   const pages = [
-    ...buildStaticPages(),
-    ...buildMenuSubPages(posts),
+    ...staticPages,
+    ...buildMenuSubPages(posts, reservedPaths),
     ...buildPostPages(posts),
   ];
 

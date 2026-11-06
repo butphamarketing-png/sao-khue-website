@@ -1,0 +1,12 @@
+element,where,code_or_url,measured,note
+Hotline 0909 075 668,schema + bài trụ cột + mặc định settings,site-settings.ts PRIMARY_PHONE; JSON-LD telephone +84909075668,Đã xác minh chữ,Không đo cuộc gọi thật
+Nút gọi nổi,FloatingButtons.tsx,trackAdsConversion call source floating và mobile_bar,Đã xác minh mã,Sự kiện GA4 tên click_call. Chưa xem DebugView
+Zalo,zalo.me/0909075668,FloatingButtons và QuoteRequestModal,Đã xác minh mã,Sự kiện click_zalo trên nút nổi. Modal Zalo mở URL không thấy trackAdsConversion
+Form báo giá site,QuoteRequestModal.tsx submitContactLead,Không gọi trackAdsConversion,Đã xác minh mã,Không gửi form production
+Form landing ads,AdsLeadForm.tsx,trackAdsConversion lead call zalo,Đã xác minh mã,/xay-nha noindex follow. Không nằm trong sitemap 142 URL
+CTA khảo sát,bài trụ cột và /lien-he,href /lien-he và tel,Đã xác minh,Meta liên hệ vẫn ghi 24/7
+GA4,SiteHead.tsx injectGA,default gaTrackingId G-WGDHV88C2B,Có trong mã; không có trong HTML tĩnh,Chưa xác minh ID đang chạy trên production vì settings có thể ghi đè từ DB
+GTM,không thấy GTM-,grep src,Không thấy,Không có lớp GTM
+Meta Pixel,không thấy fbq,grep src,Không thấy,Không có
+Google Ads,ads-conversions.ts,Cần biến AW- và label. Không in giá trị env,Mã có; ID production chưa xác minh,Không đọc .env trong báo cáo
+Call tracking nhà mạng,không thấy,mã nguồn,Không thấy,Chưa có số tracking riêng
