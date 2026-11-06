@@ -3,9 +3,9 @@ export const xayNhaTronGoiTphcm = {
   title: "Xây nhà trọn gói TPHCM",
   excerpt:
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Có ví dụ nhà phố 4×16, bảo hành kết cấu 10 năm.",
-  metaTitle: "Xây nhà trọn gói TPHCM 2026 | Kiến Trúc Sao Khuê",
+  metaTitle: "Xây nhà trọn gói TPHCM 2026 | Báo giá Sao Khuê",
   metaDescription:
-    "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m². Một hợp đồng: thiết kế, phần thô, hoàn thiện. Ví dụ nhà phố 4×16, khảo sát miễn phí, bảo hành 10 năm.",
+    "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m² sàn ở. Một hợp đồng: thiết kế, phần thô, hoàn thiện. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
   metaKeywords:
     "xây nhà trọn gói tphcm, xây nhà trọn gói tphcm 2026, đơn giá xây nhà trọn gói, chìa khóa trao tay, kiến trúc sao khuê",
   imageAlt: "Xây nhà trọn gói TPHCM: giàn giáo và máy trộn trong hẻm hẹp — Kiến Trúc Sao Khuê",
@@ -13,11 +13,37 @@ export const xayNhaTronGoiTphcm = {
   content: `
 <p><strong>Xây nhà trọn gói TPHCM</strong> là giao một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện cơ bản và bàn giao trong <strong>một hợp đồng</strong>. Năm 2026, gói tiêu chuẩn của Sao Khuê từ <strong>4,85 triệu/m²</strong> sàn ở. Gia chủ không tự mua sắt thép và không điều phối nhiều đội thợ.</p>
 
-<h2>Xây nhà trọn gói TPHCM là gì?</h2>
-<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> ghi list vật tư, tiến độ và bảo hành kết cấu 10 năm vào hợp đồng. Đổi thiết kế hoặc chủng loại thì lập phụ lục — không phát sinh miệng. Văn phòng hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Hotline <strong>0909 075 668</strong>.</p>
-<p>Hơn 10 năm, hơn 500 công trình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Muốn ước lượng trước khi gọi: <a href="/bao-gia">bảng báo giá</a>.</p>
+<h2>Dịch vụ xây nhà trọn gói tại TPHCM</h2>
+<p><strong>Công ty TNHH Thiết kế và Xây dựng Sao Khuê</strong> ghi list vật tư, tiến độ và bảo hành kết cấu 10 năm vào hợp đồng. Đổi thiết kế hoặc chủng loại thì lập phụ lục — không phát sinh miệng. Văn phòng hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Hotline <strong>0909 075 668</strong>. Giờ làm việc thứ 2–thứ 7, 8:00–17:30.</p>
+<p>Hơn 10 năm, hơn 500 công trình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Muốn ước lượng trước khi gọi: <a href="/bao-gia">máy tính chi phí</a>.</p>
 
-<h2>Xây nhà trọn gói TPHCM gồm những gì?</h2>
+<h2>Báo giá xây nhà trọn gói TPHCM 2026</h2>
+<p>Đơn giá dưới đây là mốc tham khảo cho sàn ở. Số ký hợp đồng chỉ có sau khi đo hẻm và nền. Hẻm sâu không dùng đơn giá mặt tiền. Khung 4,85–6,7 triệu/m² là đơn giá Sao Khuê đang dùng, không phải giá một căn nhà.</p>
+<table>
+  <thead>
+    <tr><th>Gói</th><th>Đơn giá 2026</th><th>Phạm vi</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu/m²</td><td>Thô + hoàn thiện cơ bản</td></tr>
+    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu/m²</td><td>Vật tư tầm trung–khá</td></tr>
+    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+/m²</td><td>Hoàn thiện đẹp, thiết bị tốt</td></tr>
+    <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu/m²</td><td>Khung nhà, chủ nhà lo hoàn thiện</td></tr>
+  </tbody>
+</table>
+<p>Ba gói khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu. Cắt phào, đèn được. Không cắt thép và chống thấm khu ướt. Biệt thự không bị nhân hệ số kín. Tổng tiền cao hơn vì nhiều sàn và nhiều chi tiết; đơn giá m² vẫn trong bảng.</p>
+<h3>Điều kiện áp dụng đơn giá</h3>
+<p>Đơn giá nhân với <strong>diện tích sàn ở</strong>, không nhân với diện tích đất rồi cộng sân, mái, tum vào cùng một phép tính.</p>
+<ul>
+  <li><strong>Tính:</strong> các sàn dùng để ở (trệt, lầu).</li>
+  <li><strong>Tách khỏi m²:</strong> móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép, đá ốp ngoài list, nội thất gỗ.</li>
+  <li><strong>Không lấy giá mặt tiền</strong> áp cho nhà trong hẻm. Kỹ sư đo lối vào, giờ đổ bê tông và chỗ tập kết vật tư rồi mới ra số hợp đồng.</li>
+</ul>
+<h3>Ví dụ nhà phố 4×16 tại TPHCM</h3>
+<p>Lô 4×16 m (64 m² đất), 1 trệt 2 lầu, chỉ tính 3 sàn ở: 64 × 3 = <strong>192 m²</strong>. Lấy mốc thấp gói tiêu chuẩn 4,85 triệu/m² → khoảng <strong>931 triệu</strong> cho phần sàn ở. Đây là phép nhân để hình dung quy mô, không phải giá ký.</p>
+<p>Chưa nằm trong 931 triệu: móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép. 1 trệt 3 lầu trên cùng lô thường là 4 sàn: 64 × 4 = 256 m², rồi mới nhân đơn giá. Số tầng theo giấy phép phường. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>.</p>
+<p>Cách tính theo khổ đất khác: <a href="/tin-tuc/xay-nha-4x15-tphcm">nhà 4×15</a>, <a href="/tin-tuc/xay-nha-5x20-tphcm">nhà 5×20</a>, <a href="/tin-tuc/xay-nha-80m2-tphcm">nhà khoảng 80 m²</a>, <a href="/tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm">1 trệt 2 lầu</a>, <a href="/tin-tuc/xay-nha-4-tang-tphcm">nhà 4 tầng</a>.</p>
+
+<h2>Hạng mục thi công gồm những gì?</h2>
 <p><strong>Luôn gồm</strong> khi ký gói trọn gói (trừ khi phụ lục cắt):</p>
 <ul>
   <li><strong>Thiết kế 2D/3D:</strong> miễn phí khi ký hợp đồng thi công, theo quy mô.</li>
@@ -34,34 +60,7 @@ export const xayNhaTronGoiTphcm = {
 <p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, tiền ở tạm khi xây. Chỉ cần khung nhà, không cần hoàn thiện: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Muốn thêm tủ bếp, trần trang trí: <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <p>Sao Khuê thi công trực tiếp, không bán thầu phụ trá hình. Vật tư đúng chủng loại trong list đã ký. Phạm vi từng bước: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>.</p>
 
-<h2>Đơn giá xây nhà trọn gói TPHCM 2026</h2>
-<p>Đơn giá dưới đây là mốc tham khảo cho sàn ở. Số ký hợp đồng chỉ có sau khi đo hẻm và nền. Hẻm sâu không dùng đơn giá mặt tiền.</p>
-<table>
-  <thead>
-    <tr><th>Gói</th><th>Đơn giá 2026</th><th>Phạm vi</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Trọn gói tiêu chuẩn</td><td>4,85 – 5,5 triệu/m²</td><td>Thô + hoàn thiện cơ bản</td></tr>
-    <tr><td>Trọn gói khá</td><td>5,5 – 6,0 triệu/m²</td><td>Vật tư tầm trung–khá</td></tr>
-    <tr><td>Trọn gói cao cấp</td><td>6,0 – 6,7 triệu+/m²</td><td>Hoàn thiện đẹp, thiết bị tốt</td></tr>
-    <tr><td>Chỉ phần thô</td><td>3,55 – 3,8 triệu/m²</td><td>Khung nhà, chủ nhà lo hoàn thiện</td></tr>
-  </tbody>
-</table>
-<p>Ba gói trọn gói khác nhau ở vật tư hoàn thiện, không khác bảo hành kết cấu. Cắt phào, đèn được. Không cắt thép và chống thấm khu ướt.</p>
-<table>
-  <thead>
-    <tr><th>Loại nhà</th><th>Gói thường dùng</th><th>Đơn giá</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Nhà phố ở</td><td>Tiêu chuẩn</td><td>4,85 – 5,5 triệu/m²</td></tr>
-    <tr><td>Nhà phố mặt đứng chỉn hơn</td><td>Khá</td><td>5,5 – 6,0 triệu/m²</td></tr>
-    <tr><td>Biệt thự, chi tiết nhiều</td><td>Cao cấp</td><td>6,0 – 6,7 triệu+/m²</td></tr>
-    <tr><td>Chỉ khung, chủ nhà lo hoàn thiện</td><td>Phần thô</td><td>3,55 – 3,8 triệu/m²</td></tr>
-  </tbody>
-</table>
-<p>Biệt thự không bị nhân hệ số kín. Tổng tiền cao hơn vì nhiều sàn và nhiều chi tiết; đơn giá m² vẫn trong bảng. Cọc, đá ốp ngoài list và nội thất gỗ tách phụ lục.</p>
-
-<h2>Trọn gói, thuê từng đội, hay chỉ phần thô?</h2>
+<h2>Vì sao chọn Kiến Trúc Sao Khuê</h2>
 <table>
   <thead>
     <tr><th></th><th>Trọn gói</th><th>Thuê từng đội</th><th>Chỉ phần thô</th></tr>
@@ -76,29 +75,16 @@ export const xayNhaTronGoiTphcm = {
 </table>
 <p>Nhà trong hẻm Sài Gòn thường hợp trọn gói vì lối vào, giờ cấm đổ bê tông và tường chung cần một người chịu trách nhiệm. Chỉ cần khung: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
 
-<h2>Trước khi ký hợp đồng</h2>
+<h2>Vật liệu và tiêu chuẩn thi công</h2>
+<p>Chủng loại vật tư nằm trong list đã ký. Sao Khuê không ghi tên hãng nếu hợp đồng chưa chốt mẫu. Dòng “tương đương” chung chung thì hỏi lại trước khi ký.</p>
 <ul>
   <li>Bản vẽ ghi rõ những sàn nào được nhân đơn giá. Sân thượng và mái không bị cộng vào 931 triệu của ví dụ 4×16.</li>
-  <li>List vật tư có chủng loại. Dòng “tương đương” chung chung thì hỏi lại trước khi ký.</li>
   <li>Móng cọc, phụ phí hẻm dưới 3 m và lệ phí giấy phép nằm từng dòng riêng.</li>
   <li>Tiến độ ghi số tháng. Mùa mưa và hẻm hẹp được nêu là lý do được gia hạn, không nói miệng.</li>
   <li>Bảo hành kết cấu 10 năm có trong hợp đồng. Hoàn thiện 12–36 tháng ghi riêng.</li>
 </ul>
 
-<h2>Cách tính m² khi báo giá</h2>
-<p>Đơn giá nhân với <strong>diện tích sàn ở</strong>, không nhân với diện tích đất rồi cộng sân, mái, tum vào cùng một phép tính.</p>
-<ul>
-  <li><strong>Tính:</strong> các sàn dùng để ở (trệt, lầu).</li>
-  <li><strong>Tách khỏi m²:</strong> móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép.</li>
-  <li><strong>Không lấy giá mặt tiền</strong> áp cho nhà trong hẻm. Kỹ sư đo lối vào, giờ đổ bê tông và chỗ tập kết vật tư rồi mới ra số hợp đồng.</li>
-</ul>
-<p>Ví dụ cách tính theo từng khổ đất đang có bài riêng: <a href="/tin-tuc/xay-nha-4x15-tphcm">nhà 4×15</a>, <a href="/tin-tuc/xay-nha-5x20-tphcm">nhà 5×20</a>, <a href="/tin-tuc/xay-nha-80m2-tphcm">nhà khoảng 80 m²</a>.</p>
-
-<h3>Ví dụ nhà phố 4×16 tại TPHCM</h3>
-<p>Lô 4×16 m (64 m² đất), 1 trệt 2 lầu, chỉ tính 3 sàn ở: 64 × 3 = <strong>192 m²</strong>. Lấy mốc thấp gói tiêu chuẩn 4,85 triệu/m² → khoảng <strong>931 triệu</strong> cho phần sàn ở. Đây là phép nhân để hình dung quy mô, không phải giá ký.</p>
-<p>Chưa nằm trong 931 triệu: móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>. Mùa mưa và hẻm hẹp có thể dài hơn. Mốc ghi trong hợp đồng.</p>
-
-<h2>Nhà phố hiện đại, số tầng và mái Nhật</h2>
+<h2>Số tầng và kiểu mái</h2>
 <p>Đơn giá m² sàn ở không đổi theo kiểu mái hay số tầng. Thêm tầng là thêm sàn được nhân. Mái, sân thượng và thang máy nằm ngoài phép nhân đó.</p>
 <ul>
   <li><strong>1 trệt 2 lầu:</strong> 3 sàn ở — đúng kiểu ví dụ 4×16 ở trên. Xem <a href="/tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm">nhà phố 1 trệt 2 lầu</a>.</li>
@@ -108,7 +94,7 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Nhà phố hiện đại:</strong> mặt đứng, giếng trời, lan can. Thiết kế nằm trong gói khi ký thi công. Xem <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố hiện đại</a>.</li>
 </ul>
 
-<h2>Xây nhà trọn gói TPHCM theo quận</h2>
+<h2>Thi công theo quận</h2>
 <p>Khung đơn giá giống nhau, từ 4,85 triệu/m² gói tiêu chuẩn. Khác nhau ở hẻm, nền và giấy phép — những khoản này tách khỏi đơn giá m²:</p>
 <ul>
   <li><a href="/tin-tuc/xay-nha-binh-thanh">Bình Thạnh</a> — hẻm hẹp, tường chung.</li>
@@ -187,13 +173,9 @@ export const xayNhaTronGoiTphcm = {
 <p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Chi nhánh hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đắk Lắk: Xuân Thạnh 2, Tây Hòa. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
 
 <h2>Câu hỏi thường gặp</h2>
-<h3>Xây nhà trọn gói TPHCM hết bao nhiêu?</h3>
+<h3>Xây nhà trọn gói TPHCM 2026 hết bao nhiêu?</h3>
 <p>Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Phần thô 3,55–3,8 triệu/m². Số trong hợp đồng chốt sau khi đo hẻm và nền. Nhà phố 4×16, 1 trệt 2 lầu, 192 m² sàn ở × 4,85 triệu khoảng 931 triệu — chưa gồm cọc, mái và lệ phí.</p>
-<h3>Xây nhà trọn gói TPHCM là gì?</h3>
-<p>Một nhà thầu lo khảo sát, thiết kế, phần thô, hoàn thiện cơ bản và bàn giao trong một hợp đồng. Nội thất gỗ, điều hòa và lệ phí nhà nước thường tách.</p>
-<h3>Xây nhà trọn gói TPHCM gồm những gì?</h3>
-<p>Thiết kế 2D/3D khi ký thi công, móng–khung, tường, mái, điện nước âm, hoàn thiện cơ bản, thiết bị vệ sinh theo list, giám sát và bảo hành kết cấu 10 năm.</p>
-<h3>Xây nhà trọn gói TPHCM mất bao lâu?</h3>
+<h3>Nhà phố 3–4 tầng thi công mất bao lâu?</h3>
 <p>Nhà phố 3–4 tầng thường 4–7 tháng. Mùa mưa và hẻm hẹp có thể dài hơn. Mốc ghi trong hợp đồng.</p>
 <h3>Có phát sinh chi phí không?</h3>
 <p>Không phát sinh khi giữ nguyên thiết kế và chủng loại đã ký. Đổi ý thì lập phụ lục trước khi mua vật tư hoặc đập đi làm lại.</p>
@@ -201,7 +183,7 @@ export const xayNhaTronGoiTphcm = {
 <p>Hồ sơ thiết kế để xin phép có trong gói. Lệ phí nhà nước và ngày chờ quận ghi một dòng riêng, không gộp vào triệu/m².</p>
 <h3>Nhà 1 trệt 3 lầu hoặc 5 tầng tính thế nào?</h3>
 <p>Vẫn nhân đơn giá với số sàn ở. 1 trệt 3 lầu thường là 4 sàn. Mái, sân thượng và thang máy tách dòng. Số tầng phải đúng giấy phép phường.</p>
-<h3>Xây nhà trọn gói TPHCM thanh toán thế nào?</h3>
+<h3>Thanh toán theo mốc nào?</h3>
 <p>Không thu 100% trước. Tạm ứng khi ký khoảng 10–15%, sau móng khoảng 20–25%, hoàn thiện khoảng 20–25%, bàn giao phần còn lại. Đợt sau chỉ trả khi mốc trước đã nghiệm thu. Tỷ lệ đúng nằm trong hợp đồng.</p>
 <h3>Có tư vấn miễn phí không?</h3>
 <p>Có. Hotline 0909 075 668. Kỹ sư khảo sát sơ bộ tại công trình.</p>

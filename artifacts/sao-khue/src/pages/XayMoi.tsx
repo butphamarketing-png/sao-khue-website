@@ -82,7 +82,7 @@ export default function XayMoi() {
 
   return (
     <PageShell>
-      <PageBanner title="Xây nhà mới trọn gói">
+      <PageBanner title="Kinh nghiệm xây nhà mới">
         <Breadcrumbs items={breadcrumbs} light className="mt-4" />
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>

@@ -16,22 +16,22 @@ export const HOME_SEO_TITLE = "Kiến Trúc Sao Khuê | nhà phố, biệt thự
 export const HOME_SEO_DESCRIPTION =
   "Kiến Trúc Sao Khuê thi công nhà phố và biệt thự tại TPHCM. Gói xây nhà trọn gói từ 4,85 triệu/m², khảo sát miễn phí, bảo hành kết cấu 10 năm.";
 /** Tiêu đề hub — từ khóa đứng trước, đủ ngắn để Google không cắt thương hiệu. */
-export const BAO_GIA_SEO_TITLE = `Báo giá xây nhà trọn gói 2026 | ${SEO_BRAND}`;
+export const BAO_GIA_SEO_TITLE = `Dự toán chi phí xây nhà | ${SEO_BRAND}`;
 export const BAO_GIA_SEO_DESCRIPTION =
-  "Báo giá xây nhà trọn gói 2026 tại TP.HCM: phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Có máy tính chi phí, khảo sát miễn phí.";
+  "Máy tính chi phí xây nhà tại TP.HCM: phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Số hợp đồng chốt sau khi khảo sát.";
 export const THIET_KE_SEO_TITLE = `Thiết kế nhà phố TP.HCM | ${SEO_BRAND}`;
 export const THIET_KE_SEO_DESCRIPTION =
   "Thiết kế nhà phố TP.HCM: mặt bằng 2D/3D, biệt thự và nhà ống. Tối ưu công năng trước khi xây, khảo sát miễn phí.";
-export const XAY_MOI_SEO_TITLE = `Xây nhà mới trọn gói 2026 | ${SEO_BRAND}`;
+export const XAY_MOI_SEO_TITLE = `Kinh nghiệm xây nhà mới | ${SEO_BRAND}`;
 export const XAY_MOI_SEO_DESCRIPTION =
-  "Xây nhà mới trọn gói 2026: nhà phố, biệt thự, nhà cấp 4. Chìa khóa trao tay, bảo hành kết cấu 10 năm tại TP.HCM.";
+  "Bài kinh nghiệm xây nhà mới: nhà phố, biệt thự, nhà cấp 4 tại TP.HCM. Đơn giá trọn gói nằm ở trang dịch vụ.";
 export const XAY_NHA_SEO_TITLE = `Xây nhà trọn gói chìa khóa trao tay | ${SEO_BRAND}`;
 export const XAY_NHA_SEO_DESCRIPTION =
   "Báo giá xây nhà phố và biệt thự tại TP.HCM. Khảo sát miễn phí, bảo hành kết cấu 10 năm. Gói trọn gói xem tại trang dịch vụ.";
 export const CAI_TAO_SEO_TITLE = `Cải tạo nhà phố TP.HCM | ${SEO_BRAND}`;
 export const CAI_TAO_SEO_DESCRIPTION =
   "Cải tạo nhà phố TP.HCM: nâng tầng, chống thấm, đổi mặt tiền. Khảo sát hiện trạng miễn phí, báo giá sau khi xem nhà.";
-export const DICH_VU_HEADING = "Dịch vụ xây nhà trọn gói TP.HCM";
+export const DICH_VU_HEADING = "Dịch vụ thiết kế, xây dựng và sửa nhà";
 export const CONG_TRINH_HEADING = "Công trình nhà phố đã thi công";
 export const TIN_TUC_HEADING = "Kinh nghiệm xây nhà";
 

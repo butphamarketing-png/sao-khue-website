@@ -55,7 +55,7 @@ export default function Pricing() {
     path: "/bao-gia",
     noindex: currentPage > 1,
     keywords:
-      "báo giá xây nhà trọn gói, đơn giá xây nhà, chi phí xây nhà, xây nhà giá rẻ, báo giá cải tạo nhà, xây nhà trọn gói tphcm",
+      "dự toán xây nhà, đơn giá xây nhà, chi phí xây nhà, máy tính chi phí, báo giá cải tạo nhà",
     ogImage,
     ogImageAlt: BAO_GIA_SEO_TITLE,
     jsonLd: [
@@ -82,7 +82,7 @@ export default function Pricing() {
 
   return (
     <PageShell>
-      <PageBanner title="Báo giá xây nhà trọn gói">
+      <PageBanner title="Dự toán chi phí xây nhà">
         <Breadcrumbs items={breadcrumbs} light className="mt-4" />
         <p className="mt-3 max-w-2xl text-sm text-blue-100 md:text-base">{banner.subtitle}</p>
       </PageBanner>

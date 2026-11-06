@@ -105,12 +105,8 @@ export const defaultTestimonials: TestimonialItem[] = [
 
 export const defaultFaqs: FaqItem[] = [
   {
-    q: "Xây nhà trọn gói TPHCM hết bao nhiêu?",
-    a: 'Gói tiêu chuẩn 4,85–5,5 triệu/m², khá 5,5–6,0 triệu/m², cao cấp từ 6,0 triệu/m². Số hợp đồng chốt sau khi đo hẻm và nền. Chi tiết tại <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói TPHCM</a>.',
-  },
-  {
-    q: "Sao Khuê báo giá xây nhà trọn gói như thế nào?",
-    a: "Chúng tôi khảo sát mặt bằng, lập dự toán chi tiết theo hạng mục và vật tư. Báo giá minh bạch, cam kết không phát sinh khi không có yêu cầu thay đổi từ khách hàng.",
+    q: "Sao Khuê lập dự toán thế nào?",
+    a: 'Khảo sát mặt bằng, rồi lập dự toán theo hạng mục và vật tư. Đơn giá gói xây nằm ở <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">trang dịch vụ xây nhà</a>.',
   },
   {
     q: "Thời gian thi công nhà phố 3–4 tầng mất bao lâu?",
@@ -118,7 +114,7 @@ export const defaultFaqs: FaqItem[] = [
   },
   {
     q: "Có được tư vấn và khảo sát miễn phí không?",
-    a: "Có. Hotline 0909 075 668 hỗ trợ 24/7. Kỹ sư sẽ khảo sát hiện trạng và tư vấn sơ bộ miễn phí tại công trình.",
+    a: "Có. Hotline 0909 075 668, thứ 2–thứ 7, 8:00–17:30. Kỹ sư khảo sát sơ bộ miễn phí tại công trình.",
   },
   {
     q: "Bảo hành công trình bao lâu?",
@@ -264,9 +260,9 @@ export const defaultCategoryPages: CategoryPagesMap = {
     highlights: ["Hơn 500 công trình bàn giao", "Trực tiếp thi công, không bán thầu", "Bảo hành kết cấu lên đến 10 năm"],
   },
   "dich-vu": {
-    title: "Dịch vụ xây nhà trọn gói TP.HCM",
+    title: "Dịch vụ thiết kế, xây dựng và sửa nhà",
     description:
-      "Từ thiết kế, xây thô, hoàn thiện đến sửa chữa nhà — Sao Khuê cung cấp giải pháp trọn gói, báo giá rõ ràng và cam kết tiến độ.",
+      "Danh mục thiết kế nhà, xây phần thô, hoàn thiện và sửa chữa tại TP.HCM. Sao Khuê khảo sát miễn phí, báo giá sau khi đo công trình.",
     highlights: ["Xây nhà trọn gói chìa khóa trao tay", "Thiết kế kiến trúc 2D/3D", "Tư vấn miễn phí tận nơi"],
   },
   "cong-trinh": {
@@ -308,9 +304,9 @@ export type FeaturedPostsConfig = {
 
 export const defaultPageBanners: PageBannersMap = {
   pricing: {
-    title: "Báo giá xây nhà trọn gói",
+    title: "Dự toán chi phí xây nhà",
     subtitle:
-      "Tham khảo đơn giá xây thô, trọn gói và công cụ tính chi phí nhanh — minh bạch, không phát sinh.",
+      "Máy tính chi phí tham khảo. Đơn giá gói xây chốt sau khi khảo sát mặt bằng.",
   },
   thietKe: {
     title: "Thiết kế nhà phố TP.HCM",

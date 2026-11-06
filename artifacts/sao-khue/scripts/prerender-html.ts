@@ -165,14 +165,14 @@ function buildStaticPages(): PrerenderPage[] {
         description: HOME_SEO_DESCRIPTION,
         path: "/",
         keywords:
-          "xây nhà trọn gói tphcm, thiết kế nhà phố, xây dựng sao khuê, báo giá xây nhà",
+          "thiết kế nhà phố tphcm, xây nhà phố, biệt thự, kiến trúc sao khuê",
         ogImage: DEFAULT_OG,
         ogImageAlt: `${BRAND_SHORT} — xây nhà trọn gói TPHCM`,
       },
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(HOME_SEO_H1)}</h1>
-        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TPHCM</a> từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Công ty TNHH Thiết kế và Xây dựng Sao Khuê khảo sát miễn phí, lập dự toán theo hạng mục, thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Bảo hành kết cấu 10 năm. Hotline 0909 075 668.</p>
+        <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, bảo hành kết cấu 10 năm. Hotline 0909 075 668. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">dịch vụ xây nhà trọn gói</a>.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
@@ -223,9 +223,9 @@ function buildStaticPages(): PrerenderPage[] {
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Báo giá xây nhà trọn gói</h1>
+        <h1>Dự toán chi phí xây nhà</h1>
         <p>${escapeHtml(defaultPageBanners.pricing.subtitle)}</p>
-        <p>Phần thô từ 3,55 triệu/m² · Trọn gói từ 4,85 triệu/m². <a href="/lien-he">Nhận báo giá chi tiết</a>.</p>
+        <p>Đơn giá gói xây xem tại <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">trang dịch vụ</a>. <a href="/lien-he">Đặt lịch khảo sát</a>.</p>
       `),
     },
     {
@@ -251,13 +251,13 @@ function buildStaticPages(): PrerenderPage[] {
         title: XAY_MOI_SEO_TITLE,
         description: XAY_MOI_SEO_DESCRIPTION,
         path: "/xay-moi",
-        keywords: "xây nhà trọn gói, xây nhà mới, xây nhà phố, xây biệt thự tphcm",
+        keywords: "kinh nghiệm xây nhà mới, nhà phố, biệt thự, nhà cấp 4",
         ogImage: DEFAULT_OG,
         ogImageAlt: `Kinh nghiệm xây nhà mới 2026 — ${BRAND_SHORT}`,
       },
       bodyHtml: shell(`
         ${navHome()}
-        <h1>Xây nhà mới trọn gói</h1>
+        <h1>Kinh nghiệm xây nhà mới</h1>
         <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
         <p><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
