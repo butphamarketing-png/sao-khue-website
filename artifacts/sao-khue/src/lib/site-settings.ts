@@ -575,24 +575,31 @@ export function useTopBarSlogan(): string {
 
 function withTurnkeyNavLabel(item: MenuItem): MenuItem {
   const title =
-    item.title === "XÂY MỚI" &&
-    (item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026" ||
-      item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
-      item.href === "/dich-vu/xay-nha-tron-goi" ||
-      item.href === "/xay-moi")
-      ? "XÂY TRỌN GÓI"
-      : item.title === "XÂY TRỌN GÓI TP.HCM"
-        ? "XÂY NHÀ TRỌN GÓI TPHCM"
-        : item.title;
+    item.title === "BÁO GIÁ THIẾT KẾ" && item.href === "/bao-gia"
+      ? "BÁO GIÁ XÂY NHÀ"
+      : item.title === "XÂY MỚI" &&
+          (item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026" ||
+            item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
+            item.href === "/dich-vu/xay-nha-tron-goi" ||
+            item.href === "/xay-moi")
+        ? "XÂY TRỌN GÓI"
+        : item.title === "XÂY TRỌN GÓI TP.HCM"
+          ? "XÂY NHÀ TRỌN GÓI TPHCM"
+          : item.title;
+  const keepExperiencePage = item.title === "KINH NGHIỆM XÂY MỚI";
+  const href = keepExperiencePage
+    ? "/xay-moi"
+    : item.title === "CẢI TẠO NHÀ CŨ" && item.href === "/cai-tao-nha"
+      ? "/dich-vu/cai-tao-nha-cu"
+      : item.href === "/xay-moi" ||
+          item.href === "/dich-vu/xay-nha-tron-goi" ||
+          item.href === "/dich-vu/xay-nha-tron-goi-tphcm"
+        ? "/dich-vu/xay-nha-tron-goi-tphcm-2026"
+        : item.href;
   return {
     ...item,
     title,
-    href:
-      item.href === "/xay-moi" ||
-      item.href === "/dich-vu/xay-nha-tron-goi" ||
-      item.href === "/dich-vu/xay-nha-tron-goi-tphcm"
-        ? "/dich-vu/xay-nha-tron-goi-tphcm-2026"
-        : item.href,
+    href,
     children: item.children?.map(withTurnkeyNavLabel),
   };
 }

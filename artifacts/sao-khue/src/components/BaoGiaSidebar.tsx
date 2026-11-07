@@ -10,7 +10,7 @@ const MONEY_LINKS = [
   { label: "BÁO GIÁ PHẦN THÔ", href: "/dich-vu/xay-dung-phan-tho", tone: "teal" },
   { label: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-nha-tron-goi-tphcm", tone: "blue" },
   { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi-tphcm-2026", tone: "orange" },
-  { label: "CẢI TẠO NHÀ CŨ", href: "/cai-tao-nha", tone: "green" },
+  { label: "CẢI TẠO NHÀ CŨ", href: "/dich-vu/cai-tao-nha-cu", tone: "green" },
   { label: "TÍNH CHI PHÍ NHANH", href: "#tinh-chi-phi", tone: "green" },
 ] as const;
 
