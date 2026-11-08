@@ -386,19 +386,19 @@ ${faqSection([
   },
 
   "xay-nha-tron-goi-binh-duong": {
-    title: "Xây Nhà Trọn Gói Bình Dương — Thuận An, Dĩ An & Lân Cận TP.HCM",
+    title: "Xây nhà trọn gói Bình Dương",
     excerpt:
       "Xây nhà trọn gói Bình Dương: nhà phố, biệt thự. Sao Khuê nhận từ TP.HCM — 0909 075 668.",
-    metaTitle: "Xây Nhà Trọn Gói Bình Dương 2026 | Sao Khuê",
+    metaTitle: "Xây nhà trọn gói Bình Dương | Kiến Trúc Sao Khuê",
     metaDescription:
-      "Xây nhà trọn gói Bình Dương: Thuận An, Dĩ An, Thủ Dầu Một. Báo giá minh bạch, BH 10 năm. 0909 075 668.",
+      "Xây nhà trọn gói Bình Dương: Thuận An, Dĩ An, Thủ Dầu Một. Đơn giá trọn gói tiêu chuẩn 4,85–5,5 triệu/m² sàn ở. Khảo sát miễn phí.",
     metaKeywords: "xây nhà trọn gói bình dương, xây nhà bình dương, nhà thầu bình dương",
     imageAlt: "Xây nhà trọn gói Bình Dương",
     content: `<h2>Xây nhà trọn gói Bình Dương — lợi thế so với nội thành</h2>
-<p>Bình Dương thường lô rộng hơn, đường xe tải, chi phí đất thấp hơn TP.HCM — phù hợp phố 4–5 tầng hoặc biệt thự. Sao Khuê thi công Thuận An, Dĩ An và huyện lân cận; điều phối từ Bình Thạnh. Gói nhỏ có thể ghi phụ phí di chuyển; trọn gói thường gộp.</p>
-<p>Case: <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a> · <a href="/dich-vu/xay-nha-tron-goi-binh-duong">dịch vụ Bình Dương</a>.</p>
+<p>Bình Dương thường lô rộng hơn, đường xe tải — phù hợp phố 4–5 tầng hoặc biệt thự. Sao Khuê thi công Thủ Dầu Một, Thuận An, Dĩ An và huyện lân cận; điều phối từ Bình Thạnh. Gói nhỏ có thể ghi phụ phí di chuyển; trọn gói thường gộp. Chủ nhà nên gửi địa chỉ lô, kích thước đất và số tầng dự kiến khi hẹn khảo sát.</p>
+<p>Case: <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a>. Công trình trong TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói tại TP.HCM</a>.</p>
 <h2>Đơn giá tham khảo</h2>
-<p>Trọn gói nhà phố Bình Dương thường <strong>thấp hơn 5–15%</strong> so cùng quy mô nội thành TP.HCM (trước chi phí đi lại). Phần thô khoảng 3,5–5 triệu/m² sàn.</p>
+<p>Cùng khung với TP.HCM, tính theo m² sàn ở: phần thô 3,55–3,8 triệu; trọn gói tiêu chuẩn 4,85–5,5 triệu; khá 5,5–6,0 triệu; cao cấp 6,0–6,7 triệu trở lên. Chi phí đi lại, nếu có, ghi thành dòng riêng trước khi ký. Cách tính m² xem <a href="/bao-gia">dự toán chi phí xây nhà</a>.</p>
 <h2>Pháp lý</h2>
 <p>GPXD theo tỉnh Bình Dương, không dùng hồ sơ TP.HCM. Sao Khuê hỗ trợ tra quy hoạch và bản vẽ xin phép.</p>
 ${faqSection([
@@ -806,7 +806,7 @@ const BATCH2_META_DESC: Record<string, string> = {
   "xay-nha-5-tang-tphcm":
     "Xây nhà 5 tầng TP.HCM: đơn giá từ 4,85 triệu/m² sàn ở. Thang máy và mái tách dòng. Tra giấy phép trước khi vẽ. Gọi 0909 075 668.",
   "xay-nha-tron-goi-binh-duong":
-    "Xây nhà trọn gói Bình Dương (Thuận An, Dĩ An): GPXD tỉnh, đơn giá riêng, không copy m² TP.HCM — 0909 075 668.",
+    "Xây nhà trọn gói Bình Dương: Thủ Dầu Một, Thuận An, Dĩ An. Trọn gói tiêu chuẩn 4,85–5,5 triệu/m² sàn ở. Khảo sát miễn phí, báo giá sau khi xem đất.",
   "cai-tao-nha-ong-tphcm":
     "Cải tạo nhà ống TP.HCM: giếng trời, WC giữa nhà, mặt tiền, ở được khi chia khu. Khảo sát kết cấu — 0909 075 668.",
   "nang-tang-nha-tphcm":

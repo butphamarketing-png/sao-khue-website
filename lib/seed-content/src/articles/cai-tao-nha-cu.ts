@@ -9,25 +9,25 @@ const IMG_2 = slugImage(SLUG, 1);
 const IMG_3 = slugImage(SLUG, 2);
 
 export const caiTaoNhaCu = {
-  title: "Cải Tạo Nhà Cũ Trọn Gói 2026 — Làm Mới Không Gian Sống | Sao Khuê",
+  title: "Cải tạo nhà trọn gói TP.HCM",
   excerpt:
     "Cải tạo nhà cũ trọn gói: khảo sát miễn phí, thiết kế 2D/3D, gia cố kết cấu, bảo hành theo hạng mục. Hotline 0909 075 668.",
-  metaTitle: "Cải Tạo Nhà Cũ Trọn Gói 2026 — Tiết Kiệm, Nâng Tầm Giá Trị | Sao Khuê",
+  metaTitle: "Cải tạo nhà trọn gói TP.HCM | Kiến Trúc Sao Khuê",
   metaDescription:
-    "Dịch vụ cải tạo nhà cũ trọn gói tại TP.HCM và các tỉnh. Làm mới mặt tiền, tái bố trí phòng, gia cố kết cấu. Tư vấn 0909 075 668.",
+    "Cải tạo nhà trọn gói TP.HCM: đổi bố trí phòng, làm mới mặt tiền, gia cố trước khi đục. Khảo sát miễn phí, báo giá theo hạng mục.",
   metaKeywords:
     "cải tạo nhà cũ, cải tạo nhà cũ trọn gói, chi phí cải tạo nhà cũ 2026, làm mới nhà cũ, nâng cấp nhà cũ, sửa chữa cải tạo nhà tphcm, kiến trúc sao khuê",
   imageAlt: "cải tạo nhà cũ trọn gói — thiết kế và thi công Sao Khuê",
   imageCaption: "Cải tạo nhà cũ — làm mới không gian, nâng tầm giá trị Kiến Trúc Sao Khuê",
   content: `
 <h2>Cải tạo nhà cũ — Làm mới không gian, nâng tầm giá trị</h2>
-<p><strong>Cải tạo nhà cũ</strong> là giải pháp thông minh khi căn nhà đã xuống cấp về thẩm mỹ, công năng hoặc hệ thống kỹ thuật — nhưng kết cấu móng, cột, dầm vẫn còn tốt. Thay vì phá bỏ <a href="/dich-vu/xay-nha-moi">xây nhà mới</a> tốn kém, <strong>cải tạo nhà cũ trọn gói</strong> giúp làm mới không gian sống, tối ưu diện tích và thường tiết kiệm <strong>30–50% chi phí</strong> so với xây dựng mới hoàn toàn.</p>
-<p><strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> cung cấp dịch vụ <strong>cải tạo nhà cũ</strong> tại TP.HCM, Bình Dương, Đồng Nai, Đắk Lắk — từ khảo sát hiện trạng, thiết kế phương án 2D/3D, gia cố kết cấu đến thi công hoàn thiện và bàn giao. Hơn <strong>10 năm kinh nghiệm</strong>, báo giá minh bạch, bảo hành theo hạng mục.</p>
+<p><strong>Cải tạo nhà trọn gói TP.HCM</strong> là đổi công năng nhà đang ở: bố trí lại phòng, mở bếp, làm mới mặt tiền, thêm giếng trời, kèm gia cố cột dầm nếu cần đục. Khác với <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> — trang sửa dành cho thấm, sơn, điện nước và thay thế hạng mục hỏng. Nếu kết cấu không còn dùng được, kỹ sư sẽ nói thẳng và chuyển sang <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà mới tại TP.HCM</a>.</p>
+<p>Sao Khuê khảo sát miễn phí tại nhà phố TP.HCM, rồi lập mặt bằng và dự toán từng hạng mục trước khi đục. Cùng đội làm ở Bình Dương, Đồng Nai và Đắk Lắk khi lịch khảo sát sắp được. Hơn <strong>10 năm</strong> làm nhà phố. Bảo hành theo hạng mục ghi trong hợp đồng.</p>
 
 ${imageFigure(IMG_1, FOCUS, 1)}
 
 <h2>Cải tạo nhà cũ là gì? Khác gì sửa chữa nhà?</h2>
-<p><strong>Cải tạo nhà cũ</strong> là nâng cấp toàn diện hoặc từng phần căn nhà đã có: thay đổi bố cục phòng, làm mới mặt tiền, nâng cấp điện nước, ốp lát, trần, cửa — có thể kèm gia cố kết cấu. Khác với <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> (xử lý hư hỏng cụ thể như chống thấm, sơn vá), cải tạo hướng tới <strong>thay đổi không gian sống</strong> và nâng tầm giá trị bất động sản.</p>
+<p><strong>Cải tạo nhà cũ</strong> là đổi bố cục và hình thức căn nhà đang có: phòng, mặt tiền, điện nước, ốp lát, trần, cửa, có thể kèm gia cố. <a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa chữa nhà</a> xử lý hư hỏng cụ thể như chống thấm hoặc sơn vá, không nhằm đổi công năng.</p>
 <ul>
   <li><strong>Sửa chữa:</strong> Chống thấm, sơn, thay gạch hỏng — quy mô nhỏ, nhanh.</li>
   <li><strong>Cải tạo:</strong> Đục tường, mở rộng phòng, đổi mặt tiền, nâng tầng — quy mô lớn hơn.</li>
@@ -79,7 +79,7 @@ ${imageFigure(IMG_2, FOCUS, 2)}
   <li><strong>Quy hoạch hạn chế:</strong> Không được phép xây mới hoàn toàn trên lô hiện tại.</li>
   <li><strong>Cần kinh doanh sớm:</strong> Mở quán, văn phòng tại nhà phố — cải tạo nhanh hơn xây mới.</li>
 </ul>
-<p>Nếu kết cấu xuống cấp nặng, nghiêng lệch hoặc móng yếu — kỹ sư Sao Khuê sẽ tư vấn <a href="/dich-vu/xay-nha-moi">xây nhà mới</a> an toàn hơn.</p>
+<p>Nếu kết cấu xuống cấp nặng, nghiêng lệch hoặc móng yếu — kỹ sư Sao Khuê sẽ tư vấn <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà mới</a> an toàn hơn.</p>
 
 ${imageFigure(IMG_3, FOCUS, 3)}
 

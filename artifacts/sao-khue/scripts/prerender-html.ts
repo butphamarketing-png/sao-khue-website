@@ -225,8 +225,17 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>Dự toán chi phí xây nhà</h1>
-        <p>${escapeHtml(defaultPageBanners.pricing.subtitle)}</p>
-        <p>Đơn giá gói xây xem tại <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">trang dịch vụ</a>. <a href="/lien-he">Đặt lịch khảo sát</a>.</p>
+        <p>${escapeHtml(defaultPageBanners.pricing.subtitle)} Đơn giá tính theo m² sàn ở, chưa gồm tum, lửng và sân.</p>
+        <h2>Báo giá xây nhà theo m²</h2>
+        <ul>
+          <li>Phần thô: 3,55–3,8 triệu/m².</li>
+          <li>Trọn gói tiêu chuẩn: 4,85–5,5 triệu/m².</li>
+          <li>Trọn gói khá: 5,5–6,0 triệu/m².</li>
+          <li>Trọn gói cao cấp: 6,0–6,7 triệu/m² trở lên.</li>
+        </ul>
+        <h2>Chi phí phụ thuộc vào đâu</h2>
+        <p>Loại nhà, số tầng, chiều rộng hẻm, móng, mái và các hạng mục thêm như lửng, sân thượng, ban công. Máy tính trên trang cho số tham khảo. Hợp đồng chốt sau khi khảo sát mặt bằng.</p>
+        <p>Gói xây tại TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói TP.HCM</a>. Nhà đang có thì xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> hoặc <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói</a>. <a href="/lien-he">Đặt lịch khảo sát</a> hoặc gọi 0909 075 668.</p>
       `),
     },
     {

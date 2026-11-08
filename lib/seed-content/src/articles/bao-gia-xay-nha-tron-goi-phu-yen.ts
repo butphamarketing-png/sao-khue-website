@@ -20,8 +20,8 @@ export const baoGiaXayNhaTronGoiPhuYen = {
 <p>Bài này dành cho chủ đất TP. Tuy Hòa, Sông Cầu, Đông Hòa, Phú Hòa cần mốc đơn giá để lên kế hoạch tài chính.</p>
 
 <figure class="article-figure article-figure--inline">
-<img src="${SK_IMG_1}" alt="bao-gia-xay-nha-phu-yen-1" loading="lazy" decoding="async" />
-<figcaption>bao-gia-xay-nha-phu-yen-1</figcaption>
+<img src="${SK_IMG_1}" alt="Báo giá xây nhà trọn gói tại Phú Yên" loading="lazy" decoding="async" />
+<figcaption>Báo giá xây nhà trọn gói tại Phú Yên</figcaption>
 </figure>
 
 <h2>Bảng đơn giá theo tiêu chuẩn hoàn thiện</h2>
@@ -100,7 +100,7 @@ export const baoGiaXayNhaTronGoiPhuYen = {
   <li><strong>Phát sinh khó kiểm soát:</strong> Không có hợp đồng cố định, thợ tự do dễ "thêm hạng mục" và tăng giá.</li>
   <li><strong>Không có bảo hành:</strong> Khi phát sinh thấm, nứt sau bàn giao — không có đơn vị chịu trách nhiệm.</li>
 </ul>
-<p>Với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
+<p>Với Sao Khuê: một hợp đồng, giá cố định, bảo hành 10 năm kết cấu. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">dịch vụ xây nhà trọn gói tại TP.HCM</a> và <a href="/tin-tuc/thi-cong-nha-pho-phu-yen">thi công nhà phố Phú Yên</a>.</p>
 
 <h2>Yếu tố làm đội chi phí tại Phú Yên</h2>
 <ul>

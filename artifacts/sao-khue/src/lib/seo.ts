@@ -18,7 +18,7 @@ export const HOME_SEO_DESCRIPTION =
 /** Tiêu đề hub — từ khóa đứng trước, đủ ngắn để Google không cắt thương hiệu. */
 export const BAO_GIA_SEO_TITLE = `Dự toán chi phí xây nhà | ${SEO_BRAND}`;
 export const BAO_GIA_SEO_DESCRIPTION =
-  "Máy tính chi phí xây nhà tại TP.HCM: phần thô từ 3,55 triệu/m², trọn gói từ 4,85 triệu/m². Số hợp đồng chốt sau khi khảo sát.";
+  "Báo giá xây nhà theo m² sàn ở: phần thô 3,55–3,8 triệu, trọn gói tiêu chuẩn 4,85–5,5 triệu. Dự toán tham khảo, chốt sau khảo sát.";
 export const THIET_KE_SEO_TITLE = `Thiết kế nhà phố TP.HCM | ${SEO_BRAND}`;
 export const THIET_KE_SEO_DESCRIPTION =
   "Thiết kế nhà phố TP.HCM: mặt bằng 2D/3D, biệt thự và nhà ống. Tối ưu công năng trước khi xây, khảo sát miễn phí.";

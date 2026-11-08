@@ -1,6 +1,6 @@
 ﻿/** Nội dung bài viết SEO — slug: xay-nha-tron-goi-binh-duong */
 export const xayNhaTronGoiBinhDuong = {
-  title: "Xây Nhà Trọn Gói Chuyên Nghiệp Tại Bình Dương",
+  title: "Xây nhà trọn gói Bình Dương",
   excerpt:
     "Xây nhà trọn gói Bình Dương: khảo sát miễn phí, báo giá minh bạch, thi công chuyên nghiệp tại Thủ Dầu Một, Thuận An, Dĩ An. Bảo hành kết cấu 10 năm — 0909 075 668.",
   metaTitle: "Xây Nhà Trọn Gói Bình Dương | Sao Khuê",
@@ -39,7 +39,7 @@ export const xayNhaTronGoiBinhDuong = {
   <li><strong>Giám sát &amp; quản lý dự án:</strong> Cập nhật tiến độ, nghiệm thu từng hạng mục.</li>
   <li><strong>Bảo hành:</strong> Kết cấu <strong>10 năm</strong>, hoàn thiện <strong>12–36 tháng</strong> theo hợp đồng.</li>
 </ul>
-<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế; hoặc <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a> khi công trình nằm nội thành.</p>
+<p>Xem thêm <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a> nếu bạn đã có thiết kế. Công trình nằm trong TP.HCM dùng trang <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói tại TP.HCM</a>, không dùng bài Bình Dương.</p>
 
 <h2>Báo giá xây nhà trọn gói Bình Dương tham khảo 2026</h2>
 <p>Đơn giá phụ thuộc quy mô, vật liệu, mặt bằng và yêu cầu thiết kế. Bảng dưới đây mang tính <strong>tham khảo</strong> — báo giá chính thức sau khảo sát miễn phí tại Bình Dương:</p>
@@ -58,7 +58,7 @@ export const xayNhaTronGoiBinhDuong = {
 
 <h2>Quy trình xây nhà trọn gói Bình Dương — 6 bước</h2>
 <ol>
-  <li><strong>Tiếp nhận &amp; tư vấn:</strong> Hotline, Zalo hoặc <a href="/lien-he">form liên hệ</a> — mô tả lô đất, quy mô dự kiến.</li>
+  <li><strong>Tiếp nhận &amp; tư vấn:</strong> Gọi, Zalo hoặc <a href="/lien-he">form liên hệ</a>. Nên gửi địa chỉ lô, kích thước đất và số tầng dự kiến để kỹ sư xếp lịch khảo sát.</li>
   <li><strong>Khảo sát mặt bằng tại Bình Dương:</strong> Đo đạc, kiểm tra địa chất, tư vấn quy hoạch sơ bộ theo địa phương.</li>
   <li><strong>Thiết kế &amp; chốt phương án:</strong> Mặt bằng, phối cảnh 3D, danh mục vật tư.</li>
   <li><strong>Báo giá &amp; ký hợp đồng:</strong> Minh bạch hạng mục, cam kết không phát sinh khi không đổi thiết kế.</li>

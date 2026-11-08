@@ -1,19 +1,20 @@
 ﻿/** Nội dung bài viết SEO — slug: sua-nha-tron-goi-tphcm (trang tiền sửa nhà) */
 export const suaNhaTronGoiTphcm = {
-  title: "Sửa Nhà Trọn Gói TP.HCM 2026 — Báo Giá Minh Bạch | Sao Khuê",
+  title: "Sửa nhà trọn gói TP.HCM",
   excerpt:
     "Sửa nhà trọn gói TP.HCM: sơn lát 1,5–3 triệu/m², WC–bếp 4–7 triệu/m². Khảo sát miễn phí, một đầu mối, bảo hành kết cấu tới 10 năm. 0909 075 668.",
-  metaTitle: "Sửa Nhà Trọn Gói TP.HCM — Báo Giá 2026 | Sao Khuê",
+  metaTitle: "Sửa nhà trọn gói TP.HCM | Kiến Trúc Sao Khuê",
   metaDescription:
-    "Sửa nhà trọn gói TP.HCM 2026: sơn lát 1,5–3 triệu/m², WC–bếp 4–7 triệu/m². Báo giá sau khảo sát, không phát sinh ảo. 0909 075 668.",
+    "Dịch vụ sửa nhà trọn gói TP.HCM: chống thấm, điện nước, sơn lát 1,5–3 triệu/m². Khảo sát miễn phí, báo giá theo hạng mục sau khi xem nhà.",
   metaKeywords:
     "sửa nhà trọn gói tphcm, báo giá sửa nhà, sửa chữa nhà tp hcm, cải tạo nhà phố, kiến trúc sao khuê",
   imageAlt: "Sửa nhà trọn gói TP.HCM — chống thấm, sơn và ốp lát nhà phố",
   imageCaption: "Nhà phố sau khi sửa: xử lý thấm, sơn nước và ốp lát",
   content: `
 <h2 id="dich-vu-sua-nha-tron-goi-tai-tphcm-an-tam-tu-khao-sat-den-ban-giao">Dịch vụ sửa nhà trọn gói tại TP.HCM</h2>
-<p>Nhà ở sau nhiều năm thường gặp ẩm mốc, nứt tường, điện nước xuống cấp hoặc công năng không còn phù hợp. <strong>Công ty TNHH Kiến Trúc Sao Khuê</strong> nhận sửa nhà trọn gói tại TP.HCM — một đầu mối từ khảo sát, dự toán, thi công đến bàn giao. Chủ nhà thấy hạng mục và đơn giá trước khi đập, không ghép thợ từng việc.</p>
-<p>Hơn <strong>10 năm</strong> làm nhà phố, biệt thự và căn hộ tại Bình Thạnh, Thủ Đức, Quận 3, Quận 7, Gò Vấp. Phương án bám hiện trạng đo tại nhà, không chốt giá qua tin nhắn khi chưa có ảnh và kích thước.</p>
+<p><strong>Sửa nhà trọn gói TP.HCM</strong> là một đơn vị lo khảo sát, bóc hạng mục hư hỏng, thi công và bàn giao. Sao Khuê nhận nhà phố đang thấm, nứt, điện nước cũ, sơn bong hoặc WC–bếp xuống cấp tại nội thành. Chủ nhà thấy danh mục và đơn giá trước khi đập, không ghép nhiều đội thợ.</p>
+<p>Nếu việc chính là đổi bố trí phòng, mở bếp hoặc làm mới mặt tiền, xem <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói TP.HCM</a>. Nếu móng và khung không còn dùng được, xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói tại TP.HCM</a>. Trang này dành cho sửa chữa và hoàn thiện nhà đang có.</p>
+<p>Khảo sát miễn phí sau khi có ảnh hiện trạng và kích thước sơ bộ. Hơn <strong>10 năm</strong> làm nhà phố tại Bình Thạnh, Thủ Đức, Quận 3, Quận 7, Gò Vấp. Không chốt giá qua tin nhắn khi chưa đo tại nhà.</p>
 
 <h2 id="sua-nha-tron-goi-la-gi">Sửa nhà trọn gói là gì?</h2>
 <p><strong>Sửa nhà trọn gói</strong> là nhà thầu lo khảo sát, thiết kế nếu cần đổi công năng, vật tư ghi trong hợp đồng, thi công và nghiệm thu. Một đầu mối bảo hành. Khác với thuê thợ lẻ từng hạng mục: sơn một đội, điện một đội, chống thấm một đội — lệch mạch và không rõ ai chịu khi thấm lại.</p>
@@ -52,7 +53,7 @@ export const suaNhaTronGoiTphcm = {
 
 <h2 id="quy-trinh-sua-nha-tron-goi-6-buoc-tai-sao-khue">Quy trình sửa nhà trọn gói 6 bước tại Sao Khuê</h2>
 <ol>
-  <li><strong>Tiếp nhận:</strong> Hotline, Zalo hoặc form — mô tả nhu cầu, gửi ảnh hiện trạng.</li>
+  <li><strong>Tiếp nhận:</strong> Gọi, nhắn Zalo hoặc gửi form. Nên chuẩn bị ảnh tường, mái, WC và kích thước phòng. Nói rõ nhà có đang ở hay dọn trống.</li>
   <li><strong>Khảo sát miễn phí:</strong> Đo đạc, ghi thấm, nứt, điện nước. Hỏi giấy phép nếu đổi mặt đứng hoặc nâng tầng.</li>
   <li><strong>Phương án:</strong> Danh mục hạng mục, vật tư đề xuất, mặt bằng nếu cần đổi phòng.</li>
   <li><strong>Báo giá và hợp đồng:</strong> Tách thô, trọn gói và phụ lục. Phát sinh chỉ khi có xác nhận bằng văn bản.</li>
