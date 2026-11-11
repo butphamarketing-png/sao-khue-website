@@ -52,3 +52,8 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Local audit output
+scripts/*-out.json
+scripts/*-out.txt
+docs/ads-seo-7m/serpapi-rank-progress.json

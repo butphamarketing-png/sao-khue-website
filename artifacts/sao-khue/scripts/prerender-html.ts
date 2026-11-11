@@ -550,9 +550,11 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
       crumbs.length >= 3 ? crumbs[crumbs.length - 2]?.path : `/${post.category}`;
 
     const postFaq = extractFaqFromArticleHtml(post.content ?? "");
-    const published = (post.createdAt ?? "2026-01-15").slice(0, 10);
+    const editorialCreatedAt = getFallbackPost(post.slug)?.createdAt;
+    const publishedAt = post.createdAt ?? editorialCreatedAt ?? "2026-01-15T00:00:00.000Z";
+    const published = publishedAt.slice(0, 10);
     const editorialUpdatedAt = getFallbackPost(post.slug)?.updatedAt;
-    const modified = (post.updatedAt ?? editorialUpdatedAt ?? post.createdAt ?? "2026-01-15").slice(0, 10);
+    const modified = (post.updatedAt ?? editorialUpdatedAt ?? publishedAt).slice(0, 10);
     const isTurnkey = post.slug === "xay-nha-tron-goi-tphcm";
     const pageSchema =
       post.slug === "sua-nha-tron-goi-tphcm" || isTurnkey
@@ -635,8 +637,8 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
         ogImage: resolveAbsoluteImage(post.imageUrl) || DEFAULT_OG,
         ogImageAlt: imageAlt,
         ogType: "article",
-        publishedTime: post.createdAt ?? "2026-01-15T00:00:00.000Z",
-        modifiedTime: post.updatedAt ?? editorialUpdatedAt ?? post.createdAt ?? "2026-01-15T00:00:00.000Z",
+        publishedTime: publishedAt,
+        modifiedTime: post.updatedAt ?? editorialUpdatedAt ?? publishedAt,
         noindex: Boolean(post.noindex),
       },
       bodyHtml: shell(`

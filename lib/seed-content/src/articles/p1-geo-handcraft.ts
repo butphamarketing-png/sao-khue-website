@@ -177,7 +177,7 @@ ${faqSection([
   <li>Khảo sát móng (nếu nhà cũ) + đo hẻm.</li>
   <li>Thiết kế 1 trệt 2 lầu hoặc 4 tầng đúng phép.</li>
   <li>HĐ: list vật tư, phụ phí hẻm, cao độ trệt.</li>
-  <li>Thi công 5–8 tháng nhà phố 3–4 tầng.</li>
+  <li>Thi công nhà phố 3–4 tầng: mặt tiền, đường lớn thường 4–7 tháng; hẻm hẹp thường 5–8 tháng.</li>
   <li>Nghiệm thu, BH 10 năm.</li>
 </ol>
 <p>Quy trình đầy đủ: <a href="/dich-vu/xay-nha-tron-goi-tphcm">pillar</a>.</p>
@@ -631,7 +631,7 @@ ${faqSection([
 <h2>Đất vườn và mục đích sử dụng</h2>
 <p>Nhiều thửa vẫn là đất trồng cây hoặc đất ở một phần. Xây nhà ở trên phần chưa được phép là rủi ro phá dỡ. Sao Khuê xem sổ trước khi vẽ biệt thự. Giếng khoan và hầm cầu thiết kế cùng cao độ nền, không để sau khi đã lát sân.</p>
 <h2>Tiến độ</h2>
-<p>Nhà phố thường 5–8 tháng nếu đường xe vào được. Mùa mưa đường đất kéo dài hơn. Mốc ghi trong hợp đồng, không hứa tiến độ nội thành.</p>
+<p>Nhà phố 3–4 tầng thường 4–7 tháng nếu xe tải vào tận lô. Lối nhỏ hoặc đường đất thường 5–8 tháng, mùa mưa có thể dài hơn. Mốc ghi trong hợp đồng.</p>
 ${faqSection([
   { q: "Xây nhà Củ Chi có rẻ hơn TP.HCM không?", a: "Đơn giá sàn không rẻ hơn để bù đất. Khoản thêm thường là xe, móng và công trình phụ ngoài nhà." },
   { q: "Nhà vườn có gồm hàng rào không?", a: "Không, trừ khi phụ lục ghi. Hàng rào, cổng, sân đá tính riêng khỏi m² sàn." },

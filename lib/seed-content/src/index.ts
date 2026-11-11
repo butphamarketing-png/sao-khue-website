@@ -860,13 +860,18 @@ export function toFallbackPost(seed: SeedPost, id: number): FallbackPost {
     metaTitle: seed.metaTitle ?? "",
     metaDescription: seed.metaDescription ?? "",
     metaKeywords: seed.metaKeywords ?? "",
-    createdAt: FALLBACK_TIMESTAMP,
+    createdAt:
+      seed.slug === "xay-nha-tron-goi-tphcm-2026"
+        ? "2026-11-11T00:00:00.000Z"
+        : FALLBACK_TIMESTAMP,
     updatedAt:
       seed.slug === "sua-nha-tron-goi-tphcm"
         ? "2026-10-16T08:00:00.000Z"
         : seed.slug === "xay-nha-tron-goi-tphcm"
           ? "2026-11-05T11:00:00.000Z"
-          : FALLBACK_TIMESTAMP,
+          : seed.slug === "xay-nha-tron-goi-tphcm-2026"
+            ? "2026-11-11T00:00:00.000Z"
+            : FALLBACK_TIMESTAMP,
   };
 }
 

@@ -44,7 +44,7 @@ export const xayNhaPhoBinhThanh = {
 <ul>
   <li>Hotline <strong>0909 075 668</strong></li>
   <li><a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch khảo sát</a></li>
-  <li>Xem thêm <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a> · <a href="/tin-tuc/xay-nha-tron-goi-binh-thanh">trọn gói Bình Thạnh</a></li>
+  <li>Xem thêm <a href="/tin-tuc/xay-nha-binh-thanh">xây nhà Bình Thạnh</a></li>
 </ul>
 
 <h2>Vì sao lô 5×18m chọn 4 tầng?</h2>
