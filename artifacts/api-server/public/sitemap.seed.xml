@@ -841,7 +841,25 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/sua-chua-nha-quy-nhon</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://www.kientrucsaokhue.com/tin-tuc/cai-tao-nha-binh-dinh</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/xay-nha-quy-nhon</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.kientrucsaokhue.com/tin-tuc/xay-nha-2-tang-binh-dinh</loc>
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>

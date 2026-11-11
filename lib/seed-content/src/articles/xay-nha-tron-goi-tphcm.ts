@@ -1,4 +1,6 @@
 ﻿/** Nội dung bài viết SEO — slug: xay-nha-tron-goi-tphcm */
+import { tphcmProjectsBlock } from "../tphcm-projects";
+
 export const xayNhaTronGoiTphcm = {
   title: "Xây nhà trọn gói TPHCM",
   excerpt:
@@ -163,12 +165,7 @@ export const xayNhaTronGoiTphcm = {
   <img src="/images/sao-khue/sk-03.jpg" alt="Xây nhà trọn gói TPHCM trong hẻm hẹp: giàn giáo và máy trộn — Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
   <figcaption>Giàn giáo, gạch và máy trộn khi xây nhà trong hẻm. Xem thêm tại <a href="/cong-trinh">công trình tiêu biểu</a>.</figcaption>
 </figure>
-<ul>
-  <li><a href="/cong-trinh/xay-nha-pho-binh-thanh">Nhà phố Bình Thạnh</a> — thi công nội thành, giám sát hiện trường.</li>
-  <li><a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">Biệt thự sân vườn Thủ Đức</a> — thiết kế và thi công cùng một đơn vị.</li>
-  <li><a href="/cong-trinh/xay-nha-pho-thuan-an">Nhà phố Thuận An</a> — mẫu chìa khóa trao tay đã bàn giao, giáp ranh TP.HCM.</li>
-  <li><a href="/cong-trinh">Công trình tiêu biểu</a> — xem thêm ảnh hiện trường.</li>
-</ul>
+${tphcmProjectsBlock()}
 <p>Ảnh trên trang là ảnh công trình của Sao Khuê. Muốn tham quan trước khi ký: gọi 0909 075 668, sắp theo lịch chủ nhà.</p>
 <p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Chi nhánh hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đắk Lắk: Xuân Thạnh 2, Tây Hòa. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
 
