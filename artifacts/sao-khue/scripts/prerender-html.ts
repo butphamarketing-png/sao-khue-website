@@ -81,7 +81,7 @@ function resolveAbsoluteImage(url?: string | null): string | undefined {
 
 const BRAND = "CÔNG TY TNHH THIẾT KẾ VÀ XÂY DỰNG SAO KHUÊ";
 const BRAND_SHORT = "Kiến Trúc Sao Khuê";
-const DEFAULT_OG = `${SITE_URL}/images/hero-1.jpg`;
+const DEFAULT_OG = `${SITE_URL}/images/og-sao-khue.jpg`;
 const FOOTER_DESC =
   "Thiết kế và thi công nhà phố, biệt thự trọn gói tại TP.HCM và Đắk Lắk. Khảo sát miễn phí, báo giá minh bạch, bảo hành kết cấu 10 năm.";
 const SITE_ADDRESS = "36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM";
@@ -168,7 +168,7 @@ function buildStaticPages(): PrerenderPage[] {
         keywords:
           "thiết kế nhà phố tphcm, xây nhà phố, biệt thự, kiến trúc sao khuê",
         ogImage: DEFAULT_OG,
-        ogImageAlt: `${BRAND_SHORT} — xây nhà trọn gói TPHCM`,
+        ogImageAlt: `Đội ngũ ${BRAND_SHORT} — tư vấn thiết kế, thi công xây dựng và cải tạo nhà`,
       },
       bodyHtml: shell(`
         ${navHome()}

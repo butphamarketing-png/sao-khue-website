@@ -23,6 +23,9 @@ export type PrerenderMeta = {
 const OG_SITE_NAME = "Kiến Trúc Sao Khuê";
 const DEFAULT_OG_IMAGE_ALT =
   "Kiến Trúc Sao Khuê — thiết kế và xây nhà trọn gói TP.HCM";
+const DEFAULT_OG_IMAGE_PATH = "/images/og-sao-khue.jpg";
+const DEFAULT_OG_IMAGE_WIDTH = 1024;
+const DEFAULT_OG_IMAGE_HEIGHT = 576;
 
 export function escapeHtml(text: string): string {
   return text
@@ -56,8 +59,9 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
     : "index,follow,max-image-preview:large";
   const title = truncateMeta(meta.title, 60);
   const description = truncateMeta(meta.description, 160);
-  const rawOg = meta.ogImage?.trim() || "/images/hero-1.jpg";
+  const rawOg = meta.ogImage?.trim() || DEFAULT_OG_IMAGE_PATH;
   const ogImage = /^https?:\/\//i.test(rawOg) ? rawOg : absoluteUrl(siteUrl, rawOg);
+  const isDefaultOg = ogImage.endsWith(DEFAULT_OG_IMAGE_PATH);
   const lines: string[] = [
     ...GSC_VERIFICATION_TOKENS.map(
       (token) => `<meta name="google-site-verification" content="${escapeHtml(token)}" />`,
@@ -80,6 +84,12 @@ export function buildHeadTags(meta: PrerenderMeta, siteUrl: string): string {
     `<meta property="og:image:alt" content="${escapeHtml(meta.ogImageAlt?.trim() || DEFAULT_OG_IMAGE_ALT)}" />`,
     `<meta name="twitter:image" content="${escapeHtml(ogImage)}" />`,
   ];
+  if (isDefaultOg) {
+    lines.push(
+      `<meta property="og:image:width" content="${DEFAULT_OG_IMAGE_WIDTH}" />`,
+      `<meta property="og:image:height" content="${DEFAULT_OG_IMAGE_HEIGHT}" />`,
+    );
+  }
   if (meta.keywords) {
     lines.push(`<meta name="keywords" content="${escapeHtml(meta.keywords)}" />`);
   }

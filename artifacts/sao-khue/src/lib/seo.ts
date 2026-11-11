@@ -67,7 +67,7 @@ export function countWordsFromHtml(html: string): number {
 }
 
 /** Fallback OG — path tĩnh (prerender Node không import được .jpg/.png qua Vite). */
-const DEFAULT_OG_FALLBACK_PATH = "/images/hero-1.jpg";
+const DEFAULT_OG_FALLBACK_PATH = "/images/og-sao-khue.jpg";
 
 export function resolveOgImage(
   url?: string | null,
