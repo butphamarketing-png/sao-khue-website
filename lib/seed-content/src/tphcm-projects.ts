@@ -35,7 +35,7 @@ export const TPHCM_PROJECTS: TphcmProject[] = [
   {
     name: "Nhà phố Bình Thạnh",
     href: "/cong-trinh/xay-nha-pho-binh-thanh",
-    summary: "thi công nội thành, giám sát hiện trường.",
+    summary: "thi công nội thành, giám sát thi công.",
   },
   {
     name: "Biệt thự sân vườn Thủ Đức",
@@ -80,6 +80,6 @@ export function tphcmProjectsBlock(projects: TphcmProject[] = TPHCM_PROJECTS): s
   const items = projects.map(projectItem);
   return [
     ...figures,
-    `<ul>\n  ${[...items, `<li><a href="/cong-trinh">Công trình tiêu biểu</a> — xem thêm ảnh hiện trường.</li>`].join("\n  ")}\n</ul>`,
+    `<ul>\n  ${[...items, `<li><a href="/cong-trinh">Công trình tiêu biểu</a> — xem thêm ảnh thi công.</li>`].join("\n  ")}\n</ul>`,
   ].join("\n");
 }

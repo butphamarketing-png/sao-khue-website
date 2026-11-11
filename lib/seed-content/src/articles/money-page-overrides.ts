@@ -1997,7 +1997,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-24.jpg" alt="Xây nhà Bình Thạnh: móng gạch trong hẻm hẹp, thép chờ nhô lên — Kiến Trúc Sao Khuê" width="1477" height="1108" loading="lazy" decoding="async" />
-  <figcaption>Móng trong hẻm hẹp, sát tường nhà bên. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Móng trong hẻm hẹp, sát tường nhà bên. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <p>Nhà liền kề cần biên bản hiện trạng tường chung trước khi đào móng. Không khoan sang nhà bên. Giờ cao điểm trên Xô Viết Nghệ Tĩnh và Điện Biên Phủ làm đổi ca đổ bê tông — mốc ghi trong hợp đồng.</p>
 
@@ -2015,14 +2015,14 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành kết cấu 10 năm, hoàn thiện 12–36 tháng.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Công trình tại Bình Thạnh</h2>
-<p>Ảnh dưới là hiện trường thi công của Sao Khuê, không gắn một số nhà cụ thể. Muốn xem nhà đã bàn giao: <a href="/cong-trinh/xay-nha-pho-binh-thanh">nhà phố Bình Thạnh</a>.</p>
+<p>Ảnh dưới là ảnh thi công của Sao Khuê, không gắn một số nhà cụ thể. Muốn xem nhà đã bàn giao: <a href="/cong-trinh/xay-nha-pho-binh-thanh">nhà phố Bình Thạnh</a>.</p>
 <figure>
-  <img src="/images/sao-khue/sk-03.jpg" alt="Giàn giáo và máy trộn trong hẻm hẹp khi xây nhà phố — hiện trường Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
+  <img src="/images/sao-khue/sk-03.jpg" alt="Giàn giáo và máy trộn trong hẻm hẹp khi xây nhà phố — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
   <figcaption>Giàn giáo, gạch và máy trộn khi xây nhà trong hẻm. Xem thêm <a href="/cong-trinh">công trình tiêu biểu</a>.</figcaption>
 </figure>
 <p>Văn phòng: 245/8 Bình Lợi, Phường 13, Bình Thạnh. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí trên Google Maps</a>.</p>
@@ -2095,7 +2095,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-11.jpg" alt="Xây nhà Thủ Đức: hố móng đã buộc thép, chưa đổ bê tông — Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh hiện trường Sao Khuê, không gắn một lô cụ thể.</figcaption>
+  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh thi công Sao Khuê, không gắn một lô cụ thể.</figcaption>
 </figure>
 <p>Nhà hướng tây trên trục lớn cần che nắng mặt đứng. Kính full mặt đường dễ nóng. Mặt đứng khu dân cư phải đúng quy chế, không chỉ đúng sở thích chủ nhà.</p>
 
@@ -2157,8 +2157,8 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành kết cấu 10 năm.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Câu hỏi thường gặp</h2>
@@ -2222,7 +2222,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 <p>Hẻm Tân Thuận Đông và Tân Thuận Tây hẹp hơn. Đo bề ngang lối vào. Hẻm dưới 3 m thì bơm từ mặt tiền hoặc vận chuyển nhỏ. Phụ phí ghi một dòng, không gộp vào đơn giá m². Nhà sát cần biên bản tường chung trước khi đào móng.</p>
 <figure>
   <img src="/images/sao-khue/sk-11.jpg" alt="Xây nhà Quận 7: hố móng đã buộc thép, chưa đổ bê tông — Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh hiện trường Sao Khuê, không gắn một lô Quận 7 cụ thể.</figcaption>
+  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh thi công Sao Khuê, không gắn một lô Quận 7 cụ thể.</figcaption>
 </figure>
 
 <h2>Giấy phép xây dựng tại Quận 7</h2>
@@ -2286,8 +2286,8 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành kết cấu 10 năm.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Câu hỏi thường gặp</h2>
@@ -2354,7 +2354,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-03.jpg" alt="Xây nhà Gò Vấp: giàn giáo và máy trộn trong hẻm hẹp — Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
-  <figcaption>Giàn giáo và máy trộn trong hẻm. Ảnh hiện trường Sao Khuê, không gắn một số nhà cụ thể.</figcaption>
+  <figcaption>Giàn giáo và máy trộn trong hẻm. Ảnh thi công Sao Khuê, không gắn một số nhà cụ thể.</figcaption>
 </figure>
 <p>Nhà liền kề cần biên bản tường chung trước khi đào móng. Phá nhà cũ thì ngắt điện nước, tháo từng phần, đổ phế thải đúng nơi, rồi khảo sát nền lại trước khi đào móng. Không tháo ồ ạt trong hẻm đông.</p>
 
@@ -2422,8 +2422,8 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành kết cấu 10 năm.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Câu hỏi thường gặp</h2>

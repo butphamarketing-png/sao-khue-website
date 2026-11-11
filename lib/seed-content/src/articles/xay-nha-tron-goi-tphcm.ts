@@ -11,12 +11,12 @@ export const xayNhaTronGoiTphcm = {
   metaKeywords:
     "xây nhà trọn gói tphcm, xây nhà trọn gói tphcm 2026, đơn giá xây nhà trọn gói, chìa khóa trao tay, kiến trúc sao khuê",
   imageAlt: "Xây nhà trọn gói TPHCM: giàn giáo và máy trộn trong hẻm hẹp — Kiến Trúc Sao Khuê",
-  imageCaption: "Xây nhà trọn gói TPHCM trong hẻm: giàn giáo, gạch và máy trộn. Ảnh hiện trường Sao Khuê.",
+  imageCaption: "Xây nhà trọn gói TPHCM trong hẻm: giàn giáo, gạch và máy trộn. Ảnh thi công Sao Khuê.",
   content: `
 <p><strong>Xây nhà trọn gói TPHCM</strong> là giao một nhà thầu lo khảo sát, thiết kế, thi công thô, hoàn thiện cơ bản và bàn giao trong <strong>một hợp đồng</strong>. Năm 2026, gói tiêu chuẩn của Sao Khuê từ <strong>4,85 triệu/m²</strong> sàn ở. Gia chủ không tự mua sắt thép và không điều phối nhiều đội thợ.</p>
 
 <h2>Dịch vụ xây nhà trọn gói tại TPHCM</h2>
-<p><strong>Công ty TNHH Thiết kế và Xây dựng Sao Khuê</strong> ghi list vật tư, tiến độ và bảo hành kết cấu 10 năm vào hợp đồng. Đổi thiết kế hoặc chủng loại thì lập phụ lục — không phát sinh miệng. Văn phòng hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Hotline <strong>0909 075 668</strong>. Giờ làm việc thứ 2–thứ 7, 8:00–17:30.</p>
+<p><strong>Công ty TNHH Thiết kế và Xây dựng Sao Khuê</strong> ghi list vật tư, tiến độ và bảo hành kết cấu 10 năm vào hợp đồng. Đổi thiết kế hoặc chủng loại thì lập phụ lục — không phát sinh miệng. Văn phòng: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Hotline <strong>0909 075 668</strong>. Giờ làm việc thứ 2–thứ 7, 8:00–17:30.</p>
 <p>Hơn 10 năm, hơn 500 công trình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Muốn ước lượng trước khi gọi: <a href="/bao-gia">máy tính chi phí</a>.</p>
 
 <h2>Báo giá xây nhà trọn gói TPHCM 2026</h2>
@@ -56,8 +56,8 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Bảo hành:</strong> kết cấu 10 năm, hoàn thiện 12–36 tháng.</li>
 </ul>
 <figure>
-  <img src="/images/sao-khue/sk-11.jpg" alt="Hố móng đã xây gạch và buộc lưới thép, chưa đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-11.jpg" alt="Hố móng đã xây gạch và buộc lưới thép, chưa đổ bê tông — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Móng đã buộc thép, chờ đổ bê tông. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <p><strong>Thường không gồm:</strong> nội thất gỗ, điều hòa, smart home, lệ phí nhà nước, tiền ở tạm khi xây. Chỉ cần khung nhà, không cần hoàn thiện: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>. Muốn thêm tủ bếp, trần trang trí: <a href="/dich-vu/hoan-thien-nha">hoàn thiện nhà</a>.</p>
 <p>Sao Khuê thi công trực tiếp, không bán thầu phụ trá hình. Vật tư đúng chủng loại trong list đã ký. Phạm vi từng bước: <a href="/tin-tuc/quy-trinh-xay-nha-tron-goi-a-z">quy trình chìa khóa trao tay A–Z</a>.</p>
@@ -78,7 +78,7 @@ export const xayNhaTronGoiTphcm = {
 <p>Nhà trong hẻm Sài Gòn thường hợp trọn gói vì lối vào, giờ cấm đổ bê tông và tường chung cần một người chịu trách nhiệm. Chỉ cần khung: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
 <figure>
   <img src="/images/sao-khue/sk-60.jpg" alt="Đội thợ Kiến Trúc Sao Khuê trước nhà phố 3 tầng đang xây thô, có bảng thông tin công trình" width="1276" height="957" loading="lazy" decoding="async" />
-  <figcaption>Đội thợ Sao Khuê tại công trình nhà phố đang xây phần thô. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Đội thợ Sao Khuê tại công trình nhà phố đang xây phần thô. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Vật liệu và tiêu chuẩn thi công</h2>
@@ -91,7 +91,7 @@ export const xayNhaTronGoiTphcm = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-55.jpg" alt="Thợ Sao Khuê đổ và cán bê tông sàn trên lưới thép đã buộc, ống kỹ thuật chờ sẵn" width="957" height="1276" loading="lazy" decoding="async" />
-  <figcaption>Đổ bê tông sàn sau khi nghiệm thu cốt thép, ống điện nước chờ sẵn. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Đổ bê tông sàn sau khi nghiệm thu cốt thép, ống điện nước chờ sẵn. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Số tầng và kiểu mái</h2>
@@ -105,7 +105,7 @@ export const xayNhaTronGoiTphcm = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-58.jpg" alt="Đội thợ Sao Khuê đổ bê tông sàn lầu, cốp pha và cây chống bên dưới, sát tường nhà bên" width="1276" height="957" loading="lazy" decoding="async" />
-  <figcaption>Đổ bê tông sàn lầu sát tường nhà bên. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Đổ bê tông sàn lầu sát tường nhà bên. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Thi công theo quận</h2>
@@ -136,8 +136,8 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành, vệ sinh công trình.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2>Thanh toán theo mốc, không thu 100% trước</h2>
@@ -150,8 +150,8 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Bàn giao:</strong> phần còn lại, sau khi nhận hồ sơ bảo hành.</li>
 </ul>
 <figure>
-  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — hiện trường Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
-  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-51.jpg" alt="Thợ đổ bê tông sàn trên lớp cốt thép đã buộc — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi thép đã buộc xong. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <p>Chủ nhà tự vay ngân hàng thì Sao Khuê hỗ trợ dự toán để làm hồ sơ. Công ty không phải tổ chức tín dụng.</p>
 
@@ -170,8 +170,8 @@ export const xayNhaTronGoiTphcm = {
 <h2>Công trình thực tế tại TP.HCM</h2>
 <p>Nhà phố Sài Gòn hay gặp hẻm dưới 3 m, giờ đổ bê tông hạn chế, tường chung và nền yếu. Sao Khuê đo lối vào trước khi chốt đơn giá.</p>
 <figure>
-  <img src="/images/sao-khue/sk-24.jpg" alt="Thi công móng gạch trong hẻm hẹp, thép chờ nhô lên — hiện trường Kiến Trúc Sao Khuê" width="1477" height="1108" loading="lazy" decoding="async" />
-  <figcaption>Móng trong hẻm hẹp, sát tường nhà bên. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-24.jpg" alt="Thi công móng gạch trong hẻm hẹp, thép chờ nhô lên — ảnh thi công Kiến Trúc Sao Khuê" width="1477" height="1108" loading="lazy" decoding="async" />
+  <figcaption>Móng trong hẻm hẹp, sát tường nhà bên. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <figure>
   <img src="/images/sao-khue/sk-03.jpg" alt="Xây nhà trọn gói TPHCM trong hẻm hẹp: giàn giáo và máy trộn — Kiến Trúc Sao Khuê" width="1276" height="718" loading="lazy" decoding="async" />
@@ -179,7 +179,7 @@ export const xayNhaTronGoiTphcm = {
 </figure>
 ${tphcmProjectsBlock()}
 <p>Ảnh trên trang là ảnh công trình của Sao Khuê. Muốn tham quan trước khi ký: gọi 0909 075 668, sắp theo lịch chủ nhà.</p>
-<p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Chi nhánh hiện trường: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đắk Lắk: Xuân Thạnh 2, Tây Hòa. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
+<p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Chi nhánh: 245/8 Bình Lợi, Phường 13, Bình Thạnh. Đắk Lắk: Xuân Thạnh 2, Tây Hòa. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
 
 <h2>Câu hỏi thường gặp</h2>
 <h3>Xây nhà trọn gói TPHCM 2026 hết bao nhiêu?</h3>

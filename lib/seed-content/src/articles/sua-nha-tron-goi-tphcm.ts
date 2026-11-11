@@ -31,7 +31,7 @@ export const suaNhaTronGoiTphcm = {
 </ul>
 <figure>
   <img src="/images/sao-khue/sk-59.jpg" alt="Thợ Sao Khuê buộc thép sàn sát tường và cửa sổ nhà bên, hệ cây chống bên dưới" width="1276" height="957" loading="lazy" decoding="async" />
-  <figcaption>Buộc thép sàn sát tường nhà bên, trước khi đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Buộc thép sàn sát tường nhà bên, trước khi đổ bê tông. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 
 <h2 id="bao-gia-sua-nha-tron-goi-tphcm-tham-khao-2026">Báo giá sửa nhà trọn gói TP.HCM tham khảo 2026</h2>
@@ -65,18 +65,18 @@ export const suaNhaTronGoiTphcm = {
   <li><strong>Bàn giao và bảo hành:</strong> Hoàn thiện 12–36 tháng tùy hạng mục. Kết cấu tới 10 năm khi có gia cố.</li>
 </ol>
 <figure>
-  <img src="/images/sao-khue/sk-54.jpg" alt="Móng gạch và lưới thép đà kiềng trong lô đất hẹp giữa hai nhà cũ — hiện trường Kiến Trúc Sao Khuê" width="1276" height="957" loading="lazy" decoding="async" />
-  <figcaption>Làm móng trong lô hẹp kẹp giữa hai nhà: lập biên bản tường chung trước khi đào. Ảnh hiện trường Sao Khuê.</figcaption>
+  <img src="/images/sao-khue/sk-54.jpg" alt="Móng gạch và lưới thép đà kiềng trong lô đất hẹp giữa hai nhà cũ — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Làm móng trong lô hẹp kẹp giữa hai nhà: lập biên bản tường chung trước khi đào. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <figure>
   <img src="/images/sao-khue/sk-57.jpg" alt="Lưới thép sàn đã buộc, đầu thép chờ cột được bọc bảo vệ trước khi đổ bê tông" width="1276" height="957" loading="lazy" decoding="async" />
-  <figcaption>Nghiệm thu cốt thép sàn trước khi đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+  <figcaption>Nghiệm thu cốt thép sàn trước khi đổ bê tông. Ảnh thi công Sao Khuê.</figcaption>
 </figure>
 <p>Thanh toán theo tiến độ nghiệm thu. Giữ khoảng 10% đến lúc bàn giao. Không thu 100% trước khi thi công.</p>
 
 <h2 id="khu-vuc-phuc-vu-sua-nha-tron-goi">Khu vực phục vụ sửa nhà trọn gói</h2>
 <p>Toàn TP.HCM: Quận 1–12, Bình Thạnh, Gò Vấp, Tân Bình, Tân Phú, Thủ Đức, Bình Tân, Nhà Bè, Hóc Môn, Củ Chi, và vùng lân cận khi sắp được lịch khảo sát. Hotline trong ngày nội thành: <strong>0909 075 668</strong>.</p>
-<p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Tiếp khách hiện trường: 245/8 Bình Lợi, P.13, Bình Thạnh. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
+<p>Văn phòng: 36 Đường 27, KDC Vạn Phúc, Thủ Đức. Tiếp khách: 245/8 Bình Lợi, P.13, Bình Thạnh. <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Xem vị trí và đánh giá trên Google Maps</a>.</p>
 
 <h2 id="vi-sao-nen-chon-kien-truc-sao-khue">Vì sao nên chọn Kiến Trúc Sao Khuê</h2>
 <p>Chủ nhà cần một đơn giá đọc được, một người chịu bảo hành, và công trình sửa thật để đối chiếu — không phải mẫu nhà xây mới.</p>

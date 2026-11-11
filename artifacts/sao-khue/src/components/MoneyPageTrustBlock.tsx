@@ -59,7 +59,7 @@ export function MoneyPageTrustBlock({ slug }: Props) {
       <div>
         <h2 className="text-xl font-bold text-primary">Công trình thực tế đã bàn giao</h2>
         <p className="mt-2 text-sm text-slate-600">
-          Ảnh hiện trường — không dùng stock. Xem thêm tại{" "}
+          Ảnh thi công thật — không dùng stock. Xem thêm tại{" "}
           <Link href="/cong-trinh" className="font-semibold text-primary underline">
             mục công trình
           </Link>
