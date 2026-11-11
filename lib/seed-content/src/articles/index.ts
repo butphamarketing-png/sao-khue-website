@@ -1,5 +1,6 @@
 export { suaNhaTronGoiTphcm } from "./sua-nha-tron-goi-tphcm";
 export { xayNhaTronGoiTphcm } from "./xay-nha-tron-goi-tphcm";
+export { xayNhaTronGoiTphcm2026Tin } from "./xay-nha-tron-goi-tphcm-2026";
 export { xayNhaMoi } from "./xay-nha-moi";
 export { caiTaoNhaCu } from "./cai-tao-nha-cu";
 export { xayDungNha3Tang } from "./xay-dung-nha-3-tang";

@@ -10,7 +10,7 @@ export const SEO_TITLE_MAX = 60;
 export const SEO_DESC_MAX = 160;
 /** Tên ngắn trên title/OG. Tên pháp lý dài làm Google cắt mất từ khóa. */
 export const SEO_BRAND = "Kiến Trúc Sao Khuê";
-/** Trang chủ không giành đúng cụm với /dich-vu/xay-nha-tron-goi-tphcm-2026. */
+/** Trang chủ không giành đúng cụm với /dich-vu/xay-nha-tron-goi-tphcm. */
 export const HOME_SEO_H1 = "Nhà thầu xây nhà phố và biệt thự TPHCM";
 export const HOME_SEO_TITLE = "Kiến Trúc Sao Khuê | nhà phố, biệt thự TPHCM";
 export const HOME_SEO_DESCRIPTION =
@@ -297,7 +297,7 @@ export type AggregateRatingInput = {
 };
 
 const DEFAULT_SERVICE_OFFERS = [
-  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi-tphcm-2026" },
+  { name: "Xây nhà trọn gói TPHCM", url: "/dich-vu/xay-nha-tron-goi-tphcm" },
   { name: "Thiết kế nhà phố", url: "/dich-vu/thiet-ke-nha" },
   { name: "Sửa nhà trọn gói TP.HCM", url: "/dich-vu/sua-nha-tron-goi-tphcm" },
   { name: "Báo giá xây dựng", url: "/bao-gia" },

@@ -568,7 +568,7 @@ function whyChooseSection(b: Brief): string {
   <li><strong>Báo giá minh bạch:</strong> Dự toán từng hạng mục — thanh toán theo tiến độ nghiệm thu.</li>
   <li><strong>Giám sát từ xa:</strong> Ảnh, video tiến độ hàng tuần qua Zalo — thuận tiện chủ nhà ở TP.HCM.</li>
 </ul>
-<p>Xem thêm <a href="/tin-tuc/xay-nha-dak-lak">xây nhà Đắk Lắk</a> và <a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a>.</p>`;
+<p>Xem thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây nhà Đắk Lắk</a> và <a href="/tin-tuc/sua-chua-nha-dak-lak">sửa chữa nhà Đắk Lắk</a>.</p>`;
 }
 
 function checklistSection(b: Brief): string {

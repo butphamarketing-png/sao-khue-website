@@ -148,7 +148,7 @@ function shell(inner: string): string {
 function navHome(): string {
   return `<nav aria-label="Điều hướng">
     <a href="/">Trang chủ</a> ·
-    <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TPHCM</a> ·
+    <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TPHCM</a> ·
     <a href="/dich-vu">Dịch vụ</a> ·
     <a href="/bao-gia">Báo giá</a> ·
     <a href="/cong-trinh">Công trình</a> ·
@@ -173,13 +173,13 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>${escapeHtml(HOME_SEO_H1)}</h1>
-        <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, bảo hành kết cấu 10 năm. Hotline 0909 075 668. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">dịch vụ xây nhà trọn gói</a>.</p>
+        <p>Công ty TNHH Thiết kế và Xây dựng Sao Khuê thi công nhà phố và biệt thự tại TP.HCM, Bình Dương, Đồng Nai. Khảo sát miễn phí, bảo hành kết cấu 10 năm. Hotline 0909 075 668. Xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà trọn gói</a>.</p>
         <h2>Về Sao Khuê</h2>
         <p>Văn phòng: <strong>36 Đường 27, KDC Vạn Phúc, Thủ Đức, TP.HCM</strong>. Đội ngũ kiến trúc sư và kỹ sư trực tiếp giám sát hiện trường — không bán thầu phụ trá hình. Vật tư ghi rõ trong hợp đồng; phát sinh chỉ khi chủ nhà đổi thiết kế hoặc chủng loại.</p>
         <p>Phù hợp chủ đất nhà phố hẻm, nhà mặt tiền kinh doanh, cải tạo nhà đang ở và xây mới chìa khóa trao tay. Xem vị trí &amp; đánh giá trên <a href="https://maps.app.goo.gl/XcU4ACAs2tM159TGA" rel="noopener noreferrer" target="_blank">Google Maps</a>.</p>
         <h2>Dịch vụ chính</h2>
         <ul>
-          <li><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
+          <li><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> — thô + hoàn thiện, đơn giá tham khảo 4,85–6,7 triệu/m².</li>
           <li><a href="/dich-vu/sua-nha-tron-goi-tphcm">Sửa nhà trọn gói TP.HCM</a> — làm mới, đổi công năng, gia cố; báo giá theo hạng mục.</li>
           <li><a href="/dich-vu/xay-dung-phan-tho">Xây phần thô</a> · <a href="/dich-vu/thiet-ke-nha">Thiết kế nhà</a> · <a href="/dich-vu/cai-tao-nha-cu">Cải tạo nhà cũ</a>.</li>
         </ul>
@@ -235,7 +235,7 @@ function buildStaticPages(): PrerenderPage[] {
         </ul>
         <h2>Chi phí phụ thuộc vào đâu</h2>
         <p>Loại nhà, số tầng, chiều rộng hẻm, móng, mái và các hạng mục thêm như lửng, sân thượng, ban công. Máy tính trên trang cho số tham khảo. Hợp đồng chốt sau khi khảo sát mặt bằng.</p>
-        <p>Gói xây tại TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói TP.HCM</a>. Nhà đang có thì xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> hoặc <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói</a>. <a href="/lien-he">Đặt lịch khảo sát</a> hoặc gọi 0909 075 668.</p>
+        <p>Gói xây tại TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TP.HCM</a>. Nhà đang có thì xem <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> hoặc <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói</a>. <a href="/lien-he">Đặt lịch khảo sát</a> hoặc gọi 0909 075 668.</p>
       `),
     },
     {
@@ -269,7 +269,7 @@ function buildStaticPages(): PrerenderPage[] {
         ${navHome()}
         <h1>Kinh nghiệm xây nhà mới</h1>
         <p>${escapeHtml(defaultPageBanners.xayMoi.subtitle)}</p>
-        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
+        <p><a href="/dich-vu/xay-nha-tron-goi-tphcm">Xây nhà trọn gói TP.HCM</a> · <a href="/bao-gia">Bảng báo giá</a> · <a href="/lien-he">Đặt lịch tư vấn miễn phí</a></p>
       `),
     },
     {
@@ -287,7 +287,7 @@ function buildStaticPages(): PrerenderPage[] {
       bodyHtml: shell(`
         ${navHome()}
         <h1>Xây nhà trọn gói chìa khóa trao tay</h1>
-        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">Xem dịch vụ xây nhà trọn gói</a>.</p>
+        <p>${escapeHtml(XAY_NHA_SEO_DESCRIPTION)} <a href="/dich-vu/xay-nha-tron-goi-tphcm">Xem dịch vụ xây nhà trọn gói</a>.</p>
         <p>Hotline: <a href="tel:0909075668">0909 075 668</a> · <a href="/xay-nha#bao-gia">Nhận báo giá miễn phí</a></p>
       `),
     },

@@ -106,7 +106,7 @@ export const defaultTestimonials: TestimonialItem[] = [
 export const defaultFaqs: FaqItem[] = [
   {
     q: "Sao Khuê lập dự toán thế nào?",
-    a: 'Khảo sát mặt bằng, rồi lập dự toán theo hạng mục và vật tư. Đơn giá gói xây nằm ở <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">trang dịch vụ xây nhà</a>.',
+    a: 'Khảo sát mặt bằng, rồi lập dự toán theo hạng mục và vật tư. Đơn giá gói xây nằm ở <a href="/dich-vu/xay-nha-tron-goi-tphcm">trang dịch vụ xây nhà</a>.',
   },
   {
     q: "Thời gian thi công nhà phố 3–4 tầng mất bao lâu?",
@@ -166,7 +166,7 @@ export const defaultProcessSteps: ProcessStep[] = [
 ];
 
 export const defaultQuoteServices: QuoteServiceItem[] = [
-  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi-tphcm-2026", buttonLabel: "Xem chi tiết" },
+  { id: "01", title: "XÂY NHÀ\nTRỌN GÓI", link: "/dich-vu/xay-nha-tron-goi-tphcm", buttonLabel: "Xem chi tiết" },
   { id: "02", title: "SỬA CHỮA\nNHÀ", link: "/dich-vu/sua-nha-tron-goi-tphcm", buttonLabel: "Xem chi tiết" },
   { id: "03", title: "XÂY DỰNG\nPHẦN THÔ", link: "/dich-vu/xay-dung-phan-tho", buttonLabel: "Xem chi tiết" },
   { id: "04", title: "THIẾT KẾ\nNHÀ", link: "/dich-vu/thiet-ke-nha", buttonLabel: "Xem chi tiết" },

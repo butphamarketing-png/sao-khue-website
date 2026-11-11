@@ -148,7 +148,7 @@ ${faqSection([
     imageAlt: "Xây nhà trọn gói Tân Phú — Kiến Trúc Sao Khuê",
     content: `<h2>Xây nhà trọn gói Tân Phú — nhà phố thế hệ 2</h2>
 <p><strong>Xây nhà trọn gói Tân Phú</strong> tập trung Tân Sơn Nhì, Phú Thạnh, Lũy Bán Bích: nhiều nhà cấp 4 hoặc phố cũ đập xây lại cho 2 thế hệ. Hẻm ổn định hơn ven rạch, nhưng một số tuyến <strong>thấp hơn mặt đường</strong> — trệt cần cao độ và chống thấm chân tường. Sao Khuê khảo sát miễn phí, BH kết cấu <strong>10 năm</strong>.</p>
-<p>Hub: <a href="/tin-tuc/xay-nha-tan-phu">xây nhà Tân Phú</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">pillar trọn gói</a> · Cải tạo: <a href="/tin-tuc/cai-tao-nha-tan-phu">cải tạo Tân Phú</a> · Trong hẻm: <a href="/tin-tuc/xay-nha-trong-hem-tphcm">xây nhà trong hẻm</a> · <a href="/bao-gia">/bao-gia</a>.</p>
+<p>Hub: <a href="/tin-tuc/xay-nha-tan-phu">xây nhà Tân Phú</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">pillar trọn gói</a> · Cải tạo: <a href="/tin-tuc/cai-tao-nha-tan-phu">cải tạo Tân Phú</a> · Trong hẻm: <a href="/tin-tuc/do-be-tong-nha-trong-hem-tphcm">đổ bê tông nhà trong hẻm</a> · <a href="/bao-gia">/bao-gia</a>.</p>
 
 <h2>Đơn giá và gói giá rẻ tại Tân Phú (2026)</h2>
 <table>

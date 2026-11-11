@@ -5,7 +5,6 @@ const POST_URL_LEAF_OVERRIDES: Record<string, string> = {
   /** Menu «Sửa chữa nhà» — slug riêng, không gộp với sua-nha-tron-goi-tphcm */
   "sua-chua-nha-tphcm": "sua-chua-nha",
   "khuyen-mai-xay-dung": "khuyen-mai",
-  "xay-nha-tron-goi-tphcm": "xay-nha-tron-goi-tphcm-2026",
 };
 
 /** Đường dẫn canonical công khai theo danh mục (dùng sitemap, RSS). */

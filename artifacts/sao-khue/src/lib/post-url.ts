@@ -8,7 +8,6 @@ import { getMenuLeafSlug, inferSubSlugFromPost } from "./menu-posts";
 const POST_URL_LEAF_OVERRIDES: Record<string, string> = {
   "sua-chua-nha-tphcm": "sua-chua-nha",
   "khuyen-mai-xay-dung": "khuyen-mai",
-  "xay-nha-tron-goi-tphcm": "xay-nha-tron-goi-tphcm-2026",
 };
 
 export function getPostUrlLeaf(

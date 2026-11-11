@@ -21,7 +21,7 @@ export const caiTaoNhaCu = {
   imageCaption: "Cải tạo nhà cũ — làm mới không gian, nâng tầm giá trị Kiến Trúc Sao Khuê",
   content: `
 <h2>Cải tạo nhà cũ — Làm mới không gian, nâng tầm giá trị</h2>
-<p><strong>Cải tạo nhà trọn gói TP.HCM</strong> là đổi công năng nhà đang ở: bố trí lại phòng, mở bếp, làm mới mặt tiền, thêm giếng trời, kèm gia cố cột dầm nếu cần đục. Khác với <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> — trang sửa dành cho thấm, sơn, điện nước và thay thế hạng mục hỏng. Nếu kết cấu không còn dùng được, kỹ sư sẽ nói thẳng và chuyển sang <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà mới tại TP.HCM</a>.</p>
+<p><strong>Cải tạo nhà trọn gói TP.HCM</strong> là đổi công năng nhà đang ở: bố trí lại phòng, mở bếp, làm mới mặt tiền, thêm giếng trời, kèm gia cố cột dầm nếu cần đục. Khác với <a href="/dich-vu/sua-nha-tron-goi-tphcm">sửa nhà trọn gói</a> — trang sửa dành cho thấm, sơn, điện nước và thay thế hạng mục hỏng. Nếu kết cấu không còn dùng được, kỹ sư sẽ nói thẳng và chuyển sang <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà mới tại TP.HCM</a>.</p>
 <p>Sao Khuê khảo sát miễn phí tại nhà phố TP.HCM, rồi lập mặt bằng và dự toán từng hạng mục trước khi đục. Cùng đội làm ở Bình Dương, Đồng Nai và Đắk Lắk khi lịch khảo sát sắp được. Hơn <strong>10 năm</strong> làm nhà phố. Bảo hành theo hạng mục ghi trong hợp đồng.</p>
 
 ${imageFigure(IMG_1, FOCUS, 1)}
@@ -79,7 +79,7 @@ ${imageFigure(IMG_2, FOCUS, 2)}
   <li><strong>Quy hoạch hạn chế:</strong> Không được phép xây mới hoàn toàn trên lô hiện tại.</li>
   <li><strong>Cần kinh doanh sớm:</strong> Mở quán, văn phòng tại nhà phố — cải tạo nhanh hơn xây mới.</li>
 </ul>
-<p>Nếu kết cấu xuống cấp nặng, nghiêng lệch hoặc móng yếu — kỹ sư Sao Khuê sẽ tư vấn <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà mới</a> an toàn hơn.</p>
+<p>Nếu kết cấu xuống cấp nặng, nghiêng lệch hoặc móng yếu — kỹ sư Sao Khuê sẽ tư vấn <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà mới</a> an toàn hơn.</p>
 
 ${imageFigure(IMG_3, FOCUS, 3)}
 

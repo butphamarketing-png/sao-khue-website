@@ -37,7 +37,7 @@ const HAND_PILLAR_SLUGS = new Set([
  * Redirect thật nằm ở legacy-redirects.ts.
  */
 export const HUB_SUA_NHA = "/dich-vu/sua-nha-tron-goi-tphcm";
-export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi-tphcm-2026";
+export const HUB_XAY_NHA = "/dich-vu/xay-nha-tron-goi-tphcm";
 export const HUB_CAI_TAO = "/cai-tao-nha";
 
 const CANNIBAL_REDIRECT_SLUGS = new Set([
@@ -169,6 +169,7 @@ const PROMOTED_GEO_SLUGS = new Set([
   "xay-nha-quan-10",
   "xay-nha-go-vap",
   "xay-nha-tan-phu",
+  "xay-nha-tron-goi-tan-phu",
   "xay-nha-tan-binh",
   "xay-nha-binh-tan",
   "xay-nha-hoc-mon",
@@ -180,8 +181,8 @@ const CANONICAL_PATH_OVERRIDES: Record<string, string> = {
   "/dich-vu/sua-chua-nha-tphcm": HUB_SUA_NHA,
   "/dich-vu/xay-nha-moi": HUB_XAY_NHA,
   "/dich-vu/xay-nha-tron-goi": HUB_XAY_NHA,
-  "/dich-vu/xay-nha-tron-goi-tphcm": HUB_XAY_NHA,
-  "/tin-tuc/xay-nha-tron-goi-tphcm": HUB_XAY_NHA,
+  "/dich-vu/xay-nha-tron-goi-tphcm-2026": HUB_XAY_NHA,
+  "/tin-tuc/xay-nha-tron-goi-tphcm": "/tin-tuc/xay-nha-tron-goi-tphcm-2026",
 };
 
 /** Path nội bộ còn sống; factory/cannibal → hub. */

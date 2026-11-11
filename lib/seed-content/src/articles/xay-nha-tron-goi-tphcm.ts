@@ -3,7 +3,7 @@ export const xayNhaTronGoiTphcm = {
   title: "Xây nhà trọn gói TPHCM",
   excerpt:
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m²: một nhà thầu lo thiết kế, phần thô và hoàn thiện. Có ví dụ nhà phố 4×16, bảo hành kết cấu 10 năm.",
-  metaTitle: "Xây nhà trọn gói TPHCM 2026 | Báo giá Sao Khuê",
+  metaTitle: "Xây nhà trọn gói TPHCM 2026 từ 4,85tr",
   metaDescription:
     "Xây nhà trọn gói TPHCM 2026 từ 4,85 triệu/m² sàn ở. Một hợp đồng: thiết kế, phần thô, hoàn thiện. Khảo sát miễn phí, bảo hành kết cấu 10 năm.",
   metaKeywords:
@@ -18,7 +18,7 @@ export const xayNhaTronGoiTphcm = {
 <p>Hơn 10 năm, hơn 500 công trình tại Bình Thạnh, Thủ Đức, Quận 7, Gò Vấp, Tân Bình và tỉnh giáp ranh. Muốn ước lượng trước khi gọi: <a href="/bao-gia">máy tính chi phí</a>.</p>
 
 <h2>Báo giá xây nhà trọn gói TPHCM 2026</h2>
-<p>Đơn giá dưới đây là mốc tham khảo cho sàn ở. Số ký hợp đồng chỉ có sau khi đo hẻm và nền. Hẻm sâu không dùng đơn giá mặt tiền. Khung 4,85–6,7 triệu/m² là đơn giá Sao Khuê đang dùng, không phải giá một căn nhà.</p>
+<p>Đơn giá dưới đây là mốc tham khảo cho sàn ở. Số ký hợp đồng chỉ có sau khi đo hẻm và nền. Hẻm sâu không dùng đơn giá mặt tiền. Khung 4,85–6,7 triệu/m² là đơn giá Sao Khuê đang dùng, không phải giá một căn nhà. Chuẩn bị hồ sơ và đọc hợp đồng trước khi ký: <a href="/tin-tuc/xay-nha-tron-goi-tphcm-2026">kinh nghiệm xây nhà trọn gói TP.HCM 2026</a>.</p>
 <table>
   <thead>
     <tr><th>Gói</th><th>Đơn giá 2026</th><th>Phạm vi</th></tr>
@@ -41,7 +41,7 @@ export const xayNhaTronGoiTphcm = {
 <h3>Ví dụ nhà phố 4×16 tại TPHCM</h3>
 <p>Lô 4×16 m (64 m² đất), 1 trệt 2 lầu, chỉ tính 3 sàn ở: 64 × 3 = <strong>192 m²</strong>. Lấy mốc thấp gói tiêu chuẩn 4,85 triệu/m² → khoảng <strong>931 triệu</strong> cho phần sàn ở. Đây là phép nhân để hình dung quy mô, không phải giá ký.</p>
 <p>Chưa nằm trong 931 triệu: móng cọc nếu nền yếu, sân thượng và mái, phụ phí hẻm dưới 3 m, lệ phí giấy phép. 1 trệt 3 lầu trên cùng lô thường là 4 sàn: 64 × 4 = 256 m², rồi mới nhân đơn giá. Số tầng theo giấy phép phường. Nhà phố 3–4 tầng thường thi công <strong>4–7 tháng</strong>.</p>
-<p>Cách tính theo khổ đất khác: <a href="/tin-tuc/xay-nha-4x15-tphcm">nhà 4×15</a>, <a href="/tin-tuc/xay-nha-5x20-tphcm">nhà 5×20</a>, <a href="/tin-tuc/xay-nha-80m2-tphcm">nhà khoảng 80 m²</a>, <a href="/tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm">1 trệt 2 lầu</a>, <a href="/tin-tuc/xay-nha-4-tang-tphcm">nhà 4 tầng</a>.</p>
+<p>Cách tính theo khổ đất khác: <a href="/tin-tuc/xay-nha-4x15-tphcm">nhà 4×15</a>, <a href="/tin-tuc/xay-nha-5x20-tphcm">nhà 5×20</a>, <a href="/tin-tuc/xay-nha-80m2-tphcm">nhà khoảng 80 m²</a>.</p>
 
 <h2>Hạng mục thi công gồm những gì?</h2>
 <p><strong>Luôn gồm</strong> khi ký gói trọn gói (trừ khi phụ lục cắt):</p>
@@ -87,9 +87,9 @@ export const xayNhaTronGoiTphcm = {
 <h2>Số tầng và kiểu mái</h2>
 <p>Đơn giá m² sàn ở không đổi theo kiểu mái hay số tầng. Thêm tầng là thêm sàn được nhân. Mái, sân thượng và thang máy nằm ngoài phép nhân đó.</p>
 <ul>
-  <li><strong>1 trệt 2 lầu:</strong> 3 sàn ở — đúng kiểu ví dụ 4×16 ở trên. Xem <a href="/tin-tuc/xay-nha-pho-1-tret-2-lau-tphcm">nhà phố 1 trệt 2 lầu</a>.</li>
-  <li><strong>1 trệt 3 lầu, nhà 4 tầng:</strong> thường 4 sàn ở. Lô 4×16 thì 64 × 4 = 256 m² sàn ở, rồi mới nhân đơn giá. Số tầng theo giấy phép phường, không theo bản vẽ thêm tầng. Xem <a href="/tin-tuc/xay-nha-4-tang-tphcm">xây nhà 4 tầng</a>.</li>
-  <li><strong>Nhà 5 tầng:</strong> tải móng lớn hơn. Thang máy, nếu có, chừa hố từ móng và ghi phụ lục — không nằm trong 4,85 triệu/m². Xem <a href="/tin-tuc/xay-nha-5-tang-tphcm">xây nhà 5 tầng</a>.</li>
+  <li><strong>1 trệt 2 lầu:</strong> 3 sàn ở — đúng kiểu ví dụ 4×16 ở trên.</li>
+  <li><strong>1 trệt 3 lầu, nhà 4 tầng:</strong> thường 4 sàn ở. Lô 4×16 thì 64 × 4 = 256 m² sàn ở, rồi mới nhân đơn giá. Số tầng theo giấy phép phường, không theo bản vẽ thêm tầng.</li>
+  <li><strong>Nhà 5 tầng:</strong> tải móng lớn hơn. Thang máy, nếu có, chừa hố từ móng và ghi phụ lục — không nằm trong 4,85 triệu/m².</li>
   <li><strong>Mái Nhật, mái thái:</strong> là dạng mái, tính ở dòng mái. Nhà một tầng ít sàn hơn nhà phố nhiều lầu nên tổng tiền thấp hơn, dù đơn giá m² cùng khung.</li>
   <li><strong>Nhà phố hiện đại:</strong> mặt đứng, giếng trời, lan can. Thiết kế nằm trong gói khi ký thi công. Xem <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố hiện đại</a>.</li>
 </ul>

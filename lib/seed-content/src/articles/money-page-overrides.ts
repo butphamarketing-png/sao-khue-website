@@ -1230,6 +1230,7 @@ export const moneyPageOverridesBySlug: Record<string, MoneyPageOverride> = {
   <li>Bảo hành kết cấu 10 năm ghi rõ điều kiện.</li>
   <li>Địa chỉ thanh toán trùng pháp nhân.</li>
 </ul>
+<p>Chuẩn bị hồ sơ trước khi gặp nhà thầu và theo dõi công trường sau khi ký: <a href="/tin-tuc/xay-nha-tron-goi-tphcm-2026">kinh nghiệm xây nhà trọn gói TP.HCM 2026</a>.</p>
 
 <h2>Sau bàn giao: dịch vụ bảo hành và bảo trì</h2>
 <p>Nhà thầu uy tín còn lại sau ngày cắt bánh. <strong>Công ty xây dựng nhà phố uy tín TP.HCM</strong> phải nghe máy khi có thấm bảo hành hoặc nứt cần xem. Sao Khuê tiếp nhận qua 0909 075 668 và hỗ trợ tại 245/8 Bình Lợi, Bình Thạnh.</p>
@@ -2816,7 +2817,7 @@ const MONEY_SOFT_DEPTH: Record<string, string> = {
   "don-gia-hoan-thien-nha-2026": `<h2>Cách đọc đơn giá hoàn thiện</h2><p>Mốc 2,5–5,5 triệu/m² thường chưa nội thất gỗ và điều hòa. Gạch/sơn/cửa ghi mã rõ. Nhà thô: nghiệm thu chống thấm WC–sân trước khi ốp. Xem <a href="/dich-vu/hoan-thien-nha">dịch vụ hoàn thiện</a>.</p>`,
   "xay-biet-thu-tphcm": `<h2>Hợp đồng biệt thự nên tách gì?</h2><p>Nhà / sân / hàng rào / hồ — nghiệm thu từng khối. Không dùng “giá nhà phố” cho biệt thự 200m²+. Case: <a href="/cong-trinh/thiet-ke-nha-biet-thu-thu-duc">biệt thự Thủ Đức</a>.</p>`,
   "sua-dien-nuoc-nha-tphcm": `<h2>Báo giá theo điểm vs gói đồng bộ</h2><p>Vài ổ cắm: tính điểm. Cả nhà dây nhôm + ống sắt: gói đồng bộ rẻ hơn đục ba lần. Gửi sơ đồ tầng khi gọi hotline.</p>`,
-  "xay-nha-tan-phu": `<h2>Gửi hồ sơ khảo sát Tân Phú</h2><p>Ảnh hẻm, cao độ nền so đường, số tầng. Khu thấp: hỏi van thoát và cao trệt. <a href="/tin-tuc/xay-nha-tron-goi-tan-phu">Trọn gói Tân Phú</a> · 0909 075 668.</p>`,
+  "xay-nha-tan-phu": `<h2>Gửi hồ sơ khảo sát Tân Phú</h2><p>Ảnh hẻm, cao độ nền so đường, số tầng. Khu thấp: hỏi van thoát và cao trệt. Hotline 0909 075 668.</p>`,
   "nang-tang-nha-tphcm": `<h2>Sau khi được phép nâng tầng</h2><p>Gia cố → đổ sàn → tường → chống thấm tum → hoàn thiện. Không ở tum khi chưa nghiệm thu chống thấm. Landing <a href="/cai-tao-nha">/cai-tao-nha</a>.</p>`,
   "xay-nha-tron-goi-binh-duong": `<h2>Xin phép Bình Dương khác TP.HCM chỗ nào?</h2><p>Hồ sơ theo UBND tỉnh/phường mới. Đơn giá không copy Sài Gòn. Hẹn khảo sát trước (không drop-in). Case <a href="/cong-trinh/xay-nha-pho-thuan-an">Thuận An</a>.</p>`,
   "xay-nha-tron-goi-quan-10": `<h2>Hẻm và giờ đổ bê tông Q.10</h2><p>Nhiều hẻm xe máy: bơm từ mặt tiền, ca sớm. Liền kề: biên bản tường chung. Báo phụ phí logistics rõ trong dự toán.</p>`,

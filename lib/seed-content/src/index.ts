@@ -1,6 +1,7 @@
 import {
   suaNhaTronGoiTphcm,
   xayNhaTronGoiTphcm,
+  xayNhaTronGoiTphcm2026Tin,
   xayNhaMoi,
   caiTaoNhaCu,
   xayDungNha3Tang,
@@ -390,6 +391,12 @@ const seedPostsRaw: SeedPost[] = [
   seoPost("xay-dung-nha-3-tang", "dich-vu", featuredImageForSlug("xay-dung-nha-3-tang"), xayDungNha3Tang),
   seoPost("xay-nha-moi", "dich-vu", featuredImageForSlug("xay-nha-moi"), xayNhaMoi),
   seoPost("xay-nha-tron-goi-tphcm", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-tphcm"), xayNhaTronGoiTphcm),
+  seoPost(
+    "xay-nha-tron-goi-tphcm-2026",
+    "tin-tuc",
+    featuredImageForSlug("xay-nha-tron-goi-tphcm-2026"),
+    xayNhaTronGoiTphcm2026Tin,
+  ),
   seoPost("xay-nha-tron-goi-binh-duong", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-binh-duong"), xayNhaTronGoiBinhDuong),
   seoPost("xay-nha-tron-goi-dong-nai", "dich-vu", featuredImageForSlug("xay-nha-tron-goi-dong-nai"), xayNhaTronGoiDongNai),
   seoPost("sua-nha-tron-goi-tphcm", "dich-vu", featuredImageForSlug("sua-nha-tron-goi-tphcm"), suaNhaTronGoiTphcm),
@@ -729,6 +736,8 @@ function padShortMetaDescriptions(posts: SeedPost[]): SeedPost[] {
     }
 
     const title = (next.metaTitle ?? "").trim();
+    // Title trụ cột được chốt đúng cụm ngắn; không pad thêm "| Sao Khuê".
+    if (next.slug === "xay-nha-tron-goi-tphcm") return next;
     if (title.length > 0 && title.length < 40) {
       let t = title;
       if (!/2026/i.test(t)) {

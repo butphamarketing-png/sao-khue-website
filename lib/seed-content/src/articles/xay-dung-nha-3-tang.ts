@@ -122,7 +122,7 @@ ${faqSection([
   },
   {
     q: "Sao Khuê xây nhà 3 tầng ở những khu vực nào?",
-    a: "TP.HCM, Bình Dương, Đồng Nai, Long An, Đắk Lắk. Xem <a href=\"/tin-tuc/xay-nha-3-tang-tphcm\">xây nhà 3 tầng TP.HCM</a> và <a href=\"/tin-tuc/xay-nha-3-tang-dak-lak\">xây nhà 3 tầng Đắk Lắk</a>.",
+    a: "TP.HCM, Bình Dương, Đồng Nai, Long An, Đắk Lắk. Xem <a href=\"/tin-tuc/xay-nha-3-tang-tphcm\">xây nhà 3 tầng TP.HCM</a> và <a href=\"/tin-tuc/xay-nha-tron-goi-dak-lak\">xây nhà trọn gói Đắk Lắk</a>.",
   },
 ])}
 

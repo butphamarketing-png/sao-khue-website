@@ -117,7 +117,7 @@ ${imageFigure(SK_IMG_3, FOCUS, 3)}
   <li><strong>Huyện Krông Pắc, Ea Kar:</strong> Thấp hơn khoảng 8–15%, nhân công địa phương dồi dào.</li>
   <li><strong>Huyện vùng sâu:</strong> Chi phí vận chuyển vật liệu tăng, bù lại nhân công rẻ hơn — tổng thường ngang bằng.</li>
 </ul>
-<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a>, <a href="/tin-tuc/don-gia-xay-nha-dak-lak">đơn giá xây nhà Đắk Lắk</a> và <a href="/tin-tuc/bao-gia-xay-nha-dak-lak">báo giá xây nhà Đắk Lắk</a>.</p>
+<p>Tham khảo thêm <a href="/tin-tuc/xay-dung-nha-dak-lak">xây dựng nhà Đắk Lắk</a> và <a href="/tin-tuc/xay-nha-tron-goi-dak-lak">bảng giá xây nhà trọn gói Đắk Lắk</a>.</p>
 
 ${faqSection(
   [

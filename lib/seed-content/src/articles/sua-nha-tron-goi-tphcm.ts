@@ -13,7 +13,7 @@ export const suaNhaTronGoiTphcm = {
   content: `
 <h2 id="dich-vu-sua-nha-tron-goi-tai-tphcm-an-tam-tu-khao-sat-den-ban-giao">Dịch vụ sửa nhà trọn gói tại TP.HCM</h2>
 <p><strong>Sửa nhà trọn gói TP.HCM</strong> là một đơn vị lo khảo sát, bóc hạng mục hư hỏng, thi công và bàn giao. Sao Khuê nhận nhà phố đang thấm, nứt, điện nước cũ, sơn bong hoặc WC–bếp xuống cấp tại nội thành. Chủ nhà thấy danh mục và đơn giá trước khi đập, không ghép nhiều đội thợ.</p>
-<p>Nếu việc chính là đổi bố trí phòng, mở bếp hoặc làm mới mặt tiền, xem <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói TP.HCM</a>. Nếu móng và khung không còn dùng được, xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói tại TP.HCM</a>. Trang này dành cho sửa chữa và hoàn thiện nhà đang có.</p>
+<p>Nếu việc chính là đổi bố trí phòng, mở bếp hoặc làm mới mặt tiền, xem <a href="/dich-vu/cai-tao-nha-cu">cải tạo nhà trọn gói TP.HCM</a>. Nếu móng và khung không còn dùng được, xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói tại TP.HCM</a>. Trang này dành cho sửa chữa và hoàn thiện nhà đang có.</p>
 <p>Khảo sát miễn phí sau khi có ảnh hiện trạng và kích thước sơ bộ. Hơn <strong>10 năm</strong> làm nhà phố tại Bình Thạnh, Thủ Đức, Quận 3, Quận 7, Gò Vấp. Không chốt giá qua tin nhắn khi chưa đo tại nhà.</p>
 
 <h2 id="sua-nha-tron-goi-la-gi">Sửa nhà trọn gói là gì?</h2>

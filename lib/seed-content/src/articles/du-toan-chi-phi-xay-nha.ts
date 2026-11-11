@@ -100,6 +100,7 @@ ${imageFigure(SK_IMG_1, KEYWORD, 2)}
   <li><strong>Tiêu chuẩn thi công:</strong> Bê tông đổ tại chỗ hay bê tông thương phẩm? Lớp chống thấm có bao gồm không?</li>
   <li><strong>Điều khoản bảo hành:</strong> Kết cấu bao nhiêu năm? Hoàn thiện bao nhiêu tháng?</li>
 </ul>
+<p>Bảng các mục cần đọc trong hợp đồng trọn gói và yếu tố làm tổng tiền thay đổi: <a href="/tin-tuc/xay-nha-tron-goi-tphcm-2026">kinh nghiệm xây nhà trọn gói TP.HCM 2026</a>.</p>
 <p>Nếu một báo giá thấp hơn thị trường từ <strong>15% trở lên</strong> mà không giải thích rõ, hãy yêu cầu liệt kê từng hạng mục trước khi quyết định. Đọc thêm tại <a href="/tin-tuc/bao-gia-xay-nha-tron-goi-moi-nhat-tphcm">báo giá xây nhà trọn gói mới nhất</a> để hiểu mức thị trường.</p>
 
 <h2>Mẫu phân tích tỷ trọng chi phí nhà phố 3 tầng (tham khảo)</h2>

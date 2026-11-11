@@ -541,7 +541,7 @@ export function useCtaBanner(): CtaBannerContent {
 }
 
 const QUOTE_SERVICE_LINKS: Record<string, string> = {
-  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi-tphcm-2026",
+  "xây nhà trọn gói": "/dich-vu/xay-nha-tron-goi-tphcm",
   "sửa chữa nhà": "/dich-vu/sua-nha-tron-goi-tphcm",
   "xây dựng phần thô": "/dich-vu/xay-dung-phan-tho",
   "thiết kế nhà": "/dich-vu/thiet-ke-nha",
@@ -578,8 +578,8 @@ function withTurnkeyNavLabel(item: MenuItem): MenuItem {
     item.title === "BÁO GIÁ THIẾT KẾ" && item.href === "/bao-gia"
       ? "BÁO GIÁ XÂY NHÀ"
       : item.title === "XÂY MỚI" &&
-          (item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026" ||
-            item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
+          (item.href === "/dich-vu/xay-nha-tron-goi-tphcm" ||
+            item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026" ||
             item.href === "/dich-vu/xay-nha-tron-goi" ||
             item.href === "/xay-moi")
         ? "XÂY TRỌN GÓI"
@@ -593,8 +593,8 @@ function withTurnkeyNavLabel(item: MenuItem): MenuItem {
       ? "/dich-vu/cai-tao-nha-cu"
       : item.href === "/xay-moi" ||
           item.href === "/dich-vu/xay-nha-tron-goi" ||
-          item.href === "/dich-vu/xay-nha-tron-goi-tphcm"
-        ? "/dich-vu/xay-nha-tron-goi-tphcm-2026"
+          item.href === "/dich-vu/xay-nha-tron-goi-tphcm-2026"
+        ? "/dich-vu/xay-nha-tron-goi-tphcm"
         : item.href;
   return {
     ...item,

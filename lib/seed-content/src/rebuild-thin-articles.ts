@@ -28,7 +28,7 @@ function shouldSkipThinRebuild(slug: string, category?: string): boolean {
   }
   // Pillar Đắk Lắk / bài tay đã có H2 riêng
   if (
-    /^(sua-chua-nha-dak-lak|cai-tao-nha-dak-lak|thiet-ke-nha-dep-dak-lak|xay-nha-dep-dak-lak|bao-gia-xay-nha-tron-goi-phu-yen)$/.test(
+    /^(sua-chua-nha-dak-lak|cai-tao-nha-dak-lak|thiet-ke-nha-dep-dak-lak|xay-nha-dep-dak-lak|bao-gia-xay-nha-tron-goi-phu-yen|xay-nha-tron-goi-tphcm-2026)$/.test(
       slug,
     )
   ) {
@@ -312,9 +312,9 @@ function extraTopicDepth(kw: string, loc: string, topic: Topic): string {
 }
 
 function relatedLinks(topic: Topic, slug: string): string {
-  const build = `<p>Liên quan: <a href="/xay-nha">xây nhà trọn gói</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">dịch vụ xây nhà</a> · <a href="/tin-tuc/don-gia-xay-nha-tphcm">đơn giá xây nhà</a> · <a href="/bao-gia">bảng báo giá</a>.</p>`;
+  const build = `<p>Liên quan: <a href="/xay-nha">xây nhà trọn gói</a> · <a href="/dich-vu/xay-nha-tron-goi-tphcm">dịch vụ xây nhà</a> · <a href="/bao-gia">bảng báo giá</a>.</p>`;
   const reno = `<p>Liên quan: <a href="/cai-tao-nha">cải tạo nhà</a> · <a href="/tin-tuc/cai-tao-nha-cu-tphcm">cải tạo nhà cũ</a> · <a href="/dich-vu/sua-chua-nha">sửa chữa nhà</a> · <a href="/bao-gia">báo giá</a>.</p>`;
-  const design = `<p>Liên quan: <a href="/thiet-ke">thiết kế</a> · <a href="/tin-tuc/thiet-ke-nha-dep-tphcm">thiết kế nhà đẹp</a> · <a href="/mau-nha">mẫu nhà hiện đại</a>.</p>`;
+  const design = `<p>Liên quan: <a href="/thiet-ke">thiết kế</a> · <a href="/dich-vu/thiet-ke-nha">thiết kế nhà đẹp</a> · <a href="/mau-nha">mẫu nhà hiện đại</a>.</p>`;
   if (topic === "renovation" || topic === "repair") return reno;
   if (topic === "design" || topic === "fengshui") return design;
   if (slug.includes("cai-tao")) return reno;

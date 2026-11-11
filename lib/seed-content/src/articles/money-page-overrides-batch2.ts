@@ -396,7 +396,7 @@ ${faqSection([
     imageAlt: "Xây nhà trọn gói Bình Dương",
     content: `<h2>Xây nhà trọn gói Bình Dương — lợi thế so với nội thành</h2>
 <p>Bình Dương thường lô rộng hơn, đường xe tải — phù hợp phố 4–5 tầng hoặc biệt thự. Sao Khuê thi công Thủ Dầu Một, Thuận An, Dĩ An và huyện lân cận; điều phối từ Bình Thạnh. Gói nhỏ có thể ghi phụ phí di chuyển; trọn gói thường gộp. Chủ nhà nên gửi địa chỉ lô, kích thước đất và số tầng dự kiến khi hẹn khảo sát.</p>
-<p>Case: <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a>. Công trình trong TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm-2026">xây nhà trọn gói tại TP.HCM</a>.</p>
+<p>Case: <a href="/cong-trinh/xay-nha-pho-thuan-an">nhà phố Thuận An</a>. Công trình trong TP.HCM xem <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói tại TP.HCM</a>.</p>
 <h2>Đơn giá tham khảo</h2>
 <p>Cùng khung với TP.HCM, tính theo m² sàn ở: phần thô 3,55–3,8 triệu; trọn gói tiêu chuẩn 4,85–5,5 triệu; khá 5,5–6,0 triệu; cao cấp 6,0–6,7 triệu trở lên. Chi phí đi lại, nếu có, ghi thành dòng riêng trước khi ký. Cách tính m² xem <a href="/bao-gia">dự toán chi phí xây nhà</a>.</p>
 <h2>Pháp lý</h2>
@@ -446,7 +446,7 @@ ${faqSection([
     imageAlt: "Xây nhà Tân Phú",
     content: `<h2>Xây nhà Tân Phú — đặc điểm khu vực</h2>
 <p><strong>Xây nhà Tân Phú</strong> (Tân Sơn Nhì, Phú Thạnh, Gò Dầu, Lũy Bán Bích): mật độ phố cao, hẻm nối Tân Bình. Một số phường thấp trũng — thoát nước mưa và cao độ nền cần tính từ bản vẽ. Chiều cao theo tuyến hẻm / GPXD, không theo nhà hàng xóm miệng.</p>
-<p><a href="/tin-tuc/xay-nha-tron-goi-tan-phu">trọn gói Tân Phú</a> · <a href="/tin-tuc/xay-nha-trong-hem-tphcm">xây nhà trong hẻm</a> · <a href="/tin-tuc/cai-tao-nha-tan-phu">cải tạo Tân Phú</a>.</p>
+<p><a href="/tin-tuc/xay-nha-tron-goi-tan-phu">trọn gói Tân Phú</a> · <a href="/tin-tuc/do-be-tong-nha-trong-hem-tphcm">đổ bê tông nhà trong hẻm</a> · <a href="/tin-tuc/cai-tao-nha-tan-phu">cải tạo Tân Phú</a>.</p>
 <h2>Quy mô phổ biến</h2>
 <ul>
   <li>1 trệt 1 lầu: gia đình trẻ, ngân sách vừa.</li>
