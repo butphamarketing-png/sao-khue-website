@@ -29,6 +29,10 @@ export const suaNhaTronGoiTphcm = {
   <li><strong>Mặt tiền:</strong> ốp đá, sơn ngoại thất, cửa nhôm kính, lan can.</li>
   <li><strong>Nâng tầng / mở rộng:</strong> khảo sát kết cấu và tư vấn phép trước khi đục chịu lực.</li>
 </ul>
+<figure>
+  <img src="/images/sao-khue/sk-59.jpg" alt="Thợ Sao Khuê buộc thép sàn sát tường và cửa sổ nhà bên, hệ cây chống bên dưới" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Buộc thép sàn sát tường nhà bên, trước khi đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
 <h2 id="bao-gia-sua-nha-tron-goi-tphcm-tham-khao-2026">Báo giá sửa nhà trọn gói TP.HCM tham khảo 2026</h2>
 <p>Giá sửa nhà không nên lấy một con số m² của nhà xây mới. Sao Khuê bóc theo hạng mục sau khi đo. Bảng dưới là mốc tham khảo năm 2026 — số ký hợp đồng là số sau khảo sát:</p>
@@ -60,6 +64,14 @@ export const suaNhaTronGoiTphcm = {
   <li><strong>Thi công và giám sát:</strong> Nhật ký, nghiệm thu từng mốc. Biên bản tường chung trước khi đào móng nếu cần.</li>
   <li><strong>Bàn giao và bảo hành:</strong> Hoàn thiện 12–36 tháng tùy hạng mục. Kết cấu tới 10 năm khi có gia cố.</li>
 </ol>
+<figure>
+  <img src="/images/sao-khue/sk-54.jpg" alt="Móng gạch và lưới thép đà kiềng trong lô đất hẹp giữa hai nhà cũ — hiện trường Kiến Trúc Sao Khuê" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Làm móng trong lô hẹp kẹp giữa hai nhà: lập biên bản tường chung trước khi đào. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-57.jpg" alt="Lưới thép sàn đã buộc, đầu thép chờ cột được bọc bảo vệ trước khi đổ bê tông" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Nghiệm thu cốt thép sàn trước khi đổ bê tông. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 <p>Thanh toán theo tiến độ nghiệm thu. Giữ khoảng 10% đến lúc bàn giao. Không thu 100% trước khi thi công.</p>
 
 <h2 id="khu-vuc-phuc-vu-sua-nha-tron-goi">Khu vực phục vụ sửa nhà trọn gói</h2>

@@ -76,6 +76,10 @@ export const xayNhaTronGoiTphcm = {
   </tbody>
 </table>
 <p>Nhà trong hẻm Sài Gòn thường hợp trọn gói vì lối vào, giờ cấm đổ bê tông và tường chung cần một người chịu trách nhiệm. Chỉ cần khung: <a href="/dich-vu/xay-dung-phan-tho">xây dựng phần thô</a>.</p>
+<figure>
+  <img src="/images/sao-khue/sk-60.jpg" alt="Đội thợ Kiến Trúc Sao Khuê trước nhà phố 3 tầng đang xây thô, có bảng thông tin công trình" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Đội thợ Sao Khuê tại công trình nhà phố đang xây phần thô. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
 <h2>Vật liệu và tiêu chuẩn thi công</h2>
 <p>Chủng loại vật tư nằm trong list đã ký. Sao Khuê không ghi tên hãng nếu hợp đồng chưa chốt mẫu. Dòng “tương đương” chung chung thì hỏi lại trước khi ký.</p>
@@ -85,6 +89,10 @@ export const xayNhaTronGoiTphcm = {
   <li>Tiến độ ghi số tháng. Mùa mưa và hẻm hẹp được nêu là lý do được gia hạn, không nói miệng.</li>
   <li>Bảo hành kết cấu 10 năm có trong hợp đồng. Hoàn thiện 12–36 tháng ghi riêng.</li>
 </ul>
+<figure>
+  <img src="/images/sao-khue/sk-55.jpg" alt="Thợ Sao Khuê đổ và cán bê tông sàn trên lưới thép đã buộc, ống kỹ thuật chờ sẵn" width="957" height="1276" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn sau khi nghiệm thu cốt thép, ống điện nước chờ sẵn. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
 <h2>Số tầng và kiểu mái</h2>
 <p>Đơn giá m² sàn ở không đổi theo kiểu mái hay số tầng. Thêm tầng là thêm sàn được nhân. Mái, sân thượng và thang máy nằm ngoài phép nhân đó.</p>
@@ -95,6 +103,10 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Mái Nhật, mái thái:</strong> là dạng mái, tính ở dòng mái. Nhà một tầng ít sàn hơn nhà phố nhiều lầu nên tổng tiền thấp hơn, dù đơn giá m² cùng khung.</li>
   <li><strong>Nhà phố hiện đại:</strong> mặt đứng, giếng trời, lan can. Thiết kế nằm trong gói khi ký thi công. Xem <a href="/tin-tuc/thiet-ke-nha-pho-hien-dai-tphcm">thiết kế nhà phố hiện đại</a>.</li>
 </ul>
+<figure>
+  <img src="/images/sao-khue/sk-58.jpg" alt="Đội thợ Sao Khuê đổ bê tông sàn lầu, cốp pha và cây chống bên dưới, sát tường nhà bên" width="1276" height="957" loading="lazy" decoding="async" />
+  <figcaption>Đổ bê tông sàn lầu sát tường nhà bên. Ảnh hiện trường Sao Khuê.</figcaption>
+</figure>
 
 <h2>Thi công theo quận</h2>
 <p>Khung đơn giá giống nhau, từ 4,85 triệu/m² gói tiêu chuẩn. Khác nhau ở hẻm, nền và giấy phép — những khoản này tách khỏi đơn giá m²:</p>
