@@ -206,6 +206,10 @@ const STATIC_PATH_REDIRECTS: [string, string][] = [
   ["/thiet-ke-nha-pho-2-tang", HUB_XAY_NHA],
   ["/tag", "/tin-tuc"],
   ["/shop", "/"],
+  // GSC 404 — URL WordPress / theme cũ
+  ["/giao-dien-moi", "/"],
+  ["/wp-admin", "/"],
+  ["/wp-login.php", "/"],
   // P0 SEO — slug calendar #473 không tách bài; gộp seed “giá rẻ”
   ["/tin-tuc/xay-nha-tron-goi-gia-re-tphcm", HUB_XAY_NHA],
   ["/bai-viet/xay-nha-tron-goi-gia-re-tphcm", HUB_XAY_NHA],

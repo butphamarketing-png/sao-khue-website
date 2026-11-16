@@ -112,6 +112,19 @@ function notFound404() {
   });
 }
 
+/** Spam /lander còn trong GSC — 410 để Google bỏ, không 301 về trang chủ. */
+function gone410() {
+  const html = \`<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>410 | Kiến Trúc Sao Khuê</title></head><body style="font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem"><h1>410 — Trang đã gỡ</h1><p>URL này không còn tồn tại.</p><p><a href="/">Về trang chủ</a></p></body></html>\`;
+  return new Response(html, {
+    status: 410,
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "public, max-age=86400",
+    },
+  });
+}
+
 /** WP leftovers (?doc/d888, ?p=930, ?page_id=…) — giữ utm/gclid. */
 function cleanSearch(search) {
   if (!search || search === "?") return null;
@@ -164,6 +177,22 @@ export default function middleware(request) {
     normalizedPathname === "/feed.xml"
   ) {
     return rewriteToApi(normalizedPathname, request.url);
+  }
+
+  // GSC spam /lander (+ query kiểu ?down/...?vivo/...) — 410, không 301 trung gian.
+  if (normalizedPathname === "/lander" || normalizedPathname.startsWith("/lander/")) {
+    return gone410();
+  }
+
+  // WordPress author archives: /author, /author/admin, …
+  if (normalizedPathname === "/author" || normalizedPathname.startsWith("/author/")) {
+    return redirect301("/bai-viet/ve-chung-toi", request.url);
+  }
+
+  // WordPress /embed /feed /amp leftovers — bỏ hậu tố rồi để REDIRECTS/hub xử lý.
+  const wpSuffix = normalizedPathname.match(/^(.*)\\/(embed|feed|amp)$/i);
+  if (wpSuffix && wpSuffix[1]) {
+    return redirect301(wpSuffix[1], request.url);
   }
 
   if (normalizedPathname.startsWith("/gioi-thieu/")) {
