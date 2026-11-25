@@ -132,9 +132,23 @@ export const xayNhaTronGoiTphcm = {
   <li><strong>Khảo sát mặt bằng:</strong> đo đất, lối vào, nền và quy hoạch sơ bộ.</li>
   <li><strong>Chốt phương án:</strong> mặt bằng, phối cảnh 3D, danh mục vật tư.</li>
   <li><strong>Ký hợp đồng:</strong> từng hạng mục có dòng riêng. Không đổi thiết kế thì không phát sinh.</li>
+</ol>
+<figure>
+  <img src="/images/sao-khue/sk-64.jpg" alt="Đổ bê tông tại công trình xây nhà trọn gói trong hẻm sau ký hợp đồng — Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Khởi công đúng mốc trong hợp đồng. Ảnh thi công Sao Khuê.</figcaption>
+</figure>
+<ol start="5">
   <li><strong>Thi công:</strong> nghiệm thu cốt thép trước khi đổ, đúng tiến độ đã ghi.</li>
   <li><strong>Bàn giao:</strong> hồ sơ bảo hành, vệ sinh công trình.</li>
 </ol>
+<figure>
+  <img src="/images/sao-khue/sk-65.jpg" alt="Đội thi công Sao Khuê đổ bê tông sàn sau khi ký hợp đồng xây nhà trọn gói tại TP.HCM" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Khởi công đúng mốc sau ký HĐ — đổ bê tông sàn. Ảnh thực tế Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-66.jpg" alt="Cốt thép sàn đã buộc, nghiệm thu trước khi đổ bê tông — thi công xây nhà trọn gói Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Nghiệm thu cốt thép theo hạng mục hợp đồng. Ảnh thi công Sao Khuê.</figcaption>
+</figure>
 <figure>
   <img src="/images/sao-khue/sk-47.jpg" alt="Sàn đã rải cốt thép, thợ tưới nước trước khi đổ bê tông — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
   <figcaption>Cốt thép sàn được kiểm tra trước khi đổ. Ảnh thi công Sao Khuê.</figcaption>

@@ -60,6 +60,28 @@ export const veChungToi = {
   <li>Ký hợp đồng — thi công — bàn giao — bảo hành.</li>
 </ol>
 <p>Xem công trình: <a href="/cong-trinh">/cong-trinh</a> · sơ đồ bộ phận: <a href="/bai-viet/so-do-to-chuc">sơ đồ tổ chức</a>.</p>
+<h2>Ảnh hiện trường sau ký hợp đồng</h2>
+<p>Sau khi chốt dự toán, đội ngũ Sao Khuê vào công trình với banner nhận diện và giám sát kỹ thuật theo mốc đã ghi trong hợp đồng.</p>
+<figure>
+  <img src="/images/sao-khue/sk-61.jpg" alt="Đội ngũ Kiến Trúc Sao Khuê tại công trình sau ký hợp đồng trọn gói — banner và biển hiệu thi công" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đội ngũ tại hiện trường ngay sau ký HĐ — nhân sự và PPE theo công trình. Ảnh thực tế Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-62.jpg" alt="Đội ngũ Sao Khuê và gia chủ tại hiện trường sau ký hợp đồng thi công — banner Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Lễ khởi công / bàn giao mặt bằng sau ký HĐ — ảnh thực tế Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-63.jpg" alt="Bơm bê tông tại công trình nhà phố với banner Sao Khuê sau ký hợp đồng trọn gói" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Bơm bê tông theo tiến độ hợp đồng. Ảnh thi công Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-64.jpg" alt="Đổ bê tông móng hoặc sàn trong hẻm nhà phố TP.HCM — Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Thi công móng/sàn trong hẻm hẹp — vật tư và nhân sự theo HĐ. Ảnh thực tế.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-69.jpg" alt="Đổ bê tông sàn cùng đầm rung sau ký hợp đồng — thi công trọn gói Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đổ và đầm sàn theo mốc hợp đồng. Ảnh thi công Sao Khuê.</figcaption>
+</figure>
 
 ${faqSection([
   { q: "Sao Khuê có bán thầu không?", a: "Không. Trực tiếp thi công và giám sát. Hợp đồng ghi rõ vật tư, mốc nghiệm thu, BH kết cấu 10 năm." },

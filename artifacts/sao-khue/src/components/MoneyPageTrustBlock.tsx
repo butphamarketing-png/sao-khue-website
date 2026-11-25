@@ -21,22 +21,22 @@ export const MONEY_EEAT_SLUGS = new Set([
 
 const PROJECT_SHOTS = [
   {
-    src: "/images/nha-2-tang/nha-2-tang-02.jpg",
-    alt: "Nhà phố trọn gói bàn giao — Sao Khuê",
-    href: "/cong-trinh/xay-nha-pho-thuan-an",
-    label: "Nhà phố Thuận An",
+    src: "/images/sao-khue/sk-61.jpg",
+    alt: "Đội ngũ Sao Khuê tại công trình sau ký hợp đồng — banner thương hiệu",
+    href: "/bai-viet/ve-chung-toi",
+    label: "Sau ký HĐ — hiện trường",
   },
   {
-    src: "/images/cai-tao/cai-tao-07.jpg",
-    alt: "Cải tạo nhà phố thực tế — Sao Khuê",
+    src: "/images/sao-khue/sk-69.jpg",
+    alt: "Đổ bê tông sàn với máy đầm — thi công trọn gói Sao Khuê",
+    href: "/cong-trinh",
+    label: "Đổ bê tông sàn",
+  },
+  {
+    src: "/images/sao-khue/sk-66.jpg",
+    alt: "Cốt thép sàn nghiệm thu trước khi đổ — Sao Khuê",
     href: "/cong-trinh/sua-nha-quan-3",
-    label: "Cải tạo Quận 3",
-  },
-  {
-    src: "/images/cai-tao/cai-tao-06.jpg",
-    alt: "Biệt thự sân vườn — Sao Khuê",
-    href: "/cong-trinh/thiet-ke-nha-biet-thu-thu-duc",
-    label: "Biệt thự Thủ Đức",
+    label: "Nghiệm thu cốt thép",
   },
 ] as const;
 

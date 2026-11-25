@@ -8,8 +8,8 @@ export const suaNhaTronGoiTphcm = {
     "Dịch vụ sửa nhà trọn gói TP.HCM: chống thấm, điện nước, sơn lát 1,5–3 triệu/m². Khảo sát miễn phí, báo giá theo hạng mục sau khi xem nhà.",
   metaKeywords:
     "sửa nhà trọn gói tphcm, báo giá sửa nhà, sửa chữa nhà tp hcm, cải tạo nhà phố, kiến trúc sao khuê",
-  imageAlt: "Sửa nhà trọn gói TP.HCM — chống thấm, sơn và ốp lát nhà phố",
-  imageCaption: "Nhà phố sau khi sửa: xử lý thấm, sơn nước và ốp lát",
+  imageAlt: "Đội ngũ Sao Khuê tại công trình sau ký hợp đồng sửa nhà trọn gói TP.HCM",
+  imageCaption: "Khởi công sau ký HĐ — banner Sao Khuê tại hiện trường",
   content: `
 <h2 id="dich-vu-sua-nha-tron-goi-tai-tphcm-an-tam-tu-khao-sat-den-ban-giao">Dịch vụ sửa nhà trọn gói tại TP.HCM</h2>
 <p><strong>Sửa nhà trọn gói TP.HCM</strong> là một đơn vị lo khảo sát, bóc hạng mục hư hỏng, thi công và bàn giao. Sao Khuê nhận nhà phố đang thấm, nứt, điện nước cũ, sơn bong hoặc WC–bếp xuống cấp tại nội thành. Chủ nhà thấy danh mục và đơn giá trước khi đập, không ghép nhiều đội thợ.</p>
@@ -61,9 +61,23 @@ export const suaNhaTronGoiTphcm = {
   <li><strong>Khảo sát miễn phí:</strong> Đo đạc, ghi thấm, nứt, điện nước. Hỏi giấy phép nếu đổi mặt đứng hoặc nâng tầng.</li>
   <li><strong>Phương án:</strong> Danh mục hạng mục, vật tư đề xuất, mặt bằng nếu cần đổi phòng.</li>
   <li><strong>Báo giá và hợp đồng:</strong> Tách thô, trọn gói và phụ lục. Phát sinh chỉ khi có xác nhận bằng văn bản.</li>
+</ol>
+<figure>
+  <img src="/images/sao-khue/sk-61.jpg" alt="Đội thi công Sao Khuê tập trung tại công trình ngay sau ký hợp đồng sửa nhà trọn gói" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Đội ngũ và giám sát tại hiện trường sau ký HĐ. Ảnh thực tế Sao Khuê.</figcaption>
+</figure>
+<ol start="5">
   <li><strong>Thi công và giám sát:</strong> Nhật ký, nghiệm thu từng mốc. Biên bản tường chung trước khi đào móng nếu cần.</li>
   <li><strong>Bàn giao và bảo hành:</strong> Hoàn thiện 12–36 tháng tùy hạng mục. Kết cấu tới 10 năm khi có gia cố.</li>
 </ol>
+<figure>
+  <img src="/images/sao-khue/sk-67.jpg" alt="Thợ Sao Khuê thi công móng và cốt thép sau ký hợp đồng sửa nhà trọn gói" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Triển khai hạng mục kết cấu đã chốt trong HĐ. Ảnh thi công Sao Khuê.</figcaption>
+</figure>
+<figure>
+  <img src="/images/sao-khue/sk-68.jpg" alt="Khung bê tông nâng tầng nhà phố — thi công sửa nhà trọn gói Kiến Trúc Sao Khuê" width="1276" height="956" loading="lazy" decoding="async" />
+  <figcaption>Gia cố / nâng tầng theo phụ lục hợp đồng. Ảnh thực tế.</figcaption>
+</figure>
 <figure>
   <img src="/images/sao-khue/sk-54.jpg" alt="Móng gạch và lưới thép đà kiềng trong lô đất hẹp giữa hai nhà cũ — ảnh thi công Kiến Trúc Sao Khuê" width="1276" height="957" loading="lazy" decoding="async" />
   <figcaption>Làm móng trong lô hẹp kẹp giữa hai nhà: lập biên bản tường chung trước khi đào. Ảnh thi công Sao Khuê.</figcaption>

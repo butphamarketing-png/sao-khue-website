@@ -1,5 +1,5 @@
-/** Ảnh công trình Sao Khuê — thư mục public/images/sao-khue/ (sk-01 … sk-53). */
-export const SAO_KHUE_IMAGE_COUNT = 53;
+/** Ảnh công trình Sao Khuê — thư mục public/images/sao-khue/ (sk-01 … sk-69). */
+export const SAO_KHUE_IMAGE_COUNT = 69;
 export const SAO_KHUE_IMAGE_DIR = "/images/sao-khue";
 
 /** Mẫu nhà 2 tầng — thư mục public/images/nha-2-tang/ (nha-2-tang-01 … 15). */
@@ -70,7 +70,7 @@ const FEATURED_NHA_2_TANG = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] 
 const FEATURED_NHA_CAP_4 = [1, 2, 3, 5, 6, 7, 8, 9] as const;
 const FEATURED_CAI_TAO = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
 /** Banner quảng cáo — tránh ảnh thi công thô / lễ động thổ (sk-01 … sk-34). */
-const FEATURED_SK = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 52] as const;
+const FEATURED_SK = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 52, 61, 62, 63, 64] as const;
 
 function isNha2TangSlug(slug: string): boolean {
   return slug.includes("2-tang");
@@ -197,7 +197,7 @@ const THUMB_POOL_GENERAL = buildThumbPool(
 
 /** Thumbnail tùy chỉnh — ưu tiên hiển thị trang chủ / OG. */
 const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
-  "xay-nha-tron-goi-tphcm": "/images/sao-khue/sk-03.jpg",
+  "xay-nha-tron-goi-tphcm": "/images/sao-khue/sk-63.jpg",
   "xay-nha-binh-thanh": "/images/sao-khue/sk-24.jpg",
   "xay-nha-thu-duc": "/images/sao-khue/sk-51.jpg",
   "xay-nha-go-vap": "/images/sao-khue/sk-47.jpg",
@@ -220,6 +220,12 @@ const CUSTOM_FEATURED_IMAGES: Record<string, string> = {
   "thiet-ke-nha-dep-phu-yen": "/images/articles/thiet-ke-nha-dep-phu-yen.jpg",
   "thiet-ke-nha-dep-dak-lak": "/images/articles/thiet-ke-nha-dep-dak-lak.jpg",
   "thiet-ke-nha-dep-tphcm": "/images/articles/thiet-ke-nha-dep-tphcm.jpg",
+  "ve-chung-toi": "/images/sao-khue/sk-61.jpg",
+  "sua-nha-tron-goi-tphcm": "/images/sao-khue/sk-62.jpg",
+  "cong-ty-xay-dung-nha-pho-uy-tin-tphcm": "/images/sao-khue/sk-61.jpg",
+  "nha-thau-xay-nha-tron-goi-tphcm": "/images/sao-khue/sk-61.jpg",
+  "bao-gia-sua-nha-tron-goi-tphcm": "/images/sao-khue/sk-62.jpg",
+  "cai-tao-nha-cu": "/images/sao-khue/sk-64.jpg",
 };
 
 /** Ảnh đại diện — pool lớn, hash slug ổn định, ít trùng hơn. */
