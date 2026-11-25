@@ -485,6 +485,7 @@ export function buildServiceSchema(input: {
   streetAddress?: string;
   /** Đơn giá mỗi m² sàn ở, không phải tổng giá căn nhà. */
   pricePerSqm?: { low: number; high: number };
+  offerDescription?: string;
   dateModified?: string;
 }) {
   return {
@@ -504,6 +505,7 @@ export function buildServiceSchema(input: {
           highPrice: input.pricePerSqm.high,
           unitText: "m² sàn ở",
           description:
+            input.offerDescription ??
             "Đơn giá tham khảo mỗi m² sàn ở. Chưa gồm móng cọc, mái, phụ phí hẻm và lệ phí.",
           url: input.url,
         }

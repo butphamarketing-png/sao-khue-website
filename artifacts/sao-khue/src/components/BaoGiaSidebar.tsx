@@ -3,7 +3,7 @@ import type { MenuItem } from "@/lib/menu";
 
 /** Link crawlable tới trang money — ưu tiên SEO hơn hash calculator. */
 const MONEY_LINKS = [
-  { label: "BÁO GIÁ XÂY NHÀ TRỌN GÓI TP.HCM", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "green" },
+  { label: "XÂY NHÀ TRỌN GÓI TPHCM", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "green" },
   { label: "DỰ TOÁN CHI PHÍ XÂY NHÀ", href: "/tin-tuc/du-toan-chi-phi-xay-nha", tone: "yellow" },
   { label: "BÁO GIÁ PHẦN THÔ", href: "/dich-vu/xay-dung-phan-tho", tone: "teal" },
   { label: "BÁO GIÁ CẢI TẠO", href: "/dich-vu/sua-nha-tron-goi-tphcm", tone: "blue" },

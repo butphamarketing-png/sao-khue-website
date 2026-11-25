@@ -90,6 +90,13 @@ export default function XayMoi() {
       <div className="site-container py-8 lg:py-10">
         <div className="qh-bao-gia-layout">
           <main className="qh-bao-gia-main">
+            <p className="mb-3 text-sm text-slate-700">
+              Dịch vụ chính:{" "}
+              <Link href="/dich-vu/xay-nha-tron-goi-tphcm" className="font-semibold text-[#0A2F68] underline">
+                xây nhà trọn gói TPHCM
+              </Link>{" "}
+              — đơn giá 2026 từ 4,85 triệu/m², một hợp đồng thiết kế–thi công–bàn giao.
+            </p>
             <p className="mb-5 text-sm text-slate-600">
               {total > 0
                 ? `${total} bài xây mới — trang ${currentPage}/${totalPages}`

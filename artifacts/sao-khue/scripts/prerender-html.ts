@@ -556,8 +556,9 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
     const editorialUpdatedAt = getFallbackPost(post.slug)?.updatedAt;
     const modified = (post.updatedAt ?? editorialUpdatedAt ?? publishedAt).slice(0, 10);
     const isTurnkey = post.slug === "xay-nha-tron-goi-tphcm";
+    const isRepair = post.slug === "sua-nha-tron-goi-tphcm";
     const pageSchema =
-      post.slug === "sua-nha-tron-goi-tphcm" || isTurnkey
+      isRepair || isTurnkey
         ? {
             "@context": "https://schema.org",
             "@type": "Service",
@@ -565,24 +566,22 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
             serviceType: isTurnkey ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
             description,
             url: absoluteUrl(SITE_URL, path),
-            dateModified: isTurnkey ? modified : undefined,
+            dateModified: modified,
             image: resolveAbsoluteImage(post.imageUrl)
               ? [resolveAbsoluteImage(post.imageUrl)!]
               : undefined,
             provider: {
               "@type": "HomeAndConstructionBusiness",
               name: BRAND,
-              telephone: isTurnkey ? "+84909075668" : undefined,
-              openingHours: isTurnkey ? "Mo-Sa 08:00-17:30" : undefined,
-              address: isTurnkey
-                ? {
-                    "@type": "PostalAddress",
-                    streetAddress: "245/8 Bình Lợi, Phường 13",
-                    addressLocality: "Bình Thạnh",
-                    addressRegion: "Hồ Chí Minh",
-                    addressCountry: "VN",
-                  }
-                : undefined,
+              telephone: "+84909075668",
+              openingHours: "Mo-Sa 08:00-17:30",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "245/8 Bình Lợi, Phường 13",
+                addressLocality: "Bình Thạnh",
+                addressRegion: "Hồ Chí Minh",
+                addressCountry: "VN",
+              },
             },
             areaServed: { "@type": "City", name: "Thành phố Hồ Chí Minh" },
             offers: isTurnkey
@@ -596,7 +595,18 @@ function buildPostPages(posts: PrerenderPost[]): PrerenderPage[] {
                     "Đơn giá tham khảo mỗi m² sàn ở. Chưa gồm móng cọc, mái, phụ phí hẻm và lệ phí.",
                   url: absoluteUrl(SITE_URL, path),
                 }
-              : undefined,
+              : isRepair
+                ? {
+                    "@type": "AggregateOffer",
+                    priceCurrency: "VND",
+                    lowPrice: 1500000,
+                    highPrice: 15000000,
+                    unitText: "m² sàn",
+                    description:
+                      "Đơn giá tham khảo theo m² sàn (sơn lát nhẹ đến cải tạo toàn căn). Bóc theo hạng mục sau khảo sát.",
+                    url: absoluteUrl(SITE_URL, path),
+                  }
+                : undefined,
           }
         : {
             "@context": "https://schema.org",

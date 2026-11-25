@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import type { MenuItem } from "@/lib/menu";
 
 const CONSTRUCTION_BUTTONS = [
-  { label: "XÂY NHÀ TRỌN GÓI", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "blue" },
+  { label: "XÂY NHÀ TRỌN GÓI TPHCM", href: "/dich-vu/xay-nha-tron-goi-tphcm", tone: "blue" },
   { label: "BIỆT THỰ", href: "/mau-nha/biet-thu", tone: "green" },
   { label: "NHÀ CẤP 4", href: "/mau-nha/cap-4", tone: "teal" },
   { label: "NHÀ 2 TẦNG", href: "/mau-nha/2-tang", tone: "orange" },

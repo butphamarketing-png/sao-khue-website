@@ -300,7 +300,7 @@ export function imageFigure(
 
 /** Một liên kết về trang chủ (www) và hai liên kết nội bộ — tránh 3 anchor trùng homepage. */
 export function homeLinkParagraph(intro = "Tham khảo thêm thông tin tại"): string {
-  return `<p>${intro} <a href="${SITE_HOME}">Kiến Trúc Sao Khuê</a> — xem <a href="/dich-vu">dịch vụ xây nhà</a> và <a href="/bao-gia">báo giá</a> tại TP.HCM và Đắk Lắk.</p>`;
+  return `<p>${intro} <a href="${SITE_HOME}">Kiến Trúc Sao Khuê</a> — <a href="/dich-vu/xay-nha-tron-goi-tphcm">xây nhà trọn gói TPHCM</a>, <a href="/bao-gia">báo giá</a> và <a href="/dich-vu">dịch vụ</a> tại TP.HCM.</p>`;
 }
 
 export function seoCtaBlock(focusKeyword: string): string {

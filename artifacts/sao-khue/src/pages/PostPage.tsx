@@ -144,10 +144,18 @@ export default function PostPage() {
                   serviceType: isTurnkeyService ? "Xây nhà trọn gói TPHCM" : "Sửa nhà trọn gói",
                   areaServed: "Thành phố Hồ Chí Minh",
                   image: seoPost.imageUrl,
-                  telephone: isTurnkeyService ? "+84909075668" : undefined,
-                  streetAddress: isTurnkeyService ? "245/8 Bình Lợi, Phường 13" : undefined,
-                  pricePerSqm: isTurnkeyService ? { low: 4850000, high: 6700000 } : undefined,
-                  dateModified: isTurnkeyService ? seoPost.updatedAt : undefined,
+                  telephone: isTurnkeyService || isRepairService ? "+84909075668" : undefined,
+                  streetAddress:
+                    isTurnkeyService || isRepairService ? "245/8 Bình Lợi, Phường 13" : undefined,
+                  pricePerSqm: isTurnkeyService
+                    ? { low: 4850000, high: 6700000 }
+                    : isRepairService
+                      ? { low: 1500000, high: 15000000 }
+                      : undefined,
+                  offerDescription: isRepairService
+                    ? "Đơn giá tham khảo theo m² sàn (sơn lát nhẹ đến cải tạo toàn căn). Bóc theo hạng mục sau khảo sát."
+                    : undefined,
+                  dateModified: isServicePage ? seoPost.updatedAt : undefined,
                 })
               : buildArticleSchema({
                   headline: seoPost.title,
